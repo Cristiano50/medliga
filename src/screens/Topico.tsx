@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { ESTAGIOS, LAMINAS, topico } from '../content/index.ts';
 import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
+import { contarAvancadas } from '../core/session.ts';
 import { Barra, Markdown, SeloRevisao } from '../ui/comum.tsx';
 
 type Aba = 'estudo' | 'estruturas' | 'clinica' | 'fontes';
@@ -16,6 +17,7 @@ export function TopicoTela() {
   const p = progresso.get(t.id);
   const estagios = ESTAGIOS.filter((e) => e.topicos.includes(t.id));
   const laminas = LAMINAS.filter((l) => l.topicos.includes(t.id));
+  const avancadas = contarAvancadas([t]);
 
   return (
     <div className="pilha">
@@ -39,6 +41,9 @@ export function TopicoTela() {
         <Barra valor={p?.dominio ?? 0} />
         <div className="grade g2">
           <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}`} className="btn primario">Praticar questões</Link>
+          {avancadas >= 3 && (
+            <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}&nivel=avancado`} className="btn">🔥 Desafio avançado ({avancadas})</Link>
+          )}
           {estagios.length > 0 && (
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>
           )}

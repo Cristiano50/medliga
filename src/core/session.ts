@@ -20,6 +20,16 @@ export interface OpcoesSessao {
   agora?: number;
   /** Plantão usa só tipos rápidos (múltipla e V/F). */
   tipos?: Questao['tipo'][];
+  /** Desafio avançado: só questões com dificuldade maior ou igual a este valor. */
+  dificuldadeMinima?: number;
+}
+
+/** Dificuldade mínima das questões do Desafio avançado. */
+export const DIFICULDADE_AVANCADA = 4;
+
+/** Quantas questões do Desafio avançado existem nestes tópicos. */
+export function contarAvancadas(topicos: Topico[]): number {
+  return topicos.reduce((s, t) => s + t.questoes.filter((q) => q.dificuldade >= DIFICULDADE_AVANCADA).length, 0);
 }
 
 export function questoesDe(topicos: Topico[]): { questao: Questao; topicoId: string }[] {
@@ -53,6 +63,8 @@ export function montarSessao(topicos: Topico[], o: OpcoesSessao): ItemSessao[] {
   let pool = questoesDe(topicos);
   const tipos = o.tipos ?? (o.modo === 'plantao' ? (['multipla', 'vf'] as Questao['tipo'][]) : undefined);
   if (tipos) pool = pool.filter((p) => tipos.includes(p.questao.tipo));
+  const minima = o.dificuldadeMinima;
+  if (minima) pool = pool.filter((p) => p.questao.dificuldade >= minima);
 
   let escolhidas: { questao: Questao; topicoId: string }[];
   if (o.modo === 'plantao') {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { calcularXP, corrigir, nivelPorXP, tituloDoNivel } from '../src/core/scoring.ts';
 import { novoEstado, registrarResposta, vencidos, dominio, INTERVALOS_DIAS, inicioDoDia } from '../src/core/srs.ts';
-import { montarSessao } from '../src/core/session.ts';
+import { contarAvancadas, DIFICULDADE_AVANCADA, montarSessao } from '../src/core/session.ts';
 import { criarRng, embaralhar } from '../src/core/random.ts';
 import { podeIniciar, PLANOS } from '../src/core/planos.ts';
 import { rankingEscolas, semanaAtual } from '../src/core/ranking.ts';
@@ -130,6 +130,14 @@ describe('sessões', () => {
       const o = s.find((i) => i.questao.id === 'q2')!;
       expect(o.ordemExibicao!.join()).not.toBe('2,1,3');
     }
+  });
+  it('desafio avançado só traz questões de dificuldade ≥ 4', () => {
+    const dificil = { ...base, id: 'q5', tipo: 'vf', enunciado: 'Afirmação difícil.', correta: false, dificuldade: 5 } as Questao;
+    const comDificil = { ...topico, questoes: [...topico.questoes, dificil] } as Topico;
+    const s = montarSessao([comDificil], { modo: 'estudo', tamanho: 10, rng: criarRng(3), dificuldadeMinima: DIFICULDADE_AVANCADA });
+    expect(s.map((i) => i.questao.id)).toEqual(['q5']);
+    expect(contarAvancadas([comDificil])).toBe(1);
+    expect(contarAvancadas([topico])).toBe(0);
   });
   it('embaralhar com semente é determinístico', () => {
     expect(embaralhar([1, 2, 3, 4, 5], criarRng(7))).toEqual(embaralhar([1, 2, 3, 4, 5], criarRng(7)));

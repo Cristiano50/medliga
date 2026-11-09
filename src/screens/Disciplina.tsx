@@ -4,6 +4,7 @@ import { DISCIPLINAS } from '../content/disciplinas.ts';
 import { carregarDisciplina, topicosDe } from '../content/index.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { useApp } from '../data/store.ts';
+import { contarAvancadas } from '../core/session.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
 
 export function DisciplinaTela() {
@@ -22,6 +23,7 @@ export function DisciplinaTela() {
   }, [id]);
   if (!d || d.status !== 'disponivel') return <Navigate to="/" replace />;
   const total = topicos.reduce((s, t) => s + t.questoes.length, 0);
+  const avancadas = contarAvancadas(topicos);
   const dominioMedio = topicos.length ? [...progresso.values()].reduce((s, p) => s + p.dominio, 0) / topicos.length : 0;
 
   return (
@@ -39,6 +41,9 @@ export function DisciplinaTela() {
       <div className="grade g2">
         {d.jogos?.[0] && <Link to={d.jogos[0].rota} className="btn primario">{d.jogos[0].icone} {d.jogos[0].nome}</Link>}
         <Link to={`/jogar/quiz?modo=plantao&disciplina=${d.id}`} className="btn ouro">⚡ Plantão relâmpago</Link>
+        {avancadas >= 10 && (
+          <Link to={`/jogar/quiz?modo=estudo&disciplina=${d.id}&nivel=avancado`} className="btn">🔥 Desafio avançado · {avancadas} questões difíceis</Link>
+        )}
       </div>
 
       {(d.jogos?.length ?? 0) > 1 && (

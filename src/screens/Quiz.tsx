@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { topico as buscarTopico, topicosDe } from '../content/index.ts';
 import { disciplinaDoTopico } from '../content/disciplinas.ts';
-import { montarSessao, type ItemSessao, type ModoSessao } from '../core/session.ts';
+import { DIFICULDADE_AVANCADA, montarSessao, type ItemSessao, type ModoSessao } from '../core/session.ts';
 import { calcularXP, corrigir, TEMPO_MINIMO_MS, type Resposta } from '../core/scoring.ts';
 import { novoEstado, registrarResposta, type EstadoItem } from '../core/srs.ts';
 import { podeIniciar } from '../core/planos.ts';
@@ -32,6 +32,7 @@ export function QuizTela() {
   const [duelo, setDuelo] = useState<Duelo | null>(null);
   const [erro, setErro] = useState<string | null>(null);
   const topicoId = params.get('topico');
+  const avancado = modo === 'estudo' && params.get('nivel') === 'avancado';
   const nav = useNavigate();
   const perfil = useApp((s) => s.perfil)!;
   const disciplinaId =
@@ -104,7 +105,7 @@ export function QuizTela() {
         }
       } else {
         const tamanho = modo === 'plantao' ? 40 : 10;
-        const s = montarSessao(topicos, { modo, tamanho, estados: mapa });
+        const s = montarSessao(topicos, { modo, tamanho, estados: mapa, dificuldadeMinima: avancado ? DIFICULDADE_AVANCADA : undefined });
         if (!vivo) return;
         setItens(s);
         await contarUso(tipoUso);
@@ -268,7 +269,7 @@ export function QuizTela() {
         )}
       </div>
       <div className="linha entre pequeno muted">
-        <span>{modo === 'plantao' ? '⚡ Plantão relâmpago' : modo === 'revisao' ? '🔁 Revisão do dia' : '📘 Estudo'} · dificuldade {'●'.repeat(q.dificuldade)}{'○'.repeat(5 - q.dificuldade)}</span>
+        <span>{modo === 'plantao' ? '⚡ Plantão relâmpago' : modo === 'revisao' ? '🔁 Revisão do dia' : avancado ? '🔥 Desafio avançado' : '📘 Estudo'} · dificuldade {'●'.repeat(q.dificuldade)}{'○'.repeat(5 - q.dificuldade)}</span>
         <span>{combo >= 2 ? `🔥 combo ×${combo} · ` : ''}{xpSessao} XP</span>
       </div>
 
