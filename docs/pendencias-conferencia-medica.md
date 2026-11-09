@@ -62,7 +62,7 @@ Alternativa correta ainda visivelmente mais longa em: emb-11 q14; emb-12 q02, q1
 
 ## G. Histologia (relatórios `content/revisoes/h1-*`, `h2-*`, `h3-*` e `laminas-histologia.md`)
 
-Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologia; 2ª etapa patologia/clínica). Nenhum gabarito estava errado. O que depende de você:
+Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologia; 2ª etapa patologia/clínica nos tópicos 1–7 e clínica/hematologia/neurologia nos 8–10). Nenhum gabarito estava errado. O que depende de você:
 
 **G1. Conferir no livro impresso**
 - Números de capítulo citados de memória em todos os tópicos: Junqueira & Carneiro 14ª ed. (os redatores usaram a numeração da 13ª: 1 métodos, 4 epitelial, 5 conjuntivo, 6 adiposo, 7 cartilagem, 8 osso, 9 nervoso, 10 muscular, 12 células do sangue, 13 hemocitopoese, 16 glândulas do tubo digestivo, 18 pele) e Ross & Pawlina 8ª ed. (1, 2, 5–12, 15, 16, 18). Kierszenbaum 5ª e Gartner 4ª também de memória.
@@ -83,17 +83,23 @@ Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologi
 - Linha do tempo da epiderme (his-02): empatar "perde núcleo" e "torna-se célula córnea" (pele fina)?
 - Lâmina do rim: desenho de córtex (acrescentar glomérulo e túbulo proximal) ou de medula (ductos coletores).
 - "Olho de coruja" retirado do neurônio (termo de Reed-Sternberg/CMV).
-- Propostas de correlação nova (não implementadas): policondrite recidivante (his-06) e doença de Paget (his-07).
+- Propostas de correlação nova (não implementadas): policondrite recidivante (his-06) e doença de Paget (his-07); mieloma múltiplo (his-04), fogo selvagem (his-02), tumor de Warthin (his-03); anemia falciforme, rabdomiólise/CK, ELA/Parkinson/Alzheimer, neuropatia diabética (his-08 a his-10).
+- Nível de detalhe clínico em tópicos de histologia do 1º/2º ano (anafilaxia/WAO, KDIGO, Guillain-Barré, troponina, McDonald 2024): manter como correlação ou reduzir ao mecanismo. Nada disso é resposta de questão.
+- Vinhetas reescritas na 2ª etapa: his-09-q06 e his-09-q11; distratores fracos (não injustos) em his-03-q12 e q13.
+- Desenho da pele espessa: cristas epidérmicas ficaram mais largas que as papilas (com cristas estreitas não cabia o estrato espinhoso); conferir se o aspecto está bom.
 
 **G3. Diretrizes a confirmar (sites bloqueados na rede da sessão)**
 - PCDT de Osteoporose do Ministério da Saúde: a Portaria Conjunta nº 19/2023 foi revogada em 22/10/2025; número da nova (22 ou 23) e critérios diagnósticos não conferidos (gov.br bloqueado).
 - SBP 2022 (reanimação neonatal): conferida só por busca (saco de polietileno e touca no < 34 semanas; temperatura axilar 36,5–37,5 °C).
 - ASCO/CAP (receptores hormonais e HER2): tempo até a fixação "≤ 1 h" e fixação de 6–72 h conferidos em fontes secundárias; falta o texto integral.
 - Calcitonina: restrição de uso da EMA (2012); registro atual na ANVISA não conferido.
+- KDIGO (anemia na DRC, 2026), protocolo de Guillain-Barré do Ministério da Saúde (Portaria Conjunta nº 15/2020, vigência a confirmar), SBC 2021, Birnkrant 2018 (Duchenne): conferidos por busca ou de memória.
+- Diretriz brasileira de fibrose cística (J Bras Pneumol 2017: exige duas dosagens do suor?) e guia de anafilaxia da ASBAI: não abriram.
+- Faixa de reticulócitos (0,5–2,5%): conferir com a SBPC/ML ou o laboratório do curso.
 
 ## H. Para as próximas revisões (rede do ambiente)
 
-Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross) (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
+Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross), kdigo.org, jbp.org.br, www.scienceopen.com (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
 
 ## Como registrar a sua conferência
 

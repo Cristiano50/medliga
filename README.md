@@ -12,6 +12,8 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 |---|---|
 | Módulo 1: **Embriologia geral** (tópicos 1–10) | revisado por agentes em duas etapas (embriologia + obstetrícia/reprodução nos 1–5; embriologia + genética/medicina fetal nos 6–10); conferência médica pendente |
 | Embriologia dos sistemas (tópicos 11–20) | revisado por agentes em duas etapas (embriologia + pediatria/anatomia/clínica); conferência médica pendente |
+| Módulo 2: **Histologia geral** (10 tópicos, 260 questões: métodos, epitélios, conjuntivo, adiposo, cartilagem, osso, sangue, muscular, nervoso) | revisado por agentes em duas etapas (histologia + patologia/clínica; hematologia/neurologia nos tópicos 8–10); conferência médica pendente |
+| **Microscópio virtual**: 16 lâminas procedurais em HE com objetivas de 4×, 10× e 40×, mais os jogos **Identifique na lâmina** e **Qual é o tecido?** | implementado; textos e desenhos revisados por agente (histologia/patologia) e desenhos corrigidos conforme a revisão |
 | Laboratório 3D: 12 estágios do desenvolvimento (zigoto → placenta) + órgãos e sistemas (coração tubular, alça cardíaca, aparelho faríngeo) + jogo **Identifique** | implementado; textos dos 15 modelos revisados por agentes (embriologia + anatomia) |
 | Minijogos: **Plantão relâmpago**, **Linha do tempo**, **Camadas germinativas**, **Duelo** entre colegas (por código), questões de estudo (4 tipos), **conquistas** | implementado (duelo exige servidor online) |
 | Revisão espaçada, XP, níveis, sequência de dias, limites do plano gratuito | implementado e testado |
@@ -21,6 +23,8 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 | Painel do professor (plano institucional: acerto da turma por tópico, sem dados individuais) | implementado (servidor + tela) |
 | Reportar erro em questões; exclusão de conta e de dados do aparelho (LGPD) | implementado |
 | Pagamentos e builds nas lojas | planejado (v0.2) |
+
+Evidência da entrega de histologia (09/11/2026, nesta sessão): 43/43 testes Vitest · TypeScript sem erros · conteúdo validado (30 tópicos, 783 questões, 441 escolas) · testes SQL aprovados ("TODOS OS TESTES SQL PASSARAM", Postgres local) · build/PWA gerado · fluxo de histologia conferido no Chromium em 390×844 (início, tópico, questões, plantão, microscópio, os dois jogos e duelos) sem erros de página.
 
 Evidência da atualização 3D (09/11/2026): 39/39 testes Vitest · TypeScript sem erros · conteúdo validado (20 tópicos, 523 questões) · build/PWA gerado. No Windows desta revisão, comandos executados diretamente pelo Node (equivalentes aos scripts npm); suíte completa aprovada fora da restrição de arquivos temporários do ambiente. SQL não mudou; a evidência anterior de 15 cenários permanece histórica, não foi reexecutada nesta entrega.
 
@@ -49,6 +53,7 @@ Servidor e lojas: ver [docs/arquitetura.md](docs/arquitetura.md) ("Ativar o serv
 - **Trilha por tópicos**: resumo, estruturas, correlações clínicas e fontes; questões de múltipla escolha (com casos clínicos), verdadeiro/falso, ordenar e associar, sempre com explicação.
 - **Laboratório 3D**: linha do tempo do desenvolvimento; gire, aproxime e toque nas estruturas (zigoto, clivagem, mórula, blastocisto, implantação, disco bilaminar, gastrulação, neurulação em corte, embriões das semanas 4, 6 e 8, placenta e membranas).
 - **Identifique**: o jogo pede uma estrutura e você precisa encontrá-la no modelo 3D (3 vidas).
+- **Microscópio virtual** (histologia): lâminas em HE desenhadas por código; troque a objetiva, percorra a lâmina e toque nas células e estruturas. **Identifique na lâmina** pede uma estrutura; **Qual é o tecido?** mostra um campo e pede o tecido ou órgão.
 - **Plantão relâmpago**: 90 segundos de questões rápidas com bônus de velocidade e combo; vale para o ranking.
 - **Escolas**: cada aluno joga por sua escola; há ranking interno e a escola compete com as outras pela soma dos seus 20 melhores alunos da semana.
 - **Selo de revisão** em todo conteúdo: "Revisado por IA · conferência médica pendente" até a conferência de um médico.

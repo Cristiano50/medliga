@@ -47,7 +47,7 @@ function Rotas() {
           <Route path="/duelos" element={<DuelosTela />} />
         </Route>
         <Route element={<Layout semNav />}>
-          <Route path="/jogar/quiz" element={<QuizTela />} />
+          <Route path="/jogar/quiz" element={<QuizPorSessao />} />
           <Route path="/jogar/linha-do-tempo" element={<LinhaDoTempoTela />} />
           <Route path="/jogar/camadas" element={<CamadasTela />} />
           <Route path="/jogar/identifique" element={<IdentifiqueTela />} />
@@ -60,6 +60,13 @@ function Rotas() {
       </Routes>
     </Suspense>
   );
+}
+
+/** Cada combinação de parâmetros (modo, tópico, disciplina, duelo) é uma sessão nova:
+ * remonta a tela para não reaproveitar as questões da sessão anterior. */
+function QuizPorSessao() {
+  const { search } = useLocation();
+  return <QuizTela key={search} />;
 }
 
 export function App() {

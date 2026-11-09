@@ -43,7 +43,7 @@ export const DISCIPLINAS: Disciplina[] = [
     id: 'histologia',
     prefixo: 'his',
     nome: 'Histologia',
-    status: 'em-breve', // vira 'disponivel' quando os tópicos estiverem escritos e revisados (microscópio já funciona)
+    status: 'disponivel', // 10 tópicos com duas etapas de revisão por agentes; conferência médica pendente
     cor: '#c084fc',
     icone: '🔬',
     jogabilidade: 'Microscópio virtual',
