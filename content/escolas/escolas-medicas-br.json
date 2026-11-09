@@ -1,0 +1,4050 @@
+{
+  "atualizadoEm": "2026-11-09",
+  "fontes": [
+    "Escolha Medicina — páginas por UF e lista de cursos particulares, com dados do e-MEC (consulta de 29/07/2026) e do Censo da Educação Superior 2024: https://escolhamedicina.com.br/faculdades-de-medicina/particular/ ; https://escolhamedicina.com.br/medicina/sao-paulo/ ; https://escolhamedicina.com.br/medicina/rio-de-janeiro/ ; https://escolhamedicina.com.br/medicina/bahia/ ; https://escolhamedicina.com.br/medicina/parana/ ; https://escolhamedicina.com.br/medicina/goias/",
+    "enamed.info — ENAMED 2025: nota e conceito dos 350 cursos de medicina (microdados INEP, versão 28/04/2026): https://enamed.info/cursos/",
+    "Escolas Médicas do Brasil — Escolas Médicas por Estado da Federação e páginas relacionadas: https://www.escolasmedicas.com.br/escolas-medicas-estado.php ; https://www.escolasmedicas.com.br/escolas-medicas-todas.php ; https://www.escolasmedicas.com.br/ies.php ; https://www.escolasmedicas.com.br/vestibular-medicina.php",
+    "FMUSP/AMB — Demografia Médica no Brasil: tabelas e gráficos, dados de cursos e vagas 2024-2025: https://fm.usp.br/fmusp/conteudo/fmusp-demografia_medica_no_brasil_-tabelas_e_graficos_-_dados_cursos_e_vagas_2024-2025.pdf",
+    "Melhores Escolas Médicas — Enamed 2025, lista de notas de todos os cursos: https://melhoresescolasmedicas.com/enamed-2025-confira-a-lista-completa-com-as-notas-de-todos-os-cursos-de-medicina/",
+    "Wikipédia — Escola Superior de Ciências da Saúde (ESCS/FEPECS): https://pt.wikipedia.org/wiki/Escola_Superior_de_Ci%C3%AAncias_da_Sa%C3%BAde",
+    "Unitins — curso de Medicina em Augustinópolis: https://www.unitins.br/nPortal/portal/noticias/detalhes/3606-2021-7-30-governo-do-tocantins-autoriza-funcionamento-do-curso-e-unitins-lanca-vestibular-de-medicina-nesta-5-em-augustinopolis",
+    "Prefeitura do Crato / O Povo — curso de Medicina da URCA: https://www.crato.ce.gov.br/informa/1430/curso-de-medicina-da-urca-em-crato-ter-seu-primeir",
+    "Unilab — aula inaugural do curso de Medicina em Baturité (2024): https://unilab.edu.br/2024/09/03/aula-inaugural-do-curso-de-medicina-celebra-um-momento-historico-depois-de-10-anos-de-luta/",
+    "UEMA — novos cursos de bacharelado, incluindo Medicina em São Luís (2024): https://www.uema.br/2024/09/uema-inaugura-1o-curso-de-fisioterapia-entre-universidades-publicas-do-ma/",
+    "Correio de Carajás — Medicina da UEPA Marabá no Enamed: https://correiodecarajas.com.br/medicina-da-uepa-maraba-e-a-unica-do-norte-com-conceito-maximo-no-enamed/",
+    "Uniube — incorporação da FacMais Ituiutaba (Medicina): https://uniube.br/acontece-na-uniube/uniube-oficializa-incorporacao-da-facmais-ituiutaba-para-colaboradores-e-alunos",
+    "NDmais — novos cursos de Medicina em Joinville (Censupeg e Life Unic): https://ndmais.com.br/educacao/mec-autoriza-criacao-de-novo-curso-de-medicina-em-joinville/",
+    "Faculdade Presidente Antônio Carlos de Teófilo Otoni — edital de transferência de Medicina: https://unipacto.com.br/site/file/edital-medicina-transferencia.pdf",
+    "Faculdade de Medicina do Sertão (Arcoverde-PE): https://medicinadosertao.com.br",
+    "ESAMAZ / UNIESAMAZ — cursos de Medicina: https://www.esamaz.edu.br/curso/medicina ; https://uniesamaz.edu.br",
+    "Quero Bolsa — Sisu 2025: universidades que ofertam vagas de Medicina: https://querobolsa.com.br/revista/sisu-2025-quais-sao-as-universidades-que-ofertam-vagas-de-medicina"
+  ],
+  "escolas": [
+    {
+      "id": "afya-cruzeiro-do-sul",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Cruzeiro do Sul",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Cruzeiro do Sul",
+      "uf": "AC",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninorte-ac",
+      "sigla": "UNINORTE",
+      "nome": "Centro Universitário Uninorte",
+      "cidade": "Rio Branco",
+      "uf": "AC",
+      "natureza": "privada"
+    },
+    {
+      "id": "ufac",
+      "sigla": "UFAC",
+      "nome": "Universidade Federal do Acre",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Rio Branco",
+      "uf": "AC",
+      "natureza": "publica-federal",
+      "site": "https://www.ufac.br"
+    },
+    {
+      "id": "cesmac",
+      "sigla": "CESMAC",
+      "nome": "Centro Universitário Cesmac",
+      "mantenedora": "Fundação Educacional Jayme de Altavila (FEJAL)",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "natureza": "privada",
+      "site": "https://www.cesmac.edu.br"
+    },
+    {
+      "id": "unima",
+      "sigla": "UNIMA",
+      "nome": "Centro Universitário de Maceió",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "natureza": "privada"
+    },
+    {
+      "id": "uncisal",
+      "sigla": "UNCISAL",
+      "nome": "Universidade Estadual de Ciências da Saúde de Alagoas",
+      "mantenedora": "Governo do Estado de Alagoas",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "natureza": "publica-estadual",
+      "site": "https://www.uncisal.edu.br"
+    },
+    {
+      "id": "ufal-arapiraca",
+      "sigla": "UFAL",
+      "nome": "Universidade Federal de Alagoas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Arapiraca",
+      "uf": "AL",
+      "natureza": "publica-federal",
+      "site": "https://ufal.br"
+    },
+    {
+      "id": "ufal",
+      "sigla": "UFAL",
+      "nome": "Universidade Federal de Alagoas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "natureza": "publica-federal",
+      "site": "https://ufal.br"
+    },
+    {
+      "id": "afya-itacoatiara",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Itacoatiara",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Itacoatiara",
+      "uf": "AM",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-manacapuru",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Manacapuru",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Manacapuru",
+      "uf": "AM",
+      "natureza": "privada"
+    },
+    {
+      "id": "fametro-am",
+      "sigla": "FAMETRO",
+      "nome": "Centro Universitário Fametro",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "natureza": "privada",
+      "site": "https://www.fametro.edu.br"
+    },
+    {
+      "id": "niltonlins",
+      "sigla": "UNINILTONLINS",
+      "nome": "Centro Universitário Nilton Lins",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "natureza": "privada"
+    },
+    {
+      "id": "santa-teresa-manaus",
+      "sigla": "Santa Teresa",
+      "nome": "Faculdade Santa Teresa",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "natureza": "privada"
+    },
+    {
+      "id": "uea",
+      "sigla": "UEA",
+      "nome": "Universidade do Estado do Amazonas",
+      "mantenedora": "Governo do Estado do Amazonas",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "natureza": "publica-estadual",
+      "site": "https://www.uea.edu.br"
+    },
+    {
+      "id": "ufam-coari",
+      "sigla": "UFAM",
+      "nome": "Universidade Federal do Amazonas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Coari",
+      "uf": "AM",
+      "natureza": "publica-federal",
+      "site": "https://ufam.edu.br"
+    },
+    {
+      "id": "ufam",
+      "sigla": "UFAM",
+      "nome": "Universidade Federal do Amazonas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "natureza": "publica-federal",
+      "site": "https://ufam.edu.br"
+    },
+    {
+      "id": "integrado-macapa",
+      "sigla": "Integrado",
+      "nome": "Faculdade Integrado de Macapá",
+      "cidade": "Macapá",
+      "uf": "AP",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifap",
+      "sigla": "UNIFAP",
+      "nome": "Universidade Federal do Amapá",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Macapá",
+      "uf": "AP",
+      "natureza": "publica-federal",
+      "site": "https://www.unifap.br"
+    },
+    {
+      "id": "afya-guanambi",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Guanambi",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Guanambi",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-itabuna",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Itabuna",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Itabuna",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacemp",
+      "sigla": "UNIFACEMP",
+      "nome": "Centro Universitário de Ciências e Empreendedorismo",
+      "cidade": "Santo Antônio de Jesus",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unex",
+      "sigla": "UNEX",
+      "nome": "Centro Universitário de Excelência",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unex-itabuna",
+      "sigla": "UNEX",
+      "nome": "Centro Universitário de Excelência",
+      "cidade": "Itabuna",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unex-jequie",
+      "sigla": "UNEX",
+      "nome": "Centro Universitário de Excelência",
+      "cidade": "Jequié",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unex-vitoria-da-conquista",
+      "sigla": "UNEX",
+      "nome": "Centro Universitário de Excelência",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unidompedro",
+      "sigla": "UNIDOMPEDRO",
+      "nome": "Centro Universitário Dom Pedro II",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifg-brumado",
+      "sigla": "UNIFG",
+      "nome": "Centro Universitário FG",
+      "cidade": "Brumado",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifg",
+      "sigla": "UNIFG",
+      "nome": "Centro Universitário FG",
+      "cidade": "Guanambi",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-barreiras",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Barreiras",
+      "cidade": "Barreiras",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "bahiana",
+      "sigla": "EBMSP",
+      "nome": "Escola Bahiana de Medicina e Saúde Pública",
+      "mantenedora": "Fundação Bahiana para Desenvolvimento das Ciências",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "privada",
+      "site": "https://www.bahiana.edu.br"
+    },
+    {
+      "id": "ages-irece",
+      "sigla": "AGES",
+      "nome": "Faculdade AGES de Medicina de Irecê",
+      "cidade": "Irecê",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "ages-jacobina",
+      "sigla": "AGES",
+      "nome": "Faculdade AGES de Medicina de Jacobina",
+      "cidade": "Jacobina",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "atenas-porto-seguro",
+      "sigla": "Atenas",
+      "nome": "Faculdade Atenas Porto Seguro",
+      "cidade": "Porto Seguro",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "atenas-valenca",
+      "sigla": "Atenas",
+      "nome": "Faculdade Atenas Valença",
+      "cidade": "Valença",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-alagoinhas",
+      "sigla": "Estácio",
+      "nome": "Faculdade Estácio de Alagoinhas",
+      "cidade": "Alagoinhas",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-juazeiro",
+      "sigla": "Estácio",
+      "nome": "Faculdade Estácio de Juazeiro",
+      "cidade": "Juazeiro",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "nobre-feira-de-santana",
+      "sigla": "FAN",
+      "nome": "Faculdade Nobre de Feira de Santana",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "pitagoras-eunapolis",
+      "sigla": "Pitágoras",
+      "nome": "Faculdade Pitágoras de Medicina de Eunápolis",
+      "cidade": "Eunápolis",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "fasa",
+      "sigla": "FASA",
+      "nome": "Faculdade Santo Agostinho de Vitória da Conquista",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "sulamerica-lem",
+      "sigla": "Sulamérica",
+      "nome": "Faculdades Sulamérica Bahia",
+      "cidade": "Luís Eduardo Magalhães",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unime",
+      "sigla": "UNIME",
+      "nome": "União Metropolitana de Educação e Cultura",
+      "cidade": "Lauro de Freitas",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unef",
+      "sigla": "UNEF",
+      "nome": "Unidade de Ensino Superior de Feira de Santana",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "uneb",
+      "sigla": "UNEB",
+      "nome": "Universidade do Estado da Bahia",
+      "mantenedora": "Governo do Estado da Bahia",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "publica-estadual",
+      "site": "https://portal.uneb.br"
+    },
+    {
+      "id": "uefs",
+      "sigla": "UEFS",
+      "nome": "Universidade Estadual de Feira de Santana",
+      "mantenedora": "Governo do Estado da Bahia",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uefs.br"
+    },
+    {
+      "id": "uesc",
+      "sigla": "UESC",
+      "nome": "Universidade Estadual de Santa Cruz",
+      "mantenedora": "Governo do Estado da Bahia",
+      "cidade": "Ilhéus",
+      "uf": "BA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uesc.br"
+    },
+    {
+      "id": "uesb-jequie",
+      "sigla": "UESB",
+      "nome": "Universidade Estadual do Sudoeste da Bahia",
+      "mantenedora": "Governo do Estado da Bahia",
+      "cidade": "Jequié",
+      "uf": "BA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uesb.br"
+    },
+    {
+      "id": "uesb",
+      "sigla": "UESB",
+      "nome": "Universidade Estadual do Sudoeste da Bahia",
+      "mantenedora": "Governo do Estado da Bahia",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uesb.br"
+    },
+    {
+      "id": "ufba",
+      "sigla": "UFBA",
+      "nome": "Universidade Federal da Bahia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://www.ufba.br"
+    },
+    {
+      "id": "ufba-vitoria-da-conquista",
+      "sigla": "UFBA",
+      "nome": "Universidade Federal da Bahia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://www.ufba.br"
+    },
+    {
+      "id": "ufob",
+      "sigla": "UFOB",
+      "nome": "Universidade Federal do Oeste da Bahia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Barreiras",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://ufob.edu.br"
+    },
+    {
+      "id": "ufrb",
+      "sigla": "UFRB",
+      "nome": "Universidade Federal do Recôncavo da Bahia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Santo Antônio de Jesus",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://www.ufrb.edu.br"
+    },
+    {
+      "id": "ufsb",
+      "sigla": "UFSB",
+      "nome": "Universidade Federal do Sul da Bahia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Teixeira de Freitas",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://ufsb.edu.br"
+    },
+    {
+      "id": "univasf-paulo-afonso",
+      "sigla": "UNIVASF",
+      "nome": "Universidade Federal do Vale do São Francisco",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Paulo Afonso",
+      "uf": "BA",
+      "natureza": "publica-federal",
+      "site": "https://portais.univasf.edu.br"
+    },
+    {
+      "id": "unifacs",
+      "sigla": "UNIFACS",
+      "nome": "Universidade Salvador",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "privada",
+      "site": "https://www.unifacs.br"
+    },
+    {
+      "id": "zarns-salvador",
+      "sigla": "Zarns",
+      "nome": "Zarns Salvador",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unichristus",
+      "sigla": "UNICHRISTUS",
+      "nome": "Centro Universitário Christus",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "natureza": "privada",
+      "site": "https://unichristus.edu.br"
+    },
+    {
+      "id": "estacio-iguatu",
+      "sigla": "Estácio",
+      "nome": "Centro Universitário Estácio do Ceará",
+      "cidade": "Iguatu",
+      "uf": "CE",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-quixada",
+      "sigla": "Estácio",
+      "nome": "Centro Universitário Estácio do Ceará",
+      "cidade": "Quixadá",
+      "uf": "CE",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninta-itapipoca",
+      "sigla": "UNINTA",
+      "nome": "Centro Universitário INTA",
+      "cidade": "Itapipoca",
+      "uf": "CE",
+      "natureza": "privada",
+      "site": "https://uninta.edu.br"
+    },
+    {
+      "id": "uninta",
+      "sigla": "UNINTA",
+      "nome": "Centro Universitário INTA",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "natureza": "privada",
+      "site": "https://uninta.edu.br"
+    },
+    {
+      "id": "uninta-tiangua",
+      "sigla": "UNINTA",
+      "nome": "Centro Universitário INTA",
+      "cidade": "Tianguá",
+      "uf": "CE",
+      "natureza": "privada",
+      "site": "https://uninta.edu.br"
+    },
+    {
+      "id": "univs",
+      "sigla": "UNIVS",
+      "nome": "Centro Universitário Vale do Salgado",
+      "cidade": "Icó",
+      "uf": "CE",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-fmj",
+      "sigla": "Estácio FMJ",
+      "nome": "Faculdade de Medicina Estácio de Juazeiro do Norte",
+      "cidade": "Juazeiro do Norte",
+      "uf": "CE",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-caninde",
+      "sigla": "Estácio",
+      "nome": "Faculdade Estácio de Canindé",
+      "cidade": "Canindé",
+      "uf": "CE",
+      "natureza": "privada"
+    },
+    {
+      "id": "unilab",
+      "sigla": "UNILAB",
+      "nome": "Universidade da Integração Internacional da Lusofonia Afro-Brasileira",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Baturité",
+      "uf": "CE",
+      "natureza": "publica-federal",
+      "site": "https://unilab.edu.br"
+    },
+    {
+      "id": "unifor",
+      "sigla": "UNIFOR",
+      "nome": "Universidade de Fortaleza",
+      "mantenedora": "Fundação Edson Queiroz",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "natureza": "privada",
+      "site": "https://www.unifor.br"
+    },
+    {
+      "id": "uece",
+      "sigla": "UECE",
+      "nome": "Universidade Estadual do Ceará",
+      "mantenedora": "Governo do Estado do Ceará",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "natureza": "publica-estadual",
+      "site": "https://www.uece.br"
+    },
+    {
+      "id": "ufca",
+      "sigla": "UFCA",
+      "nome": "Universidade Federal do Cariri",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Barbalha",
+      "uf": "CE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufca.edu.br"
+    },
+    {
+      "id": "ufc",
+      "sigla": "UFC",
+      "nome": "Universidade Federal do Ceará",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufc.br"
+    },
+    {
+      "id": "ufc-sobral",
+      "sigla": "UFC",
+      "nome": "Universidade Federal do Ceará",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufc.br"
+    },
+    {
+      "id": "urca",
+      "sigla": "URCA",
+      "nome": "Universidade Regional do Cariri",
+      "mantenedora": "Governo do Estado do Ceará",
+      "cidade": "Crato",
+      "uf": "CE",
+      "natureza": "publica-estadual",
+      "site": "https://www.urca.br"
+    },
+    {
+      "id": "uniceub",
+      "sigla": "UniCEUB",
+      "nome": "Centro Universitário de Brasília",
+      "mantenedora": "Centro de Ensino Unificado de Brasília (CEUB)",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "privada",
+      "site": "https://www.uniceub.br"
+    },
+    {
+      "id": "uniceplac",
+      "sigla": "UNICEPLAC",
+      "nome": "Centro Universitário do Planalto Central Apparecido dos Santos",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "privada",
+      "site": "https://www.uniceplac.edu.br"
+    },
+    {
+      "id": "unieuro",
+      "sigla": "UNIEURO",
+      "nome": "Centro Universitário Euro-Americano",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "privada",
+      "site": "https://www.unieuro.edu.br"
+    },
+    {
+      "id": "escs",
+      "sigla": "ESCS",
+      "nome": "Escola Superior de Ciências da Saúde",
+      "mantenedora": "Fundação de Ensino e Pesquisa em Ciências da Saúde (FEPECS) – Governo do Distrito Federal",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "publica-estadual",
+      "site": "https://www.escs.edu.br"
+    },
+    {
+      "id": "ucb",
+      "sigla": "UCB",
+      "nome": "Universidade Católica de Brasília",
+      "mantenedora": "União Brasiliense de Educação e Cultura (UBEC)",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "privada",
+      "site": "https://ucb.catolica.edu.br"
+    },
+    {
+      "id": "unb",
+      "sigla": "UnB",
+      "nome": "Universidade de Brasília",
+      "mantenedora": "Fundação Universidade de Brasília (União)",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "natureza": "publica-federal",
+      "site": "https://www.unb.br"
+    },
+    {
+      "id": "unesc-colatina",
+      "sigla": "UNESC",
+      "nome": "Centro Universitário do Espírito Santo",
+      "cidade": "Colatina",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://unesc.br"
+    },
+    {
+      "id": "multivix-vitoria",
+      "sigla": "Multivix",
+      "nome": "Centro Universitário Multivix Vitória",
+      "cidade": "Vitória",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://multivix.edu.br"
+    },
+    {
+      "id": "emescam",
+      "sigla": "EMESCAM",
+      "nome": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória",
+      "cidade": "Vitória",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://emescam.br"
+    },
+    {
+      "id": "multivix-cachoeiro",
+      "sigla": "Multivix",
+      "nome": "Faculdade Brasileira de Cachoeiro",
+      "cidade": "Cachoeiro de Itapemirim",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://multivix.edu.br"
+    },
+    {
+      "id": "multivix-cariacica",
+      "sigla": "Multivix",
+      "nome": "Faculdade Multivix Cariacica",
+      "cidade": "Cariacica",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://multivix.edu.br"
+    },
+    {
+      "id": "multivix-sao-mateus",
+      "sigla": "Multivix",
+      "nome": "Faculdade Multivix São Mateus",
+      "cidade": "São Mateus",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://multivix.edu.br"
+    },
+    {
+      "id": "multivix-serra",
+      "sigla": "Multivix",
+      "nome": "Faculdade Multivix Serra",
+      "cidade": "Serra",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://multivix.edu.br"
+    },
+    {
+      "id": "ufes",
+      "sigla": "UFES",
+      "nome": "Universidade Federal do Espírito Santo",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Vitória",
+      "uf": "ES",
+      "natureza": "publica-federal",
+      "site": "https://www.ufes.br"
+    },
+    {
+      "id": "uvv",
+      "sigla": "UVV",
+      "nome": "Universidade Vila Velha",
+      "cidade": "Vila Velha",
+      "uf": "ES",
+      "natureza": "privada",
+      "site": "https://www.uvv.br"
+    },
+    {
+      "id": "unifan",
+      "sigla": "UNIFAN",
+      "nome": "Centro Universitário Alfredo Nasser",
+      "cidade": "Aparecida de Goiânia",
+      "uf": "GO",
+      "natureza": "privada",
+      "site": "https://www.unifan.edu.br"
+    },
+    {
+      "id": "unicerrado",
+      "sigla": "UNICERRADO",
+      "nome": "Centro Universitário de Goiatuba",
+      "cidade": "Goiatuba",
+      "uf": "GO",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "unifimes",
+      "sigla": "UNIFIMES",
+      "nome": "Centro Universitário de Mineiros",
+      "mantenedora": "Fundação Integrada Municipal de Ensino Superior (FIMES)",
+      "cidade": "Mineiros",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unifimes.edu.br"
+    },
+    {
+      "id": "unifimes-trindade",
+      "sigla": "UNIFIMES",
+      "nome": "Centro Universitário de Mineiros",
+      "mantenedora": "Fundação Integrada Municipal de Ensino Superior (FIMES)",
+      "cidade": "Trindade",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unifimes.edu.br"
+    },
+    {
+      "id": "unimais",
+      "sigla": "UNIMAIS",
+      "nome": "Centro Universitário Mais",
+      "cidade": "Inhumas",
+      "uf": "GO",
+      "natureza": "privada"
+    },
+    {
+      "id": "famp",
+      "sigla": "FAMP",
+      "nome": "Faculdade Morgana Potrich",
+      "cidade": "Mineiros",
+      "uf": "GO",
+      "natureza": "privada"
+    },
+    {
+      "id": "zarns-itumbiara",
+      "sigla": "Zarns",
+      "nome": "Faculdade Zarns Itumbiara",
+      "cidade": "Itumbiara",
+      "uf": "GO",
+      "natureza": "privada"
+    },
+    {
+      "id": "puc-goias",
+      "sigla": "PUC Goiás",
+      "nome": "Pontifícia Universidade Católica de Goiás",
+      "mantenedora": "Sociedade Goiana de Cultura",
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "natureza": "privada",
+      "site": "https://www.pucgoias.edu.br"
+    },
+    {
+      "id": "unirv-aparecida",
+      "sigla": "UniRV",
+      "nome": "Universidade de Rio Verde",
+      "mantenedora": "Fundação do Ensino Superior de Rio Verde (FESURV)",
+      "cidade": "Aparecida de Goiânia",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirv.edu.br"
+    },
+    {
+      "id": "unirv-formosa",
+      "sigla": "UniRV",
+      "nome": "Universidade de Rio Verde",
+      "mantenedora": "Fundação do Ensino Superior de Rio Verde (FESURV)",
+      "cidade": "Formosa",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirv.edu.br"
+    },
+    {
+      "id": "unirv-goianesia",
+      "sigla": "UniRV",
+      "nome": "Universidade de Rio Verde",
+      "mantenedora": "Fundação do Ensino Superior de Rio Verde (FESURV)",
+      "cidade": "Goianésia",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirv.edu.br"
+    },
+    {
+      "id": "unirv-luziania",
+      "sigla": "UniRV",
+      "nome": "Universidade de Rio Verde",
+      "mantenedora": "Fundação do Ensino Superior de Rio Verde (FESURV)",
+      "cidade": "Luziânia",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirv.edu.br"
+    },
+    {
+      "id": "unirv",
+      "sigla": "UniRV",
+      "nome": "Universidade de Rio Verde",
+      "mantenedora": "Fundação do Ensino Superior de Rio Verde (FESURV)",
+      "cidade": "Rio Verde",
+      "uf": "GO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirv.edu.br"
+    },
+    {
+      "id": "ueg-itumbiara",
+      "sigla": "UEG",
+      "nome": "Universidade Estadual de Goiás",
+      "mantenedora": "Governo do Estado de Goiás",
+      "cidade": "Itumbiara",
+      "uf": "GO",
+      "natureza": "publica-estadual",
+      "site": "https://www.ueg.br"
+    },
+    {
+      "id": "unievangelica",
+      "sigla": "UniEVANGÉLICA",
+      "nome": "Universidade Evangélica de Goiás",
+      "mantenedora": "Associação Educativa Evangélica",
+      "cidade": "Anápolis",
+      "uf": "GO",
+      "natureza": "privada",
+      "site": "https://www.unievangelica.edu.br"
+    },
+    {
+      "id": "ufcat",
+      "sigla": "UFCAT",
+      "nome": "Universidade Federal de Catalão",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Catalão",
+      "uf": "GO",
+      "natureza": "publica-federal",
+      "site": "https://ufcat.edu.br"
+    },
+    {
+      "id": "ufg",
+      "sigla": "UFG",
+      "nome": "Universidade Federal de Goiás",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "natureza": "publica-federal",
+      "site": "https://ufg.br"
+    },
+    {
+      "id": "ufj",
+      "sigla": "UFJ",
+      "nome": "Universidade Federal de Jataí",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Jataí",
+      "uf": "GO",
+      "natureza": "publica-federal"
+    },
+    {
+      "id": "afya-santa-ines",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Santa Inês",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Santa Inês",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacema",
+      "sigla": "UNIFACEMA",
+      "nome": "Centro Universitário de Ciências e Tecnologia do Maranhão",
+      "cidade": "Caxias",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-sao-luis",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de São Luís",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "undb",
+      "sigla": "UNDB",
+      "nome": "Centro Universitário Unidade de Ensino Superior Dom Bosco",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "privada",
+      "site": "https://www.undb.edu.br"
+    },
+    {
+      "id": "pitagoras-codo",
+      "sigla": "Pitágoras",
+      "nome": "Faculdade de Ciências da Saúde Pitágoras de Codó",
+      "cidade": "Codó",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "pitagoras-bacabal",
+      "sigla": "Pitágoras",
+      "nome": "Faculdade Pitágoras de Bacabal",
+      "cidade": "Bacabal",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "idea-sao-luis",
+      "sigla": "IDEA",
+      "nome": "Instituto de Desenvolvimento e Aprendizagem",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "florence",
+      "sigla": "IFES",
+      "nome": "Instituto Florence de Ensino Superior",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "privada"
+    },
+    {
+      "id": "ceuma-imperatriz",
+      "sigla": "UNICEUMA",
+      "nome": "Universidade Ceuma",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "natureza": "privada",
+      "site": "https://www.ceuma.br"
+    },
+    {
+      "id": "ceuma",
+      "sigla": "UNICEUMA",
+      "nome": "Universidade Ceuma",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "privada",
+      "site": "https://www.ceuma.br"
+    },
+    {
+      "id": "uemasul",
+      "sigla": "UEMASUL",
+      "nome": "Universidade Estadual da Região Tocantina do Maranhão",
+      "mantenedora": "Governo do Estado do Maranhão",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uemasul.edu.br"
+    },
+    {
+      "id": "uema-caxias",
+      "sigla": "UEMA",
+      "nome": "Universidade Estadual do Maranhão",
+      "mantenedora": "Governo do Estado do Maranhão",
+      "cidade": "Caxias",
+      "uf": "MA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uema.br"
+    },
+    {
+      "id": "uema",
+      "sigla": "UEMA",
+      "nome": "Universidade Estadual do Maranhão",
+      "mantenedora": "Governo do Estado do Maranhão",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uema.br"
+    },
+    {
+      "id": "ufma-imperatriz",
+      "sigla": "UFMA",
+      "nome": "Universidade Federal do Maranhão",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "natureza": "publica-federal",
+      "site": "https://portalpadrao.ufma.br"
+    },
+    {
+      "id": "ufma-pinheiro",
+      "sigla": "UFMA",
+      "nome": "Universidade Federal do Maranhão",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Pinheiro",
+      "uf": "MA",
+      "natureza": "publica-federal",
+      "site": "https://portalpadrao.ufma.br"
+    },
+    {
+      "id": "ufma",
+      "sigla": "UFMA",
+      "nome": "Universidade Federal do Maranhão",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "natureza": "publica-federal",
+      "site": "https://portalpadrao.ufma.br"
+    },
+    {
+      "id": "afya-contagem",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Contagem",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Contagem",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-ipatinga",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Ipatinga",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Ipatinga",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "uniatenas",
+      "sigla": "UNIATENAS",
+      "nome": "Centro Universitário Atenas",
+      "cidade": "Paracatu",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unibh",
+      "sigla": "UNI-BH",
+      "nome": "Centro Universitário de Belo Horizonte",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.unibh.br"
+    },
+    {
+      "id": "unec",
+      "sigla": "UNEC",
+      "nome": "Centro Universitário de Caratinga",
+      "cidade": "Caratinga",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unipam",
+      "sigla": "UNIPAM",
+      "nome": "Centro Universitário de Patos de Minas",
+      "mantenedora": "Fundação Educacional de Patos de Minas",
+      "cidade": "Patos de Minas",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://unipam.edu.br"
+    },
+    {
+      "id": "unifaminas",
+      "sigla": "UNIFAMINAS",
+      "nome": "Centro Universitário Faminas",
+      "cidade": "Muriaé",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifipmoc",
+      "sigla": "UNIFIPMoc",
+      "nome": "Centro Universitário FIPMoc",
+      "cidade": "Montes Claros",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifuncesi",
+      "sigla": "UNIFUNCESI",
+      "nome": "Centro Universitário Funcesi",
+      "cidade": "Itabira",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "funorte",
+      "sigla": "FUNORTE",
+      "nome": "Centro Universitário FUNORTE (Uninorte Minas)",
+      "cidade": "Montes Claros",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifagoc",
+      "sigla": "UNIFAGOC",
+      "nome": "Centro Universitário Governador Ozanam Coelho",
+      "cidade": "Ubá",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://unifagoc.edu.br"
+    },
+    {
+      "id": "imepac",
+      "sigla": "IMEPAC",
+      "nome": "Centro Universitário IMEPAC",
+      "cidade": "Araguari",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "uniptan",
+      "sigla": "UNIPTAN",
+      "nome": "Centro Universitário Presidente Tancredo de Almeida Neves",
+      "cidade": "São João del-Rei",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacig",
+      "sigla": "UNIFACIG",
+      "nome": "Centro Universitário UNIFACIG",
+      "cidade": "Manhuaçu",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "atenas-passos",
+      "sigla": "Atenas",
+      "nome": "Faculdade Atenas Passos",
+      "cidade": "Passos",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "atenas-sete-lagoas",
+      "sigla": "Atenas",
+      "nome": "Faculdade Atenas Sete Lagoas",
+      "cidade": "Sete Lagoas",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fcmmg",
+      "sigla": "FCMMG",
+      "nome": "Faculdade Ciências Médicas de Minas Gerais",
+      "mantenedora": "Fundação Educacional Lucas Machado (FELUMA)",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://cmmg.edu.br"
+    },
+    {
+      "id": "faseh",
+      "sigla": "FASEH",
+      "nome": "Faculdade da Saúde e Ecologia Humana",
+      "cidade": "Vespasiano",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "facmais-ituiutaba",
+      "sigla": "FacMais",
+      "nome": "Faculdade de Ciências Médicas de Ituiutaba",
+      "cidade": "Ituiutaba",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fcms-jf",
+      "sigla": "SUPREMA",
+      "nome": "Faculdade de Ciências Médicas e da Saúde de Juiz de Fora",
+      "cidade": "Juiz de Fora",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://suprema.edu.br"
+    },
+    {
+      "id": "fame-barbacena",
+      "sigla": "FAME",
+      "nome": "Faculdade de Medicina de Barbacena",
+      "mantenedora": "Fundação José Bonifácio Lafayette de Andrada",
+      "cidade": "Barbacena",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmit",
+      "sigla": "FMIt",
+      "nome": "Faculdade de Medicina de Itajubá",
+      "cidade": "Itajubá",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fatra-uberlandia",
+      "sigla": "FATRA",
+      "nome": "Faculdade de Medicina de Uberlândia",
+      "cidade": "Uberlândia",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "faminas-bh",
+      "sigla": "FAMINAS-BH",
+      "nome": "Faculdade de Minas – BH",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fadip",
+      "sigla": "FADIP",
+      "nome": "Faculdade Dinâmica do Vale do Piranga",
+      "cidade": "Ponte Nova",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "inapos",
+      "sigla": "INAPÓS",
+      "nome": "Faculdade INAPÓS",
+      "cidade": "Pouso Alegre",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "fpac-teofilo-otoni",
+      "sigla": "FPAC",
+      "nome": "Faculdade Presidente Antônio Carlos de Teófilo Otoni",
+      "mantenedora": "Instituto Educacional Alfaunipac",
+      "cidade": "Teófilo Otoni",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "univertix",
+      "sigla": "UNIVÉRTIX",
+      "nome": "Faculdade Vértice",
+      "cidade": "Matipó",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "pucminas-betim",
+      "sigla": "PUC Minas",
+      "nome": "Pontifícia Universidade Católica de Minas Gerais",
+      "mantenedora": "Sociedade Mineira de Cultura",
+      "cidade": "Betim",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.pucminas.br"
+    },
+    {
+      "id": "pucminas-contagem",
+      "sigla": "PUC Minas",
+      "nome": "Pontifícia Universidade Católica de Minas Gerais",
+      "mantenedora": "Sociedade Mineira de Cultura",
+      "cidade": "Contagem",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.pucminas.br"
+    },
+    {
+      "id": "pucminas-pocos-de-caldas",
+      "sigla": "PUC Minas",
+      "nome": "Pontifícia Universidade Católica de Minas Gerais",
+      "mantenedora": "Sociedade Mineira de Cultura",
+      "cidade": "Poços de Caldas",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.pucminas.br"
+    },
+    {
+      "id": "uit",
+      "sigla": "UIT",
+      "nome": "Universidade de Itaúna",
+      "mantenedora": "Fundação Universidade de Itaúna",
+      "cidade": "Itaúna",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://uit.br"
+    },
+    {
+      "id": "uniube",
+      "sigla": "UNIUBE",
+      "nome": "Universidade de Uberaba",
+      "mantenedora": "Sociedade Educacional Uberabense",
+      "cidade": "Uberaba",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://uniube.br"
+    },
+    {
+      "id": "uemg-passos",
+      "sigla": "UEMG",
+      "nome": "Universidade do Estado de Minas Gerais",
+      "mantenedora": "Governo do Estado de Minas Gerais",
+      "cidade": "Passos",
+      "uf": "MG",
+      "natureza": "publica-estadual",
+      "site": "https://www.uemg.br"
+    },
+    {
+      "id": "univas",
+      "sigla": "UNIVÁS",
+      "nome": "Universidade do Vale do Sapucaí",
+      "mantenedora": "Fundação de Ensino Superior do Vale do Sapucaí (FUVS)",
+      "cidade": "Pouso Alegre",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.univas.edu.br"
+    },
+    {
+      "id": "unimontes",
+      "sigla": "UNIMONTES",
+      "nome": "Universidade Estadual de Montes Claros",
+      "mantenedora": "Governo do Estado de Minas Gerais",
+      "cidade": "Montes Claros",
+      "uf": "MG",
+      "natureza": "publica-estadual",
+      "site": "https://unimontes.br"
+    },
+    {
+      "id": "unifal",
+      "sigla": "UNIFAL-MG",
+      "nome": "Universidade Federal de Alfenas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Alfenas",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://www.unifal-mg.edu.br"
+    },
+    {
+      "id": "ufjf-gv",
+      "sigla": "UFJF",
+      "nome": "Universidade Federal de Juiz de Fora",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Governador Valadares",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://www.ufjf.br"
+    },
+    {
+      "id": "ufjf",
+      "sigla": "UFJF",
+      "nome": "Universidade Federal de Juiz de Fora",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Juiz de Fora",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://www.ufjf.br"
+    },
+    {
+      "id": "ufla",
+      "sigla": "UFLA",
+      "nome": "Universidade Federal de Lavras",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Lavras",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufla.br"
+    },
+    {
+      "id": "ufmg",
+      "sigla": "UFMG",
+      "nome": "Universidade Federal de Minas Gerais",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufmg.br"
+    },
+    {
+      "id": "ufop",
+      "sigla": "UFOP",
+      "nome": "Universidade Federal de Ouro Preto",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Ouro Preto",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufop.br"
+    },
+    {
+      "id": "ufsj-divinopolis",
+      "sigla": "UFSJ",
+      "nome": "Universidade Federal de São João del-Rei",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Divinópolis",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufsj.edu.br"
+    },
+    {
+      "id": "ufsj",
+      "sigla": "UFSJ",
+      "nome": "Universidade Federal de São João del-Rei",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "São João del-Rei",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufsj.edu.br"
+    },
+    {
+      "id": "ufu",
+      "sigla": "UFU",
+      "nome": "Universidade Federal de Uberlândia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Uberlândia",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://ufu.br"
+    },
+    {
+      "id": "ufv",
+      "sigla": "UFV",
+      "nome": "Universidade Federal de Viçosa",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Viçosa",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://www.ufv.br"
+    },
+    {
+      "id": "uftm",
+      "sigla": "UFTM",
+      "nome": "Universidade Federal do Triângulo Mineiro",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Uberaba",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://www.uftm.edu.br"
+    },
+    {
+      "id": "ufvjm",
+      "sigla": "UFVJM",
+      "nome": "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Diamantina",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufvjm.edu.br"
+    },
+    {
+      "id": "ufvjm-teofilo-otoni",
+      "sigla": "UFVJM",
+      "nome": "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Teófilo Otoni",
+      "uf": "MG",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufvjm.edu.br"
+    },
+    {
+      "id": "unipac-juiz-de-fora",
+      "sigla": "UNIPAC",
+      "nome": "Universidade Presidente Antônio Carlos",
+      "cidade": "Juiz de Fora",
+      "uf": "MG",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifenas",
+      "sigla": "UNIFENAS",
+      "nome": "Universidade Professor Edson Antônio Velano",
+      "mantenedora": "Fundação de Ensino e Tecnologia de Alfenas (FETA)",
+      "cidade": "Alfenas",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.unifenas.br"
+    },
+    {
+      "id": "unifenas-bh",
+      "sigla": "UNIFENAS",
+      "nome": "Universidade Professor Edson Antônio Velano",
+      "mantenedora": "Fundação de Ensino e Tecnologia de Alfenas (FETA)",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.unifenas.br"
+    },
+    {
+      "id": "univale",
+      "sigla": "UNIVALE",
+      "nome": "Universidade Vale do Rio Doce",
+      "cidade": "Governador Valadares",
+      "uf": "MG",
+      "natureza": "privada",
+      "site": "https://www.univale.br"
+    },
+    {
+      "id": "uniderp",
+      "sigla": "UNIDERP",
+      "nome": "Universidade Anhanguera-Uniderp",
+      "cidade": "Campo Grande",
+      "uf": "MS",
+      "natureza": "privada"
+    },
+    {
+      "id": "uniderp-ponta-pora",
+      "sigla": "UNIDERP",
+      "nome": "Universidade Anhanguera-Uniderp",
+      "cidade": "Ponta Porã",
+      "uf": "MS",
+      "natureza": "privada"
+    },
+    {
+      "id": "unicesumar-corumba",
+      "sigla": "UNICESUMAR",
+      "nome": "Universidade Cesumar",
+      "cidade": "Corumbá",
+      "uf": "MS",
+      "natureza": "privada",
+      "site": "https://www.unicesumar.edu.br"
+    },
+    {
+      "id": "uems",
+      "sigla": "UEMS",
+      "nome": "Universidade Estadual de Mato Grosso do Sul",
+      "mantenedora": "Governo do Estado de Mato Grosso do Sul",
+      "cidade": "Campo Grande",
+      "uf": "MS",
+      "natureza": "publica-estadual",
+      "site": "https://www.uems.br"
+    },
+    {
+      "id": "ufgd",
+      "sigla": "UFGD",
+      "nome": "Universidade Federal da Grande Dourados",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Dourados",
+      "uf": "MS",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufgd.edu.br"
+    },
+    {
+      "id": "ufms",
+      "sigla": "UFMS",
+      "nome": "Universidade Federal de Mato Grosso do Sul",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Campo Grande",
+      "uf": "MS",
+      "natureza": "publica-federal",
+      "site": "https://www.ufms.br"
+    },
+    {
+      "id": "ufms-tres-lagoas",
+      "sigla": "UFMS",
+      "nome": "Universidade Federal de Mato Grosso do Sul",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Três Lagoas",
+      "uf": "MS",
+      "natureza": "publica-federal",
+      "site": "https://www.ufms.br"
+    },
+    {
+      "id": "univag",
+      "sigla": "UNIVAG",
+      "nome": "Centro Universitário de Várzea Grande",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "natureza": "privada"
+    },
+    {
+      "id": "atenas-sorriso",
+      "sigla": "Atenas",
+      "nome": "Faculdade Atenas Sorriso",
+      "cidade": "Sorriso",
+      "uf": "MT",
+      "natureza": "privada"
+    },
+    {
+      "id": "univar",
+      "sigla": "UNIVAR",
+      "nome": "Faculdades Unidas do Vale do Araguaia",
+      "cidade": "Barra do Garças",
+      "uf": "MT",
+      "natureza": "privada"
+    },
+    {
+      "id": "unic",
+      "sigla": "UNIC",
+      "nome": "Universidade de Cuiabá",
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "natureza": "privada"
+    },
+    {
+      "id": "unemat",
+      "sigla": "UNEMAT",
+      "nome": "Universidade do Estado de Mato Grosso",
+      "mantenedora": "Governo do Estado de Mato Grosso",
+      "cidade": "Cáceres",
+      "uf": "MT",
+      "natureza": "publica-estadual",
+      "site": "https://unemat.br"
+    },
+    {
+      "id": "ufmt",
+      "sigla": "UFMT",
+      "nome": "Universidade Federal de Mato Grosso",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "natureza": "publica-federal",
+      "site": "https://www.ufmt.br"
+    },
+    {
+      "id": "ufmt-sinop",
+      "sigla": "UFMT",
+      "nome": "Universidade Federal de Mato Grosso",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Sinop",
+      "uf": "MT",
+      "natureza": "publica-federal",
+      "site": "https://www.ufmt.br"
+    },
+    {
+      "id": "ufr",
+      "sigla": "UFR",
+      "nome": "Universidade Federal de Rondonópolis",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Rondonópolis",
+      "uf": "MT",
+      "natureza": "publica-federal",
+      "site": "https://ufr.edu.br"
+    },
+    {
+      "id": "afya-abaetetuba",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Abaetetuba",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Abaetetuba",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-braganca",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Bragança",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Bragança",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "cesupa",
+      "sigla": "CESUPA",
+      "nome": "Centro Universitário do Estado do Pará",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "privada",
+      "site": "https://www.cesupa.br"
+    },
+    {
+      "id": "unifibra",
+      "sigla": "UNIFIBRA",
+      "nome": "Centro Universitário Fibra",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifamaz",
+      "sigla": "UNIFAMAZ",
+      "nome": "Centro Universitário Metropolitano da Amazônia",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "uniesamaz",
+      "sigla": "UNIESAMAZ",
+      "nome": "Centro Universitário Uniesamaz",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "privada",
+      "site": "https://uniesamaz.edu.br"
+    },
+    {
+      "id": "esamaz-abaetetuba",
+      "sigla": "ESAMAZ",
+      "nome": "Escola Superior da Amazônia",
+      "cidade": "Abaetetuba",
+      "uf": "PA",
+      "natureza": "privada",
+      "site": "https://www.esamaz.edu.br"
+    },
+    {
+      "id": "facimpa",
+      "sigla": "FACIMPA",
+      "nome": "Faculdade de Ciências Médicas do Pará",
+      "cidade": "Marabá",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "fesar",
+      "sigla": "FESAR",
+      "nome": "Faculdade de Ensino Superior da Amazônia Reunida",
+      "cidade": "Redenção",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-castanhal",
+      "sigla": "Estácio FMEC",
+      "nome": "Faculdade de Medicina Estácio de Castanhal",
+      "cidade": "Castanhal",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "fic-redencao",
+      "sigla": "FIC",
+      "nome": "Faculdade Integrada Carajás",
+      "cidade": "Redenção",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "una-tucurui",
+      "sigla": "UNA",
+      "nome": "Faculdade UNA de Tucuruí",
+      "cidade": "Tucuruí",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "unama-santarem",
+      "sigla": "UNAMA",
+      "nome": "Universidade da Amazônia",
+      "cidade": "Santarém",
+      "uf": "PA",
+      "natureza": "privada"
+    },
+    {
+      "id": "uepa",
+      "sigla": "UEPA",
+      "nome": "Universidade do Estado do Pará",
+      "mantenedora": "Governo do Estado do Pará",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uepa.br"
+    },
+    {
+      "id": "uepa-maraba",
+      "sigla": "UEPA",
+      "nome": "Universidade do Estado do Pará",
+      "mantenedora": "Governo do Estado do Pará",
+      "cidade": "Marabá",
+      "uf": "PA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uepa.br"
+    },
+    {
+      "id": "uepa-santarem",
+      "sigla": "UEPA",
+      "nome": "Universidade do Estado do Pará",
+      "mantenedora": "Governo do Estado do Pará",
+      "cidade": "Santarém",
+      "uf": "PA",
+      "natureza": "publica-estadual",
+      "site": "https://www.uepa.br"
+    },
+    {
+      "id": "ufpa-altamira",
+      "sigla": "UFPA",
+      "nome": "Universidade Federal do Pará",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Altamira",
+      "uf": "PA",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufpa.br"
+    },
+    {
+      "id": "ufpa",
+      "sigla": "UFPA",
+      "nome": "Universidade Federal do Pará",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Belém",
+      "uf": "PA",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufpa.br"
+    },
+    {
+      "id": "afya-paraiba",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas da Paraíba",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Cabedelo",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "unipe",
+      "sigla": "UNIPÊ",
+      "nome": "Centro Universitário de João Pessoa",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifip",
+      "sigla": "UNIFIP",
+      "nome": "Centro Universitário de Patos",
+      "cidade": "Patos",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-campina-grande",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Campina Grande",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifsm",
+      "sigla": "UNIFSM",
+      "nome": "Centro Universitário Santa Maria",
+      "cidade": "Cajazeiras",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacisa",
+      "sigla": "UNIFACISA",
+      "nome": "Centro Universitário UNIFACISA",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "famene",
+      "sigla": "FAMENE",
+      "nome": "Faculdade de Medicina Nova Esperança",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "natureza": "privada"
+    },
+    {
+      "id": "ufpb",
+      "sigla": "UFPB",
+      "nome": "Universidade Federal da Paraíba",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "natureza": "publica-federal",
+      "site": "https://www.ufpb.br"
+    },
+    {
+      "id": "ufcg-cajazeiras",
+      "sigla": "UFCG",
+      "nome": "Universidade Federal de Campina Grande",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Cajazeiras",
+      "uf": "PB",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufcg.edu.br"
+    },
+    {
+      "id": "ufcg",
+      "sigla": "UFCG",
+      "nome": "Universidade Federal de Campina Grande",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufcg.edu.br"
+    },
+    {
+      "id": "afya-garanhuns",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Garanhuns",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Garanhuns",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-jaboatao",
+      "sigla": "Afya",
+      "nome": "Afya Faculdade de Ciências Médicas de Jaboatão",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Jaboatão dos Guararapes",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacol",
+      "sigla": "UNIFACOL",
+      "nome": "Centro Universitário Facol",
+      "cidade": "Vitória de Santo Antão",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-recife",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau",
+      "cidade": "Recife",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-caruaru",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Caruaru",
+      "cidade": "Caruaru",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "asces-unita",
+      "sigla": "ASCES-UNITA",
+      "nome": "Centro Universitário Tabosa de Almeida",
+      "cidade": "Caruaru",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmo",
+      "sigla": "FMO",
+      "nome": "Faculdade de Medicina de Olinda",
+      "cidade": "Olinda",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "fms-arcoverde",
+      "sigla": "FMS",
+      "nome": "Faculdade de Medicina do Sertão",
+      "cidade": "Arcoverde",
+      "uf": "PE",
+      "natureza": "privada",
+      "site": "https://medicinadosertao.com.br"
+    },
+    {
+      "id": "facape",
+      "sigla": "FACAPE",
+      "nome": "Faculdade de Petrolina",
+      "mantenedora": "Autarquia Educacional do Vale do São Francisco (AEVSF)",
+      "cidade": "Petrolina",
+      "uf": "PE",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "fps",
+      "sigla": "FPS",
+      "nome": "Faculdade Pernambucana de Saúde",
+      "cidade": "Recife",
+      "uf": "PE",
+      "natureza": "privada",
+      "site": "https://fps.edu.br"
+    },
+    {
+      "id": "fits-goiana",
+      "sigla": "FITS",
+      "nome": "Faculdade Tiradentes de Goiana",
+      "cidade": "Goiana",
+      "uf": "PE",
+      "natureza": "privada"
+    },
+    {
+      "id": "unicap",
+      "sigla": "UNICAP",
+      "nome": "Universidade Católica de Pernambuco",
+      "cidade": "Recife",
+      "uf": "PE",
+      "natureza": "privada",
+      "site": "https://www.unicap.br"
+    },
+    {
+      "id": "upe-garanhuns",
+      "sigla": "UPE",
+      "nome": "Universidade de Pernambuco",
+      "mantenedora": "Governo do Estado de Pernambuco",
+      "cidade": "Garanhuns",
+      "uf": "PE",
+      "natureza": "publica-estadual",
+      "site": "https://www.upe.br"
+    },
+    {
+      "id": "upe",
+      "sigla": "UPE",
+      "nome": "Universidade de Pernambuco",
+      "mantenedora": "Governo do Estado de Pernambuco",
+      "cidade": "Recife",
+      "uf": "PE",
+      "natureza": "publica-estadual",
+      "site": "https://www.upe.br"
+    },
+    {
+      "id": "upe-serra-talhada",
+      "sigla": "UPE",
+      "nome": "Universidade de Pernambuco",
+      "mantenedora": "Governo do Estado de Pernambuco",
+      "cidade": "Serra Talhada",
+      "uf": "PE",
+      "natureza": "publica-estadual",
+      "site": "https://www.upe.br"
+    },
+    {
+      "id": "ufpe-caruaru",
+      "sigla": "UFPE",
+      "nome": "Universidade Federal de Pernambuco",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Caruaru",
+      "uf": "PE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufpe.br"
+    },
+    {
+      "id": "ufpe",
+      "sigla": "UFPE",
+      "nome": "Universidade Federal de Pernambuco",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Recife",
+      "uf": "PE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufpe.br"
+    },
+    {
+      "id": "univasf",
+      "sigla": "UNIVASF",
+      "nome": "Universidade Federal do Vale do São Francisco",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Petrolina",
+      "uf": "PE",
+      "natureza": "publica-federal",
+      "site": "https://portais.univasf.edu.br"
+    },
+    {
+      "id": "uninassau-teresina",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Teresina",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifsa",
+      "sigla": "UNIFSA",
+      "nome": "Centro Universitário Santo Agostinho",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacid",
+      "sigla": "UNIFACID",
+      "nome": "Centro Universitário Unifacid Wyden",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninovafapi",
+      "sigla": "UNINOVAFAPI",
+      "nome": "Centro Universitário Uninovafapi",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "privada"
+    },
+    {
+      "id": "fahesp",
+      "sigla": "FAHESP/IESVAP",
+      "nome": "Faculdade de Ciências Humanas, Exatas e da Saúde do Piauí",
+      "cidade": "Parnaíba",
+      "uf": "PI",
+      "natureza": "privada"
+    },
+    {
+      "id": "uespi",
+      "sigla": "UESPI",
+      "nome": "Universidade Estadual do Piauí",
+      "mantenedora": "Governo do Estado do Piauí",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "publica-estadual",
+      "site": "https://www.uespi.br"
+    },
+    {
+      "id": "ufdpar",
+      "sigla": "UFDPar",
+      "nome": "Universidade Federal do Delta do Parnaíba",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Parnaíba",
+      "uf": "PI",
+      "natureza": "publica-federal",
+      "site": "https://ufdpar.edu.br"
+    },
+    {
+      "id": "ufpi-picos",
+      "sigla": "UFPI",
+      "nome": "Universidade Federal do Piauí",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Picos",
+      "uf": "PI",
+      "natureza": "publica-federal",
+      "site": "https://ufpi.edu.br"
+    },
+    {
+      "id": "ufpi",
+      "sigla": "UFPI",
+      "nome": "Universidade Federal do Piauí",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Teresina",
+      "uf": "PI",
+      "natureza": "publica-federal",
+      "site": "https://ufpi.edu.br"
+    },
+    {
+      "id": "campo-real",
+      "sigla": "Campo Real",
+      "nome": "Centro Universitário Campo Real",
+      "cidade": "Guarapuava",
+      "uf": "PR",
+      "natureza": "privada"
+    },
+    {
+      "id": "unidep",
+      "sigla": "UNIDEP",
+      "nome": "Centro Universitário de Pato Branco",
+      "cidade": "Pato Branco",
+      "uf": "PR",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifateb",
+      "sigla": "UNIFATEB",
+      "nome": "Centro Universitário de Telêmaco Borba",
+      "cidade": "Telêmaco Borba",
+      "uf": "PR",
+      "natureza": "privada"
+    },
+    {
+      "id": "fag",
+      "sigla": "FAG",
+      "nome": "Centro Universitário Fundação Assis Gurgacz",
+      "cidade": "Cascavel",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.fag.edu.br"
+    },
+    {
+      "id": "uninga",
+      "sigla": "UNINGÁ",
+      "nome": "Centro Universitário Ingá",
+      "cidade": "Maringá",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.uninga.br"
+    },
+    {
+      "id": "integrado",
+      "sigla": "Integrado",
+      "nome": "Centro Universitário Integrado",
+      "cidade": "Campo Mourão",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.grupointegrado.br"
+    },
+    {
+      "id": "univel",
+      "sigla": "UNIVEL",
+      "nome": "Centro Universitário Univel",
+      "cidade": "Cascavel",
+      "uf": "PR",
+      "natureza": "privada"
+    },
+    {
+      "id": "fapi",
+      "sigla": "FAPI",
+      "nome": "Faculdade de Pinhais",
+      "cidade": "Pinhais",
+      "uf": "PR",
+      "natureza": "privada"
+    },
+    {
+      "id": "fempar",
+      "sigla": "FEMPAR",
+      "nome": "Faculdade Evangélica Mackenzie do Paraná",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://fempar.edu.br"
+    },
+    {
+      "id": "fpp",
+      "sigla": "FPP",
+      "nome": "Faculdades Pequeno Príncipe",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://faculdadespequenoprincipe.edu.br"
+    },
+    {
+      "id": "pucpr",
+      "sigla": "PUCPR",
+      "nome": "Pontifícia Universidade Católica do Paraná",
+      "mantenedora": "Associação Paranaense de Cultura (APC)",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.pucpr.br"
+    },
+    {
+      "id": "pucpr-londrina",
+      "sigla": "PUCPR",
+      "nome": "Pontifícia Universidade Católica do Paraná",
+      "mantenedora": "Associação Paranaense de Cultura (APC)",
+      "cidade": "Londrina",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.pucpr.br"
+    },
+    {
+      "id": "unicesumar",
+      "sigla": "UNICESUMAR",
+      "nome": "Universidade Cesumar",
+      "cidade": "Maringá",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.unicesumar.edu.br"
+    },
+    {
+      "id": "uel",
+      "sigla": "UEL",
+      "nome": "Universidade Estadual de Londrina",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Londrina",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://portal.uel.br"
+    },
+    {
+      "id": "uem",
+      "sigla": "UEM",
+      "nome": "Universidade Estadual de Maringá",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Maringá",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://www.uem.br"
+    },
+    {
+      "id": "uepg",
+      "sigla": "UEPG",
+      "nome": "Universidade Estadual de Ponta Grossa",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Ponta Grossa",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://www.uepg.br"
+    },
+    {
+      "id": "unicentro",
+      "sigla": "UNICENTRO",
+      "nome": "Universidade Estadual do Centro-Oeste",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Guarapuava",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://www.unicentro.br"
+    },
+    {
+      "id": "unioeste",
+      "sigla": "UNIOESTE",
+      "nome": "Universidade Estadual do Oeste do Paraná",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Cascavel",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://www.unioeste.br"
+    },
+    {
+      "id": "unioeste-francisco-beltrao",
+      "sigla": "UNIOESTE",
+      "nome": "Universidade Estadual do Oeste do Paraná",
+      "mantenedora": "Governo do Estado do Paraná",
+      "cidade": "Francisco Beltrão",
+      "uf": "PR",
+      "natureza": "publica-estadual",
+      "site": "https://www.unioeste.br"
+    },
+    {
+      "id": "unila",
+      "sigla": "UNILA",
+      "nome": "Universidade Federal da Integração Latino-Americana",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Foz do Iguaçu",
+      "uf": "PR",
+      "natureza": "publica-federal",
+      "site": "https://portal.unila.edu.br"
+    },
+    {
+      "id": "ufpr",
+      "sigla": "UFPR",
+      "nome": "Universidade Federal do Paraná",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "natureza": "publica-federal",
+      "site": "https://ufpr.br"
+    },
+    {
+      "id": "ufpr-toledo",
+      "sigla": "UFPR",
+      "nome": "Universidade Federal do Paraná",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Toledo",
+      "uf": "PR",
+      "natureza": "publica-federal",
+      "site": "https://ufpr.br"
+    },
+    {
+      "id": "unipar",
+      "sigla": "UNIPAR",
+      "nome": "Universidade Paranaense",
+      "cidade": "Umuarama",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.unipar.br"
+    },
+    {
+      "id": "up",
+      "sigla": "UP",
+      "nome": "Universidade Positivo",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "natureza": "privada",
+      "site": "https://www.up.edu.br"
+    },
+    {
+      "id": "unifaa",
+      "sigla": "UNIFAA",
+      "nome": "Centro Universitário de Valença",
+      "mantenedora": "Fundação Educacional Dom André Arcoverde",
+      "cidade": "Valença",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifoa",
+      "sigla": "UniFOA",
+      "nome": "Centro Universitário de Volta Redonda",
+      "mantenedora": "Fundação Oswaldo Aranha",
+      "cidade": "Volta Redonda",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "redentor-itaperuna",
+      "sigla": "UniREDENTOR",
+      "nome": "Centro Universitário Redentor",
+      "cidade": "Itaperuna",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifeso",
+      "sigla": "UNIFESO",
+      "nome": "Centro Universitário Serra dos Órgãos",
+      "mantenedora": "Fundação Educacional Serra dos Órgãos (FESO)",
+      "cidade": "Teresópolis",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://www.unifeso.edu.br"
+    },
+    {
+      "id": "uniabeu",
+      "sigla": "UNIABEU",
+      "nome": "Centro Universitário UNIABEU",
+      "cidade": "Belford Roxo",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "souza-marques",
+      "sigla": "EMSM",
+      "nome": "Escola de Medicina Souza Marques",
+      "mantenedora": "Fundação Técnico-Educacional Souza Marques",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmc-campos",
+      "sigla": "FMC",
+      "nome": "Faculdade de Medicina de Campos",
+      "mantenedora": "Fundação Benedito Pereira Nunes",
+      "cidade": "Campos dos Goytacazes",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmp-petropolis",
+      "sigla": "FMP",
+      "nome": "Faculdade de Medicina de Petrópolis (Centro Universitário Arthur Sá Earp Neto – UNIFASE)",
+      "cidade": "Petrópolis",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "famesc",
+      "sigla": "FAMESC",
+      "nome": "Faculdade Metropolitana São Carlos",
+      "cidade": "Bom Jesus do Itabapoana",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "ucb-rio-de-janeiro",
+      "sigla": "UCB",
+      "nome": "Universidade Castelo Branco",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "univassouras",
+      "sigla": "Univassouras",
+      "nome": "Universidade de Vassouras",
+      "mantenedora": "Fundação Educacional Severino Sombra",
+      "cidade": "Vassouras",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://www.univassouras.edu.br"
+    },
+    {
+      "id": "uerj-cabo-frio",
+      "sigla": "UERJ",
+      "nome": "Universidade do Estado do Rio de Janeiro",
+      "mantenedora": "Governo do Estado do Rio de Janeiro",
+      "cidade": "Cabo Frio",
+      "uf": "RJ",
+      "natureza": "publica-estadual",
+      "site": "https://www.uerj.br"
+    },
+    {
+      "id": "uerj",
+      "sigla": "UERJ",
+      "nome": "Universidade do Estado do Rio de Janeiro",
+      "mantenedora": "Governo do Estado do Rio de Janeiro",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "publica-estadual",
+      "site": "https://www.uerj.br"
+    },
+    {
+      "id": "unigranrio",
+      "sigla": "UNIGRANRIO",
+      "nome": "Universidade do Grande Rio Professor José de Souza Herdy",
+      "cidade": "Duque de Caxias",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://unigranrio.com.br"
+    },
+    {
+      "id": "unigranrio-rio-de-janeiro",
+      "sigla": "UNIGRANRIO",
+      "nome": "Universidade do Grande Rio Professor José de Souza Herdy",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://unigranrio.com.br"
+    },
+    {
+      "id": "unesa-angra-dos-reis",
+      "sigla": "UNESA",
+      "nome": "Universidade Estácio de Sá",
+      "cidade": "Angra dos Reis",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://estacio.br"
+    },
+    {
+      "id": "unesa",
+      "sigla": "UNESA",
+      "nome": "Universidade Estácio de Sá",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://estacio.br"
+    },
+    {
+      "id": "unirio",
+      "sigla": "UNIRIO",
+      "nome": "Universidade Federal do Estado do Rio de Janeiro",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "publica-federal",
+      "site": "https://www.unirio.br"
+    },
+    {
+      "id": "ufrj-macae",
+      "sigla": "UFRJ",
+      "nome": "Universidade Federal do Rio de Janeiro",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Macaé",
+      "uf": "RJ",
+      "natureza": "publica-federal",
+      "site": "https://ufrj.br"
+    },
+    {
+      "id": "ufrj",
+      "sigla": "UFRJ",
+      "nome": "Universidade Federal do Rio de Janeiro",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "publica-federal",
+      "site": "https://ufrj.br"
+    },
+    {
+      "id": "uff",
+      "sigla": "UFF",
+      "nome": "Universidade Federal Fluminense",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Niterói",
+      "uf": "RJ",
+      "natureza": "publica-federal",
+      "site": "https://www.uff.br"
+    },
+    {
+      "id": "unig-itaperuna",
+      "sigla": "UNIG",
+      "nome": "Universidade Iguaçu",
+      "cidade": "Itaperuna",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "unig",
+      "sigla": "UNIG",
+      "nome": "Universidade Iguaçu",
+      "cidade": "Nova Iguaçu",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "universo",
+      "sigla": "UNIVERSO",
+      "nome": "Universidade Salgado de Oliveira",
+      "cidade": "São Gonçalo",
+      "uf": "RJ",
+      "natureza": "privada"
+    },
+    {
+      "id": "uva",
+      "sigla": "UVA",
+      "nome": "Universidade Veiga de Almeida",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "natureza": "privada",
+      "site": "https://www.uva.br"
+    },
+    {
+      "id": "facene-rn",
+      "sigla": "FACENE/RN",
+      "nome": "Faculdade de Enfermagem Nova Esperança de Mossoró",
+      "cidade": "Mossoró",
+      "uf": "RN",
+      "natureza": "privada"
+    },
+    {
+      "id": "uern",
+      "sigla": "UERN",
+      "nome": "Universidade do Estado do Rio Grande do Norte",
+      "mantenedora": "Governo do Estado do Rio Grande do Norte",
+      "cidade": "Mossoró",
+      "uf": "RN",
+      "natureza": "publica-estadual",
+      "site": "https://portal.uern.br"
+    },
+    {
+      "id": "ufrn-caico",
+      "sigla": "UFRN",
+      "nome": "Universidade Federal do Rio Grande do Norte",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Caicó",
+      "uf": "RN",
+      "natureza": "publica-federal",
+      "site": "https://www.ufrn.br"
+    },
+    {
+      "id": "ufrn",
+      "sigla": "UFRN",
+      "nome": "Universidade Federal do Rio Grande do Norte",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Natal",
+      "uf": "RN",
+      "natureza": "publica-federal",
+      "site": "https://www.ufrn.br"
+    },
+    {
+      "id": "ufersa",
+      "sigla": "UFERSA",
+      "nome": "Universidade Federal Rural do Semi-Árido",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Mossoró",
+      "uf": "RN",
+      "natureza": "publica-federal",
+      "site": "https://ufersa.edu.br"
+    },
+    {
+      "id": "unp",
+      "sigla": "UnP",
+      "nome": "Universidade Potiguar",
+      "cidade": "Natal",
+      "uf": "RN",
+      "natureza": "privada",
+      "site": "https://www.unp.br"
+    },
+    {
+      "id": "fimca",
+      "sigla": "FIMCA",
+      "nome": "Centro Universitário Aparício Carvalho",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-cacoal",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Cacoal",
+      "cidade": "Cacoal",
+      "uf": "RO",
+      "natureza": "privada"
+    },
+    {
+      "id": "uninassau-vilhena",
+      "sigla": "UNINASSAU",
+      "nome": "Centro Universitário Maurício de Nassau de Vilhena",
+      "cidade": "Vilhena",
+      "uf": "RO",
+      "natureza": "privada"
+    },
+    {
+      "id": "sao-lucas",
+      "sigla": "São Lucas",
+      "nome": "Centro Universitário São Lucas",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "natureza": "privada"
+    },
+    {
+      "id": "sao-lucas-ji-parana",
+      "sigla": "São Lucas",
+      "nome": "Centro Universitário São Lucas Ji-Paraná",
+      "cidade": "Ji-Paraná",
+      "uf": "RO",
+      "natureza": "privada"
+    },
+    {
+      "id": "unir",
+      "sigla": "UNIR",
+      "nome": "Fundação Universidade Federal de Rondônia",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "natureza": "publica-federal",
+      "site": "https://www.unir.br"
+    },
+    {
+      "id": "uerr",
+      "sigla": "UERR",
+      "nome": "Universidade Estadual de Roraima",
+      "mantenedora": "Governo do Estado de Roraima",
+      "cidade": "Boa Vista",
+      "uf": "RR",
+      "natureza": "publica-estadual",
+      "site": "https://www.uerr.edu.br"
+    },
+    {
+      "id": "ufrr",
+      "sigla": "UFRR",
+      "nome": "Universidade Federal de Roraima",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Boa Vista",
+      "uf": "RR",
+      "natureza": "publica-federal",
+      "site": "https://ufrr.br"
+    },
+    {
+      "id": "atitus",
+      "sigla": "Atitus",
+      "nome": "Atitus Educação",
+      "cidade": "Passo Fundo",
+      "uf": "RS",
+      "natureza": "privada",
+      "site": "https://www.atitus.edu.br"
+    },
+    {
+      "id": "cesuca",
+      "sigla": "CESUCA",
+      "nome": "Centro Universitário CESUCA",
+      "cidade": "Cachoeirinha",
+      "uf": "RS",
+      "natureza": "privada"
+    },
+    {
+      "id": "fsg",
+      "sigla": "FSG",
+      "nome": "Centro Universitário da Serra Gaúcha",
+      "cidade": "Caxias do Sul",
+      "uf": "RS",
+      "natureza": "privada",
+      "site": "https://www.fsg.edu.br"
+    },
+    {
+      "id": "pucrs",
+      "sigla": "PUCRS",
+      "nome": "Pontifícia Universidade Católica do Rio Grande do Sul",
+      "mantenedora": "União Brasileira de Educação e Assistência (UBEA)",
+      "cidade": "Porto Alegre",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.pucrs.br"
+    },
+    {
+      "id": "ucpel",
+      "sigla": "UCPel",
+      "nome": "Universidade Católica de Pelotas",
+      "mantenedora": "Sociedade Pelotense de Assistência e Cultura",
+      "cidade": "Pelotas",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://ucpel.edu.br"
+    },
+    {
+      "id": "ucs",
+      "sigla": "UCS",
+      "nome": "Universidade de Caxias do Sul",
+      "mantenedora": "Fundação Universidade de Caxias do Sul",
+      "cidade": "Caxias do Sul",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.ucs.br"
+    },
+    {
+      "id": "upf",
+      "sigla": "UPF",
+      "nome": "Universidade de Passo Fundo",
+      "mantenedora": "Fundação Universidade de Passo Fundo",
+      "cidade": "Passo Fundo",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.upf.br"
+    },
+    {
+      "id": "unisc",
+      "sigla": "UNISC",
+      "nome": "Universidade de Santa Cruz do Sul",
+      "mantenedora": "Associação Pró-Ensino em Santa Cruz do Sul (APESC)",
+      "cidade": "Santa Cruz do Sul",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.unisc.br"
+    },
+    {
+      "id": "unisinos",
+      "sigla": "UNISINOS",
+      "nome": "Universidade do Vale do Rio dos Sinos",
+      "mantenedora": "Associação Antônio Vieira (ASAV)",
+      "cidade": "São Leopoldo",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.unisinos.br"
+    },
+    {
+      "id": "univates",
+      "sigla": "UNIVATES",
+      "nome": "Universidade do Vale do Taquari",
+      "cidade": "Lajeado",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.univates.br"
+    },
+    {
+      "id": "uffs-passo-fundo",
+      "sigla": "UFFS",
+      "nome": "Universidade Federal da Fronteira Sul",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Passo Fundo",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://www.uffs.edu.br"
+    },
+    {
+      "id": "ufcspa",
+      "sigla": "UFCSPA",
+      "nome": "Universidade Federal de Ciências da Saúde de Porto Alegre",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Porto Alegre",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://ufcspa.edu.br"
+    },
+    {
+      "id": "ufpel",
+      "sigla": "UFPel",
+      "nome": "Universidade Federal de Pelotas",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Pelotas",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://portal.ufpel.edu.br"
+    },
+    {
+      "id": "ufsm",
+      "sigla": "UFSM",
+      "nome": "Universidade Federal de Santa Maria",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Santa Maria",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://www.ufsm.br"
+    },
+    {
+      "id": "unipampa",
+      "sigla": "UNIPAMPA",
+      "nome": "Universidade Federal do Pampa",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Uruguaiana",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://unipampa.edu.br"
+    },
+    {
+      "id": "furg",
+      "sigla": "FURG",
+      "nome": "Universidade Federal do Rio Grande",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Rio Grande",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://www.furg.br"
+    },
+    {
+      "id": "ufrgs",
+      "sigla": "UFRGS",
+      "nome": "Universidade Federal do Rio Grande do Sul",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Porto Alegre",
+      "uf": "RS",
+      "natureza": "publica-federal",
+      "site": "https://www.ufrgs.br"
+    },
+    {
+      "id": "feevale",
+      "sigla": "FEEVALE",
+      "nome": "Universidade Feevale",
+      "mantenedora": "Associação Pró-Ensino Superior em Novo Hamburgo (ASPEUR)",
+      "cidade": "Novo Hamburgo",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.feevale.br"
+    },
+    {
+      "id": "ufn",
+      "sigla": "UFN",
+      "nome": "Universidade Franciscana",
+      "cidade": "Santa Maria",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.ufn.edu.br"
+    },
+    {
+      "id": "ulbra",
+      "sigla": "ULBRA",
+      "nome": "Universidade Luterana do Brasil",
+      "cidade": "Canoas",
+      "uf": "RS",
+      "natureza": "privada",
+      "site": "https://www.ulbra.br"
+    },
+    {
+      "id": "unijui",
+      "sigla": "UNIJUÍ",
+      "nome": "Universidade Regional do Noroeste do Estado do Rio Grande do Sul",
+      "mantenedora": "Fundação de Integração, Desenvolvimento e Educação do Noroeste do Estado (FIDENE)",
+      "cidade": "Ijuí",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.unijui.edu.br"
+    },
+    {
+      "id": "uri-erechim",
+      "sigla": "URI",
+      "nome": "Universidade Regional Integrada do Alto Uruguai e das Missões",
+      "cidade": "Erechim",
+      "uf": "RS",
+      "natureza": "comunitaria",
+      "site": "https://www.uricer.edu.br"
+    },
+    {
+      "id": "unifebe",
+      "sigla": "UNIFEBE",
+      "nome": "Centro Universitário de Brusque",
+      "mantenedora": "Fundação Educacional de Brusque",
+      "cidade": "Brusque",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unifebe.edu.br"
+    },
+    {
+      "id": "estacio-jaragua-do-sul",
+      "sigla": "Estácio",
+      "nome": "Centro Universitário Estácio de Santa Catarina",
+      "cidade": "Jaraguá do Sul",
+      "uf": "SC",
+      "natureza": "privada"
+    },
+    {
+      "id": "unidavi",
+      "sigla": "UNIDAVI",
+      "nome": "Centro Universitário para o Desenvolvimento do Alto Vale do Itajaí",
+      "cidade": "Rio do Sul",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unidavi.edu.br"
+    },
+    {
+      "id": "censupeg",
+      "sigla": "CENSUPEG",
+      "nome": "Faculdade Censupeg",
+      "cidade": "Joinville",
+      "uf": "SC",
+      "natureza": "privada",
+      "site": "https://censupeg.com.br"
+    },
+    {
+      "id": "life-unic",
+      "sigla": "Life Unic",
+      "nome": "Faculdade Life Unic Education",
+      "cidade": "Joinville",
+      "uf": "SC",
+      "natureza": "privada"
+    },
+    {
+      "id": "uniarp",
+      "sigla": "UNIARP",
+      "nome": "Universidade Alto Vale do Rio do Peixe",
+      "cidade": "Caçador",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.uniarp.edu.br"
+    },
+    {
+      "id": "unochapeco",
+      "sigla": "Unochapecó",
+      "nome": "Universidade Comunitária da Região de Chapecó",
+      "mantenedora": "Fundação Universitária do Desenvolvimento do Oeste (Fundeste)",
+      "cidade": "Chapecó",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unochapeco.edu.br"
+    },
+    {
+      "id": "univille",
+      "sigla": "UNIVILLE",
+      "nome": "Universidade da Região de Joinville",
+      "mantenedora": "Fundação Educacional da Região de Joinville",
+      "cidade": "Joinville",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.univille.edu.br"
+    },
+    {
+      "id": "unc-concordia",
+      "sigla": "UNC",
+      "nome": "Universidade do Contestado",
+      "mantenedora": "Fundação Universidade do Contestado",
+      "cidade": "Concórdia",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unc.br"
+    },
+    {
+      "id": "unc-mafra",
+      "sigla": "UNC",
+      "nome": "Universidade do Contestado",
+      "mantenedora": "Fundação Universidade do Contestado",
+      "cidade": "Mafra",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unc.br"
+    },
+    {
+      "id": "unc-porto-uniao",
+      "sigla": "UNC",
+      "nome": "Universidade do Contestado",
+      "mantenedora": "Fundação Universidade do Contestado",
+      "cidade": "Porto União",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unc.br"
+    },
+    {
+      "id": "unesc",
+      "sigla": "UNESC",
+      "nome": "Universidade do Extremo Sul Catarinense",
+      "mantenedora": "Fundação Educacional de Criciúma",
+      "cidade": "Criciúma",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unesc.net"
+    },
+    {
+      "id": "unoesc",
+      "sigla": "UNOESC",
+      "nome": "Universidade do Oeste de Santa Catarina",
+      "mantenedora": "Fundação Universidade do Oeste de Santa Catarina",
+      "cidade": "Joaçaba",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.unoesc.edu.br"
+    },
+    {
+      "id": "uniplac",
+      "sigla": "UNIPLAC",
+      "nome": "Universidade do Planalto Catarinense",
+      "cidade": "Lages",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.uniplaclages.edu.br"
+    },
+    {
+      "id": "unisul",
+      "sigla": "UNISUL",
+      "nome": "Universidade do Sul de Santa Catarina",
+      "cidade": "Palhoça",
+      "uf": "SC",
+      "natureza": "privada",
+      "site": "https://www.unisul.br"
+    },
+    {
+      "id": "unisul-tubarao",
+      "sigla": "UNISUL",
+      "nome": "Universidade do Sul de Santa Catarina",
+      "cidade": "Tubarão",
+      "uf": "SC",
+      "natureza": "privada",
+      "site": "https://www.unisul.br"
+    },
+    {
+      "id": "univali",
+      "sigla": "UNIVALI",
+      "nome": "Universidade do Vale do Itajaí",
+      "mantenedora": "Fundação Univali",
+      "cidade": "Itajaí",
+      "uf": "SC",
+      "natureza": "comunitaria",
+      "site": "https://www.univali.br"
+    },
+    {
+      "id": "uffs",
+      "sigla": "UFFS",
+      "nome": "Universidade Federal da Fronteira Sul",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Chapecó",
+      "uf": "SC",
+      "natureza": "publica-federal",
+      "site": "https://www.uffs.edu.br"
+    },
+    {
+      "id": "ufsc-ararangua",
+      "sigla": "UFSC",
+      "nome": "Universidade Federal de Santa Catarina",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Araranguá",
+      "uf": "SC",
+      "natureza": "publica-federal",
+      "site": "https://ufsc.br"
+    },
+    {
+      "id": "ufsc-curitibanos",
+      "sigla": "UFSC",
+      "nome": "Universidade Federal de Santa Catarina",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Curitibanos",
+      "uf": "SC",
+      "natureza": "publica-federal",
+      "site": "https://ufsc.br"
+    },
+    {
+      "id": "ufsc",
+      "sigla": "UFSC",
+      "nome": "Universidade Federal de Santa Catarina",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Florianópolis",
+      "uf": "SC",
+      "natureza": "publica-federal",
+      "site": "https://ufsc.br"
+    },
+    {
+      "id": "furb",
+      "sigla": "FURB",
+      "nome": "Universidade Regional de Blumenau",
+      "mantenedora": "Fundação Universidade Regional de Blumenau",
+      "cidade": "Blumenau",
+      "uf": "SC",
+      "natureza": "publica-municipal",
+      "site": "https://www.furb.br"
+    },
+    {
+      "id": "ufs",
+      "sigla": "UFS",
+      "nome": "Universidade Federal de Sergipe",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Aracaju",
+      "uf": "SE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufs.br"
+    },
+    {
+      "id": "ufs-lagarto",
+      "sigla": "UFS",
+      "nome": "Universidade Federal de Sergipe",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Lagarto",
+      "uf": "SE",
+      "natureza": "publica-federal",
+      "site": "https://www.ufs.br"
+    },
+    {
+      "id": "unit",
+      "sigla": "UNIT",
+      "nome": "Universidade Tiradentes",
+      "cidade": "Aracaju",
+      "uf": "SE",
+      "natureza": "privada",
+      "site": "https://www.unit.br"
+    },
+    {
+      "id": "unit-estancia",
+      "sigla": "UNIT",
+      "nome": "Universidade Tiradentes",
+      "cidade": "Estância",
+      "uf": "SE",
+      "natureza": "privada",
+      "site": "https://www.unit.br"
+    },
+    {
+      "id": "barao-de-maua",
+      "sigla": "CBM",
+      "nome": "Centro Universitário Barão de Mauá",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.baraodemaua.br"
+    },
+    {
+      "id": "unisalesiano",
+      "sigla": "UniSALESIANO",
+      "nome": "Centro Universitário Católico Salesiano Auxilium",
+      "cidade": "Araçatuba",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "fam",
+      "sigla": "FAM",
+      "nome": "Centro Universitário das Américas",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifae",
+      "sigla": "UNIFAE",
+      "nome": "Centro Universitário das Faculdades Associadas de Ensino",
+      "cidade": "São João da Boa Vista",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifai",
+      "sigla": "UniFAI",
+      "nome": "Centro Universitário de Adamantina",
+      "cidade": "Adamantina",
+      "uf": "SP",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "unifunec",
+      "sigla": "UNIFUNEC",
+      "nome": "Centro Universitário de Santa Fé do Sul",
+      "cidade": "Santa Fé do Sul",
+      "uf": "SP",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "unifev",
+      "sigla": "UNIFEV",
+      "nome": "Centro Universitário de Votuporanga",
+      "mantenedora": "Fundação Educacional de Votuporanga",
+      "cidade": "Votuporanga",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unifev.edu.br"
+    },
+    {
+      "id": "eniac",
+      "sigla": "ENIAC",
+      "nome": "Centro Universitário ENIAC",
+      "cidade": "Guarulhos",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "estacio-ribeirao-preto",
+      "sigla": "Estácio",
+      "nome": "Centro Universitário Estácio de Ribeirão Preto",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmabc",
+      "sigla": "FMABC",
+      "nome": "Centro Universitário FMABC",
+      "mantenedora": "Fundação do ABC",
+      "cidade": "Santo André",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.fmabc.br"
+    },
+    {
+      "id": "unifunvic",
+      "sigla": "UNIFUNVIC",
+      "nome": "Centro Universitário FUNVIC",
+      "cidade": "Pindamonhangaba",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "unilus",
+      "sigla": "UNILUS",
+      "nome": "Centro Universitário Lusíada",
+      "cidade": "Santos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unilus.edu.br"
+    },
+    {
+      "id": "unimax",
+      "sigla": "UniMAX",
+      "nome": "Centro Universitário Max Planck",
+      "cidade": "Indaiatuba",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "unifacef",
+      "sigla": "Uni-FACEF",
+      "nome": "Centro Universitário Municipal de Franca",
+      "cidade": "Franca",
+      "uf": "SP",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "ceunsp",
+      "sigla": "CEUNSP",
+      "nome": "Centro Universitário Nossa Senhora do Patrocínio",
+      "cidade": "Itu",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.ceunsp.edu.br"
+    },
+    {
+      "id": "unifipa",
+      "sigla": "UNIFIPA",
+      "nome": "Centro Universitário Padre Albino",
+      "mantenedora": "Fundação Padre Albino",
+      "cidade": "Catanduva",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unifipa.com.br"
+    },
+    {
+      "id": "sao-camilo",
+      "sigla": "São Camilo",
+      "nome": "Centro Universitário São Camilo",
+      "mantenedora": "União Social Camiliana",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://saocamilo-sp.br"
+    },
+    {
+      "id": "unifsp",
+      "sigla": "UniFSP",
+      "nome": "Centro Universitário Sudoeste Paulista",
+      "cidade": "Avaré",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "claretiano",
+      "sigla": "Claretiano",
+      "nome": "Claretiano – Centro Universitário",
+      "cidade": "Rio Claro",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://claretiano.edu.br"
+    },
+    {
+      "id": "faceres",
+      "sigla": "FACERES",
+      "nome": "Faculdade Ceres",
+      "cidade": "São José do Rio Preto",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "facisb",
+      "sigla": "FACISB",
+      "nome": "Faculdade de Ciências da Saúde de Barretos Dr. Paulo Prata",
+      "cidade": "Barretos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://facisb.edu.br"
+    },
+    {
+      "id": "fcmscsp",
+      "sigla": "FCMSCSP",
+      "nome": "Faculdade de Ciências Médicas da Santa Casa de São Paulo",
+      "mantenedora": "Fundação Arnaldo Vieira de Carvalho",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://fcmsantacasasp.edu.br"
+    },
+    {
+      "id": "humanitas",
+      "sigla": "HUMANITAS",
+      "nome": "Faculdade de Ciências Médicas de São José dos Campos – Humanitas",
+      "cidade": "São José dos Campos",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "fafipe-penapolis",
+      "sigla": "FAFIPE",
+      "nome": "Faculdade de Filosofia, Ciências e Letras de Penápolis",
+      "mantenedora": "Fundação Educacional de Penápolis (FUNEPE)",
+      "cidade": "Penápolis",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "fmj",
+      "sigla": "FMJ",
+      "nome": "Faculdade de Medicina de Jundiaí",
+      "mantenedora": "Faculdade de Medicina de Jundiaí (autarquia municipal)",
+      "cidade": "Jundiaí",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://www.fmj.br"
+    },
+    {
+      "id": "famema",
+      "sigla": "FAMEMA",
+      "nome": "Faculdade de Medicina de Marília",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "Marília",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.famema.br"
+    },
+    {
+      "id": "famerp",
+      "sigla": "FAMERP",
+      "nome": "Faculdade de Medicina de São José do Rio Preto",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "São José do Rio Preto",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.famerp.br"
+    },
+    {
+      "id": "einstein",
+      "sigla": "FICSAE",
+      "nome": "Faculdade Israelita de Ciências da Saúde Albert Einstein",
+      "mantenedora": "Sociedade Beneficente Israelita Brasileira Albert Einstein",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://ensino.einstein.br"
+    },
+    {
+      "id": "fmpfm",
+      "sigla": "FMPFM",
+      "nome": "Faculdade Municipal Professor Franco Montoro",
+      "cidade": "Mogi Guaçu",
+      "uf": "SP",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "fasm",
+      "sigla": "FASM",
+      "nome": "Faculdade Santa Marcelina",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.santamarcelina.edu.br"
+    },
+    {
+      "id": "slmandic-araras",
+      "sigla": "SLMANDIC",
+      "nome": "Faculdade São Leopoldo Mandic",
+      "cidade": "Araras",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.slmandic.edu.br"
+    },
+    {
+      "id": "slmandic",
+      "sigla": "SLMANDIC",
+      "nome": "Faculdade São Leopoldo Mandic",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.slmandic.edu.br"
+    },
+    {
+      "id": "slmandic-limeira",
+      "sigla": "SLMANDIC",
+      "nome": "Faculdade São Leopoldo Mandic",
+      "cidade": "Limeira",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.slmandic.edu.br"
+    },
+    {
+      "id": "unifadra",
+      "sigla": "UNIFADRA",
+      "nome": "Faculdades de Dracena",
+      "cidade": "Dracena",
+      "uf": "SP",
+      "natureza": "publica-municipal"
+    },
+    {
+      "id": "imesa",
+      "sigla": "IMESA",
+      "nome": "Instituto Municipal de Ensino Superior de Assis",
+      "mantenedora": "Fundação Educacional do Município de Assis (FEMA)",
+      "cidade": "Assis",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://www.fema.edu.br"
+    },
+    {
+      "id": "puc-campinas",
+      "sigla": "PUC-Campinas",
+      "nome": "Pontifícia Universidade Católica de Campinas",
+      "mantenedora": "Sociedade Campineira de Educação e Instrução",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.puc-campinas.edu.br"
+    },
+    {
+      "id": "pucsp-sorocaba",
+      "sigla": "PUC-SP",
+      "nome": "Pontifícia Universidade Católica de São Paulo",
+      "mantenedora": "Fundação São Paulo",
+      "cidade": "Sorocaba",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.pucsp.br"
+    },
+    {
+      "id": "unilago",
+      "sigla": "UNILAGO",
+      "nome": "União das Faculdades dos Grandes Lagos",
+      "cidade": "São José do Rio Preto",
+      "uf": "SP",
+      "natureza": "privada"
+    },
+    {
+      "id": "uam-piracicaba",
+      "sigla": "UAM",
+      "nome": "Universidade Anhembi Morumbi",
+      "cidade": "Piracicaba",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://portal.anhembi.br"
+    },
+    {
+      "id": "uam-sao-jose-dos-campos",
+      "sigla": "UAM",
+      "nome": "Universidade Anhembi Morumbi",
+      "cidade": "São José dos Campos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://portal.anhembi.br"
+    },
+    {
+      "id": "uam",
+      "sigla": "UAM",
+      "nome": "Universidade Anhembi Morumbi",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://portal.anhembi.br"
+    },
+    {
+      "id": "ub-fernandopolis",
+      "sigla": "UB",
+      "nome": "Universidade Brasil",
+      "cidade": "Fernandópolis",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.universidadebrasil.edu.br"
+    },
+    {
+      "id": "unicid",
+      "sigla": "UNICID",
+      "nome": "Universidade Cidade de São Paulo",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unicid.edu.br"
+    },
+    {
+      "id": "uniara",
+      "sigla": "UNIARA",
+      "nome": "Universidade de Araraquara",
+      "cidade": "Araraquara",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uniara.com.br"
+    },
+    {
+      "id": "unifran",
+      "sigla": "UNIFRAN",
+      "nome": "Universidade de Franca",
+      "cidade": "Franca",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unifran.edu.br"
+    },
+    {
+      "id": "unimar",
+      "sigla": "UNIMAR",
+      "nome": "Universidade de Marília",
+      "cidade": "Marília",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unimar.br"
+    },
+    {
+      "id": "umc",
+      "sigla": "UMC",
+      "nome": "Universidade de Mogi das Cruzes",
+      "cidade": "Mogi das Cruzes",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.umc.br"
+    },
+    {
+      "id": "unaerp-guaruja",
+      "sigla": "UNAERP",
+      "nome": "Universidade de Ribeirão Preto",
+      "cidade": "Guarujá",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unaerp.br"
+    },
+    {
+      "id": "unaerp",
+      "sigla": "UNAERP",
+      "nome": "Universidade de Ribeirão Preto",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unaerp.br"
+    },
+    {
+      "id": "usp-bauru",
+      "sigla": "USP",
+      "nome": "Universidade de São Paulo",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "Bauru",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.usp.br"
+    },
+    {
+      "id": "usp-ribeirao-preto",
+      "sigla": "USP",
+      "nome": "Universidade de São Paulo",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.fmrp.usp.br"
+    },
+    {
+      "id": "usp",
+      "sigla": "USP",
+      "nome": "Universidade de São Paulo",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.fm.usp.br"
+    },
+    {
+      "id": "unitau-caraguatatuba",
+      "sigla": "UNITAU",
+      "nome": "Universidade de Taubaté",
+      "mantenedora": "Universidade de Taubaté (autarquia municipal)",
+      "cidade": "Caraguatatuba",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://unitau.br"
+    },
+    {
+      "id": "unitau",
+      "sigla": "UNITAU",
+      "nome": "Universidade de Taubaté",
+      "mantenedora": "Universidade de Taubaté (autarquia municipal)",
+      "cidade": "Taubaté",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://unitau.br"
+    },
+    {
+      "id": "unoeste-guaruja",
+      "sigla": "UNOESTE",
+      "nome": "Universidade do Oeste Paulista",
+      "cidade": "Guarujá",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unoeste.br"
+    },
+    {
+      "id": "unoeste-jau",
+      "sigla": "UNOESTE",
+      "nome": "Universidade do Oeste Paulista",
+      "cidade": "Jaú",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unoeste.br"
+    },
+    {
+      "id": "unoeste",
+      "sigla": "UNOESTE",
+      "nome": "Universidade do Oeste Paulista",
+      "cidade": "Presidente Prudente",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unoeste.br"
+    },
+    {
+      "id": "unicamp",
+      "sigla": "UNICAMP",
+      "nome": "Universidade Estadual de Campinas",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.fcm.unicamp.br"
+    },
+    {
+      "id": "unesp-botucatu",
+      "sigla": "UNESP",
+      "nome": "Universidade Estadual Paulista Júlio de Mesquita Filho",
+      "mantenedora": "Governo do Estado de São Paulo",
+      "cidade": "Botucatu",
+      "uf": "SP",
+      "natureza": "publica-estadual",
+      "site": "https://www.fmb.unesp.br"
+    },
+    {
+      "id": "ufscar",
+      "sigla": "UFSCar",
+      "nome": "Universidade Federal de São Carlos",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "São Carlos",
+      "uf": "SP",
+      "natureza": "publica-federal",
+      "site": "https://www.ufscar.br"
+    },
+    {
+      "id": "unifesp",
+      "sigla": "UNIFESP",
+      "nome": "Universidade Federal de São Paulo",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "publica-federal",
+      "site": "https://www.unifesp.br"
+    },
+    {
+      "id": "unimes",
+      "sigla": "UNIMES",
+      "nome": "Universidade Metropolitana de Santos",
+      "cidade": "Santos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://unimes.br"
+    },
+    {
+      "id": "uscs-itapetininga",
+      "sigla": "USCS",
+      "nome": "Universidade Municipal de São Caetano do Sul",
+      "mantenedora": "Universidade Municipal de São Caetano do Sul (autarquia municipal)",
+      "cidade": "Itapetininga",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://www.uscs.edu.br"
+    },
+    {
+      "id": "uscs",
+      "sigla": "USCS",
+      "nome": "Universidade Municipal de São Caetano do Sul",
+      "mantenedora": "Universidade Municipal de São Caetano do Sul (autarquia municipal)",
+      "cidade": "São Caetano do Sul",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://www.uscs.edu.br"
+    },
+    {
+      "id": "uscs-sao-paulo",
+      "sigla": "USCS",
+      "nome": "Universidade Municipal de São Caetano do Sul",
+      "mantenedora": "Universidade Municipal de São Caetano do Sul (autarquia municipal)",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "publica-municipal",
+      "site": "https://www.uscs.edu.br"
+    },
+    {
+      "id": "uninove-bauru",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "Bauru",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "uninove-guarulhos",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "Guarulhos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "uninove-maua",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "Mauá",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "uninove-osasco",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "Osasco",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "uninove-sao-bernardo",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "uninove",
+      "sigla": "UNINOVE",
+      "nome": "Universidade Nove de Julho",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.uninove.br"
+    },
+    {
+      "id": "unip-campinas",
+      "sigla": "UNIP",
+      "nome": "Universidade Paulista",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unip.br"
+    },
+    {
+      "id": "unip-santana-de-parnaiba",
+      "sigla": "UNIP",
+      "nome": "Universidade Paulista",
+      "cidade": "Santana de Parnaíba",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unip.br"
+    },
+    {
+      "id": "unip-sao-jose-do-rio-pardo",
+      "sigla": "UNIP",
+      "nome": "Universidade Paulista",
+      "cidade": "São José do Rio Pardo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unip.br"
+    },
+    {
+      "id": "unip-sorocaba",
+      "sigla": "UNIP",
+      "nome": "Universidade Paulista",
+      "cidade": "Sorocaba",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unip.br"
+    },
+    {
+      "id": "unisa-guarulhos",
+      "sigla": "UNISA",
+      "nome": "Universidade Santo Amaro",
+      "cidade": "Guarulhos",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unisa.br"
+    },
+    {
+      "id": "unisa",
+      "sigla": "UNISA",
+      "nome": "Universidade Santo Amaro",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.unisa.br"
+    },
+    {
+      "id": "usf",
+      "sigla": "USF",
+      "nome": "Universidade São Francisco",
+      "cidade": "Bragança Paulista",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.usf.edu.br"
+    },
+    {
+      "id": "usjt-cubatao",
+      "sigla": "USJT",
+      "nome": "Universidade São Judas Tadeu",
+      "cidade": "Cubatão",
+      "uf": "SP",
+      "natureza": "privada",
+      "site": "https://www.usjt.br"
+    },
+    {
+      "id": "unitpac",
+      "sigla": "Afya UNITPAC",
+      "nome": "Afya Centro Universitário de Araguaína",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Araguaína",
+      "uf": "TO",
+      "natureza": "privada"
+    },
+    {
+      "id": "afya-palmas",
+      "sigla": "Afya",
+      "nome": "Afya Centro Universitário de Palmas",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Palmas",
+      "uf": "TO",
+      "natureza": "privada"
+    },
+    {
+      "id": "fapac-porto-nacional",
+      "sigla": "FAPAC",
+      "nome": "Faculdade Presidente Antônio Carlos",
+      "mantenedora": "Grupo Afya",
+      "cidade": "Porto Nacional",
+      "uf": "TO",
+      "natureza": "privada"
+    },
+    {
+      "id": "unirg",
+      "sigla": "UnirG",
+      "nome": "Universidade de Gurupi",
+      "mantenedora": "Fundação UnirG",
+      "cidade": "Gurupi",
+      "uf": "TO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirg.edu.br"
+    },
+    {
+      "id": "unirg-paraiso",
+      "sigla": "UnirG",
+      "nome": "Universidade de Gurupi",
+      "mantenedora": "Fundação UnirG",
+      "cidade": "Paraíso do Tocantins",
+      "uf": "TO",
+      "natureza": "publica-municipal",
+      "site": "https://www.unirg.edu.br"
+    },
+    {
+      "id": "unitins",
+      "sigla": "UNITINS",
+      "nome": "Universidade Estadual do Tocantins",
+      "mantenedora": "Governo do Estado do Tocantins",
+      "cidade": "Augustinópolis",
+      "uf": "TO",
+      "natureza": "publica-estadual",
+      "site": "https://www.unitins.br"
+    },
+    {
+      "id": "ufnt",
+      "sigla": "UFNT",
+      "nome": "Universidade Federal do Norte do Tocantins",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Araguaína",
+      "uf": "TO",
+      "natureza": "publica-federal",
+      "site": "https://ufnt.edu.br"
+    },
+    {
+      "id": "uft",
+      "sigla": "UFT",
+      "nome": "Universidade Federal do Tocantins",
+      "mantenedora": "União (Ministério da Educação)",
+      "cidade": "Palmas",
+      "uf": "TO",
+      "natureza": "publica-federal",
+      "site": "https://www.uft.edu.br"
+    }
+  ]
+}

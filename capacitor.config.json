@@ -1,0 +1,8 @@
+{
+  "appId": "br.app.medliga",
+  "appName": "MedLiga",
+  "webDir": "dist",
+  "backgroundColor": "#0b1220",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "always" }
+}

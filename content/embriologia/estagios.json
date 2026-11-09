@@ -1,0 +1,794 @@
+{
+  "estagios": [
+    {
+      "id": "zigoto",
+      "ordem": 1,
+      "titulo": "Zigoto",
+      "dias": "Dia 1 após a fertilização",
+      "diaReferencia": 1,
+      "carnegie": [
+        1
+      ],
+      "tamanho": "≈ 0,1–0,15 mm",
+      "descricao": "Célula única e totipotente formada pela fertilização, ainda envolvida pela zona pelúcida. Antes da primeira clivagem, os pronúcleos masculino e feminino se aproximam, os envoltórios nucleares desaparecem e os cromossomos maternos e paternos se organizam no fuso da primeira divisão mitótica.",
+      "destaques": [
+        "Restabelece o número diploide de cromossomos (46).",
+        "O sexo cromossômico é definido pelo espermatozoide (X ou Y).",
+        "Os corpúsculos polares ficam no espaço perivitelino."
+      ],
+      "topicos": [
+        "emb-03-fertilizacao"
+      ],
+      "estruturas": [
+        {
+          "id": "zona-pelucida",
+          "nome": "Zona pelúcida",
+          "descricao": "Envoltório glicoproteico acelular que circunda o ovócito e o embrião inicial; impede a polispermia após a reação zonal e a implantação precoce (na tuba)."
+        },
+        {
+          "id": "zigoto",
+          "nome": "Zigoto",
+          "descricao": "Célula diploide resultante da fusão dos gametas; início do desenvolvimento."
+        },
+        {
+          "id": "pronucleo-masculino",
+          "nome": "Pronúcleo masculino",
+          "descricao": "Núcleo haploide derivado do espermatozoide, formado após a entrada da cabeça no citoplasma do ovócito."
+        },
+        {
+          "id": "pronucleo-feminino",
+          "nome": "Pronúcleo feminino",
+          "descricao": "Núcleo haploide do ovócito, formado após o término da segunda divisão meiótica, desencadeado pela fertilização."
+        },
+        {
+          "id": "corpusculo-polar",
+          "nome": "Corpúsculos polares",
+          "descricao": "Pequenas células resultantes das divisões meióticas desiguais do ovócito; degeneram."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "clivagem",
+      "ordem": 2,
+      "titulo": "Clivagem (4 células)",
+      "dias": "≈ 2 dias após a fertilização",
+      "diaReferencia": 2,
+      "carnegie": [
+        2
+      ],
+      "tamanho": "≈ 0,1–0,2 mm",
+      "descricao": "Divisões mitóticas sucessivas do zigoto produzem blastômeros cada vez menores, sem aumento do volume total, enquanto o embrião percorre a tuba uterina dentro da zona pelúcida.",
+      "destaques": [
+        "Primeira clivagem cerca de 30 horas após a fertilização.",
+        "Os blastômeros ficam menores a cada divisão.",
+        "A zona pelúcida permanece intacta."
+      ],
+      "topicos": [
+        "emb-04-semana1"
+      ],
+      "estruturas": [
+        {
+          "id": "blastomero",
+          "nome": "Blastômeros",
+          "descricao": "Células resultantes da clivagem do zigoto."
+        },
+        {
+          "id": "zona-pelucida",
+          "nome": "Zona pelúcida",
+          "descricao": "Envoltório que mantém os blastômeros unidos e impede a implantação precoce."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "morula",
+      "ordem": 3,
+      "titulo": "Mórula",
+      "dias": "≈ 3–4 dias após a fertilização",
+      "diaReferencia": 3,
+      "carnegie": [
+        2
+      ],
+      "tamanho": "≈ 0,1–0,2 mm",
+      "descricao": "Esfera compacta de blastômeros (cerca de 12 a 32 células). Após a compactação, por volta do estágio de 8 células, as células internas originarão a massa celular interna e as externas, o trofoblasto. A mórula chega à cavidade uterina por volta do 3º–4º dia.",
+      "destaques": [
+        "Compactação: os blastômeros se achatam e se unem por junções.",
+        "Nome vem da semelhança com a amora (latim morus).",
+        "Entra no útero aproximadamente no 3º–4º dia."
+      ],
+      "topicos": [
+        "emb-04-semana1"
+      ],
+      "estruturas": [
+        {
+          "id": "morula",
+          "nome": "Mórula",
+          "descricao": "Massa compacta de blastômeros dentro da zona pelúcida."
+        },
+        {
+          "id": "blastomero",
+          "nome": "Blastômeros",
+          "descricao": "Células da mórula; internas e externas seguem destinos diferentes."
+        },
+        {
+          "id": "zona-pelucida",
+          "nome": "Zona pelúcida",
+          "descricao": "Ainda presente; degenera após a formação do blastocisto."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "blastocisto",
+      "ordem": 4,
+      "titulo": "Blastocisto",
+      "dias": "≈ 4–5 dias após a fertilização",
+      "diaReferencia": 5,
+      "carnegie": [
+        3
+      ],
+      "tamanho": "≈ 0,1–0,2 mm",
+      "descricao": "Líquido penetra entre as células e forma uma cavidade, a blastocele. As células se separam em uma camada externa, o trofoblasto (que formará a parte embrionária da placenta), e um grupo interno excêntrico, o embrioblasto ou massa celular interna (que formará o embrião). A zona pelúcida se desfaz (eclosão), permitindo a implantação.",
+      "destaques": [
+        "Trofoblasto → parte embrionária da placenta.",
+        "Embrioblasto → embrião (e algumas estruturas extraembrionárias).",
+        "Eclosão da zona pelúcida por volta do 5º dia."
+      ],
+      "topicos": [
+        "emb-04-semana1"
+      ],
+      "estruturas": [
+        {
+          "id": "trofoblasto",
+          "nome": "Trofoblasto",
+          "descricao": "Camada celular externa do blastocisto; formará a parte embrionária da placenta.",
+          "camada": "extraembrionario"
+        },
+        {
+          "id": "embrioblasto",
+          "nome": "Embrioblasto (massa celular interna)",
+          "descricao": "Grupo de células no polo embrionário; dará origem ao embrião."
+        },
+        {
+          "id": "blastocele",
+          "nome": "Blastocele (cavidade blastocística)",
+          "descricao": "Cavidade cheia de líquido do blastocisto."
+        },
+        {
+          "id": "zona-pelucida",
+          "nome": "Zona pelúcida",
+          "descricao": "Afina e se rompe (eclosão) antes da implantação."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "implantacao",
+      "ordem": 5,
+      "titulo": "Implantação inicial",
+      "dias": "≈ 8 dias após a fertilização",
+      "diaReferencia": 8,
+      "carnegie": [
+        5
+      ],
+      "tamanho": "≈ 0,1–0,2 mm",
+      "descricao": "O blastocisto está parcialmente inserido no endométrio. O trofoblasto se diferenciou em citotrofoblasto (camada interna, mitoticamente ativa) e sinciciotrofoblasto (massa multinucleada, sem limites celulares, que invade o tecido materno). O embrioblasto forma o disco bilaminar (epiblasto e hipoblasto) e surge a cavidade amniótica.",
+      "destaques": [
+        "Sinciciotrofoblasto invade o endométrio e produz hCG.",
+        "Disco embrionário bilaminar: epiblasto e hipoblasto.",
+        "Cavidade amniótica aparece no epiblasto."
+      ],
+      "topicos": [
+        "emb-04-semana1",
+        "emb-05-semana2"
+      ],
+      "estruturas": [
+        {
+          "id": "sinciciotrofoblasto",
+          "nome": "Sinciciotrofoblasto",
+          "descricao": "Camada externa multinucleada do trofoblasto; invade o endométrio e secreta hCG.",
+          "camada": "extraembrionario"
+        },
+        {
+          "id": "citotrofoblasto",
+          "nome": "Citotrofoblasto",
+          "descricao": "Camada interna, celular e mitoticamente ativa do trofoblasto; fornece células ao sinciciotrofoblasto.",
+          "camada": "extraembrionario"
+        },
+        {
+          "id": "epiblasto",
+          "nome": "Epiblasto",
+          "descricao": "Camada de células colunares altas do disco bilaminar, voltada para a cavidade amniótica; origina as três camadas germinativas."
+        },
+        {
+          "id": "hipoblasto",
+          "nome": "Hipoblasto",
+          "descricao": "Camada de células cúbicas pequenas do disco bilaminar, voltada para a blastocele."
+        },
+        {
+          "id": "cavidade-amniotica",
+          "nome": "Cavidade amniótica",
+          "descricao": "Cavidade que surge no epiblasto; revestida por amnioblastos."
+        },
+        {
+          "id": "blastocele",
+          "nome": "Blastocele",
+          "descricao": "Cavidade do blastocisto, que será revestida pela membrana exocelômica (saco vitelino primário)."
+        },
+        {
+          "id": "endometrio",
+          "nome": "Endométrio",
+          "descricao": "Revestimento interno do útero, na fase secretora, onde ocorre a implantação."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "disco-bilaminar",
+      "ordem": 6,
+      "titulo": "Disco bilaminar (2ª semana)",
+      "dias": "≈ 12–13 dias após a fertilização",
+      "diaReferencia": 13,
+      "carnegie": [
+        5,
+        6
+      ],
+      "tamanho": "≈ 0,2 mm (disco embrionário)",
+      "descricao": "Implantação completa. O disco bilaminar está entre a cavidade amniótica (acima do epiblasto) e o saco vitelino (abaixo do hipoblasto). O mesoderma extraembrionário reveste o trofoblasto e envolve âmnio e saco vitelino; o celoma extraembrionário (futura cavidade coriônica) o divide, e o embrião fica suspenso pelo pedículo de conexão. Lacunas no sinciciotrofoblasto se comunicam com sinusoides maternos (circulação uteroplacentária primitiva) e surgem as vilosidades primárias.",
+      "destaques": [
+        "Semana dos ‘pares’: 2 camadas do trofoblasto, 2 do disco, 2 cavidades, 2 camadas de mesoderma extraembrionário.",
+        "Placa precordal: espessamento do hipoblasto que marca a futura região cranial.",
+        "Vilosidades coriônicas primárias no fim da 2ª semana."
+      ],
+      "topicos": [
+        "emb-05-semana2"
+      ],
+      "estruturas": [
+        {
+          "id": "epiblasto",
+          "nome": "Epiblasto",
+          "descricao": "Assoalho da cavidade amniótica."
+        },
+        {
+          "id": "hipoblasto",
+          "nome": "Hipoblasto",
+          "descricao": "Teto do saco vitelino."
+        },
+        {
+          "id": "cavidade-amniotica",
+          "nome": "Cavidade amniótica",
+          "descricao": "Delimitada pelo âmnio (amnioblastos) e pelo epiblasto."
+        },
+        {
+          "id": "saco-vitelino",
+          "nome": "Saco vitelino (secundário)",
+          "descricao": "Formado por células do hipoblasto; menor que o saco vitelino primário, que se fragmenta."
+        },
+        {
+          "id": "mesoderma-extraembrionario",
+          "nome": "Mesoderma extraembrionário",
+          "descricao": "Tecido conjuntivo frouxo entre o trofoblasto e o âmnio/saco vitelino; dividido em camada somática e esplâncnica.",
+          "camada": "extraembrionario"
+        },
+        {
+          "id": "celoma-extraembrionario",
+          "nome": "Celoma extraembrionário (cavidade coriônica)",
+          "descricao": "Espaço surgido no mesoderma extraembrionário; envolve âmnio e saco vitelino, exceto no pedículo de conexão."
+        },
+        {
+          "id": "pediculo-de-conexao",
+          "nome": "Pedículo de conexão",
+          "descricao": "Faixa de mesoderma extraembrionário que liga o embrião ao trofoblasto; futuro cordão umbilical."
+        },
+        {
+          "id": "citotrofoblasto",
+          "nome": "Citotrofoblasto",
+          "descricao": "Forma as colunas celulares das vilosidades primárias."
+        },
+        {
+          "id": "sinciciotrofoblasto",
+          "nome": "Sinciciotrofoblasto",
+          "descricao": "Contém as lacunas trofoblásticas preenchidas por sangue materno."
+        },
+        {
+          "id": "lacunas-trofoblasticas",
+          "nome": "Lacunas trofoblásticas",
+          "descricao": "Espaços no sinciciotrofoblasto que se comunicam com sinusoides maternos erodidos."
+        },
+        {
+          "id": "placa-precordal",
+          "nome": "Placa precordal",
+          "descricao": "Espessamento local do hipoblasto; indica o eixo craniocaudal e a futura membrana bucofaríngea."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "gastrulacao",
+      "ordem": 7,
+      "titulo": "Gastrulação (3ª semana)",
+      "dias": "≈ 15–17 dias após a fertilização",
+      "diaReferencia": 16,
+      "carnegie": [
+        6,
+        7
+      ],
+      "tamanho": "≈ 0,4 mm (disco embrionário)",
+      "descricao": "Vista dorsal (pela cavidade amniótica, removida) do disco trilaminar. A linha primitiva surge na linha mediana caudal do epiblasto; células do epiblasto migram por ela e formam o endoderma (que substitui o hipoblasto) e o mesoderma intraembrionário. O que permanece no epiblasto passa a ser o ectoderma. A partir do nó primitivo, o processo notocordal cresce em direção cranial até a placa precordal.",
+      "destaques": [
+        "Todas as três camadas germinativas derivam do epiblasto.",
+        "Membrana bucofaríngea (cranial) e cloacal (caudal): ectoderma e endoderma sem mesoderma entre eles.",
+        "A linha primitiva define os eixos craniocaudal, dorsoventral e esquerdo-direito."
+      ],
+      "topicos": [
+        "emb-06-semana3"
+      ],
+      "estruturas": [
+        {
+          "id": "linha-primitiva",
+          "nome": "Linha primitiva",
+          "descricao": "Faixa espessada de epiblasto na linha mediana caudal do disco, por onde as células migram.",
+          "camada": "ectoderma"
+        },
+        {
+          "id": "no-primitivo",
+          "nome": "Nó primitivo",
+          "descricao": "Elevação na extremidade cranial da linha primitiva; centro organizador; origem do processo notocordal."
+        },
+        {
+          "id": "fosseta-primitiva",
+          "nome": "Fosseta primitiva",
+          "descricao": "Depressão no centro do nó primitivo."
+        },
+        {
+          "id": "processo-notocordal",
+          "nome": "Processo notocordal",
+          "descricao": "Cordão de células mesenquimais que cresce cranialmente a partir do nó primitivo, até a placa precordal; origina a notocorda.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "ectoderma",
+          "nome": "Ectoderma",
+          "descricao": "Camada dorsal do disco trilaminar (antigo epiblasto que não migrou).",
+          "camada": "ectoderma"
+        },
+        {
+          "id": "mesoderma",
+          "nome": "Mesoderma intraembrionário",
+          "descricao": "Camada intermediária, formada por células do epiblasto que migraram pela linha primitiva.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "endoderma",
+          "nome": "Endoderma",
+          "descricao": "Camada ventral, formada por células do epiblasto que substituíram o hipoblasto.",
+          "camada": "endoderma"
+        },
+        {
+          "id": "membrana-bucofaringea",
+          "nome": "Membrana bucofaríngea",
+          "descricao": "Área cranial onde ectoderma e endoderma ficam fundidos, sem mesoderma; futura abertura da boca."
+        },
+        {
+          "id": "membrana-cloacal",
+          "nome": "Membrana cloacal",
+          "descricao": "Área caudal sem mesoderma entre ectoderma e endoderma; futura região do ânus e do seio urogenital."
+        },
+        {
+          "id": "placa-precordal",
+          "nome": "Placa precordal",
+          "descricao": "Placa de células na extremidade cranial do processo notocordal; organizadora da região da cabeça."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "neurulacao",
+      "ordem": 8,
+      "titulo": "Neurulação e somitos",
+      "dias": "≈ 20–22 dias após a fertilização",
+      "diaReferencia": 21,
+      "carnegie": [
+        9,
+        10
+      ],
+      "tamanho": "≈ 1,5–3,5 mm",
+      "descricao": "A notocorda induz o ectoderma sobrejacente a formar a placa neural. Suas bordas se elevam como pregas neurais, delimitando o sulco neural; a fusão das pregas começa na região dos futuros 4º a 6º pares de somitos (região cervical) e avança nas direções cranial e caudal. Células da crista neural se destacam das bordas das pregas. Ao lado da notocorda, o mesoderma paraxial se segmenta em somitos; lateralmente ficam o mesoderma intermediário e o lateral, este dividido em somático e esplâncnico pelo celoma intraembrionário.",
+      "destaques": [
+        "Primeiro par de somitos por volta do 20º dia.",
+        "O coração tubular começa a bater por volta do 22º–23º dia.",
+        "Corte transversal: veja as três subdivisões do mesoderma e o celoma intraembrionário."
+      ],
+      "topicos": [
+        "emb-06-semana3"
+      ],
+      "estruturas": [
+        {
+          "id": "placa-neural",
+          "nome": "Placa neural",
+          "descricao": "Espessamento do ectoderma induzido pela notocorda; origina o tubo neural (SNC).",
+          "camada": "neuroectoderma"
+        },
+        {
+          "id": "pregas-neurais",
+          "nome": "Pregas neurais",
+          "descricao": "Bordas elevadas da placa neural, que se fundem para formar o tubo neural.",
+          "camada": "neuroectoderma"
+        },
+        {
+          "id": "sulco-neural",
+          "nome": "Sulco neural",
+          "descricao": "Depressão mediana entre as pregas neurais."
+        },
+        {
+          "id": "crista-neural",
+          "nome": "Crista neural",
+          "descricao": "Células das bordas das pregas neurais que migram e originam gânglios sensitivos e autonômicos, melanócitos, medula da suprarrenal e grande parte do mesênquima da face.",
+          "camada": "crista-neural"
+        },
+        {
+          "id": "notocorda",
+          "nome": "Notocorda",
+          "descricao": "Bastão celular mediano que define o eixo do embrião e induz a placa neural; persiste como parte do núcleo pulposo dos discos intervertebrais.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "somitos",
+          "nome": "Somitos",
+          "descricao": "Blocos pareados de mesoderma paraxial; originam esclerótomo (vértebras e costelas), miótomo (músculos esqueléticos) e dermátomo (derme do dorso).",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "mesoderma-intermediario",
+          "nome": "Mesoderma intermediário",
+          "descricao": "Une o mesoderma paraxial ao lateral; origina estruturas urogenitais.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "mesoderma-somatico",
+          "nome": "Mesoderma lateral somático (parietal)",
+          "descricao": "Camada do mesoderma lateral junto ao ectoderma; com ele forma a somatopleura.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "mesoderma-esplancnico",
+          "nome": "Mesoderma lateral esplâncnico (visceral)",
+          "descricao": "Camada do mesoderma lateral junto ao endoderma; com ele forma a esplancnopleura.",
+          "camada": "mesoderma"
+        },
+        {
+          "id": "celoma-intraembrionario",
+          "nome": "Celoma intraembrionário",
+          "descricao": "Cavidade no mesoderma lateral; originará as cavidades pericárdica, pleurais e peritoneal."
+        },
+        {
+          "id": "ectoderma",
+          "nome": "Ectoderma superficial",
+          "descricao": "Ectoderma lateral à placa neural; formará a epiderme.",
+          "camada": "ectoderma"
+        },
+        {
+          "id": "endoderma",
+          "nome": "Endoderma",
+          "descricao": "Camada ventral; originará o revestimento epitelial do tubo digestório e de suas glândulas.",
+          "camada": "endoderma"
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "semana-4",
+      "ordem": 9,
+      "titulo": "4ª semana: embrião dobrado",
+      "dias": "≈ 26–28 dias após a fertilização",
+      "diaReferencia": 28,
+      "carnegie": [
+        12,
+        13
+      ],
+      "tamanho": "≈ 3–6 mm (CRL)",
+      "descricao": "Após o dobramento cefalocaudal e lateral, o embrião tem forma de C. Os neuroporos cranial (≈ dia 25) e caudal (≈ dia 28) se fecham. Aparecem os arcos faríngeos, a proeminência cardíaca, os placoides ótico e do cristalino e os brotos dos membros superiores (≈ dia 26) e inferiores (≈ dia 28). A eminência caudal ainda está presente.",
+      "destaques": [
+        "Fechamento dos neuroporos: falhas causam anencefalia (cranial) ou espinha bífida (caudal).",
+        "Somitos visíveis como saliências ao longo do dorso.",
+        "Brotos dos membros superiores surgem antes dos inferiores."
+      ],
+      "topicos": [
+        "emb-07-semanas4a8"
+      ],
+      "estruturas": [
+        {
+          "id": "arcos-faringeos",
+          "nome": "Arcos faríngeos",
+          "descricao": "Barras de mesênquima revestidas por ectoderma e endoderma na região da futura cabeça e pescoço; cada um tem artéria, nervo, cartilagem e músculos próprios."
+        },
+        {
+          "id": "proeminencia-cardiaca",
+          "nome": "Proeminência cardíaca",
+          "descricao": "Saliência ventral produzida pelo coração em desenvolvimento."
+        },
+        {
+          "id": "placoide-otico",
+          "nome": "Placoide/fosseta ótica",
+          "descricao": "Espessamento do ectoderma superficial que forma a vesícula ótica (orelha interna).",
+          "camada": "ectoderma"
+        },
+        {
+          "id": "placoide-lentiforme",
+          "nome": "Placoide do cristalino",
+          "descricao": "Espessamento do ectoderma superficial que formará o cristalino.",
+          "camada": "ectoderma"
+        },
+        {
+          "id": "broto-membro-superior",
+          "nome": "Broto do membro superior",
+          "descricao": "Surge por volta do dia 26 na parede lateral do corpo."
+        },
+        {
+          "id": "broto-membro-inferior",
+          "nome": "Broto do membro inferior",
+          "descricao": "Surge por volta do dia 28, um pouco depois do superior."
+        },
+        {
+          "id": "somitos",
+          "nome": "Somitos",
+          "descricao": "Saliências pareadas ao longo do dorso."
+        },
+        {
+          "id": "eminencia-caudal",
+          "nome": "Eminência caudal",
+          "descricao": "Extremidade caudal do embrião; regride até o fim da 8ª semana."
+        },
+        {
+          "id": "cordao-umbilical",
+          "nome": "Cordão umbilical (região de inserção)",
+          "descricao": "Liga o embrião à placenta; contém vasos umbilicais."
+        },
+        {
+          "id": "proeminencia-hepatica",
+          "nome": "Proeminência hepática",
+          "descricao": "Saliência ventral produzida pelo fígado em crescimento rápido."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "semana-6",
+      "ordem": 10,
+      "titulo": "6ª semana",
+      "dias": "≈ 41–44 dias após a fertilização",
+      "diaReferencia": 42,
+      "carnegie": [
+        17
+      ],
+      "tamanho": "≈ 11–14 mm (CRL)",
+      "descricao": "A cabeça cresce muito por causa do encéfalo. As mãos são placas com raios digitais; os pés ainda são placas. O olho tem pigmento retiniano e as saliências auriculares formam o pavilhão. O intestino médio hernia para o cordão umbilical (herniação umbilical fisiológica), por falta de espaço no abdome ocupado pelo fígado e pelos rins.",
+      "destaques": [
+        "Herniação umbilical fisiológica começa na 6ª semana.",
+        "Raios digitais nas placas das mãos.",
+        "Proeminência hepática bem visível."
+      ],
+      "topicos": [
+        "emb-07-semanas4a8"
+      ],
+      "estruturas": [
+        {
+          "id": "placa-da-mao",
+          "nome": "Placa da mão",
+          "descricao": "Extremidade achatada do membro superior."
+        },
+        {
+          "id": "raios-digitais",
+          "nome": "Raios digitais",
+          "descricao": "Condensações que indicam os futuros dedos; separam-se por apoptose do tecido entre eles."
+        },
+        {
+          "id": "olho",
+          "nome": "Olho",
+          "descricao": "Pigmento retiniano visível."
+        },
+        {
+          "id": "pavilhao-auricular",
+          "nome": "Saliências auriculares",
+          "descricao": "Seis saliências ao redor do primeiro sulco faríngeo que formam o pavilhão da orelha."
+        },
+        {
+          "id": "herniacao-umbilical-fisiologica",
+          "nome": "Herniação umbilical fisiológica",
+          "descricao": "Alças do intestino médio dentro do cordão umbilical; retornam ao abdome por volta da 10ª semana."
+        },
+        {
+          "id": "proeminencia-hepatica",
+          "nome": "Proeminência hepática",
+          "descricao": "Saliência ventral do fígado."
+        },
+        {
+          "id": "broto-membro-inferior",
+          "nome": "Placa do pé",
+          "descricao": "Membro inferior, um pouco atrasado em relação ao superior."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "semana-8",
+      "ordem": 11,
+      "titulo": "8ª semana: fim do período embrionário",
+      "dias": "≈ 56 dias após a fertilização",
+      "diaReferencia": 56,
+      "carnegie": [
+        23
+      ],
+      "tamanho": "≈ 27–31 mm (CRL)",
+      "descricao": "O embrião tem aspecto claramente humano. Dedos das mãos e dos pés separados, pálpebras presentes (fechando-se), pavilhões auriculares com forma definitiva mas ainda em posição baixa, cabeça arredondada correspondendo a quase metade do comprimento. A eminência caudal desapareceu. O intestino ainda está no cordão umbilical.",
+      "destaques": [
+        "Fim do período embrionário: todos os principais sistemas já começaram a se formar.",
+        "Período de maior sensibilidade a teratógenos se encerra (semanas 3–8).",
+        "Genitália externa ainda indiferenciada à inspeção."
+      ],
+      "topicos": [
+        "emb-07-semanas4a8",
+        "emb-08-periodo-fetal"
+      ],
+      "estruturas": [
+        {
+          "id": "palpebras",
+          "nome": "Pálpebras",
+          "descricao": "Crescem e se fundem por volta do fim do período embrionário; reabrem no período fetal."
+        },
+        {
+          "id": "pavilhao-auricular",
+          "nome": "Pavilhão auricular",
+          "descricao": "Forma final, ainda baixo na cabeça."
+        },
+        {
+          "id": "dedos",
+          "nome": "Dedos separados",
+          "descricao": "Separação completa por apoptose entre os raios digitais."
+        },
+        {
+          "id": "herniacao-umbilical-fisiologica",
+          "nome": "Herniação umbilical fisiológica",
+          "descricao": "Ainda presente; o intestino retorna ao abdome por volta da 10ª semana."
+        },
+        {
+          "id": "cordao-umbilical",
+          "nome": "Cordão umbilical",
+          "descricao": "Duas artérias e uma veia umbilicais em geleia de Wharton."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "placenta-membranas",
+      "ordem": 12,
+      "titulo": "Placenta e membranas fetais",
+      "dias": "Período fetal inicial (≈ 3º mês)",
+      "diaReferencia": 84,
+      "carnegie": [],
+      "descricao": "Corte do útero gestante no início do período fetal. A decídua basal (sob o cório frondoso) forma a parte materna da placenta; o cório frondoso, com vilosidades, forma a parte fetal. A decídua capsular cobre o saco coriônico do lado da cavidade uterina e, com o crescimento, encosta na decídua parietal. O âmnio envolve o feto no líquido amniótico e se funde ao cório liso.",
+      "destaques": [
+        "Placenta = cório frondoso (fetal) + decídua basal (materna).",
+        "Cordão umbilical: 2 artérias (sangue pouco oxigenado) e 1 veia (sangue oxigenado).",
+        "Âmnio e cório se fundem e obliteram a cavidade coriônica."
+      ],
+      "topicos": [
+        "emb-09-placenta-membranas"
+      ],
+      "estruturas": [
+        {
+          "id": "decidua-basal",
+          "nome": "Decídua basal",
+          "descricao": "Parte da decídua profunda ao concepto; componente materno da placenta."
+        },
+        {
+          "id": "decidua-capsular",
+          "nome": "Decídua capsular",
+          "descricao": "Parte da decídua que recobre o concepto do lado da cavidade uterina."
+        },
+        {
+          "id": "decidua-parietal",
+          "nome": "Decídua parietal",
+          "descricao": "Restante da decídua que reveste a parede uterina."
+        },
+        {
+          "id": "corio-frondoso",
+          "nome": "Cório frondoso",
+          "descricao": "Parte do cório com vilosidades desenvolvidas, voltada para a decídua basal."
+        },
+        {
+          "id": "corio-liso",
+          "nome": "Cório liso",
+          "descricao": "Parte do cório cujas vilosidades degeneraram, sob a decídua capsular."
+        },
+        {
+          "id": "amnio",
+          "nome": "Âmnio",
+          "descricao": "Membrana que envolve o feto e o líquido amniótico."
+        },
+        {
+          "id": "cavidade-amniotica",
+          "nome": "Cavidade amniótica (líquido amniótico)",
+          "descricao": "Protege o feto, permite movimentos e o desenvolvimento pulmonar."
+        },
+        {
+          "id": "cordao-umbilical",
+          "nome": "Cordão umbilical",
+          "descricao": "Une o feto à placenta."
+        },
+        {
+          "id": "feto",
+          "nome": "Feto",
+          "descricao": "Concepto a partir da 9ª semana após a fertilização."
+        },
+        {
+          "id": "miometrio",
+          "nome": "Miométrio",
+          "descricao": "Camada muscular lisa do útero."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    }
+  ]
+}

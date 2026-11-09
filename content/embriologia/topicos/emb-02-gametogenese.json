@@ -1,0 +1,1147 @@
+{
+  "id": "emb-02-gametogenese",
+  "disciplina": "embriologia",
+  "ordem": 2,
+  "titulo": "Gametogênese",
+  "subtitulo": "Meiose, espermatogênese, ovogênese e ciclos reprodutivos femininos",
+  "objetivos": [
+    "Comparar meiose I e meiose II e explicar como crossing-over e segregação independente geram variabilidade genética.",
+    "Explicar a não disjunção meiótica e suas consequências cromossômicas.",
+    "Descrever a sequência celular da espermatogênese e as etapas da espermiogênese, incluindo o papel das células de Sertoli e de Leydig.",
+    "Descrever a ovogênese, identificando as duas paradas meióticas do ovócito.",
+    "Ordenar as etapas da foliculogênese e relacioná-las ao ciclo ovariano e ao controle hormonal.",
+    "Relacionar as fases do ciclo menstrual às alterações hormonais e ovarianas.",
+    "Comparar gametas masculino e feminino e reconhecer gametas anormais."
+  ],
+  "resumo": "**Gametogênese** é a formação dos gametas (espermatozoides e ovócitos) a partir das células germinativas, envolvendo a **meiose**, que reduz o número de cromossomos de 46 (diploide) para 23 (haploide).\n\n**Meiose.** São duas divisões precedidas de uma única replicação de DNA.\n\n- **Meiose I (reducional):** na prófase I os cromossomos homólogos se pareiam (sinapse) e trocam segmentos entre cromátides não irmãs (**crossing-over**, nos quiasmas). Na anáfase I separam-se os **homólogos**; cada célula-filha recebe 23 cromossomos, cada um ainda com duas cromátides.\n- **Meiose II (equacional):** sem nova replicação de DNA, separam-se as **cromátides irmãs**, resultando em células com 23 cromossomos de cromátide única.\n\nA variabilidade genética resulta do crossing-over e da **segregação independente** (distribuição aleatória dos homólogos maternos e paternos). A **não disjunção** (falha na separação de homólogos na meiose I ou de cromátides na meiose II) produz gametas com 24 ou 22 cromossomos; a fertilização por eles gera trissomias (ex.: 47,+21, síndrome de Down) ou monossomias (ex.: 45,X, síndrome de Turner). O risco de trissomias aumenta com a idade materna.\n\n**Espermatogênese.** Inicia-se na puberdade, nos túbulos seminíferos. **Espermatogônias** (quiescentes desde o período fetal) proliferam por mitose; algumas se diferenciam em **espermatócitos primários** (as maiores células germinativas dos túbulos), que fazem a meiose I e originam **espermatócitos secundários** (23 cromossomos duplicados, de vida curta); estes fazem a meiose II e formam **espermátides** haploides. Cada espermatócito primário gera quatro espermátides, que permanecem ligadas por pontes citoplasmáticas. Na **espermiogênese**, sem divisão celular, a espermátide transforma-se em **espermatozoide**: forma-se o **acrossomo** a partir do complexo de Golgi, o núcleo se condensa, forma-se a cauda (flagelo) e as mitocôndrias se dispõem na peça intermediária; o excesso de citoplasma é eliminado como corpo residual e fagocitado pelas **células de Sertoli**. Todo o processo leva cerca de 2 meses (faixa 64–74 dias, conforme a fonte). As células de Sertoli sustentam e nutrem as células germinativas, formam a barreira hematotesticular e respondem ao FSH; as **células de Leydig**, no interstício, secretam testosterona sob estímulo do LH. Os espermatozoides ganham motilidade durante a maturação no epidídimo.\n\n**Ovogênese.** Começa antes do nascimento. As **ovogônias** proliferam por mitose (o número máximo de células germinativas, ~7 milhões, é atingido por volta do 5º mês, segundo Sadler); a maioria sofre **atresia**. As restantes iniciam a meiose I e tornam-se **ovócitos primários**, que param na **prófase I (diplóteno, ou dictióteno)**. Cada ovócito primário envolvido por uma camada de células foliculares achatadas forma o **folículo primordial**. Nenhum ovócito primário novo se forma após o nascimento. Ao nascer existem centenas de milhares a cerca de 2 milhões de ovócitos primários (as fontes divergem); na puberdade restam cerca de 40 mil, e apenas ~400–500 serão ovulados na vida reprodutiva. A meiose I só se completa pouco antes da ovulação, gerando o **ovócito secundário** e o **primeiro corpúsculo polar** (divisão citoplasmática desigual). O ovócito secundário inicia a meiose II e para em **metáfase II**, que só se completa se houver fertilização (formando o segundo corpúsculo polar). Assim, um ovócito primário gera um único gameta funcional.\n\n**Foliculogênese.** Folículo **primordial** → **primário** (células foliculares cuboides, depois estratificadas, formando a granulosa; surge a **zona pelúcida**) → **secundário (antral/vesicular)**, com antro cheio de líquido folicular, ovócito no **cumulus oophorus** e teca diferenciada em **teca interna** (secretora) e **teca externa** (fibrosa) → **folículo maduro (de Graaf, pré-ovulatório)**. Em cada ciclo vários folículos começam a crescer, mas em geral apenas um completa a maturação; os demais sofrem atresia.\n\n**Ciclo ovariano e hormônios.** O hipotálamo libera **GnRH**, que estimula a adeno-hipófise a secretar **FSH** e **LH**. O FSH estimula o crescimento folicular e a produção de **estrogênio** pelas células da granulosa (a partir de androgênios da teca interna). O aumento do estrogênio desencadeia o **pico de LH** no meio do ciclo, que leva à conclusão da meiose I e à **ovulação** (em torno do 14º dia de um ciclo de 28 dias). Após a ovulação, as paredes do folículo formam o **corpo lúteo**, que secreta **progesterona** e estrogênio. Sem gravidez, o corpo lúteo degenera e forma o **corpo albicans**, uma cicatriz fibrosa. Na gravidez, a **hCG** do sinciciotrofoblasto mantém o corpo lúteo da gravidez nos primeiros meses, até que a placenta assuma a produção hormonal.\n\n**Ciclo menstrual** (média de 28 dias): **fase menstrual** (~4–5 dias; descamação da camada funcional do endométrio); **fase proliferativa ou folicular** (estrogênio; regeneração do endométrio a partir da camada basal); **fase secretora ou lútea** (progesterona; glândulas tortuosas secretando material rico em glicogênio, endométrio preparado para a implantação); e, sem fertilização, **fase isquêmica** (queda de progesterona, constrição das artérias espiraladas), seguida de nova menstruação. A variação na duração dos ciclos ocorre principalmente na fase proliferativa.\n\n**Gametas masculino e feminino.** O espermatozoide é pequeno, móvel, com pouco citoplasma, e pode ter cromossomo sexual X ou Y; é produzido continuamente desde a puberdade. O ovócito é muito maior, imóvel, rico em citoplasma, sempre 23,X, e sua produção se inicia antes do nascimento. Gametas anormais (por exemplo, espermatozoides com duas cabeças ou ovócitos binucleados) ocorrem, mas em geral não participam de fertilizações viáveis.",
+  "pontosChave": [
+    "Na meiose I separam-se os homólogos; na meiose II, as cromátides irmãs, sem nova replicação de DNA.",
+    "Crossing-over (prófase I) e segregação independente geram variabilidade genética.",
+    "Não disjunção gera gametas com 24 ou 22 cromossomos e, após a fertilização, trissomias ou monossomias.",
+    "Espermatogênese: espermatogônia → espermatócito primário → espermatócito secundário → espermátide → espermatozoide; dura cerca de 2 meses.",
+    "Espermiogênese é a transformação da espermátide em espermatozoide, sem divisão; o acrossomo deriva do complexo de Golgi.",
+    "Sertoli: sustentação, barreira hematotesticular, fagocitose de corpos residuais; Leydig: testosterona sob LH.",
+    "O ovócito primário fica parado em prófase I (diplóteno) desde a vida fetal até pouco antes da ovulação.",
+    "O ovócito secundário fica parado em metáfase II e só completa a meiose se for fertilizado.",
+    "Folículo primordial → primário → secundário (antral) → maduro (de Graaf).",
+    "O pico de LH desencadeia a conclusão da meiose I e a ovulação.",
+    "O corpo lúteo secreta progesterona; sem gravidez degenera em corpo albicans; na gravidez é mantido pela hCG.",
+    "Fases do ciclo menstrual: menstrual, proliferativa, secretora (lútea) e isquêmica."
+  ],
+  "estruturas": [
+    {
+      "id": "espermatogonia",
+      "nome": "Espermatogônia",
+      "sinonimos": [],
+      "definicao": "Célula germinativa masculina diploide, situada junto à membrana basal do túbulo seminífero, que prolifera por mitose a partir da puberdade.",
+      "origem": "Células germinativas primordiais.",
+      "destino": "Algumas se diferenciam em espermatócitos primários."
+    },
+    {
+      "id": "espermatocito-primario",
+      "nome": "Espermatócito primário",
+      "sinonimos": [],
+      "definicao": "Maior célula germinativa dos túbulos seminíferos; tem 46 cromossomos duplicados e realiza a meiose I.",
+      "destino": "Origina dois espermatócitos secundários."
+    },
+    {
+      "id": "espermatocito-secundario",
+      "nome": "Espermatócito secundário",
+      "sinonimos": [],
+      "definicao": "Célula de vida curta com 23 cromossomos duplicados, resultante da meiose I.",
+      "destino": "Faz a meiose II e origina duas espermátides."
+    },
+    {
+      "id": "espermatide",
+      "nome": "Espermátide",
+      "sinonimos": [],
+      "definicao": "Célula haploide (23 cromossomos de cromátide única) resultante da meiose II.",
+      "destino": "Transforma-se em espermatozoide na espermiogênese."
+    },
+    {
+      "id": "espermatozoide",
+      "nome": "Espermatozoide",
+      "sinonimos": [
+        "gameta masculino"
+      ],
+      "definicao": "Gameta masculino móvel, com cabeça (núcleo e acrossomo), colo, peça intermediária com mitocôndrias e cauda.",
+      "origem": "Espermátide, por espermiogênese."
+    },
+    {
+      "id": "acrossomo",
+      "nome": "Acrossomo",
+      "sinonimos": [],
+      "definicao": "Organela em forma de capuz sobre a parte anterior do núcleo do espermatozoide, contendo enzimas usadas na fertilização.",
+      "origem": "Complexo de Golgi da espermátide."
+    },
+    {
+      "id": "celula-de-sertoli",
+      "nome": "Célula de Sertoli",
+      "sinonimos": [
+        "célula sustentacular"
+      ],
+      "definicao": "Célula somática dos túbulos seminíferos que sustenta e nutre as células germinativas, forma a barreira hematotesticular, fagocita corpos residuais e responde ao FSH."
+    },
+    {
+      "id": "celula-de-leydig",
+      "nome": "Célula de Leydig",
+      "sinonimos": [
+        "célula intersticial"
+      ],
+      "definicao": "Célula do tecido intersticial do testículo que secreta testosterona sob estímulo do LH."
+    },
+    {
+      "id": "ovogonia",
+      "nome": "Ovogônia",
+      "sinonimos": [],
+      "definicao": "Célula germinativa feminina diploide que prolifera por mitose no ovário durante a vida fetal.",
+      "origem": "Células germinativas primordiais.",
+      "destino": "Diferencia-se em ovócito primário ou sofre atresia; não persiste após o nascimento segundo o modelo clássico."
+    },
+    {
+      "id": "ovocito-primario",
+      "nome": "Ovócito primário",
+      "sinonimos": [],
+      "definicao": "Ovócito que iniciou a meiose I antes do nascimento e permanece parado na prófase I (diplóteno) até pouco antes da ovulação.",
+      "destino": "Completa a meiose I, originando o ovócito secundário e o primeiro corpúsculo polar."
+    },
+    {
+      "id": "ovocito-secundario",
+      "nome": "Ovócito secundário",
+      "sinonimos": [],
+      "definicao": "Ovócito que completou a meiose I e está parado em metáfase II; é a célula liberada na ovulação.",
+      "destino": "Completa a meiose II somente se fertilizado."
+    },
+    {
+      "id": "corpusculo-polar",
+      "nome": "Corpúsculo polar",
+      "sinonimos": [
+        "glóbulo polar"
+      ],
+      "definicao": "Pequena célula com pouco citoplasma formada pela divisão desigual do ovócito na meiose I (primeiro) e na meiose II (segundo); degenera."
+    },
+    {
+      "id": "foliculo-primordial",
+      "nome": "Folículo primordial",
+      "sinonimos": [],
+      "definicao": "Ovócito primário envolvido por uma única camada de células foliculares achatadas."
+    },
+    {
+      "id": "foliculo-primario",
+      "nome": "Folículo primário",
+      "sinonimos": [
+        "folículo pré-antral"
+      ],
+      "definicao": "Folículo em que as células foliculares se tornam cuboides e depois estratificadas (granulosa); a zona pelúcida aparece em torno do ovócito."
+    },
+    {
+      "id": "foliculo-secundario",
+      "nome": "Folículo secundário",
+      "sinonimos": [
+        "folículo antral",
+        "folículo vesicular"
+      ],
+      "definicao": "Folículo com antro preenchido por líquido folicular, ovócito situado no cumulus oophorus e teca diferenciada em interna e externa."
+    },
+    {
+      "id": "foliculo-maduro",
+      "nome": "Folículo maduro",
+      "sinonimos": [
+        "folículo de Graaf",
+        "folículo pré-ovulatório"
+      ],
+      "definicao": "Folículo antral plenamente desenvolvido, que faz saliência na superfície do ovário e se rompe na ovulação."
+    },
+    {
+      "id": "zona-pelucida",
+      "nome": "Zona pelúcida",
+      "sinonimos": [],
+      "definicao": "Camada glicoproteica acelular que envolve o ovócito, formada no folículo primário.",
+      "origem": "Secretada pelo ovócito e pelas células foliculares.",
+      "destino": "Persiste até a eclosão do blastocisto (~5º dia após a fertilização)."
+    },
+    {
+      "id": "teca-interna",
+      "nome": "Teca interna",
+      "sinonimos": [],
+      "definicao": "Camada interna, vascularizada e secretora, da teca folicular; produz androgênios que as células da granulosa convertem em estrogênio."
+    },
+    {
+      "id": "teca-externa",
+      "nome": "Teca externa",
+      "sinonimos": [],
+      "definicao": "Camada externa, de tecido conjuntivo fibroso, da teca folicular."
+    },
+    {
+      "id": "corpo-luteo",
+      "nome": "Corpo lúteo",
+      "sinonimos": [],
+      "definicao": "Estrutura glandular formada, sob ação do LH, pelas células da granulosa e da teca interna após a ovulação; secreta progesterona e estrogênio.",
+      "destino": "Sem gravidez, degenera em corpo albicans; na gravidez, é mantido pela hCG."
+    },
+    {
+      "id": "corpo-albicans",
+      "nome": "Corpo albicans",
+      "sinonimos": [],
+      "definicao": "Cicatriz fibrosa esbranquiçada resultante da degeneração do corpo lúteo.",
+      "origem": "Corpo lúteo em involução."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "proliferacao-ovogonias",
+      "descricao": "Proliferação mitótica das ovogônias no ovário fetal",
+      "ordem": 1
+    },
+    {
+      "id": "parada-profase-i",
+      "descricao": "Ovócitos primários iniciam a meiose I e param em prófase I (diplóteno), ainda antes do nascimento",
+      "ordem": 2
+    },
+    {
+      "id": "inicio-espermatogenese",
+      "descricao": "Puberdade: início da espermatogênese e dos ciclos ovarianos",
+      "ordem": 3
+    },
+    {
+      "id": "crescimento-folicular",
+      "descricao": "Crescimento folicular sob FSH: folículo primário → secundário (antral) → maduro",
+      "ordem": 4
+    },
+    {
+      "id": "pico-lh",
+      "descricao": "Pico de LH no meio do ciclo",
+      "ordem": 5
+    },
+    {
+      "id": "termino-meiose-i",
+      "descricao": "Conclusão da meiose I: ovócito secundário e primeiro corpúsculo polar; parada em metáfase II",
+      "ordem": 6
+    },
+    {
+      "id": "ovulacao",
+      "descricao": "Ovulação (em torno do 14º dia de um ciclo de 28 dias)",
+      "ordem": 7
+    },
+    {
+      "id": "formacao-corpo-luteo",
+      "descricao": "Formação do corpo lúteo e secreção de progesterona (fase lútea)",
+      "ordem": 8
+    },
+    {
+      "id": "corpo-albicans",
+      "descricao": "Sem fertilização: degeneração do corpo lúteo em corpo albicans e menstruação",
+      "ordem": 9
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "nao-disjuncao-idade-materna",
+      "titulo": "Não disjunção e idade materna",
+      "descricao": "A frequência de trissomias, como a síndrome de Down (47,+21), aumenta com a idade materna; a maioria dos casos de trissomia 21 resulta de não disjunção meiótica de origem materna.",
+      "mecanismo": "Os ovócitos primários permanecem parados em prófase I desde a vida fetal até a ovulação, podendo ficar décadas nesse estado; esse longo intervalo está associado a maior risco de erros de segregação cromossômica."
+    },
+    {
+      "id": "contraceptivos-hormonais",
+      "titulo": "Contraceptivos orais combinados",
+      "descricao": "Combinações de estrogênio e progestagênio inibem a ovulação.",
+      "mecanismo": "Atuam no hipotálamo e na adeno-hipófise, suprimindo a secreção de GnRH, FSH e LH e impedindo o pico de LH necessário à ovulação."
+    },
+    {
+      "id": "mittelschmerz",
+      "titulo": "Dor do meio do ciclo (mittelschmerz)",
+      "descricao": "Algumas mulheres sentem dor abdominal baixa, geralmente unilateral, por volta da ovulação.",
+      "mecanismo": "Atribuída à ruptura do folículo maduro e à pequena quantidade de sangue ou líquido folicular que irrita o peritônio."
+    },
+    {
+      "id": "anovulacao-inducao",
+      "titulo": "Anovulação e indução da ovulação",
+      "descricao": "A ausência de ovulação é causa de infertilidade; fármacos indutores (como gonadotrofinas ou citrato de clomifeno) podem restaurar a ovulação, com maior chance de ovulações múltiplas e gestação múltipla.",
+      "mecanismo": "Sem secreção adequada de gonadotrofinas e sem pico de LH, nenhum folículo completa a maturação e se rompe; a estimulação farmacológica pode levar vários folículos à maturação."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-02-q01",
+      "tipo": "multipla",
+      "enunciado": "Em que fase da meiose ocorre o crossing-over entre cromátides de cromossomos homólogos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Prófase I"
+        },
+        {
+          "id": "b",
+          "texto": "Metáfase I"
+        },
+        {
+          "id": "c",
+          "texto": "Anáfase I"
+        },
+        {
+          "id": "d",
+          "texto": "Prófase II"
+        },
+        {
+          "id": "e",
+          "texto": "Anáfase II"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O crossing-over ocorre na prófase I, quando os homólogos estão pareados (sinapse) e trocam segmentos nos quiasmas. (b) Na metáfase I os pares de homólogos já recombinados se alinham na placa equatorial. (c) Na anáfase I os homólogos se separam. (d) e (e) Na meiose II não há homólogos pareados; separam-se as cromátides irmãs.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q02",
+      "tipo": "multipla",
+      "enunciado": "Na anáfase da meiose I, o que se separa?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cromátides irmãs de cada cromossomo"
+        },
+        {
+          "id": "b",
+          "texto": "Cromossomos homólogos"
+        },
+        {
+          "id": "c",
+          "texto": "Apenas os cromossomos sexuais"
+        },
+        {
+          "id": "d",
+          "texto": "Os pronúcleos masculino e feminino"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A meiose I é reducional: separam-se os cromossomos homólogos, e cada célula-filha recebe 23 cromossomos, cada um ainda com duas cromátides. (a) A separação das cromátides irmãs ocorre na meiose II (e na mitose). (c) Todos os pares de homólogos se separam, não apenas os sexuais. (d) Pronúcleos só existem após a fertilização.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q03",
+      "tipo": "multipla",
+      "enunciado": "Desde a vida fetal até pouco antes da ovulação, o ovócito primário permanece parado em:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Prófase I (diplóteno)"
+        },
+        {
+          "id": "b",
+          "texto": "Metáfase I"
+        },
+        {
+          "id": "c",
+          "texto": "Prófase II"
+        },
+        {
+          "id": "d",
+          "texto": "Metáfase II"
+        },
+        {
+          "id": "e",
+          "texto": "Intérfase pré-meiótica, antes da replicação do DNA"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os ovócitos primários iniciam a meiose I antes do nascimento e param na prófase I, no diplóteno (dictióteno), só completando a meiose I pouco antes da ovulação. (b) Não há parada fisiológica em metáfase I. (c) O ovócito não para em prófase II. (d) A parada em metáfase II é a do ovócito secundário. (e) O DNA já foi replicado antes da prófase I.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "ovogenese",
+        "meiose"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q04",
+      "tipo": "multipla",
+      "enunciado": "O ovócito secundário liberado na ovulação está parado em qual fase, e o que é necessário para que a complete?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Prófase I; o pico de LH"
+        },
+        {
+          "id": "b",
+          "texto": "Metáfase II; a fertilização"
+        },
+        {
+          "id": "c",
+          "texto": "Anáfase I; a capacitação"
+        },
+        {
+          "id": "d",
+          "texto": "Telófase II; a implantação"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O ovócito secundário inicia a meiose II e para em metáfase II; só a completa se for fertilizado, liberando o segundo corpúsculo polar. (a) A parada em prófase I é a do ovócito primário, e o pico de LH leva à conclusão da meiose I, não da II. (c) Não há parada em anáfase I, e a capacitação é um processo do espermatozoide. (d) A implantação ocorre dias após a meiose já estar concluída.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "ovogenese",
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q05",
+      "tipo": "multipla",
+      "enunciado": "Qual célula testicular secreta testosterona em resposta ao LH?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Célula de Sertoli"
+        },
+        {
+          "id": "b",
+          "texto": "Célula de Leydig"
+        },
+        {
+          "id": "c",
+          "texto": "Espermatócito primário"
+        },
+        {
+          "id": "d",
+          "texto": "Célula mioide peritubular"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "As células de Leydig (intersticiais) secretam testosterona sob estímulo do LH. (a) As células de Sertoli respondem ao FSH e sustentam a espermatogênese, mas não são a fonte de testosterona. (c) O espermatócito primário é uma célula germinativa em meiose, sem função endócrina. (d) As células mioides peritubulares são contráteis e circundam o túbulo seminífero.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "espermatogenese",
+        "hormonios"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q06",
+      "tipo": "multipla",
+      "enunciado": "Qual célula forma a barreira hematotesticular e fagocita os corpos residuais eliminados durante a espermiogênese?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Célula de Leydig"
+        },
+        {
+          "id": "b",
+          "texto": "Espermatogônia"
+        },
+        {
+          "id": "c",
+          "texto": "Célula de Sertoli"
+        },
+        {
+          "id": "d",
+          "texto": "Célula mioide peritubular"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "As células de Sertoli, unidas por junções oclusivas, formam a barreira hematotesticular, sustentam e nutrem as células germinativas e fagocitam o citoplasma excedente (corpos residuais) das espermátides. (a) A célula de Leydig fica no interstício e secreta testosterona. (b) A espermatogônia é uma célula germinativa. (d) A célula mioide peritubular é contrátil e não fagocita corpos residuais.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "espermatogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q07",
+      "tipo": "multipla",
+      "enunciado": "Espermiogênese é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A série de divisões mitóticas das espermatogônias"
+        },
+        {
+          "id": "b",
+          "texto": "A meiose dos espermatócitos primários e secundários"
+        },
+        {
+          "id": "c",
+          "texto": "A transformação das espermátides em espermatozoides, sem divisão celular"
+        },
+        {
+          "id": "d",
+          "texto": "A maturação dos espermatozoides no epidídimo, com aquisição de motilidade"
+        },
+        {
+          "id": "e",
+          "texto": "A capacitação dos espermatozoides no trato genital feminino"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Espermiogênese é a fase final da espermatogênese, em que a espermátide arredondada se transforma em espermatozoide (formação do acrossomo, condensação nuclear, formação da cauda, perda de citoplasma), sem divisão. (a) e (b) Mitoses das espermatogônias e meiose dos espermatócitos são etapas anteriores da espermatogênese. (d) A maturação no epidídimo ocorre após a espermiogênese. (e) A capacitação ocorre no trato genital feminino e prepara para a fertilização.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": [
+        "espermatogenese",
+        "espermiogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q08",
+      "tipo": "multipla",
+      "enunciado": "O acrossomo do espermatozoide origina-se:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Do complexo de Golgi da espermátide"
+        },
+        {
+          "id": "b",
+          "texto": "Das mitocôndrias da peça intermediária"
+        },
+        {
+          "id": "c",
+          "texto": "Do centríolo distal"
+        },
+        {
+          "id": "d",
+          "texto": "Do citoplasma da célula de Sertoli"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O acrossomo é uma vesícula derivada do complexo de Golgi que se dispõe como capuz sobre o núcleo e contém enzimas usadas na fertilização. (b) As mitocôndrias formam a bainha da peça intermediária e fornecem energia ao movimento. (c) O centríolo participa da formação do axonema da cauda. (d) A célula de Sertoli sustenta a espermátide, mas não fornece organelas a ela.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "espermiogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q09",
+      "tipo": "multipla",
+      "enunciado": "Ao fim da gametogênese, quantos gametas funcionais derivam, respectivamente, de um espermatócito primário e de um ovócito primário?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "4 e 4"
+        },
+        {
+          "id": "b",
+          "texto": "4 e 1"
+        },
+        {
+          "id": "c",
+          "texto": "2 e 1"
+        },
+        {
+          "id": "d",
+          "texto": "1 e 1"
+        },
+        {
+          "id": "e",
+          "texto": "2 e 2"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Cada espermatócito primário origina quatro espermátides, que se tornam quatro espermatozoides. No ovócito, as divisões citoplasmáticas são desiguais: forma-se um único ovócito (que conserva quase todo o citoplasma) e corpúsculos polares, que degeneram. (a) e (e) Ignoram a citocinese desigual da ovogênese. (c) Dois corresponde ao número de espermatócitos secundários, não de gametas. (d) Subestima a produção masculina.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "espermatogenese",
+        "ovogenese",
+        "comparacao-gametas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q10",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 43 anos tem diagnóstico pré-natal de feto com cariótipo 47,XX,+21. O estudo de marcadores indica não disjunção meiótica de origem materna.",
+      "enunciado": "Qual característica da ovogênese melhor explica o aumento do risco de trissomias com a idade materna?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Os ovócitos primários permanecem parados em prófase I desde a vida fetal, por décadas, até a ovulação"
+        },
+        {
+          "id": "b",
+          "texto": "As ovogônias continuam em mitose durante a vida adulta e acumulam erros de replicação"
+        },
+        {
+          "id": "c",
+          "texto": "A espermatogênese se torna mais longa com o avanço da idade"
+        },
+        {
+          "id": "d",
+          "texto": "O ovócito secundário completa a meiose II antes da ovulação em mulheres mais velhas"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os ovócitos primários entram na meiose I antes do nascimento e permanecem parados em prófase I até pouco antes da ovulação; nas mulheres mais velhas esse intervalo é de décadas, o que se associa a maior risco de erros de segregação (não disjunção). (b) Segundo o modelo clássico, não há ovogônias em proliferação após o nascimento. (c) O caso é de origem materna; a espermatogênese não explica a não disjunção no ovócito. (d) A meiose II só se completa após a fertilização, em qualquer idade.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": [
+        "nao-disjuncao",
+        "ovogenese",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q11",
+      "tipo": "multipla",
+      "contexto": "Uma estudante de 22 anos usa contraceptivo oral combinado (estrogênio e progestagênio) corretamente e pergunta como o medicamento impede a gravidez.",
+      "enunciado": "Qual é o principal mecanismo contraceptivo desses fármacos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Destruição dos folículos primordiais do ovário"
+        },
+        {
+          "id": "b",
+          "texto": "Supressão de GnRH, FSH e LH, impedindo o pico de LH e a ovulação"
+        },
+        {
+          "id": "c",
+          "texto": "Indução da reação acrossômica precoce dos espermatozoides"
+        },
+        {
+          "id": "d",
+          "texto": "Estímulo à formação de múltiplos corpos lúteos"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Os contraceptivos orais combinados atuam no hipotálamo e na adeno-hipófise, suprimindo GnRH, FSH e LH; sem o pico de LH não há ovulação. (a) Não destroem os folículos primordiais; a reserva ovariana não é eliminada. (c) Não atuam induzindo a reação acrossômica. (d) Sem ovulação não se forma corpo lúteo; o efeito é o oposto.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "ciclo-ovariano",
+        "hormonios",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q12",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 27 anos, com ciclos regulares de 28 dias, relata dor leve no quadrante inferior direito do abdome todo mês, por volta do 14º dia do ciclo, durando algumas horas. O exame é normal.",
+      "enunciado": "Qual evento do ciclo ovariano melhor explica essa dor?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ruptura do folículo maduro na ovulação"
+        },
+        {
+          "id": "b",
+          "texto": "Descamação da camada funcional do endométrio"
+        },
+        {
+          "id": "c",
+          "texto": "Degeneração do corpo lúteo em corpo albicans"
+        },
+        {
+          "id": "d",
+          "texto": "Implantação do blastocisto"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A dor do meio do ciclo (mittelschmerz), coincidindo com a ovulação (~14º dia de um ciclo de 28 dias), é atribuída à ruptura do folículo maduro e à irritação peritoneal por sangue ou líquido folicular. (b) A descamação endometrial ocorre na fase menstrual, no início do ciclo. (c) A degeneração do corpo lúteo ocorre no fim da fase lútea. (d) A implantação exigiria fertilização e ocorre ~6 dias após a ovulação; além disso, a dor é recorrente todo mês.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "ciclo-ovariano",
+        "ovulacao",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q13",
+      "tipo": "multipla",
+      "contexto": "Uma mulher tem ciclos menstruais regulares de 35 dias e deseja engravidar.",
+      "enunciado": "Em que dia aproximado do ciclo é mais provável que ocorra a ovulação?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Dia 7"
+        },
+        {
+          "id": "b",
+          "texto": "Dia 14"
+        },
+        {
+          "id": "c",
+          "texto": "Dia 21"
+        },
+        {
+          "id": "d",
+          "texto": "Dia 28"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A fase lútea (pós-ovulatória) tem duração relativamente constante, de cerca de 2 semanas; a variação na duração dos ciclos ocorre principalmente na fase proliferativa (folicular). Num ciclo de 35 dias, a ovulação ocorre por volta do dia 21 (35 − ~14). (a) O dia 7 ainda está na fase proliferativa inicial. (b) O dia 14 vale para ciclos de 28 dias; usá-lo aqui ignora o alongamento da fase proliferativa. (d) O dia 28 deixaria uma fase lútea de apenas ~7 dias.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "ciclo-menstrual",
+        "ovulacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q14",
+      "tipo": "multipla",
+      "enunciado": "No início da gravidez, o corpo lúteo é mantido e continua a secretar progesterona principalmente por ação de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "FSH da adeno-hipófise"
+        },
+        {
+          "id": "b",
+          "texto": "Gonadotrofina coriônica humana (hCG) secretada pelo sinciciotrofoblasto"
+        },
+        {
+          "id": "c",
+          "texto": "Estrogênio produzido pelos folículos em crescimento"
+        },
+        {
+          "id": "d",
+          "texto": "GnRH hipotalâmico"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A hCG, produzida pelo sinciciotrofoblasto, mantém o corpo lúteo da gravidez, que continua secretando progesterona até que a placenta assuma essa função. (a) O FSH atua no crescimento folicular, não na manutenção do corpo lúteo. (c) O estrogênio folicular não impede a involução do corpo lúteo. (d) O GnRH atua na hipófise e não diretamente no corpo lúteo.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "corpo-luteo",
+        "hormonios"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q15",
+      "tipo": "multipla",
+      "enunciado": "Qual característica distingue o folículo secundário (antral) do folículo primário?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Presença de zona pelúcida em torno do ovócito"
+        },
+        {
+          "id": "b",
+          "texto": "Presença de um antro preenchido por líquido folicular"
+        },
+        {
+          "id": "c",
+          "texto": "Ovócito envolvido por uma única camada de células achatadas"
+        },
+        {
+          "id": "d",
+          "texto": "Ovócito parado em metáfase II"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O folículo secundário (antral ou vesicular) caracteriza-se pelo antro cheio de líquido folicular, com o ovócito no cumulus oophorus. (a) A zona pelúcida já aparece no folículo primário. (c) Uma camada de células achatadas caracteriza o folículo primordial. (d) O ovócito só chega à metáfase II após o pico de LH, no folículo maduro pré-ovulatório.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "foliculogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q16",
+      "tipo": "multipla",
+      "enunciado": "Qual é o destino da grande maioria das células germinativas femininas formadas durante o período pré-natal?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "São ovuladas ao longo da vida reprodutiva"
+        },
+        {
+          "id": "b",
+          "texto": "Sofrem atresia (degeneração)"
+        },
+        {
+          "id": "c",
+          "texto": "Permanecem como ovogônias até a menopausa"
+        },
+        {
+          "id": "d",
+          "texto": "Diferenciam-se em células da granulosa"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A maioria das células germinativas femininas degenera (atresia) antes do nascimento, durante a infância e ao longo da vida reprodutiva. (a) Apenas cerca de 400–500 ovócitos são ovulados em toda a vida reprodutiva. (c) Segundo o modelo clássico, as ovogônias não persistem após o nascimento. (d) As células da granulosa derivam das células foliculares, não das células germinativas.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "ovogenese",
+        "foliculogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q17",
+      "tipo": "vf",
+      "enunciado": "Segundo o modelo clássico adotado por Moore e Sadler, nenhum ovócito primário novo se forma após o nascimento.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Todos os ovócitos primários se formam antes do nascimento; depois disso, seu número só diminui por atresia e ovulação.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "ovogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q18",
+      "tipo": "vf",
+      "enunciado": "O espermatócito secundário tem 23 cromossomos, cada um formado por duas cromátides.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O espermatócito secundário resulta da meiose I (separação dos homólogos); cada um de seus 23 cromossomos ainda tem duas cromátides, que se separam na meiose II.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "espermatogenese",
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q19",
+      "tipo": "vf",
+      "enunciado": "A meiose II é precedida por uma nova replicação do DNA.",
+      "correta": false,
+      "explicacao": "Falso. Há uma única replicação do DNA, antes da meiose I. A meiose II separa as cromátides irmãs já existentes, sem nova replicação.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q20",
+      "tipo": "vf",
+      "enunciado": "O pico de LH no meio do ciclo leva o ovócito primário do folículo dominante a completar a meiose I.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Após o pico de LH, o ovócito primário completa a meiose I, formando o ovócito secundário e o primeiro corpúsculo polar; em seguida, o ovócito secundário para em metáfase II e ocorre a ovulação.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "ciclo-ovariano",
+        "ovogenese",
+        "hormonios"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
+    },
+    {
+      "id": "emb-02-q21",
+      "tipo": "vf",
+      "enunciado": "Na fase secretora do ciclo menstrual, o endométrio está sob influência predominante do estrogênio e suas glândulas são retas e estreitas.",
+      "correta": false,
+      "explicacao": "Falso. Na fase secretora (lútea) predomina a progesterona do corpo lúteo, e as glândulas tornam-se largas, tortuosas e secretam material rico em glicogênio. Glândulas retas e estreitas sob estrogênio caracterizam a fase proliferativa.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "ciclo-menstrual"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a sequência celular da espermatogênese:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Espermátide"
+        },
+        {
+          "id": "2",
+          "texto": "Espermatócito primário"
+        },
+        {
+          "id": "3",
+          "texto": "Espermatozoide"
+        },
+        {
+          "id": "4",
+          "texto": "Espermatogônia"
+        },
+        {
+          "id": "5",
+          "texto": "Espermatócito secundário"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Espermatogônias (mitose) → espermatócito primário (meiose I) → espermatócitos secundários (meiose II) → espermátides → espermatozoides (por espermiogênese).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "espermatogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do desenvolvimento folicular e de seus derivados:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Folículo secundário (antral)"
+        },
+        {
+          "id": "2",
+          "texto": "Corpo albicans"
+        },
+        {
+          "id": "3",
+          "texto": "Folículo primordial"
+        },
+        {
+          "id": "4",
+          "texto": "Ovulação"
+        },
+        {
+          "id": "5",
+          "texto": "Folículo maduro (de Graaf)"
+        },
+        {
+          "id": "6",
+          "texto": "Corpo lúteo"
+        },
+        {
+          "id": "7",
+          "texto": "Folículo primário"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "7",
+        "1",
+        "5",
+        "4",
+        "6",
+        "2"
+      ],
+      "explicacao": "Folículo primordial → primário (células cuboides/estratificadas, zona pelúcida) → secundário (antro) → maduro (de Graaf) → ovulação → corpo lúteo (formado pelas paredes do folículo) → corpo albicans (cicatriz após a degeneração do corpo lúteo, se não houver gravidez).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "foliculogenese",
+        "ciclo-ovariano"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos de um ciclo menstrual sem fertilização, começando pelo 1º dia do ciclo:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Fase secretora (lútea)"
+        },
+        {
+          "id": "2",
+          "texto": "Ovulação"
+        },
+        {
+          "id": "3",
+          "texto": "Fase menstrual"
+        },
+        {
+          "id": "4",
+          "texto": "Fase isquêmica"
+        },
+        {
+          "id": "5",
+          "texto": "Fase proliferativa (folicular)"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "5",
+        "2",
+        "1",
+        "4"
+      ],
+      "explicacao": "O ciclo começa no 1º dia da menstruação (fase menstrual); segue-se a fase proliferativa, sob estrogênio; a ovulação marca a transição para a fase secretora (lútea), sob progesterona; sem fertilização, a queda de progesterona leva à fase isquêmica e a nova menstruação.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "ciclo-menstrual"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os eventos da ovogênese:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Conclusão da meiose I com formação do primeiro corpúsculo polar"
+        },
+        {
+          "id": "2",
+          "texto": "Proliferação mitótica das ovogônias"
+        },
+        {
+          "id": "3",
+          "texto": "Conclusão da meiose II com formação do segundo corpúsculo polar"
+        },
+        {
+          "id": "4",
+          "texto": "Parada do ovócito primário em prófase I"
+        },
+        {
+          "id": "5",
+          "texto": "Ovulação do ovócito secundário parado em metáfase II"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "As ovogônias proliferam na vida fetal; os ovócitos primários iniciam a meiose I e param em prófase I antes do nascimento; após o pico de LH completam a meiose I (primeiro corpúsculo polar); o ovócito secundário, parado em metáfase II, é ovulado; a meiose II só se completa na fertilização (segundo corpúsculo polar).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "ovogenese",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada hormônio à sua principal fonte no contexto da reprodução:",
+      "pares": [
+        {
+          "esquerda": "GnRH",
+          "direita": "Hipotálamo"
+        },
+        {
+          "esquerda": "FSH",
+          "direita": "Adeno-hipófise"
+        },
+        {
+          "esquerda": "Progesterona da fase lútea",
+          "direita": "Corpo lúteo"
+        },
+        {
+          "esquerda": "hCG",
+          "direita": "Sinciciotrofoblasto"
+        },
+        {
+          "esquerda": "Testosterona",
+          "direita": "Células de Leydig"
+        }
+      ],
+      "explicacao": "O GnRH hipotalâmico estimula a liberação de FSH e LH pela adeno-hipófise; o corpo lúteo secreta progesterona na fase lútea; o sinciciotrofoblasto produz hCG, que mantém o corpo lúteo na gravidez; as células de Leydig secretam testosterona sob LH.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "hormonios"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada componente à sua função:",
+      "pares": [
+        {
+          "esquerda": "Célula de Sertoli",
+          "direita": "Formar a barreira hematotesticular"
+        },
+        {
+          "esquerda": "Células da granulosa",
+          "direita": "Converter androgênios em estrogênio sob ação do FSH"
+        },
+        {
+          "esquerda": "Teca interna",
+          "direita": "Produzir androgênios precursores do estrogênio"
+        },
+        {
+          "esquerda": "Teca externa",
+          "direita": "Formar uma cápsula de tecido conjuntivo fibroso em torno do folículo"
+        },
+        {
+          "esquerda": "Zona pelúcida",
+          "direita": "Envolver o ovócito como camada glicoproteica acelular"
+        }
+      ],
+      "explicacao": "As células de Sertoli formam a barreira hematotesticular; na foliculogênese, a teca interna produz androgênios que as células da granulosa aromatizam em estrogênio; a teca externa é fibrosa; a zona pelúcida é a camada glicoproteica acelular que envolve o ovócito.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "espermatogenese",
+        "foliculogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Carlson 6ª ed., cap. 1"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "2 — Primeira semana do desenvolvimento humano (gametogênese; ciclos reprodutivos femininos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "2 — Gametogênese: conversão das células germinativas em gametas masculinos e femininos"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "3 — Primeira semana do desenvolvimento: da ovulação à implantação (ciclo ovariano)"
+    },
+    {
+      "obra": "Carlson. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
+      "capitulo": "1 — Preparação para a gravidez (gametogênese; ciclos reprodutivos)"
+    }
+  ],
+  "notasDivergencia": [
+    "Número de ovócitos primários ao nascimento: Moore cita cerca de 2 milhões; Sadler, 600 mil a 800 mil. Faixa adotada: de centenas de milhares a ~2 milhões. Na puberdade, ambos citam ~40 mil (textos de histologia citam valores maiores, ~300–400 mil).",
+    "Número de ovócitos ovulados na vida reprodutiva: Moore ~400; Sadler, menos de 500. Faixa adotada: ~400–500.",
+    "Duração da espermatogênese: Moore, cerca de 2 meses; Sadler, ~74 dias; outras fontes, ~64 dias. Faixa adotada: 64–74 dias (~2 meses).",
+    "Nomenclatura folicular: Moore usa folículo primário/secundário; Sadler usa folículo pré-antral e antral (vesicular). Adotado: secundário = antral = vesicular.",
+    "Duração da função do corpo lúteo da gravidez: Moore, ~20 primeiras semanas; Sadler, até o fim do 4º mês. Não cobrado em questões.",
+    "Terminologia da parada meiótica do ovócito primário: diplóteno e dictióteno são usados como sinônimos para a parada do ovócito primário na prófase I."
+  ],
+  "incertezas": [
+    "Intervalo entre o pico de LH e a ovulação: Moore cita 12–24 h após o pico; fontes de fisiologia reprodutiva citam ~34–36 h após o início do surto. Não usado em questões.",
+    "Proporção de espermatozoides morfologicamente anormais no ejaculado (citada como até ~10% em textos de embriologia) — omitida do conteúdo até verificação.",
+    "Duração das fases do ciclo menstrual em dias (Moore: menstrual ~4–5, proliferativa ~9, lútea ~13) — usada apenas de forma aproximada.",
+    "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento)."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

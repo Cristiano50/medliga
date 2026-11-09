@@ -1,0 +1,1515 @@
+{
+  "atualizadoEm": "2026-11-09",
+  "descricao": "Onde e como a embriologia aparece nos cursos de Medicina de instituições brasileiras, e a sequência das disciplinas por semestre. Dados de fontes oficiais (URLs em 'fontes'); inferências marcadas em 'notas'. Síntese em docs/pesquisa-curricular.md.",
+  "legenda": {
+    "semestres": "Semestres em que a embriologia (geral e/ou dos sistemas) é ensinada. Em cursos com séries anuais, a série k corresponde aos semestres 2k−1 e 2k.",
+    "cargaHoraria": "Horas dedicadas especificamente à embriologia; null quando o documento só informa a CH do módulo/disciplina integrada (ver 'notas').",
+    "sequenciaDisciplinas.observacao": "Campo opcional: indica série anual ou internato."
+  },
+  "diretrizesNacionais": {
+    "vigente": "Resolução CNE/CES nº 3, de 30 de setembro de 2025 (DOU 01/10/2025, Seção 1, pp. 35–37), com base no Parecer CNE/CES nº 536/2025, cuja homologação foi publicada no DOU de 30/09/2025 (Seção 1, p. 160).",
+    "revogada": "Resolução CNE/CES nº 3, de 20 de junho de 2014 (revogada pelo art. 40 da Res. 3/2025).",
+    "pontosRelevantes": [
+      "Não lista conteúdos de ciências básicas nem cita embriologia/morfologia; os conteúdos essenciais devem ser definidos pelas competências (art. 19, parágrafo único). O egresso deve usar de forma integrada os conhecimentos das ciências biomédicas (art. 8º, XXI).",
+      "CH mínima de 7.200 h, presencial (art. 13); metodologias ativas e integração curricular (arts. 18 e 20); inserção em atividades práticas desde o início do curso (art. 31).",
+      "Internato ≥ 35% da CH total e ≥ 2 anos; ≥ 30% do internato em MFC e Urgência/Emergência (art. 32).",
+      "Avaliação somativa abrangente obrigatória antes do internato (art. 36, parágrafo único).",
+      "'Áreas verdes' (janelas curriculares) obrigatórias em todos os períodos (art. 28).",
+      "Implantação integral em 4 anos; cursos em funcionamento têm 1 ano para aplicar às turmas abertas após a vigência (arts. 38–39)."
+    ],
+    "fontes": [
+      {
+        "url": "https://www.medicina.ufmg.br/cegrad/wp-content/uploads/sites/102/2026/09/Resolucao_CNECES_N_3.pdf",
+        "acessoOk": true,
+        "observacao": "Texto integral da Res. CNE/CES 3/2025 (cópia publicada pela UFMG; traz a referência do DOU)."
+      },
+      {
+        "url": "https://sbmfc.org.br/wp-content/uploads/2025/10/RESOLUCAO-CNE_CES-No-3-DE-30-DE-SETEMBRO-DE-2025.pdf",
+        "acessoOk": false,
+        "observacao": "Host fora da rede liberada."
+      },
+      {
+        "url": "https://www.gov.br/mec/pt-br/cne/2025/agosto-de-2025/sum008-25_parecer-ces-536_2025.pdf",
+        "acessoOk": false,
+        "observacao": "Primeiro bloqueado pela rede; depois de liberado, HTTP 429 (limite de requisições). Parecer 536/2025 não lido."
+      },
+      {
+        "url": "https://website.abem-educmed.org.br/wp-content/uploads/2026/05/Caderno_de_orientacoes-para_implementacao_das_DCN.pdf",
+        "acessoOk": true,
+        "observacao": "Caderno ABEM (2026) de orientações para implantar as DCN 2025; não trata de embriologia/ciências morfológicas."
+      }
+    ]
+  },
+  "instituicoes": [
+    {
+      "id": "escs",
+      "nome": "Escola Superior de Ciências da Saúde (ESCS/FEPECS/UnDF) — Medicina",
+      "modeloCurricular": "pbl",
+      "embriologia": {
+        "onde": "MOD102 — Concepção e Formação do Ser Humano (módulo temático PBL da 1ª série)",
+        "semestres": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Anatomia e histologia dos órgãos reprodutores; ação dos hormônios sexuais",
+          "Síntese de esteroides sexuais por gônadas, adrenal e placenta",
+          "Espermatogênese e ovogênese (normais e anormais); ovulação, fecundação e nidação",
+          "Etapas da formação embrionária do zigoto ao final da 8ª semana",
+          "Formação das cavidades pleurais, pericárdica e peritoneal",
+          "Determinação e diferenciação sexual (sexo cromossômico, gonadal e genital)",
+          "Desenvolvimento da placenta e anexos (líquido amniótico, cordão umbilical, membranas)",
+          "Mecanismos teratogênicos genéticos e ambientais (físicos, químicos, biológicos)",
+          "Formação de gêmeos mono e dizigóticos",
+          "Aspectos psicológicos do ciclo menstrual e do início da maternidade/paternidade"
+        ],
+        "bibliografia": [
+          "SADLER, T. W. Langman Embriologia médica. Guanabara Koogan (PPC registra '9. ed., 2025') — básica",
+          "PERSAUD, T. V. N. (Moore) Embriologia básica. 10. ed. Guanabara Koogan, 2022 — complementar",
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia clínica. 11. ed. 2020 — complementar (MOD201/MOD202)",
+          "NUSSBAUM et al. Thompson & Thompson Genética médica — complementar"
+        ],
+        "embriologiaSistemas": "Distribuída nos módulos por tema: digestório no MOD103 Metabolismo (1ª série); respiratório e coração no MOD104 Funções Biológicas I (1ª série); cavidades corporais e diferenciação sexual no MOD102; embriogênese/crescimento fetal no MOD201 Nascimento, Crescimento e Desenvolvimento (2ª série); sistema nervoso no MOD202 Percepção, Consciência e Emoção (2ª série); diferenciação sexual retomada no MOD206 Saúde da Mulher (2ª série). Urinário não aparece explicitamente nos objetivos do MOD108."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "MOD101 Introdução ao Estudo da Medicina",
+            "MOD102 Concepção e Formação do Ser Humano",
+            "MOD103 Metabolismo",
+            "MOD104 Funções Biológicas I",
+            "MOD105 Eletivo I",
+            "MOD106 Mecanismos de Agressão e Defesa",
+            "MOD107 Abrangência das Ações de Saúde",
+            "MOD108 Funções Biológicas II",
+            "HA101 Habilidades e Atitudes I",
+            "IESC101 Interação Ensino-Serviço-Comunidade I"
+          ],
+          "observacao": "1ª série (anual) = semestres 1–2; módulos sequenciais na ordem listada"
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "MOD201 Nascimento, Crescimento e Desenvolvimento",
+            "MOD202 Percepção, Consciência e Emoção",
+            "MOD203 Processo de Envelhecimento",
+            "MOD204 Proliferação Celular",
+            "MOD205 Eletivo II",
+            "MOD206 Saúde da Mulher, Sexualidade Humana e Planejamento Familiar",
+            "MOD207 Locomoção e Preensão",
+            "HA202 Habilidades e Atitudes II",
+            "IESC202"
+          ],
+          "observacao": "2ª série (anual) = semestres 3–4"
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "MOD301 Dor",
+            "MOD302 Dor Abdominal, Diarreia, Vômitos e Icterícia",
+            "MOD303 Febre, Inflamação e Infecção",
+            "MOD304 Doenças Resultantes da Agressão ao Meio Ambiente",
+            "MOD305 Eletivo III",
+            "MOD306 Perda de Sangue",
+            "MOD307 Fadiga, Perda de Peso e Anemias",
+            "HA303",
+            "IESC303"
+          ],
+          "observacao": "3ª série (anual) = semestres 5–6"
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "MOD401 Transtornos Mentais e de Comportamento",
+            "MOD402 Distúrbios Sensoriais, Motores e da Consciência",
+            "MOD403 Dispneia, Dor Torácica e Edemas",
+            "MOD404 Desordens Nutricionais e Metabólicas",
+            "MOD405 Eletivo IV",
+            "MOD406 Manifestações Externas das Doenças e Iatrogenias",
+            "MOD407 Emergências",
+            "HA/IESC IV"
+          ],
+          "observacao": "4ª série (anual) = semestres 7–8"
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "ECO501 Saúde do Adulto I – Clínica Médica I",
+            "ECO502 Saúde do Adulto I – Clínica Cirúrgica I",
+            "ECO503 Saúde da Criança",
+            "ECO504 Saúde da Mulher",
+            "ECO505 Saúde Coletiva"
+          ],
+          "observacao": "5ª série = internato (semestres 9–10)"
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "ECO601 Estratégia de Saúde da Família",
+            "ECO602 Saúde Mental",
+            "ECO603 Saúde do Adulto II – Clínica Médica II",
+            "ECO604 Saúde Materno-Infantil",
+            "ECO605 Saúde do Adulto II – Clínica Cirúrgica II",
+            "ECO606 Eletivo VI"
+          ],
+          "observacao": "6ª série = internato (semestres 11–12)"
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://www.escs.edu.br/wp-content/uploads/escs-files/escs_documento/medicina/PPC_versao_final_28_05_2025.pdf",
+          "acessoOk": true,
+          "observacao": "PPC 2025 (FEPECS/ESCS/UnDF); Anexo III com ementário por módulo (objetivos e bibliografia). Texto extraído com pdftotext."
+        },
+        {
+          "url": "https://www.escs.edu.br/wp-content/uploads/escs-files/escs_documento/medicina/Matriz-curricular.pdf",
+          "acessoOk": true,
+          "observacao": "Matriz curricular — ano letivo 2026 (módulos, semanas e CH)."
+        },
+        {
+          "url": "https://www.escs.edu.br/medicina/",
+          "acessoOk": true,
+          "observacao": "Página do curso; links para PPC e matriz."
+        },
+        {
+          "url": "https://www.fepecs.edu.br/",
+          "acessoOk": false,
+          "observacao": "Conexão recusada (connection reset) a partir deste ambiente; não necessário, pois os documentos estão no site da ESCS."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial: PPC 2025 e matriz 2026. CH do MOD102 = 60 h no total do módulo integrado (anatomia, histologia, fisiologia, genética, psicologia); a parcela de embriologia não é discriminada, por isso cargaHoraria = null. Semestres [1,2,3,4] = 1ª e 2ª séries (embriologia geral no MOD102; sistemas em MOD103/104 e MOD201/202/206). Inferência: a divisão das séries anuais em semestres (série k = semestres 2k−1 e 2k) e a ordem temporal dos módulos assumida pela numeração/sequência da matriz. O PPC cita a edição do Langman como '9. ed., 2025' (provável erro de digitação no documento)."
+    },
+    {
+      "id": "unb",
+      "nome": "Universidade de Brasília (UnB) — Faculdade de Medicina",
+      "modeloCurricular": "misto",
+      "embriologia": {
+        "onde": "FMD0013 Morfofuncional 1 (submódulo 'Gênese'); continua em FMD0019 Morfofuncional 2 e FMD0027 Morfofuncional 3",
+        "semestres": [
+          1,
+          2,
+          3
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Introdução ao estudo da anatomia, histologia e embriologia; conceitos fundamentais em embriologia",
+          "Eventos pré-concepcionais; gametogênese e transporte de gametas",
+          "Fecundação, clivagem, blastulação, nidação",
+          "Gastrulação e dobramento do embrião (primeira à quarta semanas)",
+          "Período fetal; fundamentos da medicina fetal; como se processam as malformações congênitas (objetivos)",
+          "Desenvolvimento dos membros (submódulo Sistema Locomotor)",
+          "Embriologia e histologia do sistema nervoso e dos órgãos sensoriais"
+        ],
+        "bibliografia": [
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia clínica. 11. ed. Rio de Janeiro: GEN, 2021",
+          "LARSEN, W. J.; SCHOENWOLF, G. C. Larsen embriologia humana. 5. ed. Elsevier, 2016",
+          "(PPC 2019) SADLER, T. W. Langman Embriologia médica. 9. ed. Guanabara Koogan",
+          "(PPC 2019) GARCIA, S. M. L.; FERNANDES, C. G. Embriologia. 2. ed. Artes Médicas, 2008"
+        ],
+        "embriologiaSistemas": "Sem. 1 (Morfofuncional 1): sistema nervoso, órgãos dos sentidos e membros. Sem. 2 (Morfofuncional 2, 330 h): aparelho faríngeo e face, cavidades do corpo, mesentérios e diafragma, respiratório, circulatório e imunitário, endócrino, genital masculino e feminino, urinário, anexos embrionários. Sem. 3 (Morfofuncional 3): digestório. Sem. 7: Saúde da Mulher – GO retoma 'desenvolvimento da concepção, do embrião, do feto e de seus anexos'."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "Morfofuncional 1 (150 h)",
+            "Citologia",
+            "Bioquímica e Biofísica Médica",
+            "Genética e Biologia Molecular",
+            "Saúde, Ambiente e Sociedade",
+            "Psicologia Médica 1"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "Morfofuncional 2 (330 h)",
+            "Sistema Único de Saúde",
+            "Psicologia Médica 2"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "Morfofuncional 3 (120 h)",
+            "Fundamentos de Microbiologia Médica",
+            "Parasitologia Médica",
+            "Imunologia Médica",
+            "Processos Patológicos (teórica e prática)",
+            "Atenção Primária à Saúde",
+            "Psicologia Médica 3"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "Semiologia (240 h)",
+            "Patologia Sistêmica 1",
+            "Farmacologia Médica",
+            "Saúde da Família e Comunidade 1",
+            "Psicologia Médica 4"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "Saúde do Adulto – Clínica Médica 1",
+            "Saúde do Adulto – Cirurgia 1",
+            "Saúde da Família e Comunidade 2",
+            "Psicologia Médica 5"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "Epidemiologia",
+            "Saúde do Adulto – Clínica Médica 2",
+            "Patologia Sistêmica 2",
+            "Urgência e Emergência 1 – Clínica Médica",
+            "Saúde da Família e Comunidade 3",
+            "Psicologia Médica 6"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "Saúde da Mulher – Ginecologia e Obstetrícia",
+            "Saúde da Criança e do Adolescente – Pediatria 1",
+            "Urgência e Emergência 2 – GO",
+            "Patologia Sistêmica 3",
+            "Saúde da Família e Comunidade 4",
+            "Psicologia Médica 7"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "Saúde do Adulto – Cirurgia 2",
+            "Medicina Legal e Deontologia",
+            "Urgência e Emergência 4 – Cirurgia",
+            "Saúde da Criança e do Adolescente – Pediatria 2",
+            "Urgência e Emergência 3 – Pediatria",
+            "Saúde da Família e Comunidade 5",
+            "Psicologia Médica 8"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Internato – Saúde Integral 1"
+          ]
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Internato – Saúde do Adulto Cirurgia",
+            "Internato – Saúde do Adulto Clínica Médica",
+            "Internato Urgência e Emergência 1 e 2"
+          ]
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Internato – Pediatria",
+            "Internato – Ginecologia e Obstetrícia",
+            "Internato Urgência e Emergência 3 e 4"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "Internato – Saúde Integral 2",
+            "Internato Eletivo"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://sigaa.unb.br/sigaa/public/curso/curriculo.jsf?lc=pt_BR&id=414280",
+          "acessoOk": true,
+          "observacao": "SIGAA público: estrutura curricular ativa 7111/2 (vigência 2021.1), obrigatórias por nível. O relatório e os programas abrem por POST JSF a partir desta página."
+        },
+        {
+          "url": "https://sigaa.unb.br/sigaa/public/curso/relatorio_curriculo.jsf",
+          "acessoOk": true,
+          "observacao": "Programas oficiais (ano-período 2024.1) de FMD0013, FMD0019, FMD0027, FMD0029, GEM0005, obtidos via POST (idComponente 177412, 177422, 177430, 177432, 177420)."
+        },
+        {
+          "url": "https://fm.unb.br/images/graduacao/projeto_pedagogico_do_curso/PPC_site_2019.pdf",
+          "acessoOk": true,
+          "observacao": "PPC 2019: eixos, fluxo curricular e ementário com bibliografia (versão anterior à estrutura 7111/2; usado para contexto e bibliografia antiga)."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial: SIGAA (estrutura 7111/2) e programas 2024.1. CH dos módulos Morfofuncionais (150/330/120 h) inclui anatomia, histologia e fisiologia; a parcela de embriologia não é discriminada (cargaHoraria = null). Existe a optativa FMD0558 Trabalhos Práticos de Embriologia (30 h) listada na estrutura. Classificação 'misto' é inferência: módulos morfofuncionais integrados por sistemas + disciplinas separadas (citologia, bioquímica, genética) e clínica por áreas."
+    },
+    {
+      "id": "uniceub",
+      "nome": "Centro Universitário de Brasília (UniCEUB/CEUB) — Medicina",
+      "modeloCurricular": "pbl",
+      "embriologia": {
+        "onde": "Concepção e Formação do Ser Humano (módulo do 1º semestre, 105 h)",
+        "semestres": [
+          1,
+          3
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Estudo integrado da biologia celular e molecular",
+          "Sistemas reprodutivos; gametogênese; fecundação",
+          "Embriogênese e desenvolvimento dos sistemas corporais",
+          "Herança genética e epigenética",
+          "Agentes teratogênicos e suas implicações no desenvolvimento humano",
+          "Bioética e aspectos psicossociais da reprodução assistida e das malformações congênitas",
+          "Interpretação de alterações morfofuncionais, patológicas e imagenológicas aplicadas ao desenvolvimento"
+        ],
+        "bibliografia": [],
+        "embriologiaSistemas": "A ementa do módulo do 1º semestre inclui 'desenvolvimento dos sistemas corporais'. No 3º semestre, 'Percepção, Consciência e Coordenação' traz 'desenvolvimento do sistema nervoso' e 'Nascimento, Crescimento e Desenvolvimento' traz 'vida intrauterina, gestação, nascimento'."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "Introdução ao Estudo da Medicina",
+            "Concepção e Formação do Ser Humano",
+            "Metabolismo",
+            "Habilidades Profissionais I",
+            "Interação Ensino-Serviço-Comunidade I",
+            "Produção Textual e Comunicação Científica em Saúde"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "Mecanismos de Agressão e Defesa",
+            "Processos Fisiológicos e Princípios Farmacológicos",
+            "Funções Biológicas",
+            "Habilidades Profissionais II",
+            "Interação Ensino-Serviço-Comunidade II",
+            "Temas Contemporâneos em Sociedade e Saúde"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "Nascimento, Crescimento e Desenvolvimento",
+            "Percepção, Consciência e Coordenação",
+            "Processo de Envelhecimento",
+            "Habilidades Profissionais III",
+            "Interação Ensino-Serviço-Comunidade III",
+            "Ética, Existência e Humanização na Medicina Contemporânea I e II"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "Saúde da Mulher",
+            "Proliferação Celular",
+            "Doenças Resultantes da Agressão ao Meio Ambiente",
+            "Habilidades Profissionais IV",
+            "Interação Ensino-Serviço-Comunidade IV",
+            "Optativa"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "Febre, Inflamação e Infecção",
+            "Dor e Cuidados Paliativos",
+            "Dor Abdominal, Diarreia, Vômitos e Icterícia",
+            "Habilidades Profissionais V",
+            "Interação Ensino-Serviço-Comunidade V"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "Desordens do Sistema Músculo-Esquelético e Doenças Imunomediadas",
+            "Saúde Mental e Comportamento",
+            "Anemias e Perda de Sangue",
+            "Habilidades Profissionais VI",
+            "Interação Ensino-Serviço-Comunidade VI"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "Manifestações Cutâneas das Doenças e Farmacodermias",
+            "Dispneia e Edema",
+            "Dor Torácica e Dispneia",
+            "Habilidades Profissionais VII",
+            "Interação Ensino-Serviço-Comunidade VII"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "Emergências",
+            "Distúrbios Sensoriais, Motores e da Consciência",
+            "Desordens Endócrinas e Metabólicas",
+            "Habilidades Profissionais VIII",
+            "Interação Ensino-Serviço-Comunidade VIII"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Internato I"
+          ]
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Internato II"
+          ]
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Internato III"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "Internato IV",
+            "Trabalho de Conclusão de Curso"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://www.uniceub.br/pdp/graduacao/saude/medicina",
+          "acessoOk": true,
+          "observacao": "Página oficial do curso: declara metodologia PBL; disciplinas e CH de cada semestre (1º a 12º) obtidas pelo seletor de semestre (postback ASP.NET)."
+        },
+        {
+          "url": "https://relatorios.uniceub.br/Relatorios/Academico/PlanoEnsino/Reports/programadisciplinaPortal.ashx?tXj_bEV1xSYSNVpMafTlMQ2",
+          "acessoOk": true,
+          "observacao": "Programa oficial de 'Concepção e Formação do Ser Humano' (PDF de 1 página: ementa e competências, sem bibliografia nem cronograma). Também lidos: Nascimento, Crescimento e Desenvolvimento; Percepção, Consciência e Coordenação; Metabolismo; Funções Biológicas; Mecanismos de Agressão e Defesa; Saúde da Mulher; Proliferação Celular."
+        },
+        {
+          "url": "https://repositorio.uniceub.br/jspui/bitstream/prefix/15984/1/Medicina.pdf",
+          "acessoOk": false,
+          "observacao": "PPC 2018 no repositório: HTTP 410 Gone."
+        }
+      ],
+      "confianca": "media",
+      "notas": "Fonte oficial para a sequência e as ementas, mas os programas públicos trazem só ementa/competências: sem tópicos detalhados, sem CH de embriologia e sem bibliografia (bibliografia = []). A lista de tópicos acima reproduz a ementa; o detalhamento por semana não foi encontrado. Nomes dos módulos são muito parecidos com os da ESCS (inferência: currículo inspirado no modelo ESCS/PBL)."
+    },
+    {
+      "id": "ucb",
+      "nome": "Universidade Católica de Brasília (UCB) — Medicina",
+      "modeloCurricular": "misto",
+      "embriologia": {
+        "onde": "GPS06T001 Morfologia Sistêmica (1º semestre, 320 h; embriologia + citologia + histologia + anatomia)",
+        "semestres": [
+          1
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Embriologia, citologia, histologia e anatomia dos diversos sistemas do corpo humano, com ênfase clínica e cirúrgica",
+          "Principais malformações de interesse médico"
+        ],
+        "bibliografia": [
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia básica. 8. ed. Elsevier, 2013 — complementar (a bibliografia básica da disciplina não traz livro de embriologia)"
+        ],
+        "embriologiaSistemas": "Toda a embriologia aparece concentrada na ementa de Morfologia Sistêmica (1º semestre), que trata 'dos diversos sistemas'; não há outra disciplina com embriologia explícita no ementário."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "Morfologia Sistêmica (320 h)",
+            "Metabolismo Celular",
+            "Saúde Coletiva",
+            "Genética Médica"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "Fisiologia Clínica (160 h)",
+            "Atividade Profissional em Medicina",
+            "Projeto de Extensão I",
+            "Psicologia Aplicada às Interações Profissionais",
+            "Relação: Princípios e Valores"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "Agressão e Defesa",
+            "Linhas de Cuidado da Saúde",
+            "Patologia Clínica",
+            "Profissão: Competências e Habilidades"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "Bases Farmacológicas",
+            "Práticas em Bases da Cirurgia",
+            "Semiologia (320 h)",
+            "Disciplina optativa"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "Medicina Digital",
+            "Práticas em Anestesiologia",
+            "Práticas em Clínica Médica I",
+            "Projeto de Extensão II"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "Aplicações Clínicas da Farmacoterapia",
+            "Cooperação: Humanismo Solidário, Redes e Comunidades",
+            "Práticas em Clínica Cirúrgica I",
+            "Práticas em Clínica Médica II",
+            "Práticas em Dermatologia"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "Práticas em Clínica Médica III",
+            "Práticas em Ginecologia",
+            "Práticas em Imagenologia",
+            "Práticas em Obstetrícia",
+            "Práticas em Saúde Mental"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "Habilidades Técnicas e Atitudinais",
+            "Práticas em Clínica Cirúrgica II",
+            "Práticas em Oftalmologia",
+            "Práticas em Ortopedia e Traumatologia",
+            "Práticas em Otorrinolaringologia",
+            "Práticas em Pediatria"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Internato em Medicina Geral de Família e Comunidade"
+          ]
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Internato em Clínica Cirúrgica",
+            "Internato em Ginecologia e Obstetrícia"
+          ]
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Internato em Clínica Médica",
+            "Internato em Pediatria"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "Internato em Saúde Coletiva e Gestão Profissional",
+            "Internato em Saúde Mental",
+            "Internato em Urgências e Emergências"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://ucb.catolica.edu.br/hubfs/Documentos%20P%C3%A1ginas%20de%20Curso/Arquivos%20Cursos/Medicina/Projeto%20pedagogico.pdf",
+          "acessoOk": true,
+          "observacao": "PPC Medicina 2023 (189 p.): currículo pleno GPS06B01T (início 01/01/2021) nas p. 83–84 (tabela em imagem, lida visualmente) e ementário por semestre; Tabela 3 associa metodologias (TBL, PBL, simulação) a componentes."
+        },
+        {
+          "url": "https://ucb.catolica.edu.br/curso/medicina",
+          "acessoOk": false,
+          "observacao": "HTTP 404 na data da consulta."
+        },
+        {
+          "url": "https://ucb2.catolica.edu.br/portal/wp-content/uploads/2019/02/GPS06-MEDICINA.pdf",
+          "acessoOk": false,
+          "observacao": "Matriz 2019 indicada pela busca; host bloqueado pelo proxy deste ambiente (não liberado)."
+        }
+      ],
+      "confianca": "media",
+      "notas": "Fonte oficial (PPC 2023), mas a ementa de embriologia é genérica: não há lista de tópicos nem CH própria (320 h é a disciplina inteira). No ementário, Fisiologia Clínica aparece com '3º' e Agressão e Defesa com '2º', invertido em relação ao quadro do currículo pleno; adotei o quadro (Fisiologia 2º, Agressão e Defesa 3º). 'Misto' é inferência: disciplinas amplas integradas (morfologia, fisiologia, patologia) com metodologias ativas (TBL; PBL citado só para Genética Médica)."
+    },
+    {
+      "id": "unicamp",
+      "nome": "Universidade Estadual de Campinas (Unicamp) — Faculdade de Ciências Médicas, curso 15",
+      "modeloCurricular": "misto",
+      "embriologia": {
+        "onde": "BS107 Bases da Embriologia e da Histologia Gerais do Corpo Humano (1º sem.) + BS113 Bases da Embriologia e da Histologia dos Sistemas do Corpo Humano (2º sem.)",
+        "semestres": [
+          1,
+          2,
+          3
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Introdução à embriologia e às malformações congênitas",
+          "Implantação",
+          "Gastrulação; neurulação",
+          "Dobramentos do embrião",
+          "Placenta",
+          "Destino dos folhetos embrionários",
+          "Conceitos e tópicos essenciais sobre o período embrionário e o período fetal",
+          "Correlação com anomalias congênitas",
+          "(BS113) Embriologia e anomalias congênitas dos sistemas cardiovascular, imune, respiratório, urinário, endócrino, digestório e reprodutor; embriologia da cabeça e do pescoço"
+        ],
+        "bibliografia": [
+          "PEREIRA, L. A. V. D.; COSTA, C. F. P.; MORAES, S. G. Embriologia Humana Essencial: animações, texto, exercícios e casos clínicos. The Life Press, 2021 (embriologiahumana.com.br) — básica",
+          "SADLER, T. W. Langman Embriologia Médica. 14. ed. GEN Guanabara Koogan, 2021 — complementar",
+          "BLEYL, S. B. et al. Larsen Embriologia Humana. 5. ed. GEN Guanabara Koogan, 2016 — complementar",
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia Clínica. 11. ed. GEN Guanabara Koogan, 2021 — complementar"
+        ],
+        "embriologiaSistemas": "2º semestre em BS113 (90 h, junto com histologia dos mesmos sistemas): cardiovascular, imune, respiratório, urinário, endócrino, digestório, reprodutor e cabeça/pescoço. Sistema nervoso no 3º semestre em BS220 Neurociências (ementa cita embriologia). Teratógenos e anomalias congênitas reaparecem no internato do 4º ano (MD432 Atenção Clínica I – genética)."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "BS105 Biologia Celular e Molecular (inclui genética médica)",
+            "BS106 Fundamentos de Anatomia e Radiologia do Aparelho Locomotor",
+            "BS107 Bases da Embriologia e da Histologia Gerais",
+            "BS108 Bases Bioquímicas e Fisiológicas do Corpo Humano I",
+            "MD170 Bases humanas da prática médica",
+            "MD171 Prática médica I",
+            "MD173 Saúde Coletiva I",
+            "MD175 Bases científicas da prática médica I",
+            "MD177 Ética e relacionamento humano"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "BS112 Fundamentos de Anatomia e Radiologia dos Sistemas Orgânicos",
+            "BS113 Bases da Embriologia e da Histologia dos Sistemas",
+            "BS114 Bases Bioquímicas e Fisiológicas do Corpo Humano II",
+            "MD172 Prática Médica II",
+            "MD174 Saúde Coletiva II",
+            "MD176 Bases científicas da prática médica II",
+            "MD178 Ética, ciência e prática médica",
+            "MD125 Atividades complementares e Avaliação I"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "BS220 Neurociências",
+            "BS230 Bacteriologia Médica",
+            "BS235 Imunologia Básica",
+            "MD221 Farmacologia aplicada à prática médica",
+            "MD228 Habilidades clínicas I",
+            "MD246 Anatomia Aplicada à Prática Médica II",
+            "MD233 Saúde Coletiva III",
+            "MD235 Saúde Coletiva IV",
+            "MD237 Saúde digital",
+            "MD238 Bioética"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "MD224 Anatomia Patológica",
+            "BS240 Parasitologia e Micologia Médica",
+            "BS243 Virologia Médica",
+            "MD227 Anatomia aplicada à prática médica I",
+            "MD229 Habilidades clínicas II",
+            "MD230 Neurociências e saúde mental",
+            "MD234 Saúde Coletiva V",
+            "MD236 Saúde Coletiva VI",
+            "MD239 Ética e comunicação"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "MD314 Raciocínio clínico I (cardiovascular/respiratório)",
+            "MD315 Raciocínio clínico II (gastro/nefro/endócrino)",
+            "MD316 Raciocínio clínico III (neuro/saúde mental/cabeça e pescoço)",
+            "MD310 Introdução à Imunologia Médica",
+            "MD322 Medicina, evidência e decisão I",
+            "MD326 Profissionalismo, responsabilidade e segurança do paciente"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "MD317 Raciocínio clínico IV (infecto/hemato/onco/osteoarticular)",
+            "MD318 Raciocínio clínico V (criança e idoso)",
+            "MD319 Raciocínio clínico VI (mulher e urogenital)",
+            "MD313 Anatomia aplicada à prática médica III",
+            "MD323 Medicina, evidência e decisão II",
+            "MD327 Medicina Legal"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "MD431 Atenção primária integral à saúde",
+            "MD432 Atenção clínica I (neurologia e genética)",
+            "MD433 Atenção clínico-cirúrgica I",
+            "MD434 Atenção integral à saúde do adulto e do idoso",
+            "MD435 Atenção à saúde mental",
+            "MD436 Saúde Coletiva VII: Saúde da Família e Comunidade I"
+          ],
+          "observacao": "4º ano = internato (semestres 7–8)"
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "MD512 Saúde da criança e do adolescente I",
+            "MD513 Saúde da mulher I",
+            "MD514 Saúde do adulto I",
+            "MD515 Atenção clínico-cirúrgica II",
+            "MD523 Plantão em Pediatria",
+            "MD524 Plantão em Tocoginecologia"
+          ],
+          "observacao": "5º ano = internato (semestres 9–10)"
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "MD610 Saúde da Família II e Saúde Mental",
+            "MD612–MD616 (criança, mulher, cirurgia, clínico-cirúrgica, adulto)",
+            "MD617 Anestesiologia",
+            "MD618 Ortopedia, Traumatologia e Reumatologia",
+            "MD619 Emergências Clínicas",
+            "MD620 Emergências Cirúrgicas",
+            "MD622 Emergências Pediátricas",
+            "MD623/MD624 Plantões"
+          ],
+          "observacao": "6º ano = internato (semestres 11–12)"
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2026/cursos/15g/curriculo.html",
+          "acessoOk": true,
+          "observacao": "Catálogo de Graduação 2026 (DAC): currículo pleno do curso 15 com CH e créditos."
+        },
+        {
+          "url": "https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2026/cursos/15g/sugestao.html",
+          "acessoOk": true,
+          "observacao": "Proposta para cumprimento do currículo (disciplinas por semestre)."
+        },
+        {
+          "url": "https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2026/disciplinas/bs.html",
+          "acessoOk": true,
+          "observacao": "Ementas e bibliografias de BS107, BS113, BS105, BS220 etc."
+        },
+        {
+          "url": "https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2026/disciplinas/md.html",
+          "acessoOk": true,
+          "observacao": "Ementas das disciplinas MD (Raciocínio clínico, MD432 etc.)."
+        },
+        {
+          "url": "https://portal.fcm.unicamp.br/wp-content/uploads/sites/58/2025/12/Versao-final.pdf",
+          "acessoOk": true,
+          "observacao": "FCM — 'Reforma curricular: o novo 4º ano 2026' (reforma iniciada em 2024 no 1º ano)."
+        },
+        {
+          "url": "https://portal.fcm.unicamp.br/wp-content/uploads/sites/58/2025/04/curriculo_pleno_2022_0.pdf",
+          "acessoOk": true,
+          "observacao": "Currículo pleno 2022 (pré-reforma): BS102/BS202 Bases do Desenvolvimento e dos Tecidos I/II — usado só como comparação."
+        },
+        {
+          "url": "https://fcm.unicamp.br/ensino-extensao/sites/default/files/2025-01/CAT%C3%81LOGO%20%282653846%29.pdf",
+          "acessoOk": false,
+          "observacao": "HTTP 404."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial (Catálogo DAC 2026). BS107 = 60 h de laboratório e BS113 = 90 h, mas ambas juntam embriologia e histologia (cargaHoraria = null). A ementa de BS107 do currículo reformado NÃO cita gametogênese nem fecundação (citava em BS102, currículo 2022); podem estar dentro de 'introdução à embriologia' ou em BS113 (sistema reprodutor) — inferência, não confirmada. 'Misto' é inferência: disciplinas básicas integradas por área + blocos de raciocínio clínico por sistemas."
+    },
+    {
+      "id": "ufmg",
+      "nome": "Universidade Federal de Minas Gerais (UFMG) — Faculdade de Medicina",
+      "modeloCurricular": "tradicional",
+      "embriologia": {
+        "onde": "MOF611 Embriologia Médica (Departamento de Morfologia/ICB)",
+        "semestres": [
+          1
+        ],
+        "cargaHoraria": 45,
+        "topicos": [
+          "Gametogênese; fertilização; noções de reprodução assistida e gravidez responsável",
+          "Segmentação/clivagem e mórula; formação do blastocisto",
+          "Implantação e formação dos anexos embrionários",
+          "Gastrulação: formação do endoderma e do mesoderma; ectoderma e notocorda",
+          "Diferenciação dos folhetos: mesoderma; endoderma; ectoderma neural (tubo neural, vesículas encefálicas, crista neural e derivados); ectoderma de revestimento",
+          "Fechamento ventral, curvatura céfalo-caudal e formação do cordão umbilical",
+          "Arcos e bolsas faríngeos; morfogênese da face e cavidade oral",
+          "Embriologia dos sistemas respiratório, coração e circulatório (vasos, arcos aórticos, sistema venoso, circulação embrionária, fetal e pós-natal)",
+          "Cavidades corporais, mesentérios e diafragma",
+          "Embriologia dos sistemas digestivo, urinário e genitais masculino e feminino",
+          "Placenta",
+          "Noções básicas de teratologia"
+        ],
+        "bibliografia": [
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia Clínica. 11. ed. Guanabara Koogan, 2020 — básica",
+          "SADLER, T. W. Langman Embriologia Médica. 14. ed. Guanabara Koogan, 2021 — básica",
+          "CARLSON, B. M. Embriologia Humana e Biologia do Desenvolvimento. 5. ed. Elsevier, 2014 — básica",
+          "MOORE et al. Embriologia Básica (trad. 10. ed.). Guanabara Koogan, 2022 — complementar",
+          "PEREIRA, L. A. V.; JUSTINO, M. L.; MORAES, S. G. Embriologia humana integrada (e-book). Cedet, 2014 — complementar",
+          "GILBERT, S. F. Biologia do Desenvolvimento. 11. ed. Artmed, 2019 — complementar",
+          "SCHOENWOLF et al. Larsen Embriologia Humana. 5. ed. Guanabara Koogan, 2016 — complementar",
+          "SILVA, G. A. B.; ALVES, M. S. D.; CRUZ, V. L. B. Embriologia: roteiro prático. UFMG, 8. ed., 2006 — complementar"
+        ],
+        "embriologiaSistemas": "Toda no 1º período, dentro da própria MOF611 (45 h: 15 teóricas + 30 práticas com modelos em gesso): faríngeo/face, respiratório, coração e circulação (incl. circulação fetal), cavidades/diafragma, digestório, urinário e genital."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "IMA175 Anatomia Sistêmica",
+            "MOF057 Biologia Celular Aplicada à Medicina",
+            "MOF611 Embriologia Médica",
+            "BIQ119 Bioquímica I",
+            "GEE060 Genética",
+            "MPS118 Ciências Sociais Aplicadas à Saúde",
+            "MED143 Introdução à Pesquisa Científica I",
+            "MED144 Atendimento Pré-Hospitalar e Primeiros Socorros"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "MOF058 Histofisiologia dos Sistemas Aplicada à Medicina",
+            "MOF005 Neuroanatomia Médica",
+            "FIB124 Biofísica e Fisiologia",
+            "BIQ608 Imunologia Médica",
+            "MED146 Tutoria",
+            "PSQ001 Bases Humanísticas e Introdução à Psicologia Médica",
+            "MED145 Iniciação à Atenção Primária à Saúde I"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "FIB125 Fisiologia Médica",
+            "BIQ064 Bioquímica II",
+            "FAR120 Farmacologia Médica I",
+            "MIC121 Microbiologia Médica",
+            "PAR025 Parasitologia Médica",
+            "MED147 Iniciação à Atenção Primária à Saúde II"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "PAG017 Patologia Geral",
+            "FAR121 Farmacologia Médica II",
+            "IMA176 Anatomia Topográfica e Imagem",
+            "CLM145 Clínica Médica I",
+            "PED035 Pediatria I",
+            "MED149 Introdução à Pesquisa Científica II",
+            "MED148 Iniciação à Atenção Primária à Saúde III"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "PSQ002 Semiologia e Nosologia Psiquiátrica",
+            "APM001 Anatomia Patológica I",
+            "CIR014 Cirurgia I",
+            "CLM146 Clínica Médica II",
+            "IMA177 Imagem I",
+            "MPS119 Epidemiologia",
+            "PED036 Pediatria II",
+            "PRO075 Patologia Clínica I"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "APM002 Anatomia Patológica II",
+            "CIR035 Cirurgia II",
+            "CLM147 Clínica Médica III",
+            "GOB015 Ginecologia Básica",
+            "IMA178 Imagem II",
+            "PED037 Pediatria III",
+            "PRO076 Patologia Clínica II",
+            "MED070 Conferências de Ética"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "CIR036 Cirurgia III",
+            "GOB016 Obstetrícia Básica",
+            "CLM148 Clínica Médica IV",
+            "PED038 Pediatria IV",
+            "MED150 Ética Médica",
+            "MPS006 Saúde do Trabalhador",
+            "PSQ003 Psicologia Médica"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "CIR037 Cirurgia IV",
+            "CLM149 Clínica Médica V",
+            "PED039 Pediatria V",
+            "GOB017 Atenção Primária à Saúde da Mulher",
+            "APM010 Medicina Legal",
+            "MED151 Suporte de Vida em Urgência",
+            "MPS120 Política de Saúde",
+            "PSQ004 Psiquiatria na Atenção Primária"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Estágios: Clínica Médica, Atenção Secundária, Propedêutica Contextualizada I–II, Clínica Pediátrica, Interconsulta Psiquiátrica"
+          ],
+          "observacao": "9º–12º = estágios/internato"
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Estágios: Ginecologia e Obstetrícia, Clínica Cirúrgica, Atenção Secundária (ALO/OFT), Propedêutica Contextualizada III–IV"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "MED156/157 Urgência e Emergência I–II",
+            "MPS121 Estágio em Saúde Coletiva",
+            "MPS040 Gestão do Sistema de Saúde",
+            "MED158 Extensão em Saúde e Medicina"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://www.medicina.ufmg.br/cegrad/wp-content/uploads/sites/102/2024/11/01-Embriologia-Medica.pdf",
+          "acessoOk": true,
+          "observacao": "Programa oficial da MOF611 — versão curricular 2024 (aprovado em 13/11/2023): código, CH, período, ementa, conteúdo, bibliografia."
+        },
+        {
+          "url": "https://www.medicina.ufmg.br/cegrad/wp-content/uploads/sites/102/2026/07/Grade-Curricular-MED-2026-2-1.pdf",
+          "acessoOk": true,
+          "observacao": "Grade curricular/horários 2026/2 com disciplinas por período (1º a 12º)."
+        },
+        {
+          "url": "https://www.medicina.ufmg.br/cegrad/wp-content/uploads/sites/102/2024/06/Projeto_Pedagogico.pdf",
+          "acessoOk": true,
+          "observacao": "PPC (fev/2024). O texto extraído não menciona 'embriologia' (matriz provavelmente em imagem); usado só para contexto."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial completa. A ordem dos conteúdos acima segue o programa. 'Tradicional' = disciplinas por departamento (ICB/FM), embora haja Tutoria e integração com APS. O programa não cita explicitamente: estágios de Carnegie, idade gestacional, período fetal/diagnóstico pré-natal, gemelaridade, mola/ectópica."
+    },
+    {
+      "id": "fmusp",
+      "nome": "Faculdade de Medicina da Universidade de São Paulo (FMUSP) — curso 5043",
+      "modeloCurricular": "integrado",
+      "embriologia": {
+        "onde": "6700002 Fundamentos Morfofuncionais da Medicina (1º sem., 210 h); embriologia dos sistemas em 6700004, 6700007, 6700009, 6700010 e 6700008",
+        "semestres": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Gametogênese e fertilização",
+          "Formação do blastocisto; gastrulação",
+          "Movimentos morfogenéticos e neurulação",
+          "Delimitação do corpo do embrião",
+          "Anormalidades embriológicas: construção do conhecimento médico e de potenciais intervenções",
+          "(6700007, 3º sem.) Embriogênese dos órgãos genitais; implantação, anexos embrionários e placentação; caso clínico de gestação ectópica; genitália ambígua, útero bicorno e agenesia renal"
+        ],
+        "bibliografia": [
+          "CARLSON, B. M. Embriologia humana e Biologia do Desenvolvimento. 5. ed. Elsevier, 2014",
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia Básica. 8. ed. Elsevier, 2014",
+          "SADLER, T. W. Langman embriologia médica. 11. ed. Guanabara Koogan, 2010",
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia clínica. 9. ed. Elsevier, 2014",
+          "NETTER, F. H.; COCHARD, L. R. Atlas de Embriologia Humana. Elsevier, 2014",
+          "(6700007) Larsen Embriologia Humana. 5. ed."
+        ],
+        "embriologiaSistemas": "Por sistema, junto com anatomia/histologia/fisiologia: digestório e malformações em 6700004 Sistema Digestório I (2º sem.); face, vias aéreas superiores, pulmão (incl. aspectos moleculares) em 6700009 Sistema Respiratório I (3º); rins e vias urinárias em 6700010 Sistema Urinário I (3º); genitais, implantação e placentação em 6700007 Sistema Reprodutor Feminino (3º); coração e malformações cardiovasculares em 6700008 Fundamentos Estruturais e Funcionais do Sistema Cardiovascular (4º)."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "6700001 Fundamentos das Ciências Médicas",
+            "6700002 Fundamentos Morfofuncionais da Medicina",
+            "MSP1010 Introdução à Medicina e à Saúde",
+            "MSP1041 Processo Saúde-Doença-Cuidado I",
+            "MSP4211 Discussão Integrada de Casos I"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "6700003 Princípios do Desenvolvimento das Doenças",
+            "6700004 Sistema Digestório I",
+            "6700013 Farmacologia Básica I",
+            "MSP2061 Sistema Nervoso I",
+            "MSP3161 Ciclo da Vida I",
+            "MSP1302 Avaliação Extensiva Formativa II"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "6700005 Sistema Locomotor 1",
+            "6700006 Fundamentos da Endocrinologia e Metabologia",
+            "6700007 Sistema Reprodutor Feminino",
+            "6700009 Sistema Respiratório I",
+            "6700010 Sistema Urinário I",
+            "MSP1042 Processo Saúde-Doença-Cuidado II (1ª parte)",
+            "MSP1290 Fundamentos da Pesquisa Científica",
+            "MSP4212 Discussão Integrada de Casos II",
+            "MSP4226 Prática em Anatomia Cirúrgica"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "6700008 Fundamentos Estruturais e Funcionais do Sistema Cardiovascular",
+            "6700012 Genética Humana e Médica e Oncogenética",
+            "MSP2052 Sistema Respiratório II",
+            "MSP2082 Sistema Digestório II",
+            "MSP3162 Ciclo da Vida II",
+            "MSP1043 Processo Saúde-Doença-Cuidado II (2ª parte)",
+            "MSP2042 Medicina do Trabalho"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "6700014 Moléstias Transmissíveis",
+            "6700017 Bases Anatomofisiológicas, Fisiopatológicas e Farmacológicas em Neurologia e Psiquiatria",
+            "MSP2062 Aspectos Cardiovasculares de Medicina",
+            "MSP2112 Bases Fisiológicas da Nefrologia",
+            "MSP2141 Sistema Tegumentar",
+            "MSP3163 Ciclo da Vida III",
+            "MSP4213 Discussão Integrada de Casos III"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "6700011 Sistemas Imunológico, Hematológico e Reumatológico",
+            "MSP2083 Sistema Digestório III",
+            "MSP2091 Bases Clínicas da Endocrinologia",
+            "MSP2102 Semiologia do Aparelho Locomotor",
+            "MSP2113 Patologia Renal",
+            "MSP2122 Semiologia Obstétrica",
+            "MSP2151 Sistemas Sensoriais",
+            "MSP3204 Semiologia Ginecológica",
+            "MSP3202 Bioética",
+            "MSP3203 Psicologia Médica",
+            "MSP4222 Prática Ambulatorial II"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "6700015 Terapêutica Farmacológica I",
+            "MSP4231 Integração das Principais Doenças e Situações Clínicas",
+            "MSP0404 Integração ... Ginecológicas",
+            "MSP4261 ... Infecciosas",
+            "MSP4281 ... Psiquiátricas e Neurológicas",
+            "MSP4214 Discussão Integrada de Casos IV"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "6700016 Terapêutica Farmacológica II",
+            "MSP4241 Integração das Principais Doenças e Situações Cirúrgicas",
+            "MSP4242 Técnica Cirúrgica",
+            "MSP4251 ... Pediátricas",
+            "MSP4271 ... Obstétricas",
+            "MSP4291 Medicina Legal"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Estágios integrados: Ginecologia, Cirurgia, Especialidades Médicas e Doenças Infecciosas, Pediatria I, APS/MFC"
+          ],
+          "observacao": "9º–12º = internato"
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Estágios: Psiquiatria e Dermatologia, Obstetrícia I, Clínica Médica; Bioética Clínica; Competências Médicas I"
+          ]
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Estágios: Pediatria II; Ortopedia, Oftalmologia e ORL; Obstetrícia II"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "Estágios: Medicina do Adulto; Emergências de Adulto; Temas de Medicina Preventiva; Competências Médicas II"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=5&codcur=5043&codhab=0&tipo=N",
+          "acessoOk": true,
+          "observacao": "JupiterWeb — grade curricular da Medicina com período ideal por disciplina; cabeçalho: 'Reformulação curricular', data de início 01/01/2027, 12 semestres, 8.700 h."
+        },
+        {
+          "url": "https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=6700002&nomdis=",
+          "acessoOk": true,
+          "observacao": "Ementa/programa/bibliografia de 6700002 (ativação 01/01/2024)."
+        },
+        {
+          "url": "https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=6700007&nomdis=",
+          "acessoOk": true,
+          "observacao": "Sistema Reprodutor Feminino: embriogênese genital, implantação, anexos, placentação, ectópica."
+        },
+        {
+          "url": "https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=6700009&nomdis=",
+          "acessoOk": true,
+          "observacao": "Também consultadas 6700004, 6700008, 6700010, 6700012, MSP3162 (mesmo endpoint, trocando sgldis)."
+        }
+      ],
+      "confianca": "media",
+      "notas": "Ementas oficiais (JupiterWeb). Confiança média porque a grade pública está marcada 'Reformulação curricular — início 01/01/2027' enquanto as disciplinas 67000xx têm ativação em 01/01/2024: não ficou claro se a sequência acima vale para quem ingressou antes de 2027. CH de embriologia não discriminada (6700002 tem 210 h com biologia celular, histologia, fisiologia, anatomia geral). 'Integrado' = módulos por sistemas + discussões integradas de casos (inferência a partir dos nomes/ementas)."
+    },
+    {
+      "id": "unifesp",
+      "nome": "Universidade Federal de São Paulo (UNIFESP) — Escola Paulista de Medicina",
+      "modeloCurricular": "misto",
+      "embriologia": {
+        "onde": "UC Bases Morfológicas da Medicina (1ª série, 532 h)",
+        "semestres": [
+          1,
+          2
+        ],
+        "cargaHoraria": null,
+        "topicos": [
+          "Morfologia macro e microscópica; biologia estrutural e do desenvolvimento dos sistemas corporais humanos",
+          "Mecanismos morfogenéticos do desenvolvimento embriofetal",
+          "Placenta e membranas fetais",
+          "Anomalias congênitas",
+          "Teratologia",
+          "Correlação das ciências morfológicas com a prática clínico-cirúrgica"
+        ],
+        "bibliografia": [
+          "SADLER, T. W. Langman Embriologia médica. 14. ed. Guanabara Koogan, 2021 — básica",
+          "SCHOENWOLF, G. C. et al. Larsen Embriologia humana. 5. ed. Elsevier, 2016 — básica",
+          "CARLSON, B. M. Embriologia humana e biologia do desenvolvimento. 5. ed. 2014 — complementar",
+          "MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia clínica. 11. ed. Elsevier, 2021 — complementar",
+          "O'RAHILLY, R.; MÜLLER, F. Embriologia e teratologia humanas. 3. ed. Guanabara Koogan, 2005 — complementar",
+          "COCHARD, L. R. Netter Atlas de Embriologia Humana. Elsevier, 2014 — complementar",
+          "CATALA, M. Embriologia: desenvolvimento humano inicial. 2003; DUMM, C. G. Embriologia humana: atlas e texto. 2006 — complementares"
+        ],
+        "embriologiaSistemas": "Dentro da própria UC Bases Morfológicas (1ª série), que cobre 'desenvolvimento dos sistemas corporais'; não há detalhamento por sistema no PPC. No ciclo intermediário (3ª–4ª séries) há UCs por sistema (Cardiovascular, Digestório, Respiratório, Urinário etc.), mas as ementas lidas não citam embriologia; a Bioética (3ª série) trata estatuto do embrião, reprodução assistida, diagnóstico pré-implantação e células-tronco."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "Bases Morfológicas da Medicina (532 h)",
+            "Biologia Molecular",
+            "Bioquímica",
+            "Fisiologia",
+            "Biofísica",
+            "IPM – Iniciação às Práticas Médicas",
+            "PAE I – Princípios de Atendimento às Emergências",
+            "Psicologia Médica, Saúde e Sociedade",
+            "Iniciação à Pesquisa Clínica e MBE"
+          ],
+          "observacao": "1ª série (anual) = semestres 1–2"
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "Anatomia Patológica",
+            "Anatomia Topográfica",
+            "Farmacologia (200 h)",
+            "Genética Básica e Clínica",
+            "MIP – Microbiologia, Imunologia e Parasitologia",
+            "Bases Biológicas do Comportamento",
+            "Semiologia Integrada",
+            "A Política de Saúde e o Cuidado no SUS",
+            "Psicologia Médica",
+            "PAE II"
+          ],
+          "observacao": "2ª série (anual) = semestres 3–4"
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "Semiologia do Adulto",
+            "Semiologia Pediátrica",
+            "Semiologia da Mulher",
+            "Semiologia Radiológica",
+            "Semiologia das Relações Humanas",
+            "Sistema Cardiovascular",
+            "Técnica Operatória e Cirurgia Experimental",
+            "Infectologia",
+            "Oncologia",
+            "Psiquiatria",
+            "Vigilância em Saúde",
+            "Bioética",
+            "Medicina Legal e Perícia Médica",
+            "MBE",
+            "Oftalmologia I"
+          ],
+          "observacao": "3ª série (anual) = semestres 5–6"
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "Sistema Digestório",
+            "Sistema Locomotor",
+            "Sistema Nervoso",
+            "Sistema Respiratório",
+            "Sistema Tegumentar",
+            "Sistema Urinário",
+            "Endocrinologia",
+            "Hematologia e Hemoterapia",
+            "Otorrinolaringologia e Cirurgia de Cabeça e Pescoço",
+            "Clínica Médica",
+            "Anestesiologia",
+            "Atenção Integral à Saúde da Mulher e da Criança",
+            "Medicina de Urgência Baseada em Evidência"
+          ],
+          "observacao": "4ª série (anual) = semestres 7–8"
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Internato 5ª série: Clínica Cirúrgica I e II, Clínica Médica e Medicina Laboratorial, DIP, Ginecologia, GO, Atenção Básica, MFC, Psiquiatria Prática, Ambulatório do Adulto"
+          ],
+          "observacao": "semestres 9–10"
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Internato 6ª série: emergências (clínicas, cirúrgicas, cardiovasculares, pediátricas, ortopédicas), Anestesiologia/Medicina Intensiva, Neurocirurgia, Obstetrícia, Pediatria (enfermaria e neonatal)"
+          ],
+          "observacao": "semestres 11–12"
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://cursos.siiu.unifesp.br/graduacao/curso/1/projeto-pedagogico",
+          "acessoOk": true,
+          "observacao": "PDF do PPC de Medicina (EPM), 'homologado no Conselho de Graduação de outubro de 2025'; seção 7.6 Matriz Curricular 2026 e 7.7 Ementas e Bibliografias."
+        },
+        {
+          "url": "https://cursos.siiu.unifesp.br/graduacao/curso/1/detalhes",
+          "acessoOk": true,
+          "observacao": "Detalhes do curso (Medicina integral, 121 vagas, 6 anos)."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial (PPC 2025/matriz 2026). A UC é anual (1ª série) e integra anatomia, histologia, neuroanatomia, biologia celular e embriologia; CH própria de embriologia não informada. A ementa é genérica: tópicos de 1ª–3ª semanas (gametogênese, fertilização, clivagem etc.) não aparecem nominalmente. 'Misto' é inferência: ciclo básico por disciplinas ministradas de forma integrada + ciclo intermediário por sistemas."
+    },
+    {
+      "id": "ufrj",
+      "nome": "Universidade Federal do Rio de Janeiro (UFRJ) — Faculdade de Medicina (Cidade Universitária)",
+      "modeloCurricular": "misto",
+      "embriologia": {
+        "onde": "FMW111 Bases Biológicas da Vida (1º período, 525 h, Programa Curricular Interdepartamental) — área de Embriologia",
+        "semestres": [
+          1,
+          2,
+          3
+        ],
+        "cargaHoraria": 56,
+        "topicos": [
+          "Gametogênese masculina e feminina",
+          "Fertilização",
+          "Blastulação",
+          "Nidação",
+          "Gastrulação",
+          "Padronização de eixos anteroposterior, dorsoventral e direita-esquerda",
+          "Fechamento do embrião",
+          "Endoderma; mesoderma",
+          "Neurulação; crista neural",
+          "Tegumento",
+          "Membros"
+        ],
+        "bibliografia": [
+          "SADLER, T. W. Langman Embriologia médica. 12. ed. Guanabara Koogan, 2013",
+          "SCHOENWOLF, G. C.; BLEYL, S. B.; BRAUER, P. R.; FRANCIS-WEST, P. H. Larsen embriologia humana. 4. ed. Elsevier, 2009"
+        ],
+        "embriologiaSistemas": "Nos blocos por sistema do ciclo básico: BMW121 Sistema Nervoso (2º período: morfogênese e bases moleculares do desenvolvimento do SN); BMW122 Sistema Cardiovascular e Respiratório (2º: embriogênese do coração, vasos e sistema respiratório); BMW231 Sistema Urinário, BMW232 Sistema Digestório (aparelho branquial, cavidade oral, intestino primitivo, glândulas anexas e malformações) e BMW233 Sistema Endócrino e Reprodutor (embriogênese endócrina e do sistema reprodutor) no 3º período."
+      },
+      "sequenciaDisciplinas": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "BQM112 Moléculas da Vida",
+            "FMS115 História da Medicina",
+            "FMW111 Bases Biológicas da Vida (anatomia, histologia, embriologia, biologia celular e molecular, bioquímica, biofísica, genética)"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "BMW121 Sistema Nervoso",
+            "BMW122 Sistema Cardiovascular e Respiratório",
+            "Atividades Acadêmicas Optativas"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "BMW231 Sistema Urinário",
+            "BMW232 Sistema Digestório",
+            "BMW233 Sistema Endócrino e Reprodutor",
+            "FMW231 Atenção Integral à Saúde"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "CFP241 Parasitologia Médica",
+            "FMP242 Patologia Geral",
+            "FMW241 Propedêutica Clínica",
+            "IMW242 Microbiologia e Imunologia",
+            "Atividade Curricular de Extensão"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "BMF220 Farmacologia Médica I",
+            "FMW352 Medicina Interna I",
+            "ISC301 Epidemiologia",
+            "ISC302 Saúde e Trabalho"
+          ]
+        },
+        {
+          "semestre": 6,
+          "disciplinas": [
+            "BMF224 Farmacologia Médica II",
+            "FML351 Psicologia Médica",
+            "FMW362 Medicina Interna II",
+            "ICS303 Administração e Planejamento de Saúde"
+          ]
+        },
+        {
+          "semestre": 7,
+          "disciplinas": [
+            "FMC592 Cirurgia",
+            "FMI471 Clínica Pediátrica I",
+            "FML472 Patologia Forense",
+            "FMT591 Ortopedia e Traumatologia",
+            "FMW472 Medicina Interna III"
+          ]
+        },
+        {
+          "semestre": 8,
+          "disciplinas": [
+            "FMG501 Ginecologia",
+            "FMB591 Obstetrícia",
+            "FMI591 Clínica Pediátrica II",
+            "FML481 Psiquiatria e Saúde Mental",
+            "FML591 Medicina Legal",
+            "FMO591 Otorrinolaringologia",
+            "FMO592 Oftalmologia",
+            "FMS471 Doenças Infecciosas e Parasitárias"
+          ]
+        },
+        {
+          "semestre": 9,
+          "disciplinas": [
+            "Internato A – Clínica Médica",
+            "Internato B – Cirurgia",
+            "Internato G1 – Saúde Coletiva I",
+            "Estágio de Urgência e Emergência"
+          ]
+        },
+        {
+          "semestre": 10,
+          "disciplinas": [
+            "Internato C – Pediatria",
+            "Internato D – Ginecologia e Obstetrícia",
+            "Internato G2 – Saúde Coletiva II"
+          ]
+        },
+        {
+          "semestre": 11,
+          "disciplinas": [
+            "Internato E – MFC",
+            "Internato F – Saúde Mental",
+            "Internato G3 – Saúde Coletiva III"
+          ]
+        },
+        {
+          "semestre": 12,
+          "disciplinas": [
+            "Internato eletivo (escolha restrita entre CM, Cirurgia, Pediatria, GO, MFC, Saúde Mental)"
+          ]
+        }
+      ],
+      "fontes": [
+        {
+          "url": "https://www.medicina.ufrj.br/images/Cat%C3%A1logo_Medicina_UFRJ_2024.pdf",
+          "acessoOk": true,
+          "observacao": "Catálogo da grade curricular 2024 (grade recomendada por período + ementas, programas, CH por área e bibliografia)."
+        }
+      ],
+      "confianca": "alta",
+      "notas": "Fonte oficial. A CH de 56 h é a da área de Embriologia dentro de FMW111 (declarada no catálogo). A bibliografia de embriologia está desatualizada (Langman 12ª, Larsen 4ª). 'Misto' é inferência: ciclo básico integrado (BBV + blocos por sistema) e ciclo clínico por disciplinas."
+    },
+    {
+      "id": "ufrgs",
+      "nome": "Universidade Federal do Rio Grande do Sul (UFRGS) — Faculdade de Medicina",
+      "modeloCurricular": null,
+      "embriologia": {
+        "onde": "Possivelmente CBS05065 Introdução à Embriologia (citada no PPC 2018) — NÃO VERIFICADO em fonte oficial nesta pesquisa",
+        "semestres": [],
+        "cargaHoraria": null,
+        "topicos": [],
+        "bibliografia": [],
+        "embriologiaSistemas": "Não verificado."
+      },
+      "sequenciaDisciplinas": [],
+      "fontes": [
+        {
+          "url": "https://www.ufrgs.br/famed/medicina/",
+          "acessoOk": false,
+          "observacao": "Host liberado, mas toda conexão a www.ufrgs.br caiu (connection reset / túnel fechado pelo upstream) em várias tentativas; WebFetch também falhou."
+        },
+        {
+          "url": "https://www.ufrgs.br/famed/?p=2765",
+          "acessoOk": false,
+          "observacao": "Idem (página da FAMED sobre PPC/currículo indicada pela busca)."
+        },
+        {
+          "url": "https://static.poder360.com.br/2021/08/projeto-pedagogico-medicina-ufrgs-2018.pdf",
+          "acessoOk": false,
+          "observacao": "Cópia não oficial do PPC 2018 (revogado pelo PPC 2025, segundo a busca); não acessada."
+        }
+      ],
+      "confianca": "baixa",
+      "notas": "Tudo aqui vem de resumos do WebSearch, não de leitura direta: (1) a página da FAMED diria que o currículo tem três grandes etapas e que a primeira inclui fundamentos como anatomia e embriologia; (2) o PPC 2018 registraria a criação, em 2016, da disciplina obrigatória CBS05065 Introdução à Embriologia; (3) o PPC 2018 teria sido revogado pelo 'PPC Medicina – 2025'. Nenhum desses pontos foi conferido no documento original; não usar para decisões sem verificação."
+    }
+  ]
+}

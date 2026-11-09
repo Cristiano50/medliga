@@ -1,0 +1,678 @@
+{
+  "id": "emb-08-periodo-fetal",
+  "disciplina": "embriologia",
+  "ordem": 8,
+  "titulo": "Período fetal",
+  "subtitulo": "Da nona semana ao nascimento: crescimento, maturação e avaliação fetal",
+  "periodo": {
+    "diaInicio": 57,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Delimitar o início e o fim do período fetal e diferenciar idade de fertilização (idade embrionária) de idade gestacional (contada da DUM).",
+    "Descrever os principais marcos morfológicos e funcionais do feto por intervalos de idade (9–12, 13–16, 17–20, 21–25, 26–29, 30–34 e 35–38 semanas após a fertilização).",
+    "Explicar a mudança progressiva da proporção cabeça/corpo e o padrão de crescimento ponderal ao longo do período fetal.",
+    "Relacionar a maturação pulmonar (pneumócitos tipo II e surfactante) e a maturação do sistema nervoso central com o conceito de viabilidade fetal.",
+    "Calcular a data provável do parto pela regra de Naegele e justificar os valores de 266 e 280 dias.",
+    "Analisar os fatores que influenciam o crescimento fetal e caracterizar a restrição de crescimento intrauterino.",
+    "Comparar os métodos de avaliação do estado fetal e de diagnóstico pré-natal quanto à janela de realização, ao material analisado e ao caráter de rastreamento ou diagnóstico."
+  ],
+  "resumo": "O **período fetal** vai do início da 9ª semana após a fertilização (dia 57) até o nascimento. Diferente do período embrionário, em que predomina a organogênese, aqui predominam o **crescimento rápido do corpo** e a **diferenciação e maturação funcional** dos tecidos e órgãos. Como consequência, agressões ambientais nesse período raramente produzem malformações maiores, mas podem comprometer crescimento, desenvolvimento do sistema nervoso central e função dos órgãos.\n\n**Convenção de idades.** Em embriologia a idade é dada em **dias ou semanas após a fertilização**; na clínica obstétrica, em **idade gestacional**, contada a partir do primeiro dia da última menstruação (DUM). A idade gestacional é cerca de **2 semanas maior** que a idade de fertilização. Neste tópico, todos os valores de `diaMin`/`diaMax` estão em dias após a fertilização, e os textos dizem explicitamente quando se referem à idade gestacional.\n\n**9 a 12 semanas.** No início da 9ª semana a cabeça corresponde a cerca de **metade do comprimento cabeça-nádega (CCN)**; a seguir o crescimento do corpo acelera e a cabeça passa a crescer relativamente mais devagar, de modo que a **proporção cabeça/corpo diminui** progressivamente até o termo. A face é larga, os olhos são amplamente separados, as orelhas são de implantação baixa e as pálpebras estão fundidas. Os membros superiores quase alcançam seu comprimento relativo final; os inferiores permanecem comparativamente curtos. Aparecem **centros primários de ossificação**, sobretudo no crânio e nos ossos longos. As alças intestinais, herniadas fisiologicamente no cordão umbilical, **retornam à cavidade abdominal** (10ª a 12ª semana). A **produção de urina** começa entre a 9ª e a 12ª semana, e a urina é lançada na cavidade amniótica. A **genitália externa** masculina e feminina ainda é indistinguível no início da 9ª semana; a forma fetal madura só se estabelece por volta da **12ª semana**. A eritropoiese, predominantemente hepática no início do período fetal, passa a ocorrer também no **baço** ao final da 12ª semana.\n\n**13 a 16 semanas.** Crescimento muito rápido. A **ossificação do esqueleto** é intensa e já é bem visível na ultrassonografia no início da 16ª semana. Há movimentos oculares lentos (≈14 semanas) e movimentos coordenados dos membros, ainda imperceptíveis para a mãe. Os ovários estão diferenciados e contêm folículos primordiais com oogônias. Os olhos passam a olhar anteriormente e as orelhas se aproximam da posição definitiva.\n\n**17 a 20 semanas.** O crescimento desacelera. A mãe habitualmente **percebe os movimentos fetais** (*quickening*). A pele se recobre de **vérnix caseoso** — mistura de células epidérmicas descamadas e secreção sebácea que protege a pele da maceração pelo líquido amniótico — mantido sobre a pele pelo **lanugo**, pelugem fina que recobre o corpo. Surgem sobrancelhas e cabelos. Forma-se a **gordura parda**, tecido adiposo especializado em termogênese, concentrado na raiz do pescoço, retroesternal e na região perirrenal.\n\n**21 a 25 semanas.** Ganho ponderal substancial; o feto é melhor proporcionado, com pele enrugada, translúcida e rosada pela visibilidade dos capilares. Iniciam-se movimentos oculares rápidos e, por volta de 22–23 semanas, respostas de piscar-sobressalto. Por volta da **24ª semana** os **pneumócitos tipo II** começam a secretar **surfactante**, lipídio tensoativo que reduz a tensão superficial e mantém a patência dos alvéolos. As unhas das mãos estão presentes.\n\n**26 a 29 semanas.** O feto pode sobreviver se nascer, porque os pulmões já são capazes de realizar trocas gasosas e o SNC já comanda movimentos respiratórios rítmicos e a termorregulação. As pálpebras se reabrem, aparecem unhas dos pés e acumula-se gordura branca subcutânea (≈3,5% do peso). A eritropoiese esplênica cessa em torno de 28 semanas, quando a **medula óssea** se torna o principal sítio hematopoético.\n\n**30 a 38 semanas.** O reflexo fotomotor pupilar pode ser obtido por volta de 30 semanas. A gordura branca atinge cerca de 8% do peso ao final das 34 semanas e cerca de **16% no termo**, quando o feto pesa habitualmente 3.000–3.400 g, com CCN de aproximadamente 360 mm. Por volta de 36 semanas as circunferências craniana e abdominal se equivalem; depois, a abdominal tende a superá-la. O crescimento desacelera nas últimas semanas.\n\n**Data provável do parto.** O parto ocorre, em média, **266 dias (38 semanas) após a fertilização** ou **280 dias (40 semanas) após o primeiro dia da DUM**. Pela **regra de Naegele**, soma-se 7 dias ao primeiro dia da DUM e subtraem-se 3 meses (ajustando o ano), supondo ciclos regulares de 28 dias.\n\n**Crescimento fetal.** Depende da oferta de substratos e oxigênio. Interferem: estado nutricional materno, tabagismo, álcool e outras drogas, gestação múltipla, insuficiência uteroplacentária (hipertensão, pré-eclâmpsia, infartos placentários), infecções congênitas e fatores genéticos/cromossômicos. A **restrição de crescimento intrauterino (RCIU)** descreve o feto que não atinge seu potencial de crescimento; o recém-nascido pequeno para a idade gestacional tem peso abaixo do percentil 10 para a idade.\n\n**Avaliação fetal e diagnóstico pré-natal.** A **ultrassonografia** estima a idade pelo CCN no primeiro trimestre e, depois, por diâmetro biparietal, circunferências craniana e abdominal e comprimento do fêmur; avalia anatomia, volume de líquido amniótico e, com Doppler, a hemodinâmica. A **translucência nucal** é medida entre 11 e 13 semanas e 6 dias de idade gestacional e, aumentada, associa-se a aneuploidias e cardiopatias. O **DNA fetal livre (NIPT)**, de origem placentária, é um **rastreamento** de alto desempenho disponível a partir de cerca de 10 semanas de idade gestacional — resultado alterado exige confirmação invasiva. São **diagnósticos** a **biópsia de vilo corial** (10–13 semanas), a **amniocentese** (15–18 semanas) e a **cordocentese** (a partir de cerca de 18 semanas), esta última também terapêutica na anemia fetal por aloimunização.",
+  "pontosChave": [
+    "O período fetal começa no início da 9ª semana após a fertilização (dia 57) e termina no nascimento; nele predominam crescimento e maturação funcional, não organogênese.",
+    "A idade gestacional (DUM) é cerca de 2 semanas maior que a idade de fertilização; sempre explicitar o referencial.",
+    "No início da 9ª semana a cabeça corresponde a cerca de metade do CCN, e a proporção cabeça/corpo diminui progressivamente até o termo.",
+    "As alças intestinais retornam ao abdome entre a 10ª e a 12ª semana, encerrando a herniação umbilical fisiológica.",
+    "A produção de urina começa entre a 9ª e a 12ª semana; a genitália externa só assume a forma fetal madura por volta da 12ª semana.",
+    "O vérnix caseoso (células epidérmicas descamadas + secreção sebácea) e o lanugo aparecem entre 17 e 20 semanas, período em que a mãe costuma perceber os movimentos fetais.",
+    "A gordura parda (termogênese) forma-se entre 17 e 20 semanas; a gordura branca chega a cerca de 16% do peso corporal no termo.",
+    "Os pneumócitos tipo II começam a secretar surfactante por volta da 24ª semana após a fertilização, fator determinante da viabilidade.",
+    "A eritropoiese desloca-se do saco vitelino para o fígado, depois para o baço e, a partir de cerca de 28 semanas, para a medula óssea.",
+    "O parto ocorre em média 266 dias após a fertilização ou 280 dias após a DUM; a regra de Naegele soma 7 dias e subtrai 3 meses da DUM.",
+    "A RCIU resulta sobretudo de insuficiência uteroplacentária, fatores maternos (tabagismo, desnutrição, hipertensão), gestação múltipla, infecções congênitas e causas genéticas.",
+    "Translucência nucal (11–13+6 semanas) e DNA fetal livre (a partir de ~10 semanas) são rastreamentos; biópsia de vilo corial, amniocentese e cordocentese são diagnósticos."
+  ],
+  "estruturas": [
+    {
+      "id": "herniacao-umbilical-fisiologica",
+      "nome": "Herniação umbilical fisiológica",
+      "sinonimos": ["hérnia umbilical fisiológica", "alça intestinal no cordão umbilical"],
+      "definicao": "Deslocamento normal das alças do intestino médio para a porção proximal do cordão umbilical, decorrente do crescimento rápido do intestino e do fígado em cavidade abdominal ainda pequena.",
+      "origem": "Alça do intestino médio, a partir da 6ª semana após a fertilização.",
+      "destino": "Resolve-se com o retorno das alças à cavidade abdominal entre a 10ª e a 12ª semana; a persistência caracteriza onfalocele."
+    },
+    {
+      "id": "palpebras",
+      "nome": "Pálpebras",
+      "sinonimos": [],
+      "definicao": "Pregas cutâneas que recobrem o olho em desenvolvimento.",
+      "origem": "Ectoderma superficial e mesênquima adjacente.",
+      "destino": "Fundem-se por volta da 9ª a 10ª semana e permanecem fechadas até se reabrirem em torno da 26ª semana após a fertilização."
+    },
+    {
+      "id": "vernix-caseoso",
+      "nome": "Vérnix caseoso",
+      "sinonimos": ["unto sebáceo"],
+      "definicao": "Material esbranquiçado e gorduroso que recobre a pele fetal, formado por células epidérmicas descamadas e secreção das glândulas sebáceas.",
+      "origem": "Epiderme e glândulas sebáceas fetais, a partir de 17 a 20 semanas após a fertilização.",
+      "destino": "Protege a pele da maceração pelo líquido amniótico; diminui próximo ao termo e é removido após o nascimento."
+    },
+    {
+      "id": "lanugo",
+      "nome": "Lanugo",
+      "sinonimos": ["pelugem fetal"],
+      "definicao": "Pelugem fina e macia que recobre o corpo do feto e ajuda a manter o vérnix caseoso aderido à pele.",
+      "origem": "Folículos pilosos derivados do ectoderma superficial, a partir de 17 a 20 semanas após a fertilização.",
+      "destino": "É em grande parte perdido antes do nascimento e substituído por pelos definitivos; sua abundância no recém-nascido sugere prematuridade."
+    },
+    {
+      "id": "gordura-parda",
+      "nome": "Gordura parda",
+      "sinonimos": ["tecido adiposo marrom"],
+      "definicao": "Tecido adiposo especializado, rico em mitocôndrias, que gera calor por oxidação de ácidos graxos (termogênese sem tremor).",
+      "origem": "Mesênquima; forma-se entre 17 e 20 semanas após a fertilização.",
+      "destino": "Concentra-se na raiz do pescoço, retroesternalmente e na região perirrenal; é essencial à termorregulação do recém-nascido e regride na infância."
+    },
+    {
+      "id": "gordura-branca",
+      "nome": "Gordura branca subcutânea",
+      "sinonimos": ["tecido adiposo branco"],
+      "definicao": "Tecido adiposo de reserva energética que se acumula sob a pele no terceiro trimestre, alisando as rugas cutâneas.",
+      "origem": "Mesênquima subcutâneo.",
+      "destino": "Corresponde a cerca de 3,5% do peso corporal em 26–29 semanas, cerca de 8% ao final de 30–34 semanas e cerca de 16% no termo."
+    },
+    {
+      "id": "pneumocito-tipo-ii",
+      "nome": "Pneumócito tipo II",
+      "sinonimos": ["célula alveolar tipo II", "célula epitelial secretora do septo interalveolar"],
+      "definicao": "Célula epitelial cuboide do epitélio alveolar que sintetiza, armazena em corpos lamelares e secreta o surfactante pulmonar.",
+      "origem": "Endoderma do broto respiratório (intestino anterior).",
+      "destino": "Inicia a secreção de surfactante por volta da 24ª semana após a fertilização; sua maturação é determinante da viabilidade."
+    },
+    {
+      "id": "surfactante-pulmonar",
+      "nome": "Surfactante pulmonar",
+      "sinonimos": ["agente tensoativo pulmonar"],
+      "definicao": "Mistura de fosfolipídios (sobretudo dipalmitoilfosfatidilcolina) e proteínas que reduz a tensão superficial na interface ar-líquido do alvéolo.",
+      "origem": "Pneumócitos tipo II.",
+      "destino": "Mantém a patência alveolar ao final da expiração; sua deficiência causa a síndrome de dificuldade respiratória do recém-nascido."
+    },
+    {
+      "id": "cordao-umbilical",
+      "nome": "Cordão umbilical",
+      "sinonimos": ["funículo umbilical"],
+      "definicao": "Estrutura que conecta o feto à placenta, contendo duas artérias umbilicais e uma veia umbilical envolvidas por geleia de Wharton.",
+      "origem": "Pedículo de conexão, com incorporação do pedículo vitelino e do alantoide.",
+      "destino": "Via de acesso à circulação fetal na cordocentese e na transfusão intrauterina; é seccionado ao nascimento."
+    },
+    {
+      "id": "cavidade-amniotica",
+      "nome": "Cavidade amniótica",
+      "sinonimos": [],
+      "definicao": "Espaço delimitado pelo âmnio, preenchido por líquido amniótico, no qual o feto se move e recebe a urina fetal.",
+      "origem": "Separação de células do epiblasto (amnioblastos) na 2ª semana.",
+      "destino": "Ocupa toda a cavidade coriônica e é o compartimento puncionado na amniocentese."
+    },
+    {
+      "id": "translucencia-nucal",
+      "nome": "Translucência nucal",
+      "sinonimos": ["TN"],
+      "definicao": "Espaço anecoico subcutâneo entre a pele e o tecido mole que recobre a coluna cervical fetal, medido por ultrassonografia no primeiro trimestre.",
+      "origem": "Acúmulo fisiológico transitório de líquido na região nucal.",
+      "destino": "Medida entre 11 semanas e 13 semanas e 6 dias de idade gestacional; quando aumentada, associa-se a aneuploidias, cardiopatias e síndromes genéticas."
+    },
+    {
+      "id": "vilosidades-corionicas",
+      "nome": "Vilosidades coriônicas",
+      "sinonimos": ["vilosidades coriais"],
+      "definicao": "Projeções do córion compostas por trofoblasto e eixo mesenquimal vascularizado, que formam a parte fetal da placenta.",
+      "origem": "Trofoblasto e mesoderma extraembrionário, a partir do fim da 2ª semana.",
+      "destino": "Material amostrado na biópsia de vilo corial (10–13 semanas de idade gestacional) para análise citogenética e molecular."
+    }
+  ],
+  "eventos": [
+    { "id": "inicio-periodo-fetal", "descricao": "Início do período fetal (9ª semana após a fertilização); a cabeça corresponde a cerca de metade do comprimento cabeça-nádega", "diaMin": 57, "diaMax": 57, "ordem": 1 },
+    { "id": "inicio-producao-urina", "descricao": "Início da produção de urina fetal, eliminada na cavidade amniótica (9ª a 12ª semana após a fertilização)", "diaMin": 57, "diaMax": 84, "ordem": 2 },
+    { "id": "retorno-alcas-intestinais", "descricao": "Retorno das alças intestinais do cordão umbilical para a cavidade abdominal (10ª a 12ª semana após a fertilização)", "diaMin": 63, "diaMax": 84, "ordem": 3 },
+    { "id": "genitalia-externa-reconhecivel", "descricao": "Genitália externa assume a forma fetal madura, permitindo distinguir o sexo (por volta da 12ª semana após a fertilização)", "diaMin": 77, "diaMax": 84, "ordem": 4 },
+    { "id": "eritropoiese-esplenica", "descricao": "Eritropoiese, antes predominantemente hepática, passa a ocorrer também no baço (fim da 12ª semana após a fertilização)", "diaMin": 84, "diaMax": 84, "ordem": 5 },
+    { "id": "ossificacao-detectavel-us", "descricao": "Ossificação do esqueleto intensa e claramente detectável por ultrassonografia (início da 16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 6 },
+    { "id": "foliculos-primordiais-ovario", "descricao": "Ovários diferenciados, contendo folículos primordiais com oogônias (16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 7 },
+    { "id": "vernix-e-lanugo", "descricao": "Pele recoberta por vérnix caseoso e lanugo (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 8 },
+    { "id": "percepcao-materna-movimentos", "descricao": "Percepção materna dos movimentos fetais (quickening), entre a 17ª e a 20ª semana após a fertilização, equivalente a 19–22 semanas de idade gestacional", "diaMin": 113, "diaMax": 140, "ordem": 9 },
+    { "id": "formacao-gordura-parda", "descricao": "Formação da gordura parda, sítio de termogênese do recém-nascido (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 10 },
+    { "id": "movimentos-oculares-rapidos", "descricao": "Início dos movimentos oculares rápidos (21ª semana após a fertilização)", "diaMin": 141, "diaMax": 147, "ordem": 11 },
+    { "id": "resposta-piscar-sobressalto", "descricao": "Respostas de piscar-sobressalto a estímulos (22ª a 23ª semana após a fertilização)", "diaMin": 148, "diaMax": 161, "ordem": 12 },
+    { "id": "inicio-secrecao-surfactante", "descricao": "Pneumócitos tipo II começam a secretar surfactante (por volta da 24ª semana após a fertilização, ≈26 semanas de idade gestacional)", "diaMin": 161, "diaMax": 168, "ordem": 13 },
+    { "id": "unhas-das-maos", "descricao": "Unhas das mãos presentes (24ª semana após a fertilização)", "diaMin": 168, "diaMax": 168, "ordem": 14 },
+    { "id": "reabertura-palpebras", "descricao": "Reabertura das pálpebras, antes fundidas (26ª semana após a fertilização)", "diaMin": 175, "diaMax": 182, "ordem": 15 },
+    { "id": "medula-ossea-hematopoiese", "descricao": "Fim da eritropoiese esplênica; a medula óssea torna-se o principal sítio de formação de hemácias (por volta de 28 semanas após a fertilização)", "diaMin": 189, "diaMax": 196, "ordem": 16 },
+    { "id": "reflexo-fotomotor-pupilar", "descricao": "Reflexo fotomotor pupilar presente (por volta de 30 semanas após a fertilização)", "diaMin": 203, "diaMax": 210, "ordem": 17 },
+    { "id": "gordura-branca-8-porcento", "descricao": "Gordura branca atinge cerca de 8% do peso corporal (final do intervalo de 30 a 34 semanas após a fertilização)", "diaMin": 231, "diaMax": 238, "ordem": 18 },
+    { "id": "preensao-firme", "descricao": "Preensão firme e orientação espontânea à luz (35 semanas após a fertilização)", "diaMin": 238, "diaMax": 245, "ordem": 19 },
+    { "id": "circunferencias-equivalentes", "descricao": "Circunferências craniana e abdominal aproximadamente iguais (por volta de 36 semanas após a fertilização)", "diaMin": 245, "diaMax": 252, "ordem": 20 },
+    { "id": "termo", "descricao": "Termo: parto em média 266 dias (38 semanas) após a fertilização, equivalente a 280 dias (40 semanas) após a DUM; gordura branca ≈16% do peso", "diaMin": 266, "diaMax": 266, "ordem": 21 }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "rciu",
+      "titulo": "Restrição de crescimento intrauterino (RCIU)",
+      "descricao": "Feto que não atinge seu potencial de crescimento, habitualmente identificado quando as medidas biométricas ou o peso estimado ficam abaixo do percentil 10 para a idade gestacional, com ou sem alteração de Doppler. O recém-nascido com peso abaixo do percentil 10 é dito pequeno para a idade gestacional.",
+      "mecanismo": "Oferta insuficiente de oxigênio e nutrientes ao feto, por insuficiência uteroplacentária (hipertensão, pré-eclâmpsia, infartos e placenta pequena), desnutrição materna, tabagismo, álcool e outras drogas, gestação múltipla, infecções congênitas ou causas genéticas e cromossômicas intrínsecas ao feto."
+    },
+    {
+      "id": "sdr-prematuro",
+      "titulo": "Síndrome de dificuldade respiratória do recém-nascido",
+      "descricao": "Quadro de taquipneia, retrações, gemido e necessidade de oxigênio em prematuro, com padrão radiológico de pulmões pouco aerados. É mais frequente e mais grave quanto menor a idade gestacional.",
+      "mecanismo": "Deficiência de surfactante produzido pelos pneumócitos tipo II, cuja secreção começa por volta da 24ª semana após a fertilização e aumenta no terceiro trimestre. Sem surfactante, a tensão superficial elevada colapsa os alvéolos ao final da expiração, causando atelectasia difusa e shunt intrapulmonar. A corticoterapia antenatal acelera a maturação e o surfactante exógeno é terapêutico."
+    },
+    {
+      "id": "viabilidade-fetal",
+      "titulo": "Limite de viabilidade",
+      "descricao": "Viabilidade é a capacidade de sobreviver fora do útero. Não existe um limite nítido de idade ou peso: a sobrevida aumenta progressivamente com a idade gestacional e depende de cuidado neonatal intensivo. Fetos com peso de nascimento muito baixo, abaixo de 500 g, raramente sobrevivem.",
+      "mecanismo": "O fator limitante principal é a maturação pulmonar — desenvolvimento da interface alveolocapilar e secreção de surfactante — somada à maturação do sistema nervoso central necessária para movimentos respiratórios rítmicos e termorregulação."
+    },
+    {
+      "id": "discrepancia-datacao",
+      "titulo": "Discrepância entre DUM e biometria ultrassonográfica",
+      "descricao": "Quando a idade estimada pela DUM difere da estimada pela ultrassonografia, a datação do primeiro trimestre pelo comprimento cabeça-nádega é a mais acurada e deve prevalecer.",
+      "mecanismo": "No início da gestação o crescimento é muito uniforme entre os fetos, o que torna o CCN um bom marcador de idade; no terceiro trimestre a variabilidade biológica e a RCIU tornam a biometria pouco confiável para datar."
+    },
+    {
+      "id": "pos-maturidade",
+      "titulo": "Gestação prolongada",
+      "descricao": "Parte das gestações se estende além da data provável do parto. A conduta considera a datação confiável, a avaliação do bem-estar fetal e o volume de líquido amniótico.",
+      "mecanismo": "Com o avançar da gestação após o termo, a função placentária pode declinar, reduzindo a oferta de oxigênio e nutrientes e o volume de líquido amniótico, com risco de sofrimento fetal."
+    },
+    {
+      "id": "nipt-falso-positivo",
+      "titulo": "Resultado alterado no teste de DNA fetal livre",
+      "descricao": "O teste de DNA fetal livre é um rastreamento de alto desempenho, não um exame diagnóstico. Todo resultado de alto risco deve ser confirmado por biópsia de vilo corial ou amniocentese antes de qualquer decisão.",
+      "mecanismo": "O DNA analisado é de origem placentária (trofoblasto). Mosaicismo confinado à placenta, gemelaridade com óbito de um dos embriões, fração fetal baixa (por exemplo, em obesidade materna) e alterações cromossômicas maternas podem gerar resultados discordantes do cariótipo fetal."
+    },
+    {
+      "id": "perda-pos-procedimento",
+      "titulo": "Risco dos procedimentos invasivos",
+      "descricao": "Biópsia de vilo corial, amniocentese e cordocentese são diagnósticas, mas acarretam pequeno risco de perda gestacional, além de risco de amniorrexe e infecção. A cordocentese tem risco maior que os demais.",
+      "mecanismo": "Trauma direto das membranas, da placenta ou do cordão e resposta inflamatória local. A biópsia de vilo corial não deve ser realizada antes de 10 semanas de idade gestacional, pois nessa fase houve relato de defeitos por redução de membros."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-08-q01",
+      "tipo": "multipla",
+      "enunciado": "O período fetal do desenvolvimento humano tem início:",
+      "alternativas": [
+        { "id": "a", "texto": "no início da 7ª semana após a fertilização" },
+        { "id": "b", "texto": "no início da 9ª semana após a fertilização" },
+        { "id": "c", "texto": "no início da 12ª semana após a fertilização" },
+        { "id": "d", "texto": "no início da 9ª semana de idade gestacional" }
+      ],
+      "correta": "b",
+      "explicacao": "O período embrionário termina ao final da 8ª semana após a fertilização (dia 56), quando estão presentes os primórdios de todas as estruturas internas e externas principais. O período fetal vai do início da 9ª semana (dia 57) até o nascimento. A alternativa (a) cai no meio do período embrionário, em plena organogênese. A (c) corresponde ao fim do primeiro trimestre, já dentro do período fetal. A (d) troca o referencial: 9 semanas de idade gestacional equivalem a apenas 7 semanas após a fertilização, ainda no período embrionário.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["periodo-fetal", "cronologia", "idade-gestacional"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q02",
+      "tipo": "multipla",
+      "enunciado": "O retorno das alças intestinais, previamente herniadas na porção proximal do cordão umbilical, para a cavidade abdominal ocorre habitualmente:",
+      "alternativas": [
+        { "id": "a", "texto": "entre a 6ª e a 8ª semana após a fertilização" },
+        { "id": "b", "texto": "entre a 10ª e a 12ª semana após a fertilização" },
+        { "id": "c", "texto": "entre a 14ª e a 16ª semana após a fertilização" },
+        { "id": "d", "texto": "entre a 20ª e a 24ª semana após a fertilização" }
+      ],
+      "correta": "b",
+      "explicacao": "A herniação umbilical fisiológica começa na 6ª semana, quando o crescimento rápido do intestino médio e do fígado excede o espaço da cavidade abdominal; o retorno das alças ocorre no início do período fetal, entre a 10ª e a 12ª semana (Sadler situa o retorno na 10ª semana; Moore afirma que as alças já retornaram na 11ª semana — faixa adotada: 10ª a 12ª). A alternativa (a) corresponde ao período em que as alças estão saindo, não retornando. As alternativas (c) e (d) são tardias: a persistência da herniação além do primeiro trimestre caracteriza onfalocele, e não variação da normalidade.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["intestino-medio", "herniacao-umbilical-fisiologica", "onfalocele"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-08-q03",
+      "tipo": "vf",
+      "enunciado": "A produção de urina pelo feto começa entre a 9ª e a 12ª semana após a fertilização, e a urina é eliminada na cavidade amniótica.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A função excretora renal se inicia entre a 9ª e a 12ª semana após a fertilização, e a urina fetal é lançada na cavidade amniótica, passando a ser, a partir do segundo trimestre, a principal fonte de líquido amniótico. Parte dela retorna ao feto pela deglutição. É por isso que agenesia renal bilateral e uropatias obstrutivas cursam com oligoidrâmnio.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["sistema-urinario", "liquido-amniotico", "cavidade-amniotica"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q04",
+      "tipo": "multipla",
+      "contexto": "Primigesta de 24 anos, com DUM confiável e ultrassonografia de primeiro trimestre concordante, relata na consulta de 19 semanas de idade gestacional que percebeu movimentos fetais pela primeira vez há poucos dias. Está preocupada porque uma amiga referiu ter sentido os movimentos bem mais cedo.",
+      "enunciado": "Qual orientação é embriologicamente correta?",
+      "alternativas": [
+        { "id": "a", "texto": "O achado é esperado: a percepção materna ocorre tipicamente entre 17 e 20 semanas após a fertilização, ou seja, 19 a 22 semanas de idade gestacional, e tende a ser mais tardia na primeira gestação" },
+        { "id": "b", "texto": "O achado indica atraso do desenvolvimento neuromuscular, pois os movimentos fetais só se iniciam quando a mãe os percebe" },
+        { "id": "c", "texto": "O achado é esperado porque os movimentos fetais começam apenas após a mielinização da medula espinal, por volta de 24 semanas de idade gestacional" },
+        { "id": "d", "texto": "O achado é tardio e indica necessidade de avaliação, pois a percepção materna normalmente ocorre antes de 14 semanas de idade gestacional" }
+      ],
+      "correta": "a",
+      "explicacao": "A percepção materna dos movimentos (quickening) ocorre entre a 17ª e a 20ª semana após a fertilização, equivalente a 19 a 22 semanas de idade gestacional, e costuma ser percebida mais cedo por multíparas, que já reconhecem a sensação. A alternativa (b) confunde movimento com percepção: movimentos já são detectáveis por ultrassonografia desde o período embrionário tardio e tornam-se coordenados por volta da 14ª semana após a fertilização, muito antes de a mãe senti-los. A (c) usa um pretexto falso, pois os movimentos antecedem amplamente a mielinização medular. A (d) inverte a cronologia: a percepção antes de 14 semanas de idade gestacional não é a regra.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["movimentos-fetais", "quickening", "idade-gestacional"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q05",
+      "tipo": "multipla",
+      "enunciado": "Sobre o vérnix caseoso, assinale a alternativa correta:",
+      "alternativas": [
+        { "id": "a", "texto": "É formado por células epidérmicas descamadas e secreção sebácea, e protege a pele fetal da exposição ao líquido amniótico" },
+        { "id": "b", "texto": "É formado por queratina e colágeno dérmico e participa da termogênese do recém-nascido" },
+        { "id": "c", "texto": "É um transudato do plasma fetal que atravessa a epiderme e lubrifica o canal de parto" },
+        { "id": "d", "texto": "É produzido pelo âmnio e corresponde à principal fonte de líquido amniótico no terceiro trimestre" }
+      ],
+      "correta": "a",
+      "explicacao": "O vérnix caseoso é uma mistura de células epidérmicas descamadas com material graxo das glândulas sebáceas, que aparece entre 17 e 20 semanas após a fertilização e protege a pele da maceração, fissura e endurecimento causados pelo contato prolongado com o líquido amniótico. A alternativa (b) atribui ao vérnix a função da gordura parda, que é o tecido termogênico. A (c) erra a origem: não é transudato plasmático. A (d) confunde com o líquido amniótico, cuja principal fonte no terceiro trimestre é a urina fetal, e não o vérnix.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["vernix-caseoso", "pele-fetal"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q06",
+      "tipo": "vf",
+      "enunciado": "O lanugo é uma pelugem fina que recobre o feto e ajuda a manter o vérnix caseoso aderido à pele.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O lanugo aparece no mesmo intervalo do vérnix caseoso (17 a 20 semanas após a fertilização) e retém a camada de vérnix sobre a superfície cutânea. É em grande parte perdido antes do nascimento; sua presença abundante no recém-nascido é um dos sinais de prematuridade.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["lanugo", "vernix-caseoso", "pele-fetal"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q07",
+      "tipo": "multipla",
+      "enunciado": "A gordura parda que se forma no feto entre 17 e 20 semanas após a fertilização caracteriza-se por:",
+      "alternativas": [
+        { "id": "a", "texto": "localizar-se preferencialmente na raiz do pescoço, retroesternalmente e na região perirrenal, e produzir calor pela oxidação de ácidos graxos" },
+        { "id": "b", "texto": "distribuir-se uniformemente no subcutâneo e corresponder a cerca de 16% do peso corporal no termo" },
+        { "id": "c", "texto": "constituir a principal reserva energética do feto, consumida durante o trabalho de parto" },
+        { "id": "d", "texto": "originar-se do endoderma e diferenciar-se a partir do epitélio das glândulas suprarrenais" }
+      ],
+      "correta": "a",
+      "explicacao": "A gordura parda é tecido adiposo especializado, rico em mitocôndrias, concentrado na raiz do pescoço, atrás do esterno e ao redor dos rins, e produz calor pela oxidação de ácidos graxos — mecanismo essencial à termorregulação do recém-nascido. A alternativa (b) descreve a gordura branca subcutânea, que atinge cerca de 16% do peso no termo. A (c) também cabe à gordura branca, cuja função é de reserva energética. A (d) erra a origem: o tecido adiposo deriva do mesênquima (mesoderma), não do endoderma.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["gordura-parda", "termorregulacao", "gordura-branca"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q08",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 26 semanas de idade gestacional, com 820 g, apresenta taquipneia, gemido, retração intercostal e necessidade crescente de oxigênio nas primeiras horas de vida. A radiografia mostra pulmões pouco aerados, com padrão reticulogranular difuso.",
+      "enunciado": "A base embriológica desse quadro é:",
+      "alternativas": [
+        { "id": "a", "texto": "deficiência de surfactante por imaturidade dos pneumócitos tipo II, com aumento da tensão superficial e colapso alveolar ao final da expiração" },
+        { "id": "b", "texto": "ausência de ramificação brônquica além dos brônquios segmentares, que só se completa no termo" },
+        { "id": "c", "texto": "persistência do canal pleuroperitoneal, com herniação de alças para o tórax" },
+        { "id": "d", "texto": "deficiência de gordura parda, que impede a termogênese necessária à expansão pulmonar" }
+      ],
+      "correta": "a",
+      "explicacao": "Os pneumócitos tipo II começam a secretar surfactante por volta da 24ª semana após a fertilização (≈26 semanas de idade gestacional) e a produção aumenta progressivamente no terceiro trimestre. Com surfactante insuficiente, a tensão superficial na interface ar-líquido mantém-se alta, os alvéolos colapsam ao final da expiração e surgem atelectasia difusa e shunt — o quadro descrito. A alternativa (b) é falsa: a ramificação das vias aéreas condutoras se completa bem antes, no período pseudoglandular/canalicular; o que falta no prematuro extremo é a superfície de troca e o surfactante. A (c) descreve hérnia diafragmática congênita, com achado radiológico de alças no tórax. A (d) confunde termogênese com função respiratória: a gordura parda é relevante para a termorregulação, não para a mecânica pulmonar.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["surfactante-pulmonar", "pneumocito-tipo-ii", "prematuridade", "viabilidade"],
+      "referencia": "Moore 11ª ed., cap. 6 e cap. 10"
+    },
+    {
+      "id": "emb-08-q09",
+      "tipo": "multipla",
+      "enunciado": "A duração média da gestação humana, contada de duas formas diferentes, corresponde a:",
+      "alternativas": [
+        { "id": "a", "texto": "266 dias após a fertilização e 280 dias após o primeiro dia da última menstruação" },
+        { "id": "b", "texto": "280 dias após a fertilização e 266 dias após o primeiro dia da última menstruação" },
+        { "id": "c", "texto": "266 dias após a fertilização e 294 dias após o primeiro dia da última menstruação" },
+        { "id": "d", "texto": "252 dias após a fertilização e 266 dias após o primeiro dia da última menstruação" }
+      ],
+      "correta": "a",
+      "explicacao": "O parto ocorre em média 266 dias (38 semanas) após a fertilização, equivalentes a 280 dias (40 semanas) após o primeiro dia da última menstruação, já que a fertilização ocorre cerca de 14 dias após a DUM em ciclos regulares de 28 dias. A alternativa (b) inverte os referenciais. A (c) adiciona 4 semanas em vez de 2 à idade de fertilização. A (d) corresponderia a 36 e 38 semanas, abaixo da média.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["datacao", "data-provavel-do-parto", "idade-gestacional"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q10",
+      "tipo": "vf",
+      "enunciado": "A idade gestacional, contada a partir do primeiro dia da última menstruação, é cerca de duas semanas maior que a idade de fertilização (idade embrionária).",
+      "correta": true,
+      "explicacao": "Verdadeiro. Em ciclos regulares de 28 dias, a ovulação e a fertilização ocorrem aproximadamente 14 dias após o primeiro dia da última menstruação. Por isso, a idade gestacional usada na clínica supera em cerca de duas semanas a idade de fertilização usada em embriologia — distinção indispensável para interpretar janelas de exames, períodos críticos de teratógenos e marcos do desenvolvimento.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": ["idade-gestacional", "datacao"],
+      "referencia": "Moore 11ª ed., cap. 1 e cap. 6"
+    },
+    {
+      "id": "emb-08-q11",
+      "tipo": "multipla",
+      "contexto": "Gestante com ciclos menstruais regulares de 28 dias informa que o primeiro dia de sua última menstruação foi 10 de março de 2026.",
+      "enunciado": "Aplicando a regra de Naegele, a data provável do parto é:",
+      "alternativas": [
+        { "id": "a", "texto": "17 de dezembro de 2026" },
+        { "id": "b", "texto": "3 de dezembro de 2026" },
+        { "id": "c", "texto": "10 de dezembro de 2026" },
+        { "id": "d", "texto": "17 de janeiro de 2027" }
+      ],
+      "correta": "a",
+      "explicacao": "A regra de Naegele soma 7 dias ao primeiro dia da DUM e subtrai 3 meses (ajustando o ano quando necessário): 10 de março + 7 dias = 17 de março; 17 de março − 3 meses = 17 de dezembro. Resulta 17/12/2026, que corresponde a cerca de 280 dias após a DUM. A alternativa (b) subtrai 7 dias em vez de somar. A (c) omite a soma dos 7 dias. A (d) subtrai apenas 2 meses. A regra pressupõe ciclos regulares de 28 dias; em ciclos irregulares ou DUM incerta, a datação pelo comprimento cabeça-nádega no primeiro trimestre é mais acurada.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["regra-de-naegele", "data-provavel-do-parto", "datacao"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q12",
+      "tipo": "multipla",
+      "enunciado": "Entre os fatores abaixo, o principal determinante biológico do limite inferior de viabilidade do feto humano é:",
+      "alternativas": [
+        { "id": "a", "texto": "a maturação pulmonar, com desenvolvimento da interface alveolocapilar e secreção de surfactante, somada à maturação do sistema nervoso central para o controle respiratório e térmico" },
+        { "id": "b", "texto": "a ossificação completa da caixa torácica, que permite a mecânica respiratória" },
+        { "id": "c", "texto": "a transição da eritropoiese esplênica para a medular, que garante o transporte de oxigênio" },
+        { "id": "d", "texto": "o acúmulo de gordura branca subcutânea até cerca de 16% do peso corporal" }
+      ],
+      "correta": "a",
+      "explicacao": "O fator limitante é o pulmão: é necessário que haja superfície de troca com interface alveolocapilar suficientemente desenvolvida e surfactante para manter os alvéolos abertos, além de um sistema nervoso central capaz de sustentar movimentos respiratórios rítmicos e a termorregulação. Não existe limite nítido de idade ou peso: a sobrevida aumenta progressivamente com a idade gestacional e depende de cuidado neonatal intensivo. As alternativas (b), (c) e (d) descrevem marcos reais do desenvolvimento fetal, mas nenhum deles é o determinante crítico da sobrevida extrauterina: fetos sobrevivem bem antes de completar a ossificação torácica, a troca medular da eritropoiese e o acúmulo de gordura típico do termo.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": ["viabilidade", "surfactante-pulmonar", "prematuridade"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q13",
+      "tipo": "multipla",
+      "contexto": "Gestante de 32 anos, tabagista de 15 cigarros por dia, com hipertensão arterial crônica, chega à consulta de 32 semanas de idade gestacional. A biometria fetal mostra peso estimado abaixo do percentil 10 para a idade gestacional, circunferência abdominal proporcionalmente mais reduzida que o diâmetro biparietal e Doppler de artéria umbilical com resistência aumentada.",
+      "enunciado": "O mecanismo que melhor explica o padrão de crescimento desse feto é:",
+      "alternativas": [
+        { "id": "a", "texto": "redução da oferta de oxigênio e nutrientes por comprometimento uteroplacentário, com redistribuição de fluxo que preserva relativamente o crescimento cefálico" },
+        { "id": "b", "texto": "defeito cromossômico intrínseco, que tipicamente produz restrição de crescimento simétrica e Doppler umbilical normal" },
+        { "id": "c", "texto": "deficiência de surfactante, que limita o ganho ponderal no terceiro trimestre" },
+        { "id": "d", "texto": "erro de datação, já que a biometria do terceiro trimestre é o padrão de referência para estimar a idade gestacional" }
+      ],
+      "correta": "a",
+      "explicacao": "O conjunto — fatores maternos que reduzem o fluxo uteroplacentário (tabagismo e hipertensão), restrição assimétrica com circunferência abdominal mais afetada e resistência aumentada na artéria umbilical — indica insuficiência uteroplacentária com redistribuição hemodinâmica (\"centralização\"), que privilegia cérebro, coração e suprarrenais. A alternativa (b) descreve o padrão habitual das causas intrínsecas, simétrico e de início precoce, com Doppler umbilical tipicamente normal, o que não corresponde ao caso. A (c) é incorreta: o surfactante é relevante para a função respiratória após o nascimento, não para o crescimento fetal. A (d) inverte a hierarquia da datação: o parâmetro mais acurado é o comprimento cabeça-nádega do primeiro trimestre, e a biometria tardia não deve ser usada para redatar a gestação.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["rciu", "crescimento-fetal", "doppler", "insuficiencia-uteroplacentaria"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q14",
+      "tipo": "multipla",
+      "enunciado": "A medida da translucência nucal como marcador ultrassonográfico de risco para aneuploidias deve ser realizada entre:",
+      "alternativas": [
+        { "id": "a", "texto": "7 semanas e 9 semanas e 6 dias de idade gestacional" },
+        { "id": "b", "texto": "11 semanas e 13 semanas e 6 dias de idade gestacional" },
+        { "id": "c", "texto": "15 e 18 semanas de idade gestacional" },
+        { "id": "d", "texto": "20 e 24 semanas de idade gestacional" }
+      ],
+      "correta": "b",
+      "explicacao": "A translucência nucal é medida entre 11 semanas e 13 semanas e 6 dias de idade gestacional, faixa em que a imagem é tecnicamente adequada e os valores de referência foram validados; quando aumentada, associa-se a trissomias (especialmente a 21), monossomia X, cardiopatias e outras síndromes. A alternativa (a) é precoce demais para a medida padronizada. A (c) corresponde à janela clássica da amniocentese. A (d) corresponde à ultrassonografia morfológica de segundo trimestre. Fora da janela de 11 a 13+6 semanas, a medida perde acurácia.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["translucencia-nucal", "rastreamento", "aneuploidias", "ultrassonografia"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q15",
+      "tipo": "multipla",
+      "enunciado": "Sobre a biópsia de vilo corial, é correto afirmar que:",
+      "alternativas": [
+        { "id": "a", "texto": "amostra vilosidades coriônicas de origem trofoblástica, é realizada tipicamente entre 10 e 13 semanas de idade gestacional e não deve ser feita antes de 10 semanas" },
+        { "id": "b", "texto": "amostra amniócitos descamados do feto e é realizada tipicamente entre 15 e 18 semanas de idade gestacional" },
+        { "id": "c", "texto": "amostra sangue fetal do cordão umbilical e permite transfusão intrauterina no mesmo procedimento" },
+        { "id": "d", "texto": "é um método de rastreamento, cujo resultado alterado deve ser confirmado por amniocentese" }
+      ],
+      "correta": "a",
+      "explicacao": "A biópsia de vilo corial obtém tecido das vilosidades coriônicas (parte fetal da placenta, de origem trofoblástica), por via transcervical ou transabdominal, habitualmente entre 10 e 13 semanas de idade gestacional. Não deve ser realizada antes de 10 semanas pelo relato de defeitos por redução de membros nessa fase. Sua grande vantagem é o diagnóstico citogenético e molecular mais precoce que o da amniocentese. A alternativa (b) descreve a amniocentese. A (c) descreve a cordocentese. A (d) está errada no conceito: a biópsia de vilo corial é exame diagnóstico, não rastreamento — este papel cabe à translucência nucal, aos marcadores bioquímicos e ao DNA fetal livre.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["biopsia-de-vilo-corial", "vilosidades-corionicas", "diagnostico-pre-natal"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q16",
+      "tipo": "multipla",
+      "enunciado": "Na amniocentese realizada entre 15 e 18 semanas de idade gestacional com finalidade de diagnóstico pré-natal, o material que fundamenta a análise citogenética é:",
+      "alternativas": [
+        { "id": "a", "texto": "o líquido amniótico isoladamente, por dosagem de eletrólitos" },
+        { "id": "b", "texto": "células fetais descamadas (amniócitos) suspensas no líquido amniótico, cultivadas ou analisadas por técnicas moleculares" },
+        { "id": "c", "texto": "linfócitos maternos que atravessam a membrana amniocoriônica" },
+        { "id": "d", "texto": "células do sinciciotrofoblasto aspiradas junto com o líquido" }
+      ],
+      "correta": "b",
+      "explicacao": "A amniocentese fornece líquido amniótico contendo amniócitos — células fetais descamadas da pele, do trato urinário e do epitélio amniótico — que permitem cariótipo, análise cromossômica por microarranjo e testes moleculares. O líquido também permite dosagens bioquímicas, como alfafetoproteína e acetilcolinesterase, úteis nos defeitos abertos do tubo neural, mas a análise citogenética depende das células (a). As alternativas (c) e (d) estão erradas: as células analisadas são fetais, não maternas, e não provêm do sinciciotrofoblasto, que é o material da biópsia de vilo corial.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["amniocentese", "diagnostico-pre-natal", "liquido-amniotico"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q17",
+      "tipo": "multipla",
+      "contexto": "Gestante Rh negativo, previamente sensibilizada, está com 26 semanas de idade gestacional. A dopplervelocimetria mostra velocidade máxima do pico sistólico na artéria cerebral média fetal acima do limiar esperado para a idade, sugerindo anemia fetal.",
+      "enunciado": "O procedimento indicado para confirmar o diagnóstico e, se necessário, tratar no mesmo ato é:",
+      "alternativas": [
+        { "id": "a", "texto": "cordocentese, com coleta de sangue fetal e possibilidade de transfusão intrauterina" },
+        { "id": "b", "texto": "biópsia de vilo corial, para cariótipo e dosagem de hemoglobina fetal" },
+        { "id": "c", "texto": "amniocentese, para cultura de amniócitos e tipagem sanguínea fetal" },
+        { "id": "d", "texto": "teste de DNA fetal livre no plasma materno, para quantificar a hemoglobina fetal" }
+      ],
+      "correta": "a",
+      "explicacao": "A cordocentese (coleta percutânea de sangue do cordão umbilical, geralmente a partir de cerca de 18 semanas de idade gestacional) permite medir diretamente hematócrito e hemoglobina fetais e, no mesmo acesso, realizar transfusão intrauterina — conduta clássica na anemia fetal por aloimunização. A alternativa (b) é inadequada: a biópsia de vilo corial é restrita ao primeiro trimestre e não avalia a anemia fetal. A (c) não mede a gravidade da anemia nem permite tratar. A (d) é um rastreamento genômico: o DNA fetal livre pode determinar o genótipo RHD fetal, mas não quantifica anemia nem substitui a transfusão.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["cordocentese", "anemia-fetal", "aloimunizacao-rh", "cordao-umbilical"],
+      "referencia": "Moore 11ª ed., cap. 6 e cap. 7"
+    },
+    {
+      "id": "emb-08-q18",
+      "tipo": "multipla",
+      "enunciado": "Sobre o teste de DNA fetal livre no plasma materno (NIPT), assinale a alternativa correta:",
+      "alternativas": [
+        { "id": "a", "texto": "o DNA analisado é de origem placentária, o teste pode ser realizado a partir de cerca de 10 semanas de idade gestacional e é um rastreamento, não um diagnóstico" },
+        { "id": "b", "texto": "o DNA analisado provém de linfócitos fetais íntegros circulantes e permite cariótipo fetal completo" },
+        { "id": "c", "texto": "por sua altíssima acurácia, dispensa confirmação invasiva antes de decisões clínicas definitivas" },
+        { "id": "d", "texto": "só pode ser realizado após 20 semanas de idade gestacional, quando a fração fetal se torna detectável" }
+      ],
+      "correta": "a",
+      "explicacao": "O DNA fetal livre circulante é liberado sobretudo pelo trofoblasto (placenta), está disponível em quantidade suficiente a partir de cerca de 10 semanas de idade gestacional e é usado como rastreamento de alto desempenho para as trissomias comuns e aneuploidias dos cromossomos sexuais. A alternativa (b) erra a origem e o alcance: trata-se de DNA livre fragmentado, e o teste não gera cariótipo. A (c) é o erro conceitual mais perigoso na prática: resultados de alto risco exigem confirmação por biópsia de vilo corial ou amniocentese, pois mosaicismo confinado à placenta, gemelaridade com óbito de um dos embriões, fração fetal baixa e alterações maternas geram discordâncias. A (d) atrasa indevidamente a janela do exame.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["dna-fetal-livre", "nipt", "rastreamento", "diagnostico-pre-natal"],
+      "referencia": "Sadler 14ª ed., cap. 9; Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q19",
+      "tipo": "vf",
+      "enunciado": "Um resultado de alto risco no teste de DNA fetal livre estabelece o diagnóstico de trissomia 21 e dispensa confirmação por exame invasivo.",
+      "correta": false,
+      "explicacao": "Falso. O teste de DNA fetal livre é um método de rastreamento com alto valor preditivo para a trissomia 21, mas não é diagnóstico. O DNA analisado é de origem placentária, de modo que mosaicismo confinado à placenta, gemelaridade com óbito precoce de um gemelar, fração fetal baixa e alterações cromossômicas maternas podem produzir resultados discordantes do cariótipo fetal. A confirmação exige biópsia de vilo corial ou amniocentese.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["dna-fetal-livre", "nipt", "rastreamento", "aconselhamento-genetico"],
+      "referencia": "Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q20",
+      "tipo": "vf",
+      "enunciado": "Durante o período fetal, a cabeça cresce mais rapidamente que o restante do corpo, de modo que a proporção cabeça/corpo aumenta progressivamente até o termo.",
+      "correta": false,
+      "explicacao": "Falso. Ocorre o inverso. No início da 9ª semana após a fertilização a cabeça corresponde a cerca de metade do comprimento cabeça-nádega; a partir daí o crescimento do tronco e dos membros acelera e o crescimento cefálico relativo desacelera, de modo que a proporção cabeça/corpo diminui progressivamente. Por volta de 36 semanas após a fertilização as circunferências craniana e abdominal se igualam, e depois a abdominal tende a superá-la.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["proporcao-cabeca-corpo", "crescimento-fetal"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q21",
+      "tipo": "vf",
+      "enunciado": "No termo, a gordura branca corresponde a cerca de 16% do peso corporal do feto.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A gordura branca subcutânea corresponde a cerca de 3,5% do peso corporal no intervalo de 26 a 29 semanas após a fertilização, a cerca de 8% ao final do intervalo de 30 a 34 semanas e a cerca de 16% no termo. Esse acúmulo explica o aspecto róseo e preenchido do recém-nascido a termo e contribui para a reserva energética e o isolamento térmico.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["gordura-branca", "crescimento-fetal", "termo"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q22",
+      "tipo": "vf",
+      "enunciado": "Os movimentos fetais só se iniciam no momento em que a mãe passa a percebê-los, entre a 17ª e a 20ª semana após a fertilização.",
+      "correta": false,
+      "explicacao": "Falso. É preciso distinguir movimento de percepção. Movimentos já são detectáveis por ultrassonografia desde o final do período embrionário, e movimentos coordenados dos membros ocorrem por volta da 14ª semana após a fertilização, mas são demasiado tênues para serem sentidos. A percepção materna (quickening) ocorre entre 17 e 20 semanas após a fertilização, equivalendo a 19 a 22 semanas de idade gestacional.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["movimentos-fetais", "quickening"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q23",
+      "tipo": "vf",
+      "enunciado": "No período fetal, a exposição a agentes ambientais raramente provoca malformações estruturais maiores, mas pode comprometer o crescimento e o desenvolvimento funcional, sobretudo do sistema nervoso central.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Os primórdios de todos os órgãos principais já estão formados ao final da 8ª semana após a fertilização, de modo que o período fetal é dominado por crescimento, histodiferenciação e maturação funcional. Por isso, agressões nessa fase tendem a causar restrição de crescimento e déficits funcionais — notadamente do sistema nervoso central, que continua a se desenvolver até depois do nascimento — e não malformações maiores, típicas das semanas 3 a 8.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["periodo-fetal", "teratologia", "periodo-critico"],
+      "referencia": "Moore 11ª ed., cap. 6 e cap. 20"
+    },
+    {
+      "id": "emb-08-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os marcos do desenvolvimento fetal, do mais precoce ao mais tardio (idades em semanas após a fertilização):",
+      "itens": [
+        { "id": "1", "texto": "Retorno das alças intestinais do cordão umbilical para a cavidade abdominal" },
+        { "id": "2", "texto": "Genitália externa com forma fetal madura, permitindo distinguir o sexo" },
+        { "id": "3", "texto": "Ossificação do esqueleto intensa e claramente detectável na ultrassonografia" },
+        { "id": "4", "texto": "Pele recoberta por vérnix caseoso e lanugo" },
+        { "id": "5", "texto": "Início da secreção de surfactante pelos pneumócitos tipo II" }
+      ],
+      "ordemCorreta": ["1", "2", "3", "4", "5"],
+      "explicacao": "O retorno das alças intestinais ocorre entre a 10ª e a 12ª semana; a genitália externa assume a forma madura por volta da 12ª semana; a ossificação é intensa e bem visível na ultrassonografia no início da 16ª semana; vérnix caseoso e lanugo aparecem entre 17 e 20 semanas; e a secreção de surfactante começa por volta da 24ª semana após a fertilização (≈26 semanas de idade gestacional).",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["cronologia", "marcos-fetais", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os marcos do terceiro trimestre, do mais precoce ao mais tardio (idades em semanas após a fertilização):",
+      "itens": [
+        { "id": "1", "texto": "Unhas das mãos presentes" },
+        { "id": "2", "texto": "Reabertura das pálpebras, antes fundidas" },
+        { "id": "3", "texto": "Reflexo fotomotor pupilar presente" },
+        { "id": "4", "texto": "Circunferências craniana e abdominal aproximadamente iguais" }
+      ],
+      "ordemCorreta": ["1", "2", "3", "4"],
+      "explicacao": "As unhas das mãos estão presentes por volta de 24 semanas; as pálpebras, fundidas desde o início do período fetal, reabrem-se por volta de 26 semanas; o reflexo fotomotor pupilar pode ser obtido por volta de 30 semanas; e as circunferências craniana e abdominal se igualam em torno de 36 semanas após a fertilização, passando a abdominal a predominar depois disso.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["cronologia", "terceiro-trimestre", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os sítios de hematopoese conforme a sequência em que assumem papel predominante no desenvolvimento humano:",
+      "itens": [
+        { "id": "1", "texto": "Parede do saco vitelino" },
+        { "id": "2", "texto": "Fígado" },
+        { "id": "3", "texto": "Baço" },
+        { "id": "4", "texto": "Medula óssea" }
+      ],
+      "ordemCorreta": ["1", "2", "3", "4"],
+      "explicacao": "A formação de células sanguíneas começa no mesoderma extraembrionário da parede do saco vitelino (3ª a 6ª semana), passa ao fígado, que é o principal sítio no início do período fetal, estende-se ao baço ao final da 12ª semana e, por volta de 28 semanas após a fertilização, a medula óssea torna-se o sítio predominante, encerrando a eritropoiese esplênica.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["hematopoese", "eritropoiese", "saco-vitelino", "cronologia"],
+      "referencia": "Moore 11ª ed., cap. 6 e cap. 7"
+    },
+    {
+      "id": "emb-08-q27",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os métodos de avaliação fetal pelo início de sua janela habitual de realização (idade gestacional), do mais precoce ao mais tardio:",
+      "itens": [
+        { "id": "1", "texto": "Teste de DNA fetal livre no plasma materno (a partir de cerca de 10 semanas)" },
+        { "id": "2", "texto": "Amniocentese para análise citogenética (15 a 18 semanas)" },
+        { "id": "3", "texto": "Ultrassonografia morfológica de segundo trimestre (20 a 24 semanas)" },
+        { "id": "4", "texto": "Avaliação do crescimento e do bem-estar fetal no terceiro trimestre (a partir de 28 semanas)" }
+      ],
+      "ordemCorreta": ["1", "2", "3", "4"],
+      "explicacao": "O rastreamento por DNA fetal livre é possível a partir de cerca de 10 semanas de idade gestacional; a amniocentese diagnóstica é classicamente realizada entre 15 e 18 semanas; a ultrassonografia morfológica detalhada de segundo trimestre, entre 20 e 24 semanas; e a avaliação seriada de crescimento e bem-estar fetal, no terceiro trimestre. A biópsia de vilo corial (10 a 13 semanas) e a translucência nucal (11 a 13 semanas e 6 dias) situam-se na mesma faixa inicial do primeiro item e, por isso, não foram incluídas nesta ordenação.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["diagnostico-pre-natal", "rastreamento", "cronologia"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada método de diagnóstico pré-natal ao material biológico analisado:",
+      "pares": [
+        { "esquerda": "Biópsia de vilo corial", "direita": "Vilosidades coriônicas de origem trofoblástica" },
+        { "esquerda": "Amniocentese", "direita": "Amniócitos e líquido amniótico" },
+        { "esquerda": "Cordocentese", "direita": "Sangue fetal do cordão umbilical" },
+        { "esquerda": "Teste de DNA fetal livre", "direita": "DNA livre de origem placentária no plasma materno" }
+      ],
+      "explicacao": "Cada método amostra um compartimento distinto: a biópsia de vilo corial retira tecido das vilosidades coriônicas (parte fetal da placenta, de origem trofoblástica); a amniocentese aspira líquido amniótico com amniócitos descamados; a cordocentese colhe sangue fetal diretamente do cordão umbilical, permitindo também transfusão intrauterina; e o teste de DNA fetal livre analisa fragmentos de DNA de origem placentária presentes no plasma materno, sendo rastreamento e não diagnóstico.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["diagnostico-pre-natal", "biopsia-de-vilo-corial", "amniocentese", "cordocentese", "nipt"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada marco do desenvolvimento ao intervalo em que ocorre (semanas após a fertilização):",
+      "pares": [
+        { "esquerda": "Aparecimento do vérnix caseoso e do lanugo", "direita": "17 a 20 semanas" },
+        { "esquerda": "Início da secreção de surfactante pelos pneumócitos tipo II", "direita": "21 a 25 semanas" },
+        { "esquerda": "Reabertura das pálpebras e fim da eritropoiese esplênica", "direita": "26 a 29 semanas" },
+        { "esquerda": "Reflexo fotomotor pupilar e gordura branca em cerca de 8% do peso", "direita": "30 a 34 semanas" }
+      ],
+      "explicacao": "Vérnix caseoso e lanugo surgem no intervalo de 17 a 20 semanas, junto com a gordura parda e a percepção materna dos movimentos. A secreção de surfactante começa por volta da 24ª semana, dentro do intervalo de 21 a 25 semanas. A reabertura das pálpebras (≈26 semanas) e o fim da eritropoiese esplênica, com assunção da medula óssea (≈28 semanas), situam-se no intervalo de 26 a 29 semanas. O reflexo fotomotor pupilar (≈30 semanas) e a gordura branca em torno de 8% do peso corporal caracterizam o intervalo de 30 a 34 semanas.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["marcos-fetais", "cronologia", "intervalos"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    }
+  ],
+  "referencias": [
+    { "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020", "capitulo": "6 — Período fetal: da nona semana ao nascimento" },
+    { "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020", "capitulo": "7 — Placenta e membranas fetais" },
+    { "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020", "capitulo": "10 — Sistema respiratório" },
+    { "obra": "Sadler TW. Langman Embriologia Médica, 14ª ed., 2021", "capitulo": "8 — Do terceiro mês ao nascimento: o feto e a placenta" },
+    { "obra": "Sadler TW. Langman Embriologia Médica, 14ª ed., 2021", "capitulo": "9 — Defeitos congênitos e diagnóstico pré-natal" }
+  ],
+  "notasDivergencia": [
+    "Retorno das alças intestinais ao abdome: Sadler (14ª ed., cap. 8) situa o retorno na 10ª semana após a fertilização; Moore (11ª ed., cap. 6) afirma que as alças já retornaram na 11ª semana. Faixa adotada: 10ª a 12ª semana após a fertilização.",
+    "Início da secreção de surfactante: Moore (11ª ed., cap. 6) situa o início da secreção pelos pneumócitos tipo II por volta da 24ª semana após a fertilização (≈26 semanas de idade gestacional); a literatura clínica descreve surfactante detectável no líquido amniótico em idades gestacionais um pouco menores, com aumento acentuado após 30 a 34 semanas de idade gestacional. Adotado o referencial de Moore, com a conversão para idade gestacional explicitada.",
+    "Limite de viabilidade: Moore (11ª ed., cap. 6) enfatiza que não existe limite nítido de idade ou peso a partir do qual o feto se torne viável, e descreve a possibilidade de sobrevida no intervalo de 26 a 29 semanas após a fertilização, com sobrevida habitual a partir de cerca de 32 semanas. Os limiares praticados em neonatologia variam entre serviços e países e dependem do cuidado intensivo disponível; por isso, o conteúdo evita fixar uma idade gestacional única como limite de viabilidade.",
+    "Janela da biópsia de vilo corial: as fontes descrevem janelas ligeiramente distintas (10 a 12 semanas em Moore; 10 a 13 semanas na prática obstétrica corrente). Faixa adotada: 10 a 13 semanas de idade gestacional, com a ressalva de não realizar antes de 10 semanas.",
+    "Percepção materna dos movimentos: Moore descreve o quickening entre 17 e 20 semanas após a fertilização; textos obstétricos costumam citar 18 a 20 semanas de idade gestacional em primigestas e 16 a 18 em multíparas. Adotada a referência embriológica, com conversão explícita para idade gestacional."
+  ],
+  "incertezas": [
+    "Risco de perda gestacional atribuível aos procedimentos invasivos: as estimativas variam conforme a série e a época (valores históricos em torno de 0,5% para a amniocentese, estimativas contemporâneas menores, e risco maior para a cordocentese). Nenhum valor numérico foi afirmado no conteúdo; descreve-se apenas que o risco existe e é pequeno, maior na cordocentese.",
+    "Peso e comprimento cabeça-nádega no termo: adotados os valores de Moore (peso habitual de 3.000 a 3.400 g e CCN de aproximadamente 360 mm). Há variação populacional importante, inclusive em curvas brasileiras, não detalhada aqui.",
+    "Percentual de gestações que se prolongam além da data provável do parto: não foi incluído valor numérico por variação entre fontes e por depender fortemente da qualidade da datação.",
+    "Idade gestacional mínima para o teste de DNA fetal livre: as recomendações variam entre 9 e 10 semanas conforme a plataforma e a diretriz; adotado 'a partir de cerca de 10 semanas de idade gestacional'."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

@@ -1,0 +1,1329 @@
+{
+  "id": "emb-06-semana3",
+  "disciplina": "embriologia",
+  "ordem": 6,
+  "titulo": "Terceira semana do desenvolvimento",
+  "subtitulo": "Gastrulação, notocorda, neurulação inicial e somitos",
+  "periodo": {
+    "diaInicio": 15,
+    "diaFim": 21,
+    "carnegie": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "objetivos": [
+    "Descrever a formação da linha primitiva e de suas partes (nó, fosseta e sulco primitivos).",
+    "Explicar como células do epiblasto originam endoderma, mesoderma intraembrionário e ectoderma durante a gastrulação.",
+    "Descrever a formação do processo notocordal e da notocorda, incluindo o canal notocordal e o canal neurentérico.",
+    "Explicar a indução da placa neural e as etapas iniciais da neurulação, indicando onde começa a fusão das pregas neurais.",
+    "Listar os principais derivados da crista neural.",
+    "Diferenciar mesoderma paraxial, intermediário e lateral e relacionar o celoma intraembrionário às lâminas somática e esplâncnica.",
+    "Descrever a vasculogênese, as ilhotas sanguíneas, o tubo cardíaco e a evolução das vilosidades coriônicas.",
+    "Correlacionar falhas da gastrulação e da neurulação com teratoma sacrococcígeo, disgenesia caudal, holoprosencefalia e defeitos do tubo neural."
+  ],
+  "resumo": "A **terceira semana** (dias ~15 a 21 após a fertilização; Carnegie 6–9) corresponde à 5ª semana de idade gestacional, quando a menstruação já está atrasada; exposições nesse período muitas vezes ocorrem antes do diagnóstico da gestação. Seu evento central é a **gastrulação**, que converte o disco bilaminar em **trilaminar** e estabelece os eixos do corpo.\n\n**Linha primitiva.** No início da semana surge no epiblasto, na linha média da metade caudal do disco, um espessamento linear: a **linha primitiva**, percorrida pelo **sulco primitivo**. Sua extremidade cranial forma o **nó primitivo**, com a **fosseta primitiva** no centro. A linha define os eixos craniocaudal, dorsoventral e direito-esquerdo; a lateralidade depende de cílios do nó e da expressão de NODAL, LEFTY2 e PITX2 no lado esquerdo.\n\n**Camadas germinativas.** Células do epiblasto sofrem transição epitélio-mesênquima, migram para a linha primitiva e invaginam-se. As primeiras deslocam o hipoblasto e formam o **endoderma** definitivo; outras se instalam entre epiblasto e endoderma, formando o **mesoderma intraembrionário**; as que permanecem formam o **ectoderma**. Assim, **o epiblasto origina as três camadas**. O mesoderma não se interpõe em duas regiões onde ectoderma e endoderma ficam unidos: a **membrana bucofaríngea** (cranial) e a **membrana cloacal** (caudal). Cranialmente à membrana bucofaríngea fica a **área cardiogênica**.\n\n**Notocorda.** Células do nó migram cranialmente na linha média formando o **processo notocordal**, que cresce até a placa precordal. A fosseta se estende para dentro dele (**canal notocordal**). O assoalho do processo funde-se ao endoderma e se desfaz, abrindo o **canal neurentérico**, comunicação transitória entre cavidade amniótica e saco vitelino. A placa notocordal resultante se dobra e forma a **notocorda**; o endoderma volta a ser contínuo. A notocorda define o eixo, serve de base ao esqueleto axial, induz a placa neural e persiste como **núcleo pulposo**.\n\n**Neurulação.** A notocorda e o mesoderma adjacente induzem o ectoderma a formar a **placa neural**, pela inibição de BMP4 (noggin, cordina, folistatina). Por volta do dia 18 surgem o **sulco** e as **pregas neurais**. No fim da semana as pregas começam a se fundir na região cervical (4º–6º pares de somitos), e a fusão avança cranial e caudalmente formando o **tubo neural**; os neuroporos fecham na 4ª semana. Falhas causam **defeitos do tubo neural**, reduzidos pela suplementação periconcepcional de ácido fólico.\n\n**Crista neural.** Células da borda das pregas neurais migram e originam gânglios sensitivos e autônomos, células de Schwann, melanócitos, medula da suprarrenal, pia-máter e aracnoide, odontoblastos, grande parte do esqueleto e do conjuntivo da face e o septo do trato de saída cardíaco.\n\n**Mesoderma intraembrionário.** De medial para lateral: **paraxial** (somitômeros e, do occipital em diante, **somitos**), **intermediário** (estruturas urogenitais) e **lateral**. O primeiro par de somitos surge por volta do dia 20, na região occipital; novos pares surgem em sentido craniocaudal (cerca de 3 pares/dia, segundo Sadler), até 42–44 pares no fim da 5ª semana. No mesoderma lateral, espaços confluem no **celoma intraembrionário**, que separa o **mesoderma somático** (com o ectoderma, parede do corpo) do **esplâncnico** (com o endoderma, parede do intestino e coração).\n\n**Sangue, vasos e coração.** No início da semana, no mesoderma extraembrionário do saco vitelino, do pedículo de conexão e do córion, formam-se **ilhotas sanguíneas**: as células periféricas originam o endotélio (**vasculogênese**) e as centrais, células sanguíneas primitivas; vasos novos também brotam dos existentes (**angiogênese**). Vasos intraembrionários surgem cerca de 2 dias depois. Na área cardiogênica, tubos endocárdicos se fundem em um **tubo cardíaco**, que começa a bater por volta dos dias 21–23: o sistema cardiovascular é o primeiro a funcionar.\n\n**Vilosidades.** As vilosidades primárias recebem eixo de mesoderma (**secundárias**) e, quando surgem capilares nesse eixo, tornam-se **terciárias** (fim da semana). Os capilares vilositários se ligam aos vasos do córion, do pedículo de conexão e ao coração: forma-se o **sistema circulatório embriofetal primitivo**. A **capa citotrofoblástica** ancora o saco coriônico ao endométrio.\n\n**Correlações.** A linha primitiva regride e normalmente desaparece até o fim da 4ª semana; restos podem originar o **teratoma sacrococcígeo**. Mesoderma caudal insuficiente causa **disgenesia caudal (sirenomelia)**. Altas doses de álcool na gastrulação podem lesar a linha média anterior e causar **holoprosencefalia**.",
+  "pontosChave": [
+    "A gastrulação (3ª semana) forma as três camadas germinativas; todas derivam do epiblasto.",
+    "A linha primitiva surge no epiblasto caudal no início da 3ª semana; sua extremidade cranial é o nó primitivo, com a fosseta primitiva.",
+    "As primeiras células que ingressam pela linha primitiva formam o endoderma definitivo, deslocando o hipoblasto.",
+    "Nas membranas bucofaríngea e cloacal, ectoderma e endoderma ficam unidos sem mesoderma.",
+    "A notocorda induz a placa neural, serve de base ao esqueleto axial e persiste como núcleo pulposo.",
+    "O canal neurentérico liga transitoriamente a cavidade amniótica ao saco vitelino.",
+    "A fusão das pregas neurais começa na região cervical e avança nos sentidos cranial e caudal.",
+    "A crista neural origina gânglios sensitivos e autônomos, células de Schwann, melanócitos, medula suprarrenal e mesênquima craniofacial.",
+    "O primeiro par de somitos surge por volta do dia 20; há 42–44 pares no fim da 5ª semana.",
+    "O celoma intraembrionário divide o mesoderma lateral em somático e esplâncnico.",
+    "Ilhotas sanguíneas surgem no mesoderma do saco vitelino; o tubo cardíaco começa a bater por volta dos dias 21–23.",
+    "Vilosidades: primária (citotrofoblasto) → secundária (eixo de mesoderma) → terciária (vasos)."
+  ],
+  "estruturas": [
+    {
+      "id": "linha-primitiva",
+      "nome": "Linha primitiva",
+      "sinonimos": [
+        "estria primitiva"
+      ],
+      "definicao": "Espessamento linear do epiblasto na linha média da metade caudal do disco embrionário, surgido no início da 3ª semana. Por ela ingressam as células que formam endoderma e mesoderma.",
+      "origem": "Proliferação e convergência de células do epiblasto.",
+      "destino": "Regride e normalmente desaparece até o fim da 4ª semana, restrita à região sacrococcígea."
+    },
+    {
+      "id": "no-primitivo",
+      "nome": "Nó primitivo",
+      "sinonimos": [
+        "nó de Hensen"
+      ],
+      "definicao": "Elevação na extremidade cranial da linha primitiva; centro organizador do qual partem as células do processo notocordal.",
+      "origem": "Epiblasto."
+    },
+    {
+      "id": "fosseta-primitiva",
+      "nome": "Fosseta primitiva",
+      "sinonimos": [],
+      "definicao": "Pequena depressão no centro do nó primitivo, contínua com o sulco primitivo.",
+      "destino": "Estende-se para o processo notocordal, formando o canal notocordal."
+    },
+    {
+      "id": "sulco-primitivo",
+      "nome": "Sulco primitivo",
+      "sinonimos": [],
+      "definicao": "Depressão estreita ao longo da linha primitiva, por onde as células do epiblasto se invaginam."
+    },
+    {
+      "id": "ectoderma",
+      "nome": "Ectoderma",
+      "sinonimos": [],
+      "definicao": "Camada germinativa formada pelas células do epiblasto que não ingressam pela linha primitiva.",
+      "origem": "Epiblasto.",
+      "destino": "Ectoderma superficial, neuroectoderma (placa neural) e crista neural."
+    },
+    {
+      "id": "mesoderma",
+      "nome": "Mesoderma intraembrionário",
+      "sinonimos": [],
+      "definicao": "Camada germinativa intermediária, formada por células do epiblasto que ingressam pela linha primitiva e se espalham entre ectoderma e endoderma.",
+      "origem": "Epiblasto.",
+      "destino": "Mesoderma paraxial, intermediário e lateral; também o mesoderma cardiogênico."
+    },
+    {
+      "id": "endoderma",
+      "nome": "Endoderma",
+      "sinonimos": [
+        "endoderma definitivo"
+      ],
+      "definicao": "Camada germinativa ventral, formada pelas primeiras células epiblásticas que ingressam pela linha primitiva e deslocam o hipoblasto.",
+      "origem": "Epiblasto.",
+      "destino": "Epitélio dos tratos digestório e respiratório e parênquima de glândulas associadas."
+    },
+    {
+      "id": "membrana-bucofaringea",
+      "nome": "Membrana bucofaríngea",
+      "sinonimos": [
+        "membrana orofaríngea"
+      ],
+      "definicao": "Região cranial em que ectoderma e endoderma estão unidos sem mesoderma, no local da futura boca.",
+      "destino": "Rompe-se por volta do fim da 4ª semana, comunicando o estomodeu com a faringe primitiva."
+    },
+    {
+      "id": "membrana-cloacal",
+      "nome": "Membrana cloacal",
+      "sinonimos": [],
+      "definicao": "Região caudal, atrás da linha primitiva, em que ectoderma e endoderma estão unidos sem mesoderma.",
+      "destino": "Divide-se nas membranas anal e urogenital, que depois se rompem."
+    },
+    {
+      "id": "placa-precordal",
+      "nome": "Placa precordal",
+      "sinonimos": [],
+      "definicao": "Região de endoderma espessado cranial à notocorda, unida ao ectoderma; importante centro sinalizador da cabeça.",
+      "destino": "Forma, com o ectoderma, a membrana bucofaríngea."
+    },
+    {
+      "id": "processo-notocordal",
+      "nome": "Processo notocordal",
+      "sinonimos": [],
+      "definicao": "Cordão celular mediano que cresce cranialmente a partir do nó primitivo, entre ectoderma e endoderma, até a placa precordal.",
+      "origem": "Células do nó primitivo.",
+      "destino": "Placa notocordal e, depois, notocorda."
+    },
+    {
+      "id": "canal-notocordal",
+      "nome": "Canal notocordal",
+      "sinonimos": [],
+      "definicao": "Luz formada no processo notocordal pela extensão da fosseta primitiva."
+    },
+    {
+      "id": "canal-neurenterico",
+      "nome": "Canal neurentérico",
+      "sinonimos": [],
+      "definicao": "Comunicação transitória entre a cavidade amniótica e o saco vitelino, formada quando o assoalho do processo notocordal se desfaz."
+    },
+    {
+      "id": "notocorda",
+      "nome": "Notocorda",
+      "sinonimos": [],
+      "definicao": "Bastão celular axial que define o eixo do embrião, induz a placa neural e serve de base ao esqueleto axial.",
+      "origem": "Dobramento da placa notocordal.",
+      "destino": "Degenera nos corpos vertebrais e persiste como núcleo pulposo dos discos intervertebrais."
+    },
+    {
+      "id": "placa-neural",
+      "nome": "Placa neural",
+      "sinonimos": [
+        "neuroectoderma"
+      ],
+      "definicao": "Espessamento do ectoderma sobre a notocorda, induzido por ela e pelo mesoderma adjacente.",
+      "origem": "Ectoderma.",
+      "destino": "Tubo neural (sistema nervoso central) e, de suas bordas, crista neural."
+    },
+    {
+      "id": "sulco-neural",
+      "nome": "Sulco neural",
+      "sinonimos": [],
+      "definicao": "Depressão longitudinal mediana da placa neural, surgida por volta do dia 18."
+    },
+    {
+      "id": "pregas-neurais",
+      "nome": "Pregas neurais",
+      "sinonimos": [],
+      "definicao": "Bordas elevadas da placa neural, de cada lado do sulco neural, que se aproximam e se fundem.",
+      "destino": "Fundem-se para formar o tubo neural."
+    },
+    {
+      "id": "tubo-neural",
+      "nome": "Tubo neural",
+      "sinonimos": [],
+      "definicao": "Tubo formado pela fusão das pregas neurais, a partir da região cervical.",
+      "destino": "Encéfalo e medula espinal."
+    },
+    {
+      "id": "crista-neural",
+      "nome": "Crista neural",
+      "sinonimos": [],
+      "definicao": "População celular da borda das pregas neurais que sofre transição epitélio-mesênquima e migra por todo o embrião.",
+      "origem": "Junção entre neuroectoderma e ectoderma superficial.",
+      "destino": "Gânglios sensitivos e autônomos, células de Schwann, melanócitos, medula suprarrenal, leptomeninges, odontoblastos, mesênquima craniofacial e septo do trato de saída cardíaco."
+    },
+    {
+      "id": "mesoderma-paraxial",
+      "nome": "Mesoderma paraxial",
+      "sinonimos": [],
+      "definicao": "Coluna espessa de mesoderma de cada lado da notocorda e do tubo neural.",
+      "destino": "Somitômeros (cabeça) e somitos."
+    },
+    {
+      "id": "somitomeros",
+      "nome": "Somitômeros",
+      "sinonimos": [],
+      "definicao": "Segmentos iniciais do mesoderma paraxial. Na cabeça contribuem para o mesênquima cefálico; do occipital em diante organizam-se em somitos."
+    },
+    {
+      "id": "somitos",
+      "nome": "Somitos",
+      "sinonimos": [],
+      "definicao": "Blocos pareados de mesoderma paraxial que surgem a partir do dia ~20, na região occipital, em sequência craniocaudal.",
+      "origem": "Mesoderma paraxial.",
+      "destino": "Esclerótomo, miótomo e dermátomo (vértebras, musculatura esquelética, derme do dorso)."
+    },
+    {
+      "id": "mesoderma-intermediario",
+      "nome": "Mesoderma intermediário",
+      "sinonimos": [],
+      "definicao": "Faixa de mesoderma entre o paraxial e o lateral.",
+      "destino": "Estruturas urogenitais."
+    },
+    {
+      "id": "mesoderma-lateral",
+      "nome": "Mesoderma lateral",
+      "sinonimos": [
+        "mesoderma da placa lateral"
+      ],
+      "definicao": "Porção mais lateral do mesoderma intraembrionário, contínua com o mesoderma extraembrionário.",
+      "destino": "Divide-se em mesoderma somático e esplâncnico pelo celoma intraembrionário."
+    },
+    {
+      "id": "mesoderma-somatico",
+      "nome": "Mesoderma somático (parietal)",
+      "sinonimos": [],
+      "definicao": "Lâmina do mesoderma lateral voltada para o ectoderma; com ele forma a somatopleura.",
+      "destino": "Parede corporal lateral e ventral, serosa parietal, ossos e conjuntivo dos membros."
+    },
+    {
+      "id": "mesoderma-esplancnico",
+      "nome": "Mesoderma esplâncnico (visceral)",
+      "sinonimos": [],
+      "definicao": "Lâmina do mesoderma lateral voltada para o endoderma; com ele forma a esplancnopleura.",
+      "destino": "Coração, músculo liso e conjuntivo da parede do intestino, serosa visceral."
+    },
+    {
+      "id": "celoma-intraembrionario",
+      "nome": "Celoma intraembrionário",
+      "sinonimos": [],
+      "definicao": "Cavidade em forma de ferradura formada pela confluência de espaços no mesoderma lateral e cardiogênico.",
+      "destino": "Cavidades pericárdica, pleurais e peritoneal."
+    },
+    {
+      "id": "area-cardiogenica",
+      "nome": "Área cardiogênica",
+      "sinonimos": [
+        "campo cardíaco"
+      ],
+      "definicao": "Região de mesoderma esplâncnico em forma de ferradura, cranial à membrana bucofaríngea, onde se formam os primórdios do coração.",
+      "destino": "Tubos endocárdicos e tubo cardíaco."
+    },
+    {
+      "id": "tubo-cardiaco",
+      "nome": "Tubo cardíaco",
+      "sinonimos": [
+        "coração tubular"
+      ],
+      "definicao": "Tubo único formado pela fusão dos tubos endocárdicos no fim da 3ª semana; começa a bater por volta dos dias 21–23.",
+      "origem": "Mesoderma esplâncnico da área cardiogênica."
+    },
+    {
+      "id": "ilhotas-sanguineas",
+      "nome": "Ilhotas sanguíneas",
+      "sinonimos": [],
+      "definicao": "Agregados de hemangioblastos no mesoderma extraembrionário (saco vitelino, pedículo de conexão, córion): as células periféricas formam endotélio e as centrais, células sanguíneas primitivas."
+    },
+    {
+      "id": "alantoide",
+      "nome": "Alantoide",
+      "sinonimos": [
+        "divertículo alantoentérico"
+      ],
+      "definicao": "Pequeno divertículo da parede caudal do saco vitelino que penetra no pedículo de conexão por volta do dia 16.",
+      "destino": "Úraco (ligamento umbilical mediano); seus vasos relacionam-se aos vasos umbilicais."
+    },
+    {
+      "id": "vilosidades-corionicas",
+      "nome": "Vilosidades coriônicas secundárias e terciárias",
+      "sinonimos": [],
+      "definicao": "Secundárias: vilosidades com eixo de mesoderma extraembrionário. Terciárias: vilosidades cujo eixo contém capilares sanguíneos (fim da 3ª semana).",
+      "destino": "Vilosidades-tronco e ramificadas da placenta."
+    },
+    {
+      "id": "capa-citotrofoblastica",
+      "nome": "Capa citotrofoblástica",
+      "sinonimos": [],
+      "definicao": "Camada de citotrofoblasto que atravessa o sinciciotrofoblasto nas pontas das vilosidades e envolve o saco coriônico, ancorando-o ao endométrio."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e06-linha-primitiva",
+      "descricao": "Surge a linha primitiva no epiblasto caudal",
+      "diaMin": 14,
+      "diaMax": 16,
+      "ordem": 1
+    },
+    {
+      "id": "e06-endoderma-definitivo",
+      "descricao": "Células do epiblasto ingressam pela linha primitiva; o endoderma definitivo desloca o hipoblasto e forma-se o mesoderma intraembrionário",
+      "diaMin": 15,
+      "diaMax": 16,
+      "ordem": 2
+    },
+    {
+      "id": "e06-processo-notocordal",
+      "descricao": "O processo notocordal cresce cranialmente a partir do nó primitivo",
+      "diaMin": 16,
+      "diaMax": 17,
+      "ordem": 3
+    },
+    {
+      "id": "e06-placa-neural",
+      "descricao": "Surge a placa neural sobre a notocorda em formação",
+      "diaMin": 17,
+      "diaMax": 18,
+      "ordem": 4
+    },
+    {
+      "id": "e06-sulco-pregas-neurais",
+      "descricao": "Formam-se o sulco neural e as pregas neurais",
+      "diaMin": 18,
+      "diaMax": 19,
+      "ordem": 5
+    },
+    {
+      "id": "e06-primeiro-somito",
+      "descricao": "Aparece o primeiro par de somitos, na região occipital",
+      "diaMin": 20,
+      "diaMax": 21,
+      "ordem": 6
+    },
+    {
+      "id": "e06-fusao-pregas-neurais",
+      "descricao": "Começa a fusão das pregas neurais na região cervical",
+      "diaMin": 21,
+      "diaMax": 23,
+      "ordem": 7
+    },
+    {
+      "id": "e06-regressao-linha-primitiva",
+      "descricao": "A linha primitiva regride e normalmente desaparece (fim da 4ª semana)",
+      "ordem": 8
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "teratoma-sacrococcigeo",
+      "titulo": "Teratoma sacrococcígeo",
+      "descricao": "Tumor da região sacrococcígea com tecidos das três camadas germinativas; é o tumor congênito mais comum do recém-nascido, mais frequente no sexo feminino, geralmente detectado na ultrassonografia pré-natal e ressecado precocemente.",
+      "mecanismo": "Persistência de restos pluripotentes da linha primitiva, que normalmente regride e desaparece."
+    },
+    {
+      "id": "disgenesia-caudal",
+      "titulo": "Disgenesia caudal (sirenomelia)",
+      "descricao": "Hipoplasia e fusão dos membros inferiores, anomalias de vértebras lombossacrais, agenesia renal, ânus imperfurado e anomalias genitais. Associa-se ao diabetes materno, entre outras causas.",
+      "mecanismo": "Formação insuficiente de mesoderma na região mais caudal do embrião durante a gastrulação (Sadler); para a sirenomelia também se propõe 'roubo vascular' por artéria umbilical única derivada da artéria vitelina."
+    },
+    {
+      "id": "defeitos-tubo-neural",
+      "titulo": "Defeitos do tubo neural (introdutório)",
+      "descricao": "Anencefalia (falha cranial) e espinha bífida aberta/mielomeningocele (falha caudal). A suplementação periconcepcional de ácido fólico reduz a incidência (até 70%, segundo Sadler). Detalhamento em tópico próprio.",
+      "mecanismo": "Falha da fusão das pregas neurais ou do fechamento dos neuroporos (4ª semana)."
+    },
+    {
+      "id": "holoprosencefalia-gastrulacao",
+      "titulo": "Holoprosencefalia associada à gastrulação",
+      "descricao": "Altas doses de álcool no início da 3ª semana podem matar células da linha média anterior do disco, com deficiência de estruturas craniofaciais da linha média e holoprosencefalia.",
+      "mecanismo": "Perda de células da linha média anterior (região precordal) durante a gastrulação."
+    },
+    {
+      "id": "defeitos-de-lateralidade",
+      "titulo": "Defeitos de lateralidade (situs inversus)",
+      "descricao": "Na discinesia ciliar primária (síndrome de Kartagener), cerca de metade dos pacientes tem situs inversus, além de doença respiratória crônica e infertilidade masculina.",
+      "mecanismo": "Cílios do nó primitivo imóveis não geram o fluxo para a esquerda que inicia a cascata NODAL/LEFTY2/PITX2; a lateralidade torna-se aleatória."
+    },
+    {
+      "id": "cordoma",
+      "titulo": "Cordoma",
+      "descricao": "Tumor raro, de crescimento lento, originado de restos notocordais, em geral na base do crânio ou na região sacrococcígea.",
+      "mecanismo": "Persistência de remanescentes da notocorda."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-06-q01",
+      "tipo": "multipla",
+      "enunciado": "A linha primitiva, primeiro sinal da gastrulação, surge no início da 3ª semana como:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Espessamento do hipoblasto na extremidade cranial do disco embrionário"
+        },
+        {
+          "id": "b",
+          "texto": "Espessamento linear do epiblasto na linha média da metade caudal do disco embrionário"
+        },
+        {
+          "id": "c",
+          "texto": "Prega do âmnio que se projeta sobre a extremidade caudal do disco"
+        },
+        {
+          "id": "d",
+          "texto": "Coluna de citotrofoblasto que penetra o sinciciotrofoblasto"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A linha primitiva resulta da proliferação e convergência de células do epiblasto para a linha média da porção caudal do disco e define os eixos do embrião. Um espessamento cranial do hipoblasto (a) corresponde à placa precordal. O âmnio (c) é uma membrana extraembrionária e não forma a linha primitiva. Colunas de citotrofoblasto penetrando o sincício (d) formam as vilosidades coriônicas primárias.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "gastrulacao",
+        "linha-primitiva"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q02",
+      "tipo": "multipla",
+      "enunciado": "O endoderma embrionário definitivo forma-se principalmente a partir de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Células do citotrofoblasto que atravessam o celoma extraembrionário"
+        },
+        {
+          "id": "b",
+          "texto": "Proliferação e espessamento do próprio hipoblasto"
+        },
+        {
+          "id": "c",
+          "texto": "Células do mesoderma extraembrionário que revestem o saco vitelino"
+        },
+        {
+          "id": "d",
+          "texto": "Células do epiblasto que migram pela linha primitiva e deslocam o hipoblasto"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Na gastrulação, as primeiras células epiblásticas que se invaginam pela linha primitiva deslocam o hipoblasto e formam o endoderma definitivo; o hipoblasto deslocado fica em posição extraembrionária. Por isso o hipoblasto (b) não forma o endoderma do embrião. O mesoderma extraembrionário (c) e o citotrofoblasto (a) são tecidos extraembrionários que não formam camadas germinativas do embrião.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "gastrulacao",
+        "endoderma",
+        "epiblasto"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q03",
+      "tipo": "multipla",
+      "enunciado": "As membranas bucofaríngea e cloacal caracterizam-se por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Apenas mesoderma, sem revestimento epitelial"
+        },
+        {
+          "id": "b",
+          "texto": "Três camadas germinativas completas, com mesoderma espesso"
+        },
+        {
+          "id": "c",
+          "texto": "Ectoderma e endoderma firmemente unidos, sem mesoderma interposto"
+        },
+        {
+          "id": "d",
+          "texto": "Ectoderma e mesoderma, sem endoderma"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Nessas duas regiões o mesoderma não se interpõe, e ectoderma e endoderma ficam unidos. A bucofaríngea, cranial, rompe-se por volta do fim da 4ª semana e comunica o estomodeu com a faringe primitiva; a cloacal, caudal, dará origem às membranas anal e urogenital. As alternativas (a), (b) e (d) incluem mesoderma, que é justamente o que falta nessas membranas.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "gastrulacao",
+        "membrana-bucofaringea",
+        "membrana-cloacal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q04",
+      "tipo": "multipla",
+      "enunciado": "Qual estrutura do adulto é considerada remanescente da notocorda?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Núcleo pulposo dos discos intervertebrais"
+        },
+        {
+          "id": "b",
+          "texto": "Anel fibroso dos discos intervertebrais"
+        },
+        {
+          "id": "c",
+          "texto": "Corpos vertebrais"
+        },
+        {
+          "id": "d",
+          "texto": "Ligamento longitudinal anterior"
+        },
+        {
+          "id": "e",
+          "texto": "Filamento terminal"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A notocorda degenera onde é envolvida pelos corpos vertebrais, mas persiste entre eles como núcleo pulposo. O anel fibroso (b), os corpos vertebrais (c) e os ligamentos vertebrais (d) derivam do esclerótomo (mesoderma paraxial). O filamento terminal (e) é formado pela pia-máter e marca a extremidade caudal original da medula espinal; não deriva da notocorda. Restos notocordais podem originar cordomas.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "notocorda",
+        "nucleo-pulposo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q05",
+      "tipo": "multipla",
+      "enunciado": "Durante a formação da notocorda, o canal neurentérico estabelece comunicação transitória entre:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Saco vitelino e alantoide"
+        },
+        {
+          "id": "b",
+          "texto": "Cavidade amniótica e celoma extraembrionário"
+        },
+        {
+          "id": "c",
+          "texto": "Cavidade amniótica e saco vitelino"
+        },
+        {
+          "id": "d",
+          "texto": "Celoma intraembrionário e celoma extraembrionário"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Quando o assoalho do processo notocordal se funde ao endoderma e se desfaz, o canal notocordal passa a se abrir no saco vitelino; como ele começa na fosseta primitiva, voltada para a cavidade amniótica, forma-se o canal neurentérico, que liga as duas cavidades até a notocorda se completar. Cavidade amniótica e celoma extraembrionário (b) não se comunicam por esse canal. A alantoide (a) é um divertículo do saco vitelino que se abre diretamente nele, sem relação com o canal neurentérico. A comunicação entre os celomas (d) ocorre nas margens do disco, pelo mesoderma lateral.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "notocorda",
+        "canal-neurenterico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q06",
+      "tipo": "multipla",
+      "enunciado": "A indução da placa neural no ectoderma depende principalmente de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Inibição da sinalização de BMP4 por fatores como noggin, cordina e folistatina, secretados pelo nó primitivo, pela notocorda e pelo mesoderma precordal"
+        },
+        {
+          "id": "b",
+          "texto": "Aumento da sinalização de BMP4 no ectoderma situado sobre a notocorda"
+        },
+        {
+          "id": "c",
+          "texto": "hCG secretada pelo sinciciotrofoblasto"
+        },
+        {
+          "id": "d",
+          "texto": "Contato direto entre ectoderma e endoderma na membrana bucofaríngea"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O BMP4 presente no ectoderma o direciona para epiderme; quando ele é bloqueado por noggin, cordina e folistatina (com participação de FGF), o ectoderma assume destino neural. Aumentar BMP4 (b) teria o efeito oposto, favorecendo a epiderme. A hCG (c) tem ação endócrina sobre o corpo lúteo, não indutora no disco. A membrana bucofaríngea (d) é uma região de contato ecto-endodérmico e não é o centro indutor da placa neural.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "neurulacao",
+        "inducao",
+        "BMP"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5 e 6"
+    },
+    {
+      "id": "emb-06-q07",
+      "tipo": "multipla",
+      "enunciado": "Segundo Moore e Sadler, a fusão das pregas neurais para formar o tubo neural começa:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "No neuroporo cranial e avança apenas caudalmente"
+        },
+        {
+          "id": "b",
+          "texto": "Na futura região cervical (altura do 4º ao 6º par de somitos) e avança nos sentidos cranial e caudal"
+        },
+        {
+          "id": "c",
+          "texto": "Na extremidade caudal e avança apenas cranialmente"
+        },
+        {
+          "id": "d",
+          "texto": "Simultaneamente em todo o comprimento das pregas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "As pregas começam a se fundir no fim da 3ª semana / início da 4ª na região cervical, e a fusão avança como um zíper nas duas direções, deixando abertos temporariamente os neuroporos cranial e caudal. As alternativas (a) e (c) descrevem fusão em um único sentido, e (d) fusão simultânea; nenhuma corresponde à descrição dessas obras. Estudos morfológicos sugerem mais de um ponto de início de fusão no ser humano (ver notas de divergência), mas o início cervical é o consenso dos livros-texto.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "neurulacao",
+        "tubo-neural",
+        "pregas-neurais"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q08",
+      "tipo": "multipla",
+      "enunciado": "Qual das estruturas abaixo deriva da crista neural?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Retina"
+        },
+        {
+          "id": "b",
+          "texto": "Córtex da glândula suprarrenal"
+        },
+        {
+          "id": "c",
+          "texto": "Neurônios motores do corno anterior da medula espinal"
+        },
+        {
+          "id": "d",
+          "texto": "Medula da glândula suprarrenal"
+        },
+        {
+          "id": "e",
+          "texto": "Epiderme"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "As células cromafins da medula suprarrenal são neurônios simpáticos pós-ganglionares modificados, derivados da crista neural. O córtex suprarrenal (b) deriva do mesoderma (epitélio celômico). Os neurônios motores (c) e a retina (a) derivam do neuroectoderma do tubo neural (a retina, da vesícula óptica do diencéfalo). A epiderme (e) deriva do ectoderma superficial.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q09",
+      "tipo": "multipla",
+      "enunciado": "O mesoderma lateral esplâncnico, associado ao endoderma (esplancnopleura), forma principalmente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O músculo liso e o tecido conjuntivo da parede do tubo intestinal e a serosa visceral"
+        },
+        {
+          "id": "b",
+          "texto": "A parede corporal lateral e ventral e a serosa parietal"
+        },
+        {
+          "id": "c",
+          "texto": "As vértebras e as costelas"
+        },
+        {
+          "id": "d",
+          "texto": "Os rins definitivos"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A esplancnopleura forma a parede do intestino (exceto o epitélio, que é endodérmico), a serosa visceral e também o coração. A parede corporal e a serosa parietal (b) vêm do mesoderma somático com o ectoderma (somatopleura). Vértebras e costelas (c) derivam do esclerótomo dos somitos (mesoderma paraxial). Os rins (d) derivam do mesoderma intermediário.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "mesoderma-lateral",
+        "esplancnopleura"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q10",
+      "tipo": "multipla",
+      "contexto": "Recém-nascida apresenta grande massa na região sacrococcígea, já identificada na ultrassonografia pré-natal. O exame histopatológico da peça cirúrgica mostra pele, cartilagem, tecido nervoso e epitélio intestinal.",
+      "enunciado": "Qual é a origem embriológica mais provável dessa lesão?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Falha de fechamento do neuroporo caudal"
+        },
+        {
+          "id": "b",
+          "texto": "Restos da notocorda"
+        },
+        {
+          "id": "c",
+          "texto": "Restos de células pluripotentes da linha primitiva"
+        },
+        {
+          "id": "d",
+          "texto": "Persistência da membrana cloacal"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "O teratoma sacrococcígeo contém tecidos das três camadas germinativas e deriva de restos pluripotentes da linha primitiva, que normalmente regride para a região sacrococcígea e desaparece. É o tumor congênito mais comum do recém-nascido e é mais frequente no sexo feminino. Restos notocordais (b) originam cordomas, tumores de uma única linhagem, em geral em adultos. A falha do neuroporo caudal (a) causa mielomeningocele, com tecido neural e meninges, sem derivados das três camadas. A persistência da membrana cloacal (d) relaciona-se a anomalias anorretais, não a tumores.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "teratoma-sacrococcigeo",
+        "linha-primitiva",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q11",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia morfológica de feto de mãe com diabetes pré-gestacional mal controlado mostra membros inferiores fundidos, agenesia renal bilateral, ânus imperfurado e anomalias de vértebras lombossacrais.",
+      "enunciado": "Segundo Sadler, qual mecanismo embriológico explica esse conjunto de anomalias?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Falha de fusão das pregas neurais na região do neuroporo caudal"
+        },
+        {
+          "id": "b",
+          "texto": "Formação insuficiente de mesoderma na região mais caudal do embrião durante a gastrulação"
+        },
+        {
+          "id": "c",
+          "texto": "Persistência excessiva de células pluripotentes da linha primitiva"
+        },
+        {
+          "id": "d",
+          "texto": "Bandas amnióticas por ruptura precoce do âmnio"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A disgenesia caudal (sirenomelia) resulta de mesoderma insuficiente na região caudal, que deixa de contribuir para membros inferiores, rins, vértebras lombossacrais e região anorretal; daí a fusão dos membros, a agenesia renal, o ânus imperfurado e as anomalias genitais. Associa-se ao diabetes materno, entre outras causas. A falha de fechamento do neuroporo caudal (a) produz espinha bífida/mielomeningocele, sem fusão de membros nem agenesia renal. Restos persistentes da linha primitiva (c) relacionam-se ao teratoma sacrococcígeo. Bandas amnióticas (d) causam amputações e constrições assimétricas, não esse padrão axial simétrico. Para a sirenomelia também se propõe a hipótese de 'roubo vascular' por artéria umbilical única derivada da artéria vitelina (ver notas de divergência).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "disgenesia-caudal",
+        "sirenomelia",
+        "gastrulacao",
+        "caso-clinico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q12",
+      "tipo": "multipla",
+      "contexto": "Mulher que ainda não sabia estar grávida teve um episódio de ingestão de grande quantidade de álcool no início da 3ª semana após a fertilização (cerca de 4 a 5 semanas desde a DUM).",
+      "enunciado": "Segundo Sadler, exposição a altas doses de álcool nessa fase pode lesar células da linha média anterior do disco embrionário, resultando em:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Teratoma sacrococcígeo"
+        },
+        {
+          "id": "b",
+          "texto": "Mielomeningocele lombossacra"
+        },
+        {
+          "id": "c",
+          "texto": "Sirenomelia"
+        },
+        {
+          "id": "d",
+          "texto": "Holoprosencefalia"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Durante a gastrulação, a linha média anterior do disco é particularmente sensível; a perda de células nessa região compromete estruturas craniofaciais da linha média e a separação do prosencéfalo, levando à holoprosencefalia. A mielomeningocele (b) decorre de falha no fechamento caudal do tubo neural, na 4ª semana. A sirenomelia (c) envolve a região caudal, não a linha média anterior. O teratoma sacrococcígeo (a) resulta de restos da linha primitiva, não de morte celular por teratógeno.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "teratogenese",
+        "alcool",
+        "holoprosencefalia",
+        "caso-clinico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q13",
+      "tipo": "multipla",
+      "contexto": "Homem de 27 anos com sinusite crônica, bronquiectasias e infertilidade por espermatozoides imóveis. A radiografia de tórax mostra dextrocardia, e a ultrassonografia abdominal revela fígado à esquerda e baço à direita (situs inversus totalis).",
+      "enunciado": "Qual mecanismo embriológico melhor explica a inversão da lateralidade?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Disfunção dos cílios do nó primitivo, que normalmente geram fluxo para a esquerda e desencadeiam a expressão de NODAL e PITX2 no lado esquerdo"
+        },
+        {
+          "id": "b",
+          "texto": "Falha na migração das células da crista neural cardíaca para o trato de saída"
+        },
+        {
+          "id": "c",
+          "texto": "Ausência de notocorda, impedindo a indução da placa neural"
+        },
+        {
+          "id": "d",
+          "texto": "Fusão anormal das pregas neurais na região cervical"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na discinesia ciliar primária (síndrome de Kartagener), cílios imóveis não geram o fluxo para a esquerda no nó primitivo; a cascata assimétrica (NODAL e LEFTY2 no mesoderma lateral esquerdo, ativando PITX2) torna-se aleatória, e cerca de metade dos pacientes tem situs inversus. Os mesmos defeitos ciliares explicam a doença respiratória e a imobilidade dos espermatozoides. A crista neural cardíaca (b) participa da septação do trato de saída e não define a lateralidade. Sem notocorda (c) haveria defeitos axiais e neurais graves, não inversão isolada. A fusão das pregas neurais (d) não determina a lateralidade visceral.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "lateralidade",
+        "no-primitivo",
+        "cilios",
+        "caso-clinico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q14",
+      "tipo": "multipla",
+      "enunciado": "O primeiro par de somitos surge por volta do dia 20 na região occipital, e novos pares aparecem em sequência craniocaudal. Ao fim da 5ª semana há aproximadamente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "31 pares de somitos"
+        },
+        {
+          "id": "b",
+          "texto": "42 a 44 pares de somitos"
+        },
+        {
+          "id": "c",
+          "texto": "20 pares de somitos"
+        },
+        {
+          "id": "d",
+          "texto": "60 a 62 pares de somitos"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Moore e Sadler indicam 42–44 pares ao fim da 5ª semana (segundo Sadler: 4 occipitais, 8 cervicais, 12 torácicos, 5 lombares, 5 sacrais e 8–10 coccígeos); o primeiro occipital e os últimos coccígeos depois desaparecem. Trinta e um pares (a) é o número de pares de nervos espinais do adulto, não de somitos. Cerca de 20 pares (c) estão presentes por volta dos dias 25–26, ainda na 4ª semana. Sessenta pares (d) excede o número formado no ser humano.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "somitos",
+        "mesoderma-paraxial"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q15",
+      "tipo": "multipla",
+      "enunciado": "O que distingue uma vilosidade coriônica terciária de uma secundária?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Revestimento externo de sinciciotrofoblasto"
+        },
+        {
+          "id": "b",
+          "texto": "Presença de um eixo de mesoderma extraembrionário"
+        },
+        {
+          "id": "c",
+          "texto": "Presença de capilares sanguíneos diferenciados no eixo mesodérmico"
+        },
+        {
+          "id": "d",
+          "texto": "Camada de citotrofoblasto sob o sincício"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A vilosidade secundária já tem eixo de mesoderma (b), citotrofoblasto (d) e revestimento de sinciciotrofoblasto (a); ela se torna terciária quando células mesenquimais do eixo se diferenciam em capilares e células sanguíneas, no fim da 3ª semana. Assim, (a), (b) e (d) são comuns às duas e não as distinguem.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "vilosidades-corionicas",
+        "placenta"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q16",
+      "tipo": "multipla",
+      "enunciado": "No disco trilaminar da 3ª semana, a área cardiogênica localiza-se:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "No interior do pedículo de conexão"
+        },
+        {
+          "id": "b",
+          "texto": "Caudalmente à membrana cloacal, junto à alantoide"
+        },
+        {
+          "id": "c",
+          "texto": "Lateralmente aos somitos, no mesoderma intermediário"
+        },
+        {
+          "id": "d",
+          "texto": "Cranialmente à membrana bucofaríngea"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Células mesodérmicas precursoras do coração ingressam pela linha primitiva e se instalam, em forma de ferradura, cranialmente à membrana bucofaríngea, onde também surge a parte do celoma que formará a cavidade pericárdica. Com o dobramento cefálico da 4ª semana, essa região é levada para a face ventral, caudalmente à membrana bucofaríngea. A região caudal à membrana cloacal (b) relaciona-se ao pedículo de conexão e à alantoide. O mesoderma intermediário (c) forma estruturas urogenitais. O pedículo de conexão (a) contém os vasos umbilicais em formação, não o coração.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "area-cardiogenica",
+        "coracao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q17",
+      "tipo": "vf",
+      "enunciado": "Ectoderma, mesoderma e endoderma do embrião derivam todos do epiblasto.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Na gastrulação, células do epiblasto que ingressam pela linha primitiva formam o endoderma definitivo e o mesoderma intraembrionário, e as que permanecem formam o ectoderma. O hipoblasto é deslocado e não contribui para as camadas germinativas do embrião.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "gastrulacao",
+        "epiblasto"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q18",
+      "tipo": "vf",
+      "enunciado": "As primeiras ilhotas sanguíneas surgem no fígado embrionário, na 3ª semana.",
+      "correta": false,
+      "explicacao": "Falso. Surgem no mesoderma extraembrionário da parede do saco vitelino (e também no pedículo de conexão e no córion), no início da 3ª semana. O fígado só se torna o principal órgão hematopoético mais tarde (a partir de cerca do 2º mês), colonizado por células-tronco hematopoéticas definitivas originadas na região aorta-gônada-mesonefro.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "vasculogenese",
+        "hematopoese",
+        "ilhotas-sanguineas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q19",
+      "tipo": "vf",
+      "enunciado": "O celoma intraembrionário forma-se no interior do mesoderma paraxial.",
+      "correta": false,
+      "explicacao": "Falso. Forma-se no mesoderma lateral (e no mesoderma cardiogênico), a partir de espaços que confluem em uma cavidade em ferradura e dividem o mesoderma lateral em lâminas somática e esplâncnica. O mesoderma paraxial forma somitômeros e somitos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "celoma-intraembrionario",
+        "mesoderma-lateral"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q20",
+      "tipo": "vf",
+      "enunciado": "A suplementação periconcepcional de ácido fólico reduz a incidência de defeitos do tubo neural.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Sadler relata redução de até 70% com 400 µg/dia iniciados antes da concepção. Como o tubo neural se fecha na 4ª semana após a fertilização, muitas vezes antes de a gestação ser reconhecida, a suplementação precisa começar antes da concepção.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "defeitos-tubo-neural",
+        "acido-folico",
+        "prevencao"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18"
+    },
+    {
+      "id": "emb-06-q21",
+      "tipo": "vf",
+      "enunciado": "Normalmente, a linha primitiva regride e desaparece até o fim da 4ª semana.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Ela forma mesoderma ativamente até o início da 4ª semana; depois diminui de tamanho relativo, fica restrita à região sacrococcígea e normalmente desaparece até o fim da 4ª semana (Moore). Restos persistentes podem originar o teratoma sacrococcígeo.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "linha-primitiva",
+        "teratoma-sacrococcigeo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q22",
+      "tipo": "vf",
+      "enunciado": "O primeiro par de somitos surge na região sacral, e os demais aparecem em sentido caudocranial.",
+      "correta": false,
+      "explicacao": "Falso. O primeiro par surge na região occipital, perto da extremidade cranial da notocorda, por volta do dia 20; os demais aparecem em sentido craniocaudal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "somitos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os eventos da 3ª semana e do início da 4ª:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Aparece o primeiro par de somitos"
+        },
+        {
+          "id": "2",
+          "texto": "Surge a linha primitiva no epiblasto caudal"
+        },
+        {
+          "id": "3",
+          "texto": "Começa a fusão das pregas neurais na região cervical"
+        },
+        {
+          "id": "4",
+          "texto": "O processo notocordal cresce cranialmente a partir do nó primitivo"
+        },
+        {
+          "id": "5",
+          "texto": "Células do epiblasto ingressam pela linha primitiva, e o endoderma definitivo desloca o hipoblasto"
+        },
+        {
+          "id": "6",
+          "texto": "Surge a placa neural sobre a notocorda em formação"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "5",
+        "4",
+        "6",
+        "1",
+        "3"
+      ],
+      "explicacao": "Linha primitiva (início da 3ª semana) → ingressão de células e formação do endoderma definitivo → processo notocordal (~dia 16) → placa neural, induzida pela notocorda (~dias 17–18) → primeiro par de somitos (~dia 20) → início da fusão das pregas neurais (~dias 21–23).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "linha-do-tempo",
+        "gastrulacao",
+        "neurulacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5 e 6"
+    },
+    {
+      "id": "emb-06-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas da formação da notocorda:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A placa notocordal se dobra e forma a notocorda definitiva, e o endoderma volta a ser contínuo"
+        },
+        {
+          "id": "2",
+          "texto": "Células do nó primitivo migram cranialmente, formando o processo notocordal"
+        },
+        {
+          "id": "3",
+          "texto": "O assoalho do processo notocordal funde-se ao endoderma e se desfaz, abrindo o canal neurentérico"
+        },
+        {
+          "id": "4",
+          "texto": "A fosseta primitiva se estende para dentro do processo, formando o canal notocordal"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "3",
+        "1"
+      ],
+      "explicacao": "O processo notocordal cresce a partir do nó; a fosseta primitiva se aprofunda nele (canal notocordal); o assoalho se funde ao endoderma e se desfaz, formando a placa notocordal e o canal neurentérico; por fim, a placa se dobra na notocorda definitiva e o endoderma se restabelece abaixo dela.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "notocorda",
+        "canal-neurenterico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q25",
+      "tipo": "ordenar",
+      "enunciado": "Em um corte transversal do embrião no fim da 3ª semana, ordene as estruturas de medial para lateral:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Mesoderma intermediário"
+        },
+        {
+          "id": "2",
+          "texto": "Notocorda"
+        },
+        {
+          "id": "3",
+          "texto": "Mesoderma lateral"
+        },
+        {
+          "id": "4",
+          "texto": "Mesoderma paraxial"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "explicacao": "A notocorda ocupa a linha média; de cada lado ficam o mesoderma paraxial (futuros somitos), depois o intermediário (estruturas urogenitais) e, mais lateralmente, o mesoderma lateral, dividido pelo celoma em lâminas somática e esplâncnica.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "mesoderma-paraxial",
+        "mesoderma-intermediario",
+        "mesoderma-lateral"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do desenvolvimento das vilosidades coriônicas:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Mesoderma extraembrionário cresce para dentro das colunas, formando vilosidades secundárias"
+        },
+        {
+          "id": "2",
+          "texto": "Colunas de citotrofoblasto revestidas por sincício formam vilosidades primárias"
+        },
+        {
+          "id": "3",
+          "texto": "Os capilares vilositários se conectam aos vasos do córion e do pedículo de conexão, e o sangue embrionário passa a circular nas vilosidades"
+        },
+        {
+          "id": "4",
+          "texto": "Capilares se diferenciam no eixo mesodérmico, formando vilosidades terciárias"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "1",
+        "4",
+        "3"
+      ],
+      "explicacao": "Primárias (fim da 2ª semana) → secundárias (início da 3ª) → terciárias (fim da 3ª) → conexão com o coração por vasos do córion e do pedículo de conexão, com o sangue embrionário começando a fluir lentamente pelos capilares vilositários no fim da 3ª semana.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "vilosidades-corionicas",
+        "circulacao-embriofetal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada componente do mesoderma (incluindo a notocorda, de origem mesodérmica axial) a um de seus derivados:",
+      "pares": [
+        {
+          "esquerda": "Mesoderma paraxial",
+          "direita": "Vértebras e musculatura esquelética do tronco (via somitos)"
+        },
+        {
+          "esquerda": "Mesoderma intermediário",
+          "direita": "Estruturas urogenitais (rins e gônadas)"
+        },
+        {
+          "esquerda": "Mesoderma lateral somático",
+          "direita": "Parede corporal lateral e ventral e serosa parietal"
+        },
+        {
+          "esquerda": "Mesoderma lateral esplâncnico",
+          "direita": "Coração, parede do intestino e serosa visceral"
+        },
+        {
+          "esquerda": "Notocorda",
+          "direita": "Núcleo pulposo dos discos intervertebrais"
+        }
+      ],
+      "explicacao": "O paraxial forma somitos (esclerótomo, miótomo, dermátomo); o intermediário, estruturas urogenitais; a lâmina somática, a parede do corpo; a esplâncnica, as vísceras ocas e o coração; a notocorda persiste como núcleo pulposo.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "mesoderma",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura à sua origem embrionária:",
+      "pares": [
+        {
+          "esquerda": "Gânglio sensitivo espinal (da raiz dorsal)",
+          "direita": "Crista neural"
+        },
+        {
+          "esquerda": "Neurônio motor do corno anterior da medula",
+          "direita": "Tubo neural (neuroectoderma)"
+        },
+        {
+          "esquerda": "Epiderme",
+          "direita": "Ectoderma superficial"
+        },
+        {
+          "esquerda": "Epitélio de revestimento do intestino",
+          "direita": "Endoderma"
+        },
+        {
+          "esquerda": "Músculo cardíaco",
+          "direita": "Mesoderma esplâncnico"
+        }
+      ],
+      "explicacao": "Neurônios sensitivos periféricos vêm da crista neural; neurônios motores, do tubo neural; a epiderme, do ectoderma superficial; o epitélio intestinal, do endoderma; o miocárdio, do mesoderma esplâncnico da área cardiogênica.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "camadas-germinativas",
+        "crista-neural",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura à sua descrição:",
+      "pares": [
+        {
+          "esquerda": "Nó primitivo",
+          "direita": "Elevação na extremidade cranial da linha primitiva"
+        },
+        {
+          "esquerda": "Fosseta primitiva",
+          "direita": "Pequena depressão no centro do nó primitivo"
+        },
+        {
+          "esquerda": "Sulco primitivo",
+          "direita": "Depressão estreita ao longo da linha primitiva"
+        },
+        {
+          "esquerda": "Processo notocordal",
+          "direita": "Cordão celular mediano que cresce cranialmente a partir do nó"
+        },
+        {
+          "esquerda": "Placa precordal",
+          "direita": "Região endodérmica cranial, unida ao ectoderma, que forma a membrana bucofaríngea"
+        }
+      ],
+      "explicacao": "Nó, fosseta e sulco são partes da linha primitiva; o processo notocordal parte do nó em direção cranial e para na placa precordal, que, unida ao ectoderma, forma a membrana bucofaríngea.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "linha-primitiva",
+        "notocorda",
+        "placa-precordal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "4 — Terceira semana do desenvolvimento humano"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular (início dos batimentos)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "17 — Sistema nervoso (neurulação)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "5 — Terceira semana de desenvolvimento: disco germinativo trilaminar"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "6 — Da terceira à oitava semana: o período embrionário"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "18 — Sistema nervoso central (defeitos do tubo neural, ácido fólico)"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "3 — Terceira semana: tornando-se trilaminar e estabelecendo os eixos do corpo"
+    }
+  ],
+  "notasDivergencia": [
+    "Aparecimento da linha primitiva: Moore, 'início da 3ª semana' (~dia 15); Sadler descreve a linha claramente visível em embriões de 15–16 dias (estágio 6b). Faixa adotada: dias 14–16.",
+    "Placa precordal: Moore a descreve como espessamento do hipoblasto já no fim da 2ª semana; Sadler e Larsen a descrevem formada por células que ingressam pelo nó primitivo na 3ª semana.",
+    "Início da fusão das pregas neurais: Moore, região do 4º–6º pares de somitos; Sadler, região cervical (5º somito), ~dia 22. Estudos morfológicos em embriões humanos (por exemplo, O'Rahilly & Müller; Nakatsu et al.) descrevem mais de um local de início de fusão; o 'zíper bidirecional a partir da região cervical' é uma simplificação didática.",
+    "Primeiro par de somitos: Moore, 'fim da 3ª semana'; Sadler, ~dia 20. Ritmo de cerca de 3 pares/dia citado por Sadler. Total: Moore cita ~38 pares no período somítico (dias 20–30) e 42–44 no fim da 5ª semana; Sadler, 42–44 no fim da 5ª semana. Faixa adotada para o primeiro par: dias 20–21.",
+    "Início dos batimentos cardíacos: Moore (cap. 4) dias 21–22; Moore (cap. 13) dias 22–23; Sadler, cerca do dia 22. Faixa adotada: 21–23.",
+    "Sirenomelia: Sadler a atribui a mesoderma caudal insuficiente (disgenesia caudal); outros autores propõem 'roubo vascular' por artéria umbilical única derivada da artéria vitelina. A associação com diabetes materno é mais consistente para a regressão caudal do que para a sirenomelia típica.",
+    "Placa neural e sulco neural: Moore descreve o sulco neural por volta do dia 18; a placa neural surge pouco antes (dias ~17–18), conforme o estágio de Carnegie 7–8. Dias aproximados.",
+    "Redução de defeitos do tubo neural com ácido fólico: Sadler cita até 70%; outras fontes citam 50–70%."
+  ],
+  "incertezas": [
+    "Incidência do teratoma sacrococcígeo: o valor numérico não foi conferido nas edições adotadas e foi omitido; mantido apenas 'tumor congênito mais comum do recém-nascido, mais frequente no sexo feminino'.",
+    "Origem das células C (parafoliculares) da tireoide: classicamente atribuída à crista neural, mas há evidências recentes de origem endodérmica; por isso não foi usada nas questões sobre derivados da crista neural.",
+    "O papel dos cílios do nó na lateralidade foi demonstrado sobretudo em camundongos; a extrapolação para o ser humano apoia-se na associação com discinesia ciliar primária."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

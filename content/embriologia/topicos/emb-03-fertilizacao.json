@@ -1,0 +1,1029 @@
+{
+  "id": "emb-03-fertilizacao",
+  "disciplina": "embriologia",
+  "ordem": 3,
+  "titulo": "Fertilização",
+  "subtitulo": "Do transporte dos gametas ao zigoto",
+  "periodo": {
+    "diaInicio": 0,
+    "diaFim": 1,
+    "carnegie": [
+      1
+    ]
+  },
+  "objetivos": [
+    "Descrever o transporte do ovócito e dos espermatozoides até a ampola da tuba uterina.",
+    "Explicar a capacitação e a reação acrossômica e sua importância para a fertilização.",
+    "Ordenar as fases da fertilização, da passagem pela corona radiata à formação do zigoto.",
+    "Explicar os mecanismos de bloqueio da polispermia (reações cortical e zonal).",
+    "Enumerar os resultados da fertilização, incluindo a determinação do sexo cromossômico.",
+    "Reconhecer as indicações básicas da fertilização in vitro e da injeção intracitoplasmática de espermatozoide (ICSI)."
+  ],
+  "resumo": "**Fertilização** é a sequência de eventos que começa com o contato entre o espermatozoide e o ovócito secundário e termina com a mistura dos cromossomos maternos e paternos na metáfase da primeira divisão mitótica do **zigoto**. O processo dura cerca de 24 horas e ocorre habitualmente na **ampola da tuba uterina**.\n\n**Transporte dos gametas.** Na ovulação, o ovócito secundário (parado em metáfase II), envolvido pela **zona pelúcida** e pela **corona radiata**, é captado pelas **fímbrias** e conduzido pelo infundíbulo até a ampola por correntes geradas pelos cílios e por contrações peristálticas da tuba. Os espermatozoides depositados na vagina (de dezenas a centenas de milhões por ejaculação, conforme a fonte) atravessam o canal do colo, a cavidade uterina e a tuba, impulsionados pelo próprio movimento flagelar e por contrações da musculatura uterina e tubária. Apenas algumas centenas chegam ao local da fertilização. O ovócito permanece fertilizável por cerca de 12–24 horas após a ovulação; a maioria dos espermatozoides não sobrevive mais que cerca de 48 horas no trato genital feminino.\n\n**Capacitação.** Os espermatozoides recém-ejaculados não conseguem fertilizar. A **capacitação**, que ocorre no trato genital feminino (útero e tuba) e dura cerca de 7 horas, remove uma cobertura de glicoproteínas e proteínas do plasma seminal da membrana plasmática sobre o acrossomo. Não há alteração morfológica visível, mas o espermatozoide fica mais ativo e apto à reação acrossômica. Na fertilização in vitro, a capacitação é induzida no laboratório.\n\n**Reação acrossômica.** É a exocitose do conteúdo do **acrossomo**: a membrana externa do acrossomo funde-se com a membrana plasmática, criando aberturas pelas quais saem enzimas como **hialuronidase** e **acrosina**. Moore associa seu início ao contato com a corona radiata; Sadler a descreve após a ligação à zona pelúcida, induzida por proteínas da zona (no modelo clássico, a ZP3).\n\n**Fases da fertilização.**\n\n1. **Passagem pela corona radiata**: a hialuronidase do acrossomo, enzimas da mucosa tubária e o movimento da cauda dispersam as células da corona.\n2. **Penetração da zona pelúcida**: o espermatozoide liga-se às glicoproteínas da zona (em humanos, ZP1 a ZP4) e a atravessa com auxílio de enzimas acrossômicas, como a acrosina.\n3. **Fusão das membranas** plasmáticas do ovócito e do espermatozoide; a cabeça e a cauda entram no citoplasma do ovócito, e a membrana do espermatozoide fica incorporada à do ovócito. A fusão desencadeia a liberação do conteúdo dos **grânulos corticais** no espaço perivitelino (**reação cortical**), que altera a zona pelúcida (**reação zonal**) e a membrana do ovócito, impedindo a entrada de outros espermatozoides (**bloqueio da polispermia**).\n4. **Término da meiose II**: o ovócito secundário completa a segunda divisão meiótica, formando o ovócito maduro e o **segundo corpúsculo polar**; seu núcleo torna-se o **pronúcleo feminino**.\n5. **Formação do pronúcleo masculino**: o núcleo do espermatozoide aumenta de volume e a cauda degenera; as mitocôndrias do espermatozoide também degeneram, razão pela qual o DNA mitocondrial é de herança materna. O ovócito contendo os dois pronúcleos é chamado por Moore de **oótide**.\n6. **Formação do zigoto**: cada pronúcleo replica seu DNA; as membranas pronucleares se desfazem, os cromossomos se condensam e se dispõem no fuso da primeira divisão mitótica. Quando os cromossomos maternos e paternos se reúnem nessa metáfase, o oótide passa a ser um **zigoto** (estágio 1 de Carnegie), cuja primeira clivagem origina dois blastômeros.\n\n**Resultados da fertilização.** (1) Estimula o ovócito secundário a completar a meiose II; (2) restaura o número diploide de cromossomos (46); (3) gera variação na espécie, pela combinação de cromossomos maternos e paternos; (4) determina o **sexo cromossômico** do embrião: espermatozoide com X gera zigoto 46,XX; com Y, 46,XY; (5) ativa metabolicamente o ovócito e inicia a clivagem.\n\n**Falhas.** A entrada de dois espermatozoides (**dispermia**) é a causa mais comum de **triploidia** (69 cromossomos), geralmente incompatível com o desenvolvimento a termo.\n\n**Reprodução assistida.** Na **fertilização in vitro (FIV)**, após estimulação ovariana com gonadotrofinas, ovócitos são aspirados de folículos maduros e colocados em meio de cultura com espermatozoides capacitados; os embriões em clivagem ou blastocistos são transferidos para a cavidade uterina através do colo. A FIV contorna, por exemplo, a obstrução das tubas uterinas. Na **injeção intracitoplasmática de espermatozoide (ICSI)**, um único espermatozoide é injetado diretamente no citoplasma do ovócito, dispensando a passagem pela corona e pela zona pelúcida; é indicada sobretudo na infertilidade masculina grave. A transferência de vários embriões aumenta o risco de **gestação múltipla**. Embriões excedentes podem ser **criopreservados**. Na **transferência intratubária de gametas (GIFT)**, ovócitos e espermatozoides são colocados na tuba, onde ocorre a fertilização, o que exige tubas pérvias.",
+  "pontosChave": [
+    "A fertilização ocorre habitualmente na ampola da tuba uterina e dura cerca de 24 horas.",
+    "A capacitação ocorre no trato genital feminino e remove glicoproteínas e proteínas seminais da membrana sobre o acrossomo.",
+    "A reação acrossômica libera enzimas (hialuronidase, acrosina) necessárias para atravessar as barreiras do ovócito.",
+    "Fases: passagem pela corona radiata → penetração da zona pelúcida → fusão das membranas.",
+    "A fusão desencadeia a reação cortical, que causa a reação zonal e bloqueia a polispermia.",
+    "A entrada do espermatozoide leva o ovócito secundário a completar a meiose II, liberando o segundo corpúsculo polar.",
+    "Os pronúcleos replicam o DNA; o zigoto forma-se quando os cromossomos maternos e paternos se reúnem na metáfase da 1ª mitose.",
+    "O sexo cromossômico é determinado pelo espermatozoide (X → 46,XX; Y → 46,XY).",
+    "O DNA mitocondrial do embrião é de herança materna, pois as mitocôndrias do espermatozoide degeneram.",
+    "A dispermia é a causa mais comum de triploidia.",
+    "A ICSI injeta um espermatozoide no citoplasma do ovócito e é indicada principalmente na infertilidade masculina grave."
+  ],
+  "estruturas": [
+    {
+      "id": "ovocito-secundario",
+      "nome": "Ovócito secundário",
+      "sinonimos": [],
+      "definicao": "Ovócito ovulado, parado em metáfase II, envolvido pela zona pelúcida e pela corona radiata.",
+      "destino": "Completa a meiose II ao ser fertilizado, originando o pronúcleo feminino e o segundo corpúsculo polar."
+    },
+    {
+      "id": "corona-radiata",
+      "nome": "Corona radiata",
+      "sinonimos": [],
+      "definicao": "Camada de células foliculares que envolve a zona pelúcida do ovócito ovulado.",
+      "origem": "Células do cumulus oophorus do folículo maduro.",
+      "destino": "Dispersada durante a passagem dos espermatozoides."
+    },
+    {
+      "id": "zona-pelucida",
+      "nome": "Zona pelúcida",
+      "sinonimos": [],
+      "definicao": "Camada glicoproteica acelular (em humanos, glicoproteínas ZP1 a ZP4) entre o ovócito e a corona radiata; participa da ligação do espermatozoide e do bloqueio da polispermia.",
+      "destino": "Persiste durante a clivagem e desaparece na eclosão do blastocisto."
+    },
+    {
+      "id": "acrossomo",
+      "nome": "Acrossomo",
+      "sinonimos": [],
+      "definicao": "Capuz sobre a parte anterior do núcleo do espermatozoide contendo enzimas como hialuronidase e acrosina, liberadas na reação acrossômica.",
+      "origem": "Complexo de Golgi da espermátide."
+    },
+    {
+      "id": "granulos-corticais",
+      "nome": "Grânulos corticais",
+      "sinonimos": [],
+      "definicao": "Vesículas situadas sob a membrana plasmática do ovócito cujo conteúdo enzimático é liberado no espaço perivitelino após a fusão com o espermatozoide (reação cortical)."
+    },
+    {
+      "id": "espaco-perivitelino",
+      "nome": "Espaço perivitelino",
+      "sinonimos": [],
+      "definicao": "Espaço entre a membrana plasmática do ovócito e a zona pelúcida, onde ficam os corpúsculos polares."
+    },
+    {
+      "id": "corpusculo-polar",
+      "nome": "Corpúsculo polar",
+      "sinonimos": [
+        "glóbulo polar"
+      ],
+      "definicao": "Pequena célula sem futuro funcional formada pela divisão desigual do ovócito; o segundo corpúsculo polar é liberado quando a meiose II se completa na fertilização."
+    },
+    {
+      "id": "pronucleo-feminino",
+      "nome": "Pronúcleo feminino",
+      "sinonimos": [],
+      "definicao": "Núcleo haploide do ovócito após o término da meiose II.",
+      "destino": "Replica o DNA e contribui com os cromossomos maternos para o zigoto."
+    },
+    {
+      "id": "pronucleo-masculino",
+      "nome": "Pronúcleo masculino",
+      "sinonimos": [],
+      "definicao": "Núcleo do espermatozoide que, dentro do citoplasma do ovócito, aumenta de volume e se descondensa.",
+      "destino": "Replica o DNA e contribui com os cromossomos paternos para o zigoto."
+    },
+    {
+      "id": "ootide",
+      "nome": "Oótide",
+      "sinonimos": [],
+      "definicao": "Termo usado por Moore para o ovócito que contém os pronúcleos masculino e feminino, antes da reunião dos cromossomos.",
+      "destino": "Torna-se o zigoto."
+    },
+    {
+      "id": "zigoto",
+      "nome": "Zigoto",
+      "sinonimos": [
+        "ovo fertilizado"
+      ],
+      "definicao": "Célula diploide (46 cromossomos) formada quando os cromossomos maternos e paternos se reúnem na metáfase da primeira divisão mitótica; estágio 1 de Carnegie.",
+      "destino": "Sofre clivagem, originando dois blastômeros."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "capacitacao",
+      "descricao": "Capacitação dos espermatozoides no trato genital feminino (~7 h)",
+      "ordem": 1
+    },
+    {
+      "id": "corona-e-reacao-acrossomica",
+      "descricao": "Passagem pela corona radiata, ligação à zona pelúcida e reação acrossômica",
+      "diaMin": 0,
+      "diaMax": 0,
+      "ordem": 2
+    },
+    {
+      "id": "penetracao-zona-pelucida",
+      "descricao": "Penetração da zona pelúcida",
+      "diaMin": 0,
+      "diaMax": 0,
+      "ordem": 3
+    },
+    {
+      "id": "fusao-membranas",
+      "descricao": "Fusão das membranas do espermatozoide e do ovócito, com reações cortical e zonal (bloqueio da polispermia)",
+      "diaMin": 0,
+      "diaMax": 0,
+      "ordem": 4
+    },
+    {
+      "id": "termino-meiose-ii",
+      "descricao": "Término da meiose II e liberação do segundo corpúsculo polar",
+      "diaMin": 0,
+      "diaMax": 0,
+      "ordem": 5
+    },
+    {
+      "id": "formacao-pronucleos",
+      "descricao": "Formação dos pronúcleos masculino e feminino (oótide)",
+      "diaMin": 0,
+      "diaMax": 1,
+      "ordem": 6
+    },
+    {
+      "id": "replicacao-dna-pronucleos",
+      "descricao": "Replicação do DNA nos pronúcleos",
+      "diaMin": 0,
+      "diaMax": 1,
+      "ordem": 7
+    },
+    {
+      "id": "formacao-zigoto",
+      "descricao": "Dissolução das membranas pronucleares e reunião dos cromossomos na metáfase da 1ª mitose: zigoto",
+      "diaMin": 1,
+      "diaMax": 1,
+      "ordem": 8
+    },
+    {
+      "id": "primeira-clivagem",
+      "descricao": "Primeira clivagem: dois blastômeros (~30 h após a fertilização)",
+      "diaMin": 1,
+      "diaMax": 2,
+      "ordem": 9
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "infertilidade-tubaria-fiv",
+      "titulo": "Infertilidade por obstrução tubária e FIV",
+      "descricao": "A obstrução das tubas uterinas (por exemplo, após salpingite) impede o encontro dos gametas na ampola. A FIV com transferência do embrião para a cavidade uterina contorna esse obstáculo.",
+      "mecanismo": "A fertilização natural depende de tubas pérvias para o transporte do ovócito e dos espermatozoides até a ampola; na FIV, a fertilização ocorre no laboratório."
+    },
+    {
+      "id": "infertilidade-masculina-icsi",
+      "titulo": "Infertilidade masculina e ICSI",
+      "descricao": "Na redução grave do número ou da motilidade dos espermatozoides, a ICSI permite a fertilização com um único espermatozoide.",
+      "mecanismo": "A injeção direta no citoplasma do ovócito dispensa a motilidade, a passagem pela corona radiata, a penetração da zona pelúcida e a fusão espontânea das membranas."
+    },
+    {
+      "id": "triploidia-dispermia",
+      "titulo": "Triploidia por dispermia",
+      "descricao": "Conceptos triploides (69 cromossomos) geralmente são perdidos espontaneamente; a causa mais comum é a fertilização de um ovócito por dois espermatozoides.",
+      "mecanismo": "Falha do bloqueio da polispermia (reações cortical e zonal), permitindo a entrada de um segundo conjunto haploide paterno."
+    },
+    {
+      "id": "gestacao-multipla-reproducao-assistida",
+      "titulo": "Gestação múltipla na reprodução assistida",
+      "descricao": "A transferência de mais de um embrião na FIV aumenta a frequência de gestações múltiplas, com maior risco de prematuridade e de complicações maternas e perinatais.",
+      "mecanismo": "Cada embrião transferido pode implantar-se independentemente; a estimulação ovariana também pode gerar múltiplas ovulações."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-03-q01",
+      "tipo": "multipla",
+      "enunciado": "Qual é o local habitual da fertilização humana?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cavidade uterina"
+        },
+        {
+          "id": "b",
+          "texto": "Ampola da tuba uterina"
+        },
+        {
+          "id": "c",
+          "texto": "Istmo da tuba uterina"
+        },
+        {
+          "id": "d",
+          "texto": "Superfície do ovário"
+        },
+        {
+          "id": "e",
+          "texto": "Canal do colo do útero"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A fertilização ocorre habitualmente na ampola, a porção mais longa e larga da tuba uterina. (a) O concepto só chega à cavidade uterina como mórula, dias depois. (c) O istmo é atravessado pelo concepto já em clivagem. (d) O ovócito é liberado na superfície do ovário, mas a fertilização ocorre após sua captação pela tuba. (e) O colo é apenas via de passagem dos espermatozoides.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "fertilizacao",
+        "transporte-gametas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q02",
+      "tipo": "multipla",
+      "enunciado": "A capacitação dos espermatozoides consiste em:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Aquisição de motilidade durante a passagem pelo epidídimo"
+        },
+        {
+          "id": "b",
+          "texto": "Remoção, no trato genital feminino, de glicoproteínas e proteínas seminais da membrana sobre o acrossomo"
+        },
+        {
+          "id": "c",
+          "texto": "Exocitose das enzimas do acrossomo ao contato com o ovócito"
+        },
+        {
+          "id": "d",
+          "texto": "Transformação da espermátide em espermatozoide"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A capacitação ocorre no trato genital feminino (cerca de 7 horas), com remoção de uma cobertura glicoproteica e de proteínas do plasma seminal da membrana sobre o acrossomo, tornando o espermatozoide apto à reação acrossômica. (a) A aquisição de motilidade no epidídimo é maturação, anterior à ejaculação. (c) A exocitose das enzimas acrossômicas é a reação acrossômica, que vem depois da capacitação. (d) A transformação da espermátide em espermatozoide é a espermiogênese.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "capacitacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
+    },
+    {
+      "id": "emb-03-q03",
+      "tipo": "multipla",
+      "enunciado": "Qual enzima liberada pelo acrossomo é a principal responsável pela dispersão das células da corona radiata?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Acrosina"
+        },
+        {
+          "id": "b",
+          "texto": "Hialuronidase"
+        },
+        {
+          "id": "c",
+          "texto": "Aromatase"
+        },
+        {
+          "id": "d",
+          "texto": "Neuraminidase"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A hialuronidase, junto com enzimas da mucosa tubária e o movimento da cauda, dispersa as células da corona radiata. (a) A acrosina atua principalmente na penetração da zona pelúcida. (c) A aromatase é uma enzima das células da granulosa que converte androgênios em estrogênio, sem relação com o acrossomo. (d) A neuraminidase é citada entre as enzimas que auxiliam a passagem pela zona pelúcida, não na corona.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "reacao-acrossomica",
+        "fases-fertilizacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q04",
+      "tipo": "multipla",
+      "enunciado": "Após a fusão do espermatozoide com o ovócito, a liberação do conteúdo dos grânulos corticais no espaço perivitelino tem como principal consequência:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A capacitação do espermatozoide que penetrou"
+        },
+        {
+          "id": "b",
+          "texto": "Alterações da zona pelúcida (reação zonal) que impedem a ligação e a penetração de outros espermatozoides"
+        },
+        {
+          "id": "c",
+          "texto": "A dispersão das células da corona radiata"
+        },
+        {
+          "id": "d",
+          "texto": "A eclosão imediata do zigoto da zona pelúcida"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A reação cortical altera a zona pelúcida (reação zonal) e a membrana do ovócito, bloqueando a polispermia. (a) A capacitação ocorre antes, no trato genital feminino. (c) A corona é dispersada antes da fusão, por enzimas acrossômicas e tubárias. (d) A zona pelúcida persiste durante a clivagem e só desaparece na eclosão do blastocisto, dias depois.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "polispermia",
+        "reacao-cortical"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 3; Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q05",
+      "tipo": "multipla",
+      "enunciado": "Que evento ocorre no ovócito logo após a entrada do espermatozoide?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Conclusão da meiose I, com liberação do primeiro corpúsculo polar"
+        },
+        {
+          "id": "b",
+          "texto": "Conclusão da meiose II, com liberação do segundo corpúsculo polar"
+        },
+        {
+          "id": "c",
+          "texto": "Início da replicação do DNA do ovócito primário"
+        },
+        {
+          "id": "d",
+          "texto": "Formação da zona pelúcida"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A entrada do espermatozoide leva o ovócito secundário, parado em metáfase II, a completar a meiose II, formando o pronúcleo feminino e o segundo corpúsculo polar. (a) A meiose I termina antes da ovulação, após o pico de LH. (c) A replicação do DNA do ovócito primário ocorreu na vida fetal, antes da prófase I. (d) A zona pelúcida forma-se no folículo primário, muito antes da fertilização.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "fases-fertilizacao",
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q06",
+      "tipo": "multipla",
+      "enunciado": "O sexo cromossômico do embrião é determinado:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Pelo cromossomo sexual do ovócito"
+        },
+        {
+          "id": "b",
+          "texto": "Pelo cromossomo sexual do espermatozoide que fertiliza o ovócito"
+        },
+        {
+          "id": "c",
+          "texto": "Pelo ambiente hormonal materno durante a implantação"
+        },
+        {
+          "id": "d",
+          "texto": "Pela diferenciação das gônadas na 7ª semana"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O ovócito sempre contribui com um X; o espermatozoide pode carregar X (zigoto 46,XX) ou Y (zigoto 46,XY), e assim determina o sexo cromossômico na fertilização. (a) O ovócito não varia quanto ao cromossomo sexual. (c) O ambiente hormonal materno não determina o sexo cromossômico. (d) A diferenciação gonadal é consequência do sexo cromossômico (fenótipo), não sua causa.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "determinacao-sexo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q07",
+      "tipo": "multipla",
+      "enunciado": "Por que o DNA mitocondrial do embrião é, em regra, de herança materna?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque o espermatozoide não possui mitocôndrias"
+        },
+        {
+          "id": "b",
+          "texto": "Porque as mitocôndrias do espermatozoide que entram no ovócito degeneram"
+        },
+        {
+          "id": "c",
+          "texto": "Porque as mitocôndrias paternas permanecem no segundo corpúsculo polar"
+        },
+        {
+          "id": "d",
+          "texto": "Porque as mitocôndrias são removidas durante a capacitação"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A peça intermediária do espermatozoide contém mitocôndrias que entram no ovócito, mas degeneram; as mitocôndrias do embrião vêm do ovócito. (a) O espermatozoide tem mitocôndrias na peça intermediária. (c) O segundo corpúsculo polar contém material do ovócito, não do espermatozoide. (d) A capacitação altera a membrana sobre o acrossomo e não remove mitocôndrias.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "pronucleos",
+        "genetica"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 3"
+    },
+    {
+      "id": "emb-03-q08",
+      "tipo": "multipla",
+      "contexto": "Um casal tenta engravidar há 3 anos. A parceira tem avaliação normal. O espermograma do homem mostra concentração e motilidade muito reduzidas (oligoastenozoospermia grave), e duas tentativas de fertilização in vitro convencional não resultaram em fertilização.",
+      "enunciado": "Qual técnica é a mais indicada?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Inseminação intrauterina"
+        },
+        {
+          "id": "b",
+          "texto": "Transferência intratubária de gametas (GIFT)"
+        },
+        {
+          "id": "c",
+          "texto": "Injeção intracitoplasmática de espermatozoide (ICSI)"
+        },
+        {
+          "id": "d",
+          "texto": "Indução da ovulação na parceira"
+        },
+        {
+          "id": "e",
+          "texto": "Nova tentativa de FIV convencional sem alterações"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na ICSI um único espermatozoide é injetado no citoplasma do ovócito, dispensando motilidade, passagem pela corona e pela zona pelúcida; é a técnica indicada na infertilidade masculina grave e após falha de fertilização na FIV convencional. (a) e (b) Dependem de espermatozoides capazes de chegar ao ovócito e penetrá-lo por conta própria. (d) A parceira tem avaliação normal; o problema é masculino. (e) A FIV convencional já falhou duas vezes pelo mesmo motivo.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "reproducao-assistida",
+        "icsi",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q09",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 36 anos submete-se a fertilização in vitro com transferência de três embriões para a cavidade uterina.",
+      "enunciado": "Qual complicação está diretamente relacionada ao número de embriões transferidos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Gestação múltipla"
+        },
+        {
+          "id": "b",
+          "texto": "Triploidia por dispermia em todos os embriões"
+        },
+        {
+          "id": "c",
+          "texto": "Monossomia do X (síndrome de Turner)"
+        },
+        {
+          "id": "d",
+          "texto": "Mola hidatiforme completa"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Cada embrião transferido pode implantar-se; quanto mais embriões, maior a chance de gestação múltipla, com mais risco de prematuridade e complicações maternas e perinatais. (b) A dispermia é evento da fertilização e não depende do número de embriões transferidos; além disso, embriões triploides em geral são identificados e não transferidos. (c) A monossomia do X resulta de erro de segregação cromossômica, não do número de embriões. (d) A mola completa resulta de fertilização anômala (genoma apenas paterno), não do número de embriões transferidos.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "reproducao-assistida",
+        "fiv",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q10",
+      "tipo": "multipla",
+      "contexto": "O estudo citogenético do material de um aborto espontâneo do 1º trimestre revela cariótipo 69,XXY.",
+      "enunciado": "Qual é o mecanismo mais comum desse tipo de alteração?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Não disjunção do cromossomo 21 na meiose I materna"
+        },
+        {
+          "id": "b",
+          "texto": "Fertilização de um ovócito por dois espermatozoides (dispermia)"
+        },
+        {
+          "id": "c",
+          "texto": "Falha da primeira clivagem, duplicando um zigoto diploide"
+        },
+        {
+          "id": "d",
+          "texto": "Fertilização de um ovócito sem núcleo por um espermatozoide"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Triploidia (69 cromossomos) resulta mais comumente de dispermia, por falha do bloqueio da polispermia. (a) A não disjunção de um cromossomo gera aneuploidia de um único cromossomo (ex.: 47,+21), não um conjunto haploide extra. (c) A duplicação de um zigoto diploide geraria tetraploidia (92 cromossomos). (d) A fertilização de um ovócito sem núcleo associa-se à mola completa, com cariótipo diploide de origem paterna (ex.: 46,XX).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "polispermia",
+        "triploidia",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-03-q11",
+      "tipo": "multipla",
+      "enunciado": "Moore chama de “oótide” o ovócito:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Parado em prófase I dentro do folículo primordial"
+        },
+        {
+          "id": "b",
+          "texto": "Liberado na ovulação, parado em metáfase II"
+        },
+        {
+          "id": "c",
+          "texto": "Que contém os pronúcleos masculino e feminino, antes da reunião dos cromossomos"
+        },
+        {
+          "id": "d",
+          "texto": "Já dividido em dois blastômeros"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Para Moore, oótide é o ovócito com os dois pronúcleos, após o término da meiose II e antes de os cromossomos se reunirem para a primeira mitose, quando passa a zigoto. (a) Corresponde ao ovócito primário. (b) Corresponde ao ovócito secundário. (d) Dois blastômeros já resultam da primeira clivagem do zigoto.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": [
+        "pronucleos",
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q12",
+      "tipo": "multipla",
+      "enunciado": "Segundo Moore, o oótide torna-se zigoto quando:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O espermatozoide se liga à zona pelúcida"
+        },
+        {
+          "id": "b",
+          "texto": "As membranas plasmáticas dos gametas se fundem"
+        },
+        {
+          "id": "c",
+          "texto": "O segundo corpúsculo polar é liberado"
+        },
+        {
+          "id": "d",
+          "texto": "Os cromossomos maternos e paternos se reúnem em um único conjunto diploide para a primeira mitose"
+        },
+        {
+          "id": "e",
+          "texto": "Ocorre a compactação dos blastômeros"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Os pronúcleos replicam o DNA, suas membranas se desfazem e os cromossomos maternos e paternos se reúnem na metáfase da primeira divisão mitótica; nesse momento o oótide passa a ser zigoto. (a), (b) e (c) São etapas anteriores da fertilização. (e) A compactação ocorre durante a clivagem, dias depois.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "zigoto",
+        "pronucleos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q13",
+      "tipo": "multipla",
+      "enunciado": "Qual estrutura é a camada glicoproteica acelular situada entre a membrana do ovócito e a corona radiata?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Teca interna"
+        },
+        {
+          "id": "b",
+          "texto": "Zona pelúcida"
+        },
+        {
+          "id": "c",
+          "texto": "Cumulus oophorus"
+        },
+        {
+          "id": "d",
+          "texto": "Membrana basal folicular"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A zona pelúcida é uma camada glicoproteica acelular que envolve o ovócito; a corona radiata fica por fora dela. (a) A teca interna é uma camada celular do folículo, não acompanha o ovócito ovulado. (c) O cumulus oophorus é um conjunto de células foliculares (do qual deriva a corona). (d) A membrana basal separa a granulosa da teca, longe do ovócito.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "zona-pelucida"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q14",
+      "tipo": "multipla",
+      "enunciado": "Qual é a principal função da reação acrossômica na fertilização?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Liberar enzimas que permitem ao espermatozoide atravessar as camadas que envolvem o ovócito"
+        },
+        {
+          "id": "b",
+          "texto": "Fornecer energia para o batimento da cauda"
+        },
+        {
+          "id": "c",
+          "texto": "Impedir a entrada de outros espermatozoides no ovócito"
+        },
+        {
+          "id": "d",
+          "texto": "Concluir a meiose II do espermatozoide"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na reação acrossômica, a exocitose do acrossomo libera enzimas (hialuronidase, acrosina e outras) que permitem atravessar a corona radiata e a zona pelúcida. (b) A energia para o movimento vem das mitocôndrias da peça intermediária. (c) O bloqueio da polispermia é função da reação cortical do ovócito. (d) A meiose do espermatozoide já se completou na espermatogênese; quem completa a meiose II na fertilização é o ovócito.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": [
+        "reacao-acrossomica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q15",
+      "tipo": "multipla",
+      "enunciado": "Como se forma o pronúcleo masculino?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Pelo núcleo do espermatozoide, que aumenta de volume no citoplasma do ovócito enquanto a cauda degenera"
+        },
+        {
+          "id": "b",
+          "texto": "Pelo segundo corpúsculo polar, que recebe o material genético paterno"
+        },
+        {
+          "id": "c",
+          "texto": "Pela fusão do acrossomo com o núcleo do ovócito"
+        },
+        {
+          "id": "d",
+          "texto": "Pela divisão meiótica do espermatozoide dentro do ovócito"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Dentro do citoplasma do ovócito, o núcleo do espermatozoide se descondensa e aumenta de volume, formando o pronúcleo masculino; a cauda degenera. (b) O segundo corpúsculo polar recebe parte do material genético do ovócito, não do espermatozoide. (c) O acrossomo é liberado antes da fusão e não forma núcleo. (d) O espermatozoide já é haploide e não sofre meiose no ovócito.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "pronucleos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q16",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 32 anos, com antecedente de doença inflamatória pélvica, tem obstrução bilateral das tubas uterinas confirmada por histerossalpingografia. O parceiro tem espermograma normal.",
+      "enunciado": "Qual opção permite contornar o fator tubário?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Inseminação intrauterina"
+        },
+        {
+          "id": "b",
+          "texto": "Indução da ovulação com relações programadas"
+        },
+        {
+          "id": "c",
+          "texto": "Fertilização in vitro com transferência do embrião para a cavidade uterina"
+        },
+        {
+          "id": "d",
+          "texto": "Transferência intratubária de gametas (GIFT)"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na FIV, a fertilização ocorre no laboratório e o embrião é transferido diretamente para o útero, sem depender das tubas. (a) e (b) Dependem do encontro dos gametas na ampola, impossível com tubas obstruídas. (d) A GIFT coloca os gametas na tuba e exige tubas pérvias.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "reproducao-assistida",
+        "fiv",
+        "clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q17",
+      "tipo": "vf",
+      "enunciado": "A fertilização humana ocorre habitualmente na cavidade uterina.",
+      "correta": false,
+      "explicacao": "Falso. A fertilização ocorre habitualmente na ampola da tuba uterina; o concepto chega à cavidade uterina dias depois, como mórula.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "fertilizacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q18",
+      "tipo": "vf",
+      "enunciado": "O ovócito secundário só completa a meiose II se for fertilizado.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O ovócito secundário fica parado em metáfase II; a entrada do espermatozoide desencadeia o término da meiose II e a liberação do segundo corpúsculo polar. Sem fertilização, ele degenera.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "meiose",
+        "fases-fertilizacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q19",
+      "tipo": "vf",
+      "enunciado": "A capacitação dos espermatozoides ocorre no epidídimo, antes da ejaculação.",
+      "correta": false,
+      "explicacao": "Falso. No epidídimo ocorre a maturação (aquisição de motilidade). A capacitação ocorre no trato genital feminino, ou é induzida em laboratório na FIV.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "capacitacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q20",
+      "tipo": "vf",
+      "enunciado": "Na ICSI, a passagem do espermatozoide pela corona radiata e pela zona pelúcida é dispensada.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Na ICSI o espermatozoide é injetado diretamente no citoplasma do ovócito, sem precisar atravessar a corona radiata e a zona pelúcida nem se fundir espontaneamente à membrana.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "reproducao-assistida",
+        "icsi"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q21",
+      "tipo": "vf",
+      "enunciado": "O sexo cromossômico do embrião é estabelecido no momento da fertilização.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O sexo cromossômico (46,XX ou 46,XY) depende do cromossomo sexual do espermatozoide que fertiliza o ovócito; a diferenciação sexual fenotípica ocorre depois.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "determinacao-sexo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas que levam um espermatozoide ejaculado à fertilização:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Penetração da zona pelúcida"
+        },
+        {
+          "id": "2",
+          "texto": "Capacitação no trato genital feminino"
+        },
+        {
+          "id": "3",
+          "texto": "Término da meiose II do ovócito"
+        },
+        {
+          "id": "4",
+          "texto": "Passagem pela corona radiata"
+        },
+        {
+          "id": "5",
+          "texto": "Fusão das membranas plasmáticas do espermatozoide e do ovócito"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "O espermatozoide é capacitado no trato genital feminino, atravessa a corona radiata, penetra a zona pelúcida e funde sua membrana com a do ovócito; essa entrada desencadeia o término da meiose II do ovócito.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "fases-fertilizacao",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
+    },
+    {
+      "id": "emb-03-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o percurso do ovócito e do concepto desde a ovulação:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Fertilização na ampola"
+        },
+        {
+          "id": "2",
+          "texto": "Captação pelas fímbrias"
+        },
+        {
+          "id": "3",
+          "texto": "Chegada à cavidade uterina"
+        },
+        {
+          "id": "4",
+          "texto": "Ovulação"
+        },
+        {
+          "id": "5",
+          "texto": "Trânsito pelo istmo da tuba"
+        },
+        {
+          "id": "6",
+          "texto": "Passagem pelo infundíbulo"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "6",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "O ovócito ovulado é captado pelas fímbrias, passa pelo infundíbulo e chega à ampola, onde é fertilizado; o concepto em clivagem atravessa o istmo e chega à cavidade uterina como mórula.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "transporte-gametas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos que ocorrem após o término da meiose II do ovócito:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Dissolução das membranas pronucleares"
+        },
+        {
+          "id": "2",
+          "texto": "Formação dos pronúcleos masculino e feminino"
+        },
+        {
+          "id": "3",
+          "texto": "Primeira clivagem, com dois blastômeros"
+        },
+        {
+          "id": "4",
+          "texto": "Replicação do DNA em cada pronúcleo"
+        },
+        {
+          "id": "5",
+          "texto": "Cromossomos maternos e paternos reunidos na metáfase da primeira mitose"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "Formam-se os pronúcleos; cada um replica seu DNA; as membranas pronucleares se desfazem; os cromossomos maternos e paternos se dispõem juntos na metáfase da primeira mitose (zigoto); a primeira clivagem origina dois blastômeros.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "pronucleos",
+        "zigoto",
+        "linha-do-tempo"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 3; Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada componente à sua função na fertilização:",
+      "pares": [
+        {
+          "esquerda": "Hialuronidase",
+          "direita": "Dispersão das células da corona radiata"
+        },
+        {
+          "esquerda": "Acrosina",
+          "direita": "Penetração da zona pelúcida"
+        },
+        {
+          "esquerda": "Grânulos corticais",
+          "direita": "Bloqueio da polispermia"
+        },
+        {
+          "esquerda": "Mitocôndrias da peça intermediária",
+          "direita": "Energia para o movimento da cauda"
+        }
+      ],
+      "explicacao": "A hialuronidase acrossômica dispersa a corona; a acrosina auxilia a penetração da zona pelúcida; o conteúdo dos grânulos corticais altera a zona e a membrana do ovócito, bloqueando a polispermia; as mitocôndrias da peça intermediária fornecem ATP para o batimento flagelar.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "reacao-acrossomica",
+        "polispermia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada técnica de reprodução assistida à sua descrição:",
+      "pares": [
+        {
+          "esquerda": "FIV",
+          "direita": "Fertilização em meio de cultura e transferência do embrião para o útero"
+        },
+        {
+          "esquerda": "ICSI",
+          "direita": "Injeção de um único espermatozoide no citoplasma do ovócito"
+        },
+        {
+          "esquerda": "GIFT",
+          "direita": "Colocação de ovócitos e espermatozoides na tuba uterina"
+        },
+        {
+          "esquerda": "Criopreservação de embriões",
+          "direita": "Armazenamento de embriões excedentes em temperatura muito baixa para transferência futura"
+        }
+      ],
+      "explicacao": "Na FIV a fertilização ocorre no laboratório e o embrião é transferido ao útero; na ICSI um espermatozoide é injetado no ovócito; na GIFT a fertilização ocorre na tuba (exige tubas pérvias); a criopreservação permite guardar embriões para uso posterior.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "reproducao-assistida"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "2 — Primeira semana do desenvolvimento humano (transporte dos gametas; fertilização; reprodução assistida)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (triploidia)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "3 — Primeira semana do desenvolvimento: da ovulação à implantação (transporte, fertilização)"
+    },
+    {
+      "obra": "Carlson. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
+      "capitulo": "2 — Transporte dos gametas e fertilização"
+    }
+  ],
+  "notasDivergencia": [
+    "Número de espermatozoides depositados: Moore, 200–600 milhões; Sadler, 200–300 milhões. Número que chega ao local da fertilização: Moore, ~200; Sadler, 300–500. Adotado no conteúdo: “algumas centenas” chegam à ampola.",
+    "Momento da reação acrossômica: Moore associa seu início ao contato com a corona radiata; Sadler a descreve após a ligação à zona pelúcida, induzida pela ZP3. Na linha do tempo, passagem pela corona, ligação à zona e reação acrossômica foram agrupadas em um único evento.",
+    "Momento da reação zonal: Moore a descreve ao tratar da penetração da zona pelúcida; Sadler a apresenta como resposta à fusão das membranas (reações cortical e zonal). Na linha do tempo e nas questões, a reação cortical/zonal foi agrupada à fusão das membranas.",
+    "Viabilidade dos gametas: ovócito fertilizável por ~12–24 h após a ovulação; espermatozoides, em geral até ~48 h, com relatos de sobrevida maior. Faixas adotadas sem cobrança de valor exato."
+  ],
+  "incertezas": [
+    "Proteínas da zona pelúcida: o papel de receptor primário e indutor da reação acrossômica atribuído à ZP3 vem sobretudo de modelos murinos; em humanos há quatro glicoproteínas (ZP1–ZP4) e evidências recentes destacam a ZP2 na ligação do espermatozoide. O conteúdo não cobra qual ZP é o receptor.",
+    "Sobrevida máxima dos espermatozoides no trato genital feminino (fontes clínicas citam até vários dias) — não cobrada em questões.",
+    "Proteínas de fusão (Izumo1/Juno) não foram incluídas por não constarem com certeza nas edições de referência citadas."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "id": "emb-01-introducao",
+  "disciplina": "embriologia",
+  "ordem": 1,
+  "titulo": "Introdução à embriologia",
+  "subtitulo": "Períodos do desenvolvimento, datação e terminologia descritiva",
+  "periodo": {
+    "diaInicio": 0,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Definir os períodos do desenvolvimento pré-natal (embrionário e fetal) e reconhecer a convenção “pré-embrionário”.",
+    "Diferenciar idade embrionária (pós-fertilização) de idade gestacional (a partir da DUM) e converter uma na outra.",
+    "Explicar o que são os estágios de Carnegie, quantos são e qual período abrangem.",
+    "Descrever os métodos de estimativa da idade do embrião e do feto (características externas, CCN e ultrassonografia).",
+    "Aplicar corretamente os termos descritivos de posição e os planos de corte ao embrião.",
+    "Relacionar os períodos do desenvolvimento aos períodos críticos de suscetibilidade a teratógenos."
+  ],
+  "resumo": "O desenvolvimento humano começa na **fertilização**, quando o ovócito secundário e o espermatozoide se unem para formar o **zigoto**, e prossegue por toda a vida. A embriologia estuda principalmente o **período pré-natal**, dividido em duas fases:\n\n- **Período embrionário**: da fertilização até o fim da **8ª semana**. Nas semanas 3 a 8 formam-se os primórdios de todos os órgãos principais (organogênese). Sadler chama de “período embrionário” propriamente dito as semanas 3–8 e trata as duas primeiras semanas separadamente; alguns autores e textos de bioética usam o termo **“pré-embrionário”** para as semanas 1–2 (até o aparecimento da linha primitiva). Moore conta o período embrionário desde a fertilização e não adota essa subdivisão.\n- **Período fetal**: do início da **9ª semana** até o nascimento. Predominam o crescimento e a maturação funcional de tecidos e órgãos já formados.\n\n**Concepto** é o conjunto embrião (ou feto) mais suas membranas extraembrionárias. **Primórdio** é o primeiro indício reconhecível de um órgão ou estrutura.\n\n**Idade embrionária x idade gestacional.** Os embriologistas contam a idade a partir da fertilização (**idade embrionária** ou pós-fertilização). Os obstetras usam a **idade gestacional**, contada a partir do primeiro dia da **última menstruação (DUM)**, porque essa data costuma ser conhecida. Como a ovulação e a fertilização ocorrem em geral cerca de 2 semanas após o início da menstruação, a **idade gestacional ≈ idade embrionária + 2 semanas**. A gestação dura em média **38 semanas (266 dias) após a fertilização**, ou **40 semanas (280 dias) após a DUM**. Neste jogo, salvo indicação explícita, idades são dadas em dias ou semanas após a fertilização.\n\n**Trimestres.** Clinicamente a gestação é dividida em três trimestres de cerca de 3 meses cada, contados pela idade gestacional. O período embrionário inteiro está contido no 1º trimestre, a fase de maior risco de malformações estruturais maiores. Os limites exatos em semanas variam entre convenções.\n\n**Estágios de Carnegie.** O período embrionário é dividido em **23 estágios de Carnegie**, definidos por **características morfológicas externas e internas** (por exemplo, número de somitos, aparecimento dos brotos dos membros), e não apenas pela idade ou pelo comprimento, que variam entre embriões. O estágio 1 é o zigoto; o estágio 23 encerra o período embrionário por volta do fim da 8ª semana (~56 dias). O nome vem da coleção de embriões da Carnegie Institution of Washington.\n\n**Estimativa da idade.** A idade de um embrião pode ser estimada por suas características externas (comparadas com tabelas de estágios), pela contagem de somitos na 4ª semana e por medidas de comprimento: o **comprimento máximo** em embriões ainda retos (3ª e início da 4ª semana) e o **comprimento cabeça-nádega (CCN)** a partir da curvatura do embrião. Na prática clínica, a medida do **CCN por ultrassonografia** no 1º trimestre é o método mais preciso de datação da gestação. No período fetal usam-se medidas como diâmetro biparietal, circunferência cefálica, circunferência abdominal e comprimento do fêmur.\n\n**Terminologia descritiva.** Como o embrião é curvo, preferem-se termos que não dependem da posição anatômica do adulto:\n\n- **Cranial** (em direção à cabeça) e **caudal** (em direção à cauda/eminência caudal), em vez de superior e inferior; **rostral** indica direção ao nariz/parte anterior da cabeça e é usado sobretudo na cabeça e no encéfalo.\n- **Dorsal** (dorso) e **ventral** (ventre), em vez de posterior e anterior.\n- **Medial** (mais perto do plano mediano) e **lateral** (mais longe).\n- **Proximal** e **distal**, usados principalmente nos membros, em relação à raiz do membro.\n\nPlanos: o **plano mediano** divide o corpo em metades direita e esquerda; um **plano sagital** é qualquer plano vertical paralelo ao mediano; o **plano frontal (coronal)** é vertical, perpendicular ao mediano, e separa partes ventral e dorsal; o **plano transversal (axial)** é perpendicular aos dois anteriores e separa partes cranial e caudal.\n\n**Importância clínica.** Conhecer o período do desenvolvimento permite interpretar exposições a teratógenos. Nas duas primeiras semanas, um agente nocivo costuma matar o concepto ou ser compensado (fenômeno do “tudo ou nada”). Nas semanas 3 a 8, período de organogênese, o embrião é mais suscetível a **malformações estruturais maiores**, e cada órgão tem seu próprio período crítico. No período fetal, as agressões tendem a causar anomalias menores e alterações funcionais e de crescimento; o sistema nervoso central permanece vulnerável durante toda a gestação.",
+  "pontosChave": [
+    "O desenvolvimento humano começa na fertilização, com a formação do zigoto.",
+    "Período embrionário: da fertilização ao fim da 8ª semana; período fetal: da 9ª semana ao nascimento.",
+    "“Pré-embrionário” (semanas 1–2) é uma convenção usada por alguns autores; Moore não a adota.",
+    "Idade gestacional (DUM) ≈ idade embrionária (pós-fertilização) + 2 semanas.",
+    "Gestação: cerca de 38 semanas (266 dias) após a fertilização ou 40 semanas (280 dias) após a DUM.",
+    "Há 23 estágios de Carnegie, baseados em características morfológicas, cobrindo apenas o período embrionário.",
+    "O CCN medido por ultrassonografia no 1º trimestre é o método mais preciso de datação da gestação.",
+    "No embrião usam-se cranial/caudal e dorsal/ventral em vez de superior/inferior e anterior/posterior.",
+    "O plano frontal (coronal) separa partes ventral e dorsal; o transversal separa partes cranial e caudal.",
+    "As semanas 3 a 8 são o período de maior suscetibilidade a malformações estruturais maiores."
+  ],
+  "estruturas": [
+    {
+      "id": "zigoto",
+      "nome": "Zigoto",
+      "sinonimos": [
+        "ovo fertilizado"
+      ],
+      "definicao": "Célula diploide resultante da união do ovócito com o espermatozoide na fertilização; é o início do desenvolvimento humano e corresponde ao estágio 1 de Carnegie.",
+      "origem": "Fusão dos gametas feminino e masculino.",
+      "destino": "Sofre clivagem, originando os blastômeros."
+    },
+    {
+      "id": "embriao",
+      "nome": "Embrião",
+      "sinonimos": [],
+      "definicao": "Ser humano em desenvolvimento durante o período embrionário, da fertilização até o fim da 8ª semana (estágios de Carnegie 1 a 23).",
+      "destino": "Passa a ser chamado de feto a partir da 9ª semana."
+    },
+    {
+      "id": "feto",
+      "nome": "Feto",
+      "sinonimos": [],
+      "definicao": "Ser humano em desenvolvimento do início da 9ª semana até o nascimento; fase de crescimento e maturação de órgãos já formados."
+    },
+    {
+      "id": "concepto",
+      "nome": "Concepto",
+      "sinonimos": [
+        "produto da concepção"
+      ],
+      "definicao": "Conjunto formado pelo embrião (ou feto) e suas membranas extraembrionárias, isto é, todas as estruturas que se desenvolvem a partir do zigoto."
+    },
+    {
+      "id": "primordio",
+      "nome": "Primórdio",
+      "sinonimos": [
+        "esboço",
+        "anlage"
+      ],
+      "definicao": "Primeira indicação reconhecível de um órgão ou estrutura em formação (por exemplo, o broto de um membro)."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "fertilizacao",
+      "descricao": "Fertilização e formação do zigoto (estágio 1 de Carnegie)",
+      "diaMin": 0,
+      "diaMax": 1,
+      "ordem": 1
+    },
+    {
+      "id": "inicio-implantacao",
+      "descricao": "Início da implantação do blastocisto (estágio 4 de Carnegie)",
+      "diaMin": 6,
+      "diaMax": 6,
+      "ordem": 2
+    },
+    {
+      "id": "inicio-organogenese",
+      "descricao": "Início da 3ª semana: gastrulação e início da organogênese (fim da fase às vezes chamada “pré-embrionária”)",
+      "ordem": 3
+    },
+    {
+      "id": "fim-periodo-embrionario",
+      "descricao": "Fim do período embrionário (estágio 23 de Carnegie, fim da 8ª semana)",
+      "diaMin": 56,
+      "diaMax": 60,
+      "ordem": 4
+    },
+    {
+      "id": "inicio-periodo-fetal",
+      "descricao": "Início do período fetal (9ª semana)",
+      "ordem": 5
+    },
+    {
+      "id": "nascimento-a-termo",
+      "descricao": "Nascimento a termo (~38 semanas após a fertilização; ~40 semanas de idade gestacional)",
+      "diaMin": 266,
+      "diaMax": 266,
+      "ordem": 6
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "periodos-criticos-teratogenese",
+      "titulo": "Períodos críticos do desenvolvimento",
+      "descricao": "O efeito de um teratógeno depende da fase em que ocorre a exposição: nas duas primeiras semanas tende ao “tudo ou nada”; nas semanas 3–8 há risco máximo de malformações estruturais maiores; no período fetal predominam anomalias menores e distúrbios funcionais e de crescimento.",
+      "mecanismo": "Durante a organogênese, populações celulares estão proliferando, migrando e se diferenciando para formar os primórdios dos órgãos; a interferência nesses processos altera a morfogênese. Cada órgão tem seu próprio período crítico."
+    },
+    {
+      "id": "datacao-gestacional-ccn",
+      "titulo": "Datação da gestação pelo CCN",
+      "descricao": "Quando a DUM é incerta ou os ciclos são irregulares, a medida ultrassonográfica do comprimento cabeça-nádega no 1º trimestre é o método mais preciso para estimar a idade e a data provável do parto.",
+      "mecanismo": "No início da gestação o crescimento do embrião é relativamente uniforme entre indivíduos; a variação biológica do tamanho aumenta com o avanço da gestação, tornando as medidas tardias menos precisas para datação."
+    },
+    {
+      "id": "idade-gestacional-vs-embrionaria",
+      "titulo": "Idade gestacional x idade embrionária na comunicação clínica",
+      "descricao": "Laudos obstétricos e ultrassonográficos usam a idade gestacional (DUM), enquanto livros de embriologia usam a idade pós-fertilização. Confundir as duas gera erro de cerca de 2 semanas na interpretação de exposições e de achados morfológicos.",
+      "mecanismo": "A fertilização ocorre, em média, cerca de 2 semanas após o primeiro dia da última menstruação em um ciclo de 28 dias."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-01-q01",
+      "tipo": "multipla",
+      "enunciado": "Segundo Moore, o período embrionário do desenvolvimento humano estende-se:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Da fertilização até o fim da 8ª semana"
+        },
+        {
+          "id": "b",
+          "texto": "Da implantação até o fim da 12ª semana"
+        },
+        {
+          "id": "c",
+          "texto": "Da 3ª semana até o fim do 1º trimestre"
+        },
+        {
+          "id": "d",
+          "texto": "Da fertilização até o fim da 2ª semana"
+        },
+        {
+          "id": "e",
+          "texto": "Da 9ª semana até o nascimento"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Moore define o período embrionário da fertilização até o fim da 8ª semana; ao final dele os primórdios de todos os órgãos principais estão formados. (b) A implantação começa no dia 6 e a 12ª semana já é período fetal. (c) O 1º trimestre ultrapassa o fim do período embrionário; além disso, iniciar na 3ª semana corresponde à convenção de Sadler para o período de organogênese, não à de Moore. (d) As duas primeiras semanas correspondem ao que alguns chamam de fase “pré-embrionária”, não ao período embrionário inteiro. (e) Da 9ª semana ao nascimento é o período fetal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "periodos-do-desenvolvimento"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q02",
+      "tipo": "multipla",
+      "enunciado": "O período fetal tem início:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "No início da 3ª semana após a fertilização"
+        },
+        {
+          "id": "b",
+          "texto": "No início da 9ª semana após a fertilização"
+        },
+        {
+          "id": "c",
+          "texto": "No início do 2º trimestre"
+        },
+        {
+          "id": "d",
+          "texto": "Quando os batimentos cardíacos se tornam detectáveis"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O período fetal vai do início da 9ª semana após a fertilização até o nascimento. (a) A 3ª semana marca o início da gastrulação e da organogênese, ainda no período embrionário. (c) O 2º trimestre começa depois do início do período fetal; os dois marcos não coincidem. (d) O coração começa a bater no período embrionário (4ª semana), muito antes do período fetal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "periodos-do-desenvolvimento"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "emb-01-q03",
+      "tipo": "multipla",
+      "contexto": "Uma gestante com ciclos menstruais regulares de 28 dias faz ultrassonografia que confirma idade gestacional de 12 semanas, compatível com a data da última menstruação (DUM).",
+      "enunciado": "Em que período do desenvolvimento se encontra o concepto?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Período embrionário, com 12 semanas após a fertilização"
+        },
+        {
+          "id": "b",
+          "texto": "Período embrionário, em plena organogênese (6ª semana após a fertilização)"
+        },
+        {
+          "id": "c",
+          "texto": "Período fetal, com cerca de 10 semanas após a fertilização"
+        },
+        {
+          "id": "d",
+          "texto": "Fase “pré-embrionária”, antes da formação da linha primitiva"
+        },
+        {
+          "id": "e",
+          "texto": "Período fetal, com cerca de 14 semanas após a fertilização"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A idade gestacional (contada pela DUM) é cerca de 2 semanas maior que a idade pós-fertilização; 12 semanas de idade gestacional correspondem a ~10 semanas após a fertilização, já no período fetal (que começa na 9ª semana). (a) Confunde idade gestacional com idade embrionária; além disso, 12 semanas após a fertilização seria período fetal. (b) A 6ª semana pós-fertilização corresponderia a ~8 semanas de idade gestacional. (d) A fase às vezes chamada “pré-embrionária” abrange apenas as 2 primeiras semanas após a fertilização. (e) Soma as 2 semanas em vez de subtraí-las.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "idade-gestacional",
+        "periodos-do-desenvolvimento"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "emb-01-q04",
+      "tipo": "multipla",
+      "enunciado": "Qual é a duração média da gestação humana contada a partir da fertilização?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cerca de 36 semanas (252 dias)"
+        },
+        {
+          "id": "b",
+          "texto": "Cerca de 38 semanas (266 dias)"
+        },
+        {
+          "id": "c",
+          "texto": "Cerca de 40 semanas (280 dias)"
+        },
+        {
+          "id": "d",
+          "texto": "Cerca de 42 semanas (294 dias)"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A gestação dura em média 266 dias (38 semanas) após a fertilização. (c) 280 dias (40 semanas) é a duração contada a partir da DUM, ou seja, idade gestacional, cerca de 2 semanas a mais. (a) 252 dias subestima a duração em 2 semanas. (d) 294 dias (42 semanas) excede a média por 4 semanas pela fertilização.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "idade-gestacional"
+      ],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-01-q05",
+      "tipo": "multipla",
+      "enunciado": "Quantos são os estágios de Carnegie usados para dividir o período embrionário humano?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "8"
+        },
+        {
+          "id": "b",
+          "texto": "12"
+        },
+        {
+          "id": "c",
+          "texto": "23"
+        },
+        {
+          "id": "d",
+          "texto": "38"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "O período embrionário é dividido em 23 estágios de Carnegie, do estágio 1 (zigoto) ao estágio 23 (fim da 8ª semana). (a) 8 corresponde ao número de semanas do período embrionário, não ao de estágios. (b) 12 não corresponde a nenhuma divisão padronizada. (d) 38 corresponde às semanas de gestação após a fertilização.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "carnegie"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5"
+    },
+    {
+      "id": "emb-01-q06",
+      "tipo": "multipla",
+      "enunciado": "Os estágios de Carnegie são atribuídos a um embrião com base principalmente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Na idade calculada pela data da última menstruação"
+        },
+        {
+          "id": "b",
+          "texto": "Apenas no comprimento cabeça-nádega"
+        },
+        {
+          "id": "c",
+          "texto": "Em características morfológicas do embrião"
+        },
+        {
+          "id": "d",
+          "texto": "Na concentração de hCG no sangue materno"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Os estágios de Carnegie se baseiam em características morfológicas (externas e internas), como número de somitos e aparecimento dos brotos dos membros, porque idade e tamanho variam entre embriões. (a) A DUM é uma estimativa obstétrica indireta e não define o estágio. (b) O comprimento é informação complementar; embriões de mesmo estágio podem ter comprimentos diferentes. (d) A concentração de hCG é um marcador de gestação, não de estágio morfológico.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "carnegie",
+        "estimativa-de-idade"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5"
+    },
+    {
+      "id": "emb-01-q07",
+      "tipo": "multipla",
+      "enunciado": "O estágio 1 de Carnegie corresponde:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ao zigoto (embrião unicelular)"
+        },
+        {
+          "id": "b",
+          "texto": "À mórula"
+        },
+        {
+          "id": "c",
+          "texto": "Ao blastocisto livre na cavidade uterina"
+        },
+        {
+          "id": "d",
+          "texto": "Ao blastocisto que inicia a adesão ao endométrio"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O estágio 1 de Carnegie é o zigoto, resultante da fertilização. (b) O embrião em clivagem, incluindo a mórula, corresponde ao estágio 2. (c) O blastocisto livre corresponde ao estágio 3. (d) O blastocisto em adesão ao endométrio (~dia 6) corresponde ao estágio 4.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "carnegie"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5"
+    },
+    {
+      "id": "emb-01-q08",
+      "tipo": "multipla",
+      "enunciado": "Por que, a partir da 4ª–5ª semana, a idade do embrião passa a ser estimada pelo comprimento cabeça-nádega (CCN) e não pelo comprimento máximo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque o embrião se curva, e o CCN mede a altura sentado de forma reprodutível"
+        },
+        {
+          "id": "b",
+          "texto": "Porque os membros inferiores ainda não existem, impedindo medir o comprimento total"
+        },
+        {
+          "id": "c",
+          "texto": "Porque o CCN só pode ser medido após o nascimento"
+        },
+        {
+          "id": "d",
+          "texto": "Porque o CCN inclui o comprimento dos membros inferiores, que passam a crescer rapidamente"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Nas 3ª e início da 4ª semana o embrião é quase reto e mede-se o comprimento máximo; com o dobramento e a curvatura, passa-se a medir o CCN (altura sentado), do vértice da cabeça às nádegas. (b) Os brotos dos membros inferiores aparecem no fim da 4ª semana; o motivo da mudança é a curvatura, não a ausência de membros. (c) O CCN é medido rotineiramente in utero por ultrassonografia. (d) O CCN não inclui os membros inferiores: vai do vértice da cabeça às nádegas.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "estimativa-de-idade",
+        "ccn"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5"
+    },
+    {
+      "id": "emb-01-q09",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 29 anos com ciclos menstruais irregulares não se lembra da data da última menstruação. O teste de gravidez é positivo e ela está assintomática.",
+      "enunciado": "Qual é o método mais preciso para estimar a idade da gestação nesta fase inicial?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Medida do comprimento cabeça-nádega (CCN) por ultrassonografia no 1º trimestre"
+        },
+        {
+          "id": "b",
+          "texto": "Medida do comprimento do fêmur por ultrassonografia no 3º trimestre"
+        },
+        {
+          "id": "c",
+          "texto": "Medida da altura do fundo uterino no 3º trimestre"
+        },
+        {
+          "id": "d",
+          "texto": "Data relatada do início dos movimentos fetais"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No 1º trimestre o CCN medido por ultrassonografia é o parâmetro mais preciso de datação, porque a variação biológica de tamanho entre conceptos ainda é pequena. (b) O comprimento do fêmur é útil no período fetal, mas no 3º trimestre a variação individual de crescimento reduz a precisão da datação. (c) A altura uterina é estimativa grosseira e sujeita a muitos fatores de confusão. (d) A percepção dos movimentos fetais é subjetiva e varia entre gestantes.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "estimativa-de-idade",
+        "ultrassonografia",
+        "ccn"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5 e 6"
+    },
+    {
+      "id": "emb-01-q10",
+      "tipo": "multipla",
+      "enunciado": "Na descrição do embrião, o termo “rostral” indica:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Direção à eminência caudal"
+        },
+        {
+          "id": "b",
+          "texto": "Direção ao nariz/parte anterior da cabeça, usado sobretudo para a cabeça e o encéfalo"
+        },
+        {
+          "id": "c",
+          "texto": "Direção ao dorso do embrião"
+        },
+        {
+          "id": "d",
+          "texto": "Direção ao plano mediano"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Rostral (de rostrum, bico) indica direção ao nariz ou à parte anterior da cabeça e é empregado principalmente na descrição da cabeça e do encéfalo. (a) Direção à eminência caudal é “caudal”. (c) Direção ao dorso é “dorsal”. (d) Mais perto do plano mediano é “medial”.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q11",
+      "tipo": "multipla",
+      "enunciado": "Qual plano divide o embrião em partes ventral e dorsal?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Plano mediano"
+        },
+        {
+          "id": "b",
+          "texto": "Plano sagital paramediano"
+        },
+        {
+          "id": "c",
+          "texto": "Plano frontal (coronal)"
+        },
+        {
+          "id": "d",
+          "texto": "Plano transversal (axial)"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "O plano frontal (coronal) é vertical e perpendicular ao plano mediano, separando partes ventral e dorsal. (a) O plano mediano divide o corpo em metades direita e esquerda. (b) Um plano sagital paralelo ao mediano separa partes direita e esquerda desiguais. (d) O plano transversal é perpendicular aos planos mediano e frontal e separa partes cranial e caudal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "terminologia",
+        "planos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q12",
+      "tipo": "multipla",
+      "contexto": "Uma mulher usou, por poucos dias, um medicamento sabidamente teratogênico. Pela datação ultrassonográfica posterior, a exposição ocorreu por volta do 10º dia após a fertilização (cerca de 3 semanas e 3 dias de idade gestacional).",
+      "enunciado": "Qual é o efeito esperado, em geral, de uma exposição teratogênica nesse momento?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Malformação estrutural maior de um órgão específico, como defeito de membros"
+        },
+        {
+          "id": "b",
+          "texto": "Efeito do tipo “tudo ou nada”: perda do concepto ou desenvolvimento sem malformações"
+        },
+        {
+          "id": "c",
+          "texto": "Apenas restrição de crescimento, típica do período fetal"
+        },
+        {
+          "id": "d",
+          "texto": "Ausência de qualquer risco, pois o concepto ainda não está implantado"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Nas duas primeiras semanas após a fertilização, um agente nocivo costuma lesar muitas células e causar a morte do concepto, ou lesar poucas células, que são compensadas pelas restantes, sem malformação (“tudo ou nada”). (a) Malformações estruturais maiores de órgãos específicos ocorrem tipicamente com exposição nas semanas 3–8, durante a organogênese. (c) Restrição de crescimento e alterações funcionais são mais típicas de exposições no período fetal. (d) No 10º dia o blastocisto já está em fase avançada de implantação (que começa no dia 6), e a exposição pode causar a perda do concepto.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "periodos-criticos",
+        "teratogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-01-q13",
+      "tipo": "multipla",
+      "contexto": "Uma gestante relata exposição a um agente teratogênico quando estava com 7 semanas de idade gestacional pela DUM, confirmada por ultrassonografia.",
+      "enunciado": "Em que fase do desenvolvimento ocorreu a exposição e qual é o tipo de risco predominante?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Duas primeiras semanas após a fertilização; risco do tipo “tudo ou nada”"
+        },
+        {
+          "id": "b",
+          "texto": "Período embrionário (organogênese, ~5ª semana após a fertilização); risco de malformações estruturais maiores"
+        },
+        {
+          "id": "c",
+          "texto": "Período fetal; risco predominante de alterações funcionais e de crescimento"
+        },
+        {
+          "id": "d",
+          "texto": "Período fetal tardio; risco restrito ao sistema nervoso central"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Sete semanas de idade gestacional correspondem a ~5 semanas após a fertilização, dentro das semanas 3–8 (organogênese), período de maior suscetibilidade a malformações estruturais maiores. (a) As duas primeiras semanas após a fertilização correspondem a ~2–4 semanas de idade gestacional. (c) O período fetal começa na 9ª semana após a fertilização (~11 semanas de idade gestacional). (d) Não é período fetal; além disso, o sistema nervoso central é vulnerável durante toda a gestação, não apenas no fim.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "periodos-criticos",
+        "teratogenese",
+        "idade-gestacional"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-01-q14",
+      "tipo": "multipla",
+      "enunciado": "O termo “concepto” refere-se:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Apenas ao embrião, excluindo as membranas"
+        },
+        {
+          "id": "b",
+          "texto": "Ao embrião ou feto e suas membranas extraembrionárias"
+        },
+        {
+          "id": "c",
+          "texto": "Apenas à placenta e ao cordão umbilical"
+        },
+        {
+          "id": "d",
+          "texto": "Ao conjunto ovócito e corona radiata antes da fertilização"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Concepto é o embrião (ou feto) com suas membranas extraembrionárias, ou seja, todas as estruturas derivadas do zigoto. (a) Excluir as membranas corresponde ao termo “embrião”. (c) Placenta e cordão são apenas parte das estruturas extraembrionárias. (d) Antes da fertilização não há concepto; ovócito e corona radiata são estruturas maternas/gaméticas.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q15",
+      "tipo": "multipla",
+      "enunciado": "Os termos “proximal” e “distal” são usados principalmente para descrever posições:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ao longo dos membros, em relação à sua raiz"
+        },
+        {
+          "id": "b",
+          "texto": "Em relação ao plano mediano"
+        },
+        {
+          "id": "c",
+          "texto": "Em relação ao dorso e ao ventre do embrião"
+        },
+        {
+          "id": "d",
+          "texto": "Ao longo do eixo cabeça–cauda do tronco"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Proximal (mais perto da raiz ou da origem) e distal (mais afastado) são usados sobretudo nos membros. (b) Em relação ao plano mediano usam-se medial e lateral. (c) Em relação ao dorso e ao ventre usam-se dorsal e ventral. (d) No eixo cabeça–cauda usam-se cranial (ou rostral) e caudal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q16",
+      "tipo": "vf",
+      "enunciado": "A idade gestacional calculada pela data da última menstruação é cerca de 2 semanas maior que a idade embrionária (pós-fertilização).",
+      "correta": true,
+      "explicacao": "Verdadeiro. A fertilização ocorre, em média, cerca de 2 semanas após o primeiro dia da última menstruação; por isso a idade gestacional ≈ idade pós-fertilização + 2 semanas.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": [
+        "idade-gestacional"
+      ],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-01-q17",
+      "tipo": "vf",
+      "enunciado": "Os estágios de Carnegie abrangem todo o período pré-natal, da fertilização ao nascimento.",
+      "correta": false,
+      "explicacao": "Falso. Os 23 estágios de Carnegie abrangem apenas o período embrionário (até o fim da 8ª semana). O período fetal é descrito por outras medidas, como o CCN e parâmetros biométricos.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "carnegie"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5"
+    },
+    {
+      "id": "emb-01-q18",
+      "tipo": "vf",
+      "enunciado": "Na descrição do embrião, preferem-se os termos cranial e caudal a superior e inferior.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Como o embrião é curvo e não está na posição anatômica do adulto, cranial e caudal (assim como dorsal e ventral) descrevem posições de modo mais consistente.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": [
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q19",
+      "tipo": "vf",
+      "enunciado": "O período fetal é a fase de maior suscetibilidade a malformações estruturais maiores induzidas por teratógenos.",
+      "correta": false,
+      "explicacao": "Falso. A maior suscetibilidade a malformações estruturais maiores ocorre nas semanas 3–8 (organogênese, período embrionário). No período fetal predominam anomalias menores e distúrbios funcionais e de crescimento.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "periodos-criticos",
+        "teratogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-01-q20",
+      "tipo": "vf",
+      "enunciado": "A idade embrionária é contada a partir do primeiro dia da última menstruação.",
+      "correta": false,
+      "explicacao": "Falso. A idade embrionária é contada a partir da fertilização. A contagem a partir do primeiro dia da última menstruação define a idade gestacional, cerca de 2 semanas maior.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "idade-gestacional"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "emb-01-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os estágios iniciais do desenvolvimento conforme a sequência dos estágios de Carnegie:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Blastocisto livre na cavidade uterina"
+        },
+        {
+          "id": "2",
+          "texto": "Zigoto"
+        },
+        {
+          "id": "3",
+          "texto": "Blastocisto em adesão ao endométrio"
+        },
+        {
+          "id": "4",
+          "texto": "Embrião em clivagem (até mórula)"
+        },
+        {
+          "id": "5",
+          "texto": "Fim do período embrionário (estágio 23)"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "3",
+        "5"
+      ],
+      "explicacao": "Estágio 1: zigoto; estágio 2: clivagem (inclui a mórula); estágio 3: blastocisto livre; estágio 4: blastocisto em adesão ao endométrio (~dia 6); estágio 23: fim do período embrionário (fim da 8ª semana).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "carnegie",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2 e 5"
+    },
+    {
+      "id": "emb-01-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os períodos do desenvolvimento humano:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Período neonatal (primeiras 4 semanas após o nascimento)"
+        },
+        {
+          "id": "2",
+          "texto": "Período fetal"
+        },
+        {
+          "id": "3",
+          "texto": "Puberdade"
+        },
+        {
+          "id": "4",
+          "texto": "Período embrionário"
+        },
+        {
+          "id": "5",
+          "texto": "Nascimento"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "O período embrionário (fertilização–8ª semana) precede o período fetal (9ª semana–nascimento). Após o nascimento vem o período neonatal (primeiras 4 semanas de vida), muito antes da puberdade.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "periodos-do-desenvolvimento"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os marcos pela idade gestacional (DUM) em que ocorrem, do mais precoce ao mais tardio:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Fim do período embrionário (8 semanas após a fertilização)"
+        },
+        {
+          "id": "2",
+          "texto": "Primeiro dia da última menstruação"
+        },
+        {
+          "id": "3",
+          "texto": "Parto a termo (≈ 40 semanas de idade gestacional)"
+        },
+        {
+          "id": "4",
+          "texto": "Fertilização"
+        },
+        {
+          "id": "5",
+          "texto": "Início do período fetal"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "A idade gestacional começa no primeiro dia da DUM; a fertilização ocorre ~2 semanas depois; o período embrionário termina 8 semanas após a fertilização (~10 semanas de idade gestacional), seguido imediatamente do início do período fetal; o parto a termo ocorre por volta de 40 semanas de idade gestacional.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "idade-gestacional",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "emb-01-q24",
+      "tipo": "associar",
+      "enunciado": "Associe o termo descritivo ao seu significado no embrião:",
+      "pares": [
+        {
+          "esquerda": "Cranial",
+          "direita": "Em direção à cabeça"
+        },
+        {
+          "esquerda": "Caudal",
+          "direita": "Em direção à eminência caudal (cauda)"
+        },
+        {
+          "esquerda": "Dorsal",
+          "direita": "Em direção ao dorso"
+        },
+        {
+          "esquerda": "Ventral",
+          "direita": "Em direção à face ventral (ventre)"
+        },
+        {
+          "esquerda": "Medial",
+          "direita": "Mais próximo do plano mediano"
+        },
+        {
+          "esquerda": "Distal",
+          "direita": "Mais afastado da raiz de um membro"
+        }
+      ],
+      "explicacao": "Cranial/caudal descrevem o eixo cabeça–cauda; dorsal/ventral, o eixo dorso–ventre (substituem posterior/anterior no embrião); medial/lateral, a relação com o plano mediano; proximal/distal, a posição ao longo dos membros.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "terminologia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada plano de corte às partes que ele separa:",
+      "pares": [
+        {
+          "esquerda": "Plano mediano",
+          "direita": "Metades direita e esquerda"
+        },
+        {
+          "esquerda": "Plano sagital paralelo ao mediano",
+          "direita": "Partes direita e esquerda desiguais"
+        },
+        {
+          "esquerda": "Plano frontal (coronal)",
+          "direita": "Partes ventral e dorsal"
+        },
+        {
+          "esquerda": "Plano transversal (axial)",
+          "direita": "Partes cranial e caudal"
+        }
+      ],
+      "explicacao": "O plano mediano passa pela linha média; planos sagitais são paralelos a ele; o plano frontal é vertical e perpendicular ao mediano; o plano transversal é perpendicular aos planos mediano e frontal.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "terminologia",
+        "planos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "1 — Introdução ao desenvolvimento humano"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "5 — Quarta à oitava semana do desenvolvimento humano (estimativa da idade embrionária; estágios de Carnegie)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "6 — Período fetal: da nona semana ao nascimento (estimativa da idade fetal; trimestres; data provável do parto)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (períodos críticos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "6 — Da terceira à oitava semana: o período embrionário"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "8 — Do terceiro mês ao nascimento: o feto e a placenta"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "9 — Defeitos congênitos e diagnóstico pré-natal"
+    }
+  ],
+  "notasDivergencia": [
+    "Delimitação do período embrionário: Moore conta o período embrionário da fertilização ao fim da 8ª semana; Sadler descreve as semanas 1 e 2 em capítulos próprios e chama de “período embrionário” (ou de organogênese) as semanas 3–8; o termo “pré-embrionário” (semanas 1–2) aparece em parte da literatura e em contextos bioéticos/legais. Convenção adotada: período embrionário = semanas 1–8, registrando que “pré-embrionário” é usado por alguns autores.",
+    "Idade atribuída ao estágio 23 de Carnegie: tabelas derivadas de Moore situam-no em ~56 dias; as revisões de O’Rahilly e Müller atribuem idades ligeiramente maiores (aprox. 56–60 dias). Faixa adotada: fim da 8ª semana (~56 dias, podendo chegar a ~60).",
+    "Limites dos trimestres: as obras de embriologia definem os trimestres como períodos de ~3 meses; convenções obstétricas os definem pela idade gestacional (comumente 1º trimestre até 13–14 semanas, 3º a partir de 28 semanas). Nenhum limite em semanas é cobrado nas questões."
+  ],
+  "incertezas": [
+    "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
+    "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}
