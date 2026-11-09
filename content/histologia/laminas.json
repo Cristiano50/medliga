@@ -173,7 +173,7 @@
         { "id": "fibras-elasticas", "nome": "Fibras elásticas", "descricao": "Fibras finas e ramificadas de elastina e fibrilina; coram com orceína/Verhoeff." },
         { "id": "fibroblasto", "nome": "Fibroblasto", "descricao": "Célula fusiforme de núcleo alongado; sintetiza a matriz extracelular." },
         { "id": "mastocito", "nome": "Mastócito", "descricao": "Célula oval, de núcleo central, com o citoplasma cheio de grânulos basófilos e metacromáticos (histamina, heparina); no HE os grânulos quase não aparecem." },
-        { "id": "macrofago", "nome": "Macrófago", "descricao": "Célula fagocitária de contorno irregular, com núcleo ovoide ou reniforme e material fagocitado no citoplasma; deriva de monócitos do sangue." },
+        { "id": "macrofago", "nome": "Macrófago", "descricao": "Célula fagocitária de contorno irregular, com núcleo ovoide ou reniforme e material fagocitado no citoplasma. Os recrutados na inflamação derivam de monócitos do sangue; parte dos macrófagos residentes tem origem embrionária." },
         { "id": "plasmocito", "nome": "Plasmócito", "descricao": "Célula produtora de anticorpos; citoplasma basófilo, núcleo excêntrico em 'roda de carroça'." },
         { "id": "capilar", "nome": "Capilar", "descricao": "Vaso de parede fina com hemácias." }
       ],

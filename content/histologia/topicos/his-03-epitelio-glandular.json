@@ -43,13 +43,14 @@
       "sinonimos": [
         "epitélio simples prismático"
       ],
-      "definicao": "Epitélio de revestimento do intestino em que se intercalam as células caliciformes; a partir de epitélios de revestimento como esse se formam as glândulas."
+      "definicao": "Uma camada de células mais altas que largas, com núcleo alongado próximo à base; no intestino, entre as células absortivas intercalam-se as caliciformes. É a partir de epitélios de revestimento como esse que se formam as glândulas."
     },
     {
       "id": "borda-em-escova",
       "nome": "Borda em escova (borda estriada)",
       "sinonimos": [
-        "borda estriada"
+        "borda estriada",
+        "planura estriada"
       ],
       "definicao": "Faixa eosinófila de microvilosidades na superfície apical dos enterócitos, entre os quais se intercalam as células caliciformes; reconhecê-la ajuda a separar as células absortivas das secretoras."
     },
@@ -57,7 +58,7 @@
       "id": "lamina-propria",
       "nome": "Lâmina própria",
       "sinonimos": [],
-      "definicao": "Tecido conjuntivo frouxo sob o epitélio das mucosas; nela ficam as glândulas mucosas simples (como as glândulas intestinais) e os capilares que as nutrem."
+      "definicao": "Tecido conjuntivo frouxo sob o epitélio das mucosas; nela ficam glândulas simples da mucosa (como as glândulas intestinais) e os capilares que as nutrem."
     },
     {
       "id": "capilar",
@@ -137,7 +138,7 @@
       "id": "granulos-de-zimogenio",
       "nome": "Grânulos de zimogênio",
       "sinonimos": [],
-      "definicao": "Grânulos de secreção acidófilos acumulados no ápice das células serosas, com precursores de enzimas; liberados por exocitose."
+      "definicao": "Grânulos de secreção acidófilos acumulados no ápice das células serosas, com enzimas ou seus precursores inativos (zimogênios, como no pâncreas); liberados por exocitose."
     },
     {
       "id": "glandula-sebacea",
@@ -213,7 +214,7 @@
     {
       "id": "sindrome-de-sjogren",
       "titulo": "Síndrome de Sjögren",
-      "descricao": "Doença autoimune com infiltrado linfocitário que destrói glândulas salivares e lacrimais, causando boca seca (xerostomia) e olho seco (xeroftalmia); há risco aumentado de linfoma.",
+      "descricao": "Doença autoimune com infiltrado linfocitário que destrói glândulas salivares e lacrimais, causando boca seca (xerostomia) e olho seco (ceratoconjuntivite seca); há risco aumentado de linfoma.",
       "mecanismo": "Agressão imune às células epiteliais glandulares e ductais, com substituição do parênquima por infiltrado linfoide."
     }
   ],
@@ -608,7 +609,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "O adenoma pleomórfico (tumor misto benigno) é a neoplasia mais comum das glândulas salivares e ocorre sobretudo na parótida. Combina componente epitelial (ductos) e mioepitelial com estroma mixoide e condroide, atribuído às células mioepiteliais. É benigno, mas recidiva se a excisão for incompleta e, raramente, sofre transformação maligna. Um adenocarcinoma (a) seria infiltrativo, com atipias, sem estroma condroide. O carcinoma basocelular (c) nasce na epiderme e forma ninhos de células basaloides, sem ductos glandulares nem estroma condroide. O lipoma (d) é formado por adipócitos maduros.",
+      "explicacao": "O adenoma pleomórfico (tumor misto benigno) é a neoplasia mais comum das glândulas salivares e ocorre sobretudo na parótida. Combina componente epitelial (ductos) e mioepitelial com estroma mixoide e condroide, atribuído às células mioepiteliais. É benigno, mas recidiva se a excisão for incompleta e, raramente, sofre transformação maligna. Um adenocarcinoma (a) seria infiltrativo, com atipias, sem estroma condroide. O carcinoma basocelular (c) origina-se de células basais da epiderme ou do folículo piloso e forma ninhos de células basaloides, sem ductos glandulares nem estroma condroide. O lipoma (d) é formado por adipócitos maduros.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -1020,7 +1021,7 @@
       "capitulo": "Doenças genéticas e pediátricas (fibrose cística); Cabeça e pescoço (glândulas salivares); Trato gastrintestinal (pólipos e adenocarcinoma colorretal); Mama"
     },
     {
-      "obra": "Yamashina S, Tamaki H, Katsumata O. The serous demilune of rat sublingual gland is an artificial structure produced by conventional fixation. Arch Histol Cytol, 1999",
+      "obra": "Yamashina S, Tamaki H, Katsumata O. The serous demilune of rat sublingual gland is an artificial structure produced by conventional fixation. Arch Histol Cytol. 1999;62(4):347-354. doi:10.1679/aohc.62.347",
       "capitulo": "Artigo original (citado por Ross & Pawlina)"
     }
   ],
@@ -1032,14 +1033,22 @@
   ],
   "incertezas": [
     "Números de capítulos da 14ª ed. de Junqueira (4, 16, 18), da 8ª ed. de Ross (2, 5, 15, 16, 18), de Kierszenbaum (2) e de Gartner (5) citados de memória, com base nas edições anteriores; conferir.",
-    "Referência de Yamashina et al. (1999) citada de memória (título e periódico); volume e páginas não conferidos.",
+    "Referência de Yamashina et al. (1999) conferida pelo revisor: Arch Histol Cytol 62(4):347–354 (estudo em glândula sublingual de rato; a extrapolação para glândulas humanas é dos livros-texto).",
     "Não foi conferido se a 14ª ed. de Junqueira já menciona a hipótese de artefato das meias-luas serosas.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "7 correções (0 críticas, 0 importantes, 7 menores); gabaritos corretos. Principais: Sjögren 'xeroftalmia' → ceratoconjuntivite seca; definição genérica do epitélio simples cilíndrico; 'glândulas mucosas' → glândulas da mucosa na lâmina própria; grânulos de zimogênio podem conter enzimas ativas (amilase salivar); origem do basocelular (epiderme ou folículo); referência completa de Yamashina 1999; sinônimo 'planura estriada' (coerência com as lâminas)."
+      }
+    ],
     "humano": null
   }
 }
