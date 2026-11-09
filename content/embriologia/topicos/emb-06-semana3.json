@@ -1332,6 +1332,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "1 correção (menor): acrescentado o sinônimo \"concha citotrofoblástica\" em capa-citotrofoblastica, para o aluno reconhecer o termo usado no tópico emb-09. Conferidos: gastrulação, notocorda, neurulação, derivados da crista neural, somitos (1º par ~dia 20; 42–44 pares no fim da 5ª semana), início dos batimentos (21–23 dias), vilosidades e correlações clínicas; sequência de eventos e gabaritos sem erro (gabarito já equilibrado: 4 por letra)."
+      },
+      {
+        "area": "genetica-medica/medicina-fetal",
+        "agente": "revisor-genetica-fetal-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "7 correções (0 críticas, 0 importantes, 7 menores), todas de pistas involuntárias de comprimento: nas questões q06, q07, q09, q10, q11, q13 e q15 a alternativa correta era 1,5 a 2,6 vezes mais longa que a média dos distratores; reescrevi os distratores (e encurtei algumas corretas) para comprimento e especificidade parecidos, sem mudar gabarito, letras nem ids, conferindo que cada distrator alongado continua claramente errado. Conferidos com olhar de genética e medicina fetal, sem erro: gastrulação e origem epiblástica das três camadas, canal neurentérico, derivados da crista neural, lateralidade (cílios do nó, NODAL/LEFTY2/PITX2 e discinesia ciliar primária), somitos, teratoma sacrococcígeo, disgenesia caudal/sirenomelia com diabetes materno, holoprosencefalia por lesão da linha média anterior e sequência das vilosidades. Eventos em ordem inequívoca."
       }
     ],
     "humano": null

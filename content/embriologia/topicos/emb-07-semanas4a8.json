@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "texto": "As paredes laterais convergem para a linha média ventral e o embrião torna-se cilíndrico, com o intestino médio ligado ao saco vitelino pelo ducto vitelino"
+          "texto": "As paredes laterais convergem para a linha média ventral e formam o intestino médio, ligado ao saco vitelino pelo ducto vitelino"
         },
         {
           "id": "c",
@@ -386,7 +386,7 @@
         },
         {
           "id": "d",
-          "texto": "Fechamento do sulco neural ao longo do dorso, formando o tubo neural"
+          "texto": "Fechamento do sulco neural ao longo do dorso do embrião, formando o tubo neural e a crista neural"
         }
       ],
       "correta": "b",
@@ -718,19 +718,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Onfalocele, que já pode ser confirmada com segurança nessa idade"
+          "texto": "Onfalocele, diagnóstico que já pode ser confirmado com segurança nessa idade gestacional"
         },
         {
           "id": "b",
-          "texto": "Herniação umbilical fisiológica do intestino médio, esperada nessa fase, que normalmente regride por volta da 10ª semana após a fertilização (≈12 semanas de IG)"
+          "texto": "Herniação umbilical fisiológica do intestino médio, que regride por volta de 12 semanas de IG"
         },
         {
           "id": "c",
-          "texto": "Gastrosquise, porque a massa está junto ao cordão"
+          "texto": "Gastrosquise, porque a massa está junto à inserção do cordão, sem membrana"
         },
         {
           "id": "d",
-          "texto": "Divertículo de Meckel, pela persistência do ducto vitelino"
+          "texto": "Divertículo de Meckel, pela persistência do ducto vitelino na base do cordão"
         }
       ],
       "correta": "b",
@@ -853,19 +853,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Placoide ótico do ectoderma superficial"
+          "texto": "Placoide ótico do ectoderma superficial, que invagina na 4ª semana e forma a vesícula ótica"
         },
         {
           "id": "b",
-          "texto": "Saliências auriculares que surgem na 6ª semana ao redor do 1º sulco faríngeo, a partir do 1º e do 2º arcos faríngeos"
+          "texto": "Saliências auriculares ao redor do 1º sulco faríngeo, no 1º e no 2º arcos"
         },
         {
           "id": "c",
-          "texto": "Terceiro e quarto arcos faríngeos"
+          "texto": "Terceiro e quarto arcos faríngeos, que delimitam o seio cervical"
         },
         {
           "id": "d",
-          "texto": "Primeira bolsa faríngea"
+          "texto": "Primeira bolsa faríngea, que se expande junto à cavidade timpânica"
         }
       ],
       "correta": "b",
@@ -886,19 +886,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Ocorre alguns dias mais tarde, seguindo o gradiente craniocaudal: cada etapa aparece primeiro nos membros superiores e depois nos inferiores"
+          "texto": "Ocorre alguns dias mais tarde, etapa por etapa, no mesmo gradiente"
         },
         {
           "id": "b",
-          "texto": "Precede o dos membros superiores em cerca de uma semana"
+          "texto": "Precede o dos membros superiores em cerca de uma semana inteira"
         },
         {
           "id": "c",
-          "texto": "Ocorre de forma rigorosamente simultânea"
+          "texto": "Ocorre de forma rigorosamente simultânea, etapa por etapa"
         },
         {
           "id": "d",
-          "texto": "Só começa no período fetal"
+          "texto": "Só começa no período fetal, depois da 9ª semana de desenvolvimento"
         }
       ],
       "correta": "a",
@@ -1338,6 +1338,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "2 correções: (importante) retirado do resumo e da alternativa correta de emb-07-q17 o número não confirmado para o atraso dos membros inferiores (\"4–5 dias\"), que conflita com as datas dos estágios 12 e 13 do próprio tópico (brotos superiores dias 26–27, inferiores no fim da 4ª semana, ou seja 1–2 dias); a divergência passou para notasDivergencia e a alternativa continua sendo a única defensável. (menor) resolvida a incerteza da janela da talidomida (dias 20–36 pós-fertilização / 34–50 pós-DUM). Idades e CCN por estágio de Carnegie seguem como incerteza para conferência humana na Tabela 5-1 de Moore."
+      },
+      {
+        "area": "genetica-medica/medicina-fetal",
+        "agente": "revisor-genetica-fetal-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 0 importantes, 10 menores), todas de pistas involuntárias de comprimento: nas questões q01, q02, q06, q07, q08, q10, q11, q12, q16 e q17 a alternativa correta era 1,4 a 3,7 vezes mais longa que a média dos distratores; equilibrei comprimento e especificidade sem mudar gabarito, letras nem ids, mantendo cada distrator claramente errado. Conferidos sem erro: dobramento e posição do septo transverso, derivados por folheto, colinearidade dos genes HOX, SHH/BMP/FGF/WNT7a, embriopatia retinoica, janela da talidomida (mantida sem número neste tópico), conversão idade de fertilização × idade gestacional em q08, herniação umbilical fisiológica × onfalocele (inclusive a ressalva do fígado herniado) e datação pelo CCN até 13 semanas e 6 dias com erro de ±5 a 7 dias. As idades e os CCN da Tabela 5-1 de Moore seguem pendentes de conferência pelo revisor humano, como registrado na etapa 1."
       }
     ],
     "humano": null
