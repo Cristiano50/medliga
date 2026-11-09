@@ -8,7 +8,7 @@ Usado para todo conteúdo novo do MedLiga. Cada grupo de tópicos passa por **du
 
 - `resumo`, `pontosChave`, `objetivos`: cada afirmação correta segundo as obras de referência (Moore 11ª ed., Sadler/Langman 14ª ed., Larsen 5ª ed., Carlson 6ª ed.; Thompson & Thompson para genética; Williams para obstetrícia; diretrizes do Ministério da Saúde/FEBRASGO/SBP quando houver recomendação clínica).
 - `estruturas`: definição, origem e destino corretos; nomes em português conforme a terminologia usada nos livros brasileiros.
-- `eventos`: a sequência (`ordem`) precisa ser **inequívoca** segundo as fontes, porque vira um jogo de ordenar; remova eventos cuja ordem relativa seja controversa ou simultânea. Dias em `diaMin`/`diaMax` são **dias após a fertilização**.
+- `eventos`: a sequência (`ordem`) precisa ser **inequívoca** segundo as fontes, porque vira um jogo de ordenar. Eventos simultâneos ou de ordem controversa recebem o **mesmo valor de `ordem`** (o jogo sorteia um único evento por posição, então empates nunca são cobrados; os ids continuam válidos para o histórico dos alunos). Dias em `diaMin`/`diaMax` são **dias após a fertilização**.
 - `correlacoesClinicas`: mecanismo embriológico correto; números (prevalência, risco) só se estiverem nas fontes.
 - Cada questão:
   - fato correto; **uma única alternativa defensável**; distratores claramente errados (não "menos certos");

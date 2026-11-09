@@ -61,8 +61,10 @@ for (const disc of disciplinas) {
           erros.push(`${nome}: ${q.id} usa "todas/nenhuma das anteriores" (proibido pela especificação)`);
       }
     }
+    // "ordem" repetida = eventos simultâneos ou de ordem controversa (permitido: o jogo usa só um evento por posição).
     const ordens = t.eventos.map((e) => e.ordem);
-    if (new Set(ordens).size !== ordens.length) avisos.push(`${nome}: eventos com "ordem" repetida`);
+    if (new Set(ordens).size < 4 && t.eventos.length >= 4)
+      avisos.push(`${nome}: menos de 4 posições distintas na linha do tempo (o minijogo não usa este tópico)`);
     if (t.revisao.humano && t.revisao.autor.startsWith('agente')) {
       // Permitido: o humano revisa conteúdo escrito por agente. Só registramos.
     }
