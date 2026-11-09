@@ -9,6 +9,7 @@ import { criarRng } from '../core/random.ts';
 import type { Perfil, RegistroResposta, RegistroSessao, Reporte } from './db.ts';
 import { MARCA } from '../config/marca.ts';
 import { topicosDe } from '../content/index.ts';
+import { DISCIPLINAS_DISPONIVEIS } from '../content/disciplinas.ts';
 import type { PlanoId } from '../core/planos.ts';
 
 export type ModoBackend = 'supabase' | 'demo' | 'offline';
@@ -219,7 +220,7 @@ class BackendDemo implements Backend {
   }
   async painelEscola(): Promise<LinhaPainel[]> {
     const rng = criarRng(42);
-    return topicosDe('embriologia').map((t) => {
+    return DISCIPLINAS_DISPONIVEIS.flatMap((d) => topicosDe(d)).map((t) => {
       return { topicoId: t.id, alunos: 8 + Math.floor(rng() * 30), respostas: 60 + Math.floor(rng() * 400), acerto: Math.round((45 + rng() * 45) * 10) / 10 };
     });
   }

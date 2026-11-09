@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { ESTAGIOS, topico } from '../content/index.ts';
+import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { Barra, Markdown, SeloRevisao } from '../ui/comum.tsx';
 
@@ -18,7 +19,7 @@ export function TopicoTela() {
   return (
     <div className="pilha">
       <header>
-        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno">‹ Embriologia</Link>
+        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno">‹ {disciplina(t.disciplina)?.nome ?? 'Voltar'}</Link>
         <h1 style={{ marginTop: 6 }}>{t.titulo}</h1>
         {t.subtitulo && <p className="muted">{t.subtitulo}</p>}
         <div className="linha quebra">

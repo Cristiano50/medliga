@@ -24,7 +24,12 @@ export function xpMinijogo(jogadas: Jogada[]): number {
   return xp;
 }
 
-export async function salvarMinijogo(modo: RegistroSessao['modo'], inicio: number, jogadas: Jogada[]): Promise<number> {
+export async function salvarMinijogo(
+  modo: RegistroSessao['modo'],
+  inicio: number,
+  jogadas: Jogada[],
+  disciplina = 'embriologia',
+): Promise<number> {
   if (jogadas.length === 0) return 0;
   const id = uuid();
   const fim = Date.now();
@@ -39,7 +44,7 @@ export async function salvarMinijogo(modo: RegistroSessao['modo'], inicio: numbe
     {
       id,
       modo,
-      disciplina: 'embriologia',
+      disciplina,
       topicoIds: [...new Set(jogadas.map((j) => j.topicoId))],
       inicio,
       fim,

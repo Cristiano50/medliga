@@ -92,7 +92,7 @@ begin
   select coalesce(sum(greatest(0, (r->>'tempo_ms')::bigint)), 0) into v_soma_tempo from jsonb_array_elements(coalesce(p_respostas, '[]'::jsonb)) r;
 
   -- Plausibilidade (antifraude básico)
-  if v_modo not in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas','duelo') then v_recusa := 'modo inválido';
+  if v_modo not in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas','duelo','microscopio','qual-tecido') then v_recusa := 'modo inválido';
   elsif v_fim < v_inicio then v_recusa := 'horários inconsistentes';
   elsif v_fim > now() + interval '5 minutes' then v_recusa := 'sessão no futuro';
   elsif v_inicio < now() - interval '8 days' then v_recusa := 'sessão antiga demais';
@@ -117,7 +117,8 @@ begin
     order by ord
   loop
     v_xp := 0;
-    v_minijogo := v_resp.questao_id ~ '^(camadas|linha|identifique):';
+    -- jogadas de minijogos têm ':' no id (ex.: 'camadas:baco', 'lamina:osso:osteon'); questões nunca têm
+    v_minijogo := position(':' in v_resp.questao_id) > 0;
     if v_resp.correta and v_resp.tempo_ms >= (case when v_minijogo then c_tempo_min_minijogo else c_tempo_min end) then
       if v_minijogo then
         -- minijogos: 4 XP por acerto com combo

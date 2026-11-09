@@ -1,33 +1,58 @@
 // Catálogo de disciplinas. Cada uma tem uma jogabilidade própria.
 // Ordem = semestre mais comum de cada disciplina nas escolas pesquisadas (docs/pesquisa-curricular.md).
+export interface JogoDisciplina {
+  rota: string;
+  icone: string;
+  nome: string;
+  descricao: string;
+  cor: string;
+}
+
 export interface Disciplina {
   id: string;
+  /** prefixo dos ids de tópicos (ex.: 'emb' em 'emb-06-semana3') */
+  prefixo?: string;
   nome: string;
   status: 'disponivel' | 'em-breve';
   cor: string;
   icone: string; // emoji provisório até a arte final
   jogabilidade: string;
   descricao: string;
+  /** jogos próprios da disciplina (além de questões, plantão, revisão e duelo, que são comuns a todas) */
+  jogos?: JogoDisciplina[];
 }
 
 export const DISCIPLINAS: Disciplina[] = [
   {
     id: 'embriologia',
+    prefixo: 'emb',
     nome: 'Embriologia',
     status: 'disponivel',
     cor: '#2dd4bf',
     icone: '🌱',
     jogabilidade: 'Laboratório 3D semana a semana',
     descricao: 'Da fertilização ao período fetal: modelos 3D manipuláveis, linha do tempo e camadas germinativas.',
+    jogos: [
+      { rota: '/lab3d', icone: '🧫', nome: 'Laboratório 3D', descricao: 'Do zigoto à 8ª semana e órgãos em formação: gire, aproxime e toque nas estruturas.', cor: 'var(--primary)' },
+      { rota: '/jogar/identifique', icone: '🎯', nome: 'Identifique', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
+      { rota: '/jogar/linha-do-tempo', icone: '⏳', nome: 'Linha do tempo', descricao: 'Coloque os eventos do desenvolvimento na ordem certa.', cor: 'var(--crista)' },
+      { rota: '/jogar/camadas', icone: '🧩', nome: 'Camadas germinativas', descricao: 'De onde vem cada tecido? Ectoderma, mesoderma, endoderma ou crista neural.', cor: 'var(--meso)' },
+    ],
   },
   {
     id: 'histologia',
+    prefixo: 'his',
     nome: 'Histologia',
-    status: 'em-breve',
+    status: 'em-breve', // vira 'disponivel' quando o conteúdo e o microscópio estiverem revisados
     cor: '#c084fc',
     icone: '🔬',
     jogabilidade: 'Microscópio virtual',
-    descricao: 'Lâminas com zoom; reconheça tecidos e células.',
+    descricao: 'Lâminas em HE com objetivas de 4×, 10× e 40×: reconheça tecidos, células e estruturas.',
+    jogos: [
+      { rota: '/microscopio', icone: '🔬', nome: 'Microscópio virtual', descricao: 'Troque a objetiva, percorra a lâmina e toque nas células e estruturas.', cor: '#c084fc' },
+      { rota: '/jogar/identifique-lamina', icone: '🎯', nome: 'Identifique na lâmina', descricao: 'Ache a estrutura pedida na lâmina antes de perder as vidas.', cor: 'var(--info)' },
+      { rota: '/jogar/qual-tecido', icone: '❓', nome: 'Qual é o tecido?', descricao: 'Veja um campo do microscópio e diga o tecido ou órgão.', cor: 'var(--accent)' },
+    ],
   },
   {
     id: 'anatomia',
@@ -111,3 +136,15 @@ export const DISCIPLINAS: Disciplina[] = [
     descricao: 'Escolha a técnica, aponte planos e estruturas, antecipe complicações.',
   },
 ];
+
+export function disciplina(id: string): Disciplina | undefined {
+  return DISCIPLINAS.find((d) => d.id === id);
+}
+
+/** Disciplina de um tópico pelo prefixo do id (ex.: 'his-02-...' → histologia). */
+export function disciplinaDoTopico(topicoId: string): string | undefined {
+  const prefixo = topicoId.split('-')[0];
+  return DISCIPLINAS.find((d) => d.prefixo === prefixo)?.id;
+}
+
+export const DISCIPLINAS_DISPONIVEIS = DISCIPLINAS.filter((d) => d.status === 'disponivel').map((d) => d.id);

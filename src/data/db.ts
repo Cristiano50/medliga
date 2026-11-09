@@ -19,6 +19,8 @@ export interface Perfil {
   usuarioOnlineId: string | null;
   email: string | null;
   aceitouTermosEm: number | null;
+  /** disciplina em foco na tela inicial e no botão Estudar */
+  disciplinaAtual?: string;
 }
 
 export interface RegistroResposta {
@@ -35,7 +37,7 @@ export interface RegistroResposta {
 
 export interface RegistroSessao {
   id: string;
-  modo: ModoSessao | 'identifique' | 'linha-do-tempo' | 'camadas';
+  modo: ModoSessao | 'identifique' | 'linha-do-tempo' | 'camadas' | 'microscopio' | 'qual-tecido';
   disciplina: string;
   topicoIds: string[];
   inicio: number;

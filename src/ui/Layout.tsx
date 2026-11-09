@@ -6,6 +6,7 @@ import { armazenamentoTemporario } from '../data/armazenamento.ts';
 export function Layout({ semNav = false }: { semNav?: boolean }) {
   const xpTotal = useApp((s) => s.xpTotal);
   const sequencia = useApp((s) => s.sequenciaDias);
+  const disciplinaAtual = useApp((s) => s.perfil?.disciplinaAtual ?? 'embriologia');
   const { nivel } = nivelPorXP(xpTotal);
   return (
     <div className={`app ${semNav ? 'sem-nav' : ''}`}>
@@ -35,7 +36,7 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
           <NavLink to="/" end className={({ isActive }) => (isActive ? 'ativo' : '')}>
             <span className="ico" aria-hidden>🏠</span>Início
           </NavLink>
-          <NavLink to="/disciplina/embriologia" className={({ isActive }) => (isActive ? 'ativo' : '')}>
+          <NavLink to={`/disciplina/${disciplinaAtual}`} className={({ isActive }) => (isActive ? 'ativo' : '')}>
             <span className="ico" aria-hidden>📚</span>Estudar
           </NavLink>
           <NavLink to="/ranking" className={({ isActive }) => (isActive ? 'ativo' : '')}>

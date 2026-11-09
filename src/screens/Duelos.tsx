@@ -5,6 +5,7 @@ import { topicosDe } from '../content/index.ts';
 import { montarSessao } from '../core/session.ts';
 import { obterBackend } from '../data/backend.ts';
 import { useApp } from '../data/store.ts';
+import { DISCIPLINAS } from '../content/disciplinas.ts';
 
 const QUESTOES_POR_DUELO = 10;
 
@@ -17,7 +18,9 @@ export function DuelosTela() {
   const [codigo, setCodigo] = useState('');
   const [msg, setMsg] = useState<string | null>(null);
   const [ocupado, setOcupado] = useState(false);
-  const topicos = topicosDe('embriologia');
+  const perfil = useApp((s) => s.perfil);
+  const [disciplinaId, setDisciplinaId] = useState(perfil?.disciplinaAtual ?? 'embriologia');
+  const topicos = topicosDe(disciplinaId);
 
   useEffect(() => {
     void obterBackend()
@@ -33,7 +36,7 @@ export function DuelosTela() {
       const itens = montarSessao(fonte, { modo: 'plantao', tamanho: QUESTOES_POR_DUELO });
       if (itens.length < 5) throw new Error('Este tópico ainda não tem questões rápidas suficientes para um duelo.');
       const b = await obterBackend();
-      setCodigoCriado(await b.criarDuelo('embriologia', itens.map((i) => i.questao.id)));
+      setCodigoCriado(await b.criarDuelo(disciplinaId, itens.map((i) => i.questao.id)));
     } catch (e) {
       setMsg((e as Error).message);
     } finally {
@@ -82,9 +85,15 @@ export function DuelosTela() {
         {!codigoCriado ? (
           <>
             <div className="campo">
+              <label htmlFor="duelo-disciplina">Disciplina</label>
+              <select id="duelo-disciplina" className="input" value={disciplinaId} onChange={(e) => { setDisciplinaId(e.target.value); setTopicoId(''); }}>
+                {DISCIPLINAS.filter((x) => x.status === 'disponivel').map((x) => <option key={x.id} value={x.id}>{x.nome}</option>)}
+              </select>
+            </div>
+            <div className="campo">
               <label htmlFor="duelo-topico">Assunto</label>
               <select id="duelo-topico" className="input" value={topicoId} onChange={(e) => setTopicoId(e.target.value)}>
-                <option value="">Toda a embriologia</option>
+                <option value="">Todos os tópicos</option>
                 {topicos.map((t) => <option key={t.id} value={t.id}>{t.titulo}</option>)}
               </select>
             </div>

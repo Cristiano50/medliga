@@ -100,3 +100,21 @@ zigoto, zona-pelucida, pronucleo-masculino, pronucleo-feminino, corpusculo-polar
   ] }
 ```
 `natureza`: `publica-federal` | `publica-estadual` | `publica-municipal` | `privada` | `comunitaria`.
+
+## Histologia (`content/histologia/`)
+
+Mesmo formato de tópico (ids `his-NN-nome`, `disciplina: "histologia"`, questões `his-NN-qNN`). Regras de rigor iguais.
+
+Obras-base:
+- Junqueira LC, Carneiro J. *Histologia Básica: texto e atlas*. 14ª ed. Rio de Janeiro: GEN Guanabara Koogan; 2023. (principal referência nas escolas brasileiras)
+- Ross MH, Pawlina W. *Histologia: texto e atlas — correlações com biologia celular e molecular*. 8ª ed. GEN Guanabara Koogan; 2021.
+- Gartner LP. *Tratado de Histologia*. 4ª/5ª ed. Elsevier.
+- Kierszenbaum AL, Tres LL. *Histologia e Biologia Celular: uma introdução à patologia*. 5ª ed. Elsevier.
+
+Coloração padrão das lâminas do jogo: hematoxilina-eosina (HE) — núcleos e estruturas basófilas em roxo-azulado; citoplasma, colágeno e estruturas acidófilas em rosa. Quando um item depender de outra coloração (PAS, tricrômico, orceína, Wright/Leishman para sangue, impregnação argêntica), diga qual.
+
+### IDs canônicos das estruturas das lâminas do microscópio virtual
+
+Use exatamente estes IDs em `estruturas` quando a estrutura aparecer no tópico:
+
+epitelio-simples-pavimentoso, epitelio-simples-cubico, epitelio-simples-cilindrico, epitelio-pseudoestratificado, epitelio-estratificado-pavimentoso, epitelio-de-transicao, membrana-basal, lamina-propria, lumen, enterocito, celula-caliciforme, borda-em-escova, cilios, celula-basal, celula-em-guarda-chuva, estrato-basal, estrato-espinhoso, estrato-granuloso, estrato-lucido, estrato-corneo, papila-dermica, derme-reticular, acino-seroso, acino-mucoso, meia-lua-serosa, ducto-estriado, septo-conjuntivo, fibroblasto, fibras-colagenas, fibras-elasticas, mastocito, macrofago, plasmocito, capilar, adipocito-unilocular, condrocito, lacuna, grupo-isogeno, matriz-territorial, matriz-interterritorial, pericondrio, osteon, canal-de-havers, lamelas-concentricas, osteocito, canaliculos, canal-de-volkmann, lamelas-intersticiais, hemacia, neutrofilo, eosinofilo, basofilo, linfocito, monocito, plaquetas, fibra-muscular-esqueletica, estriacoes-transversais, endomisio, fibra-muscular-cardiaca, disco-intercalar, fibra-muscular-lisa, neuronio-multipolar, corpusculos-de-nissl, nucleolo, dendrito, cone-de-implantacao, celulas-da-glia, neuropilo, epineuro, perineuro, endoneuro, fasciculo-nervoso, fibra-mielinizada

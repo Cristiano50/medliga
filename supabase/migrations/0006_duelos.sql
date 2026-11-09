@@ -3,7 +3,7 @@
 
 alter table public.sessoes drop constraint if exists sessoes_modo_check;
 alter table public.sessoes add constraint sessoes_modo_check
-  check (modo in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas','duelo'));
+  check (modo in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas','duelo','microscopio','qual-tecido'));
 
 create table public.duelos (
   codigo text primary key check (codigo ~ '^[A-Z2-9]{6}$'),

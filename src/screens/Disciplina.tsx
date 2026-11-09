@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { DISCIPLINAS } from '../content/disciplinas.ts';
 import { carregarDisciplina, topicosDe } from '../content/index.ts';
 import { useProgresso } from '../data/progresso.ts';
+import { useApp } from '../data/store.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
 
 export function DisciplinaTela() {
@@ -13,6 +14,12 @@ export function DisciplinaTela() {
     void carregarDisciplina(id).then(setTopicos);
   }, [id]);
   const progresso = useProgresso(topicos);
+  const perfil = useApp((s) => s.perfil);
+  const salvarPerfil = useApp((s) => s.salvarPerfil);
+  useEffect(() => {
+    if (d?.status === 'disponivel' && perfil && perfil.disciplinaAtual !== id) void salvarPerfil({ disciplinaAtual: id });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
   if (!d || d.status !== 'disponivel') return <Navigate to="/" replace />;
   const total = topicos.reduce((s, t) => s + t.questoes.length, 0);
   const dominioMedio = topicos.length ? [...progresso.values()].reduce((s, p) => s + p.dominio, 0) / topicos.length : 0;
@@ -30,9 +37,24 @@ export function DisciplinaTela() {
       </header>
 
       <div className="grade g2">
-        <Link to="/lab3d" className="btn primario">🧫 Laboratório 3D</Link>
-        <Link to="/jogar/quiz?modo=plantao" className="btn ouro">⚡ Plantão relâmpago</Link>
+        {d.jogos?.[0] && <Link to={d.jogos[0].rota} className="btn primario">{d.jogos[0].icone} {d.jogos[0].nome}</Link>}
+        <Link to={`/jogar/quiz?modo=plantao&disciplina=${d.id}`} className="btn ouro">⚡ Plantão relâmpago</Link>
       </div>
+
+      {(d.jogos?.length ?? 0) > 1 && (
+        <section className="pilha">
+          <h2>Jogos de {d.nome.toLowerCase()}</h2>
+          <div className="grade g2">
+            {d.jogos!.map((j) => (
+              <Link key={j.rota} to={j.rota} className="card disc-card" style={{ ['--cor' as string]: j.cor }}>
+                <span className="icone" aria-hidden>{j.icone}</span>
+                <strong>{j.nome}</strong>
+                <span className="muted pequeno">{j.descricao}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="pilha">
         <h2>Trilha</h2>

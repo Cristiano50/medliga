@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { topico as buscarTopico, topicosDe } from '../content/index.ts';
+import { disciplinaDoTopico } from '../content/disciplinas.ts';
 import { montarSessao, type ItemSessao, type ModoSessao } from '../core/session.ts';
 import { calcularXP, corrigir, TEMPO_MINIMO_MS, type Resposta } from '../core/scoring.ts';
 import { novoEstado, registrarResposta, type EstadoItem } from '../core/srs.ts';
@@ -33,6 +34,8 @@ export function QuizTela() {
   const topicoId = params.get('topico');
   const nav = useNavigate();
   const perfil = useApp((s) => s.perfil)!;
+  const disciplinaId =
+    params.get('disciplina') ?? (topicoId ? disciplinaDoTopico(topicoId) : undefined) ?? perfil.disciplinaAtual ?? 'embriologia';
   const uso = useApp((s) => s.uso);
   const contarUso = useApp((s) => s.contarUso);
   const concluirSessao = useApp((s) => s.concluirSessao);
@@ -42,8 +45,8 @@ export function QuizTela() {
       const t = buscarTopico(topicoId);
       return t ? [t] : [];
     }
-    return topicosDe('embriologia');
-  }, [topicoId]);
+    return topicosDe(disciplinaId);
+  }, [topicoId, disciplinaId]);
 
   const tipoUso = modo === 'plantao' ? 'plantao' : 'estudo';
   // Duelos não consomem o limite diário: são o principal convite para novos jogadores.
@@ -152,7 +155,7 @@ export function QuizTela() {
       {
         id: sessaoId.current,
         modo,
-        disciplina: 'embriologia',
+        disciplina: duelo?.disciplina ?? disciplinaId,
         topicoIds: [...new Set(registros.map((r) => r.item.topicoId))],
         inicio: inicioSessao.current,
         fim: agoraFim,
@@ -177,7 +180,7 @@ export function QuizTela() {
         .then(setDuelo)
         .catch((e: Error) => setErro(`Não foi possível enviar o resultado do duelo: ${e.message}`));
     }
-  }, [fim, itens, registros, modo, concluirSessao, codigoDuelo]);
+  }, [fim, itens, registros, modo, concluirSessao, codigoDuelo, duelo, disciplinaId]);
 
   if (erro && !fim)
     return (

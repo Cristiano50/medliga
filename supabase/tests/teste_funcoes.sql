@@ -84,6 +84,16 @@ begin
   if (r->>'xp_contabilizado')::int <> 13 then raise exception 'FALHOU: esperado 13, veio %', r; end if;
 end $$;
 
+-- 7b) minijogo de histologia: id com ':' vale como jogada (4 XP)
+do $$
+declare r jsonb;
+begin
+  r := registrar_sessao(
+    jsonb_build_object('id','10000000-0000-0000-0000-000000000006','modo','microscopio','disciplina','histologia','inicio', (now() - interval '1 minute')::text,'fim', now()::text),
+    jsonb_build_array(jsonb_build_object('questao_id','lamina:osso-compacto:osteon','topico_id','his-07-osso','correta',true,'tempo_ms',2000)));
+  if (r->>'xp_contabilizado')::int <> 4 then raise exception 'FALHOU: minijogo de histologia, veio %', r; end if;
+end $$;
+
 -- 8) outros alunos e ranking entre escolas (soma dos 20 melhores)
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
 select salvar_perfil('Beto', 'escs', 2);

@@ -17,6 +17,7 @@ import { LinhaDoTempoTela } from './games/LinhaDoTempo.tsx';
 import { CamadasTela } from './games/Camadas.tsx';
 import { Carregando } from './ui/Carregando.tsx';
 import { carregarDisciplina } from './content/index.ts';
+import { DISCIPLINAS_DISPONIVEIS } from './content/disciplinas.ts';
 
 // A parte 3D (three.js) só é baixada quando o jogador abre o laboratório.
 const Lab3DTela = lazy(() => import('./modules/embriologia/Lab3D.tsx'));
@@ -60,8 +61,8 @@ export function App() {
   const [conteudo, setConteudo] = useState(false);
   useEffect(() => {
     void carregar();
-    // Embriologia é a disciplina disponível hoje: pré-carregada na abertura (as demais, sob demanda).
-    void carregarDisciplina('embriologia').then(() => setConteudo(true));
+    // Disciplinas disponíveis são pré-carregadas na abertura (cada tópico é um arquivo, em cache para uso offline).
+    void Promise.all(DISCIPLINAS_DISPONIVEIS.map((d) => carregarDisciplina(d))).then(() => setConteudo(true));
   }, [carregar]);
   if (!carregado || !conteudo) return <Carregando />;
   return (

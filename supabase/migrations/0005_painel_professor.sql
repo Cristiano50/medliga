@@ -35,7 +35,7 @@ begin
            round(100.0 * avg(case when r.correta then 1 else 0 end), 1)
     from respostas r
     join sessoes s on s.id = r.sessao_id
-    where s.escola_id = p_escola_id and r.criado_em >= p_desde and r.questao_id !~ '^(camadas|linha|identifique):'
+    where s.escola_id = p_escola_id and r.criado_em >= p_desde and position(':' in r.questao_id) = 0
     group by r.topico_id
     having count(distinct r.usuario_id) >= 5
     order by r.topico_id;
