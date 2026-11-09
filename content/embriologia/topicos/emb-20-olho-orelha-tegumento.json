@@ -828,7 +828,7 @@
       ],
       "ordemCorreta": ["2", "6", "4", "1", "5", "7", "3"],
       "explicacao": "A luz atravessa o epitélio da córnea (ectoderma superficial), o estroma da córnea (mesênquima da crista neural), o humor aquoso, o cristalino (placoide do cristalino, ectoderma superficial) e o corpo vítreo. Na retina neural, derivada da camada interna do cálice óptico, passa primeiro pelas células ganglionares e bipolares e só então chega aos fotorreceptores. Como a vesícula óptica se invagina para formar o cálice, a retina neural é 'invertida': as partes fotossensíveis dos fotorreceptores ficam voltadas para o antigo espaço intrarretiniano e para o epitélio pigmentado (camada externa do cálice), e é nesse plano que ocorre o descolamento de retina.",
-      "dificuldade": 4,
+      "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["avancado", "olho", "retina", "cornea", "cristalino", "anatomia"],
       "referencia": "Moore 11ª ed., cap. 18; Sadler 14ª ed., cap. 20"
@@ -846,7 +846,7 @@
         { "esquerda": "Meato acústico externo (atresia congênita)", "direita": "Ectoderma do 1º sulco faríngeo" }
       ],
       "explicacao": "O cristalino deriva do placoide do cristalino, espessamento do ectoderma superficial induzido pela vesícula óptica. A retina neural deriva da camada interna do cálice óptico (neuroectoderma do prosencéfalo), e o descolamento ocorre entre ela e o epitélio pigmentado. O estroma (e o endotélio) da córnea vem do mesênquima derivado da crista neural; no glaucoma congênito, a pressão alta aumenta e turva a córnea. A cavidade timpânica deriva do recesso tubotimpânico da 1ª bolsa faríngea (endoderma). O órgão espiral faz parte do ducto coclear, derivado da vesícula ótica. O meato acústico externo deriva da parte dorsal do 1º sulco faríngeo (ectoderma).",
-      "dificuldade": 4,
+      "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["avancado", "olho", "orelha", "origens", "integracao"],
       "referencia": "Moore 11ª ed., cap. 9 e 18; Sadler 14ª ed., cap. 17, 19 e 20"

@@ -8,12 +8,12 @@
     "Diferenciar indução, competência e indução recíproca, com exemplos.",
     "Identificar os principais centros sinalizadores e os conceitos de morfógeno e de gradiente por limiares.",
     "Descrever as quatro famílias de sinalização parácrina (FGF, Hedgehog, WNT, TGF-β/BMP), seus receptores e efetores, e a via justácrina Notch-Delta.",
-    "Relacionar as famílias de fatores de transcrição (HOX, PAX, SOX, TBX, T) a programas de desenvolvimento.",
+    "Relacionar as famílias de fatores de transcrição (HOX, PAX, SOX, TBX, incluindo TBXT/Brachyury) a programas de desenvolvimento.",
     "Explicar a base molecular da lateralidade (cílios do nó, Nodal/Lefty/PITX2).",
     "Reconhecer a apoptose, a epigenética/imprinting e os níveis de potência celular (totipotência, pluripotência, iPS).",
     "Correlacionar vias moleculares a malformações (holoprosencefalia, acondroplasia, craniossinostoses, aniridia, sinpolidactilia, heterotaxia)."
   ],
-  "resumo": "**Indução e competência.** No desenvolvimento, grupos de células comunicam-se continuamente. Na **indução**, um tecido (indutor) altera o destino de outro (respondedor); o respondedor só reage se for **competente**, isto é, se expressar os receptores e os fatores necessários. A vesícula óptica, por exemplo, induz o cristalino apenas no ectoderma competente. Muitas induções são **recíprocas** (broto ureteral ↔ blastema metanéfrico).\n\n**Centros sinalizadores.** Regiões especializadas organizam o padrão ao redor: o **nó primitivo** (organizador, homólogo ao de Spemann-Mangold), a **notocorda** (ventraliza o tubo neural), a **crista ectodérmica apical (AER)** e a **zona de atividade polarizadora (ZPA)** no broto do membro, e o **organizador ístmico** (istmo entre mesencéfalo e rombencéfalo, com FGF8 e WNT1). Eles secretam **morfógenos**: sinais que formam gradientes e, por diferentes **limiares**, especificam destinos distintos (o SHH da ZPA define a identidade dos dedos).\n\n**Sinalização parácrina — poucas famílias.** Quatro famílias respondem pela maior parte da sinalização entre células vizinhas:\n- **FGF**: ligam-se a **receptores tirosina quinase (FGFR)** e ativam a via RAS–MAPK.\n- **Hedgehog (SHH, IHH, DHH)**: o ligante liga-se ao receptor **Patched (PTCH1)**, que deixa de inibir **Smoothened (SMO)**; seguem-se os fatores de transcrição **GLI**. Em vertebrados, a transdução ocorre no **cílio primário**, e o **colesterol** modifica a molécula de SHH e é necessário à sua sinalização.\n- **WNT**: na via **canônica**, estabilizam a **β-catenina**, que ativa fatores **TCF/LEF**; há vias não canônicas (polaridade planar).\n- **Superfamília TGF-β** (inclui **BMP**, **Nodal** e activina): receptores **serina/treonina quinase** fosforilam **SMADs**. Antagonistas de BMP (noggin, cordina, folistatina) liberam destinos como o neural.\nA via **Notch-Delta** é **justácrina** (contato direto): a ligação libera o domínio intracelular **NICD**, que vai ao núcleo; medeia a **inibição lateral** (neurogênese) e participa do relógio da segmentação (somitogênese). O **ácido retinoico** age por **receptores nucleares** (RAR/RXR).\n\n**Fatores de transcrição.** Os sinais convergem em fatores de transcrição que executam o programa. Os **genes HOX** (quatro agrupamentos, HOXA–HOXD) conferem identidade ao longo do eixo craniocaudal, em **colinearidade** (genes 3' expressos antes e mais cranialmente), regulados pelo ácido retinoico. Outras famílias: **PAX** (PAX6, gene mestre do olho; PAX3, crista neural e músculo), **SOX** (SOX9, cartilagem e testículo; SOX10, crista neural), **TBX** (TBX5, membro superior e coração; TBX4, membro inferior e pulmão; TBX1, aparelho faríngeo) e **T/Brachyury**, da notocorda e do mesoderma.\n\n**Lateralidade.** A assimetria esquerda-direita começa no **nó**: cílios móveis geram um fluxo de líquido para a esquerda, captado por cílios sensoriais; isso ativa **Nodal** no mesoderma lateral esquerdo, que induz **LEFTY** (LEFTY1 na linha média, como barreira; LEFTY2 no mesoderma lateral, limitando Nodal) e **PITX2** (morfogênese assimétrica das vísceras).\n\n**Apoptose, epigenética e células-tronco.** A **apoptose** (morte celular programada) esculpe estruturas — separa os dedos (regiões interdigitais) e remodela o tubo neural. A **epigenética** (metilação do DNA, modificações de histonas) regula a expressão sem alterar a sequência; no **imprinting genômico**, a expressão depende da origem parental do alelo (Prader-Willi/Angelman). Quanto ao potencial: o zigoto e os primeiros blastômeros são **totipotentes** (formam embrião e anexos); a massa celular interna e as **células ES** são **pluripotentes** (três camadas, sem placenta); a crista neural é **multipotente**. Células adultas podem ser reprogramadas em **células-tronco pluripotentes induzidas (iPS)** por fatores de transcrição definidos.\n\n**Correlações.** Erros nessas vias causam malformações: **holoprosencefalia** (perda de SHH; a síntese deficiente de colesterol na síndrome de **Smith-Lemli-Opitz** prejudica SHH), **acondroplasia** e displasia tanatofórica (ganho de função de **FGFR3**), **craniossinostoses** sindrômicas (FGFR2 — Apert, Crouzon), **aniridia** (PAX6), **sinpolidactilia** (expansão em HOXD13), **heterotaxia** (cascata de lateralidade) e a **embriopatia por isotretinoína** (excesso de ácido retinoico sobre os genes HOX e a crista neural).",
+  "resumo": "**Indução e competência.** No desenvolvimento, grupos de células comunicam-se continuamente. Na **indução**, um tecido (indutor) altera o destino de outro (respondedor); o respondedor só reage se for **competente**, isto é, se expressar os receptores e os fatores necessários. A vesícula óptica, por exemplo, induz o cristalino apenas no ectoderma competente. Muitas induções são **recíprocas** (broto ureteral ↔ blastema metanéfrico).\n\n**Centros sinalizadores.** Regiões especializadas organizam o padrão ao redor: o **nó primitivo** (organizador, homólogo ao de Spemann-Mangold), a **notocorda** (ventraliza o tubo neural), a **crista ectodérmica apical (AER)** e a **zona de atividade polarizadora (ZPA)** no broto do membro, e o **organizador ístmico** (istmo entre mesencéfalo e rombencéfalo, com FGF8 e WNT1). Eles secretam **morfógenos**: sinais que formam gradientes e, por diferentes **limiares**, especificam destinos distintos (o SHH da ZPA define a identidade dos dedos).\n\n**Sinalização parácrina — poucas famílias.** Quatro famílias respondem pela maior parte da sinalização entre células vizinhas:\n- **FGF**: ligam-se a **receptores tirosina quinase (FGFR)** e ativam a via RAS–MAPK.\n- **Hedgehog (SHH, IHH, DHH)**: o ligante liga-se ao receptor **Patched (PTCH1)**, que deixa de inibir **Smoothened (SMO)**; seguem-se os fatores de transcrição **GLI**. Em vertebrados, a transdução ocorre no **cílio primário**, e o **colesterol** modifica a molécula de SHH e é necessário à sua sinalização.\n- **WNT**: na via **canônica**, estabilizam a **β-catenina**, que ativa fatores **TCF/LEF**; há vias não canônicas (polaridade planar).\n- **Superfamília TGF-β** (inclui **BMP**, **Nodal** e activina): receptores **serina/treonina quinase** fosforilam **SMADs**. Antagonistas de BMP (noggin, cordina, folistatina) liberam destinos como o neural.\nA via **Notch-Delta** é **justácrina** (contato direto): a ligação libera o domínio intracelular **NICD**, que vai ao núcleo; medeia a **inibição lateral** (neurogênese) e participa do relógio da segmentação (somitogênese). O **ácido retinoico** age por **receptores nucleares** (RAR/RXR).\n\n**Fatores de transcrição.** Os sinais convergem em fatores de transcrição que executam o programa. Os **genes HOX** (quatro agrupamentos, HOXA–HOXD) conferem identidade ao longo do eixo craniocaudal, em **colinearidade** (genes 3' expressos antes e mais cranialmente), regulados pelo ácido retinoico. Outras famílias: **PAX** (PAX6, gene mestre do olho; PAX3, crista neural e músculo), **SOX** (SOX9, cartilagem e testículo; SOX10, crista neural), **TBX** (TBX5, membro superior e coração; TBX4, membro inferior e pulmão; TBX1, aparelho faríngeo) e **TBXT** (Brachyury; símbolo antigo T), da notocorda e do mesoderma.\n\n**Lateralidade.** A assimetria esquerda-direita começa no **nó**: cílios móveis geram um fluxo de líquido para a esquerda, captado por cílios sensoriais; isso ativa **Nodal** no mesoderma lateral esquerdo, que induz **LEFTY** (LEFTY1 na linha média, como barreira; LEFTY2 no mesoderma lateral, limitando Nodal) e **PITX2** (morfogênese assimétrica das vísceras).\n\n**Apoptose, epigenética e células-tronco.** A **apoptose** (morte celular programada) esculpe estruturas — separa os dedos (regiões interdigitais) e remodela o tubo neural. A **epigenética** (metilação do DNA, modificações de histonas) regula a expressão sem alterar a sequência; no **imprinting genômico**, a expressão depende da origem parental do alelo (em 15q11.2-q13, a perda da contribuição paterna causa a síndrome de Prader-Willi, e a da materna, a de Angelman). Quanto ao potencial: o zigoto e os primeiros blastômeros são **totipotentes** (formam embrião e anexos); a massa celular interna e as **células ES** são **pluripotentes** (três camadas, sem placenta); a crista neural é **multipotente**. Células adultas podem ser reprogramadas em **células-tronco pluripotentes induzidas (iPS)** por fatores de transcrição definidos.\n\n**Correlações.** Erros nessas vias causam malformações: **holoprosencefalia** (perda de SHH; a síntese deficiente de colesterol na síndrome de **Smith-Lemli-Opitz** prejudica SHH), **acondroplasia** e displasia tanatofórica (ganho de função de **FGFR3**), **craniossinostoses** sindrômicas (FGFR2 — Apert, Crouzon), **aniridia** (PAX6), **sinpolidactilia** (expansão em HOXD13), **heterotaxia** (cascata de lateralidade) e a **embriopatia por isotretinoína** (excesso de ácido retinoico sobre os genes HOX e a crista neural).",
   "pontosChave": [
     "Na indução, um tecido altera o destino de outro competente; muitas induções são recíprocas.",
     "Centros sinalizadores (nó primitivo, notocorda, AER, ZPA, organizador ístmico) secretam morfógenos que agem por limiares de concentração.",
@@ -21,7 +21,7 @@
     "Hedgehog sinaliza por Patched–Smoothened–GLI, no cílio primário, e depende do colesterol; a Wnt canônica estabiliza a β-catenina (TCF/LEF).",
     "Notch-Delta é justácrina (contato célula-célula) e medeia a inibição lateral; o ácido retinoico age por receptores nucleares.",
     "Os genes HOX (HOXA–D) dão identidade craniocaudal em colinearidade 3'→5', regulados pelo ácido retinoico.",
-    "PAX6 é gene mestre do olho; SOX9, da cartilagem/testículo; TBX5, do membro superior e coração; T/Brachyury, da notocorda.",
+    "PAX6 é gene mestre do olho; SOX9, da cartilagem/testículo; TBX5, do membro superior e coração; TBXT (Brachyury), da notocorda.",
     "A lateralidade depende dos cílios do nó e da cascata Nodal → Lefty/PITX2 no lado esquerdo.",
     "A apoptose esculpe estruturas (separação dos dedos); o imprinting faz a expressão depender da origem parental.",
     "Totipotência (zigoto) > pluripotência (células ES/iPS) > multipotência; as iPS vêm de reprogramação por fatores definidos.",
@@ -111,38 +111,38 @@
     {
       "id": "holoprosencefalia-shh-colesterol",
       "titulo": "Holoprosencefalia e a via SHH (incluindo Smith-Lemli-Opitz)",
-      "descricao": "Falha da divisão do prosencéfalo, com defeitos faciais da linha média (hipotelorismo, incisivo central único; nas formas graves, ciclopia). Associa-se a mutações de SHH, à trissomia 13, ao diabetes materno e ao álcool.",
-      "mecanismo": "A perda de sinalização de SHH na linha média impede a separação do prosencéfalo; a síntese deficiente de colesterol (síndrome de Smith-Lemli-Opitz, deficiência de DHCR7) compromete a modificação e a sinalização de SHH ('a face prediz o cérebro')."
+      "descricao": "Falha da divisão do prosencéfalo, com defeitos faciais da linha média (hipotelorismo, incisivo central único; nas formas graves, ciclopia) — 'a face prediz o cérebro'. É um espectro: formas alobar, semilobar e lobar e microformas (p. ex., incisivo central único isolado). Associa-se à trissomia 13, a variantes de SHH (o gene mais frequentemente alterado) e de outros genes (ZIC2, SIX3, TGIF1, entre outros), ao diabetes materno e ao álcool. Nas formas por SHH, a herança é autossômica dominante, com penetrância incompleta e expressividade muito variável: um genitor portador pode ter só uma microforma ou nenhum sinal.",
+      "mecanismo": "A perda de sinalização de SHH na linha média impede a separação do prosencéfalo. Na síndrome de Smith-Lemli-Opitz (autossômica recessiva, por deficiência de DHCR7), a síntese deficiente de colesterol, com acúmulo de 7-desidrocolesterol, compromete a sinalização de SHH, sobretudo a resposta das células-alvo, pois a ativação de SMO depende de esteróis."
     },
     {
       "id": "acondroplasia-fgfr3",
       "titulo": "Acondroplasia e displasia tanatofórica (FGFR3)",
-      "descricao": "Nanismo rizomélico (acondroplasia) e displasia esquelética letal (tanatofórica).",
+      "descricao": "Nanismo rizomélico (acondroplasia) e displasia esquelética em geral letal no período perinatal (tanatofórica). A acondroplasia tem herança autossômica dominante com penetrância completa; quase todos os casos têm a mesma variante de FGFR3 (p.Gly380Arg), e cerca de 80% resultam de variante nova, surgida no alelo paterno e mais frequente com a idade paterna avançada.",
       "mecanismo": "Mutações com ganho de função no receptor tirosina quinase FGFR3 mantêm-no constitutivamente ativo e inibem a proliferação dos condrócitos nas placas de crescimento, prejudicando a ossificação endocondral."
     },
     {
       "id": "craniossinostoses-fgfr2",
       "titulo": "Craniossinostoses sindrômicas (FGFR)",
       "descricao": "Síndromes de Apert e de Crouzon, com fusão precoce de suturas, hipoplasia do terço médio da face e, na de Apert, sindactilia óssea.",
-      "mecanismo": "Mutações em receptores FGFR (sobretudo FGFR2) alteram a sinalização que regula as suturas cranianas."
+      "mecanismo": "Variantes com ganho de função em receptores FGFR (sobretudo FGFR2) alteram a sinalização que regula as suturas cranianas; a herança é autossômica dominante. Na de Apert, quase todos os casos têm uma de duas variantes de FGFR2 (p.Ser252Trp ou p.Pro253Arg), em geral novas, de origem paterna e associadas à idade paterna avançada."
     },
     {
       "id": "aniridia-pax6",
       "titulo": "Aniridia (PAX6)",
-      "descricao": "Ausência quase total da íris, com hipoplasia foveal e redução visual; pode fazer parte da associação WAGR (deleção 11p13, com risco de tumor de Wilms).",
-      "mecanismo": "Haploinsuficiência de PAX6, gene mestre do desenvolvimento do olho."
+      "descricao": "Ausência quase total da íris, com hipoplasia foveal e redução visual; herança autossômica dominante, com parte dos casos esporádica. Pode fazer parte da síndrome WAGR (tumor de Wilms, aniridia, anomalias geniturinárias e atraso do desenvolvimento), por deleção de genes contíguos em 11p13 que inclui PAX6 e WT1. Por isso, na aniridia esporádica, pesquisa-se deleção que inclua WT1 (microarranjo cromossômico, FISH ou MLPA); se presente, indica-se vigilância ultrassonográfica renal periódica na infância.",
+      "mecanismo": "Haploinsuficiência de PAX6, gene mestre do desenvolvimento do olho; na WAGR, a perda de WT1 explica o risco de tumor de Wilms e as anomalias geniturinárias."
     },
     {
       "id": "sinpolidactilia-hoxd13",
       "titulo": "Sinpolidactilia (HOXD13)",
-      "descricao": "Dedo supranumerário na membrana entre o 3º e o 4º dedos, com sindactilia.",
+      "descricao": "Dedo supranumerário na membrana entre o 3º e o 4º dedos, com sindactilia; herança autossômica dominante, com expressividade variável.",
       "mecanismo": "Expansão de uma sequência de poli-alanina no gene HOXD13, exemplo de alteração de um gene HOX 5' na padronização dos dígitos."
     },
     {
       "id": "heterotaxia-lateralidade",
       "titulo": "Heterotaxia (situs ambiguus)",
-      "descricao": "Arranjo anômalo das vísceras, com cardiopatia complexa e anomalias esplênicas (asplenia/polisplenia; isomerismo). Difere do situs inversus totalis, de baixo risco.",
-      "mecanismo": "Falhas na cascata de lateralidade (cílios do nó; NODAL, LEFTY, PITX2; genes como ZIC3), que perturbam a assimetria esquerda-direita."
+      "descricao": "Arranjo anômalo das vísceras, com cardiopatia complexa e anomalias esplênicas (asplenia/polisplenia; isomerismo). Difere do situs inversus totalis (imagem em espelho), de risco cardíaco bem menor. Na discinesia ciliar primária (herança em geral autossômica recessiva), os cílios imóveis tornam a lateralidade aleatória: cerca de metade dos pacientes tem situs inversus totalis (síndrome de Kartagener) e uma minoria, heterotaxia.",
+      "mecanismo": "Falhas na cascata de lateralidade (cílios do nó; NODAL, LEFTY, PITX2; genes como ZIC3, ligado ao X, e os dos cílios móveis), que perturbam a assimetria esquerda-direita."
     },
     {
       "id": "embriopatia-retinoica-molecular",
@@ -411,7 +411,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "(c) Correta: TBX5 padroniza o membro superior e o coração; suas mutações causam a síndrome de Holt-Oram (defeitos do raio pré-axial — polegar/rádio — e cardiopatia septal). (a) SHH, na zona polarizadora, define o eixo anteroposterior dos dedos, sem esse padrão cardíaco. (b) FGFR3 causa acondroplasia (nanismo rizomélico). (d) PAX6 relaciona-se ao olho (aniridia).",
+      "explicacao": "(c) Correta: TBX5 padroniza o membro superior e o coração; suas variantes causam a síndrome de Holt-Oram (defeitos do raio pré-axial — polegar/rádio — e cardiopatia septal), de herança autossômica dominante, o que explica os vários parentes afetados. (a) SHH, na zona polarizadora, define o eixo anteroposterior dos dedos, sem esse padrão cardíaco. (b) FGFR3 causa acondroplasia (nanismo rizomélico). (d) PAX6 relaciona-se ao olho (aniridia).",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -425,7 +425,7 @@
     {
       "id": "emb-21-q09",
       "tipo": "multipla",
-      "enunciado": "O gene T (Brachyury) é essencial para a formação de qual estrutura axial?",
+      "enunciado": "O gene TBXT (Brachyury, antes chamado T) é essencial para a formação de qual estrutura axial?",
       "alternativas": [
         {
           "id": "a",
@@ -445,7 +445,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: T/Brachyury é fator de transcrição necessário à notocorda e ao mesoderma posterior; sua falha trunca o eixo caudal. (b) o cristalino e a retina dependem de PAX6 (vesícula óptica e indução do cristalino), não de T. (c) a medula suprarrenal deriva da crista neural. (d) o esmalte é produzido por ameloblastos do ectoderma oral.",
+      "explicacao": "(a) Correta: TBXT (Brachyury) é fator de transcrição necessário à notocorda e ao mesoderma posterior; sua falha trunca o eixo caudal. (b) o cristalino e a retina dependem de PAX6 (vesícula óptica e indução do cristalino), não de TBXT. (c) a medula suprarrenal deriva da crista neural. (d) o esmalte é produzido por ameloblastos do ectoderma oral.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -471,7 +471,7 @@
         },
         {
           "id": "c",
-          "texto": "perturbação da cascata de lateralidade (Nodal/Lefty/Pitx2)"
+          "texto": "perturbação da cascata de lateralidade (NODAL/LEFTY/PITX2)"
         },
         {
           "id": "d",
@@ -479,7 +479,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "(c) Correta: a heterotaxia (situs ambiguus) decorre de falhas na sinalização assimétrica Nodal/Lefty/Pitx2 a partir do organizador esquerdo-direito (cílios do nó), com alto risco de cardiopatia complexa e anomalias esplênicas (isomerismo); difere do situs inversus totalis, imagem em espelho de baixo risco. (a) defeito do tubo neural não causa lateralidade visceral. (b) o folato previne defeitos do tubo neural, sem relação com o situs. (d) FGFR3 causa acondroplasia.",
+      "explicacao": "(c) Correta: a heterotaxia (situs ambiguus) decorre de falhas na sinalização assimétrica NODAL/LEFTY/PITX2 a partir do organizador esquerdo-direito (cílios do nó), com alto risco de cardiopatia complexa e anomalias esplênicas (isomerismo); difere do situs inversus totalis, imagem em espelho de risco cardíaco bem menor (que, porém, pode ser sinal de discinesia ciliar primária). (a) defeito do tubo neural não causa lateralidade visceral. (b) o folato previne defeitos do tubo neural, sem relação com o situs. (d) FGFR3 causa acondroplasia.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -514,7 +514,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "(b) Correta: na síndrome de Smith-Lemli-Opitz, a deficiência da DHCR7 reduz o colesterol e eleva o 7-desidrocolesterol; o colesterol é necessário à modificação e à sinalização de SHH, cuja falha causa holoprosencefalia ('a face prediz o cérebro'). (a) é o inverso — não há hiperativação por excesso de colesterol. (c) o colesterol não inibe GLI; participa da transdução a montante. (d) SHH depende de colesterol, o que refuta a alternativa.",
+      "explicacao": "(b) Correta: na síndrome de Smith-Lemli-Opitz (autossômica recessiva), a deficiência da DHCR7 reduz o colesterol e eleva o 7-desidrocolesterol, que é o marcador diagnóstico (o colesterol pode ser normal nas formas leves); o colesterol é necessário à modificação do ligante e à ativação de SMO, e na SLO o prejuízo recai sobretudo na resposta das células-alvo; a falha de SHH causa holoprosencefalia ('a face prediz o cérebro'). (a) é o inverso — não há hiperativação por excesso de colesterol. (c) o colesterol não inibe GLI; participa da transdução a montante. (d) SHH depende de colesterol, o que refuta a alternativa.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -582,7 +582,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: a síndrome de Apert combina craniossinostose (sutura coronal) e sindactilia óssea; a maioria dos casos deriva de mutações em FGFR2. (b) a acondroplasia (FGFR3) causa nanismo rizomélico, não craniossinostose sindactílica. (c) Waardenburg (PAX3) cursa com surdez e distúrbios pigmentares. (d) Treacher Collins (TCOF1) dá hipoplasia malar/mandibular e colobomas palpebrais, sem sindactilia.",
+      "explicacao": "(a) Correta: a síndrome de Apert combina craniossinostose (sutura coronal) e sindactilia óssea; quase todos os casos devem-se a uma de duas variantes de FGFR2 com ganho de função (p.Ser252Trp ou p.Pro253Arg), em geral novas e de origem paterna. (b) a acondroplasia (FGFR3) causa nanismo rizomélico, não craniossinostose sindactílica. (c) Waardenburg (PAX3) cursa com surdez e distúrbios pigmentares. (d) Treacher Collins (TCOF1) dá hipoplasia malar/mandibular e colobomas palpebrais, sem sindactilia.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -616,7 +616,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "(b) Correta: a expansão de uma sequência de poli-alanina em HOXD13 causa a sinpolidactilia, ilustrando o papel dos genes HOX 5' na padronização dos dígitos. (a) PAX6 relaciona-se ao olho (aniridia). (c) SOX10 atua na crista neural (melanócitos, glia; Waardenburg tipo 4). (d) RET associa-se à doença de Hirschsprung e às neoplasias endócrinas múltiplas.",
+      "explicacao": "(b) Correta: a expansão de uma sequência de poli-alanina em HOXD13 causa a sinpolidactilia, ilustrando o papel dos genes HOX 5' na padronização dos dígitos. (a) PAX6 relaciona-se ao olho (aniridia). (c) SOX10 atua na crista neural (melanócitos, glia; Waardenburg tipo 4). (d) RET associa-se à doença de Hirschsprung (perda de função) e à neoplasia endócrina múltipla tipo 2 (ganho de função).",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -661,7 +661,7 @@
     {
       "id": "emb-21-q16",
       "tipo": "multipla",
-      "contexto": "Fibroblastos adultos são reprogramados in vitro por um conjunto de fatores de transcrição (p. ex., OCT4, SOX2, KLF4 e MYC) e passam a formar derivados das três camadas germinativas.",
+      "contexto": "Fibroblastos adultos são reprogramados in vitro por um conjunto de fatores de transcrição (p. ex., OCT4 [gene POU5F1], SOX2, KLF4 e MYC) e passam a formar derivados das três camadas germinativas.",
       "enunciado": "Essas células são denominadas:",
       "alternativas": [
         {
@@ -754,14 +754,14 @@
       "tipo": "vf",
       "enunciado": "No imprinting genômico, a expressão de certos genes depende de o alelo ter sido herdado do pai ou da mãe.",
       "correta": true,
-      "explicacao": "Verdadeiro. O imprinting é uma marca epigenética (metilação) de origem parental: para alguns loci, só o alelo paterno ou só o materno é expresso (p. ex., 15q11-q13 nas síndromes de Prader-Willi e de Angelman).",
+      "explicacao": "Verdadeiro. O imprinting é uma marca epigenética (metilação) de origem parental: para alguns loci, só o alelo paterno ou só o materno é expresso (p. ex., em 15q11.2-q13, a perda da contribuição paterna causa a síndrome de Prader-Willi, e a da materna, a de Angelman).",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
         "epigenetica",
         "imprinting"
       ],
-      "referencia": "Thompson & Thompson 8ª ed., cap. 14"
+      "referencia": "Thompson & Thompson 8ª ed., caps. 6 e 14"
     },
     {
       "id": "emb-21-q22",
@@ -984,11 +984,11 @@
           "direita": "Padronização dos dígitos (sinpolidactilia)"
         },
         {
-          "esquerda": "T/Brachyury",
+          "esquerda": "TBXT (Brachyury)",
           "direita": "Notocorda e mesoderma"
         }
       ],
-      "explicacao": "PAX6 é gene mestre do olho; SOX9 atua na cartilagem e no testículo; TBX5 padroniza membro superior e coração; HOXD13 padroniza os dígitos; T/Brachyury é essencial à notocorda e ao mesoderma.",
+      "explicacao": "PAX6 é gene mestre do olho; SOX9 atua na cartilagem e no testículo; TBX5 padroniza membro superior e coração; HOXD13 padroniza os dígitos; TBXT (Brachyury) é essencial à notocorda e ao mesoderma.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -1060,18 +1060,49 @@
     {
       "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
       "capitulo": "14 — Genética do desenvolvimento e defeitos congênitos"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "6 — Bases cromossômicas e genômicas das doenças (imprinting: Prader-Willi e Angelman)"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "7 — Padrões de herança monogênica (acondroplasia: variante nova; penetrância e expressividade)"
+    },
+    {
+      "obra": "Goriely A, Wilkie AOM. Paternal age effect mutations and selfish spermatogonial selection: causes and consequences for human disease. Am J Hum Genet. 2012;90(2):175–200",
+      "capitulo": "Acondroplasia (FGFR3) e síndrome de Apert (FGFR2): variantes novas de origem paterna e efeito da idade paterna"
+    },
+    {
+      "obra": "Dubourg C, et al. Recent advances in understanding inheritance of holoprosencephaly. Am J Med Genet C Semin Med Genet. 2018;178(2):258–269",
+      "capitulo": "Genes da holoprosencefalia (SHH, ZIC2, SIX3, TGIF1) e penetrância incompleta"
+    },
+    {
+      "obra": "Cooper MK, et al. A defective response to Hedgehog signaling in disorders of cholesterol biosynthesis. Nat Genet. 2003;33(4):508–513",
+      "capitulo": "Smith-Lemli-Opitz: defeito na resposta das células-alvo ao Hedgehog"
+    },
+    {
+      "obra": "Kalish JM, et al. Surveillance recommendations for children with overgrowth syndromes and predisposition for Wilms tumors and hepatoblastoma. Clin Cancer Res. 2017;23(13):e115–e122",
+      "capitulo": "Síndrome WAGR (deleção de WT1): vigilância de tumor de Wilms"
+    },
+    {
+      "obra": "Shapiro AJ, et al. Diagnosis of primary ciliary dyskinesia. An official American Thoracic Society clinical practice guideline. Am J Respir Crit Care Med. 2018;197(12):e24–e39",
+      "capitulo": "Discinesia ciliar primária: situs inversus e heterotaxia"
     }
   ],
   "notasDivergencia": [
     "Nomenclatura dos agrupamentos HOX (HOXA–HOXD) e colinearidade 3'→5' seguem Sadler cap. 1 e Moore cap. 21, como no tópico emb-07.",
     "A dependência da via Hedgehog em relação ao cílio primário está bem estabelecida em vertebrados (dados de camundongo); a extrapolação ao ser humano apoia-se nas ciliopatias humanas.",
     "A cascata de lateralidade Nodal/Lefty/PITX2 e o papel dos cílios do nó foram demonstrados sobretudo em camundongo; no ser humano, a associação baseia-se na discinesia ciliar primária e na heterotaxia (ver tópico emb-06).",
-    "Fatores de iPS (incerteza do redator resolvida pelo revisor de embriologia, 2026-11-09): o conjunto clássico de Yamanaka (OCT4, SOX2, KLF4 e MYC) reprogramou fibroblastos de camundongo (Takahashi & Yamanaka, Cell 2006;126:663–676) e humanos (Takahashi et al., Cell 2007;131:861–872); outros protocolos usam combinações diferentes (p. ex., OCT4, SOX2, NANOG e LIN28; Yu et al., Science 2007). Por isso a q16 cita o conjunto apenas como exemplo ('p. ex.').",
-    "Experimentos clássicos citados nas questões vêm de modelos animais: enxerto de notocorda em embrião de galinha (q05); transformações homeóticas de vértebras por ácido retinoico em camundongo (q06; Kessel & Gruss, Cell 1991); olhos ectópicos por expressão dirigida de eyeless/Pax6 em Drosophila (q07; Halder, Callaerts & Gehring, Science 1995). A extrapolação ao ser humano apoia-se na conservação dos genes e em fenótipos humanos (aniridia, embriopatia retinoica)."
+    "Fatores de iPS (incerteza do redator resolvida pelo revisor de embriologia, 2026-11-09): o conjunto clássico de Yamanaka (OCT4 [POU5F1], SOX2, KLF4 e MYC) reprogramou fibroblastos de camundongo (Takahashi & Yamanaka, Cell 2006;126:663–676) e humanos (Takahashi et al., Cell 2007;131:861–872); outros protocolos usam combinações diferentes (p. ex., OCT4, SOX2, NANOG e LIN28 [LIN28A]; Yu et al., Science 2007). Por isso a q16 cita o conjunto apenas como exemplo ('p. ex.').",
+    "Experimentos clássicos citados nas questões vêm de modelos animais: enxerto de notocorda em embrião de galinha (q05); transformações homeóticas de vértebras por ácido retinoico em camundongo (q06; Kessel & Gruss, Cell 1991); olhos ectópicos por expressão dirigida de eyeless/Pax6 em Drosophila (q07; Halder, Callaerts & Gehring, Science 1995). A extrapolação ao ser humano apoia-se na conservação dos genes e em fenótipos humanos (aniridia, embriopatia retinoica).",
+    "Nomenclatura de genes (revisor de genética clínica, 2026-11-09): o tópico usa os símbolos aprovados pelo HGNC e dá entre parênteses os nomes dos livros-texto — TBXT (Brachyury; símbolo antigo T), POU5F1 (proteína OCT4), LIN28A (LIN28). Nomes de proteínas (Nodal, Lefty, Patched, Smoothened) e de genes de modelos animais (eyeless/Pax6 de Drosophila e camundongo) foram mantidos onde se referem a proteínas ou a experimentos em animais."
   ],
   "incertezas": [
     "Prevalências de holoprosencefalia, acondroplasia, craniossinostoses e aniridia não foram conferidas nas edições adotadas e foram omitidas.",
-    "A relação quantitativa entre o nível de BMP e o destino celular (epiderme/crista/placa neural) é apresentada de forma qualitativa."
+    "A relação quantitativa entre o nível de BMP e o destino celular (epiderme/crista/placa neural) é apresentada de forma qualitativa.",
+    "Revisor de genética clínica (2026-11-09): a proporção de casos de acondroplasia por variante nova (cerca de 80%) segue Thompson & Thompson (cap. 7) e a literatura de genética clínica; a origem paterna das variantes novas e o efeito da idade paterna (acondroplasia e Apert) seguem Goriely & Wilkie (2012). Conferir o número na edição brasileira adotada.",
+    "Revisor de genética clínica (2026-11-09): a vigilância de tumor de Wilms na deleção de WT1 (WAGR) é descrita sem intervalo nem idade de término, porque esses parâmetros variam entre consensos; o texto segue a indicação de Kalish et al. (2017) de vigilância ultrassonográfica renal periódica na infância."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

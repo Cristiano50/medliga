@@ -134,8 +134,8 @@ export default function Lab3DTela() {
       <div className="contexto3d" aria-label="Como interpretar o modelo">
         <strong>Esquema didático · sem escala comparável entre modelos</strong>
         <span>Idades de desenvolvimento após a fertilização; a idade gestacional obstétrica é aproximadamente duas semanas maior.</span>
-        <span>{estagio.id === 'gastrulacao' ? 'Vista explodida: camadas afastadas para estudo. As membranas não são colunas de tecido.' : ['implantacao', 'disco-bilaminar', 'neurulacao', 'placenta-membranas'].includes(estagio.id) ? 'Modelo em corte: superfícies abertas revelam estruturas internas.' : 'Formas, proporções e cores simplificadas para identificação.'}</span>
-        {estagio.id.startsWith('coracao-') && <span>Cores identificam estruturas; não representam oxigenação. Conexões são esquemáticas, não uma simulação de fluxo em um dia exato.</span>}
+        <span>{estagio.id === 'gastrulacao' ? 'Vista explodida: camadas afastadas para estudo. As membranas não são colunas de tecido.' : ['implantacao', 'disco-bilaminar', 'neurulacao', 'placenta-membranas', 'septacao-cardiaca'].includes(estagio.id) ? 'Modelo em corte: superfícies abertas revelam estruturas internas.' : 'Formas, proporções e cores simplificadas para identificação.'}</span>
+        {(estagio.id.startsWith('coracao-') || ['septacao-cardiaca', 'arcos-aorticos', 'circulacao-fetal'].includes(estagio.id)) && <span>Cores identificam estruturas; não representam oxigenação. Conexões são esquemáticas, não uma simulação de fluxo em um dia exato.</span>}
       </div>
 
       <div className="ferramentas3d" role="group" aria-label="Explorar o modelo">

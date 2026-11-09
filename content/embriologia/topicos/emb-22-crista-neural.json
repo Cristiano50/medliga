@@ -17,10 +17,10 @@
     "Reconhecer a divergência sobre a origem das células C da tireoide (crista neural × endoderma).",
     "Relacionar as neurocristopatias (Hirschsprung, 22q11.2, Treacher Collins, Waardenburg, CHARGE, neuroblastoma, feocromocitoma, NF1) aos derivados e genes correspondentes."
   ],
-  "resumo": "**O que é a crista neural.** A **crista neural** é uma população de células que surge na **borda das pregas neurais**, entre a placa neural e o ectoderma de superfície. Pela diversidade de seus derivados — neurônios, glia, pigmento, esqueleto e músculo liso —, é por vezes chamada de 'quarta camada germinativa'. Sua indução depende de um **nível intermediário de BMP** (entre a inibição total, que dá placa neural, e o nível alto, que dá epiderme), com **WNT** e **FGF**; seguem-se os especificadores da borda (**PAX3**, **ZIC1**) e, depois, os especificadores da crista (**SNAIL2/SLUG**, **FOXD3**, **SOX9**, **SOX10**).\n\n**Delaminação e migração.** Para deixar o tubo neural, as células sofrem **transição epitélio-mesênquima**, com queda das **caderinas** e perda de adesão, e passam a migrar. No tronco há **duas vias**: a **ventral**, que atravessa apenas a metade **anterior (rostral)** de cada esclerótomo (a metade posterior as repele por efrinas) e forma gânglios e medula suprarrenal — daí a disposição **segmentar** dos gânglios; e a **dorsolateral** (mais tardia), sob o ectoderma, que forma **melanócitos**.\n\n**Populações por nível do eixo.** A crista **craniana (cefálica)** forma o **ectomesênquima** da face; a **cardíaca** (um subgrupo cefálico) forma o **septo aorticopulmonar**; a **vagal** e a **sacral** colonizam o intestino e formam o **sistema nervoso entérico** (a vagal é a principal fonte); a do **tronco** forma gânglios sensitivos e simpáticos, medula suprarrenal, células de Schwann e melanócitos.\n\n**Derivados.** Resumidamente: neurônios dos **gânglios sensitivos** (raiz dorsal; parte dos gânglios dos nervos cranianos, com os placoides) e **autônomos** (simpáticos, parassimpáticos e **entéricos**); **células de Schwann** e satélites; **melanócitos**; **células cromafins** da medula suprarrenal; **ectomesênquima craniofacial** (ossos membranosos e grande parte das cartilagens dos arcos — as da laringe vêm sobretudo do mesoderma da placa lateral —, **odontoblastos/dentina**, derme da face); **estroma e endotélio da córnea**; **leptomeninges** rostrais (pia-máter e aracnoide); e o **septo aorticopulmonar** (crista cardíaca).\n\n**Células C da tireoide — uma divergência honesta.** Classicamente, as **células C (parafoliculares)**, produtoras de calcitonina, são atribuídas à crista neural, que povoaria o **corpo ultimofaríngeo** incorporado à tireoide. Estudos de linhagem em **camundongo** (marcação do endoderma por Sox17 × da crista por Wnt1-Cre) indicam, porém, origem **endodérmica** nessa espécie. Os dados humanos são indiretos; por isso, aqui, a divergência é apresentada e **não se afirma** a camada germinativa de origem no ser humano.\n\n**Neurocristopatias.** Doenças que atingem derivados da crista neural:\n- **Doença de Hirschsprung**: falha da colonização do intestino distal pela crista (vagal/sacral); gene principal **RET** (perda de função), além de **EDNRB/EDN3** e **SOX10**.\n- **Deleção 22q11.2 (DiGeorge/velocardiofacial)**: contribuição deficiente da **crista cardíaca** e das 3ª/4ª bolsas; **TBX1**; cardiopatia conotruncal, hipoplasia de timo e paratireoides.\n- **Treacher Collins**: deficiência de crista dos 1º/2º arcos por **estresse ribossômico** (**TCOF1**), com apoptose do neuroepitélio.\n- **Waardenburg**: surdez e distúrbios pigmentares (**PAX3**, **MITF**, **SOX10**); o tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.\n- **CHARGE**: coloboma, atresia de coanas, cardiopatia e anomalias de orelha; gene **CHD7**.\n- **Tumores**: **neuroblastoma** (crista simpática), **feocromocitoma/paraganglioma** (células cromafins) e, na **neurofibromatose tipo 1** (**NF1**), neurofibromas (células de Schwann) e manchas café com leite (melanócitos).",
+  "resumo": "**O que é a crista neural.** A **crista neural** é uma população de células que surge na **borda das pregas neurais**, entre a placa neural e o ectoderma de superfície. Pela diversidade de seus derivados — neurônios, glia, pigmento, esqueleto e músculo liso —, é por vezes chamada de 'quarta camada germinativa'. Sua indução depende de um **nível intermediário de BMP** (entre a inibição total, que dá placa neural, e o nível alto, que dá epiderme), com **WNT** e **FGF**; seguem-se os especificadores da borda (**PAX3**, **ZIC1**) e, depois, os especificadores da crista (**SNAI2**/SLUG, **FOXD3**, **SOX9**, **SOX10**).\n\n**Delaminação e migração.** Para deixar o tubo neural, as células sofrem **transição epitélio-mesênquima**, com queda das **caderinas** e perda de adesão, e passam a migrar. No tronco há **duas vias**: a **ventral**, que atravessa apenas a metade **anterior (rostral)** de cada esclerótomo (a metade posterior as repele por efrinas) e forma gânglios e medula suprarrenal — daí a disposição **segmentar** dos gânglios; e a **dorsolateral** (mais tardia), sob o ectoderma, que forma **melanócitos**.\n\n**Populações por nível do eixo.** A crista **craniana (cefálica)** forma o **ectomesênquima** da face; a **cardíaca** (um subgrupo cefálico) forma o **septo aorticopulmonar**; a **vagal** e a **sacral** colonizam o intestino e formam o **sistema nervoso entérico** (a vagal é a principal fonte); a do **tronco** forma gânglios sensitivos e simpáticos, medula suprarrenal, células de Schwann e melanócitos.\n\n**Derivados.** Resumidamente: neurônios dos **gânglios sensitivos** (raiz dorsal; parte dos gânglios dos nervos cranianos, com os placoides) e **autônomos** (simpáticos, parassimpáticos e **entéricos**); **células de Schwann** e satélites; **melanócitos**; **células cromafins** da medula suprarrenal; **ectomesênquima craniofacial** (ossos membranosos e grande parte das cartilagens dos arcos — as da laringe vêm sobretudo do mesoderma da placa lateral —, **odontoblastos/dentina**, derme da face); **estroma e endotélio da córnea**; **leptomeninges** rostrais (pia-máter e aracnoide); e o **septo aorticopulmonar** (crista cardíaca).\n\n**Células C da tireoide — uma divergência honesta.** Classicamente, as **células C (parafoliculares)**, produtoras de calcitonina, são atribuídas à crista neural, que povoaria o **corpo ultimofaríngeo** incorporado à tireoide. Estudos de linhagem em **camundongo** (marcação do endoderma por Sox17 × da crista por Wnt1-Cre) indicam, porém, origem **endodérmica** nessa espécie. Os dados humanos são indiretos; por isso, aqui, a divergência é apresentada e **não se afirma** a camada germinativa de origem no ser humano.\n\n**Neurocristopatias.** Doenças que atingem derivados da crista neural:\n- **Doença de Hirschsprung**: falha da colonização do intestino distal pela crista (vagal/sacral); gene principal **RET** (perda de função), além de **EDNRB/EDN3** e **SOX10**; herança em geral complexa, com predomínio masculino; associa-se à trissomia 21 e à Waardenburg-Shah.\n- **Síndrome da deleção 22q11.2 (DiGeorge/velocardiofacial)**: contribuição deficiente da **crista cardíaca** e das 3ª/4ª bolsas; **TBX1**; cardiopatia conotruncal, hipoplasia de timo e paratireoides; a microdeleção não aparece no cariótipo convencional (diagnóstico por microarranjo cromossômico, MLPA ou FISH).\n- **Treacher Collins**: deficiência de crista dos 1º/2º arcos por **estresse ribossômico** (**TCOF1**; mais raramente POLR1B, POLR1C ou POLR1D), com apoptose do neuroepitélio.\n- **Waardenburg**: surdez e distúrbios pigmentares (**PAX3**, **MITF**, **SOX10**); o tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.\n- **CHARGE**: coloboma, atresia de coanas, cardiopatia e anomalias de orelha; gene **CHD7**.\n- **Tumores**: **neuroblastoma** (crista simpática), **feocromocitoma/paraganglioma** (células cromafins) e, na **neurofibromatose tipo 1** (**NF1**), neurofibromas (células de Schwann) e manchas café com leite (melanócitos).",
   "pontosChave": [
     "A crista neural surge na borda das pregas neurais e dá origem a neurônios, glia, melanócitos, medula suprarrenal, ectomesênquima da face e septo aorticopulmonar.",
-    "Sua indução requer nível intermediário de BMP, com WNT e FGF; especificadores: PAX3/ZIC1 e depois SNAIL2, FOXD3, SOX9, SOX10.",
+    "Sua indução requer nível intermediário de BMP, com WNT e FGF; especificadores: PAX3/ZIC1 e depois SNAI2, FOXD3, SOX9, SOX10.",
     "A migração exige transição epitélio-mesênquima, com redução de caderinas.",
     "No tronco, a via ventral (metade rostral do esclerótomo) forma gânglios e medula suprarrenal (disposição segmentar); a dorsolateral forma melanócitos.",
     "Populações: craniana (face), cardíaca (septo aorticopulmonar), vagal/sacral (sistema nervoso entérico) e do tronco (gânglios, melanócitos, cromafins).",
@@ -117,7 +117,7 @@
     },
     {
       "id": "e22-especificacao",
-      "descricao": "Especificação da crista (SNAIL2, FOXD3, SOX10)",
+      "descricao": "Especificação da crista (SNAI2, FOXD3, SOX10)",
       "ordem": 2
     },
     {
@@ -140,49 +140,49 @@
     {
       "id": "doenca-hirschsprung-crista",
       "titulo": "Doença de Hirschsprung (neurocristopatia)",
-      "descricao": "Aganglionose de um segmento distal que sempre inclui o reto; atraso de mecônio, distensão e constipação grave, com risco de enterocolite. Associa-se à síndrome de Down e à Waardenburg-Shah.",
-      "mecanismo": "Falha da colonização craniocaudal do intestino pelos precursores entéricos da crista neural (vagal e sacral); gene RET (perda de função), além de EDNRB, EDN3 e SOX10."
+      "descricao": "Aganglionose de um segmento distal que sempre inclui o reto; atraso de mecônio, distensão e constipação grave, com risco de enterocolite. Predomina no sexo masculino; a maioria dos casos é isolada, com herança complexa (multifatorial). Associa-se à síndrome de Down e à Waardenburg-Shah, entre outras síndromes.",
+      "mecanismo": "Falha da colonização craniocaudal do intestino pelos precursores entéricos da crista neural (vagal e sacral); RET é o principal gene (variantes raras com perda de função e variantes comuns de baixa penetrância), além de EDNRB, EDN3 e SOX10. Nas famílias, as variantes de RET seguem padrão autossômico dominante com penetrância incompleta e dependente do sexo; EDNRB e EDN3 em heterozigose dão Hirschsprung isolado de baixa penetrância e, em homozigose, Waardenburg-Shah. Algumas variantes de RET do éxon 10 causam Hirschsprung e também NEM 2A."
     },
     {
       "id": "delecao-22q11-crista-cardiaca",
-      "titulo": "Deleção 22q11.2 e a crista cardíaca",
-      "descricao": "Cardiopatia conotruncal (tronco arterial comum, tetralogia de Fallot, interrupção do arco aórtico), hipoplasia de timo e paratireoides, fenda palatina e dismorfismo facial.",
-      "mecanismo": "Contribuição deficiente da crista neural cardíaca ao septo aorticopulmonar e das 3ª/4ª bolsas faríngeas; gene TBX1."
+      "titulo": "Síndrome da deleção 22q11.2 e a crista cardíaca",
+      "descricao": "Cardiopatia conotruncal (tronco arterial comum, tetralogia de Fallot, interrupção do arco aórtico), hipoplasia de timo (imunodeficiência de células T) e de paratireoides (hipocalcemia), fenda palatina ou insuficiência velofaríngea, dismorfismo facial, dificuldades de aprendizagem e maior risco de transtornos psiquiátricos. Herança autossômica dominante, com a maioria das deleções de novo. A microdeleção não é visível no cariótipo convencional: o diagnóstico é feito por microarranjo cromossômico ou MLPA (o FISH dirigido detecta a deleção típica, mas não deleções atípicas fora da região da sonda).",
+      "mecanismo": "Contribuição deficiente da crista neural cardíaca ao septo aorticopulmonar e das 3ª/4ª bolsas faríngeas. O principal gene da região para esse fenótipo é TBX1, expresso no endoderma e no mesoderma faríngeos (e não na própria crista), que age sobre a crista de forma indireta."
     },
     {
       "id": "treacher-collins-ribossomo",
       "titulo": "Síndrome de Treacher Collins",
-      "descricao": "Hipoplasia malar e mandibular, fissuras palpebrais oblíquas para baixo, colobomas das pálpebras inferiores e anomalias de orelha, com inteligência normal; herança autossômica dominante na maioria dos casos (TCOF1; mais raramente outros genes da biogênese ribossômica, como POLR1D e POLR1C).",
+      "descricao": "Hipoplasia malar e mandibular, fissuras palpebrais oblíquas para baixo, colobomas das pálpebras inferiores e anomalias de orelha, com inteligência normal. Herança autossômica dominante na maioria dos casos (TCOF1, o gene principal; mais raramente POLR1D ou POLR1B), com expressividade muito variável e grande parte dos casos de novo; uma minoria tem herança autossômica recessiva (variantes bialélicas de POLR1C ou POLR1D).",
       "mecanismo": "Deficiência de crista neural dos 1º e 2º arcos por falha da biogênese ribossômica (proteína treacle), com estabilização de p53 e apoptose do neuroepitélio."
     },
     {
       "id": "waardenburg-crista",
       "titulo": "Síndrome de Waardenburg",
-      "descricao": "Surdez neurossensorial e distúrbios pigmentares (mecha branca, heterocromia de íris; distopia dos cantos no tipo 1). O tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.",
-      "mecanismo": "Deficiência de derivados da crista neural, sobretudo melanócitos (e neurônios entéricos no tipo 4); genes PAX3 (tipos 1 e 3), MITF (tipo 2) e SOX10/EDNRB/EDN3 (tipo 4)."
+      "descricao": "Surdez neurossensorial e distúrbios pigmentares (mecha branca, heterocromia de íris); distopia dos cantos nos tipos 1 e 3, e anomalias dos membros superiores no tipo 3. O tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.",
+      "mecanismo": "Deficiência de derivados da crista neural, sobretudo melanócitos (e neurônios entéricos no tipo 4); genes PAX3 (tipos 1 e 3), MITF e SOX10, entre outros (tipo 2, geneticamente heterogêneo), e SOX10, EDNRB ou EDN3 (tipo 4). Os tipos 1 e 2 são autossômicos dominantes; no tipo 4, SOX10 é dominante, e EDNRB e EDN3 costumam ser recessivos."
     },
     {
       "id": "charge-chd7",
       "titulo": "Síndrome CHARGE",
       "descricao": "Coloboma, cardiopatia, atresia de coanas, restrição de crescimento/desenvolvimento, anomalias genitais e de orelha (incluindo hipoplasia dos canais semicirculares).",
-      "mecanismo": "Mutações em CHD7, que afeta a crista neural e os placoides ectodérmicos; sobrepõe-se em parte ao fenótipo da deleção 22q11.2."
+      "mecanismo": "Variantes patogênicas em CHD7 (herança autossômica dominante, na maioria de novo), gene que afeta a crista neural e os placoides ectodérmicos; sobrepõe-se em parte ao fenótipo da deleção 22q11.2."
     },
     {
       "id": "neuroblastoma",
       "titulo": "Neuroblastoma",
-      "descricao": "Tumor sólido extracraniano mais comum da primeira infância, de gânglios simpáticos ou medula suprarrenal; massa que cruza a linha média, produção de catecolaminas e, às vezes, síndrome de opsoclonia-mioclonia. A amplificação de MYCN indica pior prognóstico.",
+      "descricao": "Tumor sólido extracraniano mais comum da primeira infância, de gânglios simpáticos ou medula suprarrenal; massa que cruza a linha média, produção de catecolaminas e, às vezes, síndrome de opsoclonia-mioclonia. A amplificação de MYCN indica pior prognóstico. Uma minoria é hereditária (variantes germinativas de ALK ou PHOX2B). Os metabólitos urinários das catecolaminas (HVA e VMA) apoiam o diagnóstico, mas o rastreamento de lactentes por esses metabólitos, testado em estudos populacionais, aumentou os diagnósticos, sobretudo de tumores de bom prognóstico, sem reduzir a mortalidade, e não é usado como rastreamento populacional.",
       "mecanismo": "Proliferação maligna de neuroblastos simpáticos da crista neural."
     },
     {
       "id": "feocromocitoma",
       "titulo": "Feocromocitoma e paraganglioma",
-      "descricao": "Tumor de células cromafins com hipertensão, cefaleia, palpitações e sudorese (excesso de catecolaminas). Associa-se a NEM 2 (RET), von Hippel-Lindau, NF1 e paragangliomas por mutações de SDHx.",
+      "descricao": "Tumor de células cromafins com hipertensão, cefaleia, palpitações e sudorese (excesso de catecolaminas). Uma fração considerável dos casos é hereditária: NEM 2 (RET), von Hippel-Lindau (VHL), NF1 e síndromes de paraganglioma-feocromocitoma hereditário (SDHx: SDHA, SDHB, SDHC, SDHD, SDHAF2), entre outras.",
       "mecanismo": "Tumor das células cromafins (medula suprarrenal e paragânglios), derivadas da crista neural."
     },
     {
       "id": "neurofibromatose-nf1",
       "titulo": "Neurofibromatose tipo 1 (NF1)",
-      "descricao": "Manchas café com leite, neurofibromas, nódulos de Lisch, efélides axilares/inguinais e risco de glioma óptico; herança autossômica dominante.",
+      "descricao": "Manchas café com leite, neurofibromas, nódulos de Lisch, efélides axilares/inguinais e risco de glioma das vias ópticas; herança autossômica dominante, com penetrância completa, expressividade muito variável e cerca de metade dos casos de novo. Critérios diagnósticos revisados (Legius et al., 2021) — sem genitor afetado, exigem-se dois ou mais destes: (1) seis ou mais manchas café com leite (> 5 mm antes da puberdade; > 15 mm depois); (2) efélides axilares ou inguinais (ao menos um dos dois achados pigmentares deve ser bilateral); (3) dois ou mais neurofibromas de qualquer tipo ou um plexiforme; (4) glioma das vias ópticas; (5) dois ou mais nódulos de Lisch ou duas ou mais anomalias da coroide; (6) lesão óssea característica (displasia do esfenoide, encurvamento anterolateral da tíbia ou pseudoartrose de osso longo); (7) variante patogênica heterozigótica de NF1 com fração alélica de 50% em tecido aparentemente normal. Com um genitor que preenche os critérios, basta um. Com apenas manchas e efélides, considerar também a síndrome de Legius (SPRED1).",
       "mecanismo": "Perda da neurofibromina (supressor tumoral da via RAS) em derivados da crista neural — células de Schwann (neurofibromas) e melanócitos (manchas)."
     }
   ],
@@ -445,7 +445,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "(d) Correta: na doença de Hirschsprung, os precursores entéricos derivados da crista neural (sobretudo vagal) não colonizam o segmento distal; o gene RET (perda de função) é a principal causa, ao contrário do ganho de função de RET das neoplasias endócrinas múltiplas (NEM 2). (a) a recanalização não explica aganglionose. (b) não há excesso de melanócitos; PAX6 é do olho. (c) o defeito não é do tubo neural.",
+      "explicacao": "(d) Correta: na doença de Hirschsprung, os precursores entéricos derivados da crista neural (sobretudo vagal) não colonizam o segmento distal; RET é o principal gene associado (variantes com perda de função), embora a herança costume ser complexa; na neoplasia endócrina múltipla tipo 2 (NEM 2), ao contrário, as variantes de RET têm ganho de função (algumas do éxon 10 causam as duas condições). (a) a recanalização não explica aganglionose. (b) não há excesso de melanócitos; PAX6 é do olho. (c) o defeito não é do tubo neural.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -480,7 +480,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: na síndrome de Treacher Collins, variantes em TCOF1 reduzem a biogênese de ribossomos, estabilizam p53 e levam à apoptose do neuroepitélio, com déficit de crista neural para os 1º e 2º arcos — daí a hipoplasia malar/mandibular, os colobomas palpebrais e as anomalias de orelha, com inteligência normal e herança autossômica dominante. (b) o excesso de crista cardíaca não gera esse quadro facial. (c) a aganglionose é a doença de Hirschsprung. (d) a falta de melanócitos cocleares isolada não explica a face.",
+      "explicacao": "(a) Correta: na síndrome de Treacher Collins, variantes em TCOF1 reduzem a biogênese de ribossomos, estabilizam p53 e levam à apoptose do neuroepitélio, com déficit de crista neural para os 1º e 2º arcos — daí a hipoplasia malar/mandibular, os colobomas palpebrais e as anomalias de orelha, com inteligência normal; a mãe com traços mais leves ilustra a herança autossômica dominante com expressividade variável (risco de 50% a cada gestação). (b) o excesso de crista cardíaca não gera esse quadro facial. (c) a aganglionose é a doença de Hirschsprung. (d) a falta de melanócitos cocleares isolada não explica a face.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -489,7 +489,7 @@
         "ribossomo",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17; GeneReviews (Treacher Collins)"
     },
     {
       "id": "emb-22-q10",
@@ -564,7 +564,7 @@
     {
       "id": "emb-22-q12",
       "tipo": "multipla",
-      "contexto": "Lactente com massa abdominal que cruza a linha média, nódulos subcutâneos azulados, metabólitos urinários das catecolaminas (HVA/VMA) elevados e, por vezes, movimentos oculares caóticos (opsoclonia-mioclonia).",
+      "contexto": "Lactente com massa abdominal que cruza a linha média, nódulos subcutâneos azulados, metabólitos urinários das catecolaminas (HVA/VMA) elevados e movimentos oculares rápidos e caóticos com mioclonias (opsoclonia-mioclonia).",
       "enunciado": "A origem embrionária do tumor é:",
       "alternativas": [
         {
@@ -619,7 +619,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: o feocromocitoma origina-se das células cromafins da medula suprarrenal, derivadas da crista neural; produz catecolaminas e associa-se a NEM 2 (RET), von Hippel-Lindau, NF1 e paragangliomas por SDHx. (b) o córtex suprarrenal é mesodérmico. (c) a crista cardíaca forma o septo do trato de saída, não células cromafins abdominais. (d) o endoderma do intestino anterior origina epitélios (p. ex., timo, paratireoides, fígado), não células cromafins.",
+      "explicacao": "(a) Correta: o feocromocitoma origina-se das células cromafins da medula suprarrenal, derivadas da crista neural; produz catecolaminas e associa-se a NEM 2 (RET), von Hippel-Lindau, NF1 e às síndromes de paraganglioma-feocromocitoma hereditário (SDHx). (b) o córtex suprarrenal é mesodérmico. (c) a crista cardíaca forma o septo do trato de saída, não células cromafins abdominais. (d) o endoderma do intestino anterior origina epitélios (p. ex., timo, paratireoides, fígado), não células cromafins.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -825,7 +825,7 @@
         },
         {
           "id": "2",
-          "texto": "Especificação da crista (SNAIL2, FOXD3, SOX10)"
+          "texto": "Especificação da crista (SNAI2, FOXD3, SOX10)"
         },
         {
           "id": "3",
@@ -1019,7 +1019,7 @@
           "direita": "RET (falha de colonização entérica)"
         },
         {
-          "esquerda": "Deleção 22q11.2 (DiGeorge)",
+          "esquerda": "Síndrome da deleção 22q11.2",
           "direita": "TBX1 e crista cardíaca"
         },
         {
@@ -1144,21 +1144,64 @@
     {
       "obra": "Jones NC, et al. Prevention of the neurocristopathy Treacher Collins syndrome through inhibition of p53 function. Nat Med. 2008;14(2):125–133",
       "capitulo": "Resgate por inibição de p53 em camundongo (experimental)"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "6 — Bases cromossômicas e genômicas das doenças (síndrome da deleção 22q11.2; diagnóstico de microdeleções)"
+    },
+    {
+      "obra": "Óskarsdóttir S, et al. Updated clinical practice recommendations for managing children with 22q11.2 deletion syndrome. Genet Med. 2023;25(3):100338",
+      "capitulo": "Diagnóstico, quadro clínico e herança da síndrome da deleção 22q11.2"
+    },
+    {
+      "obra": "Amiel J, et al. Hirschsprung disease, associated syndromes and genetics: a review. J Med Genet. 2008;45(1):1–14",
+      "capitulo": "Genes (RET, EDNRB, EDN3, SOX10), herança e síndromes associadas"
+    },
+    {
+      "obra": "Pingault V, et al. Review and update of mutations causing Waardenburg syndrome. Hum Mutat. 2010;31(4):391–406",
+      "capitulo": "Genes dos tipos 1 a 4 da síndrome de Waardenburg"
+    },
+    {
+      "obra": "Vissers LE, et al. Mutations in a new member of the chromodomain gene family cause CHARGE syndrome. Nat Genet. 2004;36(9):955–957",
+      "capitulo": "CHD7 na síndrome CHARGE"
+    },
+    {
+      "obra": "GeneReviews® (NCBI Bookshelf, NBK1532). Treacher Collins syndrome, atualização de 2024",
+      "capitulo": "Genes (TCOF1, POLR1B, POLR1C, POLR1D) e modos de herança"
+    },
+    {
+      "obra": "Legius E, et al. Revised diagnostic criteria for neurofibromatosis type 1 and Legius syndrome: an international consensus recommendation. Genet Med. 2021;23(8):1506–1513",
+      "capitulo": "Critérios diagnósticos revisados da NF1"
+    },
+    {
+      "obra": "Lenders JW, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2014;99(6):1915–1942",
+      "capitulo": "Síndromes hereditárias associadas (NEM 2, VHL, NF1, SDHx)"
+    },
+    {
+      "obra": "Woods WG, et al. Screening of infants and mortality due to neuroblastoma. N Engl J Med. 2002;346(14):1041–1046; Schilling FH, et al. Neuroblastoma screening at one year of age. N Engl J Med. 2002;346(14):1047–1053",
+      "capitulo": "Rastreamento populacional de neuroblastoma por metabólitos urinários: sem redução de mortalidade"
+    },
+    {
+      "obra": "Mossé YP, et al. Identification of ALK as a major familial neuroblastoma predisposition gene. Nature. 2008;455(7215):930–935",
+      "capitulo": "Neuroblastoma hereditário (ALK; PHOX2B)"
     }
   ],
   "notasDivergencia": [
     "Origem das células C (parafoliculares): atribuição clássica à crista neural (via corpo ultimofaríngeo) × origem endodérmica demonstrada por linhagem em camundongo (Johansson et al., Development 2015, dev.126581; marcação Sox17 do endoderma × Wnt1-Cre da crista). A divergência é registrada; as questões não afirmam a camada germinativa no ser humano (coerente com emb-12 e emb-25).",
     "Cartilagens da laringe (4º/6º arcos): embora os arcos sejam povoados pela crista neural, suas cartilagens derivam sobretudo do mesoderma da placa lateral (ver emb-12); por isso o texto diz que a crista forma 'grande parte', e não todo, o esqueleto dos arcos.",
     "Colonização entérica rostrocaudal concluída por volta da 7ª semana (Wallace & Burns, Cell Tissue Res 2005, em embriões humanos); a contribuição relativa da crista sacral varia entre as fontes.",
-    "Os limites exatos entre a contribuição da crista neural e a do mesoderma para alguns ossos do crânio variam entre estudos (modelos animais), como registrado em emb-19."
+    "Os limites exatos entre a contribuição da crista neural e a do mesoderma para alguns ossos do crânio variam entre estudos (modelos animais), como registrado em emb-19.",
+    "Nomenclatura (revisor de genética clínica, 2026-11-09): o símbolo HGNC do especificador da crista é SNAI2 (proteína SLUG; 'Snail2' em modelos animais). A denominação recomendada é 'síndrome da deleção 22q11.2'; DiGeorge e velocardiofacial ficam como nomes históricos."
   ],
   "incertezas": [
     "O resgate do fenótipo de Treacher Collins pela inibição de p53 (pifitrina-α) foi demonstrado em camundongo (Jones et al., Nature Medicine 2008); é descrito como achado experimental, sem aplicação clínica.",
-    "Genótipos de Waardenburg (tipos 1–4) e de CHARGE (CHD7) seguem a literatura de genética clínica; prevalências não foram conferidas e foram omitidas. Revisor de embriologia (2026-11-09): genes conferidos com a literatura de genética clínica (Waardenburg: PAX3 nos tipos 1 e 3; MITF como principal no tipo 2, que também tem SOX10 e SNAI2; EDNRB, EDN3 e SOX10 no tipo 4 — Pingault et al., Hum Mutat 2010; CHARGE: CHD7 — Vissers et al., Nat Genet 2004); prevalências continuam omitidas.",
-    "As associações de feocromocitoma/paraganglioma (NEM 2, von Hippel-Lindau, NF1, SDHx) seguem a prática clínica atual e não foram quantificadas.",
+    "Genótipos de Waardenburg (tipos 1–4) e de CHARGE (CHD7) seguem a literatura de genética clínica; prevalências não foram conferidas e foram omitidas. Revisor de embriologia (2026-11-09): genes conferidos com a literatura de genética clínica (Waardenburg: PAX3 nos tipos 1 e 3; MITF como principal no tipo 2, que também tem SOX10 e SNAI2; EDNRB, EDN3 e SOX10 no tipo 4 — Pingault et al., Hum Mutat 2010; CHARGE: CHD7 — Vissers et al., Nat Genet 2004); prevalências continuam omitidas. Revisor de genética clínica (2026-11-09): no tipo 2, MITF e SOX10 aparecem com frequências semelhantes (Pingault 2010), por isso o texto passou a citar os dois; o modo de herança do tipo 4 (SOX10 dominante; EDNRB e EDN3 em geral recessivos) foi acrescentado.",
+    "As associações de feocromocitoma/paraganglioma (NEM 2, von Hippel-Lindau, NF1, SDHx) seguem a prática clínica atual e não foram quantificadas. Revisor de genética clínica (2026-11-09): a diretriz da Endocrine Society (Lenders et al., 2014) recomenda considerar teste genético germinativo em todos os pacientes com feocromocitoma/paraganglioma; a conduta não foi posta no texto do aluno. Conferir se a diretriz foi atualizada.",
     "A proporção de casos de Hirschsprung por gene (RET e outros) e a contribuição de melanócitos cocleares não foram quantificadas.",
     "O modelo de 'nível intermediário de BMP' para a borda neural vem sobretudo de anfíbios e peixe-zebra; em amniotas a contribuição relativa de BMP, WNT e FGF é debatida. O conteúdo o usa de forma qualitativa, como Sadler.",
-    "Idades da colonização entérica (≈4ª e ≈7ª semanas, q24): Wallace & Burns (2005) datam os embriões em semanas; o revisor não confirmou se a contagem é pós-concepção ou desde a DUM (presumida pós-concepção, pelo estadiamento embrionário)."
+    "Idades da colonização entérica (≈4ª e ≈7ª semanas, q24): Wallace & Burns (2005) datam os embriões em semanas; o revisor não confirmou se a contagem é pós-concepção ou desde a DUM (presumida pós-concepção, pelo estadiamento embrionário).",
+    "Revisor de genética clínica (2026-11-09): resumos secundários indicam que a diretriz da ATA para carcinoma medular de tireoide (Wells et al., Thyroid 2015) aborda a pesquisa de variantes de RET do éxon 10 em pacientes com Hirschsprung (o texto integral não pôde ser aberto nesta sessão); o texto do aluno só afirma o fato genético (variantes do éxon 10 causam as duas condições), sem conduta. Conferir a redação da recomendação antes de incluí-la.",
+    "Revisor de genética clínica (2026-11-09): rastreamento de neuroblastoma — os estudos populacionais citados (Quebec e Alemanha, NEJM 2002) não mostraram redução de mortalidade; não foi consultada diretriz brasileira específica. As proporções (fração hereditária de neuroblastoma e de feocromocitoma/paraganglioma; deleções de novo em 22q11.2; casos de novo em NF1 e Treacher Collins) ficaram qualitativas, exceto 'cerca de metade' em NF1 (Legius 2021 e literatura de genética clínica)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

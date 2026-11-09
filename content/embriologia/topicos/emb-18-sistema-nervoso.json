@@ -816,7 +816,7 @@
       ],
       "ordemCorreta": ["2", "6", "4", "1", "5", "7", "3"],
       "explicacao": "A luz do tubo neural forma o sistema ventricular: ventrículos laterais (telencéfalo) → forames interventriculares → terceiro ventrículo (diencéfalo) → aqueduto do mesencéfalo → quarto ventrículo (rombencéfalo) → aberturas mediana e laterais do quarto ventrículo → espaço subaracnóideo, de onde o liquor é reabsorvido pelas granulações aracnóideas. Esse trajeto explica o padrão das hidrocefalias: na estenose do aqueduto, causa congênita mais comum, dilatam-se os ventrículos laterais e o terceiro, com quarto ventrículo normal; a obstrução das aberturas do quarto ventrículo dilata também o quarto; a falha das granulações causa hidrocefalia comunicante.",
-      "dificuldade": 4,
+      "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["avancado", "sistema-ventricular", "liquor", "vesiculas-encefalicas", "hidrocefalia", "anatomia"],
       "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"

@@ -754,7 +754,7 @@
       "enunciado": "Em consequência da ressegmentação dos esclerótomos, as artérias intersegmentares do tronco (no adulto, as intercostais posteriores e as lombares) cruzam a parte média dos corpos vertebrais, enquanto os nervos espinais saem pelos forames intervertebrais, junto aos discos.",
       "correta": true,
       "explicacao": "Verdadeiro. Antes da ressegmentação, as artérias intersegmentares passam entre os esclerótomos. Como cada corpo vertebral se forma da metade caudal de um esclerótomo e da metade cranial do seguinte, essas artérias passam a cruzar a parte média dos corpos vertebrais; no tórax e no abdome, elas persistem como artérias intercostais posteriores e lombares. Os nervos espinais, segmentares como os miótomos, ficam junto aos discos intervertebrais e saem pelos forames, e os miótomos passam a cruzar os discos, o que permite mover a coluna.",
-      "dificuldade": 4,
+      "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["avancado", "ressegmentacao", "arterias-intersegmentares", "nervos-espinais", "anatomia"],
       "referencia": "Sadler 14ª ed., cap. 10 e 13; Moore 11ª ed., cap. 13 e 14"
@@ -772,7 +772,7 @@
         { "esquerda": "Derme da pele do dorso", "direita": "Dermátomo do somito" }
       ],
       "explicacao": "Numa hérnia discal, o núcleo pulposo é o remanescente da notocorda, que degenera nos corpos vertebrais e persiste entre eles, e o anel fibroso deriva do esclerótomo. Os eretores da espinha derivam do epímero (ramos dorsais primários). Os músculos dos membros, como o bíceps braquial, vêm de células da borda hipaxial do dermomiótomo que migram para o broto, enquanto ossos, cartilagens e conjuntivo do membro, como o úmero, vêm do mesoderma lateral somático. A derme do dorso deriva dos dermátomos dos somitos (a dos membros e da parede ventral, do mesoderma lateral).",
-      "dificuldade": 4,
+      "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["avancado", "somitos", "derivados", "notocorda", "integracao", "anatomia"],
       "referencia": "Moore 11ª ed., cap. 14, 15 e 16; Sadler 14ª ed., cap. 10, 11 e 12"
