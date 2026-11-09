@@ -99,7 +99,35 @@ Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologi
 
 ## H. Para as próximas revisões (rede do ambiente)
 
-Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross), kdigo.org, jbp.org.br, www.scienceopen.com (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
+Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross), kdigo.org, jbp.org.br, www.scienceopen.com, www.sbp.com.br (de novo), pubmed.ncbi.nlm.nih.gov, uroweb.org, isuog.org, www.qxmd.com (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
+
+## I. Aprofundamento da embriologia (tópicos 21–25, camada avançada e 3D cardiovascular)
+
+Relatórios: `content/revisoes/av1-*` a `av4-*` (camada avançada, 100 questões de dificuldade 4–5 nos tópicos 1–20), `e21-22-*`, `e23-24-*`, `e25-*` (tópicos novos) e `estagios-3d-cardiovascular.md`. Nenhum revisor encontrou gabarito errado; todos os itens abaixo são de conferência ou decisão.
+
+**I1. Decisões suas**
+- Datação: emb-01-q26 passou a ciclo de 37 dias para valer por todos os critérios (ACOG CO 700, FEBRASGO, consenso CBR/FEBRASGO, guias que aceitam 3–7 dias). Aprovar.
+- Ácido fólico na prevenção de recorrência de DTN: 4 mg (FEBRASGO) × 5 mg (MS); o texto usa "4 a 5 mg/dia".
+- Sequestro pulmonar (emb-14-q27): vinheta intralobar mantida (origem adquirida discutida); trocar por extralobar?
+- Células C da tireoide: o conteúdo não afirma a camada de origem no ser humano (crista neural × endoderma). Confirmar.
+- Nomenclatura de genes: padrão "símbolo HGNC (nome antigo)" adotado em emb-21/22 (TBXT, POU5F1…). Estender à disciplina?
+- Diabetes insípido × "deficiência de arginina-vasopressina" (AVP-D, 2022) em emb-25 e emb-18.
+- Nível de conduta em tópicos de embriologia (PGE1, clampeamento, hipotermia, levotiroxina, Ladd): manter ou reduzir.
+- Surfactante: emb-08 e emb-14 agora usam a faixa 20ª–24ª semana após a fertilização; se Moore der valor único, desfazer o empate na linha do tempo do emb-08.
+- Herniação fisiológica até a 12ª semana após a fertilização (~14 de IG) no emb-08: na clínica, ~12 semanas de IG já levanta suspeita de onfalocele. Ajustar a redação?
+
+**I2. Diretrizes e documentos a conferir no texto integral (sites bloqueados na rede da sessão)**
+- SBP: reanimação neonatal 2026 (clampeamento abaixo de 34 semanas: ≥ 30 ou ≥ 60 s?; proteção térmica), Manual de Orientação 2022 do teste do coraçãozinho (nº, limites, ≥ 35 semanas), documento nº 232 (genitália atípica, 2026), hipoglicemia neonatal nº 16 (2022), acondroplasia (2023).
+- Ministério da Saúde: PCDT hipotireoidismo congênito (Portaria Conjunta nº 5/2021: "sem esperar exames de imagem"? conduta conforme TSH em papel-filtro), manual de triagem neonatal 2016 (coleta 3º–5º dia), Portaria SCTIE nº 20/2014 (oximetria), triagem auditiva 2012 (rubéola como indicador de risco), manual de gestação de alto risco 2022 (datação; epilepsia).
+- FEBRASGO/CBR: limites de redatação por ultrassonografia de 1º trimestre.
+- Internacionais: ACOG CO 723 (radiação; limiar de 50 mGy), ACOG PB 226/227, ISUOG 2023 (cardíaco fetal), Diretriz Brasileira de Cardiologia Fetal (SBC 2019), ICMART 4ª ed. (2025/2026), Lee 2016 (DDS), EAU/ESPU (Weigert–Meyer), Endocrine Society 2014 (feocromocitoma: teste germinativo), ATA 2015 (RET).
+
+**I3. Conferir no livro**
+- Moore 11ª: Tabela 5-1 (CCN × Carnegie; base de emb-07-q32 — curvas de ultrassonografia dão ~6s6d de IG para 9 mm), caps. 6/10 (surfactante), atribuições na bolsa de Rathke e zona reticular (emb-25), "12 semanas" dos andrógenos (emb-10-q34).
+- Sadler 14ª: cap. 13 (~80% de saturação na veia umbilical), caps. 1/3/5/6 (iPS, lateralidade, HOX).
+- Thompson & Thompson 8ª (acondroplasia: ~80% de casos novos), Carlson 6ª ("Clivagem e implantação").
+- Mola 46,YY "nunca descrita": falta fonte primária (emb-05-q30).
+- Citações de memória em emb-21/22 (11 artigos; volume e páginas).
 
 ## Como registrar a sua conferência
 
