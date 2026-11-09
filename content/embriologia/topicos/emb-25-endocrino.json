@@ -1,0 +1,1368 @@
+{
+  "id": "emb-25-endocrino",
+  "disciplina": "embriologia",
+  "ordem": 25,
+  "titulo": "Sistema endócrino",
+  "subtitulo": "Hipófise, tireoide, paratireoides, suprarrenais, pâncreas endócrino, pineal e placenta endócrina",
+  "periodo": {
+    "diaInicio": 21,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever a dupla origem da hipófise (bolsa de Rathke e infundíbulo), as partes da adeno e da neuro-hipófise e o destino dos restos da bolsa de Rathke.",
+    "Explicar a origem e a descida da tireoide e relacionar falhas desse processo ao cisto do ducto tireoglosso, à tireoide ectópica e ao hipotireoidismo congênito.",
+    "Relacionar o início da função tireoidiana fetal e a passagem de T4 materno à apresentação clínica do hipotireoidismo congênito e à sua triagem neonatal.",
+    "Identificar a origem das paratireoides e das células C e explicar as ectopias paratireoidianas e o hipoparatireoidismo da deleção 22q11.2.",
+    "Descrever a dupla origem da suprarrenal, a zona fetal e sua participação na unidade fetoplacentária.",
+    "Explicar a origem das ilhotas pancreáticas e o mecanismo da hiperinsulinemia fetal no diabetes materno (hipótese de Pedersen).",
+    "Relacionar os hormônios placentários e a transição lúteo-placentária ao controle endócrino da gestação e da diferenciação masculina.",
+    "Analisar quadros neonatais (hipopituitarismo congênito, hipotireoidismo congênito, hipocalcemia, hipoglicemia do filho de mãe diabética) a partir da embriologia endócrina."
+  ],
+  "resumo": "**Visão geral.** As glândulas endócrinas vêm de quase todos os tecidos embrionários: **ectoderma do estomodeu** (adeno-hipófise), **neuroectoderma do diencéfalo** (neuro-hipófise e pineal), **endoderma** da faringe e do duodeno (tireoide, paratireoides e ilhotas pancreáticas), **mesotélio celômico** (córtex suprarrenal), **crista neural** (medula suprarrenal) e **trofoblasto** (placenta endócrina). A origem explica a anatomia, as ectopias e vários quadros neonatais.\n\n**Hipófise.** Tem dupla origem. A **bolsa de Rathke** evagina-se do teto do **estomodeu**, à frente da membrana bucofaríngea (3ª–4ª semana), e cresce ao encontro do **infundíbulo**, projeção ventral do assoalho do **diencéfalo**; perde a conexão com a cavidade oral entre a 6ª semana e o fim do 2º mês. Sua parede anterior forma a **parte distal** (lobo anterior) e a **parte tuberal**, que envolve a haste; a posterior forma a **parte intermédia**, rudimentar no ser humano. O infundíbulo forma a **neuro-hipófise** (eminência mediana, haste infundibular e **parte nervosa**), cujos pituícitos são gliais: **ocitocina** e **vasopressina** são sintetizadas em neurônios dos núcleos supraóptico e paraventricular, cujos axônios chegam à parte nervosa. Restos do pedículo da bolsa podem persistir no teto da faringe (**hipófise faríngea**) ou originar o **craniofaringioma**.\n\n**Tireoide.** Para Moore, é a primeira glândula endócrina a surgir (~24 dias): espessamento endodérmico mediano no assoalho da faringe, no ponto depois marcado pelo **forame cego**. Desce ventralmente ao hioide e às cartilagens laríngeas, presa à língua pelo **ducto tireoglosso**, e chega diante da traqueia na **7ª semana**. Restos do ducto formam **cistos medianos**; falhas da descida deixam **tireoide ectópica**, sobretudo **lingual ou sublingual**, às vezes o único tecido tireoidiano. O **coloide** surge nos folículos por volta da 11ª semana (Moore; fim do 3º mês para Sadler), quando começam a captação de iodo e a síntese hormonal. Antes disso, o feto depende do **T4 materno**, que atravessa a placenta em quantidade limitada, mas importante para o encéfalo; o eixo hipotálamo-hipófise-tireoide fetal amadurece na metade da gestação.\n\n**Hipotireoidismo congênito.** No primário permanente, a causa mais comum é a **disgenesia** — ectopia (a forma mais frequente), agenesia ou hipoplasia —; a disormonogênese, com glândula tópica, vem em seguida. Como o T4 materno protege parcialmente o feto, a maioria dos afetados **não tem sinais ao nascer**, e o diagnóstico depende da **triagem neonatal**: no Programa Nacional de Triagem Neonatal, o teste do pezinho (TSH em sangue seco) é colhido entre o **3º e o 5º dia de vida**, a partir de 48 horas, depois do pico fisiológico de TSH do parto. Confirmado o diagnóstico (TSH e T4 livre séricos), a **levotiroxina** começa o mais cedo possível, idealmente nos **primeiros 14 dias de vida**, sem esperar exames de imagem (PCDT do Ministério da Saúde, 2021). A triagem por TSH não detecta o hipotireoidismo central.\n\n**Células C e paratireoides.** O **corpo ultimofaríngeo** (4ª bolsa) funde-se à tireoide e traz as **células parafoliculares (C)**, que secretam calcitonina e originam o carcinoma medular; sua camada germinativa é controversa (crista neural na visão clássica; endoderma em estudos de linhagem). A parte dorsal da **3ª bolsa** forma a **paratireoide inferior**, que desce com o timo e termina abaixo da **superior** (4ª bolsa); por isso a inferior é a mais sujeita a ectopia, no timo ou no mediastino. Na **deleção 22q11.2**, a hipoplasia das paratireoides causa hipocalcemia com PTH baixo.\n\n**Suprarrenal.** O **córtex** surge na 5ª (Sadler) ou 6ª semana (Moore), quando células do **mesotélio** entre a raiz do mesentério dorsal e a gônada proliferam e formam o **córtex fetal**; uma segunda onda envolve-o e forma o **córtex definitivo**. A **medula** vem da **crista neural**: células simpatoadrenais invadem a face medial do córtex fetal e tornam-se **células cromafins**, neurônios pós-ganglionares modificados; o cortisol que chega pelo sangue do córtex induz a enzima que converte noradrenalina em adrenalina. A suprarrenal fetal é proporcionalmente muito maior que a do adulto por causa da **zona fetal**, que, sob ACTH fetal, secreta **DHEA-S**: o fígado fetal hidroxila-o e a placenta, que não tem 17α-hidroxilase, converte-o em **estriol** (**unidade fetoplacentária**). Após o nascimento, a zona fetal regride rapidamente; a zonação adulta completa-se anos depois. Como córtex e gônadas surgem de epitélio celômico vizinho, pode haver **restos adrenais** no trajeto das gônadas, que crescem sob ACTH elevado na **hiperplasia adrenal congênita** (ver emb-17).\n\n**Pâncreas endócrino.** As **ilhotas** surgem do parênquima endodérmico no 3º mês (Sadler); a insulina fetal começa por volta da 10ª semana (Moore) ou do 5º mês (Sadler). A glicose atravessa a placenta; a insulina materna, não. Pela **hipótese de Pedersen**, a hiperglicemia materna causa hiperglicemia fetal, hiperplasia das células β e **hiperinsulinemia**, que leva à **macrossomia**; no clampeamento do cordão, a glicose deixa de chegar, o hiperinsulinismo persiste e surge **hipoglicemia neonatal**. As malformações do diabetes pré-gestacional mal controlado têm outro mecanismo: hiperglicemia na organogênese, antes de haver insulina fetal.\n\n**Pineal.** Divertículo mediano da parte caudal do **teto do diencéfalo**, que se evagina por volta da 7ª semana (Sadler) e torna-se maciço; os pinealócitos secretam melatonina.\n\n**Placenta e gônadas.** O sinciciotrofoblasto produz **hCG**, que mantém o **corpo lúteo** até a **transição lúteo-placentária** (~7–9 semanas de idade gestacional) e estimula as células de Leydig no início da diferenciação masculina; **progesterona**, a partir do colesterol materno; **estrogênios**, dependentes de precursores fetais; e **hPL**, diabetogênico (ver emb-09). Depois, o **LH fetal** mantém a testosterona que faz o pênis crescer: por isso o hipopituitarismo congênito causa **micropênis**, mas não genitália atípica (ver emb-17).",
+  "pontosChave": [
+    "Adeno-hipófise: bolsa de Rathke (ectoderma do teto do estomodeu); neuro-hipófise: infundíbulo (neuroectoderma do assoalho do diencéfalo).",
+    "A parede anterior da bolsa de Rathke forma as partes distal e tuberal; a posterior, a parte intermédia; restos do pedículo formam a hipófise faríngea e o craniofaringioma.",
+    "A tireoide surge do endoderma do assoalho da faringe (forame cego), desce presa ao ducto tireoglosso e chega diante da traqueia na 7ª semana.",
+    "O coloide aparece nos folículos tireoidianos por volta da 11ª semana; antes disso o feto depende do T4 materno, que ainda o protege parcialmente até o parto.",
+    "A disgenesia tireoidiana (sobretudo a ectopia) é a causa mais comum de hipotireoidismo congênito primário permanente; a maioria dos afetados não tem sinais ao nascer.",
+    "Teste do pezinho entre o 3º e o 5º dia de vida; confirmado o hipotireoidismo congênito, levotiroxina idealmente nos primeiros 14 dias, sem esperar exames de imagem (PCDT/MS, 2021).",
+    "Paratireoide inferior: 3ª bolsa (desce com o timo e é a mais sujeita a ectopia); superior: 4ª bolsa; as células C chegam pelo corpo ultimofaríngeo.",
+    "Córtex suprarrenal: mesotélio celômico; medula suprarrenal: crista neural (células cromafins).",
+    "A zona fetal da suprarrenal secreta DHEA-S, que a placenta converte em estriol (unidade fetoplacentária), e regride rapidamente após o nascimento.",
+    "As ilhotas pancreáticas são endodérmicas; a insulina fetal surge no período fetal, e a insulina materna não atravessa a placenta.",
+    "Hipótese de Pedersen: hiperglicemia materna → hiperglicemia fetal → hiperinsulinemia fetal → macrossomia e hipoglicemia neonatal.",
+    "A hCG mantém o corpo lúteo até a transição lúteo-placentária (~7–9 semanas de IG) e estimula a testosterona fetal inicial; depois, o LH fetal sustenta o crescimento do pênis."
+  ],
+  "estruturas": [
+    {
+      "id": "bolsa-de-rathke",
+      "nome": "Bolsa de Rathke",
+      "sinonimos": [
+        "divertículo hipofisário"
+      ],
+      "definicao": "Evaginação do ectoderma do teto do estomodeu, imediatamente à frente da membrana bucofaríngea, que cresce em direção ao infundíbulo.",
+      "origem": "Ectoderma do estomodeu.",
+      "destino": "Adeno-hipófise (partes distal, tuberal e intermédia); perde a conexão com a cavidade oral entre a 6ª semana e o fim do 2º mês; restos do pedículo podem formar a hipófise faríngea e o craniofaringioma."
+    },
+    {
+      "id": "infundibulo",
+      "nome": "Infundíbulo",
+      "sinonimos": [
+        "divertículo neuro-hipofisário"
+      ],
+      "definicao": "Projeção ventral do assoalho do diencéfalo que encontra a bolsa de Rathke.",
+      "origem": "Neuroectoderma do diencéfalo.",
+      "destino": "Neuro-hipófise: eminência mediana, haste infundibular e parte nervosa."
+    },
+    {
+      "id": "adeno-hipofise",
+      "nome": "Adeno-hipófise",
+      "sinonimos": [],
+      "definicao": "Parte glandular da hipófise, formada pela parte distal (lobo anterior), pela parte tuberal, que envolve a haste infundibular, e pela parte intermédia, rudimentar no ser humano.",
+      "origem": "Bolsa de Rathke: a parede anterior forma as partes distal e tuberal; a posterior, a parte intermédia.",
+      "destino": "A parte distal secreta GH, prolactina, TSH, ACTH, FSH e LH."
+    },
+    {
+      "id": "neuro-hipofise",
+      "nome": "Neuro-hipófise",
+      "sinonimos": [],
+      "definicao": "Parte neural da hipófise (eminência mediana, haste infundibular e parte nervosa), formada por pituícitos, células gliais, e por axônios de neurônios hipotalâmicos.",
+      "origem": "Infundíbulo (neuroectoderma do diencéfalo).",
+      "destino": "Armazena e libera ocitocina e vasopressina, sintetizadas nos núcleos supraóptico e paraventricular do hipotálamo."
+    },
+    {
+      "id": "hipofise-faringea",
+      "nome": "Hipófise faríngea",
+      "sinonimos": [],
+      "definicao": "Tecido adeno-hipofisário situado na mucosa do teto da faringe.",
+      "origem": "Resto do pedículo da bolsa de Rathke."
+    },
+    {
+      "id": "primordio-tireoide",
+      "nome": "Primórdio da tireoide",
+      "sinonimos": [
+        "divertículo tireoidiano"
+      ],
+      "definicao": "Espessamento endodérmico mediano no assoalho da faringe primitiva que se transforma em divertículo bilobado e desce pelo pescoço.",
+      "origem": "Endoderma do assoalho da faringe, no local do futuro forame cego.",
+      "destino": "Células foliculares da tireoide, anterior à traqueia a partir da 7ª semana."
+    },
+    {
+      "id": "ducto-tireoglosso",
+      "nome": "Ducto tireoglosso",
+      "sinonimos": [],
+      "definicao": "Ducto estreito que liga a tireoide em descida à língua.",
+      "destino": "Normalmente degenera; a extremidade distal pode formar o lobo piramidal; restos originam cistos medianos, que podem conter tecido tireoidiano."
+    },
+    {
+      "id": "forame-cego",
+      "nome": "Forame cego da língua",
+      "sinonimos": [],
+      "definicao": "Pequena fosseta no ápice do sulco terminal da língua que marca o local de origem do primórdio da tireoide."
+    },
+    {
+      "id": "foliculos-tireoidianos",
+      "nome": "Folículos tireoidianos",
+      "sinonimos": [],
+      "definicao": "Unidades funcionais da tireoide: epitélio de células foliculares em torno de coloide.",
+      "origem": "Cordões epiteliais do primórdio da tireoide, fragmentados pelo mesênquima vascular.",
+      "destino": "O coloide aparece por volta da 11ª semana (Moore; fim do 3º mês para Sadler), quando começam a captação de iodo e a síntese de hormônios tireoidianos."
+    },
+    {
+      "id": "corpo-ultimofaringeo",
+      "nome": "Corpo ultimofaríngeo",
+      "sinonimos": [
+        "corpo ultimobranquial"
+      ],
+      "definicao": "Derivado da parte ventral da 4ª bolsa faríngea (para Sadler, de uma 5ª bolsa considerada parte da 4ª) que se funde à tireoide.",
+      "destino": "Células parafoliculares (C), produtoras de calcitonina."
+    },
+    {
+      "id": "celulas-parafoliculares",
+      "nome": "Células parafoliculares (C)",
+      "sinonimos": [
+        "células C"
+      ],
+      "definicao": "Células neuroendócrinas dispersas entre os folículos tireoidianos, produtoras de calcitonina.",
+      "origem": "Chegam à tireoide pelo corpo ultimofaríngeo; a camada germinativa é controversa (crista neural na visão clássica; endoderma segundo estudos de linhagem).",
+      "destino": "Originam o carcinoma medular da tireoide."
+    },
+    {
+      "id": "paratireoide-inferior",
+      "nome": "Paratireoide inferior (paratireoide III)",
+      "sinonimos": [],
+      "definicao": "Glândula derivada da parte dorsal da 3ª bolsa faríngea, que migra caudalmente com o timo e termina abaixo da paratireoide da 4ª bolsa.",
+      "origem": "Endoderma da 3ª bolsa.",
+      "destino": "Polo inferior da tireoide; é a mais sujeita a ectopia (no timo, no mediastino ou, se não descer, alta no pescoço)."
+    },
+    {
+      "id": "paratireoide-superior",
+      "nome": "Paratireoide superior (paratireoide IV)",
+      "sinonimos": [],
+      "definicao": "Glândula derivada da parte dorsal da 4ª bolsa faríngea, que migra pouco e fica na face posterior da parte superior da tireoide.",
+      "origem": "Endoderma da 4ª bolsa."
+    },
+    {
+      "id": "cortex-suprarrenal-fetal",
+      "nome": "Córtex fetal da suprarrenal (zona fetal)",
+      "sinonimos": [
+        "córtex primitivo"
+      ],
+      "definicao": "Massa de células grandes e acidófilas que forma a maior parte da suprarrenal fetal e secreta DHEA-S, precursor do estriol placentário.",
+      "origem": "Primeira onda de células do mesotélio (epitélio celômico) entre a raiz do mesentério dorsal e a gônada em desenvolvimento, na 5ª–6ª semana.",
+      "destino": "Regride rapidamente após o nascimento."
+    },
+    {
+      "id": "cortex-suprarrenal-definitivo",
+      "nome": "Córtex definitivo da suprarrenal",
+      "sinonimos": [
+        "córtex permanente"
+      ],
+      "definicao": "Camada de células menores que envolve o córtex fetal e origina o córtex do adulto.",
+      "origem": "Segunda onda de células do mesotélio.",
+      "destino": "Zonas glomerulosa, fasciculada e reticular; a organização do adulto só se completa anos após o nascimento."
+    },
+    {
+      "id": "medula-suprarrenal",
+      "nome": "Medula da suprarrenal",
+      "sinonimos": [
+        "células cromafins"
+      ],
+      "definicao": "Parte central da suprarrenal, formada por células cromafins que secretam adrenalina e noradrenalina; são neurônios pós-ganglionares simpáticos modificados, inervados por fibras pré-ganglionares.",
+      "origem": "Crista neural (linhagem simpatoadrenal), que invade a face medial do córtex fetal.",
+      "destino": "Dessa linhagem originam-se o neuroblastoma e o feocromocitoma."
+    },
+    {
+      "id": "ilhotas-pancreaticas",
+      "nome": "Ilhotas pancreáticas (de Langerhans)",
+      "sinonimos": [],
+      "definicao": "Agrupamentos de células endócrinas (α, β, δ e outras) dispersos no pâncreas.",
+      "origem": "Parênquima endodérmico dos brotos pancreáticos; surgem no 3º mês (Sadler).",
+      "destino": "Secretam insulina desde o período fetal (por volta da 10ª semana segundo Moore; do 5º mês segundo Sadler)."
+    },
+    {
+      "id": "glandula-pineal",
+      "nome": "Glândula pineal",
+      "sinonimos": [
+        "epífise",
+        "corpo pineal"
+      ],
+      "definicao": "Glândula mediana do epitálamo cujos pinealócitos secretam melatonina.",
+      "origem": "Divertículo mediano da parte caudal do teto do diencéfalo, que se evagina por volta da 7ª semana (Sadler).",
+      "destino": "Torna-se maciça; no adulto calcifica-se com frequência e serve de referência em exames de imagem do crânio."
+    },
+    {
+      "id": "sinciciotrofoblasto",
+      "nome": "Sinciciotrofoblasto",
+      "sinonimos": [],
+      "definicao": "Camada externa multinucleada do trofoblasto; nas vilosidades coriônicas, é a principal fonte dos hormônios placentários.",
+      "origem": "Fusão de células do citotrofoblasto.",
+      "destino": "Produz hCG, progesterona, estrogênios (a partir de precursores fetais) e somatomamotrofina coriônica humana (hPL)."
+    },
+    {
+      "id": "corpo-luteo-da-gravidez",
+      "nome": "Corpo lúteo da gravidez",
+      "sinonimos": [],
+      "definicao": "Corpo lúteo mantido pela hCG, que secreta progesterona no início da gestação.",
+      "origem": "Paredes do folículo ovulado (células da granulosa e da teca interna luteinizadas).",
+      "destino": "Torna-se dispensável após a transição lúteo-placentária (~7–9 semanas de idade gestacional)."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e25-primordio-tireoide",
+      "descricao": "Surge o primórdio da tireoide, espessamento endodérmico mediano no assoalho da faringe primitiva",
+      "diaMin": 22,
+      "diaMax": 24,
+      "ordem": 1
+    },
+    {
+      "id": "e25-bolsa-de-rathke",
+      "descricao": "A bolsa de Rathke evagina-se do teto do estomodeu em direção ao infundíbulo",
+      "diaMin": 21,
+      "diaMax": 28,
+      "ordem": 1
+    },
+    {
+      "id": "e25-cortex-fetal-suprarrenal",
+      "descricao": "Células do mesotélio entre a raiz do mesentério dorsal e a gônada proliferam e formam o córtex fetal da suprarrenal",
+      "diaMin": 29,
+      "diaMax": 42,
+      "ordem": 2
+    },
+    {
+      "id": "e25-tireoide-posicao-definitiva",
+      "descricao": "A tireoide atinge sua posição definitiva, anterior à traqueia",
+      "diaMin": 43,
+      "diaMax": 49,
+      "ordem": 3
+    },
+    {
+      "id": "e25-ilhotas-pancreaticas",
+      "descricao": "Surgem as ilhotas pancreáticas, dispersas no parênquima do pâncreas",
+      "diaMin": 57,
+      "diaMax": 90,
+      "ordem": 4
+    },
+    {
+      "id": "e25-coloide-tireoide",
+      "descricao": "Aparece coloide nos folículos tireoidianos, e a tireoide fetal começa a captar iodo e a sintetizar hormônios",
+      "diaMin": 71,
+      "diaMax": 90,
+      "ordem": 4
+    },
+    {
+      "id": "e25-eixo-tireoidiano-fetal",
+      "descricao": "O eixo hipotálamo-hipófise-tireoide fetal amadurece e a produção fetal de T4 aumenta (metade da gestação)",
+      "ordem": 5
+    },
+    {
+      "id": "e25-regressao-zona-fetal",
+      "descricao": "A zona fetal do córtex suprarrenal regride rapidamente após o nascimento",
+      "diaMin": 266,
+      "ordem": 6
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "hipopituitarismo-congenito",
+      "titulo": "Hipopituitarismo congênito",
+      "descricao": "No recém-nascido, hipoglicemia (falta de GH e de ACTH/cortisol), icterícia prolongada e, no menino, micropênis com ou sem criptorquidia (falta de gonadotrofinas) sugerem deficiência hipofisária múltipla. A genitália é bem diferenciada, porque a testosterona da janela de diferenciação é estimulada pela hCG placentária; o crescimento posterior do pênis depende do LH fetal. A ressonância pode mostrar adeno-hipófise hipoplásica, haste fina ou interrompida e neuro-hipófise ectópica. A triagem neonatal baseada em TSH não detecta o hipotireoidismo central associado, que exige dosar T4 livre.",
+      "mecanismo": "Falhas da formação ou da diferenciação da bolsa de Rathke e da linha média do prosencéfalo: mutações de fatores de transcrição hipofisários (por exemplo, PROP1 e POU1F1) ou defeitos de linha média, como a displasia septo-óptica (em parte dos casos, por HESX1). Em muitos casos a causa genética não é identificada."
+    },
+    {
+      "id": "craniofaringioma-endocrino",
+      "titulo": "Craniofaringioma — repercussões endócrinas",
+      "descricao": "Tumor epitelial em geral suprasselar, cístico e calcificado. Na criança causa cefaleia e hipertensão intracraniana, hemianopsia bitemporal (compressão do quiasma óptico), baixa estatura por deficiência de GH e outras deficiências hipofisárias, inclusive diabetes insípido central (ver emb-18).",
+      "mecanismo": "Origina-se de restos epiteliais da bolsa de Rathke ao longo do trajeto do pedículo hipofisário."
+    },
+    {
+      "id": "hipotireoidismo-congenito",
+      "titulo": "Hipotireoidismo congênito",
+      "descricao": "A maioria dos recém-nascidos afetados não tem sinais ao nascer; sem tratamento, surgem icterícia prolongada, hipotonia, constipação, macroglossia, hérnia umbilical e, sobretudo, prejuízo irreversível do desenvolvimento neurológico. No Brasil, a triagem é feita pelo Programa Nacional de Triagem Neonatal: TSH em sangue seco (teste do pezinho), colhido entre o 3º e o 5º dia de vida, a partir de 48 horas (Ministério da Saúde); recém-nascidos de risco, como pré-termos e internados em UTI, podem precisar de nova coleta (SBP, 2018). O resultado alterado é confirmado por TSH e T4 livre séricos, e a levotiroxina (10–15 µg/kg/dia) é iniciada o mais cedo possível, idealmente nos primeiros 14 dias de vida, sem aguardar ultrassonografia ou cintilografia (PCDT do Hipotireoidismo Congênito, Portaria Conjunta SAES/SCTIE/MS nº 5/2021).",
+      "mecanismo": "Disgenesia tireoidiana — ectopia (falha da descida a partir do forame cego, a forma mais frequente), agenesia ou hipoplasia —, causa mais comum do hipotireoidismo primário permanente; mutações de fatores de transcrição do primórdio (como NKX2-1, FOXE1 e PAX8) explicam uma minoria dos casos. A disormonogênese (defeitos enzimáticos com glândula tópica) é a segunda causa. A passagem transplacentária de T4 materno protege o feto apenas em parte e cessa no parto."
+    },
+    {
+      "id": "carcinoma-medular-tireoide",
+      "titulo": "Carcinoma medular da tireoide",
+      "descricao": "Neoplasia das células parafoliculares (C), que secreta calcitonina, usada como marcador tumoral. Pode ser esporádica ou hereditária, na neoplasia endócrina múltipla tipo 2 (mutações ativadoras de RET), em que se associa a feocromocitoma.",
+      "mecanismo": "As células C chegam à tireoide pelo corpo ultimofaríngeo, derivado da 4ª bolsa, e não pelo primórdio tireoidiano mediano, que forma as células foliculares."
+    },
+    {
+      "id": "paratireoides-ectopicas",
+      "titulo": "Paratireoides ectópicas e cirurgia das paratireoides",
+      "descricao": "No hiperparatireoidismo primário que persiste após a exploração cervical, deve-se pensar em glândula ectópica. A paratireoide inferior, de posição mais variável, pode estar no timo ou no mediastino anterossuperior ou, se não descer, alta no pescoço; a superior tem posição mais constante, na face posterior do terço superior da tireoide.",
+      "mecanismo": "A paratireoide inferior (3ª bolsa) migra caudalmente com o timo e pode acompanhá-lo além da posição habitual ou deixar de descer; a superior (4ª bolsa) migra pouco."
+    },
+    {
+      "id": "hipoparatireoidismo-22q11",
+      "titulo": "Hipoparatireoidismo na deleção 22q11.2",
+      "descricao": "Hipocalcemia neonatal (tremores, tetania, convulsões) com fósforo elevado e PTH inapropriadamente baixo, associada a cardiopatia conotruncal, hipoplasia tímica e anomalias palatais (ver emb-12).",
+      "mecanismo": "A microdeleção 22q11.2 (que inclui TBX1) compromete o desenvolvimento da 3ª e da 4ª bolsas faríngeas, das quais derivam as paratireoides e o timo."
+    },
+    {
+      "id": "unidade-fetoplacentaria-estriol",
+      "titulo": "Unidade fetoplacentária e estriol baixo",
+      "descricao": "O estriol materno depende da integridade do eixo fetal (hipófise, suprarrenal e fígado) e da placenta. Fica muito baixo quando falta ACTH fetal (anencefalia, com atrofia da zona fetal) e na deficiência de sulfatase placentária, ligada ao X (o menino afetado tem ictiose ligada ao X). O estriol não conjugado baixo é um dos marcadores do rastreamento bioquímico de aneuploidias (teste quádruplo). A progesterona, sintetizada pela placenta a partir do colesterol materno, não depende do feto.",
+      "mecanismo": "A placenta não tem 17α-hidroxilase/17,20-liase e não converte progesterona em androgênios: usa o DHEA-S da zona fetal da suprarrenal, 16α-hidroxilado no fígado fetal, que ela dessulfata (sulfatase) e aromatiza em estriol."
+    },
+    {
+      "id": "restos-adrenais-hac",
+      "titulo": "Restos adrenais e tumores de restos adrenais testiculares (TART)",
+      "descricao": "Tecido de aspecto adrenocortical pode ser encontrado junto aos rins e no trajeto das gônadas (funículo espermático, testículo, proximidades do ovário). Em homens com hiperplasia adrenal congênita clássica, sobretudo mal controlada, surgem massas intratesticulares benignas, em geral bilaterais, que crescem sob ACTH elevado, podem comprimir a rede do testículo e comprometer a fertilidade; são vistas à ultrassonografia (Engels et al., 2019).",
+      "mecanismo": "Córtex suprarrenal e gônadas surgem de epitélio celômico vizinho, na parede abdominal posterior, e células adrenocorticais podem acompanhar a gônada. A origem exata dos TART é debatida (restos adrenais clássicos ou células progenitoras com potencial adrenal e testicular)."
+    },
+    {
+      "id": "neuroblastoma-feocromocitoma",
+      "titulo": "Neuroblastoma e feocromocitoma",
+      "descricao": "O neuroblastoma, tumor embrionário de precursores simpatoadrenais, é o tumor sólido extracraniano mais comum da infância; surge com frequência na medula suprarrenal ou na cadeia simpática e costuma elevar metabólitos urinários de catecolaminas (ácidos vanilmandélico e homovanílico). O feocromocitoma, tumor de células cromafins da medula, secreta catecolaminas e causa hipertensão, muitas vezes paroxística; os tumores equivalentes fora da suprarrenal (paragangliomas) secretam sobretudo noradrenalina.",
+      "mecanismo": "A medula suprarrenal e os paragânglios derivam da crista neural (linhagem simpatoadrenal)."
+    },
+    {
+      "id": "filho-de-mae-diabetica",
+      "titulo": "Filho de mãe diabética: macrossomia e hipoglicemia neonatal",
+      "descricao": "O recém-nascido de mãe com diabetes mal controlado (pré-gestacional ou gestacional) tende a ser grande para a idade gestacional, com excesso de gordura e visceromegalia, o que aumenta o risco de distocia de ombro, e pode ter hipoglicemia nas primeiras horas de vida, policitemia e atraso da maturação pulmonar. É grupo de risco para hipoglicemia: deve ser alimentado precocemente e ter a glicemia monitorada desde as primeiras horas (SBP, documento científico de 2022; AAP, 2011). O estudo HAPO (2008) mostrou associação contínua da glicemia materna com o peso ao nascer e com o peptídeo C no sangue do cordão.",
+      "mecanismo": "Hipótese de Pedersen: a glicose atravessa a placenta por difusão facilitada, mas a insulina materna não; a hiperglicemia fetal provoca hipertrofia e hiperplasia das células β e hiperinsulinemia, e a insulina age como hormônio anabólico (macrossomia). No clampeamento do cordão, o aporte de glicose cessa, mas o hiperinsulinismo persiste (hipoglicemia). As malformações do diabetes pré-gestacional (cardíacas, do tubo neural, regressão caudal) têm outro mecanismo: hiperglicemia no período embrionário, antes da função das ilhotas fetais."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-25-q01",
+      "tipo": "multipla",
+      "enunciado": "Qual parte da hipófise deriva do infundíbulo, projeção do assoalho do diencéfalo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Parte tuberal, que envolve a haste"
+        },
+        {
+          "id": "b",
+          "texto": "Parte intermédia, entre os dois lobos"
+        },
+        {
+          "id": "c",
+          "texto": "Parte nervosa (lobo posterior)"
+        },
+        {
+          "id": "d",
+          "texto": "Parte distal (lobo anterior)"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: o infundíbulo, de neuroectoderma diencefálico, forma a neuro-hipófise — eminência mediana, haste infundibular e parte nervosa (lobo posterior). A parte tuberal (a) é uma extensão da parede anterior da bolsa de Rathke que envolve a haste. A parte intermédia (b) vem da parede posterior da bolsa de Rathke. A parte distal (d), o lobo anterior, vem da parede anterior da bolsa de Rathke, de ectoderma do estomodeu.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "hipofise",
+        "infundibulo",
+        "neuro-hipofise"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q02",
+      "tipo": "multipla",
+      "enunciado": "Ocitocina e vasopressina são liberadas na neuro-hipófise, derivada do infundíbulo. Qual alternativa descreve corretamente a origem dessas secreções?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "São sintetizadas em núcleos do hipotálamo, cujos axônios descem pela haste até a parte nervosa"
+        },
+        {
+          "id": "b",
+          "texto": "São sintetizadas pelas células da parede anterior da bolsa de Rathke e levadas à parte nervosa pela haste"
+        },
+        {
+          "id": "c",
+          "texto": "São sintetizadas pela parte intermédia, que se funde à parte nervosa durante o período fetal"
+        },
+        {
+          "id": "d",
+          "texto": "São sintetizadas por células da crista neural que colonizam a haste infundibular e a parte nervosa"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o infundíbulo forma a neuro-hipófise, cujas células próprias (pituícitos) são gliais; a ocitocina e a vasopressina são sintetizadas em neurônios dos núcleos supraóptico e paraventricular do hipotálamo, e seus axônios crescem pela haste até a parte nervosa, onde os hormônios são armazenados e liberados. A parede anterior da bolsa de Rathke (b) forma a parte distal, que secreta hormônios da adeno-hipófise, não ocitocina nem vasopressina. A parte intermédia (c) vem da parede posterior da bolsa de Rathke, é rudimentar no ser humano e não produz esses hormônios. A crista neural (d) não forma o parênquima da neuro-hipófise.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "hipofise",
+        "neuro-hipofise",
+        "hipotalamo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q03",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo, 46,XY, tem hipoglicemias recorrentes desde as primeiras horas de vida e icterícia prolongada. O pênis é bem formado, com meato uretral na glande, mas o comprimento esticado é muito reduzido; os testículos, pequenos, são palpáveis nos canais inguinais. O TSH do teste do pezinho foi normal. A ressonância magnética mostra adeno-hipófise hipoplásica e neuro-hipófise ectópica.",
+      "enunciado": "Qual alternativa explica corretamente a genitália e a hipoglicemia desse recém-nascido?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A diferenciação da genitália externa depende do AMH das células de Sertoli, independente da hipófise; a hipoglicemia decorre de hiperinsulinismo induzido pelo GH"
+        },
+        {
+          "id": "b",
+          "texto": "A testosterona fetal depende apenas do LH hipofisário desde a 8ª semana, e o pênis pequeno indica insensibilidade parcial aos andrógenos; a hipoglicemia é transitória"
+        },
+        {
+          "id": "c",
+          "texto": "A genitália externa diferencia-se sob ação do GH fetal, sem participação de andrógenos; a hipoglicemia decorre de hiperinsulinismo congênito associado"
+        },
+        {
+          "id": "d",
+          "texto": "A hCG placentária garantiu a testosterona da diferenciação; o crescimento posterior do pênis depende do LH fetal; faltam GH e cortisol"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: o quadro (hipoglicemia, icterícia prolongada, micropênis com criptorquidia, adeno-hipófise hipoplásica e neuro-hipófise ectópica) é de hipopituitarismo congênito. A genitália é bem diferenciada (meato na glande) porque, na janela de diferenciação masculina, a testosterona das células de Leydig é estimulada pela hCG placentária; o crescimento posterior do pênis e a descida testicular dependem do LH fetal, deficiente. A falta de GH e de ACTH (cortisol) explica a hipoglicemia. O TSH normal da triagem não afasta hipotireoidismo central, que exige dosar T4 livre. O AMH (a) faz regredir os ductos paramesonéfricos e não masculiniza a genitália externa; o GH não causa hiperinsulinismo com hipoglicemia. A testosterona inicial não depende só do LH hipofisário (b), e a insensibilidade androgênica não explicaria a hipoglicemia nem as alterações hipofisárias. A genitália externa masculina depende de andrógenos (DHT), não do GH (c), e nada no quadro aponta para hiperinsulinismo congênito.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "hipofise",
+        "hipopituitarismo",
+        "micropenis",
+        "hcg",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12 e 17; Sadler 14ª ed., cap. 16 e 18; literatura de endocrinologia pediátrica (ver incertezas)"
+    },
+    {
+      "id": "emb-25-q04",
+      "tipo": "multipla",
+      "enunciado": "Encontra-se tecido adeno-hipofisário na mucosa do teto da faringe (hipófise faríngea). Qual é a explicação embriológica?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Migração de células do infundíbulo para a mucosa da faringe"
+        },
+        {
+          "id": "b",
+          "texto": "Persistência de um resto do pedículo da bolsa de Rathke"
+        },
+        {
+          "id": "c",
+          "texto": "Persistência de parte do ducto tireoglosso na base da língua"
+        },
+        {
+          "id": "d",
+          "texto": "Colonização da faringe por células da crista neural do 1º arco"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a bolsa de Rathke, do ectoderma do teto do estomodeu, liga-se à cavidade oral por um pedículo que normalmente degenera; um resto desse pedículo pode persistir no teto da faringe como hipófise faríngea, e restos ao longo do trajeto podem originar o craniofaringioma. O infundíbulo (a) forma tecido neural (neuro-hipófise), não adeno-hipofisário. O ducto tireoglosso (c) relaciona-se à tireoide e deixa restos na linha média do pescoço e da língua. A crista neural (d) não forma células adeno-hipofisárias.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "hipofise",
+        "bolsa-de-rathke",
+        "hipofise-faringea"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q05",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido convocado pela triagem neonatal por TSH elevado. Os exames séricos confirmam TSH elevado e T4 livre baixo. A ultrassonografia não mostra tireoide na região cervical anterior, e a cintilografia mostra captação apenas na base da língua.",
+      "enunciado": "Qual é a etiologia mais provável e o seu mecanismo embriológico?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Disormonogênese: a tireoide está na posição normal, mas falha uma etapa da síntese hormonal"
+        },
+        {
+          "id": "b",
+          "texto": "Tireoide ectópica: o primórdio surgiu no forame cego, mas não completou a descida pelo pescoço"
+        },
+        {
+          "id": "c",
+          "texto": "Agenesia tireoidiana: o primórdio endodérmico não chegou a se formar no assoalho da faringe"
+        },
+        {
+          "id": "d",
+          "texto": "Hipotireoidismo central: a bolsa de Rathke não originou as células hipofisárias produtoras de TSH"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: captação apenas na base da língua, sem tireoide no pescoço, indica tecido tireoidiano ectópico (lingual ou sublingual) — o primórdio surgiu no ponto do forame cego, mas não desceu. A ectopia é a forma mais frequente de disgenesia, a principal causa de hipotireoidismo congênito primário permanente. Na disormonogênese (a), a tireoide está na posição cervical normal (tópica e às vezes aumentada à ultrassonografia), o que não é o caso. Na agenesia (c), não haveria captação em lugar nenhum. O hipotireoidismo central (d) cursa com TSH baixo ou inapropriadamente normal, não com TSH elevado.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "tireoide",
+        "tireoide-ectopica",
+        "hipotireoidismo-congenito",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17; PCDT do Hipotireoidismo Congênito (MS, 2021)"
+    },
+    {
+      "id": "emb-25-q06",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 8 dias, assintomático, foi convocado porque o teste do pezinho, colhido no 4º dia de vida, mostrou TSH elevado. No mesmo dia, os exames séricos mostram TSH muito elevado e T4 livre baixo.",
+      "enunciado": "Segundo o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde, qual é a conduta?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Repetir o teste do pezinho em 30 dias, para afastar elevação transitória do TSH antes de tratar"
+        },
+        {
+          "id": "b",
+          "texto": "Aguardar a cintilografia para definir a etiologia e só então decidir se a levotiroxina é necessária"
+        },
+        {
+          "id": "c",
+          "texto": "Iniciar levotiroxina já, sem esperar exames de imagem, idealmente nos primeiros 14 dias de vida"
+        },
+        {
+          "id": "d",
+          "texto": "Observar até surgirem sinais clínicos, pois o T4 materno protege o encéfalo nos primeiros meses"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: com TSH sérico elevado e T4 livre baixo, o diagnóstico de hipotireoidismo congênito está confirmado; o PCDT (Portaria Conjunta SAES/SCTIE/MS nº 5/2021) orienta iniciar levotiroxina (10–15 µg/kg/dia) o mais cedo possível, idealmente nos primeiros 14 dias de vida, depois de colher o sangue para confirmação, sem que ultrassonografia ou cintilografia atrasem o tratamento. Repetir a triagem (a) atrasaria o tratamento de um diagnóstico já confirmado no soro. A investigação etiológica (b) é útil, mas não deve adiar o início do tratamento. O T4 materno (d) protege o feto só em parte e é eliminado após o parto; esperar sinais clínicos expõe o encéfalo a dano irreversível.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "hipotireoidismo-congenito",
+        "triagem-neonatal",
+        "conduta",
+        "caso-clinico"
+      ],
+      "referencia": "PCDT do Hipotireoidismo Congênito (Portaria Conjunta SAES/SCTIE/MS nº 5/2021)"
+    },
+    {
+      "id": "emb-25-q07",
+      "tipo": "multipla",
+      "enunciado": "Considerando o hipotireoidismo congênito, por que o teste do pezinho deve ser colhido a partir de 48 horas de vida (entre o 3º e o 5º dia)?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque o T4 materno que atravessou a placenta precisa ser eliminado antes da dosagem"
+        },
+        {
+          "id": "b",
+          "texto": "Porque a tireoide fetal só começa a sintetizar hormônios após o nascimento"
+        },
+        {
+          "id": "c",
+          "texto": "Porque antes disso o TSH neonatal ainda está suprimido e daria resultados falsamente normais"
+        },
+        {
+          "id": "d",
+          "texto": "Porque logo após o parto há um pico fisiológico de TSH, que causaria falsos-positivos"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: logo após o parto ocorre uma elevação fisiológica do TSH, que diminui nos dias seguintes; a coleta precoce aumenta os falsos-positivos. Por isso o Ministério da Saúde recomenda a coleta entre o 3º e o 5º dia de vida, a partir de 48 horas. A triagem brasileira dosa TSH, e o T4 materno residual (a) não é a razão do intervalo. A tireoide fetal funciona desde o fim do 1º trimestre (b): o coloide aparece por volta da 11ª semana. O TSH não está suprimido nas primeiras horas (c); ao contrário, está transitoriamente elevado.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "hipotireoidismo-congenito",
+        "triagem-neonatal",
+        "teste-do-pezinho"
+      ],
+      "referencia": "Ministério da Saúde, Triagem neonatal biológica: manual técnico (2016); SBP, Documento Científico nº 5 (2018)"
+    },
+    {
+      "id": "emb-25-q08",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com agenesia tireoidiana (sem tecido tireoidiano à ultrassonografia e à cintilografia) teve exame físico normal ao nascer e foi identificado pela triagem neonatal. Uma dosagem de T4 no sangue do cordão, colhida por outro motivo, mostrou valor baixo, mas detectável.",
+      "enunciado": "O que explica o T4 detectável no sangue do cordão e o aspecto normal ao nascer?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Passagem de T4 materno pela placenta, que mantém níveis fetais parciais e protege em parte o encéfalo"
+        },
+        {
+          "id": "b",
+          "texto": "Síntese de T4 pelas células parafoliculares (C), que compensam parcialmente a ausência das células foliculares"
+        },
+        {
+          "id": "c",
+          "texto": "Passagem transplacentária de TSH materno, que estimula restos de tecido tireoidiano ao longo do ducto tireoglosso"
+        },
+        {
+          "id": "d",
+          "texto": "Síntese placentária de T4 a partir do iodo materno, que mantém o feto eutireoidiano e cessa no parto"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o T4 materno atravessa a placenta em quantidade limitada; é a única fonte de hormônio tireoidiano antes de a tireoide fetal começar a funcionar (coloide por volta da 11ª semana) e continua a proteger parcialmente o feto sem tireoide até o parto (Vulsma et al., 1989). Por isso a maioria dos recém-nascidos com hipotireoidismo congênito parece normal ao nascer e depende da triagem neonatal. As células C (b) produzem calcitonina, não T4. O TSH materno (c) não atravessa a placenta em quantidade relevante, e na agenesia não há restos tireoidianos funcionantes. A placenta (d) não sintetiza T4; ela transfere e também inativa parte dos hormônios tireoidianos maternos.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "tireoide",
+        "t4-materno",
+        "hipotireoidismo-congenito",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Vulsma et al., N Engl J Med 1989"
+    },
+    {
+      "id": "emb-25-q09",
+      "tipo": "multipla",
+      "enunciado": "O carcinoma medular da tireoide, cujo marcador é a calcitonina, origina-se de células que chegam à tireoide por meio de qual estrutura?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ducto tireoglosso, durante a descida do primórdio a partir do forame cego"
+        },
+        {
+          "id": "b",
+          "texto": "Parte ventral da 3ª bolsa faríngea, que migra com o timo"
+        },
+        {
+          "id": "c",
+          "texto": "Corpo ultimofaríngeo, derivado da 4ª bolsa, que se funde à tireoide"
+        },
+        {
+          "id": "d",
+          "texto": "Infundíbulo, por migração de células neuroendócrinas do diencéfalo"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: o carcinoma medular deriva das células parafoliculares (C), produtoras de calcitonina, que chegam à tireoide pelo corpo ultimofaríngeo (parte ventral da 4ª bolsa; para Sadler, de uma 5ª bolsa considerada parte da 4ª). A camada germinativa dessas células é controversa (crista neural na visão clássica; endoderma em estudos de linhagem), mas a via de chegada é a mesma. O primórdio que desce pelo ducto tireoglosso (a) forma as células foliculares, origem dos carcinomas papilífero e folicular. A parte ventral da 3ª bolsa (b) forma o timo. O infundíbulo (d) forma a neuro-hipófise.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "celulas-c",
+        "corpo-ultimofaringeo",
+        "carcinoma-medular"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-25-q10",
+      "tipo": "multipla",
+      "contexto": "Mulher de 52 anos com hiperparatireoidismo primário (cálcio e PTH elevados) persiste com a doença após exploração cervical bilateral, na qual o cirurgião encontrou, normais, as duas paratireoides superiores e a inferior direita, sem achar a inferior esquerda. A cintilografia com sestamibi mostra captação no mediastino anterossuperior, junto ao timo.",
+      "enunciado": "Qual é a explicação embriológica mais provável para a localização do adenoma?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Paratireoide superior (4ª bolsa) que desceu com o corpo ultimofaríngeo até o mediastino"
+        },
+        {
+          "id": "b",
+          "texto": "Paratireoide inferior (3ª bolsa) que acompanhou o timo além da posição habitual"
+        },
+        {
+          "id": "c",
+          "texto": "Tecido paratireoidiano formado a partir de restos do ducto tireoglosso no mediastino"
+        },
+        {
+          "id": "d",
+          "texto": "Paratireoide derivada da 2ª bolsa, que migrou com o epitélio da tonsila palatina"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a paratireoide inferior deriva da parte dorsal da 3ª bolsa, cuja parte ventral forma o timo; ao migrar com o timo, pode acompanhá-lo até o mediastino anterossuperior. Por isso a inferior é a mais sujeita a ectopia, e a glândula 'ausente' numa exploração cervical deve ser procurada no timo e no mediastino. A superior (a) deriva da 4ª bolsa, migra pouco e tem posição mais constante; o corpo ultimofaríngeo funde-se à tireoide, não desce ao mediastino. O ducto tireoglosso (c) relaciona-se à tireoide e não forma paratireoides. A 2ª bolsa (d) forma o epitélio da tonsila palatina, não paratireoides.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "paratireoides",
+        "ectopia",
+        "timo",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-25-q11",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com tetralogia de Fallot tem convulsão no 4º dia de vida. O cálcio total e o iônico estão baixos, o fósforo está elevado e o PTH está baixo para o grau de hipocalcemia. A radiografia de tórax sugere timo pequeno.",
+      "enunciado": "Qual é o mecanismo mais provável da hipocalcemia?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Excesso de calcitonina por hiperplasia das células C trazidas pelo corpo ultimofaríngeo"
+        },
+        {
+          "id": "b",
+          "texto": "Deficiência materna de vitamina D, com hiperparatireoidismo secundário no recém-nascido"
+        },
+        {
+          "id": "c",
+          "texto": "Resistência renal ao PTH (pseudo-hipoparatireoidismo), com PTH compensatoriamente alto"
+        },
+        {
+          "id": "d",
+          "texto": "Hipoplasia das paratireoides, derivadas das partes dorsais da 3ª e da 4ª bolsas"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: hipocalcemia com fósforo alto e PTH inapropriadamente baixo indica hipoparatireoidismo; com tetralogia de Fallot e timo pequeno, o quadro sugere deleção 22q11.2, que compromete a 3ª e a 4ª bolsas, de onde derivam as paratireoides e o timo. A calcitonina (a) tem efeito pequeno sobre a calcemia, e não há motivo para hiperplasia de células C. Na deficiência de vitamina D (b) e na resistência ao PTH (c), o PTH estaria elevado, não baixo.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "paratireoides",
+        "hipocalcemia",
+        "sindrome-22q11",
+        "caso-clinico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 17; Moore 11ª ed., cap. 9"
+    },
+    {
+      "id": "emb-25-q12",
+      "tipo": "multipla",
+      "enunciado": "O córtex da glândula suprarrenal origina-se de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Mesotélio (epitélio celômico) entre a raiz do mesentério dorsal e a gônada em formação"
+        },
+        {
+          "id": "b",
+          "texto": "Células da crista neural da linhagem simpatoadrenal, que migram dos gânglios simpáticos vizinhos"
+        },
+        {
+          "id": "c",
+          "texto": "Blastema metanéfrico, o mesmo tecido que forma os néfrons do rim definitivo, ao qual se encosta"
+        },
+        {
+          "id": "d",
+          "texto": "Endoderma do intestino anterior, a partir de um broto semelhante aos brotos pancreáticos"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: na 5ª (Sadler) ou 6ª semana (Moore), células do mesotélio entre a raiz do mesentério dorsal e a gônada em desenvolvimento proliferam e penetram o mesênquima, formando o córtex fetal; uma segunda onda forma o córtex definitivo. A crista neural (b) forma a medula, não o córtex. O blastema metanéfrico (c) forma os néfrons; o rim apenas encosta na suprarrenal quando ascende. O endoderma (d) forma o parênquima do fígado e do pâncreas, não o córtex suprarrenal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "suprarrenal",
+        "cortex-suprarrenal",
+        "camadas-germinativas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q13",
+      "tipo": "multipla",
+      "contexto": "Gestante de 30 semanas cujo feto tem anencefalia apresenta estriol muito abaixo do esperado, enquanto a progesterona sérica está na faixa esperada para a idade gestacional.",
+      "enunciado": "O que explica a dissociação entre o estriol e a progesterona?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A anencefalia lesa o sinciciotrofoblasto, que deixa de produzir estriol, mas não progesterona"
+        },
+        {
+          "id": "b",
+          "texto": "O estriol é sintetizado pelo encéfalo fetal a partir da progesterona fornecida pela placenta"
+        },
+        {
+          "id": "c",
+          "texto": "O estriol depende do DHEA-S da zona fetal, estimulada pelo ACTH fetal; a progesterona, não"
+        },
+        {
+          "id": "d",
+          "texto": "O estriol vem do corpo lúteo materno, que involui mais cedo quando o feto é anencéfalo"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: a placenta não tem 17α-hidroxilase e não forma androgênios a partir da progesterona; para sintetizar estriol, usa o DHEA-S da zona fetal da suprarrenal, 16α-hidroxilado no fígado fetal. Na anencefalia, a falta de estímulo hipotálamo-hipofisário (ACTH) atrofia a zona fetal, e o estriol cai. A progesterona é sintetizada pela placenta a partir do colesterol materno e não depende do feto. A anencefalia não lesa o sinciciotrofoblasto (a). O encéfalo fetal não sintetiza estriol (b). Depois da transição lúteo-placentária, o corpo lúteo (d) não é a fonte relevante de esteroides, e o estriol da gestação é placentário.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "suprarrenal",
+        "zona-fetal",
+        "unidade-fetoplacentaria",
+        "placenta",
+        "caso-clinico"
+      ],
+      "referencia": "Williams Obstetrics 26th ed. (Implantation and Placental Development); Moore 11ª ed., cap. 12"
+    },
+    {
+      "id": "emb-25-q14",
+      "tipo": "multipla",
+      "enunciado": "Feocromocitomas da suprarrenal podem secretar adrenalina, mas paragangliomas extrassuprarrenais secretam sobretudo noradrenalina. Qual relação do desenvolvimento explica essa diferença?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A medula deriva do mesotélio celômico, como o córtex, e herda dele as enzimas de síntese de esteroides e de adrenalina"
+        },
+        {
+          "id": "b",
+          "texto": "A medula, envolvida pelo córtex, recebe sangue rico em cortisol, que induz a conversão de noradrenalina em adrenalina"
+        },
+        {
+          "id": "c",
+          "texto": "Os paragânglios derivam do endoderma do intestino posterior, que não expressa nenhuma das enzimas de síntese de catecolaminas"
+        },
+        {
+          "id": "d",
+          "texto": "As células cromafins da medula são neurônios pré-ganglionares e liberam adrenalina como neurotransmissor nas sinapses"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: as células cromafins da medula e dos paragânglios vêm da crista neural (linhagem simpatoadrenal). Na suprarrenal, a medula fica dentro do córtex e recebe sangue que passou por ele, rico em cortisol, que induz a enzima que metila a noradrenalina em adrenalina (feniletanolamina-N-metiltransferase); fora da suprarrenal falta esse estímulo. A medula não deriva do mesotélio (a). Os paragânglios não são endodérmicos (c) e produzem catecolaminas, sobretudo noradrenalina. As células cromafins (d) são neurônios pós-ganglionares modificados, inervados por fibras pré-ganglionares, e secretam na circulação.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "suprarrenal",
+        "medula-suprarrenal",
+        "crista-neural",
+        "feocromocitoma"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 18; Carlson 6ª ed. (Crista neural)"
+    },
+    {
+      "id": "emb-25-q15",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo de mãe com diabetes gestacional mal controlado no 3º trimestre pesa 4.500 g, tem excesso de tecido adiposo e, com 2 horas de vida, apresenta tremores; a glicemia capilar está baixa.",
+      "enunciado": "Qual mecanismo explica a hipoglicemia?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A insulina usada pela mãe atravessou a placenta e continua circulando no recém-nascido"
+        },
+        {
+          "id": "b",
+          "texto": "Insuficiência suprarrenal pela involução súbita da zona fetal no momento do parto"
+        },
+        {
+          "id": "c",
+          "texto": "Deficiência de glucagon por falha na diferenciação das células α das ilhotas fetais"
+        },
+        {
+          "id": "d",
+          "texto": "Hiperinsulinismo por hiperplasia das células β fetais, que persiste depois do parto"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: segundo a hipótese de Pedersen, a hiperglicemia materna atravessa a placenta (difusão facilitada da glicose) e estimula hipertrofia e hiperplasia das células β fetais, com hiperinsulinemia, que causa macrossomia; no clampeamento do cordão, a glicose deixa de chegar, mas o hiperinsulinismo persiste e causa hipoglicemia nas primeiras horas. Por isso o filho de mãe diabética deve ser alimentado precocemente e ter a glicemia monitorada desde as primeiras horas (SBP, 2022; AAP, 2011). A insulina materna (a) não atravessa a placenta em quantidade relevante. A zona fetal (b) regride ao longo de semanas, e o quadro clínico aqui é o típico do hiperinsulinismo. Nada sugere falha das células α (c), e a deficiência de glucagon não explicaria a macrossomia.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "pancreas-endocrino",
+        "pedersen",
+        "hipoglicemia-neonatal",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Pedersen 1954; SBP, Documento Científico nº 16 (2022)"
+    },
+    {
+      "id": "emb-25-q16",
+      "tipo": "multipla",
+      "contexto": "Gestante com diabetes tipo 1 tinha hemoglobina glicada muito elevada na concepção e no 1º trimestre. A ultrassonografia do 2º trimestre mostra agenesia sacral com hipoplasia dos membros inferiores (regressão caudal). No 3º trimestre, o feto está grande para a idade gestacional, com circunferência abdominal acima do percentil 97.",
+      "enunciado": "Qual alternativa relaciona corretamente cada achado ao seu mecanismo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Regressão caudal: hiperglicemia na organogênese, antes da insulina fetal; feto grande: hiperinsulinemia fetal"
+        },
+        {
+          "id": "b",
+          "texto": "Ambos os achados: hiperinsulinemia fetal, já presente na gastrulação, quando as ilhotas fetais secretam insulina"
+        },
+        {
+          "id": "c",
+          "texto": "Regressão caudal: insulina exógena que atravessou a placenta; feto grande: hPL produzido pelo próprio feto"
+        },
+        {
+          "id": "d",
+          "texto": "Regressão caudal: hipoglicemias maternas repetidas; feto grande: passagem de insulina materna ao feto"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: as malformações do diabetes pré-gestacional mal controlado (como a regressão caudal, além de cardiopatias e defeitos do tubo neural) resultam da hiperglicemia durante a organogênese (3ª a 8ª semana), antes de as ilhotas fetais secretarem insulina (por volta da 10ª semana segundo Moore; do 5º mês segundo Sadler). O crescimento excessivo do fim da gestação resulta da hiperinsulinemia fetal provocada pela hiperglicemia transmitida (hipótese de Pedersen). Na gastrulação (b) não há ilhotas. A insulina materna (c, d) não atravessa a placenta em quantidade relevante, e o hPL (c) é placentário, não fetal. Hipoglicemias maternas (d) não são o mecanismo descrito para essas malformações.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "pancreas-endocrino",
+        "diabetes-materno",
+        "pedersen",
+        "periodos-criticos",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11 e 20; Sadler 14ª ed., cap. 15; Pedersen 1954"
+    },
+    {
+      "id": "emb-25-q17",
+      "tipo": "vf",
+      "enunciado": "A neuro-hipófise deriva do ectoderma do teto do estomodeu (bolsa de Rathke).",
+      "correta": false,
+      "explicacao": "Falso. A bolsa de Rathke, do ectoderma do teto do estomodeu, forma a adeno-hipófise. A neuro-hipófise (eminência mediana, haste infundibular e parte nervosa) deriva do infundíbulo, projeção ventral do assoalho do diencéfalo.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "hipofise",
+        "bolsa-de-rathke",
+        "infundibulo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q18",
+      "tipo": "vf",
+      "enunciado": "A tireoide lingual resulta da falha da descida do primórdio tireoidiano e pode ser o único tecido tireoidiano funcionante do paciente.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O primórdio surge no assoalho da faringe, no ponto do forame cego, e normalmente desce até diante da traqueia. Se não descer, permanece na base da língua; esse tecido ectópico pode ser o único tecido tireoidiano e frequentemente é insuficiente, causando hipotireoidismo congênito (a ectopia é a forma mais frequente de disgenesia).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "tireoide",
+        "tireoide-ectopica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-25-q19",
+      "tipo": "vf",
+      "enunciado": "Como tem 17α-hidroxilase própria, a placenta sintetiza estriol a partir do colesterol materno sem depender de precursores fetais.",
+      "correta": false,
+      "explicacao": "Falso. A placenta não tem 17α-hidroxilase/17,20-liase e, por isso, não converte progesterona em androgênios. Para sintetizar estriol, depende do DHEA-S da zona fetal da suprarrenal, 16α-hidroxilado no fígado fetal (unidade fetoplacentária). Já a progesterona placentária é sintetizada a partir do colesterol materno, sem depender do feto.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "placenta",
+        "zona-fetal",
+        "unidade-fetoplacentaria"
+      ],
+      "referencia": "Williams Obstetrics 26th ed. (Implantation and Placental Development)"
+    },
+    {
+      "id": "emb-25-q20",
+      "tipo": "vf",
+      "enunciado": "Antes da transição lúteo-placentária, a progesterona que mantém a gestação vem principalmente do corpo lúteo, sustentado pela hCG do sinciciotrofoblasto.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A hCG do sinciciotrofoblasto impede a involução do corpo lúteo, que secreta progesterona no início da gestação. A gestação depende do corpo lúteo até cerca de 7 semanas de idade gestacional; entre ~7 e 9 semanas, a placenta passa a produzir progesterona suficiente (transição lúteo-placentária), embora o corpo lúteo persista por mais tempo (ver emb-02 e emb-09).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "placenta",
+        "hcg",
+        "corpo-luteo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2 e 7; Williams Obstetrics 26th ed."
+    },
+    {
+      "id": "emb-25-q21",
+      "tipo": "vf",
+      "enunciado": "A maioria dos recém-nascidos com hipotireoidismo congênito tem sinais clínicos evidentes ao nascer, o que torna a triagem neonatal dispensável quando o exame físico é normal.",
+      "correta": false,
+      "explicacao": "Falso. A maioria não tem sinais ao nascer, em parte porque o T4 materno que atravessa a placenta protege parcialmente o feto. Os sinais (icterícia prolongada, hipotonia, hérnia umbilical, macroglossia) aparecem depois, quando o dano neurológico já pode ter começado; por isso a triagem universal (teste do pezinho) é indispensável.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "hipotireoidismo-congenito",
+        "triagem-neonatal"
+      ],
+      "referencia": "PCDT do Hipotireoidismo Congênito (MS, 2021); SBP, Documento Científico nº 5 (2018)"
+    },
+    {
+      "id": "emb-25-q22",
+      "tipo": "vf",
+      "enunciado": "A glândula pineal deriva da parte caudal do teto do diencéfalo, como um divertículo mediano que depois se torna maciço.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A pineal (epífise) surge como espessamento e depois divertículo mediano da parte caudal do teto do diencéfalo (epitálamo); a proliferação de suas paredes torna-a maciça. Seus pinealócitos secretam melatonina.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "pineal",
+        "diencefalo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q23",
+      "tipo": "vf",
+      "enunciado": "Na hiperplasia adrenal congênita por deficiência de 21-hidroxilase, a virilização da genitália externa de um feto 46,XX decorre de andrógenos do córtex suprarrenal fetal, estimulado pelo ACTH elevado.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A deficiência de 21-hidroxilase reduz o cortisol; o ACTH fetal sobe, o córtex se hiperplasia e os precursores acumulados são desviados para androgênios, que virilizam a genitália externa do feto 46,XX. Ovários, tubas e útero são normais, porque não há testículos nem AMH (ver emb-17).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "suprarrenal",
+        "hac",
+        "integracao-emb-17"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-25-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do desenvolvimento do córtex da suprarrenal:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Uma segunda onda de células menores do mesotélio envolve o córtex fetal e forma o córtex definitivo"
+        },
+        {
+          "id": "2",
+          "texto": "Células do mesotélio entre a raiz do mesentério dorsal e a gônada proliferam e formam o córtex fetal"
+        },
+        {
+          "id": "3",
+          "texto": "O córtex atinge a organização zonal do adulto, com zona reticular bem definida"
+        },
+        {
+          "id": "4",
+          "texto": "A zona fetal regride rapidamente após o nascimento"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "1",
+        "4",
+        "3"
+      ],
+      "explicacao": "Na 5ª–6ª semana, o mesotélio prolifera e forma o córtex fetal, de células grandes e acidófilas → uma segunda onda de células menores envolve-o e forma o córtex definitivo → após o nascimento, a zona fetal regride rapidamente → a zonação adulta, com zona reticular definida, só se completa anos depois (Moore: zona reticular reconhecível no fim do 3º ano; Sadler: estrutura adulta na puberdade).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "suprarrenal",
+        "cortex-suprarrenal",
+        "zona-fetal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-25-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a cadeia de eventos proposta pela hipótese de Pedersen, da causa às consequências no recém-nascido:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "As células β fetais tornam-se hipertróficas e hiperplásicas e secretam insulina em excesso"
+        },
+        {
+          "id": "2",
+          "texto": "Após o clampeamento do cordão, a glicose deixa de chegar, mas o hiperinsulinismo persiste e causa hipoglicemia"
+        },
+        {
+          "id": "3",
+          "texto": "A hiperglicemia materna transmite-se ao feto, porque a glicose atravessa a placenta por difusão facilitada"
+        },
+        {
+          "id": "4",
+          "texto": "A insulina fetal, hormônio anabólico, aumenta o depósito de gordura e o crescimento, causando macrossomia"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "explicacao": "Hiperglicemia materna → glicose atravessa a placenta (a insulina materna não) → hiperglicemia fetal estimula hipertrofia e hiperplasia das células β, com hiperinsulinemia → a insulina age como hormônio de crescimento (macrossomia, visceromegalia) → no clampeamento do cordão o aporte de glicose cessa, mas o hiperinsulinismo persiste, e surge hipoglicemia nas primeiras horas de vida.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "pancreas-endocrino",
+        "pedersen",
+        "diabetes-materno"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Pedersen 1954"
+    },
+    {
+      "id": "emb-25-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente estes eventos do desenvolvimento endócrino:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A tireoide atinge sua posição definitiva, anterior à traqueia"
+        },
+        {
+          "id": "2",
+          "texto": "A zona fetal do córtex suprarrenal regride rapidamente"
+        },
+        {
+          "id": "3",
+          "texto": "Surge o primórdio da tireoide no assoalho da faringe primitiva"
+        },
+        {
+          "id": "4",
+          "texto": "O eixo hipotálamo-hipófise-tireoide fetal amadurece e a produção fetal de T4 aumenta"
+        },
+        {
+          "id": "5",
+          "texto": "Células do mesotélio formam o córtex fetal da suprarrenal"
+        },
+        {
+          "id": "6",
+          "texto": "Aparece coloide nos folículos tireoidianos"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "5",
+        "1",
+        "6",
+        "4",
+        "2"
+      ],
+      "explicacao": "Primórdio da tireoide (4ª semana, ~22–24 dias) → córtex fetal da suprarrenal (5ª semana segundo Sadler; 6ª segundo Moore) → tireoide na posição definitiva (7ª semana) → coloide nos folículos (por volta da 11ª semana segundo Moore; fim do 3º mês segundo Sadler) → maturação do eixo hipotálamo-hipófise-tireoide fetal (metade da gestação) → regressão da zona fetal (após o nascimento).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "linha-do-tempo",
+        "tireoide",
+        "suprarrenal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9 e 12; Sadler 14ª ed., cap. 17 e 18"
+    },
+    {
+      "id": "emb-25-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura endócrina à sua origem embriológica:",
+      "pares": [
+        {
+          "esquerda": "Adeno-hipófise",
+          "direita": "Ectoderma do teto do estomodeu"
+        },
+        {
+          "esquerda": "Neuro-hipófise",
+          "direita": "Assoalho do diencéfalo (infundíbulo)"
+        },
+        {
+          "esquerda": "Glândula pineal",
+          "direita": "Teto do diencéfalo"
+        },
+        {
+          "esquerda": "Células foliculares da tireoide",
+          "direita": "Endoderma do assoalho da faringe"
+        },
+        {
+          "esquerda": "Córtex suprarrenal",
+          "direita": "Mesotélio (epitélio celômico) da parede abdominal posterior"
+        },
+        {
+          "esquerda": "Medula suprarrenal",
+          "direita": "Crista neural"
+        }
+      ],
+      "explicacao": "A adeno-hipófise vem da bolsa de Rathke (ectoderma do estomodeu); a neuro-hipófise, do infundíbulo (assoalho do diencéfalo); a pineal, de um divertículo do teto do diencéfalo; as células foliculares da tireoide, do primórdio endodérmico do assoalho da faringe; o córtex suprarrenal, do mesotélio; a medula, da crista neural.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "camadas-germinativas",
+        "hipofise",
+        "pineal",
+        "tireoide",
+        "suprarrenal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9, 12 e 17; Sadler 14ª ed., cap. 17 e 18"
+    },
+    {
+      "id": "emb-25-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada hormônio à célula ou tecido que o produz no feto ou na placenta:",
+      "pares": [
+        {
+          "esquerda": "hCG",
+          "direita": "Sinciciotrofoblasto"
+        },
+        {
+          "esquerda": "DHEA-S (precursor do estriol)",
+          "direita": "Zona fetal do córtex suprarrenal"
+        },
+        {
+          "esquerda": "Calcitonina",
+          "direita": "Células parafoliculares (C) da tireoide"
+        },
+        {
+          "esquerda": "Insulina",
+          "direita": "Células β das ilhotas pancreáticas"
+        },
+        {
+          "esquerda": "Melatonina",
+          "direita": "Pinealócitos"
+        },
+        {
+          "esquerda": "Adrenalina",
+          "direita": "Células cromafins da medula suprarrenal"
+        }
+      ],
+      "explicacao": "O sinciciotrofoblasto produz hCG; a zona fetal da suprarrenal, DHEA-S, que o fígado fetal e a placenta convertem em estriol; as células C, calcitonina; as células β, insulina; os pinealócitos, melatonina; as células cromafins da medula, adrenalina (e noradrenalina).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "hormonios",
+        "placenta",
+        "suprarrenal",
+        "pancreas-endocrino",
+        "pineal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7, 9, 11, 12 e 17; Williams Obstetrics 26th ed."
+    },
+    {
+      "id": "emb-25-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada falha do desenvolvimento à sua manifestação clínica:",
+      "pares": [
+        {
+          "esquerda": "Restos epiteliais da bolsa de Rathke",
+          "direita": "Craniofaringioma"
+        },
+        {
+          "esquerda": "Persistência de parte do ducto tireoglosso",
+          "direita": "Cisto cervical mediano que se eleva com a protrusão da língua"
+        },
+        {
+          "esquerda": "Falha da descida do primórdio da tireoide",
+          "direita": "Tireoide lingual"
+        },
+        {
+          "esquerda": "Paratireoide da 3ª bolsa que acompanha o timo além do habitual",
+          "direita": "Paratireoide no mediastino anterior"
+        },
+        {
+          "esquerda": "Precursores simpatoadrenais da crista neural",
+          "direita": "Neuroblastoma"
+        }
+      ],
+      "explicacao": "Restos da bolsa de Rathke originam o craniofaringioma; restos do ducto tireoglosso, cistos medianos que sobem com a deglutição e a protrusão da língua; a falha da descida da tireoide deixa tecido na base da língua; a paratireoide inferior (3ª bolsa) migra com o timo e pode terminar no mediastino; precursores simpatoadrenais da crista neural originam o neuroblastoma, frequentemente na medula suprarrenal.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "correlacoes-clinicas",
+        "ectopias",
+        "tumores"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9, 12 e 17; Sadler 14ª ed., cap. 17 e 18"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "7 — Placenta e membranas fetais"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "9 — Aparelho faríngeo, face e pescoço (tireoide, paratireoides, corpo ultimofaríngeo)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "11 — Sistema digestório (pâncreas)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "12 — Sistema urogenital (glândulas suprarrenais)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "17 — Sistema nervoso (hipófise e glândula pineal)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (diabetes materno)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "8 — Do terceiro mês ao nascimento: o feto e a placenta"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "15 — Sistema digestório (pâncreas)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "16 — Sistema urogenital"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "17 — Cabeça e pescoço (tireoide e bolsas faríngeas)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "18 — Sistema nervoso central (hipófise, epífise e glândula suprarrenal)"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "9 — Desenvolvimento do sistema nervoso central"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "10 — Desenvolvimento do sistema nervoso periférico"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "17 — Desenvolvimento do aparelho faríngeo e da face"
+    },
+    {
+      "obra": "Carlson BM. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
+      "capitulo": "Crista neural (derivados simpatoadrenais)"
+    },
+    {
+      "obra": "Cunningham FG et al. Williams Obstetrics, 26th ed., 2022",
+      "capitulo": "Implantation and Placental Development (hormônios placentários; unidade fetoplacentária; transição lúteo-placentária)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria Conjunta SAES/SCTIE/MS nº 5, de 16 de abril de 2021 — Protocolo Clínico e Diretrizes Terapêuticas do Hipotireoidismo Congênito",
+      "capitulo": "Diagnóstico, início do tratamento e dose de levotiroxina"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Triagem neonatal biológica: manual técnico. Brasília: Ministério da Saúde; 2016",
+      "capitulo": "Período de coleta da primeira amostra"
+    },
+    {
+      "obra": "Sociedade Brasileira de Pediatria, Departamento Científico de Endocrinologia. Hipotireoidismo congênito: triagem neonatal. Documento Científico nº 5, nov. 2018",
+      "capitulo": "Método de triagem (TSH em papel-filtro) e nova coleta em recém-nascidos de risco"
+    },
+    {
+      "obra": "Sociedade Brasileira de Pediatria, Departamento Científico de Endocrinologia. Hipoglicemia neonatal. Documento Científico nº 16, 2022",
+      "capitulo": "Recém-nascidos de risco (inclui filho de mãe diabética)"
+    },
+    {
+      "obra": "Adamkin DH; Committee on Fetus and Newborn (AAP). Postnatal glucose homeostasis in late-preterm and term infants. Pediatrics. 2011;127(3):575-9",
+      "capitulo": "Rastreamento da glicemia em recém-nascidos de risco"
+    },
+    {
+      "obra": "Pedersen J. Weight and length at birth of infants of diabetic mothers. Acta Endocrinol (Copenh). 1954;16(4):330-42",
+      "capitulo": "Artigo original (hipótese hiperglicemia-hiperinsulinismo)"
+    },
+    {
+      "obra": "HAPO Study Cooperative Research Group. Hyperglycemia and adverse pregnancy outcomes. N Engl J Med. 2008;358(19):1991-2002",
+      "capitulo": "Glicemia materna, peso ao nascer e peptídeo C no cordão"
+    },
+    {
+      "obra": "Vulsma T, Gons MH, de Vijlder JJ. Maternal-fetal transfer of thyroxine in congenital hypothyroidism due to a total organification defect or thyroid agenesis. N Engl J Med. 1989;321(1):13-6",
+      "capitulo": "Artigo original (T4 materno no sangue do cordão)"
+    },
+    {
+      "obra": "van Trotsenburg P et al. Congenital hypothyroidism: a 2020–2021 consensus guidelines update (ENDO-ERN/ESPE). Thyroid. 2021;31(3):387-419",
+      "capitulo": "Etiologia (disgenesia e disormonogênese)"
+    },
+    {
+      "obra": "Johansson E et al. Revising the embryonic origin of thyroid C cells in mice and humans. Development. 2015;142(20):3519-28",
+      "capitulo": "Origem endodérmica das células C (rastreamento de linhagem)"
+    },
+    {
+      "obra": "Engels M et al. Testicular adrenal rest tumors: current insights on prevalence, characteristics, origin, and treatment. Endocr Rev. 2019;40(4):973-87",
+      "capitulo": "Revisão (TART na hiperplasia adrenal congênita)"
+    }
+  ],
+  "notasDivergencia": [
+    "Bolsa de Rathke: Sadler situa seu aparecimento por volta da 3ª semana; Moore, no início da 4ª. Perda da conexão com a cavidade oral: Moore, por volta da 6ª semana; Sadler, fim do 2º mês (mesma nota do emb-18). Faixa adotada no evento de aparecimento: dias 21–28, com a mesma posição ('ordem' 1) do primórdio da tireoide, porque a ordem relativa entre os dois não é inequívoca.",
+    "Primórdio da tireoide: Moore, ~24 dias ('primeira glândula endócrina a surgir'); o estadiamento de Carnegie (O'Rahilly) já o identifica no estágio 10 (~22 dias). Faixa adotada: dias 22–24 (ver incerteza correspondente no emb-12).",
+    "Início da função tireoidiana: Moore, coloide e síntese hormonal a partir da 11ª semana; Sadler, fim do 3º mês. Por isso o evento do coloide divide a posição 4 com o surgimento das ilhotas (3º mês, Sadler).",
+    "Início da secreção de insulina: Moore, período fetal inicial (~10ª semana); Sadler, ~5º mês (mesma divergência registrada no emb-15). O evento ficou fora da linha do tempo; a q16 só usa o fato, compatível com as duas fontes, de que não há insulina fetal durante a organogênese.",
+    "Início do córtex suprarrenal: Sadler, 5ª semana; Moore, 6ª semana. Faixa adotada: dias 29–42.",
+    "Zona reticular: Moore a descreve como reconhecível só no fim do 3º ano de vida; Sadler afirma que a camada mais externa do córtex fetal se diferencia em zona reticular após o nascimento e que a estrutura adulta do córtex só é alcançada na puberdade. As questões cobram apenas que a zonação adulta se completa depois da regressão da zona fetal.",
+    "Medula suprarrenal: Sadler descreve a invasão pela crista neural 'enquanto o córtex fetal se forma'; Moore descreve a massa de crista neural na face medial do córtex fetal antes de o córtex definitivo envolvê-lo. A ordem relativa entre a chegada da crista neural e a segunda onda mesotelial não é cobrada.",
+    "Corpo ultimofaríngeo: Moore o atribui à 4ª bolsa; Sadler, a uma 5ª bolsa considerada parte da 4ª.",
+    "Origem das células C: a visão clássica dos livros-texto atribui-as à crista neural que coloniza o corpo ultimofaríngeo; estudos de rastreamento de linhagem em camundongos, com dados de tecido humano (Johansson et al., 2015), indicam origem endodérmica. As questões cobram só a via de chegada (corpo ultimofaríngeo); o tema será aprofundado no tópico de crista neural.",
+    "Transição lúteo-placentária: o emb-02 adota ~7–9 semanas de idade gestacional (dependência do corpo lúteo até ~7 semanas, Csapo et al., 1972); o emb-09 registra que Moore relaciona a involução do corpo lúteo ao fim do 1º trimestre e Sadler situa a produção placentária suficiente no fim do 4º mês. Este tópico usa ~7–9 semanas de IG para o fim da dependência; os números dos livros referem-se à persistência do corpo lúteo.",
+    "Janela de coleta do teste do pezinho: o manual técnico do Ministério da Saúde (2016) cita o 3º ao 5º dia de vida; a página atual do programa fala em 'de 48 horas após o parto até o 5º dia'. As duas formulações são compatíveis (o 3º dia começa às 48 horas)."
+  ],
+  "incertezas": [
+    "Os textos integrais do PCDT do Hipotireoidismo Congênito (2021), do manual técnico de triagem neonatal (2016) e dos documentos científicos da SBP (2018 e 2022) não puderam ser abertos nesta sessão (o host gov.br e outros sites estavam fora da rede liberada). Dose (10–15 µg/kg/dia), início idealmente nos primeiros 14 dias, imagem que não deve atrasar o tratamento, coleta entre o 3º e o 5º dia e nova coleta em recém-nascidos de risco foram confirmados por buscas e resumos que citam esses documentos; conferir no texto original.",
+    "Proporções das causas de hipotireoidismo congênito (disgenesia em cerca de 65–85% conforme a série, ectopia como forma mais frequente) variam entre estudos e com o ponto de corte de TSH; números omitidos do texto.",
+    "Época da maturação do eixo hipotálamo-hipófise-tireoide fetal (fontes de fisiologia fetal citam ~18–20 semanas) não foi conferida nas edições adotadas e nem sempre fica claro se a idade é gestacional ou pós-fertilização; o evento e25-eixo-tireoidiano-fetal ficou sem dias ('metade da gestação').",
+    "Explicação do micropênis no hipopituitarismo (hCG placentária na janela de diferenciação; LH fetal no crescimento posterior) e o quadro de hipopituitarismo neonatal (hipoglicemia, icterícia prolongada, neuro-hipófise ectópica) vêm da literatura de endocrinologia pediátrica e não foram conferidos nas obras de embriologia adotadas; conferir com o revisor de endocrinologia pediátrica (q03).",
+    "Indução da feniletanolamina-N-metiltransferase pelo cortisol do córtex (q14) é dado de fisiologia e de estudos experimentais em roedores; não foi conferido nas edições adotadas. Estudos em camundongos sem receptor de glicocorticoide mostram que as células cromafins se formam, mas não sintetizam adrenalina.",
+    "Unidade fetoplacentária (ausência de 17α-hidroxilase placentária, 16α-hidroxilação no fígado fetal, estriol baixo na anencefalia e na deficiência de sulfatase) segue Williams Obstetrics; o capítulo exato da 26ª edição não foi conferido.",
+    "Tumores de restos adrenais testiculares: prevalência, rastreamento e conduta (inclusive a recomendação da diretriz da Endocrine Society de 2018) não foram incluídos por não terem sido conferidos no texto integral; a origem desses tumores é debatida (Engels et al., 2019).",
+    "Conduta no filho de mãe diabética: o documento da SBP (2022) é de acesso restrito; o texto usa só o que é consensual (grupo de risco, alimentação precoce, glicemia desde as primeiras horas) e omite valores de corte, que divergem entre diretrizes.",
+    "Magnitude do T4 no sangue do cordão de recém-nascidos com agenesia (até cerca de metade do normal, segundo citações de Vulsma et al., 1989) não foi conferida no artigo original e foi omitida.",
+    "Fatores de transcrição citados nas correlações (PROP1, POU1F1, HESX1, NKX2-1, FOXE1, PAX8, TBX1) seguem a literatura de genética e endocrinologia pediátrica; conferir com o revisor de genética."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

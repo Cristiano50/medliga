@@ -693,6 +693,89 @@
       "bloom": "aplicar",
       "tags": ["anomalias", "mecanismos"],
       "referencia": "Moore 11ª ed., cap. 14 e 16; Sadler 14ª ed., cap. 10 e 12"
+    },
+    {
+      "id": "emb-19-q25",
+      "tipo": "multipla",
+      "contexto": "Homem de 45 anos tem dor cervical irradiada para o membro superior direito. A ressonância mostra hérnia discal posterolateral direita entre C6 e C7, comprimindo a raiz nervosa no forame intervertebral desse nível.",
+      "enunciado": "Qual raiz está comprimida, e qual fato embriológico explica a numeração?",
+      "alternativas": [
+        { "id": "a", "texto": "C6; como em toda a coluna, cada nervo espinal sai abaixo da vértebra de mesmo número" },
+        { "id": "b", "texto": "C7; com a ressegmentação, cada nervo cervical sai acima da vértebra de mesmo número" },
+        { "id": "c", "texto": "C8; o 8º nervo cervical sai entre C6 e C7, porque há uma vértebra cervical a mais que nervos" },
+        { "id": "d", "texto": "T1; os nervos cervicais inferiores descem pelo canal e saem um nível abaixo do disco lesado" }
+      ],
+      "correta": "b",
+      "explicacao": "Com a ressegmentação, cada corpo vertebral forma-se da metade caudal de um esclerótomo e da metade cranial do seguinte, e os nervos espinais passam a sair entre as vértebras, junto aos discos. O 1º nervo cervical sai entre o occipital e o atlas, e o 8º, entre C7 e T1: há 8 nervos e 7 vértebras cervicais, e cada nervo de C1 a C7 sai acima da vértebra de mesmo número. Pelo forame entre C6 e C7 sai o nervo C7, comprimido pela hérnia posterolateral desse nível (b). A regra de sair abaixo da vértebra de mesmo número (a) só vale a partir de T1; o C6 sai entre C5 e C6. Há uma vértebra cervical a menos que nervos, e não a mais, e o C8 sai entre C7 e T1 (c). O T1 sai entre T1 e T2 (d); raízes que descem pelo canal antes de sair formam a cauda equina, abaixo do cone medular, e não existem na região cervical.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "ressegmentacao", "nervos-espinais", "hernia-discal", "anatomia", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14; Moore, Dalley e Agur, Anatomia Orientada para a Clínica, 8ª ed. (Dorso)"
+    },
+    {
+      "id": "emb-19-q26",
+      "tipo": "multipla",
+      "contexto": "Lactente de 4 meses com acondroplasia confirmada (mutação de FGFR3) tem perímetro cefálico acima do percentil 97 e hipotonia acentuada. A ressonância mostra forame magno estreito, que comprime a junção entre o bulbo e a medula espinal, e ventrículos discretamente aumentados.",
+      "enunciado": "Qual explicação integra a macrocefalia e o forame magno estreito?",
+      "alternativas": [
+        { "id": "a", "texto": "Craniossinostose de todas as suturas, que restringe a abóbada e empurra o encéfalo para o forame magno" },
+        { "id": "b", "texto": "Hidrocefalia por estenose do aqueduto, que aumenta o crânio e alarga o forame magno pela pressão" },
+        { "id": "c", "texto": "Falha da ossificação intramembranosa da base do crânio, com crescimento excessivo da abóbada endocondral" },
+        { "id": "d", "texto": "A base do crânio, endocondral, cresce pouco; a abóbada, intramembranosa, é relativamente poupada" }
+      ],
+      "correta": "d",
+      "explicacao": "Na acondroplasia, o FGFR3 com ganho de função inibe a proliferação e a diferenciação dos condrócitos e prejudica a ossificação endocondral, que forma os ossos longos e a base do crânio (condrocrânio), incluindo a parte do occipital em torno do forame magno; a abóbada, de ossificação intramembranosa, é relativamente poupada (d). Por isso coexistem crânio grande e forame magno estreito, com risco de compressão da junção bulbomedular. A craniossinostose (a) não é o mecanismo da acondroplasia e restringiria o crescimento da abóbada, em vez de produzir macrocefalia. Na hidrocefalia (b), o forame magno não se alarga, e a imagem mostra justamente um forame estreito. A alternativa (c) inverte os tipos de ossificação: a base do crânio é endocondral, e a abóbada, intramembranosa.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "acondroplasia", "FGFR3", "ossificacao-endocondral", "cranio", "forame-magno", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q27",
+      "tipo": "multipla",
+      "contexto": "Durante uma cirurgia da coluna torácica, os ramos dorsais primários dos nervos espinais T6 a T8 do lado esquerdo foram lesados; os ramos ventrais desses nervos foram preservados.",
+      "enunciado": "Que déficit é esperado, de acordo com a origem dos músculos e da derme da região?",
+      "alternativas": [
+        { "id": "a", "texto": "Paralisia dos intercostais e dos músculos abdominais desses segmentos, derivados do hipômero" },
+        { "id": "b", "texto": "Paralisia do latíssimo do dorso, músculo do epímero inervado pelos ramos dorsais primários" },
+        { "id": "c", "texto": "Fraqueza segmentar dos músculos eretores da espinha e perda sensitiva na pele do dorso" },
+        { "id": "d", "texto": "Perda sensitiva em faixa que contorna o tórax até o esterno, sem nenhuma alteração motora" }
+      ],
+      "correta": "c",
+      "explicacao": "Os ramos dorsais primários inervam os derivados do epímero (músculos extensores profundos do dorso, como os eretores da espinha) e a pele do dorso junto à coluna, cuja derme provém dos dermátomos dos somitos; sua lesão causa fraqueza segmentar desses músculos e perda sensitiva nessa faixa (c). Intercostais e abdominais (a) derivam do hipômero e são inervados pelos ramos ventrais, aqui preservados. O latíssimo do dorso (b), apesar da posição, é músculo do membro superior: deriva de células hipaxiais que migraram para o broto e é inervado pelo nervo toracodorsal, do plexo braquial (ramos ventrais). A faixa que contorna o tórax até o esterno (d) é território dos nervos intercostais, que são ramos ventrais.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "epimero", "hipomero", "inervacao", "dermatomos", "anatomia"],
+      "referencia": "Moore 11ª ed., cap. 15; Sadler 14ª ed., cap. 11; Moore, Dalley e Agur, Anatomia Orientada para a Clínica, 8ª ed. (Dorso; Membro superior)"
+    },
+    {
+      "id": "emb-19-q28",
+      "tipo": "vf",
+      "enunciado": "Em consequência da ressegmentação dos esclerótomos, as artérias segmentares do tronco (como as intercostais posteriores e as lombares) cruzam a parte média dos corpos vertebrais, enquanto os nervos espinais saem pelos forames intervertebrais, junto aos discos.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Antes da ressegmentação, as artérias intersegmentares passam entre os esclerótomos. Como cada corpo vertebral se forma da metade caudal de um esclerótomo e da metade cranial do seguinte, essas artérias passam a cruzar a parte média dos corpos vertebrais; no tórax e no abdome, elas persistem como artérias intercostais posteriores e lombares. Os nervos espinais, segmentares como os miótomos, ficam junto aos discos intervertebrais e saem pelos forames, e os miótomos passam a cruzar os discos, o que permite mover a coluna.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "ressegmentacao", "arterias-intersegmentares", "nervos-espinais", "anatomia"],
+      "referencia": "Sadler 14ª ed., cap. 10 e 13; Moore 11ª ed., cap. 13 e 14"
+    },
+    {
+      "id": "emb-19-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura acometida à sua origem embriológica:",
+      "pares": [
+        { "esquerda": "Núcleo pulposo herniado", "direita": "Notocorda" },
+        { "esquerda": "Anel fibroso rompido", "direita": "Esclerótomo" },
+        { "esquerda": "Músculos eretores da espinha", "direita": "Epímero do miótomo" },
+        { "esquerda": "Músculo bíceps braquial", "direita": "Células hipaxiais do somito que migram para o broto" },
+        { "esquerda": "Diáfise do úmero", "direita": "Mesoderma lateral somático do broto do membro" },
+        { "esquerda": "Derme da pele do dorso", "direita": "Dermátomo do somito" }
+      ],
+      "explicacao": "Numa hérnia discal, o núcleo pulposo é o remanescente da notocorda, que degenera nos corpos vertebrais e persiste entre eles, e o anel fibroso deriva do esclerótomo. Os eretores da espinha derivam do epímero (ramos dorsais primários). Os músculos dos membros, como o bíceps braquial, vêm de células da borda hipaxial do dermomiótomo que migram para o broto, enquanto ossos, cartilagens e conjuntivo do membro, como o úmero, vêm do mesoderma lateral somático. A derme do dorso deriva dos dermátomos dos somitos (a dos membros e da parede ventral, do mesoderma lateral).",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "somitos", "derivados", "notocorda", "integracao", "anatomia"],
+      "referencia": "Moore 11ª ed., cap. 14, 15 e 16; Sadler 14ª ed., cap. 10, 11 e 12"
     }
   ],
   "referencias": [
@@ -739,6 +822,14 @@
     {
       "obra": "Ponseti IV. Congenital clubfoot: fundamentals of treatment. Oxford: Oxford University Press; 1996",
       "capitulo": "Método de Ponseti (gessos seriados, tenotomia e órtese de abdução)"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia Orientada para a Clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Dorso (forames intervertebrais, nervos espinais e ramos dorsais) e Membro superior (nervo toracodorsal)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular (artérias intersegmentares: intercostais e lombares)"
     }
   ],
   "notasDivergencia": [

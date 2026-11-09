@@ -728,6 +728,98 @@
       "bloom": "compreender",
       "tags": ["defeitos-tubo-neural"],
       "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-18-q25",
+      "tipo": "multipla",
+      "contexto": "Lactente de 2 meses tem, na linha média lombossacra, um tufo de pelos sobre uma pequena depressão da pele, sem lesão aberta. A ultrassonografia da coluna mostra o cone medular na altura de L4 e um filamento terminal espessado. O exame neurológico ainda é normal.",
+      "enunciado": "Por que essa criança precisa de seguimento, mesmo sem déficits atuais?",
+      "alternativas": [
+        { "id": "a", "texto": "Porque a falha do neuroporo caudal deixou tecido neural exposto, que seguirá sendo lesado" },
+        { "id": "b", "texto": "Porque o vazamento de liquor pela lesão impedirá o crescimento da fossa posterior (Chiari II)" },
+        { "id": "c", "texto": "Porque a medula fixa não acompanha a 'ascensão' relativa e será tracionada com o crescimento" },
+        { "id": "d", "texto": "Porque o cone em L4, normal nessa idade, só alcançará L1–L2 após a ossificação dos arcos" }
+      ],
+      "correta": "c",
+      "explicacao": "Marcadores cutâneos lombossacros (tufo de pelos, fosseta, hemangioma, lipoma) associam-se a disrafismo oculto e medula presa. No 3º mês a medula ocupa todo o canal vertebral; depois, a coluna e a dura-máter crescem mais rapidamente, e o cone 'sobe' relativamente, até cerca de L2–L3 ao nascer (Moore; à ultrassonografia do recém-nascido a termo, em geral L1–L2) e L1–L2 no adulto. Um filamento terminal espessado fixa o cone em posição baixa; com o crescimento da coluna, a medula é tracionada, e podem surgir déficits motores, sensitivos, dor e disfunção vesical progressivos (c). A pele íntegra afasta defeito aberto do tubo neural (a). A Chiari II (b) acompanha a mielomeningocele aberta, com vazamento de liquor. O cone em L4 não é posição normal do lactente (d): é justamente o achado que pede seguimento. A ultrassonografia é viável nos primeiros meses porque os arcos posteriores ainda não se ossificaram.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "medula-presa", "cone-medular", "disrafismo-oculto", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18; Sahin et al., Arch Dis Child Fetal Neonatal Ed 1997"
+    },
+    {
+      "id": "emb-18-q26",
+      "tipo": "multipla",
+      "contexto": "Menino de 12 anos tem um pequeno cavernoma no bulbo, junto à linha média do assoalho do quarto ventrículo, do lado direito. Ao exame, a metade direita da língua está atrofiada e com fasciculações, e a língua desvia para a direita quando protraída; a sensibilidade da face e o paladar estão preservados.",
+      "enunciado": "De que região do tubo neural derivam os neurônios lesados, e por que ficam junto à linha média?",
+      "alternativas": [
+        { "id": "a", "texto": "Placa alar; a flexura pontina leva as placas alares para junto da linha média, no assoalho do ventrículo" },
+        { "id": "b", "texto": "Placa do assoalho; no bulbo, ela passa a conter os neurônios motores somáticos dos nervos cranianos" },
+        { "id": "c", "texto": "Placa basal; com a abertura do teto do rombencéfalo, as placas basais ficam mediais às placas alares" },
+        { "id": "d", "texto": "Lábios rômbicos; seus neuroblastos migram ventromedialmente e formam os núcleos motores do bulbo" }
+      ],
+      "correta": "c",
+      "explicacao": "A lesão do núcleo do hipoglosso (neurônio motor inferior) causa atrofia e fasciculações da hemilíngua e desvio da língua para o lado lesado. Esse núcleo é motor somático e deriva da placa basal do mielencéfalo (c). No tubo neural, a placa basal é ventral e a alar, dorsal; a flexura pontina afasta as paredes laterais do rombencéfalo e afina seu teto, de modo que, no assoalho do quarto ventrículo, os núcleos motores (basais) ficam mediais e os sensitivos (alares) laterais, separados pelo sulco limitante. A placa alar (a) origina núcleos sensitivos, que ficam laterais. As placas do teto e do assoalho (b) não contêm neuroblastos. Os lábios rômbicos (d), porções dorsais das placas alares do metencéfalo, formam o cerebelo. A preservação da sensibilidade facial e do paladar é coerente com uma lesão restrita a um núcleo de origem basal.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "placa-basal", "placa-alar", "sulco-limitante", "tronco-encefalico", "nervo-hipoglosso", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 18; Moore 11ª ed., cap. 17; Moore, Dalley e Agur, Anatomia Orientada para a Clínica, 8ª ed. (nervos cranianos)"
+    },
+    {
+      "id": "emb-18-q27",
+      "tipo": "multipla",
+      "contexto": "Gestante com 23 semanas de idade gestacional. O feto tem mielomeningocele lombossacra, 'sinal do limão', 'sinal da banana' e ventriculomegalia. A equipe de um centro especializado discute a correção intrauterina, como no ensaio MOMS.",
+      "enunciado": "Qual resultado do ensaio MOMS é coerente com a hipótese mais aceita para a malformação de Chiari II?",
+      "alternativas": [
+        { "id": "a", "texto": "Recuperação da função vesical, porque a medula exposta se regenera depois de recoberta na cirurgia fetal" },
+        { "id": "b", "texto": "Menos necessidade de derivação ventricular e menos herniação do rombencéfalo após o fechamento fetal" },
+        { "id": "c", "texto": "Menos partos prematuros, porque o fechamento do defeito corrige o excesso de líquido amniótico" },
+        { "id": "d", "texto": "Queda da alfafetoproteína ao normal, porque o tubo neural volta a se fechar depois da cirurgia fetal" }
+      ],
+      "correta": "b",
+      "explicacao": "Segundo a hipótese mais aceita, o vazamento de liquor pela mielomeningocele aberta impede a distensão do sistema ventricular e o crescimento da fossa posterior, que fica pequena; vérmis, bulbo e quarto ventrículo herniam pelo forame magno, e o fluxo de liquor é obstruído. No MOMS, a correção antes de 26 semanas de idade gestacional reduziu a necessidade de derivação ventricular e a herniação do rombencéfalo, além de melhorar desfechos motores, o que é coerente com essa hipótese (b). O tecido neural já lesado não se regenera (a), e a bexiga neurogênica continua exigindo acompanhamento. A cirurgia fetal aumentou, e não reduziu, o risco de prematuridade (c), além do risco de afinamento ou deiscência da cicatriz uterina. A cirurgia recobre o defeito, mas não refaz a neurulação, e a alfafetoproteína não é usada para avaliar a correção (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "chiari-ii", "mielomeningocele", "cirurgia-fetal", "hidrocefalia", "caso-clinico"],
+      "referencia": "Adzick et al., N Engl J Med 2011 (MOMS); Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
+    },
+    {
+      "id": "emb-18-q28",
+      "tipo": "multipla",
+      "contexto": "Num serviço de medicina fetal, duas gestantes fazem ultrassonografia com 26 semanas de idade gestacional. No feto A há ausência da abóbada craniana, com tecido encefálico degenerado exposto, e polidrâmnio. No feto B, rins e bexiga não são visualizados, e não há líquido amniótico.",
+      "enunciado": "Qual princípio explica os volumes opostos de líquido amniótico nos dois fetos?",
+      "alternativas": [
+        { "id": "a", "texto": "O volume é regulado pela secreção ativa do âmnio, que aumenta sem encéfalo e cessa sem rins" },
+        { "id": "b", "texto": "O volume depende só da produção de urina, aumentada no feto A e ausente no feto B" },
+        { "id": "c", "texto": "O volume é definido pela placenta, que forma o líquido conforme a necessidade de excreção do feto" },
+        { "id": "d", "texto": "O volume reflete o equilíbrio entre produção, sobretudo de urina fetal, e remoção pela deglutição" }
+      ],
+      "correta": "d",
+      "explicacao": "Na segunda metade da gestação, a urina fetal é a principal fonte do líquido amniótico, e a deglutição fetal, seguida de absorção intestinal e passagem à mãe pela placenta, é a principal via de remoção; o volume reflete o equilíbrio entre as duas (d). No feto A (anencefalia, por falha do neuroporo cranial), a deglutição é inadequada e o líquido se acumula, como nas atresias digestivas altas. No feto B (agenesia renal bilateral), falta a urina e surge anidrâmnio, com risco de sequência de Potter e hipoplasia pulmonar. O âmnio participa das trocas, mas não é a fonte principal nessa fase, e sua secreção não explica os volumes opostos (a). Atribuir tudo à urina (b) ignora a deglutição, que explica o polidrâmnio do anencéfalo. A placenta (c) faz a excreção dos resíduos fetais, mas não forma o líquido conforme essa necessidade: por isso fetos sem rins chegam ao termo sem uremia, mas com anidrâmnio.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "anencefalia", "liquido-amniotico", "polidramnio", "agenesia-renal", "integracao", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 7, 12 e 17; Sadler 14ª ed., cap. 8 e 18"
+    },
+    {
+      "id": "emb-18-q29",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o trajeto do liquor produzido nos plexos corioides dos ventrículos laterais até sua reabsorção. Entre parênteses está a vesícula encefálica que originou cada cavidade:",
+      "itens": [
+        { "id": "1", "texto": "Aqueduto do mesencéfalo (mesencéfalo)" },
+        { "id": "2", "texto": "Ventrículos laterais (telencéfalo)" },
+        { "id": "3", "texto": "Espaço subaracnóideo e granulações aracnóideas" },
+        { "id": "4", "texto": "Terceiro ventrículo (diencéfalo)" },
+        { "id": "5", "texto": "Quarto ventrículo (rombencéfalo)" },
+        { "id": "6", "texto": "Forames interventriculares" },
+        { "id": "7", "texto": "Aberturas mediana e laterais do quarto ventrículo" }
+      ],
+      "ordemCorreta": ["2", "6", "4", "1", "5", "7", "3"],
+      "explicacao": "A luz do tubo neural forma o sistema ventricular: ventrículos laterais (telencéfalo) → forames interventriculares → terceiro ventrículo (diencéfalo) → aqueduto do mesencéfalo → quarto ventrículo (rombencéfalo) → aberturas mediana e laterais do quarto ventrículo → espaço subaracnóideo, de onde o liquor é reabsorvido pelas granulações aracnóideas. Esse trajeto explica o padrão das hidrocefalias: na estenose do aqueduto, causa congênita mais comum, dilatam-se os ventrículos laterais e o terceiro, com quarto ventrículo normal; a obstrução das aberturas do quarto ventrículo dilata também o quarto; a falha das granulações causa hidrocefalia comunicante.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "sistema-ventricular", "liquor", "vesiculas-encefalicas", "hidrocefalia", "anatomia"],
+      "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
     }
   ],
   "referencias": [
@@ -770,6 +862,10 @@
     {
       "obra": "Sahin F, Selçuki M, Ecin N, et al. Level of conus medullaris in term and preterm neonates. Arch Dis Child Fetal Neonatal Ed. 1997;77(1):F67-9",
       "capitulo": "Nível do cone medular à ultrassonografia neonatal"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia Orientada para a Clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Resumo dos nervos cranianos (nervo hipoglosso: lesão do neurônio motor inferior)"
     }
   ],
   "notasDivergencia": [

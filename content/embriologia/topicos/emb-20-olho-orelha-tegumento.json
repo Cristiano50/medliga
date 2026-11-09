@@ -758,6 +758,98 @@
       "bloom": "lembrar",
       "tags": ["tegumento", "dentes", "origens"],
       "referencia": "Sadler 14ª ed., cap. 17 e 21; Moore 11ª ed., cap. 19"
+    },
+    {
+      "id": "emb-20-q25",
+      "tipo": "multipla",
+      "contexto": "Lactente de 6 meses tem coloboma no setor inferior da íris e da coroide nos dois olhos. A mãe conta que tomou um medicamento por alguns dias com 14 semanas de idade gestacional e pergunta se isso causou o problema.",
+      "enunciado": "Qual resposta é coerente com a embriologia do olho?",
+      "alternativas": [
+        { "id": "a", "texto": "É provável, porque a fissura coroide só se fecha no 2º trimestre, junto com a reabertura das pálpebras" },
+        { "id": "b", "texto": "É provável, porque o coloboma resulta de lesão das fibras secundárias do cristalino, formadas nessa fase" },
+        { "id": "c", "texto": "É improvável pela época: a fissura coroide fecha-se na 7ª semana após a fertilização (≈ 9ª de IG)" },
+        { "id": "d", "texto": "É improvável, porque o coloboma é sempre adquirido depois do nascimento, por trauma ou inflamação" }
+      ],
+      "correta": "c",
+      "explicacao": "O coloboma resulta da falha do fechamento da fissura coroide, na face inferior do cálice e da haste ópticos, que ocorre na 7ª semana após a fertilização, ou seja, por volta da 9ª semana de idade gestacional (idade gestacional ≈ idade embrionária + 2 semanas). Uma exposição com 14 semanas de idade gestacional ocorreu depois do fechamento e não explica o defeito (c); num coloboma bilateral, causas genéticas e associações sindrômicas, como a síndrome CHARGE (CHD7), devem ser procuradas. A fissura não se fecha no 2º trimestre (a); a reabertura das pálpebras, entre 26 e 28 semanas segundo Moore, é um evento independente. Lesões das fibras do cristalino (b) causam catarata, não coloboma. O coloboma típico é congênito, de origem embriológica, e não adquirido (d).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "coloboma", "fissura-coroide", "periodo-critico", "teratologia", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 18 e 20; Sadler 14ª ed., cap. 20"
+    },
+    {
+      "id": "emb-20-q26",
+      "tipo": "multipla",
+      "contexto": "Gestante não vacinada apresenta exantema e linfonodomegalia retroauricular; a rubéola é confirmada por soroconversão. A idade gestacional é de 15 semanas, confirmada por ultrassonografia do 1º trimestre. Ela pergunta qual defeito seria esperado se o bebê fosse afetado.",
+      "enunciado": "Considerando os períodos críticos de cada órgão, qual é a resposta mais coerente?",
+      "alternativas": [
+        { "id": "a", "texto": "Catarata bilateral, porque as fibras secundárias do cristalino continuam a ser formadas nessa fase" },
+        { "id": "b", "texto": "Persistência do canal arterial isolada, porque a septação cardíaca ainda está em andamento" },
+        { "id": "c", "texto": "Coloboma de íris e retina, porque a fissura coroide permanece aberta até o fim do 2º trimestre" },
+        { "id": "d", "texto": "Surdez neurossensorial isolada; a orelha interna permanece suscetível por mais tempo" }
+      ],
+      "correta": "d",
+      "explicacao": "Na rubéola congênita, o tipo de defeito depende da época da infecção. Catarata e cardiopatia resultam de infecções no início da gestação, quando se formam as fibras primárias do cristalino (entre a 4ª e a 7ª semana após a fertilização, segundo Moore) e o coração. Na série prospectiva de Miller e colaboradores (Lancet, 1982), as crianças infectadas entre 13 e 16 semanas de gestação que tiveram defeitos apresentaram apenas surdez, e não houve defeitos atribuíveis à rubéola após a 16ª semana: a orelha interna permanece suscetível por mais tempo que o olho e o coração (d). As fibras secundárias (a) são acrescentadas por toda a vida, mas a catarata da rubéola está ligada à infecção precoce, durante a formação das fibras primárias. A septação cardíaca (b) completa-se no período embrionário, e a cardiopatia da rubéola decorre de infecção precoce. A fissura coroide (c) fecha-se na 7ª semana após a fertilização. A triagem auditiva neonatal, obrigatória no Brasil, é especialmente importante nesse bebê.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "rubeola-congenita", "surdez-congenita", "periodo-critico", "teratologia", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 18 e 20; Miller et al., Lancet 1982"
+    },
+    {
+      "id": "emb-20-q27",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido tem microtia à direita (pavilhão reduzido a um pequeno remanescente) e ausência do meato acústico externo do mesmo lado; a face e a mandíbula são simétricas, e a orelha esquerda é normal. A tomografia mostra cavidade timpânica pequena, ossículos malformados e orelha interna de aspecto normal.",
+      "enunciado": "Que tipo de perda auditiva se espera à direita, e qual é a base embriológica?",
+      "alternativas": [
+        { "id": "a", "texto": "Neurossensorial, porque o meato acústico externo e a cóclea derivam ambos da vesícula ótica" },
+        { "id": "b", "texto": "Condutiva; o labirinto membranáceo vem do placoide ótico, independente do 1º sulco e dos arcos" },
+        { "id": "c", "texto": "Neurossensorial, porque o pavilhão e o órgão espiral derivam das mesmas saliências auriculares" },
+        { "id": "d", "texto": "Condutiva, porque o estribo deriva do 1º sulco faríngeo, que também forma o meato acústico" }
+      ],
+      "correta": "b",
+      "explicacao": "O meato acústico externo deriva da parte dorsal do 1º sulco faríngeo (ectoderma); o pavilhão, das saliências auriculares do 1º e do 2º arcos; os ossículos, das cartilagens desses arcos. Falhas dessas estruturas impedem a condução do som e causam perda condutiva. O labirinto membranáceo, com o órgão espiral, deriva do placoide ótico (vesícula ótica), ao lado do rombencéfalo, e por isso pode estar preservado, como mostra a tomografia (b). O meato não vem da vesícula ótica (a), e o órgão espiral não vem das saliências auriculares (c). O estribo deriva da cartilagem do 2º arco, não do 1º sulco (d). A triagem auditiva neonatal, obrigatória no Brasil, e a avaliação audiológica das duas orelhas continuam indicadas.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "orelha-externa", "orelha-interna", "surdez-congenita", "arcos-faringeos", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 9 e 18; Sadler 14ª ed., cap. 17 e 19"
+    },
+    {
+      "id": "emb-20-q28",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as estruturas que a luz atravessa no olho, da superfície até as células que a detectam:",
+      "itens": [
+        { "id": "1", "texto": "Corpo vítreo" },
+        { "id": "2", "texto": "Epitélio da córnea" },
+        { "id": "3", "texto": "Fotorreceptores (cones e bastonetes)" },
+        { "id": "4", "texto": "Cristalino" },
+        { "id": "5", "texto": "Camada de células ganglionares" },
+        { "id": "6", "texto": "Estroma da córnea" },
+        { "id": "7", "texto": "Células bipolares" }
+      ],
+      "ordemCorreta": ["2", "6", "4", "1", "5", "7", "3"],
+      "explicacao": "A luz atravessa o epitélio da córnea (ectoderma superficial), o estroma da córnea (mesênquima da crista neural), o humor aquoso, o cristalino (placoide do cristalino, ectoderma superficial) e o corpo vítreo. Na retina neural, derivada da camada interna do cálice óptico, passa primeiro pelas células ganglionares e bipolares e só então chega aos fotorreceptores. Como a vesícula óptica se invagina para formar o cálice, a retina neural é 'invertida': as partes fotossensíveis dos fotorreceptores ficam voltadas para o antigo espaço intrarretiniano e para o epitélio pigmentado (camada externa do cálice), e é nesse plano que ocorre o descolamento de retina.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "olho", "retina", "cornea", "cristalino", "anatomia"],
+      "referencia": "Moore 11ª ed., cap. 18; Sadler 14ª ed., cap. 20"
+    },
+    {
+      "id": "emb-20-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura do olho ou da orelha, acometida na doença indicada, à sua origem embriológica:",
+      "pares": [
+        { "esquerda": "Cristalino opaco (catarata congênita)", "direita": "Placoide do cristalino (ectoderma superficial)" },
+        { "esquerda": "Retina neural (descolamento de retina)", "direita": "Camada interna do cálice óptico (neuroectoderma)" },
+        { "esquerda": "Estroma da córnea turvo (glaucoma congênito)", "direita": "Mesênquima derivado da crista neural" },
+        { "esquerda": "Mucosa da cavidade timpânica (otite média)", "direita": "Endoderma da 1ª bolsa faríngea" },
+        { "esquerda": "Órgão espiral (surdez da rubéola congênita)", "direita": "Vesícula ótica (placoide ótico)" },
+        { "esquerda": "Meato acústico externo (atresia congênita)", "direita": "Ectoderma do 1º sulco faríngeo" }
+      ],
+      "explicacao": "O cristalino deriva do placoide do cristalino, espessamento do ectoderma superficial induzido pela vesícula óptica. A retina neural deriva da camada interna do cálice óptico (neuroectoderma do prosencéfalo), e o descolamento ocorre entre ela e o epitélio pigmentado. O estroma (e o endotélio) da córnea vem do mesênquima derivado da crista neural; no glaucoma congênito, a pressão alta aumenta e turva a córnea. A cavidade timpânica deriva do recesso tubotimpânico da 1ª bolsa faríngea (endoderma). O órgão espiral faz parte do ducto coclear, derivado da vesícula ótica. O meato acústico externo deriva da parte dorsal do 1º sulco faríngeo (ectoderma).",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "olho", "orelha", "origens", "integracao"],
+      "referencia": "Moore 11ª ed., cap. 9 e 18; Sadler 14ª ed., cap. 17, 19 e 20"
     }
   ],
   "referencias": [
@@ -816,6 +908,10 @@
     {
       "obra": "Brasil. Ministério da Saúde. Diretrizes de Atenção à Saúde Ocular na Infância: detecção e intervenção precoce para prevenção de deficiências visuais. Brasília: Ministério da Saúde; 2013",
       "capitulo": "Teste do reflexo vermelho (teste do olhinho)"
+    },
+    {
+      "obra": "Miller E, Cradock-Watson JE, Pollock TM. Consequences of confirmed maternal rubella at successive stages of pregnancy. Lancet. 1982;2(8302):781-4",
+      "capitulo": "Defeitos conforme a idade gestacional da infecção (surdez isolada entre 13 e 16 semanas; nenhum defeito após 16 semanas)"
     }
   ],
   "notasDivergencia": [
@@ -834,7 +930,8 @@
     "Momentos de aparecimento dos pelos (fim do 3º mês, Sadler), das unhas e de sua chegada às pontas dos dedos (marcador de maturidade fetal) não foram incluídos como números por variação entre as fontes.",
     "Prevalências de coloboma, catarata e glaucoma congênitos, apêndices pré-auriculares e politelia não foram conferidas e foram omitidas.",
     "Indicação de ultrassonografia renal em apêndices pré-auriculares isolados é controversa na literatura pediátrica; o conteúdo recomenda apenas triagem auditiva e busca clínica de outras anomalias.",
-    "Janela cirúrgica da catarata congênita densa (4–6 semanas na unilateral; até ≈ 10 semanas na bilateral) e calendário de repetição do teste do reflexo vermelho variam entre as fontes; o guia do Ministério da Saúde para a triagem ocular neonatal está em revisão (consulta pública de 2026). Conferir a versão vigente antes da publicação."
+    "Janela cirúrgica da catarata congênita densa (4–6 semanas na unilateral; até ≈ 10 semanas na bilateral) e calendário de repetição do teste do reflexo vermelho variam entre as fontes; o guia do Ministério da Saúde para a triagem ocular neonatal está em revisão (consulta pública de 2026). Conferir a versão vigente antes da publicação.",
+    "Camada avançada (q26): os dados de Miller et al. (Lancet 1982) foram conferidos pelo resumo, não pelo texto integral; a idade gestacional da série é dada em semanas de gestação, e o sistema de contagem (provavelmente a partir da DUM) não foi confirmado. O protocolo da FEBRASGO sobre rubéola na gestação e o Guia de Vigilância em Saúde do Ministério da Saúde foram vistos só em trechos de busca e concordam qualitativamente (risco máximo no 1º trimestre, baixo após 16–20 semanas). A questão usa 15 semanas de idade gestacional, dentro da faixa do estudo nos dois sistemas de contagem plausíveis."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

@@ -878,6 +878,196 @@
         "planos"
       ],
       "referencia": "Moore 11ª ed., cap. 1"
+    },
+    {
+      "id": "emb-01-q26",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 30 anos, com ciclos menstruais regulares de 35 dias, sabe com segurança a data da última menstruação (DUM). Na ultrassonografia transvaginal, a idade gestacional calculada pela DUM é de 8 semanas e 0 dia. A ovulação e a fertilização ocorreram no momento esperado para a duração do seu ciclo.",
+      "enunciado": "Qual achado é esperado no comprimento cabeça-nádega (CCN) e qual deve ser a conduta quanto à datação?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "CCN compatível com cerca de 8 semanas; manter a datação pela DUM"
+        },
+        {
+          "id": "b",
+          "texto": "CCN compatível com cerca de 7 semanas; manter a DUM, pois a diferença não passa de 7 dias"
+        },
+        {
+          "id": "c",
+          "texto": "CCN compatível com cerca de 7 semanas; redatar a gestação pela ultrassonografia"
+        },
+        {
+          "id": "d",
+          "texto": "CCN compatível com cerca de 9 semanas; redatar a gestação pela ultrassonografia"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 35 dias a ovulação, e com ela a fertilização, ocorre por volta do 21º dia, e não do 14º. No dia do exame (56 dias após a DUM), o embrião tem cerca de 35 dias após a fertilização, o que equivale a cerca de 7 semanas de idade gestacional (35 + 14 = 49 dias): o CCN mostrará cerca de 1 semana a menos que a DUM. Como, pela DUM, a gestação tem menos de 9 semanas, uma diferença de mais de 5 dias justifica redatar pela ultrassonografia (c). (a) Supõe ovulação no 14º dia, o que vale para ciclos de 28 dias. (b) O limite de 7 dias vale entre 9 semanas e 13 semanas e 6 dias; antes de 9 semanas o limite é de 5 dias. (d) Erra a direção: a ovulação tardia torna o embrião menor, e não maior, do que a DUM sugere.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "idade-gestacional",
+        "ccn",
+        "datacao",
+        "ciclo-menstrual"
+      ],
+      "referencia": "ACOG CO 700 (2017); Moore 11ª ed., cap. 2 e 6"
+    },
+    {
+      "id": "emb-01-q27",
+      "tipo": "multipla",
+      "contexto": "Uma gestação foi obtida por fertilização in vitro com transferência de um único blastocisto de 5 dias (D5). A primeira ultrassonografia é feita 40 dias após a transferência e mostra embrião com batimentos cardíacos e CCN compatível com 7 semanas e 4 dias.",
+      "enunciado": "Qual idade gestacional deve constar no laudo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "7 semanas e 4 dias, porque o CCN é o método mais preciso no 1º trimestre"
+        },
+        {
+          "id": "b",
+          "texto": "8 semanas e 3 dias, pela data da transferência e pela idade do embrião"
+        },
+        {
+          "id": "c",
+          "texto": "7 semanas e 5 dias, somando 2 semanas aos dias desde a transferência"
+        },
+        {
+          "id": "d",
+          "texto": "6 semanas e 3 dias, somando a idade do embrião aos dias desde a transferência"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Nas gestações por reprodução assistida, a idade gestacional é calculada pela data da transferência e pela idade do embrião transferido, o que é mais exato que qualquer medida (b). No dia da transferência, o blastocisto D5 tinha 5 dias após a fertilização, o que corresponde a 19 dias de idade gestacional (5 + 14). Quarenta dias depois, o concepto tem 45 dias após a fertilização e 59 dias de idade gestacional, isto é, 8 semanas e 3 dias. (a) O CCN é o padrão quando a datação parte da DUM; na reprodução assistida prevalece a datação pela transferência, que não é corrigida pelo CCN. (c) Esquece os 5 dias de vida do embrião antes da transferência. (d) Calcula a idade após a fertilização (45 dias, ou 6 semanas e 3 dias), mas não soma as 2 semanas da convenção da idade gestacional.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "idade-gestacional",
+        "datacao",
+        "reproducao-assistida"
+      ],
+      "referencia": "ACOG CO 700 (2017); Moore 11ª ed., cap. 2 e 6"
+    },
+    {
+      "id": "emb-01-q28",
+      "tipo": "multipla",
+      "contexto": "Após um abortamento espontâneo, o laudo de anatomia patológica descreve “embrião compatível com o fim da 8ª semana do desenvolvimento (estágio 23 de Carnegie)”. Poucos dias antes, a ultrassonografia mostrara embrião com batimentos e CCN compatível com 10 semanas de idade gestacional. Um residente conclui que os laudos discordam em 2 semanas.",
+      "enunciado": "Como interpretar corretamente os dois laudos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "São concordantes: 8 semanas após a fertilização equivalem a cerca de 10 semanas de IG"
+        },
+        {
+          "id": "b",
+          "texto": "Indicam restrição de crescimento, pois o embrião estava 2 semanas atrás da ultrassonografia"
+        },
+        {
+          "id": "c",
+          "texto": "O laudo patológico superestima a idade, pois o estágio de Carnegie depende do comprimento"
+        },
+        {
+          "id": "d",
+          "texto": "A ultrassonografia errou, pois o CCN só passa a ser válido a partir de 10 semanas de IG"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O patologista, como o embriologista, usa a idade após a fertilização; a ultrassonografia obstétrica usa a idade gestacional, cerca de 2 semanas maior. O fim da 8ª semana após a fertilização (estágio 23, ~56 dias) corresponde a cerca de 10 semanas de idade gestacional, exatamente o que a ultrassonografia mostrou (a). (b) A “diferença” de 2 semanas é só a da convenção de contagem, não atraso de crescimento. (c) Os estágios de Carnegie baseiam-se em características morfológicas, não no comprimento, que varia entre embriões da mesma idade. (d) O CCN é medido assim que o embrião se torna visível e é o método de datação mais preciso até cerca de 13 semanas e 6 dias.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "idade-gestacional",
+        "carnegie",
+        "ccn"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1, 5 e 6"
+    },
+    {
+      "id": "emb-01-q29",
+      "tipo": "ordenar",
+      "enunciado": "Numa gestante com ciclos regulares de 28 dias, ordene os momentos do mais precoce ao mais tardio (alguns estão em idade após a fertilização, outros em idade gestacional):",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Embrião com 20 dias após a fertilização"
+        },
+        {
+          "id": "2",
+          "texto": "7 semanas de idade gestacional"
+        },
+        {
+          "id": "3",
+          "texto": "Início da implantação do blastocisto"
+        },
+        {
+          "id": "4",
+          "texto": "12 semanas de idade gestacional"
+        },
+        {
+          "id": "5",
+          "texto": "4 semanas de idade gestacional"
+        },
+        {
+          "id": "6",
+          "texto": "Fim do período embrionário (estágio 23 de Carnegie)"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "5",
+        "1",
+        "2",
+        "6",
+        "4"
+      ],
+      "explicacao": "Convertendo tudo para dias após a fertilização (idade gestacional − 14 dias): início da implantação ≈ 6º dia; 4 semanas de idade gestacional = 14 dias; 20 dias após a fertilização; 7 semanas de idade gestacional = 35 dias; fim do período embrionário ≈ 56 dias (cerca de 10 semanas de idade gestacional); 12 semanas de idade gestacional = 70 dias, já no período fetal. Quem esquece a conversão inverte, por exemplo, “20 dias após a fertilização” e “4 semanas de idade gestacional”.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "idade-gestacional",
+        "linha-do-tempo",
+        "periodos-do-desenvolvimento"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1, 2 e 6"
+    },
+    {
+      "id": "emb-01-q30",
+      "tipo": "multipla",
+      "contexto": "Três gestantes com ciclos regulares de 28 dias e datação confirmada por ultrassonografia do 1º trimestre usaram, por um único dia, o mesmo medicamento sabidamente teratogênico: Ana com 3 semanas e 4 dias de idade gestacional, Bia com 7 semanas e 2 dias e Carla com 12 semanas e 5 dias.",
+      "enunciado": "Em qual delas a exposição coincidiu com o período de maior suscetibilidade a malformações estruturais maiores?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ana, porque quanto mais precoce a exposição, maior o risco de malformação"
+        },
+        {
+          "id": "b",
+          "texto": "Carla, porque a exposição ainda ocorreu dentro do 1º trimestre"
+        },
+        {
+          "id": "c",
+          "texto": "As três igualmente, porque todas foram expostas no 1º trimestre"
+        },
+        {
+          "id": "d",
+          "texto": "Bia, cuja exposição ocorreu cerca de 5 semanas após a fertilização"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Subtraindo 2 semanas da idade gestacional: Ana foi exposta ~11 dias após a fertilização (2ª semana, fase do “tudo ou nada”); Bia, ~37 dias (6ª semana, em plena organogênese); Carla, ~75 dias (quase 11 semanas após a fertilização, já no período fetal). O maior risco de malformações estruturais maiores está nas semanas 3 a 8 após a fertilização, portanto em Bia (d). (a) Nas duas primeiras semanas a exposição costuma causar perda do concepto ou nenhuma malformação; ser mais precoce não significa mais risco de malformação. (b) e (c) O 1º trimestre ultrapassa o período embrionário: com 12 semanas e 5 dias de idade gestacional, Carla já está no período fetal, em que predominam anomalias menores e alterações funcionais e de crescimento (o sistema nervoso central continua vulnerável).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "periodos-criticos",
+        "teratogenese",
+        "idade-gestacional"
+      ],
+      "referencia": "Moore 11ª ed., cap. 1 e 20; Sadler 14ª ed., cap. 9"
     }
   ],
   "referencias": [
@@ -912,6 +1102,10 @@
     {
       "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 700: Methods for estimating the due date. Obstet Gynecol. 2017;129:e150–4 (reafirmado)",
       "capitulo": "Datação pelo CCN no 1º trimestre; limites para corrigir a DUM; gestações por reprodução assistida"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "2 — Primeira semana do desenvolvimento humano (ciclo menstrual e ovulação; blastocisto; fertilização in vitro) — questões avançadas q26, q27 e q29"
     }
   ],
   "notasDivergencia": [
@@ -922,7 +1116,8 @@
   ],
   "incertezas": [
     "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
-    "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões."
+    "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões.",
+    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

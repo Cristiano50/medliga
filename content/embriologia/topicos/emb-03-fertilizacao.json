@@ -989,6 +989,182 @@
         "reproducao-assistida"
       ],
       "referencia": "Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q27",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 34 anos faz fertilização in vitro com transferência de dois blastocistos de 5 dias. A ultrassonografia com 8 semanas de idade gestacional mostra três embriões com batimentos cardíacos: dois compartilham o mesmo saco coriônico (uma só placenta), cada um em seu próprio âmnio; o terceiro está em outro saco coriônico.",
+      "enunciado": "Qual é a explicação mais provável para a gestação tripla?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Um ovócito não aspirado ovulou e foi fertilizado naturalmente, formando o terceiro embrião"
+        },
+        {
+          "id": "b",
+          "texto": "Os dois blastocistos implantaram-se, e o embrioblasto de um deles se dividiu em dois"
+        },
+        {
+          "id": "c",
+          "texto": "Os blastômeros de um dos embriões se separaram na clivagem, depois da transferência"
+        },
+        {
+          "id": "d",
+          "texto": "Um ovócito foi fertilizado por dois espermatozoides, e cada um originou um embrião"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Dois embriões no mesmo saco coriônico, com âmnios separados, são gêmeos monocoriônicos e diamnióticos, que resultam da divisão do embrioblasto de um único blastocisto (gêmeos monozigóticos); o terceiro, em outro córion, vem do segundo blastocisto transferido (b). A gemelaridade monozigótica é mais frequente após a reprodução assistida, sobretudo com transferência de blastocisto. (a) Um embrião concebido de forma independente formaria seu próprio córion e não explicaria o par que compartilha a placenta. (c) Embriões transferidos no 5º dia já são blastocistos, fora da fase de clivagem; além disso, a separação na clivagem produz gêmeos dicoriônicos, cada um com seu córion. (d) A entrada de dois espermatozoides num ovócito produz um único concepto triploide, não dois embriões.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "reproducao-assistida",
+        "gemeos",
+        "gestacao-multipla"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2 e 7; Hviid et al., Hum Reprod Update 2018"
+    },
+    {
+      "id": "emb-03-q28",
+      "tipo": "multipla",
+      "contexto": "No laboratório de reprodução assistida, os ovócitos são avaliados 16 a 18 horas após a injeção intracitoplasmática de espermatozoide (ICSI), com um único espermatozoide injetado em cada ovócito. Um deles apresenta três pronúcleos.",
+      "enunciado": "Qual é o mecanismo mais provável desse achado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Falha do bloqueio da polispermia, com entrada de um segundo espermatozoide"
+        },
+        {
+          "id": "b",
+          "texto": "Não disjunção de um par de homólogos na meiose I do ovócito primário"
+        },
+        {
+          "id": "c",
+          "texto": "Retenção do segundo corpúsculo polar, que forma outro pronúcleo feminino"
+        },
+        {
+          "id": "d",
+          "texto": "Replicação do DNA do pronúcleo masculino, que se divide em dois pronúcleos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na ICSI, o ovócito é desnudado e recebe um único espermatozoide. Por isso, três pronúcleos após ICSI resultam, em geral, de falha na expulsão do segundo corpúsculo polar ao fim da meiose II: o conjunto haploide retido forma um segundo pronúcleo feminino, e o zigoto é triploide digínico (c); esses zigotos não são transferidos. (a) A dispermia é a causa habitual de três pronúcleos na FIV convencional, em que muitos espermatozoides cercam o ovócito, mas não na ICSI. (b) A não disjunção altera o número de cromossomos dentro de um pronúcleo (aneuploidia), não o número de pronúcleos. (d) Cada pronúcleo replica seu DNA antes da primeira mitose sem se dividir em dois. A triploidia digínica não se associa a mola; a mola parcial associa-se à triploidia diândrica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "reproducao-assistida",
+        "icsi",
+        "pronucleos",
+        "triploidia"
+      ],
+      "referencia": "Grossmann et al., Hum Reprod 1997; Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q29",
+      "tipo": "multipla",
+      "contexto": "Num experimento com ovócitos maduros de camundongo, um fármaco impede a exocitose dos grânulos corticais sem alterar outros aspectos da maturação do ovócito. Os ovócitos são então inseminados in vitro com alta concentração de espermatozoides capacitados.",
+      "enunciado": "Qual resultado é esperado na avaliação dos ovócitos fertilizados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ausência de reação acrossômica, porque a zona pelúcida não se modifica"
+        },
+        {
+          "id": "b",
+          "texto": "Ovócitos sem pronúcleo feminino, porque a meiose II depende dos grânulos"
+        },
+        {
+          "id": "c",
+          "texto": "Nenhuma alteração, pois o bloqueio da polispermia depende só da capacitação"
+        },
+        {
+          "id": "d",
+          "texto": "Maior proporção de ovócitos com mais de um pronúcleo masculino"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "O conteúdo dos grânulos corticais, liberado no espaço perivitelino após a fusão do primeiro espermatozoide, modifica a zona pelúcida (reação zonal) e a membrana do ovócito, bloqueando a polispermia. Sem essa exocitose, outros espermatozoides conseguem entrar, e surgem ovócitos com dois ou mais pronúcleos masculinos, isto é, conceptos poliploides (d). (a) A reação acrossômica é um evento do espermatozoide, que ocorre antes da fusão e independe da reação cortical. (b) A conclusão da meiose II é desencadeada pela entrada do espermatozoide e não depende da exocitose dos grânulos corticais. (c) A capacitação prepara o espermatozoide para a reação acrossômica e não impede a entrada de outros espermatozoides. No ser humano, a dispermia é a causa mais comum de triploidia nos abortos espontâneos, e a triploidia diândrica pode apresentar-se como mola parcial.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "polispermia",
+        "reacao-cortical",
+        "triploidia",
+        "experimental"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 3; Moore 11ª ed., cap. 2"
+    },
+    {
+      "id": "emb-03-q30",
+      "tipo": "associar",
+      "enunciado": "Associe cada técnica ao que ela dispensa e ao que ainda exige do processo natural da fertilização:",
+      "pares": [
+        {
+          "esquerda": "ICSI",
+          "direita": "Dispensa a passagem pela zona pelúcida e a fusão espontânea das membranas"
+        },
+        {
+          "esquerda": "FIV convencional",
+          "direita": "Dispensa as tubas, mas não a passagem do espermatozoide pela zona pelúcida"
+        },
+        {
+          "esquerda": "Inseminação intrauterina",
+          "direita": "Dispensa a travessia do colo, mas não a ovulação nem a captação do ovócito pela tuba"
+        },
+        {
+          "esquerda": "GIFT (transferência intratubária de gametas)",
+          "direita": "Dispensa a ovulação e a captação pelas fímbrias, mas não a fertilização na tuba"
+        }
+      ],
+      "explicacao": "Na ICSI o espermatozoide é injetado no citoplasma do ovócito, sem passar pela corona e pela zona e sem fusão espontânea. Na FIV convencional, ovócitos aspirados e espermatozoides capacitados encontram-se no meio de cultura, o que dispensa as tubas, mas cada espermatozoide ainda precisa atravessar a corona e a zona e fundir-se ao ovócito. Na inseminação intrauterina, espermatozoides preparados em laboratório são colocados na cavidade uterina; a ovulação, a captação do ovócito pelas fímbrias e a fertilização na ampola continuam naturais, o que exige tubas pérvias. Na GIFT, os ovócitos são aspirados dos folículos antes da ovulação e colocados com os espermatozoides na tuba, onde ocorre a fertilização. Cada descrição serve a uma só técnica: FIV e ICSI também dispensam a ovulação, mas não ocorrem na tuba; a GIFT também dispensa a travessia do colo, mas dispensa ainda a ovulação.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "reproducao-assistida",
+        "fases-fertilizacao",
+        "transporte-gametas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Zegers-Hochschild et al., glossário ICMART 2017"
+    },
+    {
+      "id": "emb-03-q31",
+      "tipo": "multipla",
+      "contexto": "Um menino com síndrome de Klinefelter tem cariótipo 47,XXY. A análise de marcadores de DNA mostra que um dos cromossomos X é de origem materna e que o outro X e o cromossomo Y são de origem paterna.",
+      "enunciado": "Qual mecanismo explica esse resultado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Não disjunção do X e do Y na meiose I paterna (espermatozoide 24,XY)"
+        },
+        {
+          "id": "b",
+          "texto": "Não disjunção do X na meiose II materna (ovócito 24,XX)"
+        },
+        {
+          "id": "c",
+          "texto": "Não disjunção na meiose II paterna (espermatozoide 24,XY)"
+        },
+        {
+          "id": "d",
+          "texto": "Fertilização do ovócito por dois espermatozoides, um com X e outro com Y"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O espermatozoide trouxe ao mesmo tempo um X e um Y; tinha, portanto, 24 cromossomos. Na meiose I masculina, X e Y comportam-se como um par (pareiam-se pela região pseudoautossômica) e devem ir para polos opostos; se não se separam, formam-se espermatozoides 24,XY (a). Cerca de metade dos casos de 47,XXY tem essa origem paterna. (b) Um ovócito 24,XX levaria dois X maternos, mas aqui só um X é materno. (c) Na meiose II separam-se cromátides irmãs: a não disjunção paterna nessa fase gera espermatozoides 24,XX ou 24,YY, nunca 24,XY. (d) A entrada de dois espermatozoides acrescenta um conjunto haploide inteiro e produz triploidia (69,XXY), não um único cromossomo sexual a mais.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "determinacao-sexo",
+        "nao-disjuncao",
+        "meiose",
+        "genetica"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 6; Moore 11ª ed., cap. 2 e 20"
     }
   ],
   "referencias": [
@@ -1023,6 +1199,22 @@
     {
       "obra": "Johnson N et al. Surgical treatment for tubal disease in women due to undergo in vitro fertilisation. Cochrane Database Syst Rev. 2010;(1):CD002125",
       "capitulo": "Revisão sistemática (hidrossalpinge antes da FIV)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "7 — Placenta e membranas fetais (gestações múltiplas; corionicidade) — questão avançada q27"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "6 — Bases cromossômicas e genômicas das doenças: autossomos e cromossomos sexuais (origem do 47,XXY) — questão avançada q31"
+    },
+    {
+      "obra": "Grossmann M et al. Origin of tripronucleate zygotes after intracytoplasmic sperm injection. Hum Reprod. 1997;12(12):2762–5",
+      "capitulo": "Artigo original (zigotos com três pronúcleos após ICSI: retenção do segundo corpúsculo polar) — questão avançada q28"
+    },
+    {
+      "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017",
+      "capitulo": "Definições de inseminação intrauterina, FIV, ICSI e GIFT — questão avançada q30"
     }
   ],
   "notasDivergencia": [
@@ -1036,7 +1228,9 @@
   "incertezas": [
     "Proteínas da zona pelúcida: o papel de receptor primário e indutor da reação acrossômica atribuído à ZP3 vem de modelos murinos. Em humanos há quatro glicoproteínas (ZP1–ZP4); em camundongos transgênicos com zona “humanizada”, espermatozoides humanos ligam-se ao domínio N-terminal da ZP2, e não à ZP3 (Baibakov et al., J Cell Biol 2012; Avella et al., J Cell Biol 2014). Qual(is) ZP induz(em) a reação acrossômica no ser humano segue em discussão. O conteúdo não cobra qual ZP é o receptor.",
     "Sobrevida máxima dos espermatozoides no trato genital feminino (fontes clínicas citam até vários dias) — não cobrada em questões.",
-    "Proteínas de fusão (Izumo1/Juno) não foram incluídas por não constarem com certeza nas edições de referência citadas."
+    "Proteínas de fusão (Izumo1/Juno) não foram incluídas por não constarem com certeza nas edições de referência citadas.",
+    "Questão avançada q28 (2026-11-09): Grossmann et al. (1997), com FISH, mostraram que parte dos zigotos classificados como 3PN após ICSI é, na verdade, diploide (cerca de um terço na série); nos triploides, a retenção do segundo corpúsculo polar é o mecanismo principal. A questão pede só o mecanismo mais provável de um pronúcleo a mais; a frequência não é cobrada.",
+    "Questão avançada q27 (2026-11-09): par monocoriônico tratado como monozigótico (modelo dos livros). Há relatos raros de gêmeos dizigóticos monocoriônicos, sobretudo após reprodução assistida; por isso o enunciado pede a explicação “mais provável”."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

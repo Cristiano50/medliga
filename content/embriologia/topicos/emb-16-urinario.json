@@ -1076,6 +1076,175 @@
         "correlacao-clinica"
       ],
       "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-16-q26",
+      "tipo": "multipla",
+      "contexto": "Menina de 5 meses tem infecção urinária febril. A ultrassonografia mostra duplicidade pieloureteral completa à direita, com dilatação do sistema do polo superior e uma ureterocele dentro da bexiga. A uretrocistografia miccional mostra refluxo vesicoureteral apenas para o sistema do polo inferior.",
+      "enunciado": "Qual explicação embriológica é coerente com o conjunto de achados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Um único broto ureteral com divisão incompleta, formando um ureter bífido com um só orifício na bexiga"
+        },
+        {
+          "id": "b",
+          "texto": "Dois ureteres: o do polo inferior foi levado caudalmente e obstruiu, e o do polo superior reflui"
+        },
+        {
+          "id": "c",
+          "texto": "Persistência parcial da membrana urogenital, com obstrução infravesical e refluxo secundário bilateral"
+        },
+        {
+          "id": "d",
+          "texto": "Dois ureteres: o do polo superior abre-se mais caudal e medial, e o do inferior, mais cranial e lateral"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Na duplicação completa há dois brotos ureterais no mesmo ducto mesonéfrico. Pela regra de Weigert–Meyer, o ureter do polo superior desemboca em posição mais caudal e medial: ele tende a permanecer ligado ao ducto mesonéfrico e a ser levado caudalmente com ele, por isso costuma ser ectópico ou terminar numa ureterocele, que obstrui e dilata o sistema do polo superior. O ureter do polo inferior desemboca mais cranial e lateralmente e é o mais propenso a refluxo (d). Um ureter bífido (a) tem um único orifício na bexiga e não explicaria ureterocele de um sistema com refluxo do outro. A alternativa (b) inverte a regra: o ureter levado caudalmente é o do polo superior, e o refluxo costuma ocorrer no inferior. A persistência da membrana urogenital (c) é hipótese para uma variante da válvula de uretra posterior, condição exclusiva do sexo masculino.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "duplicacao-ureteral",
+        "weigert-meyer",
+        "ureterocele",
+        "refluxo-vesicoureteral",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-16-q27",
+      "tipo": "multipla",
+      "contexto": "Homem de 68 anos será operado de aneurisma da aorta abdominal infrarrenal. A angiotomografia mostra rim em ferradura: os polos inferiores estão unidos por um istmo de parênquima situado anteriormente à aorta, logo abaixo da origem da artéria mesentérica inferior, na altura das vértebras lombares inferiores.",
+      "enunciado": "Que padrão de irrigação arterial a equipe deve esperar, e por quê?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Várias artérias, da aorta abaixo do nível habitual ou das ilíacas, porque ramos caudais não involuíram"
+        },
+        {
+          "id": "b",
+          "texto": "Uma artéria renal de cada lado, em L1–L2, porque a irrigação definitiva se estabelece antes da ascensão renal"
+        },
+        {
+          "id": "c",
+          "texto": "Apenas ramos da artéria mesentérica inferior, que retém o istmo, sem artérias renais vindas da aorta"
+        },
+        {
+          "id": "d",
+          "texto": "Ramos das artérias umbilicais persistentes, que irrigavam os rins na pelve e não foram substituídos pela aorta"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Durante a ascensão, o metanefro recebe ramos sucessivos de vasos próximos (ilíacas comuns e aorta distal, depois aorta mais alta), e os ramos inferiores normalmente involuem. No rim em ferradura, o istmo fica retido sob a raiz da artéria mesentérica inferior e o rim permanece baixo, irrigado por vasos próximos; por isso é comum que ramos caudais persistam como artérias múltiplas, originadas da aorta abaixo do nível habitual ou das ilíacas (a). Essa informação é importante no planejamento da cirurgia da aorta, à frente da qual passa o istmo. Uma artéria única em L1–L2 (b) é o padrão do rim que completou a ascensão; a irrigação acompanha a subida, não a precede. A AMI (c) é a estrutura que retém o istmo, não a fonte da irrigação renal, e não substitui as artérias vindas da aorta. As artérias umbilicais (d) levam sangue à placenta e não são a fonte da irrigação renal.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "rim-em-ferradura",
+        "ascensao-renal",
+        "arterias-renais",
+        "anatomia",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16; Moore, Dalley e Agur, Anatomia Orientada para a Clínica, 8ª ed. (Abdome)"
+    },
+    {
+      "id": "emb-16-q28",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia com 22 semanas de idade gestacional: o rim esquerdo está substituído por múltiplos cistos de tamanhos variados, sem parênquima reconhecível (rim displásico multicístico). O rim direito tem aspecto normal, a bexiga enche e esvazia durante o exame e o volume de líquido amniótico é normal. Os pais leram sobre a sequência de Potter e perguntam se o bebê terá pulmões pequenos.",
+      "enunciado": "Qual raciocínio responde corretamente à preocupação dos pais?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O risco é alto: o rim não funcionante comprime o hemitórax do mesmo lado e impede o crescimento do pulmão"
+        },
+        {
+          "id": "b",
+          "texto": "O risco é alto: com um só rim funcionante, os resíduos fetais acumulam-se e lesam o pulmão em formação"
+        },
+        {
+          "id": "c",
+          "texto": "O risco é baixo: o rim direito mantém a urina fetal e, com ela, o líquido amniótico de que o pulmão depende"
+        },
+        {
+          "id": "d",
+          "texto": "O risco é baixo: o crescimento pulmonar fetal depende só dos movimentos respiratórios, não do líquido amniótico"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na segunda metade da gestação, a urina fetal é a principal fonte do líquido amniótico, e o crescimento pulmonar exige volume adequado de líquido amniótico e de líquido pulmonar, além de espaço torácico e movimentos respiratórios fetais. A hipoplasia pulmonar da sequência de Potter decorre do oligoidrâmnio grave e precoce, não da doença renal em si; com um rim contralateral que produz urina, bexiga que enche e líquido normal, o risco é baixo (c). O rim displásico multicístico, em geral unilateral e esporádico, fica no retroperitônio e não comprime o tórax (a). Os resíduos metabólicos fetais são eliminados pela placenta, sem uremia intrauterina, mesmo sem nenhum rim (b). O crescimento pulmonar não depende só dos movimentos respiratórios (d): o oligoidrâmnio grave causa hipoplasia mesmo com movimentos presentes.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "liquido-amniotico",
+        "hipoplasia-pulmonar",
+        "sequencia-de-potter",
+        "rim-displasico-multicistico",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7, 10 e 12; Sadler 14ª ed., cap. 8 e 16"
+    },
+    {
+      "id": "emb-16-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado clínico à estrutura ou ao processo embrionário cuja falha o explica:",
+      "pares": [
+        {
+          "esquerda": "Saída de urina pelo umbigo, que aumenta com o choro",
+          "direita": "Obliteração da alantoide intraembrionária"
+        },
+        {
+          "esquerda": "Rim único com hipertrofia compensadora",
+          "direita": "Formação ou indução pelo broto ureteral de um lado"
+        },
+        {
+          "esquerda": "Menina com micções normais e gotejamento contínuo de urina",
+          "direita": "Incorporação do ureter à parede da bexiga"
+        },
+        {
+          "esquerda": "Mucosa vesical exposta, com epispádia e púbis afastados",
+          "direita": "Mesênquima da parede abdominal infraumbilical"
+        },
+        {
+          "esquerda": "Rim baixo, em U, com os polos inferiores unidos",
+          "direita": "Ascensão do metanefro a partir da pelve"
+        },
+        {
+          "esquerda": "Rins grandes e hiperecogênicos com fibrose hepática congênita",
+          "direita": "Fibrocistina dos ductos coletores (cílio primário)"
+        }
+      ],
+      "explicacao": "Úraco patente: persiste a luz da alantoide intraembrionária, e a urina sai pelo umbigo. Agenesia renal unilateral: sem broto ureteral (ou sem indução do blastema) de um lado não se formam néfrons, e o rim contralateral sofre hipertrofia compensadora. Ureter ectópico: o ureter não incorporado à bexiga é levado caudalmente com o ducto mesonéfrico e, na menina, pode abrir-se abaixo do mecanismo esfincteriano. Extrofia vesical: falha da migração de mesênquima para a parede infraumbilical (Moore). Rim em ferradura: os metanefros fundem-se pelos polos inferiores, e o istmo fica retido sob a artéria mesentérica inferior durante a ascensão. Doença renal policística autossômica recessiva: defeito da fibrocistina (PKHD1), ligada ao cílio primário, com dilatação cística dos ductos coletores.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "malformacoes",
+        "correlacao-clinica",
+        "integracao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-16-q30",
+      "tipo": "vf",
+      "enunciado": "Uma artéria renal acessória para o polo inferior, ramo embrionário que não involuiu durante a ascensão do rim, pode cruzar anteriormente o ureter e causar hidronefrose; como as artérias renais são terminais, sua secção cirúrgica tende a causar isquemia do segmento renal que ela irriga.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Durante a ascensão, os rins recebem ramos sucessivos de vasos próximos, e os inferiores normalmente involuem; os que persistem formam artérias renais acessórias, presentes em cerca de 25% dos rins de adultos segundo Moore. Uma artéria para o polo inferior pode cruzar anteriormente o ureter e obstruí-lo, com hidronefrose. Por serem artérias terminais, sua lesão causa isquemia do segmento correspondente, o que precisa ser considerado no planejamento cirúrgico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "arterias-renais",
+        "ascensao-renal",
+        "hidronefrose",
+        "anatomia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 12"
     }
   ],
   "referencias": [
@@ -1102,6 +1271,10 @@
     {
       "obra": "Carlson BM. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
       "capitulo": "16 — Sistema urogenital"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia Orientada para a Clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Abdome (rins, aorta abdominal e seus ramos; anomalias congênitas dos rins)"
     }
   ],
   "notasDivergencia": [
@@ -1120,7 +1293,9 @@
     "Prevalências de agenesia renal (uni e bilateral), rim em ferradura, extrofia vesical, válvula de uretra posterior e doenças renais policísticas divergem entre as obras ou não foram conferidas nas edições adotadas e foram omitidas.",
     "A regra de Weigert–Meyer, a apresentação clínica detalhada da válvula de uretra posterior e o padrão de incontinência no ureter ectópico vêm da literatura urológica e pediátrica; sua presença literal nos capítulos citados não foi conferida.",
     "O mecanismo da válvula de uretra posterior (inserção anômala dos ductos mesonéfricos para o tipo mais comum) é hipótese, apresentada como tal.",
-    "A faixa de dias dos eventos 'brotos prostáticos' (fim do 3º mês, dias 78–91) e 'fim da nefrogênese' (dias 224–252) é aproximada, derivada de descrições em meses e semanas."
+    "A faixa de dias dos eventos 'brotos prostáticos' (fim do 3º mês, dias 78–91) e 'fim da nefrogênese' (dias 224–252) é aproximada, derivada de descrições em meses e semanas.",
+    "Camada avançada (q26): a explicação da posição cruzada dos orifícios na duplicação completa (o ureter do polo superior tende a ser levado caudalmente com o ducto mesonéfrico) aplica a regra de Weigert–Meyer e a descrição de Sadler do broto anômalo que desce com o ducto mesonéfrico; a teoria detalhada da posição dos brotos (Mackie–Stephens) é da literatura urológica e não foi usada como gabarito. A diretriz EAU/ESPU de urologia pediátrica (capítulo de ureterocele e ureter ectópico) não pôde ser aberta nesta sessão.",
+    "Camada avançada (q27): a irrigação por artérias múltiplas no rim em ferradura foi deduzida da descrição dos livros-texto (ramos de vasos próximos ao rim que não completou a ascensão); a frequência desse padrão não foi conferida e não é citada."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

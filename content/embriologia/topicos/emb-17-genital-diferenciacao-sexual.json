@@ -670,6 +670,95 @@
       "bloom": "lembrar",
       "tags": ["homologos", "derivados", "genitalia-externa"],
       "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-17-q24",
+      "tipo": "multipla",
+      "contexto": "Menino de 1 ano, com pênis e escroto de aspecto típico e meato uretral na ponta da glande, é operado por hérnia inguinal direita com testículo direito não palpável. No saco herniário, o cirurgião encontra o testículo junto a uma estrutura semelhante a um útero, com tubas uterinas. O cariótipo é 46,XY.",
+      "enunciado": "Qual defeito explica a combinação de genitália masculina típica com derivados paramesonéfricos?",
+      "alternativas": [
+        { "id": "a", "texto": "Falta do AMH ou de seu receptor, com testosterona e DHT normais na vida fetal" },
+        { "id": "b", "texto": "Deficiência de 5α-redutase tipo 2, com DHT insuficiente para a regressão de Müller" },
+        { "id": "c", "texto": "Receptor de andrógenos inativo, já que esse receptor também medeia a ação do AMH" },
+        { "id": "d", "texto": "Falha da determinação testicular por mutação de SRY, sem células de Sertoli" }
+      ],
+      "correta": "a",
+      "explicacao": "É a síndrome de persistência dos ductos de Müller, por mutação do gene do AMH ou do gene de seu receptor (AMHR2). Os testículos diferenciam-se; as células de Leydig secretam testosterona, que mantém os ductos mesonéfricos, e a DHT masculiniza a genitália externa; mas, sem ação do AMH, os ductos paramesonéfricos persistem como útero e tubas, muitas vezes achados em cirurgia de hérnia inguinal ou criptorquidia (a). A DHT (b) não participa da regressão de Müller, e sua falta deixaria a genitália externa pouco virilizada. O receptor de andrógenos (c) não medeia a ação do AMH; sua inativação produz genitália externa feminina sem útero. Sem SRY (d) não há células de Sertoli, AMH nem células de Leydig funcionantes: a genitália externa seria feminina, com útero (disgenesia gonadal completa 46,XY).",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "DDS", "persistencia-ductos-muller", "AMH", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-17-q25",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo, com 2 dias de vida, tem falo de aspecto peniano com meato uretral na sua base (hipospádia penoescrotal), bolsa labioescrotal rugosa e fundida na linha média e nenhuma gônada palpável, nem na bolsa nem nos canais inguinais. O restante do exame é normal. A família quer anunciar o sexo da criança e marcar a circuncisão.",
+      "enunciado": "Qual hipótese precisa ser investigada de imediato, e por quê?",
+      "alternativas": [
+        { "id": "a", "texto": "Criptorquidia bilateral isolada em menino 46,XY; basta reavaliar a posição dos testículos aos 6 meses" },
+        { "id": "b", "texto": "Hipospádia isolada e multifatorial; pode-se definir o sexo e fazer a circuncisão antes de corrigir a uretra" },
+        { "id": "c", "texto": "Feto 46,XX virilizado por HAC: as gônadas impalpáveis podem ser ovários, com risco de crise perdedora de sal" },
+        { "id": "d", "texto": "Deficiência de 5α-redutase tipo 2 em 46,XY; não há urgência, pois a virilização se completará na puberdade" }
+      ],
+      "correta": "c",
+      "explicacao": "Hipospádia proximal com gônadas impalpáveis dos dois lados exige investigar DDS, e a primeira hipótese a afastar é a de uma pessoa 46,XX com hiperplasia adrenal congênita por deficiência de 21-hidroxilase, causa mais comum de DDS 46,XX (c). Os andrógenos suprarrenais, convertidos em DHT nos tecidos-alvo durante a diferenciação da genitália externa (9ª a 12ª semana, segundo Moore), podem fundir as saliências labioescrotais e fechar parcialmente as pregas urogenitais, dando à genitália aspecto masculino; as 'gônadas' que não se palpam são ovários, e há útero, porque sem testículos não há AMH. A forma perdedora de sal pode causar crise adrenal nas primeiras semanas; por isso a SBP orienta tratar o caso como urgência, não atribuir o sexo na sala de parto e investigar HAC. Tratar o quadro como criptorquidia isolada (a) adiaria esse diagnóstico. Na hipospádia, a circuncisão é contraindicada antes da correção, porque o prepúcio pode ser usado na cirurgia, e a definição do sexo deve aguardar a investigação (b). Mesmo que a causa fosse uma deficiência de 5α-redutase (d), genitália atípica com gônadas impalpáveis exige excluir a HAC antes, pelo risco de crise perdedora de sal.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "DDS", "hiperplasia-adrenal-congenita", "hipospadia", "criptorquidia", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 12; SBP, DC Endocrinologia, 2026; Speiser et al., J Clin Endocrinol Metab 2018"
+    },
+    {
+      "id": "emb-17-q26",
+      "tipo": "multipla",
+      "contexto": "Menina de 3 anos é operada de hérnia inguinal bilateral. Em cada saco herniário há uma gônada, e a biópsia mostra tecido testicular. O cariótipo é 46,XY, a genitália externa é feminina típica e a ultrassonografia não mostra útero. A investigação confirma insensibilidade completa aos andrógenos.",
+      "enunciado": "Os testículos chegaram à região inguinal, mas não às saliências labioescrotais. Qual fase da descida testicular falhou, e de que ela depende?",
+      "alternativas": [
+        { "id": "a", "texto": "Fase transabdominal, que depende do gubernáculo e do INSL3" },
+        { "id": "b", "texto": "Fase inguinoescrotal, que depende da ação dos andrógenos" },
+        { "id": "c", "texto": "Fase transabdominal, que depende da ação dos andrógenos" },
+        { "id": "d", "texto": "Fase inguinoescrotal, que depende do INSL3, e não de andrógenos" }
+      ],
+      "correta": "b",
+      "explicacao": "A descida testicular tem duas fases. A transabdominal, que leva o testículo até a região do anel inguinal profundo, depende do gubernáculo e do INSL3 secretado pelas células de Leydig, e não dos andrógenos; por isso ocorre normalmente na insensibilidade completa aos andrógenos e não é a fase que falhou (a); pela mesma razão, não depende de andrógenos (c). A fase inguinoescrotal depende da ação androgênica; sem receptor funcional, os testículos costumam ficar no abdome ou na região inguinal e são muitas vezes descobertos em cirurgia de hérnia, como aqui (b). A alternativa (d) atribui ao INSL3 o papel que cabe aos andrógenos na fase inguinoescrotal. O processo vaginal pérvio forma o saco herniário. O AMH age normalmente, por isso não há útero.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "DDS", "insensibilidade-androgenos", "descida-testicular", "gubernaculo", "caso-clinico"],
+      "referencia": "Larsen 5ª ed., cap. 16; Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+    },
+    {
+      "id": "emb-17-q27",
+      "tipo": "multipla",
+      "contexto": "Duas adolescentes de 16 anos, ambas 46,XY e com genitália externa feminina, procuram atendimento por amenorreia primária. A primeira tem mamas desenvolvidas, pelos pubianos escassos e ausência de útero. A segunda não tem desenvolvimento mamário, tem útero e tubas e, na ressonância, gônadas em fita.",
+      "enunciado": "Qual conduta em relação às gônadas é coerente com o mecanismo de cada condição?",
+      "alternativas": [
+        { "id": "a", "texto": "Gonadectomia imediata na primeira, pelo risco tumoral alto; vigilância na segunda, cujas gônadas são ovários" },
+        { "id": "b", "texto": "Gonadectomia imediata nas duas, porque ambas têm testículos funcionantes produtores de AMH" },
+        { "id": "c", "texto": "Gonadectomia nas duas antes da idade da puberdade, porque o risco de gonadoblastoma é o mesmo" },
+        { "id": "d", "texto": "Decisão compartilhada, sem pressa, na primeira; gonadectomia indicada na segunda, pelo risco tumoral alto" }
+      ],
+      "correta": "d",
+      "explicacao": "A primeira tem insensibilidade completa aos andrógenos: os testículos secretam AMH (sem útero) e testosterona, que não age, mas é aromatizada a estradiol (mamas). O risco de tumor de células germinativas é baixo, sobretudo antes da puberdade; a gonadectomia, quando escolhida, costuma ser adiada para depois da puberdade espontânea, em decisão compartilhada, e a pessoa pode optar por manter as gônadas sob vigilância. A segunda tem disgenesia gonadal completa 46,XY (síndrome de Swyer): sem determinação testicular não há AMH (útero e tubas presentes) nem esteroides gonadais (sem puberdade), e as gônadas em fita têm alto risco de gonadoblastoma, com indicação de gonadectomia (d). A alternativa (a) inverte os riscos, e gônadas em fita não são ovários. Em (b), a segunda não tem testículos funcionantes nem AMH, o que explica o útero. Em (c), os riscos são diferentes, e a retirada precoce dos testículos na primeira suprimiria a puberdade espontânea.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "DDS", "insensibilidade-androgenos", "disgenesia-gonadal", "gonadectomia", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 12; Lee et al., Horm Res Paediatr 2016"
+    },
+    {
+      "id": "emb-17-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada quadro de DDS ao ponto da via de diferenciação sexual em que está o defeito:",
+      "pares": [
+        { "esquerda": "46,XY; genitália masculina típica; útero e tubas uterinas", "direita": "Ação do AMH (gene do AMH ou de seu receptor)" },
+        { "esquerda": "46,XY; genitália feminina; sem útero; mamas na puberdade", "direita": "Receptor de andrógenos" },
+        { "esquerda": "46,XY; genitália pouco virilizada; derivados de Wolff presentes; virilização na puberdade", "direita": "Conversão de testosterona em DHT" },
+        { "esquerda": "46,XY; genitália feminina; útero; gônadas em fita; sem puberdade", "direita": "Determinação testicular (como SRY)" },
+        { "esquerda": "46,XX; genitália virilizada; útero e ovários normais", "direita": "Síntese suprarrenal de cortisol (CYP21A2)" }
+      ],
+      "explicacao": "Três sinais dirigem a diferenciação masculina: o AMH das células de Sertoli faz regredir os ductos de Müller; a testosterona das células de Leydig mantém os ductos de Wolff; a DHT, formada pela 5α-redutase tipo 2, masculiniza a genitália externa. Útero com genitália masculina típica indica falha isolada da via do AMH (síndrome de persistência dos ductos de Müller). Ausência de útero com genitália feminina e mamas indica AMH presente e andrógenos sem ação (insensibilidade completa aos andrógenos). Derivados de Wolff com genitália pouco virilizada que se viriliza na puberdade indicam testosterona presente e DHT insuficiente (deficiência de 5α-redutase tipo 2). Útero com genitália feminina e gônadas em fita indica que o testículo nem se formou (disgenesia gonadal completa 46,XY). Em 46,XX, a virilização com útero e ovários normais vem do excesso de andrógenos suprarrenais (HAC por deficiência de 21-hidroxilase).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "DDS", "AMH", "testosterona", "DHT", "integracao"],
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16; Lee et al., Pediatrics 2006"
     }
   ],
   "referencias": [

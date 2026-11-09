@@ -1210,6 +1210,204 @@
         "reacao-decidual"
       ],
       "referencia": "Sadler 14ª ed., cap. 4; Moore 11ª ed., cap. 3"
+    },
+    {
+      "id": "emb-05-q30",
+      "tipo": "multipla",
+      "contexto": "Uma mulher de 19 anos, com 11 semanas de idade gestacional, sangramento vaginal e β-hCG muito acima do esperado, é submetida a esvaziamento uterino por aspiração a vácuo. A histologia mostra vilosidades hidrópicas e hiperplasia trofoblástica difusas, sem tecido embrionário, e a imuno-histoquímica para p57 é negativa no citotrofoblasto e no estroma das vilosidades. A genotipagem do tecido mostra constituição 46,XY, sem alelos maternos e com dois alelos paternos diferentes em vários loci.",
+      "enunciado": "Qual mecanismo de fertilização explica melhor esse resultado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Um espermatozoide fertilizou um ovócito sem núcleo funcional, e seu genoma se duplicou"
+        },
+        {
+          "id": "b",
+          "texto": "Dois espermatozoides fertilizaram um ovócito com núcleo materno normal"
+        },
+        {
+          "id": "c",
+          "texto": "Um espermatozoide 24,XY, por não disjunção paterna, fertilizou um ovócito normal"
+        },
+        {
+          "id": "d",
+          "texto": "Dois espermatozoides (um X e um Y) fertilizaram um ovócito sem núcleo funcional"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Ausência de embrião, alterações difusas e p57 negativa (a p57 é produto de um gene de expressão materna) indicam mola completa, sem genoma materno. A presença do Y e de dois alelos paternos diferentes em vários loci mostra que participaram dois conjuntos haploides paternos distintos: dois espermatozoides, um com X e outro com Y, num ovócito sem núcleo funcional (d). (a) A duplicação do genoma de um único espermatozoide produz uma mola homozigota em todos os loci; com um espermatozoide 23,X resulta 46,XX (a forma mais comum), e a constituição 46,YY não é observada. (b) Dois espermatozoides num ovócito com núcleo normal dão triploidia com genoma materno (69 cromossomos, p57 positiva): é a mola parcial, com tecido fetal e alterações focais. (c) Um espermatozoide 24,XY num ovócito normal gera 47,XXY, com alelos maternos: é a síndrome de Klinefelter, não mola.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "mola-hidatiforme",
+        "citogenetica",
+        "dispermia",
+        "p57",
+        "caso-clinico"
+      ],
+      "referencia": "Ngan et al., FIGO 2021; Usui et al., Sci Rep 2019; Williams Obstetrics 26th ed."
+    },
+    {
+      "id": "emb-05-q31",
+      "tipo": "multipla",
+      "contexto": "Na ultrassonografia transvaginal de uma gestação inicial, o saco gestacional intrauterino contém um embrião ainda muito pequeno e, separada dele, uma pequena estrutura arredondada de parede fina. Uma membrana delicada começa a ser vista envolvendo apenas o embrião.",
+      "enunciado": "Que estrutura é a imagem arredondada e em que cavidade ela se situa?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Saco vitelino secundário, na cavidade coriônica, fora do âmnio"
+        },
+        {
+          "id": "b",
+          "texto": "Saco vitelino primário (cavidade exocelômica), dentro da cavidade amniótica"
+        },
+        {
+          "id": "c",
+          "texto": "Cavidade amniótica, situada no interior do saco vitelino secundário"
+        },
+        {
+          "id": "d",
+          "texto": "Cisto exocelômico, situado dentro da cavidade amniótica em torno do embrião"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O saco gestacional visto à ultrassonografia corresponde ao saco coriônico, cuja cavidade é o celoma extraembrionário (cavidade coriônica). O saco vitelino primário é substituído, por volta dos dias 12–13, pelo saco vitelino secundário (definitivo, vesícula umbilical), que fica nessa cavidade, entre o âmnio e o córion; a membrana que envolve só o embrião é o âmnio (a). Ver saco vitelino ou embrião dentro de um saco gestacional intrauterino praticamente afasta gravidez ectópica, salvo a rara gestação heterotópica. (b) O saco vitelino primário já não existe nessa fase, e nenhum saco vitelino fica dentro do âmnio. (c) A relação está invertida: a cavidade amniótica envolve o embrião, e o saco vitelino fica fora dela. (d) Os cistos exocelômicos são restos transitórios do saco primário no celoma extraembrionário, não na cavidade amniótica.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "saco-vitelino",
+        "celoma-extraembrionario",
+        "ultrassonografia",
+        "anexos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 3 e 7; Sadler 14ª ed., cap. 4"
+    },
+    {
+      "id": "emb-05-q32",
+      "tipo": "multipla",
+      "contexto": "Uma paciente em fertilização in vitro recebeu a transferência de um blastocisto de 5 dias (D5). O β-hCG sérico colhido 9 dias após a transferência é positivo.",
+      "enunciado": "No dia da coleta, qual é a idade do concepto e como ele está organizado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "9 dias após a fertilização; blastocisto iniciando a adesão ao endométrio"
+        },
+        {
+          "id": "b",
+          "texto": "14 dias após a fertilização (≈ 4 semanas de IG); disco bilaminar já implantado"
+        },
+        {
+          "id": "c",
+          "texto": "14 dias após a fertilização (≈ 2 semanas de IG); disco trilaminar com linha primitiva"
+        },
+        {
+          "id": "d",
+          "texto": "28 dias após a fertilização (≈ 6 semanas de IG); tubo neural em fechamento"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O blastocisto D5 tinha 5 dias após a fertilização na transferência; 9 dias depois, o concepto tem 14 dias após a fertilização, o fim da 2ª semana, o que corresponde a cerca de 4 semanas de idade gestacional (14 + 14 = 28 dias). Nessa fase ele já está totalmente inserido no endométrio (dias 10–12), tem disco bilaminar, cavidade amniótica, saco vitelino secundário e vilosidades primárias, e há hCG suficiente para teste positivo (b). (a) Esquece os 5 dias de vida do embrião antes da transferência; além disso, a adesão começa por volta do 6º–7º dia, não do 9º. (c) Subtrai as 2 semanas em vez de somá-las, e a linha primitiva, que inicia a formação do disco trilaminar, só aparece na 3ª semana. (d) Confunde idade gestacional com idade após a fertilização: 28 dias de idade gestacional equivalem a 14 dias após a fertilização.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "hCG",
+        "reproducao-assistida",
+        "idade-gestacional",
+        "disco-bilaminar"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2 e 3; Sadler 14ª ed., cap. 4 e 5"
+    },
+    {
+      "id": "emb-05-q33",
+      "tipo": "ordenar",
+      "enunciado": "No fim da 2ª semana, uma linha reta parte do sangue materno de uma lacuna trofoblástica, atravessa a cavidade coriônica e termina na cavidade do saco vitelino secundário. Ordene, de fora para dentro, as estruturas que ela atravessa:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Mesoderma extraembrionário esplâncnico"
+        },
+        {
+          "id": "2",
+          "texto": "Sinciciotrofoblasto"
+        },
+        {
+          "id": "3",
+          "texto": "Celoma extraembrionário (cavidade coriônica)"
+        },
+        {
+          "id": "4",
+          "texto": "Sangue materno na lacuna"
+        },
+        {
+          "id": "5",
+          "texto": "Revestimento do saco vitelino derivado do hipoblasto"
+        },
+        {
+          "id": "6",
+          "texto": "Citotrofoblasto"
+        },
+        {
+          "id": "7",
+          "texto": "Mesoderma extraembrionário somático"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "6",
+        "7",
+        "3",
+        "1",
+        "5"
+      ],
+      "explicacao": "O sangue materno ocupa as lacunas, escavadas no sinciciotrofoblasto; por dentro do sincício fica o citotrofoblasto, forrado internamente pelo mesoderma extraembrionário somático (os três formam o córion). Segue-se o celoma extraembrionário (cavidade coriônica). O saco vitelino secundário é coberto por fora pelo mesoderma extraembrionário esplâncnico e revestido por dentro pelo epitélio derivado do hipoblasto, que delimita a sua cavidade.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "corio",
+        "anatomia-do-concepto",
+        "saco-vitelino",
+        "celoma-extraembrionario"
+      ],
+      "referencia": "Moore 11ª ed., cap. 3; Sadler 14ª ed., cap. 4"
+    },
+    {
+      "id": "emb-05-q34",
+      "tipo": "associar",
+      "enunciado": "Associe os achados genéticos e imuno-histoquímicos do material de um aborto ao diagnóstico mais provável:",
+      "pares": [
+        {
+          "esquerda": "Diploide, sem genoma materno, p57 negativa",
+          "direita": "Mola hidatiforme completa"
+        },
+        {
+          "esquerda": "Triploide com dois conjuntos paternos, p57 positiva",
+          "direita": "Mola hidatiforme parcial"
+        },
+        {
+          "esquerda": "Triploide com dois conjuntos maternos",
+          "direita": "Triploidia digínica, sem fenótipo de mola"
+        },
+        {
+          "esquerda": "Diploide biparental, p57 positiva, sem hiperplasia trofoblástica",
+          "direita": "Aborto hidrópico não molar"
+        }
+      ],
+      "explicacao": "Sem genoma materno não se expressa a p57 (gene de expressão materna): é a mola completa, androgenética. A mola parcial é triploide diândrica e, por ter um conjunto materno, expressa p57. A triploidia com dois conjuntos maternos (em geral por erro na meiose II do ovócito) não se associa a mola, porque é o excesso de genoma paterno que favorece o trofoblasto. Um concepto diploide biparental com vilosidades edemaciadas, mas sem hiperplasia trofoblástica, corresponde a aborto hidrópico não molar.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "mola-hidatiforme",
+        "citogenetica",
+        "p57",
+        "triploidia"
+      ],
+      "referencia": "Ngan et al., FIGO 2021; Zaragoza et al., Am J Hum Genet 2000; Williams Obstetrics 26th ed."
     }
   ],
   "referencias": [
@@ -1256,6 +1454,14 @@
     {
       "obra": "Ngan HYS et al. Diagnosis and management of gestational trophoblastic disease: 2021 update (FIGO Cancer Report 2021). Int J Gynaecol Obstet. 2021;155(Suppl 1)",
       "capitulo": "Mola hidatiforme: p57, esvaziamento, seguimento com hCG"
+    },
+    {
+      "obra": "Usui H, Nakabayashi K, Maehara K, Hata K, Shozu M. Genome-wide single nucleotide polymorphism array analysis unveils the origin of heterozygous androgenetic complete moles. Sci Rep. 2019;9. doi:10.1038/s41598-019-49047-7",
+      "capitulo": "Artigo original (molas completas heterozigotas são dispérmicas) — questão avançada q30"
+    },
+    {
+      "obra": "Zaragoza MV et al. Parental origin and phenotype of triploidy in spontaneous abortions: predominance of diandry and association with the partial hydatidiform mole. Am J Hum Genet. 2000;66(6):1807–20",
+      "capitulo": "Artigo original (triploidia diândrica × digínica e fenótipo de mola) — questão avançada q34"
     }
   ],
   "notasDivergencia": [
@@ -1273,7 +1479,8 @@
     "Dia exato da primeira detecção de hCG no soro com ensaios ultrassensíveis (logo após o início da implantação, ~dias 8–10): não incluído como número nas questões.",
     "Percentuais de evolução para neoplasia trofoblástica gestacional: as fontes divergem (mola completa ~15–20%; parcial de menos de 1% a ~5%, conforme a série). Não usados em questões; o conteúdo diz apenas “maior na completa”.",
     "Incidência global de gravidez ectópica (comumente citada em 1–2% das gestações) não foi usada nas questões.",
-    "Questão q24 (ordem das cavidades): Sadler separa o celoma extraembrionário (dias 11–12) do saco vitelino secundário (dia 13); Moore diz que o saco secundário se forma “à medida que” o celoma se forma. Na revisão de obstetrícia/histologia (2026-11-09) o enunciado passou a pedir a ordem em que as cavidades “começam a se formar” e o item 1 a “primeiros espaços do celoma”, o que torna a sequência compatível com as duas descrições. Tabelas de estágios de Carnegie situam a transição saco primário → secundário entre os estágios 5c e 6 sem separar claramente os dois eventos; vale a conferência humana."
+    "Questão q24 (ordem das cavidades): Sadler separa o celoma extraembrionário (dias 11–12) do saco vitelino secundário (dia 13); Moore diz que o saco secundário se forma “à medida que” o celoma se forma. Na revisão de obstetrícia/histologia (2026-11-09) o enunciado passou a pedir a ordem em que as cavidades “começam a se formar” e o item 1 a “primeiros espaços do celoma”, o que torna a sequência compatível com as duas descrições. Tabelas de estágios de Carnegie situam a transição saco primário → secundário entre os estágios 5c e 6 sem separar claramente os dois eventos; vale a conferência humana.",
+    "Questão avançada q30 (2026-11-09): a origem dispérmica das molas completas heterozigotas (46,XY ou 46,XX com dois alelos paternos diferentes) foi confirmada por SNP-array em série pequena (Usui et al., 2019: 12 de 13 casos); a origem por espermatozoide diploide não está excluída em casos isolados, por isso o enunciado pede o mecanismo que “explica melhor”. A ausência de molas 46,YY é descrita em revisões (presumida inviabilidade), sem referência primária conferida."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

@@ -1104,6 +1104,201 @@
         "foliculogenese"
       ],
       "referencia": "Moore 11ª ed., cap. 2; Carlson 6ª ed., cap. 1"
+    },
+    {
+      "id": "emb-02-q28",
+      "tipo": "multipla",
+      "contexto": "Uma criança tem síndrome de Down com cariótipo 47,XY,+21. Para investigar a origem do cromossomo extra, analisam-se marcadores de DNA (microssatélites) situados junto ao centrômero do cromossomo 21. A mãe é heterozigota, com os alelos A e B; o pai é heterozigoto, com os alelos C e D. A criança apresenta os alelos A, B e C.",
+      "enunciado": "Em que gameta e em que divisão ocorreu, mais provavelmente, a não disjunção?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "No ovócito, na meiose II"
+        },
+        {
+          "id": "b",
+          "texto": "No espermatozoide, na meiose I"
+        },
+        {
+          "id": "c",
+          "texto": "No ovócito, na meiose I"
+        },
+        {
+          "id": "d",
+          "texto": "Numa mitose do zigoto, após a fertilização"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A criança recebeu os dois alelos maternos diferentes (A e B) e um paterno (C): o ovócito levou os dois cromossomos 21 homólogos da mãe. Como na meiose I separam-se os homólogos, a falha dessa separação explica o achado (c). Usam-se marcadores junto ao centrômero porque o crossing-over raramente os separa dele; assim, eles mostram se entraram no gameta dois homólogos ou duas cromátides irmãs. (a) Na meiose II separam-se cromátides irmãs; a não disjunção levaria duas cópias do mesmo alelo materno (A e A, ou B e B). (b) Uma falha na meiose I paterna daria os dois alelos paternos, C e D. (d) Um erro mitótico duplicaria um cromossomo já presente no zigoto, gerando duas cópias idênticas de um alelo (por exemplo, A, A e C, ou A, C e C). A maioria das trissomias 21 é de origem materna, com predomínio dos erros na meiose I; o risco aumenta com a idade materna, o que se atribui à longa parada do ovócito primário em prófase I.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "nao-disjuncao",
+        "meiose",
+        "idade-materna",
+        "genetica"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 6; Antonarakis et al., Am J Hum Genet 1992"
+    },
+    {
+      "id": "emb-02-q29",
+      "tipo": "multipla",
+      "contexto": "Em um estudo de segregação meiótica, observa-se um espermatócito primário em que os dois cromossomos 21 homólogos migram para o mesmo polo na anáfase I. Nas duas células-filhas, a meiose II ocorre normalmente.",
+      "enunciado": "Que constituição terão as quatro espermátides resultantes quanto ao cromossomo 21?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Duas normais, uma com duas cópias e uma sem cópia do cromossomo 21"
+        },
+        {
+          "id": "b",
+          "texto": "Quatro normais, pois a meiose II restabelece o número correto"
+        },
+        {
+          "id": "c",
+          "texto": "Uma com quatro cópias do cromossomo 21 e três sem cópia"
+        },
+        {
+          "id": "d",
+          "texto": "Duas com duas cópias e duas sem cópia do cromossomo 21"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Após a não disjunção na meiose I, um espermatócito secundário fica com 24 cromossomos (os dois cromossomos 21, cada um com duas cromátides) e o outro com 22 (sem o 21). Na meiose II normal separam-se as cromátides irmãs: o primeiro origina duas espermátides com duas cópias do 21 (24 cromossomos) e o segundo, duas sem o 21 (22 cromossomos). As quatro são anormais (d). (a) Esse é o resultado de uma não disjunção na meiose II em apenas um dos espermatócitos secundários. (b) A meiose II separa cromátides e não corrige o erro de segregação dos homólogos. (c) Os cromossomos 21 distribuem-se como pares de cromátides entre as duas células da meiose II; nenhuma célula recebe quatro cópias. Se um espermatozoide com 24 cromossomos fertilizar um ovócito normal, o zigoto será trissômico (47,XX,+21 ou 47,XY,+21); se o espermatozoide tiver 22, monossômico.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "nao-disjuncao",
+        "espermatogenese",
+        "meiose"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2 e 20; Sadler 14ª ed., cap. 2"
+    },
+    {
+      "id": "emb-02-q30",
+      "tipo": "multipla",
+      "contexto": "Em um ciclo de fertilização in vitro, a paciente recebe hormônio folículo-estimulante (FSH) recombinante diariamente desde o início da fase folicular. A ultrassonografia mostra cerca de 10 folículos antrais crescendo ao mesmo tempo, quando num ciclo espontâneo em geral só um completaria a maturação.",
+      "enunciado": "Qual mecanismo fisiológico de seleção folicular está sendo contornado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A queda do FSH causada pelo estradiol e pela inibina B do folículo dominante"
+        },
+        {
+          "id": "b",
+          "texto": "A parada dos ovócitos primários em prófase I, que impede novos folículos primordiais"
+        },
+        {
+          "id": "c",
+          "texto": "A falta de ovogônias após o nascimento, revertida pela formação de novos folículos"
+        },
+        {
+          "id": "d",
+          "texto": "O pico de LH, que normalmente destrói os folículos antrais não selecionados"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No ciclo espontâneo, o FSH recruta um grupo de folículos antrais; o folículo dominante secreta estradiol e inibina B, que reduzem o FSH, e os demais sofrem atresia. O FSH exógeno mantém níveis altos e impede essa queda, de modo que vários folículos completam a maturação e vários ovócitos podem ser aspirados (a). (b) A parada em prófase I é própria dos ovócitos dos folículos já existentes e não limita quantos folículos crescem em cada ciclo. (c) Segundo o modelo clássico, nenhum ovócito novo se forma após o nascimento, e o FSH não cria folículos: apenas evita a atresia de folículos antrais já recrutados. (d) A atresia dos folículos não selecionados decorre da queda do FSH; o pico de LH desencadeia a conclusão da meiose I e a ovulação do folículo maduro.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "foliculogenese",
+        "hormonios",
+        "reproducao-assistida"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Williams Obstetrics 26th ed."
+    },
+    {
+      "id": "emb-02-q31",
+      "tipo": "multipla",
+      "contexto": "Um casal deseja engravidar. A mulher tem ciclos regulares de 32 dias. Considere que os espermatozoides sobrevivem, em geral, até cerca de 48 horas no trato genital feminino e que o ovócito permanece fertilizável por cerca de 12 a 24 horas após a ovulação.",
+      "enunciado": "Em qual intervalo de dias do ciclo as relações sexuais têm maior probabilidade de resultar em fertilização?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Dias 12 a 14"
+        },
+        {
+          "id": "b",
+          "texto": "Dias 16 a 18"
+        },
+        {
+          "id": "c",
+          "texto": "Dias 20 a 22"
+        },
+        {
+          "id": "d",
+          "texto": "Dias 25 a 27"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 32 dias a ovulação ocorre por volta do 18º dia (32 − 14). Como os espermatozoides sobrevivem cerca de 2 dias e o ovócito só pode ser fertilizado nas horas seguintes à ovulação, as relações dos 2 dias anteriores e do próprio dia da ovulação são as de maior chance (b). (a) Aplica a regra do 14º dia, válida para ciclos de 28 dias; espermatozoides depositados nos dias 12 a 14 em geral não sobrevivem até o 18º dia. (c) A partir do 20º dia já se passaram mais de 24 horas da ovulação, e o ovócito não fertilizado degenera. (d) Corresponde à fase lútea avançada, perto da menstruação seguinte.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "ciclo-menstrual",
+        "ovulacao",
+        "fertilizacao"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
+    },
+    {
+      "id": "emb-02-q32",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a cadeia de eventos de um ciclo ovariano sem gravidez, do início da fase folicular à menstruação seguinte:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Luteinização das células da granulosa e da teca interna, com secreção de progesterona"
+        },
+        {
+          "id": "2",
+          "texto": "O estradiol elevado e sustentado desencadeia o pico de LH"
+        },
+        {
+          "id": "3",
+          "texto": "O FSH elevado recruta um grupo de folículos antrais"
+        },
+        {
+          "id": "4",
+          "texto": "Ruptura do folículo maduro (ovulação)"
+        },
+        {
+          "id": "5",
+          "texto": "Sem hCG, o corpo lúteo regride e a queda de progesterona leva à menstruação"
+        },
+        {
+          "id": "6",
+          "texto": "O folículo dominante secreta estradiol e inibina B; o FSH cai e os demais folículos sofrem atresia"
+        },
+        {
+          "id": "7",
+          "texto": "O ovócito primário completa a meiose I e para em metáfase II"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "6",
+        "2",
+        "7",
+        "4",
+        "1",
+        "5"
+      ],
+      "explicacao": "O FSH do início da fase folicular recruta folículos antrais (3); o folículo dominante, com estradiol e inibina B, reduz o FSH, e os demais sofrem atresia (6); o estradiol alto e sustentado desencadeia o pico de LH (2); em seguida, o ovócito primário completa a meiose I e para em metáfase II (7), antes da ovulação (4); a granulosa e a teca interna luteinizam-se e formam o corpo lúteo, que secreta progesterona (1); sem hCG do trofoblasto, o corpo lúteo regride (corpo albicans) e a queda de progesterona leva à fase isquêmica e à menstruação (5).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "ciclo-ovariano",
+        "hormonios",
+        "foliculogenese"
+      ],
+      "referencia": "Moore 11ª ed., cap. 2; Williams Obstetrics 26th ed."
     }
   ],
   "referencias": [
@@ -1138,6 +1333,10 @@
     {
       "obra": "Teede HJ et al. Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome. J Clin Endocrinol Metab. 2023;108(10):2447–69",
       "capitulo": "Indução da ovulação (letrozol como primeira linha)"
+    },
+    {
+      "obra": "Antonarakis SE et al. The meiotic stage of nondisjunction in trisomy 21: determination by using DNA polymorphisms. Am J Hum Genet. 1992;50(3):544–50",
+      "capitulo": "Artigo original (marcadores pericentroméricos para distinguir erro na meiose I × meiose II) — questão avançada q28"
     }
   ],
   "notasDivergencia": [
@@ -1153,7 +1352,8 @@
   "incertezas": [
     "Proporção de espermatozoides morfologicamente anormais no ejaculado (citada como até ~10% em textos de embriologia) — omitida do conteúdo até verificação.",
     "Duração das fases do ciclo menstrual em dias (Moore: menstrual ~4–5, proliferativa ~9, lútea ~13) — usada apenas de forma aproximada.",
-    "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento)."
+    "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento).",
+    "Questão avançada q28 (2026-11-09): a atribuição da fase meiótica por marcadores junto ao centrômero pode errar quando há crossing-over entre o marcador e o centrômero (raro). Antonarakis et al. (1992) encontraram a maioria dos erros maternos na meiose I e não acharam diferença de idade materna entre erros da meiose I e da meiose II; por isso a explicação liga a idade materna à não disjunção materna em geral, não só à meiose I."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
