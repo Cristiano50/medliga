@@ -97,9 +97,15 @@ Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologi
 - Diretriz brasileira de fibrose cística (J Bras Pneumol 2017: exige duas dosagens do suor?) e guia de anafilaxia da ASBAI: não abriram.
 - Faixa de reticulócitos (0,5–2,5%): conferir com a SBPC/ML ou o laboratório do curso.
 
-## H. Para as próximas revisões (rede do ambiente)
+## H. Rede do ambiente (atualizado em 09/11/2026)
 
-Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross), kdigo.org, jbp.org.br, www.scienceopen.com, www.sbp.com.br (de novo), pubmed.ncbi.nlm.nih.gov, uroweb.org, isuog.org, www.qxmd.com (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
+Liberados no ambiente "medgame" a pedido do Cristiano (além das escolas e do www.gov.br): www.sbp.com.br, bvsms.saude.gov.br, www.febrasgo.org.br, cbr.org.br, jbp.org.br, www.scielo.br, portaldeboaspraticas.iff.fiocruz.br, portal.cfm.org.br, emec.mec.gov.br, pubmed.ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov, www.ncbi.nlm.nih.gov, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, kdigo.org, uroweb.org, www.isuog.org, www.acog.org, documents.cap.org, www.ahajournals.org, embryology.med.unsw.edu.au.
+
+Como acessar (testado):
+- Ler pelo terminal (`curl -sSL -A "Mozilla/5.0"`). A ferramenta WebFetch dos agentes **não passa pelo proxy** e falha mesmo em hosts liberados (era por isso que o gov.br parecia bloqueado).
+- gov.br: o link `.pdf` abre uma página; o arquivo está em `<link>.pdf/@@download/file`; texto com `pdftotext`.
+- PubMed/PMC: as páginas pedem verificação anti-robô; usar as APIs (E-utilities em eutils.ncbi.nlm.nih.gov, Europe PMC em www.ebi.ac.uk/europepmc, OAI do PMC).
+- Ainda inacessíveis: emec.mec.gov.br e www.ahajournals.org (o próprio site recusa acesso automatizado, HTTP 403) e documents.cap.org (não conecta; a diretriz ASCO/CAP é lida no periódico via Europe PMC).
 
 ## I. Aprofundamento da embriologia (tópicos 21–25, camada avançada e 3D cardiovascular)
 
