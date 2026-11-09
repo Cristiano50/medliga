@@ -116,6 +116,8 @@ Relatórios: `content/revisoes/av1-*` a `av4-*` (camada avançada, 100 questões
 - Surfactante: emb-08 e emb-14 agora usam a faixa 20ª–24ª semana após a fertilização; se Moore der valor único, desfazer o empate na linha do tempo do emb-08.
 - Herniação fisiológica até a 12ª semana após a fertilização (~14 de IG) no emb-08: na clínica, ~12 semanas de IG já levanta suspeita de onfalocele. Ajustar a redação?
 
+- Modelos 3D cardiovasculares (`estagios-3d-cardiovascular.md`): Carnegie deixado vazio nos três (sem fonte que ligue o estado septal a um estágio); paleta de identificação sem vermelho/azul (decisão de produto: manter, ou criar camada opcional de oxigenação relativa); na circulação fetal a raiz da aorta ficou à esquerda da do tronco pulmonar (simplificação de esquema; na anatomia a valva aórtica é posterior e à direita) e não há coto de ilíaca interna (P3).
+
 **I2. Diretrizes e documentos a conferir no texto integral (sites bloqueados na rede da sessão)**
 - SBP: reanimação neonatal 2026 (clampeamento abaixo de 34 semanas: ≥ 30 ou ≥ 60 s?; proteção térmica), Manual de Orientação 2022 do teste do coraçãozinho (nº, limites, ≥ 35 semanas), documento nº 232 (genitália atípica, 2026), hipoglicemia neonatal nº 16 (2022), acondroplasia (2023).
 - Ministério da Saúde: PCDT hipotireoidismo congênito (Portaria Conjunta nº 5/2021: "sem esperar exames de imagem"? conduta conforme TSH em papel-filtro), manual de triagem neonatal 2016 (coleta 3º–5º dia), Portaria SCTIE nº 20/2014 (oximetria), triagem auditiva 2012 (rubéola como indicador de risco), manual de gestação de alto risco 2022 (datação; epilepsia).
