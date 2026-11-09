@@ -230,6 +230,21 @@ export default function Lab3DTela() {
           <Link to={`/topico/${estagio.topicos[0]}`} className="btn">📘 Estudar o tópico</Link>
         )}
       </div>
+      {estagio.id === 'semana-8' && (
+        <figure className="card pilha ilustracao-embriao">
+          <h2>Ilustração complementar · 8ª semana</h2>
+          <img
+            src={`${import.meta.env.BASE_URL}illustrations/embriao-semana8-v1.webp`}
+            width={1448} height={1086} loading="lazy" decoding="async"
+            alt="Ilustração artística de embrião em vista lateral, com cabeça grande, membros flexionados, cordão umbilical e membrana translúcida."
+          />
+          <figcaption className="pilha pequeno">
+            <strong>Embrião ao fim de 8 semanas após a fertilização (aproximadamente 10 semanas gestacionais).</strong>
+            <span>Ilustração artística gerada por IA, revisada qualitativamente por agentes de embriologia e anatomia. Proporções e detalhes são aproximados; não corresponde à reconstrução de um espécime. Conferência médica pendente.</span>
+            <span>Figura complementar; use o modelo 3D para explorar e identificar estruturas.</span>
+          </figcaption>
+        </figure>
+      )}
     </div>
   );
 }

@@ -13,6 +13,16 @@ beforeAll(async () => { await carregarDisciplina('embriologia'); });
 afterEach(cleanup);
 
 describe('exploração 3D', () => {
+  it('mostra a ilustração e seus limites somente na semana 8, preservando a cena interativa', () => {
+    render(<MemoryRouter initialEntries={['/lab3d?estagio=semana-8']}><Lab /></MemoryRouter>);
+    const imagem = screen.getByRole('img', { name: /Ilustração artística de embrião/ });
+    expect(imagem.getAttribute('src')).toMatch(/illustrations\/embriao-semana8-v1.webp$/);
+    expect(screen.getByText(/aproximadamente 10 semanas gestacionais/)).toBeTruthy();
+    expect(screen.getByText(/não corresponde à reconstrução de um espécime/)).toBeTruthy();
+    expect(screen.getByTestId('cena')).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Modelo anterior' }));
+    expect(screen.queryByRole('img', { name: /Ilustração artística de embrião/ })).toBeNull();
+  });
   it('busca sem acentos preserva número, seleção e tecidos; limpa ao mudar estágio', () => {
     render(<MemoryRouter initialEntries={['/lab3d?estagio=semana-6']}><Lab /></MemoryRouter>);
     const busca = screen.getByRole('searchbox');
