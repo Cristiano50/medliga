@@ -323,6 +323,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (menor): a cavidade amniótica fica entre o epiblasto (assoalho) e os amnioblastos (teto), e não \"revestida por amnioblastos\", como em emb-05. Dia 8, Carnegie 5 e tamanho conferidos."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-geometria-embriologia-v2",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "Revisão focal geométrica: sincício polarizado no polo embrionário e hemicorte compartilhado com camadas internas. Espessuras didáticas, sem equivalência histométrica. Teste de polaridade/corte aprovado. Textos não reavaliados integralmente; conferência médica pendente."
           }
         ],
         "humano": null
@@ -736,6 +743,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 correções (1 importante, 2 menores). Importante: nos dias 26–28 o placoide ótico já está invaginado (fossetas óticas no estágio 11–12 e vesículas no 13, segundo emb-07); a descrição dizia que os placoides \"aparecem\" e a estrutura passou a se chamar \"Fosseta/vesícula ótica\" (id mantido). Menores: cordão umbilical formado do pedículo de conexão e do ducto vitelino, ligado ao córion (futura placenta); \"espinha bífida aberta\". Brotos superiores ≈ dias 26–27, como em emb-07."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-geometria-embriologia-v2",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Revisão transversal focal da alteração anatômica: superfície contínua mantém curva em C, perfil de calibres e marcos originais; corpo e eminência caudal compartilham anel de junção. Não valida integralmente anatomia ou textos preexistentes; inspeção visual integrada e conferência médica pendentes."
           }
         ],
         "humano": null
@@ -816,6 +830,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 correções (menores): as saliências auriculares surgem na 6ª semana e \"formarão\" o pavilhão (emb-07 põe o contorno do pavilhão no estágio 17, 7ª semana); a estrutura passou a citar a origem clássica (três saliências do 1º e três do 2º arco). Dias 35–42, Carnegie 15–16 e 7–11 mm conferidos com emb-07."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-geometria-embriologia-v2",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Revisão transversal focal: superfície contínua preserva curva/perfil originais e seis saliências auriculares foram representadas bilateralmente no esquema clássico. Não valida integralmente anatomia ou textos preexistentes; inspeção visual integrada e conferência médica pendentes."
           }
         ],
         "humano": null
@@ -835,7 +856,7 @@
       "descricao": "O embrião tem aspecto claramente humano. Dedos das mãos e dos pés separados, pálpebras presentes (fechando-se), pavilhões auriculares começando a assumir a forma definitiva, mas ainda de implantação baixa, cabeça arredondada correspondendo a quase metade do comprimento. A eminência caudal desapareceu. O intestino ainda está no cordão umbilical.",
       "destaques": [
         "Fim do período embrionário: todos os principais sistemas já começaram a se formar.",
-        "Período de maior sensibilidade a teratógenos se encerra (semanas 3–8).",
+        "Encerra-se o período de maior suscetibilidade a malformações estruturais maiores (3ª–8ª semanas após a fertilização); efeitos sobre crescimento e função, especialmente do sistema nervoso, podem ocorrer também no período fetal.",
         "Genitália externa ainda indiferenciada à inspeção."
       ],
       "topicos": [
@@ -886,6 +907,20 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (importante), em dois campos: no fim da 8ª semana os pavilhões auriculares \"começam a assumir\" a forma definitiva e ainda têm implantação baixa (emb-08 ainda os descreve baixos na 9ª–12ª semana); antes o texto dizia \"forma definitiva/forma final\". Dia 56, Carnegie 23 e 27–31 mm conferidos."
+          },
+          {
+            "area": "farmacologia/teratologia",
+            "agente": "revisor-3d-teratologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "Revisão focal somente do destaque sobre teratógenos: 1 correção de abrangência, distinguindo a maior suscetibilidade a malformações estruturais maiores nas semanas 3–8 dos riscos posteriores de crescimento e função. Fontes verificadas: CDC e OTIS/MotherToBaby. Geometria e demais textos não reavaliados nesta etapa; conferência médica pendente."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-geometria-embriologia-v2",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Revisão transversal focal somente do destaque corrigido sobre teratógenos: diferencia maior suscetibilidade estrutural da persistência de riscos funcionais e de crescimento no período fetal; consistente com OTIS/MotherToBaby. Demais textos e geometria não auditados integralmente; conferência médica pendente."
           }
         ],
         "humano": null
@@ -977,6 +1012,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (menor): é a expansão do âmnio que oblitera a cavidade coriônica, e o âmnio adere ao cório (emb-09); antes, \"âmnio e cório se fundem e obliteram\". Demais textos conferidos; ver no relatório a divergência Moore × Sadler sobre a decídua capsular."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-geometria-embriologia-v2",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "Revisão focal geométrica: árvores vilosas simples direcionadas ao compartimento materno entre placa coriônica e decídua basal; retirados cones voltados à cavidade amniótica. Sem modelagem de capilares ou vilosidades terminais maduras; teste de limites espaciais aprovado. Conferência médica pendente."
           }
         ],
         "humano": null

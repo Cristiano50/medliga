@@ -1,8 +1,10 @@
 // Embriões das semanas 4, 6 e 8 — vista lateral esquemática (lado ventral voltado para a esquerda, −x).
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import * as THREE from 'three';
-import { Malha, Parte } from '../tres/nucleo.tsx';
+import { Html } from '@react-three/drei';
+import { Malha, Parte, useCena } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
+import { salienciasAuriculares, superficieEmbriao } from './superficie-embriao.ts';
 
 type V3 = [number, number, number];
 const v3 = (v: THREE.Vector3): V3 => [v.x, v.y, v.z];
@@ -56,6 +58,20 @@ function segmento(a: THREE.Vector3, b: THREE.Vector3) {
 const ESFERA = new THREE.SphereGeometry(1, 32, 24);
 const ESFERA_BAIXA = new THREE.SphereGeometry(1, 16, 12);
 
+/** Marcadores ligados às extremidades do modelo, não aos lados da tela. */
+function OrientacaoEmbriao({ cranial, caudal }: { cranial: V3; caudal: V3 }) {
+  const { modoJogo, isolado, ocultos, corte } = useCena();
+  if (modoJogo || isolado || corte != null || ocultos?.some((id) => id === 'corpo' || id === 'eminencia-caudal')) return null;
+  return <>
+    <Html position={cranial} center style={{ pointerEvents: 'none' }} zIndexRange={[3, 0]}>
+      <span className="orientacao3d">Cranial</span>
+    </Html>
+    <Html position={caudal} center style={{ pointerEvents: 'none' }} zIndexRange={[3, 0]}>
+      <span className="orientacao3d">Caudal</span>
+    </Html>
+  </>;
+}
+
 // ---------------------------------------------------------------------------------------------
 export const PARTES_SEMANA_4 = [
   'arcos-faringeos',
@@ -87,13 +103,8 @@ export function ModeloSemana4() {
         t,
       );
     const z = new THREE.Vector3(0, 0, 1);
-    const corpo: { p: V3; r: number }[] = [];
-    const cauda: { p: V3; r: number }[] = [];
-    for (let i = 0; i <= 80; i++) {
-      const t = i / 80;
-      const item = { p: v3(c.ponto(t)), r: raio(t) };
-      (t > 0.88 ? cauda : corpo).push(item);
-    }
+    const corpo = superficieEmbriao(c, raio, 0, 0.88);
+    const cauda = superficieEmbriao(c, raio, 0.88, 1);
     const cabeca = { p: v3(c.ponto(0).add(c.ventral(0).multiplyScalar(0.06))), r: 0.47 };
     const somitos: V3[] = [];
     for (let i = 0; i < 30; i++) {
@@ -136,22 +147,22 @@ export function ModeloSemana4() {
     const cristalino = [1, -1].map((l) =>
       v3(new THREE.Vector3(...cabeca.p).add(z.clone().multiplyScalar(l * cabeca.r * 0.9)).add(c.ventral(0).multiplyScalar(cabeca.r * 0.32))),
     );
-    return { corpo, cauda, cabeca, somitos, arcos, coracao, figado, cordao, brotosSup, brotosInf, otico, cristalino };
+    const cranial = v3(new THREE.Vector3(...cabeca.p).add(new THREE.Vector3(0, 0.62, 0)));
+    const caudal = v3(c.ponto(1).add(new THREE.Vector3(-0.16, -0.1, 0)));
+    return { corpo, cauda, cabeca, somitos, arcos, coracao, figado, cordao, brotosSup, brotosInf, otico, cristalino, cranial, caudal };
   }, []);
+  useEffect(() => () => { d.corpo.dispose(); d.cauda.dispose(); }, [d]);
   const capsula = useMemo(() => new THREE.CapsuleGeometry(0.055, 1, 6, 12), []);
   const cilindro = useMemo(() => new THREE.CylinderGeometry(0.11, 0.13, 1, 20), []);
   return (
     <group rotation={[0, 0.5, 0]} position={[0.1, 0, 0]}>
+      <OrientacaoEmbriao cranial={d.cranial} caudal={d.caudal} />
       <Parte id="corpo" cor={COR.embriao} prioridade={1} rugosidade={0.5}>
         <Malha geometria={ESFERA} posicao={d.cabeca.p} escala={d.cabeca.r} />
-        {d.corpo.map((s, i) => (
-          <Malha key={i} geometria={ESFERA} posicao={s.p} escala={[s.r, s.r, s.r * 0.88]} />
-        ))}
+        <Malha geometria={d.corpo} />
       </Parte>
       <Parte id="eminencia-caudal" cor={COR.embriao} prioridade={4} rugosidade={0.5}>
-        {d.cauda.map((s, i) => (
-          <Malha key={i} geometria={ESFERA} posicao={s.p} escala={[s.r, s.r, s.r * 0.88]} />
-        ))}
+        <Malha geometria={d.cauda} />
       </Parte>
       <Parte id="somitos" cor={COR.embriaoEscuro} prioridade={6}>
         {d.somitos.map((p, i) => (
@@ -223,22 +234,12 @@ export function ModeloSemana6() {
         t,
       );
     const z = new THREE.Vector3(0, 0, 1);
-    const corpo: { p: V3; r: number }[] = [];
-    for (let i = 0; i <= 70; i++) {
-      const t = i / 70;
-      corpo.push({ p: v3(c.ponto(t)), r: raio(t) });
-    }
+    const corpo = superficieEmbriao(c, raio);
     const cabecaCentro = c.ponto(0).add(c.ventral(0).multiplyScalar(0.12)).add(new THREE.Vector3(0, 0.08, 0));
     const cabeca = { p: v3(cabecaCentro), r: 0.6 };
     const olho = [1, -1].map((l) => v3(cabecaCentro.clone().add(z.clone().multiplyScalar(l * 0.5)).add(c.ventral(0).multiplyScalar(0.28)).add(new THREE.Vector3(0, -0.05, 0))));
     // saliências auriculares ao redor do 1º sulco faríngeo
-    const tAur = 0.11;
-    const aurCentro = c.ponto(tAur).add(z.clone().multiplyScalar(raio(tAur) * 0.92));
-    const auriculares: V3[] = [];
-    for (let i = 0; i < 6; i++) {
-      const ang = (i / 6) * Math.PI * 2;
-      auriculares.push(v3(aurCentro.clone().add(c.tangente(tAur).multiplyScalar(Math.cos(ang) * 0.09)).add(c.ventral(tAur).multiplyScalar(Math.sin(ang) * 0.09))));
-    }
+    const auriculares = salienciasAuriculares(c, raio);
     const membro = (t: number, lado: number, comp: number) => {
       const r = raio(t);
       const ombro = c.ponto(t).add(z.clone().multiplyScalar(lado * r * 0.85)).add(c.ventral(t).multiplyScalar(r * 0.2));
@@ -274,17 +275,19 @@ export function ModeloSemana6() {
     const fimCordao = baseCordao.clone().add(c.ventral(tCor).multiplyScalar(0.5)).add(z.clone().multiplyScalar(0.7));
     const cordao = segmento(baseCordao, fimCordao);
     const hernia = v3(baseCordao.clone().add(fimCordao.clone().sub(baseCordao).multiplyScalar(0.22)));
-    return { corpo, cabeca, olho, auriculares, bracos, pernas, maos, pes, raios, figado, cordao, hernia };
+    const cranial = v3(cabecaCentro.clone().add(new THREE.Vector3(0, 0.73, 0)));
+    const caudal = v3(c.ponto(1).add(new THREE.Vector3(-0.16, -0.1, 0)));
+    return { corpo, cabeca, olho, auriculares, bracos, pernas, maos, pes, raios, figado, cordao, hernia, cranial, caudal };
   }, []);
+  useEffect(() => () => d.corpo.dispose(), [d]);
   const raioGeo = useMemo(() => new THREE.CapsuleGeometry(0.014, 1, 4, 8), []);
   const cil = useMemo(() => new THREE.CylinderGeometry(0.1, 0.12, 1, 20), []);
   return (
     <group rotation={[0, 0.55, 0]}>
+      <OrientacaoEmbriao cranial={d.cranial} caudal={d.caudal} />
       <Parte id="corpo" cor={COR.embriao} prioridade={1} rugosidade={0.5}>
         <Malha geometria={ESFERA} posicao={d.cabeca.p} escala={d.cabeca.r} />
-        {d.corpo.map((s, i) => (
-          <Malha key={i} geometria={ESFERA} posicao={s.p} escala={[s.r, s.r, s.r * 0.88]} />
-        ))}
+        <Malha geometria={d.corpo} />
         {d.bracos.map((m, i) => (
           <Malha key={i} geometria={m.seg.geo} posicao={m.seg.posicao} rotacao={m.seg.rotacao} />
         ))}
@@ -380,6 +383,7 @@ export function ModeloSemana8() {
   const cil = useMemo(() => new THREE.CylinderGeometry(0.1, 0.12, 1, 20), []);
   return (
     <group rotation={[0, 0.6, 0]} position={[0.1, -0.05, 0]}>
+      <OrientacaoEmbriao cranial={[-0.05, 1.48, 0]} caudal={[0.55, -0.95, 0]} />
       <Parte id="corpo" cor={COR.embriao} prioridade={1} rugosidade={0.5}>
         <Malha geometria={ESFERA} posicao={v3(d.cabeca)} escala={d.rCabeca} />
         <Malha geometria={ESFERA} posicao={v3(d.tronco)} rotacao={[0, 0, 0.25]} escala={[0.42, 0.62, 0.38]} />

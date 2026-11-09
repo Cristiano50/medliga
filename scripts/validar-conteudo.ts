@@ -2,6 +2,7 @@
 // Uso: npm run validar-conteudo
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import {
   TopicoSchema,
   EstagiosArquivoSchema,
@@ -10,7 +11,7 @@ import {
   LaminasArquivoSchema,
 } from '../src/content/schema.ts';
 
-const raiz = new URL('..', import.meta.url).pathname;
+const raiz = fileURLToPath(new URL('..', import.meta.url));
 const erros: string[] = [];
 const avisos: string[] = [];
 

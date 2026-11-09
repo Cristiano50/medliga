@@ -1,23 +1,46 @@
 // Implantação (≈ dia 8) e disco bilaminar (≈ dias 12–13). Cortes esquemáticos em meia-esfera para ver o interior.
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import * as THREE from 'three';
 import { Malha, Parte } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
 import { pontosEsfera } from './inicio.tsx';
 
-/** Esfera com relevo irregular determinístico (aspecto de tecido invasivo). */
-function esferaIrregular(raio: number, amplitude: number, detalhe = 5, semente = 1) {
-  const g = new THREE.IcosahedronGeometry(raio, detalhe);
-  const pos = g.attributes.position as THREE.BufferAttribute;
-  const v = new THREE.Vector3();
-  for (let i = 0; i < pos.count; i++) {
-    v.fromBufferAttribute(pos, i);
-    const n =
-      Math.sin(v.x * 7.1 + semente) * Math.cos(v.y * 6.3 - semente) * 0.6 +
-      Math.sin(v.z * 9.7 + v.y * 3.1 + semente * 2) * 0.4;
-    v.multiplyScalar(1 + amplitude * n);
-    pos.setXYZ(i, v.x, v.y, v.z);
+/** Sincício polar (−y), em corte z=0. Espessura didática, não medida histológica. */
+export function geometriaSincicioPolar() {
+  const colunas = 40;
+  const linhas = 24;
+  const pontos: number[] = [];
+  const indices: number[] = [];
+  const stride = colunas + 1;
+  const camada = stride * (linhas + 1);
+  for (let face = 0; face < 2; face++) {
+    for (let j = 0; j <= linhas; j++) {
+      const theta = Math.PI / 2 + (j / linhas) * Math.PI / 2;
+      for (let i = 0; i <= colunas; i++) {
+        const phi = Math.PI + (i / colunas) * Math.PI;
+        const polar = -Math.cos(theta);
+        const relevo = 0.018 * Math.sin(phi * 7) * Math.sin(theta * 9) * polar;
+        const raio = face === 0 ? 1.025 + 0.19 * polar + relevo : 1.005;
+        pontos.push(-raio * Math.cos(phi) * Math.sin(theta), raio * Math.cos(theta), raio * Math.sin(phi) * Math.sin(theta));
+      }
+    }
   }
+  const quad = (a: number, b: number, c: number, d: number) => indices.push(a, b, d, b, c, d);
+  for (let j = 0; j < linhas; j++) {
+    for (let i = 0; i < colunas; i++) {
+      const a = j * stride + i;
+      quad(a, a + stride, a + stride + 1, a + 1);
+      quad(a + camada, a + camada + 1, a + camada + stride + 1, a + camada + stride);
+    }
+    for (const i of [0, colunas]) {
+      const a = j * stride + i;
+      quad(a, a + camada, a + camada + stride, a + stride);
+    }
+  }
+  for (let i = 0; i < colunas; i++) quad(i, i + 1, i + 1 + camada, i + camada);
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pontos, 3));
+  g.setIndex(indices);
   g.computeVertexNormals();
   return g;
 }
@@ -38,24 +61,25 @@ export const PARTES_IMPLANTACAO = [
 ];
 export function ModeloImplantacao() {
   const g = useMemo(() => {
-    const sincicio = esferaIrregular(1.18, 0.07, 5, 2);
-    // mantém só a metade inferior (polo embrionário invadindo o endométrio) + fatia de corte
+    const sincicio = geometriaSincicioPolar();
+    // Todas as camadas compartilham o corte z=0; polo embrionário voltado para −y.
     const cito = meiaEsfera(1.0);
     const celoma = meiaEsfera(0.95);
-    const disco = new THREE.CylinderGeometry(0.46, 0.46, 0.09, 40);
-    const hipo = new THREE.CylinderGeometry(0.46, 0.46, 0.06, 40);
-    const amnio = new THREE.SphereGeometry(0.4, 32, 16, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2);
-    const endometrio = new THREE.BoxGeometry(5, 2.2, 3.6);
+    const disco = new THREE.CylinderGeometry(0.46, 0.46, 0.09, 40, 1, false, Math.PI / 2, Math.PI);
+    const hipo = new THREE.CylinderGeometry(0.46, 0.46, 0.06, 40, 1, false, Math.PI / 2, Math.PI);
+    const amnio = new THREE.SphereGeometry(0.4, 32, 16, Math.PI, Math.PI, Math.PI / 2, Math.PI / 2);
+    const endometrio = new THREE.BoxGeometry(5, 2.2, 1.8);
     return { sincicio, cito, celoma, disco, hipo, amnio, endometrio };
   }, []);
+  useEffect(() => () => Object.values(g).forEach((geometria) => geometria.dispose()), [g]);
   return (
     // Polo embrionário voltado para baixo, já dentro do endométrio.
     <group rotation={[0, -0.5, 0]}>
       <Parte id="endometrio" cor={COR.endometrio} opacidade={0.12} prioridade={0} rotulo={[1.9, 0.1, 1.2]}>
-        <Malha geometria={g.endometrio} posicao={[0, -1.0, 0]} />
+        <Malha geometria={g.endometrio} posicao={[0, -1.0, -0.9]} />
       </Parte>
       <Parte id="sinciciotrofoblasto" cor={COR.sinciciotrofoblasto} opacidade={0.4} prioridade={1} sombreamentoPlano rotulo={[0.9, -1.0, 0.3]}>
-        <Malha geometria={g.sincicio} posicao={[0, -0.12, 0]} escala={[1.05, 0.95, 1.05]} />
+        <Malha geometria={g.sincicio} />
       </Parte>
       <Parte id="citotrofoblasto" cor={COR.citotrofoblasto} opacidade={0.8} prioridade={2} rotulo={[-0.95, 0.35, -0.1]}>
         <Malha geometria={g.cito} />

@@ -2,9 +2,10 @@
 // Seleção: o toque é resolvido no nível da cena, escolhendo entre todas as interseções a parte de maior
 // "prioridade" (cascas transparentes têm prioridade baixa, para que estruturas internas possam ser tocadas).
 import { createContext, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { Html } from '@react-three/drei';
+import { Outlines } from '@react-three/drei';
 import { useThree, type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
+import { useRegistroRotulos } from './rotulos.tsx';
 
 export type EstadoDestaque = 'normal' | 'selecionado' | 'certo' | 'errado' | 'apagado';
 
@@ -13,20 +14,21 @@ export interface CenaCtx {
   selecionado: string | null;
   destaques: Record<string, EstadoDestaque>;
   nomes: Record<string, string>;
+  numeros?: Record<string, string>;
   /** em modo jogo, rótulos ficam escondidos para não entregar a resposta */
   modoJogo: boolean;
+  ocultos?: string[];
+  isolado?: string | null;
+  corte?: number | null;
   onEscolher?: (id: string) => void;
 }
 
 const Ctx = createContext<CenaCtx>({ rotulosVisiveis: true, selecionado: null, destaques: {}, nomes: {}, modoJogo: false });
 const MaterialCtx = createContext<THREE.Material | null>(null);
+const ContornoCtx = createContext<string | null>(null);
 
 export const CenaProvider = Ctx.Provider;
 export const useCena = () => useContext(Ctx);
-
-const COR_SELECIONADO = new THREE.Color('#2dd4bf');
-const COR_CERTO = new THREE.Color('#22c55e');
-const COR_ERRADO = new THREE.Color('#ef4444');
 
 export interface ParteProps {
   id: string;
@@ -59,6 +61,8 @@ export function Parte({
   escala,
 }: ParteProps) {
   const cena = useCena();
+  const registro = useRegistroRotulos();
+  const visivel = !cena.ocultos?.includes(id) && (!cena.isolado || cena.isolado === id);
   const grupo = useRef<THREE.Group>(null);
   const [ancora, setAncora] = useState<[number, number, number] | null>(rotulo ?? null);
   const { invalidate } = useThree();
@@ -67,11 +71,11 @@ export function Parte({
     const m = new THREE.MeshStandardMaterial({
       color: cor,
       roughness: rugosidade,
-      metalness: 0.02,
+      metalness: 0,
       transparent: opacidade < 1,
       opacity: opacidade,
       depthWrite: opacidade >= 0.98,
-      side: ladoDuplo || opacidade < 1 ? THREE.DoubleSide : THREE.FrontSide,
+      side: THREE.DoubleSide,
       flatShading: !!sombreamentoPlano,
     });
     return m;
@@ -86,16 +90,7 @@ export function Parte({
     m.emissive.set('#000000');
     m.emissiveIntensity = 0;
     let op = opacidade;
-    if (estado === 'selecionado') {
-      m.emissive.copy(COR_SELECIONADO);
-      m.emissiveIntensity = 0.45;
-    } else if (estado === 'certo') {
-      m.emissive.copy(COR_CERTO);
-      m.emissiveIntensity = 0.6;
-    } else if (estado === 'errado') {
-      m.emissive.copy(COR_ERRADO);
-      m.emissiveIntensity = 0.6;
-    } else if (estado === 'apagado') {
+    if (estado === 'apagado') {
       op = Math.min(opacidade, opacidade * 0.35 + 0.05);
     }
     m.opacity = op;
@@ -106,7 +101,30 @@ export function Parte({
   }, [estado, material, opacidade, invalidate]);
 
   useLayoutEffect(() => {
-    if (rotulo || !grupo.current) return;
+    if (!grupo.current) return;
+    // Nas cascas, o centro da caixa fica no vazio. A dica de rótulo escolhe um vértice
+    // da própria superfície, para não apontar miométrio/âmnio ao centro do feto.
+    if (rotulo) {
+      grupo.current.updateWorldMatrix(true, true);
+      const inversa = grupo.current.matrixWorld.clone().invert();
+      const alvo = new THREE.Vector3(...rotulo);
+      let distancia = Infinity;
+      const melhor = new THREE.Vector3();
+      const ponto = new THREE.Vector3();
+      grupo.current.traverse((o) => {
+        const malha = o as THREE.Mesh;
+        if (!malha.isMesh || malha.material !== material) return;
+        const vertices = malha.geometry.getAttribute('position');
+        const matriz = new THREE.Matrix4().multiplyMatrices(inversa, malha.matrixWorld);
+        for (let i = 0; i < vertices.count; i++) {
+          ponto.fromBufferAttribute(vertices, i).applyMatrix4(matriz);
+          const d = ponto.distanceToSquared(alvo);
+          if (d < distancia) { distancia = d; melhor.copy(ponto); }
+        }
+      });
+      if (Number.isFinite(distancia)) setAncora([melhor.x, melhor.y, melhor.z]);
+      return;
+    }
     // Âncora: centro da primeira malha (em partes bilaterais, um dos lados), convertido para o espaço do grupo.
     let primeira: THREE.Object3D | null = null;
     grupo.current.traverse((o) => {
@@ -118,7 +136,7 @@ export function Parte({
     if (caixa.isEmpty()) return;
     const c = grupo.current.worldToLocal(caixa.getCenter(new THREE.Vector3()));
     setAncora([c.x, c.y, c.z]);
-  }, [rotulo]);
+  }, [rotulo, children, material]);
 
   useLayoutEffect(() => {
     grupo.current?.traverse((o) => {
@@ -132,16 +150,19 @@ export function Parte({
   });
 
   const mostrarRotulo =
-    !!ancora && ((cena.rotulosVisiveis && !cena.modoJogo) || estado === 'selecionado' || estado === 'certo' || estado === 'errado');
+    visivel && !!ancora && ((cena.rotulosVisiveis && !cena.modoJogo && !!cena.numeros?.[id]) || estado === 'selecionado' || estado === 'certo' || estado === 'errado');
+  const contorno = estado === 'selecionado' ? '#2dd4bf' : estado === 'certo' ? '#4ade80' : estado === 'errado' ? '#f87171' : null;
+  useLayoutEffect(() => {
+    if (mostrarRotulo && ancora && grupo.current) {
+      registro.set(id, { objeto: grupo.current, ponto: new THREE.Vector3(...ancora), numero: cena.numeros?.[id] ?? '•', nome: cena.nomes[id] ?? id, estado });
+    } else registro.delete(id);
+    invalidate();
+    return () => { registro.delete(id); };
+  }, [mostrarRotulo, ancora, id, registro, cena.nomes, cena.numeros, estado, invalidate]);
 
   return (
-    <group ref={grupo} position={posicao} rotation={rotacao} scale={escala}>
-      <MaterialCtx.Provider value={material}>{children}</MaterialCtx.Provider>
-      {mostrarRotulo && ancora && (
-        <Html position={ancora} center={false} zIndexRange={[20, 0]} style={{ pointerEvents: 'none' }}>
-          <div className={`rotulo3d ${estado === 'selecionado' ? 'ativo' : ''}`}>{cena.nomes[id] ?? id}</div>
-        </Html>
-      )}
+    <group ref={grupo} position={posicao} rotation={rotacao} scale={escala} visible={visivel}>
+      <MaterialCtx.Provider value={material}><ContornoCtx.Provider value={contorno}>{children}</ContornoCtx.Provider></MaterialCtx.Provider>
     </group>
   );
 }
@@ -159,6 +180,8 @@ export function Malha({
   escala?: number | [number, number, number] | THREE.Vector3;
 }) {
   const material = useContext(MaterialCtx);
+  const contorno = useContext(ContornoCtx);
+  const { gl } = useThree();
   return (
     <mesh
       geometry={geometria}
@@ -166,7 +189,9 @@ export function Malha({
       position={posicao as THREE.Vector3}
       rotation={rotacao as THREE.Euler}
       scale={escala as THREE.Vector3}
-    />
+    >
+      {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={gl.clippingPlanes} />}
+    </mesh>
   );
 }
 
@@ -180,9 +205,13 @@ function parteDoObjeto(o: THREE.Object3D | null): { id: string; prioridade: numb
 }
 
 /** Escolhe a parte tocada: maior prioridade; empate → mais próxima. */
-export function resolverToque(intersecoes: THREE.Intersection[]): string | null {
+export function resolverToque(intersecoes: THREE.Intersection[], planos: THREE.Plane[] = []): string | null {
   let melhor: { id: string; prioridade: number; distancia: number } | null = null;
   for (const it of intersecoes) {
+    if (planos.some((p) => p.distanceToPoint(it.point) < 0)) continue;
+    let visivel = true;
+    for (let o: THREE.Object3D | null = it.object; o; o = o.parent) if (!o.visible) visivel = false;
+    if (!visivel) continue;
     const p = parteDoObjeto(it.object);
     if (!p) continue;
     if (!melhor || p.prioridade > melhor.prioridade || (p.prioridade === melhor.prioridade && it.distance < melhor.distancia)) {
@@ -201,11 +230,11 @@ export function Tocavel({ children }: { children: ReactNode }) {
       onClick={(e: ThreeEvent<MouseEvent>) => {
         if (e.delta > 6) return; // foi um arraste (girar a câmera), não um toque
         e.stopPropagation();
-        const id = resolverToque(e.intersections);
+        const id = resolverToque(e.intersections, gl.clippingPlanes);
         if (id) cena.onEscolher?.(id);
       }}
       onPointerMove={(e: ThreeEvent<PointerEvent>) => {
-        gl.domElement.style.cursor = resolverToque(e.intersections) ? 'pointer' : 'grab';
+        gl.domElement.style.cursor = resolverToque(e.intersections, gl.clippingPlanes) ? 'pointer' : 'grab';
       }}
       onPointerOut={() => {
         gl.domElement.style.cursor = 'grab';

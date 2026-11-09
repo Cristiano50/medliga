@@ -24,10 +24,22 @@ export default function Lab3DTela() {
   const [selecionado, setSelecionado] = useState<string | null>(null);
   const [rotulos, setRotulos] = useState(false);
   const [versaoCamera, setVersaoCamera] = useState(0);
+  const [ocultos, setOcultos] = useState<string[]>([]);
+  const [isolado, setIsolado] = useState<string | null>(null);
+  const [corte, setCorte] = useState<number | null>(null);
   const nomes = useMemo(() => nomesDoEstagio(estagio.id), [estagio.id]);
   const modelo = MODELOS[estagio.id];
   const temSistemas = ESTAGIOS.some((e) => e.grupo === 'sistemas');
-  useEffect(() => setSelecionado(null), [estagio.id]);
+  useEffect(() => { setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); }, [estagio.id]);
+
+  function restaurar() {
+    setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); setVersaoCamera((v) => v + 1);
+  }
+  function escolher(id: string) {
+    setSelecionado((s) => s === id ? null : id);
+    setOcultos((lista) => lista.filter((s) => s !== id));
+    if (isolado) setIsolado(id);
+  }
 
   function irPara(i: number) {
     const n = Math.max(0, Math.min(doGrupo.length - 1, i));
@@ -98,14 +110,12 @@ export default function Lab3DTela() {
               aria-label="Linha do tempo do desenvolvimento"
               aria-valuetext={`${estagio.titulo}, ${estagio.dias}`}
             />
-            <div className="marcas-tempo" aria-hidden>
-              <span>Dia 1</span>
-              <span>Sem. 2</span>
-              <span>Sem. 3</span>
-              <span>Sem. 4</span>
-              <span>Sem. 8</span>
-              <span>Fetal</span>
-            </div>
+            <label className="campo pequeno">Escolher estágio
+              <select className="input" value={indice} onChange={(e) => irPara(Number(e.target.value))}>
+                {doGrupo.map((e, i) => <option key={e.id} value={i}>{e.titulo} · {e.dias}</option>)}
+              </select>
+            </label>
+            <span className="muted pequeno">Sequência de estágios; os intervalos do controle não representam duração.</span>
           </>
         ) : (
           <div className="linha quebra" style={{ justifyContent: 'center', gap: 6 }}>
@@ -118,37 +128,51 @@ export default function Lab3DTela() {
         )}
       </div>
 
-      <div style={{ position: 'relative' }}>
+      <div className="contexto3d" aria-label="Como interpretar o modelo">
+        <strong>Esquema didático · sem escala comparável entre modelos</strong>
+        <span>Idades de desenvolvimento após a fertilização; a idade gestacional obstétrica é aproximadamente duas semanas maior.</span>
+        <span>{estagio.id === 'gastrulacao' ? 'Vista explodida: camadas afastadas para estudo. As membranas não são colunas de tecido.' : ['implantacao', 'disco-bilaminar', 'neurulacao', 'placenta-membranas'].includes(estagio.id) ? 'Modelo em corte: superfícies abertas revelam estruturas internas.' : 'Formas, proporções e cores simplificadas para identificação.'}</span>
+        {estagio.id.startsWith('coracao-') && <span>Cores identificam estruturas; não representam oxigenação. Conexões são esquemáticas, não uma simulação de fluxo em um dia exato.</span>}
+      </div>
+
+      <div className="ferramentas3d" role="group" aria-label="Explorar o modelo">
+        <button className="btn pequeno" onClick={() => setRotulos((r) => !r)} aria-pressed={rotulos}>{rotulos ? 'Ocultar marcadores' : 'Mostrar marcadores'}</button>
+        <button className="btn pequeno" disabled={!selecionado && !isolado} aria-pressed={!!isolado} onClick={() => setIsolado(isolado ? null : selecionado)}>{isolado ? 'Sair do isolamento' : 'Isolar seleção'}</button>
+        <button className="btn pequeno" disabled={!selecionado} onClick={() => { if (selecionado) setOcultos((s) => [...s, selecionado]); setSelecionado(null); setIsolado(null); }}>Ocultar seleção</button>
+        <button className="btn pequeno" onClick={restaurar}>Restaurar vista</button>
+        <label className="controle-corte"><input type="checkbox" checked={corte !== null} onChange={(e) => setCorte(e.target.checked ? 0 : null)} /> Corte de exploração</label>
+        {corte !== null && <label className="controle-corte">Profundidade <input type="range" min={-2.5} max={2.5} step={0.05} value={corte} onChange={(e) => setCorte(Number(e.target.value))} /></label>}
+      </div>
+      {(isolado || ocultos.length > 0 || corte !== null) && <p className="aviso info" role="status">{isolado ? 'Estrutura isolada: relações com vizinhos temporariamente ocultas. ' : ''}{ocultos.length ? `${ocultos.length} estrutura(s) oculta(s). ` : ''}{corte !== null ? 'Corte de exploração fixo no modelo: superfícies abertas, sem reconstrução do tecido cortado. Não representa lesão. Marcadores de porções cortadas ficam ocultos; use também a lista de estruturas.' : ''}</p>}
+      <div>
         <Cena3D
           estagioId={estagio.id}
           rotulosVisiveis={rotulos}
           selecionado={selecionado}
           nomes={nomes}
-          onEscolher={(id) => setSelecionado((s) => (s === id ? null : id))}
+          onEscolher={escolher}
           onVazio={() => setSelecionado(null)}
           versaoCamera={versaoCamera}
+          ocultos={ocultos}
+          isolado={isolado}
+          corte={corte}
         />
-        <div className="sobreposto linha" style={{ top: 10, right: 10 }}>
-          <button className="btn pequeno" onClick={() => setRotulos((r) => !r)} aria-pressed={rotulos}>
-            {rotulos ? 'Ocultar nomes' : 'Mostrar nomes'}
-          </button>
-          <button className="btn pequeno" onClick={() => setVersaoCamera((v) => v + 1)} aria-label="Recentralizar">⟲</button>
-        </div>
-        <div className="sobreposto muted pequeno" style={{ left: 12, bottom: 10, pointerEvents: 'none' }}>
+        <div className="instrucoes3d">
           Arraste para girar · pinça/roda para aproximar · toque numa estrutura
         </div>
       </div>
 
-      <div className="linha quebra" role="group" aria-label="Estruturas deste estágio" style={{ gap: 6 }}>
+      <p className="muted pequeno" style={{ margin: 0 }}>Selecione pelo modelo ou pela lista. Os números ligam cada marcador ao nome; uma linha pode atravessar tecidos no esquema.</p>
+      <div className="lista-estruturas3d" role="group" aria-label="Estruturas deste estágio">
         {estagio.estruturas.map((s) => (
           <button
             key={s.id}
-            className={`selo ${selecionado === s.id ? 'ia' : ''}`}
-            style={{ cursor: 'pointer', minHeight: 32, fontSize: '0.8rem' }}
+            className={`estrutura3d ${selecionado === s.id ? 'ativa' : ''}`}
             aria-pressed={selecionado === s.id}
-            onClick={() => setSelecionado((x) => (x === s.id ? null : s.id))}
+            onClick={() => escolher(s.id)}
           >
-            {s.nome}
+            <span className="numero3d">{modelo.partes.indexOf(s.id) + 1}</span>{' '}
+            <span>{s.nome}{ocultos.includes(s.id) && <small> · oculta — selecionar para mostrar</small>}</span>
           </button>
         ))}
       </div>
@@ -175,14 +199,13 @@ export default function Lab3DTela() {
             <Link to={`/topico/${info.topicoId}`} className="pequeno">Estudar: {topico(info.topicoId)!.titulo} ›</Link>
           )}
         </div>
-      ) : (
+      ) : null}
         <div className="card pilha">
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{estagio.descricao}</p>
           <ul className="markdown" style={{ margin: 0 }}>
             {estagio.destaques.map((d, i) => <li key={i}>{d}</li>)}
           </ul>
         </div>
-      )}
 
       <div className="grade g2">
         <Link to={`/jogar/identifique?estagio=${estagio.id}`} className="btn primario">🎯 Desafio: identifique neste estágio</Link>

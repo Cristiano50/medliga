@@ -1,5 +1,5 @@
 // Útero gestante no início do período fetal, em corte (metade posterior visível): placenta, decíduas e membranas.
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import * as THREE from 'three';
 import { Malha, Parte } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
@@ -9,6 +9,30 @@ const META = { phiStart: Math.PI, phiLength: Math.PI }; // metade z ≤ 0
 
 function casca(r: number, thetaInicio = 0, thetaComp = Math.PI) {
   return new THREE.SphereGeometry(r, 64, 40, META.phiStart, META.phiLength, thetaInicio, thetaComp);
+}
+
+/** Árvores vilosas iniciais: nascem na placa coriônica e crescem para o compartimento materno (+y).
+ * Ramificação esquemática; não representa vilosidades terminais maduras nem uma contagem biológica. */
+export function geometriasVilosidades() {
+  const malhas: THREE.BufferGeometry[] = [];
+  const ramo = (pontos: THREE.Vector3[], raio: number) => {
+    malhas.push(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pontos), 12, raio, 8, false));
+    const ponta = pontos[pontos.length - 1];
+    malhas.push(new THREE.SphereGeometry(raio, 8, 6).translate(ponta.x, ponta.y, ponta.z));
+  };
+  for (const z of [-0.16, -0.42]) {
+    for (let i = 0; i < 7; i++) {
+      const x = -0.72 + i * 0.24;
+      const baseY = 1.57 + 0.045 * Math.sqrt(1 - (x * x + z * z) / (1.12 * 1.12));
+      const origem = new THREE.Vector3(x, baseY - 0.005, z);
+      const bifurcacao = new THREE.Vector3(x, 1.72, z);
+      ramo([origem, bifurcacao, new THREE.Vector3(x + 0.015, 1.85, z - 0.015)], 0.025);
+      for (const lado of [-1, 1]) {
+        ramo([bifurcacao, new THREE.Vector3(x + lado * 0.04, 1.76, z), new THREE.Vector3(x + lado * 0.075, 1.81, z + 0.025)], 0.016);
+      }
+    }
+  }
+  return malhas;
 }
 
 export const PARTES_PLACENTA = [
@@ -41,7 +65,6 @@ export function ModeloPlacenta() {
       deciduaParietalCorte: new THREE.RingGeometry(1.9, 1.98, 96, 1, Math.PI / 2 + capa, 2 * Math.PI - 2 * capa),
       deciduaBasal: new THREE.SphereGeometry(1, 48, 24, META.phiStart, META.phiLength),
       corioFrondoso: new THREE.SphereGeometry(1, 48, 24, META.phiStart, META.phiLength),
-      vilosidade: new THREE.ConeGeometry(0.05, 0.22, 8),
       deciduaCapsular: casca(1.66, capa + 0.05, Math.PI - capa - 0.05),
       corioLiso: casca(1.58, capa + 0.05, Math.PI - capa - 0.05),
       amnio: casca(1.5),
@@ -49,15 +72,8 @@ export function ModeloPlacenta() {
       cordao: new THREE.TubeGeometry(cordaoCurva, 80, 0.065, 12, false),
     };
   }, []);
-  const vilosidades = useMemo(() => {
-    const pts: [number, number, number][] = [];
-    for (let i = 0; i < 26; i++) {
-      const x = -0.95 + (i % 13) * 0.16;
-      const z = i < 13 ? -0.15 : -0.45;
-      pts.push([x, 1.62, z]);
-    }
-    return pts;
-  }, []);
+  const vilosidades = useMemo(geometriasVilosidades, []);
+  useEffect(() => () => vilosidades.forEach((geometria) => geometria.dispose()), [vilosidades]);
   return (
     <group rotation={[0, -0.35, 0]} position={[0, -0.1, 0]} scale={0.9}>
       <Parte id="miometrio" cor={COR.miometrio} prioridade={0} ladoDuplo rotulo={[2.0, -0.9, 0.2]}>
@@ -70,12 +86,12 @@ export function ModeloPlacenta() {
         <Malha geometria={g.deciduaParietalCorte} />
       </Parte>
       <Parte id="decidua-basal" cor="#d98a95" prioridade={4} ladoDuplo rotulo={[1.25, 1.95, 0]}>
-        <Malha geometria={g.deciduaBasal} posicao={[0, 1.84, 0]} escala={[1.25, 0.17, 1.25]} />
+        <Malha geometria={g.deciduaBasal} posicao={[0, 1.95, 0]} escala={[1.25, 0.08, 1.25]} />
       </Parte>
       <Parte id="corio-frondoso" cor={COR.placenta} prioridade={5} ladoDuplo rotulo={[-1.2, 1.62, 0]}>
-        <Malha geometria={g.corioFrondoso} posicao={[0, 1.66, 0]} escala={[1.12, 0.15, 1.12]} />
-        {vilosidades.map((p, i) => (
-          <Malha key={i} geometria={g.vilosidade} posicao={p} rotacao={[Math.PI, 0, 0]} />
+        <Malha geometria={g.corioFrondoso} posicao={[0, 1.57, 0]} escala={[1.12, 0.045, 1.12]} />
+        {vilosidades.map((geometria, i) => (
+          <Malha key={i} geometria={geometria} />
         ))}
       </Parte>
       <Parte id="decidua-capsular" cor="#efb8bf" opacidade={0.85} prioridade={2} rotulo={[1.3, -0.9, 0.1]}>

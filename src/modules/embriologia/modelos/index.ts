@@ -34,8 +34,8 @@ export const MODELOS: Record<string, ModeloEstagio> = {
   'disco-bilaminar': { Componente: ModeloDiscoBilaminar, partes: PARTES_DISCO_BILAMINAR, camera: [0.5, 1.5, 4.2], raio: 1.8 },
   gastrulacao: { Componente: ModeloGastrulacao, partes: PARTES_GASTRULACAO, camera: [0.9, 1.6, 3.2], raio: 1.6, legendaCamadas: true },
   neurulacao: { Componente: ModeloNeurulacao, partes: PARTES_NEURULACAO, camera: [0.6, 1.6, 3.6], raio: 1.75, legendaCamadas: true },
-  'semana-4': { Componente: ModeloSemana4, partes: PARTES_SEMANA_4, camera: [0, 0.2, 3.6], raio: 1.35 },
-  'semana-6': { Componente: ModeloSemana6, partes: PARTES_SEMANA_6, camera: [0, 0.2, 3.8], raio: 1.55 },
+  'semana-4': { Componente: ModeloSemana4, partes: PARTES_SEMANA_4, camera: [0, 0.2, 3.6], raio: 1.6 },
+  'semana-6': { Componente: ModeloSemana6, partes: PARTES_SEMANA_6, camera: [0, 0.2, 3.8], raio: 1.85 },
   'semana-8': { Componente: ModeloSemana8, partes: PARTES_SEMANA_8, camera: [0, 0.2, 3.6], raio: 1.45 },
   'placenta-membranas': { Componente: ModeloPlacenta, partes: PARTES_PLACENTA, camera: [0.2, 0.4, 5.4], raio: 2.1 },
   'coracao-tubular': { Componente: ModeloCoracaoTubular, partes: PARTES_CORACAO_TUBULAR, camera: [0.3, 0.3, 4], raio: 1.75 },
@@ -46,4 +46,5 @@ export const MODELOS: Record<string, ModeloEstagio> = {
 /** Nomes de partes que não são estruturas do conteúdo (só exibição). */
 export const NOMES_EXTRAS: Record<string, string> = {
   corpo: 'Corpo do embrião',
+  'cordao-umbilical': 'Cordão umbilical',
 };

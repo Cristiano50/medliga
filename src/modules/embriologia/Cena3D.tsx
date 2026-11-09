@@ -1,10 +1,23 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useMemo } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 import { CenaProvider, Tocavel, type EstadoDestaque } from './tres/nucleo.tsx';
 import { MODELOS } from './modelos/index.ts';
+import { RotulosProvider } from './tres/rotulos.tsx';
+
+function Corte({ posicao }: { posicao: number | null }) {
+  const { gl, invalidate } = useThree();
+  const plano = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, -1), 0), []);
+  useEffect(() => {
+    plano.constant = posicao ?? 0;
+    gl.clippingPlanes = posicao === null ? [] : [plano];
+    invalidate();
+    return () => { gl.clippingPlanes = []; invalidate(); };
+  }, [posicao, plano, gl, invalidate]);
+  return null;
+}
 
 function Camera({ estagioId, versao }: { estagioId: string; versao: number }) {
   const { camera, invalidate, size } = useThree();
@@ -41,6 +54,9 @@ export interface Cena3DProps {
   /** incrementar para recentralizar a câmera */
   versaoCamera?: number;
   telaCheia?: boolean;
+  ocultos?: string[];
+  isolado?: string | null;
+  corte?: number | null;
 }
 
 export function Cena3D(p: Cena3DProps) {
@@ -59,7 +75,7 @@ export function Cena3D(p: Cena3DProps) {
         <color attach="background" args={['#0d1628']} />
         <hemisphereLight args={['#dbeafe', '#1e293b', 0.9]} />
         <directionalLight position={[3, 4, 5]} intensity={1.6} />
-        <directionalLight position={[-4, -2, -3]} intensity={0.5} color="#93c5fd" />
+        <directionalLight position={[-4, 2, -3]} intensity={0.65} color="#ffffff" />
         <ambientLight intensity={0.25} />
         <CenaProvider
           value={{
@@ -67,16 +83,23 @@ export function Cena3D(p: Cena3DProps) {
             selecionado: p.selecionado,
             destaques: p.destaques ?? {},
             nomes: p.nomes,
+            numeros: Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])),
             modoJogo: !!p.modoJogo,
+            ocultos: p.modoJogo ? [] : p.ocultos,
+            isolado: p.modoJogo ? null : p.isolado,
+            corte: p.modoJogo ? null : p.corte,
             onEscolher: p.onEscolher,
           }}
         >
           <Suspense fallback={null}>
-            <Tocavel>{Componente && <Componente key={p.estagioId} />}</Tocavel>
+            <RotulosProvider key={p.estagioId}>
+              <Tocavel>{Componente && <Componente />}</Tocavel>
+            </RotulosProvider>
           </Suspense>
         </CenaProvider>
         <OrbitControls makeDefault enableDamping dampingFactor={0.12} minDistance={1} maxDistance={16} enablePan={false} />
         <Camera estagioId={p.estagioId} versao={p.versaoCamera ?? 0} />
+        <Corte posicao={p.modoJogo ? null : p.corte ?? null} />
       </Canvas>
     </div>
   );

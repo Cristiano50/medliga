@@ -22,7 +22,16 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 | Reportar erro em questões; exclusão de conta e de dados do aparelho (LGPD) | implementado |
 | Pagamentos e builds nas lojas | planejado (v0.2) |
 
-Evidência (09/11/2026): `npm test` 29/29 · `npm run test:sql` "TODOS OS TESTES SQL PASSARAM" (15 cenários) · `npm run typecheck` sem erros · `npm run validar-conteudo` OK.
+Evidência da atualização 3D (09/11/2026): 39/39 testes Vitest · TypeScript sem erros · conteúdo validado (20 tópicos, 523 questões) · build/PWA gerado. No Windows desta revisão, comandos executados diretamente pelo Node (equivalentes aos scripts npm); suíte completa aprovada fora da restrição de arquivos temporários do ambiente. SQL não mudou; a evidência anterior de 15 cenários permanece histórica, não foi reexecutada nesta entrega.
+
+### Atualização do laboratório 3D
+
+- Vilosidades dirigidas ao compartimento materno, sincício polar em corte e saliências auriculares bilaterais.
+- Tronco contínuo nas semanas 4 e 6; orientação cranial/caudal nas semanas 4, 6 e 8.
+- Marcadores numerados ligados à lista, seleção por contorno sem mudar cores, ocultação, isolamento e corte de exploração (somente no laboratório).
+- Idade, escala e simplificações explícitas; correções focais de teratologia e passagem placentária de anticoagulantes.
+
+Revisões por agentes de embriologia, anatomia, fisiologia e farmacologia/teratologia; conferência médica permanece pendente. [Escopo, testes e limitações da entrega](content/revisoes/correcoes-3d-integracao.md).
 
 ## Como rodar
 
