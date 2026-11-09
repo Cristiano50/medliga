@@ -44,3 +44,20 @@ describe('questões de múltipla escolha', () => {
         if (q.tipo === 'multipla') expect(q.alternativas!.map((a) => a.id).join(''), q.id).toBe('abcde'.slice(0, q.alternativas!.length));
   });
 });
+
+import laminas from '../content/histologia/laminas.json';
+import { LAMINAS_RENDER } from '../src/modules/histologia/laminas/index.ts';
+import { LaminasArquivoSchema } from '../src/content/schema.ts';
+
+describe('lâminas do microscópio virtual', () => {
+  const dados = LaminasArquivoSchema.parse(laminas);
+  it('toda lâmina tem desenho e todo desenho tem lâmina', () => {
+    for (const l of dados.laminas) expect(LAMINAS_RENDER[l.id], l.id).toBeDefined();
+    for (const id of Object.keys(LAMINAS_RENDER)) expect(dados.laminas.some((l) => l.id === id), id).toBe(true);
+  });
+  it('estruturas do texto e do desenho são as mesmas (o jogo não pede o que não existe)', () => {
+    for (const l of dados.laminas) {
+      expect(new Set(l.estruturas.map((e) => e.id)), l.id).toEqual(new Set(LAMINAS_RENDER[l.id].partes));
+    }
+  });
+});

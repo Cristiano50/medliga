@@ -22,6 +22,10 @@ import { DISCIPLINAS_DISPONIVEIS } from './content/disciplinas.ts';
 // A parte 3D (three.js) só é baixada quando o jogador abre o laboratório.
 const Lab3DTela = lazy(() => import('./modules/embriologia/Lab3D.tsx'));
 const IdentifiqueTela = lazy(() => import('./modules/embriologia/Identifique.tsx'));
+// Histologia: microscópio virtual (SVG, carregado sob demanda)
+const MicroscopioTela = lazy(() => import('./modules/histologia/Microscopio.tsx'));
+const IdentifiqueLaminaTela = lazy(() => import('./modules/histologia/IdentifiqueLamina.tsx'));
+const QualTecidoTela = lazy(() => import('./modules/histologia/QualTecido.tsx'));
 
 function Rotas() {
   const perfil = useApp((s) => s.perfil);
@@ -48,6 +52,9 @@ function Rotas() {
           <Route path="/jogar/camadas" element={<CamadasTela />} />
           <Route path="/jogar/identifique" element={<IdentifiqueTela />} />
           <Route path="/lab3d" element={<Lab3DTela />} />
+          <Route path="/microscopio" element={<MicroscopioTela />} />
+          <Route path="/jogar/identifique-lamina" element={<IdentifiqueLaminaTela />} />
+          <Route path="/jogar/qual-tecido" element={<QualTecidoTela />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

@@ -1,0 +1,376 @@
+{
+  "laminas": [
+    {
+      "id": "epitelio-cubico-rim",
+      "ordem": 1,
+      "titulo": "Túbulos renais",
+      "tecido": "Epitélio simples cúbico",
+      "orgao": "Rim (córtex), túbulos em corte transversal",
+      "coloracao": "HE",
+      "descricao": "Túbulos renais cortados transversalmente, revestidos por uma única camada de células tão altas quanto largas, com núcleo esférico e central. Entre os túbulos, tecido conjuntivo frouxo com capilares.",
+      "destaques": [
+        "Simples = uma camada de células; cúbico = altura semelhante à largura; núcleo esférico.",
+        "Outros exemplos: folículos da tireoide e ductos de glândulas.",
+        "Toda célula epitelial apoia-se na lâmina basal; os epitélios não têm vasos (nutrem-se por difusão)."
+      ],
+      "topicos": ["his-02-epitelio-revestimento"],
+      "estruturas": [
+        { "id": "epitelio-simples-cubico", "nome": "Epitélio simples cúbico", "descricao": "Camada única de células cúbicas, com núcleo esférico central, revestindo o túbulo." },
+        { "id": "lumen", "nome": "Luz do túbulo", "descricao": "Espaço central do túbulo, por onde passa o filtrado." },
+        { "id": "membrana-basal", "nome": "Membrana basal", "descricao": "Camada de matriz extracelular sob o epitélio, que o separa do conjuntivo; ao microscópio óptico, aparece melhor com PAS." },
+        { "id": "capilar", "nome": "Capilar", "descricao": "Vaso de parede fina (endotélio, um epitélio simples pavimentoso) com hemácias no interior." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "epitelio-cilindrico-intestino",
+      "ordem": 2,
+      "titulo": "Vilosidades do intestino delgado",
+      "tecido": "Epitélio simples cilíndrico",
+      "orgao": "Intestino delgado, vilosidades",
+      "coloracao": "HE",
+      "descricao": "Vilosidades revestidas por epitélio simples cilíndrico: enterócitos altos com núcleo alongado na base e borda em escova (microvilosidades) na superfície; células caliciformes intercaladas, com o muco pouco corado no HE. O eixo da vilosidade é a lâmina própria, com capilares.",
+      "destaques": [
+        "Cilíndrico = células mais altas que largas; núcleo alongado, próximo da base.",
+        "Borda em escova = microvilosidades, que aumentam a superfície de absorção.",
+        "Células caliciformes são glândulas unicelulares produtoras de muco (coram bem com PAS)."
+      ],
+      "topicos": ["his-02-epitelio-revestimento", "his-03-epitelio-glandular"],
+      "estruturas": [
+        { "id": "epitelio-simples-cilindrico", "nome": "Enterócitos (epitélio simples cilíndrico)", "descricao": "Células absortivas altas, com núcleo alongado na base." },
+        { "id": "celula-caliciforme", "nome": "Célula caliciforme", "descricao": "Célula secretora de muco em forma de cálice; o muco aparece pálido no HE." },
+        { "id": "borda-em-escova", "nome": "Borda em escova", "descricao": "Faixa na superfície apical formada por microvilosidades, visível como borda eosinófila." },
+        { "id": "lamina-propria", "nome": "Lâmina própria", "descricao": "Tecido conjuntivo frouxo do eixo da vilosidade, com células e vasos." },
+        { "id": "capilar", "nome": "Capilar", "descricao": "Vaso da lâmina própria que recebe nutrientes absorvidos." },
+        { "id": "lumen", "nome": "Luz intestinal", "descricao": "Espaço entre as vilosidades, na luz do intestino." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "epitelio-pseudoestratificado-traqueia",
+      "ordem": 3,
+      "titulo": "Mucosa da traqueia",
+      "tecido": "Epitélio pseudoestratificado cilíndrico ciliado",
+      "orgao": "Traqueia, mucosa",
+      "coloracao": "HE",
+      "descricao": "Todas as células tocam a membrana basal, mas nem todas chegam à superfície; por isso os núcleos ficam em alturas diferentes e o epitélio parece estratificado sem ser. Células cilíndricas ciliadas, células caliciformes e células basais. A membrana basal da traqueia é espessa.",
+      "destaques": [
+        "Pseudoestratificado: uma única camada de células, com núcleos em vários níveis.",
+        "Cílios (axonema 9+2) movem o muco produzido pelas caliciformes: o 'tapete mucociliar'.",
+        "No tabagismo pode ocorrer metaplasia para epitélio estratificado pavimentoso."
+      ],
+      "topicos": ["his-02-epitelio-revestimento"],
+      "estruturas": [
+        { "id": "epitelio-pseudoestratificado", "nome": "Células cilíndricas ciliadas", "descricao": "Células altas que alcançam a superfície; núcleos em alturas diferentes." },
+        { "id": "cilios", "nome": "Cílios", "descricao": "Projeções móveis da superfície apical, mais longas que microvilosidades." },
+        { "id": "celula-caliciforme", "nome": "Célula caliciforme", "descricao": "Célula secretora de muco intercalada entre as ciliadas." },
+        { "id": "celula-basal", "nome": "Célula basal", "descricao": "Célula baixa apoiada na membrana basal, que não alcança a superfície; repõe as demais." },
+        { "id": "membrana-basal", "nome": "Membrana basal espessa", "descricao": "Faixa eosinófila sob o epitélio, característica da traqueia." },
+        { "id": "lamina-propria", "nome": "Lâmina própria", "descricao": "Conjuntivo sob o epitélio." },
+        { "id": "lumen", "nome": "Luz da traqueia", "descricao": "Passagem do ar." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "pele-espessa",
+      "ordem": 4,
+      "titulo": "Pele espessa",
+      "tecido": "Epitélio estratificado pavimentoso queratinizado",
+      "orgao": "Pele da palma da mão ou planta do pé",
+      "coloracao": "HE",
+      "descricao": "Epiderme com seus estratos, da derme para a superfície: basal, espinhoso, granuloso, lúcido (só na pele espessa) e córneo (células mortas, sem núcleo). A junção com a derme é ondulada pelas papilas dérmicas.",
+      "destaques": [
+        "Ordem dos estratos (da profundidade para a superfície): basal → espinhoso → granuloso → lúcido → córneo.",
+        "No estrato basal estão as células que se dividem; os queratinócitos sobem e se diferenciam.",
+        "Grânulos de querato-hialina (basófilos) marcam o estrato granuloso."
+      ],
+      "topicos": ["his-02-epitelio-revestimento"],
+      "estruturas": [
+        { "id": "estrato-basal", "nome": "Estrato basal", "descricao": "Uma camada de células cúbicas a cilíndricas apoiadas na membrana basal; onde ocorrem as mitoses." },
+        { "id": "estrato-espinhoso", "nome": "Estrato espinhoso", "descricao": "Várias camadas de células poligonais unidas por desmossomos (aspecto de 'espinhos')." },
+        { "id": "estrato-granuloso", "nome": "Estrato granuloso", "descricao": "Células achatadas com grânulos de querato-hialina basófilos." },
+        { "id": "estrato-lucido", "nome": "Estrato lúcido", "descricao": "Faixa clara e homogênea, presente na pele espessa." },
+        { "id": "estrato-corneo", "nome": "Estrato córneo", "descricao": "Camadas de células mortas, achatadas e sem núcleo, cheias de queratina." },
+        { "id": "papila-dermica", "nome": "Papila dérmica (derme papilar)", "descricao": "Projeções de conjuntivo frouxo da derme que se encaixam na epiderme." },
+        { "id": "derme-reticular", "nome": "Derme reticular", "descricao": "Conjuntivo denso não modelado, com feixes grossos de colágeno." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "epitelio-transicao-bexiga",
+      "ordem": 5,
+      "titulo": "Bexiga urinária",
+      "tecido": "Epitélio de transição (urotélio)",
+      "orgao": "Bexiga urinária (vazia)",
+      "coloracao": "HE",
+      "descricao": "Epitélio estratificado cuja camada superficial é formada por células grandes, em forma de cúpula (células em guarda-chuva), às vezes binucleadas. Com a bexiga cheia, o epitélio se estira e as células superficiais ficam achatadas.",
+      "destaques": [
+        "Células em guarda-chuva: superficiais, volumosas e abobadadas, às vezes com dois núcleos.",
+        "O número aparente de camadas diminui quando o órgão se distende.",
+        "Reveste as vias urinárias (pelve renal, ureteres, bexiga, parte da uretra)."
+      ],
+      "topicos": ["his-02-epitelio-revestimento"],
+      "estruturas": [
+        { "id": "epitelio-de-transicao", "nome": "Células intermediárias", "descricao": "Camadas de células poligonais entre a basal e a superficial." },
+        { "id": "celula-em-guarda-chuva", "nome": "Célula em guarda-chuva", "descricao": "Célula superficial grande e abobadada, às vezes binucleada." },
+        { "id": "celula-basal", "nome": "Células basais", "descricao": "Camada de células pequenas sobre a membrana basal." },
+        { "id": "lamina-propria", "nome": "Lâmina própria", "descricao": "Conjuntivo sob o urotélio." },
+        { "id": "lumen", "nome": "Luz da bexiga", "descricao": "Espaço ocupado pela urina." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "glandula-submandibular",
+      "ordem": 6,
+      "titulo": "Glândula submandibular",
+      "tecido": "Glândula exócrina mista",
+      "orgao": "Glândula salivar submandibular",
+      "coloracao": "HE",
+      "descricao": "Glândula mista: ácinos serosos (citoplasma basófilo na base, núcleo esférico) e ácinos mucosos (citoplasma pálido, núcleo achatado na base), alguns com meias-luas serosas. Ductos estriados com células eosinófilas e estriações basais. Septos de conjuntivo dividem a glândula em lóbulos.",
+      "destaques": [
+        "Seroso: núcleo esférico, citoplasma basófilo na base; mucoso: citoplasma claro, núcleo achatado na base.",
+        "As meias-luas serosas são, em parte, artefato de fixação, segundo estudos com outros métodos de fixação.",
+        "Estriações do ducto estriado = dobras da membrana basal com mitocôndrias (transporte de íons)."
+      ],
+      "topicos": ["his-03-epitelio-glandular"],
+      "estruturas": [
+        { "id": "acino-seroso", "nome": "Ácino seroso", "descricao": "Células piramidais com base basófila e núcleo esférico; secreção aquosa, rica em enzimas." },
+        { "id": "acino-mucoso", "nome": "Ácino mucoso", "descricao": "Células claras com núcleo achatado junto à base; secretam muco." },
+        { "id": "meia-lua-serosa", "nome": "Meia-lua serosa", "descricao": "Grupo de células serosas em crescente sobre um ácino mucoso." },
+        { "id": "ducto-estriado", "nome": "Ducto estriado", "descricao": "Ducto com células cilíndricas eosinófilas, núcleo central e estriações basais." },
+        { "id": "septo-conjuntivo", "nome": "Septo de conjuntivo", "descricao": "Tecido conjuntivo que separa os lóbulos e leva vasos e nervos." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "conjuntivo-frouxo",
+      "ordem": 7,
+      "titulo": "Tecido conjuntivo frouxo",
+      "tecido": "Tecido conjuntivo propriamente dito frouxo",
+      "orgao": "Mesentério / lâmina própria (esquema)",
+      "coloracao": "HE (fibras elásticas destacadas no esquema)",
+      "descricao": "Muita substância fundamental, fibras colágenas onduladas e células variadas: fibroblastos (núcleo alongado), mastócitos (grânulos), macrófagos e plasmócitos. No HE comum as fibras elásticas aparecem pouco; para vê-las usa-se orceína ou Verhoeff (aqui estão destacadas para estudo).",
+      "destaques": [
+        "Fibroblasto produz fibras e substância fundamental.",
+        "Plasmócito: núcleo excêntrico com cromatina em 'roda de carroça' e halo claro ao lado (complexo de Golgi).",
+        "Mastócitos liberam histamina e heparina (participam de reações alérgicas mediadas por IgE)."
+      ],
+      "topicos": ["his-04-conjuntivo"],
+      "estruturas": [
+        { "id": "fibras-colagenas", "nome": "Fibras colágenas", "descricao": "Feixes eosinófilos ondulados, resistentes à tração (colágeno tipo I)." },
+        { "id": "fibras-elasticas", "nome": "Fibras elásticas", "descricao": "Fibras finas e ramificadas de elastina e fibrilina; coram com orceína/Verhoeff." },
+        { "id": "fibroblasto", "nome": "Fibroblasto", "descricao": "Célula fusiforme de núcleo alongado; sintetiza a matriz extracelular." },
+        { "id": "mastocito", "nome": "Mastócito", "descricao": "Célula oval com muitos grânulos (histamina, heparina)." },
+        { "id": "macrofago", "nome": "Macrófago", "descricao": "Célula fagocitária de contorno irregular, derivada de monócitos." },
+        { "id": "plasmocito", "nome": "Plasmócito", "descricao": "Célula produtora de anticorpos; citoplasma basófilo, núcleo excêntrico em 'roda de carroça'." },
+        { "id": "capilar", "nome": "Capilar", "descricao": "Vaso de parede fina com hemácias." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "tecido-adiposo",
+      "ordem": 8,
+      "titulo": "Tecido adiposo unilocular",
+      "tecido": "Tecido adiposo unilocular (branco)",
+      "orgao": "Hipoderme (esquema)",
+      "coloracao": "HE",
+      "descricao": "Adipócitos grandes e poligonais, com aspecto vazio porque o lipídio é dissolvido durante o preparo; o citoplasma fica reduzido a uma borda fina e o núcleo é achatado na periferia (aspecto de 'anel de sinete'). Septos de conjuntivo e capilares entre as células.",
+      "destaques": [
+        "Unilocular = uma gota lipídica grande por célula.",
+        "O espaço 'vazio' é artefato do preparo (álcool e xilol dissolvem os lipídios).",
+        "Para ver a gordura, usa-se congelação e corante lipossolúvel (Sudan)."
+      ],
+      "topicos": ["his-05-adiposo"],
+      "estruturas": [
+        { "id": "adipocito-unilocular", "nome": "Adipócito unilocular", "descricao": "Célula com gota lipídica única (extraída), borda citoplasmática fina e núcleo periférico achatado." },
+        { "id": "septo-conjuntivo", "nome": "Septo de conjuntivo", "descricao": "Conjuntivo que separa grupos de adipócitos (lóbulos) e leva vasos." },
+        { "id": "capilar", "nome": "Capilar", "descricao": "Capilares numerosos entre os adipócitos." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "cartilagem-hialina",
+      "ordem": 9,
+      "titulo": "Cartilagem hialina",
+      "tecido": "Cartilagem hialina",
+      "orgao": "Traqueia (anel cartilaginoso)",
+      "coloracao": "HE",
+      "descricao": "Matriz basófila homogênea com condrócitos em lacunas, muitas vezes em grupos isógenos (células que vêm de um mesmo condroblasto). Ao redor dos grupos, a matriz territorial é mais basófila. Na superfície, o pericôndrio, com camada fibrosa externa e camada condrogênica interna; logo abaixo dele, condrócitos jovens e achatados.",
+      "destaques": [
+        "Grupo isógeno = crescimento intersticial; pericôndrio = crescimento aposicional.",
+        "Matriz territorial mais basófila (mais proteoglicanos) do que a interterritorial.",
+        "Cartilagem é avascular: nutre-se por difusão a partir do pericôndrio."
+      ],
+      "topicos": ["his-06-cartilagem"],
+      "estruturas": [
+        { "id": "condrocito", "nome": "Condrócito", "descricao": "Célula da cartilagem, alojada numa lacuna." },
+        { "id": "lacuna", "nome": "Lacuna", "descricao": "Espaço da matriz ocupado pelo condrócito (no preparo, a célula se retrai e o espaço fica visível)." },
+        { "id": "grupo-isogeno", "nome": "Grupo isógeno", "descricao": "Conjunto de 2 a 8 condrócitos originados de uma mesma célula." },
+        { "id": "matriz-territorial", "nome": "Matriz territorial", "descricao": "Matriz ao redor dos grupos isógenos, mais basófila." },
+        { "id": "matriz-interterritorial", "nome": "Matriz interterritorial", "descricao": "Matriz entre os grupos, menos basófila." },
+        { "id": "pericondrio", "nome": "Pericôndrio", "descricao": "Conjuntivo denso que envolve a cartilagem; sua camada interna origina condroblastos." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "osso-compacto",
+      "ordem": 10,
+      "titulo": "Osso compacto (desgaste)",
+      "tecido": "Tecido ósseo compacto",
+      "orgao": "Diáfise de osso longo, corte transversal por desgaste",
+      "coloracao": "Sem coloração (técnica de desgaste)",
+      "descricao": "Preparado por desgaste: as células se perdem e lacunas e canalículos aparecem escuros. Ósteons (sistemas de Havers) com canal central e lamelas concêntricas; lacunas de osteócitos entre as lamelas, ligadas por canalículos; um canal de Volkmann liga canais de Havers; entre os ósteons, lamelas intersticiais.",
+      "destaques": [
+        "Ósteon = canal de Havers + lamelas concêntricas ao redor.",
+        "Canais de Volkmann são transversais/oblíquos e ligam canais de Havers entre si e com o periósteo/endósteo.",
+        "Canalículos ligam os osteócitos e permitem a troca de nutrientes."
+      ],
+      "topicos": ["his-07-osso"],
+      "estruturas": [
+        { "id": "osteon", "nome": "Ósteon (sistema de Havers)", "descricao": "Unidade cilíndrica do osso compacto: canal central cercado por lamelas concêntricas." },
+        { "id": "canal-de-havers", "nome": "Canal de Havers", "descricao": "Canal central do ósteon, com vasos e nervos." },
+        { "id": "lamelas-concentricas", "nome": "Lamelas concêntricas", "descricao": "Camadas de matriz óssea em torno do canal de Havers." },
+        { "id": "osteocito", "nome": "Lacuna de osteócito", "descricao": "Espaço ocupado pelo osteócito, entre as lamelas (escuro no desgaste)." },
+        { "id": "canaliculos", "nome": "Canalículos", "descricao": "Canais finos que ligam as lacunas entre si e ao canal de Havers." },
+        { "id": "canal-de-volkmann", "nome": "Canal de Volkmann", "descricao": "Canal transversal ou oblíquo que liga canais de Havers." },
+        { "id": "lamelas-intersticiais", "nome": "Lamelas intersticiais", "descricao": "Restos de ósteons antigos entre os ósteons atuais (remodelação)." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "esfregaco-sanguineo",
+      "ordem": 11,
+      "titulo": "Esfregaço de sangue",
+      "tecido": "Sangue periférico",
+      "orgao": "Sangue periférico (esfregaço)",
+      "coloracao": "Leishman / Wright",
+      "descricao": "Hemácias anucleadas com centro mais claro, plaquetas pequenas e os cinco tipos de leucócitos: neutrófilo (núcleo segmentado), eosinófilo (núcleo bilobado e grânulos alaranjados), basófilo (grânulos escuros que encobrem o núcleo), linfócito (núcleo redondo ocupando quase toda a célula) e monócito (maior, núcleo reniforme).",
+      "destaques": [
+        "Hemácia: sem núcleo, bicôncava (centro claro no esfregaço).",
+        "Neutrófilo é o leucócito mais numeroso no adulto; basófilo, o mais raro.",
+        "Plaquetas são fragmentos de megacariócitos, não células completas."
+      ],
+      "topicos": ["his-08-sangue-hematopoese"],
+      "estruturas": [
+        { "id": "hemacia", "nome": "Hemácia", "descricao": "Disco bicôncavo anucleado com hemoglobina; centro mais claro no esfregaço." },
+        { "id": "neutrofilo", "nome": "Neutrófilo", "descricao": "Núcleo segmentado (3 a 5 lóbulos) e grânulos finos; fagocita bactérias." },
+        { "id": "eosinofilo", "nome": "Eosinófilo", "descricao": "Núcleo bilobado e grânulos grandes alaranjados (acidófilos); alergia e parasitoses." },
+        { "id": "basofilo", "nome": "Basófilo", "descricao": "Grânulos grandes e escuros que encobrem o núcleo; histamina." },
+        { "id": "linfocito", "nome": "Linfócito", "descricao": "Núcleo redondo e denso com pouco citoplasma azulado." },
+        { "id": "monocito", "nome": "Monócito", "descricao": "Maior leucócito, núcleo reniforme e citoplasma azul-acinzentado; origina macrófagos." },
+        { "id": "plaquetas", "nome": "Plaquetas", "descricao": "Fragmentos pequenos de citoplasma de megacariócito; hemostasia." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "musculo-esqueletico",
+      "ordem": 12,
+      "titulo": "Músculo estriado esquelético",
+      "tecido": "Tecido muscular estriado esquelético",
+      "orgao": "Músculo esquelético, corte longitudinal",
+      "coloracao": "HE",
+      "descricao": "Fibras longas, cilíndricas e multinucleadas, com estriações transversais e núcleos achatados na periferia, logo abaixo do sarcolema. Entre as fibras, o endomísio.",
+      "destaques": [
+        "Núcleos periféricos e múltiplos: marca do músculo esquelético.",
+        "Estriações = bandas A (escuras) e I (claras) dos sarcômeros alinhados.",
+        "Endomísio envolve cada fibra; perimísio, feixes; epimísio, o músculo."
+      ],
+      "topicos": ["his-09-muscular"],
+      "estruturas": [
+        { "id": "fibra-muscular-esqueletica", "nome": "Fibra muscular esquelética", "descricao": "Célula longa e multinucleada, com núcleos periféricos." },
+        { "id": "estriacoes-transversais", "nome": "Estriações transversais", "descricao": "Faixas claras e escuras alternadas (bandas I e A)." },
+        { "id": "endomisio", "nome": "Endomísio", "descricao": "Conjuntivo delicado ao redor de cada fibra." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "musculo-cardiaco",
+      "ordem": 13,
+      "titulo": "Músculo estriado cardíaco",
+      "tecido": "Tecido muscular estriado cardíaco",
+      "orgao": "Miocárdio, corte longitudinal",
+      "coloracao": "HE",
+      "descricao": "Fibras estriadas e ramificadas, com um (às vezes dois) núcleo central, frequentemente com halo claro ao redor. As células se unem pelos discos intercalares, linhas escuras em degraus que cruzam as fibras.",
+      "destaques": [
+        "Disco intercalar: junções de adesão, desmossomos e junções comunicantes.",
+        "Núcleo central (diferente do esquelético, de núcleos periféricos).",
+        "Regeneração mínima: após infarto, forma-se cicatriz de tecido conjuntivo."
+      ],
+      "topicos": ["his-09-muscular"],
+      "estruturas": [
+        { "id": "fibra-muscular-cardiaca", "nome": "Fibra muscular cardíaca", "descricao": "Célula estriada, ramificada, com núcleo central." },
+        { "id": "disco-intercalar", "nome": "Disco intercalar", "descricao": "Linha escura em degraus entre células vizinhas; acopla mecânica e eletricamente." },
+        { "id": "endomisio", "nome": "Endomísio", "descricao": "Conjuntivo rico em capilares entre as fibras." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "musculo-liso",
+      "ordem": 14,
+      "titulo": "Músculo liso",
+      "tecido": "Tecido muscular liso",
+      "orgao": "Parede de víscera oca, corte longitudinal",
+      "coloracao": "HE",
+      "descricao": "Células fusiformes, sem estriações, com um núcleo central e alongado. As células se encaixam, a parte mais larga de uma junto às pontas das vizinhas. Na contração, o núcleo pode ficar ondulado, em saca-rolhas.",
+      "destaques": [
+        "Fusiforme, núcleo único e central, sem estriação.",
+        "Contração lenta e sustentada, involuntária.",
+        "Pode se dividir (hiperplasia), como no útero gravídico."
+      ],
+      "topicos": ["his-09-muscular"],
+      "estruturas": [
+        { "id": "fibra-muscular-lisa", "nome": "Fibra muscular lisa", "descricao": "Célula fusiforme, sem estriações, com núcleo central alongado." },
+        { "id": "endomisio", "nome": "Conjuntivo entre as células", "descricao": "Fibras reticulares e lâmina basal envolvem cada célula." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "neuronio-medula",
+      "ordem": 15,
+      "titulo": "Neurônios motores da medula",
+      "tecido": "Tecido nervoso (substância cinzenta)",
+      "orgao": "Medula espinal, corno anterior",
+      "coloracao": "HE",
+      "descricao": "Neurônios motores multipolares grandes, com corpúsculos de Nissl (retículo endoplasmático granular, basófilo) no citoplasma e nos dendritos, núcleo grande e claro com nucléolo evidente. O cone de implantação, de onde sai o axônio, não tem Nissl. Ao redor, o neurópilo e núcleos pequenos de células da glia.",
+      "destaques": [
+        "Nissl = retículo endoplasmático granular (síntese proteica intensa).",
+        "O cone de implantação e o axônio não têm corpúsculos de Nissl.",
+        "Núcleo claro com nucléolo grande: 'olho de coruja'."
+      ],
+      "topicos": ["his-10-nervoso"],
+      "estruturas": [
+        { "id": "neuronio-multipolar", "nome": "Corpo do neurônio multipolar", "descricao": "Pericário grande, de onde saem vários dendritos e um axônio." },
+        { "id": "corpusculos-de-nissl", "nome": "Corpúsculos de Nissl", "descricao": "Grumos basófilos de retículo endoplasmático granular e ribossomos." },
+        { "id": "nucleolo", "nome": "Nucléolo", "descricao": "Evidente dentro do núcleo grande e claro do neurônio." },
+        { "id": "dendrito", "nome": "Dendritos", "descricao": "Prolongamentos que recebem estímulos; contêm Nissl na porção proximal." },
+        { "id": "cone-de-implantacao", "nome": "Cone de implantação", "descricao": "Região do corpo de onde sai o axônio; sem Nissl." },
+        { "id": "celulas-da-glia", "nome": "Núcleos de células da glia", "descricao": "Núcleos pequenos ao redor dos neurônios (astrócitos, oligodendrócitos, micróglia)." },
+        { "id": "neuropilo", "nome": "Neurópilo", "descricao": "Emaranhado de prolongamentos de neurônios e de glia entre os corpos celulares." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    },
+    {
+      "id": "nervo-periferico",
+      "ordem": 16,
+      "titulo": "Nervo periférico",
+      "tecido": "Tecido nervoso (nervo periférico)",
+      "orgao": "Nervo periférico, corte transversal",
+      "coloracao": "HE",
+      "descricao": "Fascículos nervosos envolvidos pelo perineuro e reunidos pelo epineuro. Dentro dos fascículos, o endoneuro envolve cada fibra. Nas fibras mielinizadas, o axônio aparece central, cercado por um halo claro onde estava a mielina (lipídio dissolvido no preparo).",
+      "destaques": [
+        "Epineuro (todo o nervo) → perineuro (cada fascículo) → endoneuro (cada fibra).",
+        "O perineuro forma uma barreira de difusão.",
+        "No SNP, a mielina é produzida pelas células de Schwann."
+      ],
+      "topicos": ["his-10-nervoso"],
+      "estruturas": [
+        { "id": "epineuro", "nome": "Epineuro", "descricao": "Conjuntivo denso que envolve todo o nervo e preenche o espaço entre os fascículos." },
+        { "id": "perineuro", "nome": "Perineuro", "descricao": "Camadas de células achatadas que envolvem cada fascículo." },
+        { "id": "endoneuro", "nome": "Endoneuro", "descricao": "Conjuntivo delicado ao redor de cada fibra nervosa." },
+        { "id": "fasciculo-nervoso", "nome": "Fascículo nervoso", "descricao": "Feixe de fibras nervosas envolto pelo perineuro." },
+        { "id": "fibra-mielinizada", "nome": "Fibra mielinizada", "descricao": "Axônio central cercado por halo claro de mielina (dissolvida no preparo)." }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+    }
+  ]
+}

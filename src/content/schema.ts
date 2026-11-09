@@ -165,6 +165,24 @@ export const DerivadosArquivoSchema = z.object({
   revisao: RevisaoSchema,
 });
 
+// Lâminas do microscópio virtual (content/histologia/laminas.json)
+export const LaminaSchema = z.object({
+  id: idKebab,
+  ordem: z.number().int(),
+  titulo: z.string(),
+  /** nome do tecido/órgão usado como resposta no jogo "Qual é o tecido?" */
+  tecido: z.string(),
+  orgao: z.string(),
+  coloracao: z.string(),
+  descricao: z.string(),
+  destaques: z.array(z.string()),
+  topicos: z.array(z.string()),
+  estruturas: z.array(z.object({ id: idKebab, nome: z.string(), descricao: z.string() })).min(1),
+  revisao: RevisaoSchema,
+});
+export const LaminasArquivoSchema = z.object({ laminas: z.array(LaminaSchema) });
+export type Lamina = z.infer<typeof LaminaSchema>;
+
 export const EscolaSchema = z.object({
   id: idKebab,
   sigla: z.string(),

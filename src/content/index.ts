@@ -1,8 +1,9 @@
 // Carregamento do conteúdo empacotado no build (funciona offline).
 // A validação completa acontece antes do build (scripts/validar-conteudo.ts); aqui só tipamos e indexamos.
-import type { Topico, Estagio, DerivadosArquivo, Escola, Estrutura } from './schema.ts';
+import type { Topico, Estagio, DerivadosArquivo, Escola, Estrutura, Lamina } from './schema.ts';
 import estagiosJson from '../../content/embriologia/estagios.json';
 import derivadosJson from '../../content/embriologia/derivados.json';
+import laminasJson from '../../content/histologia/laminas.json';
 
 // Cada tópico vira um arquivo separado no build e só é baixado quando a disciplina é aberta
 // (com o service worker, fica em cache para uso offline). Assim o app não cresce a cada disciplina nova.
@@ -44,6 +45,7 @@ export const ESTAGIOS: Estagio[] = (estagiosJson as unknown as { estagios: (Omit
   .map((e) => ({ ...e, grupo: e.grupo ?? 'desenvolvimento' }))
   .sort((a, b) => a.ordem - b.ordem);
 export const DERIVADOS = derivadosJson as DerivadosArquivo;
+export const LAMINAS: Lamina[] = (laminasJson as { laminas: Lamina[] }).laminas.slice().sort((a, b) => a.ordem - b.ordem);
 
 /** Registro de estruturas: primeiro as definições dos tópicos carregados, complementadas pelas dos estágios 3D. */
 export function estruturas(): Map<string, Estrutura & { topicoId?: string }> {

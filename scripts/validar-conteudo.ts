@@ -7,6 +7,7 @@ import {
   EstagiosArquivoSchema,
   DerivadosArquivoSchema,
   EscolasArquivoSchema,
+  LaminasArquivoSchema,
 } from '../src/content/schema.ts';
 
 const raiz = new URL('..', import.meta.url).pathname;
@@ -93,6 +94,18 @@ if (existsSync(arqDerivados)) {
     const cats = new Set(r.data.categorias.map((c) => c.id));
     for (const i of r.data.itens)
       if (!cats.has(i.categoria)) erros.push(`derivados.json: item ${i.id} com categoria inexistente ${i.categoria}`);
+  }
+}
+
+const arqLaminas = join(raiz, 'content/histologia/laminas.json');
+if (existsSync(arqLaminas)) {
+  const r = LaminasArquivoSchema.safeParse(ler(arqLaminas));
+  if (!r.success) formatarIssues('content/histologia/laminas.json', r.error.issues);
+  else {
+    const ids = r.data.laminas.map((l) => l.id);
+    if (new Set(ids).size !== ids.length) erros.push('laminas.json: ids repetidos');
+    for (const l of r.data.laminas)
+      for (const tp of l.topicos) if (!idsTopicos.has(tp)) avisos.push(`laminas.json: lâmina ${l.id} cita tópico inexistente ${tp}`);
   }
 }
 

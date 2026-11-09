@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ESTAGIOS, topico } from '../content/index.ts';
+import { ESTAGIOS, LAMINAS, topico } from '../content/index.ts';
 import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { Barra, Markdown, SeloRevisao } from '../ui/comum.tsx';
@@ -15,6 +15,7 @@ export function TopicoTela() {
   if (!t) return <Navigate to="/" replace />;
   const p = progresso.get(t.id);
   const estagios = ESTAGIOS.filter((e) => e.topicos.includes(t.id));
+  const laminas = LAMINAS.filter((l) => l.topicos.includes(t.id));
 
   return (
     <div className="pilha">
@@ -40,6 +41,9 @@ export function TopicoTela() {
           <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}`} className="btn primario">Praticar questões</Link>
           {estagios.length > 0 && (
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>
+          )}
+          {laminas.length > 0 && (
+            <Link to={`/microscopio?lamina=${laminas[0].id}`} className="btn">Ver no microscópio</Link>
           )}
           {t.eventos.length >= 4 && (
             <Link to={`/jogar/linha-do-tempo?topico=${t.id}`} className="btn">Linha do tempo</Link>
