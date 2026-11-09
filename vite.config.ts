@@ -42,6 +42,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
+          // React em pacote próprio: senão o empacotador o coloca junto do three.js e o 3D é baixado na abertura.
+          if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) return 'react';
           if (id.includes('node_modules/three') || id.includes('@react-three')) return 'tres';
           if (id.includes('@supabase')) return 'supabase';
           return undefined;
