@@ -698,7 +698,7 @@
     {
       "id": "emb-13-q22",
       "tipo": "ordenar",
-      "enunciado": "Ordene as regiões do tubo cardíaco, da extremidade de entrada (caudal) para a de saída (cranial):",
+      "enunciado": "Ordene as regiões do tubo cardíaco e o saco aórtico, no qual o tubo se continua, da extremidade de entrada (caudal) para a de saída (cranial):",
       "itens": [
         { "id": "1", "texto": "Ventrículo primitivo" },
         { "id": "2", "texto": "Tronco arterial" },
@@ -809,7 +809,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "1 correção menor (0 críticas, 0 importantes): enunciado da q22 deixava de considerar que o saco aórtico não faz parte do tubo cardíaco propriamente dito. Conferidos campos cardíacos, alça para a direita (dias 23–28), derivados do seio venoso e das câmaras, sequência septum primum → ostium secundum → fusão com os coxins → septum secundum (Moore e Sadler), coxins e septo membranoso, septo aorticopulmonar e crista neural cardíaca, derivados dos arcos aórticos, trajeto dos laríngeos recorrentes, circulação fetal, mudanças ao nascer, remanescentes e mecanismos das cardiopatias; todos corretos segundo as obras de referência."
+      }
+    ],
     "humano": null
   }
 }

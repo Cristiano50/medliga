@@ -37,7 +37,7 @@
     {
       "id": "sulco-optico",
       "nome": "Sulco óptico",
-      "sinonimos": ["fosseta óptica"],
+      "sinonimos": [],
       "definicao": "Depressão nas pregas neurais da extremidade cranial do embrião, primeiro sinal do olho, por volta do dia 22.",
       "destino": "Evagina-se como vesícula óptica."
     },
@@ -830,7 +830,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "1 correção (0 crítica, 0 importante, 1 menor): removido o sinônimo 'fosseta óptica' do sulco óptico, termo não usado nas traduções de Moore/Sadler e confundível com a fosseta do disco óptico (anomalia congênita distinta). Derivados do cálice óptico (epitélio pigmentado × retina neural, epitélio e músculos da íris), fissura coroide/coloboma, artéria hialoide, córnea, orelhas interna/média/externa (martelo e bigorna do 1º arco, estribo do 2º), tegumento, mamas e esmalte (ameloblastos, ectoderma) × dentina (odontoblastos, crista neural) conferidos sem erro."
+      }
+    ],
     "humano": null
   }
 }

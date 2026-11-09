@@ -219,7 +219,7 @@
       "id": "hernia-diafragmatica-congenita",
       "titulo": "Hérnia diafragmática congênita posterolateral (Bochdalek)",
       "descricao": "Defeito posterolateral do diafragma, a anomalia diafragmática congênita mais comum, majoritariamente à esquerda. Pode ser suspeitada na ultrassonografia pré-natal (vísceras abdominais no tórax, desvio do mediastino). Ao nascer: desconforto respiratório grave, abdome escavado, ruídos hidroaéreos no tórax e bulhas desviadas para o lado contralateral. Na sala de parto evita-se ventilação com balão e máscara (distende as alças intratorácicas); faz-se intubação traqueal e descompressão gástrica.",
-      "mecanismo": "Formação ou fusão defeituosa da membrana pleuroperitoneal com o mesentério dorsal do esôfago e o septo transverso, deixando persistir a abertura pleuroperitoneal; quando as alças retornam do cordão umbilical (10ª semana), vísceras passam ao tórax. O predomínio à esquerda relaciona-se ao fechamento mais precoce da abertura direita."
+      "mecanismo": "Formação ou fusão defeituosa da membrana pleuroperitoneal com o mesentério dorsal do esôfago e o septo transverso, deixando persistir a abertura pleuroperitoneal; quando as alças retornam do cordão umbilical (10ª semana), vísceras passam ao tórax. O predomínio à esquerda provavelmente se relaciona ao fechamento um pouco mais precoce da abertura direita (explicação proposta por Moore, não comprovada)."
     },
     {
       "id": "hipoplasia-pulmonar-hdc",
@@ -501,7 +501,7 @@
       "tipo": "vf",
       "enunciado": "A hérnia diafragmática congênita posterolateral ocorre com mais frequência no lado esquerdo.",
       "correta": true,
-      "explicacao": "Verdadeiro. A grande maioria dos casos é à esquerda. Moore relaciona o predomínio ao fechamento um pouco mais precoce da abertura pleuroperitoneal direita, possivelmente pelo tamanho do lobo direito do fígado nessa fase.",
+      "explicacao": "Verdadeiro. A grande maioria dos casos é à esquerda. Moore relaciona o predomínio, como hipótese, ao fechamento um pouco mais precoce da abertura pleuroperitoneal direita, possivelmente pelo tamanho do lobo direito do fígado nessa fase.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": ["hernia-diafragmatica-congenita"],
@@ -694,7 +694,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "2 correções menores (0 críticas, 0 importantes); principais: a explicação do predomínio esquerdo da HDC (fechamento mais precoce da abertura pleuroperitoneal direita) passou a ser apresentada como hipótese de Moore, no mecanismo da correlação e na explicação da q15. Conferidos todos os fatos: celoma em ferradura, septo transverso, pregas pleuropericárdicas (veias cardinais comuns, frênicos, pericárdio fibroso), quatro componentes do diafragma (Moore), C3–C5 e dor referida, Bochdalek à esquerda, Morgagni, eventração, mesentérios e eventos da linha do tempo (ordem inequívoca)."
+      }
+    ],
     "humano": null
   }
 }

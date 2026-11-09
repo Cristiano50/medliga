@@ -310,7 +310,7 @@
       "id": "ma-rotacao-volvo",
       "titulo": "Má rotação e volvo do intestino médio",
       "descricao": "Rotação incompleta ou anormal do intestino médio: ceco alto, próximo do piloro, preso por bandas peritoneais (de Ladd) que cruzam o duodeno, e raiz do mesentério estreita. Pode causar obstrução duodenal e volvo do intestino médio, com vômitos biliosos súbitos no recém-nascido e risco de necrose de todo o território da AMS; é emergência cirúrgica (procedimento de Ladd). Na rotação reversa (horária), o duodeno passa anteriormente à AMS e o colo transverso, posteriormente.",
-      "mecanismo": "Falha ou anomalia dos 180° finais da rotação durante o retorno das alças ao abdome (10ª semana) e da fixação mesentérica subsequente."
+      "mecanismo": "Rotação ausente (não rotação: as alças retornam sem girar, com o colo à esquerda), incompleta (na rotação mista com volvo, falha dos 90° finais da rotação, segundo Moore, com o ceco logo abaixo do piloro) ou em sentido inverso (rotação horária, com o duodeno anterior à AMS), seguida de fixação mesentérica anormal; a raiz estreita do mesentério favorece a torção em torno da AMS."
     },
     {
       "id": "diverticulo-meckel",
@@ -339,7 +339,7 @@
     {
       "id": "malformacoes-anorretais",
       "titulo": "Malformações anorretais",
-      "descricao": "Espectro que vai da estenose anal e da membrana anal imperfurada à agenesia anorretal com fístula (retouretral ou retovesical no menino; retovestibular ou retoperineal na menina) e à cloaca persistente na menina. São diagnosticadas ao exame do períneo; mecônio na urina indica fístula retourinária. Associam-se com frequência a anomalias vertebrais, cardíacas, renais e de membros (associação VACTERL), que devem ser investigadas.",
+      "descricao": "Espectro que vai da estenose anal e da membrana anal imperfurada à agenesia anorretal com fístula (retoperineal em ambos os sexos; retouretral ou retovesical no menino; retovestibular na menina) e à cloaca persistente na menina. São diagnosticadas ao exame do períneo; mecônio na urina indica fístula retourinária. Associam-se com frequência a anomalias vertebrais, cardíacas, renais e de membros (associação VACTERL), que devem ser investigadas.",
       "mecanismo": "Desenvolvimento anormal do septo urorretal e da cloaca, com separação incompleta entre reto e seio urogenital, ou falha da ruptura da membrana anal (membrana anal imperfurada)."
     }
   ],
@@ -367,7 +367,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "O ramo caudal da alça intestinal primária forma o restante do íleo, o ceco, o apêndice, o colo ascendente e os dois terços proximais do colo transverso, todos irrigados pela AMS. O colo descendente (a) e o reto (d) derivam do intestino posterior, irrigado pela AMI (o reto recebe também as artérias retais média e inferior). O duodeno proximal à papila maior (b) deriva do intestino anterior e é irrigado por ramos do tronco celíaco.",
+      "explicacao": "A alternativa (c) está correta: o ramo caudal da alça intestinal primária forma o restante do íleo, o ceco, o apêndice, o colo ascendente e os dois terços proximais do colo transverso, todos irrigados pela AMS. O colo descendente (a) e o reto (d) derivam do intestino posterior, irrigado pela AMI (o reto recebe também as artérias retais média e inferior). O duodeno proximal à papila maior (b) deriva do intestino anterior e é irrigado por ramos do tronco celíaco.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -400,7 +400,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Com a rotação, o lado esquerdo original do estômago torna-se a face anterior e o lado direito, a face posterior; os nervos vagos, que inervavam os lados esquerdo e direito, passam a inervar as paredes anterior e posterior, respectivamente. A alternativa (b) inverte essa relação. A borda ventral, futura curvatura menor, desloca-se para a direita, e não para a esquerda (c). O baço, que se forma no mesogástrio dorsal, é levado para a esquerda (d).",
+      "explicacao": "A alternativa (a) está correta: com a rotação, o lado esquerdo original do estômago torna-se a face anterior e o lado direito, a face posterior; os nervos vagos, que inervavam os lados esquerdo e direito, passam a inervar as paredes anterior e posterior, respectivamente. A alternativa (b) inverte essa relação. A borda ventral, futura curvatura menor, desloca-se para a direita, e não para a esquerda (c). O baço, que se forma no mesogástrio dorsal, é levado para a esquerda (d).",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -433,7 +433,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Moore descreve fendas no mesogástrio dorsal que se unem numa cavidade, ampliada quando a rotação do estômago leva o mesogástrio dorsal para a esquerda; o espaço fica atrás do estômago e comunica-se com a cavidade peritoneal pelo forame omental. O mesogástrio dorsal também se projeta caudalmente e forma o omento maior. A herniação do intestino médio (a) não forma a bolsa omental. O septo transverso (b) forma parte do diafragma e o mesentério ventral. O fígado (c) cresce no septo transverso e no mesentério ventral, não no dorsal.",
+      "explicacao": "A alternativa (d) está correta: Moore descreve fendas no mesogástrio dorsal que se unem numa cavidade, ampliada quando a rotação do estômago leva o mesogástrio dorsal para a esquerda; o espaço fica atrás do estômago e comunica-se com a cavidade peritoneal pelo forame omental. O mesogástrio dorsal também se projeta caudalmente e forma o omento maior. A herniação do intestino médio (a) não forma a bolsa omental. O septo transverso (b) forma parte do diafragma e o mesentério ventral. O fígado (c) cresce no septo transverso e no mesentério ventral, não no dorsal.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -466,7 +466,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "O baço é órgão mesodérmico: desenvolve-se, a partir da 5ª semana, de uma massa de células mesenquimais entre as camadas do mesogástrio dorsal e é lobulado no feto. Embora seja irrigado pela artéria esplênica, ramo do tronco celíaco, não deriva do intestino anterior, ao contrário do pâncreas (a), que vem de brotos endodérmicos. O septo transverso (c) origina o mesentério ventral e o estroma do fígado. A crista neural (d) forma os neurônios entéricos, entre outros derivados, mas não o baço.",
+      "explicacao": "A alternativa (b) está correta: o baço é órgão mesodérmico: desenvolve-se, a partir da 5ª semana, de uma massa de células mesenquimais entre as camadas do mesogástrio dorsal e é lobulado no feto. Embora seja irrigado pela artéria esplênica, ramo do tronco celíaco, não deriva do intestino anterior, ao contrário do pâncreas (a), que vem de brotos endodérmicos. O septo transverso (c) origina o mesentério ventral e o estroma do fígado. A crista neural (d) forma os neurônios entéricos, entre outros derivados, mas não o baço.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -498,7 +498,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Com a rotação do duodeno, o broto ventral, situado junto ao colédoco, passa para trás e funde-se ao dorsal, formando o processo uncinado e a parte inferior da cabeça; o broto dorsal forma o restante da glândula, incluindo corpo e cauda (a). As ilhotas (b) surgem no 3º mês a partir do parênquima pancreático, não exclusivamente do broto ventral. O ducto acessório (d) corresponde à parte proximal do ducto dorsal; o ducto ventral participa do ducto principal (de Wirsung).",
+      "explicacao": "A alternativa (c) está correta: com a rotação do duodeno, o broto ventral, situado junto ao colédoco, passa para trás e funde-se ao dorsal, formando o processo uncinado e a parte inferior da cabeça; o broto dorsal forma o restante da glândula, incluindo corpo e cauda (a). As ilhotas (b) surgem no 3º mês a partir do parênquima pancreático, não exclusivamente do broto ventral. O ducto acessório (d) corresponde à parte proximal do ducto dorsal; o ducto ventral participa do ducto principal (de Wirsung).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -530,7 +530,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "A alça intestinal primária gira em torno do eixo formado pela AMS: cerca de 90° em sentido anti-horário durante a herniação e mais 180° durante o retorno ao abdome, na 10ª semana, totalizando cerca de 270°. O sentido horário, citado em (b) e (d), caracteriza a rotação do estômago (vista cranial); no intestino médio, a rotação horária ('reversa') é uma anomalia. O tronco celíaco (b) irriga o intestino anterior, e a AMI (c), o posterior; nenhum é eixo da alça. O ducto vitelino (d) liga o ápice da alça ao saco vitelino, mas não é o eixo de rotação.",
+      "explicacao": "A alternativa (a) está correta: a alça intestinal primária gira em torno do eixo formado pela AMS: cerca de 90° em sentido anti-horário durante a herniação e mais 180° durante o retorno ao abdome, na 10ª semana, totalizando cerca de 270°. O sentido horário, citado em (b) e (d), caracteriza a rotação do estômago (vista cranial); no intestino médio, a rotação horária ('reversa') é uma anomalia. O tronco celíaco (b) irriga o intestino anterior, e a AMI (c), o posterior; nenhum é eixo da alça. O ducto vitelino (d) liga o ápice da alça ao saco vitelino, mas não é o eixo de rotação.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -563,7 +563,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Na estenose hipertrófica do piloro, a musculatura pilórica hipertrofia e estreita o canal pilórico; como o colédoco desemboca na papila maior, na segunda parte do duodeno, distal ao piloro, a bile não chega ao estômago. A perda de suco gástrico (ácido clorídrico) explica a alcalose hipoclorêmica e hipocalêmica. A bile é formada desde a 12ª semana de vida fetal (a). A atresia biliar (c) causa icterícia colestática e fezes acólicas, não vômitos em jato. O pâncreas anular (d) obstrui o duodeno e, quando a obstrução é distal à papila, os vômitos são biliosos. A estenose pilórica não é malformação do período embrionário: a hipertrofia se estabelece nas primeiras semanas de vida.",
+      "explicacao": "A alternativa (b) está correta: na estenose hipertrófica do piloro, a musculatura pilórica hipertrofia e estreita o canal pilórico; como o colédoco desemboca na papila maior, na segunda parte do duodeno, distal ao piloro, a bile não chega ao estômago. A perda de suco gástrico (ácido clorídrico) explica a alcalose hipoclorêmica e hipocalêmica. A bile é formada desde a 12ª semana de vida fetal (a). A atresia biliar (c) causa icterícia colestática e fezes acólicas, não vômitos em jato. O pâncreas anular (d) obstrui o duodeno e, quando a obstrução é distal à papila, os vômitos são biliosos. A estenose pilórica não é malformação do período embrionário: a hipertrofia se estabelece nas primeiras semanas de vida.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -601,7 +601,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Na 5ª–6ª semana o epitélio duodenal prolifera e oblitera a luz, que se recanaliza até o fim do período embrionário; a falha produz atresia (ou estenose, se parcial), em geral na 2ª ou 3ª parte, distal à papila maior, o que explica o vômito bilioso. O feto não absorve o líquido amniótico deglutido (polidrâmnio), e a imagem mostra a 'dupla bolha'. Cerca de 20–30% dos afetados têm síndrome de Down, segundo Moore. A estenose pilórica (a) dá vômitos não biliosos e surge semanas após o nascimento. As atresias jejunoileais (b) costumam resultar de acidentes vasculares e mostram múltiplas alças distendidas. A persistência do ducto vitelino (c) origina o divertículo de Meckel e outros remanescentes, não obstrução duodenal. A falha da crista neural (e) causa a doença de Hirschsprung, que acomete o reto e o colo distal.",
+      "explicacao": "A alternativa (d) está correta: na 5ª–6ª semana o epitélio duodenal prolifera e oblitera a luz, que se recanaliza até o fim do período embrionário; a falha produz atresia (ou estenose, se parcial), em geral na 2ª ou 3ª parte, distal à papila maior, o que explica o vômito bilioso. O feto não absorve o líquido amniótico deglutido (polidrâmnio), e a imagem mostra a 'dupla bolha'. Cerca de 20–30% dos afetados têm síndrome de Down, segundo Moore. A estenose pilórica (a) dá vômitos não biliosos e surge semanas após o nascimento. As atresias jejunoileais (b) costumam resultar de acidentes vasculares e mostram múltiplas alças distendidas. A persistência do ducto vitelino (c) origina o divertículo de Meckel e outros remanescentes, não obstrução duodenal. A falha da crista neural (e) causa a doença de Hirschsprung, que acomete o reto e o colo distal.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -636,7 +636,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Na má rotação, o intestino médio não completa a rotação de 270°: o ceco fica alto, perto do piloro, preso por bandas peritoneais (de Ladd) que cruzam o duodeno, e a raiz do mesentério fica estreita; as alças podem torcer-se em torno da AMS (volvo do intestino médio), com risco de isquemia de todo o intestino médio. Vômito bilioso no recém-nascido exige excluir volvo como emergência cirúrgica. A aganglionose (b) causa atraso na eliminação de mecônio e distensão, sem deslocar a junção duodenojejunal. A persistência da herniação (c) corresponde à onfalocele. A estenose pilórica (d) causa vômitos não biliosos.",
+      "explicacao": "A alternativa (a) está correta: na má rotação, o intestino médio não completa a rotação de 270°: o ceco fica alto, perto do piloro, preso por bandas peritoneais (de Ladd) que cruzam o duodeno, e a raiz do mesentério fica estreita; as alças podem torcer-se em torno da AMS (volvo do intestino médio), com risco de isquemia de todo o intestino médio. Vômito bilioso no recém-nascido exige excluir volvo como emergência cirúrgica. A aganglionose (b) causa atraso na eliminação de mecônio e distensão, sem deslocar a junção duodenojejunal. A persistência da herniação (c) corresponde à onfalocele. A estenose pilórica (d) causa vômitos não biliosos.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -671,7 +671,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "O divertículo de Meckel é remanescente da parte proximal do ducto vitelino, na borda antimesentérica do íleo. Pode conter mucosa gástrica e tecido pancreático ectópicos; a mucosa gástrica secreta ácido, ulcera a mucosa ileal vizinha e causa sangramento indolor, e é ela que concentra o pertecnetato na cintilografia. Por isso (c) está errada: o tecido pancreático ectópico pode existir, mas não é o que capta o radiofármaco nem a causa usual do sangramento. O úraco (a) é remanescente da alantoide e liga a bexiga ao umbigo, sem relação com o íleo. Duplicações intestinais (d) são raras e não correspondem a esse quadro clássico.",
+      "explicacao": "A alternativa (b) está correta: o divertículo de Meckel é remanescente da parte proximal do ducto vitelino, na borda antimesentérica do íleo. Pode conter mucosa gástrica e tecido pancreático ectópicos; a mucosa gástrica secreta ácido, ulcera a mucosa ileal vizinha e causa sangramento indolor, e é ela que concentra o pertecnetato na cintilografia. Por isso (c) está errada: o tecido pancreático ectópico pode existir, mas não é o que capta o radiofármaco nem a causa usual do sangramento. O úraco (a) é remanescente da alantoide e liga a bexiga ao umbigo, sem relação com o íleo. Duplicações intestinais (d) são raras e não correspondem a esse quadro clássico.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -704,7 +704,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "O divertículo de Meckel, anomalia mais comum do trato digestório (Moore: 2–4% da população), fica na borda antimesentérica do íleo, onde se inseria o ducto vitelino, a 40–50 cm da junção ileocecal segundo Moore (40–60 cm segundo Sadler). A 'regra dos 2' (≈2% da população, ≈2 pés da valva ileocecal, ≈2 polegadas de comprimento, 2 tipos de tecido ectópico, sintomas frequentemente antes dos 2 anos, predomínio masculino) é mnemônica aproximada, não regra anatômica. A borda mesentérica do jejuno (a) está errada quanto à borda e ao segmento. A alantoide (b) origina o úraco. A maioria dos divertículos é assintomática (d).",
+      "explicacao": "A alternativa (c) está correta: o divertículo de Meckel, anomalia mais comum do trato digestório (Moore: 2–4% da população), fica na borda antimesentérica do íleo, onde se inseria o ducto vitelino, a 40–50 cm da junção ileocecal segundo Moore (40–60 cm segundo Sadler). A 'regra dos 2' (≈2% da população, ≈2 pés da valva ileocecal, ≈2 polegadas de comprimento, 2 tipos de tecido ectópico, sintomas frequentemente antes dos 2 anos, predomínio masculino) é mnemônica aproximada, não regra anatômica. A borda mesentérica do jejuno (a) está errada quanto à borda e ao segmento. A alantoide (b) origina o úraco. A maioria dos divertículos é assintomática (d).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -737,7 +737,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Na gastrosquise, o defeito da parede abdominal fica ao lado do umbigo, geralmente à direita, e as alças saem sem saco, expostas ao líquido amniótico, que pode lesá-las (espessamento, aderências, atresia por isquemia); é mais comum em mães jovens e raramente se associa a anomalias cromossômicas. Na onfalocele (a), as vísceras ficam num saco de âmnio e peritônio no qual se insere o cordão, com associação frequente a anomalias cromossômicas e outras malformações. A herniação fisiológica (b) ocorre entre a 6ª e a 10ª semana após a fertilização (≈8ª a 12ª semana de idade gestacional), dentro do cordão; com 20 semanas de idade gestacional as alças já deveriam estar no abdome. A extrofia vesical (c) expõe a mucosa da bexiga na parede infraumbilical, não alças intestinais livres.",
+      "explicacao": "A alternativa (d) está correta: na gastrosquise, o defeito da parede abdominal fica ao lado do umbigo, geralmente à direita, e as alças saem sem saco, expostas ao líquido amniótico, que pode lesá-las (espessamento, aderências, atresia por isquemia); é mais comum em mães jovens e raramente se associa a anomalias cromossômicas. Na onfalocele (a), as vísceras ficam num saco de âmnio e peritônio no qual se insere o cordão, com associação frequente a anomalias cromossômicas e outras malformações. A herniação fisiológica (b) ocorre entre a 6ª e a 10ª semana após a fertilização (≈8ª a 12ª semana de idade gestacional), dentro do cordão; com 20 semanas de idade gestacional as alças já deveriam estar no abdome. A extrofia vesical (c) expõe a mucosa da bexiga na parede infraumbilical, não alças intestinais livres.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -772,7 +772,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Na doença de Hirschsprung, os precursores entéricos derivados da crista neural, que colonizam o intestino em sentido craniocaudal, não alcançam ou não se mantêm no segmento distal; o segmento agangliônico, que sempre inclui o reto, permanece contraído e sem peristalse, e o colo proximal normal se dilata (megacolo). Mutações do gene RET são a principal causa genética conhecida, e há associação com a síndrome de Down. A recanalização do reto (b) não é o mecanismo, e a biópsia mostraria luz atrésica, não aganglionose. O septo urorretal anormal (c) e a persistência da membrana anal (d) causam malformações anorretais, com ânus ausente ou anormal ao exame do períneo, o que não é o caso.",
+      "explicacao": "A alternativa (a) está correta: na doença de Hirschsprung, os precursores entéricos derivados da crista neural, que colonizam o intestino em sentido craniocaudal, não alcançam ou não se mantêm no segmento distal; o segmento agangliônico, que sempre inclui o reto, permanece contraído e sem peristalse, e o colo proximal normal se dilata (megacolo). Mutações do gene RET são a principal causa genética conhecida, e há associação com a síndrome de Down. A recanalização do reto (b) não é o mecanismo, e a biópsia mostraria luz atrésica, não aganglionose. O septo urorretal anormal (c) e a persistência da membrana anal (d) causam malformações anorretais, com ânus ausente ou anormal ao exame do períneo, o que não é o caso.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -805,7 +805,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Os dois terços superiores do canal anal derivam do intestino posterior (endoderma): epitélio colunar, artéria retal superior (da AMI), veia retal superior (para a veia mesentérica inferior e o sistema porta), drenagem linfática profunda e inervação autonômica, pouco sensível à dor. O terço inferior deriva do proctodeu (ectoderma): epitélio estratificado pavimentoso, artérias retais inferiores, drenagem venosa para a veia cava inferior, linfonodos inguinais superficiais e nervo retal inferior (ramo do pudendo), sensível à dor. As alternativas (a), (c) e (d) descrevem características da porção abaixo da linha pectínea.",
+      "explicacao": "A alternativa (b) está correta: os dois terços superiores do canal anal derivam do intestino posterior (endoderma): epitélio colunar, artéria retal superior (da AMI), veia retal superior (para a veia mesentérica inferior e o sistema porta), drenagem linfática profunda e inervação autonômica, pouco sensível à dor. O terço inferior deriva do proctodeu (ectoderma): epitélio estratificado pavimentoso, artérias retais inferiores, drenagem venosa para a veia cava inferior, linfonodos inguinais superficiais e nervo retal inferior (ramo do pudendo), sensível à dor. As alternativas (a), (c) e (d) descrevem características da porção abaixo da linha pectínea.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -839,7 +839,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "As malformações anorretais resultam sobretudo do desenvolvimento anormal do septo urorretal e da cloaca, com separação incompleta entre o reto e o seio urogenital; no menino, o reto pode terminar em fístula para a uretra ou a bexiga, e o mecônio aparece na urina. Anomalias vertebrais e cardíacas associadas sugerem a associação VACTERL (anomalias vertebrais, anais, cardíacas, traqueoesofágicas, renais e de membros), que exige investigar rins, coluna e esôfago. Na doença de Hirschsprung (a), o ânus é normal e não há mecônio na urina. O duodeno (b) não se comunica com a bexiga. O úraco patente (d) liga a bexiga ao umbigo e drena urina pelo umbigo, sem relação com o intestino.",
+      "explicacao": "A alternativa (c) está correta: as malformações anorretais resultam sobretudo do desenvolvimento anormal do septo urorretal e da cloaca, com separação incompleta entre o reto e o seio urogenital; no menino, o reto pode terminar em fístula para a uretra ou a bexiga, e o mecônio aparece na urina. Anomalias vertebrais e cardíacas associadas sugerem a associação VACTERL (anomalias vertebrais, anais, cardíacas, traqueoesofágicas, renais e de membros), que exige investigar rins, coluna e esôfago. Na doença de Hirschsprung (a), o ânus é normal e não há mecônio na urina. O duodeno (b) não se comunica com a bexiga. O úraco patente (d) liga a bexiga ao umbigo e drena urina pelo umbigo, sem relação com o intestino.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1156,6 +1156,7 @@
     "Retorno das alças ao abdome: Moore e Sadler — 10ª semana após a fertilização; o tópico emb-08 usa '10ª a 12ª semana' (faixa compatível com o término do retorno e da fixação).",
     "Mecanismo da gastrosquise: Sadler — enfraquecimento da parede à direita pela regressão da veia umbilical direita; Moore — fechamento incompleto das pregas laterais na 4ª semana; outros autores — ruptura vascular local.",
     "Divisão da cloaca: o modelo clássico (Moore, Sadler) descreve a fusão do septo urorretal com a membrana cloacal; estudos morfológicos mais recentes sugerem que o septo não chega a se fundir e que a membrana cloacal se desintegra. O tópico mantém a descrição dos livros-texto.",
+    "Ruptura da membrana anal: Moore — fim da 8ª semana; Sadler — a membrana cloacal rompe-se no fim da 7ª semana, abrindo o canal anorretal e o seio urogenital. O tópico usa o marco de Moore; nos dois modelos a ruptura sucede a divisão da cloaca, de modo que a ordem dos eventos da linha do tempo não muda.",
     "Local da antiga membrana anal: Moore indica que a linha pectínea marca aproximadamente esse local; alguns autores situam a transição epitelial na linha anocutânea, um pouco abaixo."
   ],
   "incertezas": [
@@ -1168,7 +1169,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "18 correções (0 críticas, 1 importante, 17 menores); principais: mecanismo da má rotação reescrito (atribuía toda má rotação a falha dos 180° finais, incompatível com a rotação reversa descrita na própria correlação; agora: não rotação, rotação mista por falha dos 90° finais segundo Moore e rotação horária); fístula retoperineal descrita em ambos os sexos; divergência Moore × Sadler sobre a ruptura da membrana anal registrada; explicações das 15 questões de múltipla escolha passaram a citar a letra correta. Conferidos rotação do estômago (90° horária, vista cranial) e do intestino médio (270° anti-horária, vista ventral, em torno da AMS), recanalização duodenal, pâncreas, baço, Meckel, onfalocele × gastrosquise, Hirschsprung e canal anal."
+      }
+    ],
     "humano": null
   }
 }

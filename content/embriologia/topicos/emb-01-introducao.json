@@ -102,14 +102,14 @@
     {
       "id": "inicio-periodo-fetal",
       "descricao": "Início do período fetal (9ª semana)",
-      "ordem": 5
+      "ordem": 4
     },
     {
       "id": "nascimento-a-termo",
       "descricao": "Nascimento a termo (~38 semanas após a fertilização; ~40 semanas de idade gestacional)",
       "diaMin": 266,
       "diaMax": 266,
-      "ordem": 6
+      "ordem": 5
     }
   ],
   "correlacoesClinicas": [
@@ -140,7 +140,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Da fertilização até o fim da 8ª semana"
+          "texto": "Da 9ª semana até o nascimento"
         },
         {
           "id": "b",
@@ -156,11 +156,11 @@
         },
         {
           "id": "e",
-          "texto": "Da 9ª semana até o nascimento"
+          "texto": "Da fertilização até o fim da 8ª semana"
         }
       ],
-      "correta": "a",
-      "explicacao": "Moore define o período embrionário da fertilização até o fim da 8ª semana; ao final dele os primórdios de todos os órgãos principais estão formados. (b) A implantação começa no dia 6 e a 12ª semana já é período fetal. (c) O 1º trimestre ultrapassa o fim do período embrionário; além disso, iniciar na 3ª semana corresponde à convenção de Sadler para o período de organogênese, não à de Moore. (d) As duas primeiras semanas correspondem ao que alguns chamam de fase “pré-embrionária”, não ao período embrionário inteiro. (e) Da 9ª semana ao nascimento é o período fetal.",
+      "correta": "e",
+      "explicacao": "Moore define o período embrionário da fertilização até o fim da 8ª semana (e); ao final dele os primórdios de todos os órgãos principais estão formados. (a) Da 9ª semana ao nascimento é o período fetal. (b) A implantação começa no dia 6 e a 12ª semana já é período fetal. (c) O 1º trimestre ultrapassa o fim do período embrionário; além disso, iniciar na 3ª semana corresponde à convenção de Sadler para o período de organogênese, não à de Moore. (d) As duas primeiras semanas correspondem ao que alguns chamam de fase “pré-embrionária”, não ao período embrionário inteiro.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -337,23 +337,23 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Ao zigoto (embrião unicelular)"
-        },
-        {
-          "id": "b",
           "texto": "À mórula"
         },
         {
-          "id": "c",
+          "id": "b",
           "texto": "Ao blastocisto livre na cavidade uterina"
         },
         {
-          "id": "d",
+          "id": "c",
           "texto": "Ao blastocisto que inicia a adesão ao endométrio"
+        },
+        {
+          "id": "d",
+          "texto": "Ao zigoto (embrião unicelular)"
         }
       ],
-      "correta": "a",
-      "explicacao": "O estágio 1 de Carnegie é o zigoto, resultante da fertilização. (b) O embrião em clivagem, incluindo a mórula, corresponde ao estágio 2. (c) O blastocisto livre corresponde ao estágio 3. (d) O blastocisto em adesão ao endométrio (~dia 6) corresponde ao estágio 4.",
+      "correta": "d",
+      "explicacao": "O estágio 1 de Carnegie é o zigoto (d), resultante da fertilização. (a) O embrião em clivagem, incluindo a mórula, corresponde ao estágio 2. (b) O blastocisto livre corresponde ao estágio 3. (c) O blastocisto em adesão ao endométrio (~dia 6) corresponde ao estágio 4.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -401,7 +401,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Medida do comprimento cabeça-nádega (CCN) por ultrassonografia no 1º trimestre"
+          "texto": "Data relatada do início dos movimentos fetais"
         },
         {
           "id": "b",
@@ -413,11 +413,11 @@
         },
         {
           "id": "d",
-          "texto": "Data relatada do início dos movimentos fetais"
+          "texto": "Medida do comprimento cabeça-nádega (CCN) por ultrassonografia no 1º trimestre"
         }
       ],
-      "correta": "a",
-      "explicacao": "No 1º trimestre o CCN medido por ultrassonografia é o parâmetro mais preciso de datação, porque a variação biológica de tamanho entre conceptos ainda é pequena. (b) O comprimento do fêmur é útil no período fetal, mas no 3º trimestre a variação individual de crescimento reduz a precisão da datação. (c) A altura uterina é estimativa grosseira e sujeita a muitos fatores de confusão. (d) A percepção dos movimentos fetais é subjetiva e varia entre gestantes.",
+      "correta": "d",
+      "explicacao": "No 1º trimestre, o CCN medido por ultrassonografia (d) é o parâmetro mais preciso de datação, porque a variação biológica de tamanho entre conceptos ainda é pequena. (a) A percepção dos movimentos fetais é subjetiva e varia entre gestantes. (b) O comprimento do fêmur é útil no período fetal, mas no 3º trimestre a variação individual de crescimento reduz a precisão da datação. (c) A altura uterina é estimativa grosseira e sujeita a muitos fatores de confusão.",
       "dificuldade": 2,
       "bloom": "aplicar",
       "tags": [
@@ -498,11 +498,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Malformação estrutural maior de um órgão específico, como defeito de membros"
+          "texto": "Efeito do tipo “tudo ou nada”: perda do concepto ou desenvolvimento sem malformações"
         },
         {
           "id": "b",
-          "texto": "Efeito do tipo “tudo ou nada”: perda do concepto ou desenvolvimento sem malformações"
+          "texto": "Malformação estrutural maior de um órgão específico, como defeito de membros"
         },
         {
           "id": "c",
@@ -513,8 +513,8 @@
           "texto": "Ausência de qualquer risco, pois o concepto ainda não está implantado"
         }
       ],
-      "correta": "b",
-      "explicacao": "Nas duas primeiras semanas após a fertilização, um agente nocivo costuma lesar muitas células e causar a morte do concepto, ou lesar poucas células, que são compensadas pelas restantes, sem malformação (“tudo ou nada”). (a) Malformações estruturais maiores de órgãos específicos ocorrem tipicamente com exposição nas semanas 3–8, durante a organogênese. (c) Restrição de crescimento e alterações funcionais são mais típicas de exposições no período fetal. (d) No 10º dia o blastocisto já está em fase avançada de implantação (que começa no dia 6), e a exposição pode causar a perda do concepto.",
+      "correta": "a",
+      "explicacao": "Nas duas primeiras semanas após a fertilização, um agente nocivo costuma lesar muitas células e causar a morte do concepto, ou lesar poucas células, que são compensadas pelas restantes, sem malformação: é o efeito “tudo ou nada” (a). (b) Malformações estruturais maiores de órgãos específicos ocorrem tipicamente com exposição nas semanas 3–8, durante a organogênese. (c) Restrição de crescimento e alterações funcionais são mais típicas de exposições no período fetal. (d) No 10º dia o blastocisto já está em fase avançada de implantação (que começa no dia 6), e a exposição pode causar a perda do concepto.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -568,7 +568,7 @@
         },
         {
           "id": "b",
-          "texto": "Ao embrião ou feto e suas membranas extraembrionárias"
+          "texto": "Ao conjunto ovócito e corona radiata antes da fertilização"
         },
         {
           "id": "c",
@@ -576,11 +576,11 @@
         },
         {
           "id": "d",
-          "texto": "Ao conjunto ovócito e corona radiata antes da fertilização"
+          "texto": "Ao embrião ou feto e suas membranas extraembrionárias"
         }
       ],
-      "correta": "b",
-      "explicacao": "Concepto é o embrião (ou feto) com suas membranas extraembrionárias, ou seja, todas as estruturas derivadas do zigoto. (a) Excluir as membranas corresponde ao termo “embrião”. (c) Placenta e cordão são apenas parte das estruturas extraembrionárias. (d) Antes da fertilização não há concepto; ovócito e corona radiata são estruturas maternas/gaméticas.",
+      "correta": "d",
+      "explicacao": "Concepto é o embrião (ou feto) com suas membranas extraembrionárias (d), ou seja, todas as estruturas derivadas do zigoto. (a) Excluir as membranas corresponde ao termo “embrião”. (b) Antes da fertilização não há concepto; ovócito e corona radiata são o gameta e células foliculares maternas. (c) Placenta e cordão são apenas parte das estruturas extraembrionárias.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -791,7 +791,7 @@
         },
         {
           "id": "5",
-          "texto": "Início do período fetal"
+          "texto": "Início do 2º trimestre da gestação"
         }
       ],
       "ordemCorreta": [
@@ -801,7 +801,7 @@
         "5",
         "3"
       ],
-      "explicacao": "A idade gestacional começa no primeiro dia da DUM; a fertilização ocorre ~2 semanas depois; o período embrionário termina 8 semanas após a fertilização (~10 semanas de idade gestacional), seguido imediatamente do início do período fetal; o parto a termo ocorre por volta de 40 semanas de idade gestacional.",
+      "explicacao": "A idade gestacional começa no primeiro dia da DUM; a fertilização ocorre ~2 semanas depois; o período embrionário termina 8 semanas após a fertilização (~10 semanas de idade gestacional), ainda no 1º trimestre; o 2º trimestre começa por volta de 13–14 semanas de idade gestacional (o limite exato varia entre convenções, mas é sempre posterior ao fim do período embrionário); o parto a termo ocorre por volta de 40 semanas de idade gestacional.",
       "dificuldade": 2,
       "bloom": "aplicar",
       "tags": [
@@ -913,7 +913,8 @@
   "notasDivergencia": [
     "Delimitação do período embrionário: Moore conta o período embrionário da fertilização ao fim da 8ª semana; Sadler descreve as semanas 1 e 2 em capítulos próprios e chama de “período embrionário” (ou de organogênese) as semanas 3–8; o termo “pré-embrionário” (semanas 1–2) aparece em parte da literatura e em contextos bioéticos/legais. Convenção adotada: período embrionário = semanas 1–8, registrando que “pré-embrionário” é usado por alguns autores.",
     "Idade atribuída ao estágio 23 de Carnegie: tabelas derivadas de Moore situam-no em ~56 dias; as revisões de O’Rahilly e Müller atribuem idades ligeiramente maiores (aprox. 56–60 dias). Faixa adotada: fim da 8ª semana (~56 dias, podendo chegar a ~60).",
-    "Limites dos trimestres: as obras de embriologia definem os trimestres como períodos de ~3 meses; convenções obstétricas os definem pela idade gestacional (comumente 1º trimestre até 13–14 semanas, 3º a partir de 28 semanas). Nenhum limite em semanas é cobrado nas questões."
+    "Limites dos trimestres: as obras de embriologia definem os trimestres como períodos de ~3 meses; convenções obstétricas os definem pela idade gestacional (comumente 1º trimestre até 13–14 semanas, 3º a partir de 28 semanas). Nenhum limite em semanas é cobrado nas questões.",
+    "Linha do tempo: “fim do período embrionário” e “início do período fetal” são o mesmo marco (fim da 8ª/início da 9ª semana); receberam a mesma “ordem” para que o jogo nunca os peça em sequência um do outro (revisor-embriologia-v1, 2026-11-09)."
   ],
   "incertezas": [
     "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
@@ -922,7 +923,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "2 correções de conteúdo (0 críticas, 2 importantes, 0 menores) + gabarito redistribuído em 5 questões; principais: q23 tinha dois itens simultâneos (fim do período embrionário × início do período fetal) — item trocado por início do 2º trimestre; mesmos dois eventos da linha do tempo empatados na “ordem”; letras corretas redistribuídas (antes a/b = 11/15, nenhuma d/e) em q01, q07, q09, q12, q14, com explicações atualizadas."
+      }
+    ],
     "humano": null
   }
 }

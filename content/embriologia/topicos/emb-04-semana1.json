@@ -203,7 +203,7 @@
       "descricao": "Aparecimento do hipoblasto",
       "diaMin": 7,
       "diaMax": 8,
-      "ordem": 10
+      "ordem": 9
     }
   ],
   "correlacoesClinicas": [
@@ -244,7 +244,7 @@
         },
         {
           "id": "b",
-          "texto": "Divisões mitóticas sucessivas, com blastômeros cada vez menores e sem aumento do volume total"
+          "texto": "Fusão de blastômeros para formar um sincício"
         },
         {
           "id": "c",
@@ -252,11 +252,11 @@
         },
         {
           "id": "d",
-          "texto": "Fusão de blastômeros para formar um sincício"
+          "texto": "Divisões mitóticas sucessivas, com blastômeros cada vez menores e sem aumento do volume total"
         }
       ],
-      "correta": "b",
-      "explicacao": "A clivagem consiste em mitoses sucessivas dentro da zona pelúcida; os blastômeros ficam menores a cada divisão e o volume total do concepto praticamente não aumenta. (a) As divisões são mitóticas; os blastômeros mantêm 46 cromossomos. (c) Não há crescimento do volume total durante a clivagem. (d) A formação de sincício ocorre depois, no trofoblasto (sinciciotrofoblasto), durante a implantação.",
+      "correta": "d",
+      "explicacao": "A clivagem consiste em mitoses sucessivas dentro da zona pelúcida (d); os blastômeros ficam menores a cada divisão e o volume total do concepto praticamente não aumenta. (a) As divisões são mitóticas; os blastômeros mantêm 46 cromossomos. (b) A formação de sincício ocorre depois, no trofoblasto (sinciciotrofoblasto), durante a implantação. (c) Não há crescimento do volume total durante a clivagem.",
       "dificuldade": 1,
       "bloom": "compreender",
       "tags": [
@@ -271,7 +271,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Permitir a separação entre células internas (futuro embrioblasto) e externas (futuro trofoblasto)"
+          "texto": "Desencadear a reação cortical do ovócito"
         },
         {
           "id": "b",
@@ -279,15 +279,15 @@
         },
         {
           "id": "c",
-          "texto": "Desencadear a reação cortical do ovócito"
+          "texto": "Permitir a separação entre células internas (futuro embrioblasto) e externas (futuro trofoblasto)"
         },
         {
           "id": "d",
           "texto": "Formar o hipoblasto"
         }
       ],
-      "correta": "a",
-      "explicacao": "Na compactação (estágio de 8–9 células) os blastômeros se aderem firmemente, as células externas formam junções oclusivas e as internas se comunicam por junções comunicantes; isso permite a segregação entre células internas e externas. (b) A eclosão ocorre no blastocisto, por volta do 5º dia. (c) A reação cortical ocorre na fertilização. (d) O hipoblasto surge no fim da 1ª semana, a partir do embrioblasto do blastocisto.",
+      "correta": "c",
+      "explicacao": "Na compactação (estágio de 8–9 células), os blastômeros se aderem firmemente, as células externas formam junções oclusivas e as internas se comunicam por junções comunicantes; isso permite a segregação entre células internas e externas (c). (a) A reação cortical ocorre na fertilização. (b) A eclosão ocorre no blastocisto, por volta do 5º dia. (d) O hipoblasto surge no fim da 1ª semana, a partir do embrioblasto do blastocisto.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -339,19 +339,19 @@
         },
         {
           "id": "b",
-          "texto": "À parte embrionária da placenta"
+          "texto": "Ao hipoblasto"
         },
         {
           "id": "c",
-          "texto": "Ao hipoblasto"
+          "texto": "À parte embrionária da placenta"
         },
         {
           "id": "d",
           "texto": "À decídua basal"
         }
       ],
-      "correta": "b",
-      "explicacao": "O trofoblasto diferencia-se em citotrofoblasto e sinciciotrofoblasto e forma a parte embrionária (fetal) da placenta. (a) O embrião origina-se do embrioblasto. (c) O hipoblasto deriva do embrioblasto. (d) A decídua basal é endométrio materno, parte materna da placenta.",
+      "correta": "c",
+      "explicacao": "O trofoblasto diferencia-se em citotrofoblasto e sinciciotrofoblasto e forma a parte embrionária (fetal) da placenta (c). (a) O embrião origina-se do embrioblasto. (b) O hipoblasto deriva do embrioblasto. (d) A decídua basal é endométrio materno, parte materna da placenta.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -371,7 +371,7 @@
         },
         {
           "id": "b",
-          "texto": "Porque, sem a zona pelúcida, o trofoblasto pode entrar em contato direto com o epitélio endometrial"
+          "texto": "Porque converte o citotrofoblasto em embrioblasto"
         },
         {
           "id": "c",
@@ -379,11 +379,11 @@
         },
         {
           "id": "d",
-          "texto": "Porque converte o citotrofoblasto em embrioblasto"
+          "texto": "Porque, sem a zona pelúcida, o trofoblasto pode entrar em contato direto com o epitélio endometrial"
         }
       ],
-      "correta": "b",
-      "explicacao": "Enquanto a zona pelúcida persiste, o trofoblasto não toca o epitélio endometrial; com seu desaparecimento (eclosão, ~5º dia), o blastocisto cresce e o trofoblasto pode aderir ao endométrio. (a) O embrioblasto permanece dentro do blastocisto, aderido ao trofoblasto do polo embrionário. (c) A compactação ocorre antes, na fase de 8–9 células. (d) Citotrofoblasto e embrioblasto são linhagens distintas; um não se converte no outro.",
+      "correta": "d",
+      "explicacao": "Enquanto a zona pelúcida persiste, o trofoblasto não toca o epitélio endometrial; com seu desaparecimento (eclosão, ~5º dia), o blastocisto cresce e o trofoblasto pode aderir ao endométrio (d). (a) O embrioblasto permanece dentro do blastocisto, aderido ao trofoblasto do polo embrionário. (b) Citotrofoblasto e embrioblasto são linhagens distintas; um não se converte no outro. (c) A compactação ocorre antes, na fase de 8–9 células.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -435,19 +435,19 @@
         },
         {
           "id": "b",
-          "texto": "Massa multinucleada sem limites celulares, invasiva e produtora de hCG"
+          "texto": "Camada de células cuboides voltada para a blastocele"
         },
         {
           "id": "c",
-          "texto": "Camada de células cuboides voltada para a blastocele"
+          "texto": "Massa multinucleada sem limites celulares, invasiva e produtora de hCG"
         },
         {
           "id": "d",
           "texto": "Grupo de células internas que origina o embrião"
         }
       ],
-      "correta": "b",
-      "explicacao": "O sinciciotrofoblasto é a camada externa do trofoblasto: multinucleada, sem limites celulares, invade o endométrio e produz hCG. (a) Descreve o citotrofoblasto. (c) Descreve o hipoblasto. (d) Descreve o embrioblasto.",
+      "correta": "c",
+      "explicacao": "O sinciciotrofoblasto (c) é a camada externa do trofoblasto: multinucleada, sem limites celulares, invade o endométrio e produz hCG. (a) Descreve o citotrofoblasto. (b) Descreve o hipoblasto. (d) Descreve o embrioblasto.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -531,7 +531,7 @@
         },
         {
           "id": "b",
-          "texto": "Porque o embrião inicial tem grande capacidade de regulação, e as células remanescentes compensam a perda"
+          "texto": "Porque a zona pelúcida regenera as células retiradas"
         },
         {
           "id": "c",
@@ -539,11 +539,11 @@
         },
         {
           "id": "d",
-          "texto": "Porque a zona pelúcida regenera as células retiradas"
+          "texto": "Porque o embrião inicial tem grande capacidade de regulação, e as células remanescentes compensam a perda"
         }
       ],
-      "correta": "b",
-      "explicacao": "O embrião inicial tem grande capacidade de regulação: a retirada de uma ou duas células de um embrião em clivagem, ou de algumas células do trofoblasto do blastocisto, é compensada pelas células restantes. (a) A biópsia é feita em blastômeros ou no trofoblasto, não no hipoblasto; além disso, a justificativa é falsa. (c) O diagnóstico é pré-implantacional, feito in vitro antes da transferência. (d) A zona pelúcida é acelular e não produz células.",
+      "correta": "d",
+      "explicacao": "O embrião inicial tem grande capacidade de regulação (d): a retirada de uma ou duas células de um embrião em clivagem, ou de algumas células do trofoblasto do blastocisto, é compensada pelas células restantes. (a) A biópsia é feita em blastômeros ou no trofoblasto, não no hipoblasto; além disso, a justificativa é falsa. (b) A zona pelúcida é acelular e não produz células. (c) O diagnóstico é pré-implantacional, feito in vitro antes da transferência.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -629,11 +629,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Anomalias cromossômicas do concepto"
+          "texto": "Incompetência istmocervical"
         },
         {
           "id": "b",
-          "texto": "Incompetência istmocervical"
+          "texto": "Anomalias cromossômicas do concepto"
         },
         {
           "id": "c",
@@ -644,8 +644,8 @@
           "texto": "Isoimunização Rh"
         }
       ],
-      "correta": "a",
-      "explicacao": "Grande parte dos conceptos é perdida antes ou durante a implantação, e as anomalias cromossômicas são a causa mais frequentemente identificada dessas perdas precoces. (b) A incompetência istmocervical causa perdas no 2º trimestre, por dilatação indolor do colo. (c) Infecções congênitas não são causa típica de perda logo após a implantação. (d) A isoimunização Rh causa doença hemolítica fetal, em fase muito mais tardia.",
+      "correta": "b",
+      "explicacao": "Grande parte dos conceptos é perdida antes ou durante a implantação, e as anomalias cromossômicas do concepto (b) são a causa mais frequentemente identificada dessas perdas precoces. (a) A incompetência istmocervical causa perdas no 2º trimestre, por dilatação indolor do colo. (c) Infecções congênitas não são causa típica de perda logo após a implantação. (d) A isoimunização Rh causa doença hemolítica fetal, em fase muito mais tardia.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -849,7 +849,7 @@
         },
         {
           "id": "2",
-          "texto": "Aparecimento do hipoblasto"
+          "texto": "Primeira clivagem (dois blastômeros)"
         },
         {
           "id": "3",
@@ -869,21 +869,21 @@
         }
       ],
       "ordemCorreta": [
+        "2",
         "3",
         "5",
         "1",
         "4",
-        "6",
-        "2"
+        "6"
       ],
-      "explicacao": "Compactação (8–9 células) → formação da blastocele (dias 4–5) → eclosão (~5º dia) → adesão ao endométrio (~6º dia) → diferenciação do trofoblasto (logo após a adesão) → aparecimento do hipoblasto (fim da 1ª semana, dia 7–8).",
+      "explicacao": "Primeira clivagem (~30 h) → compactação (estágio de 8–9 células) → formação da blastocele (dias 4–5) → eclosão (~5º dia) → adesão ao epitélio endometrial (~6º dia) → diferenciação do trofoblasto em citotrofoblasto e sinciciotrofoblasto (logo após a adesão).",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
         "linha-do-tempo",
         "implantacao"
       ],
-      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3 e 4"
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
     },
     {
       "id": "emb-04-q23",
@@ -1028,11 +1028,11 @@
           "direita": "Início da implantação"
         },
         {
-          "esquerda": "Fim da 1ª semana",
+          "esquerda": "~7º–8º dia",
           "direita": "Aparecimento do hipoblasto"
         }
       ],
-      "explicacao": "A primeira clivagem ocorre ~30 h após a fertilização; a mórula forma-se ~3º dia; a zona pelúcida desaparece ~5º dia; a implantação começa ~6º dia; o hipoblasto aparece no fim da 1ª semana (dia 7 em Moore; dia 8 em Sadler).",
+      "explicacao": "A primeira clivagem ocorre ~30 h após a fertilização; a mórula forma-se ~3º dia; a zona pelúcida desaparece ~5º dia; a implantação começa ~6º dia; o hipoblasto aparece por volta do 7º–8º dia (dia 7 em Moore, no fim da 1ª semana; dia 8 em Sadler).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -1073,7 +1073,8 @@
     "Chegada da mórula ao útero: entre o 3º e o 4º dia conforme a fonte. Faixa adotada: dias 3–4.",
     "Eclosão da zona pelúcida: Moore indica que ocorre após o blastocisto flutuar ~2 dias nas secreções uterinas; Sadler situa o desaparecimento da zona por volta do 4º–5º dia. Faixa adotada na linha do tempo: dias 4–6 (valor típico ~5º dia).",
     "Aparecimento do hipoblasto: Moore, fim da 1ª semana (~dia 7); Sadler, dia 8 (início da 2ª semana). Faixa adotada: dias 7–8.",
-    "Local da implantação: Moore, parte superior do corpo do útero, um pouco mais frequentemente na parede posterior; Sadler, parede anterior ou posterior do corpo. Questões cobram apenas “corpo do útero”."
+    "Local da implantação: Moore, parte superior do corpo do útero, um pouco mais frequentemente na parede posterior; Sadler, parede anterior ou posterior do corpo. Questões cobram apenas “corpo do útero”.",
+    "Linha do tempo: Sadler descreve no mesmo dia (8º) o trofoblasto já diferenciado em cito/sinciciotrofoblasto e o aparecimento do hipoblasto; Moore situa a diferenciação do trofoblasto logo após a adesão (~dia 6) e o hipoblasto ~dia 7. Como a ordem relativa não é inequívoca, os eventos “diferenciacao-trofoblasto” e “aparecimento-hipoblasto” receberam a mesma “ordem” (o jogo nunca os pede em sequência) e o hipoblasto saiu da questão de ordenar q22 (revisor-embriologia-v1, 2026-11-09)."
   ],
   "incertezas": [
     "Proporção de conceptos perdidos antes ou durante a implantação e proporção de anomalias cromossômicas nas perdas precoces: as estimativas variam muito entre fontes; nenhum valor numérico foi usado.",
@@ -1083,7 +1084,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "4 correções de conteúdo (0 críticas, 2 importantes, 2 menores) + gabarito redistribuído em 7 questões; principais: q22 ordenava diferenciação do trofoblasto antes do hipoblasto, que Sadler descreve no mesmo dia 8 — hipoblasto trocado por primeira clivagem; mesmos dois eventos da linha do tempo empatados na “ordem”; q26 “Fim da 1ª semana” → “~7º–8º dia” (dia 8 em Sadler); letras corretas redistribuídas (antes a/b = 14/15, nenhuma d) em q01, q02, q04, q05, q07, q10, q13. Compactação (8 Sadler × após 9 Moore) e hipoblasto (dia 7 Moore × 8 Sadler) conferidos e mantidos como faixa."
+      }
+    ],
     "humano": null
   }
 }

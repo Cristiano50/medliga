@@ -67,7 +67,7 @@
       ],
       "definicao": "Segundo sistema renal, surgido no fim da 4ª semana da região torácica superior à lombar superior, com túbulos em S, glomérulos e cápsulas glomerulares; funciona como rim provisório.",
       "origem": "Cordão nefrogênico.",
-      "destino": "Regride em grande parte até o fim do 2º mês; no homem, túbulos caudais persistem como dúctulos eferentes do testículo."
+      "destino": "Regride em grande parte até o fim do 2º mês; no homem, alguns túbulos situados junto ao testículo (túbulos epigenitais) persistem como dúctulos eferentes, e os situados caudalmente ao testículo deixam o paradídimo, vestigial."
     },
     {
       "id": "ducto-mesonefrico",
@@ -418,7 +418,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Os três sistemas se superpõem no tempo e surgem em sequência craniocaudal a partir do mesoderma intermediário. O pronefro é rudimentar e desaparece até o fim da 4ª semana; o mesonefro surge no fim da 4ª semana, funciona transitoriamente e regride em grande parte até o fim do 2º mês; o metanefro surge no início da 5ª semana e é o rim permanente. A sequência em (a) está invertida. O pronefro (b) não forma o rim definitivo. O mesonefro (c) não persiste como rim: no homem, túbulos caudais e o ducto mesonéfrico originam estruturas genitais (dúctulos eferentes, epidídimo, ducto deferente); na mulher, restam apenas vestígios.",
+      "explicacao": "Os três sistemas se superpõem no tempo e surgem em sequência craniocaudal a partir do mesoderma intermediário. O pronefro é rudimentar e desaparece até o fim da 4ª semana; o mesonefro surge no fim da 4ª semana, funciona transitoriamente e regride em grande parte até o fim do 2º mês; o metanefro surge no início da 5ª semana e é o rim permanente. A sequência em (a) está invertida. O pronefro (b) não forma o rim definitivo. O mesonefro (c) não persiste como rim: no homem, alguns túbulos mesonéfricos e o ducto mesonéfrico originam estruturas genitais (dúctulos eferentes, epidídimo, ducto deferente); na mulher, restam apenas vestígios.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -902,7 +902,7 @@
         "1",
         "5"
       ],
-      "explicacao": "Pronefro (início da 4ª semana) → mesonefro (fim da 4ª semana) → broto ureteral e início do metanefro (início da 5ª semana) → divisão completa da cloaca (7ª semana) → rins na posição lombar (9ª semana) → fim da nefrogênese (antes do nascimento a termo, por volta da 32ª–36ª semana).",
+      "explicacao": "Pronefro (início da 4ª semana) → mesonefro (fim da 4ª semana) → broto ureteral e início do metanefro (início da 5ª semana) → divisão completa da cloaca (7ª semana) → rins na posição lombar (9ª semana) → fim da nefrogênese (antes do nascimento a termo; as fontes situam o término entre a 32ª e a 36ª semana, nem sempre explicitando se em idade gestacional ou após a fertilização — ver notas de divergência).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -975,20 +975,20 @@
         },
         {
           "id": "3",
-          "texto": "Os ureteres passam a desembocar separadamente na bexiga"
+          "texto": "Os ductos mesonéfricos alcançam a cloaca e nela desembocam"
         },
         {
           "id": "4",
-          "texto": "As porções caudais dos ductos mesonéfricos são incorporadas à parede posterior da bexiga"
+          "texto": "As porções caudais dos ductos mesonéfricos são incorporadas à parede posterior da bexiga, e os ureteres passam a desembocar separadamente nela"
         }
       ],
       "ordemCorreta": [
+        "3",
         "2",
         "4",
-        "3",
         "1"
       ],
-      "explicacao": "O broto ureteral nasce do ducto mesonéfrico; com a incorporação das porções caudais dos ductos mesonéfricos à parede da bexiga (formando o trígono), os ureteres ganham orifícios próprios na bexiga; com a ascensão dos rins, esses orifícios se deslocam craniolateralmente, e os ductos mesonéfricos se aproximam e desembocam na uretra prostática, onde no homem formam os ductos ejaculatórios.",
+      "explicacao": "Os ductos mesonéfricos chegam à cloaca na 4ª semana; o broto ureteral nasce de cada ducto perto dessa desembocadura (início da 5ª semana); com a incorporação das porções caudais dos ductos mesonéfricos à parede da bexiga (formando o trígono), os ureteres ganham orifícios próprios na bexiga; com a ascensão dos rins, esses orifícios se deslocam craniolateralmente, e os ductos mesonéfricos se aproximam e desembocam na uretra prostática, onde no homem formam os ductos ejaculatórios.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -1124,7 +1124,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "4 correções (0 crítica, 1 importante, 3 menores); principais: q23 reescrita para eliminar dois itens causa-efeito praticamente simultâneos (incorporação dos ductos mesonéfricos × orifícios ureterais separados), com novo primeiro item inequívoco (ductos mesonéfricos chegam à cloaca); destino do mesonefro corrigido (dúctulos eferentes vêm dos túbulos epigenitais, junto ao testículo; os caudais ao testículo formam o paradídimo); q04 e q21 com redação mais precisa. Cronologia pro/meso/metanefro, indução broto ureteral × blastema (WT1, GDNF/RET), ascensão renal, trígono e sequência de Potter conferidos sem erro."
+      }
+    ],
     "humano": null
   }
 }

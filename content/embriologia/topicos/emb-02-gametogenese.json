@@ -374,7 +374,7 @@
         },
         {
           "id": "b",
-          "texto": "Metáfase II; a fertilização"
+          "texto": "Telófase II; a implantação"
         },
         {
           "id": "c",
@@ -382,11 +382,11 @@
         },
         {
           "id": "d",
-          "texto": "Telófase II; a implantação"
+          "texto": "Metáfase II; a fertilização"
         }
       ],
-      "correta": "b",
-      "explicacao": "O ovócito secundário inicia a meiose II e para em metáfase II; só a completa se for fertilizado, liberando o segundo corpúsculo polar. (a) A parada em prófase I é a do ovócito primário, e o pico de LH leva à conclusão da meiose I, não da II. (c) Não há parada em anáfase I, e a capacitação é um processo do espermatozoide. (d) A implantação ocorre dias após a meiose já estar concluída.",
+      "correta": "d",
+      "explicacao": "O ovócito secundário inicia a meiose II e para em metáfase II; só a completa se for fertilizado, liberando o segundo corpúsculo polar (d). (a) A parada em prófase I é a do ovócito primário, e o pico de LH leva à conclusão da meiose I, não da II. (b) Não há parada em telófase II, e a implantação ocorre dias depois de a meiose já estar concluída. (c) Não há parada em anáfase I, e a capacitação é um processo do espermatozoide.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -406,7 +406,7 @@
         },
         {
           "id": "b",
-          "texto": "Célula de Leydig"
+          "texto": "Célula mioide peritubular"
         },
         {
           "id": "c",
@@ -414,11 +414,11 @@
         },
         {
           "id": "d",
-          "texto": "Célula mioide peritubular"
+          "texto": "Célula de Leydig"
         }
       ],
-      "correta": "b",
-      "explicacao": "As células de Leydig (intersticiais) secretam testosterona sob estímulo do LH. (a) As células de Sertoli respondem ao FSH e sustentam a espermatogênese, mas não são a fonte de testosterona. (c) O espermatócito primário é uma célula germinativa em meiose, sem função endócrina. (d) As células mioides peritubulares são contráteis e circundam o túbulo seminífero.",
+      "correta": "d",
+      "explicacao": "As células de Leydig (intersticiais) secretam testosterona sob estímulo do LH (d). (a) As células de Sertoli respondem ao FSH e sustentam a espermatogênese, mas não são a fonte de testosterona. (b) As células mioides peritubulares são contráteis e circundam o túbulo seminífero. (c) O espermatócito primário é uma célula germinativa em meiose, sem função endócrina.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -501,7 +501,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Do complexo de Golgi da espermátide"
+          "texto": "Do citoplasma da célula de Sertoli"
         },
         {
           "id": "b",
@@ -513,11 +513,11 @@
         },
         {
           "id": "d",
-          "texto": "Do citoplasma da célula de Sertoli"
+          "texto": "Do complexo de Golgi da espermátide"
         }
       ],
-      "correta": "a",
-      "explicacao": "O acrossomo é uma vesícula derivada do complexo de Golgi que se dispõe como capuz sobre o núcleo e contém enzimas usadas na fertilização. (b) As mitocôndrias formam a bainha da peça intermediária e fornecem energia ao movimento. (c) O centríolo participa da formação do axonema da cauda. (d) A célula de Sertoli sustenta a espermátide, mas não fornece organelas a ela.",
+      "correta": "d",
+      "explicacao": "O acrossomo é uma vesícula derivada do complexo de Golgi da espermátide (d), que se dispõe como capuz sobre o núcleo e contém enzimas usadas na fertilização. (a) A célula de Sertoli sustenta a espermátide, mas não fornece organelas a ela. (b) As mitocôndrias formam a bainha da peça intermediária e fornecem energia ao movimento. (c) O centríolo participa da formação do axonema da cauda.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -536,7 +536,7 @@
         },
         {
           "id": "b",
-          "texto": "4 e 1"
+          "texto": "2 e 2"
         },
         {
           "id": "c",
@@ -548,11 +548,11 @@
         },
         {
           "id": "e",
-          "texto": "2 e 2"
+          "texto": "4 e 1"
         }
       ],
-      "correta": "b",
-      "explicacao": "Cada espermatócito primário origina quatro espermátides, que se tornam quatro espermatozoides. No ovócito, as divisões citoplasmáticas são desiguais: forma-se um único ovócito (que conserva quase todo o citoplasma) e corpúsculos polares, que degeneram. (a) e (e) Ignoram a citocinese desigual da ovogênese. (c) Dois corresponde ao número de espermatócitos secundários, não de gametas. (d) Subestima a produção masculina.",
+      "correta": "e",
+      "explicacao": "Cada espermatócito primário origina quatro espermátides, que se tornam quatro espermatozoides; no ovócito, as divisões citoplasmáticas são desiguais e formam um único ovócito (que conserva quase todo o citoplasma) e corpúsculos polares, que degeneram — portanto, 4 e 1 (e). (a) e (b) Ignoram a citocinese desigual da ovogênese, que gera um só gameta funcional. (c) Dois corresponde ao número de espermatócitos secundários, não de gametas. (d) Subestima a produção masculina.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -570,7 +570,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Os ovócitos primários permanecem parados em prófase I desde a vida fetal, por décadas, até a ovulação"
+          "texto": "A espermatogênese se torna mais longa com o avanço da idade"
         },
         {
           "id": "b",
@@ -578,15 +578,15 @@
         },
         {
           "id": "c",
-          "texto": "A espermatogênese se torna mais longa com o avanço da idade"
+          "texto": "Os ovócitos primários permanecem parados em prófase I desde a vida fetal, por décadas, até a ovulação"
         },
         {
           "id": "d",
           "texto": "O ovócito secundário completa a meiose II antes da ovulação em mulheres mais velhas"
         }
       ],
-      "correta": "a",
-      "explicacao": "Os ovócitos primários entram na meiose I antes do nascimento e permanecem parados em prófase I até pouco antes da ovulação; nas mulheres mais velhas esse intervalo é de décadas, o que se associa a maior risco de erros de segregação (não disjunção). (b) Segundo o modelo clássico, não há ovogônias em proliferação após o nascimento. (c) O caso é de origem materna; a espermatogênese não explica a não disjunção no ovócito. (d) A meiose II só se completa após a fertilização, em qualquer idade.",
+      "correta": "c",
+      "explicacao": "Os ovócitos primários entram na meiose I antes do nascimento e permanecem parados em prófase I até pouco antes da ovulação (c); nas mulheres mais velhas esse intervalo é de décadas, o que se associa a maior risco de erros de segregação (não disjunção). (a) O caso é de origem materna; a espermatogênese não explica a não disjunção no ovócito. (b) Segundo o modelo clássico, não há ovogônias em proliferação após o nascimento. (d) A meiose II só se completa após a fertilização, em qualquer idade.",
       "dificuldade": 3,
       "bloom": "analisar",
       "tags": [
@@ -771,7 +771,7 @@
         },
         {
           "id": "b",
-          "texto": "Sofrem atresia (degeneração)"
+          "texto": "Diferenciam-se em células da granulosa"
         },
         {
           "id": "c",
@@ -779,11 +779,11 @@
         },
         {
           "id": "d",
-          "texto": "Diferenciam-se em células da granulosa"
+          "texto": "Sofrem atresia (degeneração)"
         }
       ],
-      "correta": "b",
-      "explicacao": "A maioria das células germinativas femininas degenera (atresia) antes do nascimento, durante a infância e ao longo da vida reprodutiva. (a) Apenas cerca de 400–500 ovócitos são ovulados em toda a vida reprodutiva. (c) Segundo o modelo clássico, as ovogônias não persistem após o nascimento. (d) As células da granulosa derivam das células foliculares, não das células germinativas.",
+      "correta": "d",
+      "explicacao": "A maioria das células germinativas femininas degenera por atresia (d), antes do nascimento, durante a infância e ao longo da vida reprodutiva. (a) Apenas cerca de 400–500 ovócitos são ovulados em toda a vida reprodutiva. (b) As células da granulosa derivam das células foliculares, não das células germinativas. (c) Segundo o modelo clássico, as ovogônias não persistem após o nascimento.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -1130,10 +1130,10 @@
     "Duração da espermatogênese: Moore, cerca de 2 meses; Sadler, ~74 dias; outras fontes, ~64 dias. Faixa adotada: 64–74 dias (~2 meses).",
     "Nomenclatura folicular: Moore usa folículo primário/secundário; Sadler usa folículo pré-antral e antral (vesicular). Adotado: secundário = antral = vesicular.",
     "Duração da função do corpo lúteo da gravidez: Moore, ~20 primeiras semanas; Sadler, até o fim do 4º mês. Não cobrado em questões.",
-    "Terminologia da parada meiótica do ovócito primário: diplóteno e dictióteno são usados como sinônimos para a parada do ovócito primário na prófase I."
+    "Terminologia da parada meiótica do ovócito primário: diplóteno e dictióteno são usados como sinônimos para a parada do ovócito primário na prófase I.",
+    "Intervalo entre o surto de LH e a ovulação (resolvido na revisão de 2026-11-09): Moore cita 12–24 h após o pico; estudos clínicos com ultrassonografia situam a ovulação ~24–36 h após o início do surto (mediana ~32 h) e ~16 h após o pico, com grande variação individual. As cifras medem a partir de referências diferentes (início × pico do surto) e não se contradizem. Não cobrado em questões."
   ],
   "incertezas": [
-    "Intervalo entre o pico de LH e a ovulação: Moore cita 12–24 h após o pico; fontes de fisiologia reprodutiva citam ~34–36 h após o início do surto. Não usado em questões.",
     "Proporção de espermatozoides morfologicamente anormais no ejaculado (citada como até ~10% em textos de embriologia) — omitida do conteúdo até verificação.",
     "Duração das fases do ciclo menstrual em dias (Moore: menstrual ~4–5, proliferativa ~9, lútea ~13) — usada apenas de forma aproximada.",
     "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento)."
@@ -1141,7 +1141,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "1 correção de conteúdo (0 críticas, 0 importantes, 1 menor) + gabarito redistribuído em 6 questões; principais: letras corretas redistribuídas (antes a/b = 13/16, nenhuma d/e) em q04, q05, q08, q09, q10, q16, com explicações atualizadas; incerteza sobre o intervalo LH–ovulação resolvida (pico × início do surto) e movida para notasDivergencia. Fatos conferidos sem erro: nº de ovócitos (Moore ~2 milhões × Sadler 600–800 mil, faixa adotada), duração da espermatogênese (~2 meses; 64–74 dias)."
+      }
+    ],
     "humano": null
   }
 }
