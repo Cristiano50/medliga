@@ -964,16 +964,24 @@
       "capitulo": "Neoplasia (diagnóstico laboratorial: imuno-histoquímica); Doenças do sistema imune (amiloidose)"
     },
     {
-      "obra": "Allison KH et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. J Clin Oncol, 2020",
+      "obra": "Allison KH et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. J Clin Oncol. 2020;38(12):1346–1366. doi:10.1200/JCO.19.02309. PMID 31928404 (também Arch Pathol Lab Med. 2020;144(5):545–563, PMID 31928354)",
       "capitulo": "Recomendações pré-analíticas (tempo até a fixação e duração da fixação)"
     },
     {
-      "obra": "Wolff AC et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO/CAP clinical practice guideline focused update. J Clin Oncol, 2018",
+      "obra": "Wolff AC et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO/CAP clinical practice guideline focused update. J Clin Oncol. 2018;36(20):2105–2122. doi:10.1200/JCO.2018.77.8738. PMID 29846122 (também Arch Pathol Lab Med. 2018;142(11):1364–1382, PMID 29846104)",
       "capitulo": "Recomendações pré-analíticas (fixação em formol tamponado a 10% por 6 a 72 horas)"
     },
     {
-      "obra": "Wolff AC, Somerfield MR, Dowsett M, et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO–College of American Pathologists guideline update. Arch Pathol Lab Med, 2023 (doi:10.5858/arpa.2023-0950-SA); publicado também no J Clin Oncol, 2023",
+      "obra": "Wolff AC, Somerfield MR, Dowsett M, et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO–College of American Pathologists guideline update. Arch Pathol Lab Med. 2023;147(9):993–1000. doi:10.5858/arpa.2023-0950-SA. PMID 37303228; publicado também no J Clin Oncol. 2023;41(22):3867–3872. doi:10.1200/JCO.22.02864. PMID 37284804",
       "capitulo": "Atualização que reafirma as recomendações de 2018, inclusive as pré-analíticas"
+    },
+    {
+      "obra": "Hammond MEH, Hayes DF, Dowsett M, et al. American Society of Clinical Oncology/College of American Pathologists guideline recommendations for immunohistochemical testing of estrogen and progesterone receptors in breast cancer. Arch Pathol Lab Med. 2010;134(6):907–922. doi:10.5858/134.6.907. PMID 20524868 (também J Clin Oncol. 2010;28(16):2784–2795, PMID 20404251)",
+      "capitulo": "Diretriz original de RE/RP: tempo da retirada do tumor à fixação ≤ 1 hora; fixação em formol tamponado a 10% por no mínimo 6 e no máximo 72 horas (texto integral, PMC3073033)"
+    },
+    {
+      "obra": "Wolff AC, Hammond MEH, Hicks DG, et al. Recommendations for human epidermal growth factor receptor 2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline update. J Clin Oncol. 2013;31(31):3997–4013. doi:10.1200/JCO.2013.50.9984. PMID 24101045 (também Arch Pathol Lab Med. 2014;138(2):241–256, PMID 24099077)",
+      "capitulo": "HER2: tempo até o fixador de no máximo 1 hora; fixação em formol tamponado a 10% por 6 a 72 horas (limite ampliado de 48 para 72 horas nesta atualização; texto integral, PMC4086638)"
     }
   ],
   "notasDivergencia": [
@@ -984,7 +992,7 @@
   ],
   "incertezas": [
     "Os números e títulos de capítulos da 14ª ed. de Junqueira e da 8ª ed. de Ross foram citados de memória, com base na organização das edições anteriores; conferir nas edições adotadas.",
-    "Recomendações ASCO/CAP (revisão 09/11/2026, por fontes secundárias, sem acesso ao texto integral): a fixação por 6 a 72 horas consta da atualização de ER/PgR (2020) e da de HER2 (2018, que ampliou o limite de 48 para 72 horas); o tempo até a fixação aparece como 'o mais curto possível' e como 'no máximo 1 hora' (notificação ASCO/CAP de 2011, mantida sem mudança em 2020). Conferir a redação exata no texto original das diretrizes. Revisão de patologia/clínica (09/11/2026): os resumos da ASCO e do CAP informam que a atualização de HER2 de 2023 reafirma as recomendações de 2018; o texto integral não foi lido.",
+    "Recomendações ASCO/CAP — Conferência de fontes (2026-11-09): lidos os textos integrais da diretriz de RE/RP de 2010 (Hammond et al., Arch Pathol Lab Med 2010: 'The time from tumor removal to fixation should be kept to ≤ 1 hour'; fixação 'for no less than 6 hours and for not more than 72 hours') e da atualização de HER2 de 2013 (Wolff et al., Arch Pathol Lab Med 2014: 'time to fixative within 1 hour', '6 to 72 hours'; o limite passou de 48 para 72 horas nessa atualização, e não na de 2018, como dizia esta nota). O resumo da atualização de HER2 de 2023 diz que as recomendações de 2018 'are affirmed'. Os textos integrais de Allison et al. 2020 (RE/RP) e de Wolff et al. 2018 não puderam ser abertos (ascopubs.org e meridian.allenpress.com fora da rede; não estão no PMC); que a atualização de 2020 manteve ≤ 1 hora e 6–72 horas consta só de fonte secundária (Ndengue et al., PLoS One 2026;21(6):e0343185). Conferir a redação de 2020 e de 2018 no texto original.",
     "Espessura dos cortes ultrafinos para MET e diâmetro exato do ribossomo foram omitidos por variarem entre as obras; a questão de ordenação usa apenas ordens de grandeza que não se sobrepõem.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida."
   ],
@@ -1005,6 +1013,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "5 correções (0 críticas, 1 importante, 4 menores); gabaritos corretos. Principais: CD45 não é universal nos linfomas (Hodgkin clássico, parte dos anaplásicos) e alguns sarcomas expressam citoqueratinas (resumo, correlação e q12); vinheta de congelação (q06) especificada como carcinoma basocelular; motivo da janela de fixação de 6–72 h e recuperação antigênica, com a atualização ASCO/CAP de HER2 de 2023; vermelho Congo confirma amiloide e a tipagem define o tipo; esteatose macrovesicular reconhecida na HE. Pendente para o humano: texto integral ASCO/CAP."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Conferência de fontes. Allison 2020, Wolff 2018 e Wolff 2023: dados completados (volume, número, páginas, DOI, PMID e versões no Arch Pathol Lab Med). Lidos no texto integral (PMC): diretriz ASCO/CAP de RE/RP de 2010 (Hammond et al.: 'time from tumor removal to fixation should be kept to ≤ 1 hour'; fixação 'no less than 6 hours and ... not more than 72 hours') e atualização de HER2 de 2013 (Wolff et al.: 'time to fixative within 1 hour', '6 to 72 hours', ampliado de 6–48 h 'in this update') — acrescentadas a referencias. Correção na incerteza: a ampliação de 48 para 72 horas foi em 2013, não em 2018. Resumo de 2023: 'The 2018 ASCO-CAP recommendations for HER2 testing are affirmed'. Allison 2020 e Wolff 2018: texto integral fora da rede; a manutenção de ≤ 1 h e 6–72 h em 2020 só por fonte secundária — incerteza mantida com o que foi lido. Texto do aluno (correlação 'fixacao-inadequada': no máximo 1 hora; 6 a 72 horas; reafirmado em 2023) confere, sem mudança. Gabaritos, ids, ordens e pares inalterados."
       }
     ],
     "humano": null

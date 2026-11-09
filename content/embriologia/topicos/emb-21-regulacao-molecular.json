@@ -1070,24 +1070,32 @@
       "capitulo": "7 — Padrões de herança monogênica (acondroplasia: variante nova; penetrância e expressividade)"
     },
     {
-      "obra": "Goriely A, Wilkie AOM. Paternal age effect mutations and selfish spermatogonial selection: causes and consequences for human disease. Am J Hum Genet. 2012;90(2):175–200",
+      "obra": "Goriely A, Wilkie AOM. Paternal age effect mutations and selfish spermatogonial selection: causes and consequences for human disease. Am J Hum Genet. 2012;90(2):175–200. doi:10.1016/j.ajhg.2011.12.017. PMID 22325359",
       "capitulo": "Acondroplasia (FGFR3) e síndrome de Apert (FGFR2): variantes novas de origem paterna e efeito da idade paterna"
     },
     {
-      "obra": "Dubourg C, et al. Recent advances in understanding inheritance of holoprosencephaly. Am J Med Genet C Semin Med Genet. 2018;178(2):258–269",
+      "obra": "Dubourg C, et al. Recent advances in understanding inheritance of holoprosencephaly. Am J Med Genet C Semin Med Genet. 2018;178(2):258–269. doi:10.1002/ajmg.c.31619. PMID 29785796",
       "capitulo": "Genes da holoprosencefalia (SHH, ZIC2, SIX3, TGIF1) e penetrância incompleta"
     },
     {
-      "obra": "Cooper MK, et al. A defective response to Hedgehog signaling in disorders of cholesterol biosynthesis. Nat Genet. 2003;33(4):508–513",
+      "obra": "Cooper MK, et al. A defective response to Hedgehog signaling in disorders of cholesterol biosynthesis. Nat Genet. 2003;33(4):508–513. doi:10.1038/ng1134. PMID 12652302",
       "capitulo": "Smith-Lemli-Opitz: defeito na resposta das células-alvo ao Hedgehog"
     },
     {
-      "obra": "Kalish JM, et al. Surveillance recommendations for children with overgrowth syndromes and predisposition for Wilms tumors and hepatoblastoma. Clin Cancer Res. 2017;23(13):e115–e122",
+      "obra": "Kalish JM, et al. Surveillance recommendations for children with overgrowth syndromes and predisposition to Wilms tumors and hepatoblastoma. Clin Cancer Res. 2017;23(13):e115–e122. doi:10.1158/1078-0432.CCR-17-0710. PMID 28674120",
       "capitulo": "Síndrome WAGR (deleção de WT1): vigilância de tumor de Wilms"
     },
     {
-      "obra": "Shapiro AJ, et al. Diagnosis of primary ciliary dyskinesia. An official American Thoracic Society clinical practice guideline. Am J Respir Crit Care Med. 2018;197(12):e24–e39",
+      "obra": "Shapiro AJ, et al. Diagnosis of primary ciliary dyskinesia. An official American Thoracic Society clinical practice guideline. Am J Respir Crit Care Med. 2018;197(12):e24–e39. doi:10.1164/rccm.201805-0819ST. PMID 29905515",
       "capitulo": "Discinesia ciliar primária: situs inversus e heterotaxia"
+    },
+    {
+      "obra": "Takahashi K, Yamanaka S. Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors. Cell. 2006;126(4):663–676. doi:10.1016/j.cell.2006.07.024. PMID 16904174",
+      "capitulo": "Células iPS de camundongo com quatro fatores (Oct3/4, Sox2, c-Myc e Klf4) — q16"
+    },
+    {
+      "obra": "Takahashi K, Tanabe K, Ohnuki M, et al. Induction of pluripotent stem cells from adult human fibroblasts by defined factors. Cell. 2007;131(5):861–872. doi:10.1016/j.cell.2007.11.019. PMID 18035408",
+      "capitulo": "Células iPS humanas com os mesmos quatro fatores — q16"
     }
   ],
   "notasDivergencia": [
@@ -1096,13 +1104,13 @@
     "A cascata de lateralidade Nodal/Lefty/PITX2 e o papel dos cílios do nó foram demonstrados sobretudo em camundongo; no ser humano, a associação baseia-se na discinesia ciliar primária e na heterotaxia (ver tópico emb-06).",
     "Fatores de iPS (incerteza do redator resolvida pelo revisor de embriologia, 2026-11-09): o conjunto clássico de Yamanaka (OCT4 [POU5F1], SOX2, KLF4 e MYC) reprogramou fibroblastos de camundongo (Takahashi & Yamanaka, Cell 2006;126:663–676) e humanos (Takahashi et al., Cell 2007;131:861–872); outros protocolos usam combinações diferentes (p. ex., OCT4, SOX2, NANOG e LIN28 [LIN28A]; Yu et al., Science 2007). Por isso a q16 cita o conjunto apenas como exemplo ('p. ex.').",
     "Experimentos clássicos citados nas questões vêm de modelos animais: enxerto de notocorda em embrião de galinha (q05); transformações homeóticas de vértebras por ácido retinoico em camundongo (q06; Kessel & Gruss, Cell 1991); olhos ectópicos por expressão dirigida de eyeless/Pax6 em Drosophila (q07; Halder, Callaerts & Gehring, Science 1995). A extrapolação ao ser humano apoia-se na conservação dos genes e em fenótipos humanos (aniridia, embriopatia retinoica).",
-    "Nomenclatura de genes (revisor de genética clínica, 2026-11-09): o tópico usa os símbolos aprovados pelo HGNC e dá entre parênteses os nomes dos livros-texto — TBXT (Brachyury; símbolo antigo T), POU5F1 (proteína OCT4), LIN28A (LIN28). Nomes de proteínas (Nodal, Lefty, Patched, Smoothened) e de genes de modelos animais (eyeless/Pax6 de Drosophila e camundongo) foram mantidos onde se referem a proteínas ou a experimentos em animais."
+    "Nomenclatura de genes (revisor de genética clínica, 2026-11-09): o tópico usa os símbolos aprovados pelo HGNC e dá entre parênteses os nomes dos livros-texto — TBXT (Brachyury; símbolo antigo T), POU5F1 (proteína OCT4), LIN28A (LIN28). Nomes de proteínas (Nodal, Lefty, Patched, Smoothened) e de genes de modelos animais (eyeless/Pax6 de Drosophila e camundongo) foram mantidos onde se referem a proteínas ou a experimentos em animais.",
+    "Vigilância de tumor de Wilms na síndrome WAGR (conferência de fontes, 2026-11-09; antes registrada em incertezas): Kalish et al. (Clin Cancer Res 2017; texto integral, PMC5538793) incluem a WAGR (deleção de genes contíguos em 11p13 com WT1 e PAX6; risco de tumor de Wilms de cerca de 50%) entre as síndromes com risco de pelo menos 1% e recomendam, como consenso norte-americano, ultrassonografia renal a cada 3 meses, do nascimento (ou do diagnóstico) até o 7º aniversário; os autores registram que centros europeus usam esquemas diferenciados pela causa genética. Por isso o texto do aluno fica qualitativo (vigilância ultrassonográfica renal periódica na infância), sem intervalo nem idade de término."
   ],
   "incertezas": [
     "Prevalências de holoprosencefalia, acondroplasia, craniossinostoses e aniridia não foram conferidas nas edições adotadas e foram omitidas.",
     "A relação quantitativa entre o nível de BMP e o destino celular (epiderme/crista/placa neural) é apresentada de forma qualitativa.",
-    "Revisor de genética clínica (2026-11-09): a proporção de casos de acondroplasia por variante nova (cerca de 80%) segue Thompson & Thompson (cap. 7) e a literatura de genética clínica; a origem paterna das variantes novas e o efeito da idade paterna (acondroplasia e Apert) seguem Goriely & Wilkie (2012). Conferir o número na edição brasileira adotada.",
-    "Revisor de genética clínica (2026-11-09): a vigilância de tumor de Wilms na deleção de WT1 (WAGR) é descrita sem intervalo nem idade de término, porque esses parâmetros variam entre consensos; o texto segue a indicação de Kalish et al. (2017) de vigilância ultrassonográfica renal periódica na infância."
+    "Revisor de genética clínica (2026-11-09): a proporção de casos de acondroplasia por variante nova (cerca de 80%) segue Thompson & Thompson (cap. 7) e a literatura de genética clínica; a origem paterna das variantes novas e o efeito da idade paterna (acondroplasia e Apert) seguem Goriely & Wilkie (2012). Conferir o número na edição brasileira adotada."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1121,6 +1129,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "16 correções (0 críticas, 0 importantes, 16 menores); gabaritos, letras (4/4/4/4) e ids inalterados. Principais: 'associação WAGR' → síndrome WAGR (deleção de genes contíguos em 11p13 com PAX6 e WT1), com pesquisa de deleção de WT1 na aniridia esporádica e vigilância renal (Kalish 2017); acondroplasia: autossômica dominante, p.Gly380Arg, cerca de 80% de variantes novas de origem paterna (idade paterna); Apert: duas variantes de FGFR2 com ganho de função, novas e paternas; holoprosencefalia como espectro, com SHH e outros genes (ZIC2, SIX3, TGIF1) e penetrância incompleta; Smith-Lemli-Opitz autossômica recessiva, 7-desidrocolesterol como marcador e defeito sobretudo na resposta ao SHH (SMO); situs inversus totalis 'de baixo risco' → risco cardíaco bem menor, com discinesia ciliar primária (Kartagener) e ZIC3 ligado ao X; imprinting com direção parental (15q11.2-q13); RET e NEM 2 (não 'neoplasias endócrinas múltiplas'); herança de Holt-Oram e sinpolidactilia; nomenclatura HGNC (TBXT, POU5F1, LIN28A, NODAL/LEFTY/PITX2); 7 referências de genética acrescentadas. Nada afirmado sobre a camada das células C. Relatório: content/revisoes/e21-22-genetica.md."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Conferência de fontes primárias (PubMed E-utilities; Europe PMC/PMC). 10 artigos de periódico conferidos: 5 em referencias (Goriely & Wilkie 2012, Dubourg 2018, Cooper 2003, Kalish 2017, Shapiro 2018) e 5 citados nas notas (Takahashi & Yamanaka 2006, Takahashi et al. 2007, Yu et al. 2007, Kessel & Gruss 1991, Halder et al. 1995) — autores, título, periódico, ano, volume e páginas corretos, exceto o título de Kalish ('predisposition to', não 'for'; corrigido). DOI e PMID acrescentados às 5 referências; Takahashi 2006 e 2007 acrescentados a referencias (sustentam a q16). Afirmações conferidas, sem contradição: Cooper 2003 (resumo: resposta ao Hedgehog comprometida pela depleção de esteróis, com efeito sobre Smoothened); Takahashi 2006/2007 (resumos: Oct3/4, Sox2, c-Myc e Klf4, em camundongo e em fibroblastos humanos); Kalish 2017 (texto integral): WAGR com WT1 e PAX6 e vigilância ultrassonográfica renal — a incerteza correspondente passou a nota de divergência (consenso norte-americano × esquemas europeus). Livros-texto não conferidos. Gabaritos, ids, ordens e pares inalterados. Relatório: content/revisoes/conferencia-fontes-literatura.md."
       }
     ],
     "humano": null

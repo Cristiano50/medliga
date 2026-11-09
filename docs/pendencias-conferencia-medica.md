@@ -88,14 +88,10 @@ Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologi
 - Vinhetas reescritas na 2ª etapa: his-09-q06 e his-09-q11; distratores fracos (não injustos) em his-03-q12 e q13.
 - Desenho da pele espessa: cristas epidérmicas ficaram mais largas que as papilas (com cristas estreitas não cabia o estrato espinhoso); conferir se o aspecto está bom.
 
-**G3. Diretrizes a confirmar (sites bloqueados na rede da sessão)**
-- PCDT de Osteoporose do Ministério da Saúde: a Portaria Conjunta nº 19/2023 foi revogada em 22/10/2025; número da nova (22 ou 23) e critérios diagnósticos não conferidos (gov.br bloqueado).
-- SBP 2022 (reanimação neonatal): conferida só por busca (saco de polietileno e touca no < 34 semanas; temperatura axilar 36,5–37,5 °C).
-- ASCO/CAP (receptores hormonais e HER2): tempo até a fixação "≤ 1 h" e fixação de 6–72 h conferidos em fontes secundárias; falta o texto integral.
-- Calcitonina: restrição de uso da EMA (2012); registro atual na ANVISA não conferido.
-- KDIGO (anemia na DRC, 2026), protocolo de Guillain-Barré do Ministério da Saúde (Portaria Conjunta nº 15/2020, vigência a confirmar), SBC 2021, Birnkrant 2018 (Duchenne): conferidos por busca ou de memória.
-- Diretriz brasileira de fibrose cística (J Bras Pneumol 2017: exige duas dosagens do suor?) e guia de anafilaxia da ASBAI: não abriram.
-- Faixa de reticulócitos (0,5–2,5%): conferir com a SBPC/ML ou o laboratório do curso.
+**G3. Diretrizes (conferidas no texto integral em 09/11/2026; relatórios `content/revisoes/conferencia-fontes-*.md`)**
+- Resolvido: PCDT de Osteoporose = Portaria Conjunta SAES/SECTICS nº 22/2025 (critérios do conteúdo mantidos; osteoporose grave = T ≤ −2,5 com fratura); PCDT de Guillain-Barré nº 15/2020 (reeditado em 2022) vigente; SBP 2022 de reanimação confirmada (e a de 2026 abre exceção para 32–33 semanas com boa vitalidade, já no his-05); ASCO/CAP: ≤ 1 h até a fixação e 6–72 h confirmados nas diretrizes de 2010 (RE/RP) e 2013 (HER2); KDIGO 2026 (anemia na DRC) confirma ferro e causas reversíveis antes do AEE.
+- Decidir: citar no his-07 o critério novo do PCDT 2025 (T entre −1 e −2,49 com FRAX elevado) e o terço distal do rádio?
+- Ainda aberto: calcitonina na ANVISA; diretriz brasileira de fibrose cística (duas dosagens do suor?) e guia de anafilaxia da ASBAI (não estavam no escopo); faixa de reticulócitos (SBPC/ML); redação literal de Allison 2020 e Wolff 2018 (ascopubs bloqueado).
 
 ## H. Rede do ambiente (atualizado em 09/11/2026)
 
@@ -124,11 +120,20 @@ Relatórios: `content/revisoes/av1-*` a `av4-*` (camada avançada, 100 questões
 
 - Modelos 3D cardiovasculares (`estagios-3d-cardiovascular.md`): Carnegie deixado vazio nos três (sem fonte que ligue o estado septal a um estágio); paleta de identificação sem vermelho/azul (decisão de produto: manter, ou criar camada opcional de oxigenação relativa); na circulação fetal a raiz da aorta ficou à esquerda da do tronco pulmonar (simplificação de esquema; na anatomia a valva aórtica é posterior e à direita) e não há coto de ilíaca interna (P3).
 
-**I2. Diretrizes e documentos a conferir no texto integral (sites bloqueados na rede da sessão)**
-- SBP: reanimação neonatal 2026 (clampeamento abaixo de 34 semanas: ≥ 30 ou ≥ 60 s?; proteção térmica), Manual de Orientação 2022 do teste do coraçãozinho (nº, limites, ≥ 35 semanas), documento nº 232 (genitália atípica, 2026), hipoglicemia neonatal nº 16 (2022), acondroplasia (2023).
-- Ministério da Saúde: PCDT hipotireoidismo congênito (Portaria Conjunta nº 5/2021: "sem esperar exames de imagem"? conduta conforme TSH em papel-filtro), manual de triagem neonatal 2016 (coleta 3º–5º dia), Portaria SCTIE nº 20/2014 (oximetria), triagem auditiva 2012 (rubéola como indicador de risco), manual de gestação de alto risco 2022 (datação; epilepsia).
-- FEBRASGO/CBR: limites de redatação por ultrassonografia de 1º trimestre.
-- Internacionais: ACOG CO 723 (radiação; limiar de 50 mGy), ACOG PB 226/227, ISUOG 2023 (cardíaco fetal), Diretriz Brasileira de Cardiologia Fetal (SBC 2019), ICMART 4ª ed. (2025/2026), Lee 2016 (DDS), EAU/ESPU (Weigert–Meyer), Endocrine Society 2014 (feocromocitoma: teste germinativo), ATA 2015 (RET).
+**I2. Diretrizes (conferidas no texto integral em 09/11/2026; relatórios `content/revisoes/conferencia-fontes-*.md`)**
+- Resolvido e incorporado:
+  - Clampeamento: SBP 2026 manda ≥ 60 s também abaixo de 34 semanas (era ≥ 30 s em 2022); número de volta ao emb-24.
+  - Teste do coraçãozinho: Manual de Orientação SBP nº 4/2022 (≥ 35 semanas; ≥ 95% e diferença ≤ 3%; repetir com 90–94% ou ≥ 4%, até 2 vezes; ≤ 89% positivo); critérios de 2014 no Relatório CONITEC nº 115. A q10 vale nos dois.
+  - PCDT de hipotireoidismo congênito (Portaria Conjunta nº 5/2021): início nos primeiros 14 dias após a coleta; a falta de exame etiológico não deve atrasar o tratamento; conduta por faixa de TSH no papel-filtro.
+  - Hipoglicemia neonatal (SBP nº 16/2022) e acondroplasia (Diretriz SBP nº 113/2023: polissonografia e neuroimagem no 1º ano).
+  - Triagem auditiva: o guia do MS de 2025 atualizou o de 2012 — infecção congênita (IRDA1) triada com EOA; PEATE-A para IRDA2. emb-20-q26 e correlação corrigidas (reverter se preferir o texto de 2012).
+  - Redatação pelo CCN: consenso CBR/FEBRASGO 2020 (> 5 dias até 9 semanas; ≥ 7 dias de 9 a 14) e Protocolo FEBRASGO nº 63/2021 (≥ 5 dias no 1º trimestre). emb-01-q26 vale por todos.
+  - Ácido fólico: 4 mg/dia, 30 dias antes (FEBRASGO nº 16/2025) ou 5 mg/dia, 60–90 dias antes (MS, CAB 32) — explícito por fonte em emb-10/18.
+  - ACOG CO 723 reafirmado em 2026; PB 226 substituído (Practice Advisory 2026 / SMFM #74); FEBRASGO nº 90/2025 (restrição de crescimento).
+  - ISUOG 2023 e Diretriz Brasileira de Cardiologia Fetal 2019 confirmam a emb-13-q26; EAU 2026 (cap. 19) confirma ureterocele no polo superior e refluxo no inferior (a "regra de Weigert–Meyer" vem de outra fonte).
+  - 44 citações de artigos conferidas no PubMed (4 corrigidas, 7 completadas; DOI/PMID acrescentados).
+- Decidir: dose única de ácido fólico ou as duas fontes; critério de redatação no resumo do emb-01 (hoje cita só o ACOG; após 9 semanas CBR/FEBRASGO e FEBRASGO nº 63 divergem); manter a triagem auditiva pelo guia de 2025.
+- Ainda aberto: documento SBP nº 232 (DDS) na íntegra (área de associados: "não atribuir o sexo na sala de parto", "investigar HAC"); limiar de 50 mGy (ACOG CO 723 sem texto integral); ACOG PB 227 e CO 700 (texto restrito); janela cirúrgica da catarata congênita (sem fonte primária); ICMART 4ª ed.; Lee 2016 (DDS); Endocrine Society 2014 (feocromocitoma); ATA 2015 (RET); mola 46,YY (só revisões: "presumida inviável").
 
 **I3. Conferir no livro**
 - Moore 11ª: Tabela 5-1 (CCN × Carnegie; base de emb-07-q32 — curvas de ultrassonografia dão ~6s6d de IG para 9 mm), caps. 6/10 (surfactante), atribuições na bolsa de Rathke e zona reticular (emb-25), "12 semanas" dos andrógenos (emb-10-q34).
