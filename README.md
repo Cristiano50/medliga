@@ -10,10 +10,10 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 
 | Área | Situação |
 |---|---|
-| Módulo 1: **Embriologia geral** (tópicos 1–10) | conteúdo escrito; revisão por agentes especialistas **em andamento**; conferência médica pendente |
-| Embriologia dos sistemas (tópicos 11–20) | conteúdo escrito; revisão por agentes **em andamento** |
-| Laboratório 3D (12 estágios, zigoto → placenta) + jogo **Identifique** | implementado |
-| Minijogos: **Plantão relâmpago**, **Linha do tempo**, **Camadas germinativas**, questões de estudo (4 tipos) | implementado |
+| Módulo 1: **Embriologia geral** (tópicos 1–10) | revisado por agentes (embriologia + obstetrícia nos tópicos 1–5; 2ª etapa dos 6–10 em andamento); conferência médica pendente |
+| Embriologia dos sistemas (tópicos 11–20) | revisado por agentes em duas etapas (embriologia + pediatria/anatomia/clínica); conferência médica pendente |
+| Laboratório 3D: 12 estágios do desenvolvimento (zigoto → placenta) + órgãos e sistemas (coração tubular, alça cardíaca, aparelho faríngeo) + jogo **Identifique** | implementado; textos dos 3 modelos de sistemas em revisão |
+| Minijogos: **Plantão relâmpago**, **Linha do tempo**, **Camadas germinativas**, **Duelo** entre colegas (por código), questões de estudo (4 tipos), **conquistas** | implementado (duelo exige servidor online) |
 | Revisão espaçada, XP, níveis, sequência de dias, limites do plano gratuito | implementado e testado |
 | Cadastro de escolas (441 cursos de medicina) e "minha escola não está na lista" | implementado |
 | Rankings: interno da escola, entre escolas (soma dos 20 melhores), geral | implementado; servidor **ainda não ativado** (sem projeto Supabase) |
@@ -22,7 +22,7 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 | Reportar erro em questões; exclusão de conta e de dados do aparelho (LGPD) | implementado |
 | Pagamentos e builds nas lojas | planejado (v0.2) |
 
-Evidência (09/11/2026): `npm test` 25/25 · `npm run test:sql` "TODOS OS TESTES SQL PASSARAM" (14 cenários) · `npm run typecheck` sem erros · `npm run validar-conteudo` OK.
+Evidência (09/11/2026): `npm test` 29/29 · `npm run test:sql` "TODOS OS TESTES SQL PASSARAM" (15 cenários) · `npm run typecheck` sem erros · `npm run validar-conteudo` OK.
 
 ## Como rodar
 
