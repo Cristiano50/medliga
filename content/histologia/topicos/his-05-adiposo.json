@@ -1,0 +1,990 @@
+{
+  "id": "his-05-adiposo",
+  "disciplina": "histologia",
+  "ordem": 5,
+  "titulo": "Tecido adiposo",
+  "subtitulo": "Unilocular (branco) e multilocular (pardo): estrutura, metabolismo, função endócrina e termogênese",
+  "objetivos": [
+    "Descrever o adipócito unilocular e explicar por que ele aparece em “anel de sinete” nos cortes de rotina corados por HE.",
+    "Indicar técnicas que preservam e demonstram lipídios (corte por congelação, corantes do grupo Sudan, tetróxido de ósmio).",
+    "Explicar o armazenamento de triglicerídeos (lipase lipoproteica, insulina) e sua mobilização (noradrenalina, AMPc, lipase sensível a hormônio).",
+    "Relacionar o tecido adiposo à função endócrina, com ênfase em leptina e adiponectina.",
+    "Diferenciar os tecidos adiposos unilocular e multilocular quanto à morfologia, à inervação, à localização e à função.",
+    "Explicar a termogênese sem tremor mediada pela termogenina (UCP1) e sua importância no recém-nascido.",
+    "Correlacionar a histologia com obesidade (hipertrofia × hiperplasia), lipoma × lipossarcoma e hipotermia neonatal."
+  ],
+  "resumo": "O **tecido adiposo** é um tipo especial de conjuntivo em que predominam os **adipócitos**, células que armazenam energia na forma de **triglicerídeos**. Há dois tipos, que diferem na estrutura das células, na cor, na distribuição e na função: o **unilocular** (comum, branco ou amarelo) e o **multilocular** (pardo).\n\n**Tecido adiposo unilocular.** É quase todo o tecido adiposo do adulto. Sua cor varia do branco ao amarelo-escuro, conforme os carotenoides da dieta. Forma o **panículo adiposo** da hipoderme, cuja espessura e distribuição variam com o sexo e a idade, e depósitos como o omento, o mesentério e o retroperitônio. Os adipócitos uniloculares são células grandes, esféricas quando isoladas e poligonais no tecido, por compressão mútua. Cada um contém **uma única gotícula lipídica**, que ocupa quase toda a célula: o citoplasma fica reduzido a uma orla fina e o **núcleo, achatado, é empurrado para a periferia**. A gotícula não tem membrana de bicamada; é delimitada por uma monocamada de fosfolipídios associada a proteínas (perilipinas). Cada adipócito é envolvido por **lâmina basal** e por uma rede de **fibras reticulares**.\n\nNo processamento para parafina, o álcool e o xilol **extraem os lipídios**. Por isso, no HE, o adipócito aparece como um espaço vazio contornado por fina orla de citoplasma, com o núcleo achatado num dos lados: o aspecto em **“anel de sinete”**. Para demonstrar os lipídios usam-se cortes por congelação corados por **Sudan** ou a fixação com **tetróxido de ósmio**, que torna os lipídios insolúveis e negros.\n\n**Septos de conjuntivo** dividem o tecido em lóbulos incompletos e conduzem vasos e nervos. A **vascularização é abundante** em relação ao pequeno volume de citoplasma, o que permite trocas rápidas com o sangue.\n\n**Funções.** Reserva de energia (os triglicerídeos são a forma mais concentrada de armazenamento), **isolamento térmico** pelo panículo, **amortecimento** mecânico (por exemplo, nas plantas dos pés) e preenchimento de espaços. O tecido adiposo é também **órgão endócrino**: a **leptina** é secretada em proporção à massa de gordura e atua no hipotálamo reduzindo a ingestão e aumentando o gasto energético; a **adiponectina** aumenta a sensibilidade à insulina e cai na obesidade. O tecido produz ainda citocinas (TNF-α, IL-6) e converte androgênios em estrógenos (aromatase).\n\n**Armazenamento e mobilização.** Os triglicerídeos chegam em **quilomícrons** (gordura da dieta) e **VLDL** (do fígado). A **lipase lipoproteica**, sintetizada pelo adipócito e transferida para a superfície luminal do endotélio dos capilares, hidrolisa esses triglicerídeos; os ácidos graxos entram no adipócito e são reesterificados com glicerol-fosfato derivado da glicose. A **insulina** favorece o armazenamento: aumenta a captação de glicose (GLUT4) e a lipogênese, estimula a lipase lipoproteica e inibe a lipólise. No jejum e no exercício, a **noradrenalina** das terminações simpáticas atua em receptores β-adrenérgicos, eleva o AMPc e ativa a proteína quinase A, que fosforila a **lipase sensível a hormônio**. Os ácidos graxos liberados circulam ligados à albumina; o glicerol é aproveitado pelo fígado.\n\n**Tecido adiposo multilocular (pardo).** A cor deriva da vascularização abundante e das numerosas mitocôndrias. As células são menores, poligonais, com **muitas gotículas lipídicas**, **núcleo esférico central** e **muitas mitocôndrias**. Dispostas em lóbulos ricos em capilares, lembram uma glândula endócrina; no HE o citoplasma é eosinofílico e vacuolado. No **recém-nascido** o tecido pardo é relativamente abundante (região interescapular, axila, pescoço, mediastino, em torno dos rins). No adulto persiste em pequena quantidade (regiões cervical, supraclavicular, paravertebral e perirrenal), detectável por PET-CT com FDG após exposição ao frio.\n\n**Termogênese.** O tecido pardo recebe **inervação simpática** direta. No frio, a noradrenalina atua em receptores β3-adrenérgicos e ativa a lipólise; os ácidos graxos são oxidados e ativam a **termogenina (UCP1)**, proteína da membrana mitocondrial interna que permite o retorno dos prótons à matriz **sem passar pela ATP sintase**. A energia do gradiente é dissipada como **calor**, levado pelo sangue a todo o corpo (termogênese sem tremor).\n\n**Histogênese (introdução).** Os adipócitos derivam de células-tronco mesenquimais, que originam **pré-adipócitos** (lipoblastos); a diferenciação depende de fatores de transcrição como o **PPARγ**. O adipócito unilocular em formação acumula várias gotículas que confluem numa só. Os adipócitos pardos têm precursores próprios; no tecido branco, frio prolongado ou estímulo β-adrenérgico fazem surgir adipócitos termogênicos com UCP1, chamados **beges**.\n\n**Correlações.** Na **obesidade**, a massa de gordura aumenta por **hipertrofia** (adipócitos maiores; predomina quando a obesidade surge no adulto) e por **hiperplasia** (mais adipócitos; associada à obesidade iniciada na infância e às formas graves). O **lipoma**, tumor benigno de adipócitos maduros, é o tumor de partes moles mais comum do adulto; o **lipossarcoma** acomete partes moles profundas e o retroperitônio e em geral não se origina de lipoma. O recém-nascido, sobretudo o prematuro, tem pouca reserva de gordura parda e de panículo e grande superfície corporal relativa: é muito vulnerável à **hipotermia**.",
+  "pontosChave": [
+    "O adipócito unilocular tem uma única gotícula lipídica, citoplasma em orla fina e núcleo achatado na periferia.",
+    "No HE de rotina o lipídio é extraído pelo álcool e pelo xilol, e o adipócito aparece em “anel de sinete”.",
+    "Lipídios são demonstrados em cortes por congelação corados por Sudan ou após fixação com tetróxido de ósmio.",
+    "A lipase lipoproteica, na superfície luminal do endotélio capilar, hidrolisa triglicerídeos de quilomícrons e VLDL para armazenamento.",
+    "A insulina favorece o armazenamento; a noradrenalina, via receptor β-adrenérgico, AMPc e lipase sensível a hormônio, promove a lipólise.",
+    "A leptina é secretada em proporção à massa de gordura e reduz a ingestão via hipotálamo; a adiponectina aumenta a sensibilidade à insulina e cai na obesidade.",
+    "O adipócito multilocular tem várias gotículas, núcleo central e muitas mitocôndrias com termogenina (UCP1).",
+    "A UCP1 deixa os prótons voltarem à matriz mitocondrial sem passar pela ATP sintase: a energia vira calor (termogênese sem tremor).",
+    "O tecido pardo recebe inervação simpática direta e é relativamente abundante no recém-nascido; no adulto persiste em pequenos depósitos.",
+    "Obesidade: hipertrofia (aumento do volume dos adipócitos) e hiperplasia (aumento do número).",
+    "Lipoma: tumor benigno de adipócitos maduros; lipossarcoma: maligno, profundo ou retroperitoneal, em geral não derivado de lipoma."
+  ],
+  "estruturas": [
+    {
+      "id": "adipocito-unilocular",
+      "nome": "Adipócito unilocular",
+      "sinonimos": [
+        "célula adiposa unilocular",
+        "adipócito branco"
+      ],
+      "definicao": "Célula grande, esférica quando isolada e poligonal no tecido, com uma única gotícula lipídica que ocupa quase todo o volume; o citoplasma forma orla fina e o núcleo achatado fica na periferia. No HE de rotina tem aspecto em “anel de sinete”, porque o lipídio é extraído no processamento.",
+      "origem": "Pré-adipócitos derivados de células-tronco mesenquimais."
+    },
+    {
+      "id": "goticula-lipidica",
+      "nome": "Gotícula lipídica",
+      "sinonimos": [
+        "gota lipídica",
+        "inclusão lipídica"
+      ],
+      "definicao": "Depósito citoplasmático de triglicerídeos delimitado por monocamada de fosfolipídios associada a proteínas (perilipinas), sem membrana de bicamada. Única no adipócito unilocular; numerosas e pequenas no multilocular."
+    },
+    {
+      "id": "adipocito-multilocular",
+      "nome": "Adipócito multilocular",
+      "sinonimos": [
+        "adipócito pardo",
+        "adipócito marrom"
+      ],
+      "definicao": "Célula poligonal, menor que a unilocular, com muitas gotículas lipídicas pequenas, núcleo esférico central e numerosas mitocôndrias com termogenina (UCP1). No HE o citoplasma é eosinofílico e vacuolado."
+    },
+    {
+      "id": "septo-conjuntivo",
+      "nome": "Septo de tecido conjuntivo",
+      "sinonimos": [],
+      "definicao": "Trave de conjuntivo que divide o tecido adiposo em lóbulos incompletos e conduz vasos sanguíneos e nervos."
+    },
+    {
+      "id": "capilar",
+      "nome": "Capilar sanguíneo",
+      "sinonimos": [],
+      "definicao": "Vaso de menor calibre. O tecido adiposo tem rede capilar abundante, especialmente densa no tecido multilocular, onde contribui para a cor parda e para distribuir o calor produzido."
+    },
+    {
+      "id": "fibras-reticulares",
+      "nome": "Fibras reticulares",
+      "sinonimos": [],
+      "definicao": "Fibras finas de colágeno tipo III que formam uma rede ao redor de cada adipócito; demonstradas por impregnação argêntica, não pelo HE."
+    },
+    {
+      "id": "paniculo-adiposo",
+      "nome": "Panículo adiposo",
+      "sinonimos": [
+        "tela subcutânea adiposa"
+      ],
+      "definicao": "Camada de tecido adiposo unilocular da hipoderme; isolante térmico e amortecedor, de espessura e distribuição variáveis com o sexo e a idade."
+    },
+    {
+      "id": "pre-adipocito",
+      "nome": "Pré-adipócito",
+      "sinonimos": [
+        "lipoblasto (termo histológico)"
+      ],
+      "definicao": "Célula precursora fusiforme que se diferencia em adipócito sob ação de fatores de transcrição como o PPARγ; no desenvolvimento do adipócito unilocular, acumula várias gotículas que depois confluem numa só.",
+      "origem": "Células-tronco mesenquimais.",
+      "destino": "Adipócito unilocular."
+    },
+    {
+      "id": "adipocito-bege",
+      "nome": "Adipócito bege",
+      "sinonimos": [
+        "adipócito “brite”"
+      ],
+      "definicao": "Adipócito termogênico, com várias gotículas lipídicas e UCP1, que surge dentro do tecido adiposo branco sob frio prolongado ou estímulo β-adrenérgico."
+    }
+  ],
+  "eventos": [],
+  "correlacoesClinicas": [
+    {
+      "id": "obesidade-hipertrofia-hiperplasia",
+      "titulo": "Obesidade: hipertrofia × hiperplasia de adipócitos",
+      "descricao": "A massa de gordura pode aumentar pelo aumento do volume de cada adipócito (obesidade hipertrófica, predominante quando o ganho de peso ocorre na vida adulta) ou pelo aumento do número de adipócitos (obesidade hiperplásica, classicamente associada à obesidade iniciada na infância e às formas graves).",
+      "mecanismo": "O excesso de energia é armazenado como triglicerídeos nos adipócitos existentes; quando eles atingem grande volume, pré-adipócitos podem diferenciar-se em novos adipócitos."
+    },
+    {
+      "id": "obesidade-visceral-adipocinas",
+      "titulo": "Obesidade visceral e adipocinas",
+      "descricao": "O acúmulo de gordura visceral associa-se a resistência à insulina, dislipidemia e risco cardiovascular. A leptina plasmática está elevada (com resistência à sua ação) e a adiponectina está reduzida.",
+      "mecanismo": "O tecido adiposo é órgão endócrino: a secreção de leptina acompanha a massa de gordura; a de adiponectina, que aumenta a sensibilidade à insulina, diminui com o aumento da adiposidade; citocinas como TNF-α e IL-6 contribuem para a resistência à insulina."
+    },
+    {
+      "id": "deficiencia-congenita-leptina",
+      "titulo": "Deficiência congênita de leptina",
+      "descricao": "Doença genética rara com hiperfagia e obesidade grave desde os primeiros meses de vida; responde à reposição de leptina recombinante.",
+      "mecanismo": "Sem leptina, o hipotálamo interpreta que não há reserva de gordura e mantém a fome e o baixo gasto energético."
+    },
+    {
+      "id": "lipoma",
+      "titulo": "Lipoma",
+      "descricao": "Tumor benigno de adipócitos maduros, o tumor de partes moles mais comum do adulto. Em geral subcutâneo, macio, móvel, indolor e de crescimento lento; bem delimitado, com cápsula fina.",
+      "mecanismo": "Proliferação de adipócitos uniloculares maduros, sem atipia, histologicamente semelhantes ao tecido adiposo normal."
+    },
+    {
+      "id": "lipossarcoma",
+      "titulo": "Lipossarcoma",
+      "descricao": "Sarcoma frequente no adulto, que acomete partes moles profundas dos membros e o retroperitônio; em geral surge sem lipoma prévio. O tipo bem diferenciado tem atipia nuclear em células dos septos e lipoblastos (células com vacúolos lipídicos que endentam o núcleo) e amplificação de MDM2 (12q13–15); o mixoide tem matriz mixoide, rede capilar delicada e translocação t(12;16).",
+      "mecanismo": "Neoplasia maligna de células com diferenciação adipocítica."
+    },
+    {
+      "id": "hipotermia-neonatal",
+      "titulo": "Hipotermia neonatal",
+      "descricao": "O recém-nascido, sobretudo o prematuro e o de baixo peso, perde calor rapidamente em ambiente frio. Medidas como secar e aquecer o bebê, contato pele a pele e ambiente térmico neutro previnem a hipotermia.",
+      "mecanismo": "A produção de calor no recém-nascido depende da termogênese sem tremor no tecido adiposo multilocular (noradrenalina → lipólise → UCP1); o prematuro tem menos gordura parda e menos panículo adiposo e maior superfície corporal relativa."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-05-q01",
+      "tipo": "multipla",
+      "enunciado": "Em cortes de rotina incluídos em parafina e corados por HE, o adipócito unilocular aparece como um espaço claro com fina orla de citoplasma e núcleo achatado num dos lados (aspecto em “anel de sinete”). Esse aspecto se deve a:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Acúmulo de glicogênio, que não se cora pela hematoxilina nem pela eosina"
+        },
+        {
+          "id": "b",
+          "texto": "Extração dos lipídios da gotícula pelos solventes usados no processamento"
+        },
+        {
+          "id": "c",
+          "texto": "Retração do citoplasma causada pela fixação em formol tamponado"
+        },
+        {
+          "id": "d",
+          "texto": "Digestão da gotícula pelas lipases liberadas após a morte da célula"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Na inclusão em parafina, a desidratação em álcoois e a diafanização em xilol dissolvem os triglicerídeos; resta o espaço antes ocupado pela gotícula, contornado pela orla de citoplasma, com o núcleo achatado na periferia (b). O adipócito armazena triglicerídeos, não glicogênio (a). O formol (c) fixa proteínas e não explica um espaço regular do tamanho da gotícula. A autólise por lipases (d) não ocorre de modo uniforme em tecido bem fixado; o aspecto é constante em todos os cortes de rotina porque decorre do processamento.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": [
+        "adipocito-unilocular",
+        "tecnica-histologica",
+        "anel-de-sinete"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "his-05-q02",
+      "tipo": "multipla",
+      "enunciado": "Para demonstrar os lipídios armazenados nos adipócitos, o procedimento mais adequado é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Corte de parafina corado pelo PAS"
+        },
+        {
+          "id": "b",
+          "texto": "Corte de parafina corado pela orceína"
+        },
+        {
+          "id": "c",
+          "texto": "Corte por congelação corado pelo Sudan"
+        },
+        {
+          "id": "d",
+          "texto": "Corte de parafina com impregnação argêntica"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "O corte por congelação dispensa o álcool e o xilol que extrairiam os lipídios, e os corantes do grupo Sudan (Sudan III, IV, negro) dissolvem-se nos lipídios e os coram (c); a fixação com tetróxido de ósmio, que torna os lipídios insolúveis e negros, é alternativa. Nos cortes de parafina (a, b, d) os lipídios já foram extraídos. Além disso, o PAS (a) cora glicogênio e glicoproteínas; a orceína (b), fibras elásticas; a impregnação argêntica (d), fibras reticulares, como as que envolvem cada adipócito.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "tecnica-histologica",
+        "sudan",
+        "lipidios"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1 e 6"
+    },
+    {
+      "id": "his-05-q03",
+      "tipo": "multipla",
+      "enunciado": "Qual conjunto de características distingue o adipócito multilocular (pardo) do unilocular?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Gotícula lipídica única, núcleo achatado e periférico, poucas mitocôndrias"
+        },
+        {
+          "id": "b",
+          "texto": "Ausência de lâmina basal, núcleo picnótico e grânulos citoplasmáticos basófilos"
+        },
+        {
+          "id": "c",
+          "texto": "Gotícula lipídica única, núcleo central e citoplasma rico em glicogênio"
+        },
+        {
+          "id": "d",
+          "texto": "Várias gotículas lipídicas, núcleo esférico central e muitas mitocôndrias"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "O adipócito multilocular tem muitas gotículas pequenas, núcleo esférico central e numerosas mitocôndrias, base da termogênese (d). A alternativa (a) descreve o adipócito unilocular. Os adipócitos dos dois tipos são envolvidos por lâmina basal, e núcleo picnótico indica morte celular, não um tipo de adipócito (b). Gotícula única com núcleo central e glicogênio abundante (c) não corresponde a nenhum dos dois tipos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "adipocito-multilocular",
+        "adipocito-unilocular",
+        "morfologia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q04",
+      "tipo": "multipla",
+      "enunciado": "A lipase lipoproteica, essencial para o armazenamento de lipídios no tecido adiposo, atua:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Na superfície luminal do endotélio capilar, hidrolisando triglicerídeos de quilomícrons e VLDL"
+        },
+        {
+          "id": "b",
+          "texto": "No citoplasma do adipócito, hidrolisando os triglicerídeos da gotícula durante o jejum"
+        },
+        {
+          "id": "c",
+          "texto": "No lúmen do duodeno, hidrolisando os triglicerídeos da dieta antes da sua absorção"
+        },
+        {
+          "id": "d",
+          "texto": "No hepatócito, reesterificando ácidos graxos para formar as VLDL secretadas no sangue"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A lipase lipoproteica é sintetizada pelo adipócito e transferida para a superfície luminal do endotélio dos capilares, onde hidrolisa os triglicerídeos de quilomícrons e VLDL; os ácidos graxos liberados entram no adipócito e são reesterificados (a). A hidrólise dos triglicerídeos da gotícula no jejum (b) cabe a lipases intracelulares, como a lipase sensível a hormônio. A digestão no duodeno (c) é feita pela lipase pancreática. A síntese hepática de VLDL (d) não depende da lipase lipoproteica.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "lipase-lipoproteica",
+        "armazenamento-lipidios",
+        "metabolismo"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q05",
+      "tipo": "multipla",
+      "enunciado": "No jejum, a mobilização dos triglicerídeos armazenados no tecido adiposo unilocular é estimulada principalmente por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Insulina, que eleva o AMPc e ativa a lipase sensível a hormônio"
+        },
+        {
+          "id": "b",
+          "texto": "Noradrenalina, que eleva o AMPc e ativa a lipase sensível a hormônio"
+        },
+        {
+          "id": "c",
+          "texto": "Leptina, que ativa a lipase lipoproteica no endotélio dos capilares"
+        },
+        {
+          "id": "d",
+          "texto": "Adiponectina, que ativa a termogenina das mitocôndrias do adipócito"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A noradrenalina das terminações simpáticas (e a adrenalina circulante) atua em receptores β-adrenérgicos, eleva o AMPc e ativa a proteína quinase A, que fosforila a lipase sensível a hormônio; ácidos graxos e glicerol vão para o sangue (b). A insulina (a) tem efeito oposto: inibe a lipólise e favorece o armazenamento. A leptina (c) é sinal de saciedade para o hipotálamo, e a lipase lipoproteica atua no armazenamento, não na mobilização. A adiponectina (d) aumenta a sensibilidade à insulina; a termogenina é própria do adipócito multilocular e não mobiliza triglicerídeos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "lipolise",
+        "noradrenalina",
+        "lipase-sensivel-a-hormonio"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q06",
+      "tipo": "multipla",
+      "enunciado": "Após uma refeição, a insulina age sobre o adipócito unilocular principalmente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Inibindo a captação de glicose e ativando a lipase sensível a hormônio"
+        },
+        {
+          "id": "b",
+          "texto": "Induzindo a síntese de termogenina nas mitocôndrias do adipócito"
+        },
+        {
+          "id": "c",
+          "texto": "Aumentando a captação de glicose e a lipogênese e inibindo a lipólise"
+        },
+        {
+          "id": "d",
+          "texto": "Reduzindo a lipase lipoproteica e a entrada de ácidos graxos na célula"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A insulina aumenta a captação de glicose (transportador GLUT4), estimula a lipase lipoproteica e a síntese de triglicerídeos e inibe a lipase sensível a hormônio (c). As alternativas (a) e (d) descrevem efeitos opostos aos da insulina. A termogenina (b) é característica do adipócito multilocular e é induzida pelo estímulo simpático, não pela insulina.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "insulina",
+        "lipogenese",
+        "metabolismo"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q07",
+      "tipo": "multipla",
+      "enunciado": "Sobre a leptina, é correto afirmar que ela é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Secretada pelas células do estômago no jejum e estimula o apetite ao agir no hipotálamo"
+        },
+        {
+          "id": "b",
+          "texto": "Secretada pelas ilhotas do pâncreas após as refeições e aumenta a captação de glicose"
+        },
+        {
+          "id": "c",
+          "texto": "Secretada pelos adipócitos, tem nível reduzido na obesidade e aumenta a sensibilidade à insulina"
+        },
+        {
+          "id": "d",
+          "texto": "Secretada pelos adipócitos em proporção à massa de gordura e reduz a ingestão via hipotálamo"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A leptina, produto do gene LEP, é secretada pelos adipócitos em quantidade proporcional à massa de gordura e atua no hipotálamo reduzindo a ingestão e aumentando o gasto energético (d); na obesidade comum seus níveis estão elevados, com resistência à sua ação. A alternativa (a) descreve a grelina; a (b), a insulina; a (c), a adiponectina, que cai na obesidade e aumenta a sensibilidade à insulina.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "leptina",
+        "adipocinas",
+        "funcao-endocrina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q08",
+      "tipo": "multipla",
+      "enunciado": "A termogenina (UCP1) do tecido adiposo multilocular produz calor porque:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Permite o retorno de prótons à matriz mitocondrial sem passar pela ATP sintase"
+        },
+        {
+          "id": "b",
+          "texto": "Hidrolisa o ATP do citosol e libera como calor a energia das suas ligações"
+        },
+        {
+          "id": "c",
+          "texto": "Promove contrações rápidas e assíncronas de miofilamentos do adipócito"
+        },
+        {
+          "id": "d",
+          "texto": "Bombeia prótons para o espaço intermembranoso e acelera a síntese de ATP"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A UCP1 é uma proteína da membrana mitocondrial interna que oferece aos prótons uma via de retorno à matriz sem passar pela ATP sintase (a); o gradiente gerado pela cadeia respiratória é dissipado como calor em vez de produzir ATP (desacoplamento). A UCP1 não hidrolisa ATP (b). O adipócito não tem aparelho contrátil; o tremor (c) é mecanismo do músculo esquelético. Quem bombeia prótons para o espaço intermembranoso são os complexos da cadeia respiratória, e a UCP1 reduz, e não acelera, a síntese de ATP (d).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "termogenina",
+        "ucp1",
+        "termogenese",
+        "adipocito-multilocular"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q09",
+      "tipo": "multipla",
+      "contexto": "Na lâmina corada por HE de tecido retirado da região interescapular de um recém-nascido, observam-se lóbulos separados por septos de conjuntivo, formados por células poligonais com citoplasma eosinofílico finamente vacuolado (“espumoso”) e núcleo esférico central, entremeadas por numerosos capilares. Não há ductos nem folículos pilosos.",
+      "enunciado": "Qual tecido está representado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Tecido adiposo unilocular"
+        },
+        {
+          "id": "b",
+          "texto": "Glândula sebácea"
+        },
+        {
+          "id": "c",
+          "texto": "Tecido adiposo multilocular"
+        },
+        {
+          "id": "d",
+          "texto": "Conjuntivo com macrófagos espumosos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Células poligonais com muitos vacúolos pequenos (gotículas cujo lipídio foi extraído), citoplasma eosinofílico pela riqueza em mitocôndrias, núcleo central e rede capilar densa, em lóbulos de aspecto glandular na região interescapular do recém-nascido, caracterizam o tecido adiposo multilocular (c). O unilocular (a) mostraria um grande espaço vazio por célula e núcleo achatado na periferia. A glândula sebácea (b) também tem células vacuoladas, mas fica na derme, ligada a folículos pilosos, e lança a secreção num ducto. Macrófagos espumosos (d) aparecem isolados ou em grupos no conjuntivo e não formam lóbulos regulares com capilares entre todas as células.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "adipocito-multilocular",
+        "lamina",
+        "recem-nascido"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q10",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido prematuro (32 semanas de idade gestacional), de baixo peso, permanece alguns minutos descoberto numa sala fria logo após o parto e apresenta temperatura axilar de 35,5 °C.",
+      "enunciado": "Qual é o principal mecanismo de produção de calor do recém-nascido e por que o prematuro é mais vulnerável à hipotermia?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Tremor muscular, limitado no prematuro pela pequena massa de músculo esquelético"
+        },
+        {
+          "id": "b",
+          "texto": "Termogênese sem tremor no tecido adiposo multilocular, menos abundante no prematuro"
+        },
+        {
+          "id": "c",
+          "texto": "Termogênese no tecido adiposo unilocular, rico em termogenina no recém-nascido"
+        },
+        {
+          "id": "d",
+          "texto": "Vasodilatação cutânea mediada pelo parassimpático, ainda imatura no prematuro"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O recém-nascido produz calor sobretudo por termogênese sem tremor no tecido adiposo multilocular: a noradrenalina ativa a lipólise e a UCP1 dissipa o gradiente de prótons como calor (b). O prematuro tem menos gordura parda e menos panículo adiposo, além de maior superfície corporal relativa, por isso esfria mais depressa. O tremor (a) é pouco eficaz no recém-nascido e não é o mecanismo principal. A termogenina é própria do tecido multilocular, não do unilocular (c). A vasodilatação cutânea (d) aumentaria a perda de calor; no frio, a resposta é vasoconstrição, mediada pelo simpático.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "hipotermia-neonatal",
+        "termogenese",
+        "recem-nascido",
+        "caso-clinico"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q11",
+      "tipo": "multipla",
+      "contexto": "Mulher de 45 anos com nódulo subcutâneo no dorso, macio, móvel e indolor, de crescimento lento há anos. A peça excisada é bem delimitada, com cápsula fibrosa fina; no HE, é formada por adipócitos uniloculares maduros, de tamanho uniforme, com núcleo achatado na periferia e sem atipia.",
+      "enunciado": "Qual é o diagnóstico mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Lipossarcoma bem diferenciado"
+        },
+        {
+          "id": "b",
+          "texto": "Hibernoma"
+        },
+        {
+          "id": "c",
+          "texto": "Lipossarcoma mixoide"
+        },
+        {
+          "id": "d",
+          "texto": "Lipoma"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Lesão subcutânea encapsulada, formada por adipócitos maduros semelhantes aos do tecido normal, é um lipoma (d), o tumor de partes moles mais comum do adulto. O lipossarcoma bem diferenciado (a) costuma ser profundo (membros, retroperitônio) e mostra atipia nuclear em células dos septos e lipoblastos. O hibernoma (b) é tumor benigno raro de células semelhantes às do tecido adiposo multilocular, com citoplasma multivacuolado e núcleo central. O lipossarcoma mixoide (c) tem matriz mixoide, rede capilar delicada e ramificada e lipoblastos.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "lipoma",
+        "tumores-de-partes-moles",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
+    },
+    {
+      "id": "his-05-q12",
+      "tipo": "multipla",
+      "contexto": "Homem de 62 anos com massa retroperitoneal volumosa, de crescimento progressivo. A biópsia mostra predomínio de tecido adiposo maduro, mas com adipócitos de tamanhos muito variados e septos fibrosos contendo células com núcleos grandes e hipercromáticos.",
+      "enunciado": "Qual achado adicional reforça o diagnóstico de lipossarcoma bem diferenciado em vez de lipoma?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Lipoblastos e amplificação do gene MDM2 nas células atípicas"
+        },
+        {
+          "id": "b",
+          "texto": "Cápsula fibrosa fina e contínua ao redor de toda a lesão"
+        },
+        {
+          "id": "c",
+          "texto": "Adipócitos uniloculares com núcleo achatado na periferia"
+        },
+        {
+          "id": "d",
+          "texto": "Ausência de mitoses nos adipócitos maduros da lesão"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Lipoblastos (células com vacúolos lipídicos que endentam o núcleo) e a amplificação de MDM2 (região 12q13–15), detectável por FISH, sustentam o lipossarcoma bem diferenciado (a); a localização retroperitoneal e a atipia nos septos já o favorecem. Cápsula fina (b) e adipócitos maduros com núcleo periférico (c) existem no lipoma e também em áreas do lipossarcoma bem diferenciado, por isso não distinguem os dois. A ausência de mitoses (d) não exclui o lipossarcoma bem diferenciado, que costuma ter baixa atividade mitótica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "lipossarcoma",
+        "lipoma",
+        "tumores-de-partes-moles",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
+    },
+    {
+      "id": "his-05-q13",
+      "tipo": "multipla",
+      "contexto": "Homem de 50 anos com obesidade abdominal por acúmulo de gordura visceral, glicemia de jejum alterada e hipertrigliceridemia.",
+      "enunciado": "Qual padrão de adipocinas plasmáticas é esperado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Leptina reduzida e adiponectina elevada"
+        },
+        {
+          "id": "b",
+          "texto": "Leptina elevada e adiponectina reduzida"
+        },
+        {
+          "id": "c",
+          "texto": "Leptina e adiponectina reduzidas"
+        },
+        {
+          "id": "d",
+          "texto": "Leptina e adiponectina elevadas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A leptina é secretada em proporção à massa de gordura; na obesidade comum seus níveis estão elevados, com resistência à sua ação no hipotálamo. A adiponectina, que aumenta a sensibilidade à insulina, diminui na obesidade, sobretudo com acúmulo visceral: daí (b). Leptina reduzida (a, c) é esperada quando há pouca gordura (jejum prolongado, lipodistrofia) ou na rara deficiência congênita de leptina. Adiponectina elevada (a, d) associa-se a menor adiposidade e maior sensibilidade à insulina.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "obesidade",
+        "leptina",
+        "adiponectina",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 9; Robbins & Cotran 10ª ed., Doenças ambientais e nutricionais"
+    },
+    {
+      "id": "his-05-q14",
+      "tipo": "multipla",
+      "contexto": "Mulher de 30 anos, em seguimento de linfoma, faz PET-CT com FDG num dia frio de inverno. Há captação intensa, simétrica e bilateral, nas regiões cervical, supraclavicular e paravertebral torácica; nesses pontos, a TC mostra apenas tecido com densidade de gordura, sem linfonodos aumentados.",
+      "enunciado": "Qual é a explicação mais provável para essa captação?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Metástases linfonodais bilaterais do linfoma"
+        },
+        {
+          "id": "b",
+          "texto": "Lipomas subcutâneos múltiplos, de crescimento recente"
+        },
+        {
+          "id": "c",
+          "texto": "Tecido adiposo multilocular ativado pelo frio"
+        },
+        {
+          "id": "d",
+          "texto": "Lipólise do tecido unilocular durante o jejum"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "O adulto mantém depósitos de tecido adiposo multilocular nas regiões cervical, supraclavicular, paravertebral e perirrenal; ativado pelo frio via simpático, esse tecido capta muita glicose e aparece no PET como captação simétrica em tecido com densidade de gordura (c). Doença linfonodal (a) estaria em linfonodos identificáveis na TC. Lipomas (b) são formados por adipócitos uniloculares maduros, pouco ativos metabolicamente, e não teriam esse padrão simétrico. A lipólise no jejum (d) não aumenta a captação de glicose pelo tecido unilocular (o jejum, aliás, faz parte do preparo do exame).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "adipocito-multilocular",
+        "adulto",
+        "pet-ct",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q15",
+      "tipo": "vf",
+      "enunciado": "Cada adipócito unilocular é envolvido por lâmina basal e por uma rede de fibras reticulares.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Cada adipócito tem lâmina basal (lâmina externa) e é sustentado por uma rede de fibras reticulares (colágeno tipo III), demonstráveis por impregnação argêntica e não visíveis no HE.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "adipocito-unilocular",
+        "fibras-reticulares"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q16",
+      "tipo": "vf",
+      "enunciado": "A gotícula lipídica do adipócito unilocular é delimitada por uma membrana de bicamada lipídica, como as organelas membranosas.",
+      "correta": false,
+      "explicacao": "Falso. A gotícula lipídica é delimitada por uma monocamada de fosfolipídios associada a proteínas, como as perilipinas, que regulam o acesso das lipases; não é uma organela envolta por bicamada.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": [
+        "goticula-lipidica",
+        "perilipina"
+      ],
+      "referencia": "Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q17",
+      "tipo": "vf",
+      "enunciado": "Na obesidade que se instala na vida adulta, o aumento da massa de gordura deve-se principalmente ao aumento do volume dos adipócitos já existentes.",
+      "correta": true,
+      "explicacao": "Verdadeiro. No adulto predomina a hipertrofia dos adipócitos (obesidade hipertrófica). O aumento do número de adipócitos (hiperplasia) associa-se classicamente à obesidade iniciada na infância e às formas graves, quando os adipócitos existentes atingem grande volume.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "obesidade",
+        "hipertrofia",
+        "hiperplasia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q18",
+      "tipo": "vf",
+      "enunciado": "No ser humano, o tecido adiposo multilocular desaparece por completo após o primeiro ano de vida.",
+      "correta": false,
+      "explicacao": "Falso. Ele diminui em proporção depois da infância, mas persiste no adulto em pequenos depósitos (regiões cervical, supraclavicular, paravertebral e perirrenal), que se tornam ativos no frio e são detectados por PET-CT com FDG.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "adipocito-multilocular",
+        "adulto"
+      ],
+      "referencia": "Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q19",
+      "tipo": "vf",
+      "enunciado": "O tecido adiposo multilocular recebe inervação simpática direta, e a noradrenalina estimula nele a termogênese.",
+      "correta": true,
+      "explicacao": "Verdadeiro. As terminações simpáticas liberam noradrenalina junto aos adipócitos multiloculares; via receptores β3-adrenérgicos e AMPc, ela ativa a lipólise, e os ácidos graxos liberados são oxidados e ativam a UCP1, que dissipa a energia como calor.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "adipocito-multilocular",
+        "inervacao-simpatica",
+        "termogenese"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q20",
+      "tipo": "vf",
+      "enunciado": "O lipoma é uma lesão pré-maligna que costuma evoluir para lipossarcoma quando não é retirado.",
+      "correta": false,
+      "explicacao": "Falso. O lipoma é benigno, e a transformação maligna é excepcional; o lipossarcoma surge em geral sem lipoma prévio, tipicamente em partes moles profundas dos membros ou no retroperitônio de adultos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "lipoma",
+        "lipossarcoma"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
+    },
+    {
+      "id": "his-05-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do processamento de rotina de uma lâmina de tecido adiposo em parafina corada por HE:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Desidratação em série crescente de álcoois"
+        },
+        {
+          "id": "2",
+          "texto": "Fixação (por exemplo, em formol)"
+        },
+        {
+          "id": "3",
+          "texto": "Coloração pela hematoxilina-eosina"
+        },
+        {
+          "id": "4",
+          "texto": "Inclusão em parafina"
+        },
+        {
+          "id": "5",
+          "texto": "Diafanização (clareamento) em xilol"
+        },
+        {
+          "id": "6",
+          "texto": "Corte no micrótomo"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "1",
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "explicacao": "Fixação → desidratação em álcoois → diafanização em xilol → inclusão em parafina → corte → coloração (após desparafinar e reidratar o corte). Os lipídios são dissolvidos na desidratação e na diafanização; por isso o adipócito unilocular aparece vazio, em “anel de sinete”.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "tecnica-histologica",
+        "anel-de-sinete"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1"
+    },
+    {
+      "id": "his-05-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas da mobilização de lipídios do tecido adiposo unilocular no jejum:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A lipase sensível a hormônio, fosforilada, hidrolisa os triglicerídeos da gotícula"
+        },
+        {
+          "id": "2",
+          "texto": "A noradrenalina liga-se a receptores β-adrenérgicos do adipócito"
+        },
+        {
+          "id": "3",
+          "texto": "Ácidos graxos saem para o sangue e circulam ligados à albumina"
+        },
+        {
+          "id": "4",
+          "texto": "Terminações simpáticas liberam noradrenalina no tecido adiposo"
+        },
+        {
+          "id": "5",
+          "texto": "O AMPc aumenta e a proteína quinase A é ativada"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Noradrenalina liberada → receptor β-adrenérgico → AMPc e proteína quinase A → fosforilação e ativação da lipase sensível a hormônio (com outras lipases intracelulares) → ácidos graxos e glicerol vão para o sangue; os ácidos graxos circulam ligados à albumina e o glicerol é captado pelo fígado.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "lipolise",
+        "noradrenalina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do armazenamento de lipídios da dieta no adipócito unilocular:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Ácidos graxos atravessam o endotélio e entram no adipócito"
+        },
+        {
+          "id": "2",
+          "texto": "Quilomícrons chegam aos capilares do tecido adiposo"
+        },
+        {
+          "id": "3",
+          "texto": "Os triglicerídeos ressintetizados são incorporados à gotícula lipídica"
+        },
+        {
+          "id": "4",
+          "texto": "A lipase lipoproteica do endotélio hidrolisa os triglicerídeos dos quilomícrons"
+        },
+        {
+          "id": "5",
+          "texto": "Ácidos graxos são reesterificados com glicerol-fosfato derivado da glicose"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "Os quilomícrons chegam aos capilares; a lipase lipoproteica, na superfície luminal do endotélio, libera ácidos graxos; estes entram no adipócito, onde são reesterificados com glicerol-fosfato (obtido da glicose, cuja captação é estimulada pela insulina) e armazenados na gotícula.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "lipase-lipoproteica",
+        "armazenamento-lipidios"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas da termogênese sem tremor no tecido adiposo multilocular:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A UCP1 permite o retorno de prótons à matriz mitocondrial sem síntese de ATP"
+        },
+        {
+          "id": "2",
+          "texto": "A exposição ao frio ativa centros hipotalâmicos e o sistema nervoso simpático"
+        },
+        {
+          "id": "3",
+          "texto": "O calor aquece o sangue que passa pelo tecido e é distribuído pelo corpo"
+        },
+        {
+          "id": "4",
+          "texto": "A noradrenalina atua em receptores β3-adrenérgicos e ativa a lipólise"
+        },
+        {
+          "id": "5",
+          "texto": "Ácidos graxos liberados são oxidados nas mitocôndrias e ativam a UCP1"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Frio → ativação simpática → noradrenalina nos receptores β3 → lipólise → oxidação de ácidos graxos (que também ativam a UCP1) → retorno de prótons sem síntese de ATP, com liberação de calor → sangue aquecido distribui o calor.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "termogenese",
+        "ucp1",
+        "adipocito-multilocular"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada molécula à sua ação no tecido adiposo ou a partir dele:",
+      "pares": [
+        {
+          "esquerda": "Leptina",
+          "direita": "Sinaliza ao hipotálamo a quantidade de gordura armazenada e reduz a ingestão"
+        },
+        {
+          "esquerda": "Adiponectina",
+          "direita": "Aumenta a sensibilidade dos tecidos à insulina"
+        },
+        {
+          "esquerda": "Lipase lipoproteica",
+          "direita": "Hidrolisa triglicerídeos de quilomícrons e VLDL na superfície do endotélio"
+        },
+        {
+          "esquerda": "Lipase sensível a hormônio",
+          "direita": "Hidrolisa triglicerídeos da gotícula quando ativada por AMPc e proteína quinase A"
+        },
+        {
+          "esquerda": "Termogenina (UCP1)",
+          "direita": "Desacopla a cadeia respiratória da síntese de ATP, gerando calor"
+        }
+      ],
+      "explicacao": "Leptina e adiponectina são adipocinas com ações sistêmicas (saciedade; sensibilidade à insulina). A lipase lipoproteica atua no armazenamento, fora do adipócito; a lipase sensível a hormônio atua na mobilização, dentro dele. A UCP1 é a proteína mitocondrial da termogênese do tecido multilocular.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "adipocinas",
+        "lipases",
+        "ucp1"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+    },
+    {
+      "id": "his-05-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura ao seu aspecto ou à sua função:",
+      "pares": [
+        {
+          "esquerda": "Adipócito unilocular (HE)",
+          "direita": "Espaço claro com orla fina de citoplasma e núcleo achatado na periferia"
+        },
+        {
+          "esquerda": "Adipócito multilocular (HE)",
+          "direita": "Citoplasma eosinofílico e vacuolado com núcleo esférico central"
+        },
+        {
+          "esquerda": "Septo conjuntivo",
+          "direita": "Divide o tecido em lóbulos e conduz vasos e nervos"
+        },
+        {
+          "esquerda": "Fibras reticulares",
+          "direita": "Rede ao redor de cada adipócito, vista por impregnação argêntica"
+        },
+        {
+          "esquerda": "Panículo adiposo",
+          "direita": "Camada de gordura da hipoderme que atua como isolante térmico"
+        }
+      ],
+      "explicacao": "No HE, o adipócito unilocular aparece vazio, em “anel de sinete”, e o multilocular, vacuolado e eosinofílico pelas mitocôndrias. Os septos organizam os lóbulos e levam vasos e nervos; as fibras reticulares só aparecem com impregnação argêntica; o panículo adiposo da hipoderme isola e amortece.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "lamina",
+        "estruturas"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed., 2023",
+      "capitulo": "6 — Tecido adiposo"
+    },
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed., 2023",
+      "capitulo": "1 — Histologia e seus métodos de estudo (processamento, Sudan, tetróxido de ósmio)"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed., 2021",
+      "capitulo": "9 — Tecido adiposo"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran — Patologia: bases patológicas das doenças, 10ª ed.",
+      "capitulo": "Ossos, articulações e tumores de partes moles (lipoma, lipossarcoma, hibernoma)"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran — Patologia: bases patológicas das doenças, 10ª ed.",
+      "capitulo": "Doenças ambientais e nutricionais (obesidade, leptina, adiponectina)"
+    }
+  ],
+  "notasDivergencia": [
+    "Nomenclatura: Junqueira usa “tecido adiposo unilocular (comum ou amarelo)” e “multilocular (pardo)”; Ross usa “tecido adiposo branco” e “pardo (marrom)”. Tratados como sinônimos.",
+    "Tecido pardo no adulto: textos mais antigos descreviam quantidades mínimas ou desprezíveis após a infância; Ross (8ª ed.) incorpora os achados de PET-CT de depósitos ativos no adulto (cervical, supraclavicular, paravertebral, perirrenal). Adotada a versão atual.",
+    "Obesidade hipertrófica × hiperplásica: a associação “hipertrofia no adulto, hiperplasia na infância e nas formas graves” é a descrição clássica dos livros-texto; estudos mostram que também pode haver formação de novos adipócitos no adulto, por isso as questões usam “principalmente”.",
+    "Termogênese e inervação: Junqueira e Ross destacam a inervação simpática direta do tecido multilocular; no tecido unilocular as terminações simpáticas relacionam-se sobretudo aos vasos, e a proporção de adipócitos com contato direto varia entre as descrições. O conteúdo afirma apenas o papel lipolítico da noradrenalina."
+  ],
+  "incertezas": [
+    "Números de capítulo citados de memória: Junqueira 14ª ed. (cap. 6, tecido adiposo; cap. 1, métodos) segue a organização conferida para a 13ª ed. brasileira; Ross 8ª ed. (cap. 9, tecido adiposo). Os capítulos de Robbins 10ª ed. foram citados pelo título, sem número conferido.",
+    "O diâmetro dos adipócitos uniloculares e o percentual de tecido pardo no recém-nascido foram omitidos por não terem sido conferidos nas edições adotadas.",
+    "A afirmação de que o prematuro tem menos tecido adiposo pardo (acumulado sobretudo no fim da gestação) e de que o tremor é pouco eficaz no recém-nascido vem da literatura de neonatologia, não das obras-base de histologia; conferir em tratado de pediatria/neonatologia.",
+    "Origem dos adipócitos pardos e beges: os dados sobre precursores próprios (aparentados aos do músculo esquelético) e sobre o surgimento de adipócitos beges vêm sobretudo de estudos em roedores; mantido em nível introdutório, sem questões.",
+    "Lipossarcoma: detalhes moleculares (MDM2 no bem diferenciado; t(12;16) no mixoide) conferidos de memória em Robbins; conferir na edição adotada."
+  ],
+  "revisao": {
+    "autor": "agente-redator-histologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}
