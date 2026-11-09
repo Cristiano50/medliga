@@ -14,6 +14,7 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 - [x] Revisão científica por agentes em duas etapas (embriologia + área transversal) nos 20 tópicos, nos 15 modelos 3D e no minijogo de camadas.
 - [ ] Conferência médica (Cristiano) — lista em `docs/pendencias-conferencia-medica.md`.
 - [x] Duelos entre colegas, conquistas, painel do professor, modelos 3D de órgãos e sistemas.
+- [x] Aprofundamento (09/11/2026): tópicos 21–25, camada avançada (100 questões de dificuldade 4–5), modo Desafio avançado e modelos 3D de septação cardíaca, arcos aórticos e circulação fetal; revisão por agentes em duas etapas.
 
 ## v0.2 — Lançamento do piloto
 - Ativar Supabase em produção (região São Paulo) e domínio.
