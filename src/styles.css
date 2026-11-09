@@ -277,6 +277,7 @@ p { margin: 0 0 0.75em; }
 
 @media (min-width: 760px) {
   .conteudo { padding-top: 24px; }
+  .navbar { left: 50%; right: auto; width: min(560px, 100%); transform: translateX(-50%); border: 1px solid var(--border); border-bottom: 0; border-radius: 16px 16px 0 0; }
   h1 { font-size: 2rem; }
 }
 @media (prefers-reduced-motion: reduce) {

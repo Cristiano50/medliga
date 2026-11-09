@@ -1,7 +1,7 @@
 // Laboratório 3D: linha do tempo do desenvolvimento com modelos manipuláveis.
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { ESTAGIOS, ESTRUTURAS, topico } from '../../content/index.ts';
+import { ESTAGIOS, estruturas, topico } from '../../content/index.ts';
 import { SeloRevisao } from '../../ui/comum.tsx';
 import { Cena3D } from './Cena3D.tsx';
 import { MODELOS, NOMES_EXTRAS } from './modelos/index.ts';
@@ -9,7 +9,7 @@ import { MODELOS, NOMES_EXTRAS } from './modelos/index.ts';
 export function nomesDoEstagio(estagioId: string): Record<string, string> {
   const e = ESTAGIOS.find((x) => x.id === estagioId);
   const nomes: Record<string, string> = { ...NOMES_EXTRAS };
-  for (const id of MODELOS[estagioId]?.partes ?? []) nomes[id] = ESTRUTURAS.get(id)?.nome ?? id;
+  for (const id of MODELOS[estagioId]?.partes ?? []) nomes[id] = estruturas().get(id)?.nome ?? id;
   for (const s of e?.estruturas ?? []) nomes[s.id] = s.nome;
   return nomes;
 }
@@ -36,9 +36,9 @@ export default function Lab3DTela() {
         nome: nomes[selecionado] ?? selecionado,
         texto:
           estagio.estruturas.find((s) => s.id === selecionado)?.descricao ??
-          ESTRUTURAS.get(selecionado)?.definicao ??
+          estruturas().get(selecionado)?.definicao ??
           (selecionado === 'corpo' ? 'Toque nas saliências e estruturas do embrião para identificá-las.' : ''),
-        topicoId: ESTRUTURAS.get(selecionado)?.topicoId,
+        topicoId: estruturas().get(selecionado)?.topicoId,
       }
     : null;
 

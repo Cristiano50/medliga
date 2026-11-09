@@ -1,13 +1,17 @@
+import { useEffect, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { DISCIPLINAS } from '../content/disciplinas.ts';
-import { topicosDe } from '../content/index.ts';
+import { carregarDisciplina, topicosDe } from '../content/index.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
 
 export function DisciplinaTela() {
   const { id = '' } = useParams();
   const d = DISCIPLINAS.find((x) => x.id === id);
-  const topicos = topicosDe(id);
+  const [topicos, setTopicos] = useState(() => topicosDe(id));
+  useEffect(() => {
+    void carregarDisciplina(id).then(setTopicos);
+  }, [id]);
   const progresso = useProgresso(topicos);
   if (!d || d.status !== 'disponivel') return <Navigate to="/" replace />;
   const total = topicos.reduce((s, t) => s + t.questoes.length, 0);

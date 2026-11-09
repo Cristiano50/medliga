@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../data/store.ts';
 import { DISCIPLINAS } from '../content/disciplinas.ts';
@@ -8,7 +9,6 @@ import { nivelPorXP, tituloDoNivel } from '../core/scoring.ts';
 import { PLANOS } from '../core/planos.ts';
 
 const META_DIARIA_XP = 60;
-const TOPICOS_EMB = topicosDe('embriologia');
 
 export function Inicio() {
   const perfil = useApp((s) => s.perfil)!;
@@ -16,6 +16,7 @@ export function Inicio() {
   const xpTotal = useApp((s) => s.xpTotal);
   const xpSemana = useApp((s) => s.xpSemana);
   const uso = useApp((s) => s.uso);
+  const TOPICOS_EMB = useMemo(() => topicosDe('embriologia'), []);
   const progresso = useProgresso(TOPICOS_EMB);
   const niv = nivelPorXP(xpTotal);
   const proximo = TOPICOS_EMB.find((t) => (progresso.get(t.id)?.dominio ?? 0) < 0.6) ?? TOPICOS_EMB[0];

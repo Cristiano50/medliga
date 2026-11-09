@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useApp } from './data/store.ts';
 import { Layout } from './ui/Layout.tsx';
@@ -13,6 +13,7 @@ import { PlanosTela } from './screens/Planos.tsx';
 import { LinhaDoTempoTela } from './games/LinhaDoTempo.tsx';
 import { CamadasTela } from './games/Camadas.tsx';
 import { Carregando } from './ui/Carregando.tsx';
+import { carregarDisciplina } from './content/index.ts';
 
 // A parte 3D (three.js) só é baixada quando o jogador abre o laboratório.
 const Lab3DTela = lazy(() => import('./modules/embriologia/Lab3D.tsx'));
@@ -50,10 +51,13 @@ function Rotas() {
 export function App() {
   const carregado = useApp((s) => s.carregado);
   const carregar = useApp((s) => s.carregar);
+  const [conteudo, setConteudo] = useState(false);
   useEffect(() => {
     void carregar();
+    // Embriologia é a disciplina disponível hoje: pré-carregada na abertura (as demais, sob demanda).
+    void carregarDisciplina('embriologia').then(() => setConteudo(true));
   }, [carregar]);
-  if (!carregado) return <Carregando />;
+  if (!carregado || !conteudo) return <Carregando />;
   return (
     <HashRouter>
       <Rotas />
