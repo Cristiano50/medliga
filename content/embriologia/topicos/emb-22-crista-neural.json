@@ -1213,6 +1213,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "24 correções (0 críticas, 5 importantes, 19 menores); principais: (importante) q15 tinha como correta 'manter a atribuição clássica à crista neural', contrária à regra de não afirmar a camada das células C no ser humano — reescrita para 'apresentar as duas propostas, sem afirmar a camada'; (importante) explicação da q11 negava coloboma na Treacher Collins (há coloboma palpebral); (importante) q24: item 4 (diferenciação dos plexos) não era inequivocamente posterior à colonização do intestino terminal — passou a 'maturação ao longo de todo o intestino (período fetal)'; (importante) q25: inibição de p53 'reverte' → 'preveniu em camundongo (Jones 2008), sem aplicação clínica'; (importante) crista vagal com origem 'somitos 1–7' → tubo neural ao nível dos somitos 1–7; (menor) cartilagens laríngeas ('grande parte' do esqueleto dos arcos) no resumo, no ectomesênquima e na q16; HVA/VMA como metabólitos; 'síndrome CHARGE'; distratores implausíveis da q02 (SRY, hCG) trocados; Carnegie 9–13 incoerente com dias 17–56 removido; 9 referências citadas nas questões acrescentadas. Gabaritos corretos; letras 4/4/4/4; sem pista de comprimento."
+      },
+      {
+        "area": "genetica-clinica",
+        "agente": "revisor-genetica-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "13 correções (0 críticas, 1 importante, 12 menores); gabaritos, letras (4/4/4/4) e ids inalterados. Principais: (importante) Treacher Collins listava POLR1C entre genes da forma dominante — passou a TCOF1 (principal), POLR1D ou POLR1B dominantes e minoria autossômica recessiva (POLR1C ou POLR1D bialélicos; GeneReviews 2024); q09 com expressividade variável e risco de 50%; Waardenburg tipo 2 com MITF e SOX10 e herança do tipo 4 (SOX10 dominante; EDNRB/EDN3 em geral recessivos); Hirschsprung com herança complexa, RET familiar com penetrância incompleta e dependente do sexo e variantes do éxon 10 também em NEM 2A; q08: RET 'principal causa' → principal gene; 'síndrome da deleção 22q11.2' com quadro, herança e diagnóstico (microarranjo/MLPA; FISH não detecta deleções atípicas) e TBX1 expresso no endoderma/mesoderma faríngeos; CHARGE autossômica dominante, na maioria de novo; NF1 com os critérios revisados de 2021 (Legius) e síndrome de Legius; SDHx também causa feocromocitoma; neuroblastoma hereditário (ALK, PHOX2B) e rastreamento por HVA/VMA sem redução de mortalidade (NEJM 2002); SNAI2 (HGNC); 10 referências acrescentadas. Células C: camada de origem no ser humano continua não afirmada. Relatório: content/revisoes/e21-22-genetica.md."
       }
     ],
     "humano": null

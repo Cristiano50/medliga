@@ -1283,7 +1283,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Os defeitos do tubo neural são o exemplo clássico de herança multifatorial com modelo de limiar: afetados em primeiro e em segundo graus, sem padrão mendeliano e sem alteração cromossômica, elevam o risco de recorrência acima do da população geral, sem alcançar as frações de uma doença monogênica. A conduta é a prevenção com ácido fólico em dose elevada (4 a 5 mg/dia), iniciada pelo menos 30 dias antes da concepção, porque o tubo neural se fecha entre os dias 24 e 28 após a fertilização, e o rastreamento com alfafetoproteína sérica materna (15 a 20 semanas) e ultrassonografia morfológica — por isso (a). A (b) impõe um padrão mendeliano que o heredograma não sustenta, com um risco numérico que não se aplica. A (c) ignora a história familiar e deixa o casal com a dose de risco habitual. A (d) erra duas vezes: não há aneuploidia no caso e os rastreamentos de aneuploidia, inclusive o DNA fetal livre, não detectam defeitos do tubo neural.",
+      "explicacao": "Os defeitos do tubo neural são o exemplo clássico de herança multifatorial com modelo de limiar: um irmão afetado (parente de primeiro grau da futura criança) e um primo materno afetado (parente de terceiro grau), sem padrão mendeliano e sem alteração cromossômica, elevam o risco de recorrência acima do da população geral — o peso maior vem do irmão afetado —, sem alcançar as frações de uma doença monogênica. A conduta é a prevenção com ácido fólico em dose elevada (4 a 5 mg/dia), iniciada pelo menos 30 dias antes da concepção, porque o tubo neural se fecha entre os dias 24 e 28 após a fertilização, e o rastreamento com alfafetoproteína sérica materna (15 a 20 semanas) e ultrassonografia morfológica — por isso (a). A (b) impõe um padrão mendeliano que o heredograma não sustenta, com um risco numérico que não se aplica. A (c) ignora a história familiar e deixa o casal com a dose de risco habitual. A (d) erra duas vezes: não há aneuploidia no caso e os rastreamentos de aneuploidia, inclusive o DNA fetal livre, não detectam defeitos do tubo neural.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1294,7 +1294,7 @@
         "aconselhamento-genetico",
         "heredograma"
       ],
-      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 8 e 14; Moore 11ª ed., cap. 20"
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 8 e 14; Moore 11ª ed., cap. 20; FEBRASGO, Prevenção dos defeitos abertos do tubo neural, 2ª ed., 2020"
     },
     {
       "id": "emb-10-q32",
@@ -1320,7 +1320,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Com 9 semanas de idade gestacional, o feto tem cerca de 7 semanas após a fertilização: o tubo neural se fechou entre os dias 24 e 28 (≈5,5 a 6 semanas de idade gestacional), antes da consulta, e a suplementação iniciada agora não previne nem desfaz um defeito do tubo neural — (b). O que permanece útil é a avaliação morfológica dirigida e a revisão do esquema antiepiléptico com o neurologista, porque o valproato também acarreta prejuízo cognitivo dose-dependente, e o sistema nervoso central segue vulnerável no período fetal; a medicação não deve ser suspensa por iniciativa da paciente. A (a) estende indevidamente a janela de fechamento do tubo neural. A (c) nega uma teratogenicidade bem estabelecida em doses terapêuticas. A (d) transfere ao valproato a assinatura da talidomida — defeitos de redução de membros, dias 20 a 36 após a fertilização — e ignora o risco cognitivo.",
+      "explicacao": "Com 9 semanas de idade gestacional, o feto tem cerca de 7 semanas após a fertilização: o tubo neural se fechou entre os dias 24 e 28 (≈5,5 a 6 semanas de idade gestacional), antes da consulta, e a suplementação iniciada agora não previne nem desfaz um defeito do tubo neural — (b). O que permanece útil é a avaliação morfológica dirigida e a revisão do esquema antiepiléptico com o neurologista, porque o valproato também se associa a anomalias craniofaciais, cardíacas e esqueléticas e acarreta prejuízo cognitivo dose-dependente, e o sistema nervoso central segue vulnerável no período fetal; a medicação não deve ser suspensa por iniciativa da paciente. A (a) estende indevidamente a janela de fechamento do tubo neural. A (c) nega uma teratogenicidade bem estabelecida em doses terapêuticas. A (d) atribui ao valproato, como risco principal, a assinatura da talidomida — defeitos de redução de membros, dias 20 a 36 após a fertilização — e ignora o defeito do tubo neural e o risco cognitivo.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1331,7 +1331,7 @@
         "idade-gestacional",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9; Ministério da Saúde, Manual de gestação de alto risco, 2022"
     },
     {
       "id": "emb-10-q33",
@@ -1357,7 +1357,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A radiação ionizante é teratogênica em doses altas — microcefalia e deficiência intelectual —, mas as doses dos exames diagnósticos habituais ficam muito abaixo dos limiares associados a malformações, de modo que a exposição descrita não indica, por si, nenhuma medida excepcional: por isso (c). A (d) acerta a janela (a gestante estava com 10 semanas de idade gestacional, cerca de 8 semanas após a concepção, início do período de maior suscetibilidade do sistema nervoso central, de 8 a 15 semanas), mas abandona a relação dose-resposta, que é um dos princípios da teratologia: o efeito depende da dose, e não apenas do momento. A (a) salta de uma exposição de baixa dose para a conduta mais grave possível, pelo mesmo erro. A (b) contraria o princípio do 'tudo ou nada' das duas primeiras semanas, em que a agressão mata o concepto ou é compensada, sem produzir malformações específicas. Os limiares numéricos de dose variam entre as diretrizes (ver incertezas), razão pela qual nenhum valor é afirmado aqui.",
+      "explicacao": "A radiação ionizante é teratogênica em doses altas — microcefalia e deficiência intelectual —, mas as doses dos exames diagnósticos habituais ficam muito abaixo dos limiares associados a malformações, de modo que a exposição descrita não indica, por si, nenhuma medida excepcional: por isso (c). É também a posição da ACOG (Committee Opinion nº 723): salvo poucas exceções, radiografia, tomografia e medicina nuclear expõem o feto a doses muito menores do que as associadas a dano fetal. A (d) acerta a janela (a gestante estava com 10 semanas de idade gestacional, cerca de 8 semanas após a concepção, início do período de maior suscetibilidade do sistema nervoso central, de 8 a 15 semanas), mas abandona a relação dose-resposta, que é um dos princípios da teratologia: o efeito depende da dose, e não apenas do momento. A (a) salta de uma exposição de baixa dose para a conduta mais grave possível, pelo mesmo erro. A (b) contraria o princípio do 'tudo ou nada' das duas primeiras semanas, em que a agressão mata o concepto ou é compensada, sem produzir malformações específicas. Os limiares numéricos de dose variam entre as diretrizes (ver incertezas), razão pela qual nenhum valor é afirmado aqui.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1367,7 +1367,7 @@
         "dose-resposta",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9; ACOG CO 723 (2017, reafirmado em 2021)"
     },
     {
       "id": "emb-10-q34",
@@ -1475,6 +1475,18 @@
     {
       "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
       "capitulo": "8 — Herança complexa das doenças multifatoriais comuns"
+    },
+    {
+      "obra": "FEBRASGO. Prevenção dos defeitos abertos do tubo neural (série Orientações e Recomendações FEBRASGO), 2ª ed., 2020",
+      "capitulo": "Ácido fólico em dose elevada no alto risco; rastreamento"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Manual de gestação de alto risco. Brasília: Ministério da Saúde; 2022",
+      "capitulo": "Epilepsia na gestação (seção a conferir)"
+    },
+    {
+      "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 723: Guidelines for Diagnostic Imaging During Pregnancy and Lactation. Obstet Gynecol. 2017;130(4):e210–6 (reafirmado em 2021)",
+      "capitulo": "Radiação ionizante: doses dos exames diagnósticos e dano fetal"
     }
   ],
   "notasDivergencia": [
@@ -1491,11 +1503,12 @@
     "Risco de trissomia 21 por idade materna: as tabelas clássicas variam conforme a casuística e o momento da gestação em que o risco é calculado; nenhum valor numérico por idade foi afirmado, apenas o aumento com a idade materna.",
     "Proporções dos mecanismos da trissomia 21 (não disjunção, translocação e mosaicismo): as fontes citam cerca de 95%, 3% a 4% e 1% a 2%, respectivamente, com variação entre obras. No conteúdo usou-se 'na maioria dos casos', 'pequena parcela' e 'minoritário', sem percentuais.",
     "Risco de recorrência dos defeitos do tubo neural após um filho afetado: as estimativas variam (habitualmente citadas entre 2% e 5%, com aumento após dois filhos afetados); nenhum valor foi afirmado no conteúdo.",
-    "Limiar de dose de radiação ionizante associado a malformações: as recomendações clínicas citam limiares em torno de algumas dezenas de mGy, com variação entre diretrizes; no conteúdo afirma-se apenas que as doses dos exames diagnósticos habituais ficam muito abaixo dos limiares associados a malformações.",
+    "Limiar de dose de radiação ionizante associado a dano fetal: a ACOG (Committee Opinion nº 723, 2017, reafirmado em 2021) afirma, qualitativamente, que salvo poucas exceções os exames de imagem diagnósticos expõem o feto a doses muito menores do que as associadas a dano fetal — base da redação de emb-10-q33. O limiar de 50 mGy habitualmente atribuído a esse documento (sem aumento de anomalias ou de perdas abaixo dele) não pôde ser conferido no texto integral nesta sessão e não foi afirmado no conteúdo; a dose fetal de uma tomografia de abdome varia com o protocolo. Não foi localizada diretriz brasileira específica.",
     "Prevalência dos transtornos do espectro alcoólico fetal e da síndrome alcoólica fetal no Brasil e no mundo: estimativas muito variáveis conforme o método de aferição; não foram incluídos números.",
     "Risco de síndrome da varicela congênita e janela exata de maior suscetibilidade (habitualmente citada entre 8 e 20 semanas de idade gestacional, com risco absoluto baixo): a faixa foi descrita qualitativamente, sem percentuais.",
     "Número de casos da epidemia brasileira de microcefalia associada ao Zika (2015-2016): as cifras foram revisadas ao longo do tempo pelos sistemas de notificação e por isso nenhum número de casos foi afirmado; as datas dos atos normativos citados foram verificadas.",
-    "Risco de recorrência dos defeitos do tubo neural em famílias com mais de um afetado (emb-10-q31): nenhum valor numérico foi afirmado, apenas que o risco supera o da população geral e fica abaixo do de uma doença monogênica."
+    "Risco de recorrência dos defeitos do tubo neural em famílias com mais de um afetado (emb-10-q31): nenhum valor numérico foi afirmado, apenas que o risco supera o da população geral e fica abaixo do de uma doença monogênica.",
+    "Conduta na gestante em uso de valproato (emb-10-q32): a redação (não suspender por conta própria, revisar o esquema com o neurologista, avaliação morfológica dirigida) é qualitativa e compatível com o Manual de gestação de alto risco do Ministério da Saúde (2022), cuja seção sobre epilepsia não foi reaberta nesta sessão; as anomalias associadas ao valproato seguem a tabela de teratógenos de Moore (cap. 20)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1535,6 +1548,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids q31–q35): 1 correção (0 críticas, 0 importantes, 1 menor). (menor) q32: a explicação convertia o fechamento do tubo neural (dias 24 a 28 após a fertilização) em \"≈6 semanas de idade gestacional\"; a conta dá 5 semanas e 3 dias a 6 semanas, agora \"≈5,5 a 6 semanas\" (q15, já aprovada nas etapas anteriores, usa o arredondamento mais grosseiro \"por volta de 6 semanas\": harmonização sugerida ao revisor humano). Refeitas as contas: 9 semanas de idade gestacional = ~7 semanas após a fertilização, depois do fechamento do tubo neural (q32); 10 semanas de idade gestacional = ~8 semanas após a concepção, início da janela de maior suscetibilidade do sistema nervoso central (8 a 15 semanas após a concepção) (q33). Conferidos sem erro: herança multifatorial com modelo de limiar nos defeitos do tubo neural, dose alta de ácido fólico de 4 a 5 mg/dia iniciada pelo menos 30 dias antes da concepção (faixa já adotada no tópico, com a pendência FEBRASGO 4 mg × Ministério da Saúde 5 mg mantida para o revisor humano) e rastreamento com alfafetoproteína de 15 a 20 semanas e ultrassonografia morfológica, coerentes com pontosChave, correlações e q15 e q28 (q31); valproato teratogênico em doses terapêuticas, com prejuízo cognitivo dose-dependente e sem suspensão por iniciativa da paciente, e a assinatura da talidomida (dias 20 a 36) atribuída corretamente ao distrator (q32); radiação diagnóstica mantida qualitativa quanto aos limiares de dose, com a relação dose-resposta preservada e sem endosso de conduta não prevista em diretriz (q33); janelas de talidomida, ácido fólico, IECA/BRA, radiação e andrógenos (q34); fenilcetonúria materna com passagem placentária da fenilalanina, feto heterozigoto e prevenção pré-concepcional (q35)."
+      },
+      {
+        "area": "genetica/medicina-fetal/obstetricia",
+        "agente": "revisor-medicina-fetal-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q31–q35) + harmonização (nenhum item pedido neste tópico): 3 correções (0 críticas, 0 importantes, 3 menores). (menor) q31 — 'afetados em primeiro e em segundo graus' não dizia em relação a quem; agora 'um irmão afetado (primeiro grau da futura criança) e um primo materno afetado (terceiro grau)', com o peso maior no irmão; dose alta de ácido fólico mantida em 4 a 5 mg/dia (pendência FEBRASGO 4 mg × MS 5 mg com o revisor humano); FEBRASGO 2020 acrescentada às referências; (menor) q32 — a explicação passou a citar as outras anomalias associadas ao valproato (craniofaciais, cardíacas, esqueléticas; Moore cap. 20) e a refutação de (d) deixou de sugerir que o valproato não tem relação com membros: (d) erra ao tomar a assinatura da talidomida como risco principal e ignorar o tubo neural e o risco cognitivo; Manual de gestação de alto risco (MS 2022) citado para a conduta, com incerteza; (menor) q33 — limiar mantido qualitativo e agora apoiado na ACOG CO 723 (salvo poucas exceções, exames diagnósticos expõem o feto a doses muito menores que as associadas a dano); o valor de 50 mGy não foi afirmado por não ter sido conferido no texto integral (incerteza atualizada). Contas refeitas: 9 semanas de IG ≈ 7 semanas após a fertilização; tubo neural fechado nos dias 24–28 = 38–42 dias de IG = 5s3d–6s0d (q32); 10 semanas de IG ≈ 8 semanas após a concepção, início da janela de 8–15 semanas do SNC (q33). Conferidos sem erro: herança multifatorial com limiar e DNA fetal livre que não rastreia DTN (q31); janelas de talidomida, ácido fólico, IECA/BRA, radiação e andrógenos (q34); fenilcetonúria materna, com feto heterozigoto e fenilalanina em concentração fetal maior que a materna (q35). Gabaritos, letras e ids inalterados."
       }
     ],
     "humano": null

@@ -1114,6 +1114,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "11 correções (0 críticas, 2 importantes, 9 menores); principais: (importante) q11 sem contexto — o enunciado citava 'essa condição' sem caso; acrescentada vinheta de Smith-Lemli-Opitz com holoprosencefalia (colesterol baixo, 7-desidrocolesterol alto); (importante) q25 dizia que Lefty2 é a barreira da linha média (é o Lefty1; o Lefty2, no mesoderma lateral esquerdo, limita Nodal), corrigido também no resumo; (menor) Notch na somitogênese como relógio da segmentação, não inibição lateral; multipotência na q15; pista de comprimento da q09; destino do organizador ístmico; referências de lateralidade (Sadler cap. 5) e HOX (Sadler cap. 6); incerteza dos fatores de iPS resolvida com Takahashi & Yamanaka 2006/2007 e nota sobre os experimentos clássicos em modelos animais. Gabaritos corretos; letras 4/4/4/4; sem pista de comprimento."
+      },
+      {
+        "area": "genetica-clinica",
+        "agente": "revisor-genetica-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "16 correções (0 críticas, 0 importantes, 16 menores); gabaritos, letras (4/4/4/4) e ids inalterados. Principais: 'associação WAGR' → síndrome WAGR (deleção de genes contíguos em 11p13 com PAX6 e WT1), com pesquisa de deleção de WT1 na aniridia esporádica e vigilância renal (Kalish 2017); acondroplasia: autossômica dominante, p.Gly380Arg, cerca de 80% de variantes novas de origem paterna (idade paterna); Apert: duas variantes de FGFR2 com ganho de função, novas e paternas; holoprosencefalia como espectro, com SHH e outros genes (ZIC2, SIX3, TGIF1) e penetrância incompleta; Smith-Lemli-Opitz autossômica recessiva, 7-desidrocolesterol como marcador e defeito sobretudo na resposta ao SHH (SMO); situs inversus totalis 'de baixo risco' → risco cardíaco bem menor, com discinesia ciliar primária (Kartagener) e ZIC3 ligado ao X; imprinting com direção parental (15q11.2-q13); RET e NEM 2 (não 'neoplasias endócrinas múltiplas'); herança de Holt-Oram e sinpolidactilia; nomenclatura HGNC (TBXT, POU5F1, LIN28A, NODAL/LEFTY/PITX2); 7 referências de genética acrescentadas. Nada afirmado sobre a camada das células C. Relatório: content/revisoes/e21-22-genetica.md."
       }
     ],
     "humano": null

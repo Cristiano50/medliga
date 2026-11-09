@@ -1372,7 +1372,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Os gânglios entéricos derivam da crista neural (principalmente vagal), que coloniza o intestino em sentido craniocaudal; quando a colonização para antes de alcançar o segmento distal, o reto fica agangliônico, contraído e obstrutivo — a doença de Hirschsprung, descrita em (a). A (b) corresponde ao mecanismo das atresias e estenoses duodenais, que cursam com vômitos nas primeiras horas e 'dupla bolha', e não com aganglionose. A (c) descreve o divertículo ileal (de Meckel), em geral assintomático ou com sangramento, em intestino com inervação normal. A (d) descreve a onfalocele, defeito visível da parede abdominal, ausente neste recém-nascido. A questão liga os derivados da crista neural da 3ª semana a um quadro cirúrgico neonatal.",
+      "explicacao": "Os gânglios entéricos derivam da crista neural (principalmente vagal), que coloniza o intestino em sentido craniocaudal; quando a colonização para antes de alcançar o segmento distal, o reto fica agangliônico, contraído e obstrutivo — a doença de Hirschsprung, descrita em (a). A (b) corresponde ao mecanismo das atresias e estenoses duodenais, que cursam com vômitos nas primeiras horas e 'dupla bolha', e não com aganglionose. A (c) descreve o divertículo ileal (de Meckel), em geral assintomático ou com sangramento, em intestino com inervação normal. A (d) descreve a onfalocele, defeito visível da parede abdominal, ausente neste recém-nascido. Quanto ao exame: no recém-nascido, a investigação habitualmente começa pela biópsia retal por sucção, que alcança mucosa e submucosa e avalia o plexo submucoso (como em emb-15-q13); a biópsia de espessura total, como a deste caso, inclui também o plexo mioentérico e fica para situações selecionadas, como uma sucção inconclusiva. A questão liga os derivados da crista neural da 3ª semana a um quadro cirúrgico neonatal.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1381,7 +1381,7 @@
         "intestino",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 4 e 11; Sadler 14ª ed., cap. 6"
+      "referencia": "Moore 11ª ed., cap. 4 e 11; Sadler 14ª ed., cap. 6; Kyrklund et al., diretrizes ERNICA, 2020"
     },
     {
       "id": "emb-06-q33",
@@ -1501,6 +1501,10 @@
     {
       "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
       "capitulo": "20 — Defeitos congênitos humanos (períodos críticos)"
+    },
+    {
+      "obra": "Kyrklund K et al. ERNICA guidelines for the management of rectosigmoid Hirschsprung's disease. Orphanet J Rare Dis. 2020;15:164",
+      "capitulo": "Diagnóstico: biópsia retal (sucção × espessura total)"
     }
   ],
   "notasDivergencia": [
@@ -1517,7 +1521,8 @@
     "Incidência do teratoma sacrococcígeo: o valor numérico não foi conferido nas edições adotadas e foi omitido; mantido apenas 'tumor congênito mais comum do recém-nascido, mais frequente no sexo feminino'.",
     "Origem das células C (parafoliculares) da tireoide: classicamente atribuída à crista neural, mas há evidências recentes de origem endodérmica; por isso não foi usada nas questões sobre derivados da crista neural.",
     "O papel dos cílios do nó na lateralidade foi demonstrado sobretudo em camundongos; a extrapolação para o ser humano apoia-se na associação com discinesia ciliar primária.",
-    "Os experimentos de implante de notocorda citados em emb-06-q31 provêm de modelos animais (anfíbios e aves); a extrapolação ao ser humano é indireta, como a dos cílios do nó primitivo na lateralidade."
+    "Os experimentos de implante de notocorda citados em emb-06-q31 provêm de modelos animais (anfíbios e aves); a extrapolação ao ser humano é indireta, como a dos cílios do nó primitivo na lateralidade.",
+    "Biópsia retal na doença de Hirschsprung (emb-06-q32): a afirmação de que, no recém-nascido, a investigação habitualmente começa pela biópsia por sucção, com a de espessura total reservada a situações selecionadas, segue a prática descrita em emb-15-digestorio (corrigido na revisão de pediatria) e nas diretrizes ERNICA (Kyrklund et al., 2020); nesta sessão só o resumo da diretriz pôde ser lido (exige histologia retal representativa antes da cirurgia). Não foi localizada diretriz brasileira específica."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1543,6 +1548,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids q30–q34): 3 correções (0 críticas, 0 importantes, 3 menores). (menor) q30: a alternativa correta (b) era 26% mais curta que a média dos distratores — pista de comprimento desfeita com \"no polo rostral\", sem mudar gabarito nem letras; (menor) q30: a conversão do distrator (a) na explicação dizia que os dias 15 a 17 após a fertilização equivalem a \"cerca de 4 semanas e meia\" de idade gestacional, quando equivalem a 4 semanas e 1 dia a 4 semanas e 3 dias — agora \"pouco mais de 4 semanas\"; (menor) q32: \"biópsia retal\" passou a \"biópsia retal de espessura total\", porque o caso descreve ausência de células ganglionares nos plexos submucoso E mioentérico, e a biópsia por sucção (usada em emb-15-q13, corrigida na 2ª etapa daquele tópico) alcança apenas mucosa e submucosa. Refeitas as contas: 5s4d de idade gestacional = 3s4d após a fertilização = dia 25, dentro da faixa de fechamento do neuroporo cranial adotada no tópico (dias 24 a 26), gabarito (b) correto e único. Conferidos sem erro: SHH da notocorda × BMP dorsal e eixo HOX/ácido retinoico (q31); colonização craniocaudal do intestino pela crista neural vagal e distratores de atresia duodenal, divertículo ileal e onfalocele (q32), coerentes com emb-15-digestorio e com o novo emb-22-crista-neural; pares de q33 (cílios do nó e cascata NODAL/LEFTY2/PITX2, sirenomelia, teratoma sacrococcígeo × cordoma, neuroporo caudal); sequência de q34 (ectoderma → placa neural por inibição de BMP4 → transição epitélio-mesênquima na borda → migração → melanócito). Ordem a, b, c, d e citação de todas as letras nas explicações conferidas."
+      },
+      {
+        "area": "genetica/medicina-fetal/obstetricia",
+        "agente": "revisor-medicina-fetal-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q30–q34) + harmonização (nenhum item pedido neste tópico): 1 correção (0 críticas, 0 importantes, 1 menor). (menor) q32: a explicação passou a dizer que, no recém-nascido, a investigação habitualmente começa pela biópsia retal por sucção (mucosa e submucosa, plexo submucoso) e que a de espessura total, usada na vinheta e que inclui o plexo mioentérico, fica para situações selecionadas — o aluno não deve tomar a biópsia de espessura total como primeiro exame; coerente com emb-15-q13; referência ERNICA 2020 acrescentada, com incerteza registrada (texto integral não aberto). Contas refeitas em q30: 5s4d de IG = 39 dias − 14 = dia 25 após a fertilização, dentro da faixa do neuroporo cranial (24–26); dias 15–17 = 4s1d–4s3d de IG. Conferidos sem erro, com olhar de medicina fetal e genética: janelas de anencefalia × holoprosencefalia × fenda palatina × sindactilia (q30); SHH × BMP4 × HOX em modelo animal (q31); quadro de Hirschsprung (mecônio após 48 h, toque retal explosivo) e distratores de atresia duodenal, divertículo ileal e onfalocele (q32); discinesia ciliar primária e lateralidade, sirenomelia, teratoma sacrococcígeo × cordoma, mielomeningocele (q33); via do melanócito (q34). Gabaritos, letras e ids inalterados."
       }
     ],
     "humano": null

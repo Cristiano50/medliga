@@ -1368,7 +1368,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Comprimento cabeça-nádega de 8 a 11 mm, com placas dos pés, pigmento retiniano e saliências auriculares, define o estágio 16, de 37 a 42 dias após a fertilização; somando as 2 semanas da convenção obstétrica, chega-se a cerca de 7 a 8 semanas de idade gestacional — (b). A (a) corresponde ao estágio 13 (comprimento de 4 a 6 mm), em que os brotos dos membros inferiores acabaram de surgir e não há placa do pé. A (c) corresponde ao estágio 18 (13 a 17 mm), que já tem entalhes entre os raios digitais das mãos e pálpebras em formação. A (d) corresponde ao estágio 23 (27 a 31 mm), com dedos livres e eminência caudal ausente. As idades e os comprimentos por estágio seguem a Tabela 5-1 de Moore, cuja conferência está registrada nas incertezas do tópico.",
+      "explicacao": "Comprimento cabeça-nádega de 8 a 11 mm, com placas dos pés, pigmento retiniano e saliências auriculares, define o estágio 16, de 37 a 42 dias após a fertilização; somando as 2 semanas da convenção obstétrica, chega-se a cerca de 7 a 8 semanas de idade gestacional — (b). A (a) corresponde ao estágio 13 (comprimento de 4 a 6 mm), em que os brotos dos membros inferiores acabaram de surgir e não há placa do pé. A (c) corresponde ao estágio 18 (13 a 17 mm), que já tem entalhes entre os raios digitais das mãos e pálpebras em formação. A (d) corresponde ao estágio 23 (27 a 31 mm), com dedos livres e eminência caudal ausente. As idades e os comprimentos por estágio seguem a Tabela 5-1 de Moore, cuja conferência está registrada nas incertezas do tópico. Na clínica, as curvas ultrassonográficas de datação pelo CCN, obtidas in vivo, atribuem ao mesmo comprimento uma idade alguns dias menor (ver notas de divergência); por isso a questão pede expressamente a tabela de estágios, que se apoia na morfologia descrita.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1499,6 +1499,10 @@
     {
       "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
       "capitulo": "8 — Cavidades corporais, mesentérios e diafragma (hérnia diafragmática congênita)"
+    },
+    {
+      "obra": "Robinson HP, Fleming JE. A critical evaluation of sonar 'crown-rump length' measurements. Br J Obstet Gynaecol. 1975;82(9):702–10",
+      "capitulo": "Curva de datação pelo CCN ultrassonográfico"
     }
   ],
   "notasDivergencia": [
@@ -1508,7 +1512,8 @@
     "Brotos dos membros: Moore, superiores por volta dos dias 26–27 e inferiores no fim da 4ª semana; Sadler, brotos visíveis no fim da 4ª semana e em forma de remo no início da 5ª. O tamanho do atraso dos membros inferiores é citado de formas diferentes (cerca de 1 a 2 dias para o aparecimento dos brotos, segundo as datas dos estágios 12 e 13; valores maiores, de 4 a 5 dias, aparecem para o conjunto das etapas seguintes). Por isso o conteúdo afirma apenas 'alguns dias', sem número.",
     "Agrupamento dos estágios por semana: as faixas de idade de estágios vizinhos se sobrepõem (ex.: estágio 15 = 35–38 dias, transição 5ª/6ª semana; estágio 17 = 42–44 dias, transição 6ª/7ª), e o resumo agrupa os estágios por semana de forma aproximada.",
     "Pavilhão auricular: a descrição clássica (seis saliências auriculares do 1º e do 2º arcos) é a dos livros-texto adotados; estudos mais recentes sugerem predomínio do 2º arco na formação do pavilhão.",
-    "Mecanismo da gastrosquise: Moore atribui o defeito ao fechamento incompleto das pregas laterais do corpo na 4ª semana; Sadler propõe o enfraquecimento da parede à direita pela involução da veia umbilical direita, e há ainda a hipótese de ruptura vascular local. A questão emb-07-q30 nomeia a atribuição de Moore e a explicação registra o debate, na mesma redação adotada em emb-15-digestorio."
+    "Mecanismo da gastrosquise: Moore atribui o defeito ao fechamento incompleto das pregas laterais do corpo na 4ª semana; Sadler propõe o enfraquecimento da parede à direita pela involução da veia umbilical direita, e há ainda a hipótese de ruptura vascular local. A questão emb-07-q30 nomeia a atribuição de Moore e a explicação registra o debate, na mesma redação adotada em emb-15-digestorio.",
+    "CCN da tabela de estágios × CCN ultrassonográfico (emb-07-q32): as idades da Tabela 5-1 de Moore (estágio 16 = 8–11 mm, 37–42 dias após a fertilização) vêm de embriões examinados fora do útero, enquanto as curvas de datação ultrassonográfica, obtidas in vivo, atribuem a um CCN de 9 mm cerca de 6 semanas e 6 dias de idade gestacional (≈34 dias após a fertilização; fórmula de Robinson & Fleming, 1975: IG em dias = 8,052 × √CCN em mm + 23,73 → 8,052 × 3 + 23,73 ≈ 47,9 dias), alguns dias a menos. Diferenças de método (fixação dos espécimes, estimativa da data da ovulação) explicam parte da discrepância. A questão explicita que usa a tabela de estágios e a morfologia; na datação clínica vale a curva ultrassonográfica do primeiro trimestre (ACOG CO 700)."
   ],
   "incertezas": [
     "Os valores de idade e CCN por estágio de Carnegie foram reproduzidos da Tabela 5-1 de Moore (11ª ed.); recomenda-se conferência direta pelo revisor, pois diferem de outras tabelas (O'Rahilly & Müller).",
@@ -1542,6 +1547,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids q30–q34): 1 correção (0 críticas, 1 importante, 0 menores). (importante) q32: o distrator (c) convertia \"44 a 48 dias após a fertilização\" em \"cerca de 9 semanas de idade gestacional\", mas a conta dá 8 semanas e 2 dias a 8 semanas e 6 dias — corrigido para \"cerca de 8 a 9 semanas\"; o gabarito (b) não muda e o distrator continua claramente errado pelos achados morfológicos (estágio 18, com entalhes entre os raios digitais). Refeita a conta do gabarito: CCN de 9 mm com placas dos pés, pigmento retiniano, saliências auriculares e raios digitais sem entalhes = estágio 16 da Tabela 5-1 adotada no tópico (8 a 11 mm; 37 a 42 dias), que somados 14 dias dão 7 semanas e 2 dias a 8 semanas de idade gestacional — (b) correto e único; coerente com emb-07-q13 (estágio 16 na 6ª semana) e com o resumo. Conferidos sem erro: gastrosquise sem membrana, ao lado de cordão de inserção normal, com alfafetoproteína elevada, e a atribuição explícita do mecanismo a Moore com o debate registrado em notasDivergencia, na mesma redação de emb-15-digestorio (q30); zona de atividade polarizadora, SHH e eixo anteroposterior × FGF da crista ectodérmica apical, WNT7a e BMP interdigital (q31); septo transverso formando apenas o tendão central e hérnia diafragmática por falha de fusão da membrana pleuroperitoneal (q33); pares de q34. As idades e os CCN da Tabela 5-1 seguem pendentes de conferência humana, como já registrado nas incertezas."
+      },
+      {
+        "area": "genetica/medicina-fetal/obstetricia",
+        "agente": "revisor-medicina-fetal-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q30–q34) + harmonização (nenhum item pedido neste tópico): 1 correção (0 críticas, 0 importantes, 1 menor). (menor) q32: a explicação passou a avisar que as curvas ultrassonográficas de CCN, obtidas in vivo, dão para 9 mm cerca de 6s6d de IG (≈34 dias após a fertilização; Robinson & Fleming, 1975), alguns dias menos que a Tabela 5-1 de Moore (37–42 dias), e que por isso a questão pede a tabela de estágios e a morfologia; nota de divergência e referência acrescentadas. Contas refeitas: estágio 16 (37–42 dias) + 14 = 51–56 dias = 7s2d–8s0d; (a) 28–32 dias = 6s0d–6s4d; (c) 44–48 dias = 8s2d–8s6d; (d) 56–60 dias = 10s0d–10s4d; herniação fisiológica até ~10ª semana após a fertilização ≈ 12 semanas de IG (q30). Conferidos sem erro: gastrosquise × onfalocele (defeito à direita, sem membrana, cordão de inserção normal, alfafetoproteína elevada), com a divergência de mecanismo nomeada (q30, q34); ZPA/SHH em modelo aviário (q31); hérnia diafragmática posterolateral esquerda com abdome escavado e desvio do mediastino (q33). Gabaritos, letras e ids inalterados."
       }
     ],
     "humano": null
