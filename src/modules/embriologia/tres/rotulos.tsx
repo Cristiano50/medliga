@@ -15,6 +15,11 @@ const Registro = createContext<Map<string, AncoraRotulo>>(new Map());
 export const useRegistroRotulos = () => useContext(Registro);
 export interface Projetado { id: string; x: number; y: number; numero: string; nome: string; estado: string; tipo?: 'marcador' | 'texto' }
 
+/** Uma âncora fora do enquadramento não deve gerar uma linha para fora do palco. */
+export function ancoraNoEnquadramento(p: { x: number; y: number; z: number }) {
+  return [p.x, p.y, p.z].every((v) => Number.isFinite(v) && v >= -1 && v <= 1);
+}
+
 /** Duas colunas de marcadores numerados, separadas do modelo; nomes completos ficam na lista acessível. */
 export function distribuirRotulos<T extends { x: number; y: number }>(pontos: T[], largura: number, altura: number) {
   const lados = pontos.map((p, i) => ({ ...p, indice: i })).reduce<{ esquerda: (T & { indice: number })[]; direita: (T & { indice: number })[] }>(
@@ -47,7 +52,7 @@ function Projetor({ onQuadro }: { onQuadro: (q: QuadroMarcadores) => void }) {
       const mundo = r.objeto.localToWorld(r.ponto.clone());
       if (gl.clippingPlanes.some((p) => p.distanceToPoint(mundo) < 0)) continue;
       const p = mundo.project(camera);
-      if (p.z < -1 || p.z > 1) continue;
+      if (!ancoraNoEnquadramento(p)) continue;
       novos.push({ id, x: Math.round((p.x + 1) * size.width / 2), y: Math.round((1 - p.y) * size.height / 2), numero: r.numero, nome: r.nome, estado: r.estado, tipo: r.tipo });
     }
     const chave = `${size.width}x${size.height}:${JSON.stringify(novos)}`;

@@ -62,7 +62,7 @@ export default function Lab3DTela() {
     : null;
 
   return (
-    <div className="pilha">
+    <div className="pilha lab3d">
       <div className="linha entre quebra">
         <div>
           <Link to="/disciplina/embriologia" className="muted pequeno">‹ Embriologia</Link>
@@ -162,7 +162,7 @@ export default function Lab3DTela() {
         </div>
       </div>
 
-      <p className="muted pequeno" style={{ margin: 0 }}>Selecione pelo modelo ou pela lista. Os números ligam cada marcador ao nome; uma linha pode atravessar tecidos no esquema.</p>
+      <p className="muted pequeno" style={{ margin: 0 }}>Selecione pelo modelo ou pela lista. Os números ligam cada marcador ao nome; uma linha pode atravessar tecidos no esquema. Marcadores e indicações de orientação com ponto de referência fora da vista ficam ocultos. Use Restaurar vista para recuperar o enquadramento; a lista continua disponível.</p>
       <div className="lista-estruturas3d" role="group" aria-label="Estruturas deste estágio">
         {estagio.estruturas.map((s) => (
           <button

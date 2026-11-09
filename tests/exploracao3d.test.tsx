@@ -3,7 +3,7 @@ import { render, screen, fireEvent, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import * as THREE from 'three';
 import { resolverToque } from '../src/modules/embriologia/tres/nucleo.tsx';
-import { distribuirRotulos } from '../src/modules/embriologia/tres/rotulos.tsx';
+import { ancoraNoEnquadramento, distribuirRotulos } from '../src/modules/embriologia/tres/rotulos.tsx';
 import { carregarDisciplina } from '../src/content/index.ts';
 import Lab from '../src/modules/embriologia/Lab3D.tsx';
 import type { Cena3DProps } from '../src/modules/embriologia/Cena3D.tsx';
@@ -13,6 +13,15 @@ beforeAll(async () => { await carregarDisciplina('embriologia'); });
 afterEach(cleanup);
 
 describe('exploração 3D', () => {
+  it('omite âncoras fora do enquadramento em qualquer eixo e recupera ao voltar', () => {
+    for (const eixo of ['x', 'y', 'z'] as const) {
+      for (const valor of [-1.01, 1.01, Infinity, NaN]) {
+        expect(ancoraNoEnquadramento({ x: 0, y: 0, z: 0, [eixo]: valor })).toBe(false);
+      }
+    }
+    expect(ancoraNoEnquadramento({ x: -1, y: 1, z: 0 })).toBe(true);
+    expect(ancoraNoEnquadramento(new THREE.Vector3(0, 0, 0))).toBe(true);
+  });
   it('oculta, reexibe pela lista e limpa isolamento/corte ao trocar estágio', () => {
     render(<MemoryRouter initialEntries={['/lab3d?estagio=semana-6']}><Lab /></MemoryRouter>);
     fireEvent.click(screen.getByRole('button', { name: /4 Saliências auriculares/ }));

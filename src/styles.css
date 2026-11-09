@@ -243,6 +243,8 @@ p { margin: 0 0 0.75em; }
 .abas { display: flex; gap: 6px; padding: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; }
 .abas button { flex: 1; min-height: 40px; padding: 0 12px; border-radius: 9px; border: 0; background: transparent; color: var(--text-2); font-weight: 700; cursor: pointer; white-space: nowrap; }
 .abas button.ativa { background: var(--surface-3); color: var(--text); }
+.lab3d .abas button { min-width: 0; white-space: normal; padding: 8px; }
+.lab3d .btn.pequeno, .lab3d .abas button, .lab3d .controle-corte { min-height: 44px; }
 
 .aviso { padding: 10px 14px; border-radius: 12px; border: 1px solid #6b5313; background: #221b08; color: #fde68a; font-size: 0.9rem; }
 .aviso.info { border-color: #1e3a66; background: #0e1a30; color: #bfdbfe; }
