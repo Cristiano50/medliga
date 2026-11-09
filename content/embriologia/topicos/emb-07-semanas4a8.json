@@ -341,15 +341,15 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Dorsalmente ao tubo neural, entre os somitos occipitais"
+          "texto": "Dorsalmente ao tubo neural, entre os somitos occipitais e as pregas neurais"
         },
         {
           "id": "b",
-          "texto": "Cranialmente ao encéfalo anterior, junto à placa precordal"
+          "texto": "Cranialmente ao encéfalo anterior, junto à placa precordal e ao estomodeu"
         },
         {
           "id": "c",
-          "texto": "No interior do pedículo de conexão, junto à alantoide"
+          "texto": "No interior do pedículo de conexão, junto à alantoide e aos vasos umbilicais"
         },
         {
           "id": "d",
@@ -374,19 +374,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Formação do intestino posterior e deslocamento da membrana cloacal para a face ventral"
+          "texto": "Formação do intestino posterior e deslocamento da membrana cloacal e do pedículo de conexão para a face ventral"
         },
         {
           "id": "b",
-          "texto": "As paredes laterais do corpo convergem para a linha média ventral, formando um embrião aproximadamente cilíndrico, com o intestino médio ligado ao saco vitelino pelo ducto vitelino"
+          "texto": "As paredes laterais convergem para a linha média ventral e o embrião torna-se cilíndrico, com o intestino médio ligado ao saco vitelino pelo ducto vitelino"
         },
         {
           "id": "c",
-          "texto": "Deslocamento do coração para a face ventral, caudalmente à membrana bucofaríngea"
+          "texto": "Deslocamento do coração e do septo transverso para a face ventral, caudalmente à membrana bucofaríngea"
         },
         {
           "id": "d",
-          "texto": "Fechamento do sulco neural, formando o tubo neural"
+          "texto": "Fechamento do sulco neural ao longo do dorso, formando o tubo neural"
         }
       ],
       "correta": "b",
@@ -518,15 +518,15 @@
         },
         {
           "id": "b",
-          "texto": "Formam um único agrupamento no cromossomo X, expresso igualmente em todo o eixo"
+          "texto": "Formam um único agrupamento no cromossomo X, expresso igualmente em todo o eixo craniocaudal"
         },
         {
           "id": "c",
-          "texto": "Estão em quatro agrupamentos (HOXA a HOXD), em cromossomos diferentes, e os genes da extremidade 3' são expressos mais cedo e em regiões mais craniais"
+          "texto": "Estão em quatro agrupamentos (HOXA a HOXD) e os genes da extremidade 3' são expressos mais cedo e em regiões mais craniais"
         },
         {
           "id": "d",
-          "texto": "Padronizam principalmente o eixo dorsoventral do tubo neural"
+          "texto": "Padronizam principalmente o eixo dorsoventral do tubo neural e dos somitos"
         }
       ],
       "correta": "c",
@@ -548,19 +548,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Deficiência de folato, prejudicando o fechamento do tubo neural"
+          "texto": "Deficiência de folato, prejudicando o fechamento do tubo neural e dos arcos faríngeos"
         },
         {
           "id": "b",
-          "texto": "Excesso de sinalização por ácido retinoico, alterando a expressão dos genes HOX e o desenvolvimento da crista neural craniana e dos arcos faríngeos"
+          "texto": "Excesso de ácido retinoico, alterando a expressão dos genes HOX e a crista neural craniana"
         },
         {
           "id": "c",
-          "texto": "Inibição da via SHH, causando falha na divisão do prosencéfalo"
+          "texto": "Inibição da via SHH, causando falha na divisão do prosencéfalo e microtia"
         },
         {
           "id": "d",
-          "texto": "Excesso de androgênios, causando virilização da genitália externa"
+          "texto": "Excesso de androgênios, causando virilização da genitália externa e micrognatia"
         }
       ],
       "correta": "b",
@@ -583,7 +583,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Antes da fertilização, sem risco para o concepto"
+          "texto": "Antes da fertilização, de modo que não houve risco para o concepto"
         },
         {
           "id": "b",
@@ -591,11 +591,11 @@
         },
         {
           "id": "c",
-          "texto": "No período fetal, em que predominam defeitos funcionais e menores"
+          "texto": "No período fetal, em que predominam defeitos funcionais e anomalias menores"
         },
         {
           "id": "d",
-          "texto": "Na 4ª semana após a fertilização, dentro do período de maior suscetibilidade a malformações estruturais maiores"
+          "texto": "Na 4ª semana após a fertilização, no período de maior risco de malformações maiores"
         }
       ],
       "correta": "d",
@@ -652,19 +652,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Disco trilaminar plano, com linha primitiva e sulco neural"
+          "texto": "Disco trilaminar plano, com linha primitiva, sulco neural e primeiros somitos"
         },
         {
           "id": "b",
-          "texto": "Placas das mãos com raios digitais, pigmento na retina e saliências auriculares"
+          "texto": "Placas das mãos com raios digitais, placas dos pés, pigmento na retina e saliências auriculares"
         },
         {
           "id": "c",
-          "texto": "Dedos separados, pálpebras se unindo e eminência caudal ausente"
+          "texto": "Dedos das mãos e dos pés separados, pálpebras se unindo e eminência caudal ausente"
         },
         {
           "id": "d",
-          "texto": "Curvatura em C, quatro pares de arcos faríngeos, brotos dos membros superiores e inferiores, placoides do cristalino e eminência caudal evidente"
+          "texto": "Curvatura em C, quatro pares de arcos faríngeos, brotos dos quatro membros e eminência caudal evidente"
         }
       ],
       "correta": "d",
@@ -685,19 +685,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "A pressão do líquido amniótico empurra as alças para o cordão umbilical"
+          "texto": "A pressão do líquido amniótico empurra as alças intestinais para dentro do cordão umbilical"
         },
         {
           "id": "b",
-          "texto": "A parede abdominal anterior não se fecha, como na onfalocele"
+          "texto": "A parede abdominal anterior deixa de se fechar na linha média, como na onfalocele"
         },
         {
           "id": "c",
-          "texto": "A cavidade abdominal é pequena demais para o intestino em rápido crescimento, sobretudo pelo grande volume do fígado e dos rins"
+          "texto": "A cavidade abdominal é pequena demais para o intestino em rápido crescimento, ocupada pelo fígado volumoso"
         },
         {
           "id": "d",
-          "texto": "O ducto vitelino traciona as alças em direção ao saco vitelino"
+          "texto": "O ducto vitelino traciona as alças intestinais em direção ao saco vitelino"
         }
       ],
       "correta": "c",

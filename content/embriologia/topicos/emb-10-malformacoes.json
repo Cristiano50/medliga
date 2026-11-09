@@ -480,19 +480,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "não disjunção na meiose materna, favorecida pela longa permanência do oócito detido na primeira divisão meiótica, com deterioração dos mecanismos de coesão e segregação cromossômica"
+          "texto": "não disjunção na meiose materna, favorecida pela longa detenção do oócito na primeira divisão meiótica, com perda da coesão cromossômica"
         },
         {
           "id": "b",
-          "texto": "translocação robertsoniana herdada de um dos genitores, cuja frequência aumenta com a idade materna"
+          "texto": "translocação robertsoniana herdada de um dos genitores, forma cuja frequência aumenta com a idade materna avançada"
         },
         {
           "id": "c",
-          "texto": "erro mitótico pós-zigótico, que produz mosaicismo e aumenta de frequência com a idade materna"
+          "texto": "erro mitótico pós-zigótico, que produz mosaicismo em todos os tecidos e aumenta de frequência com a idade materna"
         },
         {
           "id": "d",
-          "texto": "não disjunção na espermatogênese, responsável pela maioria dos casos e pelo efeito da idade materna"
+          "texto": "não disjunção na espermatogênese, responsável pela maioria dos casos e pela elevação do risco com a idade materna"
         }
       ],
       "correta": "a",
@@ -515,7 +515,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "informar que o achado indica mosaicismo materno e que o risco de recorrência é desprezível"
+          "texto": "informar que o achado indica mosaicismo materno de baixo grau e que o risco de recorrência é desprezível, sem indicação de cariótipo"
         },
         {
           "id": "b",
@@ -523,11 +523,11 @@
         },
         {
           "id": "c",
-          "texto": "solicitar cariótipo dos pais, pois um deles pode ser portador equilibrado de translocação robertsoniana, com 45 cromossomos e fenótipo normal, o que eleva o risco de recorrência"
+          "texto": "solicitar cariótipo dos pais, pois um deles pode ser portador equilibrado de translocação robertsoniana, com fenótipo normal e risco elevado de recorrência"
         },
         {
           "id": "d",
-          "texto": "solicitar apenas cariótipo paterno, já que translocações robertsonianas são transmitidas exclusivamente pelo pai"
+          "texto": "solicitar apenas o cariótipo paterno, já que as translocações robertsonianas são transmitidas exclusivamente pelo pai"
         }
       ],
       "correta": "c",
@@ -582,19 +582,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "É caracterizada por deficiência intelectual grave em praticamente todos os casos"
+          "texto": "É caracterizada por deficiência intelectual grave e por puberdade espontânea completa em praticamente todos os casos"
         },
         {
           "id": "b",
-          "texto": "Cursa com estatura alta, ginecomastia e testículos pequenos, e sua frequência aumenta com a idade materna"
+          "texto": "Cursa com estatura alta, ginecomastia e testículos pequenos, e sua frequência aumenta nitidamente com a idade materna"
         },
         {
           "id": "c",
-          "texto": "Decorre quase sempre de não disjunção materna na meiose I, com forte efeito da idade materna"
+          "texto": "Decorre quase sempre de não disjunção materna na meiose I, com forte efeito da idade materna sobre a incidência"
         },
         {
           "id": "d",
-          "texto": "Cursa com baixa estatura, disgenesia gonadal com amenorreia primária, pescoço alado, linfedema de mãos e pés e coarctação da aorta, sem associação com a idade materna"
+          "texto": "Cursa com baixa estatura, disgenesia gonadal com amenorreia primária, pescoço alado e coarctação da aorta, sem relação com a idade materna"
         }
       ],
       "correta": "d",
@@ -617,19 +617,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "microdeleção 22q11.2, com desenvolvimento anormal da terceira e quarta bolsas faríngeas e contribuição deficiente da crista neural cardíaca"
+          "texto": "microdeleção 22q11.2, com desenvolvimento anormal da terceira e quarta bolsas faríngeas e deficiência da crista neural cardíaca"
         },
         {
           "id": "b",
-          "texto": "deleção 5p, com comprometimento do desenvolvimento da laringe e da face"
+          "texto": "deleção 5p (cri-du-chat), com comprometimento do desenvolvimento da laringe e da face e choro agudo característico"
         },
         {
           "id": "c",
-          "texto": "trissomia 21, com defeito do septo atrioventricular e imunodeficiência secundária"
+          "texto": "trissomia 21, com defeito do septo atrioventricular e imunodeficiência de células T por aplasia tímica"
         },
         {
           "id": "d",
-          "texto": "deleção 15q11.2-q13 de origem paterna, com hipotonia e anomalias faríngeas"
+          "texto": "deleção 15q11.2-q13 de origem paterna, com hipotonia neonatal, anomalias das bolsas faríngeas e cardiopatia conotruncal"
         }
       ],
       "correta": "a",
@@ -655,15 +655,15 @@
         },
         {
           "id": "b",
-          "texto": "síndrome de Prader-Willi, com hipotonia e dificuldade alimentar no recém-nascido, seguidas de hiperfagia, obesidade e hipogonadismo"
+          "texto": "síndrome de Prader-Willi, com hipotonia neonatal e dificuldade alimentar, seguidas de hiperfagia e hipogonadismo"
         },
         {
           "id": "c",
-          "texto": "síndrome do cri-du-chat, com choro agudo e microcefalia"
+          "texto": "síndrome do cri-du-chat, com choro agudo, microcefalia e deficiência intelectual de grau variável"
         },
         {
           "id": "d",
-          "texto": "fenótipo normal, pois a região é inativada em ambos os sexos"
+          "texto": "fenótipo normal, pois a região 15q11.2-q13 tem expressão bialélica nos dois sexos"
         }
       ],
       "correta": "b",
@@ -684,7 +684,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O período fetal é o de maior risco de malformações estruturais maiores, por causa do crescimento acelerado"
+          "texto": "O período fetal é o de maior risco de malformações estruturais maiores, por causa do crescimento acelerado dos órgãos"
         },
         {
           "id": "b",
@@ -692,11 +692,11 @@
         },
         {
           "id": "c",
-          "texto": "Nas duas primeiras semanas após a fertilização, as agressões tendem a causar morte do concepto ou nenhum efeito; o maior risco de malformações maiores está entre a 3ª e a 8ª semana"
+          "texto": "Nas duas primeiras semanas as agressões tendem a causar morte do concepto ou nenhum efeito, e o maior risco de malformações maiores vai da 3ª à 8ª semana"
         },
         {
           "id": "d",
-          "texto": "A suscetibilidade é uniforme ao longo de toda a gestação, dependendo apenas da dose do agente"
+          "texto": "A suscetibilidade é uniforme ao longo de toda a gestação e depende apenas da dose e da via de administração do agente"
         }
       ],
       "correta": "c",
@@ -718,7 +718,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O consumo moderado é seguro, pois o efeito teratogênico do álcool não apresenta relação dose-resposta"
+          "texto": "O consumo moderado é seguro, pois o efeito teratogênico do álcool não apresenta relação dose-resposta nem efeito cumulativo"
         },
         {
           "id": "b",
@@ -726,11 +726,11 @@
         },
         {
           "id": "c",
-          "texto": "A fácies característica decorre da ação direta do álcool sobre os ossos da face no terceiro trimestre"
+          "texto": "A fácies característica decorre da ação direta do álcool sobre os ossos da face no terceiro trimestre, após a organogênese"
         },
         {
           "id": "d",
-          "texto": "Trata-se da síndrome alcoólica fetal; o álcool atua durante toda a gestação, não há dose segura estabelecida e é a principal causa evitável de deficiência intelectual"
+          "texto": "Trata-se da síndrome alcoólica fetal: o álcool atua em toda a gestação, não há dose segura e é a principal causa evitável de deficiência intelectual"
         }
       ],
       "correta": "d",
@@ -753,19 +753,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "A janela de maior suscetibilidade vai de 20 a 36 dias após a fertilização, equivalentes a 34 a 50 dias após a DUM, e abrange defeitos de redução de membros e anomalias de orelha"
+          "texto": "A janela de maior suscetibilidade vai de 20 a 36 dias após a fertilização (34 a 50 após a DUM) e abrange defeitos de redução de membros e anomalias de orelha"
         },
         {
           "id": "b",
-          "texto": "A janela de maior suscetibilidade é o terceiro trimestre, quando os membros completam a ossificação"
+          "texto": "A janela de maior suscetibilidade é o terceiro trimestre, quando os membros completam a ossificação e ganham comprimento"
         },
         {
           "id": "c",
-          "texto": "Não há risco, pois a talidomida não atravessa a placenta em doses terapêuticas"
+          "texto": "Não há risco nessa situação, pois a talidomida não atravessa a placenta nas doses terapêuticas usuais do tratamento da hanseníase"
         },
         {
           "id": "d",
-          "texto": "O risco é restrito a defeitos do tubo neural, prevenidos pelo uso concomitante de ácido fólico"
+          "texto": "O risco é restrito a defeitos do tubo neural, inteiramente prevenidos pelo uso concomitante de ácido fólico em dose alta"
         }
       ],
       "correta": "a",
@@ -788,19 +788,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "deposição do fármaco nos túbulos renais em mineralização, de modo análogo às tetraciclinas nos dentes"
+          "texto": "deposição do fármaco nos túbulos renais em mineralização, de modo análogo ao das tetraciclinas nos dentes decíduos"
         },
         {
           "id": "b",
-          "texto": "efeito antifolato do fármaco, com defeito de fechamento do tubo neural e insuficiência renal secundária"
+          "texto": "efeito antifolato do fármaco, com defeito de fechamento do tubo neural e insuficiência renal secundária à malformação"
         },
         {
           "id": "c",
-          "texto": "bloqueio do sistema renina-angiotensina fetal, com hipoperfusão glomerular, oligúria, oligoidrâmnio, disgenesia tubular renal e hipoplasia pulmonar"
+          "texto": "bloqueio do sistema renina-angiotensina fetal, com hipoperfusão glomerular, oligúria, oligoidrâmnio e disgenesia tubular renal"
         },
         {
           "id": "d",
-          "texto": "disrupção vascular por contração uterina, com infarto renal bilateral"
+          "texto": "disrupção vascular por contração uterina intensa, com infarto renal bilateral e anúria neonatal"
         }
       ],
       "correta": "c",
@@ -857,7 +857,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "A suplementação deve ser iniciada antes da concepção, pelo menos 30 dias antes, na dose habitual de 0,4 mg/dia, elevando-se a 4 a 5 mg/dia em situações de alto risco, como gestação anterior com defeito do tubo neural"
+          "texto": "Deve ser iniciada pelo menos 30 dias antes da concepção, na dose de 0,4 mg/dia, elevada a 4 a 5 mg/dia nas situações de alto risco"
         },
         {
           "id": "b",
@@ -865,11 +865,11 @@
         },
         {
           "id": "c",
-          "texto": "A dose de 4 a 5 mg/dia é a recomendada para todas as gestantes, independentemente do risco"
+          "texto": "A dose de 4 a 5 mg/dia é a recomendada para todas as gestantes brasileiras, independentemente do risco e dos antecedentes"
         },
         {
           "id": "d",
-          "texto": "A fortificação das farinhas de trigo e de milho no Brasil tornou dispensável a suplementação periconcepcional"
+          "texto": "A fortificação das farinhas de trigo e de milho no Brasil tornou dispensável a suplementação periconcepcional individual"
         }
       ],
       "correta": "a",

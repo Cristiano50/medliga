@@ -10,7 +10,7 @@
         1
       ],
       "tamanho": "≈ 0,1–0,15 mm",
-      "descricao": "Célula única e totipotente formada pela fertilização, ainda envolvida pela zona pelúcida. Antes da primeira clivagem, os pronúcleos masculino e feminino se aproximam, os envoltórios nucleares desaparecem e os cromossomos maternos e paternos se organizam no fuso da primeira divisão mitótica.",
+      "descricao": "Célula única e totipotente, ainda envolvida pela zona pelúcida, que vai da fertilização à primeira clivagem (estágio 1 de Carnegie). Os pronúcleos masculino e feminino replicam o DNA e se aproximam; seus envoltórios se desfazem e os cromossomos maternos e paternos se reúnem no fuso da primeira divisão mitótica. A rigor, é nessa reunião que o zigoto se forma: Moore chama de oótide a célula que ainda tem os dois pronúcleos, como a representada aqui.",
       "destaques": [
         "Restabelece o número diploide de cromossomos (46).",
         "O sexo cromossômico é definido pelo espermatozoide (X ou Y).",
@@ -28,7 +28,7 @@
         {
           "id": "zigoto",
           "nome": "Zigoto",
-          "descricao": "Célula diploide resultante da fusão dos gametas; início do desenvolvimento."
+          "descricao": "Célula diploide (46 cromossomos) formada quando os cromossomos maternos e paternos se reúnem na metáfase da primeira mitose; início do desenvolvimento."
         },
         {
           "id": "pronucleo-masculino",
@@ -56,6 +56,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (menores): a descrição passou a dizer que, a rigor, o zigoto se forma quando os cromossomos maternos e paternos se reúnem no fuso (a célula com dois pronúcleos, representada no modelo, é a oótide de Moore), e a estrutura \"Zigoto\" deixou de dizer \"fusão dos gametas\", como em emb-03. Dia 1, Carnegie 1 e 0,1–0,15 mm conferidos."
           }
         ],
         "humano": null
@@ -66,7 +73,7 @@
       "id": "clivagem",
       "ordem": 2,
       "titulo": "Clivagem (4 células)",
-      "dias": "≈ 2 dias após a fertilização",
+      "dias": "≈ 40 horas (2º dia) após a fertilização",
       "diaReferencia": 2,
       "carnegie": [
         2
@@ -103,6 +110,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): dias passou a \"≈ 40 horas (2º dia)\", que é o horário do estágio de 4 blastômeros adotado em emb-04 (Sadler). Carnegie 2, tamanho e textos conferidos."
           }
         ],
         "humano": null
@@ -119,7 +133,7 @@
         2
       ],
       "tamanho": "≈ 0,1–0,2 mm",
-      "descricao": "Esfera compacta de blastômeros (cerca de 12 a 32 células). Após a compactação, por volta do estágio de 8 células, as células internas originarão a massa celular interna e as externas, o trofoblasto. A mórula chega à cavidade uterina por volta do 3º–4º dia.",
+      "descricao": "Esfera compacta de blastômeros (cerca de 12 a 32 células). Após a compactação, por volta do estágio de 8–9 células, as células internas originarão a massa celular interna e as externas, o trofoblasto. A mórula chega à cavidade uterina por volta do 3º–4º dia.",
       "destaques": [
         "Compactação: os blastômeros se achatam e se unem por junções.",
         "Nome vem da semelhança com a amora (latim morus).",
@@ -155,6 +169,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): compactação \"por volta do estágio de 8–9 células\", faixa adotada em emb-04 (8 em Sadler, após 9 em Moore). Dias 3–4, Carnegie 2 e 12–32 blastômeros conferidos."
           }
         ],
         "humano": null
@@ -213,6 +234,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Nada a corrigir. Dias 4–5, eclosão por volta do 5º dia, Carnegie 3, tamanho e destinos de trofoblasto e embrioblasto conferem com emb-04; ids e estruturas preservados."
           }
         ],
         "humano": null
@@ -265,7 +293,7 @@
         {
           "id": "cavidade-amniotica",
           "nome": "Cavidade amniótica",
-          "descricao": "Cavidade que surge no epiblasto; revestida por amnioblastos."
+          "descricao": "Cavidade que surge no epiblasto por volta do dia 8, entre o epiblasto (assoalho) e os amnioblastos (teto)."
         },
         {
           "id": "blastocele",
@@ -288,6 +316,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): a cavidade amniótica fica entre o epiblasto (assoalho) e os amnioblastos (teto), e não \"revestida por amnioblastos\", como em emb-05. Dia 8, Carnegie 5 e tamanho conferidos."
           }
         ],
         "humano": null
@@ -307,8 +342,8 @@
       "tamanho": "≈ 0,2 mm (disco embrionário)",
       "descricao": "Implantação completa. O disco bilaminar está entre a cavidade amniótica (acima do epiblasto) e o saco vitelino (abaixo do hipoblasto). O mesoderma extraembrionário reveste o trofoblasto e envolve âmnio e saco vitelino; o celoma extraembrionário (futura cavidade coriônica) o divide, e o embrião fica suspenso pelo pedículo de conexão. Lacunas no sinciciotrofoblasto se comunicam com sinusoides maternos (circulação uteroplacentária primitiva) e surgem as vilosidades primárias.",
       "destaques": [
-        "Semana dos ‘pares’: 2 camadas do trofoblasto, 2 do disco, 2 cavidades, 2 camadas de mesoderma extraembrionário.",
-        "Placa precordal: espessamento do hipoblasto que marca a futura região cranial.",
+        "“Semana dos dois” (Sadler): 2 camadas do trofoblasto, 2 do disco, 2 cavidades, 2 lâminas de mesoderma extraembrionário.",
+        "Placa precordal: espessamento do hipoblasto que marca a futura região cranial (Moore; Sadler a descreve na 3ª semana).",
         "Vilosidades coriônicas primárias no fim da 2ª semana."
       ],
       "topicos": [
@@ -338,7 +373,7 @@
         {
           "id": "mesoderma-extraembrionario",
           "nome": "Mesoderma extraembrionário",
-          "descricao": "Tecido conjuntivo frouxo entre o trofoblasto e o âmnio/saco vitelino; dividido em camada somática e esplâncnica.",
+          "descricao": "Tecido conjuntivo frouxo entre o citotrofoblasto e o âmnio/saco vitelino; o celoma extraembrionário o divide em lâmina somática e lâmina esplâncnica.",
           "camada": "extraembrionario"
         },
         {
@@ -382,6 +417,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (menores): \"semana dos dois\" atribuída a Sadler (termo de emb-05); placa precordal como espessamento do hipoblasto atribuída a Moore, com a divergência de Sadler; mesoderma extraembrionário situado entre o citotrofoblasto e o âmnio/saco vitelino. Dias 12–13, Carnegie 5–6 e 0,2 mm conferidos."
           }
         ],
         "humano": null
@@ -399,7 +441,7 @@
         7
       ],
       "tamanho": "≈ 0,4 mm (disco embrionário)",
-      "descricao": "Vista dorsal (pela cavidade amniótica, removida) do disco trilaminar. A linha primitiva surge na linha mediana caudal do epiblasto; células do epiblasto migram por ela e formam o endoderma (que substitui o hipoblasto) e o mesoderma intraembrionário. O que permanece no epiblasto passa a ser o ectoderma. A partir do nó primitivo, o processo notocordal cresce em direção cranial até a placa precordal.",
+      "descricao": "Vista dorsal do disco trilaminar, com o âmnio removido. A linha primitiva surge na linha mediana caudal do epiblasto; células do epiblasto migram por ela e formam o endoderma (que substitui o hipoblasto) e o mesoderma intraembrionário. O que permanece no epiblasto passa a ser o ectoderma. A partir do nó primitivo, o processo notocordal cresce em direção cranial até a placa precordal.",
       "destaques": [
         "Todas as três camadas germinativas derivam do epiblasto.",
         "Membrana bucofaríngea (cranial) e cloacal (caudal): ectoderma e endoderma sem mesoderma entre eles.",
@@ -452,12 +494,12 @@
         {
           "id": "membrana-bucofaringea",
           "nome": "Membrana bucofaríngea",
-          "descricao": "Área cranial onde ectoderma e endoderma ficam fundidos, sem mesoderma; futura abertura da boca."
+          "descricao": "Área cranial onde ectoderma e endoderma ficam unidos, sem mesoderma, no local da futura boca; rompe-se no fim da 4ª semana."
         },
         {
           "id": "membrana-cloacal",
           "nome": "Membrana cloacal",
-          "descricao": "Área caudal sem mesoderma entre ectoderma e endoderma; futura região do ânus e do seio urogenital."
+          "descricao": "Área caudal à linha primitiva, sem mesoderma entre ectoderma e endoderma; mais tarde se divide nas membranas anal e urogenital, que se rompem."
         },
         {
           "id": "placa-precordal",
@@ -475,6 +517,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (menores): redação da vista (\"com o âmnio removido\"); membrana cloacal descrita como a que se divide nas membranas anal e urogenital (antes: \"futura região do ânus e do seio urogenital\"); ruptura da membrana bucofaríngea no fim da 4ª semana. Dias 15–17, Carnegie 6–7 e 0,4 mm conferidos com emb-06."
           }
         ],
         "humano": null
@@ -492,7 +541,7 @@
         10
       ],
       "tamanho": "≈ 1,5–3,5 mm",
-      "descricao": "A notocorda induz o ectoderma sobrejacente a formar a placa neural. Suas bordas se elevam como pregas neurais, delimitando o sulco neural; a fusão das pregas começa na região dos futuros 4º a 6º pares de somitos (região cervical) e avança nas direções cranial e caudal. Células da crista neural se destacam das bordas das pregas. Ao lado da notocorda, o mesoderma paraxial se segmenta em somitos; lateralmente ficam o mesoderma intermediário e o lateral, este dividido em somático e esplâncnico pelo celoma intraembrionário.",
+      "descricao": "A notocorda induz o ectoderma sobrejacente a formar a placa neural. Suas bordas se elevam como pregas neurais, delimitando o sulco neural; a fusão das pregas começa na altura do 4º ao 6º par de somitos (futura região cervical) e avança nas direções cranial e caudal. Células da crista neural se destacam das bordas das pregas. Ao lado da notocorda, o mesoderma paraxial se segmenta em somitos; lateralmente ficam o mesoderma intermediário e o lateral, este dividido em somático e esplâncnico pelo celoma intraembrionário.",
       "destaques": [
         "Primeiro par de somitos por volta do 20º dia.",
         "O coração tubular começa a bater por volta do 21º ao 23º dia.",
@@ -534,7 +583,7 @@
         {
           "id": "somitos",
           "nome": "Somitos",
-          "descricao": "Blocos pareados de mesoderma paraxial; originam esclerótomo (vértebras e costelas), miótomo (músculos esqueléticos) e dermátomo (derme do dorso).",
+          "descricao": "Blocos pareados de mesoderma paraxial; originam esclerótomo (vértebras e costelas), miótomo (músculos esqueléticos do dorso, da parede do corpo e dos membros) e dermátomo (derme do dorso).",
           "camada": "mesoderma"
         },
         {
@@ -583,6 +632,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (menor): início dos batimentos cardíacos passou a citar a faixa adotada nos tópicos (21º ao 23º dia) em vez de \"22º–23º\". Demais textos, dias (20–22) e estágios (9–10) conferidos."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (menores): a fusão das pregas começa \"na altura do 4º ao 6º par de somitos (futura região cervical)\" — os somitos já existem, futura é a região; miótomo restrito aos músculos do dorso, da parede do corpo e dos membros (os da cabeça não vêm dos somitos). Dias 20–22, Carnegie 9–10 e 1,5–3,5 mm conferidos."
           }
         ],
         "humano": null
@@ -600,9 +656,9 @@
         13
       ],
       "tamanho": "≈ 3–6 mm (CRL)",
-      "descricao": "Após o dobramento cefalocaudal e lateral, o embrião tem forma de C. Os neuroporos cranial (≈ dia 25) e caudal (≈ dia 28) se fecham. Aparecem os arcos faríngeos, a proeminência cardíaca, os placoides ótico e do cristalino e os brotos dos membros superiores (≈ dia 26) e inferiores (≈ dia 28). A eminência caudal ainda está presente.",
+      "descricao": "Após o dobramento cefalocaudal e lateral, o embrião tem forma de C. Os neuroporos cranial (≈ dia 25) e caudal (≈ dia 28) se fecham. São visíveis os arcos faríngeos (quatro pares no fim da semana), a proeminência cardíaca, as fossetas óticas (que se fecham em vesículas), os placoides do cristalino e os brotos dos membros superiores (≈ dias 26–27) e inferiores (≈ dia 28). A eminência caudal ainda está presente.",
       "destaques": [
-        "Fechamento dos neuroporos: falhas causam anencefalia (cranial) ou espinha bífida (caudal).",
+        "Fechamento dos neuroporos: falhas causam anencefalia (cranial) ou espinha bífida aberta (caudal).",
         "Somitos visíveis como saliências ao longo do dorso.",
         "Brotos dos membros superiores surgem antes dos inferiores."
       ],
@@ -622,8 +678,8 @@
         },
         {
           "id": "placoide-otico",
-          "nome": "Placoide/fosseta ótica",
-          "descricao": "Espessamento do ectoderma superficial que forma a vesícula ótica (orelha interna).",
+          "nome": "Fosseta/vesícula ótica",
+          "descricao": "Placoide ótico (espessamento do ectoderma superficial ao lado do rombencéfalo) já invaginado: a fosseta ótica se fecha em vesícula ótica, que origina o labirinto membranáceo da orelha interna.",
           "camada": "ectoderma"
         },
         {
@@ -655,7 +711,7 @@
         {
           "id": "cordao-umbilical",
           "nome": "Cordão umbilical (região de inserção)",
-          "descricao": "Liga o embrião à placenta; contém vasos umbilicais."
+          "descricao": "Forma-se a partir do pedículo de conexão e do ducto vitelino, revestido pelo âmnio; liga o embrião ao córion (futura placenta) e contém os vasos umbilicais."
         },
         {
           "id": "proeminencia-hepatica",
@@ -673,6 +729,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (1 importante, 2 menores). Importante: nos dias 26–28 o placoide ótico já está invaginado (fossetas óticas no estágio 11–12 e vesículas no 13, segundo emb-07); a descrição dizia que os placoides \"aparecem\" e a estrutura passou a se chamar \"Fosseta/vesícula ótica\" (id mantido). Menores: cordão umbilical formado do pedículo de conexão e do ducto vitelino, ligado ao córion (futura placenta); \"espinha bífida aberta\". Brotos superiores ≈ dias 26–27, como em emb-07."
           }
         ],
         "humano": null
@@ -690,7 +753,7 @@
         16
       ],
       "tamanho": "≈ 7–11 mm (CRL)",
-      "descricao": "A cabeça cresce muito por causa do encéfalo. As mãos são placas com raios digitais; os pés ainda são placas. O olho tem pigmento retiniano e as saliências auriculares formam o pavilhão. O intestino médio hernia para o cordão umbilical (herniação umbilical fisiológica), por falta de espaço no abdome ocupado pelo fígado e pelos rins.",
+      "descricao": "A cabeça cresce muito por causa do encéfalo. As mãos são placas com raios digitais; os pés ainda são placas. O olho tem pigmento retiniano e surgem as saliências auriculares, que formarão o pavilhão. O intestino médio hernia para o cordão umbilical (herniação umbilical fisiológica), por falta de espaço no abdome ocupado pelo fígado e pelos rins.",
       "destaques": [
         "Herniação umbilical fisiológica começa na 6ª semana.",
         "Raios digitais nas placas das mãos.",
@@ -718,7 +781,7 @@
         {
           "id": "pavilhao-auricular",
           "nome": "Saliências auriculares",
-          "descricao": "Seis saliências ao redor do primeiro sulco faríngeo que formam o pavilhão da orelha."
+          "descricao": "Seis saliências ao redor do 1º sulco faríngeo (três do 1º e três do 2º arco, na descrição clássica) que formarão o pavilhão da orelha."
         },
         {
           "id": "herniacao-umbilical-fisiologica",
@@ -746,6 +809,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (crítica): o estágio rotulado \"6ª semana\" trazia os números da 7ª — Carnegie 17, 41–44 dias e CCN 11–14 mm —, contradizendo emb-07, que atribui o estágio 17 (42–44 dias; 11–14 mm) à 7ª semana. Corrigido para Carnegie 15–16, 35–42 dias, CCN 7–11 mm e diaReferencia 40, que é o que a descrição do estágio mostra (placas das mãos com raios digitais, placas dos pés, pigmento retiniano, saliências auriculares). Ids e estruturas inalterados."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (menores): as saliências auriculares surgem na 6ª semana e \"formarão\" o pavilhão (emb-07 põe o contorno do pavilhão no estágio 17, 7ª semana); a estrutura passou a citar a origem clássica (três saliências do 1º e três do 2º arco). Dias 35–42, Carnegie 15–16 e 7–11 mm conferidos com emb-07."
           }
         ],
         "humano": null
@@ -762,7 +832,7 @@
         23
       ],
       "tamanho": "≈ 27–31 mm (CRL)",
-      "descricao": "O embrião tem aspecto claramente humano. Dedos das mãos e dos pés separados, pálpebras presentes (fechando-se), pavilhões auriculares com forma definitiva mas ainda em posição baixa, cabeça arredondada correspondendo a quase metade do comprimento. A eminência caudal desapareceu. O intestino ainda está no cordão umbilical.",
+      "descricao": "O embrião tem aspecto claramente humano. Dedos das mãos e dos pés separados, pálpebras presentes (fechando-se), pavilhões auriculares começando a assumir a forma definitiva, mas ainda de implantação baixa, cabeça arredondada correspondendo a quase metade do comprimento. A eminência caudal desapareceu. O intestino ainda está no cordão umbilical.",
       "destaques": [
         "Fim do período embrionário: todos os principais sistemas já começaram a se formar.",
         "Período de maior sensibilidade a teratógenos se encerra (semanas 3–8).",
@@ -781,7 +851,7 @@
         {
           "id": "pavilhao-auricular",
           "nome": "Pavilhão auricular",
-          "descricao": "Forma final, ainda baixo na cabeça."
+          "descricao": "Começa a assumir a forma definitiva, mas ainda tem implantação baixa; chega à posição definitiva no período fetal."
         },
         {
           "id": "dedos",
@@ -809,6 +879,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção (menor): as pálpebras \"crescem e se fundem por volta do fim do período embrionário\" passou a \"começam a se unir no fim do período embrionário e permanecem fundidas até se reabrirem por volta da 26ª semana\", para não contradizer emb-08 (fusão na 9ª–10ª semana, reabertura ~26ª semana)."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (importante), em dois campos: no fim da 8ª semana os pavilhões auriculares \"começam a assumir\" a forma definitiva e ainda têm implantação baixa (emb-08 ainda os descreve baixos na 9ª–12ª semana); antes o texto dizia \"forma definitiva/forma final\". Dia 56, Carnegie 23 e 27–31 mm conferidos."
           }
         ],
         "humano": null
@@ -826,7 +903,7 @@
       "destaques": [
         "Placenta = cório frondoso (fetal) + decídua basal (materna).",
         "Cordão umbilical: 2 artérias (sangue pouco oxigenado) e 1 veia (sangue oxigenado).",
-        "Âmnio e cório se fundem e obliteram a cavidade coriônica."
+        "A expansão do âmnio oblitera a cavidade coriônica, e o âmnio adere ao cório (membrana amniocoriônica)."
       ],
       "topicos": [
         "emb-09-placenta-membranas"
@@ -893,6 +970,13 @@
             "data": "2026-11-09",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 correções (menores): a descrição e a estrutura da decídua capsular passaram a dizer que ela degenera e que é o cório liso que se funde à decídua parietal, como em emb-09 (antes dava a entender que a própria capsular encostava na parietal e persistia)."
+          },
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): é a expansão do âmnio que oblitera a cavidade coriônica, e o âmnio adere ao cório (emb-09); antes, \"âmnio e cório se fundem e obliteram\". Demais textos conferidos; ver no relatório a divergência Moore × Sadler sobre a decídua capsular."
           }
         ],
         "humano": null
@@ -909,11 +993,11 @@
       "carnegie": [
         10
       ],
-      "descricao": "Os tubos endocárdicos, derivados da área cardiogênica (mesoderma esplâncnico), fundem-se num tubo cardíaco único, suspenso na cavidade pericárdica pelo mesocárdio dorsal. Do polo arterial (cranial) para o venoso (caudal): tronco arterial, bulbo cardíaco, ventrículo primitivo, átrio primitivo e seio venoso, cujos cornos recebem as veias vitelinas, umbilicais e cardinais comuns. Vista ventral.",
+      "descricao": "Os tubos endocárdicos, formados na área cardiogênica (campo cardíaco primário, no mesoderma esplâncnico), fundem-se com o dobramento lateral num tubo cardíaco único, suspenso na cavidade pericárdica pelo mesocárdio dorsal. Do polo arterial (cranial) para o venoso (caudal): tronco arterial, bulbo cardíaco, ventrículo primitivo, átrio primitivo e seio venoso; os dois polos se alongam com células do campo cardíaco secundário. Esquema em vista ventral: os cornos do seio venoso já aparecem recebendo as veias vitelinas, umbilicais e cardinais comuns, ligação que se completa em meados da 4ª semana.",
       "destaques": [
         "Polo arterial cranial (tronco arterial) e polo venoso caudal (seio venoso).",
-        "O mesocárdio dorsal degenera e deixa o seio pericárdico transverso.",
-        "Cada corno do seio venoso recebe três veias: vitelina, umbilical e cardinal comum."
+        "A parte central do mesocárdio dorsal degenera e deixa o seio transverso do pericárdio.",
+        "Em meados da 4ª semana, cada corno do seio venoso recebe três veias: vitelina, umbilical e cardinal comum."
       ],
       "topicos": [
         "emb-13-cardiovascular",
@@ -923,7 +1007,7 @@
         {
           "id": "seio-venoso",
           "nome": "Seio venoso",
-          "descricao": "Câmara de entrada caudal do tubo. O corno direito é incorporado ao átrio direito (parte lisa); o esquerdo forma o seio coronário."
+          "descricao": "Câmara de entrada caudal do tubo, com cornos direito e esquerdo. O corno direito incorpora-se ao átrio direito (parte lisa, o seio das veias cavas); o esquerdo forma o seio coronário (e a veia oblíqua do átrio esquerdo)."
         },
         {
           "id": "atrio-primitivo",
@@ -933,32 +1017,32 @@
         {
           "id": "ventriculo-primitivo",
           "nome": "Ventrículo primitivo",
-          "descricao": "Origina a maior parte do ventrículo esquerdo."
+          "descricao": "Origina a parte trabeculada do ventrículo esquerdo, a maior parte dessa câmara."
         },
         {
           "id": "bulbo-cardiaco",
           "nome": "Bulbo cardíaco",
-          "descricao": "A parte proximal forma a porção trabeculada do ventrículo direito; o cone arterial forma as vias de saída dos dois ventrículos."
+          "descricao": "A parte proximal forma a porção trabeculada do ventrículo direito; a parte média (cone) forma as vias de saída dos dois ventrículos: o cone arterial (infundíbulo) do direito e o vestíbulo da aorta do esquerdo."
         },
         {
           "id": "tronco-arterial",
           "nome": "Tronco arterial",
-          "descricao": "Parte distal da via de saída; será dividido pelo septo aorticopulmonar em raiz da aorta e tronco pulmonar."
+          "descricao": "Parte distal da via de saída, contínua com o saco aórtico; o septo aorticopulmonar (conotruncal) o divide nas raízes e partes proximais da aorta e do tronco pulmonar."
         },
         {
           "id": "saco-aortico",
           "nome": "Saco aórtico",
-          "descricao": "Dilatação cranial ao tronco arterial, de onde partem as artérias dos arcos aórticos."
+          "descricao": "Dilatação cranial ao tronco arterial, de onde partem as artérias dos arcos aórticos; contribui para a parte proximal do arco da aorta e para o tronco braquiocefálico."
         },
         {
           "id": "arcos-aorticos",
           "nome": "Artérias dos arcos aórticos",
-          "descricao": "Artérias que percorrem os arcos faríngeos, do saco aórtico às aortas dorsais."
+          "descricao": "Artérias que percorrem os arcos faríngeos, do saco aórtico às aortas dorsais; surgem em sequência craniocaudal e não existem todas ao mesmo tempo (aqui, o 1º par)."
         },
         {
           "id": "mesocardio-dorsal",
           "nome": "Mesocárdio dorsal",
-          "descricao": "Prega que prende o tubo cardíaco à parede dorsal da cavidade pericárdica; degenera e deixa o seio pericárdico transverso."
+          "descricao": "Prega que prende o tubo cardíaco à parede dorsal da cavidade pericárdica; sua parte central degenera e deixa o seio transverso do pericárdio."
         },
         {
           "id": "cavidade-pericardica",
@@ -968,23 +1052,31 @@
         {
           "id": "veias-vitelinas",
           "nome": "Veias vitelinas (onfalomesentéricas)",
-          "descricao": "Trazem sangue do saco vitelino; originam os sinusoides hepáticos, o sistema porta e a porção hepática da veia cava inferior."
+          "descricao": "Trazem sangue do saco vitelino e atravessam o septo transverso; originam os sinusoides hepáticos, a veia porta, a veia mesentérica superior e a porção hepática da veia cava inferior."
         },
         {
           "id": "veias-umbilicais",
           "nome": "Veias umbilicais",
-          "descricao": "Trazem sangue oxigenado da placenta. A direita regride; a esquerda persiste até o nascimento e depois forma o ligamento redondo do fígado."
+          "descricao": "Trazem sangue oxigenado do córion (futura placenta). A direita regride; a esquerda persiste até o nascimento e depois forma o ligamento redondo do fígado."
         },
         {
           "id": "veias-cardinais",
           "nome": "Veias cardinais comuns",
-          "descricao": "Drenam o corpo do embrião (cardinais anteriores e posteriores) para os cornos do seio venoso; a comum direita contribui para a veia cava superior."
+          "descricao": "Troncos curtos formados pela união das veias cardinais anteriores e posteriores, que drenam o corpo do embrião; desembocam nos cornos do seio venoso. A veia cava superior forma-se da cardinal anterior direita e da cardinal comum direita."
         }
       ],
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "12 correções (2 importantes, 10 menores). Importantes: (1) a ligação das veias vitelinas, umbilicais e cardinais comuns aos cornos do seio venoso se completa em meados da 4ª semana (Sadler), e não no dia 22 — o texto agora diz que o modelo é um esquema que antecipa essa ligação; (2) bulbo cardíaco: \"cone arterial\" é o nome anatômico do infundíbulo do VD e não pode designar as vias de saída dos dois ventrículos — passou a \"parte média (cone)… cone arterial do VD e vestíbulo da aorta do VE\". Menores: campo cardíaco secundário nos polos; seio transverso do pericárdio (parte central do mesocárdio); seio venoso, ventrículo, tronco, saco aórtico, arcos aórticos e veias detalhados e alinhados a emb-13. Dia 22 e Carnegie 10 conferidos."
+          }
+        ],
         "humano": null
       }
     },
@@ -995,12 +1087,16 @@
       "titulo": "Alça cardíaca",
       "dias": "≈ 23–28 dias após a fertilização",
       "diaReferencia": 28,
-      "carnegie": [],
-      "descricao": "O tubo cardíaco cresce mais que a cavidade pericárdica e se dobra para a direita (alça em D). A porção cefálica (bulbo cardíaco) desloca-se ventral e caudalmente e para a direita; a porção caudal (átrio e seio venoso) passa a ocupar posição dorsal e cranial. O ventrículo primitivo fica à esquerda, separado do bulbo pelo sulco bulboventricular. Vista ventral: o lado esquerdo do embrião aparece à direita da tela.",
+      "carnegie": [
+        11,
+        12,
+        13
+      ],
+      "descricao": "Entre os dias 23 e 28, o tubo cardíaco cresce mais que a cavidade pericárdica e se dobra para a direita (alça em D). A porção cefálica (bulbo cardíaco) desloca-se ventral e caudalmente e para a direita; o ventrículo primitivo, para a esquerda; a porção caudal (átrio e seio venoso), dorsal e cranialmente e para a esquerda, até ficar atrás e acima dos ventrículos. O ventrículo primitivo, à esquerda, fica separado do bulbo, à direita, pelo sulco bulboventricular. Vista ventral: o lado esquerdo do embrião aparece à direita da tela.",
       "destaques": [
         "Dobramento para a direita (alça em D), concluído por volta do 28º dia.",
         "Átrio e seio venoso passam a ficar atrás (dorsais) e acima dos ventrículos.",
-        "Alterações da lateralidade da alça associam-se à dextrocardia e a outros defeitos de lateralidade."
+        "A alça para a esquerda (alça em L) pode causar dextrocardia; alterações da lateralidade associam-se também a outros defeitos (heterotaxia)."
       ],
       "topicos": [
         "emb-13-cardiovascular"
@@ -1014,12 +1110,12 @@
         {
           "id": "atrio-primitivo",
           "nome": "Átrio primitivo",
-          "descricao": "Desloca-se dorsal e cranialmente, acima dos ventrículos."
+          "descricao": "Desloca-se dorsal e cranialmente (e um pouco para a esquerda), ficando atrás e acima dos ventrículos."
         },
         {
           "id": "ventriculo-primitivo",
           "nome": "Ventrículo primitivo",
-          "descricao": "Fica à esquerda após o dobramento; futuro ventrículo esquerdo."
+          "descricao": "Fica à esquerda após o dobramento; origina a parte trabeculada do ventrículo esquerdo."
         },
         {
           "id": "bulbo-cardiaco",
@@ -1045,7 +1141,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "5 correções (menores): Carnegie preenchido (11–13, dias 23–28 pela tabela de emb-07); a porção atrial desloca-se dorsocranialmente e para a esquerda, e o ventrículo primitivo para a esquerda (Sadler; emb-13); dextrocardia ligada à alça em L (\"pode causar\", como em emb-13); átrio e ventrículo com destinos alinhados a emb-13 (parte trabeculada do VE). Alça em D, posição final das câmaras e orientação da vista ventral conferidas."
+          }
+        ],
         "humano": null
       }
     },
@@ -1054,12 +1158,15 @@
       "grupo": "sistemas",
       "ordem": 103,
       "titulo": "Aparelho faríngeo",
-      "dias": "4ª–5ª semana após a fertilização",
+      "dias": "≈ 28–32 dias após a fertilização (fim da 4ª–início da 5ª semana)",
       "diaReferencia": 32,
-      "carnegie": [],
-      "descricao": "Bloco da parede lateral da faringe primitiva, antes de o 2º arco crescer sobre os seguintes. Cada arco faríngeo é um eixo de mesênquima (mesoderma e crista neural) revestido por ectoderma por fora e endoderma por dentro, com uma artéria do arco aórtico (vermelho), um nervo craniano (amarelo) e uma cartilagem (cinza-azulado). Entre os arcos ficam, por fora, os sulcos (ectoderma) e, por dentro, as bolsas (endoderma); onde se encontram, as membranas faríngeas.",
+      "carnegie": [
+        13,
+        14
+      ],
+      "descricao": "Bloco da parede lateral da faringe primitiva, com quatro pares de arcos visíveis, antes de o 2º arco crescer sobre os seguintes. Cada arco faríngeo é um eixo de mesênquima (mesoderma e crista neural) revestido por ectoderma por fora e endoderma por dentro, com uma artéria do arco aórtico, um nervo craniano, uma cartilagem e um componente muscular. No modelo: artérias em vermelho, nervos em amarelo e, no 1º e no 2º arcos, cartilagens em cinza-azulado. Entre os arcos ficam, por fora, os sulcos (ectoderma) e, por dentro, as bolsas (endoderma); onde se encontram, com pouco mesênquima entre eles, as membranas faríngeas. O 5º arco é rudimentar ou ausente, e o 6º não está representado.",
       "destaques": [
-        "Nervos: 1º arco, trigêmeo (V); 2º, facial (VII); 3º, glossofaríngeo (IX); 4º, vago (X, ramo laríngeo superior). O 6º arco recebe o laríngeo recorrente.",
+        "Nervos: 1º arco, trigêmeo (V; motor pelo V3); 2º, facial (VII); 3º, glossofaríngeo (IX); 4º, vago (X: ramo laríngeo superior, o citado nos livros-texto, e ramo faríngeo). O 6º arco recebe o laríngeo recorrente (X).",
         "Bolsas: 1ª, cavidade timpânica e tuba auditiva; 2ª, tonsila palatina; 3ª, timo e paratireoides inferiores; 4ª, paratireoides superiores e corpo ultimofaríngeo.",
         "Só o 1º sulco persiste (meato acústico externo) e só a 1ª membrana (membrana timpânica)."
       ],
@@ -1074,8 +1181,8 @@
         },
         {
           "id": "arco-faringeo-2",
-          "nome": "2º arco faríngeo (hioide)",
-          "descricao": "Origina os músculos da expressão facial, o estapédio, o estilo-hióideo e o ventre posterior do digástrico; nervo facial. Cresce sobre os arcos seguintes e forma o seio cervical."
+          "nome": "2º arco faríngeo (hióideo)",
+          "descricao": "Origina os músculos da expressão facial, o estapédio, o estilo-hióideo e o ventre posterior do digástrico; nervo facial. Cresce caudalmente sobre o 3º e o 4º arcos e encerra os sulcos seguintes no seio cervical, que normalmente desaparece."
         },
         {
           "id": "arco-faringeo-3",
@@ -1085,7 +1192,7 @@
         {
           "id": "arco-faringeo-4",
           "nome": "4º arco faríngeo",
-          "descricao": "Com o 6º arco, origina as cartilagens da laringe; músculos cricotireóideo, levantador do véu palatino e constritores da faringe; ramo laríngeo superior do vago."
+          "descricao": "Com o 6º arco, origina as cartilagens da laringe, exceto a epiglote; músculos cricotireóideo, levantador do véu palatino e constritores da faringe; nervo vago (ramos laríngeo superior e faríngeo)."
         },
         {
           "id": "bolsa-faringea-1",
@@ -1100,12 +1207,12 @@
         {
           "id": "bolsa-faringea-3",
           "nome": "3ª bolsa faríngea",
-          "descricao": "Parte dorsal: paratireoides inferiores; parte ventral: timo."
+          "descricao": "Parte dorsal: paratireoides inferiores; parte ventral: timo. Ambos migram caudalmente, e por isso a paratireoide da 3ª bolsa termina abaixo da que vem da 4ª."
         },
         {
           "id": "bolsa-faringea-4",
           "nome": "4ª bolsa faríngea",
-          "descricao": "Paratireoides superiores e corpo ultimofaríngeo, que se incorpora à tireoide."
+          "descricao": "Parte dorsal: paratireoides superiores; parte ventral: corpo ultimofaríngeo (para Sadler, de uma 5ª bolsa considerada parte da 4ª), que se incorpora à tireoide e origina as células parafoliculares (C)."
         },
         {
           "id": "sulco-faringeo-1",
@@ -1125,17 +1232,17 @@
         {
           "id": "membranas-faringeas",
           "nome": "Membranas faríngeas",
-          "descricao": "Pontos de contato entre o ectoderma dos sulcos e o endoderma das bolsas; só a 1ª persiste, como membrana timpânica."
+          "descricao": "Regiões em que o ectoderma de um sulco e o endoderma de uma bolsa se aproximam, com pouco mesênquima entre eles; só a 1ª persiste, formando a membrana timpânica."
         },
         {
           "id": "arcos-aorticos",
           "nome": "Artérias dos arcos aórticos",
-          "descricao": "Uma em cada arco, do saco aórtico às aortas dorsais. 3º: carótidas comuns e início das internas; 4º: parte do arco da aorta (esquerda) e porção proximal da subclávia direita; 6º: artérias pulmonares e ducto arterioso."
+          "descricao": "Uma em cada arco, do saco aórtico às aortas dorsais; surgem em sequência craniocaudal e não existem todas ao mesmo tempo. 1º e 2º: regridem quase totalmente (restos: parte da artéria maxilar; artérias hióidea e estapédia). 3º: carótidas comuns e parte proximal das internas. 4º: à esquerda, parte do arco da aorta; à direita, parte proximal da subclávia direita. 6º: partes proximais das artérias pulmonares e, só à esquerda, o ducto arterioso."
         },
         {
           "id": "nervo-trigemeo",
           "nome": "Nervo trigêmeo (V) — 1º arco",
-          "descricao": "Os ramos maxilar e mandibular inervam os derivados do 1º arco."
+          "descricao": "O ramo mandibular (V3) é o nervo motor dos músculos do 1º arco; os ramos maxilar (V2) e mandibular (V3) dão a sensibilidade da pele e da mucosa derivadas dele."
         },
         {
           "id": "nervo-facial",
@@ -1150,12 +1257,12 @@
         {
           "id": "nervo-vago",
           "nome": "Nervo vago (X) — 4º arco",
-          "descricao": "O ramo laríngeo superior inerva os derivados do 4º arco; o laríngeo recorrente, os do 6º."
+          "descricao": "Nervo do 4º e do 6º arcos. No 4º, o ramo laríngeo superior (o citado nos livros-texto) inerva o cricotireóideo, e o ramo faríngeo, os constritores da faringe e o levantador do véu palatino; no 6º, o laríngeo recorrente inerva os músculos intrínsecos da laringe, exceto o cricotireóideo."
         },
         {
           "id": "cartilagem-de-meckel",
           "nome": "Cartilagem de Meckel — 1º arco",
-          "descricao": "Origina o martelo, a bigorna e o ligamento esfenomandibular; a mandíbula se forma por ossificação intramembranosa ao redor dela."
+          "descricao": "Sua extremidade dorsal origina o martelo e a bigorna; seu pericôndrio, o ligamento anterior do martelo e o ligamento esfenomandibular. A mandíbula se forma por ossificação intramembranosa ao redor dela, e o restante da cartilagem desaparece."
         },
         {
           "id": "cartilagem-de-reichert",
@@ -1171,7 +1278,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia/anatomia",
+            "agente": "revisor-estagios-3d-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "12 correções (3 importantes, 9 menores). Importantes: (1) nervo do 4º arco — o laríngeo superior inerva o cricotireóideo; constritores e levantador do véu palatino recebem o ramo faríngeo do vago (como já diz emb-12); corrigido no destaque, no 4º arco e no nervo vago; (2) cartilagens da laringe dos 4º/6º arcos \"exceto a epiglote\"; (3) artérias dos arcos: ducto arterioso só à esquerda, só as partes proximais das pulmonares vêm do 6º, 1º/2º regridem e as artérias não coexistem. Menores: dias/Carnegie (≈ 28–32 dias, estágios 13–14), descrição ajustada ao que o modelo mostra (cartilagens só no 1º e 2º arcos; 6º não representado), \"arco hióideo\", seio cervical, migração da 3ª bolsa, 4ª bolsa (células C; 5ª bolsa de Sadler), membranas com mesênquima, V3 motor, derivados do pericôndrio de Meckel."
+          }
+        ],
         "humano": null
       }
     }

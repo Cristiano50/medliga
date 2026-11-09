@@ -562,19 +562,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Inibição da sinalização de BMP4 por fatores como noggin, cordina e folistatina, secretados pelo nó primitivo, pela notocorda e pelo mesoderma precordal"
+          "texto": "Inibição da sinalização de BMP4 por noggin, cordina e folistatina, secretados pelo nó primitivo e pela notocorda"
         },
         {
           "id": "b",
-          "texto": "Aumento da sinalização de BMP4 no ectoderma situado sobre a notocorda"
+          "texto": "Aumento da sinalização de BMP4 no ectoderma situado sobre a notocorda, por secreção do nó primitivo"
         },
         {
           "id": "c",
-          "texto": "hCG secretada pelo sinciciotrofoblasto"
+          "texto": "hCG secretada pelo sinciciotrofoblasto, que atinge o disco embrionário pela circulação uteroplacentária"
         },
         {
           "id": "d",
-          "texto": "Contato direto entre ectoderma e endoderma na membrana bucofaríngea"
+          "texto": "Contato direto entre ectoderma e endoderma na membrana bucofaríngea, que funciona como centro indutor"
         }
       ],
       "correta": "a",
@@ -595,7 +595,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "No neuroporo cranial e avança apenas caudalmente"
+          "texto": "Na altura do neuroporo cranial, de onde avança apenas em direção caudal, como um zíper"
         },
         {
           "id": "b",
@@ -603,11 +603,11 @@
         },
         {
           "id": "c",
-          "texto": "Na extremidade caudal e avança apenas cranialmente"
+          "texto": "Na extremidade caudal do embrião, de onde avança apenas em direção cranial, como um zíper"
         },
         {
           "id": "d",
-          "texto": "Simultaneamente em todo o comprimento das pregas"
+          "texto": "Simultaneamente em todo o comprimento das pregas neurais, sem direção preferencial"
         }
       ],
       "correta": "b",
@@ -664,19 +664,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O músculo liso e o tecido conjuntivo da parede do tubo intestinal e a serosa visceral"
+          "texto": "O músculo liso da parede do tubo intestinal e a serosa visceral"
         },
         {
           "id": "b",
-          "texto": "A parede corporal lateral e ventral e a serosa parietal"
+          "texto": "A parede corporal lateral e ventral, com a serosa parietal que a reveste"
         },
         {
           "id": "c",
-          "texto": "As vértebras e as costelas"
+          "texto": "As vértebras e as costelas, a partir do esclerótomo"
         },
         {
           "id": "d",
-          "texto": "Os rins definitivos"
+          "texto": "Os rins definitivos e os ductos genitais"
         }
       ],
       "correta": "a",
@@ -697,11 +697,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Falha de fechamento do neuroporo caudal"
+          "texto": "Falha de fechamento do neuroporo caudal na 4ª semana"
         },
         {
           "id": "b",
-          "texto": "Restos da notocorda"
+          "texto": "Restos da notocorda na região sacrococcígea"
         },
         {
           "id": "c",
@@ -709,7 +709,7 @@
         },
         {
           "id": "d",
-          "texto": "Persistência da membrana cloacal"
+          "texto": "Persistência da membrana cloacal na região caudal"
         }
       ],
       "correta": "c",
@@ -731,7 +731,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Falha de fusão das pregas neurais na região do neuroporo caudal"
+          "texto": "Falha de fusão das pregas neurais na região do neuroporo caudal, na 4ª semana"
         },
         {
           "id": "b",
@@ -739,11 +739,11 @@
         },
         {
           "id": "c",
-          "texto": "Persistência excessiva de células pluripotentes da linha primitiva"
+          "texto": "Persistência excessiva de células pluripotentes da linha primitiva na região caudal"
         },
         {
           "id": "d",
-          "texto": "Bandas amnióticas por ruptura precoce do âmnio"
+          "texto": "Bandas amnióticas por ruptura precoce do âmnio no início da gestação"
         }
       ],
       "correta": "b",
@@ -801,19 +801,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Disfunção dos cílios do nó primitivo, que normalmente geram fluxo para a esquerda e desencadeiam a expressão de NODAL e PITX2 no lado esquerdo"
+          "texto": "Disfunção dos cílios do nó primitivo, que geram o fluxo para a esquerda e ativam a cascata NODAL/PITX2"
         },
         {
           "id": "b",
-          "texto": "Falha na migração das células da crista neural cardíaca para o trato de saída"
+          "texto": "Falha na migração das células da crista neural cardíaca para o trato de saída em formação"
         },
         {
           "id": "c",
-          "texto": "Ausência de notocorda, impedindo a indução da placa neural"
+          "texto": "Ausência de notocorda, impedindo a indução da placa neural e a formação dos eixos"
         },
         {
           "id": "d",
-          "texto": "Fusão anormal das pregas neurais na região cervical"
+          "texto": "Fusão anormal das pregas neurais na região cervical, com desvio dos eixos"
         }
       ],
       "correta": "a",
@@ -867,11 +867,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Revestimento externo de sinciciotrofoblasto"
+          "texto": "Revestimento externo de sinciciotrofoblasto em toda a superfície"
         },
         {
           "id": "b",
-          "texto": "Presença de um eixo de mesoderma extraembrionário"
+          "texto": "Presença de um eixo central de mesoderma extraembrionário"
         },
         {
           "id": "c",
@@ -879,7 +879,7 @@
         },
         {
           "id": "d",
-          "texto": "Camada de citotrofoblasto sob o sincício"
+          "texto": "Camada de citotrofoblasto logo abaixo do sinciciotrofoblasto"
         }
       ],
       "correta": "c",
