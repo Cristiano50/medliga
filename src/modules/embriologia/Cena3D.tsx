@@ -1,11 +1,11 @@
-import { Suspense, useEffect, useMemo } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 import { CenaProvider, Tocavel, type EstadoDestaque } from './tres/nucleo.tsx';
 import { MODELOS } from './modelos/index.ts';
-import { RotulosProvider } from './tres/rotulos.tsx';
+import { CamadaMarcadores, RotulosProvider, type QuadroMarcadores } from './tres/rotulos.tsx';
 
 function Corte({ posicao }: { posicao: number | null }) {
   const { gl, invalidate } = useThree();
@@ -62,6 +62,7 @@ export interface Cena3DProps {
 export function Cena3D(p: Cena3DProps) {
   const modelo = MODELOS[p.estagioId];
   const Componente = modelo?.Componente;
+  const [quadro, setQuadro] = useState<QuadroMarcadores>({ pontos: [], largura: 0, altura: 0 });
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
       <Canvas
@@ -92,7 +93,7 @@ export function Cena3D(p: Cena3DProps) {
           }}
         >
           <Suspense fallback={null}>
-            <RotulosProvider key={p.estagioId}>
+            <RotulosProvider key={p.estagioId} onQuadro={setQuadro}>
               <Tocavel>{Componente && <Componente />}</Tocavel>
             </RotulosProvider>
           </Suspense>
@@ -101,6 +102,7 @@ export function Cena3D(p: Cena3DProps) {
         <Camera estagioId={p.estagioId} versao={p.versaoCamera ?? 0} />
         <Corte posicao={p.modoJogo ? null : p.corte ?? null} />
       </Canvas>
+      <CamadaMarcadores quadro={quadro} />
     </div>
   );
 }

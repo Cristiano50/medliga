@@ -1,10 +1,10 @@
 // Embriões das semanas 4, 6 e 8 — vista lateral esquemática (lado ventral voltado para a esquerda, −x).
 import { useEffect, useMemo } from 'react';
 import * as THREE from 'three';
-import { Html } from '@react-three/drei';
 import { Malha, Parte, useCena } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
 import { salienciasAuriculares, superficieEmbriao } from './superficie-embriao.ts';
+import { TextoAncorado } from '../tres/rotulos.tsx';
 
 type V3 = [number, number, number];
 const v3 = (v: THREE.Vector3): V3 => [v.x, v.y, v.z];
@@ -63,12 +63,8 @@ function OrientacaoEmbriao({ cranial, caudal }: { cranial: V3; caudal: V3 }) {
   const { modoJogo, isolado, ocultos, corte } = useCena();
   if (modoJogo || isolado || corte != null || ocultos?.some((id) => id === 'corpo' || id === 'eminencia-caudal')) return null;
   return <>
-    <Html position={cranial} center style={{ pointerEvents: 'none' }} zIndexRange={[3, 0]}>
-      <span className="orientacao3d">Cranial</span>
-    </Html>
-    <Html position={caudal} center style={{ pointerEvents: 'none' }} zIndexRange={[3, 0]}>
-      <span className="orientacao3d">Caudal</span>
-    </Html>
+    <TextoAncorado id="orientacao-cranial" posicao={cranial} texto="Cranial" />
+    <TextoAncorado id="orientacao-caudal" posicao={caudal} texto="Caudal" />
   </>;
 }
 

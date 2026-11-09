@@ -1,0 +1,695 @@
+{
+  "id": "his-10-nervoso",
+  "disciplina": "histologia",
+  "ordem": 10,
+  "titulo": "Tecido nervoso",
+  "subtitulo": "Neurônios, neuroglia, mielina, nervos periféricos e gânglios",
+  "objetivos": [
+    "Descrever o neurônio (corpo celular, corpúsculos de Nissl, dendritos, cone de implantação e axônio) e reconhecê-lo em cortes corados por HE.",
+    "Classificar os neurônios em multipolares, bipolares e pseudounipolares, com exemplos.",
+    "Diferenciar sinapses químicas e elétricas em nível histológico.",
+    "Descrever as células da glia do SNC (astrócitos, oligodendrócitos, micróglia, células ependimárias) e do SNP (células de Schwann e células satélites), com suas funções.",
+    "Explicar a formação da bainha de mielina, os nós de Ranvier e a condução saltatória.",
+    "Comparar substância cinzenta e branca e descrever a organização do nervo periférico (epineuro, perineuro, endoneuro).",
+    "Diferenciar gânglios sensitivos de gânglios autônomos.",
+    "Descrever a degeneração walleriana e explicar por que a regeneração é possível no SNP e limitada no SNC, correlacionando com esclerose múltipla, Guillain-Barré, gliomas e lesões de nervos periféricos."
+  ],
+  "resumo": "O **tecido nervoso** tem dois componentes celulares: os **neurônios**, que recebem, processam e transmitem informação por sinais elétricos e químicos, e as **células da glia** (neuroglia), que os sustentam, isolam, nutrem e defendem. Divide-se em **sistema nervoso central** (SNC: encéfalo e medula espinal) e **periférico** (SNP: nervos e gânglios).\n\n**Neurônio.** O **corpo celular** (pericário) tem núcleo grande, esférico e claro (eucromático), com **nucléolo evidente**, e citoplasma com **corpúsculos de Nissl**: grumos basófilos de retículo endoplasmático rugoso e polirribossomos, sinal de intensa síntese proteica. Os **dendritos**, em geral numerosos e ramificados, recebem estímulos e contêm Nissl na porção proximal. O **axônio**, em geral único, nasce do **cone de implantação**, região do pericário **sem corpúsculos de Nissl**; logo adiante, o segmento inicial concentra canais de Na⁺ e é onde costuma surgir o potencial de ação. Sem ribossomos no axoplasma, proteínas e organelas chegam ao terminal por **transporte axonal** ao longo de microtúbulos. Neurofilamentos e microtúbulos formam as neurofibrilas vistas em impregnações argênticas. Neurônios maduros não se dividem.\n\n**Classificação morfológica.** **Multipolares**: um axônio e muitos dendritos; a maioria dos neurônios (neurônios motores do corno anterior da medula, células piramidais do córtex cerebral, células de Purkinje do cerebelo). **Bipolares**: um dendrito e um axônio em polos opostos (retina, mucosa olfatória, gânglios coclear e vestibular). **Pseudounipolares**: um único prolongamento curto que se bifurca em T, com um ramo periférico e outro central (gânglios sensitivos dos nervos espinais e da maioria dos cranianos).\n\n**Sinapses.** Na **sinapse química**, o terminal pré-sináptico contém **vesículas sinápticas**; o potencial de ação abre canais de Ca²⁺, as vesículas fundem-se à membrana e o neurotransmissor atravessa a **fenda sináptica** e se liga a receptores da membrana pós-sináptica, que exibe uma **densidade pós-sináptica**. Na **sinapse elétrica**, **junções comunicantes** permitem a passagem direta de íons, com transmissão muito rápida. Esses detalhes só são vistos ao microscópio eletrônico.\n\n**Neuroglia do SNC.**\n- **Astrócitos**: células estreladas com muitos prolongamentos ricos em **GFAP** (proteína ácida fibrilar glial); **protoplasmáticos** na substância cinzenta e **fibrosos** na branca. Seus **pés vasculares** envolvem os capilares e induzem no endotélio as junções oclusivas da **barreira hematoencefálica**; regulam K⁺ e glutamato extracelulares, formam a membrana limitante glial sob a pia-máter e produzem a **cicatriz glial** após lesões.\n- **Oligodendrócitos**: formam a **mielina do SNC**; cada um mieliniza segmentos de **vários axônios**.\n- **Micróglia**: células pequenas, de núcleo alongado e denso, **fagocitárias**, do sistema fagocitário mononuclear; têm **origem hematopoética** (mesodérmica), não neuroectodérmica.\n- **Células ependimárias**: epitélio cúbico a cilíndrico, muitas vezes ciliado, que reveste os **ventrículos** e o **canal central** da medula; no plexo corioide, o epitélio modificado secreta o líquor.\n\n**Neuroglia do SNP.** As **células de Schwann** formam a mielina dos nervos, cada uma **um segmento de um único axônio**, e envolvem as **fibras amielínicas**, alojando vários axônios em reentrâncias do seu citoplasma. As **células satélites** envolvem os corpos neuronais nos gânglios. Ambas derivam da crista neural.\n\n**Mielina e condução.** A **bainha de mielina** é formada por voltas concêntricas compactadas da membrana da célula de Schwann ou do oligodendrócito, rica em lipídios. No HE de rotina os lipídios se perdem e ela aparece como um halo claro ao redor do axônio; o tetróxido de ósmio a cora de negro. Entre os segmentos mielinizados (**internodos**) ficam os **nós de Ranvier**, onde se concentram os canais de Na⁺ dependentes de voltagem: o impulso salta de nó em nó (**condução saltatória**), mais rápida e econômica.\n\n**Substância cinzenta e branca.** A **cinzenta** contém corpos de neurônios, dendritos, porções amielínicas de axônios, glia e o **neurópilo** (emaranhado de prolongamentos); a **branca** contém principalmente **axônios mielinizados**, oligodendrócitos e astrócitos fibrosos. No cérebro e no cerebelo a cinzenta forma o córtex e núcleos; na medula espinal, fica no centro, em forma de H.\n\n**Nervo periférico.** Feixes de **fibras nervosas** (axônio e seus envoltórios) organizados por três bainhas: **epineuro**, conjuntivo denso que envolve o nervo e preenche o espaço entre os fascículos; **perineuro**, camadas de células achatadas epitelioides unidas por **junções oclusivas**, que envolvem cada **fascículo** e, com o endotélio dos capilares endoneurais, formam a **barreira hematoneural**; e **endoneuro**, conjuntivo frouxo com fibras reticulares ao redor de cada fibra.\n\n**Gânglios.** Os **sensitivos** (raízes dorsais e nervos cranianos) têm neurônios pseudounipolares grandes e esféricos, de núcleo central, cada um envolvido por uma camada contínua de células satélites, e não têm sinapses. Os **autônomos** (simpáticos e parassimpáticos, incluindo os intramurais) têm neurônios **multipolares** menores, de núcleo muitas vezes excêntrico, com células satélites menos numerosas, e recebem **sinapses** de fibras pré-ganglionares.\n\n**Degeneração e regeneração.** Seccionado o axônio, o segmento distal sofre **degeneração walleriana**: axônio e mielina fragmentam-se e são removidos por macrófagos e células de Schwann. O corpo celular sofre **cromatólise** (aumento de volume, núcleo excêntrico, dispersão do Nissl). No SNP, as células de Schwann proliferam dentro dos tubos de lâmina basal e formam colunas que guiam os **brotos axonais** do coto proximal; a regeneração é melhor quando os cotos ficam próximos. No **SNC** ela é muito limitada: não há colunas de células de Schwann, a mielina dos oligodendrócitos contém inibidores do crescimento axonal, e os astrócitos formam cicatriz glial.\n\n**Correlações.** A **esclerose múltipla** destrói a mielina do SNC e poupa a do SNP. A **síndrome de Guillain-Barré** ataca a mielina periférica, com paralisia flácida ascendente e boa recuperação pela remielinização. Os **gliomas** derivam de células da glia. Na **lesão de nervo periférico**, o prognóstico depende da preservação das bainhas conjuntivas (classificação de Seddon).",
+  "pontosChave": [
+    "Corpúsculos de Nissl são retículo endoplasmático rugoso e polirribossomos; estão no pericário e nos dendritos, mas faltam no cone de implantação e no axônio.",
+    "Neurônios multipolares são a maioria; bipolares estão na retina, mucosa olfatória e gânglios coclear e vestibular; pseudounipolares, nos gânglios sensitivos.",
+    "Sinapse química: vesículas, fenda e receptores pós-sinápticos; sinapse elétrica: junções comunicantes.",
+    "Astrócitos têm GFAP e pés vasculares; a barreira hematoencefálica depende das junções oclusivas do endotélio, induzidas pelos astrócitos.",
+    "Oligodendrócitos mielinizam vários axônios no SNC; cada célula de Schwann mieliniza um segmento de um só axônio no SNP.",
+    "A micróglia é fagocitária e tem origem hematopoética (mesodérmica).",
+    "Nos nós de Ranvier concentram-se canais de Na⁺, o que permite a condução saltatória.",
+    "Substância branca: predomínio de axônios mielinizados; cinzenta: corpos neuronais, dendritos e neurópilo.",
+    "Nervo periférico: epineuro (nervo), perineuro (fascículo, barreira) e endoneuro (cada fibra).",
+    "Gânglio sensitivo: neurônios pseudounipolares com cápsula contínua de células satélites e sem sinapses; gânglio autônomo: neurônios multipolares com sinapses.",
+    "Após a secção do axônio, o segmento distal sofre degeneração walleriana e o corpo celular, cromatólise.",
+    "Esclerose múltipla lesa a mielina do SNC (oligodendrócitos); Guillain-Barré, a mielina do SNP (células de Schwann)."
+  ],
+  "estruturas": [
+    {
+      "id": "neuronio-multipolar",
+      "nome": "Neurônio multipolar",
+      "sinonimos": [],
+      "definicao": "Neurônio com um axônio e vários dendritos; é o tipo mais comum, como os neurônios motores do corno anterior da medula espinal.",
+      "origem": "Neuroblastos do tubo neural (no SNC) ou da crista neural (gânglios autônomos)."
+    },
+    {
+      "id": "neuronio-bipolar",
+      "nome": "Neurônio bipolar",
+      "sinonimos": [],
+      "definicao": "Neurônio com um dendrito e um axônio em polos opostos do corpo celular; presente na retina, na mucosa olfatória e nos gânglios coclear e vestibular."
+    },
+    {
+      "id": "neuronio-pseudounipolar",
+      "nome": "Neurônio pseudounipolar",
+      "sinonimos": ["neurônio unipolar"],
+      "definicao": "Neurônio com um único prolongamento curto que se bifurca em T, com um ramo periférico e outro central; típico dos gânglios sensitivos dos nervos espinais e da maioria dos cranianos.",
+      "origem": "Crista neural (com contribuição de placoides em alguns gânglios cranianos)."
+    },
+    {
+      "id": "corpusculos-de-nissl",
+      "nome": "Corpúsculos de Nissl",
+      "sinonimos": ["substância de Nissl", "substância cromidial"],
+      "definicao": "Grumos basófilos do pericário e da porção proximal dos dendritos, formados por cisternas de retículo endoplasmático rugoso e polirribossomos; ausentes no cone de implantação e no axônio."
+    },
+    {
+      "id": "nucleolo",
+      "nome": "Nucléolo",
+      "sinonimos": [],
+      "definicao": "No neurônio, nucléolo grande e bem evidente dentro de um núcleo esférico e claro (eucromático), reflexo da intensa síntese de RNA ribossômico."
+    },
+    {
+      "id": "dendrito",
+      "nome": "Dendrito",
+      "sinonimos": [],
+      "definicao": "Prolongamento ramificado que recebe sinais de outros neurônios; contém corpúsculos de Nissl na porção proximal e, em muitos neurônios, espinhas dendríticas."
+    },
+    {
+      "id": "cone-de-implantacao",
+      "nome": "Cone de implantação",
+      "sinonimos": ["cone axônico"],
+      "definicao": "Região cônica do pericário de onde nasce o axônio, sem corpúsculos de Nissl; seguida pelo segmento inicial do axônio."
+    },
+    {
+      "id": "axonio",
+      "nome": "Axônio",
+      "sinonimos": [],
+      "definicao": "Prolongamento geralmente único, que conduz o impulso para longe do corpo celular até os terminais sinápticos; seu axoplasma não tem ribossomos e depende do transporte axonal."
+    },
+    {
+      "id": "sinapse-quimica",
+      "nome": "Sinapse química",
+      "sinonimos": [],
+      "definicao": "Contato funcional em que o terminal pré-sináptico, com vesículas sinápticas, libera neurotransmissor na fenda sináptica, que age sobre receptores da membrana pós-sináptica (com densidade pós-sináptica). Visível em detalhe só ao microscópio eletrônico."
+    },
+    {
+      "id": "celulas-da-glia",
+      "nome": "Células da glia",
+      "sinonimos": ["neuroglia", "gliócitos"],
+      "definicao": "Células não neuronais do tecido nervoso que sustentam, isolam, nutrem e defendem os neurônios. No SNC: astrócitos, oligodendrócitos, micróglia e células ependimárias; no SNP: células de Schwann e células satélites. No HE, aparecem sobretudo como núcleos pequenos entre os neurônios."
+    },
+    {
+      "id": "astrocito",
+      "nome": "Astrócito",
+      "sinonimos": [],
+      "definicao": "Célula glial estrelada do SNC, rica no filamento intermediário GFAP; protoplasmático na substância cinzenta e fibroso na branca. Seus pés vasculares envolvem os capilares e ela forma a cicatriz glial após lesões.",
+      "origem": "Neuroectoderma do tubo neural."
+    },
+    {
+      "id": "oligodendrocito",
+      "nome": "Oligodendrócito",
+      "sinonimos": [],
+      "definicao": "Célula glial do SNC, de núcleo pequeno e arredondado, cujos prolongamentos formam a bainha de mielina de segmentos de vários axônios.",
+      "origem": "Neuroectoderma do tubo neural."
+    },
+    {
+      "id": "microglia",
+      "nome": "Micróglia",
+      "sinonimos": ["célula microglial"],
+      "definicao": "Pequena célula fagocitária do SNC, de núcleo alongado e denso, pertencente ao sistema fagocitário mononuclear; remove restos celulares e participa da defesa imune.",
+      "origem": "Precursores hematopoéticos mieloides (mesoderma) que colonizam o SNC durante o desenvolvimento."
+    },
+    {
+      "id": "celula-ependimaria",
+      "nome": "Célula ependimária",
+      "sinonimos": ["ependimócito"],
+      "definicao": "Célula epitelial cúbica a cilíndrica, muitas vezes ciliada, que reveste os ventrículos encefálicos e o canal central da medula espinal; no plexo corioide, forma o epitélio que secreta o líquor.",
+      "origem": "Neuroectoderma do tubo neural."
+    },
+    {
+      "id": "celula-de-schwann",
+      "nome": "Célula de Schwann",
+      "sinonimos": ["neurolemócito"],
+      "definicao": "Célula glial do SNP que forma a mielina de um segmento (internodo) de um único axônio ou envolve vários axônios amielínicos em reentrâncias do seu citoplasma; é recoberta por lâmina basal.",
+      "origem": "Crista neural."
+    },
+    {
+      "id": "celula-satelite-ganglionar",
+      "nome": "Célula satélite (ganglionar)",
+      "sinonimos": ["anfícito"],
+      "definicao": "Célula glial achatada que envolve os corpos dos neurônios nos gânglios; forma uma camada contínua nos gânglios sensitivos e menos completa nos autônomos.",
+      "origem": "Crista neural."
+    },
+    {
+      "id": "bainha-de-mielina",
+      "nome": "Bainha de mielina",
+      "sinonimos": [],
+      "definicao": "Envoltório lipoproteico formado por voltas concêntricas compactadas da membrana da célula de Schwann (SNP) ou do oligodendrócito (SNC). No HE aparece como halo claro, pois os lipídios se perdem no preparo; o tetróxido de ósmio a cora de negro."
+    },
+    {
+      "id": "no-de-ranvier",
+      "nome": "Nó de Ranvier",
+      "sinonimos": ["nódulo de Ranvier"],
+      "definicao": "Intervalo entre dois segmentos mielinizados consecutivos, onde a membrana do axônio concentra canais de Na⁺ dependentes de voltagem e o potencial de ação é regenerado."
+    },
+    {
+      "id": "fibra-mielinizada",
+      "nome": "Fibra nervosa mielinizada",
+      "sinonimos": ["fibra mielínica"],
+      "definicao": "Axônio envolvido por bainha de mielina e, no SNP, pela célula de Schwann e sua lâmina basal; em corte transversal corado por HE, axônio central cercado por halo claro."
+    },
+    {
+      "id": "fibra-amielinica",
+      "nome": "Fibra nervosa amielínica",
+      "sinonimos": ["fibra não mielinizada"],
+      "definicao": "Axônio de pequeno calibre sem mielina compacta; no SNP, vários desses axônios ocupam reentrâncias de uma mesma célula de Schwann. A condução é contínua e lenta."
+    },
+    {
+      "id": "substancia-cinzenta",
+      "nome": "Substância cinzenta",
+      "sinonimos": [],
+      "definicao": "Região do SNC com corpos de neurônios, dendritos, porções amielínicas de axônios, glia e neurópilo; forma o córtex cerebral e cerebelar, núcleos e o H central da medula espinal."
+    },
+    {
+      "id": "substancia-branca",
+      "nome": "Substância branca",
+      "sinonimos": [],
+      "definicao": "Região do SNC formada principalmente por axônios mielinizados, oligodendrócitos e astrócitos fibrosos; a mielina dá a cor esbranquiçada a fresco."
+    },
+    {
+      "id": "neuropilo",
+      "nome": "Neurópilo",
+      "sinonimos": [],
+      "definicao": "Emaranhado de dendritos, axônios e prolongamentos gliais entre os corpos celulares da substância cinzenta, onde ocorre a maioria das sinapses; no HE aparece como fundo róseo finamente fibrilar."
+    },
+    {
+      "id": "epineuro",
+      "nome": "Epineuro",
+      "sinonimos": [],
+      "definicao": "Camada mais externa do nervo periférico, de tecido conjuntivo denso com vasos e adipócitos, que envolve o nervo e preenche o espaço entre os fascículos."
+    },
+    {
+      "id": "perineuro",
+      "nome": "Perineuro",
+      "sinonimos": [],
+      "definicao": "Camadas de células achatadas epitelioides, com lâmina basal e unidas por junções oclusivas, que envolvem cada fascículo; com o endotélio dos capilares endoneurais, forma a barreira hematoneural."
+    },
+    {
+      "id": "endoneuro",
+      "nome": "Endoneuro",
+      "sinonimos": [],
+      "definicao": "Tecido conjuntivo frouxo, com fibras reticulares e capilares, que envolve cada fibra nervosa dentro do fascículo."
+    },
+    {
+      "id": "fasciculo-nervoso",
+      "nome": "Fascículo nervoso",
+      "sinonimos": [],
+      "definicao": "Feixe de fibras nervosas mielinizadas e amielínicas, com seu endoneuro, envolvido pelo perineuro."
+    },
+    {
+      "id": "ganglio-sensitivo",
+      "nome": "Gânglio sensitivo",
+      "sinonimos": ["gânglio espinal", "gânglio da raiz dorsal"],
+      "definicao": "Gânglio de neurônios pseudounipolares grandes e esféricos, de núcleo central, cada um envolvido por camada contínua de células satélites, separados em grupos por feixes de fibras; não há sinapses no gânglio."
+    },
+    {
+      "id": "ganglio-autonomo",
+      "nome": "Gânglio autônomo",
+      "sinonimos": [],
+      "definicao": "Gânglio simpático ou parassimpático (incluindo os intramurais) com neurônios multipolares menores, núcleo muitas vezes excêntrico e células satélites menos numerosas; recebe sinapses de fibras pré-ganglionares."
+    }
+  ],
+  "eventos": [
+    { "id": "e10-seccao-axonio", "descricao": "Secção ou esmagamento do axônio de um nervo periférico", "ordem": 1 },
+    { "id": "e10-degeneracao-walleriana", "descricao": "Axônio e mielina do segmento distal fragmentam-se (degeneração walleriana)", "ordem": 2 },
+    { "id": "e10-remocao-restos", "descricao": "Macrófagos e células de Schwann removem os restos de axônio e mielina", "ordem": 3 },
+    { "id": "e10-colunas-schwann", "descricao": "Células de Schwann proliferam e formam colunas dentro dos tubos de lâmina basal", "ordem": 3 },
+    { "id": "e10-brotos-axonais", "descricao": "Brotos axonais do coto proximal penetram nas colunas e crescem em direção ao alvo", "ordem": 4 },
+    { "id": "e10-reinervacao", "descricao": "Os axônios regenerados, remielinizados, reinervam o órgão-alvo", "ordem": 5 }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "esclerose-multipla",
+      "titulo": "Esclerose múltipla",
+      "descricao": "Doença autoimune desmielinizante do SNC, mais comum em adultos jovens e em mulheres, com surtos de neurite óptica, alterações sensitivas e motoras e remissões. A ressonância mostra placas na substância branca (periventriculares, nervo óptico, medula), e o líquor pode ter bandas oligoclonais.",
+      "mecanismo": "Linfócitos e macrófagos destroem a mielina formada pelos oligodendrócitos; os axônios ficam inicialmente preservados, mas a remielinização é incompleta e há perda axonal progressiva. Os nervos periféricos, mielinizados por células de Schwann, são poupados."
+    },
+    {
+      "id": "guillain-barre",
+      "titulo": "Síndrome de Guillain-Barré",
+      "descricao": "Polirradiculoneuropatia aguda, muitas vezes após infecção respiratória ou gastrointestinal, com fraqueza ascendente simétrica, arreflexia e proteína elevada no líquor com celularidade normal (dissociação albuminocitológica). Tratada com imunoglobulina intravenosa ou plasmaférese.",
+      "mecanismo": "Na forma desmielinizante clássica, uma resposta imune dirigida à mielina das raízes e dos nervos periféricos (células de Schwann) causa desmielinização segmentar e bloqueio de condução; as células de Schwann remielinizam, o que explica a boa recuperação na maioria dos casos. Há variantes axonais."
+    },
+    {
+      "id": "gliomas",
+      "titulo": "Gliomas",
+      "descricao": "Tumores primários do SNC derivados de células da glia ou de seus precursores: astrocitomas (incluindo o glioblastoma), oligodendrogliomas e ependimomas. A classificação atual da OMS (2021) combina morfologia, imuno-histoquímica (por exemplo, GFAP nos tumores astrocíticos) e marcadores moleculares.",
+      "mecanismo": "Células gliais e seus precursores mantêm capacidade proliferativa no adulto, ao contrário dos neurônios maduros; mutações acumuladas originam tumores infiltrativos."
+    },
+    {
+      "id": "lesao-nervo-periferico",
+      "titulo": "Lesão de nervo periférico",
+      "descricao": "Pela classificação de Seddon: neuropraxia (bloqueio de condução com axônio íntegro, recuperação em semanas), axonotmese (axônio interrompido com bainhas conjuntivas preservadas; degeneração walleriana e boa regeneração espontânea) e neurotmese (secção completa, incluindo as bainhas; exige reparo cirúrgico). Axônios que não encontram o coto distal podem formar um neuroma.",
+      "mecanismo": "A regeneração depende das colunas de células de Schwann dentro dos tubos de lâmina basal e do endoneuro, que guiam os brotos do coto proximal; quando as bainhas se rompem, os brotos se dispersam."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-10-q01",
+      "tipo": "multipla",
+      "enunciado": "Os corpúsculos de Nissl, vistos no pericário como grumos basófilos em cortes corados por HE ou por azul de toluidina, correspondem a:",
+      "alternativas": [
+        { "id": "a", "texto": "Cisternas de retículo endoplasmático rugoso e polirribossomos" },
+        { "id": "b", "texto": "Feixes de neurofilamentos e de microtúbulos do citoesqueleto" },
+        { "id": "c", "texto": "Grânulos de lipofuscina derivados de lisossomos envelhecidos" },
+        { "id": "d", "texto": "Vesículas sinápticas carregadas de neurotransmissor" }
+      ],
+      "correta": "a",
+      "explicacao": "A basofilia dos corpúsculos de Nissl vem do RNA dos ribossomos: são pilhas de cisternas de retículo endoplasmático rugoso com polirribossomos livres, que sustentam a intensa síntese de proteínas do neurônio (a). Neurofilamentos e microtúbulos (b) formam as neurofibrilas, evidenciadas por impregnação argêntica, não pela basofilia. A lipofuscina (c) é um pigmento castanho-amarelado que se acumula com a idade. Vesículas sinápticas (d) concentram-se nos terminais axônicos e só são vistas ao microscópio eletrônico.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["neuronio", "corpusculos-de-nissl"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q02",
+      "tipo": "multipla",
+      "contexto": "Em corte do corno anterior da medula espinal corado por HE, um neurônio grande mostra núcleo esférico e claro, com nucléolo evidente, e grumos basófilos no citoplasma e na base de alguns prolongamentos. Num ponto do corpo celular, uma região cônica clara, sem grumos basófilos, continua-se com um prolongamento único.",
+      "enunciado": "A região cônica e o prolongamento são, respectivamente:",
+      "alternativas": [
+        { "id": "a", "texto": "Dendrito primário e espinha dendrítica" },
+        { "id": "b", "texto": "Cone de implantação e axônio" },
+        { "id": "c", "texto": "Nó de Ranvier e segmento internodal" },
+        { "id": "d", "texto": "Botão sináptico e dendrito terminal" }
+      ],
+      "correta": "b",
+      "explicacao": "O axônio nasce de uma região cônica do pericário, o cone de implantação, que não tem corpúsculos de Nissl (b); esse é o critério clássico para distinguir o axônio dos dendritos, que contêm Nissl em sua base (a). Nós de Ranvier (c) são interrupções da mielina ao longo do axônio, longe do corpo celular. Botões sinápticos (d) são terminais de axônios de outros neurônios que contatam o pericário e os dendritos; não são vistos individualmente no HE.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["neuronio", "cone-de-implantacao", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q03",
+      "tipo": "multipla",
+      "enunciado": "Os neurônios dos gânglios sensitivos das raízes dorsais dos nervos espinais são, em sua maioria:",
+      "alternativas": [
+        { "id": "a", "texto": "Multipolares, com muitos dendritos e um único axônio" },
+        { "id": "b", "texto": "Bipolares, com um dendrito e um axônio em polos opostos" },
+        { "id": "c", "texto": "Pseudounipolares, com prolongamento único bifurcado em T" },
+        { "id": "d", "texto": "Multipolares de axônio curto (Golgi tipo II), interneurônios" }
+      ],
+      "correta": "c",
+      "explicacao": "Os neurônios dos gânglios sensitivos espinais (e da maioria dos gânglios sensitivos cranianos) são pseudounipolares (c): um único prolongamento curto sai do corpo celular e se divide em T, com um ramo periférico, que recebe o estímulo, e outro central, que entra na medula. Multipolares (a) são a maioria dos neurônios do SNC e dos gânglios autônomos. Bipolares (b) existem na retina, na mucosa olfatória e nos gânglios coclear e vestibular. Neurônios de axônio curto (d) são interneurônios locais do SNC.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["classificacao-neuronios", "ganglio-sensitivo"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q04",
+      "tipo": "multipla",
+      "enunciado": "Na barreira hematoencefálica, a principal restrição à passagem de substâncias do sangue para o tecido nervoso é dada:",
+      "alternativas": [
+        { "id": "a", "texto": "Pelos pés vasculares dos astrócitos, unidos entre si por junções oclusivas" },
+        { "id": "b", "texto": "Pela bainha de mielina dos oligodendrócitos que envolve os capilares" },
+        { "id": "c", "texto": "Pela camada contínua de micróglia que reveste a face externa dos vasos" },
+        { "id": "d", "texto": "Pelas junções oclusivas entre as células endoteliais dos capilares" }
+      ],
+      "correta": "d",
+      "explicacao": "No SNC, os capilares são contínuos e suas células endoteliais se unem por junções oclusivas, com pouca transcitose: essa é a barreira propriamente dita (d). Os pés vasculares dos astrócitos (a) cobrem quase toda a superfície dos capilares e induzem e mantêm as propriedades de barreira do endotélio, mas não se unem por junções oclusivas. A mielina (b) envolve axônios, não capilares. A micróglia (c) é formada por células fagocitárias dispersas, não por uma camada contínua.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["barreira-hematoencefalica", "astrocito"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q05",
+      "tipo": "multipla",
+      "contexto": "Em ressecção de tumor cerebral de um adulto, as células neoplásicas têm prolongamentos finos e estrelados e são intensamente positivas, na imuno-histoquímica, para a proteína ácida fibrilar glial (GFAP).",
+      "enunciado": "A linhagem de origem mais provável desse glioma é:",
+      "alternativas": [
+        { "id": "a", "texto": "Oligodendrocítica" },
+        { "id": "b", "texto": "Astrocítica" },
+        { "id": "c", "texto": "Neuronal" },
+        { "id": "d", "texto": "Microglial" }
+      ],
+      "correta": "b",
+      "explicacao": "A GFAP é o filamento intermediário característico dos astrócitos, e células estreladas intensamente GFAP-positivas indicam um tumor astrocítico (b), como o astrocitoma ou o glioblastoma; a classificação atual da OMS também exige marcadores moleculares. Oligodendrogliomas (a) têm células arredondadas, com halo claro perinuclear, e em geral pouca GFAP nas células tumorais. Neurônios (c) expressam proteínas neuronais, como sinaptofisina e NeuN, e não GFAP. A micróglia (d) é de linhagem hematopoética e não origina gliomas.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["gliomas", "astrocito", "gfap", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Sistema nervoso central; Junqueira 14ª ed., Tecido nervoso"
+    },
+    {
+      "id": "his-10-q06",
+      "tipo": "multipla",
+      "enunciado": "Qual diferença entre a mielinização no sistema nervoso central (SNC) e no periférico (SNP) está correta?",
+      "alternativas": [
+        { "id": "a", "texto": "Oligodendrócito: segmentos de vários axônios; célula de Schwann: um segmento de um só axônio" },
+        { "id": "b", "texto": "Oligodendrócito: um segmento de um só axônio; célula de Schwann: segmentos de vários axônios" },
+        { "id": "c", "texto": "No SNC a mielina vem de astrócitos fibrosos; no SNP, de células satélites dos gânglios" },
+        { "id": "d", "texto": "No SNC mielinizado não há nós de Ranvier; a condução saltatória é exclusiva do SNP" }
+      ],
+      "correta": "a",
+      "explicacao": "Cada oligodendrócito emite vários prolongamentos, e cada um forma um internodo em um axônio diferente; a célula de Schwann forma um único internodo de um único axônio (a). A alternativa (b) inverte essa relação. Astrócitos e células satélites (c) não formam mielina. Axônios mielinizados do SNC também têm nós de Ranvier e condução saltatória (d).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["mielina", "oligodendrocito", "celula-de-schwann"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q07",
+      "tipo": "multipla",
+      "contexto": "Mulher de 29 anos tem episódios de neurite óptica e de parestesias nos membros, com remissões entre eles. A ressonância mostra lesões ovais na substância branca periventricular, e o líquor tem bandas oligoclonais.",
+      "enunciado": "A célula cuja mielina é o alvo primário da doença é:",
+      "alternativas": [
+        { "id": "a", "texto": "A célula de Schwann dos nervos periféricos" },
+        { "id": "b", "texto": "O astrócito fibroso da substância branca" },
+        { "id": "c", "texto": "O oligodendrócito do sistema nervoso central" },
+        { "id": "d", "texto": "A célula ependimária que reveste os ventrículos" }
+      ],
+      "correta": "c",
+      "explicacao": "Na esclerose múltipla, uma resposta autoimune destrói a mielina do SNC, formada pelos oligodendrócitos (c); surgem placas de desmielinização na substância branca, inclusive no nervo óptico, que é parte do SNC. Os nervos periféricos, mielinizados por células de Schwann (a), são poupados. Astrócitos (b) proliferam nas placas antigas (gliose), mas não são o alvo primário. Células ependimárias (d) revestem os ventrículos; as lesões ficam na substância branca vizinha, não no epêndima.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["esclerose-multipla", "oligodendrocito", "mielina", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Sistema nervoso central; Junqueira 14ª ed., Tecido nervoso"
+    },
+    {
+      "id": "his-10-q08",
+      "tipo": "multipla",
+      "contexto": "Homem de 35 anos, duas semanas após um quadro diarreico, desenvolve fraqueza simétrica que começa nas pernas e sobe para os braços, com arreflexia. O líquor tem proteína elevada e celularidade normal.",
+      "enunciado": "Na forma desmielinizante clássica dessa síndrome, a estrutura primariamente lesada é:",
+      "alternativas": [
+        { "id": "a", "texto": "A mielina formada pelos oligodendrócitos na medula espinal" },
+        { "id": "b", "texto": "O corpo celular dos neurônios motores do corno anterior" },
+        { "id": "c", "texto": "O receptor de acetilcolina da membrana da placa motora" },
+        { "id": "d", "texto": "A mielina formada pelas células de Schwann em nervos e raízes" }
+      ],
+      "correta": "d",
+      "explicacao": "A síndrome de Guillain-Barré, na forma clássica (polirradiculoneuropatia inflamatória desmielinizante aguda), é uma agressão imune, muitas vezes desencadeada por infecção prévia, à mielina das raízes e dos nervos periféricos, formada pelas células de Schwann (d); a condução fica lenta ou bloqueada, com paralisia flácida ascendente e arreflexia, e a remielinização permite boa recuperação. A mielina dos oligodendrócitos (a) é o alvo na esclerose múltipla. A lesão dos neurônios do corno anterior (b) ocorre, por exemplo, na poliomielite, sem a dissociação albuminocitológica. Anticorpos contra o receptor de acetilcolina (c) causam miastenia grave, sem arreflexia nem alteração do líquor.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["guillain-barre", "celula-de-schwann", "mielina", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Nervos periféricos e músculos esqueléticos; Junqueira 14ª ed., Tecido nervoso"
+    },
+    {
+      "id": "his-10-q09",
+      "tipo": "multipla",
+      "enunciado": "A condução saltatória nas fibras mielinizadas ocorre porque:",
+      "alternativas": [
+        { "id": "a", "texto": "A mielina contém canais de K⁺ que aceleram a repolarização do axônio" },
+        { "id": "b", "texto": "Junções comunicantes entre internodos vizinhos transmitem a corrente" },
+        { "id": "c", "texto": "Os canais de Na⁺ dependentes de voltagem concentram-se nos nós de Ranvier" },
+        { "id": "d", "texto": "A membrana dos internodos se despolariza ao longo de toda a sua extensão" }
+      ],
+      "correta": "c",
+      "explicacao": "A mielina isola eletricamente o internodo; os canais de Na⁺ dependentes de voltagem concentram-se nos nós de Ranvier, de modo que o potencial de ação é regenerado apenas nos nós e salta de um nó ao seguinte, o que aumenta a velocidade e economiza energia (c). A mielina é formada por membranas compactadas que funcionam como isolante, não como sede de canais iônicos (a). Não há junções comunicantes entre internodos (b). A despolarização de toda a membrana (d) é o que ocorre nas fibras amielínicas, de condução contínua e lenta.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["no-de-ranvier", "conducao-saltatoria", "mielina"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q10",
+      "tipo": "multipla",
+      "enunciado": "No nervo periférico, a camada que envolve cada fascículo e, junto com o endotélio dos capilares endoneurais, forma a barreira hematoneural é o:",
+      "alternativas": [
+        { "id": "a", "texto": "Epineuro, conjuntivo denso que envolve todo o nervo" },
+        { "id": "b", "texto": "Perineuro, células achatadas unidas por junções oclusivas" },
+        { "id": "c", "texto": "Endoneuro, conjuntivo frouxo que envolve cada fibra" },
+        { "id": "d", "texto": "Neurilema, citoplasma externo das células de Schwann" }
+      ],
+      "correta": "b",
+      "explicacao": "O perineuro é formado por camadas de células achatadas epitelioides, cada camada com lâmina basal, unidas por junções oclusivas; envolve cada fascículo e controla o ambiente endoneural (b). O epineuro (a) é o conjuntivo denso mais externo, com vasos e adipócitos, sem função de barreira. O endoneuro (c) é o conjuntivo frouxo, com fibras reticulares, ao redor de cada fibra nervosa. O neurilema (d) pertence à própria fibra nervosa, não às bainhas conjuntivas do nervo.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["nervo-periferico", "perineuro"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q11",
+      "tipo": "multipla",
+      "contexto": "Em corte de gânglio corado por HE, há corpos neuronais grandes e esféricos, de núcleo central com nucléolo evidente, cada um envolvido por uma camada contínua de pequenas células achatadas. Entre os grupos de neurônios passam feixes de fibras nervosas.",
+      "enunciado": "Trata-se, mais provavelmente, de:",
+      "alternativas": [
+        { "id": "a", "texto": "Gânglio simpático da cadeia paravertebral" },
+        { "id": "b", "texto": "Gânglio parassimpático intramural do intestino" },
+        { "id": "c", "texto": "Corno anterior da substância cinzenta da medula" },
+        { "id": "d", "texto": "Gânglio sensitivo da raiz dorsal (espinal)" }
+      ],
+      "correta": "d",
+      "explicacao": "Neurônios pseudounipolares grandes e esféricos, de núcleo central, cada um envolvido por uma camada contínua de células satélites e separados em grupos por feixes de fibras, caracterizam o gânglio sensitivo espinal (d). Nos gânglios autônomos, simpáticos (a) ou parassimpáticos intramurais (b), os neurônios são multipolares, menores, de contorno irregular e núcleo muitas vezes excêntrico, com células satélites menos numerosas; os intramurais ficam na parede do órgão, entre camadas de músculo liso. O corno anterior (c) é substância cinzenta do SNC: os neurônios motores multipolares ficam imersos no neurópilo, entre núcleos de glia, sem cápsula de células satélites.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": ["ganglio-sensitivo", "ganglio-autonomo", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q12",
+      "tipo": "multipla",
+      "enunciado": "A micróglia, célula fagocitária residente do sistema nervoso central, tem origem:",
+      "alternativas": [
+        { "id": "a", "texto": "No neuroectoderma do tubo neural, como os astrócitos" },
+        { "id": "b", "texto": "Na crista neural, como as células de Schwann" },
+        { "id": "c", "texto": "Na linhagem hematopoética mieloide (mesodérmica)" },
+        { "id": "d", "texto": "No ectoderma superficial, como a epiderme" }
+      ],
+      "correta": "c",
+      "explicacao": "A micróglia pertence ao sistema fagocitário mononuclear: deriva de precursores hematopoéticos mieloides, de origem mesodérmica, que colonizam o SNC durante o desenvolvimento (c). Astrócitos, oligodendrócitos e células ependimárias derivam do neuroectoderma do tubo neural (a). As células de Schwann e as células satélites derivam da crista neural (b). O ectoderma superficial (d) origina a epiderme, não células da glia.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["microglia", "origem"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q13",
+      "tipo": "multipla",
+      "enunciado": "Após a secção completa de um nervo periférico, ocorre no segmento distal ao corte:",
+      "alternativas": [
+        { "id": "a", "texto": "Degeneração do axônio e da mielina, removidos por macrófagos e células de Schwann" },
+        { "id": "b", "texto": "Preservação do axônio, que passa a ser nutrido pelas células de Schwann do coto" },
+        { "id": "c", "texto": "Proliferação de oligodendrócitos e astrócitos, que formam uma cicatriz glial densa" },
+        { "id": "d", "texto": "Brotamento de novos axônios a partir das próprias células de Schwann do coto" }
+      ],
+      "correta": "a",
+      "explicacao": "Separado do corpo celular, que sintetiza as proteínas do axônio, o segmento distal degenera (degeneração walleriana): axônio e mielina se fragmentam e são removidos por macrófagos e pelas próprias células de Schwann (a). As células de Schwann não mantêm o axônio vivo (b) nem formam axônios (d); elas proliferam e formam colunas que guiam os brotos vindos do coto proximal. Oligodendrócitos e astrócitos (c) são células do SNC e não participam da resposta no nervo periférico.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["degeneracao-walleriana", "nervo-periferico"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q14",
+      "tipo": "multipla",
+      "contexto": "Jovem de 20 anos sofre corte profundo no punho, com secção completa do nervo mediano; os cotos são suturados no mesmo dia. Meses depois, há recuperação parcial da sensibilidade e da força na mão.",
+      "enunciado": "Qual condição histológica favorece essa regeneração e não está presente nas lesões de tratos do SNC?",
+      "alternativas": [
+        { "id": "a", "texto": "Os neurônios lesados dividem-se e repõem as células perdidas na medula" },
+        { "id": "b", "texto": "Colunas de células de Schwann em tubos de lâmina basal guiam os brotos" },
+        { "id": "c", "texto": "Oligodendrócitos secretam fatores que estimulam o crescimento do axônio" },
+        { "id": "d", "texto": "Astrócitos reativos formam uma ponte que conduz os axônios até o alvo" }
+      ],
+      "correta": "b",
+      "explicacao": "No SNP, as células de Schwann do coto distal proliferam dentro dos tubos de lâmina basal (bandas de Büngner), produzem fatores neurotróficos e moléculas de adesão e guiam os brotos axonais do coto proximal até o alvo (b); a sutura aproxima os cotos e melhora o resultado. Neurônios maduros não se dividem (a). No SNC, a mielina dos oligodendrócitos contém inibidores do crescimento axonal (c), e os astrócitos reativos formam uma cicatriz glial que bloqueia o crescimento (d).",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": ["regeneracao", "celula-de-schwann", "nervo-periferico", "caso-clinico"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q15",
+      "tipo": "multipla",
+      "contexto": "Dias após a secção do axônio de um neurônio motor, o corpo celular desse neurônio aparece aumentado e arredondado, com núcleo deslocado para a periferia e desaparecimento dos corpúsculos de Nissl na região central do pericário.",
+      "enunciado": "Esse conjunto de alterações recebe o nome de:",
+      "alternativas": [
+        { "id": "a", "texto": "Degeneração walleriana" },
+        { "id": "b", "texto": "Gliose reativa" },
+        { "id": "c", "texto": "Desmielinização segmentar" },
+        { "id": "d", "texto": "Cromatólise" }
+      ],
+      "correta": "d",
+      "explicacao": "A cromatólise, ou reação axonal, é a resposta do corpo celular à lesão do axônio (d): o pericário incha, o núcleo torna-se excêntrico e os corpúsculos de Nissl se dispersam a partir do centro, enquanto a síntese proteica se volta para a regeneração. A degeneração walleriana (a) acontece no segmento distal do axônio, não no corpo celular. A gliose reativa (b) é a proliferação e hipertrofia de astrócitos no SNC. A desmielinização segmentar (c) é a perda de mielina em internodos com axônio preservado, como na síndrome de Guillain-Barré.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["cromatolise", "neuronio", "regeneracao"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q16",
+      "tipo": "vf",
+      "enunciado": "No sistema nervoso periférico, as fibras amielínicas também são envolvidas por células de Schwann, e uma mesma célula pode alojar vários axônios em reentrâncias do seu citoplasma.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Nas fibras amielínicas, os axônios ficam em sulcos da célula de Schwann, sem voltas compactas de membrana; uma célula envolve vários axônios. Essas fibras não têm nós de Ranvier e conduzem de forma contínua e lenta.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["fibra-amielinica", "celula-de-schwann"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q17",
+      "tipo": "vf",
+      "enunciado": "Os corpúsculos de Nissl estão presentes no corpo celular e nos dendritos, mas faltam no cone de implantação e no axônio.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A ausência de Nissl no cone de implantação e no axônio permite distinguir o axônio dos dendritos no microscópio óptico; por não ter ribossomos, o axônio depende do transporte axonal de proteínas sintetizadas no pericário.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["corpusculos-de-nissl", "axonio", "dendrito"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q18",
+      "tipo": "vf",
+      "enunciado": "As sinapses elétricas são formadas por junções comunicantes, que permitem a passagem direta de íons entre as células.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Nas sinapses elétricas, canais de conexinas ligam os citoplasmas das duas células e a corrente passa diretamente, sem neurotransmissor e quase sem atraso; nas químicas, há vesículas, fenda sináptica e receptores pós-sinápticos.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["sinapse"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q19",
+      "tipo": "vf",
+      "enunciado": "A substância cinzenta do SNC é formada predominantemente por axônios mielinizados, o que explica sua cor.",
+      "correta": false,
+      "explicacao": "Falso. É a substância branca que tem predomínio de axônios mielinizados; a mielina, rica em lipídios, dá a cor esbranquiçada. A cinzenta concentra corpos de neurônios, dendritos, porções amielínicas dos axônios, glia e neurópilo.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["substancia-cinzenta", "substancia-branca"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q20",
+      "tipo": "vf",
+      "enunciado": "Os oligodendrócitos são as células responsáveis pela mielinização dos axônios dos nervos periféricos.",
+      "correta": false,
+      "explicacao": "Falso. No SNP, a mielina é formada pelas células de Schwann; os oligodendrócitos mielinizam axônios do SNC. Por isso a esclerose múltipla poupa os nervos periféricos, e a forma desmielinizante da síndrome de Guillain-Barré poupa o SNC.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["mielina", "oligodendrocito", "celula-de-schwann"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os componentes de um nervo periférico, do mais externo ao mais interno, até o axônio de uma fibra mielinizada:",
+      "itens": [
+        { "id": "1", "texto": "Endoneuro" },
+        { "id": "2", "texto": "Epineuro" },
+        { "id": "3", "texto": "Bainha de mielina compacta" },
+        { "id": "4", "texto": "Perineuro" },
+        { "id": "5", "texto": "Axônio" },
+        { "id": "6", "texto": "Citoplasma externo e núcleo da célula de Schwann" }
+      ],
+      "ordemCorreta": ["2", "4", "1", "6", "3", "5"],
+      "explicacao": "Epineuro (envolve o nervo) → perineuro (envolve cada fascículo) → endoneuro (envolve cada fibra) → citoplasma externo e núcleo da célula de Schwann, recobertos pela lâmina basal → mielina compacta, formada por voltas da membrana da célula de Schwann → axônio.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["nervo-periferico", "mielina"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos da transmissão em uma sinapse química:",
+      "itens": [
+        { "id": "1", "texto": "Abrem-se canais de Ca²⁺ dependentes de voltagem no terminal" },
+        { "id": "2", "texto": "O neurotransmissor liga-se a receptores da membrana pós-sináptica" },
+        { "id": "3", "texto": "O potencial de ação chega ao terminal pré-sináptico" },
+        { "id": "4", "texto": "Vesículas sinápticas fundem-se à membrana e liberam o neurotransmissor" },
+        { "id": "5", "texto": "Surge um potencial pós-sináptico na célula seguinte" }
+      ],
+      "ordemCorreta": ["3", "1", "4", "2", "5"],
+      "explicacao": "Potencial de ação no terminal → entrada de Ca²⁺ por canais dependentes de voltagem → exocitose das vesículas sinápticas → o neurotransmissor atravessa a fenda e se liga aos receptores → abertura de canais e potencial pós-sináptico.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": ["sinapse", "linha-do-tempo"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos que se seguem à secção de um nervo periférico, até a sua regeneração:",
+      "itens": [
+        { "id": "1", "texto": "Brotos axonais do coto proximal penetram nas colunas e crescem até o alvo" },
+        { "id": "2", "texto": "Secção do axônio" },
+        { "id": "3", "texto": "Células de Schwann do coto distal proliferam e formam colunas nos tubos de lâmina basal" },
+        { "id": "4", "texto": "Axônio e mielina do segmento distal se fragmentam (degeneração walleriana)" },
+        { "id": "5", "texto": "Os axônios regenerados alcançam e reinervam o órgão-alvo" }
+      ],
+      "ordemCorreta": ["2", "4", "3", "1", "5"],
+      "explicacao": "Secção → degeneração walleriana do segmento distal → proliferação das células de Schwann, que formam colunas dentro dos tubos de lâmina basal (bandas de Büngner) → brotos do coto proximal crescem ao longo das colunas → reinervação do alvo. A remoção dos restos por macrófagos e células de Schwann ocorre em paralelo à proliferação das células de Schwann e por isso não foi incluída.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["degeneracao-walleriana", "regeneracao", "linha-do-tempo"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q24",
+      "tipo": "associar",
+      "enunciado": "Associe cada tipo morfológico de neurônio a um exemplo típico:",
+      "pares": [
+        { "esquerda": "Multipolar", "direita": "Neurônio motor do corno anterior da medula" },
+        { "esquerda": "Bipolar", "direita": "Célula bipolar da retina" },
+        { "esquerda": "Pseudounipolar", "direita": "Neurônio do gânglio da raiz dorsal" }
+      ],
+      "explicacao": "O neurônio motor do corno anterior tem muitos dendritos e um axônio (multipolar); a célula bipolar da retina tem um dendrito e um axônio em polos opostos; o neurônio do gânglio da raiz dorsal tem um prolongamento único que se bifurca em T (pseudounipolar).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["classificacao-neuronios"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada célula da glia à sua função principal:",
+      "pares": [
+        { "esquerda": "Astrócito", "direita": "Pés vasculares, controle do meio extracelular e cicatriz glial" },
+        { "esquerda": "Oligodendrócito", "direita": "Mielina no sistema nervoso central" },
+        { "esquerda": "Micróglia", "direita": "Fagocitose e defesa imune no SNC" },
+        { "esquerda": "Célula ependimária", "direita": "Revestimento dos ventrículos e do canal central" },
+        { "esquerda": "Célula de Schwann", "direita": "Mielina no sistema nervoso periférico" },
+        { "esquerda": "Célula satélite", "direita": "Envoltório dos corpos neuronais nos gânglios" }
+      ],
+      "explicacao": "Astrócitos sustentam os neurônios, envolvem capilares com pés vasculares, regulam K⁺ e glutamato e formam cicatriz; oligodendrócitos mielinizam no SNC; a micróglia fagocita; células ependimárias revestem as cavidades do SNC; células de Schwann mielinizam no SNP; células satélites envolvem os neurônios dos gânglios.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["celulas-da-glia"],
+      "referencia": "Junqueira 14ª ed., Tecido nervoso; Ross 8ª ed., cap. 12"
+    },
+    {
+      "id": "his-10-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada grau de lesão de nervo periférico (classificação de Seddon) à sua descrição:",
+      "pares": [
+        { "esquerda": "Neuropraxia", "direita": "Bloqueio de condução, com axônio preservado" },
+        { "esquerda": "Axonotmese", "direita": "Axônio interrompido, com bainhas conjuntivas preservadas" },
+        { "esquerda": "Neurotmese", "direita": "Secção completa do axônio e das bainhas conjuntivas" }
+      ],
+      "explicacao": "Na neuropraxia não há degeneração walleriana e a recuperação é rápida; na axonotmese há degeneração walleriana, mas as bainhas preservadas guiam a regeneração espontânea; na neurotmese, a continuidade do nervo se perde e é preciso reparo cirúrgico, com recuperação em geral incompleta.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["lesao-nervo-periferico", "regeneracao"],
+      "referencia": "Seddon, Brain 1943; Ross 8ª ed., cap. 12"
+    }
+  ],
+  "referencias": [
+    { "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed. Rio de Janeiro: GEN Guanabara Koogan, 2023", "capitulo": "Tecido nervoso (cap. 9 na 13ª ed.)" },
+    { "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed. GEN Guanabara Koogan, 2021", "capitulo": "12 — Tecido nervoso" },
+    { "obra": "Kierszenbaum AL, Tres LL. Histologia e Biologia Celular: uma introdução à patologia, 5ª ed. Elsevier", "capitulo": "8 — Tecido nervoso" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Sistema nervoso central (esclerose múltipla; gliomas)" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Nervos periféricos e músculos esqueléticos (síndrome de Guillain-Barré; lesão e regeneração de nervos)" },
+    { "obra": "Seddon HJ. Three types of nerve injury. Brain. 1943;66(4):237-88", "capitulo": "Neuropraxia, axonotmese e neurotmese" },
+    { "obra": "Louis DN et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro-Oncology. 2021;23(8):1231-51", "capitulo": "Gliomas: classificação integrada (morfologia e marcadores moleculares)" },
+    { "obra": "Ginhoux F et al. Fate mapping analysis reveals that adult microglia derive from primitive macrophages. Science. 2010;330(6005):841-5", "capitulo": "Origem da micróglia" }
+  ],
+  "notasDivergencia": [
+    "Origem da micróglia: Junqueira e textos mais antigos a atribuem a monócitos do sangue (precursores da medula óssea); estudos de rastreamento de linhagem (Ginhoux et al., 2010) mostram que a micróglia deriva de macrófagos primitivos do saco vitelino que colonizam o SNC no embrião e se mantêm por autorrenovação. As duas visões concordam na origem hematopoética mieloide (mesodérmica), que é o que as questões cobram; os tópicos de embriologia usam a mesma formulação.",
+    "Barreira hematoencefálica: textos antigos davam destaque aos pés astrocitários; Junqueira e Ross atribuem a barreira principalmente às junções oclusivas do endotélio dos capilares contínuos, com indução e manutenção pelos astrócitos. Adotada a segunda formulação.",
+    "Gânglios autônomos: o núcleo dos neurônios é descrito como 'frequentemente excêntrico' em parte das obras; não é critério absoluto, por isso a questão q11 se apoia também no tipo de neurônio, no arranjo e na cápsula de células satélites.",
+    "Classificação das lesões nervosas: usada a de Seddon (3 graus); a de Sunderland subdivide a axonotmese e tem 5 graus.",
+    "Velocidade de regeneração axonal: os valores citados variam conforme a fonte e o local (da ordem de 1 a alguns milímetros por dia); por isso não foram usados números."
+  ],
+  "incertezas": [
+    "Números de capítulo de Junqueira 14ª ed. não conferidos (citado como 'Tecido nervoso', cap. 9 na 13ª ed.). Capítulos de Ross 8ª ed. (12), Kierszenbaum 5ª ed. (8) e títulos de capítulos de Robbins 10ª ed. citados de memória.",
+    "Bipolares nos gânglios coclear e vestibular: classificação clássica de Junqueira; há variação descritiva entre fontes quanto à morfologia desses neurônios no adulto (alguns são descritos com pericário mielinizado). Usado apenas o exemplo da retina nas questões de associação.",
+    "Dimensões (largura da fenda sináptica, diâmetro dos axônios) e proporções numéricas de glia/neurônio omitidas por falta de conferência."
+  ],
+  "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [], "humano": null }
+}
