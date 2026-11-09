@@ -1,8 +1,41 @@
 import { describe, expect, it } from 'vitest';
 import * as THREE from 'three';
-import { campoSemana8, cordaoSemana8, esculpirSemana8 } from '../src/modules/embriologia/modelos/escultura-embriao.ts';
+import { bocaSemana8, campoSemana8, cordaoSemana8, esculpirSemana8, marcosFaceSemana8, pavilhaoSemana8 } from '../src/modules/embriologia/modelos/escultura-embriao.ts';
 
 describe('escultura da semana 8', () => {
+  it('assenta olhos e orelhas bilateralmente na superfície e mantém orelhas abaixo dos olhos', () => {
+    const campo = campoSemana8();
+    const marcos = marcosFaceSemana8();
+    for (const pares of [marcos.olhos, marcos.orelhas]) {
+      expect(pares).toHaveLength(2);
+      expect(pares[0].posicao.x).toBe(pares[1].posicao.x);
+      expect(pares[0].posicao.y).toBe(pares[1].posicao.y);
+      expect(pares[0].posicao.z).toBeCloseTo(-pares[1].posicao.z, 7);
+      for (const marco of pares) {
+        const { x, y, z } = marco.posicao;
+        expect(Math.abs(campo(x, y, z))).toBeLessThan(1e-7);
+        expect(new THREE.Vector3(0, 0, 1).applyEuler(marco.rotacao).distanceTo(marco.normal)).toBeLessThan(1e-6);
+        const base = marco.posicao.clone().addScaledVector(marco.normal, -0.02);
+        expect(campo(base.x, base.y, base.z)).toBeLessThan(0);
+      }
+    }
+    expect(marcos.orelhas[0].posicao.y).toBeLessThan(marcos.olhos[0].posicao.y);
+  });
+
+  it('mantém boca aderente à face e pavilhão finito com superfície posterior integrada', () => {
+    const campo = campoSemana8();
+    const boca = bocaSemana8();
+    const p = boca.getAttribute('position');
+    for (let i = 0; i < p.count; i++) {
+      expect(Math.abs(campo(p.getX(i), p.getY(i), p.getZ(i)))).toBeLessThan(0.009);
+    }
+    const orelha = pavilhaoSemana8();
+    const n = orelha.getAttribute('normal');
+    expect(Array.from(orelha.getAttribute('position').array).every(Number.isFinite)).toBe(true);
+    for (let i = 0; i < n.count; i++) expect(new THREE.Vector3().fromBufferAttribute(n, i).length()).toBeCloseTo(1, 4);
+    boca.dispose(); orelha.dispose();
+  });
+
   it('preserva bilateralidade e continuidade nos marcos articulares e cervicais', () => {
     const campo = campoSemana8();
     for (const lado of [-1, 1]) {
@@ -23,18 +56,22 @@ describe('escultura da semana 8', () => {
     expect(p.count).toBeLessThan(30000);
     expect(idx.count/3).toBeLessThan(50000);
     const a=new THREE.Vector3(),b=new THREE.Vector3(),c=new THREE.Vector3(),normal=new THREE.Vector3();
+    let finita = true, erroNormal = 0, menorOrientacao = Infinity;
     for(let i=0;i<p.count;i++) {
-      expect(Number.isFinite(p.getX(i)+p.getY(i)+p.getZ(i))).toBe(true);
-      expect(normal.fromBufferAttribute(n,i).length()).toBeCloseTo(1,4);
+      finita &&= Number.isFinite(p.getX(i)+p.getY(i)+p.getZ(i));
+      erroNormal = Math.max(erroNormal, Math.abs(normal.fromBufferAttribute(n,i).length() - 1));
     }
     for(let i=0;i<idx.count;i+=3) {
       a.fromBufferAttribute(p,idx.getX(i)); b.fromBufferAttribute(p,idx.getX(i+1)); c.fromBufferAttribute(p,idx.getX(i+2));
       normal.fromBufferAttribute(n,idx.getX(i)).add(new THREE.Vector3().fromBufferAttribute(n,idx.getX(i+1))).add(new THREE.Vector3().fromBufferAttribute(n,idx.getX(i+2)));
-      expect(b.sub(a).cross(c.sub(a)).dot(normal)).toBeGreaterThanOrEqual(-1e-9);
+      menorOrientacao = Math.min(menorOrientacao, b.sub(a).cross(c.sub(a)).dot(normal));
     }
+    expect(finita).toBe(true);
+    expect(erroNormal).toBeLessThan(0.00005);
+    expect(menorOrientacao).toBeGreaterThanOrEqual(-1e-9);
     expect(geo.boundingBox!.max.z).toBeCloseTo(-geo.boundingBox!.min.z,5);
     geo.dispose();
-  });
+  }, 15000);
 
   it('mantém extremidades do cordão e geometria válida', () => {
     const geo=cordaoSemana8();

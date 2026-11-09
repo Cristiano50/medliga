@@ -231,6 +231,8 @@ export default function Lab3DTela() {
         )}
       </div>
       {estagio.id === 'semana-8' && (
+        <details className="referencia-artistica">
+          <summary>Comparar com a ilustração artística</summary>
         <figure className="card pilha ilustracao-embriao">
           <h2>Ilustração complementar · 8ª semana</h2>
           <img
@@ -244,6 +246,7 @@ export default function Lab3DTela() {
             <span>Figura complementar; use o modelo 3D para explorar e identificar estruturas.</span>
           </figcaption>
         </figure>
+        </details>
       )}
     </div>
   );
