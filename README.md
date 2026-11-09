@@ -10,7 +10,7 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 
 | Área | Situação |
 |---|---|
-| Módulo 1: **Embriologia geral** (tópicos 1–10) | revisado por agentes (embriologia + obstetrícia nos tópicos 1–5; 2ª etapa dos 6–10 em andamento); conferência médica pendente |
+| Módulo 1: **Embriologia geral** (tópicos 1–10) | revisado por agentes em duas etapas (embriologia + obstetrícia/reprodução nos 1–5; embriologia + genética/medicina fetal nos 6–10); conferência médica pendente |
 | Embriologia dos sistemas (tópicos 11–20) | revisado por agentes em duas etapas (embriologia + pediatria/anatomia/clínica); conferência médica pendente |
 | Laboratório 3D: 12 estágios do desenvolvimento (zigoto → placenta) + órgãos e sistemas (coração tubular, alça cardíaca, aparelho faríngeo) + jogo **Identifique** | implementado; textos dos 15 modelos revisados por agentes (embriologia + anatomia) |
 | Minijogos: **Plantão relâmpago**, **Linha do tempo**, **Camadas germinativas**, **Duelo** entre colegas (por código), questões de estudo (4 tipos), **conquistas** | implementado (duelo exige servidor online) |

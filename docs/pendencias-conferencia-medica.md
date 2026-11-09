@@ -44,6 +44,14 @@ Bolsa de Rathke × medula ocupando o canal (emb-18); AMH × início da testoster
 
 Alternativa correta ainda visivelmente mais longa em: emb-11 q14; emb-12 q02, q11; emb-13 q06; emb-14 q12; emb-15 q06, q08, q14 (sem ambiguidade de conteúdo).
 
+## F0. Genética e medicina fetal (relatório `content/revisoes/g2-genetica-fetal.md`)
+
+- Janela da biópsia de vilo corial: 10–13 semanas (parte da literatura brasileira usa até 14). Confirmar a faixa a ensinar — emb-08.
+- Isotretinoína: contracepção desde antes do início e "pelo menos um mês após a suspensão" (bulas brasileiras); se houver norma da Anvisa com prazo próprio, ela prevalece — emb-10.
+- Periviabilidade: o texto agora converte para idade gestacional e cita a discussão de 22–25 semanas, sem fixar limiar (ver A3).
+- Enriquecimentos deixados de fora de propósito (sem números): recorrência na rob(21;21), proporções dos mecanismos da trissomia 21, recorrência dos defeitos do tubo neural. Incluir?
+- Notação ISCN fora do G2: corrigido "47,+21" no emb-02; vale uma varredura nos demais tópicos.
+
 ## F. Textos do laboratório 3D (`estagios.json`, relatório `content/revisoes/estagios-3d.md`)
 
 - Coração tubular: o modelo é a figura clássica dos livros (tubo reto com cinco regiões), que não corresponde ao modelo atual do campo cardíaco secundário; o texto avisa em uma frase. Decidir se basta.

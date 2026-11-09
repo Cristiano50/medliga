@@ -11,7 +11,9 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 - [x] Minijogos: linha do tempo, camadas germinativas, plantão relâmpago (90 s).
 - [x] Cadastro de escolas (441 cursos) e rankings: interno da escola, entre escolas e geral.
 - [x] Servidor Supabase (migrações + testes SQL), sincronização offline.
-- [ ] Revisão científica por agentes de cada área (em andamento) e conferência médica (Cristiano).
+- [x] Revisão científica por agentes em duas etapas (embriologia + área transversal) nos 20 tópicos, nos 15 modelos 3D e no minijogo de camadas.
+- [ ] Conferência médica (Cristiano) — lista em `docs/pendencias-conferencia-medica.md`.
+- [x] Duelos entre colegas, conquistas, painel do professor, modelos 3D de órgãos e sistemas.
 
 ## v0.2 — Lançamento do piloto
 - Ativar Supabase em produção (região São Paulo) e domínio.
