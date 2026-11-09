@@ -1,6 +1,7 @@
 import { NavLink, Outlet, Link } from 'react-router-dom';
 import { useApp } from '../data/store.ts';
 import { nivelPorXP } from '../core/scoring.ts';
+import { armazenamentoTemporario } from '../data/armazenamento.ts';
 
 export function Layout({ semNav = false }: { semNav?: boolean }) {
   const xpTotal = useApp((s) => s.xpTotal);
@@ -21,7 +22,12 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
           Nv {nivel} · {xpTotal.toLocaleString('pt-BR')} XP
         </span>
       </header>
-      <main className={`conteudo ${semNav ? '' : ''}`}>
+      <main className="conteudo">
+        {armazenamentoTemporario && (
+          <div className="aviso" style={{ marginBottom: 12 }}>
+            Este navegador bloqueou o armazenamento local: dá para jogar, mas o progresso some ao fechar a página.
+          </div>
+        )}
         <Outlet />
       </main>
       {!semNav && (
