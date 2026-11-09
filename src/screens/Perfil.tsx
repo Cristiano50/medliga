@@ -9,6 +9,9 @@ import { PLANOS } from '../core/planos.ts';
 import { db } from '../data/db.ts';
 import { Barra } from '../ui/comum.tsx';
 import { MARCA } from '../config/marca.ts';
+import { conquistasDe, type EstatisticasJogador } from '../core/conquistas.ts';
+import { carregarDisciplina } from '../content/index.ts';
+import { dominio } from '../core/srs.ts';
 
 export function PerfilTela() {
   const perfil = useApp((s) => s.perfil)!;
@@ -53,6 +56,8 @@ export function PerfilTela() {
           <Stat rotulo="Acertos" valor={stats.respostas ? `${Math.round((stats.acertos / stats.respostas) * 100)}%` : '—'} />
         </div>
       </div>
+
+      <Conquistas />
 
       <div className="card pilha">
         <div className="linha entre">
@@ -261,5 +266,60 @@ function AcessoProfessor() {
       </div>
       <span aria-hidden>›</span>
     </Link>
+  );
+}
+
+function Conquistas() {
+  const perfil = useApp((s) => s.perfil)!;
+  const xpTotal = useApp((s) => s.xpTotal);
+  const sequenciaDias = useApp((s) => s.sequenciaDias);
+  const [est, setEst] = useState<EstatisticasJogador | null>(null);
+  const [todas, setTodas] = useState(false);
+  useEffect(() => {
+    void (async () => {
+      const [sessoes, estados, reportes, topicos] = await Promise.all([
+        db.sessoes.toArray(),
+        db.estados.toArray(),
+        db.reportes.count(),
+        carregarDisciplina('embriologia'),
+      ]);
+      const porId = new Map(estados.map((e) => [e.questaoId, e]));
+      const dominados = topicos.filter(
+        (t) => dominio(t.questoes.map((q) => porId.get(q.id)).filter((x) => !!x) as typeof estados, t.questoes.length) >= 0.6,
+      ).length;
+      setEst({
+        sessoes: sessoes.map((s) => ({ modo: s.modo, acertos: s.acertos, total: s.total })),
+        sequenciaDias,
+        xpTotal,
+        nivel: nivelPorXP(xpTotal).nivel,
+        topicosDominados: dominados,
+        totalTopicos: topicos.length,
+        temEscola: !!perfil.escolaId,
+        reportesEnviados: reportes,
+      });
+    })();
+  }, [xpTotal, sequenciaDias, perfil.escolaId]);
+  if (!est) return null;
+  const lista = conquistasDe(est);
+  const obtidas = lista.filter((c) => c.obtida).length;
+  const visiveis = todas ? lista : [...lista].sort((a, b) => Number(b.obtida) - Number(a.obtida) || b.valor - a.valor).slice(0, 6);
+  return (
+    <div className="card pilha">
+      <div className="linha entre">
+        <strong>Conquistas</strong>
+        <span className="muted pequeno">{obtidas} de {lista.length}</span>
+      </div>
+      <div className="grade" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 8 }}>
+        {visiveis.map((c) => (
+          <div key={c.id} className="pilha" style={{ gap: 4, padding: 10, borderRadius: 12, background: 'var(--bg-elev)', border: '1px solid var(--border)', opacity: c.obtida ? 1 : 0.65 }} title={c.descricao}>
+            <span style={{ fontSize: '1.4rem', filter: c.obtida ? 'none' : 'grayscale(1)' }} aria-hidden>{c.icone}</span>
+            <strong className="pequeno">{c.nome}</strong>
+            <span className="muted" style={{ fontSize: '0.75rem' }}>{c.descricao}</span>
+            {!c.obtida && <Barra valor={c.valor} rotulo={`Progresso: ${c.nome}`} />}
+          </div>
+        ))}
+      </div>
+      <button className="btn fantasma pequeno" onClick={() => setTodas((x) => !x)}>{todas ? 'Mostrar menos' : 'Ver todas'}</button>
+    </div>
   );
 }

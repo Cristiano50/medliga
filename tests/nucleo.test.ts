@@ -187,3 +187,22 @@ describe('schema', () => {
     expect(r.success).toBe(false);
   });
 });
+
+import { conquistasDe } from '../src/core/conquistas.ts';
+describe('conquistas', () => {
+  const base = { sessoes: [], sequenciaDias: 0, xpTotal: 0, nivel: 1, topicosDominados: 0, totalTopicos: 20, temEscola: false, reportesEnviados: 0 };
+  it('jogador novo não tem conquistas', () => {
+    expect(conquistasDe(base).filter((c) => c.obtida)).toHaveLength(0);
+  });
+  it('plantão perfeito exige 10+ respostas todas certas', () => {
+    const quase = conquistasDe({ ...base, sessoes: [{ modo: 'plantao', acertos: 9, total: 9 }] });
+    expect(quase.find((c) => c.id === 'plantao-perfeito')!.obtida).toBe(false);
+    const ok = conquistasDe({ ...base, sessoes: [{ modo: 'plantao', acertos: 12, total: 12 }] });
+    expect(ok.find((c) => c.id === 'plantao-perfeito')!.obtida).toBe(true);
+    expect(ok.find((c) => c.id === 'primeiro-passo')!.obtida).toBe(true);
+  });
+  it('progresso parcial', () => {
+    const c = conquistasDe({ ...base, sequenciaDias: 2 }).find((x) => x.id === 'sequencia-7')!;
+    expect(c.valor).toBeCloseTo(2 / 7);
+  });
+});
