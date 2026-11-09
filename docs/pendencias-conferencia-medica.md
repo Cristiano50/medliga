@@ -44,7 +44,15 @@ Bolsa de Rathke × medula ocupando o canal (emb-18); AMH × início da testoster
 
 Alternativa correta ainda visivelmente mais longa em: emb-11 q14; emb-12 q02, q11; emb-13 q06; emb-14 q12; emb-15 q06, q08, q14 (sem ambiguidade de conteúdo).
 
-## F. Para as próximas revisões (rede do ambiente)
+## F. Textos do laboratório 3D (`estagios.json`, relatório `content/revisoes/estagios-3d.md`)
+
+- Coração tubular: o modelo é a figura clássica dos livros (tubo reto com cinco regiões), que não corresponde ao modelo atual do campo cardíaco secundário; o texto avisa em uma frase. Decidir se basta.
+- Alça cardíaca: Carnegie 11–13 (algumas fontes põem o início no fim do estágio 10).
+- Decídua capsular: Moore e Sadler divergem sobre quando degenera e se funde à parietal; o texto segue Sadler (como emb-09).
+- "Cone arterial" para a parte média do bulbo cardíaco: corrigido no 3D (é o nome anatômico do infundíbulo do VD), mas o tópico emb-13 ainda usa a expressão; uniformizar.
+- Título "Zigoto" com dois pronúcleos (Moore chama de oótide); mantido.
+
+## G. Para as próximas revisões (rede do ambiente)
 
 Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
 
