@@ -80,6 +80,8 @@ export function PerfilTela() {
 
       <ContaOnline modoBackend={modoBackend} onSync={atualizarSync} />
 
+      <AcessoProfessor />
+
       <div className="card linha entre">
         <div>
           <span className="muted pequeno">Plano</span>
@@ -242,5 +244,22 @@ function Privacidade() {
       )}
       {msg && <p className="muted pequeno" style={{ margin: 0 }}>{msg}</p>}
     </div>
+  );
+}
+
+function AcessoProfessor() {
+  const [eh, setEh] = useState(false);
+  useEffect(() => {
+    void obterBackend().then((b) => b.escolasProfessor()).then((l) => setEh(l.length > 0));
+  }, []);
+  if (!eh) return null;
+  return (
+    <Link to="/painel" className="card linha entre" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div>
+        <span className="muted pequeno">Plano institucional</span>
+        <div><strong>📊 Painel do professor</strong></div>
+      </div>
+      <span aria-hidden>›</span>
+    </Link>
   );
 }

@@ -8,6 +8,7 @@ import { rankingEscolas } from '../core/ranking.ts';
 import { criarRng } from '../core/random.ts';
 import type { Perfil, RegistroResposta, RegistroSessao, Reporte } from './db.ts';
 import { MARCA } from '../config/marca.ts';
+import { topicosDe } from '../content/index.ts';
 import type { PlanoId } from '../core/planos.ts';
 
 export type ModoBackend = 'supabase' | 'demo' | 'offline';
@@ -37,6 +38,17 @@ export interface Backend {
   enviarReporte(r: Reporte): Promise<void>;
   /** LGPD: apaga conta e dados no servidor. */
   excluirConta(): Promise<void>;
+  /** Plano institucional: escolas em que o usuário é professor. */
+  escolasProfessor(): Promise<{ escolaId: string; licencaAtiva: boolean }[]>;
+  /** Desempenho agregado da turma por tópico (mínimo de 5 alunos por recorte). */
+  painelEscola(escolaId: string, desde?: string): Promise<LinhaPainel[]>;
+}
+
+export interface LinhaPainel {
+  topicoId: string;
+  alunos: number;
+  respostas: number;
+  acerto: number; // %
 }
 
 const env = import.meta.env;
@@ -88,6 +100,12 @@ class BackendOffline implements Backend {
     throw new Error('offline');
   }
   async excluirConta() {}
+  async escolasProfessor() {
+    return [];
+  }
+  async painelEscola(): Promise<LinhaPainel[]> {
+    return [];
+  }
 }
 
 /** Dados fictícios e determinísticos para desenvolvimento e demonstrações. Nunca usado em produção. */
@@ -154,6 +172,15 @@ class BackendDemo implements Backend {
   async enviarReporte() {}
   async excluirConta() {
     this.usuario = null;
+  }
+  async escolasProfessor() {
+    return this.minhaEscola ? [{ escolaId: this.minhaEscola, licencaAtiva: true }] : [];
+  }
+  async painelEscola(): Promise<LinhaPainel[]> {
+    const rng = criarRng(42);
+    return topicosDe('embriologia').map((t) => {
+      return { topicoId: t.id, alunos: 8 + Math.floor(rng() * 30), respostas: 60 + Math.floor(rng() * 400), acerto: Math.round((45 + rng() * 45) * 10) / 10 };
+    });
   }
 }
 
@@ -253,6 +280,23 @@ class BackendSupabase implements Backend {
     const { error } = await this.sb.rpc('excluir_minha_conta');
     if (error) throw error;
     await this.sb.auth.signOut();
+  }
+
+  async escolasProfessor() {
+    const { data, error } = await this.sb.rpc('minhas_escolas_professor');
+    if (error) return [];
+    return (data as { escola_id: string; licenca_ativa: boolean }[]).map((r) => ({ escolaId: r.escola_id, licencaAtiva: r.licenca_ativa }));
+  }
+
+  async painelEscola(escolaId: string, desde?: string): Promise<LinhaPainel[]> {
+    const { data, error } = await this.sb.rpc('painel_escola', { p_escola_id: escolaId, ...(desde ? { p_desde: desde } : {}) });
+    if (error) throw error;
+    return (data as { topico_id: string; alunos: number; respostas: number; acerto: number }[]).map((r) => ({
+      topicoId: r.topico_id,
+      alunos: r.alunos,
+      respostas: r.respostas,
+      acerto: Number(r.acerto),
+    }));
   }
 
   async rankingEscolas(semana: string) {

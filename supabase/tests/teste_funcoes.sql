@@ -141,9 +141,30 @@ do $$ begin
   if exists (select 1 from ranking_alunos(semana_de(now())) where usuario_id = '00000000-0000-0000-0000-00000000000b') then raise exception 'FALHOU: ainda no ranking'; end if;
 end $$;
 
+-- 14) painel do professor: sem vínculo, sem acesso; com vínculo e licença, só agregados com ≥ 5 alunos
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000c';
+do $$ begin
+  begin
+    perform * from painel_escola('unb');
+    raise exception 'FALHOU: painel sem vínculo';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+end $$;
+
 reset role;
 -- (como administrador) o reporte continua na fila, anonimizado
 do $$ begin
   if (select count(*) from reportes_conteudo where questao_id = 't-q2' and usuario_id is null) <> 1 then raise exception 'FALHOU: reporte deveria ser mantido anonimizado'; end if;
 end $$;
+-- (administrador) concede professor da UnB e licença; com 1 aluno só, o painel não mostra nada (mínimo de 5)
+insert into professores values ('00000000-0000-0000-0000-00000000000c', 'unb');
+insert into licencas_institucionais (escola_id, valido_ate) values ('unb', current_date + 30);
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000c';
+do $$ begin
+  if (select count(*) from minhas_escolas_professor() where licenca_ativa) <> 1 then raise exception 'FALHOU: professor/licença'; end if;
+  if (select count(*) from painel_escola('unb')) <> 0 then raise exception 'FALHOU: painel deveria ocultar recorte com < 5 alunos'; end if;
+end $$;
+reset role;
 \echo 'TODOS OS TESTES SQL PASSARAM'

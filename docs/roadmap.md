@@ -5,7 +5,8 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 ## v0.1 — Embriologia (este repositório)
 - [x] Núcleo do jogo: XP, níveis, sequência de dias, revisão espaçada, sessões, limites do plano gratuito.
 - [x] Embriologia geral (tópicos 1–10) com questões de 4 tipos, resumos, estruturas, correlações clínicas e fontes.
-- [ ] Embriologia dos sistemas (tópicos 11–20) — em redação (lacuna apontada pela pesquisa curricular: está em todas as escolas, do 1º ao 3º semestre).
+- [x] Embriologia dos sistemas (tópicos 11–20) — lacuna apontada pela pesquisa curricular (está em todas as escolas, do 1º ao 3º semestre).
+- [x] Reportar erro nas questões; exclusão de conta/dados (LGPD); painel do professor (agregado, mínimo de 5 alunos).
 - [x] Laboratório 3D com 12 estágios (zigoto → placenta) e jogo Identifique.
 - [x] Minijogos: linha do tempo, camadas germinativas, plantão relâmpago (90 s).
 - [x] Cadastro de escolas (441 cursos) e rankings: interno da escola, entre escolas e geral.
@@ -15,8 +16,8 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 ## v0.2 — Lançamento do piloto
 - Ativar Supabase em produção (região São Paulo) e domínio.
 - Termos de uso e política de privacidade (LGPD); exclusão de conta na tela de perfil.
-- Botão "reportar erro" em cada questão e fila de revisão.
-- Cobrança (lojas + web) e painel institucional mínimo (desempenho da turma por tópico).
+- Tela interna para a equipe tratar a fila de reportes.
+- Cobrança (lojas + web) e gestão de licenças institucionais.
 - Builds Android (Google Play — teste interno) e iOS (TestFlight).
 - Completar o cadastro de escolas (≈ 30 cursos faltantes; precisa liberar e-mec.mec.gov.br na rede do ambiente).
 
