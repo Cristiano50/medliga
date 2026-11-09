@@ -1110,8 +1110,8 @@
       "capitulo": "Uso do Z-score em mulheres antes da menopausa e homens com menos de 50 anos"
     },
     {
-      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas — Osteoporose (Portaria Conjunta SAES/SECTICS nº 19, de 28/09/2023, revogada por portaria conjunta SAES/SECTICS de 22/10/2025)",
-      "capitulo": "Diagnóstico (fratura por fragilidade; densitometria)"
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Osteoporose. Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025 (DOU nº 208, 31/10/2025, seção 1, p. 145), que revogou a Portaria Conjunta SAES/SECTICS nº 19, de 28/09/2023. Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose",
+      "capitulo": "3.1 Diagnóstico clínico e densitométrico (fratura por fragilidade independentemente do T-escore; T-escore ≤ −2,5 em mulheres na pós-menopausa e homens acima dos 50 anos; osteoporose grave: T-escore ≤ −2,5 associado a fratura por fragilidade)"
     },
     {
       "obra": "Munns CF, Shaw N, Kiely M, et al. Global consensus recommendations on prevention and management of nutritional rickets. J Clin Endocrinol Metab. 2016;101(2):394-415",
@@ -1148,7 +1148,7 @@
     "Número de núcleos por osteoclasto e espessura das lamelas omitidos (valores não conferidos nas edições adotadas).",
     "Osteocalcina como marcador de formação: é produzida por osteoblastos, mas também liberada da matriz na reabsorção; por isso a questão his-07-q03 associa o marcador à atividade osteoblástica, sem afirmar especificidade absoluta.",
     "Papel dos osteócitos como fonte de RANKL e de esclerostina vem de pesquisas recentes descritas em Ross 8ª ed.; o resumo menciona os osteócitos apenas entre as fontes de RANKL e não cita esclerostina nas questões.",
-    "Critério densitométrico de osteoporose (T-score ≤ −2,5) segue a definição da OMS, não as obras-base de histologia. Revisão de patologia/clínica (09/11/2026): o PCDT de Osteoporose do Ministério da Saúde (versão de 2023, Portaria Conjunta SAES/SECTICS nº 19) baseia a definição clínica na fratura por fragilidade, independentemente da massa óssea, e na densitometria; esse PCDT foi revogado por portaria conjunta SAES/SECTICS de 22/10/2025, cujo número (22 ou 23, conforme a fonte) e cujo texto integral não puderam ser conferidos nesta sessão (rede restrita). Conferir se a versão de 2025 mantém os mesmos critérios. O uso do Z-score antes da menopausa e em homens com menos de 50 anos segue as posições oficiais da ISCD.",
+    "Critério densitométrico de osteoporose (T-score ≤ −2,5) segue a definição da OMS, não as obras-base de histologia. Conferência de fontes (09/11/2026, texto integral): o PCDT de Osteoporose vigente é o da Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025 (DOU nº 208, 31/10/2025, seção 1, p. 145; a nº 23, da mesma data e da mesma página, aprova o PCDT da Acromegalia), que revogou a nº 19/2023. O item 3.1 mantém a definição clínica pela fratura por fragilidade, independentemente da massa óssea, e o T-escore ≤ −2,5 em mulheres na pós-menopausa e em homens “acima dos 50 anos”, e chama de osteoporose grave o T-escore ≤ −2,5 associado a fratura por fragilidade, como no tópico. Diferenças sem contradição, para o revisor humano: o PCDT não trata do Z-score (o uso antes da menopausa e em homens com menos de 50 anos segue só as posições oficiais da ISCD); inclui o terço do rádio entre os sítios; e acrescenta um critério que o tópico não cita (T-escore entre −1 e −2,49 com risco de fratura aumentado no FRAX).",
     "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 8; Junqueira 8) continuam pendentes de conferência humana.",
     "Id de estrutura “lacuna”: aqui designa a lacuna do osteócito, mas o mesmo id canônico designa a lacuna do condrócito em his-06 e na lâmina de cartilagem hialina (na lâmina de osso compacto, a lacuna do osteócito usa o id “osteocito”). Ids não foram alterados; decisão de arquitetura pendente."
   ],
@@ -1169,6 +1169,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "10 correções (0 críticas, 2 importantes, 8 menores); principais: osteoporose — critérios completos (fratura por fragilidade independentemente da DXA; T-score ≤ −2,5 só em mulheres na pós-menopausa e homens ≥50 anos, nos sítios da OMS; Z-score nos demais; osteoporose estabelecida), também na explicação do his-07-q12; raquitismo/osteomalácia — mecanismo com hiperparatireoidismo secundário e perda renal de fosfato, perfil laboratorial e aviso de que o calcitriol pode estar normal ou alto e não serve para o diagnóstico. Menores: raquitismo também por fosfato (resumo); vinheta do his-07-q13 sem “aleitamento exclusivo” aos 18 meses; osteogênese imperfeita (formas recessivas; maus-tratos no diferencial, também no his-07-q14); fosfatase alcalina óssea × total, Paget e P1NP (resumo, his-07-q03); calcitonina como marcador do carcinoma medular e uso farmacológico restrito (his-07-q22, nota); fósforo baixo ou normal-baixo no hiperparatireoidismo primário; fatores da consolidação e nota sobre consolidação primária × osso primário; osteopetrose por deficiência de RANKL não responde ao transplante (his-07-q15). Gabaritos inalterados. PCDT de 2025 não lido (ver incertezas)."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado",
+        "notas": "Conferência de fontes primárias no texto integral (bloco Ministério da Saúde). Lido o PCDT de Osteoporose aprovado pela Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025 (DOU nº 208, 31/10/2025, seção 1, p. 145), que revogou a nº 19/2023; a nº 23, da mesma data, é o PCDT da Acromegalia. O item 3.1 mantém a fratura por fragilidade independentemente da massa óssea, o T-escore ≤ −2,5 em mulheres na pós-menopausa e homens acima dos 50 anos e a osteoporose grave (T-escore ≤ −2,5 associado a fratura por fragilidade): a correlação de osteoporose e a explicação do his-07-q12 conferem, sem correção de texto. A referência ganhou número, DOU e URL, e a incerteza foi reescrita como confirmada. Para o revisor humano: o PCDT não trata do Z-score (apoio só da ISCD), inclui o terço do rádio entre os sítios e acrescenta o critério T-escore entre −1 e −2,49 com FRAX elevado, que o tópico não cita."
       }
     ],
     "humano": null

@@ -791,7 +791,7 @@
       "capitulo": "Idade recomendada para orquidopexia"
     },
     {
-      "obra": "Sociedade Brasileira de Pediatria, Departamento Científico de Endocrinologia. Abordagem da criança que nasce com genitália atípica: orientações para o pediatra. Documento científico, fev. 2026",
+      "obra": "Sociedade Brasileira de Pediatria, Departamento Científico de Endocrinologia. Abordagem da criança que nasce com genitália atípica: orientações para o pediatra. Documento Científico nº 232, 12 fev. 2026 (texto integral restrito a associados). Página: https://www.sbp.com.br/abordagem-da-crianca-que-nasce-com-genitalia-atipica-orientacoes-para-o-pediatra/ ; primeira página reproduzida no Boletim SBP em Dia nº 38: https://www.sbp.com.br/wp-content/uploads/2026/03/BoletimSBPemDia_Edicao38.pdf",
       "capitulo": "Terminologia (DDS: distúrbios/diferenças) e conduta inicial diante de genitália atípica"
     },
     {
@@ -830,7 +830,7 @@
     "A proporção de pessoas com deficiência de 5α-redutase criadas no gênero feminino que assumem identidade masculina varia entre as séries; descrita apenas como 'parte'.",
     "Papel de RSPO1 e FOXL2 na diferenciação ovariana: bem estabelecido na literatura de pesquisa, mas o resumo cita apenas WNT4, que é o gene mencionado por Sadler.",
     "Camada avançada (revisor de embriologia, 2026-11-09): na q26, a fase transabdominal da descida é atribuída sobretudo ao INSL3 e ao gubernáculo, com papel acessório dos andrógenos (regressão do ligamento suspensor cranial, demonstrada sobretudo em modelos animais); na q27, a conduta gonadal é descrita só de forma qualitativa (risco tumoral baixo na insensibilidade completa aos andrógenos, alto na disgenesia gonadal completa 46,XY), compatível com Lee et al. 2006 e 2016, cujos percentuais não foram usados; o texto integral de Lee et al. 2016 não foi conferido nesta revisão.",
-    "Camada avançada (revisor clínico, 2026-11-09): o documento da SBP citado na q25 existe (Documento Científico nº 232, Departamento Científico de Endocrinologia, 12/02/2026), mas o texto integral não pôde ser aberto; as orientações que a q25 lhe atribui (tratar o caso como urgência, não atribuir o sexo na sala de parto, investigar HAC) coincidem com a literatura sobre genitália atípica e com a AUA (Kolon 2014), e devem ser confirmadas no documento. Na q27, a conduta qualitativa foi mantida: uma série retrospectiva de Cambridge (J Pediatr Urol, 2017) sobre insensibilidade completa aos andrógenos, conferida por resumo, encontrou as neoplasias sobretudo depois da puberdade e propõe discutir a gonadectomia na vida adulta, o que é compatível com a alternativa (d); o texto integral de Lee et al. 2016 continua não conferido."
+    "Camada avançada (revisor clínico, 2026-11-09): o documento da SBP citado na q25 existe (Documento Científico nº 232, Departamento Científico de Endocrinologia, 12/02/2026), mas o texto integral não pôde ser aberto; as orientações que a q25 lhe atribui (tratar o caso como urgência, não atribuir o sexo na sala de parto, investigar HAC) coincidem com a literatura sobre genitália atípica e com a AUA (Kolon 2014), e devem ser confirmadas no documento. Na q27, a conduta qualitativa foi mantida: uma série retrospectiva de Cambridge (J Pediatr Urol, 2017) sobre insensibilidade completa aos andrógenos, conferida por resumo, encontrou as neoplasias sobretudo depois da puberdade e propõe discutir a gonadectomia na vida adulta, o que é compatível com a alternativa (d); o texto integral de Lee et al. 2016 continua não conferido. Conferência de fontes primárias (2026-11-09): o PDF do documento fica na área restrita a associados do site da SBP (o link de download redireciona para o login) e não pôde ser lido na íntegra. A primeira página, reproduzida no Boletim SBP em Dia nº 38 (março de 2026), confirma número, data e departamento (Nº 232, 12/02/2026, Departamento Científico de Endocrinologia), a forma 'Distúrbios/Diferenças da Diferenciação do Sexo (DDS)' e que essas condições 'são consideradas como uma urgência médica', pelo estresse psicossocial e porque algumas etiologias, se não reconhecidas e tratadas prontamente, põem a vida em risco. Continuam sem conferência no texto do documento: não atribuir o sexo na sala de parto e investigar HAC (q25, correlação de DDS e explicação da questão de HAC)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -863,6 +863,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "camada avançada (ids emb-17-q24 a emb-17-q28): 0 correções; conferidos persistência dos ductos de Müller (q24), HAC a afastar primeiro na hipospádia proximal com gônadas impalpáveis, pelo risco de crise perdedora de sal (q25), INSL3 e fase inguinoescrotal dependente de andrógenos (q26), conduta gonadal qualitativa na insensibilidade completa × Swyer, compatível com Lee 2006/2016 (q27), e as vias SRY/AMH/testosterona/DHT/CYP21A2 (q28); terminologia DDS coerente com o tópico. Nova incerteza: documento nº 232 da SBP e Lee 2016 não abertos na íntegra."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado",
+        "notas": "Conferência de fontes primárias: Documento Científico nº 232 da SBP (genitália atípica, 12/02/2026) — o texto integral está na área restrita a associados e não pôde ser aberto; a primeira página, reproduzida no Boletim SBP em Dia nº 38, confirma número, data, Departamento de Endocrinologia, a forma 'Distúrbios/Diferenças da Diferenciação do Sexo' e que as DDS 'são consideradas como uma urgência médica'. Nada contradiz a q25; continuam sem conferência 'não atribuir o sexo na sala de parto' e 'investigar HAC'. Sem mudança de texto; referência com número e URL; incerteza atualizada. Relatório: content/revisoes/conferencia-fontes-sbp.md."
       }
     ],
     "humano": null

@@ -136,7 +136,7 @@
     {
       "id": "hipotermia-neonatal",
       "titulo": "Hipotermia neonatal",
-      "descricao": "O recém-nascido, sobretudo o prematuro e o de baixo peso, perde calor rapidamente em ambiente frio, e a hipotermia aumenta a morbidade e a mortalidade neonatais. Por isso as diretrizes de reanimação neonatal da SBP (2022) tratam a normotermia (temperatura axilar de 36,5 a 37,5 °C) como prioridade desde o nascimento. No recém-nascido com 34 semanas ou mais: sala aquecida, secagem com compressas aquecidas e, se a vitalidade for boa, contato pele a pele com a mãe. No prematuro com menos de 34 semanas, o corpo não é secado: é envolto em saco plástico de polietileno, com touca dupla e fonte de calor radiante.",
+      "descricao": "O recém-nascido, sobretudo o prematuro e o de baixo peso, perde calor rapidamente em ambiente frio, e a hipotermia aumenta a morbidade e a mortalidade neonatais. Por isso as diretrizes de reanimação neonatal da SBP (2022 e 2026) tratam a normotermia (temperatura axilar de 36,5 a 37,5 °C) como prioridade desde o nascimento. No recém-nascido com 34 semanas ou mais: sala aquecida, secagem com compressas aquecidas e, se a vitalidade for boa, contato pele a pele com a mãe. No prematuro com menos de 34 semanas levado à mesa de reanimação, o corpo não é secado: é envolto em saco plástico de polietileno, com touca dupla e fonte de calor radiante (pela diretriz de 2026, o prematuro de 32 a 33 semanas com boa vitalidade pode ficar em contato pele a pele, seco, com touca dupla e cobertura plástica).",
       "mecanismo": "A produção de calor no recém-nascido depende da termogênese sem tremor no tecido adiposo multilocular (noradrenalina → lipólise → UCP1); o prematuro tem menos gordura parda e menos panículo adiposo e maior superfície corporal relativa."
     }
   ],
@@ -968,12 +968,20 @@
       "capitulo": "Doenças ambientais e nutricionais (obesidade, leptina, adiponectina)"
     },
     {
-      "obra": "Sociedade Brasileira de Pediatria, Programa de Reanimação Neonatal. Reanimação do recém-nascido ≥34 semanas em sala de parto: diretrizes 2022 da SBP",
+      "obra": "Almeida MFB, Guinsburg R; Coordenadores Estaduais e Grupo Executivo PRN-SBP; Conselho Científico Departamento Neonatologia SBP. Reanimação do recém-nascido ≥34 semanas em sala de parto: diretrizes 2022 da Sociedade Brasileira de Pediatria. Rio de Janeiro: SBP; 2022. https://doi.org/10.25060/PRN-SBP-2022-2. Disponível em: https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNigualMaior34semanas-MAIO2022a.pdf",
       "capitulo": "Controle da temperatura (normotermia, secagem, contato pele a pele)"
     },
     {
-      "obra": "Sociedade Brasileira de Pediatria, Programa de Reanimação Neonatal. Reanimação do prematuro <34 semanas em sala de parto: diretrizes 2022 da SBP",
-      "capitulo": "Controle da temperatura (saco plástico de polietileno, touca dupla, calor radiante)"
+      "obra": "Guinsburg R, Almeida MFB; Coordenadores Estaduais e Grupo Executivo PRN-SBP; Conselho Científico Departamento Neonatologia SBP. Reanimação do recém-nascido <34 semanas em sala de parto: diretrizes 2022 da Sociedade Brasileira de Pediatria. Rio de Janeiro: SBP; 2022. https://doi.org/10.25060/PRN-SBP-2022-1. Disponível em: https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNmenor34semanas-MAIO2022a.pdf",
+      "capitulo": "4.1 — Manter o RN em normotermia (saco plástico de polietileno sem secar, touca dupla, calor radiante)"
+    },
+    {
+      "obra": "Almeida MFB, Guinsburg R; Coordenadores Estaduais e Grupo Executivo do PRN-SBP; Departamento de Neonatologia da SBP. Reanimação do recém-nascido ≥34 semanas em sala de parto: diretrizes 2026 da Sociedade Brasileira de Pediatria. Rio de Janeiro: SBP; 12 jun. 2026. https://doi.org/10.25060/PRN-SBP-2026-1. Disponível em: https://www.sbp.com.br/acervo/reanimacao-do-recem-nascido-%E2%89%A534-semanas-em-sala-de-parto-junho-2026/",
+      "capitulo": "4 — Assistência ao RN ≥34 semanas com boa vitalidade (sala a 23–25 °C, secagem, touca, pele a pele); 5.3.1 — Manter o RN em normotermia"
+    },
+    {
+      "obra": "Guinsburg R, Almeida MFB; Coordenadores Estaduais e Grupo Executivo do PRN-SBP; Departamento de Neonatologia da SBP. Reanimação do recém-nascido <34 semanas em sala de parto: diretrizes 2026 da Sociedade Brasileira de Pediatria. Rio de Janeiro: SBP; 12 jun. 2026. https://doi.org/10.25060/PRN-SBP-2026-2. Disponível em: https://www.sbp.com.br/acervo/reanimacao-do-prematuro-34-semanas-em-sala-de-parto-junho-2026/",
+      "capitulo": "4.1 — RNPT moderado (32 a 33 semanas) com boa vitalidade em pele a pele; 5.3.1 — Manter o RN em normotermia (saco plástico sem secar, touca dupla, calor radiante)"
     },
     {
       "obra": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours, 5th ed. Lyon: IARC; 2020",
@@ -995,8 +1003,7 @@
     "A afirmação de que o prematuro tem menos tecido adiposo pardo (acumulado sobretudo no fim da gestação) e de que o tremor é pouco eficaz no recém-nascido vem da literatura de neonatologia, não das obras-base de histologia; conferir em tratado de pediatria/neonatologia. Revisão de patologia/clínica (09/11/2026): as duas afirmações são compatíveis com a literatura de neonatologia (por exemplo, MSD Manual, versão para profissionais, “Hipotermia em neonatos”: resposta ao frio por termogênese química, sem tremor, na gordura parda) e com as diretrizes de reanimação neonatal da SBP (2022); a conferência em tratado continua recomendada.",
     "Origem dos adipócitos pardos e beges: os dados sobre precursores próprios (aparentados aos do músculo esquelético) e sobre o surgimento de adipócitos beges vêm sobretudo de estudos em roedores; mantido em nível introdutório, sem questões.",
     "Lipossarcoma: detalhes moleculares (MDM2 no bem diferenciado; t(12;16) no mixoide) conferidos de memória em Robbins; conferir na edição adotada. A ressalva de que lipoblastos não são obrigatórios para o diagnóstico do bem diferenciado segue a classificação da OMS de tumores de partes moles; conferir a redação de Robbins.",
-    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 9; Junqueira 6 e 1) continuam pendentes de conferência humana.",
-    "Revisão de patologia/clínica (09/11/2026): as diretrizes de reanimação neonatal da SBP (2022) foram conferidas por busca, não pelo texto integral (rede restrita nesta sessão). Confirmados: saco plástico de polietileno e touca dupla obrigatórios no prematuro <34 semanas; meta de temperatura axilar de 36,5–37,5 °C. Conferir no documento os títulos exatos e a redação sobre secagem e contato pele a pele no recém-nascido ≥34 semanas. A temperatura da sala de parto foi deixada qualitativa (“sala aquecida”) por não ter sido confirmada na versão de 2022."
+    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 9; Junqueira 6 e 1) continuam pendentes de conferência humana."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1015,6 +1022,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "6 correções (0 críticas, 2 importantes, 4 menores); principais: resumo dizia que o recém-nascido tem “pouca reserva de gordura parda”, em contradição com “relativamente abundante” (agora: reserva proporcionalmente abundante, porém limitada; o prematuro tem menos); correlação de hipotermia neonatal alinhada às diretrizes de reanimação da SBP 2022 (no prematuro <34 semanas o corpo não é secado: saco plástico de polietileno, touca dupla, calor radiante; meta axilar 36,5–37,5 °C). Menores: termo “tumor lipomatoso atípico” (OMS 2020); his-05-q11 alinhada a “lipoblastos não obrigatórios, MDM2”; his-05-q10 com a faixa normal de temperatura; nota sobre os dois sentidos de “lipoblasto”. Conferidos sem correção: leptina/adiponectina na obesidade, deficiência congênita de leptina, lipoma × lipossarcoma (MDM2, t(12;16)), gordura parda no PET-CT. Gabaritos inalterados. Diretrizes SBP conferidas só por busca (ver incertezas)."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Conferência de fontes primárias (textos integrais das diretrizes de reanimação da SBP de 2022 e 2026): 1 correção menor. Diretrizes de 2022 (<34 semanas, DOI 10.25060/PRN-SBP-2022-1, item 4.1): todo prematuro <34 semanas vai à mesa de reanimação; o corpo é introduzido no saco plástico de polietileno sem secar, com touca dupla e calor radiante; temperatura axilar de 36,5–37,5 °C; sala a 23–25 °C. (≥34 semanas, DOI 10.25060/PRN-SBP-2022-2): secar corpo e cabeça com compressas aquecidas, touca, pele a pele. As diretrizes de 2026 mantêm essas medidas, mas o prematuro moderado (32 0/7 a 33 6/7 semanas) com boa vitalidade pode ficar em pele a pele, com o corpo seco, touca dupla e cobertura plástica sem saco (item 4.1); por isso a correlação passou a dizer 'prematuro com menos de 34 semanas levado à mesa de reanimação' e registra a exceção de 2026. Referências com títulos exatos, DOI e URL (2022 e 2026); incerteza resolvida retirada. Relatório: content/revisoes/conferencia-fontes-sbp.md."
       }
     ],
     "humano": null
