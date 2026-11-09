@@ -49,7 +49,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -87,7 +95,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -130,7 +146,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -179,7 +203,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -245,7 +277,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -330,7 +370,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -414,7 +462,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -432,7 +488,7 @@
       "descricao": "A notocorda induz o ectoderma sobrejacente a formar a placa neural. Suas bordas se elevam como pregas neurais, delimitando o sulco neural; a fusão das pregas começa na região dos futuros 4º a 6º pares de somitos (região cervical) e avança nas direções cranial e caudal. Células da crista neural se destacam das bordas das pregas. Ao lado da notocorda, o mesoderma paraxial se segmenta em somitos; lateralmente ficam o mesoderma intermediário e o lateral, este dividido em somático e esplâncnico pelo celoma intraembrionário.",
       "destaques": [
         "Primeiro par de somitos por volta do 20º dia.",
-        "O coração tubular começa a bater por volta do 22º–23º dia.",
+        "O coração tubular começa a bater por volta do 21º ao 23º dia.",
         "Corte transversal: veja as três subdivisões do mesoderma e o celoma intraembrionário."
       ],
       "topicos": [
@@ -513,7 +569,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): início dos batimentos cardíacos passou a citar a faixa adotada nos tópicos (21º ao 23º dia) em vez de \"22º–23º\". Demais textos, dias (20–22) e estágios (9–10) conferidos."
+          }
+        ],
         "humano": null
       }
     },
@@ -594,7 +658,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Textos, dias, estágios de Carnegie e tamanhos conferidos contra os tópicos correspondentes; nada a corrigir. Ids e lista de estruturas preservados."
+          }
+        ],
         "humano": null
       }
     },
@@ -602,12 +674,13 @@
       "id": "semana-6",
       "ordem": 10,
       "titulo": "6ª semana",
-      "dias": "≈ 41–44 dias após a fertilização",
-      "diaReferencia": 42,
+      "dias": "≈ 35–42 dias após a fertilização",
+      "diaReferencia": 40,
       "carnegie": [
-        17
+        15,
+        16
       ],
-      "tamanho": "≈ 11–14 mm (CRL)",
+      "tamanho": "≈ 7–11 mm (CRL)",
       "descricao": "A cabeça cresce muito por causa do encéfalo. As mãos são placas com raios digitais; os pés ainda são placas. O olho tem pigmento retiniano e as saliências auriculares formam o pavilhão. O intestino médio hernia para o cordão umbilical (herniação umbilical fisiológica), por falta de espaço no abdome ocupado pelo fígado e pelos rins.",
       "destaques": [
         "Herniação umbilical fisiológica começa na 6ª semana.",
@@ -657,7 +730,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (crítica): o estágio rotulado \"6ª semana\" trazia os números da 7ª — Carnegie 17, 41–44 dias e CCN 11–14 mm —, contradizendo emb-07, que atribui o estágio 17 (42–44 dias; 11–14 mm) à 7ª semana. Corrigido para Carnegie 15–16, 35–42 dias, CCN 7–11 mm e diaReferencia 40, que é o que a descrição do estágio mostra (placas das mãos com raios digitais, placas dos pés, pigmento retiniano, saliências auriculares). Ids e estruturas inalterados."
+          }
+        ],
         "humano": null
       }
     },
@@ -685,7 +766,7 @@
         {
           "id": "palpebras",
           "nome": "Pálpebras",
-          "descricao": "Crescem e se fundem por volta do fim do período embrionário; reabrem no período fetal."
+          "descricao": "Começam a se unir no fim do período embrionário e permanecem fundidas até se reabrirem por volta da 26ª semana após a fertilização."
         },
         {
           "id": "pavilhao-auricular",
@@ -711,7 +792,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): as pálpebras \"crescem e se fundem por volta do fim do período embrionário\" passou a \"começam a se unir no fim do período embrionário e permanecem fundidas até se reabrirem por volta da 26ª semana\", para não contradizer emb-08 (fusão na 9ª–10ª semana, reabertura ~26ª semana)."
+          }
+        ],
         "humano": null
       }
     },
@@ -722,7 +811,7 @@
       "dias": "Período fetal inicial (≈ 3º mês)",
       "diaReferencia": 84,
       "carnegie": [],
-      "descricao": "Corte do útero gestante no início do período fetal. A decídua basal (sob o cório frondoso) forma a parte materna da placenta; o cório frondoso, com vilosidades, forma a parte fetal. A decídua capsular cobre o saco coriônico do lado da cavidade uterina e, com o crescimento, encosta na decídua parietal. O âmnio envolve o feto no líquido amniótico e se funde ao cório liso.",
+      "descricao": "Corte do útero gestante no início do período fetal. A decídua basal (sob o cório frondoso) forma a parte materna da placenta; o cório frondoso, com vilosidades, forma a parte fetal. A decídua capsular cobre o saco coriônico do lado da cavidade uterina e, com o crescimento, degenera, de modo que o cório liso se funde à decídua parietal. O âmnio envolve o feto no líquido amniótico e se funde ao cório liso.",
       "destaques": [
         "Placenta = cório frondoso (fetal) + decídua basal (materna).",
         "Cordão umbilical: 2 artérias (sangue pouco oxigenado) e 1 veia (sangue oxigenado).",
@@ -740,7 +829,7 @@
         {
           "id": "decidua-capsular",
           "nome": "Decídua capsular",
-          "descricao": "Parte da decídua que recobre o concepto do lado da cavidade uterina."
+          "descricao": "Parte da decídua que recobre o concepto do lado da cavidade uterina; distende-se e degenera com o crescimento do saco coriônico."
         },
         {
           "id": "decidua-parietal",
@@ -786,7 +875,15 @@
       "revisao": {
         "autor": "agente-arquiteto",
         "data": "2026-11-09",
-        "agentes": [],
+        "agentes": [
+          {
+            "area": "embriologia",
+            "agente": "revisor-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (menores): a descrição e a estrutura da decídua capsular passaram a dizer que ela degenera e que é o cório liso que se funde à decídua parietal, como em emb-09 (antes dava a entender que a própria capsular encostava na parietal e persistia)."
+          }
+        ],
         "humano": null
       }
     }

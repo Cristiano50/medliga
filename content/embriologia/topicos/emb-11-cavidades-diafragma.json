@@ -309,10 +309,10 @@
       "tipo": "multipla",
       "enunciado": "Durante seu crescimento, os brotos pulmonares projetam-se para dentro de:",
       "alternativas": [
-        { "id": "a", "texto": "Cavidade pericárdica, ventralmente ao coração" },
+        { "id": "a", "texto": "Cavidade pericárdica, ventralmente ao tubo cardíaco" },
         { "id": "b", "texto": "Canais pericardioperitoneais, dorsalmente ao septo transverso" },
         { "id": "c", "texto": "Septo transverso, ao lado do primórdio hepático" },
-        { "id": "d", "texto": "Mesentério ventral do estômago" }
+        { "id": "d", "texto": "Mesentério ventral do estômago, junto ao fígado" }
       ],
       "correta": "b",
       "explicacao": "A alternativa (b) está correta: os brotos pulmonares crescem lateralmente para dentro dos canais pericardioperitoneais, situados de cada lado do intestino anterior e dorsais ao septo transverso; esses canais darão as cavidades pleurais. A cavidade pericárdica (a) contém o coração e é separada dos canais pelas membranas pleuropericárdicas. O septo transverso (c) é invadido pelo fígado, não pelos pulmões. O mesentério ventral (d) relaciona-se ao estômago e ao fígado, abaixo do diafragma.",
@@ -360,10 +360,10 @@
       "tipo": "multipla",
       "enunciado": "Por que o diafragma, situado no limite toracoabdominal, é inervado por nervos de segmentos cervicais (C3–C5)?",
       "alternativas": [
-        { "id": "a", "texto": "Porque o diafragma deriva do 3º e do 4º arcos faríngeos" },
-        { "id": "b", "texto": "Porque o nervo frênico é um ramo do vago que recebe fibras cervicais" },
-        { "id": "c", "texto": "Porque os nervos intercostais inferiores degeneram durante a descida do diafragma" },
-        { "id": "d", "texto": "Porque, na 4ª semana, o septo transverso e os mioblastos que colonizam o diafragma estão diante dos segmentos cervicais 3–5; com a 'descida' do diafragma, os frênicos se alongam" }
+        { "id": "a", "texto": "Porque o diafragma deriva do 3º e do 4º arcos faríngeos, cujos nervos recebem fibras dos segmentos cervicais 3 a 5" },
+        { "id": "b", "texto": "Porque o nervo frênico é um ramo do vago que, ao descer pelo pescoço, recebe fibras de C3–C5 e as leva ao diafragma" },
+        { "id": "c", "texto": "Porque os nervos intercostais inferiores degeneram durante a descida do diafragma e são substituídos por fibras cervicais" },
+        { "id": "d", "texto": "Porque, na 4ª semana, o septo transverso e os mioblastos do diafragma estão diante de C3–C5; com a 'descida' do diafragma, os frênicos se alongam" }
       ],
       "correta": "d",
       "explicacao": "A alternativa (d) está correta: na 4ª semana o septo transverso situa-se diante dos segmentos cervicais 3–5; fibras de C3–C5 crescem para ele (e mioblastos dessa região migram para o diafragma), e o crescimento rápido da parte dorsal do embrião desloca o diafragma caudalmente, alongando os frênicos. O diafragma não deriva de arcos faríngeos (a). O frênico é formado por ramos ventrais de nervos espinais cervicais, não é ramo do vago (b). Os intercostais inferiores não degeneram (c): continuam dando fibras sensitivas à margem costal do diafragma.",
@@ -378,10 +378,10 @@
       "contexto": "Mulher de 28 anos, com atraso menstrual, chega ao pronto-socorro com dor abdominal intensa, hipotensão e dor no ombro esquerdo que piora ao deitar. A ultrassonografia mostra grande quantidade de líquido livre na cavidade peritoneal, compatível com hemoperitônio por gravidez ectópica rota.",
       "enunciado": "Qual é a explicação embriológica para a dor no ombro?",
       "alternativas": [
-        { "id": "a", "texto": "Compressão do plexo braquial pelo útero aumentado" },
-        { "id": "b", "texto": "Irritação do peritônio diafragmático, cuja inervação sensitiva central vem dos frênicos (C3–C5), dos mesmos segmentos que inervam a pele do ombro" },
-        { "id": "c", "texto": "Irritação dos nervos intercostais inferiores, que inervam a pele do ombro" },
-        { "id": "d", "texto": "Irritação do nervo vago, que inerva o diafragma e a pele do ombro" }
+        { "id": "a", "texto": "Compressão do plexo braquial pelo útero aumentado, com dor irradiada para o ombro" },
+        { "id": "b", "texto": "Irritação do peritônio diafragmático, de inervação sensitiva frênica (C3–C5), segmentos que também inervam a pele do ombro" },
+        { "id": "c", "texto": "Irritação dos nervos intercostais inferiores pelo sangue, já que esses nervos inervam a pele do ombro" },
+        { "id": "d", "texto": "Irritação do nervo vago pelo sangue peritoneal, já que o vago inerva o diafragma e a pele do ombro" }
       ],
       "correta": "b",
       "explicacao": "A alternativa (b) está correta: o sangue na cavidade peritoneal irrita o peritônio da face inferior do diafragma, cuja parte central tem inervação sensitiva frênica (C3–C5); o córtex interpreta a dor como vinda da pele inervada pelos mesmos segmentos (nervos supraclaviculares, C3–C4), isto é, o ombro. A inervação cervical reflete a posição inicial do septo transverso. O útero de uma gestação inicial não comprime o plexo braquial (a). Os intercostais inferiores (c) inervam a margem costal do diafragma e a parede toracoabdominal, não o ombro. O vago (d) não inerva o diafragma nem a pele do ombro.",
@@ -397,9 +397,9 @@
       "enunciado": "Qual é o mecanismo embriológico mais provável?",
       "alternativas": [
         { "id": "a", "texto": "Formação ou fusão defeituosa da membrana pleuroperitoneal esquerda, deixando um defeito posterolateral" },
-        { "id": "b", "texto": "Defeito no hiato esternocostal, com herniação retroesternal" },
+        { "id": "b", "texto": "Defeito anterior no hiato esternocostal, com herniação retroesternal de alças" },
         { "id": "c", "texto": "Ausência de musculatura em uma hemicúpula íntegra, que abaúla para o tórax" },
-        { "id": "d", "texto": "Hiato esofágico excessivamente amplo, com herniação do estômago" }
+        { "id": "d", "texto": "Hiato esofágico excessivamente amplo, com herniação do estômago para o mediastino" }
       ],
       "correta": "a",
       "explicacao": "A alternativa (a) está correta: o quadro é típico de hérnia diafragmática congênita posterolateral (Bochdalek), a anomalia diafragmática congênita mais comum, majoritariamente à esquerda; resulta de formação ou fusão defeituosa da membrana pleuroperitoneal, de modo que a abertura pleuroperitoneal persiste e as alças passam ao tórax quando retornam do cordão umbilical (10ª semana). A hérnia retroesternal de Morgagni (b) é anterior, rara e em geral pouco sintomática ao nascer. Na eventração (c) não há orifício; as vísceras ficam sob um diafragma adelgaçado. A hérnia de hiato congênita (d) envolve o estômago e não causa esse quadro de alças no hemitórax com desvio do mediastino.",
@@ -414,10 +414,10 @@
       "contexto": "No mesmo recém-nascido com hérnia diafragmática congênita esquerda, a equipe evita ventilação com balão e máscara, procede à intubação traqueal e passa sonda gástrica para descompressão.",
       "enunciado": "Qual é o principal determinante da sobrevida desse paciente, e qual o seu mecanismo?",
       "alternativas": [
-        { "id": "a", "texto": "Isquemia intestinal por estrangulamento das alças, pela estreiteza do orifício" },
-        { "id": "b", "texto": "Cardiopatia congênita complexa, presente na maioria dos casos" },
-        { "id": "c", "texto": "Hipoplasia pulmonar com hipertensão pulmonar, pela compressão dos pulmões em desenvolvimento pelas vísceras herniadas" },
-        { "id": "d", "texto": "Sepse por translocação bacteriana a partir das alças intratorácicas" }
+        { "id": "a", "texto": "Isquemia intestinal por estrangulamento das alças intratorácicas, pela estreiteza do orifício" },
+        { "id": "b", "texto": "Cardiopatia congênita complexa associada, presente na maioria dos casos de hérnia diafragmática" },
+        { "id": "c", "texto": "Hipoplasia pulmonar com hipertensão pulmonar, por compressão dos pulmões pelas vísceras herniadas" },
+        { "id": "d", "texto": "Sepse por translocação bacteriana a partir das alças comprimidas dentro do tórax" }
       ],
       "correta": "c",
       "explicacao": "A alternativa (c) está correta: as vísceras herniadas ocupam o tórax durante a ramificação brônquica e comprimem os pulmões (sobretudo o ipsilateral, mas também o contralateral pelo desvio do mediastino), reduzindo vias aéreas, alvéolos e leito vascular; a hipoplasia pulmonar e a hipertensão pulmonar são os principais determinantes da mortalidade. O defeito posterolateral costuma ser amplo, e o estrangulamento (a) não é o problema dominante no recém-nascido. Cardiopatias podem coexistir, mas não estão presentes na maioria dos casos (b). Sepse (d) não é o mecanismo típico da gravidade. A ventilação com balão e máscara é evitada porque insufla as alças intratorácicas e agrava a compressão pulmonar.",
@@ -433,9 +433,9 @@
       "enunciado": "Qual é o diagnóstico mais provável e seu mecanismo embriológico?",
       "alternativas": [
         { "id": "a", "texto": "Hérnia diafragmática posterolateral, por falha de fusão da membrana pleuroperitoneal" },
-        { "id": "b", "texto": "Hérnia de Morgagni, por defeito no hiato esternocostal" },
-        { "id": "c", "texto": "Paralisia diafragmática por lesão do nervo frênico no parto" },
-        { "id": "d", "texto": "Eventração congênita, por falha da musculatura da parede do corpo em se estender para a membrana pleuroperitoneal daquele lado" }
+        { "id": "b", "texto": "Hérnia de Morgagni, por defeito anterior no hiato esternocostal, junto ao esterno" },
+        { "id": "c", "texto": "Paralisia diafragmática adquirida, por lesão do nervo frênico durante o parto" },
+        { "id": "d", "texto": "Eventração congênita, por falha da musculatura da parede do corpo em invadir a membrana pleuroperitoneal" }
       ],
       "correta": "d",
       "explicacao": "A alternativa (d) está correta: na eventração, metade do diafragma tem musculatura deficiente e abaúla para o tórax como lâmina aponeurótica; não há orifício, e as vísceras permanecem abaixo do diafragma adelgaçado. Moore atribui o defeito à falha do tecido muscular da parede do corpo em invadir a membrana pleuroperitoneal. Nas hérnias posterolateral (a) e de Morgagni (b) há um orifício verdadeiro, com vísceras acima do plano diafragmático. A paralisia frênica (c) também eleva a hemicúpula (e o músculo desnervado pode atrofiar com o tempo, na chamada eventração adquirida), mas pressupõe lesão do nervo, e o caso não tem história de tocotraumatismo nem de cirurgia torácica.",
@@ -451,9 +451,9 @@
       "enunciado": "Por qual abertura ocorreu a herniação?",
       "alternativas": [
         { "id": "a", "texto": "Forame de Bochdalek (abertura pleuroperitoneal posterolateral)" },
-        { "id": "b", "texto": "Hiato esternocostal (forame de Morgagni), por onde passam os vasos epigástricos superiores" },
-        { "id": "c", "texto": "Hiato esofágico" },
-        { "id": "d", "texto": "Forame da veia cava inferior" }
+        { "id": "b", "texto": "Hiato esternocostal (forame de Morgagni), com os vasos epigástricos superiores" },
+        { "id": "c", "texto": "Hiato esofágico, que dá passagem ao esôfago e aos troncos vagais" },
+        { "id": "d", "texto": "Forame da veia cava inferior, situado no centro tendíneo do diafragma" }
       ],
       "correta": "b",
       "explicacao": "A alternativa (b) está correta: a hérnia retroesternal (paraesternal, de Morgagni) ocorre pelo hiato esternocostal, entre as partes esternal e costal do diafragma, onde passam os vasos epigástricos superiores; é rara e muitas vezes diagnosticada tardiamente. O forame de Bochdalek (a) é posterolateral, sede da HDC típica. O hiato esofágico (c) e o forame da veia cava (d) não estão na região retroesternal anterior.",
@@ -467,10 +467,10 @@
       "tipo": "multipla",
       "enunciado": "O omento menor e o ligamento falciforme derivam:",
       "alternativas": [
-        { "id": "a", "texto": "Do mesogástrio dorsal" },
-        { "id": "b", "texto": "Do mesoduodeno dorsal" },
-        { "id": "c", "texto": "Das membranas pleuroperitoneais" },
-        { "id": "d", "texto": "Do mesentério ventral, formado a partir do mesoderma do septo transverso" }
+        { "id": "a", "texto": "Do mesogástrio dorsal, deslocado para a esquerda pelo estômago" },
+        { "id": "b", "texto": "Do mesoduodeno dorsal, antes da fixação retroperitoneal do duodeno" },
+        { "id": "c", "texto": "Das membranas pleuroperitoneais, após a fusão com o septo transverso" },
+        { "id": "d", "texto": "Do mesentério ventral, derivado do mesoderma do septo transverso" }
       ],
       "correta": "d",
       "explicacao": "A alternativa (d) está correta: o mesentério ventral, restrito ao intestino anterior caudal e derivado do septo transverso, é dividido pelo crescimento do fígado em omento menor (do estômago e duodeno ao fígado) e ligamento falciforme (do fígado à parede ventral). O mesogástrio dorsal (a) forma o omento maior e os ligamentos gastroesplênico e esplenorrenal. O mesoduodeno dorsal (b) desaparece em grande parte quando o duodeno se torna retroperitoneal. As membranas pleuroperitoneais (c) participam do diafragma.",
@@ -501,7 +501,7 @@
       "tipo": "vf",
       "enunciado": "A hérnia diafragmática congênita posterolateral ocorre com mais frequência no lado esquerdo.",
       "correta": true,
-      "explicacao": "Verdadeiro. A grande maioria dos casos é à esquerda. Moore relaciona o predomínio, como hipótese, ao fechamento um pouco mais precoce da abertura pleuroperitoneal direita, possivelmente pelo tamanho do lobo direito do fígado nessa fase.",
+      "explicacao": "Verdadeiro. A grande maioria dos casos é à esquerda. Moore relaciona o predomínio, como hipótese, ao fechamento um pouco mais precoce da abertura pleuroperitoneal direita.",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": ["hernia-diafragmatica-congenita"],
@@ -689,7 +689,7 @@
     "Prevalência da hérnia diafragmática congênita: os valores divergem entre as obras e os estudos populacionais e não foram conferidos nas edições adotadas; foram omitidos.",
     "Nível vertebral atingido pela parte dorsal do diafragma (L1) ao fim do período embrionário: Moore e Sadler dão marcos temporais diferentes (fim do 2º mês vs. início do 3º mês, conforme a leitura); omitido nas questões.",
     "Frequência de cardiopatias associadas à HDC não foi quantificada; a questão afirma apenas que não estão presentes na maioria dos casos.",
-    "Condutas de sala de parto citadas na HDC (evitar ventilação com balão e máscara, intubação e descompressão gástrica) e a terapia fetal por oclusão traqueal seguem a prática neonatal e cirúrgica corrente, e não as obras de embriologia; conferir com os revisores de pediatria e cirurgia pediátrica."
+    "Condutas de sala de parto citadas na HDC (evitar ventilação com balão e máscara, intubação traqueal e descompressão gástrica) e a terapia fetal por oclusão traqueal seguem a prática neonatal e cirúrgica corrente, e não as obras de embriologia. Revisão de pediatria (2026-11-09): condutas compatíveis com o consenso europeu CDH EURO (atualização de 2015; Snoek et al., Neonatology 2016) e com as Diretrizes de Reanimação Neonatal da SBP (2022), que incluem o diagnóstico de hérnia diafragmática entre as indicações de ventilação por cânula traqueal; a oclusão traqueal fetoscópica aumentou a sobrevida na HDC esquerda grave (ensaio TOTAL, N Engl J Med 2021). O texto integral das diretrizes da SBP não pôde ser acessado nesta revisão (conferido por fontes secundárias); conferir a edição vigente."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -701,6 +701,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "2 correções menores (0 críticas, 0 importantes); principais: a explicação do predomínio esquerdo da HDC (fechamento mais precoce da abertura pleuroperitoneal direita) passou a ser apresentada como hipótese de Moore, no mecanismo da correlação e na explicação da q15. Conferidos todos os fatos: celoma em ferradura, septo transverso, pregas pleuropericárdicas (veias cardinais comuns, frênicos, pericárdio fibroso), quatro componentes do diafragma (Moore), C3–C5 e dor referida, Bochdalek à esquerda, Morgagni, eventração, mesentérios e eventos da linha do tempo (ordem inequívoca)."
+      },
+      {
+        "area": "pediatria-neonatologia/anatomia/fisiologia",
+        "agente": "revisor-pediatria-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 0 importantes, 10 menores); principais: distratores reescritos para eliminar pista de comprimento em 8 questões (q04, q07–q13; gabaritos e ids inalterados); q15: retirada a hipótese do lobo direito do fígado, não atribuível a Moore; incerteza sobre a conduta de sala de parto na HDC resolvida com o consenso CDH EURO e as Diretrizes SBP 2022 (intubação sem ventilação com balão e máscara, descompressão gástrica) e com o ensaio TOTAL para a oclusão traqueal fetal. Conferidos sob a ótica clínica e anatômica: apresentação e conduta da HDC, hipoplasia e hipertensão pulmonar, Morgagni (direita, retroesternal), eventração × paralisia frênica, dor referida (frênico C3–C5, supraclaviculares C3–C4), tríade portal e forame omental, remanescente da veia umbilical."
       }
     ],
     "humano": null

@@ -279,7 +279,7 @@
     {
       "id": "estenose-hipertrofica-piloro",
       "titulo": "Estenose hipertrófica do piloro",
-      "descricao": "Hipertrofia da musculatura circular (e, em menor grau, longitudinal) do piloro, que estreita o canal pilórico. Mais frequente no sexo masculino. Manifesta-se em geral a partir da 3ª semana de vida com vômitos em jato não biliosos, fome após os vômitos, massa em 'oliva' palpável no epigástrio e alcalose metabólica hipoclorêmica e hipocalêmica; diagnóstico por ultrassonografia e tratamento por piloromiotomia.",
+      "descricao": "Hipertrofia da musculatura circular (e, em menor grau, longitudinal) do piloro, que estreita o canal pilórico. Mais frequente no sexo masculino. Manifesta-se em geral a partir da 3ª semana de vida com vômitos em jato não biliosos, fome após os vômitos, massa em 'oliva' palpável no epigástrio e alcalose metabólica hipoclorêmica e hipocalêmica; diagnóstico por ultrassonografia. A piloromiotomia é feita após a correção da desidratação e dos distúrbios eletrolíticos: é urgência clínica, não emergência cirúrgica.",
       "mecanismo": "Não é malformação do período embrionário: a hipertrofia se estabelece no fim da vida fetal ou nas primeiras semanas de vida. Há componente genético (alta concordância em gêmeos monozigóticos, segundo Moore) e ambiental; a causa exata é desconhecida. A obstrução é proximal à papila maior, por isso o vômito não contém bile."
     },
     {
@@ -303,7 +303,7 @@
     {
       "id": "atresia-biliar",
       "titulo": "Atresia biliar extra-hepática",
-      "descricao": "Obliteração das vias biliares extra-hepáticas. Icterícia colestática (hiperbilirrubinemia direta) que persiste além das primeiras semanas, colúria, fezes acólicas e hepatomegalia, com evolução para cirrose biliar. Tratamento com portoenterostomia de Kasai, que tem melhores resultados quando feita precocemente; muitos pacientes necessitam de transplante hepático.",
+      "descricao": "Obliteração das vias biliares extra-hepáticas. Icterícia colestática (hiperbilirrubinemia direta) que persiste além das primeiras semanas, colúria, fezes acólicas e hepatomegalia, com evolução para cirrose biliar. Toda icterícia que persiste a partir de 14 dias de vida, e qualquer acolia fecal ou colúria, exige dosagem de bilirrubinas (campanha Alerta Amarelo, SBP e Ministério da Saúde); a Caderneta da Criança traz escala colorimétrica das fezes. Tratamento com portoenterostomia de Kasai, com melhores resultados quando feita precocemente (idealmente antes dos 60 dias de vida); muitos pacientes necessitam de transplante hepático.",
       "mecanismo": "Antes atribuída à falha de recanalização das vias biliares; hoje é vista como processo obliterativo, possivelmente por falha de remodelamento no hilo hepático, infecções ou reações imunológicas no fim da vida fetal ou no período perinatal (Moore)."
     },
     {
@@ -315,7 +315,7 @@
     {
       "id": "diverticulo-meckel",
       "titulo": "Divertículo de Meckel",
-      "descricao": "Anomalia mais comum do trato digestório (Moore: 2–4% da população; Sadler: 2–3%), mais frequente no sexo masculino. Fica na borda antimesentérica do íleo (Moore: 40–50 cm da junção ileocecal; Sadler: 40–60 cm). Em geral assintomático; pode causar sangramento retal indolor (mucosa gástrica ectópica), obstrução (intussuscepção ou volvo em torno de um cordão fibroso) e diverticulite que simula apendicite. A cintilografia com pertecnetato de tecnécio-99m detecta a mucosa gástrica ectópica. A 'regra dos 2' (≈2% da população, ≈2 pés ou 60 cm da valva ileocecal, ≈2 polegadas ou 5 cm de comprimento, 2 tipos de tecido ectópico — gástrico e pancreático —, sintomas frequentemente antes dos 2 anos, predomínio masculino) é mnemônica aproximada, não regra exata.",
+      "descricao": "Anomalia mais comum do trato digestório (2–4% da população, segundo Moore), mais frequente no sexo masculino. Fica na borda antimesentérica do íleo (Moore: 40–50 cm da junção ileocecal; Sadler: 40–60 cm). Em geral assintomático; pode causar sangramento retal indolor (mucosa gástrica ectópica), obstrução (intussuscepção ou volvo em torno de um cordão fibroso) e diverticulite que simula apendicite. A cintilografia com pertecnetato de tecnécio-99m detecta a mucosa gástrica ectópica. A 'regra dos 2' (≈2% da população, ≈2 pés ou 60 cm da valva ileocecal, ≈2 polegadas ou 5 cm de comprimento, 2 tipos de tecido ectópico — gástrico e pancreático —, sintomas frequentemente antes dos 2 anos, predomínio masculino) é mnemônica aproximada, não regra exata.",
       "mecanismo": "Persistência da parte proximal do ducto vitelino, que normalmente se oblitera e desaparece. Outros remanescentes: fístula onfaloentérica (saída de conteúdo intestinal pelo umbigo), cisto vitelino e cordão fibroso entre o íleo e o umbigo."
     },
     {
@@ -333,7 +333,7 @@
     {
       "id": "doenca-hirschsprung",
       "titulo": "Doença de Hirschsprung (megacolo congênito)",
-      "descricao": "Ausência de células ganglionares nos plexos submucoso e mioentérico de um segmento distal que sempre inclui o reto e se estende proximalmente de forma contínua, na maioria das vezes até o sigmoide. Atraso na eliminação de mecônio (mais de 48 horas), distensão abdominal, vômitos e, mais tarde, constipação grave; risco de enterocolite. O segmento agangliônico fica contraído, e o colo proximal normal se dilata. Diagnóstico por biópsia retal; mais comum no sexo masculino e associada à síndrome de Down.",
+      "descricao": "Ausência de células ganglionares nos plexos submucoso e mioentérico de um segmento distal que sempre inclui o reto e se estende proximalmente de forma contínua, na maioria das vezes até o sigmoide. Atraso na eliminação de mecônio (mais de 48 horas), distensão abdominal, vômitos e, mais tarde, constipação grave; risco de enterocolite. O segmento agangliônico fica contraído, e o colo proximal normal se dilata. Diagnóstico por biópsia retal (a biópsia por sucção, de mucosa e submucosa, avalia o plexo submucoso); mais comum no sexo masculino e associada à síndrome de Down.",
       "mecanismo": "Falha da colonização craniocaudal do colo distal pelos precursores entéricos derivados da crista neural (principalmente vagal); mutações do gene RET são a principal causa genética conhecida."
     },
     {
@@ -421,15 +421,15 @@
         },
         {
           "id": "b",
-          "texto": "O septo transverso se divide em duas lâminas que se afastam"
+          "texto": "O septo transverso se divide em duas lâminas que se afastam atrás do estômago"
         },
         {
           "id": "c",
-          "texto": "O fígado cresce entre as camadas do mesogástrio dorsal"
+          "texto": "O fígado cresce entre as camadas do mesogástrio dorsal e as afasta do estômago"
         },
         {
           "id": "d",
-          "texto": "Fendas no mesogástrio dorsal coalescem, e a rotação do estômago desloca o mesogástrio dorsal para a esquerda, criando um espaço atrás do estômago"
+          "texto": "Fendas no mesogástrio dorsal coalescem, e a rotação do estômago leva esse mesentério para a esquerda"
         }
       ],
       "correta": "d",
@@ -482,11 +482,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O corpo e a cauda do pâncreas"
+          "texto": "A parte superior da cabeça, o colo, o corpo e a cauda"
         },
         {
           "id": "b",
-          "texto": "Apenas as ilhotas pancreáticas"
+          "texto": "Apenas as ilhotas pancreáticas, dispersas em toda a glândula"
         },
         {
           "id": "c",
@@ -498,7 +498,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A alternativa (c) está correta: com a rotação do duodeno, o broto ventral, situado junto ao colédoco, passa para trás e funde-se ao dorsal, formando o processo uncinado e a parte inferior da cabeça; o broto dorsal forma o restante da glândula, incluindo corpo e cauda (a). As ilhotas (b) surgem no 3º mês a partir do parênquima pancreático, não exclusivamente do broto ventral. O ducto acessório (d) corresponde à parte proximal do ducto dorsal; o ducto ventral participa do ducto principal (de Wirsung).",
+      "explicacao": "A alternativa (c) está correta: com a rotação do duodeno, o broto ventral, situado junto ao colédoco, passa para trás e funde-se ao dorsal, formando o processo uncinado e a parte inferior da cabeça; o broto dorsal forma o restante da glândula: parte superior da cabeça, colo, corpo e cauda (a). As ilhotas (b) surgem no 3º mês a partir do parênquima pancreático, não exclusivamente do broto ventral. O ducto acessório (d) corresponde à parte proximal do ducto dorsal; o ducto ventral participa do ducto principal (de Wirsung).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -547,23 +547,23 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Porque a bile só começa a ser produzida após o 2º mês de vida"
+          "texto": "Porque a bile só começa a ser produzida pelo fígado após o 2º mês de vida"
         },
         {
           "id": "b",
-          "texto": "Porque a obstrução está no piloro, proximal à desembocadura do colédoco na segunda parte do duodeno"
+          "texto": "Porque a obstrução está no piloro, proximal à desembocadura do colédoco no duodeno"
         },
         {
           "id": "c",
-          "texto": "Porque há atresia das vias biliares extra-hepáticas associada"
+          "texto": "Porque há atresia das vias biliares extra-hepáticas associada à estenose"
         },
         {
           "id": "d",
-          "texto": "Porque um pâncreas anular comprime o colédoco"
+          "texto": "Porque um pâncreas anular comprime o colédoco e impede a saída da bile"
         }
       ],
       "correta": "b",
-      "explicacao": "A alternativa (b) está correta: na estenose hipertrófica do piloro, a musculatura pilórica hipertrofia e estreita o canal pilórico; como o colédoco desemboca na papila maior, na segunda parte do duodeno, distal ao piloro, a bile não chega ao estômago. A perda de suco gástrico (ácido clorídrico) explica a alcalose hipoclorêmica e hipocalêmica. A bile é formada desde a 12ª semana de vida fetal (a). A atresia biliar (c) causa icterícia colestática e fezes acólicas, não vômitos em jato. O pâncreas anular (d) obstrui o duodeno e, quando a obstrução é distal à papila, os vômitos são biliosos. A estenose pilórica não é malformação do período embrionário: a hipertrofia se estabelece nas primeiras semanas de vida.",
+      "explicacao": "A alternativa (b) está correta: na estenose hipertrófica do piloro, a musculatura pilórica hipertrofia e estreita o canal pilórico; como o colédoco desemboca na papila maior, na segunda parte do duodeno, distal ao piloro, a bile não chega ao estômago. A perda de ácido clorídrico no vômito explica a alcalose hipoclorêmica; a hipocalemia decorre sobretudo da perda renal de potássio (hipovolemia com hiperaldosteronismo secundário e bicarbonatúria). Esses distúrbios são corrigidos antes da piloromiotomia. A bile é formada desde a 12ª semana de vida fetal (a). A atresia biliar (c) causa icterícia colestática e fezes acólicas, não vômitos em jato. O pâncreas anular (d) obstrui o duodeno e, quando a obstrução é distal à papila, os vômitos são biliosos. A estenose pilórica não é malformação do período embrionário: a hipertrofia se estabelece nas primeiras semanas de vida.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -620,11 +620,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Rotação incompleta do intestino médio, com mesentério de base estreita que permite a torção das alças em torno da artéria mesentérica superior"
+          "texto": "Rotação incompleta do intestino médio, com raiz mesentérica estreita que permite torção em torno da AMS"
         },
         {
           "id": "b",
-          "texto": "Ausência de células ganglionares no colo distal"
+          "texto": "Ausência de células ganglionares no colo distal, com obstrução funcional"
         },
         {
           "id": "c",
@@ -632,7 +632,7 @@
         },
         {
           "id": "d",
-          "texto": "Hipertrofia da musculatura pilórica"
+          "texto": "Hipertrofia da musculatura pilórica, com obstrução da saída gástrica"
         }
       ],
       "correta": "a",
@@ -655,11 +655,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Persistência do úraco, com mucosa vesical que ulcera o íleo"
+          "texto": "Persistência do úraco, com mucosa vesical ectópica que ulcera a parede do íleo"
         },
         {
           "id": "b",
-          "texto": "Persistência da parte proximal do ducto vitelino, com mucosa gástrica ectópica que secreta ácido e ulcera a mucosa ileal adjacente"
+          "texto": "Persistência da parte proximal do ducto vitelino, com mucosa gástrica ectópica que ulcera o íleo"
         },
         {
           "id": "c",
@@ -667,7 +667,7 @@
         },
         {
           "id": "d",
-          "texto": "Duplicação do colo por falha de recanalização"
+          "texto": "Duplicação do colo por falha de recanalização, com mucosa colônica que sangra"
         }
       ],
       "correta": "b",
@@ -688,19 +688,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Localiza-se na borda mesentérica do jejuno proximal"
+          "texto": "Localiza-se na borda mesentérica do jejuno proximal, junto ao ângulo duodenojejunal"
         },
         {
           "id": "b",
-          "texto": "É remanescente da alantoide"
+          "texto": "É remanescente da alantoide e liga o íleo ao ápice da bexiga"
         },
         {
           "id": "c",
-          "texto": "Localiza-se na borda antimesentérica do íleo, a algumas dezenas de centímetros da junção ileocecal"
+          "texto": "Localiza-se na borda antimesentérica do íleo, a dezenas de centímetros da junção ileocecal"
         },
         {
           "id": "d",
-          "texto": "É sempre sintomático e diagnosticado no período neonatal"
+          "texto": "É sempre sintomático e diagnosticado no período neonatal, por obstrução intestinal"
         }
       ],
       "correta": "c",
@@ -751,24 +751,24 @@
     {
       "id": "emb-15-q13",
       "tipo": "multipla",
-      "contexto": "Recém-nascido a termo não eliminou mecônio nas primeiras 48 horas e evolui com distensão abdominal e vômitos biliosos. Ao toque retal, há saída explosiva de fezes e gases. A biópsia retal por sucção mostra ausência de células ganglionares nos plexos submucoso e mioentérico.",
+      "contexto": "Recém-nascido a termo não eliminou mecônio nas primeiras 48 horas e evolui com distensão abdominal e vômitos biliosos. Ao toque retal, há saída explosiva de fezes e gases. A biópsia retal por sucção mostra ausência de células ganglionares no plexo submucoso e troncos nervosos hipertróficos.",
       "enunciado": "Qual é a base embriológica dessa doença?",
       "alternativas": [
         {
           "id": "a",
-          "texto": "Falha da colonização craniocaudal do segmento distal do intestino pelas células da crista neural, que fica sem plexos entéricos"
+          "texto": "Falha da colonização craniocaudal do intestino distal pela crista neural, sem plexos entéricos"
         },
         {
           "id": "b",
-          "texto": "Falha na recanalização do reto após a fase de obliteração epitelial"
+          "texto": "Falha na recanalização do reto após uma fase de obliteração epitelial da luz intestinal"
         },
         {
           "id": "c",
-          "texto": "Desenvolvimento anormal do septo urorretal"
+          "texto": "Desenvolvimento anormal do septo urorretal, com separação incompleta da cloaca"
         },
         {
           "id": "d",
-          "texto": "Persistência da membrana anal"
+          "texto": "Persistência da membrana anal, que não se rompe no fim da 8ª semana"
         }
       ],
       "correta": "a",
@@ -823,19 +823,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Doença de Hirschsprung de segmento longo"
+          "texto": "Doença de Hirschsprung de segmento longo, com aganglionose que inclui o reto"
         },
         {
           "id": "b",
-          "texto": "Atresia duodenal com fístula para a bexiga"
+          "texto": "Atresia duodenal com fístula para a bexiga, por falha de recanalização"
         },
         {
           "id": "c",
-          "texto": "Malformação anorretal com fístula retourinária, ligada ao desenvolvimento anormal do septo urorretal e da cloaca, no contexto da associação VACTERL"
+          "texto": "Malformação anorretal com fístula retourinária (septo urorretal anormal), na associação VACTERL"
         },
         {
           "id": "d",
-          "texto": "Úraco patente que leva mecônio do intestino à bexiga"
+          "texto": "Úraco patente que leva mecônio do intestino à bexiga e daí ao umbigo"
         }
       ],
       "correta": "c",
@@ -869,7 +869,7 @@
       "tipo": "vf",
       "enunciado": "Na atresia biliar, a icterícia neonatal tem padrão colestático, com hiperbilirrubinemia direta (conjugada), colúria e fezes acólicas.",
       "correta": true,
-      "explicacao": "Verdadeiro. A obliteração das vias biliares extra-hepáticas impede a chegada da bile ao intestino: as fezes ficam claras e a bilirrubina conjugada, eliminada pelos rins, escurece a urina. Antes atribuída à falha de recanalização, a atresia biliar é hoje vista como processo obliterativo, possivelmente perinatal. A portoenterostomia de Kasai tem melhores resultados quando feita precocemente, por isso icterícia que persiste além das primeiras semanas deve ser investigada.",
+      "explicacao": "Verdadeiro. A obliteração das vias biliares extra-hepáticas impede a chegada da bile ao intestino: as fezes ficam claras e a bilirrubina conjugada, eliminada pelos rins, escurece a urina. Antes atribuída à falha de recanalização, a atresia biliar é hoje vista como processo obliterativo, possivelmente perinatal. A portoenterostomia de Kasai tem melhores resultados quando feita precocemente, por isso icterícia que persiste a partir de 14 dias de vida deve ser investigada com dosagem de bilirrubina direta.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -1151,7 +1151,7 @@
     "Limite entre intestino médio e posterior no colo transverso: Sadler — dois terços proximais (médio) e terço distal (posterior); Moore — metade a dois terços direitos (médio) e terço a metade esquerdos (posterior). O tópico usa 'cerca de dois terços proximais'.",
     "Peso relativo do fígado (~10% do peso corporal): Moore — 9ª semana; Sadler — 10ª semana. O tópico usa '9ª–10ª semana'.",
     "Início da secreção de insulina: Moore — período fetal inicial (~10ª semana); Sadler — ~5º mês. Não foi usado em questões; o tópico cita apenas o surgimento das ilhotas no 3º mês (Sadler).",
-    "Divertículo de Meckel: Moore — 2–4% da população, 40–50 cm da junção ileocecal; Sadler — 2–3%, 40–60 cm da valva ileocecal. A 'regra dos 2' é apresentada como mnemônica aproximada.",
+    "Divertículo de Meckel: Moore — 2–4% da população, 40–50 cm da junção ileocecal; Sadler — 40–60 cm da valva ileocecal. A prevalência de 2–3% atribuída a Sadler na versão anterior não foi confirmada (os dois revisores por agente recordam 2–4% também em Sadler); por isso a correlação passou a citar só Moore. Séries clínicas relatam cerca de 2% (faixa de 0,3–4%). A 'regra dos 2' é apresentada como mnemônica aproximada.",
     "Proporção de síndrome de Down na atresia duodenal: Moore — 20–30%; outras fontes clínicas citam até ~40%. O tópico usa o valor de Moore com atribuição.",
     "Retorno das alças ao abdome: Moore e Sadler — 10ª semana após a fertilização; o tópico emb-08 usa '10ª a 12ª semana' (faixa compatível com o término do retorno e da fixação).",
     "Mecanismo da gastrosquise: Sadler — enfraquecimento da parede à direita pela regressão da veia umbilical direita; Moore — fechamento incompleto das pregas laterais na 4ª semana; outros autores — ruptura vascular local.",
@@ -1163,7 +1163,7 @@
     "Origem das células de Kupffer e das células hematopoéticas do fígado: Moore e Sadler atribuem-nas ao mesênquima do septo transverso, mas há evidências de que as células de Kupffer derivam de progenitores do saco vitelino e de que as células hematopoéticas colonizam o fígado a partir do saco vitelino e da região aorta-gônada-mesonefro. Por isso o resumo cita apenas cápsula e estroma como derivados do septo transverso.",
     "Prevalências de estenose hipertrófica do piloro, doença de Hirschsprung, malformações anorretais, onfalocele, gastrosquise e atresia biliar não foram conferidas nas edições adotadas e foram omitidas.",
     "Momento da fusão dos brotos pancreáticos não foi fixado em dias, por variar entre as fontes consultadas.",
-    "A janela ideal para a portoenterostomia de Kasai é citada apenas qualitativamente ('precoce'), por variar entre séries clínicas.",
+    "Janela da portoenterostomia de Kasai: o texto usa 'idealmente antes dos 60 dias de vida', marco da campanha Alerta Amarelo (SBP/Ministério da Saúde), e o limiar de 14 dias para investigar icterícia persistente; séries clínicas mostram melhores resultados quanto mais cedo, e o limite exato varia (revisão de pediatria, 2026-11-09; conferido por fontes secundárias).",
     "Faixa de dias do evento 'brotos pancreáticos' (dias 26–35) corresponde à 4ª–5ª semana descrita nas obras; o dia exato do surgimento de cada broto não foi conferido."
   ],
   "revisao": {
@@ -1176,6 +1176,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "18 correções (0 críticas, 1 importante, 17 menores); principais: mecanismo da má rotação reescrito (atribuía toda má rotação a falha dos 180° finais, incompatível com a rotação reversa descrita na própria correlação; agora: não rotação, rotação mista por falha dos 90° finais segundo Moore e rotação horária); fístula retoperineal descrita em ambos os sexos; divergência Moore × Sadler sobre a ruptura da membrana anal registrada; explicações das 15 questões de múltipla escolha passaram a citar a letra correta. Conferidos rotação do estômago (90° horária, vista cranial) e do intestino médio (270° anti-horária, vista ventral, em torno da AMS), recanalização duodenal, pâncreas, baço, Meckel, onfalocele × gastrosquise, Hirschsprung e canal anal."
+      },
+      {
+        "area": "pediatria-neonatologia/anatomia/fisiologia",
+        "agente": "revisor-pediatria-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "17 correções (1 crítica, 1 importante, 15 menores); principais: (crítica, sem mudança de gabarito) q13: o caso dizia que a biópsia retal por sucção mostra ausência de células ganglionares nos plexos submucoso e mioentérico, mas a sucção só alcança mucosa e submucosa; agora: plexo submucoso sem células ganglionares e troncos nervosos hipertróficos, com ajuste na correlação; (importante) q07: a hipocalemia da estenose pilórica foi atribuída à perda de suco gástrico, mas decorre sobretudo da perda renal de potássio (hiperaldosteronismo secundário, bicarbonatúria); estenose pilórica: piloromiotomia após correção hidroeletrolítica (urgência clínica, não emergência cirúrgica); atresia biliar: investigação de icterícia a partir de 14 dias, escala de cor das fezes da Caderneta da Criança e Kasai idealmente antes de 60 dias (Alerta Amarelo, SBP/Ministério da Saúde), com ajuste da q17 e da incerteza; Meckel: prevalência atribuída a Sadler (2–3%), não confirmada, retirada do texto do aluno (pendência 1 da etapa 1 mantida para o revisor humano); distratores reescritos contra pista de comprimento em q03, q05, q07, q09, q10, q11, q13 e q15 (gabaritos e ids inalterados). Conferidos: vômito bilioso como emergência (má rotação/volvo, Ladd), atresia duodenal (dupla bolha, trissomia 21), onfalocele × gastrosquise, Hirschsprung, malformações anorretais e VACTERL, irrigação e linha pectínea."
       }
     ],
     "humano": null

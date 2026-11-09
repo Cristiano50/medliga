@@ -133,26 +133,26 @@
   ],
   "eventos": [
     { "id": "inicio-periodo-fetal", "descricao": "Início do período fetal (9ª semana após a fertilização); a cabeça corresponde a cerca de metade do comprimento cabeça-nádega", "diaMin": 57, "diaMax": 57, "ordem": 1 },
-    { "id": "inicio-producao-urina", "descricao": "Início da produção de urina fetal, eliminada na cavidade amniótica (9ª a 12ª semana após a fertilização)", "diaMin": 57, "diaMax": 84, "ordem": 2 },
-    { "id": "retorno-alcas-intestinais", "descricao": "Retorno das alças intestinais do cordão umbilical para a cavidade abdominal (10ª a 12ª semana após a fertilização)", "diaMin": 63, "diaMax": 84, "ordem": 3 },
-    { "id": "genitalia-externa-reconhecivel", "descricao": "Genitália externa assume a forma fetal madura, permitindo distinguir o sexo (por volta da 12ª semana após a fertilização)", "diaMin": 77, "diaMax": 84, "ordem": 4 },
-    { "id": "eritropoiese-esplenica", "descricao": "Eritropoiese, antes predominantemente hepática, passa a ocorrer também no baço (fim da 12ª semana após a fertilização)", "diaMin": 84, "diaMax": 84, "ordem": 5 },
-    { "id": "ossificacao-detectavel-us", "descricao": "Ossificação do esqueleto intensa e claramente detectável por ultrassonografia (início da 16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 6 },
-    { "id": "foliculos-primordiais-ovario", "descricao": "Ovários diferenciados, contendo folículos primordiais com oogônias (16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 7 },
-    { "id": "vernix-e-lanugo", "descricao": "Pele recoberta por vérnix caseoso e lanugo (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 8 },
-    { "id": "percepcao-materna-movimentos", "descricao": "Percepção materna dos movimentos fetais (quickening), entre a 17ª e a 20ª semana após a fertilização, equivalente a 19–22 semanas de idade gestacional", "diaMin": 113, "diaMax": 140, "ordem": 9 },
-    { "id": "formacao-gordura-parda", "descricao": "Formação da gordura parda, sítio de termogênese do recém-nascido (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 10 },
-    { "id": "movimentos-oculares-rapidos", "descricao": "Início dos movimentos oculares rápidos (21ª semana após a fertilização)", "diaMin": 141, "diaMax": 147, "ordem": 11 },
-    { "id": "resposta-piscar-sobressalto", "descricao": "Respostas de piscar-sobressalto a estímulos (22ª a 23ª semana após a fertilização)", "diaMin": 148, "diaMax": 161, "ordem": 12 },
-    { "id": "inicio-secrecao-surfactante", "descricao": "Pneumócitos tipo II começam a secretar surfactante (por volta da 24ª semana após a fertilização, ≈26 semanas de idade gestacional)", "diaMin": 161, "diaMax": 168, "ordem": 13 },
-    { "id": "unhas-das-maos", "descricao": "Unhas das mãos presentes (24ª semana após a fertilização)", "diaMin": 168, "diaMax": 168, "ordem": 14 },
-    { "id": "reabertura-palpebras", "descricao": "Reabertura das pálpebras, antes fundidas (26ª semana após a fertilização)", "diaMin": 175, "diaMax": 182, "ordem": 15 },
-    { "id": "medula-ossea-hematopoiese", "descricao": "Fim da eritropoiese esplênica; a medula óssea torna-se o principal sítio de formação de hemácias (por volta de 28 semanas após a fertilização)", "diaMin": 189, "diaMax": 196, "ordem": 16 },
-    { "id": "reflexo-fotomotor-pupilar", "descricao": "Reflexo fotomotor pupilar presente (por volta de 30 semanas após a fertilização)", "diaMin": 203, "diaMax": 210, "ordem": 17 },
-    { "id": "gordura-branca-8-porcento", "descricao": "Gordura branca atinge cerca de 8% do peso corporal (final do intervalo de 30 a 34 semanas após a fertilização)", "diaMin": 231, "diaMax": 238, "ordem": 18 },
-    { "id": "preensao-firme", "descricao": "Preensão firme e orientação espontânea à luz (35 semanas após a fertilização)", "diaMin": 238, "diaMax": 245, "ordem": 19 },
-    { "id": "circunferencias-equivalentes", "descricao": "Circunferências craniana e abdominal aproximadamente iguais (por volta de 36 semanas após a fertilização)", "diaMin": 245, "diaMax": 252, "ordem": 20 },
-    { "id": "termo", "descricao": "Termo: parto em média 266 dias (38 semanas) após a fertilização, equivalente a 280 dias (40 semanas) após a DUM; gordura branca ≈16% do peso", "diaMin": 266, "diaMax": 266, "ordem": 21 }
+    { "id": "inicio-producao-urina", "descricao": "Início da produção de urina fetal, eliminada na cavidade amniótica (9ª a 12ª semana após a fertilização)", "diaMin": 57, "diaMax": 84, "ordem": 1 },
+    { "id": "retorno-alcas-intestinais", "descricao": "Retorno das alças intestinais do cordão umbilical para a cavidade abdominal (10ª a 12ª semana após a fertilização)", "diaMin": 63, "diaMax": 84, "ordem": 2 },
+    { "id": "genitalia-externa-reconhecivel", "descricao": "Genitália externa assume a forma fetal madura, permitindo distinguir o sexo (por volta da 12ª semana após a fertilização)", "diaMin": 77, "diaMax": 84, "ordem": 3 },
+    { "id": "eritropoiese-esplenica", "descricao": "Eritropoiese, antes predominantemente hepática, passa a ocorrer também no baço (fim da 12ª semana após a fertilização)", "diaMin": 84, "diaMax": 84, "ordem": 4 },
+    { "id": "ossificacao-detectavel-us", "descricao": "Ossificação do esqueleto intensa e claramente detectável por ultrassonografia (início da 16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 5 },
+    { "id": "foliculos-primordiais-ovario", "descricao": "Ovários diferenciados, contendo folículos primordiais com oogônias (16ª semana após a fertilização)", "diaMin": 105, "diaMax": 112, "ordem": 5 },
+    { "id": "vernix-e-lanugo", "descricao": "Pele recoberta por vérnix caseoso e lanugo (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 6 },
+    { "id": "percepcao-materna-movimentos", "descricao": "Percepção materna dos movimentos fetais (quickening), entre a 17ª e a 20ª semana após a fertilização, equivalente a 19–22 semanas de idade gestacional", "diaMin": 113, "diaMax": 140, "ordem": 6 },
+    { "id": "formacao-gordura-parda", "descricao": "Formação da gordura parda, sítio de termogênese do recém-nascido (17ª a 20ª semana após a fertilização)", "diaMin": 113, "diaMax": 140, "ordem": 6 },
+    { "id": "movimentos-oculares-rapidos", "descricao": "Início dos movimentos oculares rápidos (21ª semana após a fertilização)", "diaMin": 141, "diaMax": 147, "ordem": 7 },
+    { "id": "resposta-piscar-sobressalto", "descricao": "Respostas de piscar-sobressalto a estímulos (22ª a 23ª semana após a fertilização)", "diaMin": 148, "diaMax": 161, "ordem": 8 },
+    { "id": "inicio-secrecao-surfactante", "descricao": "Pneumócitos tipo II começam a secretar surfactante (por volta da 24ª semana após a fertilização, ≈26 semanas de idade gestacional)", "diaMin": 161, "diaMax": 168, "ordem": 9 },
+    { "id": "unhas-das-maos", "descricao": "Unhas das mãos presentes (24ª semana após a fertilização)", "diaMin": 168, "diaMax": 168, "ordem": 9 },
+    { "id": "reabertura-palpebras", "descricao": "Reabertura das pálpebras, antes fundidas (26ª semana após a fertilização)", "diaMin": 175, "diaMax": 182, "ordem": 10 },
+    { "id": "medula-ossea-hematopoiese", "descricao": "Fim da eritropoiese esplênica; a medula óssea torna-se o principal sítio de formação de hemácias (por volta de 28 semanas após a fertilização)", "diaMin": 189, "diaMax": 196, "ordem": 11 },
+    { "id": "reflexo-fotomotor-pupilar", "descricao": "Reflexo fotomotor pupilar presente (por volta de 30 semanas após a fertilização)", "diaMin": 203, "diaMax": 210, "ordem": 12 },
+    { "id": "gordura-branca-8-porcento", "descricao": "Gordura branca atinge cerca de 8% do peso corporal (final do intervalo de 30 a 34 semanas após a fertilização)", "diaMin": 231, "diaMax": 238, "ordem": 13 },
+    { "id": "preensao-firme", "descricao": "Preensão firme e orientação espontânea à luz (35 semanas após a fertilização)", "diaMin": 238, "diaMax": 245, "ordem": 14 },
+    { "id": "circunferencias-equivalentes", "descricao": "Circunferências craniana e abdominal aproximadamente iguais (por volta de 36 semanas após a fertilização)", "diaMin": 245, "diaMax": 252, "ordem": 15 },
+    { "id": "termo", "descricao": "Termo: parto em média 266 dias (38 semanas) após a fertilização, equivalente a 280 dias (40 semanas) após a DUM; gordura branca ≈16% do peso", "diaMin": 266, "diaMax": 266, "ordem": 16 }
   ],
   "correlacoesClinicas": [
     {
@@ -267,13 +267,13 @@
       "tipo": "multipla",
       "enunciado": "Sobre o vérnix caseoso, assinale a alternativa correta:",
       "alternativas": [
-        { "id": "a", "texto": "É formado por células epidérmicas descamadas e secreção sebácea, e protege a pele fetal da exposição ao líquido amniótico" },
+        { "id": "a", "texto": "É um transudato do plasma fetal que atravessa a epiderme e lubrifica o canal de parto" },
         { "id": "b", "texto": "É formado por queratina e colágeno dérmico e participa da termogênese do recém-nascido" },
-        { "id": "c", "texto": "É um transudato do plasma fetal que atravessa a epiderme e lubrifica o canal de parto" },
+        { "id": "c", "texto": "É formado por células epidérmicas descamadas e secreção sebácea, e protege a pele fetal da exposição ao líquido amniótico" },
         { "id": "d", "texto": "É produzido pelo âmnio e corresponde à principal fonte de líquido amniótico no terceiro trimestre" }
       ],
-      "correta": "a",
-      "explicacao": "O vérnix caseoso é uma mistura de células epidérmicas descamadas com material graxo das glândulas sebáceas, que aparece entre 17 e 20 semanas após a fertilização e protege a pele da maceração, fissura e endurecimento causados pelo contato prolongado com o líquido amniótico. A alternativa (b) atribui ao vérnix a função da gordura parda, que é o tecido termogênico. A (c) erra a origem: não é transudato plasmático. A (d) confunde com o líquido amniótico, cuja principal fonte no terceiro trimestre é a urina fetal, e não o vérnix.",
+      "correta": "c",
+      "explicacao": "O vérnix caseoso é uma mistura de células epidérmicas descamadas com material graxo das glândulas sebáceas, que aparece entre 17 e 20 semanas após a fertilização e protege a pele da maceração, fissura e endurecimento causados pelo contato prolongado com o líquido amniótico. A alternativa (b) atribui ao vérnix a função da gordura parda, que é o tecido termogênico. A (a) erra a origem: não é transudato plasmático. A (d) confunde com o líquido amniótico, cuja principal fonte no terceiro trimestre é a urina fetal, e não o vérnix.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": ["vernix-caseoso", "pele-fetal"],
@@ -295,13 +295,13 @@
       "tipo": "multipla",
       "enunciado": "A gordura parda que se forma no feto entre 17 e 20 semanas após a fertilização caracteriza-se por:",
       "alternativas": [
-        { "id": "a", "texto": "localizar-se preferencialmente na raiz do pescoço, retroesternalmente e na região perirrenal, e produzir calor pela oxidação de ácidos graxos" },
+        { "id": "a", "texto": "constituir a principal reserva energética do feto, consumida durante o trabalho de parto" },
         { "id": "b", "texto": "distribuir-se uniformemente no subcutâneo e corresponder a cerca de 16% do peso corporal no termo" },
-        { "id": "c", "texto": "constituir a principal reserva energética do feto, consumida durante o trabalho de parto" },
+        { "id": "c", "texto": "localizar-se preferencialmente na raiz do pescoço, retroesternalmente e na região perirrenal, e produzir calor pela oxidação de ácidos graxos" },
         { "id": "d", "texto": "originar-se do endoderma e diferenciar-se a partir do epitélio das glândulas suprarrenais" }
       ],
-      "correta": "a",
-      "explicacao": "A gordura parda é tecido adiposo especializado, rico em mitocôndrias, concentrado na raiz do pescoço, atrás do esterno e ao redor dos rins, e produz calor pela oxidação de ácidos graxos — mecanismo essencial à termorregulação do recém-nascido. A alternativa (b) descreve a gordura branca subcutânea, que atinge cerca de 16% do peso no termo. A (c) também cabe à gordura branca, cuja função é de reserva energética. A (d) erra a origem: o tecido adiposo deriva do mesênquima (mesoderma), não do endoderma.",
+      "correta": "c",
+      "explicacao": "A gordura parda é tecido adiposo especializado, rico em mitocôndrias, concentrado na raiz do pescoço, atrás do esterno e ao redor dos rins, e produz calor pela oxidação de ácidos graxos — mecanismo essencial à termorregulação do recém-nascido. A alternativa (b) descreve a gordura branca subcutânea, que atinge cerca de 16% do peso no termo. A (a) também cabe à gordura branca, cuja função é de reserva energética. A (d) erra a origem: o tecido adiposo deriva do mesênquima (mesoderma), não do endoderma.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["gordura-parda", "termorregulacao", "gordura-branca"],
@@ -330,13 +330,13 @@
       "tipo": "multipla",
       "enunciado": "A duração média da gestação humana, contada de duas formas diferentes, corresponde a:",
       "alternativas": [
-        { "id": "a", "texto": "266 dias após a fertilização e 280 dias após o primeiro dia da última menstruação" },
+        { "id": "a", "texto": "266 dias após a fertilização e 294 dias após o primeiro dia da última menstruação" },
         { "id": "b", "texto": "280 dias após a fertilização e 266 dias após o primeiro dia da última menstruação" },
-        { "id": "c", "texto": "266 dias após a fertilização e 294 dias após o primeiro dia da última menstruação" },
+        { "id": "c", "texto": "266 dias após a fertilização e 280 dias após o primeiro dia da última menstruação" },
         { "id": "d", "texto": "252 dias após a fertilização e 266 dias após o primeiro dia da última menstruação" }
       ],
-      "correta": "a",
-      "explicacao": "O parto ocorre em média 266 dias (38 semanas) após a fertilização, equivalentes a 280 dias (40 semanas) após o primeiro dia da última menstruação, já que a fertilização ocorre cerca de 14 dias após a DUM em ciclos regulares de 28 dias. A alternativa (b) inverte os referenciais. A (c) adiciona 4 semanas em vez de 2 à idade de fertilização. A (d) corresponderia a 36 e 38 semanas, abaixo da média.",
+      "correta": "c",
+      "explicacao": "O parto ocorre em média 266 dias (38 semanas) após a fertilização, equivalentes a 280 dias (40 semanas) após o primeiro dia da última menstruação, já que a fertilização ocorre cerca de 14 dias após a DUM em ciclos regulares de 28 dias. A alternativa (b) inverte os referenciais. A (a) adiciona 4 semanas em vez de 2 à idade de fertilização. A (d) corresponderia a 36 e 38 semanas, abaixo da média.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": ["datacao", "data-provavel-do-parto", "idade-gestacional"],
@@ -359,13 +359,13 @@
       "contexto": "Gestante com ciclos menstruais regulares de 28 dias informa que o primeiro dia de sua última menstruação foi 10 de março de 2026.",
       "enunciado": "Aplicando a regra de Naegele, a data provável do parto é:",
       "alternativas": [
-        { "id": "a", "texto": "17 de dezembro de 2026" },
-        { "id": "b", "texto": "3 de dezembro de 2026" },
-        { "id": "c", "texto": "10 de dezembro de 2026" },
+        { "id": "a", "texto": "3 de dezembro de 2026" },
+        { "id": "b", "texto": "10 de dezembro de 2026" },
+        { "id": "c", "texto": "17 de dezembro de 2026" },
         { "id": "d", "texto": "17 de janeiro de 2027" }
       ],
-      "correta": "a",
-      "explicacao": "A regra de Naegele soma 7 dias ao primeiro dia da DUM e subtrai 3 meses (ajustando o ano quando necessário): 10 de março + 7 dias = 17 de março; 17 de março − 3 meses = 17 de dezembro. Resulta 17/12/2026, que corresponde a cerca de 280 dias após a DUM. A alternativa (b) subtrai 7 dias em vez de somar. A (c) omite a soma dos 7 dias. A (d) subtrai apenas 2 meses. A regra pressupõe ciclos regulares de 28 dias; em ciclos irregulares ou DUM incerta, a datação pelo comprimento cabeça-nádega no primeiro trimestre é mais acurada.",
+      "correta": "c",
+      "explicacao": "A regra de Naegele soma 7 dias ao primeiro dia da DUM e subtrai 3 meses (ajustando o ano quando necessário): 10 de março + 7 dias = 17 de março; 17 de março − 3 meses = 17 de dezembro. Resulta 17/12/2026, que corresponde a cerca de 280 dias após a DUM. A alternativa (a) subtrai 7 dias em vez de somar. A (b) omite a soma dos 7 dias. A (d) subtrai apenas 2 meses. A regra pressupõe ciclos regulares de 28 dias; em ciclos irregulares ou DUM incerta, a datação pelo comprimento cabeça-nádega no primeiro trimestre é mais acurada.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["regra-de-naegele", "data-provavel-do-parto", "datacao"],
@@ -394,13 +394,13 @@
       "contexto": "Gestante de 32 anos, tabagista de 15 cigarros por dia, com hipertensão arterial crônica, chega à consulta de 32 semanas de idade gestacional. A biometria fetal mostra peso estimado abaixo do percentil 10 para a idade gestacional, circunferência abdominal proporcionalmente mais reduzida que o diâmetro biparietal e Doppler de artéria umbilical com resistência aumentada.",
       "enunciado": "O mecanismo que melhor explica o padrão de crescimento desse feto é:",
       "alternativas": [
-        { "id": "a", "texto": "redução da oferta de oxigênio e nutrientes por comprometimento uteroplacentário, com redistribuição de fluxo que preserva relativamente o crescimento cefálico" },
+        { "id": "a", "texto": "erro de datação, já que a biometria do terceiro trimestre é o padrão de referência para estimar a idade gestacional" },
         { "id": "b", "texto": "defeito cromossômico intrínseco, que tipicamente produz restrição de crescimento simétrica e Doppler umbilical normal" },
         { "id": "c", "texto": "deficiência de surfactante, que limita o ganho ponderal no terceiro trimestre" },
-        { "id": "d", "texto": "erro de datação, já que a biometria do terceiro trimestre é o padrão de referência para estimar a idade gestacional" }
+        { "id": "d", "texto": "redução da oferta de oxigênio e nutrientes por comprometimento uteroplacentário, com redistribuição de fluxo que preserva relativamente o crescimento cefálico" }
       ],
-      "correta": "a",
-      "explicacao": "O conjunto — fatores maternos que reduzem o fluxo uteroplacentário (tabagismo e hipertensão), restrição assimétrica com circunferência abdominal mais afetada e resistência aumentada na artéria umbilical — indica insuficiência uteroplacentária com redistribuição hemodinâmica (\"centralização\"), que privilegia cérebro, coração e suprarrenais. A alternativa (b) descreve o padrão habitual das causas intrínsecas, simétrico e de início precoce, com Doppler umbilical tipicamente normal, o que não corresponde ao caso. A (c) é incorreta: o surfactante é relevante para a função respiratória após o nascimento, não para o crescimento fetal. A (d) inverte a hierarquia da datação: o parâmetro mais acurado é o comprimento cabeça-nádega do primeiro trimestre, e a biometria tardia não deve ser usada para redatar a gestação.",
+      "correta": "d",
+      "explicacao": "O conjunto — fatores maternos que reduzem o fluxo uteroplacentário (tabagismo e hipertensão), restrição assimétrica com circunferência abdominal mais afetada e resistência aumentada na artéria umbilical — indica insuficiência uteroplacentária com redistribuição hemodinâmica (\"centralização\"), que privilegia cérebro, coração e suprarrenais. A alternativa (b) descreve o padrão habitual das causas intrínsecas, simétrico e de início precoce, com Doppler umbilical tipicamente normal, o que não corresponde ao caso. A (c) é incorreta: o surfactante é relevante para a função respiratória após o nascimento, não para o crescimento fetal. A (a) inverte a hierarquia da datação: o parâmetro mais acurado é o comprimento cabeça-nádega do primeiro trimestre, e a biometria tardia não deve ser usada para redatar a gestação.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": ["rciu", "crescimento-fetal", "doppler", "insuficiencia-uteroplacentaria"],
@@ -428,13 +428,13 @@
       "tipo": "multipla",
       "enunciado": "Sobre a biópsia de vilo corial, é correto afirmar que:",
       "alternativas": [
-        { "id": "a", "texto": "amostra vilosidades coriônicas de origem trofoblástica, é realizada tipicamente entre 10 e 13 semanas de idade gestacional e não deve ser feita antes de 10 semanas" },
+        { "id": "a", "texto": "é um método de rastreamento, cujo resultado alterado deve ser confirmado por amniocentese" },
         { "id": "b", "texto": "amostra amniócitos descamados do feto e é realizada tipicamente entre 15 e 18 semanas de idade gestacional" },
         { "id": "c", "texto": "amostra sangue fetal do cordão umbilical e permite transfusão intrauterina no mesmo procedimento" },
-        { "id": "d", "texto": "é um método de rastreamento, cujo resultado alterado deve ser confirmado por amniocentese" }
+        { "id": "d", "texto": "amostra vilosidades coriônicas de origem trofoblástica, é realizada tipicamente entre 10 e 13 semanas de idade gestacional e não deve ser feita antes de 10 semanas" }
       ],
-      "correta": "a",
-      "explicacao": "A biópsia de vilo corial obtém tecido das vilosidades coriônicas (parte fetal da placenta, de origem trofoblástica), por via transcervical ou transabdominal, habitualmente entre 10 e 13 semanas de idade gestacional. Não deve ser realizada antes de 10 semanas pelo relato de defeitos por redução de membros nessa fase. Sua grande vantagem é o diagnóstico citogenético e molecular mais precoce que o da amniocentese. A alternativa (b) descreve a amniocentese. A (c) descreve a cordocentese. A (d) está errada no conceito: a biópsia de vilo corial é exame diagnóstico, não rastreamento — este papel cabe à translucência nucal, aos marcadores bioquímicos e ao DNA fetal livre.",
+      "correta": "d",
+      "explicacao": "A biópsia de vilo corial obtém tecido das vilosidades coriônicas (parte fetal da placenta, de origem trofoblástica), por via transcervical ou transabdominal, habitualmente entre 10 e 13 semanas de idade gestacional. Não deve ser realizada antes de 10 semanas pelo relato de defeitos por redução de membros nessa fase. Sua grande vantagem é o diagnóstico citogenético e molecular mais precoce que o da amniocentese. A alternativa (b) descreve a amniocentese. A (c) descreve a cordocentese. A (a) está errada no conceito: a biópsia de vilo corial é exame diagnóstico, não rastreamento — este papel cabe à translucência nucal, aos marcadores bioquímicos e ao DNA fetal livre.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["biopsia-de-vilo-corial", "vilosidades-corionicas", "diagnostico-pre-natal"],
@@ -451,7 +451,7 @@
         { "id": "d", "texto": "células do sinciciotrofoblasto aspiradas junto com o líquido" }
       ],
       "correta": "b",
-      "explicacao": "A amniocentese fornece líquido amniótico contendo amniócitos — células fetais descamadas da pele, do trato urinário e do epitélio amniótico — que permitem cariótipo, análise cromossômica por microarranjo e testes moleculares. O líquido também permite dosagens bioquímicas, como alfafetoproteína e acetilcolinesterase, úteis nos defeitos abertos do tubo neural, mas a análise citogenética depende das células (a). As alternativas (c) e (d) estão erradas: as células analisadas são fetais, não maternas, e não provêm do sinciciotrofoblasto, que é o material da biópsia de vilo corial.",
+      "explicacao": "A amniocentese fornece líquido amniótico contendo amniócitos — células fetais descamadas da pele, do trato urinário e do epitélio amniótico — que permitem cariótipo, análise cromossômica por microarranjo e testes moleculares. O líquido também permite dosagens bioquímicas, como alfafetoproteína e acetilcolinesterase, úteis nos defeitos abertos do tubo neural, mas a análise citogenética depende das células, e não do líquido isoladamente, como propõe (a). As alternativas (c) e (d) estão erradas: as células analisadas são fetais, não maternas, e não provêm do sinciciotrofoblasto, que é o material da biópsia de vilo corial.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": ["amniocentese", "diagnostico-pre-natal", "liquido-amniotico"],
@@ -463,13 +463,13 @@
       "contexto": "Gestante Rh negativo, previamente sensibilizada, está com 26 semanas de idade gestacional. A dopplervelocimetria mostra velocidade máxima do pico sistólico na artéria cerebral média fetal acima do limiar esperado para a idade, sugerindo anemia fetal.",
       "enunciado": "O procedimento indicado para confirmar o diagnóstico e, se necessário, tratar no mesmo ato é:",
       "alternativas": [
-        { "id": "a", "texto": "cordocentese, com coleta de sangue fetal e possibilidade de transfusão intrauterina" },
+        { "id": "a", "texto": "teste de DNA fetal livre no plasma materno, para quantificar a hemoglobina fetal" },
         { "id": "b", "texto": "biópsia de vilo corial, para cariótipo e dosagem de hemoglobina fetal" },
         { "id": "c", "texto": "amniocentese, para cultura de amniócitos e tipagem sanguínea fetal" },
-        { "id": "d", "texto": "teste de DNA fetal livre no plasma materno, para quantificar a hemoglobina fetal" }
+        { "id": "d", "texto": "cordocentese, com coleta de sangue fetal e possibilidade de transfusão intrauterina" }
       ],
-      "correta": "a",
-      "explicacao": "A cordocentese (coleta percutânea de sangue do cordão umbilical, geralmente a partir de cerca de 18 semanas de idade gestacional) permite medir diretamente hematócrito e hemoglobina fetais e, no mesmo acesso, realizar transfusão intrauterina — conduta clássica na anemia fetal por aloimunização. A alternativa (b) é inadequada: a biópsia de vilo corial é restrita ao primeiro trimestre e não avalia a anemia fetal. A (c) não mede a gravidade da anemia nem permite tratar. A (d) é um rastreamento genômico: o DNA fetal livre pode determinar o genótipo RHD fetal, mas não quantifica anemia nem substitui a transfusão.",
+      "correta": "d",
+      "explicacao": "A cordocentese (coleta percutânea de sangue do cordão umbilical, geralmente a partir de cerca de 18 semanas de idade gestacional) permite medir diretamente hematócrito e hemoglobina fetais e, no mesmo acesso, realizar transfusão intrauterina — conduta clássica na anemia fetal por aloimunização. A alternativa (b) é inadequada: a biópsia de vilo corial é restrita ao primeiro trimestre e não avalia a anemia fetal. A (c) não mede a gravidade da anemia nem permite tratar. A (a) é um rastreamento genômico: o DNA fetal livre pode determinar o genótipo RHD fetal, mas não quantifica anemia nem substitui a transfusão.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["cordocentese", "anemia-fetal", "aloimunizacao-rh", "cordao-umbilical"],
@@ -672,7 +672,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "9 correções: (importante) a explicação de emb-08-q16 citava \"(a)\" como se fosse a alternativa das células, invertendo a refutação — reescrita; (importante) eventos simultâneos passaram a compartilhar o mesmo valor de \"ordem\" (início do período fetal / produção de urina; ossificação / folículos primordiais; vérnix e lanugo / percepção dos movimentos / gordura parda; surfactante / unhas das mãos), porque a ordem relativa não é sustentada pelas fontes; (menores) gabarito concentrado em \"a\" (11 de 15 questões de múltipla escolha) redistribuído em 7 questões — a=4, b=4, c=4, d=3 — com troca dos textos das alternativas e atualização de todas as letras citadas nas explicações. Fatos conferidos (266/280 dias, Naegele, janelas de TN, BVC, amniocentese e cordocentese, surfactante ~24ª semana, gordura branca ~16% no termo) sem erro."
+      }
+    ],
     "humano": null
   }
 }

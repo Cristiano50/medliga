@@ -261,13 +261,13 @@
     {
       "id": "pe-torto-congenito",
       "titulo": "Pé torto congênito (talipe equinovaro)",
-      "descricao": "Pé em flexão plantar (equino), inversão (varo), adução do antepé e cavo; mais frequente no sexo masculino. Pode ser idiopático ou associar-se a mielomeningocele e artrogripose. O tratamento inicial é o método de Ponseti (gessos seriados, tenotomia do tendão do calcâneo quando indicada e órtese de abdução).",
+      "descricao": "Pé em flexão plantar (equino), inversão (varo), adução do antepé e cavo; mais frequente no sexo masculino. Pode ser idiopático ou associar-se a mielomeningocele e artrogripose. O tratamento inicial é o método de Ponseti, de preferência iniciado nas primeiras semanas de vida: manipulações e gessos seriados trocados semanalmente, tenotomia percutânea do tendão do calcâneo (necessária na maioria dos casos) e órtese de abdução dos pés, usada em tempo integral por cerca de 3 meses e depois à noite até os 4–5 anos, para evitar recidiva.",
       "mecanismo": "Multifatorial (genético e ambiental); posicionamento anormal ou restrição dos movimentos fetais foram propostos, sem mecanismo único estabelecido."
     },
     {
       "id": "displasia-desenvolvimento-quadril",
       "titulo": "Displasia do desenvolvimento do quadril (DDQ)",
-      "descricao": "Espectro de instabilidade, subluxação e luxação do quadril com acetábulo raso. Fatores de risco: sexo feminino, apresentação pélvica, história familiar e primeira gestação. Rastreada no recém-nascido pelas manobras de Ortolani (reduz o quadril luxado com abdução) e Barlow (luxa o quadril instável com adução e pressão posterior); confirmada por ultrassonografia nos primeiros meses e tratada com suspensório de Pavlik.",
+      "descricao": "Espectro de instabilidade, subluxação e luxação do quadril com acetábulo raso. Fatores de risco: sexo feminino, apresentação pélvica, história familiar e primeira gestação. Rastreada no recém-nascido pelas manobras de Ortolani (reduz o quadril luxado com abdução) e Barlow (luxa o quadril instável com adução e pressão posterior); manobra positiva indica encaminhamento ao ortopedista. A ultrassonografia confirma e acompanha o diagnóstico nos primeiros meses (com exame clínico normal e fatores de risco, é feita por volta de 6 semanas); depois de 4–6 meses, quando a cabeça femoral se ossifica, usa-se a radiografia. No lactente pequeno, o tratamento é o suspensório de Pavlik; após cerca de 3 meses, as manobras tendem a negativar, e a limitação da abdução passa a ser o principal sinal.",
       "mecanismo": "O acetábulo e a cabeça do fêmur desenvolvem-se de forma interdependente; frouxidão ligamentar (inclusive por hormônios maternos) e posições intrauterinas desfavoráveis impedem o contato concêntrico, e o acetábulo se forma raso."
     },
     {
@@ -325,9 +325,9 @@
       "enunciado": "Na formação da coluna vertebral, cada corpo vertebral origina-se:",
       "alternativas": [
         { "id": "a", "texto": "De um único esclerótomo inteiro, no mesmo nível do somito correspondente" },
-        { "id": "b", "texto": "Da fusão da metade caudal de um esclerótomo com a metade cranial do esclerótomo seguinte" },
-        { "id": "c", "texto": "Da ossificação da notocorda" },
-        { "id": "d", "texto": "Do mesoderma somático da placa lateral" }
+        { "id": "b", "texto": "Da metade caudal de um esclerótomo fundida à metade cranial do esclerótomo seguinte" },
+        { "id": "c", "texto": "Da ossificação direta da notocorda, segmento a segmento" },
+        { "id": "d", "texto": "Do mesoderma somático da placa lateral, que migra medialmente para junto do tubo neural e da notocorda" }
       ],
       "correta": "b",
       "explicacao": "Na ressegmentação, a metade caudal (densa) de cada esclerótomo funde-se à metade cranial (frouxa) do esclerótomo seguinte, de modo que o corpo vertebral fica intersegmentar. Por isso os miótomos cruzam os discos e podem mover a coluna, e os nervos espinais ficam junto aos discos. Um esclerótomo inteiro (a) não corresponde a uma vértebra. A notocorda (c) degenera nos corpos vertebrais e persiste como núcleo pulposo, sem se ossificar. O mesoderma somático (d) forma o esqueleto dos membros e o esterno, não as vértebras.",
@@ -341,10 +341,10 @@
       "tipo": "multipla",
       "enunciado": "O esterno desenvolve-se a partir de:",
       "alternativas": [
-        { "id": "a", "texto": "Processos costais das vértebras torácicas" },
-        { "id": "b", "texto": "Células dos esclerótomos torácicos que migram até a linha média ventral" },
-        { "id": "c", "texto": "Notocorda" },
-        { "id": "d", "texto": "Duas barras esternais formadas no mesoderma somático da parede ventral, que se fundem na linha média" }
+        { "id": "a", "texto": "Processos costais das vértebras torácicas, que se unem na linha média ventral" },
+        { "id": "b", "texto": "Células dos esclerótomos torácicos que migram ventralmente até a linha média, entre as costelas" },
+        { "id": "c", "texto": "Extremidade cranial da notocorda, deslocada ventralmente com o dobramento" },
+        { "id": "d", "texto": "Duas barras esternais do mesoderma somático da parede ventral, fundidas na linha média" }
       ],
       "correta": "d",
       "explicacao": "O esterno forma-se de modo independente das costelas: duas barras esternais surgem no mesoderma somático (lateral) da parede ventral, condrificam-se e fundem-se na linha média em sentido craniocaudal, formando manúbrio, corpo e processo xifoide. Fusão incompleta da extremidade inferior produz xifoide bífido ou perfurado. Os processos costais (a) formam as costelas. Os esclerótomos (b) formam vértebras e costelas, não o esterno. A notocorda (c) persiste como núcleo pulposo.",
@@ -376,8 +376,8 @@
       "tipo": "multipla",
       "enunciado": "Em experimentos com embriões de aves, a remoção da crista ectodérmica apical (AER) de um broto de membro provoca:",
       "alternativas": [
-        { "id": "a", "texto": "Duplicação em espelho dos dedos" },
-        { "id": "b", "texto": "Truncamento distal do membro, tanto mais proximal quanto mais precoce a remoção" },
+        { "id": "a", "texto": "Duplicação em espelho dos dedos, com membro de comprimento normal" },
+        { "id": "b", "texto": "Truncamento distal, tanto mais proximal quanto mais precoce a remoção" },
         { "id": "c", "texto": "Perda da polaridade dorsoventral, com face palmar dos dois lados" },
         { "id": "d", "texto": "Sindactilia com membro de comprimento normal" }
       ],
@@ -410,10 +410,10 @@
       "tipo": "multipla",
       "enunciado": "Na 7ª semana, os membros giram em sentidos opostos. Qual afirmação descreve corretamente o resultado?",
       "alternativas": [
-        { "id": "a", "texto": "O membro superior gira cerca de 90° medialmente, e o polegar fica medial" },
-        { "id": "b", "texto": "Os dois membros giram lateralmente, e cotovelos e joelhos voltam-se posteriormente" },
-        { "id": "c", "texto": "O membro inferior gira cerca de 90° medialmente: o hálux fica medial, o joelho volta-se anteriormente e os extensores ficam na face anterior" },
-        { "id": "d", "texto": "O membro inferior gira lateralmente, e o hálux fica lateral" }
+        { "id": "a", "texto": "O membro superior gira cerca de 90° medialmente: o polegar fica medial, e o cotovelo volta-se anteriormente" },
+        { "id": "b", "texto": "Os dois membros giram cerca de 90° lateralmente: cotovelos e joelhos voltam-se posteriormente" },
+        { "id": "c", "texto": "O membro inferior gira cerca de 90° medialmente: o hálux fica medial, e o joelho volta-se anteriormente" },
+        { "id": "d", "texto": "O membro inferior gira cerca de 90° lateralmente: o hálux fica lateral, e o joelho volta-se posteriormente" }
       ],
       "correta": "c",
       "explicacao": "O membro inferior gira cerca de 90° medialmente: a margem pré-axial (tibial, hálux) fica medial, o joelho anterior e a musculatura extensora anterior; por isso seus dermátomos seguem trajeto espiralado. O membro superior gira cerca de 90° lateralmente, e não medialmente (a): o polegar fica lateral, o cotovelo posterior e os extensores nas faces lateral e posterior. Os membros giram em sentidos opostos, não ambos lateralmente (b). O hálux fica medial, não lateral (d).",
@@ -427,10 +427,10 @@
       "tipo": "multipla",
       "enunciado": "Os músculos esqueléticos dos membros derivam de:",
       "alternativas": [
-        { "id": "a", "texto": "Mesoderma lateral somático que forma o núcleo do broto" },
-        { "id": "b", "texto": "Crista neural do tronco" },
-        { "id": "c", "texto": "Mesoderma esplâncnico" },
-        { "id": "d", "texto": "Células miogênicas da borda ventrolateral (hipaxial) do dermomiótomo dos somitos, que migram para o broto" }
+        { "id": "a", "texto": "Mesoderma lateral somático, que forma o núcleo mesenquimal do broto e seus elementos esqueléticos" },
+        { "id": "b", "texto": "Células da crista neural do tronco que migram para o broto" },
+        { "id": "c", "texto": "Mesoderma esplâncnico, o mesmo que forma o músculo liso visceral" },
+        { "id": "d", "texto": "Células da borda hipaxial do dermomiótomo, que migram dos somitos para o broto" }
       ],
       "correta": "d",
       "explicacao": "Precursores musculares deixam a borda hipaxial dos somitos e migram para os brotos, onde formam massas musculares dorsal (extensora) e ventral (flexora), inervadas por ramos ventrais primários (plexos braquial e lombossacral). O mesoderma lateral somático (a) forma ossos, cartilagens, tendões e conjuntivo dos membros, mas não suas fibras musculares. A crista neural do tronco (b) forma neurônios sensitivos e autônomos, células de Schwann e melanócitos. O mesoderma esplâncnico (c) forma o músculo liso visceral e o miocárdio.",
@@ -445,10 +445,10 @@
       "contexto": "Recém-nascido apresenta mãos implantadas quase diretamente nos ombros, com ossos dos braços muito reduzidos, e membros inferiores normais. A mãe, em tratamento de eritema nodoso hansênico, usou talidomida no início da gestação, quando ainda não sabia estar grávida.",
       "enunciado": "Qual é o termo para esse defeito e quando a exposição é mais provavelmente teratogênica?",
       "alternativas": [
-        { "id": "a", "texto": "Meromelia do tipo focomelia; exposição no período crítico do desenvolvimento dos membros, entre o fim da 4ª e o início da 6ª semana após a fertilização" },
-        { "id": "b", "texto": "Amelia; exposição no 3º trimestre" },
-        { "id": "c", "texto": "Sindactilia; exposição na 2ª semana após a fertilização" },
-        { "id": "d", "texto": "Síndrome da banda amniótica; exposição em qualquer fase da gestação" }
+        { "id": "a", "texto": "Meromelia (focomelia); exposição no período crítico dos membros, da 4ª ao início da 6ª semana após a fertilização" },
+        { "id": "b", "texto": "Amelia; exposição no 3º trimestre, quando os ossos longos dos membros já crescem em comprimento e se ossificam" },
+        { "id": "c", "texto": "Sindactilia; exposição na 2ª semana após a fertilização, antes mesmo do surgimento dos brotos dos membros superiores" },
+        { "id": "d", "texto": "Síndrome da banda amniótica; bridas causadas pelo fármaco em qualquer fase da gestação" }
       ],
       "correta": "a",
       "explicacao": "Focomelia é uma forma de meromelia (ausência parcial): mãos ou pés ligam-se ao tronco por ossos curtos e irregulares. O período crítico dos membros é, segundo Moore, dos dias 24 a 36 após a fertilização. Amelia (b) é a ausência completa do membro, e no 3º trimestre os membros já estão formados. Na 2ª semana (c) predomina o efeito 'tudo ou nada', e sindactilia é a fusão de dedos. A banda amniótica (d) causa constrições e amputações assimétricas por bridas, sem relação com o fármaco. No Brasil, a talidomida continua indicada em situações como o eritema nodoso hansênico, sob controle rigoroso e com exigência de contracepção.",
@@ -463,10 +463,10 @@
       "contexto": "Recém-nascido com membros curtos à custa dos segmentos proximais (rizomelia), macrocefalia com fronte proeminente, hipoplasia da face média e mãos em tridente; o tronco tem comprimento quase normal. Os pais têm estatura normal, e o pai tem 47 anos.",
       "enunciado": "Qual é o mecanismo mais provável?",
       "alternativas": [
-        { "id": "a", "texto": "Mutação com perda de função em COL1A1, com fragilidade óssea" },
-        { "id": "b", "texto": "Mutação em TBX5, com defeitos dos membros superiores e do coração" },
-        { "id": "c", "texto": "Mutação de novo com ganho de função do FGFR3, que inibe a proliferação dos condrócitos nas placas de crescimento" },
-        { "id": "d", "texto": "Mutação de FGFR2 com craniossinostose coronal e sindactilia" }
+        { "id": "a", "texto": "Mutação com perda de função em COL1A1, com colágeno tipo I deficiente, ossos frágeis e fraturas de repetição" },
+        { "id": "b", "texto": "Mutação em TBX5, com defeitos do polegar e do antebraço associados a cardiopatia" },
+        { "id": "c", "texto": "Mutação de novo com ganho de função do FGFR3, que inibe os condrócitos das placas de crescimento" },
+        { "id": "d", "texto": "Mutação de FGFR2, com fusão precoce das suturas coronais e sindactilia das mãos" }
       ],
       "correta": "c",
       "explicacao": "É acondroplasia: herança autossômica dominante, mas a maioria dos casos é de novo, associada à idade paterna avançada. O FGFR3 hiperativo inibe a proliferação e a diferenciação dos condrócitos, prejudicando a ossificação endocondral (ossos longos, base do crânio); a abóbada, de ossificação intramembranosa, cresce relativamente bem, daí a macrocefalia. Mutações de COL1A1 (a) causam osteogênese imperfeita, com fraturas. Mutações de TBX5 (b) causam a síndrome de Holt-Oram (anomalias do polegar e do antebraço e cardiopatia), sem rizomelia generalizada. Mutações de FGFR2 (d) causam síndromes como a de Apert, com craniossinostose, não com nanismo rizomélico.",
@@ -499,13 +499,13 @@
       "contexto": "Recém-nascida, primeira filha, nascida de cesariana por apresentação pélvica. Com o quadril fletido, a abdução da coxa esquerda produz um ressalto palpável da cabeça femoral voltando ao acetábulo (manobra de Ortolani positiva).",
       "enunciado": "Qual é o diagnóstico e qual sua base?",
       "alternativas": [
-        { "id": "a", "texto": "Pé torto congênito; contratura dos músculos da panturrilha" },
-        { "id": "b", "texto": "Displasia do desenvolvimento do quadril; acetábulo e cabeça femoral desenvolvem-se de forma interdependente, e a perda do contato concêntrico prejudica a formação do acetábulo" },
-        { "id": "c", "texto": "Epifisiólise proximal do fêmur; deslizamento da epífise pela placa de crescimento" },
-        { "id": "d", "texto": "Doença de Legg-Calvé-Perthes; necrose avascular da cabeça femoral" }
+        { "id": "a", "texto": "Pé torto congênito; encurtamento de músculos e tendões posteriores e mediais da perna e do pé" },
+        { "id": "b", "texto": "Displasia do desenvolvimento do quadril; sem contato concêntrico com a cabeça femoral, o acetábulo se forma raso" },
+        { "id": "c", "texto": "Epifisiólise proximal do fêmur; a epífise desliza sobre o colo femoral através da placa de crescimento enfraquecida" },
+        { "id": "d", "texto": "Doença de Legg-Calvé-Perthes; a interrupção da irrigação causa necrose e colapso da cabeça femoral" }
       ],
       "correta": "b",
-      "explicacao": "A manobra de Ortolani reduz um quadril luxado; com fatores de risco (sexo feminino, apresentação pélvica, primeira gestação), indica displasia do desenvolvimento do quadril. Como acetábulo e cabeça femoral moldam-se mutuamente, a instabilidade impede o desenvolvimento normal do acetábulo, que fica raso. A conduta envolve ultrassonografia e, em geral, suspensório de Pavlik. O pé torto congênito (a) acomete o pé, não o quadril. A epifisiólise (c) ocorre em adolescentes, e a doença de Legg-Calvé-Perthes (d), em crianças em idade escolar; nenhuma das duas é condição neonatal.",
+      "explicacao": "A manobra de Ortolani reduz um quadril luxado; com fatores de risco (sexo feminino, apresentação pélvica, primeira gestação), indica displasia do desenvolvimento do quadril. Como acetábulo e cabeça femoral moldam-se mutuamente, a instabilidade impede o desenvolvimento normal do acetábulo, que fica raso. A conduta envolve encaminhamento ao ortopedista, ultrassonografia e, em geral, suspensório de Pavlik. O pé torto congênito (a) acomete o pé, não o quadril. A epifisiólise (c) ocorre em adolescentes, e a doença de Legg-Calvé-Perthes (d), em crianças em idade escolar; nenhuma das duas é condição neonatal.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["displasia-desenvolvimento-quadril", "ortolani", "caso-clinico"],
@@ -517,10 +517,10 @@
       "contexto": "Mulher de 24 anos com parestesias na face medial do antebraço e na borda ulnar da mão, que pioram ao elevar o braço; o pulso radial diminui com a abdução do membro. A radiografia mostra estrutura óssea alongada articulada ao processo transverso da 7ª vértebra cervical.",
       "enunciado": "Qual é a origem embriológica dessa estrutura?",
       "alternativas": [
-        { "id": "a", "texto": "Ossificação do ligamento longitudinal anterior" },
-        { "id": "b", "texto": "Persistência de cartilagem de um arco faríngeo" },
-        { "id": "c", "texto": "Ossificação heterotópica do músculo escaleno anterior" },
-        { "id": "d", "texto": "Desenvolvimento excessivo do processo costal da 7ª vértebra cervical, derivado do esclerótomo" }
+        { "id": "a", "texto": "Ossificação do ligamento longitudinal anterior, junto ao corpo da vértebra" },
+        { "id": "b", "texto": "Persistência e ossificação da cartilagem de um arco faríngeo no pescoço" },
+        { "id": "c", "texto": "Ossificação heterotópica do músculo escaleno anterior após microtraumas" },
+        { "id": "d", "texto": "Desenvolvimento excessivo do processo costal de C7, derivado do esclerótomo" }
       ],
       "correta": "d",
       "explicacao": "É uma costela cervical: o processo costal de C7, que normalmente integra o processo transverso, desenvolve-se como costela acessória e pode comprimir o tronco inferior do plexo braquial (C8–T1) e a artéria subclávia, causando síndrome do desfiladeiro torácico. A ossificação do ligamento longitudinal anterior (a) é adquirida, em geral em idosos, e não forma costela. As cartilagens dos arcos faríngeos (b) formam ossículos, processo estiloide e hioide, não costelas. Ossificação heterotópica do escaleno (c) não explicaria uma estrutura articulada à vértebra.",
@@ -536,7 +536,7 @@
       "enunciado": "Qual é o mecanismo embriológico dessa anomalia?",
       "alternativas": [
         { "id": "a", "texto": "Falha no aparecimento de um dos dois centros de condrificação do corpo vertebral" },
-        { "id": "b", "texto": "Falha da fusão das metades do arco vertebral, sem alteração do corpo" },
+        { "id": "b", "texto": "Falha da fusão das metades do arco vertebral posterior, sem alteração do corpo vertebral" },
         { "id": "c", "texto": "Fusão congênita de vértebras cervicais por falha de segmentação" },
         { "id": "d", "texto": "Persistência da notocorda no interior do corpo vertebral" }
       ],
@@ -731,6 +731,14 @@
     {
       "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
       "capitulo": "20 — Desenvolvimento dos membros"
+    },
+    {
+      "obra": "Shaw BA, Segal LS; AAP Section on Orthopaedics. Evaluation and referral for developmental dysplasia of the hip in infants. Pediatrics. 2016;138(6):e20163107",
+      "capitulo": "Manobras de Ortolani e Barlow, encaminhamento, ultrassonografia e radiografia"
+    },
+    {
+      "obra": "Ponseti IV. Congenital clubfoot: fundamentals of treatment. Oxford: Oxford University Press; 1996",
+      "capitulo": "Método de Ponseti (gessos seriados, tenotomia e órtese de abdução)"
     }
   ],
   "notasDivergencia": [
@@ -757,6 +765,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "4 correções (1 crítica, 1 importante, 2 menores); principais: correlação 'polidactilia' afirmava que a forma pré-axial se associa mais a síndromes — invertido: a duplicação do polegar costuma ser isolada e esporádica, e a pós-axial fora da ascendência africana é que se associa mais a síndromes; q19 e eventos de rotação/dedos reescritos (início da rotação × separação completa dos dedos), pois a rotação se completa junto com a separação dos dedos; ossificação primária precisada para 'todos os ossos longos dos membros até a 12ª semana'; artérias intersegmentares passam sobre a parte média dos corpos vertebrais. Somitos, ressegmentação (8 nervos × 7 vértebras cervicais), costelas/esterno, crânio, AER/ZPA/WNT7A e sentido da rotação conferidos sem erro."
+      },
+      {
+        "area": "clinica-pediatrica/anatomia",
+        "agente": "revisor-clinica-anatomia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "13 correções (0 crítica, 10 importantes, 3 menores); principais: pista de comprimento eliminada em 10 questões; método de Ponseti detalhado (início nas primeiras semanas, gessos semanais, tenotomia na maioria, órtese em tempo integral por cerca de 3 meses e noturna até 4–5 anos); DDQ com encaminhamento ao ortopedista diante de manobra positiva, ultrassonografia por volta de 6 semanas nos lactentes com fatores de risco e radiografia após 4–6 meses (AAP 2016); explicação da q12 alinhada. Rotação dos membros, dermátomos espiralados do membro inferior, inervação epaxial/hipaxial e costela cervical (tronco inferior C8–T1 e artéria subclávia) conferidos sem erro."
       }
     ],
     "humano": null

@@ -211,7 +211,7 @@
       "descricao": "Brotos do epitélio da uretra prostática começam a formar a próstata",
       "diaMin": 78,
       "diaMax": 91,
-      "ordem": 6
+      "ordem": 5
     },
     {
       "id": "e16-fim-nefrogenese",
@@ -336,11 +336,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Glomérulos e cápsulas glomerulares"
+          "texto": "Glomérulos, cápsulas glomerulares e túbulos contorcidos proximais"
         },
         {
           "id": "b",
-          "texto": "Túbulos contorcidos proximais e distais"
+          "texto": "Alças de Henle, túbulos contorcidos distais e mácula densa"
         },
         {
           "id": "c",
@@ -348,11 +348,11 @@
         },
         {
           "id": "d",
-          "texto": "Bexiga e uretra"
+          "texto": "Bexiga, uretra e ligamento umbilical mediano"
         }
       ],
       "correta": "c",
-      "explicacao": "O broto ureteral (divertículo metanéfrico), evaginação do ducto mesonéfrico, dilata-se para formar a pelve renal e ramifica-se repetidamente: as primeiras gerações formam os cálices maiores e menores, e as seguintes, os túbulos coletores. Glomérulos e cápsulas (a) e túbulos contorcidos (b) derivam do blastema metanéfrico. Bexiga e uretra (d) derivam do seio urogenital.",
+      "explicacao": "O broto ureteral (divertículo metanéfrico), evaginação do ducto mesonéfrico, dilata-se para formar a pelve renal e ramifica-se repetidamente: as primeiras gerações formam os cálices maiores e menores, e as seguintes, os túbulos coletores. Cápsulas glomerulares e túbulos proximais (a) e alças de Henle, túbulos distais e mácula densa (b) derivam do blastema metanéfrico; os capilares dos glomérulos (a) vêm de vasos que invadem a cápsula. Bexiga e uretra (d) derivam do seio urogenital, e o ligamento umbilical mediano, da alantoide (úraco).",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -368,23 +368,23 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O blastema, competente pela expressão de WT1, secreta GDNF, que atua no receptor RET do broto e estimula seu crescimento e ramificação; o broto induz o blastema a formar vesículas renais"
+          "texto": "O blastema (competente por WT1) secreta GDNF, que age no receptor RET do broto; o broto induz o blastema a formar vesículas renais"
         },
         {
           "id": "b",
-          "texto": "O broto ureteral secreta GDNF, que atua no receptor RET do blastema, sem efeito do blastema sobre o broto"
+          "texto": "O broto ureteral secreta GDNF, que age no receptor RET do blastema; o blastema não exerce efeito indutor sobre o broto"
         },
         {
           "id": "c",
-          "texto": "A indução depende apenas de ácido retinoico e TBX4 produzidos pela notocorda"
+          "texto": "A notocorda secreta ácido retinoico e TBX4, que induzem o broto e o blastema separadamente, sem nenhuma sinalização direta entre eles"
         },
         {
           "id": "d",
-          "texto": "O seio urogenital secreta SRY, que induz o blastema a formar néfrons"
+          "texto": "O seio urogenital secreta SRY, que induz o blastema a formar néfrons e o broto a se ramificar"
         }
       ],
       "correta": "a",
-      "explicacao": "Segundo Sadler, WT1 torna o mesênquima metanéfrico competente e regula a produção de GDNF e HGF, que estimulam o crescimento do broto pelos receptores RET e MET de seu epitélio; o broto, por sua vez, via FGF2, BMP7 e WNTs, impede a apoptose do mesênquima e induz sua transição mesênquima–epitélio, formando as vesículas renais. Em (b), ligante e receptor estão trocados de lugar, e a indução deixaria de ser recíproca. Ácido retinoico e TBX4 (c) estão ligados ao surgimento do divertículo respiratório, e a notocorda não é a fonte indutora do rim. SRY (d) determina a diferenciação testicular, não a nefrogênese.",
+      "explicacao": "Segundo Sadler, WT1 torna o mesênquima metanéfrico competente e regula a produção de GDNF e HGF, que estimulam o crescimento do broto pelos receptores RET e MET de seu epitélio; o broto, por sua vez, via FGF2, BMP7 e WNTs, impede a apoptose do mesênquima e induz sua transição mesênquima–epitélio, formando as vesículas renais. Em (b), ligante e receptor estão trocados de lugar, e a indução deixaria de ser recíproca. Ácido retinoico e TBX4 (c) estão ligados ao surgimento do divertículo respiratório, e a notocorda não é a fonte indutora do rim. SRY (d) é um fator de transcrição (não um sinal secretado) que determina a diferenciação testicular, não a nefrogênese.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -402,19 +402,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "O metanefro é o primeiro a surgir e regride quando o mesonefro se forma"
+          "texto": "O metanefro é o primeiro a surgir e regride quando se forma o mesonefro, que origina o rim definitivo e depois sobe até a região lombar"
         },
         {
           "id": "b",
-          "texto": "O pronefro forma o rim definitivo após migrar caudalmente"
+          "texto": "O pronefro, inicialmente cervical, migra caudalmente durante a 5ª semana e forma o rim definitivo"
         },
         {
           "id": "c",
-          "texto": "O mesonefro persiste no adulto de ambos os sexos como rim acessório"
+          "texto": "O mesonefro persiste no adulto de ambos os sexos como rim acessório, drenado pelo ducto mesonéfrico"
         },
         {
           "id": "d",
-          "texto": "Surgem em sequência craniocaudal: o pronefro, cervical e não funcional, regride na 4ª semana; o mesonefro funciona como rim provisório; o metanefro surge na 5ª semana e forma o rim definitivo"
+          "texto": "Surgem em sequência craniocaudal: pronefro (não funcional) e mesonefro (provisório) regridem; o metanefro forma o rim definitivo"
         }
       ],
       "correta": "d",
@@ -435,19 +435,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "A artéria renal original, ramo da artéria ilíaca comum, alonga-se e acompanha o rim até a região lombar"
+          "texto": "A artéria renal original, ramo da artéria ilíaca comum, alonga-se progressivamente e acompanha o rim até a região lombar"
         },
         {
           "id": "b",
-          "texto": "Os rins recebem ramos sucessivos de vasos próximos (inicialmente das artérias ilíacas comuns e da aorta distal; depois, de níveis mais altos da aorta), e os ramos inferiores normalmente involuem"
+          "texto": "Recebem ramos sucessivos de vasos próximos (ilíacas comuns e aorta distal, depois aorta mais alta), e os ramos inferiores involuem"
         },
         {
           "id": "c",
-          "texto": "Os rins são irrigados desde o início pela artéria mesentérica superior"
+          "texto": "São irrigados desde o início pela artéria mesentérica superior, cujos ramos se alongam e acompanham os rins à medida que eles sobem"
         },
         {
           "id": "d",
-          "texto": "A irrigação vem exclusivamente das artérias umbilicais até o nascimento"
+          "texto": "Recebem sangue exclusivamente das artérias umbilicais até o nascimento, quando surgem ramos renais da aorta"
         }
       ],
       "correta": "b",
@@ -506,15 +506,15 @@
         },
         {
           "id": "b",
-          "texto": "Hipoplasia pulmonar, pela falta de líquido amniótico (compressão do tórax e perda do líquido que distende os pulmões em crescimento)"
+          "texto": "Hipoplasia pulmonar, porque a falta de líquido amniótico comprime o tórax e impede a distensão dos pulmões"
         },
         {
           "id": "c",
-          "texto": "Cardiopatia congênita grave, obrigatoriamente associada à agenesia renal"
+          "texto": "Cardiopatia congênita grave, que acompanha obrigatoriamente a agenesia renal bilateral"
         },
         {
           "id": "d",
-          "texto": "Hipoglicemia neonatal por ausência de gliconeogênese renal"
+          "texto": "Hipoglicemia neonatal grave, pela ausência da gliconeogênese realizada pelos rins"
         }
       ],
       "correta": "b",
@@ -575,19 +575,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Ureter do polo superior não incorporado à bexiga, levado caudalmente com o ducto mesonéfrico e desembocando abaixo do mecanismo esfincteriano (uretra distal, vestíbulo ou vagina)"
+          "texto": "Ureter do polo superior não incorporado à bexiga, que desemboca abaixo do mecanismo esfincteriano (uretra, vestíbulo ou vagina)"
         },
         {
           "id": "b",
-          "texto": "Divisão incompleta do broto ureteral, formando um ureter bífido que desemboca normalmente na bexiga"
+          "texto": "Divisão incompleta do broto ureteral, com ureter bífido cujos dois ramos se unem e desembocam por um único orifício normal na bexiga"
         },
         {
           "id": "c",
-          "texto": "Válvula de uretra posterior"
+          "texto": "Válvula de uretra posterior, com obstrução da saída vesical e perda urinária por transbordamento"
         },
         {
           "id": "d",
-          "texto": "Persistência da luz da alantoide, com drenagem de urina pelo umbigo"
+          "texto": "Persistência da luz da alantoide intraembrionária, com drenagem contínua de urina pelo umbigo"
         }
       ],
       "correta": "a",
@@ -613,15 +613,15 @@
         },
         {
           "id": "b",
-          "texto": "Veia umbilical"
+          "texto": "Veia umbilical (porção intra-abdominal)"
         },
         {
           "id": "c",
-          "texto": "Artéria umbilical"
+          "texto": "Artéria umbilical (porção intra-abdominal)"
         },
         {
           "id": "d",
-          "texto": "Luz da alantoide intraembrionária (úraco)"
+          "texto": "Úraco (alantoide intraembrionária)"
         }
       ],
       "correta": "d",
@@ -642,23 +642,23 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Alantoide"
+          "texto": "Porção proximal da alantoide, contínua com o ápice da bexiga"
         },
         {
           "id": "b",
-          "texto": "Incorporação das porções caudais dos ductos mesonéfricos à parede posterior da bexiga"
+          "texto": "Porções caudais dos ductos mesonéfricos incorporadas à bexiga"
         },
         {
           "id": "c",
-          "texto": "Ductos paramesonéfricos fundidos"
+          "texto": "Porções caudais fundidas dos ductos paramesonéfricos"
         },
         {
           "id": "d",
-          "texto": "Parte fálica do seio urogenital"
+          "texto": "Parte fálica do seio urogenital, abaixo do colo vesical"
         }
       ],
       "correta": "b",
-      "explicacao": "Durante a divisão da cloaca, as porções caudais dos ductos mesonéfricos são absorvidas pela parede da bexiga e formam o trígono; assim, os ureteres passam a desembocar separadamente na bexiga. Por isso o trígono tem origem inicialmente mesodérmica, mas seu revestimento é depois substituído por epitélio endodérmico (Sadler). A alantoide (a) forma o úraco. Os ductos paramesonéfricos (c) formam útero, tubas uterinas e parte da vagina. A parte fálica do seio urogenital (d) relaciona-se à uretra peniana, ao vestíbulo e à genitália externa.",
+      "explicacao": "Durante a divisão da cloaca, as porções caudais dos ductos mesonéfricos são absorvidas pela parede da bexiga e formam o trígono; assim, os ureteres passam a desembocar separadamente na bexiga. Por isso o trígono tem origem inicialmente mesodérmica, mas seu revestimento é depois substituído por epitélio endodérmico (Sadler). A alantoide (a) forma o úraco, ligado ao ápice da bexiga, e não ao trígono, situado na base. Os ductos paramesonéfricos (c) formam útero, tubas uterinas e parte da vagina. A parte fálica do seio urogenital (d) relaciona-se à uretra peniana, ao vestíbulo e à genitália externa.",
       "dificuldade": 3,
       "bloom": "lembrar",
       "tags": [
@@ -675,19 +675,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Início típico na vida adulta, cistos em todos os segmentos do néfron e mutações em PKD1 ou PKD2"
+          "texto": "Início típico na vida adulta, cistos em todos os segmentos do néfron, aneurismas intracranianos e genes PKD1 ou PKD2"
         },
         {
           "id": "b",
-          "texto": "Rim único, não funcionante, com cistos de tamanhos variados e sem padrão de herança mendeliana"
+          "texto": "Acometimento em geral unilateral, com rim não funcionante, cistos de tamanhos muito variados e ocorrência esporádica, sem herança mendeliana"
         },
         {
           "id": "c",
-          "texto": "Apresentação pré-natal ou neonatal com rins aumentados e hiperecogênicos, cistos derivados dos ductos coletores, fibrose hepática congênita e mutações em PKHD1"
+          "texto": "Início pré-natal ou neonatal, rins grandes e hiperecogênicos, cistos dos ductos coletores, fibrose hepática congênita e gene PKHD1"
         },
         {
           "id": "d",
-          "texto": "Aneurismas intracranianos e cistos hepáticos como manifestações típicas da infância"
+          "texto": "Aneurismas intracranianos e cistos hepáticos como manifestações típicas da infância, com herança dominante"
         }
       ],
       "correta": "c",
@@ -707,19 +707,19 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Falha da migração de mesênquima entre o ectoderma e a membrana cloacal na parede abdominal infraumbilical, sem formação de músculo e conjuntivo sobre a bexiga"
+          "texto": "Falha da migração de mesênquima entre o ectoderma e a membrana cloacal, sem músculo nem conjuntivo na parede infraumbilical"
         },
         {
           "id": "b",
-          "texto": "Desenvolvimento anormal do septo urorretal, com fístula entre reto e bexiga"
+          "texto": "Desenvolvimento anormal do septo urorretal, com fístula entre o reto e a bexiga e parede abdominal íntegra"
         },
         {
           "id": "c",
-          "texto": "Persistência da luz da alantoide"
+          "texto": "Persistência da luz da alantoide intraembrionária, que mantém aberta a comunicação entre o ápice da bexiga e a cicatriz umbilical"
         },
         {
           "id": "d",
-          "texto": "Divisão precoce do broto ureteral"
+          "texto": "Divisão precoce do broto ureteral, com dois ureteres que desembocam em posições ectópicas"
         }
       ],
       "correta": "a",
@@ -783,11 +783,11 @@
         },
         {
           "id": "d",
-          "texto": "Os ductos ejaculatórios"
+          "texto": "Os ductos ejaculatórios e as glândulas seminais"
         }
       ],
       "correta": "c",
-      "explicacao": "O seio urogenital tem três partes: a vesical, que forma a maior parte da bexiga (a); a pélvica, que forma no homem as uretras prostática e membranosa (e, na mulher, a uretra); e a fálica, relacionada à uretra esponjosa (b) e à genitália externa. Os ductos ejaculatórios (d) derivam dos ductos mesonéfricos, que passam a desembocar na uretra prostática.",
+      "explicacao": "O seio urogenital tem três partes: a vesical, que forma a maior parte da bexiga (a); a pélvica, que forma no homem as uretras prostática e membranosa (e, na mulher, a uretra); e a fálica, relacionada à uretra esponjosa (b) e à genitália externa. Os ductos ejaculatórios e as glândulas seminais (d) derivam dos ductos mesonéfricos; os ductos ejaculatórios desembocam na uretra prostática.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -1113,7 +1113,8 @@
     "Divisão da cloaca: Sadler — entre a 4ª e a 7ª semana; Moore — septo urorretal fundido à membrana cloacal na 7ª semana. Estudos morfológicos recentes questionam a fusão do septo com a membrana cloacal.",
     "Mecanismo da extrofia vesical: Moore — falha da migração de mesênquima entre o ectoderma e a membrana cloacal; Sadler — falha do fechamento da parede ventral na região pélvica. Ambas as descrições aparecem no tópico com atribuição.",
     "Origem da uretra glandar no homem: Moore descreve contribuição de um cordão ectodérmico (placa glandar); estudos mais recentes sugerem origem endodérmica de toda a uretra. Não foi usado em questões.",
-    "Trígono vesical: Sadler e Moore descrevem origem nos ductos mesonéfricos com substituição posterior do epitélio por endoderma; estudos experimentais sugerem que a musculatura do trígono derive em grande parte do detrusor. O tópico mantém a descrição dos livros-texto."
+    "Trígono vesical: Sadler e Moore descrevem origem nos ductos mesonéfricos com substituição posterior do epitélio por endoderma; estudos experimentais sugerem que a musculatura do trígono derive em grande parte do detrusor. O tópico mantém a descrição dos livros-texto.",
+    "Linha do tempo (revisão clínico-anatômica, 2026-11-09): os eventos 'rins na região lombar' (≈ 9ª semana, Moore) e 'brotos prostáticos' (fim do 3º mês, Sadler; outras fontes situam o início por volta da 10ª semana, e estudos da próstata humana falam em ≈ 10 semanas de gestação sem deixar claro o sistema de contagem) passaram a compartilhar a mesma posição (ordem 5). Assim o minijogo nunca os mostra juntos, porque a ordem relativa entre eles não é inequívoca nas fontes."
   ],
   "incertezas": [
     "Prevalências de agenesia renal (uni e bilateral), rim em ferradura, extrofia vesical, válvula de uretra posterior e doenças renais policísticas divergem entre as obras ou não foram conferidas nas edições adotadas e foram omitidas.",
@@ -1131,6 +1132,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "4 correções (0 crítica, 1 importante, 3 menores); principais: q23 reescrita para eliminar dois itens causa-efeito praticamente simultâneos (incorporação dos ductos mesonéfricos × orifícios ureterais separados), com novo primeiro item inequívoco (ductos mesonéfricos chegam à cloaca); destino do mesonefro corrigido (dúctulos eferentes vêm dos túbulos epigenitais, junto ao testículo; os caudais ao testículo formam o paradídimo); q04 e q21 com redação mais precisa. Cronologia pro/meso/metanefro, indução broto ureteral × blastema (WT1, GDNF/RET), ascensão renal, trígono e sequência de Potter conferidos sem erro."
+      },
+      {
+        "area": "clinica-pediatrica/anatomia",
+        "agente": "revisor-clinica-anatomia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "12 correções (0 crítica, 12 importantes, 0 menor); principais: pista de comprimento eliminada em 11 questões de múltipla escolha (q02–q05, q07, q09–q13, q15), com distratores reescritos e corretas encurtadas, sem mudar gabarito nem ids; evento 'brotos prostáticos' passou a compartilhar a posição 5 com 'rins na região lombar', porque a ordem entre eles não é inequívoca nas fontes. Clínica (Potter, válvula de uretra posterior, ureter ectópico, DRPAR/DRPAD, úraco) e anatomia (ascensão e irrigação renal, rim em ferradura retido pela AMI, artéria polar inferior cruzando o ureter) conferidas sem erro."
       }
     ],
     "humano": null

@@ -39,7 +39,15 @@
     { "id": "foliculos-tireoide", "texto": "Células foliculares da tireoide", "categoria": "endoderma", "explicacao": "A tireoide se origina de um espessamento endodérmico do assoalho da faringe primitiva (forame cego).", "referencia": "Moore 11ª ed., cap. 9" },
     { "id": "paratireoides", "texto": "Paratireoides", "categoria": "endoderma", "explicacao": "As paratireoides derivam do endoderma da 3ª (inferiores) e da 4ª (superiores) bolsas faríngeas.", "referencia": "Moore 11ª ed., cap. 9" },
     { "id": "epitelio-timo", "texto": "Epitélio do timo", "categoria": "endoderma", "explicacao": "O epitélio tímico deriva do endoderma da 3ª bolsa faríngea.", "referencia": "Moore 11ª ed., cap. 9" },
-    { "id": "epitelio-bexiga", "texto": "Epitélio da bexiga urinária", "categoria": "endoderma", "explicacao": "O epitélio da bexiga deriva do seio urogenital, de origem endodérmica (cloaca).", "referencia": "Moore 11ª ed., cap. 12" }
+    { "id": "epitelio-bexiga", "texto": "Epitélio da bexiga urinária", "categoria": "endoderma", "explicacao": "O epitélio da bexiga deriva do seio urogenital, de origem endodérmica (cloaca). O epitélio do trígono começa a se formar a partir das extremidades caudais dos ductos mesonéfricos (mesoderma), mas é depois substituído por epitélio endodérmico.", "referencia": "Moore 11ª ed., cap. 12" }
   ],
-  "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [], "humano": null }
+  "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [
+                                                                    {
+                                                                      "area": "embriologia",
+                                                                      "agente": "revisor-embriologia-v1",
+                                                                      "data": "2026-11-09",
+                                                                      "veredito": "aprovado-com-correcoes",
+                                                                      "notas": "1 correção (menor): a explicação do epitélio da bexiga passou a registrar que o epitélio do trígono começa a se formar a partir dos ductos mesonéfricos (mesoderma) e só depois é substituído por epitélio endodérmico — a resposta continua endoderma, conforme Moore. Os 33 itens foram conferidos um a um contra Moore e Sadler e nenhum precisou mudar de categoria nem sair do jogo; ids de categorias e itens preservados. Observação para o revisor humano: a adeno-hipófise é mantida em \"ectoderma superficial\" (bolsa de Rathke, ectoderma do estomodeu), como nos livros adotados, embora haja literatura recente propondo origem na crista neural anterior; e \"células foliculares da tireoide\" foi mantido assim, de propósito, porque a origem das células C é controversa."
+                                                                    }
+                                                                  ], "humano": null }
 }

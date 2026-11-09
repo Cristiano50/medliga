@@ -288,7 +288,9 @@
     {
       "id": "capa-citotrofoblastica",
       "nome": "Capa citotrofoblástica",
-      "sinonimos": [],
+      "sinonimos": [
+        "concha citotrofoblástica"
+      ],
       "definicao": "Camada de citotrofoblasto que atravessa o sinciciotrofoblasto nas pontas das vilosidades e envolve o saco coriônico, ancorando-o ao endométrio."
     }
   ],
@@ -1323,7 +1325,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "1 correção (menor): acrescentado o sinônimo \"concha citotrofoblástica\" em capa-citotrofoblastica, para o aluno reconhecer o termo usado no tópico emb-09. Conferidos: gastrulação, notocorda, neurulação, derivados da crista neural, somitos (1º par ~dia 20; 42–44 pares no fim da 5ª semana), início dos batimentos (21–23 dias), vilosidades e correlações clínicas; sequência de eventos e gabaritos sem erro (gabarito já equilibrado: 4 por letra)."
+      }
+    ],
     "humano": null
   }
 }

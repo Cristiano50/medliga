@@ -304,7 +304,7 @@
     {
       "id": "catarata-congenita",
       "titulo": "Catarata congênita",
-      "descricao": "Opacidade do cristalino presente ao nascimento, que causa leucocoria e alteração do teste do reflexo vermelho ('teste do olhinho') e exige tratamento precoce para evitar ambliopia. Causas: genéticas, rubéola congênita, galactosemia, entre outras. A leucocoria também exige excluir retinoblastoma.",
+      "descricao": "Opacidade do cristalino presente ao nascimento, que causa leucocoria e alteração do teste do reflexo vermelho ('teste do olhinho'), recomendado pelo Ministério da Saúde antes da alta da maternidade e repetido nas consultas dos primeiros anos. A catarata densa exige encaminhamento urgente ao oftalmologista e cirurgia nas primeiras semanas de vida (em geral entre 4 e 6 semanas na unilateral e até cerca de 10 semanas na bilateral), para evitar ambliopia irreversível e nistagmo. Causas: genéticas, rubéola congênita, galactosemia, entre outras. A leucocoria também exige excluir retinoblastoma.",
       "mecanismo": "Lesão das fibras do cristalino em formação. Segundo Moore, o cristalino é vulnerável ao vírus da rubéola entre a 4ª e a 7ª semana, quando se formam as fibras primárias."
     },
     {
@@ -334,7 +334,7 @@
     {
       "id": "surdez-congenita",
       "titulo": "Surdez congênita",
-      "descricao": "Neurossensorial (genética, como a por mutações de GJB2/conexina 26; infecções congênitas por citomegalovírus, rubéola, toxoplasmose e sífilis) ou condutiva (anomalias dos ossículos, atresia do meato acústico externo). O citomegalovírus congênito é a principal causa infecciosa, e a perda pode ser progressiva ou tardia. No Brasil, a triagem auditiva neonatal ('teste da orelhinha') é obrigatória por lei desde 2010.",
+      "descricao": "Neurossensorial (genética, como a por mutações de GJB2/conexina 26; infecções congênitas por citomegalovírus, rubéola, toxoplasmose e sífilis) ou condutiva (anomalias dos ossículos, atresia do meato acústico externo). O citomegalovírus congênito é a principal causa infecciosa, e a perda pode ser progressiva ou tardia. No Brasil, a triagem auditiva neonatal ('teste da orelhinha') é obrigatória por lei desde 2010; as diretrizes do Ministério da Saúde (2012) recomendam fazê-la de preferência nas primeiras 24–48 horas e no máximo até o fim do 1º mês, com emissões otoacústicas nos recém-nascidos sem indicador de risco e PEATE automático nos que têm indicador de risco, com diagnóstico até os 3 meses e intervenção até os 6 meses.",
       "mecanismo": "Lesão do órgão espiral ou do labirinto membranáceo derivado da vesícula ótica (neurossensorial) ou falhas no desenvolvimento dos derivados dos arcos e do 1º sulco faríngeo (condutiva)."
     },
     {
@@ -368,10 +368,10 @@
       "tipo": "multipla",
       "enunciado": "As vesículas ópticas originam-se como evaginações:",
       "alternativas": [
-        { "id": "a", "texto": "Do ectoderma superficial da cabeça" },
+        { "id": "a", "texto": "Do ectoderma superficial, junto ao placoide do cristalino" },
         { "id": "b", "texto": "Da parede do prosencéfalo, na região do futuro diencéfalo" },
-        { "id": "c", "texto": "Do mesencéfalo" },
-        { "id": "d", "texto": "Da crista neural cranial" }
+        { "id": "c", "texto": "Da parede lateral do mesencéfalo, junto aos colículos" },
+        { "id": "d", "texto": "Da crista neural cranial que migra para a região periocular" }
       ],
       "correta": "b",
       "explicacao": "Os sulcos ópticos surgem nas pregas neurais e, com o fechamento do tubo, evaginam-se como vesículas ópticas, divertículos do prosencéfalo (diencéfalo); por isso a retina e o nervo óptico fazem parte do sistema nervoso central. O ectoderma superficial (a) forma o cristalino e o epitélio da córnea, não a vesícula óptica. O mesencéfalo (c) não participa da formação do olho. A crista neural (d) forma o estroma da córnea e da íris e parte do mesênquima periocular, não a vesícula.",
@@ -385,10 +385,10 @@
       "tipo": "multipla",
       "enunciado": "O cristalino deriva:",
       "alternativas": [
-        { "id": "a", "texto": "Da camada interna do cálice óptico" },
-        { "id": "b", "texto": "Do mesênquima da crista neural" },
-        { "id": "c", "texto": "Do mesênquima periocular de origem mesodérmica" },
-        { "id": "d", "texto": "Do ectoderma superficial (placoide do cristalino), induzido pela vesícula óptica" }
+        { "id": "a", "texto": "Da camada interna do cálice óptico, que se espessa junto ao ectoderma" },
+        { "id": "b", "texto": "Do mesênquima da crista neural que penetra a borda do cálice óptico" },
+        { "id": "c", "texto": "Do mesênquima periocular de origem mesodérmica, ao redor do cálice" },
+        { "id": "d", "texto": "Do placoide do cristalino, espessamento do ectoderma superficial" }
       ],
       "correta": "d",
       "explicacao": "A vesícula óptica induz o espessamento do ectoderma superficial (placoide do cristalino), que se invagina e forma a vesícula do cristalino, separada do ectoderma na 5ª semana. A camada interna do cálice (a) forma a retina neural. O mesênquima da crista neural (b) forma o estroma e o endotélio da córnea e o estroma da íris. O mesênquima periocular (c) forma coroide, esclera e músculo ciliar, mas não o cristalino, que é epitelial.",
@@ -437,10 +437,10 @@
       "enunciado": "A córnea tem origem dupla. Qual combinação está correta?",
       "alternativas": [
         { "id": "a", "texto": "Epitélio e estroma do ectoderma superficial; endotélio do neuroectoderma" },
-        { "id": "b", "texto": "Todas as camadas do neuroectoderma do cálice óptico" },
-        { "id": "c", "texto": "Epitélio da crista neural; estroma do mesoderma paraxial" },
-        { "id": "d", "texto": "Epitélio do endoderma; estroma do ectoderma superficial" },
-        { "id": "e", "texto": "Epitélio do ectoderma superficial; estroma e endotélio do mesênquima derivado da crista neural" }
+        { "id": "b", "texto": "Todas as camadas, do neuroectoderma da borda do cálice óptico" },
+        { "id": "c", "texto": "Epitélio da crista neural; estroma e endotélio do mesoderma paraxial" },
+        { "id": "d", "texto": "Epitélio do endoderma; estroma e endotélio do ectoderma superficial" },
+        { "id": "e", "texto": "Epitélio do ectoderma superficial; estroma e endotélio da crista neural" }
       ],
       "correta": "e",
       "explicacao": "Induzida pelo cristalino, a córnea forma-se com epitélio do ectoderma superficial, enquanto o estroma (substância própria, contínua com a esclera) e o endotélio derivam do mesênquima originado da crista neural. O estroma não é ectodérmico, e o endotélio não é neuroectodérmico (a). O neuroectoderma do cálice (b) forma retina, epitélio da íris e do corpo ciliar, não a córnea. O epitélio não deriva da crista neural (c). O endoderma (d) não participa do olho.",
@@ -454,10 +454,10 @@
       "tipo": "multipla",
       "enunciado": "O labirinto membranáceo da orelha interna origina-se:",
       "alternativas": [
-        { "id": "a", "texto": "Do endoderma da 1ª bolsa faríngea" },
-        { "id": "b", "texto": "Do placoide ótico, espessamento do ectoderma superficial que forma a vesícula ótica" },
-        { "id": "c", "texto": "Do ectoderma do 1º sulco faríngeo" },
-        { "id": "d", "texto": "Da cartilagem do 2º arco faríngeo" }
+        { "id": "a", "texto": "Do endoderma da 1ª bolsa faríngea, que forma o recesso tubotimpânico" },
+        { "id": "b", "texto": "Do placoide ótico, espessamento do ectoderma ao lado do rombencéfalo" },
+        { "id": "c", "texto": "Do ectoderma do 1º sulco faríngeo, que se aprofunda em direção à bolsa" },
+        { "id": "d", "texto": "Da cartilagem do 2º arco faríngeo, a mesma que origina o estribo" }
       ],
       "correta": "b",
       "explicacao": "No início da 4ª semana, o placoide ótico, ao lado do rombencéfalo, invagina-se e forma a vesícula ótica, que origina todo o labirinto membranáceo (utrículo, ductos semicirculares, ducto endolinfático, sáculo e ducto coclear). A 1ª bolsa (a) forma cavidade timpânica e tuba auditiva. O 1º sulco (c) forma o meato acústico externo. A cartilagem do 2º arco (d) forma o estribo, na orelha média.",
@@ -471,10 +471,10 @@
       "tipo": "multipla",
       "enunciado": "Segundo Moore e Sadler, martelo, bigorna e estribo derivam, respectivamente:",
       "alternativas": [
-        { "id": "a", "texto": "Todos da cartilagem do 1º arco faríngeo" },
-        { "id": "b", "texto": "Todos da cartilagem do 2º arco faríngeo" },
-        { "id": "c", "texto": "Martelo e bigorna da cartilagem do 1º arco; estribo da cartilagem do 2º arco" },
-        { "id": "d", "texto": "Martelo do 1º arco; bigorna e estribo do 2º arco" }
+        { "id": "a", "texto": "Martelo, bigorna e estribo: cartilagem do 1º arco faríngeo" },
+        { "id": "b", "texto": "Martelo, bigorna e estribo: cartilagem do 2º arco faríngeo" },
+        { "id": "c", "texto": "Martelo e bigorna: cartilagem do 1º arco; estribo: cartilagem do 2º arco" },
+        { "id": "d", "texto": "Martelo: cartilagem do 1º arco; bigorna e estribo: cartilagem do 2º arco" }
       ],
       "correta": "c",
       "explicacao": "Martelo e bigorna derivam da extremidade dorsal da cartilagem do 1º arco (cartilagem de Meckel); o estribo, da cartilagem do 2º arco (cartilagem de Reichert). Coerentemente, o tensor do tímpano (ligado ao martelo) é inervado pelo trigêmeo (nervo do 1º arco), e o estapédio, pelo facial (nervo do 2º arco). As alternativas (a), (b) e (d) atribuem ossículos ao arco errado. Há autores que atribuem parte da base do estribo à cápsula ótica (ver notas de divergência).",
@@ -488,10 +488,10 @@
       "tipo": "multipla",
       "enunciado": "No dente, o esmalte e a dentina são produzidos, respectivamente, por:",
       "alternativas": [
-        { "id": "a", "texto": "Odontoblastos e ameloblastos" },
-        { "id": "b", "texto": "Cementoblastos e odontoblastos" },
-        { "id": "c", "texto": "Ameloblastos derivados da crista neural e odontoblastos derivados do ectoderma oral" },
-        { "id": "d", "texto": "Ameloblastos derivados do ectoderma oral e odontoblastos derivados da crista neural (papila dentária)" }
+        { "id": "a", "texto": "Odontoblastos da papila dentária e ameloblastos do órgão do esmalte" },
+        { "id": "b", "texto": "Cementoblastos do saco dentário e odontoblastos da papila dentária" },
+        { "id": "c", "texto": "Ameloblastos (crista neural) e odontoblastos (ectoderma oral, lâmina dentária)" },
+        { "id": "d", "texto": "Ameloblastos (ectoderma oral) e odontoblastos (crista neural, papila dentária)" }
       ],
       "correta": "d",
       "explicacao": "O órgão do esmalte, epitelial (ectoderma oral), forma os ameloblastos, que produzem o esmalte e desaparecem após a erupção; por isso o esmalte não se regenera. A papila dentária, mesênquima derivado da crista neural, forma os odontoblastos (dentina, que continua a ser produzida ao longo da vida) e a polpa. A alternativa (a) inverte as células. Os cementoblastos (b) vêm do saco dentário e produzem cemento. A alternativa (c) inverte as origens.",
@@ -506,10 +506,10 @@
       "contexto": "Homem de 58 anos, míope, relata flashes de luz, muitas 'moscas volantes' e uma sombra em 'cortina' que avança no campo visual do olho direito. A fundoscopia confirma descolamento de retina.",
       "enunciado": "Entre quais camadas ocorre a separação, e qual sua base embriológica?",
       "alternativas": [
-        { "id": "a", "texto": "Entre a retina neural e o epitélio pigmentado, no antigo espaço intrarretiniano, porque as duas camadas do cálice óptico não se fundem firmemente" },
-        { "id": "b", "texto": "Entre a coroide e a esclera, que derivam de camadas distintas do mesênquima periocular" },
+        { "id": "a", "texto": "Entre a retina neural e o epitélio pigmentado, porque as camadas do cálice óptico não se fundem firmemente" },
+        { "id": "b", "texto": "Entre a coroide e a esclera, que derivam de camadas distintas do mesênquima periocular e se separam facilmente" },
         { "id": "c", "texto": "Entre o epitélio pigmentado e a coroide, que derivam de camadas germinativas diferentes" },
-        { "id": "d", "texto": "Entre a retina e o cristalino, por persistência da artéria hialoide" }
+        { "id": "d", "texto": "Entre a retina e o cristalino, que ficam unidos por restos persistentes da artéria hialoide" }
       ],
       "correta": "a",
       "explicacao": "A camada externa do cálice óptico forma o epitélio pigmentado e a interna, a retina neural; a antiga luz da vesícula óptica (espaço intrarretiniano) desaparece, mas a adesão entre as camadas permanece frágil, e é nesse plano que ocorre o descolamento. Coroide e esclera (b) não se separam no descolamento de retina. O epitélio pigmentado permanece aderido à coroide (c). A retina não fica em contato com o cristalino, e restos da artéria hialoide (d) relacionam-se a opacidades do vítreo, não ao descolamento.",
@@ -560,10 +560,10 @@
       "contexto": "Lactente de 3 meses com lacrimejamento constante, fotofobia e blefarospasmo. Ao exame, as córneas estão aumentadas de diâmetro e turvas (buftalmo).",
       "enunciado": "Qual é o mecanismo embriológico mais provável?",
       "alternativas": [
-        { "id": "a", "texto": "Falha do fechamento da fissura coroide" },
-        { "id": "b", "texto": "Persistência da artéria hialoide" },
-        { "id": "c", "texto": "Opacificação das fibras primárias do cristalino" },
-        { "id": "d", "texto": "Desenvolvimento anormal da malha trabecular e do seio venoso da esclera no ângulo iridocorneano" }
+        { "id": "a", "texto": "Falha do fechamento da fissura coroide, com defeito no setor inferior do olho" },
+        { "id": "b", "texto": "Persistência da artéria hialoide, que atravessa o vítreo até o cristalino" },
+        { "id": "c", "texto": "Opacificação das fibras primárias do cristalino durante sua formação" },
+        { "id": "d", "texto": "Desenvolvimento anormal da malha trabecular e do seio venoso da esclera" }
       ],
       "correta": "d",
       "explicacao": "No glaucoma congênito, a drenagem do humor aquoso pelo ângulo iridocorneano é deficiente; a pressão intraocular sobe e, como a esclera e a córnea do lactente são distensíveis, o olho aumenta (buftalmo), com edema corneano, lacrimejamento e fotofobia. Pode ser genético (como mutações de CYP1B1) ou associado à rubéola. O tratamento é cirúrgico e urgente. A falha da fissura coroide (a) causa coloboma. A persistência da artéria hialoide (b) causa opacidades no vítreo ou leucocoria. A opacificação do cristalino (c) é a catarata, que causa leucocoria, mas não aumento do olho.",
@@ -578,10 +578,10 @@
       "contexto": "Recém-nascido a termo, sem outras alterações ao exame, apresenta dois pequenos apêndices cutâneos à frente do trago direito.",
       "enunciado": "Qual é a origem mais provável dessas lesões e qual cuidado é recomendado?",
       "alternativas": [
-        { "id": "a", "texto": "Saliências auriculares acessórias; garantir a triagem auditiva neonatal e procurar outras anomalias" },
-        { "id": "b", "texto": "Restos da 2ª bolsa faríngea; ressecção urgente pelo risco de malignização" },
-        { "id": "c", "texto": "Persistência do tampão meatal; desobstrução do meato acústico externo" },
-        { "id": "d", "texto": "Cisto do ducto tireoglosso; ultrassonografia da tireoide" }
+        { "id": "a", "texto": "Saliências auriculares acessórias; garantir a triagem auditiva e procurar outras anomalias" },
+        { "id": "b", "texto": "Restos da 2ª bolsa faríngea; ressecção cirúrgica urgente pelo alto risco de malignização" },
+        { "id": "c", "texto": "Persistência do tampão meatal; desobstrução cirúrgica do meato acústico externo" },
+        { "id": "d", "texto": "Cisto do ducto tireoglosso; ultrassonografia da tireoide antes da exérese" }
       ],
       "correta": "a",
       "explicacao": "Apêndices pré-auriculares resultam do desenvolvimento de saliências auriculares acessórias (1º e 2º arcos). Em geral são isolados, mas podem associar-se a perda auditiva e a síndromes (brânquio-otorrenal, espectro óculo-aurículo-vertebral); por isso deve-se garantir a triagem auditiva ('teste da orelhinha', obrigatória no Brasil) e examinar a criança em busca de outras anomalias. A 2ª bolsa (b) forma a fossa tonsilar; cistos e fístulas branquiais situam-se ao longo da borda anterior do esternocleidomastóideo, e não há urgência por malignização. A persistência do tampão meatal (c) causa atresia do meato, sem apêndices cutâneos. O cisto do ducto tireoglosso (d) fica na linha média do pescoço.",
@@ -596,9 +596,9 @@
       "contexto": "Adolescente de 14 anos procura atendimento por uma pequena lesão pigmentada, elevada, na parede torácica esquerda, alguns centímetros abaixo e medialmente à mama. A dermatoscopia mostra aréola e mamilo rudimentares.",
       "enunciado": "Qual é a base embriológica dessa lesão?",
       "alternativas": [
-        { "id": "a", "texto": "Persistência de um segmento da crista mamária, que normalmente regride, exceto na região peitoral" },
-        { "id": "b", "texto": "Nevo melanocítico formado por células da crista neural" },
-        { "id": "c", "texto": "Hamartoma de glândula sudorípara écrina" },
+        { "id": "a", "texto": "Persistência de um segmento da crista mamária fora da região peitoral" },
+        { "id": "b", "texto": "Nevo melanocítico, formado por células da crista neural que migraram para a pele" },
+        { "id": "c", "texto": "Hamartoma de glândula sudorípara écrina, brotada diretamente da epiderme" },
         { "id": "d", "texto": "Glândula sebácea ectópica, independente de folículo piloso" }
       ],
       "correta": "a",
@@ -808,6 +808,14 @@
     {
       "obra": "Brasil. Lei nº 12.303, de 2 de agosto de 2010",
       "capitulo": "Obrigatoriedade da triagem auditiva neonatal (emissões otoacústicas evocadas)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Diretrizes de Atenção da Triagem Auditiva Neonatal. Brasília: Ministério da Saúde; 2012",
+      "capitulo": "Prazos (1-3-6), emissões otoacústicas e PEATE automático conforme indicadores de risco"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Diretrizes de Atenção à Saúde Ocular na Infância: detecção e intervenção precoce para prevenção de deficiências visuais. Brasília: Ministério da Saúde; 2013",
+      "capitulo": "Teste do reflexo vermelho (teste do olhinho)"
     }
   ],
   "notasDivergencia": [
@@ -825,7 +833,8 @@
     "Tamanho e forma adultos da orelha interna no meio do período fetal (20–22 semanas, segundo Moore) não foram incluídos por não terem sido conferidos.",
     "Momentos de aparecimento dos pelos (fim do 3º mês, Sadler), das unhas e de sua chegada às pontas dos dedos (marcador de maturidade fetal) não foram incluídos como números por variação entre as fontes.",
     "Prevalências de coloboma, catarata e glaucoma congênitos, apêndices pré-auriculares e politelia não foram conferidas e foram omitidas.",
-    "Indicação de ultrassonografia renal em apêndices pré-auriculares isolados é controversa na literatura pediátrica; o conteúdo recomenda apenas triagem auditiva e busca clínica de outras anomalias."
+    "Indicação de ultrassonografia renal em apêndices pré-auriculares isolados é controversa na literatura pediátrica; o conteúdo recomenda apenas triagem auditiva e busca clínica de outras anomalias.",
+    "Janela cirúrgica da catarata congênita densa (4–6 semanas na unilateral; até ≈ 10 semanas na bilateral) e calendário de repetição do teste do reflexo vermelho variam entre as fontes; o guia do Ministério da Saúde para a triagem ocular neonatal está em revisão (consulta pública de 2026). Conferir a versão vigente antes da publicação."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -837,6 +846,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "1 correção (0 crítica, 0 importante, 1 menor): removido o sinônimo 'fosseta óptica' do sulco óptico, termo não usado nas traduções de Moore/Sadler e confundível com a fosseta do disco óptico (anomalia congênita distinta). Derivados do cálice óptico (epitélio pigmentado × retina neural, epitélio e músculos da íris), fissura coroide/coloboma, artéria hialoide, córnea, orelhas interna/média/externa (martelo e bigorna do 1º arco, estribo do 2º), tegumento, mamas e esmalte (ameloblastos, ectoderma) × dentina (odontoblastos, crista neural) conferidos sem erro."
+      },
+      {
+        "area": "clinica-pediatrica/anatomia",
+        "agente": "revisor-clinica-anatomia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "12 correções (0 crítica, 10 importantes, 2 menores); principais: pista de comprimento eliminada em 10 questões; catarata congênita com teste do reflexo vermelho (Ministério da Saúde, 2013) e janela cirúrgica (4–6 semanas na unilateral; até cerca de 10 semanas na bilateral); triagem auditiva neonatal conforme as diretrizes do Ministério da Saúde de 2012 (24–48 h, no máximo até 1 mês; EOA ou PEATE automático conforme indicador de risco; diagnóstico até 3 e intervenção até 6 meses). Anatomia do olho e da orelha (artéria central da retina, ramo da oftálmica/carótida interna; tensor do tímpano pelo V e estapédio pelo VII) conferida sem erro."
       }
     ],
     "humano": null

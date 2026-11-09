@@ -184,7 +184,7 @@
       "nome": "Cone medular",
       "sinonimos": [],
       "definicao": "Extremidade caudal afilada da medula espinal, cuja posição relativa sobe ao longo do desenvolvimento.",
-      "destino": "Cerca de L2–L3 no recém-nascido e L1–L2 no adulto, com variação entre as fontes."
+      "destino": "Cerca de L2–L3 no recém-nascido (Moore) e L1–L2 no adulto, com variação entre as fontes; na ultrassonografia de recém-nascidos a termo, fica em geral na altura de L1–L2."
     },
     {
       "id": "filamento-terminal",
@@ -231,10 +231,10 @@
     },
     {
       "id": "e18-coluna-cresce-mais",
-      "descricao": "A medula ocupa todo o canal vertebral; a partir de então, a coluna vertebral passa a crescer mais rapidamente que a medula",
+      "descricao": "A coluna vertebral e a dura-máter passam a crescer mais rapidamente que a medula, que até então ocupava todo o canal vertebral (3º mês)",
       "diaMin": 57,
       "diaMax": 90,
-      "ordem": 6
+      "ordem": 5
     },
     {
       "id": "e18-cone-s1",
@@ -279,7 +279,7 @@
     {
       "id": "mielomeningocele",
       "titulo": "Mielomeningocele",
-      "descricao": "Forma mais comum e grave de espinha bífida cística, em geral lombossacra: o saco contém medula e/ou raízes nervosas. Há paralisia e perda de sensibilidade abaixo da lesão, disfunção vesical e intestinal, deformidades dos membros inferiores, malformação de Chiari II e hidrocefalia na maioria dos casos. A correção cirúrgica intrauterina, em centros especializados, reduziu a necessidade de derivação ventricular e melhorou desfechos motores em ensaio clínico (MOMS), com maior risco de prematuridade.",
+      "descricao": "Forma mais comum e grave de espinha bífida cística, em geral lombossacra: o saco contém medula e/ou raízes nervosas. Há paralisia e perda de sensibilidade abaixo da lesão, disfunção vesical e intestinal, deformidades dos membros inferiores, malformação de Chiari II e hidrocefalia na maioria dos casos. A correção intrauterina antes de 26 semanas de idade gestacional, em centros especializados, reduziu a necessidade de derivação ventricular e melhorou desfechos motores no ensaio MOMS, com maior risco de prematuridade e de afinamento ou deiscência da cicatriz uterina. Sem cirurgia fetal, a lesão é protegida com curativo estéril úmido e fechada nas primeiras 48–72 horas de vida; a hidrocefalia é tratada por derivação ventriculoperitoneal ou terceiroventriculostomia endoscópica, e a bexiga neurogênica costuma exigir cateterismo intermitente limpo.",
       "mecanismo": "Falha do fechamento do tubo neural na região caudal (neuroporo caudal), com tecido neural exposto e lesado pelo líquido amniótico."
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "acido-folico-prevencao",
       "titulo": "Prevenção dos DTN com ácido fólico",
-      "descricao": "Suplementação periconcepcional (400 µg/dia; dose alta, de cerca de 4 mg/dia, para quem teve gestação afetada), iniciada pelo menos 1 mês antes da concepção e mantida no 1º trimestre, reduz a incidência de DTN (até 70%, segundo Sadler). No Brasil, a fortificação das farinhas de trigo e milho com ácido fólico é obrigatória desde 2004. Fatores de risco incluem DTN prévio, diabetes materno, obesidade, hipertermia e anticonvulsivantes como valproato e carbamazepina.",
+      "descricao": "Suplementação periconcepcional com 0,4 mg (400 µg)/dia para todas as mulheres que podem engravidar e 4 mg/dia no alto risco (gestação anterior com DTN ou DTN em um dos genitores; no Brasil é comum o comprimido de 5 mg), iniciada pelo menos 1 mês antes da concepção e mantida até o fim do 1º trimestre, reduz a incidência de DTN (até 70%, segundo Sadler). No Brasil, a fortificação das farinhas de trigo e milho com ácido fólico é obrigatória desde 2004. Fatores de risco incluem DTN prévio, diabetes materno, obesidade, hipertermia e anticonvulsivantes como valproato e carbamazepina.",
       "mecanismo": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; o folato participa da síntese de nucleotídeos e da metilação, essenciais à proliferação do neuroepitélio."
     },
     {
@@ -321,13 +321,13 @@
     {
       "id": "craniofaringioma",
       "titulo": "Craniofaringioma",
-      "descricao": "Tumor epitelial, em geral suprasselar, cístico e calcificado, mais frequente em crianças. Causa cefaleia, hipertensão intracraniana, hemianopsia bitemporal (compressão do quiasma óptico) e deficiências hipofisárias (como baixa estatura por deficiência de GH).",
+      "descricao": "Tumor epitelial, em geral suprasselar, cístico e calcificado, com picos de incidência na infância e na vida adulta; é o tumor da região selar mais comum na infância. Causa cefaleia, hipertensão intracraniana, hemianopsia bitemporal (compressão do quiasma óptico) e deficiências hipofisárias (como baixa estatura por deficiência de GH).",
       "mecanismo": "Origina-se de restos da bolsa de Rathke ao longo do trajeto da haste hipofisária."
     },
     {
       "id": "medula-presa",
       "titulo": "Síndrome da medula presa",
-      "descricao": "Cone medular fixado em posição baixa (por filamento terminal espessado, lipoma ou cicatriz de correção de mielomeningocele), com déficits motores, sensitivos, dor e disfunção vesical progressivos durante o crescimento.",
+      "descricao": "Cone medular fixado em posição baixa (por filamento terminal espessado, lipoma ou cicatriz de correção de mielomeningocele), com déficits motores, sensitivos, dor e disfunção vesical progressivos durante o crescimento. Em lactentes com marcadores cutâneos lombossacros, a ultrassonografia da coluna (viável nos primeiros meses, antes da ossificação dos arcos posteriores) avalia o nível do cone; cone baixo (por exemplo, em L4 ou abaixo) exige seguimento.",
       "mecanismo": "A fixação impede a 'ascensão' relativa da medula; com o crescimento da coluna, a medula é tracionada."
     }
   ],
@@ -354,10 +354,10 @@
       "tipo": "multipla",
       "enunciado": "O cerebelo origina-se principalmente:",
       "alternativas": [
-        { "id": "a", "texto": "Das placas basais do mielencéfalo" },
+        { "id": "a", "texto": "Das placas basais do mielencéfalo, no assoalho do quarto ventrículo" },
         { "id": "b", "texto": "Das porções dorsais das placas alares do metencéfalo (lábios rômbicos)" },
-        { "id": "c", "texto": "Das placas alares do mesencéfalo" },
-        { "id": "d", "texto": "Da parede lateral do telencéfalo" }
+        { "id": "c", "texto": "Das placas alares do mesencéfalo, junto aos futuros colículos" },
+        { "id": "d", "texto": "Da parede lateral do telencéfalo, junto aos futuros núcleos da base" }
       ],
       "correta": "b",
       "explicacao": "As porções dorsolaterais das placas alares do metencéfalo curvam-se medialmente e formam os lábios rômbicos, que se unem na placa cerebelar, primórdio do cerebelo. As placas basais do mielencéfalo (a) formam núcleos motores de nervos cranianos. As placas alares do mesencéfalo (c) formam os colículos superiores e inferiores. O telencéfalo (d) forma os hemisférios cerebrais.",
@@ -406,10 +406,10 @@
       "tipo": "multipla",
       "enunciado": "Na medula espinal em desenvolvimento, o sulco limitante separa:",
       "alternativas": [
-        { "id": "a", "texto": "A placa do teto da placa do assoalho" },
-        { "id": "b", "texto": "As placas alares, dorsais e sensitivas, das placas basais, ventrais e motoras" },
-        { "id": "c", "texto": "A camada do manto da camada marginal" },
-        { "id": "d", "texto": "As raízes dorsais das raízes ventrais dos nervos espinais" }
+        { "id": "a", "texto": "A placa do teto (dorsal) da placa do assoalho (ventral)" },
+        { "id": "b", "texto": "As placas alares (dorsais) das placas basais (ventrais)" },
+        { "id": "c", "texto": "A camada do manto (intermediária) da camada marginal (externa)" },
+        { "id": "d", "texto": "As raízes dorsais (posteriores) das raízes ventrais (anteriores)" }
       ],
       "correta": "b",
       "explicacao": "O sulco limitante, na parede lateral do tubo neural, marca o limite entre as placas alares (dorsais; neurônios de associação do corno posterior, sensitivos) e as basais (ventrais; neurônios motores dos cornos anterior e lateral). As placas do teto e do assoalho (a) são estreitas faixas medianas sem neuroblastos, situadas dorsal e ventralmente. Manto e marginal (c) são camadas dispostas de dentro para fora, não separadas por um sulco. As raízes dos nervos espinais (d) estão fora do tubo neural.",
@@ -442,9 +442,9 @@
       "enunciado": "A adeno-hipófise (lobo anterior da hipófise) deriva:",
       "alternativas": [
         { "id": "a", "texto": "Da bolsa de Rathke, evaginação do ectoderma do teto do estomodeu" },
-        { "id": "b", "texto": "Do infundíbulo, projeção do assoalho do diencéfalo" },
-        { "id": "c", "texto": "Do endoderma do teto da faringe primitiva" },
-        { "id": "d", "texto": "Da crista neural do mesencéfalo" }
+        { "id": "b", "texto": "Do infundíbulo, projeção ventral do assoalho do diencéfalo" },
+        { "id": "c", "texto": "Do endoderma do teto da faringe primitiva, atrás da membrana bucofaríngea" },
+        { "id": "d", "texto": "Da crista neural do mesencéfalo, que migra para a sela turca" }
       ],
       "correta": "a",
       "explicacao": "A bolsa de Rathke surge como evaginação do ectoderma do teto do estomodeu, imediatamente à frente da membrana bucofaríngea, cresce em direção ao infundíbulo e forma as partes distal, intermédia e tuberal da hipófise. O infundíbulo (b) forma a neuro-hipófise. O endoderma faríngeo (c) forma o epitélio da faringe e de glândulas como tireoide e paratireoides, não a hipófise. A crista neural (d) contribui para o mesênquima craniofacial, não para o parênquima hipofisário.",
@@ -460,11 +460,11 @@
       "alternativas": [
         { "id": "a", "texto": "A medula sofre retração ativa por encurtamento dos tratos longos" },
         { "id": "b", "texto": "Os segmentos sacrais da medula degeneram completamente" },
-        { "id": "c", "texto": "A coluna vertebral se desloca caudalmente em relação ao crânio" },
+        { "id": "c", "texto": "A coluna vertebral inteira se desloca caudalmente em relação ao crânio e à medula" },
         { "id": "d", "texto": "A coluna vertebral e a dura-máter crescem mais rapidamente que a medula espinal" }
       ],
       "correta": "d",
-      "explicacao": "A 'ascensão' do cone é relativa: coluna e dura-máter crescem mais que a medula, e as raízes dos nervos lombares e sacrais alongam-se obliquamente até seus forames, formando a cauda equina; a pia-máter forma o filamento terminal. Não há retração ativa da medula (a). Os segmentos sacrais persistem no cone medular (b). A coluna não se desloca em relação ao crânio (c); a diferença é de crescimento. Por isso a punção lombar é feita abaixo do cone (no recém-nascido, em nível mais baixo que no adulto).",
+      "explicacao": "A 'ascensão' do cone é relativa: coluna e dura-máter crescem mais que a medula, e as raízes dos nervos lombares e sacrais alongam-se obliquamente até seus forames, formando a cauda equina; a pia-máter forma o filamento terminal. Não há retração ativa da medula (a). Os segmentos sacrais persistem no cone medular (b). A coluna não se desloca em relação ao crânio (c); a diferença é de crescimento. Por isso a punção lombar é feita abaixo do cone, nos espaços L3–L4 ou L4–L5 (no recém-nascido, cujo cone pode estar mais baixo, prefere-se L4–L5).",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": ["medula-espinal", "cone-medular", "puncao-lombar"],
@@ -473,7 +473,7 @@
     {
       "id": "emb-18-q09",
       "tipo": "multipla",
-      "contexto": "Recém-nascido apresenta, na região lombossacra, lesão cística recoberta por membrana fina, através da qual se veem raízes nervosas e tecido medular. Há paralisia flácida e ausência de sensibilidade nos membros inferiores, gotejamento urinário contínuo e perímetro cefálico acima do percentil 97. No pré-natal, a alfafetoproteína sérica materna estava elevada.",
+      "contexto": "Recém-nascido apresenta, na região lombossacra, lesão cística recoberta por membrana fina, através da qual se veem raízes nervosas e tecido medular. Há paresia flácida e perda de sensibilidade nos membros inferiores abaixo do nível da lesão, gotejamento urinário contínuo e ventriculomegalia à ultrassonografia transfontanelar. No pré-natal, a alfafetoproteína sérica materna estava elevada.",
       "enunciado": "Qual é o diagnóstico?",
       "alternativas": [
         { "id": "a", "texto": "Espinha bífida oculta" },
@@ -482,7 +482,7 @@
         { "id": "d", "texto": "Mielomeningocele" }
       ],
       "correta": "d",
-      "explicacao": "Na mielomeningocele, o saco contém medula e/ou raízes; há déficits motores, sensitivos e esfincterianos abaixo do nível da lesão, e a maioria tem Chiari II e hidrocefalia (perímetro cefálico aumentado). Por ser defeito aberto, eleva a alfafetoproteína. A espinha bífida oculta (a) é recoberta por pele, sem envolvimento neural nem elevação da alfafetoproteína. Na meningocele (b), o saco contém apenas meninges e liquor, e os déficits costumam ser leves ou ausentes. A lipomielomeningocele (c) é um defeito fechado, recoberto por pele, que não expõe tecido neural nem eleva a alfafetoproteína.",
+      "explicacao": "Na mielomeningocele, o saco contém medula e/ou raízes; há déficits motores, sensitivos e esfincterianos abaixo do nível da lesão, e a maioria tem Chiari II e hidrocefalia (aqui, ventriculomegalia já ao nascer). Por ser defeito aberto, eleva a alfafetoproteína. A espinha bífida oculta (a) é recoberta por pele, sem envolvimento neural nem elevação da alfafetoproteína. Na meningocele (b), o saco contém apenas meninges e liquor, e os déficits costumam ser leves ou ausentes. A lipomielomeningocele (c) é um defeito fechado, recoberto por pele, que não expõe tecido neural nem eleva a alfafetoproteína.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["defeitos-tubo-neural", "mielomeningocele", "caso-clinico"],
@@ -494,10 +494,10 @@
       "contexto": "Ultrassonografia morfológica com 20 semanas de idade gestacional mostra recorte côncavo dos ossos frontais ('sinal do limão'), cerebelo encurvado em torno do tronco encefálico com cisterna magna obliterada ('sinal da banana') e ventriculomegalia, achados sugestivos de malformação de Chiari II.",
       "enunciado": "Qual alteração deve ser procurada ativamente na coluna fetal?",
       "alternativas": [
-        { "id": "a", "texto": "Hemivértebra torácica" },
-        { "id": "b", "texto": "Teratoma sacrococcígeo" },
+        { "id": "a", "texto": "Hemivértebra torácica (escoliose congênita)" },
+        { "id": "b", "texto": "Teratoma sacrococcígeo (tumor de células germinativas)" },
         { "id": "c", "texto": "Mielomeningocele (espinha bífida aberta)" },
-        { "id": "d", "texto": "Fusão de vértebras cervicais" }
+        { "id": "d", "texto": "Fusão de vértebras cervicais (Klippel-Feil)" }
       ],
       "correta": "c",
       "explicacao": "A malformação de Chiari II ocorre em praticamente todos os casos de mielomeningocele. Segundo a hipótese mais aceita, o vazamento de liquor pelo defeito aberto impede o desenvolvimento adequado da fossa posterior; o vérmis, o bulbo e o quarto ventrículo herniam pelo forame magno, o fluxo liquórico é obstruído e surge hidrocefalia. Hemivértebra (a) causa escoliose congênita e fusão de vértebras cervicais (d) caracteriza a síndrome de Klippel-Feil; nenhuma delas causa Chiari II. O teratoma sacrococcígeo (b) é uma massa tumoral, sem relação com a herniação do rombencéfalo.",
@@ -548,11 +548,11 @@
       "contexto": "Recém-nascido em Recife, em 2015, com perímetro cefálico abaixo de −3 desvios-padrão, desproporção craniofacial com excesso de pele no couro cabeludo e artrogripose. A tomografia mostra calcificações na junção córtico-subcortical, ventriculomegalia e simplificação do padrão de giros. A mãe teve exantema no 1º trimestre.",
       "enunciado": "Qual é o mecanismo mais aceito para a microcefalia nessa condição?",
       "alternativas": [
-        { "id": "a", "texto": "Falha do fechamento do neuroporo cranial" },
-        { "id": "b", "texto": "Craniossinostose primária de múltiplas suturas" },
-        { "id": "c", "texto": "Deficiência materna de ácido fólico" },
-        { "id": "d", "texto": "Mutação de SHH com falha da divisão do prosencéfalo" },
-        { "id": "e", "texto": "Infecção das células progenitoras neurais pelo vírus Zika, com morte celular e redução da proliferação" }
+        { "id": "a", "texto": "Falha do fechamento do neuroporo cranial, com degeneração do prosencéfalo exposto" },
+        { "id": "b", "texto": "Craniossinostose primária de múltiplas suturas, que restringe o crescimento do encéfalo" },
+        { "id": "c", "texto": "Deficiência materna de folato, com proliferação insuficiente do neuroepitélio" },
+        { "id": "d", "texto": "Mutação de SHH, com falha da divisão do prosencéfalo na linha média" },
+        { "id": "e", "texto": "Infecção de progenitores neurais pelo vírus Zika, com morte celular e menor proliferação" }
       ],
       "correta": "e",
       "explicacao": "O quadro é de síndrome congênita do Zika. O vírus infecta preferencialmente progenitores neurais (incluindo a glia radial), causando morte celular e redução da proliferação e da migração; a perda de volume encefálico leva ao colapso do crânio, com excesso de pele no couro cabeludo. As calcificações córtico-subcorticais diferem das periventriculares típicas do citomegalovírus. A falha do neuroporo cranial (a) causa anencefalia. Na craniossinostose primária (b) não há calcificações nem destruição do parênquima; no Zika, as suturas se sobrepõem por colapso. A deficiência de folato (c) relaciona-se a defeitos do tubo neural. Mutações de SHH (d) causam holoprosencefalia.",
@@ -591,7 +591,7 @@
         { "id": "d", "texto": "Iniciar pelo menos 1 mês antes da concepção, em dose maior que a habitual, e manter no 1º trimestre" }
       ],
       "correta": "d",
-      "explicacao": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; por isso a suplementação deve começar antes da concepção. Com gestação prévia afetada, recomenda-se dose alta (4 mg/dia nas diretrizes internacionais; no Brasil costuma-se usar o comprimido de 5 mg), em vez dos 400 µg/dia habituais. Iniciar após o teste positivo (a) é tardio, e o tubo não se fecha no 2º trimestre. A fortificação (b) reduz os DTN na população, mas não substitui a suplementação, sobretudo no alto risco. Na 12ª semana de gestação (c), o tubo neural já está fechado há semanas; além disso, o período embrionário termina no fim da 8ª semana após a fertilização (≈ 10ª semana de idade gestacional), não na 12ª.",
+      "explicacao": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; por isso a suplementação deve começar antes da concepção. Com gestação prévia afetada, recomenda-se dose alta (4 mg/dia segundo a FEBRASGO e as diretrizes internacionais; no Brasil é comum o comprimido de 5 mg), em vez dos 0,4 mg (400 µg)/dia habituais. Iniciar após o teste positivo (a) é tardio, e o tubo não se fecha no 2º trimestre. A fortificação (b) reduz os DTN na população, mas não substitui a suplementação, sobretudo no alto risco. Na 12ª semana de gestação (c), o tubo neural já está fechado há semanas; além disso, o período embrionário termina no fim da 8ª semana após a fertilização (≈ 10ª semana de idade gestacional), não na 12ª.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["acido-folico", "defeitos-tubo-neural", "prevencao", "caso-clinico"],
@@ -762,15 +762,24 @@
     {
       "obra": "Anvisa. Resolução RDC nº 344, de 13 de dezembro de 2002 (fortificação de farinhas de trigo e milho com ferro e ácido fólico; obrigatória a partir de 2004), substituída pela RDC nº 150/2017",
       "capitulo": "Fortificação com ácido fólico no Brasil"
+    },
+    {
+      "obra": "FEBRASGO. Prevenção dos defeitos abertos do tubo neural (série Orientações e Recomendações FEBRASGO), 2ª ed., 2020",
+      "capitulo": "Doses de ácido fólico: 0,4 mg/dia (risco habitual) e 4 mg/dia (alto risco)"
+    },
+    {
+      "obra": "Sahin F, Selçuki M, Ecin N, et al. Level of conus medullaris in term and preterm neonates. Arch Dis Child Fetal Neonatal Ed. 1997;77(1):F67-9",
+      "capitulo": "Nível do cone medular à ultrassonografia neonatal"
     }
   ],
   "notasDivergencia": [
     "Fechamento dos neuroporos (mantido igual ao tópico emb-07): cranial, Moore ~dia 25 e Sadler dia 25 (faixa adotada 24–26); caudal, Moore ~2 dias após o cranial e Sadler dia 28 (faixa adotada 26–30).",
-    "Nível do cone medular: Moore situa-o em S1 por volta de 24 semanas, em L2–L3 no recém-nascido e na borda inferior de L1 no adulto; Sadler cita L3 ao nascimento e L2–L3 no adulto. Estudos de imagem situam o cone do recém-nascido mais frequentemente em L1–L2 e o do adulto em L1. Faixas adotadas: L2–L3 no recém-nascido e L1–L2 no adulto, com a ressalva de variação individual.",
+    "Nível do cone medular: Moore situa-o em S1 por volta de 24 semanas, em L2–L3 no recém-nascido e na borda inferior de L1 no adulto; Sadler cita L3 ao nascimento e L2–L3 no adulto. Estudos de imagem situam o cone do recém-nascido mais frequentemente em L1–L2 e o do adulto em L1. Faixas adotadas: L2–L3 no recém-nascido e L1–L2 no adulto, com a ressalva de variação individual. Dados de imagem neonatal (revisão clínico-anatômica): em recém-nascidos a termo, o cone fica acima de L2 em cerca de 90% (Sahin et al., Arch Dis Child Fetal Neonatal Ed 1997;77:F67) e atinge o nível adulto (L1–L2) por volta de 40 semanas pós-menstruais (Beek et al., Neuroradiology 1996); cone em L4 ou abaixo merece seguimento por suspeita de medula presa. A sequência da q22 não muda.",
+    "Linha do tempo (revisão clínico-anatômica, 2026-11-09): o evento 'a coluna passa a crescer mais que a medula (3º mês)' passou a compartilhar a posição 5 com 'a bolsa de Rathke perde a conexão com a cavidade oral' (6ª semana a fim do 2º mês). Os dois são vizinhos, e o início do crescimento desproporcional é gradual, sem data precisa; com a posição compartilhada, o minijogo não os mostra juntos.",
     "Perda da conexão da bolsa de Rathke com a cavidade oral: Moore, por volta da 6ª semana; Sadler, fim do 2º mês. Faixa adotada: dias 36–56. Aparecimento da bolsa: Sadler, por volta da 3ª semana; Moore, início da 4ª semana.",
     "Terminologia das camadas do tubo neural: Sadler usa camadas neuroepitelial (ventricular), do manto e marginal; Moore usa zonas ventricular, intermediária e marginal.",
     "Encefalocele: Moore a descreve como crânio bífido no contexto dos DTN; Sadler a relaciona a defeitos de ossificação dos ossos do crânio. Mantida a descrição morfológica, sem afirmar o mecanismo como fato.",
-    "Redução dos DTN com ácido fólico: Sadler cita até 70%; outras fontes citam 50–70%. Dose para alto risco: 4 mg/dia (diretrizes internacionais); no Brasil é comum o uso do comprimido de 5 mg."
+    "Redução dos DTN com ácido fólico: Sadler cita até 70%; outras fontes citam 50–70%. Dose: 0,4 mg/dia no risco habitual e 4 mg/dia no alto risco (FEBRASGO, série sobre DTN, 2ª ed., 2020; diretrizes internacionais); materiais do Ministério da Saúde citam 4–5 mg/dia no alto risco, e no Brasil é comum o uso do comprimido de 5 mg."
   ],
   "incertezas": [
     "Prevalências de DTN, de hidrocefalia e de holoprosencefalia e a proporção de mielomeningoceles com Chiari II/hidrocefalia não foram conferidas nas edições adotadas; usadas apenas expressões qualitativas ('praticamente todos', 'maioria').",
@@ -789,6 +798,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "3 correções (0 crítica, 1 importante, 2 menores); principais: explicação da q15 passou a refutar a premissa falsa do distrator (c) (o período embrionário termina na 8ª semana após a fertilização, ≈ 10ª de IG); resumo deixa de atribuir 'espinha bífida' em geral à falha do fechamento caudal (só a aberta; a oculta é defeito do arco); derivados da crista neural separados entre SNP e leptomeninges/outros. Vesículas e derivados, flexuras, histogênese, placas alar/basal, cone medular (com divergência registrada), Chiari II, hipófise e DTN conferidos sem erro."
+      },
+      {
+        "area": "clinica-pediatrica/anatomia",
+        "agente": "revisor-clinica-anatomia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "14 correções (0 crítica, 7 importantes, 7 menores); principais: pista de comprimento eliminada em 6 questões; evento 'coluna passa a crescer mais que a medula (3º mês)' reescrito e com posição compartilhada com a desconexão da bolsa de Rathke; doses de ácido fólico (0,4 mg/dia; 4 mg/dia no alto risco, FEBRASGO 2020); conduta da mielomeningocele (cirurgia fetal antes de 26 semanas de IG no MOMS, fechamento pós-natal em 48–72 h, DVP ou terceiroventriculostomia, cateterismo intermitente limpo); vinheta da q09 mais realista (ventriculomegalia em vez de macrocefalia ao nascer; déficit abaixo do nível da lesão); dados de imagem neonatal do cone medular e da medula presa; punção lombar em L3–L4/L4–L5; epidemiologia bimodal do craniofaringioma."
       }
     ],
     "humano": null

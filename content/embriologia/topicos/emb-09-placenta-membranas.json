@@ -318,126 +318,126 @@
       "descricao": "Janela em que a divisão após a formação do âmnio resulta em gêmeos monocoriônicos e monoamnióticos, com risco de enovelamento de cordões",
       "diaMin": 8,
       "diaMax": 13,
-      "ordem": 4
+      "ordem": 3
     },
     {
       "id": "lacunas-e-circulacao-uteroplacentaria",
       "descricao": "Lacunas no sinciciotrofoblasto confluem e são invadidas por sangue materno, estabelecendo a circulação uteroplacentária primitiva",
       "diaMin": 9,
       "diaMax": 12,
-      "ordem": 5
+      "ordem": 3
     },
     {
       "id": "vilosidades-primarias",
       "descricao": "Formação das vilosidades coriônicas primárias (eixo de citotrofoblasto revestido por sinciciotrofoblasto), ao final da 2ª semana",
       "diaMin": 13,
       "diaMax": 14,
-      "ordem": 6
+      "ordem": 4
     },
     {
       "id": "divisao-mz-gemeos-unidos",
       "descricao": "Divisão incompleta após a formação da linha primitiva, resultando em gêmeos unidos",
       "diaMin": 14,
       "diaMax": 16,
-      "ordem": 7
+      "ordem": 4
     },
     {
       "id": "vilosidades-secundarias",
       "descricao": "Invasão do eixo das vilosidades por mesênquima extraembrionário, formando as vilosidades secundárias (início da 3ª semana)",
       "diaMin": 15,
       "diaMax": 17,
-      "ordem": 8
+      "ordem": 5
     },
     {
       "id": "surgimento-alantoide",
       "descricao": "Surgimento do alantoide como divertículo da parede caudal do saco vitelino (por volta do 16º dia)",
       "diaMin": 16,
       "diaMax": 16,
-      "ordem": 9
+      "ordem": 5
     },
     {
       "id": "vilosidades-terciarias",
       "descricao": "Diferenciação de capilares no eixo mesenquimal, formando as vilosidades terciárias, capazes de realizar trocas (final da 3ª semana)",
       "diaMin": 18,
       "diaMax": 21,
-      "ordem": 10
+      "ordem": 6
     },
     {
       "id": "concha-citotrofoblastica",
       "descricao": "Formação da concha citotrofoblástica e das vilosidades-tronco, que ancoram o saco coriônico à decídua basal (final da 3ª semana)",
       "diaMin": 19,
       "diaMax": 21,
-      "ordem": 11
+      "ordem": 6
     },
     {
       "id": "circulacao-placentaria-fetal",
       "descricao": "Circulação placentária fetal funcionante, com continuidade entre os capilares vilosos e os vasos do embrião (final da 3ª semana)",
       "diaMin": 21,
       "diaMax": 21,
-      "ordem": 12
+      "ordem": 6
     },
     {
       "id": "formacao-corio-liso",
       "descricao": "Degeneração das vilosidades voltadas para a decídua capsular, com formação do cório liso e definição do cório frondoso (por volta de 8 a 10 semanas após a fertilização)",
       "diaMin": 56,
       "diaMax": 70,
-      "ordem": 13
+      "ordem": 7
     },
     {
       "id": "involucao-saco-vitelino",
       "descricao": "Involução do saco vitelino a um remanescente pediculado na cavidade coriônica (por volta de 9 a 10 semanas após a fertilização)",
       "diaMin": 56,
       "diaMax": 70,
-      "ordem": 14
+      "ordem": 7
     },
     {
       "id": "obliteracao-celoma-extraembrionario",
       "descricao": "Expansão da cavidade amniótica oblitera o celoma extraembrionário e o âmnio adere ao cório, formando a membrana amniocoriônica",
       "diaMin": 56,
       "diaMax": 84,
-      "ordem": 15
+      "ordem": 7
     },
     {
       "id": "urina-fetal-no-liquido",
       "descricao": "A urina fetal passa a contribuir para o líquido amniótico e torna-se sua principal fonte (após cerca de 11 semanas)",
       "diaMin": 70,
       "diaMax": 84,
-      "ordem": 16
+      "ordem": 8
     },
     {
       "id": "placenta-dois-componentes",
       "descricao": "Placenta com parte fetal (cório frondoso) e parte materna (decídua basal) definidas e cotilédones reconhecíveis (início do 4º mês)",
       "diaMin": 84,
       "diaMax": 105,
-      "ordem": 17
+      "ordem": 9
     },
     {
       "id": "volume-liquido-20-semanas",
       "descricao": "Volume de líquido amniótico de cerca de 350 mL (20 semanas de idade gestacional)",
       "diaMin": 126,
       "diaMax": 126,
-      "ordem": 18
+      "ordem": 10
     },
     {
       "id": "afinamento-membrana-placentaria",
       "descricao": "Desaparecimento do citotrofoblasto em grandes áreas das vilosidades, com afinamento da membrana placentária (após cerca de 20 semanas após a fertilização)",
       "diaMin": 140,
       "diaMax": 140,
-      "ordem": 19
+      "ordem": 11
     },
     {
       "id": "volume-liquido-37-semanas",
       "descricao": "Volume de líquido amniótico de cerca de 700 a 1.000 mL (37 semanas de idade gestacional)",
       "diaMin": 245,
       "diaMax": 245,
-      "ordem": 20
+      "ordem": 12
     },
     {
       "id": "dequitacao",
       "descricao": "Expulsão da placenta e das membranas (terceiro período do parto), com clivagem pela decídua basal",
       "diaMin": 266,
       "diaMax": 266,
-      "ordem": 21
+      "ordem": 13
     }
   ],
   "correlacoesClinicas": [
@@ -609,7 +609,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "As vilosidades-tronco ancoram-se à concha citotrofoblástica, e as vilosidades livres, banhadas pelo sangue materno, realizam a maior parte das trocas"
+          "texto": "Cada cotilédone é delimitado por septos que atingem a placa coriônica, isolando compartimentos independentes de sangue materno"
         },
         {
           "id": "b",
@@ -617,15 +617,15 @@
         },
         {
           "id": "c",
-          "texto": "Cada cotilédone é delimitado por septos que atingem a placa coriônica, isolando compartimentos independentes de sangue materno"
+          "texto": "As vilosidades-tronco ancoram-se à concha citotrofoblástica, e as vilosidades livres, banhadas pelo sangue materno, realizam a maior parte das trocas"
         },
         {
           "id": "d",
           "texto": "O sangue materno circula no interior das vilosidades, enquanto o sangue fetal preenche o espaço interviloso"
         }
       ],
-      "correta": "a",
-      "explicacao": "As vilosidades-tronco se estendem da placa coriônica até a concha citotrofoblástica na decídua basal, fixando o saco coriônico; de suas ramificações surgem as vilosidades livres (terminais), imersas no sangue materno do espaço interviloso, onde ocorre efetivamente a troca. A alternativa (b) inverte os papéis. A (c) erra em dois pontos: os septos não alcançam a placa coriônica e, por isso, o espaço interviloso permanece contínuo. A (d) inverte os compartimentos: o sangue materno está no espaço interviloso e o fetal, nos capilares das vilosidades.",
+      "correta": "c",
+      "explicacao": "As vilosidades-tronco se estendem da placa coriônica até a concha citotrofoblástica na decídua basal, fixando o saco coriônico; de suas ramificações surgem as vilosidades livres (terminais), imersas no sangue materno do espaço interviloso, onde ocorre efetivamente a troca. A alternativa (b) inverte os papéis. A (a) erra em dois pontos: os septos não alcançam a placa coriônica e, por isso, o espaço interviloso permanece contínuo. A (d) inverte os compartimentos: o sangue materno está no espaço interviloso e o fetal, nos capilares das vilosidades.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -743,7 +743,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "É produzida pelo sinciciotrofoblasto, mantém o corpo lúteo nas primeiras semanas e é a base dos testes de gravidez"
+          "texto": "É produzida pela decídua basal e desencadeia o trabalho de parto no termo"
         },
         {
           "id": "b",
@@ -755,11 +755,11 @@
         },
         {
           "id": "d",
-          "texto": "É produzida pela decídua basal e desencadeia o trabalho de parto no termo"
+          "texto": "É produzida pelo sinciciotrofoblasto, mantém o corpo lúteo nas primeiras semanas e é a base dos testes de gravidez"
         }
       ],
-      "correta": "a",
-      "explicacao": "O hCG é uma glicoproteína sintetizada pelo sinciciotrofoblasto, detectável no sangue e na urina maternos no início da gestação (base dos testes de gravidez), com pico em torno de 8 semanas de idade gestacional e queda posterior; sua função principal é manter o corpo lúteo e, com ele, a produção de progesterona até que a placenta assuma essa função. A alternativa (b) inverte a direção do estímulo. A (c) atribui ao hCG a função da somatomamotrofina coriônica humana (hPL) e erra a origem, pois o âmnio é avascular e não endócrino. A (d) está errada quanto à origem e à função: a decídua não é a fonte do hCG, e o hormônio não desencadeia o parto.",
+      "correta": "d",
+      "explicacao": "O hCG é uma glicoproteína sintetizada pelo sinciciotrofoblasto, detectável no sangue e na urina maternos no início da gestação (base dos testes de gravidez), com pico em torno de 8 semanas de idade gestacional e queda posterior; sua função principal é manter o corpo lúteo e, com ele, a produção de progesterona até que a placenta assuma essa função. A alternativa (b) inverte a direção do estímulo. A (c) atribui ao hCG a função da somatomamotrofina coriônica humana (hPL) e erra a origem, pois o âmnio é avascular e não endócrino. A (a) está errada quanto à origem e à função: a decídua não é a fonte do hCG, e o hormônio não desencadeia o parto.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -777,7 +777,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "somatomamotrofina coriônica humana (hPL), que reduz a sensibilidade materna à insulina e aumenta a disponibilidade de glicose para o feto"
+          "texto": "progesterona placentária, que bloqueia a secreção pancreática de insulina pelas células beta maternas"
         },
         {
           "id": "b",
@@ -785,15 +785,15 @@
         },
         {
           "id": "c",
-          "texto": "progesterona placentária, que bloqueia a secreção pancreática de insulina pelas células beta maternas"
+          "texto": "somatomamotrofina coriônica humana (hPL), que reduz a sensibilidade materna à insulina e aumenta a disponibilidade de glicose para o feto"
         },
         {
           "id": "d",
           "texto": "estriol placentário, que reduz a captação intestinal de glicose e eleva a glicemia pós-prandial"
         }
       ],
-      "correta": "a",
-      "explicacao": "A somatomamotrofina coriônica humana (hPL, ou hCS), produzida pelo sinciciotrofoblasto em quantidades crescentes ao longo da gestação, é o principal hormônio diabetogênico da gravidez: reduz a sensibilidade materna à insulina, favorece a lipólise e prioriza a oferta de glicose ao feto; também contribui para o desenvolvimento mamário. O diabetes gestacional aparece quando a reserva pancreática materna não compensa essa resistência, o que explica o diagnóstico tipicamente no segundo e terceiro trimestres. A alternativa (b) atribui ao hCG um efeito que não é o seu; seu papel é manter o corpo lúteo. A (c) descreve um mecanismo inexistente: a progesterona contribui para a resistência insulínica, mas não bloqueia a secreção de insulina. A (d) inventa um efeito intestinal dos estrogênios placentários.",
+      "correta": "c",
+      "explicacao": "A somatomamotrofina coriônica humana (hPL, ou hCS), produzida pelo sinciciotrofoblasto em quantidades crescentes ao longo da gestação, é o principal hormônio diabetogênico da gravidez: reduz a sensibilidade materna à insulina, favorece a lipólise e prioriza a oferta de glicose ao feto; também contribui para o desenvolvimento mamário. O diabetes gestacional aparece quando a reserva pancreática materna não compensa essa resistência, o que explica o diagnóstico tipicamente no segundo e terceiro trimestres. A alternativa (b) atribui ao hCG um efeito que não é o seu; seu papel é manter o corpo lúteo. A (a) descreve um mecanismo inexistente: a progesterona contribui para a resistência insulínica, mas não bloqueia a secreção de insulina. A (d) inventa um efeito intestinal dos estrogênios placentários.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -845,7 +845,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "placenta percreta, por ausência da decídua basal sobre a cicatriz uterina, com invasão trofoblástica de toda a espessura da parede"
+          "texto": "inserção velamentosa do cordão, com vasos aberrantes em direção à bexiga"
         },
         {
           "id": "b",
@@ -857,11 +857,11 @@
         },
         {
           "id": "d",
-          "texto": "inserção velamentosa do cordão, com vasos aberrantes em direção à bexiga"
+          "texto": "placenta percreta, por ausência da decídua basal sobre a cicatriz uterina, com invasão trofoblástica de toda a espessura da parede"
         }
       ],
-      "correta": "a",
-      "explicacao": "A invasão de toda a espessura da parede uterina, alcançando a serosa e estruturas vizinhas como a bexiga, define a placenta percreta. O mecanismo comum ao espectro do acretismo é a ausência ou deficiência da decídua basal no sítio de implantação — frequentemente sobre cicatriz de cesariana — eliminando a camada natural de clivagem e permitindo que as vilosidades se fixem e invadam o miométrio. A alternativa (b) define erroneamente a acreta, que corresponde à aderência ao miométrio sem invasão. A (c) troca as definições: increta é a que invade o miométrio. A (d) descreve anomalia do cordão, não da aderência placentária.",
+      "correta": "d",
+      "explicacao": "A invasão de toda a espessura da parede uterina, alcançando a serosa e estruturas vizinhas como a bexiga, define a placenta percreta. O mecanismo comum ao espectro do acretismo é a ausência ou deficiência da decídua basal no sítio de implantação — frequentemente sobre cicatriz de cesariana — eliminando a camada natural de clivagem e permitindo que as vilosidades se fixem e invadam o miométrio. A alternativa (b) define erroneamente a acreta, que corresponde à aderência ao miométrio sem invasão. A (c) troca as definições: increta é a que invade o miométrio. A (a) descreve anomalia do cordão, não da aderência placentária.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -879,7 +879,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "inserção velamentosa com vasa prévia: os vasos umbilicais correm desprotegidos entre o âmnio e o cório e se romperam com a amniorrexe, causando hemorragia fetal"
+          "texto": "ruptura de cisto do uraco, com sangramento para a cavidade amniótica"
         },
         {
           "id": "b",
@@ -891,11 +891,11 @@
         },
         {
           "id": "d",
-          "texto": "ruptura de cisto do uraco, com sangramento para a cavidade amniótica"
+          "texto": "inserção velamentosa com vasa prévia: os vasos umbilicais correm desprotegidos entre o âmnio e o cório e se romperam com a amniorrexe, causando hemorragia fetal"
         }
       ],
-      "correta": "a",
-      "explicacao": "Na inserção velamentosa, o cordão se insere nas membranas e seus vasos percorrem o espaço entre âmnio e cório sem a proteção da geleia de Wharton antes de alcançar a placa coriônica. Quando esses vasos cruzam o orifício interno do colo (vasa prévia), a amniorrexe pode rompê-los: o sangramento é de origem fetal e, pelo pequeno volume sanguíneo do feto, produz deterioração rápida do padrão cardíaco — exatamente o descrito. A alternativa (b) não explica a correlação temporal com a amniorrexe nem o sofrimento fetal imediato, e o sangramento seria materno. A (c) não causa hemorragia. A (d) descreve uma anomalia do remanescente do alantoide, sem relação com hemorragia por amniorrexe.",
+      "correta": "d",
+      "explicacao": "Na inserção velamentosa, o cordão se insere nas membranas e seus vasos percorrem o espaço entre âmnio e cório sem a proteção da geleia de Wharton antes de alcançar a placa coriônica. Quando esses vasos cruzam o orifício interno do colo (vasa prévia), a amniorrexe pode rompê-los: o sangramento é de origem fetal e, pelo pequeno volume sanguíneo do feto, produz deterioração rápida do padrão cardíaco — exatamente o descrito. A alternativa (b) não explica a correlação temporal com a amniorrexe nem o sofrimento fetal imediato, e o sangramento seria materno. A (c) não causa hemorragia. A (a) descreve uma anomalia do remanescente do alantoide, sem relação com hemorragia por amniorrexe.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -947,7 +947,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "agenesia renal bilateral levando a oligoidrâmnio grave, com hipoplasia pulmonar e deformações posicionais — uma sequência de defeitos a partir de uma anomalia primária"
+          "texto": "polidrâmnio secundário a defeito do tubo neural, com compressão torácica"
         },
         {
           "id": "b",
@@ -959,11 +959,11 @@
         },
         {
           "id": "d",
-          "texto": "polidrâmnio secundário a defeito do tubo neural, com compressão torácica"
+          "texto": "agenesia renal bilateral levando a oligoidrâmnio grave, com hipoplasia pulmonar e deformações posicionais — uma sequência de defeitos a partir de uma anomalia primária"
         }
       ],
-      "correta": "a",
-      "explicacao": "A partir do segundo trimestre a urina fetal é a principal fonte de líquido amniótico; na agenesia renal bilateral há oligoidrâmnio grave e precoce, que impede a expansão pulmonar (hipoplasia pulmonar) e restringe o espaço para movimentação, gerando deformações de face e membros. Esse encadeamento a partir de um defeito primário único caracteriza uma sequência (sequência de Potter ou do oligoidrâmnio). A alternativa (b) inverte o efeito: a atresia de esôfago impede a deglutição e causa polidrâmnio. A (c) está errada no sentido: na transfusão feto-fetal o oligoidrâmnio ocorre no doador e o polidrâmnio no receptor, e o caso não é gemelar. A (d) contradiz o achado de líquido praticamente ausente.",
+      "correta": "d",
+      "explicacao": "A partir do segundo trimestre a urina fetal é a principal fonte de líquido amniótico; na agenesia renal bilateral há oligoidrâmnio grave e precoce, que impede a expansão pulmonar (hipoplasia pulmonar) e restringe o espaço para movimentação, gerando deformações de face e membros. Esse encadeamento a partir de um defeito primário único caracteriza uma sequência (sequência de Potter ou do oligoidrâmnio). A alternativa (b) inverte o efeito: a atresia de esôfago impede a deglutição e causa polidrâmnio. A (c) está errada no sentido: na transfusão feto-fetal o oligoidrâmnio ocorre no doador e o polidrâmnio no receptor, e o caso não é gemelar. A (a) contradiz o achado de líquido praticamente ausente.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1455,7 +1455,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "7 correções: (importante) janelas e eventos de dias sobrepostos passaram a compartilhar o mesmo valor de \"ordem\" (reação decidual / divisão monoamniótica / lacunas; vilosidades primárias / gêmeos unidos; vilosidades secundárias / alantoide; vilosidades terciárias / concha citotrofoblástica / circulação fetal; cório liso / involução do saco vitelino / obliteração do celoma), porque as fontes não fixam a ordem relativa; (menores) gabarito concentrado em \"a\" (11 de 17 questões de múltipla escolha) redistribuído em 6 questões — a=5, b=4, c=4, d=4 — com atualização das letras nas explicações. Fatos conferidos (decídua, vilosidades, 15–20 cotilédones, 80–100 artérias espiraladas, membrana placentária, hormônios, acretismo, líquido amniótico, corionicidade dos monozigóticos) sem erro."
+      }
+    ],
     "humano": null
   }
 }

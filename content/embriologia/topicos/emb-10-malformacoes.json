@@ -127,7 +127,7 @@
       "nome": "Broto do membro superior",
       "sinonimos": [],
       "definicao": "Elevação na parede corporal lateral, com núcleo mesenquimal recoberto por ectoderma, primórdio do membro superior.",
-      "origem": "Mesoderma somático da parede corporal, no final da 4ª semana.",
+      "origem": "Mesoderma somático da parede corporal, por volta dos dias 26 a 27 (4ª semana).",
       "destino": "Forma o membro superior; é alvo da janela de suscetibilidade à talidomida, que causa amelia, meromelia e focomelia."
     },
     {
@@ -135,7 +135,7 @@
       "nome": "Broto do membro inferior",
       "sinonimos": [],
       "definicao": "Elevação na parede corporal lateral caudal, primórdio do membro inferior, que surge alguns dias após o do membro superior.",
-      "origem": "Mesoderma somático da parede corporal, no início da 5ª semana.",
+      "origem": "Mesoderma somático da parede corporal, no fim da 4ª semana (por volta do dia 28).",
       "destino": "Forma o membro inferior; seu desenvolvimento ligeiramente mais tardio explica por que sua janela de suscetibilidade a teratógenos de membros é posterior à do membro superior."
     },
     {
@@ -191,84 +191,84 @@
       "descricao": "Período crítico do coração, com maior risco de cardiopatias congênitas estruturais",
       "diaMin": 20,
       "diaMax": 50,
-      "ordem": 5
+      "ordem": 4
     },
     {
       "id": "pico-sensibilidade-malformacoes",
       "descricao": "Pico de sensibilidade a malformações maiores, na 4ª e na 5ª semana após a fertilização",
       "diaMin": 22,
       "diaMax": 35,
-      "ordem": 6
+      "ordem": 4
     },
     {
       "id": "fechamento-neuroporo-cranial",
       "descricao": "Fechamento do neuroporo cranial (dias 24 a 26); sua falha resulta em anencefalia",
       "diaMin": 24,
       "diaMax": 26,
-      "ordem": 7
+      "ordem": 5
     },
     {
       "id": "periodo-critico-membros",
       "descricao": "Período crítico dos membros, com o membro superior ligeiramente anterior ao inferior",
       "diaMin": 24,
       "diaMax": 36,
-      "ordem": 8
+      "ordem": 5
     },
     {
       "id": "fechamento-neuroporo-caudal",
       "descricao": "Fechamento do neuroporo caudal (dias 26 a 28); sua falha resulta em espinha bífida cística",
       "diaMin": 26,
       "diaMax": 28,
-      "ordem": 9
+      "ordem": 6
     },
     {
       "id": "periodo-critico-palato",
       "descricao": "Período crítico do palato: a fusão dos processos palatinos ocorre entre a 7ª e a 10ª semana após a fertilização; sua falha causa fenda palatina",
       "diaMin": 42,
       "diaMax": 70,
-      "ordem": 10
+      "ordem": 7
     },
     {
       "id": "periodo-critico-genitalia",
       "descricao": "Período crítico da genitália externa: a exposição a andrógenos antes de cerca de 12 semanas após a fertilização pode causar fusão labial, e mais tarde, hipertrofia do clitóris",
       "diaMin": 49,
       "diaMax": 84,
-      "ordem": 11
+      "ordem": 8
     },
     {
       "id": "fim-organogenese",
       "descricao": "Fim da 8ª semana após a fertilização (dia 56): encerra-se a organogênese principal e o risco de malformações maiores cai acentuadamente",
       "diaMin": 56,
       "diaMax": 56,
-      "ordem": 12
+      "ordem": 9
     },
     {
       "id": "janela-radiacao-snc",
       "descricao": "Maior suscetibilidade do sistema nervoso central a doses altas de radiação ionizante: 8 a 15 semanas após a concepção",
       "diaMin": 56,
       "diaMax": 105,
-      "ordem": 13
+      "ordem": 9
     },
     {
       "id": "inicio-periodo-fetal-teratologia",
       "descricao": "Período fetal: predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central, que permanece suscetível até depois do nascimento",
       "diaMin": 57,
       "diaMax": 266,
-      "ordem": 14
+      "ordem": 10
     },
     {
       "id": "janela-tetraciclina",
-      "descricao": "A partir da mineralização de dentes e ossos (segunda metade da gestação), as tetraciclinas se depositam e causam manchas dentárias e hipoplasia de esmalte",
+      "descricao": "A partir da mineralização de dentes e ossos (segundo e terceiro trimestres), as tetraciclinas se depositam e causam manchas dentárias e hipoplasia de esmalte",
       "diaMin": 84,
       "diaMax": 266,
-      "ordem": 15
+      "ordem": 11
     },
     {
       "id": "janela-ieca-bra",
       "descricao": "Segundo e terceiro trimestres: IECA e BRA causam hipoperfusão renal fetal, oligoidrâmnio e disgenesia tubular renal",
       "diaMin": 84,
       "diaMax": 266,
-      "ordem": 16
+      "ordem": 11
     }
   ],
   "correlacoesClinicas": [
@@ -380,11 +380,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "deformações, pois resultam de forças mecânicas atuando sobre estruturas que se formaram normalmente"
+          "texto": "malformações, pois decorrem de processo de desenvolvimento intrinsecamente anormal"
         },
         {
           "id": "b",
-          "texto": "malformações, pois decorrem de processo de desenvolvimento intrinsecamente anormal"
+          "texto": "deformações, pois resultam de forças mecânicas atuando sobre estruturas que se formaram normalmente"
         },
         {
           "id": "c",
@@ -395,8 +395,8 @@
           "texto": "displasias, pois há organização anormal das células nos tecidos afetados"
         }
       ],
-      "correta": "a",
-      "explicacao": "Deformação é a alteração de forma, de posição ou de estrutura de uma parte que se formou normalmente, causada por forças mecânicas — exatamente o que ocorre no oligoidrâmnio, em que a falta de espaço comprime o feto e produz pé torto, assimetria facial e contraturas. A alternativa (b) é incorreta porque não há erro intrínseco de desenvolvimento. A (c) descreve disrupção, que pressupõe destruição tecidual, como nas bandas amnióticas com amputações ou na disrupção vascular — não é o caso. A (d) descreve displasia, que envolve organização celular anormal, como nas displasias esqueléticas. A distinção tem valor prognóstico: deformações tendem a melhorar com o crescimento e com tratamento postural ou ortopédico.",
+      "correta": "b",
+      "explicacao": "Deformação é a alteração de forma, de posição ou de estrutura de uma parte que se formou normalmente, causada por forças mecânicas — exatamente o que ocorre no oligoidrâmnio, em que a falta de espaço comprime o feto e produz pé torto, assimetria facial e contraturas. A alternativa (a) é incorreta porque não há erro intrínseco de desenvolvimento. A (c) descreve disrupção, que pressupõe destruição tecidual, como nas bandas amnióticas com amputações ou na disrupção vascular — não é o caso. A (d) descreve displasia, que envolve organização celular anormal, como nas displasias esqueléticas. A distinção tem valor prognóstico: deformações tendem a melhorar com o crescimento e com tratamento postural ou ortopédico.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -515,7 +515,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "solicitar cariótipo dos pais, pois um deles pode ser portador equilibrado de translocação robertsoniana, com 45 cromossomos e fenótipo normal, o que eleva o risco de recorrência"
+          "texto": "informar que o achado indica mosaicismo materno e que o risco de recorrência é desprezível"
         },
         {
           "id": "b",
@@ -523,15 +523,15 @@
         },
         {
           "id": "c",
-          "texto": "informar que o achado indica mosaicismo materno e que o risco de recorrência é desprezível"
+          "texto": "solicitar cariótipo dos pais, pois um deles pode ser portador equilibrado de translocação robertsoniana, com 45 cromossomos e fenótipo normal, o que eleva o risco de recorrência"
         },
         {
           "id": "d",
           "texto": "solicitar apenas cariótipo paterno, já que translocações robertsonianas são transmitidas exclusivamente pelo pai"
         }
       ],
-      "correta": "a",
-      "explicacao": "A trissomia 21 por translocação pode ser de novo ou herdada de um genitor portador equilibrado de translocação robertsoniana — tipicamente rob(14;21) —, que tem 45 cromossomos, fenótipo normal e risco significativamente aumentado de gerar filhos com trissomia 21 desequilibrada. Por isso, o cariótipo de ambos os pais é indispensável, e o resultado define o risco de recorrência e a indicação de diagnóstico pré-natal. A alternativa (b) ignora o mecanismo da translocação, que não segue o risco ligado à idade materna. A (c) confunde translocação com mosaicismo. A (d) é incorreta: a translocação pode ser transmitida por qualquer dos genitores, e o risco de recorrência tende a ser maior quando a portadora é a mãe.",
+      "correta": "c",
+      "explicacao": "A trissomia 21 por translocação pode ser de novo ou herdada de um genitor portador equilibrado de translocação robertsoniana — tipicamente rob(14;21) —, que tem 45 cromossomos, fenótipo normal e risco significativamente aumentado de gerar filhos com trissomia 21 desequilibrada. Por isso, o cariótipo de ambos os pais é indispensável, e o resultado define o risco de recorrência e a indicação de diagnóstico pré-natal. A alternativa (b) ignora o mecanismo da translocação, que não segue o risco ligado à idade materna. A (a) confunde translocação com mosaicismo. A (d) é incorreta: a translocação pode ser transmitida por qualquer dos genitores, e o risco de recorrência tende a ser maior quando a portadora é a mãe.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -549,7 +549,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "trissomia 18 (síndrome de Edwards)"
+          "texto": "monossomia X (síndrome de Turner)"
         },
         {
           "id": "b",
@@ -561,11 +561,11 @@
         },
         {
           "id": "d",
-          "texto": "monossomia X (síndrome de Turner)"
+          "texto": "trissomia 18 (síndrome de Edwards)"
         }
       ],
-      "correta": "a",
-      "explicacao": "O conjunto de restrição de crescimento grave, occipital proeminente, micrognatia, mãos cerradas com dedos sobrepostos de modo característico, pés em mata-borrão e cardiopatia é típico da trissomia 18, que cursa com mortalidade muito elevada no primeiro ano de vida. A alternativa (b) é incorreta porque a trissomia 13 tem como marcas a holoprosencefalia, a microftalmia, a fenda labiopalatina frequentemente bilateral, a polidactilia postaxial e a aplasia cútis do couro cabeludo. A (c) não corresponde: na trissomia 21 há hipotonia, face achatada, fissuras palpebrais oblíquas e prega palmar transversa única, sem o padrão descrito de sobreposição digital. A (d) é incompatível: a monossomia X cursa com linfedema de mãos e pés, pescoço alado e tórax largo, sem esses achados.",
+      "correta": "d",
+      "explicacao": "O conjunto de restrição de crescimento grave, occipital proeminente, micrognatia, mãos cerradas com dedos sobrepostos de modo característico, pés em mata-borrão e cardiopatia é típico da trissomia 18, que cursa com mortalidade muito elevada no primeiro ano de vida. A alternativa (b) é incorreta porque a trissomia 13 tem como marcas a holoprosencefalia, a microftalmia, a fenda labiopalatina frequentemente bilateral, a polidactilia postaxial e a aplasia cútis do couro cabeludo. A (c) não corresponde: na trissomia 21 há hipotonia, face achatada, fissuras palpebrais oblíquas e prega palmar transversa única, sem o padrão descrito de sobreposição digital. A (a) é incompatível: a monossomia X cursa com linfedema de mãos e pés, pescoço alado e tórax largo, sem esses achados.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -582,7 +582,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Cursa com baixa estatura, disgenesia gonadal com amenorreia primária, pescoço alado, linfedema de mãos e pés e coarctação da aorta, sem associação com a idade materna"
+          "texto": "É caracterizada por deficiência intelectual grave em praticamente todos os casos"
         },
         {
           "id": "b",
@@ -594,11 +594,11 @@
         },
         {
           "id": "d",
-          "texto": "É caracterizada por deficiência intelectual grave em praticamente todos os casos"
+          "texto": "Cursa com baixa estatura, disgenesia gonadal com amenorreia primária, pescoço alado, linfedema de mãos e pés e coarctação da aorta, sem associação com a idade materna"
         }
       ],
-      "correta": "a",
-      "explicacao": "A monossomia X cursa com baixa estatura, disgenesia gonadal (gônadas em fita) com amenorreia primária e infertilidade, pescoço alado (correspondente ao higroma cístico fetal, que pode elevar a translucência nucal), linfedema de mãos e pés no recém-nascido, tórax largo, cúbito valgo e anomalias cardiovasculares, especialmente coarctação da aorta e valva aórtica bicúspide; não há efeito da idade materna, e a maioria dos conceptos 45,X é perdida espontaneamente. A alternativa (b) descreve a síndrome de Klinefelter (47,XXY). A (c) está errada: a perda do cromossomo sexual é frequentemente de origem paterna e não há efeito consistente da idade materna. A (d) é falsa: a inteligência é habitualmente normal, podendo haver dificuldades específicas visuoespaciais.",
+      "correta": "d",
+      "explicacao": "A monossomia X cursa com baixa estatura, disgenesia gonadal (gônadas em fita) com amenorreia primária e infertilidade, pescoço alado (correspondente ao higroma cístico fetal, que pode elevar a translucência nucal), linfedema de mãos e pés no recém-nascido, tórax largo, cúbito valgo e anomalias cardiovasculares, especialmente coarctação da aorta e valva aórtica bicúspide; não há efeito da idade materna, e a maioria dos conceptos 45,X é perdida espontaneamente. A alternativa (b) descreve a síndrome de Klinefelter (47,XXY). A (c) está errada: a perda do cromossomo sexual é frequentemente de origem paterna e não há efeito consistente da idade materna. A (a) é falsa: a inteligência é habitualmente normal, podendo haver dificuldades específicas visuoespaciais.",
       "dificuldade": 3,
       "bloom": "lembrar",
       "tags": [
@@ -684,7 +684,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Nas duas primeiras semanas após a fertilização, as agressões tendem a causar morte do concepto ou nenhum efeito; o maior risco de malformações maiores está entre a 3ª e a 8ª semana"
+          "texto": "O período fetal é o de maior risco de malformações estruturais maiores, por causa do crescimento acelerado"
         },
         {
           "id": "b",
@@ -692,15 +692,15 @@
         },
         {
           "id": "c",
-          "texto": "O período fetal é o de maior risco de malformações estruturais maiores, por causa do crescimento acelerado"
+          "texto": "Nas duas primeiras semanas após a fertilização, as agressões tendem a causar morte do concepto ou nenhum efeito; o maior risco de malformações maiores está entre a 3ª e a 8ª semana"
         },
         {
           "id": "d",
           "texto": "A suscetibilidade é uniforme ao longo de toda a gestação, dependendo apenas da dose do agente"
         }
       ],
-      "correta": "a",
-      "explicacao": "Nas duas primeiras semanas vale o princípio do \"tudo ou nada\": a agressão mata o concepto ou é compensada pela plasticidade das células ainda não comprometidas, e malformações maiores são raras. O período de maior risco de malformações estruturais maiores é o da organogênese, da 3ª à 8ª semana após a fertilização, com pico na 4ª e na 5ª semana. A alternativa (b) inverte esse princípio. A (c) está errada: no período fetal predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central. A (d) contraria o princípio fundamental de que a suscetibilidade depende do estágio de desenvolvimento, além do genótipo, da dose e do mecanismo.",
+      "correta": "c",
+      "explicacao": "Nas duas primeiras semanas vale o princípio do \"tudo ou nada\": a agressão mata o concepto ou é compensada pela plasticidade das células ainda não comprometidas, e malformações maiores são raras. O período de maior risco de malformações estruturais maiores é o da organogênese, da 3ª à 8ª semana após a fertilização, com pico na 4ª e na 5ª semana. A alternativa (b) inverte esse princípio. A (a) está errada: no período fetal predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central. A (d) contraria o princípio fundamental de que a suscetibilidade depende do estágio de desenvolvimento, além do genótipo, da dose e do mecanismo.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -718,7 +718,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Trata-se da síndrome alcoólica fetal; o álcool atua durante toda a gestação, não há dose segura estabelecida e é a principal causa evitável de deficiência intelectual"
+          "texto": "O consumo moderado é seguro, pois o efeito teratogênico do álcool não apresenta relação dose-resposta"
         },
         {
           "id": "b",
@@ -730,11 +730,11 @@
         },
         {
           "id": "d",
-          "texto": "O consumo moderado é seguro, pois o efeito teratogênico do álcool não apresenta relação dose-resposta"
+          "texto": "Trata-se da síndrome alcoólica fetal; o álcool atua durante toda a gestação, não há dose segura estabelecida e é a principal causa evitável de deficiência intelectual"
         }
       ],
-      "correta": "a",
-      "explicacao": "O conjunto de restrição de crescimento, alterações do sistema nervoso central e a fácies característica (fissuras palpebrais curtas, filtro liso, lábio superior fino, hipoplasia maxilar) define a síndrome alcoólica fetal, extremo do espectro dos transtornos do espectro alcoólico fetal. O álcool atravessa livremente a placenta, e como o sistema nervoso central se desenvolve ao longo de toda a gestação, não há período nem dose comprovadamente seguros; é a principal causa evitável de deficiência intelectual. A alternativa (b) é falsa: o álcool atravessa a placenta durante toda a gestação. A (c) erra o mecanismo e o período: a fácies decorre de efeito precoce, sobretudo sobre células da crista neural craniofacial, na fase de organogênese. A (d) nega indevidamente a relação dose-resposta, que existe — maior consumo e consumo em binge aumentam o risco —, sem que isso defina um limite seguro.",
+      "correta": "d",
+      "explicacao": "O conjunto de restrição de crescimento, alterações do sistema nervoso central e a fácies característica (fissuras palpebrais curtas, filtro liso, lábio superior fino, hipoplasia maxilar) define a síndrome alcoólica fetal, extremo do espectro dos transtornos do espectro alcoólico fetal. O álcool atravessa livremente a placenta, e como o sistema nervoso central se desenvolve ao longo de toda a gestação, não há período nem dose comprovadamente seguros; é a principal causa evitável de deficiência intelectual. A alternativa (b) é falsa: o álcool atravessa a placenta durante toda a gestação. A (c) erra o mecanismo e o período: a fácies decorre de efeito precoce, sobretudo sobre células da crista neural craniofacial, na fase de organogênese. A (a) nega indevidamente a relação dose-resposta, que existe — maior consumo e consumo em binge aumentam o risco —, sem que isso defina um limite seguro.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -788,7 +788,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "bloqueio do sistema renina-angiotensina fetal, com hipoperfusão glomerular, oligúria, oligoidrâmnio, disgenesia tubular renal e hipoplasia pulmonar"
+          "texto": "deposição do fármaco nos túbulos renais em mineralização, de modo análogo às tetraciclinas nos dentes"
         },
         {
           "id": "b",
@@ -796,15 +796,15 @@
         },
         {
           "id": "c",
-          "texto": "deposição do fármaco nos túbulos renais em mineralização, de modo análogo às tetraciclinas nos dentes"
+          "texto": "bloqueio do sistema renina-angiotensina fetal, com hipoperfusão glomerular, oligúria, oligoidrâmnio, disgenesia tubular renal e hipoplasia pulmonar"
         },
         {
           "id": "d",
           "texto": "disrupção vascular por contração uterina, com infarto renal bilateral"
         }
       ],
-      "correta": "a",
-      "explicacao": "IECA e BRA são contraindicados na gestação, sobretudo no segundo e terceiro trimestres: o bloqueio do sistema renina-angiotensina fetal reduz a pressão de perfusão glomerular e a produção de urina, causando oligoidrâmnio; a angiotensina II também é necessária ao desenvolvimento tubular normal, daí a disgenesia tubular renal. O oligoidrâmnio, por sua vez, impede a expansão pulmonar (hipoplasia pulmonar) e causa contraturas e hipoplasia da calota craniana. A alternativa (b) descreve o mecanismo dos antagonistas do folato, como o metotrexato. A (c) descreve o mecanismo das tetraciclinas, que se depositam em tecidos em mineralização. A (d) descreve o mecanismo do misoprostol, por disrupção vascular.",
+      "correta": "c",
+      "explicacao": "IECA e BRA são contraindicados na gestação, sobretudo no segundo e terceiro trimestres: o bloqueio do sistema renina-angiotensina fetal reduz a pressão de perfusão glomerular e a produção de urina, causando oligoidrâmnio; a angiotensina II também é necessária ao desenvolvimento tubular normal, daí a disgenesia tubular renal. O oligoidrâmnio, por sua vez, impede a expansão pulmonar (hipoplasia pulmonar) e causa contraturas e hipoplasia da calota craniana. A alternativa (b) descreve o mecanismo dos antagonistas do folato, como o metotrexato. A (a) descreve o mecanismo das tetraciclinas, que se depositam em tecidos em mineralização. A (d) descreve o mecanismo do misoprostol, por disrupção vascular.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -823,7 +823,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "disrupção por hipoperfusão vascular secundária à contração uterina, caracterizando a sequência de Möbius"
+          "texto": "displasia por organização anormal das células do tronco encefálico e dos membros"
         },
         {
           "id": "b",
@@ -835,11 +835,11 @@
         },
         {
           "id": "d",
-          "texto": "displasia por organização anormal das células do tronco encefálico e dos membros"
+          "texto": "disrupção por hipoperfusão vascular secundária à contração uterina, caracterizando a sequência de Möbius"
         }
       ],
-      "correta": "a",
-      "explicacao": "O misoprostol, análogo da prostaglandina E1, induz contrações uterinas que reduzem transitoriamente a perfusão placentária e fetal; a isquemia lesa estruturas já formadas — núcleos dos nervos facial e abducente no tronco encefálico e as porções distais dos membros —, caracterizando disrupção vascular. O quadro corresponde à sequência de Möbius associada a defeitos transversos de membros. A alternativa (b) erra ao classificar como malformação: não houve erro intrínseco de desenvolvimento, e sim destruição de tecido previamente normal. A (c) não se aplica, pois o misoprostol não age por oligoidrâmnio. A (d) descreve displasia, categoria que pressupõe organização celular anormal, o que não ocorre aqui.",
+      "correta": "d",
+      "explicacao": "O misoprostol, análogo da prostaglandina E1, induz contrações uterinas que reduzem transitoriamente a perfusão placentária e fetal; a isquemia lesa estruturas já formadas — núcleos dos nervos facial e abducente no tronco encefálico e as porções distais dos membros —, caracterizando disrupção vascular. O quadro corresponde à sequência de Möbius associada a defeitos transversos de membros. A alternativa (b) erra ao classificar como malformação: não houve erro intrínseco de desenvolvimento, e sim destruição de tecido previamente normal. A (c) não se aplica, pois o misoprostol não age por oligoidrâmnio. A (a) descreve displasia, categoria que pressupõe organização celular anormal, o que não ocorre aqui.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1311,7 +1311,15 @@
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "12 correções: (importante) janelas teratogênicas de dias sobrepostos passaram a compartilhar o mesmo valor de \"ordem\" (talidomida / coração / pico de sensibilidade; neuroporo cranial / membros; fim da organogênese / radiação; tetraciclinas / IECA-BRA); (menores) datas de origem dos brotos dos membros harmonizadas com o tópico emb-07 e com estagios.json (superior dias 26–27; inferior fim da 4ª semana, antes \"início da 5ª semana\"); janela das tetraciclinas descrita como 2º e 3º trimestres, coerente com o diaMin 84 do evento; gabarito concentrado em \"a\" (12 de 16 questões de múltipla escolha) redistribuído em 8 questões — 4 por letra — com atualização das letras nas explicações. Conferidas as datas dos atos citados (Portaria GM/MS 1.813, de 11/11/2015; Portaria 1.682, de 30/07/2017; PHEIC da OMS 01/02–18/11/2016; Lei 10.651/2003; RDC Anvisa 11/2011; RDC 150/2017, 140–220 µg/100 g; ADPF 54, abril de 2012) e a janela da talidomida (dias 20–36 pós-fertilização)."
+      }
+    ],
     "humano": null
   }
 }
