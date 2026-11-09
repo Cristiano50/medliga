@@ -60,9 +60,40 @@ Alternativa correta ainda visivelmente mais longa em: emb-11 q14; emb-12 q02, q1
 - "Cone arterial" para a parte média do bulbo cardíaco: corrigido no 3D (é o nome anatômico do infundíbulo do VD), mas o tópico emb-13 ainda usa a expressão; uniformizar.
 - Título "Zigoto" com dois pronúcleos (Moore chama de oótide); mantido.
 
-## G. Para as próximas revisões (rede do ambiente)
+## G. Histologia (relatórios `content/revisoes/h1-*`, `h2-*`, `h3-*` e `laminas-histologia.md`)
 
-Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
+Os 10 tópicos e as 16 lâminas foram revisados por agentes (1ª etapa histologia; 2ª etapa patologia/clínica). Nenhum gabarito estava errado. O que depende de você:
+
+**G1. Conferir no livro impresso**
+- Números de capítulo citados de memória em todos os tópicos: Junqueira & Carneiro 14ª ed. (os redatores usaram a numeração da 13ª: 1 métodos, 4 epitelial, 5 conjuntivo, 6 adiposo, 7 cartilagem, 8 osso, 9 nervoso, 10 muscular, 12 células do sangue, 13 hemocitopoese, 16 glândulas do tubo digestivo, 18 pele) e Ross & Pawlina 8ª ed. (1, 2, 5–12, 15, 16, 18). Kierszenbaum 5ª e Gartner 4ª também de memória.
+- Frases de Junqueira citadas de memória: grupos isógenos "de um único condroblasto" (até ~8 células); crescimento intersticial "quase só nas fases iniciais"; núcleo pulposo rico em ácido hialurônico; pouco tecido pardo no adulto; tabela do leucograma (60–70 / 20–30 / 3–8 / 2–4 / 0,5–1%; basófilos talvez "0–1%"; só a ordem é cobrada).
+- Ross: "a cartilagem elástica não calcifica" (his-06-q17, falso); lâmina lúcida como artefato; meias-luas serosas como artefato.
+- Robbins 10ª: faixa etária do condrossarcoma (≥ 40 anos), lipoblastos × MDM2, cronologia histológica do infarto.
+
+**G2. Decisões suas**
+- Meias-luas serosas: ensinar como estrutura (Junqueira) ou "ao menos em parte artefato" (Ross; estudo de Yamashina 1999 é em rato). Afeta his-03-q17 e a lâmina da submandibular.
+- Receptor do tecido pardo: "β-adrenérgico" (adotado) ou "β3" (muitos livros; dado de roedores).
+- Fibras musculares tipo IIb (livros) × IIx (humanos); as questões evitam o conflito.
+- Liberação do Pi × golpe de força (his-09-q23 reescrito sem causalidade; ordem cobrada igual).
+- Termos da OMS 2020 ("tumor lipomatoso atípico", "tumor cartilaginoso atípico"): só em correlações e notas; cobrar em questão?
+- Acondroplasia: "displasia esquelética mais comum" (Robbins) × "causa mais comum de baixa estatura desproporcionada" (GeneReviews, adotada).
+- Conduta de hipotermia neonatal (SBP 2022) dentro de um tópico de histologia: manter o detalhe ou reduzir ao mecanismo.
+- Terminologia: "cilíndrico" (adotado nas respostas) × "colunar" × "prismático"; "borda em escova" × "planura estriada".
+- Id `lacuna` usado para condrócito (his-06) e osteócito (his-07): separar exige mudar ids (decisão de arquitetura).
+- Linha do tempo da epiderme (his-02): empatar "perde núcleo" e "torna-se célula córnea" (pele fina)?
+- Lâmina do rim: desenho de córtex (acrescentar glomérulo e túbulo proximal) ou de medula (ductos coletores).
+- "Olho de coruja" retirado do neurônio (termo de Reed-Sternberg/CMV).
+- Propostas de correlação nova (não implementadas): policondrite recidivante (his-06) e doença de Paget (his-07).
+
+**G3. Diretrizes a confirmar (sites bloqueados na rede da sessão)**
+- PCDT de Osteoporose do Ministério da Saúde: a Portaria Conjunta nº 19/2023 foi revogada em 22/10/2025; número da nova (22 ou 23) e critérios diagnósticos não conferidos (gov.br bloqueado).
+- SBP 2022 (reanimação neonatal): conferida só por busca (saco de polietileno e touca no < 34 semanas; temperatura axilar 36,5–37,5 °C).
+- ASCO/CAP (receptores hormonais e HER2): tempo até a fixação "≤ 1 h" e fixação de 6–72 h conferidos em fontes secundárias; falta o texto integral.
+- Calcitonina: restrição de uso da EMA (2012); registro atual na ANVISA não conferido.
+
+## H. Para as próximas revisões (rede do ambiente)
+
+Os revisores não conseguiram abrir: www.sbp.com.br, www.neonatologia.com.br, pmc.ncbi.nlm.nih.gov, embryology.med.unsw.edu.au, ses.sp.bvs.br, www.gov.br, documents.cap.org, shop.lww.com (sumários de Ross) (e, para completar o cadastro de escolas, emec.mec.gov.br, pt.wikipedia.org, portal.cfm.org.br). Liberar esses domínios nas configurações de rede do ambiente melhora a conferência em fonte primária.
 
 ## Como registrar a sua conferência
 
