@@ -77,7 +77,9 @@ export default function Lab3DTela() {
             <strong>{estagio.titulo}</strong>
             <div className="muted pequeno">
               {estagio.dias}
-              {estagio.carnegie.length ? ` · Carnegie ${estagio.carnegie.join('–')}` : ''}
+              {estagio.carnegie.length
+                ? ` · Carnegie ${estagio.carnegie.length > 1 ? `${Math.min(...estagio.carnegie)}–${Math.max(...estagio.carnegie)}` : estagio.carnegie[0]}`
+                : ''}
               {estagio.tamanho ? ` · ${estagio.tamanho}` : ''}
             </div>
           </div>
