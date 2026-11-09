@@ -11,3 +11,4 @@ test-results/
 playwright-report/
 android/app/build/
 ios/App/build/
+tsconfig.tsbuildinfo

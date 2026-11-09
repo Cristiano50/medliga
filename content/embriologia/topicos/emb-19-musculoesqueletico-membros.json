@@ -1,0 +1,756 @@
+{
+  "id": "emb-19-musculoesqueletico-membros",
+  "disciplina": "embriologia",
+  "ordem": 19,
+  "titulo": "Sistema musculoesquelético e membros",
+  "subtitulo": "Somitos, coluna vertebral, costelas, crânio, músculos e desenvolvimento dos membros",
+  "periodo": {
+    "diaInicio": 20,
+    "diaFim": 84,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever as divisões do somito (esclerótomo, dermomiótomo, miótomo e dermátomo) e seus derivados.",
+    "Explicar a ressegmentação dos esclerótomos e suas consequências para vértebras, discos, miótomos e nervos espinais.",
+    "Descrever a origem das costelas e do esterno.",
+    "Diferenciar neurocrânio e viscerocrânio e ossificação intramembranosa e endocondral; descrever as fontanelas.",
+    "Relacionar a divisão dos miótomos em epímero e hipômero à inervação pelos ramos dorsais e ventrais primários.",
+    "Explicar os centros sinalizadores dos membros (crista ectodérmica apical, zona de atividade polarizante, ectoderma dorsal) e os três eixos.",
+    "Descrever a rotação dos membros, o padrão dos dermátomos e a separação dos dedos por apoptose.",
+    "Correlacionar falhas do desenvolvimento com polidactilia, sindactilia, amelia/meromelia, pé torto congênito, displasia do desenvolvimento do quadril, acondroplasia, craniossinostoses, costela cervical, escoliose congênita e síndrome de Klippel-Feil."
+  ],
+  "resumo": "O esqueleto e a musculatura esquelética derivam do **mesoderma paraxial** (somitos e somitômeros), do **mesoderma lateral somático** (esqueleto e conjuntivo dos membros, esterno) e da **crista neural** (grande parte do esqueleto da face).\n\n**Somitos.** O primeiro par surge por volta do dia 20, na região occipital; ao fim da 5ª semana há 42–44 pares. Cada somito diferencia-se em:\n- **Esclerótomo** (parte ventromedial): sob SHH da notocorda e da placa do assoalho, suas células sofrem transição epitélio-mesênquima e envolvem a notocorda e o tubo neural, formando **vértebras**, **costelas** e o anel fibroso dos discos; uma subdivisão (sindétomo) forma tendões.\n- **Dermomiótomo** (parte dorsal): suas bordas formam o **miótomo** (músculos esqueléticos), e as células centrais formam o **dermátomo** (derme e tecido subcutâneo do dorso).\n\n**Coluna vertebral e ressegmentação.** Cada esclerótomo divide-se em metade cranial, frouxa, e metade caudal, densa. A metade caudal de um esclerótomo funde-se à metade cranial do seguinte, formando o **corpo vertebral**, que fica **intersegmentar**. Consequências: os **miótomos** passam a cruzar os discos e podem mover a coluna; os **nervos espinais** ficam junto aos discos e saem pelos forames intervertebrais; as artérias intersegmentares passam ao lado dos corpos vertebrais. Na região cervical, o 1º nervo sai entre o occipital e o atlas e o 8º entre C7 e T1: há **8 nervos cervicais e 7 vértebras**. A notocorda degenera nos corpos e persiste como **núcleo pulposo**. Centros de condrificação surgem na 6ª semana (dois no centro de cada corpo); a ossificação começa no fim do período embrionário, com três centros primários (corpo e cada metade do arco). Ao nascimento, cada vértebra tem três partes ósseas unidas por cartilagem; as metades do arco fundem-se nos primeiros anos de vida.\n\n**Costelas e esterno.** As costelas derivam dos **processos costais** das vértebras torácicas (esclerótomo). O esterno forma-se de modo independente: duas **barras esternais** no mesoderma somático da parede ventral fundem-se na linha média em sentido craniocaudal.\n\n**Crânio.** O **neurocrânio** protege o encéfalo: sua parte membranosa (ossos planos da abóbada) forma-se por **ossificação intramembranosa**, diretamente no mesênquima; a cartilaginosa (**condrocrânio**, base do crânio) por **ossificação endocondral**, sobre um molde de cartilagem hialina. O **viscerocrânio** (esqueleto da face) deriva principalmente dos dois primeiros arcos faríngeos. Ao nascimento, os ossos da abóbada são separados por **suturas**; onde mais de dois ossos se encontram ficam as **fontanelas**. Elas permitem a moldagem do crânio no parto e seu crescimento acompanhando o encéfalo. A **posterior** fecha-se nos primeiros meses e a **anterior**, a maior, por volta de 18 meses.\n\n**Músculos.** Os mioblastos fundem-se em fibras multinucleadas. Cada miótomo divide-se em **epímero** (dorsal; músculos extensores profundos do dorso, inervados pelos **ramos dorsais primários**) e **hipômero** (ventral; músculos da parede lateral e ventral do tronco e dos membros, inervados pelos **ramos ventrais primários**). Os músculos da cabeça derivam de somitômeros e de somitos occipitais (língua).\n\n**Membros.** Os brotos superiores surgem por volta dos dias 26–27, e os inferiores pouco depois. Têm núcleo de **mesoderma lateral somático** (ossos, cartilagens, tendões e conjuntivo), coberto por ectoderma; os **músculos** vêm de células da borda **hipaxial** dos somitos, que migram para o broto. Três centros sinalizadores definem os eixos:\n- **Crista ectodérmica apical (AER)**: espessamento ectodérmico na margem distal que secreta **FGF** e mantém o mesênquima subjacente em proliferação. Controla o eixo **proximodistal** (estilopódio → zeugopódio → autopódio); sua remoção causa truncamento.\n- **Zona de atividade polarizante (ZPA)**: mesênquima da margem posterior (pós-axial) que secreta **SHH** e define o eixo **anteroposterior** (identidade dos dedos); SHH ectópico anterior causa duplicação em espelho.\n- **Ectoderma dorsal**: **WNT7A** define o eixo **dorsoventral** (via LMX1B no mesênquima dorsal); o EN1 do ectoderma ventral o reprime.\nNa 6ª semana formam-se as placas das mãos e dos pés com **raios digitais**; a **apoptose interdigital** separa os dedos até o fim da 8ª semana. Na 7ª semana os membros giram em sentidos opostos: o superior **lateralmente** (polegar lateral, cotovelo posterior) e o inferior **medialmente** (hálux medial, joelho anterior). Por isso os **dermátomos** do membro inferior seguem trajeto espiralado. A maioria dos ossos dos membros tem centro primário de ossificação até a 12ª semana.\n\n**Correlações.** Excesso de SHH anterior causa **polidactilia** pré-axial; falha da apoptose, **sindactilia**. **Amelia** é a ausência completa de um membro; **meromelia**, a ausência parcial, como a focomelia causada pela **talidomida** no período crítico dos membros. O **pé torto congênito** e a **displasia do desenvolvimento do quadril** são defeitos comuns do sistema musculoesquelético. A **acondroplasia** resulta de mutação ativadora de **FGFR3**, que inibe a ossificação endocondral. **Craniossinostoses** deformam o crânio conforme a sutura fechada precocemente. Processo costal de C7 desenvolvido forma **costela cervical**. **Hemivértebras** causam escoliose congênita, e falhas de segmentação cervical, a **síndrome de Klippel-Feil**.",
+  "pontosChave": [
+    "Esclerótomo → vértebras, costelas e anel fibroso; miótomo → músculos esqueléticos; dermátomo → derme do dorso.",
+    "Na ressegmentação, cada corpo vertebral forma-se da metade caudal de um esclerótomo e da metade cranial do seguinte.",
+    "A ressegmentação explica os 8 nervos cervicais e as 7 vértebras cervicais e faz os miótomos cruzarem os discos.",
+    "A notocorda persiste como núcleo pulposo; o anel fibroso deriva do esclerótomo.",
+    "As costelas derivam dos processos costais; o esterno, das barras esternais do mesoderma somático.",
+    "Ossos planos da abóbada craniana: ossificação intramembranosa; base do crânio e ossos longos: endocondral.",
+    "A fontanela anterior fecha-se por volta de 18 meses; a posterior, nos primeiros meses.",
+    "Epímero: ramos dorsais primários; hipômero (parede ventrolateral e membros): ramos ventrais primários.",
+    "AER (FGF) → eixo proximodistal; ZPA (SHH) → eixo anteroposterior; WNT7A do ectoderma dorsal → eixo dorsoventral.",
+    "Os músculos dos membros vêm dos somitos; ossos e conjuntivo, do mesoderma lateral somático.",
+    "Membro superior gira lateralmente e o inferior medialmente na 7ª semana; os dedos separam-se por apoptose até o fim da 8ª semana.",
+    "Acondroplasia: mutação ativadora de FGFR3, em geral de novo, com rizomelia e macrocefalia."
+  ],
+  "estruturas": [
+    {
+      "id": "somitos",
+      "nome": "Somitos",
+      "sinonimos": [],
+      "definicao": "Blocos pareados de mesoderma paraxial que surgem a partir do dia ~20, em sequência craniocaudal; 42–44 pares ao fim da 5ª semana.",
+      "origem": "Mesoderma paraxial.",
+      "destino": "Esclerótomo e dermomiótomo (miótomo e dermátomo)."
+    },
+    {
+      "id": "esclerotomo",
+      "nome": "Esclerótomo",
+      "sinonimos": [],
+      "definicao": "Parte ventromedial do somito cujas células sofrem transição epitélio-mesênquima, sob SHH, e envolvem a notocorda e o tubo neural.",
+      "origem": "Somito.",
+      "destino": "Vértebras, costelas, anel fibroso dos discos intervertebrais e, pelo sindétomo, tendões."
+    },
+    {
+      "id": "dermomiotomo",
+      "nome": "Dermomiótomo",
+      "sinonimos": [],
+      "definicao": "Parte dorsal do somito, que permanece epitelial após a separação do esclerótomo.",
+      "origem": "Somito.",
+      "destino": "Miótomo (a partir de suas bordas) e dermátomo (células centrais)."
+    },
+    {
+      "id": "miotomo",
+      "nome": "Miótomo",
+      "sinonimos": [],
+      "definicao": "Camada de células musculares precursoras formada a partir das bordas dorsomedial e ventrolateral do dermomiótomo.",
+      "destino": "Músculos esqueléticos do tronco (epímero e hipômero) e, por migração, dos membros."
+    },
+    {
+      "id": "dermatomo-somito",
+      "nome": "Dermátomo (do somito)",
+      "sinonimos": [],
+      "definicao": "Porção central do dermomiótomo. O termo também designa a área de pele inervada por um único nervo espinal.",
+      "destino": "Derme e tecido subcutâneo do dorso."
+    },
+    {
+      "id": "epimero",
+      "nome": "Epímero (divisão epaxial)",
+      "sinonimos": ["divisão epaxial do miótomo"],
+      "definicao": "Divisão dorsal do miótomo.",
+      "destino": "Músculos extensores profundos do pescoço e da coluna (eretores da espinha), inervados pelos ramos dorsais primários."
+    },
+    {
+      "id": "hipomero",
+      "nome": "Hipômero (divisão hipaxial)",
+      "sinonimos": ["divisão hipaxial do miótomo"],
+      "definicao": "Divisão ventral do miótomo.",
+      "destino": "Músculos escalenos, pré-vertebrais, intercostais, abdominais e (por migração) dos membros, inervados pelos ramos ventrais primários."
+    },
+    {
+      "id": "processos-costais",
+      "nome": "Processos costais",
+      "sinonimos": [],
+      "definicao": "Prolongamentos laterais do arco vertebral em formação.",
+      "origem": "Esclerótomo.",
+      "destino": "Costelas na região torácica; nas regiões cervical e lombar, integram os processos transversos (seu desenvolvimento excessivo forma costelas acessórias)."
+    },
+    {
+      "id": "barras-esternais",
+      "nome": "Barras esternais",
+      "sinonimos": ["bandas esternais"],
+      "definicao": "Par de faixas mesenquimais verticais na parede ventral do corpo que se condrificam e se fundem na linha média em sentido craniocaudal.",
+      "origem": "Mesoderma somático (lateral).",
+      "destino": "Manúbrio, corpo do esterno e processo xifoide."
+    },
+    {
+      "id": "notocorda",
+      "nome": "Notocorda",
+      "sinonimos": [],
+      "definicao": "Bastão axial que induz o esclerótomo (via SHH) e o tubo neural.",
+      "destino": "Degenera nos corpos vertebrais e persiste como núcleo pulposo."
+    },
+    {
+      "id": "neurocranio",
+      "nome": "Neurocrânio",
+      "sinonimos": [],
+      "definicao": "Parte do crânio que envolve e protege o encéfalo.",
+      "origem": "Crista neural e mesoderma paraxial.",
+      "destino": "Parte membranosa: ossos planos da abóbada (ossificação intramembranosa). Parte cartilaginosa (condrocrânio): base do crânio (ossificação endocondral)."
+    },
+    {
+      "id": "viscerocranio",
+      "nome": "Viscerocrânio",
+      "sinonimos": ["esqueleto da face"],
+      "definicao": "Esqueleto da face, derivado principalmente dos dois primeiros arcos faríngeos.",
+      "origem": "Crista neural (mesênquima dos arcos faríngeos).",
+      "destino": "Maxila, zigomático, mandíbula, ossículos da orelha média, processo estiloide e parte do hioide."
+    },
+    {
+      "id": "fontanelas",
+      "nome": "Fontanelas",
+      "sinonimos": ["moleiras"],
+      "definicao": "Áreas membranosas largas onde mais de dois ossos da abóbada craniana se encontram ao nascimento.",
+      "destino": "A posterior fecha-se nos primeiros meses de vida; a anterior, por volta de 18 meses."
+    },
+    {
+      "id": "broto-membro-superior",
+      "nome": "Broto do membro superior",
+      "sinonimos": [],
+      "definicao": "Saliência da parede ventrolateral do corpo, na altura dos segmentos cervicais caudais, visível por volta dos dias 26–27.",
+      "origem": "Mesoderma lateral somático coberto por ectoderma; mioblastos migrados dos somitos.",
+      "destino": "Membro superior."
+    },
+    {
+      "id": "broto-membro-inferior",
+      "nome": "Broto do membro inferior",
+      "sinonimos": [],
+      "definicao": "Saliência da parede ventrolateral na altura dos segmentos lombares e sacrais superiores, que surge pouco depois do superior.",
+      "origem": "Mesoderma lateral somático coberto por ectoderma; mioblastos migrados dos somitos.",
+      "destino": "Membro inferior."
+    },
+    {
+      "id": "crista-ectodermica-apical",
+      "nome": "Crista ectodérmica apical (AER)",
+      "sinonimos": ["AER"],
+      "definicao": "Espessamento do ectoderma na margem distal do broto do membro que secreta FGF e mantém o mesênquima subjacente em proliferação.",
+      "origem": "Ectoderma do broto, induzido por FGF10 do mesênquima.",
+      "destino": "Regride à medida que os dedos se formam; controla o eixo proximodistal."
+    },
+    {
+      "id": "zona-de-atividade-polarizante",
+      "nome": "Zona de atividade polarizante (ZPA)",
+      "sinonimos": ["ZPA"],
+      "definicao": "Grupo de células mesenquimais na margem posterior (pós-axial) do broto que secreta SHH e define o eixo anteroposterior.",
+      "origem": "Mesênquima do broto do membro."
+    },
+    {
+      "id": "placa-da-mao",
+      "nome": "Placa da mão",
+      "sinonimos": [],
+      "definicao": "Extremidade achatada do broto do membro superior na 6ª semana, na qual surgem os raios digitais."
+    },
+    {
+      "id": "raios-digitais",
+      "nome": "Raios digitais",
+      "sinonimos": [],
+      "definicao": "Condensações mesenquimais nas placas das mãos e dos pés que prefiguram os dedos.",
+      "destino": "Dedos, separados pela apoptose do tecido interdigital."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e19-primeiro-somito",
+      "descricao": "Surge o primeiro par de somitos, na região occipital",
+      "diaMin": 20,
+      "diaMax": 21,
+      "ordem": 1
+    },
+    {
+      "id": "e19-brotos-superiores",
+      "descricao": "Aparecem os brotos dos membros superiores",
+      "diaMin": 26,
+      "diaMax": 27,
+      "ordem": 2
+    },
+    {
+      "id": "e19-brotos-inferiores",
+      "descricao": "Aparecem os brotos dos membros inferiores",
+      "diaMin": 28,
+      "diaMax": 32,
+      "ordem": 3
+    },
+    {
+      "id": "e19-placas-maos",
+      "descricao": "Formam-se as placas das mãos, com raios digitais",
+      "diaMin": 35,
+      "diaMax": 42,
+      "ordem": 4
+    },
+    {
+      "id": "e19-rotacao-membros",
+      "descricao": "Os membros giram em sentidos opostos: o superior lateralmente e o inferior medialmente",
+      "diaMin": 43,
+      "diaMax": 49,
+      "ordem": 5
+    },
+    {
+      "id": "e19-dedos-livres",
+      "descricao": "Os dedos das mãos e dos pés ficam separados (apoptose interdigital)",
+      "diaMin": 53,
+      "diaMax": 56,
+      "ordem": 6
+    },
+    {
+      "id": "e19-ossificacao-primaria",
+      "descricao": "Centros primários de ossificação presentes na maioria dos ossos dos membros",
+      "diaMin": 57,
+      "diaMax": 84,
+      "ordem": 7
+    },
+    {
+      "id": "e19-fontanela-posterior",
+      "descricao": "Fecha-se a fontanela posterior (primeiros meses após o nascimento)",
+      "ordem": 8
+    },
+    {
+      "id": "e19-fontanela-anterior",
+      "descricao": "Fecha-se a fontanela anterior (por volta de 18 meses de vida)",
+      "ordem": 9
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "polidactilia",
+      "titulo": "Polidactilia",
+      "descricao": "Dedos supranumerários nas mãos ou nos pés, muitas vezes de herança autossômica dominante. A forma pós-axial (lado ulnar/fibular) é a mais comum e frequentemente isolada, sobretudo em pessoas de ascendência africana; a pré-axial (lado do polegar/hálux) associa-se mais a síndromes. O dedo extra frequentemente carece de conexões musculares adequadas.",
+      "mecanismo": "Alteração do padrão anteroposterior: expressão ectópica de SHH na margem anterior (por exemplo, mutações na região reguladora de SHH) causa polidactilia pré-axial; alterações de GLI3 também causam polidactilias."
+    },
+    {
+      "id": "sindactilia",
+      "titulo": "Sindactilia",
+      "descricao": "Fusão de dedos. A cutânea (membranas entre os dedos) é a mais comum, sobretudo entre o 3º e o 4º dedos da mão e entre o 2º e o 3º dedos do pé. A óssea (fusão dos ossos) ocorre, por exemplo, na síndrome de Apert, junto com craniossinostose.",
+      "mecanismo": "Falha da apoptose do tecido interdigital (cutânea) ou da separação dos raios digitais (óssea)."
+    },
+    {
+      "id": "amelia-meromelia-talidomida",
+      "titulo": "Amelia, meromelia e talidomida",
+      "descricao": "Amelia é a ausência completa de um ou mais membros; meromelia, a ausência parcial, como a focomelia (mãos ou pés ligados ao tronco por ossos curtos e irregulares). A talidomida, usada como sedativo e antiemético no fim dos anos 1950 e início dos 1960, causou milhares de casos. No Brasil continua indicada, por exemplo, no eritema nodoso hansênico e no mieloma múltiplo, sob controle rigoroso por legislação específica, porque houve casos de embriopatia após sua retirada mundial do mercado.",
+      "mecanismo": "Exposição durante o período crítico dos membros (Moore: dias 24–36 após a fertilização). Mecanismos propostos: ligação ao cereblon com degradação de fatores de transcrição (como SALL4) e efeito antiangiogênico."
+    },
+    {
+      "id": "pe-torto-congenito",
+      "titulo": "Pé torto congênito (talipe equinovaro)",
+      "descricao": "Pé em flexão plantar (equino), inversão (varo), adução do antepé e cavo; mais frequente no sexo masculino. Pode ser idiopático ou associar-se a mielomeningocele e artrogripose. O tratamento inicial é o método de Ponseti (gessos seriados, tenotomia do tendão do calcâneo quando indicada e órtese de abdução).",
+      "mecanismo": "Multifatorial (genético e ambiental); posicionamento anormal ou restrição dos movimentos fetais foram propostos, sem mecanismo único estabelecido."
+    },
+    {
+      "id": "displasia-desenvolvimento-quadril",
+      "titulo": "Displasia do desenvolvimento do quadril (DDQ)",
+      "descricao": "Espectro de instabilidade, subluxação e luxação do quadril com acetábulo raso. Fatores de risco: sexo feminino, apresentação pélvica, história familiar e primeira gestação. Rastreada no recém-nascido pelas manobras de Ortolani (reduz o quadril luxado com abdução) e Barlow (luxa o quadril instável com adução e pressão posterior); confirmada por ultrassonografia nos primeiros meses e tratada com suspensório de Pavlik.",
+      "mecanismo": "O acetábulo e a cabeça do fêmur desenvolvem-se de forma interdependente; frouxidão ligamentar (inclusive por hormônios maternos) e posições intrauterinas desfavoráveis impedem o contato concêntrico, e o acetábulo se forma raso."
+    },
+    {
+      "id": "acondroplasia",
+      "titulo": "Acondroplasia",
+      "descricao": "Causa mais comum de nanismo desproporcionado: membros curtos à custa dos segmentos proximais (rizomelia), macrocefalia com fronte proeminente, hipoplasia da face média, mãos em tridente, lordose lombar e tronco de comprimento quase normal; inteligência normal. Pode haver estenose do forame magno com compressão cervicomedular. Herança autossômica dominante, mas a maioria dos casos é de novo, associada à idade paterna avançada. A displasia tanatofórica, letal, também resulta de mutações de FGFR3.",
+      "mecanismo": "Mutação com ganho de função do FGFR3, que inibe a proliferação e a diferenciação dos condrócitos nas placas de crescimento; afeta a ossificação endocondral (ossos longos, base do crânio), poupando relativamente a intramembranosa (abóbada)."
+    },
+    {
+      "id": "craniossinostoses",
+      "titulo": "Craniossinostoses",
+      "descricao": "Fechamento precoce de uma ou mais suturas cranianas. Sagital (a mais comum): crânio longo e estreito (escafocefalia). Coronal bilateral: crânio curto e largo (braquicefalia). Coronal unilateral: plagiocefalia anterior. Metópica: fronte triangular (trigonocefalia). Formas sindrômicas associam-se a mutações de FGFR (Apert e Crouzon, FGFR2; Pfeiffer, FGFR1/FGFR2; Muenke, FGFR3). Deve ser distinguida da plagiocefalia posicional, sem fusão de suturas.",
+      "mecanismo": "O crescimento craniano fica restrito no sentido perpendicular à sutura fechada e aumenta, de forma compensatória, no sentido paralelo a ela."
+    },
+    {
+      "id": "costela-cervical",
+      "titulo": "Costela cervical",
+      "descricao": "Costela acessória articulada à 7ª vértebra cervical, muitas vezes assintomática. Pode comprimir o tronco inferior do plexo braquial (C8–T1) e a artéria subclávia, causando síndrome do desfiladeiro torácico (parestesias na borda ulnar do antebraço e da mão, sintomas vasculares ao elevar o braço).",
+      "mecanismo": "Desenvolvimento excessivo do processo costal da 7ª vértebra cervical (esclerótomo)."
+    },
+    {
+      "id": "escoliose-congenita",
+      "titulo": "Escoliose congênita (hemivértebra)",
+      "descricao": "Curvatura lateral da coluna por anomalia vertebral congênita, como a hemivértebra; pode progredir com o crescimento. Associa-se a anomalias renais, cardíacas e da medula espinal, que devem ser investigadas.",
+      "mecanismo": "Falha no aparecimento de um dos dois centros de condrificação do corpo vertebral, de modo que metade da vértebra não se forma; também por falhas de segmentação."
+    },
+    {
+      "id": "klippel-feil",
+      "titulo": "Síndrome de Klippel-Feil",
+      "descricao": "Pescoço curto, implantação baixa dos cabelos na nuca e limitação dos movimentos cervicais (tríade clássica, nem sempre completa), com fusão de corpos vertebrais cervicais. Pode associar-se a deformidade de Sprengel, anomalias renais, cardíacas e perda auditiva.",
+      "mecanismo": "Falha da segmentação dos esclerótomos cervicais."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-19-q01",
+      "tipo": "multipla",
+      "enunciado": "O esclerótomo, formado pela parte ventromedial do somito, origina principalmente:",
+      "alternativas": [
+        { "id": "a", "texto": "Os músculos profundos do dorso" },
+        { "id": "b", "texto": "A derme da pele do dorso" },
+        { "id": "c", "texto": "As vértebras e as costelas" },
+        { "id": "d", "texto": "Os músculos dos membros" }
+      ],
+      "correta": "c",
+      "explicacao": "Sob SHH da notocorda e da placa do assoalho, as células do esclerótomo tornam-se mesenquimais, envolvem a notocorda e o tubo neural e formam vértebras, costelas (processos costais) e o anel fibroso dos discos; o sindétomo forma tendões. Os músculos profundos do dorso (a) derivam do epímero (miótomo). A derme do dorso (b) deriva do dermátomo. Os músculos dos membros (d) derivam de células da borda hipaxial do dermomiótomo que migram para os brotos.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["somitos", "esclerotomo"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14"
+    },
+    {
+      "id": "emb-19-q02",
+      "tipo": "multipla",
+      "enunciado": "Na formação da coluna vertebral, cada corpo vertebral origina-se:",
+      "alternativas": [
+        { "id": "a", "texto": "De um único esclerótomo inteiro, no mesmo nível do somito correspondente" },
+        { "id": "b", "texto": "Da fusão da metade caudal de um esclerótomo com a metade cranial do esclerótomo seguinte" },
+        { "id": "c", "texto": "Da ossificação da notocorda" },
+        { "id": "d", "texto": "Do mesoderma somático da placa lateral" }
+      ],
+      "correta": "b",
+      "explicacao": "Na ressegmentação, a metade caudal (densa) de cada esclerótomo funde-se à metade cranial (frouxa) do esclerótomo seguinte, de modo que o corpo vertebral fica intersegmentar. Por isso os miótomos cruzam os discos e podem mover a coluna, e os nervos espinais ficam junto aos discos. Um esclerótomo inteiro (a) não corresponde a uma vértebra. A notocorda (c) degenera nos corpos vertebrais e persiste como núcleo pulposo, sem se ossificar. O mesoderma somático (d) forma o esqueleto dos membros e o esterno, não as vértebras.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["ressegmentacao", "coluna-vertebral"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14"
+    },
+    {
+      "id": "emb-19-q03",
+      "tipo": "multipla",
+      "enunciado": "O esterno desenvolve-se a partir de:",
+      "alternativas": [
+        { "id": "a", "texto": "Processos costais das vértebras torácicas" },
+        { "id": "b", "texto": "Células dos esclerótomos torácicos que migram até a linha média ventral" },
+        { "id": "c", "texto": "Notocorda" },
+        { "id": "d", "texto": "Duas barras esternais formadas no mesoderma somático da parede ventral, que se fundem na linha média" }
+      ],
+      "correta": "d",
+      "explicacao": "O esterno forma-se de modo independente das costelas: duas barras esternais surgem no mesoderma somático (lateral) da parede ventral, condrificam-se e fundem-se na linha média em sentido craniocaudal, formando manúbrio, corpo e processo xifoide. Fusão incompleta da extremidade inferior produz xifoide bífido ou perfurado. Os processos costais (a) formam as costelas. Os esclerótomos (b) formam vértebras e costelas, não o esterno. A notocorda (c) persiste como núcleo pulposo.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["esterno", "costelas", "mesoderma-somatico"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q04",
+      "tipo": "multipla",
+      "enunciado": "Qual destes ossos se forma predominantemente por ossificação intramembranosa?",
+      "alternativas": [
+        { "id": "a", "texto": "Fêmur" },
+        { "id": "b", "texto": "Corpo vertebral" },
+        { "id": "c", "texto": "Parte basilar do osso occipital" },
+        { "id": "d", "texto": "Úmero" },
+        { "id": "e", "texto": "Osso parietal" }
+      ],
+      "correta": "e",
+      "explicacao": "Os ossos planos da abóbada craniana (como frontal e parietais) formam-se por ossificação intramembranosa, diretamente no mesênquima, sem molde de cartilagem. Fêmur (a) e úmero (d), assim como os corpos vertebrais (b), formam-se por ossificação endocondral sobre molde de cartilagem hialina. A parte basilar do occipital (c) pertence ao condrocrânio (base do crânio), também de ossificação endocondral.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["ossificacao", "cranio", "neurocranio"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14"
+    },
+    {
+      "id": "emb-19-q05",
+      "tipo": "multipla",
+      "enunciado": "Em experimentos com embriões de aves, a remoção da crista ectodérmica apical (AER) de um broto de membro provoca:",
+      "alternativas": [
+        { "id": "a", "texto": "Duplicação em espelho dos dedos" },
+        { "id": "b", "texto": "Truncamento distal do membro, tanto mais proximal quanto mais precoce a remoção" },
+        { "id": "c", "texto": "Perda da polaridade dorsoventral, com face palmar dos dois lados" },
+        { "id": "d", "texto": "Sindactilia com membro de comprimento normal" }
+      ],
+      "correta": "b",
+      "explicacao": "A AER secreta FGF e mantém o mesênquima distal em proliferação, permitindo a formação sucessiva dos segmentos proximais e distais; sem ela, o crescimento para, e só se formam os segmentos já especificados. A duplicação em espelho (a) resulta de SHH ectópico na margem anterior (enxerto da ZPA). A polaridade dorsoventral (c) depende do WNT7A do ectoderma dorsal e do EN1 do ventral. A sindactilia (d) resulta de falha da apoptose interdigital.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["membros", "crista-ectodermica-apical", "FGF"],
+      "referencia": "Sadler 14ª ed., cap. 12; Moore 11ª ed., cap. 16"
+    },
+    {
+      "id": "emb-19-q06",
+      "tipo": "multipla",
+      "enunciado": "A zona de atividade polarizante (ZPA), na margem posterior (pós-axial) do broto do membro, secreta SHH. O enxerto de células da ZPA na margem anterior de um broto resulta em:",
+      "alternativas": [
+        { "id": "a", "texto": "Duplicação em espelho dos dedos" },
+        { "id": "b", "texto": "Truncamento distal do membro" },
+        { "id": "c", "texto": "Perda da rotação do membro" },
+        { "id": "d", "texto": "Inversão do eixo proximodistal" }
+      ],
+      "correta": "a",
+      "explicacao": "A ZPA define o eixo anteroposterior: o gradiente de SHH determina a identidade dos dedos (o 5º dedo, mais posterior, recebe mais SHH; o polegar forma-se sem ele). Uma segunda fonte de SHH na margem anterior cria um gradiente simétrico e dedos duplicados em espelho; no ser humano, expressão anterior ectópica de SHH causa polidactilia pré-axial. O truncamento (b) decorre da remoção da AER. A rotação (c) ocorre na 7ª semana e não é determinada pela ZPA. O eixo proximodistal (d) depende da AER e do ácido retinoico proximal.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["membros", "zona-de-atividade-polarizante", "SHH"],
+      "referencia": "Sadler 14ª ed., cap. 12; Moore 11ª ed., cap. 16"
+    },
+    {
+      "id": "emb-19-q07",
+      "tipo": "multipla",
+      "enunciado": "Na 7ª semana, os membros giram em sentidos opostos. Qual afirmação descreve corretamente o resultado?",
+      "alternativas": [
+        { "id": "a", "texto": "O membro superior gira cerca de 90° medialmente, e o polegar fica medial" },
+        { "id": "b", "texto": "Os dois membros giram lateralmente, e cotovelos e joelhos voltam-se posteriormente" },
+        { "id": "c", "texto": "O membro inferior gira cerca de 90° medialmente: o hálux fica medial, o joelho volta-se anteriormente e os extensores ficam na face anterior" },
+        { "id": "d", "texto": "O membro inferior gira lateralmente, e o hálux fica lateral" }
+      ],
+      "correta": "c",
+      "explicacao": "O membro inferior gira cerca de 90° medialmente: a margem pré-axial (tibial, hálux) fica medial, o joelho anterior e a musculatura extensora anterior; por isso seus dermátomos seguem trajeto espiralado. O membro superior gira cerca de 90° lateralmente, e não medialmente (a): o polegar fica lateral, o cotovelo posterior e os extensores nas faces lateral e posterior. Os membros giram em sentidos opostos, não ambos lateralmente (b). O hálux fica medial, não lateral (d).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["membros", "rotacao", "dermatomos"],
+      "referencia": "Moore 11ª ed., cap. 16; Sadler 14ª ed., cap. 12"
+    },
+    {
+      "id": "emb-19-q08",
+      "tipo": "multipla",
+      "enunciado": "Os músculos esqueléticos dos membros derivam de:",
+      "alternativas": [
+        { "id": "a", "texto": "Mesoderma lateral somático que forma o núcleo do broto" },
+        { "id": "b", "texto": "Crista neural do tronco" },
+        { "id": "c", "texto": "Mesoderma esplâncnico" },
+        { "id": "d", "texto": "Células miogênicas da borda ventrolateral (hipaxial) do dermomiótomo dos somitos, que migram para o broto" }
+      ],
+      "correta": "d",
+      "explicacao": "Precursores musculares deixam a borda hipaxial dos somitos e migram para os brotos, onde formam massas musculares dorsal (extensora) e ventral (flexora), inervadas por ramos ventrais primários (plexos braquial e lombossacral). O mesoderma lateral somático (a) forma ossos, cartilagens, tendões e conjuntivo dos membros, mas não suas fibras musculares. A crista neural do tronco (b) forma neurônios sensitivos e autônomos, células de Schwann e melanócitos. O mesoderma esplâncnico (c) forma o músculo liso visceral e o miocárdio.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["membros", "musculos", "somitos"],
+      "referencia": "Sadler 14ª ed., cap. 11 e 12; Moore 11ª ed., cap. 15"
+    },
+    {
+      "id": "emb-19-q09",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido apresenta mãos implantadas quase diretamente nos ombros, com ossos dos braços muito reduzidos, e membros inferiores normais. A mãe, em tratamento de eritema nodoso hansênico, usou talidomida no início da gestação, quando ainda não sabia estar grávida.",
+      "enunciado": "Qual é o termo para esse defeito e quando a exposição é mais provavelmente teratogênica?",
+      "alternativas": [
+        { "id": "a", "texto": "Meromelia do tipo focomelia; exposição no período crítico do desenvolvimento dos membros, entre o fim da 4ª e o início da 6ª semana após a fertilização" },
+        { "id": "b", "texto": "Amelia; exposição no 3º trimestre" },
+        { "id": "c", "texto": "Sindactilia; exposição na 2ª semana após a fertilização" },
+        { "id": "d", "texto": "Síndrome da banda amniótica; exposição em qualquer fase da gestação" }
+      ],
+      "correta": "a",
+      "explicacao": "Focomelia é uma forma de meromelia (ausência parcial): mãos ou pés ligam-se ao tronco por ossos curtos e irregulares. O período crítico dos membros é, segundo Moore, dos dias 24 a 36 após a fertilização. Amelia (b) é a ausência completa do membro, e no 3º trimestre os membros já estão formados. Na 2ª semana (c) predomina o efeito 'tudo ou nada', e sindactilia é a fusão de dedos. A banda amniótica (d) causa constrições e amputações assimétricas por bridas, sem relação com o fármaco. No Brasil, a talidomida continua indicada em situações como o eritema nodoso hansênico, sob controle rigoroso e com exigência de contracepção.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["talidomida", "meromelia", "teratogenese", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 16 e 20; Sadler 14ª ed., cap. 9 e 12"
+    },
+    {
+      "id": "emb-19-q10",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com membros curtos à custa dos segmentos proximais (rizomelia), macrocefalia com fronte proeminente, hipoplasia da face média e mãos em tridente; o tronco tem comprimento quase normal. Os pais têm estatura normal, e o pai tem 47 anos.",
+      "enunciado": "Qual é o mecanismo mais provável?",
+      "alternativas": [
+        { "id": "a", "texto": "Mutação com perda de função em COL1A1, com fragilidade óssea" },
+        { "id": "b", "texto": "Mutação em TBX5, com defeitos dos membros superiores e do coração" },
+        { "id": "c", "texto": "Mutação de novo com ganho de função do FGFR3, que inibe a proliferação dos condrócitos nas placas de crescimento" },
+        { "id": "d", "texto": "Mutação de FGFR2 com craniossinostose coronal e sindactilia" }
+      ],
+      "correta": "c",
+      "explicacao": "É acondroplasia: herança autossômica dominante, mas a maioria dos casos é de novo, associada à idade paterna avançada. O FGFR3 hiperativo inibe a proliferação e a diferenciação dos condrócitos, prejudicando a ossificação endocondral (ossos longos, base do crânio); a abóbada, de ossificação intramembranosa, cresce relativamente bem, daí a macrocefalia. Mutações de COL1A1 (a) causam osteogênese imperfeita, com fraturas. Mutações de TBX5 (b) causam a síndrome de Holt-Oram (anomalias do polegar e do antebraço e cardiopatia), sem rizomelia generalizada. Mutações de FGFR2 (d) causam síndromes como a de Apert, com craniossinostose, não com nanismo rizomélico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["acondroplasia", "FGFR3", "ossificacao-endocondral", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q11",
+      "tipo": "multipla",
+      "contexto": "Lactente de 4 meses com crânio alongado no sentido anteroposterior e estreito transversalmente, com crista óssea palpável na linha média entre a fontanela anterior e a posterior.",
+      "enunciado": "Qual sutura se fechou precocemente?",
+      "alternativas": [
+        { "id": "a", "texto": "Sagital" },
+        { "id": "b", "texto": "Coronal bilateral" },
+        { "id": "c", "texto": "Metópica" },
+        { "id": "d", "texto": "Lambdóidea unilateral" }
+      ],
+      "correta": "a",
+      "explicacao": "O fechamento precoce da sutura sagital, a craniossinostose mais comum, impede o crescimento transversal do crânio, que cresce compensatoriamente no sentido anteroposterior: escafocefalia. A sinostose coronal bilateral (b) produz crânio curto e largo (braquicefalia). A metópica (c) produz fronte triangular (trigonocefalia). A lambdóidea unilateral (d) produz plagiocefalia posterior, que deve ser distinguida da plagiocefalia posicional, sem fusão de sutura.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["craniossinostose", "suturas", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14"
+    },
+    {
+      "id": "emb-19-q12",
+      "tipo": "multipla",
+      "contexto": "Recém-nascida, primeira filha, nascida de cesariana por apresentação pélvica. Com o quadril fletido, a abdução da coxa esquerda produz um ressalto palpável da cabeça femoral voltando ao acetábulo (manobra de Ortolani positiva).",
+      "enunciado": "Qual é o diagnóstico e qual sua base?",
+      "alternativas": [
+        { "id": "a", "texto": "Pé torto congênito; contratura dos músculos da panturrilha" },
+        { "id": "b", "texto": "Displasia do desenvolvimento do quadril; acetábulo e cabeça femoral desenvolvem-se de forma interdependente, e a perda do contato concêntrico prejudica a formação do acetábulo" },
+        { "id": "c", "texto": "Epifisiólise proximal do fêmur; deslizamento da epífise pela placa de crescimento" },
+        { "id": "d", "texto": "Doença de Legg-Calvé-Perthes; necrose avascular da cabeça femoral" }
+      ],
+      "correta": "b",
+      "explicacao": "A manobra de Ortolani reduz um quadril luxado; com fatores de risco (sexo feminino, apresentação pélvica, primeira gestação), indica displasia do desenvolvimento do quadril. Como acetábulo e cabeça femoral moldam-se mutuamente, a instabilidade impede o desenvolvimento normal do acetábulo, que fica raso. A conduta envolve ultrassonografia e, em geral, suspensório de Pavlik. O pé torto congênito (a) acomete o pé, não o quadril. A epifisiólise (c) ocorre em adolescentes, e a doença de Legg-Calvé-Perthes (d), em crianças em idade escolar; nenhuma das duas é condição neonatal.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["displasia-desenvolvimento-quadril", "ortolani", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 16"
+    },
+    {
+      "id": "emb-19-q13",
+      "tipo": "multipla",
+      "contexto": "Mulher de 24 anos com parestesias na face medial do antebraço e na borda ulnar da mão, que pioram ao elevar o braço; o pulso radial diminui com a abdução do membro. A radiografia mostra estrutura óssea alongada articulada ao processo transverso da 7ª vértebra cervical.",
+      "enunciado": "Qual é a origem embriológica dessa estrutura?",
+      "alternativas": [
+        { "id": "a", "texto": "Ossificação do ligamento longitudinal anterior" },
+        { "id": "b", "texto": "Persistência de cartilagem de um arco faríngeo" },
+        { "id": "c", "texto": "Ossificação heterotópica do músculo escaleno anterior" },
+        { "id": "d", "texto": "Desenvolvimento excessivo do processo costal da 7ª vértebra cervical, derivado do esclerótomo" }
+      ],
+      "correta": "d",
+      "explicacao": "É uma costela cervical: o processo costal de C7, que normalmente integra o processo transverso, desenvolve-se como costela acessória e pode comprimir o tronco inferior do plexo braquial (C8–T1) e a artéria subclávia, causando síndrome do desfiladeiro torácico. A ossificação do ligamento longitudinal anterior (a) é adquirida, em geral em idosos, e não forma costela. As cartilagens dos arcos faríngeos (b) formam ossículos, processo estiloide e hioide, não costelas. Ossificação heterotópica do escaleno (c) não explicaria uma estrutura articulada à vértebra.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["costela-cervical", "processos-costais", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q14",
+      "tipo": "multipla",
+      "contexto": "Criança de 3 anos com escoliose torácica progressiva. A radiografia mostra uma vértebra em forma de cunha lateral, com apenas metade do corpo vertebral formada.",
+      "enunciado": "Qual é o mecanismo embriológico dessa anomalia?",
+      "alternativas": [
+        { "id": "a", "texto": "Falha no aparecimento de um dos dois centros de condrificação do corpo vertebral" },
+        { "id": "b", "texto": "Falha da fusão das metades do arco vertebral, sem alteração do corpo" },
+        { "id": "c", "texto": "Fusão congênita de vértebras cervicais por falha de segmentação" },
+        { "id": "d", "texto": "Persistência da notocorda no interior do corpo vertebral" }
+      ],
+      "correta": "a",
+      "explicacao": "O corpo vertebral em formação tem dois centros de condrificação que logo se unem; se um deles não aparece, metade da vértebra não se forma (hemivértebra), e a coluna se curva lateralmente (escoliose congênita). Associações renais, cardíacas e da medula espinal devem ser investigadas. A falha de fusão do arco (b) caracteriza a espinha bífida oculta. A fusão de vértebras cervicais (c) ocorre na síndrome de Klippel-Feil. Restos notocordais (d) podem originar cordomas, não hemivértebras.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["escoliose-congenita", "hemivertebra", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q15",
+      "tipo": "vf",
+      "enunciado": "Em consequência da ressegmentação dos esclerótomos, há 8 pares de nervos espinais cervicais, mas apenas 7 vértebras cervicais.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Com a ressegmentação, as vértebras ficam intersegmentares e os nervos espinais passam entre elas: o 1º nervo cervical passa entre o occipital e o atlas, e o 8º, entre C7 e T1. Abaixo disso, cada nervo sai abaixo da vértebra de mesmo número.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["ressegmentacao", "nervos-espinais"],
+      "referencia": "Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q16",
+      "tipo": "vf",
+      "enunciado": "A sindactilia cutânea resulta de falha da apoptose do tecido interdigital.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Os dedos separam-se pela morte celular programada do mesênquima entre os raios digitais, até o fim da 8ª semana. Sem essa apoptose, os dedos permanecem unidos por pele e tecidos moles; na sindactilia óssea, os próprios raios não se separam.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["sindactilia", "apoptose"],
+      "referencia": "Moore 11ª ed., cap. 16; Sadler 14ª ed., cap. 12"
+    },
+    {
+      "id": "emb-19-q17",
+      "tipo": "vf",
+      "enunciado": "Os músculos epaxiais, como os eretores da espinha, são inervados pelos ramos ventrais primários dos nervos espinais.",
+      "correta": false,
+      "explicacao": "Falso. O epímero (divisão epaxial) forma os músculos extensores profundos do dorso, inervados pelos ramos dorsais primários. O hipômero forma os músculos da parede lateral e ventral do tronco e dos membros, inervados pelos ramos ventrais primários.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["epimero", "hipomero", "inervacao"],
+      "referencia": "Moore 11ª ed., cap. 15; Sadler 14ª ed., cap. 11"
+    },
+    {
+      "id": "emb-19-q18",
+      "tipo": "vf",
+      "enunciado": "A fontanela anterior normalmente se fecha nas primeiras semanas após o nascimento.",
+      "correta": false,
+      "explicacao": "Falso. A fontanela anterior, a maior, fecha-se por volta de 18 meses (Sadler; Moore: em meados do 2º ano). A posterior fecha-se nos primeiros meses de vida. As fontanelas permitem a moldagem do crânio no parto e seu crescimento acompanhando o encéfalo.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["fontanelas", "cranio"],
+      "referencia": "Sadler 14ª ed., cap. 10; Moore 11ª ed., cap. 14"
+    },
+    {
+      "id": "emb-19-q19",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os eventos do desenvolvimento dos membros:",
+      "itens": [
+        { "id": "1", "texto": "Formam-se as placas das mãos, com raios digitais" },
+        { "id": "2", "texto": "Aparecem os brotos dos membros superiores" },
+        { "id": "3", "texto": "Os dedos ficam separados pela apoptose interdigital" },
+        { "id": "4", "texto": "Aparecem os brotos dos membros inferiores" },
+        { "id": "5", "texto": "Centros primários de ossificação presentes na maioria dos ossos dos membros" },
+        { "id": "6", "texto": "Os membros giram em sentidos opostos" }
+      ],
+      "ordemCorreta": ["2", "4", "1", "6", "3", "5"],
+      "explicacao": "Brotos superiores (dias ~26–27) → brotos inferiores (fim da 4ª semana) → placas das mãos com raios digitais (6ª semana) → rotação dos membros (7ª semana) → dedos livres (fim da 8ª semana) → centros primários de ossificação na maioria dos ossos dos membros (até a 12ª semana).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["membros", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 5 e 16; Sadler 14ª ed., cap. 12"
+    },
+    {
+      "id": "emb-19-q20",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do desenvolvimento de uma vértebra típica:",
+      "itens": [
+        { "id": "1", "texto": "Surgem centros de condrificação no molde mesenquimal" },
+        { "id": "2", "texto": "Células do esclerótomo envolvem a notocorda e o tubo neural" },
+        { "id": "3", "texto": "Surgem centros secundários de ossificação, na puberdade" },
+        { "id": "4", "texto": "Surgem os centros primários de ossificação (corpo e metades do arco)" },
+        { "id": "5", "texto": "Ao nascimento, a vértebra tem três partes ósseas unidas por cartilagem" }
+      ],
+      "ordemCorreta": ["2", "1", "4", "5", "3"],
+      "explicacao": "Mesênquima do esclerótomo ao redor da notocorda e do tubo neural (4ª semana) → condrificação (6ª semana) → ossificação primária a partir do fim do período embrionário, com três centros → três partes ósseas unidas por cartilagem ao nascimento → centros secundários na puberdade; a ossificação termina por volta dos 25 anos (Moore).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["coluna-vertebral", "ossificacao", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+    },
+    {
+      "id": "emb-19-q21",
+      "tipo": "ordenar",
+      "enunciado": "A crista ectodérmica apical promove a formação dos segmentos do membro no sentido proximodistal. Ordene os segmentos do membro superior nesse sentido:",
+      "itens": [
+        { "id": "1", "texto": "Rádio e ulna (zeugopódio)" },
+        { "id": "2", "texto": "Falanges" },
+        { "id": "3", "texto": "Úmero (estilopódio)" },
+        { "id": "4", "texto": "Ossos do carpo" },
+        { "id": "5", "texto": "Metacarpos" }
+      ],
+      "ordemCorreta": ["3", "1", "4", "5", "2"],
+      "explicacao": "Os segmentos são especificados e formados em sequência proximodistal: estilopódio (úmero), zeugopódio (rádio e ulna) e autopódio (carpo, metacarpos e falanges). Por isso a remoção precoce da AER deixa apenas segmentos proximais.",
+      "dificuldade": 1,
+      "bloom": "compreender",
+      "tags": ["membros", "eixo-proximodistal"],
+      "referencia": "Sadler 14ª ed., cap. 12; Moore 11ª ed., cap. 16"
+    },
+    {
+      "id": "emb-19-q22",
+      "tipo": "associar",
+      "enunciado": "Associe cada componente do somito a seu derivado:",
+      "pares": [
+        { "esquerda": "Esclerótomo", "direita": "Vértebras e costelas" },
+        { "esquerda": "Dermátomo", "direita": "Derme do dorso" },
+        { "esquerda": "Epímero (miótomo epaxial)", "direita": "Músculos eretores da espinha" },
+        { "esquerda": "Hipômero (miótomo hipaxial)", "direita": "Músculos intercostais e abdominais" }
+      ],
+      "explicacao": "O esclerótomo forma o esqueleto axial (vértebras, costelas); o dermátomo, a derme e o tecido subcutâneo do dorso; o epímero, os músculos profundos do dorso (ramos dorsais primários); o hipômero, os músculos da parede lateral e ventral do tronco (ramos ventrais primários) e, por migração, os dos membros.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["somitos", "derivados"],
+      "referencia": "Moore 11ª ed., cap. 14 e 15; Sadler 14ª ed., cap. 10 e 11"
+    },
+    {
+      "id": "emb-19-q23",
+      "tipo": "associar",
+      "enunciado": "Associe cada centro ou sinal do broto do membro ao eixo que ele controla:",
+      "pares": [
+        { "esquerda": "Crista ectodérmica apical (FGF)", "direita": "Eixo proximodistal (crescimento do membro)" },
+        { "esquerda": "Zona de atividade polarizante (SHH)", "direita": "Eixo anteroposterior (identidade dos dedos)" },
+        { "esquerda": "Ectoderma dorsal (WNT7A)", "direita": "Eixo dorsoventral (face dorsal versus palmar)" }
+      ],
+      "explicacao": "A AER, na margem distal, secreta FGF e mantém o crescimento proximodistal. A ZPA, na margem posterior, secreta SHH e define o eixo anteroposterior. O WNT7A do ectoderma dorsal induz LMX1B no mesênquima dorsal e define o eixo dorsoventral; o EN1 do ectoderma ventral reprime o WNT7A.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["membros", "sinalizacao", "eixos"],
+      "referencia": "Sadler 14ª ed., cap. 12; Moore 11ª ed., cap. 16 e 21"
+    },
+    {
+      "id": "emb-19-q24",
+      "tipo": "associar",
+      "enunciado": "Associe cada anomalia a seu mecanismo:",
+      "pares": [
+        { "esquerda": "Polidactilia pré-axial", "direita": "Expressão ectópica de SHH na margem anterior do broto" },
+        { "esquerda": "Hemivértebra", "direita": "Falha de um dos centros de condrificação do corpo vertebral" },
+        { "esquerda": "Síndrome de Klippel-Feil", "direita": "Falha de segmentação de vértebras cervicais" },
+        { "esquerda": "Costela cervical", "direita": "Desenvolvimento excessivo do processo costal de C7" },
+        { "esquerda": "Acondroplasia", "direita": "Ganho de função do FGFR3 nas placas de crescimento" }
+      ],
+      "explicacao": "SHH anterior ectópico duplica dedos do lado pré-axial; a ausência de um centro de condrificação forma hemivértebra; a falha de segmentação cervical funde vértebras (Klippel-Feil); o processo costal de C7 desenvolvido forma costela cervical; o FGFR3 hiperativo inibe a ossificação endocondral (acondroplasia).",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["anomalias", "mecanismos"],
+      "referencia": "Moore 11ª ed., cap. 14 e 16; Sadler 14ª ed., cap. 10 e 12"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "14 — Sistema esquelético"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "15 — Sistema muscular"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "16 — Desenvolvimento dos membros"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (talidomida, períodos críticos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "10 — Esqueleto axial"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "11 — Sistema muscular"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "12 — Membros"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "8 — Desenvolvimento do sistema musculoesquelético"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "20 — Desenvolvimento dos membros"
+    }
+  ],
+  "notasDivergencia": [
+    "Brotos dos membros (mantido igual ao tópico emb-07): superiores por volta dos dias 26–27 (Moore); inferiores no fim da 4ª semana, faixa adotada 28–32.",
+    "Terminologia muscular: Moore usa divisões epaxial (epímero) e hipaxial (hipômero) do miótomo; Sadler (edições recentes) usa domínios primaxial e abaxial, separados pela fronteira somítica lateral, que não coincidem exatamente com epaxial/hipaxial. Adotada a terminologia epímero/hipômero, mais usada no ensino clínico.",
+    "Fechamento das fontanelas: anterior por volta de 18 meses (Sadler) ou em meados do 2º ano (Moore); posterior nos primeiros 2–3 meses (Moore). Há ampla variação individual.",
+    "Período crítico da talidomida: Moore cita dias 24–36 após a fertilização para os membros; outras fontes citam dias 20–36 (34–50 dias após a DUM) para o conjunto das malformações, com janelas distintas para membros superiores e inferiores.",
+    "Rotação dos membros: Moore e Sadler a situam na 7ª semana; o processo é gradual e se estende ao período fetal inicial. Faixa adotada no evento: dias 43–49.",
+    "Origem da derme: Sadler atribui a derme do dorso ao dermátomo, a dos membros e da parede do corpo ao mesoderma lateral e a da face à crista neural; alguns textos simplificam afirmando que o dermátomo forma 'a derme' em geral.",
+    "Origem dos ossos da abóbada craniana: há divergência entre estudos (sobretudo em modelos animais) quanto aos limites entre a contribuição da crista neural e do mesoderma paraxial (por exemplo, para o osso parietal); o resumo descreve apenas a dupla origem do neurocrânio."
+  ],
+  "incertezas": [
+    "Prevalências de polidactilia, sindactilia, pé torto, DDQ, costela cervical e craniossinostoses não foram conferidas nas edições adotadas e foram omitidas.",
+    "Mecanismo molecular da teratogenicidade da talidomida (cereblon/SALL4, efeito antiangiogênico): baseado em estudos experimentais recentes, descrito como 'proposto'.",
+    "Idade de fusão das metades do arco vertebral (Moore: primeiros 3–5 anos) e término da ossificação vertebral (~25 anos) foram reproduzidos de memória do texto de Moore e devem ser conferidos pelo revisor."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

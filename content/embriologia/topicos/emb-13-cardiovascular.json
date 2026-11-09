@@ -1,0 +1,815 @@
+{
+  "id": "emb-13-cardiovascular",
+  "disciplina": "embriologia",
+  "ordem": 13,
+  "titulo": "Sistema cardiovascular",
+  "subtitulo": "Do tubo cardíaco à circulação fetal, às mudanças ao nascer e às cardiopatias congênitas",
+  "periodo": {
+    "diaInicio": 15,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever os campos cardiogênicos primário e secundário, a formação do tubo cardíaco e suas regiões.",
+    "Explicar a alça cardíaca e relacionar cada região do tubo cardíaco a seus derivados no coração adulto.",
+    "Descrever a septação atrial, a divisão do canal atrioventricular, a septação ventricular e a do trato de saída, incluindo o papel da crista neural cardíaca.",
+    "Relacionar as artérias dos arcos aórticos a seus derivados e explicar o trajeto assimétrico dos nervos laríngeos recorrentes.",
+    "Descrever, em nível essencial, os sistemas venosos vitelino, umbilical e cardinal.",
+    "Explicar a circulação fetal, as mudanças ao nascer e os remanescentes dos desvios fetais.",
+    "Correlacionar o mecanismo embriológico de cardiopatias congênitas frequentes com sua apresentação clínica."
+  ],
+  "resumo": "**Campos cardiogênicos e tubo cardíaco.** Progenitores cardíacos do epiblasto migram pela linha primitiva para o mesoderma esplâncnico cranial e formam o **campo cardíaco primário**, em ferradura, que origina principalmente o **ventrículo esquerdo** e partes dos átrios. O **campo cardíaco secundário**, no mesoderma esplâncnico sob a faringe, acrescenta células aos polos do tubo e forma a maior parte do **ventrículo direito**, o **trato de saída** (cone e tronco arterial) e partes dos átrios. No fim da 3ª semana formam-se dois **tubos endocárdicos**, que se fundem com o dobramento lateral em um **tubo cardíaco** único: endocárdio, **geleia cardíaca** e miocárdio; o epicárdio vem do **proepicárdio**, junto ao seio venoso. O tubo, suspenso pelo **mesocárdio dorsal** (cuja regressão forma o **seio transverso do pericárdio**), começa a bater por volta dos dias 21–23. De caudal (entrada) para cranial (saída): **seio venoso**, **átrio primitivo**, **ventrículo primitivo**, **bulbo cardíaco** e **tronco arterial**, que continua no **saco aórtico**.\n\n**Alça cardíaca.** Entre os dias 23 e 28 o tubo dobra-se para a direita: o bulbo desloca-se ventral, caudal e para a direita, e a região atrial, dorsocranial e para a esquerda. Átrio primitivo → aurículas; ventrículo primitivo → parte trabeculada do VE; bulbo proximal → parte trabeculada do VD; **cone** → vias de saída dos dois ventrículos; tronco arterial → raízes da aorta e do tronco pulmonar. O corno direito do seio venoso incorpora-se ao átrio direito (parte lisa); o esquerdo forma o **seio coronário**. A parte lisa do átrio esquerdo vem da incorporação da veia pulmonar primitiva.\n\n**Septação** (principalmente entre os dias 27 e 37). No **canal atrioventricular** surgem **coxins endocárdicos** dorsal e ventral, que se fundem e dividem o canal em orifícios direito e esquerdo; participam das valvas AV, do fechamento do ostium primum e do septo membranoso.\n- **Átrios**: o **septum primum** cresce do teto atrial em direção aos coxins, deixando o **ostium primum**. Antes que este se feche, perfurações por apoptose formam o **ostium secundum**. O septum primum funde-se aos coxins. À direita cresce o **septum secundum**, muscular e incompleto, cuja abertura é o **forame oval**; o septum primum funciona como sua valva, permitindo fluxo da direita para a esquerda.\n- **Ventrículos**: o **septo muscular** cresce do assoalho, sobretudo pela dilatação dos ventrículos; o **forame interventricular** fecha-se no fim da 7ª semana pela **parte membranosa**, com tecido dos coxins e das cristas conotruncais.\n- **Trato de saída**: na 5ª semana surgem **cristas truncais e conais**, colonizadas pela **crista neural cardíaca** (do rombencéfalo, via arcos 3, 4 e 6), que se fundem em espiral formando o **septo aorticopulmonar**.\n\n**Arcos aórticos.** O 1º e o 2º regridem quase totalmente (restam parte da artéria maxilar e das artérias estapédias). **3º**: carótidas comuns e parte proximal das internas. **4º**: à esquerda, parte do **arco da aorta**; à direita, parte proximal da **subclávia direita**. O 5º não se forma ou regride. **6º**: partes proximais das **artérias pulmonares**; à esquerda, a parte distal forma o **ducto arterioso**. Os **nervos laríngeos recorrentes** contornam o 6º arco; à direita, com a regressão da parte distal do 6º, o nervo sobe e contorna a subclávia direita; à esquerda, permanece sob o ligamento arterial.\n\n**Veias.** Três pares chegam ao seio venoso: **vitelinas** (formam a veia porta, os sinusoides hepáticos e a parte hepática da cava inferior), **umbilicais** (a direita regride; a esquerda leva sangue oxigenado da placenta) e **cardinais** (formam a cava superior, a braquiocefálica esquerda e, com as subcardinais e supracardinais, partes da cava inferior e o sistema ázigo).\n\n**Circulação fetal e nascimento.** O sangue oxigenado da veia umbilical passa em parte pelo **ducto venoso**, desviando dos sinusoides hepáticos, até a cava inferior. No átrio direito, a maior parte é dirigida pela borda do septum secundum através do **forame oval** ao átrio esquerdo, ventrículo esquerdo e aorta ascendente (coração e encéfalo). O sangue da cava superior vai ao ventrículo direito; como a resistência pulmonar é alta, a maior parte passa pelo **ducto arterioso** à aorta descendente, e as **artérias umbilicais** o levam à placenta. Ao nascer, cessa a circulação placentária, a resistência pulmonar cai e a pressão no átrio esquerdo sobe: o septum primum é pressionado contra o septum secundum (fechamento funcional do forame oval), e o ducto arterioso contrai-se (mais O₂, menos prostaglandinas). Remanescentes: veia umbilical → **ligamento redondo do fígado**; ducto venoso → **ligamento venoso**; forame oval → **fossa oval**; ducto arterioso → **ligamento arterial**; partes distais das artérias umbilicais → **ligamentos umbilicais mediais**.\n\n**Cardiopatias.** **CIA ostium secundum**: reabsorção excessiva do septum primum e/ou septum secundum deficiente. **CIV membranosa**: falha da parte membranosa. **Defeito do septo AV**: falha de fusão dos coxins (valva AV comum), fortemente associado à trissomia 21. **Persistência do canal arterial**: prematuridade, rubéola congênita. **Tetralogia de Fallot**: desvio anterossuperior do septo conotruncal. **Transposição das grandes artérias**: septo aorticopulmonar sem trajeto espiral. **Tronco arterial persistente**: falha das cristas conotruncais. **Coarctação da aorta**: estreitamento junto ao ducto arterial; associa-se à síndrome de Turner. **Dextrocardia**: alça cardíaca para a esquerda.",
+  "pontosChave": [
+    "O campo cardíaco primário forma principalmente o ventrículo esquerdo; o secundário, a maior parte do ventrículo direito, o trato de saída e partes dos átrios.",
+    "Os tubos endocárdicos fundem-se em um tubo cardíaco único, que começa a bater por volta dos dias 21–23.",
+    "A alça cardíaca (dias 23–28) normalmente se dobra para a direita; a alça para a esquerda pode causar dextrocardia.",
+    "O corno esquerdo do seio venoso forma o seio coronário; o direito incorpora-se ao átrio direito.",
+    "O ostium secundum surge por apoptose no septum primum antes de o ostium primum se fechar; o forame oval é a abertura do septum secundum.",
+    "A parte membranosa do septo interventricular fecha o forame interventricular no fim da 7ª semana, com tecido dos coxins e das cristas conotruncais.",
+    "A crista neural cardíaca contribui para o septo aorticopulmonar espiral; sua deficiência causa defeitos conotruncais.",
+    "3º arco: carótidas; 4º esquerdo: parte do arco da aorta; 4º direito: subclávia direita proximal; 6º esquerdo: ducto arterioso.",
+    "O laríngeo recorrente direito contorna a subclávia direita; o esquerdo, o ligamento arterial.",
+    "Desvios fetais: ducto venoso, forame oval e ducto arterioso; remanescentes: ligamento venoso, fossa oval e ligamento arterial.",
+    "A tetralogia de Fallot resulta do desvio anterossuperior do septo conotruncal; a transposição, de um septo aorticopulmonar que não espirala.",
+    "O defeito do septo AV associa-se fortemente à trissomia 21; a coarctação da aorta, à síndrome de Turner."
+  ],
+  "estruturas": [
+    {
+      "id": "area-cardiogenica",
+      "nome": "Campo cardíaco primário (área cardiogênica)",
+      "sinonimos": ["primeiro campo cardíaco", "crescente cardíaco"],
+      "definicao": "Grupo de progenitores cardíacos em forma de ferradura no mesoderma esplâncnico, cranial à placa neural, formado na 3ª semana.",
+      "origem": "Células do epiblasto que migram pela linha primitiva.",
+      "destino": "Principalmente o ventrículo esquerdo e partes dos átrios."
+    },
+    {
+      "id": "campo-cardiaco-secundario",
+      "nome": "Campo cardíaco secundário",
+      "sinonimos": ["segundo campo cardíaco"],
+      "definicao": "Progenitores no mesoderma esplâncnico sob o assoalho da faringe que acrescentam células aos polos arterial e venoso do tubo cardíaco.",
+      "origem": "Células do epiblasto que migram pela linha primitiva.",
+      "destino": "Maior parte do ventrículo direito, trato de saída (cone e tronco arterial) e partes dos átrios."
+    },
+    {
+      "id": "tubos-endocardicos",
+      "nome": "Tubos endocárdicos",
+      "sinonimos": ["tubos cardíacos endocárdicos"],
+      "definicao": "Par de tubos endoteliais formados pela canalização de cordões angioblásticos na área cardiogênica, no fim da 3ª semana.",
+      "destino": "Fundem-se, com o dobramento lateral, em um tubo cardíaco único."
+    },
+    {
+      "id": "tubo-cardiaco",
+      "nome": "Tubo cardíaco",
+      "sinonimos": ["coração tubular"],
+      "definicao": "Tubo único formado por endocárdio, geleia cardíaca e miocárdio, que começa a bater por volta dos dias 21–23.",
+      "origem": "Fusão dos tubos endocárdicos; mesoderma esplâncnico.",
+      "destino": "Sofre alça e septação, originando as quatro câmaras e o trato de saída."
+    },
+    {
+      "id": "geleia-cardiaca",
+      "nome": "Geleia cardíaca",
+      "sinonimos": [],
+      "definicao": "Matriz extracelular entre o endocárdio e o miocárdio do tubo cardíaco.",
+      "destino": "Nas regiões AV e do trato de saída, é invadida por células endocárdicas (transição epitélio-mesênquima), formando os coxins."
+    },
+    {
+      "id": "mesocardio-dorsal",
+      "nome": "Mesocárdio dorsal",
+      "sinonimos": [],
+      "definicao": "Prega que suspende o tubo cardíaco na parede dorsal da cavidade pericárdica.",
+      "destino": "Sua parte central regride, formando o seio transverso do pericárdio."
+    },
+    {
+      "id": "seio-venoso",
+      "nome": "Seio venoso",
+      "sinonimos": [],
+      "definicao": "Região de entrada do tubo cardíaco, com cornos direito e esquerdo, que recebe as veias vitelinas, umbilicais e cardinais comuns.",
+      "destino": "Corno direito: parte lisa do átrio direito (seio das veias cavas); corno esquerdo: seio coronário."
+    },
+    {
+      "id": "atrio-primitivo",
+      "nome": "Átrio primitivo",
+      "sinonimos": ["átrio comum"],
+      "definicao": "Câmara do tubo cardíaco entre o seio venoso e o canal atrioventricular.",
+      "destino": "Partes trabeculadas (aurículas) dos átrios direito e esquerdo."
+    },
+    {
+      "id": "ventriculo-primitivo",
+      "nome": "Ventrículo primitivo",
+      "sinonimos": [],
+      "definicao": "Câmara do tubo cardíaco entre o canal atrioventricular e o bulbo cardíaco.",
+      "destino": "Parte trabeculada do ventrículo esquerdo."
+    },
+    {
+      "id": "bulbo-cardiaco",
+      "nome": "Bulbo cardíaco",
+      "sinonimos": ["bulbus cordis"],
+      "definicao": "Região do tubo cardíaco cranial ao ventrículo primitivo.",
+      "destino": "Parte proximal: parte trabeculada do ventrículo direito; parte média (cone arterial): vias de saída dos dois ventrículos."
+    },
+    {
+      "id": "tronco-arterial",
+      "nome": "Tronco arterial",
+      "sinonimos": ["truncus arteriosus"],
+      "definicao": "Parte distal do trato de saída, contínua com o saco aórtico.",
+      "destino": "Dividido pelo septo aorticopulmonar nas raízes e partes proximais da aorta e do tronco pulmonar."
+    },
+    {
+      "id": "saco-aortico",
+      "nome": "Saco aórtico",
+      "sinonimos": [],
+      "definicao": "Dilatação cranial ao tronco arterial, da qual partem as artérias dos arcos aórticos.",
+      "destino": "Contribui para a parte proximal do arco da aorta e para o tronco braquiocefálico."
+    },
+    {
+      "id": "coxins-endocardicos",
+      "nome": "Coxins endocárdicos",
+      "sinonimos": [],
+      "definicao": "Espessamentos de mesênquima nas paredes do canal atrioventricular (coxins dorsal, ventral e laterais) e do trato de saída (cristas conotruncais).",
+      "origem": "Transição epitélio-mesênquima do endocárdio na geleia cardíaca; nas cristas conotruncais, também crista neural.",
+      "destino": "Divisão do canal AV, valvas atrioventriculares, fechamento do ostium primum e parte membranosa do septo interventricular."
+    },
+    {
+      "id": "septum-primum",
+      "nome": "Septum primum",
+      "sinonimos": ["septo primário"],
+      "definicao": "Membrana fina em crescente que cresce do teto do átrio primitivo em direção aos coxins endocárdicos.",
+      "destino": "Valva do forame oval; após o nascimento, assoalho da fossa oval."
+    },
+    {
+      "id": "ostium-primum",
+      "nome": "Ostium primum",
+      "sinonimos": ["forame primário"],
+      "definicao": "Abertura entre a borda livre do septum primum e os coxins endocárdicos.",
+      "destino": "Fecha-se quando o septum primum se funde aos coxins endocárdicos."
+    },
+    {
+      "id": "ostium-secundum",
+      "nome": "Ostium secundum",
+      "sinonimos": ["forame secundário"],
+      "definicao": "Abertura formada pela confluência de perfurações (apoptose) na parte cranial do septum primum, antes do fechamento do ostium primum.",
+      "destino": "Mantém o fluxo da direita para a esquerda; é recoberto pelo septum secundum."
+    },
+    {
+      "id": "septum-secundum",
+      "nome": "Septum secundum",
+      "sinonimos": ["septo secundário"],
+      "definicao": "Prega muscular espessa, em crescente, que cresce da parede ventrocranial do átrio direito, à direita do septum primum, sem formar partição completa.",
+      "destino": "Sua borda livre forma o limbo (margem) da fossa oval."
+    },
+    {
+      "id": "forame-oval",
+      "nome": "Forame oval",
+      "sinonimos": [],
+      "definicao": "Abertura oval no septum secundum, coberta à esquerda pelo septum primum, que funciona como valva unidirecional (direita → esquerda) no feto.",
+      "destino": "Fechamento funcional ao nascer; anatomicamente forma a fossa oval."
+    },
+    {
+      "id": "septo-interventricular",
+      "nome": "Septo interventricular",
+      "sinonimos": [],
+      "definicao": "Septo entre os ventrículos, com parte muscular (crescida do assoalho) e parte membranosa (que fecha o forame interventricular).",
+      "origem": "Parte muscular: miocárdio; parte membranosa: tecido dos coxins endocárdicos e das cristas conotruncais.",
+      "destino": "Septo completo a partir do fim da 7ª semana."
+    },
+    {
+      "id": "septo-aorticopulmonar",
+      "nome": "Septo aorticopulmonar (conotruncal)",
+      "sinonimos": ["septo conotruncal"],
+      "definicao": "Septo espiral formado pela fusão das cristas truncais e conais, que divide o trato de saída em aorta e tronco pulmonar.",
+      "origem": "Cristas truncais e conais, com contribuição da crista neural cardíaca.",
+      "destino": "Separa as vias de saída e contribui para a parte membranosa do septo interventricular."
+    },
+    {
+      "id": "crista-neural-cardiaca",
+      "nome": "Crista neural cardíaca",
+      "sinonimos": [],
+      "definicao": "População de células da crista neural do rombencéfalo que migra pelos arcos faríngeos 3, 4 e 6 até o trato de saída.",
+      "origem": "Crista neural (rombencéfalo).",
+      "destino": "Cristas conotruncais e septo aorticopulmonar; sua deficiência causa defeitos conotruncais."
+    },
+    {
+      "id": "arcos-aorticos",
+      "nome": "Artérias dos arcos aórticos (arcos faríngeos)",
+      "sinonimos": ["arcos aórticos"],
+      "definicao": "Artérias que saem do saco aórtico, percorrem cada arco faríngeo e terminam nas aortas dorsais; não existem todas ao mesmo tempo.",
+      "destino": "3º: carótidas; 4º: arco da aorta (esquerdo) e subclávia direita proximal (direito); 6º: artérias pulmonares proximais e ducto arterioso (esquerdo)."
+    },
+    {
+      "id": "ducto-arterioso",
+      "nome": "Ducto arterioso",
+      "sinonimos": ["canal arterial"],
+      "definicao": "Vaso fetal que liga o tronco pulmonar (artéria pulmonar esquerda) à aorta descendente.",
+      "origem": "Parte distal da artéria do 6º arco esquerdo.",
+      "destino": "Contrai-se ao nascer e oblitera-se, formando o ligamento arterial."
+    },
+    {
+      "id": "ducto-venoso",
+      "nome": "Ducto venoso",
+      "sinonimos": [],
+      "definicao": "Vaso fetal no fígado que liga a veia umbilical à veia cava inferior, desviando parte do sangue dos sinusoides hepáticos.",
+      "destino": "Oblitera-se após o nascimento, formando o ligamento venoso."
+    },
+    {
+      "id": "veias-umbilicais",
+      "nome": "Veias umbilicais",
+      "sinonimos": [],
+      "definicao": "Par de veias que trazem sangue oxigenado do córion/placenta; a direita regride, e a esquerda persiste.",
+      "destino": "A veia umbilical esquerda oblitera-se após o nascimento e forma o ligamento redondo do fígado."
+    },
+    {
+      "id": "veias-vitelinas",
+      "nome": "Veias vitelinas (onfalomesentéricas)",
+      "sinonimos": [],
+      "definicao": "Veias do saco vitelino que formam um plexo ao redor do duodeno e atravessam o septo transverso até o seio venoso.",
+      "destino": "Veia porta, veia mesentérica superior, sinusoides hepáticos e parte hepática da veia cava inferior."
+    },
+    {
+      "id": "veias-cardinais",
+      "nome": "Veias cardinais",
+      "sinonimos": [],
+      "definicao": "Veias cardinais anteriores e posteriores, que drenam o corpo do embrião e se unem nas veias cardinais comuns.",
+      "destino": "Veia cava superior, veia braquiocefálica esquerda; com as subcardinais e supracardinais, partes da veia cava inferior e o sistema ázigo."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e13-campo-cardiogenico",
+      "descricao": "Progenitores cardíacos formam o campo cardíaco primário em ferradura no mesoderma esplâncnico",
+      "diaMin": 15,
+      "diaMax": 21,
+      "ordem": 1
+    },
+    {
+      "id": "e13-tubo-cardiaco",
+      "descricao": "Os tubos endocárdicos fundem-se em um tubo cardíaco único, que começa a bater",
+      "diaMin": 21,
+      "diaMax": 23,
+      "ordem": 2
+    },
+    {
+      "id": "e13-alca-cardiaca",
+      "descricao": "O tubo cardíaco dobra-se para a direita (alça cardíaca)",
+      "diaMin": 23,
+      "diaMax": 28,
+      "ordem": 3
+    },
+    {
+      "id": "e13-septum-primum",
+      "descricao": "O septum primum cresce do teto do átrio em direção aos coxins endocárdicos, deixando o ostium primum",
+      "ordem": 4
+    },
+    {
+      "id": "e13-ostium-secundum",
+      "descricao": "Perfurações no septum primum formam o ostium secundum, antes do fechamento do ostium primum",
+      "ordem": 5
+    },
+    {
+      "id": "e13-septum-secundum",
+      "descricao": "O septum secundum cresce à direita do septum primum, deixando o forame oval",
+      "ordem": 6
+    },
+    {
+      "id": "e13-forame-interventricular",
+      "descricao": "A parte membranosa do septo interventricular fecha o forame interventricular",
+      "diaMin": 43,
+      "diaMax": 49,
+      "ordem": 7
+    },
+    {
+      "id": "e13-nascimento",
+      "descricao": "Ao nascer, o forame oval fecha-se funcionalmente e o ducto arterioso contrai-se",
+      "ordem": 8
+    },
+    {
+      "id": "e13-ligamento-arterial",
+      "descricao": "O ducto arterioso oblitera-se anatomicamente e forma o ligamento arterial (período pós-natal)",
+      "ordem": 9
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "cia-ostium-secundum",
+      "titulo": "Comunicação interatrial tipo ostium secundum",
+      "descricao": "Tipo mais comum de CIA, mais frequente no sexo feminino; muitas vezes assintomática na infância. Sopro sistólico de ejeção no foco pulmonar (por hiperfluxo, não pelo defeito) e desdobramento amplo e fixo da 2ª bulha; sobrecarga de volume do ventrículo direito.",
+      "mecanismo": "Reabsorção excessiva do septum primum (valva curta ou fenestrada), desenvolvimento insuficiente do septum secundum (forame oval grande) ou ambos."
+    },
+    {
+      "id": "forame-oval-patente",
+      "titulo": "Forame oval patente",
+      "descricao": "Persistência de uma passagem valvular entre os átrios em parte dos adultos, geralmente sem repercussão; pode permitir embolia paradoxal quando a pressão no átrio direito supera a do esquerdo.",
+      "mecanismo": "Falha da aderência anatômica entre o septum primum e o septum secundum após o fechamento funcional do nascimento."
+    },
+    {
+      "id": "civ-membranosa",
+      "titulo": "Comunicação interventricular (região membranosa)",
+      "descricao": "Segundo Moore e Sadler, a CIV é a cardiopatia congênita mais comum, e o tipo que envolve a região membranosa é o mais citado nessas obras. Sopro holossistólico na borda esternal esquerda baixa; defeitos grandes causam hiperfluxo pulmonar e insuficiência cardíaca e, sem tratamento, podem evoluir para hipertensão pulmonar com inversão do shunt (síndrome de Eisenmenger).",
+      "mecanismo": "Falha de formação da parte membranosa do septo, que deveria fechar o forame interventricular com tecido dos coxins endocárdicos e das cristas conotruncais."
+    },
+    {
+      "id": "defeito-septo-av",
+      "titulo": "Defeito do septo atrioventricular (canal AV)",
+      "descricao": "Na forma total há CIA do tipo ostium primum, CIV da via de entrada e valva atrioventricular comum; a forma parcial inclui CIA ostium primum com fenda da valva mitral. É uma das cardiopatias mais típicas e frequentes da trissomia 21, e por isso se faz ecocardiograma em todo recém-nascido com síndrome de Down.",
+      "mecanismo": "Falha de fusão dos coxins endocárdicos atrioventriculares."
+    },
+    {
+      "id": "persistencia-canal-arterial",
+      "titulo": "Persistência do canal arterial",
+      "descricao": "Comum em prematuros e associada à rubéola materna no início da gestação (com catarata e surdez na síndrome da rubéola congênita). Pulsos amplos, pressão de pulso alargada e sopro contínuo 'em maquinaria' na região infraclavicular esquerda em crianças maiores. No prematuro, inibidores da ciclo-oxigenase podem promover o fechamento; nas cardiopatias dependentes do canal, a prostaglandina E1 o mantém aberto.",
+      "mecanismo": "Falha da constrição e da obliteração pós-natal da parte distal do 6º arco aórtico esquerdo; no prematuro, a parede do ducto responde menos ao oxigênio e é mais sensível às prostaglandinas."
+    },
+    {
+      "id": "tetralogia-de-fallot",
+      "titulo": "Tetralogia de Fallot",
+      "descricao": "Estenose pulmonar (sobretudo infundibular), CIV, aorta cavalgante e hipertrofia do ventrículo direito. Cianose de grau variável, crises hipercianóticas aliviadas pela posição de cócoras ou joelhos sobre o tórax, coração 'em bota' na radiografia. Associa-se à deleção 22q11.2.",
+      "mecanismo": "Desvio anterossuperior do septo conotruncal, que divide o cone de modo desigual: via de saída pulmonar estreita, CIV por desalinhamento e aorta sobre o septo; a hipertrofia do VD é secundária."
+    },
+    {
+      "id": "transposicao-grandes-arterias",
+      "titulo": "Transposição das grandes artérias",
+      "descricao": "A aorta sai do ventrículo direito e o tronco pulmonar do esquerdo, criando circulações em paralelo; a sobrevida depende de mistura por forame oval, ducto arterioso ou CIV. Causa frequente de cianose grave no recém-nascido, que não melhora com oxigênio. Conduta inicial: prostaglandina E1 e, se necessário, atriosseptostomia por balão; correção definitiva pela cirurgia de troca arterial (Jatene).",
+      "mecanismo": "Classicamente, o septo conotruncal (aorticopulmonar) desce reto, sem seu trajeto espiral."
+    },
+    {
+      "id": "tronco-arterial-persistente",
+      "titulo": "Tronco arterial persistente",
+      "descricao": "Um único vaso sai do coração, cavalga uma CIV e dá origem às circulações sistêmica, pulmonar e coronária; cursa com hiperfluxo pulmonar e insuficiência cardíaca e associa-se à deleção 22q11.2.",
+      "mecanismo": "Falha de formação e fusão das cristas truncais e conais (deficiência da crista neural cardíaca); como as cristas também participam do septo membranoso, há CIV associada."
+    },
+    {
+      "id": "coarctacao-aorta",
+      "titulo": "Coarctação da aorta",
+      "descricao": "Estreitamento da aorta torácica, tipicamente junto à inserção do ducto/ligamento arterial, distal à subclávia esquerda. Hipertensão nos membros superiores, pulsos femorais fracos e atrasados e pressão menor nos membros inferiores; em crianças maiores e adultos, circulação colateral pelas intercostais pode erodir as costelas. Associa-se à síndrome de Turner (45,X) e à valva aórtica bicúspide. Na forma crítica do recém-nascido, a perfusão da parte inferior do corpo depende do ducto arterioso.",
+      "mecanismo": "Incerto; propõem-se extensão de tecido muscular do ducto arterioso para a parede aórtica, que se contrai após o nascimento, e involução anormal de um segmento da aorta dorsal."
+    },
+    {
+      "id": "dextrocardia",
+      "titulo": "Dextrocardia",
+      "descricao": "Coração no hemitórax direito. Com situs inversus total, a frequência de cardiopatias associadas é baixa (pode fazer parte da discinesia ciliar primária); a dextrocardia isolada costuma acompanhar-se de cardiopatias graves.",
+      "mecanismo": "Segundo Sadler, a alça cardíaca dobra-se para a esquerda em vez da direita. Difere da dextroposição, em que um coração normal é deslocado para a direita por causa extrínseca (por exemplo, hérnia diafragmática esquerda)."
+    },
+    {
+      "id": "subclavia-direita-retroesofagica",
+      "titulo": "Artéria subclávia direita retroesofágica (aberrante)",
+      "descricao": "A subclávia direita nasce da aorta distalmente à subclávia esquerda e passa atrás do esôfago, podendo causar disfagia; nesses casos o nervo laríngeo direito não é recorrente.",
+      "mecanismo": "Regressão do 4º arco aórtico direito com persistência da parte distal da aorta dorsal direita."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-13-q01",
+      "tipo": "multipla",
+      "enunciado": "O campo cardíaco secundário contribui principalmente para:",
+      "alternativas": [
+        { "id": "a", "texto": "O ventrículo direito e o trato de saída (cone e tronco arterial)" },
+        { "id": "b", "texto": "Todo o ventrículo esquerdo" },
+        { "id": "c", "texto": "O epicárdio e as artérias coronárias" },
+        { "id": "d", "texto": "Exclusivamente os coxins endocárdicos atrioventriculares" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o campo cardíaco secundário, no mesoderma esplâncnico sob a faringe, acrescenta células aos polos do tubo e forma a maior parte do ventrículo direito, o trato de saída e partes dos átrios; falhas dessa contribuição relacionam-se a defeitos do trato de saída. O ventrículo esquerdo (b) deriva principalmente do campo primário. O epicárdio (c) origina-se do proepicárdio, que também contribui para os vasos coronários. Os coxins atrioventriculares (d) formam-se por transição epitélio-mesênquima do endocárdio.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["campo-cardiaco-secundario", "tubo-cardiaco"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q02",
+      "tipo": "multipla",
+      "enunciado": "Na alça cardíaca normal (dias 23–28), o tubo cardíaco dobra-se de modo que:",
+      "alternativas": [
+        { "id": "a", "texto": "O bulbo cardíaco desloca-se dorsal e cranialmente, para a esquerda" },
+        { "id": "b", "texto": "O bulbo cardíaco desloca-se ventral, caudal e para a direita, e a região atrial, dorsocranial e para a esquerda" },
+        { "id": "c", "texto": "O seio venoso passa a ficar ventral e cranial ao tronco arterial" },
+        { "id": "d", "texto": "O tubo permanece retilíneo, e as câmaras se dispõem lado a lado apenas pela septação" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: na alça para a direita, a parte cefálica (bulbo) vai para ventral, caudal e para a direita, e a parte caudal (átrio e seio venoso) vai para dorsocranial e para a esquerda; assim os átrios ficam posteriores e craniais aos ventrículos. A alternativa (a) descreve o sentido oposto. O seio venoso (c) fica dorsal, não ventral ao tronco. O tubo não permanece reto (d): a alça precede a septação.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["alca-cardiaca", "tubo-cardiaco"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q03",
+      "tipo": "multipla",
+      "enunciado": "O corno esquerdo do seio venoso origina, no adulto:",
+      "alternativas": [
+        { "id": "a", "texto": "A parte lisa do átrio direito (seio das veias cavas)" },
+        { "id": "b", "texto": "A veia cava superior" },
+        { "id": "c", "texto": "O seio coronário" },
+        { "id": "d", "texto": "A parte lisa do átrio esquerdo" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: com o desvio do retorno venoso para a direita, o corno esquerdo perde importância e forma o seio coronário. O corno direito (a) é incorporado ao átrio direito como sua parte lisa. A veia cava superior (b) deriva da veia cardinal anterior direita e da cardinal comum direita. A parte lisa do átrio esquerdo (d) vem da incorporação da veia pulmonar primitiva e de seus ramos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["seio-venoso", "seio-coronario"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q04",
+      "tipo": "multipla",
+      "enunciado": "O ostium secundum forma-se:",
+      "alternativas": [
+        { "id": "a", "texto": "Pela reabsorção do septum secundum após o nascimento" },
+        { "id": "b", "texto": "Pela fusão dos coxins endocárdicos com a borda livre do septum primum" },
+        { "id": "c", "texto": "Como a abertura entre a borda livre do septum secundum e o assoalho do átrio" },
+        { "id": "d", "texto": "Por perfurações (morte celular programada) na parte cranial do septum primum, antes de o ostium primum se fechar" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: antes de o septum primum se fundir aos coxins, perfurações por apoptose em sua parte cranial confluem no ostium secundum, mantendo o fluxo da direita para a esquerda quando o ostium primum se fecha. A fusão com os coxins (b) é o que fecha o ostium primum. A abertura delimitada pelo septum secundum (c) é o forame oval. O septum secundum não é reabsorvido após o nascimento (a); sua borda forma o limbo da fossa oval.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["septacao-atrial", "ostium-secundum"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q05",
+      "tipo": "multipla",
+      "contexto": "Mulher de 32 anos refere cansaço aos esforços. Ao exame, há sopro sistólico de ejeção no 2º espaço intercostal esquerdo e desdobramento amplo e fixo da 2ª bulha. O ecocardiograma mostra comunicação interatrial na região da fossa oval, com sobrecarga de volume do ventrículo direito.",
+      "enunciado": "Qual é o mecanismo embriológico mais provável?",
+      "alternativas": [
+        { "id": "a", "texto": "Falha de fusão do septum primum com os coxins endocárdicos (ostium primum persistente)" },
+        { "id": "b", "texto": "Reabsorção excessiva do septum primum e/ou desenvolvimento insuficiente do septum secundum" },
+        { "id": "c", "texto": "Falha de formação da parte membranosa do septo interventricular" },
+        { "id": "d", "texto": "Defeito junto à desembocadura da veia cava superior (tipo seio venoso)" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a CIA na região da fossa oval é do tipo ostium secundum, a mais comum, e resulta de valva (septum primum) curta ou fenestrada por reabsorção excessiva, de forame oval grande por septum secundum deficiente, ou de ambos. O sopro decorre do hiperfluxo pela valva pulmonar, e o desdobramento fixo, da sobrecarga de volume do VD. O defeito tipo ostium primum (a) fica na parte baixa do septo, junto às valvas AV, e pertence ao espectro do defeito do septo AV. A falha do septo membranoso (c) causa CIV. O defeito tipo seio venoso (d) fica na parte alta, junto à veia cava superior, não na fossa oval.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["cia", "septacao-atrial", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q06",
+      "tipo": "multipla",
+      "contexto": "Lactente de 3 meses com trissomia 21 apresenta taquipneia, cansaço às mamadas e baixo ganho de peso. O ecocardiograma mostra valva atrioventricular única (comum), comunicação interatrial baixa, do tipo ostium primum, e comunicação interventricular da via de entrada.",
+      "enunciado": "Qual estrutura embrionária falhou e qual é o diagnóstico?",
+      "alternativas": [
+        { "id": "a", "texto": "Os coxins endocárdicos atrioventriculares não se fundiram: defeito do septo atrioventricular" },
+        { "id": "b", "texto": "O septum secundum não se formou: CIA ostium secundum" },
+        { "id": "c", "texto": "As cristas conotruncais não se fundiram: tronco arterial persistente" },
+        { "id": "d", "texto": "O septo aorticopulmonar não espiralou: transposição das grandes artérias" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: os coxins endocárdicos dividem o canal AV, completam o septo atrial (fechando o ostium primum) e contribuem para o septo interventricular e as valvas AV; sua falha de fusão produz CIA ostium primum, CIV de via de entrada e valva AV comum — o defeito do septo AV, fortemente associado à trissomia 21. A CIA ostium secundum (b) fica na fossa oval e não envolve valvas AV. O tronco arterial persistente (c) e a transposição (d) são defeitos do trato de saída, com anatomia diferente da descrita.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["defeito-septo-av", "coxins-endocardicos", "trissomia-21", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q07",
+      "tipo": "multipla",
+      "contexto": "Lactente de 2 meses tem taquipneia e sudorese às mamadas. Há sopro holossistólico rude na borda esternal esquerda baixa. O ecocardiograma mostra comunicação interventricular logo abaixo da valva aórtica, na região perimembranosa, com hiperfluxo pulmonar, sem obstrução da via de saída do ventrículo direito.",
+      "enunciado": "Qual é a base embriológica desse defeito?",
+      "alternativas": [
+        { "id": "a", "texto": "Falha do crescimento do septo interventricular muscular a partir do ápice" },
+        { "id": "b", "texto": "Persistência do ostium primum" },
+        { "id": "c", "texto": "Falha de formação da parte membranosa do septo, que fecharia o forame interventricular com tecido dos coxins endocárdicos e das cristas conotruncais" },
+        { "id": "d", "texto": "Desvio anterossuperior do septo conotruncal com estenose infundibular pulmonar" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: o forame interventricular fecha-se no fim da 7ª semana pela parte membranosa, formada por tecido dos coxins endocárdicos e das cristas conotruncais; a falha desse processo deixa uma CIV na região membranosa. Segundo Moore e Sadler, a CIV é a cardiopatia congênita mais comum. Defeitos da parte muscular (a) podem ocorrer em qualquer ponto do septo muscular, não especificamente abaixo da valva aórtica. O ostium primum persistente (b) é um defeito do septo atrial. O desvio do septo conotruncal (d) produz a tetralogia de Fallot, com obstrução da via de saída do VD, ausente aqui.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["civ", "septo-interventricular", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q08",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido prematuro de 28 semanas de idade gestacional, em ventilação mecânica, apresenta no 4º dia de vida pulsos amplos, precórdio hiperdinâmico e sopro na região infraclavicular esquerda. O ecocardiograma mostra canal arterial pérvio com fluxo da aorta para a artéria pulmonar.",
+      "enunciado": "Qual medida farmacológica pode favorecer o fechamento do canal, e por quê?",
+      "alternativas": [
+        { "id": "a", "texto": "Prostaglandina E1, que contrai a musculatura do ducto" },
+        { "id": "b", "texto": "Oxigênio em concentração máxima, por ser o único estímulo capaz de fechar o ducto no prematuro" },
+        { "id": "c", "texto": "Digoxina, que reduz o fluxo pelo ducto ao aumentar a contratilidade" },
+        { "id": "d", "texto": "Inibidor da ciclo-oxigenase (indometacina ou ibuprofeno), que reduz as prostaglandinas que mantêm o ducto aberto" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: no feto, prostaglandinas e a baixa tensão de oxigênio mantêm o ducto aberto; ao nascer, o aumento do oxigênio e a queda das prostaglandinas o contraem. O prematuro tem ducto menos responsivo ao oxigênio e mais sensível às prostaglandinas, e os inibidores da ciclo-oxigenase reduzem sua síntese, favorecendo o fechamento. A prostaglandina E1 (a) faz o oposto: mantém o ducto aberto e é usada nas cardiopatias dependentes do canal. O oxigênio (b) participa da constrição fisiológica, mas não é o único estímulo nem o tratamento farmacológico do canal pérvio. A digoxina (c) não fecha o ducto.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["persistencia-canal-arterial", "prematuridade", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q09",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo apresenta cianose intensa nas primeiras horas de vida, que não melhora com oxigênio a 100%, sem sopro significativo. O ecocardiograma mostra a aorta saindo do ventrículo direito e o tronco pulmonar do ventrículo esquerdo, com forame oval restritivo.",
+      "enunciado": "Qual é o mecanismo embriológico classicamente descrito para essa cardiopatia?",
+      "alternativas": [
+        { "id": "a", "texto": "O septo aorticopulmonar (conotruncal) desce reto, sem seu trajeto espiral" },
+        { "id": "b", "texto": "As cristas conotruncais não se formam, e persiste um tronco arterial único" },
+        { "id": "c", "texto": "Desvio anterossuperior do septo conotruncal, com estenose infundibular pulmonar" },
+        { "id": "d", "texto": "Falha de fusão dos coxins endocárdicos atrioventriculares" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: na transposição das grandes artérias, classicamente o septo conotruncal desce reto em vez de espiralar, de modo que a aorta se conecta ao VD e o tronco pulmonar ao VE; as circulações ficam em paralelo, e a sobrevida depende de mistura (forame oval, ducto, CIV). Por isso a conduta inicial inclui prostaglandina E1 e, com forame restritivo, atriosseptostomia por balão, antes da correção pela troca arterial. Ausência das cristas (b) produz tronco arterial persistente. O desvio anterossuperior do septo (c) produz tetralogia de Fallot. A falha dos coxins AV (d) produz defeito do septo AV.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["transposicao", "septo-aorticopulmonar", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q10",
+      "tipo": "multipla",
+      "contexto": "Lactente de 6 meses tem episódios de cianose intensa e irritabilidade ao chorar, que melhoram quando a mãe flexiona os joelhos dele sobre o tórax. Há sopro sistólico ejetivo na borda esternal esquerda alta. A radiografia mostra coração 'em bota', com a região do tronco pulmonar escavada.",
+      "enunciado": "Qual evento embriológico único explica os componentes dessa cardiopatia?",
+      "alternativas": [
+        { "id": "a", "texto": "O septo aorticopulmonar desce reto, sem espiralar" },
+        { "id": "b", "texto": "Desvio anterossuperior do septo conotruncal, que divide o cone de forma desigual" },
+        { "id": "c", "texto": "Falha de fusão dos coxins endocárdicos atrioventriculares" },
+        { "id": "d", "texto": "Reabsorção excessiva do septum primum" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: na tetralogia de Fallot, o desvio anterossuperior do septo conotruncal estreita a via de saída pulmonar (estenose infundibular), deixa uma CIV por desalinhamento e posiciona a aorta sobre o septo (aorta cavalgante); a hipertrofia do VD é secundária. A posição genupeitoral aumenta a resistência vascular sistêmica e reduz o shunt da direita para a esquerda. O septo reto (a) causa transposição. A falha dos coxins (c) causa defeito do septo AV. A reabsorção excessiva do septum primum (d) causa CIA ostium secundum, acianótica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["tetralogia-de-fallot", "septo-aorticopulmonar", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q11",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com deleção 22q11.2 confirmada apresenta cianose leve e sinais de insuficiência cardíaca nas primeiras semanas. O ecocardiograma mostra um único vaso arterial saindo do coração, cavalgando uma comunicação interventricular, do qual se originam as artérias coronárias, as artérias pulmonares e a aorta.",
+      "enunciado": "Qual falha embriológica explica esse defeito?",
+      "alternativas": [
+        { "id": "a", "texto": "Desvio anterossuperior do septo conotruncal com estenose pulmonar" },
+        { "id": "b", "texto": "Falha de fusão dos coxins endocárdicos atrioventriculares" },
+        { "id": "c", "texto": "Falha de formação e fusão das cristas truncais e conais, com deficiência da contribuição da crista neural cardíaca" },
+        { "id": "d", "texto": "Persistência da parte distal da artéria do 6º arco esquerdo" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: no tronco arterial persistente, as cristas conotruncais não se formam ou não se fundem, e o trato de saída não se divide; como essas cristas também participam do septo membranoso, há sempre CIV associada. A deficiência da crista neural cardíaca, que migra pelos arcos 3, 4 e 6, explica a associação com a deleção 22q11.2. O desvio do septo (a) produz tetralogia de Fallot, com dois vasos separados. A falha dos coxins AV (b) não afeta o trato de saída. A persistência da parte distal do 6º arco esquerdo (d) é o canal arterial pérvio.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["tronco-arterial-persistente", "crista-neural-cardiaca", "sindrome-22q11", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q12",
+      "tipo": "multipla",
+      "contexto": "Adolescente de 15 anos, com baixa estatura, pescoço alado e amenorreia primária (cariótipo 45,X), tem hipertensão arterial nos membros superiores e pulsos femorais fracos e atrasados em relação aos radiais. A pressão nos membros inferiores é menor que nos superiores.",
+      "enunciado": "Onde se localiza tipicamente a lesão responsável por esses achados?",
+      "alternativas": [
+        { "id": "a", "texto": "Na aorta ascendente, proximal ao tronco braquiocefálico" },
+        { "id": "b", "texto": "Na origem da artéria subclávia esquerda" },
+        { "id": "c", "texto": "Na aorta abdominal, abaixo das artérias renais" },
+        { "id": "d", "texto": "Na aorta torácica, junto à inserção do ducto (ligamento) arterial, distalmente à subclávia esquerda" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: a coarctação da aorta, associada à síndrome de Turner (e à valva aórtica bicúspide), situa-se tipicamente junto ao ducto ou ligamento arterial, distal à subclávia esquerda; por isso a pressão é alta nos membros superiores e baixa e atrasada nos inferiores, com colaterais intercostais que podem erodir as costelas. Uma obstrução na aorta ascendente proximal ao tronco braquiocefálico (a) reduziria o pulso nos quatro membros. Estenose na origem da subclávia esquerda (b) reduziria o pulso apenas no membro superior esquerdo, sem diferença entre braços e pernas. Estreitamentos da aorta abdominal (c) existem (síndrome da aorta média), mas são raros e não correspondem à localização típica da coarctação associada à síndrome de Turner.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["coarctacao-aorta", "sindrome-de-turner", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q13",
+      "tipo": "multipla",
+      "enunciado": "Por que o nervo laríngeo recorrente direito contorna a artéria subclávia direita, enquanto o esquerdo contorna o ligamento arterial?",
+      "alternativas": [
+        { "id": "a", "texto": "À direita, a parte distal da artéria do 6º arco regride, e o nervo sobe até a artéria do 4º arco (subclávia direita proximal); à esquerda, a parte distal do 6º arco persiste como ducto arterioso" },
+        { "id": "b", "texto": "O nervo direito pertence ao 4º arco faríngeo, e o esquerdo, ao 6º" },
+        { "id": "c", "texto": "A subclávia direita deriva da artéria do 6º arco direito" },
+        { "id": "d", "texto": "O ducto arterioso deriva da artéria do 4º arco esquerdo" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: os laríngeos recorrentes (nervos do 6º arco) passam inicialmente sob as artérias do 6º arco dos dois lados. À direita, a parte distal da artéria do 6º arco (e a do 5º) regride, e o nervo passa a contornar a artéria do 4º arco direito, que forma a parte proximal da subclávia direita. À esquerda, a parte distal do 6º arco persiste como ducto arterioso (depois ligamento arterial), e o nervo continua sob ele e sob o arco da aorta. Os dois recorrentes são nervos do 6º arco (b). A subclávia direita proximal vem do 4º arco (c), e o ducto arterioso, do 6º (d).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["arcos-aorticos", "nervo-laringeo-recorrente"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q14",
+      "tipo": "multipla",
+      "enunciado": "No feto, o sangue mais oxigenado que chega ao átrio direito pela veia cava inferior é dirigido preferencialmente para:",
+      "alternativas": [
+        { "id": "a", "texto": "O ventrículo direito e o tronco pulmonar, para oxigenar os pulmões" },
+        { "id": "b", "texto": "O átrio esquerdo, através do forame oval, e daí ao ventrículo esquerdo e à aorta ascendente" },
+        { "id": "c", "texto": "A veia cava superior, por refluxo" },
+        { "id": "d", "texto": "O ducto venoso, de volta ao fígado" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a borda inferior do septum secundum (crista dividens) dirige a maior parte do sangue da cava inferior pelo forame oval para o átrio esquerdo; do ventrículo esquerdo ele sai pela aorta ascendente e irriga coração, cabeça e membros superiores com o sangue mais oxigenado. O ventrículo direito (a) recebe principalmente o sangue da cava superior, e os pulmões fetais não oxigenam o sangue. Não há fluxo fisiológico para a cava superior (c). O ducto venoso (d) fica antes do átrio direito: leva sangue da veia umbilical à cava inferior.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal", "forame-oval"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q15",
+      "tipo": "vf",
+      "enunciado": "No adulto, o ligamento redondo do fígado é o remanescente do ducto venoso.",
+      "correta": false,
+      "explicacao": "Falso. O ligamento redondo do fígado é o remanescente da veia umbilical (esquerda), na borda livre do ligamento falciforme. O ducto venoso forma o ligamento venoso, na face visceral do fígado.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["remanescentes-fetais", "circulacao-fetal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q16",
+      "tipo": "vf",
+      "enunciado": "O septum secundum forma uma partição completa entre os átrios antes do nascimento.",
+      "correta": false,
+      "explicacao": "Falso. O septum secundum é incompleto e deixa uma abertura, o forame oval, coberta à esquerda pelo septum primum, que funciona como valva. Só após o nascimento, com a pressão maior no átrio esquerdo, o septum primum é pressionado contra o septum secundum e o forame se fecha funcionalmente.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["septacao-atrial", "forame-oval"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q17",
+      "tipo": "vf",
+      "enunciado": "No feto, como a resistência vascular pulmonar é alta, a maior parte do sangue ejetado pelo ventrículo direito passa pelo ducto arterioso para a aorta descendente.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Os pulmões fetais, cheios de líquido e com vasos contraídos, recebem pouco fluxo; a maior parte do sangue do tronco pulmonar segue pelo ducto arterioso para a aorta descendente e, pelas artérias umbilicais, para a placenta.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal", "ducto-arterioso"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q18",
+      "tipo": "vf",
+      "enunciado": "A infecção materna por rubéola no início da gestação associa-se à persistência do canal arterial.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A rubéola congênita associa-se a persistência do canal arterial e estenose de artérias pulmonares, além de catarata e surdez. A prematuridade é outro fator associado à persistência do canal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["persistencia-canal-arterial", "rubeola", "teratogenos"],
+      "referencia": "Moore 11ª ed., cap. 13 e 20"
+    },
+    {
+      "id": "emb-13-q19",
+      "tipo": "vf",
+      "enunciado": "Na dextrocardia com situs inversus total, a frequência de cardiopatias associadas é baixa, ao contrário da dextrocardia isolada.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Quando todas as vísceras estão invertidas (situs inversus), o coração costuma funcionar normalmente; na dextrocardia isolada (vísceras em posição habitual), são comuns cardiopatias graves, como ventrículo único e transposição. Segundo Sadler, a dextrocardia resulta de alça cardíaca para a esquerda. O deslocamento do coração para a direita por causas extrínsecas (dextroposição, por exemplo na hérnia diafragmática esquerda) não é dextrocardia.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["dextrocardia", "lateralidade"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q20",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas da septação atrial e do fechamento do forame oval:",
+      "itens": [
+        { "id": "1", "texto": "O septum secundum cresce à direita do septum primum, deixando o forame oval" },
+        { "id": "2", "texto": "O septum primum cresce do teto do átrio em direção aos coxins, deixando o ostium primum" },
+        { "id": "3", "texto": "Ao nascer, o septum primum é pressionado contra o septum secundum" },
+        { "id": "4", "texto": "Perfurações no septum primum formam o ostium secundum" },
+        { "id": "5", "texto": "O septum primum funde-se aos coxins endocárdicos, fechando o ostium primum" }
+      ],
+      "ordemCorreta": ["2", "4", "5", "1", "3"],
+      "explicacao": "Septum primum e ostium primum → ostium secundum, formado antes do fechamento do ostium primum (garante o fluxo da direita para a esquerda) → fusão do septum primum aos coxins → septum secundum, com o forame oval → fechamento funcional ao nascer, quando a pressão no átrio esquerdo supera a do direito.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["septacao-atrial", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o trajeto do sangue oxigenado vindo da placenta até a aorta ascendente, no feto:",
+      "itens": [
+        { "id": "1", "texto": "Átrio esquerdo, após atravessar o forame oval" },
+        { "id": "2", "texto": "Ducto venoso" },
+        { "id": "3", "texto": "Aorta ascendente" },
+        { "id": "4", "texto": "Veia umbilical" },
+        { "id": "5", "texto": "Átrio direito" },
+        { "id": "6", "texto": "Veia cava inferior" },
+        { "id": "7", "texto": "Ventrículo esquerdo" }
+      ],
+      "ordemCorreta": ["4", "2", "6", "5", "1", "7", "3"],
+      "explicacao": "Veia umbilical → ducto venoso (desviando dos sinusoides hepáticos) → veia cava inferior → átrio direito → forame oval → átrio esquerdo → ventrículo esquerdo → aorta ascendente, que irriga coração e encéfalo com o sangue mais oxigenado.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as regiões do tubo cardíaco, da extremidade de entrada (caudal) para a de saída (cranial):",
+      "itens": [
+        { "id": "1", "texto": "Ventrículo primitivo" },
+        { "id": "2", "texto": "Tronco arterial" },
+        { "id": "3", "texto": "Seio venoso" },
+        { "id": "4", "texto": "Bulbo cardíaco" },
+        { "id": "5", "texto": "Átrio primitivo" },
+        { "id": "6", "texto": "Saco aórtico" }
+      ],
+      "ordemCorreta": ["3", "5", "1", "4", "2", "6"],
+      "explicacao": "O sangue entra pelo seio venoso, passa ao átrio primitivo, ao ventrículo primitivo, ao bulbo cardíaco (cone) e ao tronco arterial, chegando ao saco aórtico, do qual partem as artérias dos arcos aórticos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["tubo-cardiaco"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q23",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura da circulação fetal ao seu remanescente no adulto:",
+      "pares": [
+        { "esquerda": "Veia umbilical", "direita": "Ligamento redondo do fígado" },
+        { "esquerda": "Ducto venoso", "direita": "Ligamento venoso" },
+        { "esquerda": "Forame oval", "direita": "Fossa oval" },
+        { "esquerda": "Ducto arterioso", "direita": "Ligamento arterial" },
+        { "esquerda": "Partes distais das artérias umbilicais", "direita": "Ligamentos umbilicais mediais" }
+      ],
+      "explicacao": "Após o nascimento, os desvios fetais se fecham: veia umbilical → ligamento redondo; ducto venoso → ligamento venoso; forame oval → fossa oval; ducto arterioso → ligamento arterial; partes distais das artérias umbilicais → ligamentos umbilicais mediais (as partes proximais persistem como artérias vesicais superiores). Não confundir com o ligamento umbilical mediano, remanescente do úraco.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["remanescentes-fetais", "circulacao-fetal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q24",
+      "tipo": "associar",
+      "enunciado": "Associe cada artéria de arco aórtico ao seu principal derivado:",
+      "pares": [
+        { "esquerda": "1º arco", "direita": "Parte da artéria maxilar" },
+        { "esquerda": "3º arco", "direita": "Carótida comum e parte proximal da carótida interna" },
+        { "esquerda": "4º arco esquerdo", "direita": "Parte do arco da aorta" },
+        { "esquerda": "4º arco direito", "direita": "Parte proximal da artéria subclávia direita" },
+        { "esquerda": "6º arco esquerdo", "direita": "Parte proximal da artéria pulmonar esquerda e ducto arterioso" }
+      ],
+      "explicacao": "O 1º arco regride, restando parte da artéria maxilar. O 3º forma as carótidas comuns e a parte proximal das internas. O 4º esquerdo forma parte do arco da aorta, entre a carótida comum esquerda e a subclávia esquerda; o 4º direito, a parte proximal da subclávia direita. O 6º esquerdo forma a parte proximal da artéria pulmonar esquerda e, por sua parte distal, o ducto arterioso.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["arcos-aorticos", "derivados"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada região do coração embrionário ao seu derivado no coração adulto:",
+      "pares": [
+        { "esquerda": "Corno direito do seio venoso", "direita": "Parte lisa do átrio direito (seio das veias cavas)" },
+        { "esquerda": "Corno esquerdo do seio venoso", "direita": "Seio coronário" },
+        { "esquerda": "Átrio primitivo", "direita": "Aurículas (partes trabeculadas dos átrios)" },
+        { "esquerda": "Ventrículo primitivo", "direita": "Parte trabeculada do ventrículo esquerdo" },
+        { "esquerda": "Parte proximal do bulbo cardíaco", "direita": "Parte trabeculada do ventrículo direito" },
+        { "esquerda": "Tronco arterial", "direita": "Raízes e partes proximais da aorta e do tronco pulmonar" }
+      ],
+      "explicacao": "O corno direito do seio venoso incorpora-se ao átrio direito (parte lisa), e o esquerdo forma o seio coronário; o átrio primitivo forma as aurículas; o ventrículo primitivo, a parte trabeculada do VE; o bulbo proximal, a parte trabeculada do VD; o tronco arterial, as raízes da aorta e do tronco pulmonar (o cone forma as vias de saída de ambos os ventrículos).",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["tubo-cardiaco", "derivados"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (rubéola)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "12 — Desenvolvimento do coração"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "13 — Desenvolvimento da vasculatura"
+    }
+  ],
+  "notasDivergencia": [
+    "Contribuições dos campos cardíacos: Sadler atribui ao campo primário partes dos átrios e todo o ventrículo esquerdo, e ao secundário o ventrículo direito, o trato de saída e o restante dos átrios; revisões baseadas sobretudo em camundongo atribuem ao campo primário também parte do ventrículo direito. O texto usa 'principalmente' e 'maior parte'.",
+    "Início dos batimentos: Moore situa entre os dias 21–23 (cap. 4 e 13); Sadler, por volta do dia 22. Faixa adotada: 21–23, a mesma do tópico da 3ª semana.",
+    "Alça cardíaca: dias 23–28 segundo Sadler; Moore descreve a formação da alça bulboventricular na 4ª semana, sem datas tão precisas.",
+    "Período da septação: Sadler situa a formação dos principais septos entre os dias 27 e 37; Moore descreve o início da divisão em meados da 4ª semana e o fechamento do forame interventricular no fim da 7ª semana. Por isso os eventos do septo atrial aparecem sem dias na linha do tempo.",
+    "Forame oval patente ('à sonda'): Moore cita até cerca de 25% dos adultos; Sadler, cerca de 20%. O texto não fixa um número.",
+    "Fechamento do ducto arterioso: as obras descrevem constrição funcional logo após o nascimento (horas a poucos dias no recém-nascido a termo) e obliteração anatômica em semanas a cerca de 3 meses; os números exatos variam entre as fontes e não foram usados nas questões.",
+    "Transposição das grandes artérias: o septo conotruncal 'reto' é a explicação clássica (Moore, Sadler); outras hipóteses envolvem crescimento ou reabsorção anormal dos segmentos subpulmonar e subaórtico do cone.",
+    "Coarctação da aorta: Moore e Sadler classificam-na em relação ao ducto (pré-ductal e pós-ductal ou justaductal) e citam mecanismos não comprovados; o tópico apresenta o mecanismo como incerto."
+  ],
+  "incertezas": [
+    "Tipo mais comum de CIV: as obras de referência citam a CIV na região membranosa como a mais comum; em rastreamentos ecocardiográficos neonatais, pequenas CIVs musculares (muitas com fechamento espontâneo) podem predominar. As questões evitam afirmar que a maioria das CIVs é membranosa.",
+    "Defeito do septo AV na trissomia 21: é descrito como a cardiopatia mais típica e muito frequente, mas sua posição como a mais comum varia entre populações; o texto usa 'uma das mais típicas e frequentes'.",
+    "Frequência de coarctação na síndrome de Turner e de cardiopatias na trissomia 21 não foram conferidas nas edições adotadas e foram omitidas.",
+    "Sistema venoso apresentado em nível essencial; detalhes da formação dos segmentos da veia cava inferior (subcardinais, supracardinais e anastomoses) e as variantes venosas não foram cobrados nas questões.",
+    "Condutas clínicas citadas nas explicações (prostaglandina E1, atriosseptostomia, inibidores da ciclo-oxigenase, cirurgia de troca arterial) seguem a prática pediátrica e cardiológica corrente, e não as obras de embriologia; devem ser conferidas pelo revisor clínico."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

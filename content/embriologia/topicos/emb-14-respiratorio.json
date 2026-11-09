@@ -1,0 +1,1048 @@
+{
+  "id": "emb-14-respiratorio",
+  "disciplina": "embriologia",
+  "ordem": 14,
+  "titulo": "Sistema respiratório",
+  "subtitulo": "Do divertículo respiratório aos alvéolos e ao surfactante",
+  "periodo": {
+    "diaInicio": 22,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever a formação do divertículo respiratório (laringotraqueal) na parede ventral do intestino anterior e os sinais que definem seu local de surgimento.",
+    "Explicar a separação entre traqueia e esôfago pelas pregas e pelo septo traqueoesofágico e relacioná-la à atresia de esôfago com fístula traqueoesofágica.",
+    "Diferenciar a origem do epitélio (endoderma) da origem de cartilagem, músculo e conjuntivo (mesoderma esplâncnico e arcos faríngeos) no trato respiratório inferior.",
+    "Relacionar a origem das cartilagens e dos músculos da laringe nos 4º e 6º arcos faríngeos à sua inervação pelos nervos laríngeos superior e recorrente.",
+    "Descrever a ramificação da árvore brônquica e caracterizar os períodos pseudoglandular, canalicular, sacular e alveolar, com seus intervalos aproximados.",
+    "Explicar a função dos pneumócitos tipo I e II e do surfactante e relacioná-los à viabilidade fetal e ao uso de corticoide antenatal.",
+    "Explicar o papel dos movimentos respiratórios fetais, do líquido pulmonar e do líquido amniótico no crescimento dos pulmões.",
+    "Correlacionar falhas do desenvolvimento com síndrome do desconforto respiratório do recém-nascido, hipoplasia pulmonar, hérnia diafragmática congênita e variações como o lobo ázigo."
+  ],
+  "resumo": "O sistema respiratório inferior (laringe, traqueia, brônquios e pulmões) começa a se formar na **4ª semana após a fertilização** (≈6ª semana de idade gestacional), como evaginação da parede ventral do **intestino anterior**. A regra de origem é dupla: o **epitélio** e as glândulas de todo o trato derivam do **endoderma**; **cartilagem, músculo liso, conjuntivo e vasos** derivam do **mesoderma esplâncnico** que envolve o intestino anterior (na laringe, do mesênquima dos 4º e 6º arcos faríngeos).\n\n**Divertículo respiratório.** O primórdio surge como **sulco laringotraqueal** no assoalho da extremidade caudal da faringe primitiva e se evagina como **divertículo respiratório (laringotraqueal)**, o broto pulmonar. Segundo Sadler, seu local depende do **ácido retinoico** do mesoderma adjacente, que induz o fator **TBX4** no endoderma; o endoderma respiratório expressa **NKX2.1**. A ramificação depende de interações epitélio–mesênquima, com sinais do mesoderma da família **FGF**.\n\n**Septo traqueoesofágico.** De início o divertículo comunica-se amplamente com o intestino anterior. **Pregas traqueoesofágicas** longitudinais aproximam-se e fundem-se no **septo traqueoesofágico**, que separa o **esôfago** (dorsal) da **traqueia e dos brotos pulmonares** (ventrais); a comunicação com a faringe persiste no **ádito da laringe**. Falhas nessa separação originam a **atresia de esôfago** e a **fístula traqueoesofágica**.\n\n**Laringe.** O epitélio é endodérmico; as **cartilagens** (tireóidea, cricóidea, aritenóideas, corniculadas e cuneiformes) e os **músculos** vêm do mesênquima dos **4º e 6º arcos**; a epiglote forma-se da parte caudal da eminência hipofaríngea. Por isso os músculos são inervados por ramos do **vago**: o **laríngeo superior** (4º arco) inerva o cricotireóideo, e o **laríngeo recorrente** (6º arco), os demais intrínsecos. O epitélio prolifera e oclui temporariamente a luz, que se **recanaliza até a 10ª semana**, formando ventrículos e pregas vocais e vestibulares; recanalização incompleta causa **membrana laríngea**.\n\n**Traqueia e brônquios.** No fim da 4ª semana a extremidade do divertículo forma dois **brotos brônquicos**, que no início da 5ª originam os **brônquios principais**; o direito é maior e mais vertical, como no adulto. Formam-se então os **brônquios lobares** – três à direita, dois à esquerda – e, na 7ª semana, os **segmentares**, base dos segmentos broncopulmonares. Até o fim do 6º mês surgem cerca de 17 gerações de ramos, e outras após o nascimento. Os pulmões crescem nos **canais pericardioperitoneais**; o mesoderma esplâncnico que os recobre forma a **pleura visceral**, e o somático da parede, a **parietal**.\n\n**Períodos da maturação pulmonar** (semanas após a fertilização; limites aproximados e superpostos):\n- **Pseudoglandular (≈5ª–16ª/17ª):** ramificação até os **bronquíolos terminais**; sem estruturas de troca gasosa.\n- **Canalicular (≈16ª–25ª/26ª):** bronquíolos terminais originam **bronquíolos respiratórios** e **ductos alveolares**; intensa vascularização. No fim dessa fase surgem sáculos de parede fina e a respiração torna-se possível – fetos nascidos então podem sobreviver com terapia intensiva.\n- **Sacular (≈24ª/26ª ao nascimento):** **sáculos terminais** (alvéolos primitivos) com epitélio delgado e capilares salientes formam a **barreira hematoaérea**; diferenciam-se **pneumócitos tipo I** (pavimentosos, troca gasosa) e **tipo II** (secretores de surfactante).\n- **Alveolar (fim da vida fetal à infância):** formação de alvéolos maduros; ao nascer existe apenas uma fração do número adulto.\n\n**Surfactante.** Mistura de fosfolipídios e proteínas, armazenada nos **corpos lamelares** dos pneumócitos tipo II, que reduz a tensão superficial e impede o colapso alveolar na expiração. A produção começa por volta da **20ª–24ª semana**, em pequena quantidade, e aumenta nas **últimas semanas** da gestação. **Glicocorticoides** aceleram a maturação: o **corticoide antenatal** dado à gestante com risco de parto prematuro reduz a síndrome do desconforto respiratório e a mortalidade neonatal; a **tiroxina** também estimula a produção, e a hiperinsulinemia fetal (diabetes materno) a retarda.\n\n**Movimentos respiratórios fetais e líquido pulmonar.** Movimentos respiratórios fetais intermitentes, detectáveis à ultrassonografia, aumentam perto do termo e são necessários ao desenvolvimento pulmonar. Os pulmões contêm **líquido** secretado pelo epitélio pulmonar, que os mantém distendidos e estimula seu crescimento. São essenciais: **espaço torácico adequado, movimentos respiratórios fetais e volume adequado de líquido amniótico**. Ao nascer, o líquido sai pela boca e pelo nariz e é absorvido por capilares sanguíneos e linfáticos; a aeração é a substituição rápida desse líquido por ar.\n\n**Correlações.** Atresia de esôfago com fístula distal (tipo mais comum), síndrome do desconforto respiratório do prematuro, hipoplasia pulmonar (hérnia diafragmática, oligoidrâmnio) e lobo ázigo.",
+  "pontosChave": [
+    "O divertículo respiratório surge na 4ª semana na parede ventral do intestino anterior, na extremidade caudal da faringe primitiva.",
+    "O epitélio do trato respiratório inferior é endodérmico; cartilagem, músculo liso e conjuntivo derivam do mesoderma esplâncnico.",
+    "O septo traqueoesofágico separa o esôfago (dorsal) da traqueia e dos brotos pulmonares (ventrais).",
+    "Cartilagens e músculos da laringe derivam dos 4º e 6º arcos: o laríngeo superior inerva o cricotireóideo e o recorrente, os demais intrínsecos.",
+    "A luz da laringe é ocluída temporariamente e se recanaliza até a 10ª semana.",
+    "O pulmão direito recebe três brônquios lobares e o esquerdo dois; os segmentares surgem na 7ª semana.",
+    "Pseudoglandular: até bronquíolos terminais, sem troca gasosa; canalicular: bronquíolos respiratórios e vascularização; sacular: sáculos terminais e barreira hematoaérea; alveolar: alvéolos maduros, em grande parte pós-natais.",
+    "Pneumócitos tipo I fazem a troca gasosa; pneumócitos tipo II secretam surfactante.",
+    "A produção de surfactante começa por volta da 20ª–24ª semana e só se torna adequada nas últimas semanas da gestação.",
+    "O corticoide antenatal acelera a maturação pulmonar e reduz a síndrome do desconforto respiratório do prematuro.",
+    "Espaço torácico, movimentos respiratórios fetais e volume adequado de líquido amniótico são essenciais ao crescimento pulmonar.",
+    "No tipo mais comum de atresia de esôfago (≈90%), o coto proximal é cego e o esôfago distal comunica-se com a traqueia."
+  ],
+  "estruturas": [
+    {
+      "id": "intestino-anterior",
+      "nome": "Intestino anterior",
+      "sinonimos": [],
+      "definicao": "Porção cranial do intestino primitivo; sua parede ventral, na extremidade caudal da faringe primitiva, origina o primórdio respiratório.",
+      "origem": "Endoderma (epitélio) e mesoderma esplâncnico (parede), incorporados no dobramento da 4ª semana.",
+      "destino": "No que se refere a este tópico: laringe, traqueia, brônquios e pulmões (ventralmente) e esôfago (dorsalmente)."
+    },
+    {
+      "id": "sulco-laringotraqueal",
+      "nome": "Sulco laringotraqueal",
+      "sinonimos": [],
+      "definicao": "Sulco mediano no assoalho da extremidade caudal da faringe primitiva; primeiro sinal do primórdio respiratório.",
+      "origem": "Endoderma do intestino anterior.",
+      "destino": "Evagina-se e forma o divertículo respiratório."
+    },
+    {
+      "id": "diverticulo-respiratorio",
+      "nome": "Divertículo respiratório",
+      "sinonimos": [
+        "divertículo laringotraqueal",
+        "broto pulmonar"
+      ],
+      "definicao": "Evaginação da parede ventral do intestino anterior surgida na 4ª semana; seu local depende de ácido retinoico e TBX4 (Sadler).",
+      "origem": "Endoderma do intestino anterior, envolvido por mesoderma esplâncnico.",
+      "destino": "Epitélio e glândulas da laringe, traqueia, brônquios e epitélio pulmonar."
+    },
+    {
+      "id": "pregas-traqueoesofagicas",
+      "nome": "Pregas traqueoesofágicas",
+      "sinonimos": [],
+      "definicao": "Cristas longitudinais que surgem entre o divertículo respiratório e o intestino anterior e crescem uma em direção à outra.",
+      "destino": "Fundem-se e formam o septo traqueoesofágico."
+    },
+    {
+      "id": "septo-traqueoesofagico",
+      "nome": "Septo traqueoesofágico",
+      "sinonimos": [],
+      "definicao": "Septo que divide o intestino anterior em esôfago, dorsal, e tubo laringotraqueal, ventral; a comunicação com a faringe persiste no ádito da laringe.",
+      "origem": "Fusão das pregas traqueoesofágicas."
+    },
+    {
+      "id": "tubo-laringotraqueal",
+      "nome": "Tubo laringotraqueal",
+      "sinonimos": [],
+      "definicao": "Porção ventral do intestino anterior separada pelo septo traqueoesofágico, cuja extremidade distal forma os brotos brônquicos.",
+      "destino": "Laringe (extremidade cranial), traqueia e, distalmente, brotos brônquicos."
+    },
+    {
+      "id": "arcos-faringeos",
+      "nome": "Arcos faríngeos (4º e 6º)",
+      "sinonimos": [
+        "arcos branquiais"
+      ],
+      "definicao": "Pares de elevações mesenquimais da região faríngea, cada uma com cartilagem, músculo, nervo e artéria próprios.",
+      "destino": "4º e 6º arcos: cartilagens e músculos da laringe; nervos laríngeo superior (4º) e laríngeo recorrente (6º), ramos do vago."
+    },
+    {
+      "id": "eminencia-hipofaringea",
+      "nome": "Eminência hipofaríngea",
+      "sinonimos": [],
+      "definicao": "Proeminência mediana do assoalho da faringe produzida pela proliferação de mesênquima nas extremidades ventrais do 3º e do 4º arcos faríngeos.",
+      "destino": "Sua parte caudal forma a epiglote."
+    },
+    {
+      "id": "brotos-bronquicos",
+      "nome": "Brotos brônquicos",
+      "sinonimos": [
+        "brotos broncopulmonares"
+      ],
+      "definicao": "Duas evaginações formadas na extremidade distal do tubo laringotraqueal no fim da 4ª semana.",
+      "destino": "Brônquios principais (5ª semana), lobares (três à direita, dois à esquerda) e segmentares (7ª semana)."
+    },
+    {
+      "id": "canais-pericardioperitoneais",
+      "nome": "Canais pericardioperitoneais",
+      "sinonimos": [
+        "cavidades pleurais primitivas"
+      ],
+      "definicao": "Canais estreitos do celoma intraembrionário, de cada lado do intestino anterior, nos quais os brotos pulmonares crescem.",
+      "destino": "Cavidades pleurais, após o fechamento pelas pregas pleuropericárdicas e membranas pleuroperitoneais."
+    },
+    {
+      "id": "pleuras",
+      "nome": "Pleuras visceral e parietal",
+      "sinonimos": [],
+      "definicao": "Serosas que revestem o pulmão (visceral) e a parede da cavidade torácica (parietal).",
+      "origem": "Visceral: mesoderma esplâncnico que recobre o pulmão. Parietal: mesoderma somático que reveste a parede corporal."
+    },
+    {
+      "id": "bronquiolos-respiratorios",
+      "nome": "Bronquíolos respiratórios",
+      "sinonimos": [],
+      "definicao": "Ramos que surgem dos bronquíolos terminais no período canalicular e se dividem em ductos alveolares.",
+      "origem": "Endoderma da árvore brônquica."
+    },
+    {
+      "id": "saculos-terminais",
+      "nome": "Sáculos terminais",
+      "sinonimos": [
+        "sacos terminais",
+        "alvéolos primitivos"
+      ],
+      "definicao": "Dilatações de parede muito fina na extremidade das vias aéreas, formadas no período sacular, nas quais capilares fazem saliência e estabelecem a barreira hematoaérea.",
+      "destino": "Septação e formação de alvéolos maduros no período alveolar."
+    },
+    {
+      "id": "pneumocito-tipo-1",
+      "nome": "Pneumócito tipo I",
+      "sinonimos": [
+        "célula alveolar tipo I",
+        "célula epitelial alveolar tipo I"
+      ],
+      "definicao": "Célula epitelial pavimentosa que reveste a maior parte da superfície alveolar e, com o endotélio capilar, forma a barreira hematoaérea.",
+      "origem": "Endoderma."
+    },
+    {
+      "id": "pneumocito-tipo-2",
+      "nome": "Pneumócito tipo II",
+      "sinonimos": [
+        "célula alveolar tipo II",
+        "célula epitelial alveolar tipo II"
+      ],
+      "definicao": "Célula epitelial arredondada, dispersa entre os pneumócitos tipo I, que armazena surfactante em corpos lamelares e o secreta.",
+      "origem": "Endoderma.",
+      "destino": "Começa a secretar surfactante por volta da 20ª–24ª semana; a secreção aumenta nas últimas semanas da gestação."
+    },
+    {
+      "id": "surfactante-pulmonar",
+      "nome": "Surfactante pulmonar",
+      "sinonimos": [],
+      "definicao": "Mistura de fosfolipídios e proteínas que forma película na interface ar–líquido dos alvéolos, reduz a tensão superficial e impede o colapso alveolar na expiração.",
+      "origem": "Pneumócitos tipo II."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e14-diverticulo-respiratorio",
+      "descricao": "Surge o sulco laringotraqueal, que se evagina como divertículo respiratório na parede ventral do intestino anterior",
+      "diaMin": 22,
+      "diaMax": 28,
+      "ordem": 1
+    },
+    {
+      "id": "e14-brotos-bronquicos",
+      "descricao": "O divertículo cresce caudalmente, separa-se do esôfago pelo septo traqueoesofágico e sua extremidade forma os dois brotos brônquicos",
+      "diaMin": 26,
+      "diaMax": 32,
+      "ordem": 2
+    },
+    {
+      "id": "e14-bronquios-principais-lobares",
+      "descricao": "Formam-se os brônquios principais e, a seguir, os lobares: três à direita e dois à esquerda",
+      "diaMin": 29,
+      "diaMax": 42,
+      "ordem": 3
+    },
+    {
+      "id": "e14-bronquios-segmentares",
+      "descricao": "Surgem os brônquios segmentares, base dos segmentos broncopulmonares",
+      "diaMin": 43,
+      "diaMax": 49,
+      "ordem": 4
+    },
+    {
+      "id": "e14-recanalizacao-laringe",
+      "descricao": "A luz da laringe, ocluída pelo epitélio, recanaliza-se, formando ventrículos e pregas vocais e vestibulares",
+      "diaMin": 63,
+      "diaMax": 70,
+      "ordem": 5
+    },
+    {
+      "id": "e14-periodo-canalicular",
+      "descricao": "Início do período canalicular: bronquíolos respiratórios, ductos alveolares e intensa vascularização",
+      "diaMin": 112,
+      "diaMax": 119,
+      "ordem": 6
+    },
+    {
+      "id": "e14-periodo-sacular",
+      "descricao": "Início do período sacular: sáculos terminais, pneumócitos tipo I e II e barreira hematoaérea",
+      "diaMin": 168,
+      "diaMax": 182,
+      "ordem": 7
+    },
+    {
+      "id": "e14-periodo-alveolar",
+      "descricao": "Período alveolar: formação de alvéolos maduros, que prossegue após o nascimento",
+      "diaMin": 224,
+      "ordem": 8
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "atresia-esofago-fistula-traqueoesofagica",
+      "titulo": "Atresia de esôfago com fístula traqueoesofágica",
+      "descricao": "Fístula traqueoesofágica em cerca de 1 em 3.000–4.500 nascidos vivos (Moore), geralmente associada à atresia de esôfago. O tipo mais comum (≈90%) é a atresia do esôfago proximal, que termina em fundo cego, com fístula entre o esôfago distal e a traqueia, perto da bifurcação. Na gestação: polidrâmnio, porque o feto não consegue levar o líquido amniótico deglutido ao intestino, onde seria absorvido. Ao nascer: salivação excessiva, tosse, engasgos e cianose às mamadas; a sonda não progride ao estômago e se enrola no coto proximal; há ar no estômago e nas alças pela fístula distal; o refluxo gástrico pela fístula causa pneumonite. Na atresia isolada, o abdome não tem gás; na fístula em H sem atresia, o diagnóstico costuma ser mais tardio (tosse às mamadas, pneumonias de repetição). Associa-se com frequência a outras anomalias (associação VACTERL).",
+      "mecanismo": "Desvio ou formação incompleta do septo traqueoesofágico durante a separação entre o esôfago e o tubo laringotraqueal (4ª–5ª semana)."
+    },
+    {
+      "id": "sindrome-desconforto-respiratorio-rn",
+      "titulo": "Síndrome do desconforto respiratório do recém-nascido (doença da membrana hialina)",
+      "descricao": "Principal causa de insuficiência respiratória no prematuro: nas primeiras horas, taquipneia, gemência, batimento de asas nasais, retrações e cianose; na radiografia, volumes pulmonares reduzidos, padrão reticulogranular difuso e broncogramas aéreos. O risco é tanto maior quanto menor a idade gestacional; outros fatores são diabetes materno, sexo masculino, asfixia perinatal e cesariana sem trabalho de parto. Prevenção com corticoide antenatal; tratamento com suporte ventilatório (por exemplo, CPAP) e surfactante exógeno.",
+      "mecanismo": "Deficiência de surfactante por imaturidade dos pneumócitos tipo II: a tensão superficial elevada provoca colapso alveolar na expiração (atelectasia), e o exsudato rico em proteínas forma membranas hialinas. A hiperinsulinemia fetal do diabetes materno antagoniza o efeito dos glicocorticoides e retarda a produção de surfactante."
+    },
+    {
+      "id": "hipoplasia-pulmonar",
+      "titulo": "Hipoplasia pulmonar",
+      "descricao": "Pulmões com volume, número de vias aéreas, alvéolos e vasos reduzidos, frequentemente com hipertensão pulmonar. Causas principais: hérnia diafragmática congênita (compressão pelas vísceras herniadas), oligoidrâmnio grave e prolongado (agenesia renal bilateral, obstrução urinária baixa, ruptura prolongada das membranas) e tórax pequeno (displasias esqueléticas). É a causa do óbito neonatal na sequência de Potter.",
+      "mecanismo": "O crescimento pulmonar exige espaço torácico adequado, movimentos respiratórios fetais e volume adequado de líquido amniótico e de líquido pulmonar; compressão do tórax ou perda do líquido que distende os pulmões compromete a ramificação e a maturação."
+    },
+    {
+      "id": "hernia-diafragmatica-congenita",
+      "titulo": "Hérnia diafragmática congênita",
+      "descricao": "Defeito posterolateral do diafragma (de Bochdalek), mais frequente à esquerda. Ao nascer: desconforto respiratório grave, abdome escavado, ruídos hidroaéreos no tórax e bulhas cardíacas deslocadas para o lado oposto. O prognóstico depende sobretudo do grau de hipoplasia pulmonar e de hipertensão pulmonar; o pulmão contralateral também pode ser afetado pelo desvio do mediastino.",
+      "mecanismo": "Formação ou fusão defeituosa da membrana pleuroperitoneal com as demais partes do diafragma, deixando aberto o canal pericardioperitoneal; as vísceras ocupam o tórax durante a fase de ramificação pulmonar."
+    },
+    {
+      "id": "lobo-azigo-pulmao-acessorio",
+      "titulo": "Lobo ázigo e pulmões acessórios",
+      "descricao": "O lobo ázigo (cerca de 1% das pessoas, segundo Moore) é variação sem importância clínica do lobo superior direito, reconhecida por uma linha curva na radiografia de tórax. O pulmão acessório (sequestro pulmonar) é uma massa de tecido pulmonar sem comunicação com a árvore traqueobrônquica, quase sempre na base do pulmão esquerdo, com irrigação geralmente sistêmica.",
+      "mecanismo": "Lobo ázigo: o brônquio apical cresce superiormente, medial ao arco da veia ázigo, e não lateral a ele; a veia fica no fundo de uma fissura do lobo superior. Lobos e pulmões acessórios: brotos respiratórios adicionais do intestino anterior, que se desenvolvem independentemente da árvore principal."
+    },
+    {
+      "id": "membrana-atresia-laringea",
+      "titulo": "Membrana (web) e atresia laríngea",
+      "descricao": "A membrana laríngea, em geral glótica, causa obstrução parcial das vias aéreas, com estridor e choro fraco. A atresia laríngea é rara e obstrui completamente as vias aéreas superiores do feto (síndrome de obstrução congênita das vias aéreas superiores, CHAOS): os pulmões ficam aumentados e hiperecogênicos pela retenção do líquido pulmonar.",
+      "mecanismo": "Recanalização incompleta (membrana) ou ausente (atresia) da laringe, que normalmente ocorre até a 10ª semana."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-14-q01",
+      "tipo": "multipla",
+      "enunciado": "Na traqueia em desenvolvimento, qual correspondência entre componente e origem embrionária está correta?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Epitélio de revestimento: ectoderma; cartilagens: mesoderma paraxial"
+        },
+        {
+          "id": "b",
+          "texto": "Epitélio de revestimento e glândulas: endoderma; cartilagens, músculo liso e tecido conjuntivo: mesoderma esplâncnico"
+        },
+        {
+          "id": "c",
+          "texto": "Epitélio de revestimento: mesoderma esplâncnico; cartilagens: endoderma"
+        },
+        {
+          "id": "d",
+          "texto": "Epitélio de revestimento e cartilagens: endoderma"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O tubo laringotraqueal é revestido pelo endoderma do intestino anterior, que forma o epitélio e as glândulas da traqueia e dos brônquios e o epitélio pulmonar; cartilagens, músculo liso e conjuntivo vêm do mesoderma esplâncnico que envolve o intestino anterior. Em (a), o ectoderma não participa do trato respiratório inferior, e o mesoderma paraxial forma somitos, não as cartilagens traqueais. A alternativa (c) inverte as origens. Em (d), a cartilagem é atribuída ao endoderma, que não forma tecidos esqueléticos.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "traqueia",
+        "camadas-germinativas",
+        "endoderma"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q02",
+      "tipo": "multipla",
+      "enunciado": "O primórdio do sistema respiratório inferior surge, na 4ª semana após a fertilização, como:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Evaginação da parede dorsal do intestino médio"
+        },
+        {
+          "id": "b",
+          "texto": "Espessamento do ectoderma do estomodeu"
+        },
+        {
+          "id": "c",
+          "texto": "Condensação do mesoderma intermediário na região cervical"
+        },
+        {
+          "id": "d",
+          "texto": "Evaginação da parede ventral do intestino anterior, na extremidade caudal da faringe primitiva"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "O sulco laringotraqueal surge no assoalho da extremidade caudal da faringe primitiva (intestino anterior) e se evagina como divertículo respiratório (laringotraqueal), o broto pulmonar; por isso o epitélio respiratório é endodérmico. O intestino médio (a) forma o intestino delgado distal ao colédoco e parte do colo, não o primórdio respiratório. O estomodeu (b) é revestido por ectoderma e origina a cavidade oral. O mesoderma intermediário (c) forma estruturas urogenitais.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "diverticulo-respiratorio",
+        "intestino-anterior"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q03",
+      "tipo": "multipla",
+      "enunciado": "Segundo Sadler, qual sinal define o local de surgimento do divertículo respiratório na parede do intestino anterior?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "GDNF secretado pelo mesênquima, que ativa o receptor RET no epitélio"
+        },
+        {
+          "id": "b",
+          "texto": "Inibição de BMP4 por noggin e cordina no ectoderma dorsal"
+        },
+        {
+          "id": "c",
+          "texto": "Ácido retinoico produzido pelo mesoderma adjacente, que induz o fator de transcrição TBX4 no endoderma"
+        },
+        {
+          "id": "d",
+          "texto": "Expressão de SRY no epitélio celômico da crista urogenital"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Sadler descreve que o aumento de ácido retinoico produzido pelo mesoderma vizinho suprarregula TBX4 no endoderma do tubo intestinal no local do divertículo; TBX4 induz a formação do broto e o crescimento e a diferenciação dos pulmões. O par GDNF–RET (a) é central na indução recíproca entre broto ureteral e blastema metanéfrico. A inibição de BMP4 (b) é o mecanismo de indução da placa neural. SRY (d) determina a diferenciação testicular. O endoderma respiratório também se caracteriza pela expressão de NKX2.1 (Larsen, Carlson).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "diverticulo-respiratorio",
+        "inducao",
+        "TBX4",
+        "acido-retinoico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q04",
+      "tipo": "multipla",
+      "enunciado": "As cartilagens tireóidea, cricóidea e aritenóideas derivam do mesênquima de quais arcos faríngeos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "1º e 2º arcos"
+        },
+        {
+          "id": "b",
+          "texto": "4º e 6º arcos"
+        },
+        {
+          "id": "c",
+          "texto": "2º e 3º arcos"
+        },
+        {
+          "id": "d",
+          "texto": "3º arco apenas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "As cartilagens da laringe (tireóidea, cricóidea, aritenóideas, corniculadas e cuneiformes) derivam do mesênquima dos 4º e 6º arcos faríngeos, enquanto o epitélio laríngeo é endodérmico. O 1º e o 2º arcos (a) formam, entre outros, o martelo e a bigorna (1º) e o estribo, o processo estiloide e parte do hioide (2º). O 3º arco forma o corno maior e a parte inferior do corpo do hioide, e não as cartilagens laríngeas citadas; por isso (c) e (d) estão erradas.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "laringe",
+        "arcos-faringeos",
+        "cartilagens"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9 e 10; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-14-q05",
+      "tipo": "multipla",
+      "enunciado": "O músculo cricotireóideo é inervado pelo nervo laríngeo superior, enquanto os demais músculos intrínsecos da laringe são inervados pelo nervo laríngeo recorrente. A base embriológica dessa diferença é que:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O cricotireóideo deriva de somitos cervicais, e os demais músculos, do 2º arco faríngeo"
+        },
+        {
+          "id": "b",
+          "texto": "O cricotireóideo deriva do 2º arco faríngeo, cujo nervo é o facial"
+        },
+        {
+          "id": "c",
+          "texto": "Os músculos laríngeos derivam do mesoderma esplâncnico da traqueia, e a inervação depende apenas do trajeto das artérias"
+        },
+        {
+          "id": "d",
+          "texto": "O cricotireóideo deriva do 4º arco faríngeo (ramo laríngeo superior do vago), e os demais intrínsecos, do 6º arco (ramo laríngeo recorrente)"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Cada arco faríngeo tem seu nervo, e os músculos derivados de um arco mantêm essa inervação. O cricotireóideo deriva do 4º arco, cujo nervo é o laríngeo superior; os demais intrínsecos derivam do 6º arco, cujo nervo é o laríngeo recorrente, ambos ramos do vago. Em (a), somitos cervicais originam músculos do pescoço e do tronco inervados por nervos espinais, e não músculos laríngeos. O 2º arco, citado em (a) e (b), forma os músculos da expressão facial, inervados pelo nervo facial. Em (c), os músculos da laringe não derivam do mesoderma esplâncnico traqueal, e o trajeto arterial explica o curso do nervo recorrente, não qual músculo ele inerva.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "laringe",
+        "arcos-faringeos",
+        "nervo-laringeo-recorrente",
+        "vago"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9 e 10; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-14-q06",
+      "tipo": "multipla",
+      "contexto": "Homem de 68 anos com aneurisma do arco da aorta procura atendimento por rouquidão progressiva. A laringoscopia mostra paralisia da prega vocal esquerda; a prega direita é normal.",
+      "enunciado": "Qual fato embriológico explica por que o nervo laríngeo recorrente esquerdo tem trajeto torácico, sob o arco da aorta, enquanto o direito contorna a artéria subclávia, no pescoço?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "À esquerda, o nervo permanece sob o 6º arco aórtico, cuja parte distal persiste como ducto arterioso (ligamento arterioso); à direita, a parte distal do 6º arco desaparece e o nervo sobe até a subclávia, derivada do 4º arco"
+        },
+        {
+          "id": "b",
+          "texto": "O nervo esquerdo inerva derivados do 4º arco, e o direito, derivados do 6º arco"
+        },
+        {
+          "id": "c",
+          "texto": "A artéria subclávia esquerda deriva do 6º arco aórtico e por isso fica mais baixa"
+        },
+        {
+          "id": "d",
+          "texto": "O nervo laríngeo recorrente esquerdo é ramo do nervo frênico, que desce com o septo transverso"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os nervos laríngeos recorrentes acompanham o 6º par de arcos aórticos. À direita, a parte distal da 6ª artéria e a 5ª desaparecem, e o nervo se desloca cranialmente até contornar a artéria subclávia direita (derivada do 4º arco). À esquerda, a parte distal da 6ª artéria persiste como ducto arterioso, e o nervo continua a contorná-lo; no adulto, passa sob o arco da aorta, junto ao ligamento arterioso, onde pode ser comprimido por aneurismas, aumento do átrio esquerdo ou tumores do mediastino. Em (b), os dois nervos inervam derivados do 6º arco. Em (c), a subclávia esquerda deriva da 7ª artéria intersegmentar, não do 6º arco. Em (d), o nervo recorrente é ramo do vago, não do frênico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "nervo-laringeo-recorrente",
+        "arcos-aorticos",
+        "laringe",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-14-q07",
+      "tipo": "multipla",
+      "enunciado": "Em qual período do desenvolvimento pulmonar os bronquíolos terminais originam bronquíolos respiratórios e ductos alveolares, e o tecido pulmonar se torna intensamente vascularizado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Pseudoglandular"
+        },
+        {
+          "id": "b",
+          "texto": "Sacular"
+        },
+        {
+          "id": "c",
+          "texto": "Canalicular"
+        },
+        {
+          "id": "d",
+          "texto": "Alveolar"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "No período canalicular (≈16ª–25ª/26ª semana após a fertilização), cada bronquíolo terminal forma bronquíolos respiratórios, que se dividem em ductos alveolares, e os capilares se aproximam do epitélio; no fim dessa fase surgem sáculos de parede fina e a respiração torna-se possível. No pseudoglandular (a), a ramificação vai só até os bronquíolos terminais. No sacular (b), formam-se os sáculos terminais e a barreira hematoaérea, com diferenciação dos pneumócitos. No alveolar (d), formam-se alvéolos maduros, em grande parte após o nascimento.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "maturacao-pulmonar",
+        "periodo-canalicular"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q08",
+      "tipo": "multipla",
+      "enunciado": "Ao fim do período pseudoglandular, qual é o segmento mais distal da árvore respiratória já formado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ducto alveolar"
+        },
+        {
+          "id": "b",
+          "texto": "Bronquíolo respiratório"
+        },
+        {
+          "id": "c",
+          "texto": "Sáculo terminal"
+        },
+        {
+          "id": "d",
+          "texto": "Bronquíolo terminal"
+        },
+        {
+          "id": "e",
+          "texto": "Alvéolo maduro"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "No período pseudoglandular (≈5ª–16ª/17ª semana) formam-se todos os elementos condutores, até os bronquíolos terminais, mas nenhum elemento de troca gasosa; um feto nascido nessa fase não sobrevive. Os bronquíolos respiratórios (b) e os ductos alveolares (a) surgem no período canalicular; os sáculos terminais (c), no sacular; e os alvéolos maduros (e), no alveolar.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "maturacao-pulmonar",
+        "periodo-pseudoglandular"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q09",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 28 semanas de idade gestacional, nascido por cesariana de urgência, cuja mãe não recebeu corticoide antenatal, apresenta nas primeiras horas de vida taquipneia, gemência, batimento de asas nasais e retrações. A radiografia de tórax mostra volumes pulmonares reduzidos, padrão reticulogranular difuso e broncogramas aéreos.",
+      "enunciado": "Qual é o mecanismo central desse quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Aspiração de mecônio, com obstrução das vias aéreas e pneumonite química"
+        },
+        {
+          "id": "b",
+          "texto": "Deficiência de surfactante por imaturidade dos pneumócitos tipo II, com colapso alveolar na expiração"
+        },
+        {
+          "id": "c",
+          "texto": "Retardo na absorção do líquido pulmonar fetal, quadro benigno e transitório"
+        },
+        {
+          "id": "d",
+          "texto": "Hipoplasia pulmonar por compressão do pulmão por vísceras abdominais herniadas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "É a síndrome do desconforto respiratório do recém-nascido (doença da membrana hialina). Sem surfactante suficiente, a tensão superficial alveolar permanece alta, os alvéolos colapsam na expiração e o exsudato rico em proteínas forma membranas hialinas; prematuridade e ausência de corticoide antenatal são os principais fatores de risco, e o tratamento inclui suporte ventilatório e surfactante exógeno. A aspiração de mecônio (a) é típica de recém-nascidos a termo ou pós-termo. O retardo na absorção do líquido pulmonar (c) causa a taquipneia transitória, em geral em recém-nascidos a termo ou próximos do termo, com evolução benigna. A hipoplasia por hérnia diafragmática (d) teria abdome escavado e vísceras no tórax, não o padrão reticulogranular difuso bilateral.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "surfactante",
+        "sindrome-desconforto-respiratorio",
+        "prematuridade",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q10",
+      "tipo": "multipla",
+      "contexto": "Gestante com 30 semanas de idade gestacional é internada em trabalho de parto prematuro. A equipe prescreve betametasona intramuscular antes de um possível parto.",
+      "enunciado": "Qual é a base do benefício esperado para o recém-nascido?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Os glicocorticoides induzem a formação de novos brônquios segmentares"
+        },
+        {
+          "id": "b",
+          "texto": "Os glicocorticoides aumentam a produção de urina fetal e, assim, o volume de líquido amniótico"
+        },
+        {
+          "id": "c",
+          "texto": "Os glicocorticoides fecham o ducto arterioso antes do nascimento"
+        },
+        {
+          "id": "d",
+          "texto": "Os glicocorticoides aceleram a maturação pulmonar, incluindo a diferenciação dos pneumócitos tipo II e a síntese de surfactante"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Os glicocorticoides atravessam a placenta e aceleram a maturação pulmonar e a produção de surfactante; o corticoide antenatal reduz a incidência da síndrome do desconforto respiratório e a mortalidade neonatal. Os brônquios segmentares (a) formam-se na 7ª semana, muito antes, e não são alvo do tratamento. O aumento da urina fetal (b) não é o mecanismo do benefício. O fechamento do ducto arterioso (c) é um evento pós-natal e não é efeito pretendido do corticoide.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "surfactante",
+        "corticoide-antenatal",
+        "prematuridade",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q11",
+      "tipo": "multipla",
+      "contexto": "Gestação complicada por polidrâmnio. Logo após o nascimento, o recém-nascido apresenta salivação abundante e espumosa, tosse, engasgos e cianose na primeira tentativa de mamada. A sonda orogástrica não progride até o estômago; a radiografia mostra a sonda enrolada no tórax superior e ar no estômago e nas alças intestinais.",
+      "enunciado": "Qual é a anomalia mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Atresia de esôfago isolada, sem fístula"
+        },
+        {
+          "id": "b",
+          "texto": "Fístula traqueoesofágica em H, sem atresia"
+        },
+        {
+          "id": "c",
+          "texto": "Atresia do esôfago proximal com fístula entre o esôfago distal e a traqueia"
+        },
+        {
+          "id": "d",
+          "texto": "Atresia duodenal"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "É o tipo mais comum (cerca de 90% dos casos): o coto proximal termina em fundo cego, onde a sonda se enrola, e o segmento distal comunica-se com a traqueia perto da bifurcação, de modo que o ar inspirado passa pela fístula ao estômago e ao intestino. O polidrâmnio ocorre porque o feto não consegue levar o líquido amniótico deglutido até o intestino, onde seria absorvido. Na atresia isolada (a), não há ar no abdome. Na fístula em H (b), a sonda chega ao estômago e o quadro costuma ser mais tardio (tosse às mamadas, pneumonias de repetição). Na atresia duodenal (d), a sonda chega ao estômago e o achado típico é a 'dupla bolha', com vômitos geralmente biliosos.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "atresia-de-esofago",
+        "fistula-traqueoesofagica",
+        "polidramnio",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q12",
+      "tipo": "multipla",
+      "enunciado": "As pregas traqueoesofágicas, ao se fundirem, formam:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O septo traqueoesofágico, que separa o esôfago (dorsal) da traqueia e dos brotos pulmonares (ventrais)"
+        },
+        {
+          "id": "b",
+          "texto": "O septo transverso, que separa parcialmente a cavidade pericárdica da peritoneal"
+        },
+        {
+          "id": "c",
+          "texto": "A membrana pleuroperitoneal, que fecha o canal pericardioperitoneal"
+        },
+        {
+          "id": "d",
+          "texto": "O septo urorretal, que divide a cloaca"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "As pregas traqueoesofágicas longitudinais crescem uma em direção à outra e se fundem no septo traqueoesofágico, que divide o intestino anterior em esôfago, dorsal, e tubo laringotraqueal, ventral; a comunicação com a faringe persiste no ádito da laringe. O septo transverso (b) é uma placa de mesoderma que forma parte do diafragma e no qual cresce o fígado. As membranas pleuroperitoneais (c) fecham os canais pericardioperitoneais e participam do diafragma. O septo urorretal (d) divide a cloaca em reto e seio urogenital.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "septo-traqueoesofagico",
+        "esofago",
+        "traqueia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q13",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo evolui com desconforto respiratório grave logo após o parto. Ao exame, há abdome escavado, ruídos hidroaéreos audíveis no hemitórax esquerdo e bulhas cardíacas mais audíveis à direita do esterno. A radiografia mostra alças intestinais no hemitórax esquerdo e desvio do mediastino para a direita.",
+      "enunciado": "Qual alteração do desenvolvimento pulmonar é o principal determinante da gravidade desse quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Hipoplasia pulmonar (mais acentuada à esquerda) com hipertensão pulmonar, porque as vísceras herniadas comprimem o pulmão durante a fase de ramificação"
+        },
+        {
+          "id": "b",
+          "texto": "Deficiência isolada de surfactante, com número normal de vias aéreas"
+        },
+        {
+          "id": "c",
+          "texto": "Atresia de traqueia por falha do divertículo respiratório"
+        },
+        {
+          "id": "d",
+          "texto": "Sequestro pulmonar com irrigação sistêmica"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na hérnia diafragmática congênita posterolateral (geralmente à esquerda), a formação ou fusão defeituosa da membrana pleuroperitoneal deixa aberto o canal pericardioperitoneal, e as vísceras abdominais ocupam o tórax durante a vida fetal. O pulmão comprimido tem menos gerações de ramificação, menos alvéolos e artérias com muscularização aumentada: hipoplasia e hipertensão pulmonares; o pulmão contralateral também pode ser afetado pelo desvio do mediastino. Pode haver deficiência de surfactante associada, mas não isolada e com número normal de vias aéreas, como em (b). A atresia de traqueia (c) é rara e não explica vísceras no tórax. O sequestro pulmonar (d) é uma massa de tecido pulmonar sem comunicação com a árvore brônquica e não produz esse quadro.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "hernia-diafragmatica",
+        "hipoplasia-pulmonar",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 8 e 10; Sadler 14ª ed., cap. 7 e 14"
+    },
+    {
+      "id": "emb-14-q14",
+      "tipo": "vf",
+      "enunciado": "O epitélio alveolar, incluindo os pneumócitos tipo I e tipo II, deriva do endoderma.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Todo o epitélio do trato respiratório inferior, das vias aéreas aos alvéolos, deriva do endoderma do divertículo respiratório; o endotélio dos capilares, o conjuntivo, a cartilagem e o músculo liso vêm do mesoderma esplâncnico.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "pneumocitos",
+        "endoderma"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q15",
+      "tipo": "vf",
+      "enunciado": "A maior parte dos alvéolos pulmonares do adulto já está formada ao nascimento a termo.",
+      "correta": false,
+      "explicacao": "Falso. Ao nascer existe apenas uma fração do número adulto de alvéolos (cerca de 1/6, segundo Sadler); os demais se formam no período alveolar pós-natal, classicamente até cerca de 8 anos, e há evidências de que a alveolarização prossiga até a adolescência. O crescimento pulmonar pós-natal deve-se sobretudo ao aumento do número de bronquíolos respiratórios e alvéolos, e não ao aumento do tamanho dos alvéolos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "periodo-alveolar",
+        "alveolos"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 14; Moore 11ª ed., cap. 10"
+    },
+    {
+      "id": "emb-14-q16",
+      "tipo": "vf",
+      "enunciado": "Já no embrião, o brônquio principal direito é mais calibroso e mais vertical que o esquerdo, relação que persiste no adulto e favorece a aspiração de corpos estranhos para o lado direito.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Moore descreve que, desde a formação dos brônquios principais no início da 5ª semana, o direito é ligeiramente maior e mais vertical que o esquerdo; essa relação persiste no adulto, e por isso corpos estranhos aspirados entram com mais frequência no brônquio principal direito.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "bronquios",
+        "corpo-estranho"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10"
+    },
+    {
+      "id": "emb-14-q17",
+      "tipo": "vf",
+      "enunciado": "A recanalização incompleta da laringe, que normalmente ocorre até a 10ª semana, pode originar uma membrana (web) laríngea.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O epitélio laríngeo prolifera e oclui temporariamente a luz; na recanalização formam-se os ventrículos e as pregas vocais e vestibulares. Recanalização incompleta deixa uma membrana, geralmente glótica, que causa obstrução parcial; a ausência de recanalização causa a rara atresia laríngea.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "laringe",
+        "membrana-laringea"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10"
+    },
+    {
+      "id": "emb-14-q18",
+      "tipo": "vf",
+      "enunciado": "O lobo ázigo é uma variação do pulmão esquerdo que ocorre quando o brônquio apical cresce lateralmente ao arco da veia ázigo.",
+      "correta": false,
+      "explicacao": "Falso. O lobo ázigo ocorre no pulmão direito (cerca de 1% das pessoas, segundo Moore), quando o brônquio apical cresce superiormente, medial ao arco da veia ázigo, e não lateral a ele; a veia fica no fundo de uma fissura do lobo superior, visível como linha curva na radiografia. É variação sem significado clínico.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "lobo-azigo",
+        "variacao-anatomica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10"
+    },
+    {
+      "id": "emb-14-q19",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os períodos da maturação pulmonar, do mais precoce ao mais tardio:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Sacular"
+        },
+        {
+          "id": "2",
+          "texto": "Pseudoglandular"
+        },
+        {
+          "id": "3",
+          "texto": "Alveolar"
+        },
+        {
+          "id": "4",
+          "texto": "Canalicular"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "explicacao": "Pseudoglandular (≈5ª–16ª/17ª semana após a fertilização) → canalicular (≈16ª–25ª/26ª) → sacular (≈24ª/26ª ao nascimento) → alveolar (fim da vida fetal à infância). Os limites variam entre as obras e as fases se superpõem, porque o pulmão não amadurece de modo sincrônico.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "maturacao-pulmonar",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q20",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os eventos do desenvolvimento da árvore respiratória:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Surgem os brônquios segmentares"
+        },
+        {
+          "id": "2",
+          "texto": "Surge o divertículo respiratório na parede ventral do intestino anterior"
+        },
+        {
+          "id": "3",
+          "texto": "Formam-se os sáculos terminais e a barreira hematoaérea"
+        },
+        {
+          "id": "4",
+          "texto": "A extremidade do divertículo forma os dois brotos brônquicos"
+        },
+        {
+          "id": "5",
+          "texto": "Bronquíolos terminais originam bronquíolos respiratórios"
+        },
+        {
+          "id": "6",
+          "texto": "Formam-se os brônquios lobares: três à direita e dois à esquerda"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "6",
+        "1",
+        "5",
+        "3"
+      ],
+      "explicacao": "Divertículo respiratório (4ª semana) → brotos brônquicos (fim da 4ª semana) → brônquios principais e lobares (5ª semana em diante) → brônquios segmentares (7ª semana) → bronquíolos respiratórios (período canalicular, a partir de ≈16ª semana) → sáculos terminais e barreira hematoaérea (período sacular, a partir de ≈24ª–26ª semana).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "arvore-bronquica",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os segmentos da via aérea no sentido proximal → distal, que corresponde à sequência em que surgem durante a ramificação:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Bronquíolo respiratório"
+        },
+        {
+          "id": "2",
+          "texto": "Brônquio lobar"
+        },
+        {
+          "id": "3",
+          "texto": "Ducto alveolar"
+        },
+        {
+          "id": "4",
+          "texto": "Brônquio principal"
+        },
+        {
+          "id": "5",
+          "texto": "Bronquíolo terminal"
+        },
+        {
+          "id": "6",
+          "texto": "Brônquio segmentar"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "6",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Brônquio principal → lobar → segmentar → (sucessivas gerações de brônquios e bronquíolos) → bronquíolo terminal, último elemento formado no período pseudoglandular → bronquíolo respiratório e ducto alveolar, formados no período canalicular.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "arvore-bronquica",
+        "anatomia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q22",
+      "tipo": "associar",
+      "enunciado": "Associe cada período da maturação pulmonar ao evento que o caracteriza:",
+      "pares": [
+        {
+          "esquerda": "Pseudoglandular",
+          "direita": "Ramificação até os bronquíolos terminais, sem estruturas de troca gasosa"
+        },
+        {
+          "esquerda": "Canalicular",
+          "direita": "Bronquíolos respiratórios, ductos alveolares e intensa vascularização"
+        },
+        {
+          "esquerda": "Sacular",
+          "direita": "Sáculos terminais, pneumócitos tipo I e II e barreira hematoaérea"
+        },
+        {
+          "esquerda": "Alveolar",
+          "direita": "Formação de alvéolos maduros, em sua maioria após o nascimento"
+        }
+      ],
+      "explicacao": "A maturação passa da formação das vias condutoras (pseudoglandular) à formação das unidades respiratórias e da rede capilar (canalicular), ao afinamento do epitélio com barreira hematoaérea e diferenciação dos pneumócitos (sacular) e, por fim, à multiplicação de alvéolos maduros, que prossegue na infância (alveolar).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "maturacao-pulmonar"
+      ],
+      "referencia": "Moore 11ª ed., cap. 10; Sadler 14ª ed., cap. 14"
+    },
+    {
+      "id": "emb-14-q23",
+      "tipo": "associar",
+      "enunciado": "Associe cada estrutura do trato respiratório à sua origem embrionária:",
+      "pares": [
+        {
+          "esquerda": "Epitélio da traqueia",
+          "direita": "Endoderma do intestino anterior"
+        },
+        {
+          "esquerda": "Anéis cartilaginosos e músculo liso da traqueia",
+          "direita": "Mesoderma esplâncnico em torno do intestino anterior"
+        },
+        {
+          "esquerda": "Cartilagens tireóidea e cricóidea",
+          "direita": "Mesênquima dos 4º e 6º arcos faríngeos"
+        },
+        {
+          "esquerda": "Pleura parietal",
+          "direita": "Mesoderma somático da parede corporal"
+        },
+        {
+          "esquerda": "Epiglote",
+          "direita": "Parte caudal da eminência hipofaríngea"
+        }
+      ],
+      "explicacao": "O epitélio respiratório é endodérmico; os componentes de sustentação da traqueia vêm do mesoderma esplâncnico; as cartilagens laríngeas, do mesênquima dos 4º e 6º arcos; a pleura parietal, do mesoderma somático (e a visceral, do esplâncnico); a epiglote, da parte caudal da eminência hipofaríngea, formada pelo 3º e 4º arcos.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "camadas-germinativas",
+        "laringe",
+        "traqueia",
+        "pleura"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9 e 10; Sadler 14ª ed., cap. 14 e 17"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "10 — Sistema respiratório"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "9 — Aparelho faríngeo, face e pescoço (arcos faríngeos e seus derivados)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "8 — Cavidades do corpo, mesentérios e diafragma (hérnia diafragmática congênita)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular (arcos aórticos e nervos laríngeos recorrentes)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "14 — Sistema respiratório"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "17 — Cabeça e pescoço (arcos faríngeos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular (arcos aórticos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "7 — Tubo intestinal e cavidades corporais (diafragma)"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "11 — Desenvolvimento do sistema respiratório e das cavidades do corpo"
+    },
+    {
+      "obra": "Carlson BM. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
+      "capitulo": "15 — Sistemas digestório e respiratório e cavidades corporais"
+    },
+    {
+      "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 713: Antenatal Corticosteroid Therapy for Fetal Maturation. Obstet Gynecol. 2017"
+    }
+  ],
+  "notasDivergencia": [
+    "Intervalos dos períodos pulmonares (semanas após a fertilização): Moore 11ª ed. — pseudoglandular 5–17, canalicular 16–25, sacular de ~24 até o fim da vida fetal, alveolar do fim da vida fetal até ~8 anos; Sadler 14ª ed. — pseudoglandular 5–16, canalicular 16–26, sacos terminais de 26 até o nascimento, alveolar do 8º mês à infância. Faixas adotadas: pseudoglandular ≈5–16/17; canalicular ≈16–25/26; sacular ≈24/26 ao nascimento; alveolar do fim da vida fetal à infância. Textos de neonatologia frequentemente expressam essas fases em idade gestacional, o que desloca os limites em ~2 semanas.",
+    "Alguns autores (por exemplo, Larsen e Carlson) descrevem também uma fase embrionária (formação do divertículo e dos brônquios principais, lobares e segmentares, ~4ª–7ª semana) antes do período pseudoglandular.",
+    "Fim da alveolarização: Moore e Sadler indicam até ~8 anos/infância; estudos com ressonância magnética com hélio hiperpolarizado sugerem que a formação de alvéolos pode prosseguir até a adolescência.",
+    "Início da produção de surfactante: Moore — por volta da 20ª semana após a fertilização, em pequena quantidade; Sadler — pneumócitos tipo II surgem no fim do 6º mês. Faixa adotada: ~20ª–24ª semana, com quantidade adequada apenas nas últimas semanas. O tópico emb-08 usa '≈24ª semana', compatível com a faixa.",
+    "Surgimento do primórdio respiratório: Sadler — embrião de ~4 semanas; Moore — sulco laringotraqueal por volta do 28º dia. Faixa adotada: 4ª semana (dias 22–28).",
+    "Número de brônquios segmentares: Moore — 10 no pulmão direito e 8–9 no esquerdo; Sadler — 10 e 8.",
+    "Separação entre traqueia e esôfago: o modelo clássico de fusão das pregas traqueoesofágicas (Moore, Sadler) é questionado por estudos em modelos animais, que sugerem separação por constrição na junção entre os domínios dorsal (SOX2, esofágico) e ventral (NKX2.1, respiratório), sem fusão de pregas laterais. O tópico mantém a descrição dos livros-texto.",
+    "Fração de alvéolos presente ao nascer: Sadler — cerca de 1/6 do número adulto; outras estimativas variam amplamente. O tópico usa 'uma fração do número adulto'.",
+    "Prevalência da fístula traqueoesofágica: Moore — 1 em 3.000–4.500 nascidos vivos; Sadler — ~1 em 3.000."
+  ],
+  "incertezas": [
+    "Origem do mesênquima das cartilagens laríngeas: classicamente atribuída aos arcos faríngeos (crista neural); estudos de mapeamento de linhagens sugerem contribuição do mesoderma da placa lateral. O tópico usa apenas 'mesênquima dos 4º e 6º arcos'. A origem dos mioblastos laríngeos (mesoderma paraxial/somitos occipitais, segundo parte da literatura) também não foi detalhada.",
+    "Momento exato em que os movimentos respiratórios fetais se tornam detectáveis à ultrassonografia não foi conferido nas edições adotadas e foi omitido.",
+    "Prevalências da síndrome do desconforto respiratório e da hérnia diafragmática congênita não foram conferidas nas edições adotadas e foram omitidas.",
+    "Janela de uso do corticoide antenatal (em geral 24–34 semanas de idade gestacional segundo o ACOG; alguns protocolos consideram a partir de 22–23 semanas) varia entre diretrizes; não foi usada em questões.",
+    "Limite de viabilidade depende dos recursos de terapia intensiva; o tópico usa apenas a relação qualitativa com o fim do período canalicular."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

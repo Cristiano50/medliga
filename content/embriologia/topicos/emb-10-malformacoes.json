@@ -1,0 +1,1317 @@
+{
+  "id": "emb-10-malformacoes",
+  "disciplina": "embriologia",
+  "ordem": 10,
+  "titulo": "Defeitos congênitos e teratologia",
+  "subtitulo": "Classificação, causas genéticas, teratógenos e prevenção",
+  "periodo": {
+    "diaInicio": 0,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Estimar a frequência dos defeitos congênitos ao nascimento e ao longo dos primeiros anos de vida e reconhecer sua importância na mortalidade infantil.",
+    "Classificar um defeito congênito como malformação, disrupção, deformação ou displasia e distinguir sequência, síndrome e associação.",
+    "Explicar os mecanismos das aneuploidias (não disjunção, mosaicismo) e relacionar a trissomia 21 à idade materna.",
+    "Reconhecer os quadros clínicos das principais aneuploidias autossômicas e dos cromossomos sexuais.",
+    "Descrever as alterações cromossômicas estruturais de maior relevância clínica (deleção 5p, microdeleção 22q11.2, translocações robertsonianas) e o conceito de imprinting genômico.",
+    "Aplicar os princípios da teratologia (período crítico, relação dose-resposta, genótipo e mecanismo) à análise de uma exposição na gestação.",
+    "Associar os teratógenos clássicos — medicamentos, agentes infecciosos, radiação e fatores maternos — aos seus efeitos característicos e às respectivas janelas de suscetibilidade.",
+    "Explicar a herança multifatorial e o modelo de limiar aplicados aos defeitos congênitos comuns.",
+    "Diferenciar os defeitos do tubo neural e justificar a prevenção com ácido fólico e o rastreamento pré-natal correspondente."
+  ],
+  "resumo": "Defeitos congênitos são alterações estruturais, funcionais ou metabólicas presentes ao nascimento. **Anomalias estruturais maiores** ocorrem em cerca de **3% dos recém-nascidos**, com frequência acumulada de cerca de 6% aos 2 anos e 8% aos 5 anos. No Brasil, estão entre as principais causas de mortalidade infantil (boletins epidemiológicos do Ministério da Saúde).\n\n**Classificação.** **Malformação**: defeito por desenvolvimento intrinsecamente anormal (fenda labial). **Disrupção**: destruição de estrutura antes normal (bandas amnióticas). **Deformação**: forças mecânicas sobre estrutura normal (pé torto no oligoidrâmnio). **Displasia**: organização celular anormal no tecido. Quanto ao padrão: **sequência** (cascata a partir de uma anomalia primária única, como a de Potter), **síndrome** (causa única conhecida) e **associação** (sem causa unificada, como VACTERL). Fatores genéticos respondem por cerca de um terço dos casos; em 50% a 60%, a causa é desconhecida.\n\n**Aneuploidias.** Resultam sobretudo de **não disjunção** meiótica. A **trissomia 21** (cerca de 1 em 800 nascimentos) decorre, na maioria dos casos, de erro na meiose materna e aumenta com a **idade materna**, pela longa detenção do oócito na meiose I; cursa com hipotonia, fissuras palpebrais oblíquas, prega palmar transversa única, deficiência intelectual, defeito do septo atrioventricular e atresia duodenal. A **trissomia 18** combina restrição de crescimento, mãos cerradas com dedos sobrepostos e pés em mata-borrão; a **trissomia 13**, holoprosencefalia, fenda labiopalatina e polidactilia postaxial — ambas com cardiopatia e alta mortalidade. A **monossomia X (45,X)**: baixa estatura, disgenesia gonadal, pescoço alado e coarctação da aorta, sem efeito da idade materna; **47,XXY**: estatura alta e infertilidade. A **poliploidia** é letal. O **mosaicismo**, por erro mitótico pós-zigótico, atenua o fenótipo; confinado à placenta, gera discordância do DNA fetal livre.\n\n**Alterações estruturais e imprinting.** **Deleção 5p** (cri-du-chat): choro agudo, microcefalia e deficiência intelectual. **Microdeleção 22q11.2**: cardiopatia conotruncal, hipoplasia do timo com imunodeficiência de células T, hipocalcemia e fenda palatina — por falha da terceira e quarta bolsas faríngeas e da crista neural cardíaca. **Translocação robertsoniana**: portador normal, com 45 cromossomos, e risco elevado de prole trissômica (rob(14;21) na síndrome de Down hereditária). Na região **15q11.2-q13**, sujeita a **imprinting genômico**, a perda da contribuição paterna causa **Prader-Willi** (hipotonia neonatal, depois hiperfagia e hipogonadismo) e a da materna, **Angelman** (deficiência intelectual grave, ausência de fala, ataxia e riso imotivado).\n\n**Princípios da teratologia.** A suscetibilidade depende do **genótipo** do concepto, do **estágio** na exposição, da **dose** e do **mecanismo** do agente; as manifestações são morte, malformação, restrição de crescimento e distúrbio funcional. Nas duas primeiras semanas após a fertilização vale o **\"tudo ou nada\"**; da **3ª à 8ª semana** (organogênese) está o maior risco de malformações maiores, com pico na 4ª e na 5ª; no período fetal predominam efeitos sobre crescimento e função, sobretudo do sistema nervoso central.\n\n**Teratógenos.** **Álcool**: transtornos do espectro alcoólico fetal — restrição de crescimento, alterações do sistema nervoso central e fácies característica (fissuras palpebrais curtas, filtro liso, lábio superior fino); principal causa evitável de deficiência intelectual, sem dose nem período seguros. **Talidomida**: amelia, meromelia, focomelia e anomalias de orelha, nos dias **20 a 36 após a fertilização** (34 a 50 após a DUM); no Brasil segue indicada no eritema nodoso hansênico e no mieloma múltiplo, regulada pela Lei 10.651/2003 e pela RDC Anvisa 11/2011 — proibida na gestação e, em mulheres em idade fértil, condicionada à exclusão de gravidez e a dois contraceptivos, um de barreira. **Isotretinoína e retinoides**: teratogênicos em doses terapêuticas. **Ácido valproico** e **carbamazepina**: defeitos do tubo neural, o valproato também com prejuízo cognitivo dose-dependente; **fenitoína**, síndrome hidantoínica fetal; **varfarina**, hipoplasia nasal e epífises pontilhadas; **IECA e BRA** no 2º e 3º trimestres, oligoidrâmnio e disgenesia tubular renal; **tetraciclinas**, dentes e ossos em mineralização; **lítio**, anomalia de Ebstein; **metotrexato**, antifolato; **misoprostol**, disrupção vascular com sequência de Möbius; **dietilestilbestrol**, adenocarcinoma de células claras de vagina nas filhas expostas; **andrógenos**, virilização da genitália externa feminina.\n\n**Infecções, radiação e fatores maternos.** **Rubéola**: catarata, surdez e cardiopatia, com risco máximo no 1º trimestre. **Citomegalovírus**: microcefalia com calcificações periventriculares e surdez. **Toxoplasmose**: hidrocefalia, calcificações difusas e coriorretinite — transmissão mais provável quanto mais tardia a infecção, lesões mais graves quanto mais precoce. **Sífilis**: rinite, exantema palmoplantar e periostite, prevenível com penicilina materna. **Zika**: a epidemia brasileira de 2015-2016 definiu a síndrome congênita (microcefalia grave, calcificações subcorticais, lesões retinianas, artrogripose); a Emergência em Saúde Pública de Importância Nacional vigorou de 11/11/2015 (Portaria GM/MS 1.813) a 30/07/2017 (Portaria 1.682); a da OMS, de 1º/02 a 18/11/2016. **Varicela**: cicatrizes em dermátomo com hipoplasia do membro. **Herpes simples**: transmissão perinatal. **Radiação ionizante**: em doses altas, microcefalia e deficiência intelectual (maior suscetibilidade entre 8 e 15 semanas após a concepção). **Fatores maternos**: diabetes pré-gestacional mal controlado (cardiopatias, defeitos do tubo neural, disgenesia caudal), hipertermia, fenilcetonúria e obesidade.\n\n**Herança multifatorial e defeitos do tubo neural (DTN).** O modelo de limiar explica a maioria das fendas orofaciais, dos DTN, das cardiopatias congênitas e do pé torto; o risco de recorrência em parentes de primeiro grau excede o da população geral. A **anencefalia** decorre da falha do neuroporo cranial (dias 24 a 26) e é incompatível com a vida; a **espinha bífida oculta** é defeito ósseo sem herniação; na **meningocele** herniam meninges e líquido e, na **mielomeningocele**, também tecido nervoso, com déficit neurológico e Chiari tipo II. **Prevenção**: ácido fólico antes da concepção (0,4 mg/dia; 4 a 5 mg/dia em alto risco) e fortificação das farinhas (RDC Anvisa 150/2017: 140 a 220 µg por 100 g). **Rastreamento**: alfafetoproteína sérica materna (15 a 20 semanas) e ultrassonografia morfológica; os rastreamentos de aneuploidia não detectam DTN.",
+  "pontosChave": [
+    "Anomalias estruturais maiores ocorrem em cerca de 3% dos recém-nascidos, e a frequência acumulada chega a cerca de 6% aos 2 anos.",
+    "Malformação decorre de desenvolvimento intrinsecamente anormal; disrupção, de destruição de estrutura previamente normal; deformação, de forças mecânicas; displasia, de organização celular anormal.",
+    "Sequência deriva de uma anomalia primária única; síndrome tem causa única conhecida; associação é combinação não aleatória sem causa unificada.",
+    "Fatores genéticos respondem por cerca de um terço dos defeitos congênitos e, em cerca de 50% a 60% dos casos, a causa é desconhecida.",
+    "A trissomia 21 decorre, na maioria dos casos, de não disjunção na meiose materna e aumenta com a idade materna; a monossomia X não tem relação com a idade materna.",
+    "A microdeleção 22q11.2 explica-se pelo desenvolvimento anormal da terceira e quarta bolsas faríngeas e pela contribuição deficiente da crista neural cardíaca.",
+    "Portadores de translocação robertsoniana são fenotipicamente normais, com 45 cromossomos, e têm risco aumentado de prole com trissomia.",
+    "No imprinting da região 15q11.2-q13, a perda da contribuição paterna causa Prader-Willi e a da materna, Angelman.",
+    "Nas duas primeiras semanas vale o princípio do \"tudo ou nada\"; o maior risco de malformações maiores vai da 3ª à 8ª semana após a fertilização, e no período fetal predominam efeitos sobre crescimento e função.",
+    "A janela de maior suscetibilidade à talidomida é de 20 a 36 dias após a fertilização (34 a 50 dias após a DUM).",
+    "Cada teratógeno tem assinatura e janela próprias: IECA e BRA causam oligoidrâmnio e disgenesia tubular renal no 2º e 3º trimestres; tetraciclinas afetam dentes e ossos em mineralização; o misoprostol age por disrupção vascular (sequência de Möbius); o Zika causa microcefalia grave com calcificações subcorticais e artrogripose.",
+    "O ácido fólico periconcepcional (0,4 mg/dia; 4 a 5 mg/dia em alto risco) deve começar antes da concepção, pois o tubo neural se fecha entre os dias 24 e 28; na espinha bífida oculta não há herniação de meninges nem de tecido nervoso, ao contrário da meningocele e da mielomeningocele."
+  ],
+  "estruturas": [
+    {
+      "id": "placa-neural",
+      "nome": "Placa neural",
+      "sinonimos": [],
+      "definicao": "Espessamento do ectoderma dorsal, induzido pela notocorda, que dá origem a todo o sistema nervoso central.",
+      "origem": "Ectoderma dorsal, por indução da notocorda e da placa precordal (3ª semana).",
+      "destino": "Invagina-se formando o sulco e as pregas neurais, que se fundem no tubo neural; a falha desse processo causa os defeitos do tubo neural."
+    },
+    {
+      "id": "pregas-neurais",
+      "nome": "Pregas neurais",
+      "sinonimos": [
+        "dobras neurais"
+      ],
+      "definicao": "Bordas elevadas da placa neural que se aproximam na linha média para fechar o tubo neural.",
+      "origem": "Elevação das margens da placa neural.",
+      "destino": "Fundem-se, inicialmente na região cervical, formando o tubo neural; de suas cristas origina-se a crista neural."
+    },
+    {
+      "id": "tubo-neural",
+      "nome": "Tubo neural",
+      "sinonimos": [],
+      "definicao": "Estrutura tubular formada pela fusão das pregas neurais, primórdio do encéfalo e da medula espinal.",
+      "origem": "Neurulação primária, a partir da placa neural (3ª e 4ª semanas).",
+      "destino": "Origina o sistema nervoso central; a falha de fechamento resulta em anencefalia, espinha bífida cística e outros defeitos."
+    },
+    {
+      "id": "neuroporo-cranial",
+      "nome": "Neuroporo cranial",
+      "sinonimos": [
+        "neuroporo rostral",
+        "neuroporo anterior"
+      ],
+      "definicao": "Abertura cefálica transitória do tubo neural, última a se fechar na extremidade cranial.",
+      "origem": "Extremidade cranial do tubo neural em fechamento.",
+      "destino": "Fecha-se por volta dos dias 24 a 26 após a fertilização; sua falha de fechamento resulta em anencefalia."
+    },
+    {
+      "id": "neuroporo-caudal",
+      "nome": "Neuroporo caudal",
+      "sinonimos": [
+        "neuroporo posterior"
+      ],
+      "definicao": "Abertura caudal transitória do tubo neural.",
+      "origem": "Extremidade caudal do tubo neural em fechamento.",
+      "destino": "Fecha-se por volta dos dias 26 a 28 após a fertilização; sua falha resulta em espinha bífida cística (meningocele e mielomeningocele)."
+    },
+    {
+      "id": "crista-neural",
+      "nome": "Crista neural",
+      "sinonimos": [
+        "células da crista neural"
+      ],
+      "definicao": "População celular que se desprende das bordas das pregas neurais e migra extensamente pelo embrião.",
+      "origem": "Bordas da placa e das pregas neurais.",
+      "destino": "Forma gânglios sensitivos e autonômicos, medula da suprarrenal, melanócitos, parte do esqueleto craniofacial e o septo aorticopulmonar; sua contribuição deficiente explica cardiopatias conotruncais, como as da microdeleção 22q11.2."
+    },
+    {
+      "id": "arcos-faringeos",
+      "nome": "Arcos faríngeos",
+      "sinonimos": [
+        "arcos branquiais"
+      ],
+      "definicao": "Série de elevações pares na parede lateral da faringe primitiva, com núcleo mesenquimal, cartilagem, nervo e artéria próprios.",
+      "origem": "Mesênquima de origem mesodérmica e da crista neural, a partir da 4ª semana.",
+      "destino": "Formam estruturas da face, da mandíbula, do pescoço, da laringe e os ossículos da audição; seu desenvolvimento anormal produz anomalias craniofaciais e de orelha."
+    },
+    {
+      "id": "bolsas-faringeas-terceira-e-quarta",
+      "nome": "Terceira e quarta bolsas faríngeas",
+      "sinonimos": [],
+      "definicao": "Evaginações endodérmicas da faringe primitiva que originam o timo e as glândulas paratireoides.",
+      "origem": "Endoderma da faringe primitiva.",
+      "destino": "A terceira bolsa origina o timo e as paratireoides inferiores; a quarta, as paratireoides superiores. Seu desenvolvimento deficiente, como na microdeleção 22q11.2, causa imunodeficiência de células T e hipocalcemia."
+    },
+    {
+      "id": "palato-secundario",
+      "nome": "Palato secundário",
+      "sinonimos": [
+        "processos palatinos laterais",
+        "prateleiras palatinas"
+      ],
+      "definicao": "Projeções mediais dos processos maxilares que se elevam acima da língua e se fundem na linha média, formando a maior parte do palato duro e o palato mole.",
+      "origem": "Processos maxilares (primeiro arco faríngeo).",
+      "destino": "Funde-se com o palato primário e com o septo nasal entre a 7ª e a 10ª semana; a falha de fusão resulta em fenda palatina."
+    },
+    {
+      "id": "broto-membro-superior",
+      "nome": "Broto do membro superior",
+      "sinonimos": [],
+      "definicao": "Elevação na parede corporal lateral, com núcleo mesenquimal recoberto por ectoderma, primórdio do membro superior.",
+      "origem": "Mesoderma somático da parede corporal, no final da 4ª semana.",
+      "destino": "Forma o membro superior; é alvo da janela de suscetibilidade à talidomida, que causa amelia, meromelia e focomelia."
+    },
+    {
+      "id": "broto-membro-inferior",
+      "nome": "Broto do membro inferior",
+      "sinonimos": [],
+      "definicao": "Elevação na parede corporal lateral caudal, primórdio do membro inferior, que surge alguns dias após o do membro superior.",
+      "origem": "Mesoderma somático da parede corporal, no início da 5ª semana.",
+      "destino": "Forma o membro inferior; seu desenvolvimento ligeiramente mais tardio explica por que sua janela de suscetibilidade a teratógenos de membros é posterior à do membro superior."
+    },
+    {
+      "id": "cavidade-amniotica",
+      "nome": "Cavidade amniótica",
+      "sinonimos": [
+        "saco amniótico"
+      ],
+      "definicao": "Espaço preenchido por líquido amniótico onde o feto se desenvolve e se movimenta.",
+      "origem": "Separação de células do epiblasto (amnioblastos) na 2ª semana.",
+      "destino": "Seu volume reduzido causa deformações e hipoplasia pulmonar; a ruptura do âmnio com formação de bandas causa disrupções."
+    },
+    {
+      "id": "placenta",
+      "nome": "Placenta",
+      "sinonimos": [],
+      "definicao": "Órgão de troca materno-fetal, com parte fetal derivada do cório frondoso e parte materna derivada da decídua basal.",
+      "origem": "Cório frondoso e decídua basal.",
+      "destino": "Via pela qual fármacos, álcool, vírus e outros agentes alcançam o embrião e o feto; o termo 'barreira placentária' é inadequado."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "periodo-tudo-ou-nada",
+      "descricao": "Primeiras duas semanas após a fertilização: período do \"tudo ou nada\" — agressões levam à morte do concepto ou não deixam efeito, e malformações maiores são raras",
+      "diaMin": 0,
+      "diaMax": 14,
+      "ordem": 1
+    },
+    {
+      "id": "inicio-organogenese",
+      "descricao": "Início da 3ª semana: começa a organogênese e, com ela, o período de maior suscetibilidade a malformações estruturais maiores",
+      "diaMin": 15,
+      "diaMax": 15,
+      "ordem": 2
+    },
+    {
+      "id": "periodo-critico-tubo-neural",
+      "descricao": "Período crítico do tubo neural: o fechamento ocorre entre os dias 24 e 28, de modo que a suplementação de ácido fólico deve antecedê-lo",
+      "diaMin": 18,
+      "diaMax": 28,
+      "ordem": 3
+    },
+    {
+      "id": "janela-talidomida",
+      "descricao": "Janela de maior suscetibilidade à talidomida: dias 20 a 36 após a fertilização, equivalentes a 34 a 50 dias após a DUM",
+      "diaMin": 20,
+      "diaMax": 36,
+      "ordem": 4
+    },
+    {
+      "id": "periodo-critico-coracao",
+      "descricao": "Período crítico do coração, com maior risco de cardiopatias congênitas estruturais",
+      "diaMin": 20,
+      "diaMax": 50,
+      "ordem": 5
+    },
+    {
+      "id": "pico-sensibilidade-malformacoes",
+      "descricao": "Pico de sensibilidade a malformações maiores, na 4ª e na 5ª semana após a fertilização",
+      "diaMin": 22,
+      "diaMax": 35,
+      "ordem": 6
+    },
+    {
+      "id": "fechamento-neuroporo-cranial",
+      "descricao": "Fechamento do neuroporo cranial (dias 24 a 26); sua falha resulta em anencefalia",
+      "diaMin": 24,
+      "diaMax": 26,
+      "ordem": 7
+    },
+    {
+      "id": "periodo-critico-membros",
+      "descricao": "Período crítico dos membros, com o membro superior ligeiramente anterior ao inferior",
+      "diaMin": 24,
+      "diaMax": 36,
+      "ordem": 8
+    },
+    {
+      "id": "fechamento-neuroporo-caudal",
+      "descricao": "Fechamento do neuroporo caudal (dias 26 a 28); sua falha resulta em espinha bífida cística",
+      "diaMin": 26,
+      "diaMax": 28,
+      "ordem": 9
+    },
+    {
+      "id": "periodo-critico-palato",
+      "descricao": "Período crítico do palato: a fusão dos processos palatinos ocorre entre a 7ª e a 10ª semana após a fertilização; sua falha causa fenda palatina",
+      "diaMin": 42,
+      "diaMax": 70,
+      "ordem": 10
+    },
+    {
+      "id": "periodo-critico-genitalia",
+      "descricao": "Período crítico da genitália externa: a exposição a andrógenos antes de cerca de 12 semanas após a fertilização pode causar fusão labial, e mais tarde, hipertrofia do clitóris",
+      "diaMin": 49,
+      "diaMax": 84,
+      "ordem": 11
+    },
+    {
+      "id": "fim-organogenese",
+      "descricao": "Fim da 8ª semana após a fertilização (dia 56): encerra-se a organogênese principal e o risco de malformações maiores cai acentuadamente",
+      "diaMin": 56,
+      "diaMax": 56,
+      "ordem": 12
+    },
+    {
+      "id": "janela-radiacao-snc",
+      "descricao": "Maior suscetibilidade do sistema nervoso central a doses altas de radiação ionizante: 8 a 15 semanas após a concepção",
+      "diaMin": 56,
+      "diaMax": 105,
+      "ordem": 13
+    },
+    {
+      "id": "inicio-periodo-fetal-teratologia",
+      "descricao": "Período fetal: predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central, que permanece suscetível até depois do nascimento",
+      "diaMin": 57,
+      "diaMax": 266,
+      "ordem": 14
+    },
+    {
+      "id": "janela-tetraciclina",
+      "descricao": "A partir da mineralização de dentes e ossos (segunda metade da gestação), as tetraciclinas se depositam e causam manchas dentárias e hipoplasia de esmalte",
+      "diaMin": 84,
+      "diaMax": 266,
+      "ordem": 15
+    },
+    {
+      "id": "janela-ieca-bra",
+      "descricao": "Segundo e terceiro trimestres: IECA e BRA causam hipoperfusão renal fetal, oligoidrâmnio e disgenesia tubular renal",
+      "diaMin": 84,
+      "diaMax": 266,
+      "ordem": 16
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "sindrome-alcoolica-fetal",
+      "titulo": "Transtornos do espectro alcoólico fetal e síndrome alcoólica fetal",
+      "descricao": "O espectro abrange desde alterações comportamentais e cognitivas isoladas até a síndrome alcoólica fetal completa, com restrição de crescimento pré e pós-natal, alterações do sistema nervoso central (microcefalia, deficiência intelectual, déficit de atenção) e fácies característica: fissuras palpebrais curtas, filtro nasolabial liso, lábio superior fino e hipoplasia maxilar. É a principal causa evitável de deficiência intelectual.",
+      "mecanismo": "O etanol e o acetaldeído atravessam livremente a placenta e atuam por múltiplos mecanismos: morte de células da crista neural (explicando a fácies), interferência na migração e na sobrevivência de neurônios, estresse oxidativo e alteração da sinalização celular. Como o sistema nervoso central se desenvolve durante toda a gestação, não há período seguro para o consumo."
+    },
+    {
+      "id": "embriopatia-talidomida",
+      "titulo": "Embriopatia pela talidomida",
+      "descricao": "Caracteriza-se por defeitos de redução dos membros (amelia, meromelia, focomelia), anomalias de orelha externa e interna com surdez e defeitos cardíacos, renais e intestinais. A janela de maior suscetibilidade é de 20 a 36 dias após a fertilização (34 a 50 dias após a DUM), com as anomalias de orelha concentradas no início do intervalo e as de membros a seguir, o membro superior antes do inferior.",
+      "mecanismo": "Efeito antiangiogênico e, segundo a compreensão atual, ligação ao complexo da cereblon com degradação de proteínas necessárias ao desenvolvimento dos membros. No Brasil o fármaco continua indicado para o eritema nodoso hansênico, o mieloma múltiplo e outras doenças, e novos casos de embriopatia foram descritos; por isso seu uso é regulado pela Lei 10.651/2003 e pela RDC Anvisa 11/2011, que vedam o uso na gestação e exigem, para mulheres em idade fértil, exclusão de gravidez, comprovação de pelo menos dois métodos contraceptivos eficazes (um de barreira), termo de responsabilidade e prescrição em receituário de controle especial."
+    },
+    {
+      "id": "sindrome-congenita-zika",
+      "titulo": "Síndrome congênita do vírus Zika",
+      "descricao": "Microcefalia grave com desproporção craniofacial e sobreposição de suturas, córtex cerebral afinado com calcificações subcorticais, ventriculomegalia, lesões maculares e alterações pigmentares da retina, artrogripose e hipertonia precoce com irritabilidade. O risco é maior quando a infecção materna ocorre no primeiro trimestre.",
+      "mecanismo": "O vírus atravessa a placenta e tem tropismo por células progenitoras neurais, nas quais causa morte celular e redução da proliferação, interrompendo a formação do córtex. O aumento de notificações de microcefalia foi detectado no Brasil a partir de outubro de 2015, concentrado inicialmente na região Nordeste; o Ministério da Saúde declarou Emergência em Saúde Pública de Importância Nacional em 11 de novembro de 2015 (Portaria GM/MS 1.813/2015), encerrada em 30 de julho de 2017 (Portaria 1.682/2017), e a Organização Mundial da Saúde manteve Emergência de Saúde Pública de Importância Internacional entre 1º de fevereiro e 18 de novembro de 2016."
+    },
+    {
+      "id": "sequencia-mobius-misoprostol",
+      "titulo": "Sequência de Möbius associada ao misoprostol",
+      "descricao": "Paralisia congênita dos nervos facial e abducente, com face inexpressiva, dificuldade de sucção e limitação da abdução ocular, frequentemente acompanhada de defeitos transversos terminais de membros, pé torto e artrogripose. É um exemplo típico de disrupção, e não de malformação.",
+      "mecanismo": "O misoprostol, análogo da prostaglandina E1, provoca contrações uterinas intensas que reduzem transitoriamente a perfusão placentária e fetal. A hipoperfusão em território vascular específico lesa estruturas já formadas — núcleos de nervos cranianos no tronco encefálico e partes distais dos membros — caracterizando disrupção vascular. Tem especial relevância epidemiológica no Brasil pelo uso em tentativas de interrupção da gestação."
+    },
+    {
+      "id": "embriopatia-ieca",
+      "titulo": "Fetopatia por inibidores do sistema renina-angiotensina",
+      "descricao": "A exposição a IECA ou BRA no segundo e terceiro trimestres causa oligoidrâmnio, disgenesia tubular renal com insuficiência renal neonatal, hipoplasia da calota craniana, contraturas de membros e hipoplasia pulmonar, com elevada mortalidade. São contraindicados na gestação.",
+      "mecanismo": "O bloqueio do sistema renina-angiotensina fetal reduz a pressão de perfusão glomerular e a produção de urina; a oligúria leva a oligoidrâmnio, que por sua vez causa compressão (contraturas, deformidades) e impede a expansão pulmonar. A angiotensina II também é necessária ao desenvolvimento tubular renal normal."
+    },
+    {
+      "id": "embriopatia-diabetica",
+      "titulo": "Embriopatia diabética",
+      "descricao": "Filhos de mulheres com diabetes pré-gestacional mal controlado têm risco aumentado de cardiopatias congênitas (especialmente conotruncais e septais), defeitos do tubo neural, anomalias renais, holoprosencefalia e disgenesia caudal, além de macrossomia e hipoglicemia neonatal.",
+      "mecanismo": "A hiperglicemia periconcepcional atua no período de organogênese por estresse oxidativo, alteração do metabolismo do inositol e das prostaglandinas e aumento da apoptose em tecidos embrionários. O risco se correlaciona com o controle glicêmico no período periconcepcional, o que torna o cuidado pré-concepcional a principal medida preventiva. O diabetes gestacional, de início mais tardio, não compartilha esse risco de malformações."
+    },
+    {
+      "id": "fenilcetonuria-materna",
+      "titulo": "Fenilcetonúria materna",
+      "descricao": "Gestantes com fenilcetonúria que não mantêm dieta restritiva expõem o feto a níveis elevados de fenilalanina, resultando em microcefalia, deficiência intelectual, cardiopatia e restrição de crescimento — ainda que a criança, em geral, não seja afetada pela doença.",
+      "mecanismo": "A fenilalanina atravessa a placenta por transporte ativo e atinge concentrações fetais superiores às maternas, sendo tóxica ao sistema nervoso central em desenvolvimento. O controle dietético rigoroso antes da concepção e durante toda a gestação previne o quadro."
+    },
+    {
+      "id": "anencefalia",
+      "titulo": "Anencefalia",
+      "descricao": "Ausência da calota craniana e do encéfalo anterior, por falha de fechamento do neuroporo cranial e degeneração do tecido neural exposto. É incompatível com a vida extrauterina, cursa com polidrâmnio e elevação da alfafetoproteína. No Brasil, o Supremo Tribunal Federal decidiu, na ADPF 54, em abril de 2012, que a interrupção da gestação de feto anencéfalo não configura crime, não sendo necessária autorização judicial; o Conselho Federal de Medicina regulamentou os critérios diagnósticos em resolução do mesmo ano.",
+      "mecanismo": "Falha de fusão das pregas neurais na extremidade cranial, entre os dias 24 e 26 após a fertilização (exencefalia), com exposição do tecido nervoso ao líquido amniótico e sua destruição progressiva. A ausência de deglutição eficaz contribui para o polidrâmnio."
+    },
+    {
+      "id": "mielomeningocele",
+      "titulo": "Mielomeningocele",
+      "descricao": "Forma mais grave da espinha bífida cística, em que meninges e tecido nervoso herniam por defeito dos arcos vertebrais, geralmente lombossacro. Cursa com déficit motor e sensitivo abaixo do nível da lesão, bexiga e intestino neurogênicos e, frequentemente, malformação de Chiari tipo II com hidrocefalia. O reparo pode ser realizado após o nascimento ou, em casos selecionados, ainda no útero.",
+      "mecanismo": "Falha de fechamento do neuroporo caudal entre os dias 26 e 28 após a fertilização, com defeito concomitante dos arcos vertebrais e da pele sobrejacente. A exposição crônica da medula ao líquido amniótico agrava a lesão neurológica, fundamento racional do reparo intrauterino."
+    },
+    {
+      "id": "prevencao-acido-folico",
+      "titulo": "Prevenção dos defeitos do tubo neural com ácido fólico",
+      "descricao": "A suplementação periconcepcional de ácido fólico reduz a ocorrência e a recorrência dos defeitos do tubo neural. Deve começar antes da concepção — pelo menos 30 dias antes — e manter-se no primeiro trimestre, na dose habitual de 0,4 mg/dia; em alto risco, especialmente após gestação com defeito do tubo neural, recomenda-se dose elevada, de 4 a 5 mg/dia. No Brasil, há fortificação obrigatória das farinhas de trigo e de milho (RDC Anvisa 344/2002, substituída pela RDC 150/2017, que estabelece 140 a 220 µg de ácido fólico por 100 g de farinha).",
+      "mecanismo": "O folato é essencial ao metabolismo de um carbono, à síntese de nucleotídeos e às reações de metilação necessárias à proliferação celular intensa da neurulação. Como o tubo neural se fecha entre os dias 24 e 28 após a fertilização — quando muitas mulheres ainda não sabem que estão grávidas —, a suplementação iniciada após a confirmação da gestação perde grande parte de sua eficácia preventiva."
+    },
+    {
+      "id": "aconselhamento-translocacao",
+      "titulo": "Aconselhamento genético na trissomia 21 por translocação",
+      "descricao": "Quando uma criança com síndrome de Down tem cariótipo com translocação robertsoniana, é indispensável estudar o cariótipo dos pais: identificar um portador equilibrado muda radicalmente o risco de recorrência e permite oferecer diagnóstico pré-natal nas gestações seguintes.",
+      "mecanismo": "O portador de translocação robertsoniana, por exemplo rob(14;21), é fenotipicamente normal e tem 45 cromossomos, com todo o material genético essencial presente. Na meiose, porém, a segregação do cromossomo translocado pode gerar gametas desequilibrados, com material extra do cromossomo 21, resultando em trissomia 21 por translocação — forma que não depende da idade materna."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-10-q01",
+      "tipo": "multipla",
+      "enunciado": "Anomalias estruturais maiores são identificadas em aproximadamente que proporção dos recém-nascidos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cerca de 0,3%"
+        },
+        {
+          "id": "b",
+          "texto": "Cerca de 3%"
+        },
+        {
+          "id": "c",
+          "texto": "Cerca de 15%"
+        },
+        {
+          "id": "d",
+          "texto": "Cerca de 25%"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Anomalias estruturais maiores são detectadas em cerca de 3% dos recém-nascidos. Como várias só se manifestam ou se tornam detectáveis depois, a frequência acumulada chega a cerca de 6% aos 2 anos e a cerca de 8% aos 5 anos de idade. A alternativa (a) subestima a frequência em uma ordem de magnitude. A (c) corresponde aproximadamente à frequência de anomalias em embriões muito precoces, a maioria dos quais é perdida por abortamento espontâneo, e não a recém-nascidos. A (d) não corresponde a nenhuma estimativa da literatura.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "epidemiologia",
+        "defeitos-congenitos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q02",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com pés em posição equinovara bilateral, assimetria facial e limitação da extensão dos joelhos. A gestação cursou com oligoidrâmnio desde o segundo trimestre por amniorrexe precoce. O exame morfológico pré-natal não evidenciou outras anomalias.",
+      "enunciado": "Os achados do recém-nascido classificam-se como:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "deformações, pois resultam de forças mecânicas atuando sobre estruturas que se formaram normalmente"
+        },
+        {
+          "id": "b",
+          "texto": "malformações, pois decorrem de processo de desenvolvimento intrinsecamente anormal"
+        },
+        {
+          "id": "c",
+          "texto": "disrupções, pois houve destruição de tecidos previamente formados por agente externo"
+        },
+        {
+          "id": "d",
+          "texto": "displasias, pois há organização anormal das células nos tecidos afetados"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Deformação é a alteração de forma, de posição ou de estrutura de uma parte que se formou normalmente, causada por forças mecânicas — exatamente o que ocorre no oligoidrâmnio, em que a falta de espaço comprime o feto e produz pé torto, assimetria facial e contraturas. A alternativa (b) é incorreta porque não há erro intrínseco de desenvolvimento. A (c) descreve disrupção, que pressupõe destruição tecidual, como nas bandas amnióticas com amputações ou na disrupção vascular — não é o caso. A (d) descreve displasia, que envolve organização celular anormal, como nas displasias esqueléticas. A distinção tem valor prognóstico: deformações tendem a melhorar com o crescimento e com tratamento postural ou ortopédico.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "classificacao",
+        "deformacao",
+        "oligoidramnio"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Thompson & Thompson Genética Médica, 8ª ed., cap. 14"
+    },
+    {
+      "id": "emb-10-q03",
+      "tipo": "multipla",
+      "enunciado": "Um conjunto de anomalias que ocorre com frequência maior que a esperada pelo acaso, em diferentes indivíduos, sem que se tenha estabelecido uma causa única, é denominado:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "sequência"
+        },
+        {
+          "id": "b",
+          "texto": "síndrome"
+        },
+        {
+          "id": "c",
+          "texto": "associação"
+        },
+        {
+          "id": "d",
+          "texto": "displasia"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Associação é a combinação não aleatória de duas ou mais anomalias que aparecem juntas mais frequentemente do que o esperado pelo acaso, mas sem causa unificada conhecida — o exemplo clássico é a associação VACTERL. A alternativa (a) está errada: sequência é a cascata de defeitos derivada de uma única anomalia primária, como a sequência de Potter a partir do oligoidrâmnio. A (b) também: síndrome é o padrão de anomalias com causa única conhecida, como a trissomia 21. A (d) refere-se a uma categoria morfológica (organização celular anormal), e não a um padrão de ocorrência de anomalias múltiplas.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "classificacao",
+        "associacao",
+        "sindrome",
+        "sequencia"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Thompson & Thompson Genética Médica, 8ª ed., cap. 14"
+    },
+    {
+      "id": "emb-10-q04",
+      "tipo": "multipla",
+      "enunciado": "Sobre a distribuição das causas dos defeitos congênitos, assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Os fatores ambientais, como medicamentos e agentes infecciosos, respondem pela maioria dos casos"
+        },
+        {
+          "id": "b",
+          "texto": "Os fatores genéticos respondem por cerca de um terço dos casos e, em cerca de metade a 60% deles, a causa permanece desconhecida"
+        },
+        {
+          "id": "c",
+          "texto": "Praticamente todos os defeitos congênitos têm causa cromossômica identificável pelo cariótipo"
+        },
+        {
+          "id": "d",
+          "texto": "A herança multifatorial foi descartada como mecanismo relevante após a introdução da análise cromossômica por microarranjo"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Fatores genéticos — alterações cromossômicas e variantes monogênicas — respondem por cerca de um terço dos defeitos congênitos; os fatores ambientais explicam uma fração bem menor; muitos defeitos comuns resultam de herança multifatorial; e em cerca de 50% a 60% dos casos a causa não é identificada. A alternativa (a) superestima o peso dos teratógenos, que é relativamente pequeno, embora seja a fração mais evitável. A (c) é falsa: a maioria dos defeitos não tem alteração detectável no cariótipo. A (d) inverte a realidade: o microarranjo ampliou a detecção de variantes de número de cópias, mas não eliminou o papel central da herança multifatorial nos defeitos comuns.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "etiologia",
+        "epidemiologia",
+        "heranca-multifatorial"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q05",
+      "tipo": "multipla",
+      "enunciado": "O mecanismo responsável pela maioria dos casos de trissomia 21 e sua relação com a idade materna explicam-se por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "não disjunção na meiose materna, favorecida pela longa permanência do oócito detido na primeira divisão meiótica, com deterioração dos mecanismos de coesão e segregação cromossômica"
+        },
+        {
+          "id": "b",
+          "texto": "translocação robertsoniana herdada de um dos genitores, cuja frequência aumenta com a idade materna"
+        },
+        {
+          "id": "c",
+          "texto": "erro mitótico pós-zigótico, que produz mosaicismo e aumenta de frequência com a idade materna"
+        },
+        {
+          "id": "d",
+          "texto": "não disjunção na espermatogênese, responsável pela maioria dos casos e pelo efeito da idade materna"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A maioria dos casos de trissomia 21 resulta de não disjunção meiótica de origem materna, predominantemente na meiose I. Os oócitos entram em meiose na vida fetal e permanecem detidos até a ovulação, de modo que, quanto mais avançada a idade materna, maior a deterioração das proteínas de coesão e dos mecanismos de checagem do fuso, aumentando o erro de segregação. A alternativa (b) descreve a forma por translocação, que corresponde a uma pequena parcela dos casos e não depende da idade materna. A (c) descreve o mosaicismo, também minoritário e sem relação com a idade materna. A (d) está errada: embora erros paternos existam, a maioria dos erros é materna, e é a idade materna — não a paterna — o fator de risco estabelecido para a trissomia 21.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "trissomia-21",
+        "nao-disjuncao",
+        "idade-materna",
+        "aneuploidias"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 6; Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q06",
+      "tipo": "multipla",
+      "contexto": "Casal procura aconselhamento genético. O primeiro filho, de 2 anos, tem síndrome de Down, e o cariótipo da criança mostrou 46 cromossomos com uma translocação envolvendo os cromossomos 14 e 21. A mãe tem 27 anos.",
+      "enunciado": "A conduta e a interpretação corretas são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "solicitar cariótipo dos pais, pois um deles pode ser portador equilibrado de translocação robertsoniana, com 45 cromossomos e fenótipo normal, o que eleva o risco de recorrência"
+        },
+        {
+          "id": "b",
+          "texto": "informar que o risco de recorrência é o da população geral para a idade materna, pois toda trissomia 21 decorre de não disjunção esporádica"
+        },
+        {
+          "id": "c",
+          "texto": "informar que o achado indica mosaicismo materno e que o risco de recorrência é desprezível"
+        },
+        {
+          "id": "d",
+          "texto": "solicitar apenas cariótipo paterno, já que translocações robertsonianas são transmitidas exclusivamente pelo pai"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A trissomia 21 por translocação pode ser de novo ou herdada de um genitor portador equilibrado de translocação robertsoniana — tipicamente rob(14;21) —, que tem 45 cromossomos, fenótipo normal e risco significativamente aumentado de gerar filhos com trissomia 21 desequilibrada. Por isso, o cariótipo de ambos os pais é indispensável, e o resultado define o risco de recorrência e a indicação de diagnóstico pré-natal. A alternativa (b) ignora o mecanismo da translocação, que não segue o risco ligado à idade materna. A (c) confunde translocação com mosaicismo. A (d) é incorreta: a translocação pode ser transmitida por qualquer dos genitores, e o risco de recorrência tende a ser maior quando a portadora é a mãe.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "translocacao-robertsoniana",
+        "trissomia-21",
+        "aconselhamento-genetico"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 5 e cap. 6"
+    },
+    {
+      "id": "emb-10-q07",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com peso muito abaixo do esperado para a idade gestacional apresenta occipital proeminente, micrognatia, orelhas de implantação baixa, mãos cerradas com sobreposição do segundo sobre o terceiro dedo e do quinto sobre o quarto, pés em mata-borrão e sopro cardíaco.",
+      "enunciado": "A hipótese diagnóstica mais provável é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "trissomia 18 (síndrome de Edwards)"
+        },
+        {
+          "id": "b",
+          "texto": "trissomia 13 (síndrome de Patau)"
+        },
+        {
+          "id": "c",
+          "texto": "trissomia 21 (síndrome de Down)"
+        },
+        {
+          "id": "d",
+          "texto": "monossomia X (síndrome de Turner)"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O conjunto de restrição de crescimento grave, occipital proeminente, micrognatia, mãos cerradas com dedos sobrepostos de modo característico, pés em mata-borrão e cardiopatia é típico da trissomia 18, que cursa com mortalidade muito elevada no primeiro ano de vida. A alternativa (b) é incorreta porque a trissomia 13 tem como marcas a holoprosencefalia, a microftalmia, a fenda labiopalatina frequentemente bilateral, a polidactilia postaxial e a aplasia cútis do couro cabeludo. A (c) não corresponde: na trissomia 21 há hipotonia, face achatada, fissuras palpebrais oblíquas e prega palmar transversa única, sem o padrão descrito de sobreposição digital. A (d) é incompatível: a monossomia X cursa com linfedema de mãos e pés, pescoço alado e tórax largo, sem esses achados.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "trissomia-18",
+        "aneuploidias",
+        "diagnostico-sindromico"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 6; Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q08",
+      "tipo": "multipla",
+      "enunciado": "Sobre a monossomia X (45,X; síndrome de Turner), assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cursa com baixa estatura, disgenesia gonadal com amenorreia primária, pescoço alado, linfedema de mãos e pés e coarctação da aorta, sem associação com a idade materna"
+        },
+        {
+          "id": "b",
+          "texto": "Cursa com estatura alta, ginecomastia e testículos pequenos, e sua frequência aumenta com a idade materna"
+        },
+        {
+          "id": "c",
+          "texto": "Decorre quase sempre de não disjunção materna na meiose I, com forte efeito da idade materna"
+        },
+        {
+          "id": "d",
+          "texto": "É caracterizada por deficiência intelectual grave em praticamente todos os casos"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A monossomia X cursa com baixa estatura, disgenesia gonadal (gônadas em fita) com amenorreia primária e infertilidade, pescoço alado (correspondente ao higroma cístico fetal, que pode elevar a translucência nucal), linfedema de mãos e pés no recém-nascido, tórax largo, cúbito valgo e anomalias cardiovasculares, especialmente coarctação da aorta e valva aórtica bicúspide; não há efeito da idade materna, e a maioria dos conceptos 45,X é perdida espontaneamente. A alternativa (b) descreve a síndrome de Klinefelter (47,XXY). A (c) está errada: a perda do cromossomo sexual é frequentemente de origem paterna e não há efeito consistente da idade materna. A (d) é falsa: a inteligência é habitualmente normal, podendo haver dificuldades específicas visuoespaciais.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": [
+        "monossomia-x",
+        "turner",
+        "aneuploidias",
+        "cromossomos-sexuais"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 6"
+    },
+    {
+      "id": "emb-10-q09",
+      "tipo": "multipla",
+      "contexto": "Lactente de 3 meses é internado com crise convulsiva por hipocalcemia. Tem tetralogia de Fallot, fenda palatina submucosa e linfopenia de células T. A radiografia de tórax mostra ausência de sombra tímica.",
+      "enunciado": "A alteração genética e a base embriológica do quadro são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "microdeleção 22q11.2, com desenvolvimento anormal da terceira e quarta bolsas faríngeas e contribuição deficiente da crista neural cardíaca"
+        },
+        {
+          "id": "b",
+          "texto": "deleção 5p, com comprometimento do desenvolvimento da laringe e da face"
+        },
+        {
+          "id": "c",
+          "texto": "trissomia 21, com defeito do septo atrioventricular e imunodeficiência secundária"
+        },
+        {
+          "id": "d",
+          "texto": "deleção 15q11.2-q13 de origem paterna, com hipotonia e anomalias faríngeas"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A associação de cardiopatia conotruncal (tetralogia de Fallot), hipoplasia ou aplasia do timo com imunodeficiência de células T, hipocalcemia por hipoplasia das paratireoides e fenda palatina ou insuficiência velofaríngea caracteriza o espectro da microdeleção 22q11.2. A base embriológica é o desenvolvimento anormal da terceira e quarta bolsas faríngeas — que originam timo e paratireoides — e a contribuição deficiente da crista neural cardíaca para a septação conotruncal. A alternativa (b) descreve o cri-du-chat, cuja marca é o choro agudo, sem imunodeficiência ou hipocalcemia. A (c) é incorreta: na trissomia 21 a cardiopatia típica é o defeito do septo atrioventricular e não há aplasia tímica com hipocalcemia. A (d) descreve a síndrome de Prader-Willi, sem cardiopatia conotruncal nem imunodeficiência.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "microdelecao-22q11",
+        "bolsas-faringeas",
+        "crista-neural",
+        "cardiopatia-conotruncal"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 6; Moore 11ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q10",
+      "tipo": "multipla",
+      "enunciado": "A deleção da região 15q11.2-q13 no cromossomo de origem paterna resulta em:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "síndrome de Angelman, com deficiência intelectual grave, ausência de fala, marcha atáxica e riso imotivado"
+        },
+        {
+          "id": "b",
+          "texto": "síndrome de Prader-Willi, com hipotonia e dificuldade alimentar no recém-nascido, seguidas de hiperfagia, obesidade e hipogonadismo"
+        },
+        {
+          "id": "c",
+          "texto": "síndrome do cri-du-chat, com choro agudo e microcefalia"
+        },
+        {
+          "id": "d",
+          "texto": "fenótipo normal, pois a região é inativada em ambos os sexos"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A região 15q11.2-q13 está sujeita a imprinting genômico: a perda da contribuição paterna — por deleção paterna ou por dissomia uniparental materna — causa a síndrome de Prader-Willi (hipotonia e dificuldade de sucção no período neonatal, depois hiperfagia com obesidade, baixa estatura, hipogonadismo e deficiência intelectual). A alternativa (a) corresponde à perda da contribuição materna, que causa a síndrome de Angelman: os dois quadros envolvem a mesma região cromossômica e se distinguem pela origem parental. A (c) refere-se à deleção 5p. A (d) é falsa: a expressão dependente da origem parental é justamente a razão de os dois fenótipos existirem.",
+      "dificuldade": 4,
+      "bloom": "compreender",
+      "tags": [
+        "imprinting-genomico",
+        "prader-willi",
+        "angelman"
+      ],
+      "referencia": "Thompson & Thompson Genética Médica, 8ª ed., cap. 6"
+    },
+    {
+      "id": "emb-10-q11",
+      "tipo": "multipla",
+      "enunciado": "Sobre os períodos de suscetibilidade a teratógenos, assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Nas duas primeiras semanas após a fertilização, as agressões tendem a causar morte do concepto ou nenhum efeito; o maior risco de malformações maiores está entre a 3ª e a 8ª semana"
+        },
+        {
+          "id": "b",
+          "texto": "As duas primeiras semanas são o período de maior risco de malformações estruturais maiores, por causa da divisão celular intensa"
+        },
+        {
+          "id": "c",
+          "texto": "O período fetal é o de maior risco de malformações estruturais maiores, por causa do crescimento acelerado"
+        },
+        {
+          "id": "d",
+          "texto": "A suscetibilidade é uniforme ao longo de toda a gestação, dependendo apenas da dose do agente"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Nas duas primeiras semanas vale o princípio do \"tudo ou nada\": a agressão mata o concepto ou é compensada pela plasticidade das células ainda não comprometidas, e malformações maiores são raras. O período de maior risco de malformações estruturais maiores é o da organogênese, da 3ª à 8ª semana após a fertilização, com pico na 4ª e na 5ª semana. A alternativa (b) inverte esse princípio. A (c) está errada: no período fetal predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central. A (d) contraria o princípio fundamental de que a suscetibilidade depende do estágio de desenvolvimento, além do genótipo, da dose e do mecanismo.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "teratologia",
+        "periodo-critico",
+        "tudo-ou-nada"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q12",
+      "tipo": "multipla",
+      "contexto": "Criança de 5 anos, em acompanhamento por déficit de atenção e atraso do desenvolvimento, tem peso e estatura abaixo do percentil 3, perímetro cefálico reduzido, fissuras palpebrais curtas, filtro nasolabial liso e lábio superior fino. A mãe relata consumo diário de bebida alcoólica durante toda a gestação.",
+      "enunciado": "Sobre esse diagnóstico, assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Trata-se da síndrome alcoólica fetal; o álcool atua durante toda a gestação, não há dose segura estabelecida e é a principal causa evitável de deficiência intelectual"
+        },
+        {
+          "id": "b",
+          "texto": "O quadro só ocorre com consumo restrito ao primeiro trimestre, pois o álcool não atravessa a placenta após a formação da membrana amniocoriônica"
+        },
+        {
+          "id": "c",
+          "texto": "A fácies característica decorre da ação direta do álcool sobre os ossos da face no terceiro trimestre"
+        },
+        {
+          "id": "d",
+          "texto": "O consumo moderado é seguro, pois o efeito teratogênico do álcool não apresenta relação dose-resposta"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O conjunto de restrição de crescimento, alterações do sistema nervoso central e a fácies característica (fissuras palpebrais curtas, filtro liso, lábio superior fino, hipoplasia maxilar) define a síndrome alcoólica fetal, extremo do espectro dos transtornos do espectro alcoólico fetal. O álcool atravessa livremente a placenta, e como o sistema nervoso central se desenvolve ao longo de toda a gestação, não há período nem dose comprovadamente seguros; é a principal causa evitável de deficiência intelectual. A alternativa (b) é falsa: o álcool atravessa a placenta durante toda a gestação. A (c) erra o mecanismo e o período: a fácies decorre de efeito precoce, sobretudo sobre células da crista neural craniofacial, na fase de organogênese. A (d) nega indevidamente a relação dose-resposta, que existe — maior consumo e consumo em binge aumentam o risco —, sem que isso defina um limite seguro.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "alcool",
+        "teaf",
+        "saf",
+        "crista-neural"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q13",
+      "tipo": "multipla",
+      "contexto": "Mulher de 26 anos em tratamento de eritema nodoso hansênico com talidomida descobre gestação de 7 semanas de idade gestacional. Relata uso regular do medicamento nas últimas semanas.",
+      "enunciado": "Sobre o risco embriológico nessa situação, assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A janela de maior suscetibilidade vai de 20 a 36 dias após a fertilização, equivalentes a 34 a 50 dias após a DUM, e abrange defeitos de redução de membros e anomalias de orelha"
+        },
+        {
+          "id": "b",
+          "texto": "A janela de maior suscetibilidade é o terceiro trimestre, quando os membros completam a ossificação"
+        },
+        {
+          "id": "c",
+          "texto": "Não há risco, pois a talidomida não atravessa a placenta em doses terapêuticas"
+        },
+        {
+          "id": "d",
+          "texto": "O risco é restrito a defeitos do tubo neural, prevenidos pelo uso concomitante de ácido fólico"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A talidomida é teratogênica em janela estreita e precoce — aproximadamente dos dias 20 a 36 após a fertilização, equivalentes a 34 a 50 dias após a DUM, ou seja, cerca de 5 a 7 semanas de idade gestacional — com amelia, meromelia e focomelia, anomalias de orelha externa e interna com surdez e defeitos cardíacos e viscerais; as anomalias de orelha concentram-se no início do intervalo e as de membros a seguir, o superior antes do inferior. A alternativa (b) está errada, pois a formação dos membros ocorre no período embrionário. A (c) é falsa: o fármaco atravessa a placenta e é teratogênico em doses terapêuticas, inclusive em dose única. A (d) atribui à talidomida um efeito que não é o seu. No Brasil, por esse motivo, a Lei 10.651/2003 e a RDC Anvisa 11/2011 proíbem o uso na gestação e exigem, para mulheres em idade fértil, exclusão de gravidez e comprovação de pelo menos dois métodos contraceptivos eficazes, um deles de barreira.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "talidomida",
+        "periodo-critico",
+        "membros",
+        "brasil"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q14",
+      "tipo": "multipla",
+      "contexto": "Gestante de 30 semanas de idade gestacional em uso de enalapril por hipertensão arterial crônica, iniciado inadvertidamente no segundo trimestre, apresenta oligoidrâmnio acentuado. O recém-nascido evolui com anúria e insuficiência respiratória.",
+      "enunciado": "O mecanismo que explica esse quadro é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "bloqueio do sistema renina-angiotensina fetal, com hipoperfusão glomerular, oligúria, oligoidrâmnio, disgenesia tubular renal e hipoplasia pulmonar"
+        },
+        {
+          "id": "b",
+          "texto": "efeito antifolato do fármaco, com defeito de fechamento do tubo neural e insuficiência renal secundária"
+        },
+        {
+          "id": "c",
+          "texto": "deposição do fármaco nos túbulos renais em mineralização, de modo análogo às tetraciclinas nos dentes"
+        },
+        {
+          "id": "d",
+          "texto": "disrupção vascular por contração uterina, com infarto renal bilateral"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "IECA e BRA são contraindicados na gestação, sobretudo no segundo e terceiro trimestres: o bloqueio do sistema renina-angiotensina fetal reduz a pressão de perfusão glomerular e a produção de urina, causando oligoidrâmnio; a angiotensina II também é necessária ao desenvolvimento tubular normal, daí a disgenesia tubular renal. O oligoidrâmnio, por sua vez, impede a expansão pulmonar (hipoplasia pulmonar) e causa contraturas e hipoplasia da calota craniana. A alternativa (b) descreve o mecanismo dos antagonistas do folato, como o metotrexato. A (c) descreve o mecanismo das tetraciclinas, que se depositam em tecidos em mineralização. A (d) descreve o mecanismo do misoprostol, por disrupção vascular.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "ieca",
+        "bra",
+        "oligoidramnio",
+        "disgenesia-tubular-renal"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q15",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido apresenta face inexpressiva, incapacidade de fechar completamente os olhos e de sorrir, limitação da abdução ocular bilateral, dificuldade de sucção e defeitos transversos terminais em dois dedos da mão esquerda. A mãe relata ter feito uso de misoprostol no início da gestação.",
+      "enunciado": "A classificação correta desses defeitos e seu mecanismo são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "disrupção por hipoperfusão vascular secundária à contração uterina, caracterizando a sequência de Möbius"
+        },
+        {
+          "id": "b",
+          "texto": "malformação por erro intrínseco da indução do tubo neural, sem relação com a exposição"
+        },
+        {
+          "id": "c",
+          "texto": "deformação por compressão uterina decorrente de oligoidrâmnio induzido pelo fármaco"
+        },
+        {
+          "id": "d",
+          "texto": "displasia por organização anormal das células do tronco encefálico e dos membros"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O misoprostol, análogo da prostaglandina E1, induz contrações uterinas que reduzem transitoriamente a perfusão placentária e fetal; a isquemia lesa estruturas já formadas — núcleos dos nervos facial e abducente no tronco encefálico e as porções distais dos membros —, caracterizando disrupção vascular. O quadro corresponde à sequência de Möbius associada a defeitos transversos de membros. A alternativa (b) erra ao classificar como malformação: não houve erro intrínseco de desenvolvimento, e sim destruição de tecido previamente normal. A (c) não se aplica, pois o misoprostol não age por oligoidrâmnio. A (d) descreve displasia, categoria que pressupõe organização celular anormal, o que não ocorre aqui.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "misoprostol",
+        "disrupcao",
+        "sequencia-de-mobius",
+        "brasil"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q16",
+      "tipo": "multipla",
+      "enunciado": "Sobre a prevenção dos defeitos do tubo neural com ácido fólico, assinale a alternativa correta:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A suplementação deve ser iniciada antes da concepção, pelo menos 30 dias antes, na dose habitual de 0,4 mg/dia, elevando-se a 4 a 5 mg/dia em situações de alto risco, como gestação anterior com defeito do tubo neural"
+        },
+        {
+          "id": "b",
+          "texto": "A suplementação iniciada após a confirmação da gestação é igualmente eficaz, pois o tubo neural se fecha no segundo trimestre"
+        },
+        {
+          "id": "c",
+          "texto": "A dose de 4 a 5 mg/dia é a recomendada para todas as gestantes, independentemente do risco"
+        },
+        {
+          "id": "d",
+          "texto": "A fortificação das farinhas de trigo e de milho no Brasil tornou dispensável a suplementação periconcepcional"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O tubo neural se fecha entre os dias 24 e 28 após a fertilização, ou seja, por volta de 6 semanas de idade gestacional — frequentemente antes de a mulher saber que está grávida. Por isso, a suplementação deve começar antes da concepção (pelo menos 30 dias antes) e manter-se no primeiro trimestre, na dose habitual de 0,4 mg/dia, elevando-se para 4 a 5 mg/dia em alto risco, especialmente após gestação com defeito do tubo neural. A alternativa (b) contraria a cronologia do fechamento. A (c) generaliza indevidamente a dose alta, reservada a situações de risco aumentado. A (d) está errada: a fortificação obrigatória das farinhas (RDC Anvisa 344/2002, substituída pela RDC 150/2017) é medida populacional complementar, que reduz a prevalência mas não substitui a suplementação individual periconcepcional.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "acido-folico",
+        "defeitos-do-tubo-neural",
+        "prevencao",
+        "brasil"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q17",
+      "tipo": "vf",
+      "enunciado": "Nas duas primeiras semanas após a fertilização, uma agressão ambiental tende a causar morte do concepto ou a não deixar efeito, sendo raras as malformações maiores.",
+      "correta": true,
+      "explicacao": "Verdadeiro. É o princípio do \"tudo ou nada\": nesse período as células ainda não estão comprometidas com destinos específicos, de modo que a perda de algumas pode ser compensada pelas remanescentes, ou a lesão é extensa o bastante para causar morte do concepto e abortamento, frequentemente antes do reconhecimento da gestação. O risco de malformações estruturais maiores concentra-se depois, na organogênese, entre a 3ª e a 8ª semana após a fertilização.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "teratologia",
+        "tudo-ou-nada",
+        "periodo-critico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q18",
+      "tipo": "vf",
+      "enunciado": "A isotretinoína é teratogênica apenas em doses superiores às terapêuticas, sendo segura quando prescrita nas doses habituais para acne.",
+      "correta": false,
+      "explicacao": "Falso. A isotretinoína é teratogênica em doses terapêuticas, com defeitos cranioencefálicos (inclusive hidrocefalia e anomalias cerebelares), de orelha externa (microtia e anotia), fendas orais, cardiopatias conotruncais e aplasia tímica. Por isso, o tratamento exige exclusão de gravidez e contracepção eficaz durante o uso e por período definido após sua suspensão. Retinoides de meia-vida mais longa, como a acitretina, exigem intervalos ainda maiores.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "isotretinoina",
+        "retinoides",
+        "teratogenos"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q19",
+      "tipo": "vf",
+      "enunciado": "A varfarina pode ser substituída pela heparina na gestação porque a heparina, ao contrário da varfarina, não atravessa a placenta.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A varfarina atravessa a placenta e é teratogênica: a exposição no primeiro trimestre associa-se a hipoplasia nasal e epífises pontilhadas (condrodisplasia punctata), por interferência na carboxilação de proteínas dependentes de vitamina K no osso e na cartilagem; mais tarde, acrescenta risco de hemorragia e de lesão do sistema nervoso central. A heparina, por seu tamanho e carga, não atravessa a placenta, sendo o anticoagulante de escolha na gestação.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "varfarina",
+        "heparina",
+        "teratogenos",
+        "membrana-placentaria"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q20",
+      "tipo": "vf",
+      "enunciado": "As tetraciclinas são teratógenos clássicos de membros, causando defeitos de redução quando usadas no primeiro trimestre.",
+      "correta": false,
+      "explicacao": "Falso. As tetraciclinas atravessam a placenta e quelam cálcio, depositando-se em tecidos em mineralização; seus efeitos característicos são a coloração amarelo-acastanhada dos dentes decíduos, a hipoplasia de esmalte e a redução do crescimento ósseo, e ocorrem sobretudo quando o uso se dá na segunda metade da gestação, quando a mineralização está em curso. Defeitos de redução de membros são o efeito característico da talidomida, com janela de 20 a 36 dias após a fertilização.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": [
+        "tetraciclinas",
+        "teratogenos",
+        "periodo-critico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q21",
+      "tipo": "vf",
+      "enunciado": "Na rubéola congênita, o risco de defeitos estruturais é maior quando a infecção materna ocorre no primeiro trimestre.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A rubéola é um exemplo claro de dependência do período de exposição: a infecção materna no primeiro trimestre, durante a organogênese, acarreta o maior risco de catarata, surdez neurossensorial e cardiopatia (persistência do canal arterial, estenose da artéria pulmonar), além de microcefalia e restrição de crescimento. Infecções mais tardias tendem a produzir manifestações menos graves. A prevenção é a vacinação antes da gestação, pois a vacina é contraindicada durante a gravidez.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "rubeola",
+        "infeccoes-congenitas",
+        "periodo-critico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q22",
+      "tipo": "vf",
+      "enunciado": "Na toxoplasmose congênita, o risco de transmissão vertical é maior no primeiro trimestre, enquanto as lesões fetais são mais graves quando a infecção materna ocorre no terceiro trimestre.",
+      "correta": false,
+      "explicacao": "Falso — a afirmação está invertida. Na toxoplasmose, o risco de transmissão vertical aumenta com o avançar da idade gestacional (é menor no primeiro trimestre e maior no terceiro), mas a gravidade das lesões é inversa: a infecção precoce, embora menos frequentemente transmitida, produz os quadros mais graves, com hidrocefalia, calcificações intracranianas difusas e coriorretinite. Essa dissociação entre risco de transmissão e gravidade é central para interpretar a triagem pré-natal e orientar o tratamento.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "toxoplasmose",
+        "infeccoes-congenitas",
+        "periodo-critico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q23",
+      "tipo": "vf",
+      "enunciado": "Na espinha bífida oculta há apenas falha de fusão dos arcos vertebrais, sem herniação de meninges ou de tecido nervoso.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A espinha bífida oculta é o defeito ósseo isolado, mais comum na região lombossacra, sem herniação de meninges nem de tecido nervoso e recoberto por pele íntegra; costuma ser assintomática e pode ser sinalizada por tufo de pelos, covinha, mancha ou lipoma na linha média. Quando há herniação de meninges e líquido cerebrospinal, trata-se de meningocele; quando o saco herniado contém também tecido nervoso, de mielomeningocele — ambas formas de espinha bífida cística.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "espinha-bifida",
+        "defeitos-do-tubo-neural"
+      ],
+      "referencia": "Moore 11ª ed., cap. 17 e cap. 20"
+    },
+    {
+      "id": "emb-10-q24",
+      "tipo": "vf",
+      "enunciado": "O diabetes gestacional, por surgir no segundo ou terceiro trimestre, não acarreta o aumento de risco de malformações observado no diabetes pré-gestacional mal controlado.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O risco de malformações associado ao diabetes depende da hiperglicemia no período da organogênese — isto é, periconcepcional e no primeiro trimestre. O diabetes pré-gestacional mal controlado aumenta o risco de cardiopatias, defeitos do tubo neural e disgenesia caudal, e o controle glicêmico antes da concepção é a medida preventiva central. O diabetes gestacional, que se manifesta após esse período, associa-se a macrossomia, hipoglicemia neonatal e outras complicações perinatais, mas não ao aumento de malformações estruturais.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "diabetes",
+        "embriopatia-diabetica",
+        "periodo-critico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os períodos de suscetibilidade a agentes teratogênicos, do mais precoce ao mais tardio (dias após a fertilização):",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Período do \"tudo ou nada\": morte do concepto ou ausência de efeito"
+        },
+        {
+          "id": "2",
+          "texto": "Início da organogênese, com começo do período de maior risco de malformações maiores"
+        },
+        {
+          "id": "3",
+          "texto": "Fechamento do neuroporo caudal, cuja falha causa espinha bífida cística"
+        },
+        {
+          "id": "4",
+          "texto": "Fim da organogênese principal, com queda acentuada do risco de malformações maiores"
+        },
+        {
+          "id": "5",
+          "texto": "Período fetal, com predomínio de restrição de crescimento e distúrbios funcionais"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explicacao": "O período do \"tudo ou nada\" corresponde às duas primeiras semanas (dias 0 a 14). A organogênese começa na 3ª semana (dia 15) e com ela o período de maior risco de malformações maiores. O neuroporo caudal se fecha entre os dias 26 e 28. A organogênese principal termina ao final da 8ª semana (dia 56). A partir do dia 57 inicia-se o período fetal, em que predominam restrição de crescimento e distúrbios funcionais, sobretudo do sistema nervoso central.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "teratologia",
+        "periodo-critico",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as janelas de suscetibilidade pelo seu início, da mais precoce à mais tardia (dias após a fertilização):",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Fechamento do tubo neural (prevenção com ácido fólico periconcepcional)"
+        },
+        {
+          "id": "2",
+          "texto": "Desenvolvimento dos membros (janela da talidomida)"
+        },
+        {
+          "id": "3",
+          "texto": "Fusão do palato secundário (risco de fenda palatina)"
+        },
+        {
+          "id": "4",
+          "texto": "Mineralização de dentes e ossos (deposição de tetraciclinas)"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explicacao": "O tubo neural se fecha entre os dias 18 e 28, a janela mais precoce — razão pela qual o ácido fólico deve ser iniciado antes da concepção. Os membros se desenvolvem a partir do dia 24 (janela da talidomida: dias 20 a 36). A fusão do palato secundário ocorre entre a 7ª e a 10ª semana (a partir de cerca do dia 42). A mineralização de dentes e ossos, em que as tetraciclinas se depositam, ocorre na segunda metade da gestação.",
+      "dificuldade": 4,
+      "bloom": "compreender",
+      "tags": [
+        "teratologia",
+        "periodo-critico",
+        "linha-do-tempo",
+        "talidomida",
+        "tetraciclinas"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20"
+    },
+    {
+      "id": "emb-10-q27",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente os eventos da neurulação e do fechamento do tubo neural:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Espessamento do ectoderma dorsal formando a placa neural, induzida pela notocorda"
+        },
+        {
+          "id": "2",
+          "texto": "Elevação das pregas neurais e formação do sulco neural"
+        },
+        {
+          "id": "3",
+          "texto": "Início da fusão das pregas neurais na região cervical"
+        },
+        {
+          "id": "4",
+          "texto": "Fechamento do neuroporo cranial"
+        },
+        {
+          "id": "5",
+          "texto": "Fechamento do neuroporo caudal"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explicacao": "A placa neural surge na 3ª semana, por indução da notocorda; suas margens se elevam como pregas neurais, delimitando o sulco neural; a fusão começa na região cervical e progride em direção cranial e caudal; o neuroporo cranial se fecha por volta dos dias 24 a 26 e o caudal, por volta dos dias 26 a 28. A falha do fechamento cranial resulta em anencefalia e a do caudal, em espinha bífida cística.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": [
+        "tubo-neural",
+        "neurulacao",
+        "neuroporo-cranial",
+        "neuroporo-caudal",
+        "linha-do-tempo"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4 e cap. 17"
+    },
+    {
+      "id": "emb-10-q28",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as medidas de prevenção e de rastreamento relacionadas aos defeitos congênitos pelo momento em que são realizadas, da mais precoce à mais tardia:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Ácido fólico periconcepcional e controle glicêmico pré-concepcional"
+        },
+        {
+          "id": "2",
+          "texto": "Translucência nucal e marcadores bioquímicos do primeiro trimestre (11 a 13 semanas e 6 dias)"
+        },
+        {
+          "id": "3",
+          "texto": "Alfafetoproteína sérica materna (15 a 20 semanas de idade gestacional)"
+        },
+        {
+          "id": "4",
+          "texto": "Ultrassonografia morfológica de segundo trimestre (20 a 24 semanas de idade gestacional)"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explicacao": "A prevenção primária é pré-concepcional: ácido fólico iniciado antes da concepção e controle glicêmico em mulheres com diabetes, pois tanto o fechamento do tubo neural quanto a organogênese cardíaca ocorrem nas primeiras semanas. O rastreamento de aneuploidias do primeiro trimestre é feito entre 11 e 13 semanas e 6 dias. A alfafetoproteína sérica materna, útil nos defeitos abertos do tubo neural, é dosada entre 15 e 20 semanas. A ultrassonografia morfológica detalhada é realizada entre 20 e 24 semanas de idade gestacional. Vale notar que os rastreamentos de aneuploidia — inclusive o DNA fetal livre — não detectam defeitos do tubo neural.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "prevencao",
+        "rastreamento",
+        "acido-folico",
+        "diagnostico-pre-natal"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 9; Moore 11ª ed., cap. 6 e cap. 20"
+    },
+    {
+      "id": "emb-10-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada teratógeno ao seu efeito mais característico:",
+      "pares": [
+        {
+          "esquerda": "Talidomida",
+          "direita": "Defeitos de redução de membros (meromelia e focomelia) e anomalias de orelha"
+        },
+        {
+          "esquerda": "Varfarina",
+          "direita": "Hipoplasia nasal e epífises pontilhadas"
+        },
+        {
+          "esquerda": "Lítio",
+          "direita": "Anomalia de Ebstein da valva tricúspide"
+        },
+        {
+          "esquerda": "Dietilestilbestrol",
+          "direita": "Adenocarcinoma de células claras de vagina e colo na adolescência das filhas expostas"
+        },
+        {
+          "esquerda": "Inibidores da ECA no 2º e 3º trimestres",
+          "direita": "Oligoidrâmnio e disgenesia tubular renal"
+        },
+        {
+          "esquerda": "Metotrexato",
+          "direita": "Defeitos de ossificação craniana, por antagonismo do folato"
+        }
+      ],
+      "explicacao": "Cada teratógeno tem assinatura própria, determinada por seu mecanismo e pela janela em que atua: a talidomida compromete o desenvolvimento dos membros e da orelha entre os dias 20 e 36 após a fertilização; a varfarina interfere na carboxilação de proteínas dependentes de vitamina K em osso e cartilagem, causando hipoplasia nasal e epífises pontilhadas; o lítio associa-se classicamente à anomalia de Ebstein; o dietilestilbestrol é o exemplo clássico de efeito tardio, com adenocarcinoma de células claras na adolescência das filhas expostas; os inibidores da ECA, no segundo e terceiro trimestres, causam hipoperfusão renal fetal com oligoidrâmnio e disgenesia tubular renal; e o metotrexato, antagonista do folato, causa defeitos de ossificação craniana e anomalias de membros.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "teratogenos",
+        "talidomida",
+        "varfarina",
+        "litio",
+        "dietilestilbestrol",
+        "ieca",
+        "metotrexato"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-10-q30",
+      "tipo": "associar",
+      "enunciado": "Associe cada agente infeccioso ao conjunto de achados mais característico da infecção congênita:",
+      "pares": [
+        {
+          "esquerda": "Rubéola",
+          "direita": "Catarata, surdez neurossensorial e persistência do canal arterial"
+        },
+        {
+          "esquerda": "Citomegalovírus",
+          "direita": "Microcefalia com calcificações periventriculares e surdez neurossensorial"
+        },
+        {
+          "esquerda": "Toxoplasmose",
+          "direita": "Hidrocefalia, calcificações intracranianas difusas e coriorretinite"
+        },
+        {
+          "esquerda": "Sífilis",
+          "direita": "Rinite serossanguinolenta, exantema palmoplantar e periostite dos ossos longos"
+        },
+        {
+          "esquerda": "Zika vírus",
+          "direita": "Microcefalia grave com calcificações subcorticais, lesões maculares da retina e artrogripose"
+        },
+        {
+          "esquerda": "Varicela",
+          "direita": "Cicatrizes cutâneas em distribuição de dermátomo com hipoplasia do membro correspondente"
+        }
+      ],
+      "explicacao": "Cada infecção congênita tem um padrão reconhecível: a rubéola combina catarata, surdez e cardiopatia (persistência do canal arterial, estenose da artéria pulmonar); o citomegalovírus, infecção congênita mais frequente, caracteriza-se por microcefalia com calcificações periventriculares e é a principal causa infecciosa de surdez neurossensorial; a toxoplasmose tem a tríade de hidrocefalia, calcificações intracranianas difusas e coriorretinite; a sífilis precoce cursa com rinite, exantema palmoplantar, hepatoesplenomegalia e periostite; a síndrome congênita do vírus Zika reúne microcefalia grave com calcificações subcorticais, lesões maculares e artrogripose; e a varicela congênita produz cicatrizes cutâneas em distribuição de dermátomo com hipoplasia do membro correspondente.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "infeccoes-congenitas",
+        "rubeola",
+        "citomegalovirus",
+        "toxoplasmose",
+        "sifilis",
+        "zika",
+        "varicela"
+      ],
+      "referencia": "Moore 11ª ed., cap. 20; Sadler 14ª ed., cap. 9"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "17 — Sistema nervoso"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "9 — Aparelho faríngeo, face e pescoço"
+    },
+    {
+      "obra": "Sadler TW. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "9 — Defeitos congênitos e diagnóstico pré-natal"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "5 — Princípios de citogenética clínica e análise genômica"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "6 — Bases cromossômicas e genômicas das doenças: alterações dos autossomos e dos cromossomos sexuais"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "14 — Genética do desenvolvimento e defeitos congênitos"
+    }
+  ],
+  "notasDivergencia": [
+    "Frequência acumulada de defeitos congênitos: Moore (11ª ed., cap. 20) cita cerca de 3% ao nascimento, aproximadamente 6% aos 2 anos e cerca de 8% aos 5 anos; outras fontes citam 2% a 3% ao nascimento e 4% a 6% ao final do primeiro ano. Faixa adotada: cerca de 3% ao nascimento, com acúmulo nos primeiros anos.",
+    "Janela de suscetibilidade da talidomida: a literatura descreve dias 20 a 36 após a fertilização (34 a 50 dias após a DUM); algumas revisões situam o limite superior em torno do dia 34, com anomalias de orelha nos dias 20 a 34 e de membros entre os dias 24 e 34. Faixa adotada: dias 20 a 36 após a fertilização.",
+    "Dose elevada de ácido fólico em alto risco: a FEBRASGO recomenda 4 mg/dia, enquanto documentos do Ministério da Saúde citam 5 mg/dia (dose correspondente à apresentação disponível no SUS). Faixa adotada: 4 a 5 mg/dia. O momento de início também varia entre as fontes (pelo menos 30 dias, 2 meses ou 3 meses antes da concepção); adotado 'pelo menos 30 dias antes da concepção'.",
+    "Fechamento dos neuroporos: Moore e Sadler situam o fechamento do neuroporo cranial por volta dos dias 24 a 26 e do caudal, por volta dos dias 26 a 28. Faixas adotadas: 24 a 26 e 26 a 28 dias após a fertilização.",
+    "Mortalidade por anomalias congênitas no Brasil: os boletins epidemiológicos do Ministério da Saúde afirmam que as anomalias congênitas estão entre as principais causas de mortalidade infantil, sem fixar uma posição em ranking; trabalhos acadêmicos citam a segunda posição e artigos ministeriais citam a segunda causa de óbito em menores de 5 anos em 2017. Adotada a formulação sem ranking, por ser a que consta das fontes oficiais, e registrada a necessidade de verificação de dados atualizados pelo revisor clínico.",
+    "Período crítico do palato: as fontes descrevem a fusão dos processos palatinos entre a 7ª e a 10ª semana após a fertilização, com o período crítico das fendas palatinas habitualmente representado entre a 6ª e a 9ª semana nos diagramas de períodos críticos. Faixa adotada nos eventos: dias 42 a 70 após a fertilização."
+  ],
+  "incertezas": [
+    "Incidências das aneuploidias: as fontes apresentam faixas distintas (trissomia 18 em torno de 1 em 6.000 a 1 em 8.000; trissomia 13 em torno de 1 em 15.000 a 1 em 25.000; monossomia X em torno de 1 em 2.500 nascidas vivas em Thompson & Thompson, com valores menores em outras obras; 47,XXY em torno de 1 em 500 a 1 em 1.000 nascidos do sexo masculino). Apenas a frequência da trissomia 21 (cerca de 1 em 800 nascimentos, conforme Moore) foi afirmada no conteúdo; as demais foram omitidas.",
+    "Risco de trissomia 21 por idade materna: as tabelas clássicas variam conforme a casuística e o momento da gestação em que o risco é calculado; nenhum valor numérico por idade foi afirmado, apenas o aumento com a idade materna.",
+    "Proporções dos mecanismos da trissomia 21 (não disjunção, translocação e mosaicismo): as fontes citam cerca de 95%, 3% a 4% e 1% a 2%, respectivamente, com variação entre obras. No conteúdo usou-se 'na maioria dos casos', 'pequena parcela' e 'minoritário', sem percentuais.",
+    "Risco de recorrência dos defeitos do tubo neural após um filho afetado: as estimativas variam (habitualmente citadas entre 2% e 5%, com aumento após dois filhos afetados); nenhum valor foi afirmado no conteúdo.",
+    "Limiar de dose de radiação ionizante associado a malformações: as recomendações clínicas citam limiares em torno de algumas dezenas de mGy, com variação entre diretrizes; no conteúdo afirma-se apenas que as doses dos exames diagnósticos habituais ficam muito abaixo dos limiares associados a malformações.",
+    "Prevalência dos transtornos do espectro alcoólico fetal e da síndrome alcoólica fetal no Brasil e no mundo: estimativas muito variáveis conforme o método de aferição; não foram incluídos números.",
+    "Risco de síndrome da varicela congênita e janela exata de maior suscetibilidade (habitualmente citada entre 8 e 20 semanas de idade gestacional, com risco absoluto baixo): a faixa foi descrita qualitativamente, sem percentuais.",
+    "Número de casos da epidemia brasileira de microcefalia associada ao Zika (2015-2016): as cifras foram revisadas ao longo do tempo pelos sistemas de notificação e por isso nenhum número de casos foi afirmado; as datas dos atos normativos citados foram verificadas."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}
