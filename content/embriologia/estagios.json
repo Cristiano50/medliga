@@ -921,6 +921,20 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Revisão transversal focal somente do destaque corrigido sobre teratógenos: diferencia maior suscetibilidade estrutural da persistência de riscos funcionais e de crescimento no período fetal; consistente com OTIS/MotherToBaby. Demais textos e geometria não auditados integralmente; conferência médica pendente."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-escultura-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Revisão focal da superfície contínua da semana 8 e cordão curvo: marcos, dedos separados, hérnia e ausência de cauda preservados. Código e capturas conferidos; NMHM Carnegie 23 como referência externa. Refinamento de esquema, não reconstrução de espécime ou validação integral das proporções. Conferência médica pendente."
+          },
+          {
+            "area": "anatomia",
+            "agente": "revisor-escultura-anatomia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Segunda revisão sequencial focal: continuidade cranio-cervical, marcos articulares e externos, seleção e feto da placenta preservados. Código, testes e quatro capturas inspecionados. Tampa proximal do cordão interna; extremidade distal não representa histologia. Não valida proporções como medidas reais."
           }
         ],
         "humano": null

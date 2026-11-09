@@ -5,6 +5,7 @@ import { Malha, Parte, useCena } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
 import { salienciasAuriculares, superficieEmbriao } from './superficie-embriao.ts';
 import { TextoAncorado } from '../tres/rotulos.tsx';
+import { cordaoSemana8, esculpirSemana8 } from './escultura-embriao.ts';
 
 type V3 = [number, number, number];
 const v3 = (v: THREE.Vector3): V3 => [v.x, v.y, v.z];
@@ -373,22 +374,17 @@ function geometriaSemana8() {
 export const PARTES_SEMANA_8 = ['palpebras', 'pavilhao-auricular', 'dedos', 'herniacao-umbilical-fisiologica', 'cordao-umbilical'];
 export function ModeloSemana8() {
   const d = useMemo(geometriaSemana8, []);
+  const corpo = useMemo(esculpirSemana8, []);
+  const cordao = useMemo(cordaoSemana8, []);
+  useEffect(() => () => { corpo.dispose(); cordao.dispose(); d.membros.forEach((m) => m.geo.dispose()); }, [corpo, cordao, d]);
   const dedoGeo = useMemo(() => new THREE.CapsuleGeometry(0.016, 1, 4, 8), []);
   const orelha = useMemo(() => new THREE.TorusGeometry(0.085, 0.026, 10, 28, Math.PI * 1.55), []);
   const palpebra = useMemo(() => new THREE.SphereGeometry(1, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2), []);
-  const cil = useMemo(() => new THREE.CylinderGeometry(0.1, 0.12, 1, 20), []);
   return (
     <group rotation={[0, 0.6, 0]} position={[0.1, -0.05, 0]}>
       <OrientacaoEmbriao cranial={[-0.05, 1.48, 0]} caudal={[0.55, -0.95, 0]} />
       <Parte id="corpo" cor={COR.embriao} prioridade={1} rugosidade={0.5}>
-        <Malha geometria={ESFERA} posicao={v3(d.cabeca)} escala={d.rCabeca} />
-        <Malha geometria={ESFERA} posicao={v3(d.tronco)} rotacao={[0, 0, 0.25]} escala={[0.42, 0.62, 0.38]} />
-        {d.membros.map((m, i) => (
-          <Malha key={i} geometria={m.geo} posicao={m.posicao} rotacao={m.rotacao} />
-        ))}
-        {d.maosPes.map((m, i) => (
-          <Malha key={`m${i}`} geometria={ESFERA} posicao={m.p} escala={m.esc} />
-        ))}
+        <Malha geometria={corpo} />
         {d.olhos.map((o, i) => (
           <Malha key={`o${i}`} geometria={ESFERA_BAIXA} posicao={v3(o)} escala={[0.06, 0.06, 0.03]} />
         ))}
@@ -412,7 +408,7 @@ export function ModeloSemana8() {
         ))}
       </Parte>
       <Parte id="cordao-umbilical" cor={COR.cordao} prioridade={5}>
-        <Malha geometria={cil} posicao={d.cordao.posicao} rotacao={d.cordao.rotacao} escala={[1, d.cordao.comp, 1]} />
+        <Malha geometria={cordao} />
       </Parte>
       <Parte id="herniacao-umbilical-fisiologica" cor="#e7b9a0" prioridade={7}>
         <Malha geometria={ESFERA} posicao={d.hernia} escala={0.15} />
