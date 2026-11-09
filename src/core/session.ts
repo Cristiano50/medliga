@@ -28,7 +28,9 @@ export function questoesDe(topicos: Topico[]): { questao: Questao; topicoId: str
 
 function prepararExibicao(item: { questao: Questao; topicoId: string }, rng: () => number): ItemSessao {
   const q = item.questao;
-  if (q.tipo === 'multipla') return { ...item, ordemExibicao: embaralhar(q.alternativas.map((a) => a.id), rng) };
+  // Múltipla escolha: ordem do autor (as explicações citam as letras; embaralhar quebraria a referência).
+  // O equilíbrio da posição do gabarito é garantido no conteúdo (revisão) e conferido em tests/conteudo.test.ts.
+  if (q.tipo === 'multipla') return { ...item, ordemExibicao: q.alternativas.map((a) => a.id) };
   if (q.tipo === 'ordenar') {
     // Garante que a ordem inicial exibida não seja a resposta certa.
     let ordem = embaralhar(q.itens.map((i) => i.id), rng);

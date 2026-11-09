@@ -32,6 +32,15 @@ async function executar(): Promise<number> {
       break; // tenta de novo na próxima oportunidade
     }
   }
+  const reportes = await db.reportes.where('enviado').equals(0).toArray();
+  for (const r of reportes) {
+    try {
+      await backend.enviarReporte(r);
+      await db.reportes.update(r.id, { enviado: 1 });
+    } catch {
+      break;
+    }
+  }
   return enviadas;
 }
 

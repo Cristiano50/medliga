@@ -47,6 +47,15 @@ export interface RegistroSessao {
   sincronizada: 0 | 1;
 }
 
+export interface Reporte {
+  id: string; // uuid local (idempotência no servidor)
+  questaoId: string;
+  motivo: 'gabarito' | 'explicacao' | 'enunciado' | 'portugues' | 'outro';
+  texto: string;
+  criadoEm: number;
+  enviado: 0 | 1;
+}
+
 export interface CacheRemoto {
   chave: string;
   dado: unknown;
@@ -60,6 +69,7 @@ class BancoMedLiga extends Dexie {
   sessoes!: Table<RegistroSessao, string>;
   uso!: Table<UsoDiario, string>;
   cache!: Table<CacheRemoto, string>;
+  reportes!: Table<Reporte, string>;
 
   constructor() {
     super('medliga');
@@ -71,6 +81,7 @@ class BancoMedLiga extends Dexie {
       uso: 'data',
       cache: 'chave',
     });
+    this.version(2).stores({ reportes: 'id, questaoId, enviado' });
   }
 }
 

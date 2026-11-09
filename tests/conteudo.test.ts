@@ -26,3 +26,15 @@ describe('estágios 3D', () => {
     expect(dias).toEqual([...dias].sort((a, b) => a - b));
   });
 });
+
+describe('questões de múltipla escolha', () => {
+  const arquivos = import.meta.glob('../content/*/topicos/*.json', { eager: true, import: 'default' }) as Record<
+    string,
+    { id: string; questoes: { tipo: string; id: string; correta?: string; alternativas?: { id: string }[] }[] }
+  >;
+  it('alternativas com ids em ordem a, b, c… (a letra exibida é a citada na explicação)', () => {
+    for (const t of Object.values(arquivos))
+      for (const q of t.questoes)
+        if (q.tipo === 'multipla') expect(q.alternativas!.map((a) => a.id).join(''), q.id).toBe('abcde'.slice(0, q.alternativas!.length));
+  });
+});

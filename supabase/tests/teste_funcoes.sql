@@ -126,5 +126,24 @@ do $$ begin
   end;
 end $$;
 
+-- 12) reporte de erro: idempotente por id local
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000b';
+select reportar_conteudo('rep-1', 't-q2', 'gabarito', 'alternativa c também é defensável', '0.1.0');
+select reportar_conteudo('rep-1', 't-q2', 'gabarito', 'reenvio', '0.1.0');
+do $$ begin
+  if (select count(*) from reportes_conteudo where usuario_id = auth.uid()) <> 1 then raise exception 'FALHOU: reporte duplicado'; end if;
+end $$;
+
+-- 13) LGPD: excluir a própria conta apaga perfil, sessões e XP (ranking)
+select excluir_minha_conta();
+do $$ begin
+  if exists (select 1 from perfis where id = '00000000-0000-0000-0000-00000000000b') then raise exception 'FALHOU: perfil não apagado'; end if;
+  if exists (select 1 from ranking_alunos(semana_de(now())) where usuario_id = '00000000-0000-0000-0000-00000000000b') then raise exception 'FALHOU: ainda no ranking'; end if;
+end $$;
+
 reset role;
+-- (como administrador) o reporte continua na fila, anonimizado
+do $$ begin
+  if (select count(*) from reportes_conteudo where questao_id = 't-q2' and usuario_id is null) <> 1 then raise exception 'FALHOU: reporte deveria ser mantido anonimizado'; end if;
+end $$;
 \echo 'TODOS OS TESTES SQL PASSARAM'

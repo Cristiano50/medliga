@@ -10,6 +10,7 @@ import { useApp } from '../data/store.ts';
 import { QuestaoView, respostaCompleta } from '../games/questoes.tsx';
 import { Barra } from '../ui/comum.tsx';
 import { Carregando } from '../ui/Carregando.tsx';
+import { ReportarErro } from '../ui/ReportarErro.tsx';
 
 const DURACAO_PLANTAO_MS = 90_000;
 const LIMITE_QUESTAO_PLANTAO_MS = 15_000;
@@ -234,6 +235,7 @@ export function QuizTela() {
           <h3>{ultimo.correta ? `✅ Correto! +${ultimo.xp} XP` : '❌ Não foi dessa vez'}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{q.explicacao}</p>
           {q.referencia && <p className="muted pequeno" style={{ margin: '8px 0 0' }}>Fonte: {q.referencia}</p>}
+          <div style={{ marginTop: 8 }}><ReportarErro key={q.id} questaoId={q.id} /></div>
         </div>
       )}
 
@@ -280,7 +282,8 @@ function Resumo({ registros, modo, onSair }: { registros: Registro[]; modo: Modo
           {erros.map((r) => (
             <div key={r.item.questao.id} className="card">
               <strong>{r.item.questao.enunciado}</strong>
-              <p className="muted" style={{ margin: '8px 0 0' }}>{r.item.questao.explicacao}</p>
+              <p className="muted" style={{ margin: '8px 0' }}>{r.item.questao.explicacao}</p>
+              <ReportarErro questaoId={r.item.questao.id} />
             </div>
           ))}
         </section>

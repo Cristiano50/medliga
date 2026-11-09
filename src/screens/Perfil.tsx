@@ -88,6 +88,8 @@ export function PerfilTela() {
         <Link to="/planos" className="btn pequeno ouro">Ver planos</Link>
       </div>
 
+      <Privacidade />
+
       <p className="muted pequeno centro">{MARCA.nome} v{MARCA.versao} · ferramenta de estudo; não use para decisões clínicas.</p>
     </div>
   );
@@ -180,6 +182,62 @@ function ContaOnline({ modoBackend, onSync }: { modoBackend: string; onSync: () 
           >
             Entrar
           </button>
+        </div>
+      )}
+      {msg && <p className="muted pequeno" style={{ margin: 0 }}>{msg}</p>}
+    </div>
+  );
+}
+
+function Privacidade() {
+  const [confirmar, setConfirmar] = useState<null | 'conta' | 'aparelho'>(null);
+  const [msg, setMsg] = useState<string | null>(null);
+  const [temConta, setTemConta] = useState(false);
+  useEffect(() => {
+    void obterBackend().then((b) => b.usuarioAtual()).then((u) => setTemConta(!!u && u.id !== 'demo-voce'));
+  }, []);
+  return (
+    <div className="card pilha">
+      <strong>Privacidade e dados (LGPD)</strong>
+      <p className="muted pequeno" style={{ margin: 0 }}>
+        Guardamos só apelido, escola, semestre e seu desempenho. Você pode apagar tudo a qualquer momento.
+      </p>
+      {confirmar === null && (
+        <div className="linha quebra">
+          {temConta && <button className="btn pequeno" onClick={() => setConfirmar('conta')}>Excluir minha conta online</button>}
+          <button className="btn pequeno" onClick={() => setConfirmar('aparelho')}>Apagar dados deste aparelho</button>
+        </div>
+      )}
+      {confirmar && (
+        <div className="aviso">
+          {confirmar === 'conta'
+            ? 'Isto apaga sua conta, perfil, sessões e pontos no servidor (inclusive do ranking). Não dá para desfazer.'
+            : 'Isto apaga perfil, progresso, revisão espaçada e pontos guardados neste aparelho. Não dá para desfazer.'}
+          <div className="linha" style={{ marginTop: 8 }}>
+            <button className="btn pequeno fantasma" onClick={() => setConfirmar(null)}>Cancelar</button>
+            <button
+              className="btn pequeno"
+              style={{ borderColor: 'var(--danger)', color: 'var(--danger)' }}
+              onClick={async () => {
+                try {
+                  if (confirmar === 'conta') {
+                    const b = await obterBackend();
+                    await b.excluirConta();
+                    setMsg('Conta online excluída.');
+                  } else {
+                    await db.delete();
+                    location.hash = '#/';
+                    location.reload();
+                  }
+                } catch {
+                  setMsg('Não foi possível concluir agora. Verifique a conexão e tente de novo.');
+                }
+                setConfirmar(null);
+              }}
+            >
+              Confirmar exclusão
+            </button>
+          </div>
         </div>
       )}
       {msg && <p className="muted pequeno" style={{ margin: 0 }}>{msg}</p>}

@@ -6,7 +6,8 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 import type { PontuacaoAluno, PontuacaoEscola } from '../core/ranking.ts';
 import { rankingEscolas } from '../core/ranking.ts';
 import { criarRng } from '../core/random.ts';
-import type { Perfil, RegistroResposta, RegistroSessao } from './db.ts';
+import type { Perfil, RegistroResposta, RegistroSessao, Reporte } from './db.ts';
+import { MARCA } from '../config/marca.ts';
 import type { PlanoId } from '../core/planos.ts';
 
 export type ModoBackend = 'supabase' | 'demo' | 'offline';
@@ -33,6 +34,9 @@ export interface Backend {
   enviarSessao(s: RegistroSessao, respostas: RegistroResposta[]): Promise<ResultadoEnvio>;
   rankingAlunos(semana: string, escolaId?: string | null): Promise<PontuacaoAluno[]>;
   rankingEscolas(semana: string): Promise<PontuacaoEscola[]>;
+  enviarReporte(r: Reporte): Promise<void>;
+  /** LGPD: apaga conta e dados no servidor. */
+  excluirConta(): Promise<void>;
 }
 
 const env = import.meta.env;
@@ -80,6 +84,10 @@ class BackendOffline implements Backend {
   async rankingEscolas() {
     return [];
   }
+  async enviarReporte() {
+    throw new Error('offline');
+  }
+  async excluirConta() {}
 }
 
 /** Dados fictícios e determinísticos para desenvolvimento e demonstrações. Nunca usado em produção. */
@@ -142,6 +150,10 @@ class BackendDemo implements Backend {
   }
   async rankingEscolas() {
     return rankingEscolas(this.todos());
+  }
+  async enviarReporte() {}
+  async excluirConta() {
+    this.usuario = null;
   }
 }
 
@@ -224,6 +236,23 @@ class BackendSupabase implements Backend {
       escolaId: r.escola_id,
       xpSemana: r.xp_semana,
     }));
+  }
+
+  async enviarReporte(r: Reporte) {
+    const { error } = await this.sb.rpc('reportar_conteudo', {
+      p_id_local: r.id,
+      p_questao_id: r.questaoId,
+      p_motivo: r.motivo,
+      p_texto: r.texto,
+      p_versao_app: MARCA.versao,
+    });
+    if (error) throw error;
+  }
+
+  async excluirConta() {
+    const { error } = await this.sb.rpc('excluir_minha_conta');
+    if (error) throw error;
+    await this.sb.auth.signOut();
   }
 
   async rankingEscolas(semana: string) {

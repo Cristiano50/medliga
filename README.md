@@ -20,7 +20,7 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 | Servidor (Supabase): migrações, RLS, XP recalculado no servidor, antifraude | implementado e testado em Postgres local |
 | Pagamentos, painel do professor, builds nas lojas | planejado (v0.2) |
 
-Evidência (09/11/2026): `npm test` 24/24 · `npm run test:sql` "TODOS OS TESTES SQL PASSARAM" (11 cenários) · `npm run typecheck` sem erros · `npm run validar-conteudo` OK.
+Evidência (09/11/2026): `npm test` 24/24 · `npm run test:sql` "TODOS OS TESTES SQL PASSARAM" (13 cenários) · `npm run typecheck` sem erros · `npm run validar-conteudo` OK.
 
 ## Como rodar
 

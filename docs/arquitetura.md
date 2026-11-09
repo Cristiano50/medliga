@@ -58,5 +58,5 @@
 ## Testes
 
 - `npm test` — núcleo (XP, revisão espaçada, sessões, planos, ranking, schema) e coerência conteúdo × modelos 3D.
-- `npm run test:sql` — aplica as migrações num Postgres local com simulação do `auth` do Supabase e roda 11 cenários (XP, idempotência, antifraude, permissões, rankings).
+- `npm run test:sql` — aplica as migrações num Postgres local com simulação do `auth` do Supabase e roda 13 cenários (XP, idempotência, antifraude, permissões, rankings, reportes, exclusão de conta).
 - `npm run validar-conteudo` — roda antes de todo build; JSON inválido interrompe o build.
