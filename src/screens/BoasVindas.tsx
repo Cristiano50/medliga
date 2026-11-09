@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useApp } from '../data/store.ts';
 import { buscarEscolas, carregarEscolas } from '../content/index.ts';
 import type { Escola } from '../content/schema.ts';
+import { Markdown } from '../ui/comum.tsx';
+import termosTexto from '../../docs/legal/termos-de-uso.md?raw';
+import privacidadeTexto from '../../docs/legal/politica-de-privacidade.md?raw';
 
 export function BoasVindas() {
   const salvarPerfil = useApp((s) => s.salvarPerfil);
@@ -17,6 +20,7 @@ export function BoasVindas() {
   const [aceite, setAceite] = useState(false);
   const [naoAchou, setNaoAchou] = useState(false);
   const [sugestao, setSugestao] = useState(perfil?.escolaSugerida ?? '');
+  const [docAberto, setDocAberto] = useState<null | 'termos' | 'privacidade'>(null);
 
   useEffect(() => {
     void carregarEscolas().then(setEscolas);
@@ -124,6 +128,19 @@ export function BoasVindas() {
                 Li e aceito os termos de uso e a política de privacidade (LGPD). Seus dados de jogo ficam no aparelho; só são enviados ao servidor se você criar uma conta para o ranking.
               </span>
             </label>
+            <div className="linha quebra">
+              <button className="btn fantasma pequeno" onClick={() => setDocAberto(docAberto === 'termos' ? null : 'termos')} aria-expanded={docAberto === 'termos'}>
+                Termos de uso
+              </button>
+              <button className="btn fantasma pequeno" onClick={() => setDocAberto(docAberto === 'privacidade' ? null : 'privacidade')} aria-expanded={docAberto === 'privacidade'}>
+                Política de privacidade
+              </button>
+            </div>
+            {docAberto && (
+              <div className="card" style={{ maxHeight: 320, overflowY: 'auto', background: 'var(--bg-elev)' }}>
+                <Markdown texto={docAberto === 'termos' ? termosTexto : privacidadeTexto} />
+              </div>
+            )}
             <div className="linha">
               <button className="btn fantasma" onClick={() => setPasso(1)}>Voltar</button>
               <span style={{ flex: 1 }} />

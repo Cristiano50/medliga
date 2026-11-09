@@ -97,7 +97,11 @@ export function PerfilTela() {
 
       <Privacidade />
 
-      <p className="muted pequeno centro">{MARCA.nome} v{MARCA.versao} · ferramenta de estudo; não use para decisões clínicas.</p>
+      <p className="muted pequeno centro">
+        <Link to="/legal/termos">Termos de uso</Link> · <Link to="/legal/privacidade">Política de privacidade</Link>
+        <br />
+        {MARCA.nome} v{MARCA.versao} · ferramenta de estudo; não use para decisões clínicas.
+      </p>
     </div>
   );
 }

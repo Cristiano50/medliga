@@ -11,6 +11,7 @@ import { RankingTela } from './screens/Ranking.tsx';
 import { PerfilTela } from './screens/Perfil.tsx';
 import { PlanosTela } from './screens/Planos.tsx';
 import { PainelTela } from './screens/Painel.tsx';
+import { LegalTela } from './screens/Legal.tsx';
 import { LinhaDoTempoTela } from './games/LinhaDoTempo.tsx';
 import { CamadasTela } from './games/Camadas.tsx';
 import { Carregando } from './ui/Carregando.tsx';
@@ -23,11 +24,12 @@ const IdentifiqueTela = lazy(() => import('./modules/embriologia/Identifique.tsx
 function Rotas() {
   const perfil = useApp((s) => s.perfil);
   const loc = useLocation();
-  if (!perfil && loc.pathname !== '/bem-vindo') return <Navigate to="/bem-vindo" replace />;
+  if (!perfil && loc.pathname !== '/bem-vindo' && !loc.pathname.startsWith('/legal/')) return <Navigate to="/bem-vindo" replace />;
   return (
     <Suspense fallback={<Carregando />}>
       <Routes>
         <Route path="/bem-vindo" element={<BoasVindas />} />
+        <Route path="/legal/:doc" element={<LegalTela />} />
         <Route element={<Layout />}>
           <Route path="/" element={<Inicio />} />
           <Route path="/disciplina/:id" element={<DisciplinaTela />} />
