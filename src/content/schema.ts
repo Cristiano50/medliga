@@ -131,6 +131,8 @@ export const TopicoSchema = z.object({
 // Estágios 3D (content/embriologia/estagios.json)
 export const EstagioSchema = z.object({
   id: idKebab,
+  /** 'desenvolvimento' = linha do tempo do embrião; 'sistemas' = modelos de órgãos (coração, faringe…) */
+  grupo: z.enum(['desenvolvimento', 'sistemas']).default('desenvolvimento'),
   ordem: z.number().int(),
   titulo: z.string(),
   dias: z.string(), // texto, ex.: "≈ 26–28 dias após a fertilização"

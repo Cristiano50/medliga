@@ -40,7 +40,9 @@ export function topico(id: string): Topico | undefined {
   return POR_ID.get(id);
 }
 
-export const ESTAGIOS: Estagio[] = (estagiosJson as { estagios: Estagio[] }).estagios.slice().sort((a, b) => a.ordem - b.ordem);
+export const ESTAGIOS: Estagio[] = (estagiosJson as unknown as { estagios: (Omit<Estagio, 'grupo'> & { grupo?: Estagio['grupo'] })[] }).estagios
+  .map((e) => ({ ...e, grupo: e.grupo ?? 'desenvolvimento' }))
+  .sort((a, b) => a.ordem - b.ordem);
 export const DERIVADOS = derivadosJson as DerivadosArquivo;
 
 /** Registro de estruturas: primeiro as definições dos tópicos carregados, complementadas pelas dos estágios 3D. */

@@ -21,9 +21,15 @@ describe('estágios 3D', () => {
       for (const p of MODELOS[e.id].partes) expect(nomes.has(p), `${e.id}: parte ${p} sem nome`).toBe(true);
     }
   });
-  it('estágios em ordem cronológica', () => {
-    const dias = [...dados.estagios].sort((a, b) => a.ordem - b.ordem).map((e) => e.diaReferencia);
-    expect(dias).toEqual([...dias].sort((a, b) => a - b));
+  it('estágios em ordem cronológica dentro de cada grupo', () => {
+    for (const g of ['desenvolvimento', 'sistemas']) {
+      const dias = dados.estagios.filter((e) => e.grupo === g).sort((a, b) => a.ordem - b.ordem).map((e) => e.diaReferencia);
+      expect(dias, g).toEqual([...dias].sort((a, b) => a - b));
+    }
+  });
+  it('todo modelo registrado tem estágio no conteúdo', () => {
+    const ids = new Set(dados.estagios.map((e) => e.id));
+    for (const id of Object.keys(MODELOS)) expect(ids.has(id), id).toBe(true);
   });
 });
 

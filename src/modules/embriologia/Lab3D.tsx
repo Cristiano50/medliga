@@ -17,18 +17,25 @@ export function nomesDoEstagio(estagioId: string): Record<string, string> {
 export default function Lab3DTela() {
   const [params, setParams] = useSearchParams();
   // O estágio vem da URL (fonte única): links, voltar/avançar do navegador e o controle deslizante ficam em sincronia.
-  const indice = Math.max(0, ESTAGIOS.findIndex((e) => e.id === params.get('estagio')));
+  const estagio = ESTAGIOS.find((e) => e.id === params.get('estagio')) ?? ESTAGIOS[0];
+  const grupo = estagio.grupo ?? 'desenvolvimento';
+  const doGrupo = ESTAGIOS.filter((e) => (e.grupo ?? 'desenvolvimento') === grupo);
+  const indice = doGrupo.findIndex((e) => e.id === estagio.id);
   const [selecionado, setSelecionado] = useState<string | null>(null);
   const [rotulos, setRotulos] = useState(false);
   const [versaoCamera, setVersaoCamera] = useState(0);
-  const estagio = ESTAGIOS[indice];
   const nomes = useMemo(() => nomesDoEstagio(estagio.id), [estagio.id]);
   const modelo = MODELOS[estagio.id];
+  const temSistemas = ESTAGIOS.some((e) => e.grupo === 'sistemas');
   useEffect(() => setSelecionado(null), [estagio.id]);
 
   function irPara(i: number) {
-    const n = Math.max(0, Math.min(ESTAGIOS.length - 1, i));
-    setParams({ estagio: ESTAGIOS[n].id }, { replace: true });
+    const n = Math.max(0, Math.min(doGrupo.length - 1, i));
+    setParams({ estagio: doGrupo[n].id }, { replace: true });
+  }
+  function irParaGrupo(g: 'desenvolvimento' | 'sistemas') {
+    const primeiro = ESTAGIOS.find((e) => (e.grupo ?? 'desenvolvimento') === g);
+    if (primeiro) setParams({ estagio: primeiro.id }, { replace: true });
   }
 
   const info = selecionado
@@ -52,9 +59,20 @@ export default function Lab3DTela() {
         <SeloRevisao revisao={estagio.revisao} />
       </div>
 
+      {temSistemas && (
+        <div className="abas" role="tablist" aria-label="Tipo de modelo">
+          <button role="tab" aria-selected={grupo === 'desenvolvimento'} className={grupo === 'desenvolvimento' ? 'ativa' : ''} onClick={() => irParaGrupo('desenvolvimento')}>
+            Desenvolvimento
+          </button>
+          <button role="tab" aria-selected={grupo === 'sistemas'} className={grupo === 'sistemas' ? 'ativa' : ''} onClick={() => irParaGrupo('sistemas')}>
+            Órgãos e sistemas
+          </button>
+        </div>
+      )}
+
       <div className="card pilha" style={{ gap: 6 }}>
         <div className="linha entre">
-          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Estágio anterior">◀</button>
+          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Modelo anterior">◀</button>
           <div className="centro" style={{ flex: 1 }}>
             <strong>{estagio.titulo}</strong>
             <div className="muted pequeno">
@@ -63,27 +81,39 @@ export default function Lab3DTela() {
               {estagio.tamanho ? ` · ${estagio.tamanho}` : ''}
             </div>
           </div>
-          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === ESTAGIOS.length - 1} aria-label="Próximo estágio">▶</button>
+          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === doGrupo.length - 1} aria-label="Próximo modelo">▶</button>
         </div>
-        <input
-          type="range"
-          className="slider-tempo"
-          min={0}
-          max={ESTAGIOS.length - 1}
-          step={1}
-          value={indice}
-          onChange={(e) => irPara(Number(e.target.value))}
-          aria-label="Linha do tempo do desenvolvimento"
-          aria-valuetext={`${estagio.titulo}, ${estagio.dias}`}
-        />
-        <div className="marcas-tempo" aria-hidden>
-          <span>Dia 1</span>
-          <span>Sem. 2</span>
-          <span>Sem. 3</span>
-          <span>Sem. 4</span>
-          <span>Sem. 8</span>
-          <span>Fetal</span>
-        </div>
+        {grupo === 'desenvolvimento' ? (
+          <>
+            <input
+              type="range"
+              className="slider-tempo"
+              min={0}
+              max={doGrupo.length - 1}
+              step={1}
+              value={indice}
+              onChange={(e) => irPara(Number(e.target.value))}
+              aria-label="Linha do tempo do desenvolvimento"
+              aria-valuetext={`${estagio.titulo}, ${estagio.dias}`}
+            />
+            <div className="marcas-tempo" aria-hidden>
+              <span>Dia 1</span>
+              <span>Sem. 2</span>
+              <span>Sem. 3</span>
+              <span>Sem. 4</span>
+              <span>Sem. 8</span>
+              <span>Fetal</span>
+            </div>
+          </>
+        ) : (
+          <div className="linha quebra" style={{ justifyContent: 'center', gap: 6 }}>
+            {doGrupo.map((e, i) => (
+              <button key={e.id} className={`btn pequeno ${i === indice ? 'primario' : ''}`} onClick={() => irPara(i)} aria-pressed={i === indice}>
+                {e.titulo}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div style={{ position: 'relative' }}>

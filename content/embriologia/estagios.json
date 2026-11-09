@@ -59,7 +59,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "clivagem",
@@ -105,7 +106,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "morula",
@@ -156,7 +158,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "blastocisto",
@@ -213,7 +216,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "implantacao",
@@ -287,7 +291,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "disco-bilaminar",
@@ -380,7 +385,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "gastrulacao",
@@ -472,7 +478,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "neurulacao",
@@ -579,7 +586,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "semana-4",
@@ -668,7 +676,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "semana-6",
@@ -740,7 +749,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "semana-8",
@@ -802,7 +812,8 @@
           }
         ],
         "humano": null
-      }
+      },
+      "grupo": "desenvolvimento"
     },
     {
       "id": "placenta-membranas",
@@ -884,6 +895,283 @@
             "notas": "2 correções (menores): a descrição e a estrutura da decídua capsular passaram a dizer que ela degenera e que é o cório liso que se funde à decídua parietal, como em emb-09 (antes dava a entender que a própria capsular encostava na parietal e persistia)."
           }
         ],
+        "humano": null
+      },
+      "grupo": "desenvolvimento"
+    },
+    {
+      "id": "coracao-tubular",
+      "grupo": "sistemas",
+      "ordem": 101,
+      "titulo": "Coração tubular",
+      "dias": "≈ 22 dias após a fertilização",
+      "diaReferencia": 22,
+      "carnegie": [
+        10
+      ],
+      "descricao": "Os tubos endocárdicos, derivados da área cardiogênica (mesoderma esplâncnico), fundem-se num tubo cardíaco único, suspenso na cavidade pericárdica pelo mesocárdio dorsal. Do polo arterial (cranial) para o venoso (caudal): tronco arterial, bulbo cardíaco, ventrículo primitivo, átrio primitivo e seio venoso, cujos cornos recebem as veias vitelinas, umbilicais e cardinais comuns. Vista ventral.",
+      "destaques": [
+        "Polo arterial cranial (tronco arterial) e polo venoso caudal (seio venoso).",
+        "O mesocárdio dorsal degenera e deixa o seio pericárdico transverso.",
+        "Cada corno do seio venoso recebe três veias: vitelina, umbilical e cardinal comum."
+      ],
+      "topicos": [
+        "emb-13-cardiovascular",
+        "emb-06-semana3"
+      ],
+      "estruturas": [
+        {
+          "id": "seio-venoso",
+          "nome": "Seio venoso",
+          "descricao": "Câmara de entrada caudal do tubo. O corno direito é incorporado ao átrio direito (parte lisa); o esquerdo forma o seio coronário."
+        },
+        {
+          "id": "atrio-primitivo",
+          "nome": "Átrio primitivo",
+          "descricao": "Origina as partes trabeculadas (aurículas) dos átrios direito e esquerdo."
+        },
+        {
+          "id": "ventriculo-primitivo",
+          "nome": "Ventrículo primitivo",
+          "descricao": "Origina a maior parte do ventrículo esquerdo."
+        },
+        {
+          "id": "bulbo-cardiaco",
+          "nome": "Bulbo cardíaco",
+          "descricao": "A parte proximal forma a porção trabeculada do ventrículo direito; o cone arterial forma as vias de saída dos dois ventrículos."
+        },
+        {
+          "id": "tronco-arterial",
+          "nome": "Tronco arterial",
+          "descricao": "Parte distal da via de saída; será dividido pelo septo aorticopulmonar em raiz da aorta e tronco pulmonar."
+        },
+        {
+          "id": "saco-aortico",
+          "nome": "Saco aórtico",
+          "descricao": "Dilatação cranial ao tronco arterial, de onde partem as artérias dos arcos aórticos."
+        },
+        {
+          "id": "arcos-aorticos",
+          "nome": "Artérias dos arcos aórticos",
+          "descricao": "Artérias que percorrem os arcos faríngeos, do saco aórtico às aortas dorsais."
+        },
+        {
+          "id": "mesocardio-dorsal",
+          "nome": "Mesocárdio dorsal",
+          "descricao": "Prega que prende o tubo cardíaco à parede dorsal da cavidade pericárdica; degenera e deixa o seio pericárdico transverso."
+        },
+        {
+          "id": "cavidade-pericardica",
+          "nome": "Cavidade pericárdica",
+          "descricao": "Porção cranial do celoma intraembrionário, onde o coração se desenvolve."
+        },
+        {
+          "id": "veias-vitelinas",
+          "nome": "Veias vitelinas (onfalomesentéricas)",
+          "descricao": "Trazem sangue do saco vitelino; originam os sinusoides hepáticos, o sistema porta e a porção hepática da veia cava inferior."
+        },
+        {
+          "id": "veias-umbilicais",
+          "nome": "Veias umbilicais",
+          "descricao": "Trazem sangue oxigenado da placenta. A direita regride; a esquerda persiste até o nascimento e depois forma o ligamento redondo do fígado."
+        },
+        {
+          "id": "veias-cardinais",
+          "nome": "Veias cardinais comuns",
+          "descricao": "Drenam o corpo do embrião (cardinais anteriores e posteriores) para os cornos do seio venoso; a comum direita contribui para a veia cava superior."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "coracao-alca",
+      "grupo": "sistemas",
+      "ordem": 102,
+      "titulo": "Alça cardíaca",
+      "dias": "≈ 23–28 dias após a fertilização",
+      "diaReferencia": 28,
+      "carnegie": [],
+      "descricao": "O tubo cardíaco cresce mais que a cavidade pericárdica e se dobra para a direita (alça em D). A porção cefálica (bulbo cardíaco) desloca-se ventral e caudalmente e para a direita; a porção caudal (átrio e seio venoso) passa a ocupar posição dorsal e cranial. O ventrículo primitivo fica à esquerda, separado do bulbo pelo sulco bulboventricular. Vista ventral: o lado esquerdo do embrião aparece à direita da tela.",
+      "destaques": [
+        "Dobramento para a direita (alça em D), concluído por volta do 28º dia.",
+        "Átrio e seio venoso passam a ficar atrás (dorsais) e acima dos ventrículos.",
+        "Alterações da lateralidade da alça associam-se à dextrocardia e a outros defeitos de lateralidade."
+      ],
+      "topicos": [
+        "emb-13-cardiovascular"
+      ],
+      "estruturas": [
+        {
+          "id": "seio-venoso",
+          "nome": "Seio venoso",
+          "descricao": "Agora dorsal; seus cornos recebem as grandes veias do embrião."
+        },
+        {
+          "id": "atrio-primitivo",
+          "nome": "Átrio primitivo",
+          "descricao": "Desloca-se dorsal e cranialmente, acima dos ventrículos."
+        },
+        {
+          "id": "ventriculo-primitivo",
+          "nome": "Ventrículo primitivo",
+          "descricao": "Fica à esquerda após o dobramento; futuro ventrículo esquerdo."
+        },
+        {
+          "id": "bulbo-cardiaco",
+          "nome": "Bulbo cardíaco",
+          "descricao": "Fica à direita após o dobramento; futuro ventrículo direito (parte trabeculada) e vias de saída."
+        },
+        {
+          "id": "tronco-arterial",
+          "nome": "Tronco arterial",
+          "descricao": "Via de saída, na linha média e cranial."
+        },
+        {
+          "id": "sulco-bulboventricular",
+          "nome": "Sulco bulboventricular",
+          "descricao": "Sulco externo que marca o limite entre o bulbo cardíaco e o ventrículo primitivo; por dentro corresponde à prega bulboventricular, junto ao forame interventricular primário."
+        },
+        {
+          "id": "cavidade-pericardica",
+          "nome": "Cavidade pericárdica",
+          "descricao": "Envolve o coração em dobramento."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "aparelho-faringeo",
+      "grupo": "sistemas",
+      "ordem": 103,
+      "titulo": "Aparelho faríngeo",
+      "dias": "4ª–5ª semana após a fertilização",
+      "diaReferencia": 32,
+      "carnegie": [],
+      "descricao": "Bloco da parede lateral da faringe primitiva, antes de o 2º arco crescer sobre os seguintes. Cada arco faríngeo é um eixo de mesênquima (mesoderma e crista neural) revestido por ectoderma por fora e endoderma por dentro, com uma artéria do arco aórtico (vermelho), um nervo craniano (amarelo) e uma cartilagem (cinza-azulado). Entre os arcos ficam, por fora, os sulcos (ectoderma) e, por dentro, as bolsas (endoderma); onde se encontram, as membranas faríngeas.",
+      "destaques": [
+        "Nervos: 1º arco, trigêmeo (V); 2º, facial (VII); 3º, glossofaríngeo (IX); 4º, vago (X, ramo laríngeo superior). O 6º arco recebe o laríngeo recorrente.",
+        "Bolsas: 1ª, cavidade timpânica e tuba auditiva; 2ª, tonsila palatina; 3ª, timo e paratireoides inferiores; 4ª, paratireoides superiores e corpo ultimofaríngeo.",
+        "Só o 1º sulco persiste (meato acústico externo) e só a 1ª membrana (membrana timpânica)."
+      ],
+      "topicos": [
+        "emb-12-aparelho-faringeo"
+      ],
+      "estruturas": [
+        {
+          "id": "arco-faringeo-1",
+          "nome": "1º arco faríngeo (mandibular)",
+          "descricao": "Origina as proeminências maxilar e mandibular, os músculos da mastigação, o ventre anterior do digástrico, o milo-hióideo, o tensor do tímpano e o tensor do véu palatino; nervo trigêmeo."
+        },
+        {
+          "id": "arco-faringeo-2",
+          "nome": "2º arco faríngeo (hioide)",
+          "descricao": "Origina os músculos da expressão facial, o estapédio, o estilo-hióideo e o ventre posterior do digástrico; nervo facial. Cresce sobre os arcos seguintes e forma o seio cervical."
+        },
+        {
+          "id": "arco-faringeo-3",
+          "nome": "3º arco faríngeo",
+          "descricao": "Origina o corno maior e a parte inferior do corpo do hioide e o músculo estilofaríngeo; nervo glossofaríngeo."
+        },
+        {
+          "id": "arco-faringeo-4",
+          "nome": "4º arco faríngeo",
+          "descricao": "Com o 6º arco, origina as cartilagens da laringe; músculos cricotireóideo, levantador do véu palatino e constritores da faringe; ramo laríngeo superior do vago."
+        },
+        {
+          "id": "bolsa-faringea-1",
+          "nome": "1ª bolsa faríngea",
+          "descricao": "Recesso tubotimpânico: cavidade timpânica, antro mastóideo e tuba auditiva."
+        },
+        {
+          "id": "bolsa-faringea-2",
+          "nome": "2ª bolsa faríngea",
+          "descricao": "Epitélio e criptas da tonsila palatina."
+        },
+        {
+          "id": "bolsa-faringea-3",
+          "nome": "3ª bolsa faríngea",
+          "descricao": "Parte dorsal: paratireoides inferiores; parte ventral: timo."
+        },
+        {
+          "id": "bolsa-faringea-4",
+          "nome": "4ª bolsa faríngea",
+          "descricao": "Paratireoides superiores e corpo ultimofaríngeo, que se incorpora à tireoide."
+        },
+        {
+          "id": "sulco-faringeo-1",
+          "nome": "1º sulco faríngeo",
+          "descricao": "Único sulco que persiste: forma o meato acústico externo."
+        },
+        {
+          "id": "sulco-faringeo-2",
+          "nome": "2º sulco faríngeo",
+          "descricao": "Some no seio cervical, recoberto pelo 2º arco; restos podem formar cistos e fístulas cervicais laterais."
+        },
+        {
+          "id": "sulco-faringeo-3",
+          "nome": "3º sulco faríngeo",
+          "descricao": "Também some no seio cervical; restos podem formar cistos e fístulas cervicais laterais."
+        },
+        {
+          "id": "membranas-faringeas",
+          "nome": "Membranas faríngeas",
+          "descricao": "Pontos de contato entre o ectoderma dos sulcos e o endoderma das bolsas; só a 1ª persiste, como membrana timpânica."
+        },
+        {
+          "id": "arcos-aorticos",
+          "nome": "Artérias dos arcos aórticos",
+          "descricao": "Uma em cada arco, do saco aórtico às aortas dorsais. 3º: carótidas comuns e início das internas; 4º: parte do arco da aorta (esquerda) e porção proximal da subclávia direita; 6º: artérias pulmonares e ducto arterioso."
+        },
+        {
+          "id": "nervo-trigemeo",
+          "nome": "Nervo trigêmeo (V) — 1º arco",
+          "descricao": "Os ramos maxilar e mandibular inervam os derivados do 1º arco."
+        },
+        {
+          "id": "nervo-facial",
+          "nome": "Nervo facial (VII) — 2º arco",
+          "descricao": "Inerva os músculos derivados do 2º arco, como os da expressão facial."
+        },
+        {
+          "id": "nervo-glossofaringeo",
+          "nome": "Nervo glossofaríngeo (IX) — 3º arco",
+          "descricao": "Inerva o músculo estilofaríngeo, derivado do 3º arco."
+        },
+        {
+          "id": "nervo-vago",
+          "nome": "Nervo vago (X) — 4º arco",
+          "descricao": "O ramo laríngeo superior inerva os derivados do 4º arco; o laríngeo recorrente, os do 6º."
+        },
+        {
+          "id": "cartilagem-de-meckel",
+          "nome": "Cartilagem de Meckel — 1º arco",
+          "descricao": "Origina o martelo, a bigorna e o ligamento esfenomandibular; a mandíbula se forma por ossificação intramembranosa ao redor dela."
+        },
+        {
+          "id": "cartilagem-de-reichert",
+          "nome": "Cartilagem de Reichert — 2º arco",
+          "descricao": "Origina o estribo, o processo estiloide, o ligamento estilo-hióideo, o corno menor e a parte superior do corpo do hioide."
+        },
+        {
+          "id": "faringe-primitiva",
+          "nome": "Faringe primitiva",
+          "descricao": "Porção cranial do intestino anterior, revestida por endoderma, de onde se projetam as bolsas faríngeas."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
         "humano": null
       }
     }

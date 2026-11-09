@@ -5,6 +5,14 @@ import { ModeloImplantacao, ModeloDiscoBilaminar, PARTES_IMPLANTACAO, PARTES_DIS
 import { ModeloGastrulacao, ModeloNeurulacao, PARTES_GASTRULACAO, PARTES_NEURULACAO } from './disco.tsx';
 import { ModeloSemana4, ModeloSemana6, ModeloSemana8, PARTES_SEMANA_4, PARTES_SEMANA_6, PARTES_SEMANA_8 } from './embriao.tsx';
 import { ModeloPlacenta, PARTES_PLACENTA } from './placenta.tsx';
+import {
+  ModeloCoracaoTubular,
+  ModeloCoracaoAlca,
+  ModeloAparelhoFaringeo,
+  PARTES_CORACAO_TUBULAR,
+  PARTES_CORACAO_ALCA,
+  PARTES_APARELHO_FARINGEO,
+} from './sistemas.tsx';
 
 export interface ModeloEstagio {
   Componente: ComponentType;
@@ -30,6 +38,9 @@ export const MODELOS: Record<string, ModeloEstagio> = {
   'semana-6': { Componente: ModeloSemana6, partes: PARTES_SEMANA_6, camera: [0, 0.2, 3.8], raio: 1.55 },
   'semana-8': { Componente: ModeloSemana8, partes: PARTES_SEMANA_8, camera: [0, 0.2, 3.6], raio: 1.45 },
   'placenta-membranas': { Componente: ModeloPlacenta, partes: PARTES_PLACENTA, camera: [0.2, 0.4, 5.4], raio: 2.1 },
+  'coracao-tubular': { Componente: ModeloCoracaoTubular, partes: PARTES_CORACAO_TUBULAR, camera: [0.3, 0.3, 4], raio: 1.75 },
+  'coracao-alca': { Componente: ModeloCoracaoAlca, partes: PARTES_CORACAO_ALCA, camera: [0.2, 0.3, 4], raio: 1.45 },
+  'aparelho-faringeo': { Componente: ModeloAparelhoFaringeo, partes: PARTES_APARELHO_FARINGEO, camera: [1.2, 0.5, 3], raio: 1.55 },
 };
 
 /** Nomes de partes que não são estruturas do conteúdo (só exibição). */
