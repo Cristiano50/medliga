@@ -42,6 +42,38 @@ export interface Backend {
   escolasProfessor(): Promise<{ escolaId: string; licencaAtiva: boolean }[]>;
   /** Desempenho agregado da turma por tópico (mínimo de 5 alunos por recorte). */
   painelEscola(escolaId: string, desde?: string): Promise<LinhaPainel[]>;
+  /** Duelos assíncronos (precisam de conta online). */
+  criarDuelo(disciplina: string, questoes: string[]): Promise<string>;
+  entrarDuelo(codigo: string): Promise<Duelo>;
+  registrarResultadoDuelo(codigo: string, r: ResultadoDuelo): Promise<Duelo>;
+}
+
+export interface ResultadoDuelo {
+  acertos: number;
+  total: number;
+  tempoMs: number;
+}
+
+export interface Duelo {
+  codigo: string;
+  disciplina: string;
+  questoes: string[];
+  souCriador: boolean;
+  adversario: string | null;
+  meuResultado: ResultadoDuelo | null;
+  /** só aparece depois que você joga */
+  resultadoAdversario: ResultadoDuelo | null;
+  expiraEm: string;
+}
+
+/** Quem venceu: mais acertos; empate → menor tempo. null = ainda falta alguém jogar. */
+export function vencedorDuelo(d: Duelo): 'eu' | 'adversario' | 'empate' | null {
+  const a = d.meuResultado;
+  const b = d.resultadoAdversario;
+  if (!a || !b) return null;
+  if (a.acertos !== b.acertos) return a.acertos > b.acertos ? 'eu' : 'adversario';
+  if (a.tempoMs !== b.tempoMs) return a.tempoMs < b.tempoMs ? 'eu' : 'adversario';
+  return 'empate';
 }
 
 export interface LinhaPainel {
@@ -105,6 +137,15 @@ class BackendOffline implements Backend {
   }
   async painelEscola(): Promise<LinhaPainel[]> {
     return [];
+  }
+  async criarDuelo(): Promise<string> {
+    throw new Error('Duelos precisam de conta online, disponível quando o servidor de ranking for ativado.');
+  }
+  async entrarDuelo(): Promise<Duelo> {
+    throw new Error('Duelos precisam de conta online, disponível quando o servidor de ranking for ativado.');
+  }
+  async registrarResultadoDuelo(): Promise<Duelo> {
+    throw new Error('offline');
   }
 }
 
@@ -181,6 +222,36 @@ class BackendDemo implements Backend {
     return topicosDe('embriologia').map((t) => {
       return { topicoId: t.id, alunos: 8 + Math.floor(rng() * 30), respostas: 60 + Math.floor(rng() * 400), acerto: Math.round((45 + rng() * 45) * 10) / 10 };
     });
+  }
+  // Duelos de demonstração: o "adversário" fictício é gerado ao entrar com um código.
+  private duelos = new Map<string, Duelo>();
+  async criarDuelo(disciplina: string, questoes: string[]) {
+    const codigo = Array.from({ length: 6 }, () => 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[Math.floor(Math.random() * 32)]).join('');
+    this.duelos.set(codigo, {
+      codigo,
+      disciplina,
+      questoes,
+      souCriador: true,
+      adversario: 'Rival (demonstração)',
+      meuResultado: null,
+      resultadoAdversario: null,
+      expiraEm: new Date(Date.now() + 48 * 3600e3).toISOString(),
+    });
+    return codigo;
+  }
+  async entrarDuelo(codigo: string): Promise<Duelo> {
+    const d = this.duelos.get(codigo.toUpperCase());
+    if (!d) throw new Error('Duelo não encontrado. Confira o código.');
+    return { ...d, resultadoAdversario: d.meuResultado ? d.resultadoAdversario : null };
+  }
+  async registrarResultadoDuelo(codigo: string, r: ResultadoDuelo): Promise<Duelo> {
+    const d = this.duelos.get(codigo.toUpperCase());
+    if (!d) throw new Error('Duelo não encontrado.');
+    const rng = criarRng(codigo.charCodeAt(0) * 7 + codigo.charCodeAt(5));
+    const rival = { acertos: Math.max(0, Math.min(r.total, Math.round(r.total * (0.45 + rng() * 0.5)))), total: r.total, tempoMs: Math.round(r.total * (6000 + rng() * 9000)) };
+    const novo = { ...d, meuResultado: r, resultadoAdversario: rival };
+    this.duelos.set(d.codigo, novo);
+    return novo;
   }
 }
 
@@ -297,6 +368,47 @@ class BackendSupabase implements Backend {
       respostas: r.respostas,
       acerto: Number(r.acerto),
     }));
+  }
+
+  async criarDuelo(disciplina: string, questoes: string[]) {
+    const { data, error } = await this.sb.rpc('criar_duelo', { p_disciplina: disciplina, p_questoes: questoes });
+    if (error) throw error;
+    return data as string;
+  }
+
+  private converterDuelo(d: Record<string, unknown>): Duelo {
+    const res = (x: unknown): ResultadoDuelo | null => {
+      if (!x) return null;
+      const o = x as { acertos: number; total: number; tempo_ms: number };
+      return { acertos: o.acertos, total: o.total, tempoMs: o.tempo_ms };
+    };
+    return {
+      codigo: d.codigo as string,
+      disciplina: d.disciplina as string,
+      questoes: d.questoes as string[],
+      souCriador: d.sou_criador as boolean,
+      adversario: (d.adversario as string | null) ?? null,
+      meuResultado: res(d.meu_resultado),
+      resultadoAdversario: res(d.resultado_adversario),
+      expiraEm: d.expira_em as string,
+    };
+  }
+
+  async entrarDuelo(codigo: string) {
+    const { data, error } = await this.sb.rpc('entrar_duelo', { p_codigo: codigo.toUpperCase() });
+    if (error) throw new Error(error.message.includes('não encontrado') ? 'Duelo não encontrado. Confira o código.' : error.message);
+    return this.converterDuelo(data as Record<string, unknown>);
+  }
+
+  async registrarResultadoDuelo(codigo: string, r: ResultadoDuelo) {
+    const { data, error } = await this.sb.rpc('registrar_resultado_duelo', {
+      p_codigo: codigo.toUpperCase(),
+      p_acertos: r.acertos,
+      p_total: r.total,
+      p_tempo_ms: r.tempoMs,
+    });
+    if (error) throw error;
+    return this.converterDuelo(data as Record<string, unknown>);
   }
 
   async rankingEscolas(semana: string) {

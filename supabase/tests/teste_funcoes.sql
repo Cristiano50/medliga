@@ -166,5 +166,51 @@ do $$ begin
   if (select count(*) from minhas_escolas_professor() where licenca_ativa) <> 1 then raise exception 'FALHOU: professor/licença'; end if;
   if (select count(*) from painel_escola('unb')) <> 0 then raise exception 'FALHOU: painel deveria ocultar recorte com < 5 alunos'; end if;
 end $$;
+
+-- 15) duelo: C cria, A entra; resultado do adversário só aparece depois de jogar; vencedor por acertos
+create temporary table t_duelo (codigo text);
+grant all on t_duelo to authenticated;
+do $$ begin
+  insert into t_duelo select criar_duelo('embriologia', array['t-q1','t-q2','t-q3','t-q1','t-q2']);
+  if (select codigo from t_duelo) !~ '^[A-Z2-9]{6}$' then raise exception 'FALHOU: código do duelo'; end if;
+  begin
+    perform criar_duelo('embriologia', array['nao-existe','t-q1','t-q2','t-q3','t-q1']);
+    raise exception 'FALHOU: aceitou questão fora do catálogo';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  perform registrar_resultado_duelo((select codigo from t_duelo), 4, 5, 20000);
+end $$;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+do $$
+declare r jsonb;
+begin
+  r := entrar_duelo((select codigo from t_duelo));
+  if (r->>'sou_criador')::boolean then raise exception 'FALHOU: A não é criador'; end if;
+  if r->'resultado_adversario' <> 'null'::jsonb then raise exception 'FALHOU: resultado do adversário vazou antes de jogar: %', r; end if;
+  if jsonb_array_length(r->'questoes') <> 5 then raise exception 'FALHOU: questões do duelo'; end if;
+  begin
+    perform registrar_resultado_duelo((select codigo from t_duelo), 5, 5, 100); -- tempo implausível
+    raise exception 'FALHOU: aceitou tempo implausível';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  r := registrar_resultado_duelo((select codigo from t_duelo), 5, 5, 15000);
+  if (r->'resultado_adversario'->>'acertos')::int <> 4 then raise exception 'FALHOU: depois de jogar deveria ver o resultado do adversário: %', r; end if;
+end $$;
+-- terceiro usuário não entra em duelo cheio
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000d';
+reset role;
+insert into auth.users values ('00000000-0000-0000-0000-00000000000d', 'davi@gmail.com');
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000d';
+do $$ begin
+  begin
+    perform entrar_duelo((select codigo from t_duelo));
+    raise exception 'FALHOU: terceiro entrou no duelo';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+end $$;
 reset role;
 \echo 'TODOS OS TESTES SQL PASSARAM'

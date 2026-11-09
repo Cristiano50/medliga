@@ -12,6 +12,7 @@ import { PerfilTela } from './screens/Perfil.tsx';
 import { PlanosTela } from './screens/Planos.tsx';
 import { PainelTela } from './screens/Painel.tsx';
 import { LegalTela } from './screens/Legal.tsx';
+import { DuelosTela } from './screens/Duelos.tsx';
 import { LinhaDoTempoTela } from './games/LinhaDoTempo.tsx';
 import { CamadasTela } from './games/Camadas.tsx';
 import { Carregando } from './ui/Carregando.tsx';
@@ -38,6 +39,7 @@ function Rotas() {
           <Route path="/perfil" element={<PerfilTela />} />
           <Route path="/planos" element={<PlanosTela />} />
           <Route path="/painel" element={<PainelTela />} />
+          <Route path="/duelos" element={<DuelosTela />} />
         </Route>
         <Route element={<Layout semNav />}>
           <Route path="/jogar/quiz" element={<QuizTela />} />

@@ -3,7 +3,7 @@ import type { Questao, Topico } from '../content/schema.ts';
 import type { EstadoItem } from './srs.ts';
 import { embaralhar } from './random.ts';
 
-export type ModoSessao = 'estudo' | 'plantao' | 'revisao';
+export type ModoSessao = 'estudo' | 'plantao' | 'revisao' | 'duelo';
 
 export interface ItemSessao {
   questao: Questao;

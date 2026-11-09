@@ -11,6 +11,7 @@ import { QuestaoView, respostaCompleta } from '../games/questoes.tsx';
 import { Barra } from '../ui/comum.tsx';
 import { Carregando } from '../ui/Carregando.tsx';
 import { ReportarErro } from '../ui/ReportarErro.tsx';
+import { obterBackend, vencedorDuelo, type Duelo } from '../data/backend.ts';
 
 const DURACAO_PLANTAO_MS = 90_000;
 const LIMITE_QUESTAO_PLANTAO_MS = 15_000;
@@ -25,7 +26,10 @@ interface Registro {
 
 export function QuizTela() {
   const [params] = useSearchParams();
-  const modo = (params.get('modo') ?? 'estudo') as ModoSessao;
+  const codigoDuelo = params.get('duelo');
+  const modo = (codigoDuelo ? 'duelo' : (params.get('modo') ?? 'estudo')) as ModoSessao;
+  const [duelo, setDuelo] = useState<Duelo | null>(null);
+  const [erro, setErro] = useState<string | null>(null);
   const topicoId = params.get('topico');
   const nav = useNavigate();
   const perfil = useApp((s) => s.perfil)!;
@@ -42,7 +46,8 @@ export function QuizTela() {
   }, [topicoId]);
 
   const tipoUso = modo === 'plantao' ? 'plantao' : 'estudo';
-  const [liberado] = useState(() => podeIniciar(perfil.plano, uso, tipoUso).ok);
+  // Duelos não consomem o limite diário: são o principal convite para novos jogadores.
+  const [liberado] = useState(() => !!codigoDuelo || podeIniciar(perfil.plano, uso, tipoUso).ok);
   const [itens, setItens] = useState<ItemSessao[] | null>(null);
   const estadosRef = useRef(new Map<string, EstadoItem>());
   const acertosRecentesRef = useRef(new Map<string, number>());
@@ -71,13 +76,38 @@ export function QuizTela() {
       const ar = new Map<string, number>();
       for (const r of recentes) if (r.correta) ar.set(r.questaoId, (ar.get(r.questaoId) ?? 0) + 1);
       acertosRecentesRef.current = ar;
-      const tamanho = modo === 'plantao' ? 40 : 10;
-      const s = montarSessao(topicos, { modo, tamanho, estados: mapa });
-      if (!vivo) return;
-      setItens(s);
+      if (codigoDuelo) {
+        try {
+          const d = await (await obterBackend()).entrarDuelo(codigoDuelo);
+          if (!vivo) return;
+          setDuelo(d);
+          if (d.meuResultado) {
+            // já jogou: vai direto para o placar
+            salvo.current = true;
+            setItens([]);
+            setFim(true);
+            return;
+          }
+          const porId = new Map(topicosDe(d.disciplina).flatMap((t) => t.questoes.map((q) => [q.id, { questao: q, topicoId: t.id }] as const)));
+          const s: ItemSessao[] = d.questoes.flatMap((id) => {
+            const x = porId.get(id);
+            if (!x) return [];
+            return [{ ...x, ordemExibicao: x.questao.tipo === 'multipla' ? x.questao.alternativas.map((a) => a.id) : undefined }];
+          });
+          setItens(s);
+        } catch (e) {
+          if (vivo) setErro((e as Error).message);
+          return;
+        }
+      } else {
+        const tamanho = modo === 'plantao' ? 40 : 10;
+        const s = montarSessao(topicos, { modo, tamanho, estados: mapa });
+        if (!vivo) return;
+        setItens(s);
+        await contarUso(tipoUso);
+      }
       inicioSessao.current = Date.now();
       inicioQuestao.current = Date.now();
-      await contarUso(tipoUso);
     })();
     return () => {
       vivo = false;
@@ -135,8 +165,28 @@ export function QuizTela() {
       respostas,
       estados,
     );
-  }, [fim, itens, registros, modo, concluirSessao]);
+    if (codigoDuelo && registros.length) {
+      void obterBackend()
+        .then((b) =>
+          b.registrarResultadoDuelo(codigoDuelo, {
+            acertos: registros.filter((r) => r.correta).length,
+            total: registros.length,
+            tempoMs: registros.reduce((s, r) => s + r.tempoMs, 0),
+          }),
+        )
+        .then(setDuelo)
+        .catch((e: Error) => setErro(`Não foi possível enviar o resultado do duelo: ${e.message}`));
+    }
+  }, [fim, itens, registros, modo, concluirSessao, codigoDuelo]);
 
+  if (erro && !fim)
+    return (
+      <div className="card pilha centro" style={{ marginTop: 24 }}>
+        <h2>Duelo indisponível</h2>
+        <p className="muted">{erro}</p>
+        <Link to="/duelos" className="btn primario">Voltar aos duelos</Link>
+      </div>
+    );
   if (!liberado)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
@@ -150,6 +200,7 @@ export function QuizTela() {
       </div>
     );
   if (!itens) return <Carregando texto="Montando sua sessão…" />;
+  if (codigoDuelo && fim) return <PlacarDuelo duelo={duelo} registros={registros} erro={erro} />;
   if (itens.length === 0)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
@@ -291,6 +342,63 @@ function Resumo({ registros, modo, onSair }: { registros: Registro[]; modo: Modo
       <div className="grade g2">
         <button className="btn primario" onClick={() => location.reload()}>{modo === 'plantao' ? 'Jogar de novo' : 'Nova sessão'}</button>
         <button className="btn" onClick={onSair}>Sair</button>
+      </div>
+    </div>
+  );
+}
+
+function segundos(ms: number) {
+  return `${Math.round(ms / 1000)} s`;
+}
+
+function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registros: Registro[]; erro: string | null }) {
+  if (erro) return <div className="aviso" style={{ marginTop: 16 }}>{erro}</div>;
+  if (!duelo || !duelo.meuResultado) return <Carregando texto="Enviando seu resultado…" />;
+  const v = vencedorDuelo(duelo);
+  const eu = duelo.meuResultado;
+  const ele = duelo.resultadoAdversario;
+  const erros = registros.filter((r) => !r.correta);
+  return (
+    <div className="pilha" style={{ marginTop: 12 }}>
+      <div className="card destaque centro pilha">
+        <div className="confete" aria-hidden>{v === 'eu' ? '🏆' : v === 'adversario' ? '🥈' : v === 'empate' ? '🤝' : '⏳'}</div>
+        <h1 style={{ margin: 0 }}>
+          {v === 'eu' ? 'Você venceu!' : v === 'adversario' ? 'Não foi dessa vez' : v === 'empate' ? 'Empate' : 'Aguardando o adversário'}
+        </h1>
+        <p className="muted" style={{ margin: 0 }}>Duelo {duelo.codigo}{duelo.adversario ? ` · contra ${duelo.adversario}` : ''}</p>
+      </div>
+      <div className="grade" style={{ gridTemplateColumns: '1fr 1fr' }}>
+        <div className="card centro">
+          <span className="muted pequeno">Você</span>
+          <div style={{ fontSize: '1.6rem', fontWeight: 800 }}>{eu.acertos}/{eu.total}</div>
+          <span className="muted pequeno">{segundos(eu.tempoMs)}</span>
+        </div>
+        <div className="card centro">
+          <span className="muted pequeno">{duelo.adversario ?? 'Adversário'}</span>
+          <div style={{ fontSize: '1.6rem', fontWeight: 800 }}>{ele ? `${ele.acertos}/${ele.total}` : '—'}</div>
+          <span className="muted pequeno">{ele ? segundos(ele.tempoMs) : 'ainda não jogou'}</span>
+        </div>
+      </div>
+      {!ele && (
+        <p className="muted pequeno centro" style={{ margin: 0 }}>
+          Mande o código <strong style={{ color: 'var(--text)' }}>{duelo.codigo}</strong> para o seu colega. O placar aparece aqui quando ele jogar.
+        </p>
+      )}
+      {erros.length > 0 && (
+        <section className="pilha">
+          <h2>Revise o que errou</h2>
+          {erros.map((r) => (
+            <div key={r.item.questao.id} className="card">
+              <strong>{r.item.questao.enunciado}</strong>
+              <p className="muted" style={{ margin: '8px 0' }}>{r.item.questao.explicacao}</p>
+              <ReportarErro questaoId={r.item.questao.id} />
+            </div>
+          ))}
+        </section>
+      )}
+      <div className="grade g2">
+        <Link to="/duelos" className="btn primario">Novo duelo</Link>
+        <Link to="/" className="btn">Sair</Link>
       </div>
     </div>
   );

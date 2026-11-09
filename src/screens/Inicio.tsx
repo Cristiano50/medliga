@@ -82,6 +82,11 @@ export function Inicio() {
             <strong>Camadas germinativas</strong>
             <span className="muted pequeno">De onde vem cada tecido? Ectoderma, mesoderma, endoderma ou crista neural.</span>
           </Link>
+          <Link to="/duelos" className="card disc-card" style={{ ['--cor' as string]: 'var(--danger)' }}>
+            <span className="icone" aria-hidden>⚔️</span>
+            <strong>Duelo</strong>
+            <span className="muted pequeno">Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais.</span>
+          </Link>
           {vencidas > 0 && (
             <Link to="/jogar/quiz?modo=revisao" className="card disc-card" style={{ ['--cor' as string]: 'var(--success)' }}>
               <span className="icone" aria-hidden>🔁</span>

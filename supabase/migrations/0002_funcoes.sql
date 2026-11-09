@@ -92,7 +92,7 @@ begin
   select coalesce(sum(greatest(0, (r->>'tempo_ms')::bigint)), 0) into v_soma_tempo from jsonb_array_elements(coalesce(p_respostas, '[]'::jsonb)) r;
 
   -- Plausibilidade (antifraude básico)
-  if v_modo not in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas') then v_recusa := 'modo inválido';
+  if v_modo not in ('estudo','plantao','revisao','identifique','linha-do-tempo','camadas','duelo') then v_recusa := 'modo inválido';
   elsif v_fim < v_inicio then v_recusa := 'horários inconsistentes';
   elsif v_fim > now() + interval '5 minutes' then v_recusa := 'sessão no futuro';
   elsif v_inicio < now() - interval '8 days' then v_recusa := 'sessão antiga demais';
