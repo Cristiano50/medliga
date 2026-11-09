@@ -35,7 +35,7 @@
       "nome": "Fibra muscular esquelética",
       "sinonimos": ["rabdomiócito"],
       "definicao": "Célula cilíndrica longa e multinucleada (sincício), com núcleos periféricos sob o sarcolema e estriações transversais.",
-      "origem": "Fusão de mioblastos derivados dos somitos (mesoderma paraxial)."
+      "origem": "Fusão de mioblastos do mesoderma paraxial (somitos, nos músculos do tronco e dos membros; mesoderma paraxial cranial, na maioria dos músculos da cabeça)."
     },
     {
       "id": "estriacoes-transversais",
@@ -178,7 +178,7 @@
       "id": "distrofia-duchenne",
       "titulo": "Distrofia muscular de Duchenne",
       "descricao": "Doença de herança recessiva ligada ao X, em meninos, com fraqueza proximal progressiva desde a infância, sinal de Gowers, pseudo-hipertrofia das panturrilhas e CK muito elevada. A biópsia mostra fibras de tamanhos variados, necrose, regeneração e substituição por tecido adiposo e conjuntivo; a imuno-histoquímica não marca distrofina.",
-      "mecanismo": "Sem distrofina, que liga a actina subsarcolemal ao complexo distroglicano–sarcoglicanos preso à laminina da lâmina basal, o sarcolema se rompe durante a contração; ciclos de necrose e regeneração esgotam as células satélites."
+      "mecanismo": "Sem distrofina, que liga a actina subsarcolemal ao complexo distroglicano–sarcoglicanos preso à laminina da lâmina basal, o sarcolema se rompe durante a contração; ciclos repetidos de necrose e regeneração acabam superando a capacidade regenerativa do músculo."
     },
     {
       "id": "miastenia-grave",
@@ -268,7 +268,7 @@
         { "id": "d", "texto": "Aumentam a área da membrana e concentram receptores de acetilcolina" }
       ],
       "correta": "d",
-      "explicacao": "O sarcolema sob o terminal axônico forma dobras (fendas sinápticas secundárias) que ampliam a superfície pós-sináptica; os receptores nicotínicos de acetilcolina concentram-se nas cristas dessas dobras (d), e a acetilcolinesterase fica na lâmina basal da fenda. As vesículas com acetilcolina (a) e os canais de Ca²⁺ dependentes de voltagem (b) estão no terminal pré-sináptico. O terminal motor perde a mielina (c) e é recoberto apenas por uma célula de Schwann.",
+      "explicacao": "O sarcolema sob o terminal axônico forma dobras juncionais, separadas por fendas sinápticas secundárias, que ampliam a superfície pós-sináptica; os receptores nicotínicos de acetilcolina concentram-se nas cristas dessas dobras (d), e a acetilcolinesterase fica na lâmina basal da fenda. As vesículas com acetilcolina (a) e os canais de Ca²⁺ dependentes de voltagem (b) estão no terminal pré-sináptico. O terminal motor perde a mielina (c) e é recoberto apenas por prolongamentos de células de Schwann, sem mielina.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["juncao-neuromuscular", "acetilcolina"],
@@ -391,7 +391,7 @@
         { "id": "d", "texto": "Receptor de acetilcolina; despolariza a placa motora" }
       ],
       "correta": "a",
-      "explicacao": "Na distrofia muscular de Duchenne (herança recessiva ligada ao X), mutações no gene da distrofina eliminam essa proteína, que liga os filamentos de actina subsarcolemais ao complexo distroglicano–sarcoglicanos, preso à laminina da lâmina basal (a). Sem ela, o sarcolema se rompe com a contração; as fibras necrosam, a regeneração se esgota e o músculo é substituído por gordura e fibrose (pseudo-hipertrofia das panturrilhas). Titina (b) e desmina (c) são proteínas do sarcômero e do citoesqueleto cuja falta não produz esse quadro. A perda de receptores de acetilcolina (d) ocorre na miastenia grave, que causa fraqueza flutuante sem necrose nem CK elevada.",
+      "explicacao": "Na distrofia muscular de Duchenne (herança recessiva ligada ao X), mutações no gene da distrofina eliminam essa proteína, que liga os filamentos de actina subsarcolemais ao complexo distroglicano–sarcoglicanos, preso à laminina da lâmina basal (a). Sem ela, o sarcolema se rompe com a contração; as fibras necrosam, a regeneração se esgota e o músculo é substituído por gordura e fibrose (pseudo-hipertrofia das panturrilhas). Titina (b) e desmina (c) são proteínas do sarcômero e do citoesqueleto; mutações nos seus genes causam outras miopatias, raras e de quadro diferente, e não a distrofia de Duchenne. A perda de receptores de acetilcolina (d) ocorre na miastenia grave, que causa fraqueza flutuante sem necrose nem CK elevada.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["distrofia-duchenne", "distrofina", "caso-clinico"],
@@ -570,7 +570,7 @@
         { "id": "1", "texto": "O ATP liga-se à miosina, que se desprende da actina" },
         { "id": "2", "texto": "A cabeça de miosina liga-se a um sítio exposto da actina" },
         { "id": "3", "texto": "A hidrólise do ATP reengatilha a cabeça de miosina" },
-        { "id": "4", "texto": "A liberação do fosfato desencadeia o golpe de força" },
+        { "id": "4", "texto": "O fosfato é liberado e ocorre o golpe de força" },
         { "id": "5", "texto": "O ADP é liberado e a miosina fica firmemente ligada à actina (estado de rigor)" }
       ],
       "ordemCorreta": ["2", "4", "5", "1", "3"],
@@ -654,19 +654,24 @@
     { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Coração (infarto do miocárdio: sequência morfológica)" },
     { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Nervos periféricos e músculos esqueléticos (distrofias musculares; miastenia grave)" },
     { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Trato genital feminino (leiomioma)" },
-    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Respostas celulares ao estresse: adaptações (hipertrofia e hiperplasia)" },
-    { "obra": "Bergmann O et al. Evidence for cardiomyocyte renewal in humans. Science. 2009;324(5923):98-102", "capitulo": "Renovação de cardiomiócitos medida por carbono-14" }
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Lesão celular, morte celular e adaptações (hipertrofia e hiperplasia)" },
+    { "obra": "Bergmann O et al. Evidence for cardiomyocyte renewal in humans. Science. 2009;324(5923):98-102", "capitulo": "Renovação de cardiomiócitos medida por carbono-14" },
+    { "obra": "Flucher BE, Daniels MP. Distribution of Na+ channels and ankyrin in neuromuscular junctions is complementary to that of acetylcholine receptors and the 43 kd protein. Neuron. 1989;3(2):163-75", "capitulo": "Receptores de acetilcolina nas cristas e canais de Na⁺ no fundo das dobras juncionais" },
+    { "obra": "Muretta JM et al. Direct real-time detection of the structural and biochemical events in the myosin power stroke. Proc Natl Acad Sci USA. 2015;112(46):14272-7", "capitulo": "Golpe de força × liberação do fosfato" }
   ],
   "notasDivergencia": [
     "Comprimento do sarcômero em repouso: Junqueira ~2,5 µm; Ross 2–3 µm. Adotado ~2,5 µm, sem cobrança numérica.",
-    "Nomenclatura das fibras rápidas glicolíticas: Junqueira e Ross usam I, IIa e IIb; no ser humano, a fibra rápida glicolítica expressa sobretudo a isoforma IIx da cadeia pesada da miosina (a IIb praticamente não é expressa), e textos de fisiologia usam 'IIx'. As questões falam em 'tipo II glicolíticas' para evitar o conflito.",
+    "Nomenclatura das fibras rápidas glicolíticas: Ross usa I, IIa e IIb (a subdivisão em Junqueira 14ª ed. não foi conferida); no ser humano, a fibra rápida glicolítica expressa sobretudo a isoforma IIx da cadeia pesada da miosina (a IIb praticamente não é expressa), e textos de fisiologia usam 'IIx'. As questões falam em 'tipo II glicolíticas' para evitar o conflito.",
     "Regeneração do miocárdio: os livros de histologia descrevem capacidade ausente ou mínima; estudos com carbono-14 (Bergmann et al., 2009) estimaram renovação de cerca de 1% dos cardiomiócitos ao ano aos 25 anos, caindo para ~0,45% aos 75, insuficiente para reparar um infarto. O conteúdo usa 'mínima'.",
-    "Cronologia do infarto (Robbins): necrose de coagulação visível a partir de ~4–12 h, neutrófilos com pico em 1–3 dias, macrófagos em 3–7 dias, tecido de granulação a partir de 7–10 dias e cicatriz densa após ~2 meses. Os intervalos são aproximados e variam com o tamanho do infarto; a questão cobra só a ordem."
+    "Cronologia do infarto (Robbins): necrose de coagulação visível a partir de ~4–12 h, neutrófilos com pico em 1–3 dias, macrófagos em 3–7 dias, tecido de granulação a partir de 7–10 dias e cicatriz densa após ~2 meses. Os intervalos são aproximados e variam com o tamanho do infarto; a questão cobra só a ordem.",
+    "Ciclo das pontes cruzadas (q23): os livros (Ross, Junqueira, fisiologia) descrevem a liberação do fosfato como gatilho do golpe de força; estudos de cinética estrutural (Muretta et al., 2015) indicam que o golpe começa antes da saída do fosfato. O item 4 junta os dois eventos sem afirmar causalidade, e a sequência cobrada (ligação → fosfato e golpe → saída do ADP → ligação do ATP → hidrólise) vale nos dois modelos.",
+    "Receptores de acetilcolina na placa motora: concentram-se nas cristas das dobras juncionais, e os canais de Na⁺ dependentes de voltagem, no fundo das dobras (Ross 8ª ed., cap. 11; Flucher e Daniels, 1989). Junqueira descreve apenas as dobras com receptores, sem contradizer. Incerteza do redator resolvida na revisão de histologia."
   ],
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. não conferidos (citado como 'Tecido muscular', cap. 10 na 13ª ed.). Capítulos de Ross 8ª ed. (11), Kierszenbaum 5ª ed. (7) e títulos de capítulos de Robbins 10ª ed. citados de memória.",
-    "Localização dos receptores nicotínicos nas cristas das dobras juncionais (com canais de Na⁺ nas depressões) segue Ross; Junqueira descreve apenas as dobras com receptores.",
     "Tamanho das fibras (diâmetro, comprimento) e proporção de mitocôndrias no cardiomiócito omitidos por não terem sido conferidos."
   ],
-  "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [], "humano": null }
+  "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [
+    {"area": "histologia", "agente": "revisor-histologia-v1", "data": "2026-11-09", "veredito": "aprovado-com-correcoes", "notas": "8 correções (0 críticas, 0 importantes, 8 menores); nenhum gabarito errado. Principais: q23 item 4 deixou de afirmar que a saída do fosfato desencadeia o golpe de força (ordem debatida; sequência cobrada inalterada); origem da fibra esquelética inclui o mesoderma paraxial cranial; q04 (dobras juncionais × fendas secundárias; terminal coberto por células de Schwann); q11 refuta titina/desmina com precisão; título de capítulo de Robbins 10ª ed. corrigido; incerteza sobre receptores de ACh nas cristas resolvida (Ross; Flucher e Daniels, 1989). Conferidos sem erro: IIb × IIx, Bergmann 2009 (~1%/ano aos 25 anos), cronologia do infarto (Robbins)."}
+  ], "humano": null }
 }
