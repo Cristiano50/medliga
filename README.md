@@ -25,6 +25,8 @@ Jogo de estudo para estudantes de medicina, com rigor científico, modelos 3D ma
 | Reportar erro em questões; exclusão de conta e de dados do aparelho (LGPD) | implementado |
 | Pagamentos e builds nas lojas | planejado (v0.2) |
 
+Evidência do aprofundamento da embriologia (09/11/2026, nesta sessão): 47/47 testes Vitest · TypeScript sem erros · conteúdo validado (35 tópicos, 1026 questões; embriologia com 25 tópicos e 766 questões, 184 de dificuldade 4–5) · testes SQL aprovados · build/PWA gerado · regressão no Chromium 390×844 (tópicos 21–25, Desafio avançado, 3 modelos 3D novos, Identifique) sem erros de página. Relatórios das revisões em `content/revisoes/` (av1–av4, e21-22, e23-24, e25, estagios-3d-cardiovascular).
+
 Evidência da entrega de histologia (09/11/2026, nesta sessão): 43/43 testes Vitest · TypeScript sem erros · conteúdo validado (30 tópicos, 783 questões, 441 escolas) · testes SQL aprovados ("TODOS OS TESTES SQL PASSARAM", Postgres local) · build/PWA gerado · fluxo de histologia conferido no Chromium em 390×844 (início, tópico, questões, plantão, microscópio, os dois jogos e duelos) sem erros de página.
 
 Evidência da atualização 3D (09/11/2026): 39/39 testes Vitest · TypeScript sem erros · conteúdo validado (20 tópicos, 523 questões) · build/PWA gerado. No Windows desta revisão, comandos executados diretamente pelo Node (equivalentes aos scripts npm); suíte completa aprovada fora da restrição de arquivos temporários do ambiente. SQL não mudou; a evidência anterior de 15 cenários permanece histórica, não foi reexecutada nesta entrega.
