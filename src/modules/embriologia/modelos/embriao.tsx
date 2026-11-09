@@ -5,7 +5,7 @@ import { Malha, Parte, useCena } from '../tres/nucleo.tsx';
 import { COR } from '../tres/cores.ts';
 import { salienciasAuriculares, superficieEmbriao } from './superficie-embriao.ts';
 import { TextoAncorado } from '../tres/rotulos.tsx';
-import { cordaoSemana8, esculpirSemana8 } from './escultura-embriao.ts';
+import { bocaSemana8, cordaoSemana8, esculpirSemana8, marcosFaceSemana8, pavilhaoSemana8 } from './escultura-embriao.ts';
 
 type V3 = [number, number, number];
 const v3 = (v: THREE.Vector3): V3 => [v.x, v.y, v.z];
@@ -373,44 +373,59 @@ function geometriaSemana8() {
 
 export const PARTES_SEMANA_8 = ['palpebras', 'pavilhao-auricular', 'dedos', 'herniacao-umbilical-fisiologica', 'cordao-umbilical'];
 export function ModeloSemana8() {
+  const cena = useCena();
+  const corpoApagado = cena.destaques.corpo === 'apagado' || (!cena.destaques.corpo && !!cena.selecionado && cena.selecionado !== 'corpo');
+  const opacidadeDetalhes = corpoApagado ? 0.4 : 1;
   const d = useMemo(geometriaSemana8, []);
   const corpo = useMemo(esculpirSemana8, []);
   const cordao = useMemo(cordaoSemana8, []);
-  useEffect(() => () => { corpo.dispose(); cordao.dispose(); d.membros.forEach((m) => m.geo.dispose()); }, [corpo, cordao, d]);
+  const face = useMemo(marcosFaceSemana8, []);
+  const boca = useMemo(bocaSemana8, []);
   const dedoGeo = useMemo(() => new THREE.CapsuleGeometry(0.016, 1, 4, 8), []);
-  const orelha = useMemo(() => new THREE.TorusGeometry(0.085, 0.026, 10, 28, Math.PI * 1.55), []);
+  const orelha = useMemo(pavilhaoSemana8, []);
   const palpebra = useMemo(() => new THREE.SphereGeometry(1, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2), []);
+  useEffect(() => () => {
+    [corpo, cordao, boca, dedoGeo, orelha, palpebra].forEach((g) => g.dispose());
+    d.membros.forEach((m) => m.geo.dispose());
+  }, [corpo, cordao, boca, dedoGeo, orelha, palpebra, d]);
   return (
     <group rotation={[0, 0.6, 0]} position={[0.1, -0.05, 0]}>
       <OrientacaoEmbriao cranial={[-0.05, 1.48, 0]} caudal={[0.55, -0.95, 0]} />
-      <Parte id="corpo" cor={COR.embriao} prioridade={1} rugosidade={0.5}>
+      <Parte id="corpo" cor="#e6a58f" prioridade={1} rugosidade={0.5} acabamentoOrganico>
         <Malha geometria={corpo} />
-        {d.olhos.map((o, i) => (
-          <Malha key={`o${i}`} geometria={ESFERA_BAIXA} posicao={v3(o)} escala={[0.06, 0.06, 0.03]} />
-        ))}
-      </Parte>
-      <Parte id="palpebras" cor="#d9a28c" prioridade={8}>
-        {d.olhos.map((o, i) => (
-          <group key={i}>
-            <Malha geometria={palpebra} posicao={v3(o.clone().add(new THREE.Vector3(0, 0.005, 0)))} escala={[0.085, 0.05, 0.05]} />
-            <Malha geometria={palpebra} posicao={v3(o.clone().add(new THREE.Vector3(0, -0.005, 0)))} rotacao={[Math.PI, 0, 0]} escala={[0.085, 0.04, 0.05]} />
+        <mesh geometry={boca}>
+          <meshStandardMaterial color="#a65f57" roughness={0.8} opacity={opacidadeDetalhes} transparent={corpoApagado} depthWrite={!corpoApagado} />
+        </mesh>
+        {face.olhos.map((o, i) => (
+          <group key={`o${i}`} position={o.posicao.clone().addScaledVector(o.normal, -0.008)} rotation={o.rotacao}>
+            <mesh geometry={ESFERA} scale={[0.067, 0.043, 0.018]}>
+              <meshStandardMaterial color="#644849" roughness={0.48} opacity={opacidadeDetalhes} transparent={corpoApagado} depthWrite={!corpoApagado} />
+            </mesh>
           </group>
         ))}
       </Parte>
-      <Parte id="pavilhao-auricular" cor={COR.embriaoEscuro} prioridade={8}>
-        {d.orelhas.map((o, i) => (
-          <Malha key={i} geometria={orelha} posicao={v3(o)} rotacao={[0, i === 0 ? 0 : Math.PI, 0.6]} />
+      <Parte id="palpebras" cor="#dca08b" prioridade={8} acabamentoOrganico>
+        {face.olhos.map((o, i) => (
+          <group key={i} position={o.posicao.clone().addScaledVector(o.normal, -0.004)} rotation={o.rotacao}>
+            <Malha geometria={palpebra} posicao={[0, 0.007, 0]} escala={[0.079, 0.043, 0.025]} />
+            <Malha geometria={palpebra} posicao={[0, -0.007, 0]} rotacao={[Math.PI, 0, 0]} escala={[0.079, 0.033, 0.025]} />
+          </group>
         ))}
       </Parte>
-      <Parte id="dedos" cor="#e3ad97" prioridade={8}>
+      <Parte id="pavilhao-auricular" cor="#d79581" prioridade={8} acabamentoOrganico>
+        {face.orelhas.map((o, i) => (
+          <Malha key={i} geometria={orelha} posicao={o.posicao.clone().addScaledVector(o.normal, -0.006)} rotacao={o.rotacao} />
+        ))}
+      </Parte>
+      <Parte id="dedos" cor="#e6a58f" prioridade={8} acabamentoOrganico>
         {d.dedos.map((s, i) => (
           <Malha key={i} geometria={dedoGeo} posicao={s.posicao} rotacao={s.rotacao} escala={[1, s.comp, 1]} />
         ))}
       </Parte>
-      <Parte id="cordao-umbilical" cor={COR.cordao} prioridade={5}>
+      <Parte id="cordao-umbilical" cor={COR.cordao} prioridade={5} acabamentoOrganico>
         <Malha geometria={cordao} />
       </Parte>
-      <Parte id="herniacao-umbilical-fisiologica" cor="#e7b9a0" prioridade={7}>
+      <Parte id="herniacao-umbilical-fisiologica" cor="#e7b9a0" prioridade={7} acabamentoOrganico>
         <Malha geometria={ESFERA} posicao={d.hernia} escala={0.15} />
       </Parte>
     </group>

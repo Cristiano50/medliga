@@ -935,6 +935,20 @@
             "data": "2026-11-09",
             "veredito": "aprovado",
             "notas": "Segunda revisão sequencial focal: continuidade cranio-cervical, marcos articulares e externos, seleção e feto da placenta preservados. Código, testes e quatro capturas inspecionados. Tampa proximal do cordão interna; extremidade distal não representa histologia. Não valida proporções como medidas reais."
+          },
+          {
+            "area": "embriologia",
+            "agente": "revisor-face-interativa-embriologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "Revisão focal de crânio oval, face discreta, pálpebras e pavilhões no modelo manipulável. Boca tornada neutra e iluminação reduzida após inspeção. Código e capturas 1280/320 conferidos. NMHM Carnegie 23 sustenta referência qualitativa; proporções gráficas não validadas por morfometria. Conferência médica pendente."
+          },
+          {
+            "area": "fisiologia",
+            "agente": "revisor-face-interativa-fisiologia-v1",
+            "data": "2026-11-09",
+            "veredito": "aprovado",
+            "notas": "Revisão transversal sequencial após embriologia: cordão e hérnia fisiológica distintos, boca neutra, marcadores e isolamento preservados. Sem transmissão biológica simulada; transparência de seleção é recurso de interface. Corte mostra envelope aberto, sem reconstrução de anatomia interna. Aprovação didática estilizada, não morfométrica ou funcional."
           }
         ],
         "humano": null

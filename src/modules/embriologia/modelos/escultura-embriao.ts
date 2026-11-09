@@ -51,10 +51,15 @@ function unir(a: number, b: number, suavidade: number) {
   return Math.min(a, b) - h * h * suavidade * 0.25;
 }
 
-/** Mantém centros e marcos do esquema anterior; une volumes, sem inventar anatomia superficial. */
+/** Envelope didático: crânio oval, pequena região facial e transição cervical curta.
+ * Parâmetros gráficos, não medidas de espécime. Membros mantêm os marcos anteriores. */
 export function campoSemana8(): Volume {
   const volumes: Volume[] = [
-    elipsoide([-0.05, 0.78, 0], [0.56, 0.56, 0.56]),
+    elipsoide([-0.015, 0.83, 0], [0.49, 0.51, 0.445]),
+    elipsoide([-0.31, 0.62, 0], [0.24, 0.22, 0.30]),
+    elipsoide([-0.32, 0.49, 0], [0.19, 0.115, 0.22]),
+    // Proeminência nasal pequena e baixa, sem ponte/queixo de adulto.
+    elipsoide([-0.535, 0.645, 0], [0.085, 0.066, 0.08]),
     elipsoide([0.08, -0.05, 0], [0.42, 0.62, 0.38], 0.25),
     elipsoide([0.01, 0.34, 0], [0.24, 0.31, 0.27]),
   ];
@@ -75,6 +80,74 @@ export function campoSemana8(): Volume {
     );
   }
   return (x, y, z) => volumes.reduce((d, volume) => unir(d, volume(x, y, z), 0.055), 100);
+}
+
+/** Assenta um marco na superfície real do campo, em vez de aproximá-lo à esfera antiga. */
+export function marcosFaceSemana8() {
+  const campo = campoSemana8();
+  function assentar(x: number, y: number, lado: number) {
+    let dentro = 0, fora = 0.75;
+    for (let i = 0; i < 32; i++) {
+      const meio = (dentro + fora) / 2;
+      if (campo(x, y, meio * lado) < 0) dentro = meio; else fora = meio;
+    }
+    const posicao = new THREE.Vector3(x, y, lado * (dentro + fora) / 2);
+    const e = 0.0001, z = posicao.z;
+    const normal = new THREE.Vector3(campo(x+e,y,z)-campo(x-e,y,z), campo(x,y+e,z)-campo(x,y-e,z), campo(x,y,z+e)-campo(x,y,z-e)).normalize();
+    const cima = new THREE.Vector3(0, 1, 0).addScaledVector(normal, -normal.y).normalize();
+    const direita = new THREE.Vector3().crossVectors(cima, normal).normalize();
+    const rotacao = new THREE.Euler().setFromRotationMatrix(new THREE.Matrix4().makeBasis(direita, cima, normal));
+    return { posicao, rotacao, normal };
+  }
+  return {
+    olhos: [1, -1].map((lado) => assentar(-0.365, 0.755, lado)),
+    orelhas: [1, -1].map((lado) => assentar(0.035, 0.60, lado)),
+  };
+}
+
+/** Pavilhão simples fechado: concha rasa e rebordo integrado, sem anel solto. */
+export function pavilhaoSemana8() {
+  const pos: number[] = [], indices: number[] = [];
+  const aneis = 10, lados = 40, camada = (aneis + 1) * (lados + 1);
+  for (let face = 0; face < 2; face++) for (let i = 0; i <= aneis; i++) {
+    const r = i / aneis;
+    for (let j = 0; j <= lados; j++) {
+      const ang = j * Math.PI * 2 / lados;
+      const altura = face === 0 ? 0.009 + 0.021 * Math.exp(-(((r - 0.78) / 0.22) ** 2)) : -0.025 * (1 - r * r);
+      pos.push(Math.cos(ang) * r * 0.062, Math.sin(ang) * r * 0.087, altura);
+    }
+  }
+  for (let i = 0; i < aneis; i++) for (let j = 0; j < lados; j++) {
+    const a = i * (lados + 1) + j, b = a + lados + 1;
+    indices.push(a, b, a + 1, a + 1, b, b + 1);
+    indices.push(a + camada, a + 1 + camada, b + camada, a + 1 + camada, b + 1 + camada, b + camada);
+  }
+  for (let j = 0; j < lados; j++) {
+    const a = aneis * (lados + 1) + j;
+    indices.push(a, a + camada, a + 1, a + 1, a + camada, a + 1 + camada);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.setIndex(indices);
+  const compacta = mergeVertices(g, 1e-6);
+  g.dispose(); compacta.computeVertexNormals();
+  return compacta;
+}
+
+/** Sulco bucal superficial discreto, aderente à face e sem dentes ou lábios adultos. */
+export function bocaSemana8() {
+  const campo = campoSemana8();
+  const pontos: THREE.Vector3[] = [];
+  for (let i = 0; i <= 16; i++) {
+    const z = (i / 16 - 0.5) * 0.14;
+    const y = 0.535; // Sulco neutro: não atribuir expressão facial ao embrião.
+    let fora = -0.8, dentro = -0.2;
+    for (let k = 0; k < 28; k++) {
+      const meio = (fora + dentro) / 2;
+      if (campo(meio, y, z) < 0) dentro = meio; else fora = meio;
+    }
+    pontos.push(new THREE.Vector3((fora + dentro) / 2 - 0.002, y, z));
+  }
+  return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pontos), 32, 0.005, 8, false);
 }
 
 /** Isosuperfície por tetraedros: malha suave única, sem texturas ou arquivos externos. */

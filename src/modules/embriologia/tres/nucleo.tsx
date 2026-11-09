@@ -39,6 +39,8 @@ export interface ParteProps {
   rotulo?: [number, number, number];
   ladoDuplo?: boolean;
   rugosidade?: number;
+  /** Acabamento de superfície ilustrativo, sem transmissão nem anatomia interna simulada. */
+  acabamentoOrganico?: boolean;
   sombreamentoPlano?: boolean;
   children: ReactNode;
   posicao?: [number, number, number];
@@ -54,6 +56,7 @@ export function Parte({
   rotulo,
   ladoDuplo,
   rugosidade = 0.62,
+  acabamentoOrganico = false,
   sombreamentoPlano,
   children,
   posicao,
@@ -68,7 +71,7 @@ export function Parte({
   const { invalidate } = useThree();
 
   const material = useMemo(() => {
-    const m = new THREE.MeshStandardMaterial({
+    const parametros = {
       color: cor,
       roughness: rugosidade,
       metalness: 0,
@@ -77,9 +80,13 @@ export function Parte({
       depthWrite: opacidade >= 0.98,
       side: THREE.DoubleSide,
       flatShading: !!sombreamentoPlano,
-    });
+    };
+    const m = acabamentoOrganico
+      ? new THREE.MeshPhysicalMaterial({ ...parametros, specularIntensity: 0.35, clearcoat: 0.08, clearcoatRoughness: 0.65, envMapIntensity: 0.15 })
+      : new THREE.MeshStandardMaterial(parametros);
+    m.userData.organico = acabamentoOrganico;
     return m;
-  }, [cor, opacidade, ladoDuplo, rugosidade, sombreamentoPlano]);
+  }, [cor, opacidade, ladoDuplo, rugosidade, sombreamentoPlano, acabamentoOrganico]);
 
   useEffect(() => () => material.dispose(), [material]);
 
@@ -182,6 +189,9 @@ export function Malha({
   const material = useContext(MaterialCtx);
   const contorno = useContext(ContornoCtx);
   const { gl } = useThree();
+  const cena = useCena();
+  // Sombras da superfície inteira não devem persistir após ocultação, seleção ou corte.
+  const sombras = !!material?.userData.organico && !cena.selecionado && !cena.isolado && !cena.ocultos?.length && cena.corte == null;
   return (
     <mesh
       geometry={geometria}
@@ -189,6 +199,8 @@ export function Malha({
       position={posicao as THREE.Vector3}
       rotation={rotacao as THREE.Euler}
       scale={escala as THREE.Vector3}
+      castShadow={sombras}
+      receiveShadow={sombras}
     >
       {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={gl.clippingPlanes} />}
     </mesh>
