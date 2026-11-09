@@ -27,10 +27,13 @@ export default function Lab3DTela() {
   const [ocultos, setOcultos] = useState<string[]>([]);
   const [isolado, setIsolado] = useState<string | null>(null);
   const [corte, setCorte] = useState<number | null>(null);
+  const [busca, setBusca] = useState('');
+  const normalizar = (texto: string) => texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').trim();
+  const lista = estagio.estruturas.filter((s) => normalizar(s.nome).includes(normalizar(busca)));
   const nomes = useMemo(() => nomesDoEstagio(estagio.id), [estagio.id]);
   const modelo = MODELOS[estagio.id];
   const temSistemas = ESTAGIOS.some((e) => e.grupo === 'sistemas');
-  useEffect(() => { setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); }, [estagio.id]);
+  useEffect(() => { setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); setBusca(''); }, [estagio.id]);
 
   function restaurar() {
     setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); setVersaoCamera((v) => v + 1);
@@ -162,9 +165,35 @@ export default function Lab3DTela() {
         </div>
       </div>
 
+      {info && (
+        <section className="card pilha selecao3d" aria-label="Estrutura selecionada" aria-live="polite">
+          <div className="linha entre">
+            <div className="linha">
+              {modelo.partes.includes(selecionado!) && <span className="numero3d">{modelo.partes.indexOf(selecionado!) + 1}</span>}
+              <div><span className="muted pequeno">Estrutura selecionada</span><h2>{info.nome}</h2></div>
+            </div>
+            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar">✕</button>
+          </div>
+          {info.texto && <p className="muted" style={{ margin: 0 }}>{info.texto}</p>}
+          {info.topicoId && topico(info.topicoId) && (
+            <Link to={`/topico/${info.topicoId}`} className="pequeno">Estudar: {topico(info.topicoId)!.titulo} ›</Link>
+          )}
+        </section>
+      )}
+
       <p className="muted pequeno" style={{ margin: 0 }}>Selecione pelo modelo ou pela lista. Os números ligam cada marcador ao nome; uma linha pode atravessar tecidos no esquema. Marcadores e indicações de orientação com ponto de referência fora da vista ficam ocultos. Use Restaurar vista para recuperar o enquadramento; a lista continua disponível.</p>
+      <div className="pilha busca-estruturas3d">
+        <label className="campo pequeno">Buscar estrutura neste estágio
+          <input type="search" className="input" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="Digite o nome da estrutura" aria-describedby="resultado-busca3d" />
+        </label>
+        <div className="linha entre quebra">
+          <span id="resultado-busca3d" className="muted pequeno" role="status">{lista.length} de {estagio.estruturas.length} estruturas na lista. A busca não oculta partes do modelo.</span>
+          {busca && <button className="btn pequeno" onClick={() => setBusca('')}>Limpar busca</button>}
+        </div>
+        {lista.length === 0 && <p className="muted pequeno">Nenhum nome corresponde à busca. Tente outro termo ou limpe a busca para ver a lista completa.</p>}
+      </div>
       <div className="lista-estruturas3d" role="group" aria-label="Estruturas deste estágio">
-        {estagio.estruturas.map((s) => (
+        {lista.map((s) => (
           <button
             key={s.id}
             className={`estrutura3d ${selecionado === s.id ? 'ativa' : ''}`}
@@ -188,18 +217,6 @@ export default function Lab3DTela() {
         </div>
       )}
 
-      {info ? (
-        <div className="card pilha" role="status" aria-live="polite">
-          <div className="linha entre">
-            <h2 style={{ margin: 0 }}>{info.nome}</h2>
-            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar">✕</button>
-          </div>
-          {info.texto && <p className="muted" style={{ margin: 0 }}>{info.texto}</p>}
-          {info.topicoId && topico(info.topicoId) && (
-            <Link to={`/topico/${info.topicoId}`} className="pequeno">Estudar: {topico(info.topicoId)!.titulo} ›</Link>
-          )}
-        </div>
-      ) : null}
         <div className="card pilha">
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{estagio.descricao}</p>
           <ul className="markdown" style={{ margin: 0 }}>

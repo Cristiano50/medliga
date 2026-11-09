@@ -81,7 +81,9 @@ export function CamadaMarcadores({ quadro }: { quadro: QuadroMarcadores }) {
   if (!quadro.pontos.length || !quadro.largura) return null;
   const marcadores = quadro.pontos.filter((p) => p.tipo !== 'texto');
   const textos = quadro.pontos.filter((p) => p.tipo === 'texto');
-  const distribuidos = distribuirRotulos(marcadores, quadro.largura, quadro.altura);
+  // Ordenação de pintura após o layout: destacar não desloca os marcadores.
+  const distribuidos = distribuirRotulos(marcadores, quadro.largura, quadro.altura)
+    .sort((a, b) => Number(a.estado === 'selecionado') - Number(b.estado === 'selecionado'));
   return (
     <div className="camada3d" style={{ width: quadro.largura, height: quadro.altura }}>
       {textos.map((t) => (

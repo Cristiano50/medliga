@@ -1,9 +1,9 @@
 import { describe, expect, it, vi, beforeAll, afterEach } from 'vitest';
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import * as THREE from 'three';
 import { resolverToque } from '../src/modules/embriologia/tres/nucleo.tsx';
-import { ancoraNoEnquadramento, distribuirRotulos } from '../src/modules/embriologia/tres/rotulos.tsx';
+import { ancoraNoEnquadramento, distribuirRotulos, CamadaMarcadores } from '../src/modules/embriologia/tres/rotulos.tsx';
 import { carregarDisciplina } from '../src/content/index.ts';
 import Lab from '../src/modules/embriologia/Lab3D.tsx';
 import type { Cena3DProps } from '../src/modules/embriologia/Cena3D.tsx';
@@ -13,6 +13,39 @@ beforeAll(async () => { await carregarDisciplina('embriologia'); });
 afterEach(cleanup);
 
 describe('exploração 3D', () => {
+  it('busca sem acentos preserva número, seleção e tecidos; limpa ao mudar estágio', () => {
+    render(<MemoryRouter initialEntries={['/lab3d?estagio=semana-6']}><Lab /></MemoryRouter>);
+    const busca = screen.getByRole('searchbox');
+    fireEvent.change(busca, { target: { value: 'saliencias' } });
+    const lista = screen.getByRole('group', { name: 'Estruturas deste estágio' });
+    expect(within(lista).getAllByRole('button')).toHaveLength(1);
+    fireEvent.click(within(lista).getByRole('button', { name: /4 Saliências auriculares/ }));
+    const ficha = screen.getByRole('region', { name: 'Estrutura selecionada' });
+    expect(ficha.compareDocumentPosition(lista) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    fireEvent.change(busca, { target: { value: 'inexistente' } });
+    expect(within(lista).queryAllByRole('button')).toHaveLength(0);
+    expect(within(ficha).getByRole('heading', { name: /Saliências auriculares/ })).toBeTruthy();
+    expect(JSON.parse(screen.getByTestId('cena').textContent!)).toEqual({ ocultos: [], isolado: null, corte: null });
+    fireEvent.click(screen.getByRole('button', { name: 'Limpar busca' }));
+    expect(within(lista).getAllByRole('button').length).toBeGreaterThan(1);
+    fireEvent.change(busca, { target: { value: 'saliencias' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Próximo modelo' }));
+    expect((busca as HTMLInputElement).value).toBe('');
+    expect(screen.queryByRole('region', { name: 'Estrutura selecionada' })).toBeNull();
+  });
+
+  it('pinta a seleção por último sem mover marcadores nem mudar símbolos de resposta', () => {
+    const pontos = [
+      { id: 'a', x: 20, y: 50, numero: '1', nome: 'A', estado: 'normal' },
+      { id: 'b', x: 25, y: 80, numero: '2', nome: 'B', estado: 'certo' },
+    ];
+    const { container, rerender } = render(<CamadaMarcadores quadro={{ pontos, largura: 300, altura: 360 }} />);
+    const posicao = container.querySelector('.marcador')!.getAttribute('cy');
+    rerender(<CamadaMarcadores quadro={{ pontos: [{ ...pontos[0], estado: 'selecionado' }, pontos[1]], largura: 300, altura: 360 }} />);
+    expect(container.querySelector('svg')!.lastElementChild!.querySelector('title')!.textContent).toBe('A');
+    expect(container.querySelector('.selecionado .marcador')!.getAttribute('cy')).toBe(posicao);
+    expect(container.querySelector('.certo text')!.textContent).toBe('✓');
+  });
   it('omite âncoras fora do enquadramento em qualquer eixo e recupera ao voltar', () => {
     for (const eixo of ['x', 'y', 'z'] as const) {
       for (const valor of [-1.01, 1.01, Infinity, NaN]) {
