@@ -1,0 +1,989 @@
+{
+  "id": "his-01-metodos",
+  "disciplina": "histologia",
+  "ordem": 1,
+  "titulo": "Métodos de estudo em histologia",
+  "subtitulo": "Do fragmento de tecido à lâmina: preparo, colorações e microscopia",
+  "objetivos": [
+    "Descrever, em ordem, as etapas do preparo de um corte histológico em parafina e a função de cada uma.",
+    "Explicar por que e como se fixa uma amostra, com ênfase no formol a 10% tamponado.",
+    "Comparar o preparo em parafina com o corte por congelação e indicar quando usar cada um.",
+    "Relacionar basofilia e acidofilia aos componentes corados pela hematoxilina e pela eosina.",
+    "Escolher a coloração adequada para glicogênio e mucinas, colágeno, fibras elásticas, fibras reticulares, células do sangue e lipídios.",
+    "Explicar os princípios da histoquímica e da imuno-histoquímica e sua aplicação no diagnóstico patológico.",
+    "Calcular o aumento total e comparar resolução e aplicações dos microscópios óptico, eletrônico de transmissão e de varredura.",
+    "Reconhecer artefatos comuns e interpretar estruturas tridimensionais a partir de cortes bidimensionais."
+  ],
+  "resumo": "A **histologia** estuda os tecidos ao microscópio. Como a maioria dos tecidos é espessa e incolor demais para exame direto, eles são transformados em **cortes finos e corados**. A técnica de rotina — **inclusão em parafina e coloração por hematoxilina-eosina (HE)** — é a mesma usada pela anatomia patológica para biópsias e peças cirúrgicas.\n\n**Etapas do preparo em parafina.**\n1. **Coleta**: fragmento pequeno, manipulado com delicadeza (pinçar com força causa artefato de esmagamento) e colocado logo no fixador.\n2. **Fixação**: preserva a estrutura, interrompe a **autólise** (digestão pelas enzimas da própria célula) e a decomposição bacteriana e endurece o tecido. O fixador de rotina é o **formol a 10% tamponado** (formaldeído a cerca de 4% em tampão, pH neutro); o formaldeído forma pontes entre proteínas. O tampão evita o **pigmento de formol**, precipitado castanho que surge em formol ácido, sobretudo em tecido rico em sangue. Fixação atrasada ou volume insuficiente de fixador produz autólise.\n3. **Desidratação**: a parafina não se mistura com água; a água é removida em banhos de **etanol em concentrações crescentes** até o álcool absoluto.\n4. **Diafanização (clareamento)**: o álcool é substituído por um solvente miscível com ele e com a parafina, em geral o **xilol**, que deixa o tecido translúcido.\n5. **Inclusão**: o tecido é impregnado por **parafina fundida**, que solidifica e forma o bloco.\n6. **Microtomia**: o **micrótomo** produz cortes de poucos micrômetros, estendidos em banho-maria e recolhidos em lâmina de vidro.\n7. **Coloração**: a parafina é removida (xilol), o corte é reidratado e corado e, depois, de novo desidratado e diafanizado.\n8. **Montagem**: meio de montagem e lamínula protegem o corte.\n\n**Congelação.** No **criostato**, o tecido é congelado e cortado em minutos, sem desidratação nem parafina. É a base do **exame de congelação intraoperatório** (natureza de uma lesão, margens cirúrgicas) e preserva **lipídios** e **atividade enzimática**, perdidos no processamento em parafina. A morfologia é inferior (cristais de gelo).\n\n**Colorações.**\n- **HE**: a **hematoxilina** comporta-se como corante básico e cora em roxo-azulado as estruturas **basófilas**, ricas em ácidos nucleicos (cromatina, nucléolo, ribossomos e retículo endoplasmático granuloso) ou em glicosaminoglicanos sulfatados (matriz da cartilagem). A **eosina**, corante ácido, cora em rosa as estruturas **acidófilas (eosinófilas)**: proteínas do citoplasma, mitocôndrias, colágeno, fibras musculares, hemácias.\n- **PAS (ácido periódico–Schiff)**: magenta em estruturas ricas em carboidratos — glicogênio, mucinas, membrana basal, glicocálice, fibras reticulares. A digestão prévia por **diástase** remove só o glicogênio.\n- **Tricrômicos** (Masson, Mallory): colágeno em azul ou verde, músculo e citoplasma em vermelho; úteis para avaliar fibrose.\n- **Fibras elásticas**: **orceína** (castanho-avermelhado), resorcina-fucsina de Weigert e **Verhoeff** (preto). Na HE são pouco distinguíveis.\n- **Fibras reticulares**: **impregnação argêntica** (pretas, 'argirófilas'); invisíveis na HE.\n- **Sangue**: esfregaços corados por misturas do tipo Romanowsky — **Wright, Leishman, Giemsa, May-Grünwald-Giemsa**.\n- **Lipídios**: **Sudan** ou óleo vermelho O em **cortes de congelação**; na parafina os lipídios são extraídos, e o adipócito parece vazio.\n\n**Histoquímica e imuno-histoquímica.** A histoquímica revela substâncias por reações químicas específicas: PAS, **Feulgen** (DNA), **Perls** (ferro). A **imuno-histoquímica** localiza proteínas com anticorpos, revelados por enzima (peroxidase com DAB, precipitado castanho) ou fluorocromo (imunofluorescência); no método **indireto**, um anticorpo secundário marcado reconhece o primário e amplifica o sinal. Na patologia, define a linhagem de tumores pouco diferenciados (citoqueratinas em carcinomas, CD45 em linfomas) e mostra alvos de tratamento (receptores hormonais e HER2 no câncer de mama).\n\n**Microscopia.** O **microscópio óptico** tem **limite de resolução de cerca de 0,2 µm**; o aumento total é o produto dos aumentos da objetiva e da ocular (40× × 10× = 400×). Variantes: contraste de fase (células vivas não coradas), polarização (estruturas birrefringentes, como o colágeno), fluorescência e confocal (cortes ópticos). O **microscópio eletrônico de transmissão (MET)** forma a imagem com elétrons que atravessam **cortes ultrafinos** (fixação em glutaraldeído e tetróxido de ósmio, inclusão em resina, contraste com metais pesados) e resolve a ultraestrutura — membranas, organelas, junções — na escala de nanômetros. O **microscópio eletrônico de varredura (MEV)** varre a **superfície** da amostra recoberta por metal e gera imagem tridimensional, com resolução em geral inferior à do MET.\n\n**Artefatos e interpretação.** Artefatos comuns: retração (espaços vazios), dobras, riscos da navalha, bolhas, precipitado de corante, pigmento de formol, autólise, esmagamento. Um corte é um **plano** através de um objeto tridimensional: um tubo aparece como anel (corte transversal), duas faixas (longitudinal) ou oval (oblíquo); uma célula pode aparecer sem núcleo porque ele ficou fora do plano. A **hemácia** (cerca de 7–8 µm) serve de régua interna.",
+  "pontosChave": [
+    "Preparo em parafina: coleta → fixação → desidratação → diafanização → inclusão → microtomia → coloração → montagem.",
+    "Fixar interrompe a autólise e a decomposição e preserva a estrutura; o fixador de rotina é o formol a 10% tamponado.",
+    "Desidratação em álcoois crescentes e diafanização em xilol são necessárias porque a parafina não se mistura com água.",
+    "O corte por congelação é rápido (exame intraoperatório) e preserva lipídios e enzimas, com morfologia inferior.",
+    "A hematoxilina cora estruturas basófilas (cromatina, RNA); a eosina cora estruturas acidófilas (citoplasma, colágeno, hemácias).",
+    "PAS: glicogênio, mucinas e membrana basal; prata: fibras reticulares; orceína/Verhoeff: fibras elásticas; tricrômico: colágeno; Sudan: lipídios em congelação; Wright/Leishman/Giemsa: sangue.",
+    "A imuno-histoquímica localiza proteínas com anticorpos e ajuda a definir a linhagem de tumores.",
+    "O limite de resolução do microscópio óptico é de cerca de 0,2 µm; aumento total = objetiva × ocular.",
+    "MET: cortes ultrafinos e ultraestrutura interna; MEV: superfície em imagem tridimensional.",
+    "Um corte é bidimensional: a mesma estrutura produz perfis diferentes conforme o plano de corte."
+  ],
+  "estruturas": [
+    {
+      "id": "hemacia",
+      "nome": "Hemácia",
+      "sinonimos": [
+        "eritrócito"
+      ],
+      "definicao": "Célula anucleada em forma de disco bicôncavo, com cerca de 7–8 µm de diâmetro, intensamente acidófila na HE. Como seu tamanho varia pouco, serve de régua interna para estimar dimensões em um corte."
+    },
+    {
+      "id": "cromatina",
+      "nome": "Cromatina nuclear",
+      "sinonimos": [],
+      "definicao": "Complexo de DNA e proteínas do núcleo. Os grupos fosfato do DNA ligam a hematoxilina, e o núcleo aparece roxo-azulado (basófilo) na HE; na reação de Feulgen, o DNA cora-se em magenta."
+    },
+    {
+      "id": "ergastoplasma",
+      "nome": "Ergastoplasma (basofilia citoplasmática)",
+      "sinonimos": [
+        "retículo endoplasmático granuloso visto ao MO"
+      ],
+      "definicao": "Região do citoplasma basófila na HE pela concentração de retículo endoplasmático granuloso e ribossomos (RNA). Típica de células que sintetizam muitas proteínas, como plasmócitos e a base das células serosas."
+    },
+    {
+      "id": "fibras-colagenas",
+      "nome": "Fibras colágenas",
+      "sinonimos": [],
+      "definicao": "Feixes de colágeno (sobretudo tipo I), acidófilos (rosa) na HE, azuis ou verdes nos tricrômicos e birrefringentes à luz polarizada."
+    },
+    {
+      "id": "fibras-elasticas",
+      "nome": "Fibras elásticas",
+      "sinonimos": [],
+      "definicao": "Pouco distinguíveis na HE; coram-se em castanho-avermelhado pela orceína, em púrpura escura pela resorcina-fucsina e em preto pela técnica de Verhoeff."
+    },
+    {
+      "id": "fibras-reticulares",
+      "nome": "Fibras reticulares",
+      "sinonimos": [
+        "fibras argirófilas"
+      ],
+      "definicao": "Fibras finas de colágeno tipo III, invisíveis na HE, pretas na impregnação argêntica e PAS-positivas."
+    },
+    {
+      "id": "membrana-basal",
+      "nome": "Membrana basal",
+      "sinonimos": [],
+      "definicao": "Camada de matriz sob os epitélios, pouco visível na HE e evidente em magenta pelo PAS, graças às glicoproteínas e aos proteoglicanos que contém."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "h01-coleta",
+      "descricao": "Coleta do fragmento (biópsia ou peça cirúrgica)",
+      "ordem": 1
+    },
+    {
+      "id": "h01-fixacao",
+      "descricao": "Fixação em formol a 10% tamponado",
+      "ordem": 2
+    },
+    {
+      "id": "h01-desidratacao",
+      "descricao": "Desidratação em álcoois de concentração crescente",
+      "ordem": 3
+    },
+    {
+      "id": "h01-diafanizacao",
+      "descricao": "Diafanização (clareamento) em xilol",
+      "ordem": 4
+    },
+    {
+      "id": "h01-inclusao",
+      "descricao": "Inclusão (impregnação) em parafina fundida e formação do bloco",
+      "ordem": 5
+    },
+    {
+      "id": "h01-microtomia",
+      "descricao": "Microtomia: cortes de poucos micrômetros recolhidos em lâmina",
+      "ordem": 6
+    },
+    {
+      "id": "h01-coloracao",
+      "descricao": "Desparafinização, hidratação e coloração (ex.: HE)",
+      "ordem": 7
+    },
+    {
+      "id": "h01-montagem",
+      "descricao": "Desidratação, diafanização e montagem com meio e lamínula",
+      "ordem": 8
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "exame-de-congelacao",
+      "titulo": "Exame de congelação intraoperatório",
+      "descricao": "Durante a cirurgia, um fragmento é congelado no criostato, cortado e corado em minutos para orientar a conduta (natureza de uma lesão, margens cirúrgicas comprometidas ou livres). A morfologia é inferior à do material em parafina, no qual o diagnóstico definitivo é confirmado.",
+      "mecanismo": "O gelo dá ao tecido a consistência necessária para o corte, dispensando fixação, desidratação e inclusão em parafina."
+    },
+    {
+      "id": "fixacao-inadequada",
+      "titulo": "Fixação inadequada e autólise",
+      "descricao": "Peça deixada sem fixador ou em volume insuficiente sofre autólise: perda da nitidez nuclear, descolamento de epitélios e coloração ruim, podendo comprometer o diagnóstico e a imuno-histoquímica. Para a pesquisa de receptores hormonais e HER2 no câncer de mama, as diretrizes ASCO/CAP recomendam colocar a peça em formol tamponado a 10% em até 1 hora após a retirada e fixá-la por 6 a 72 horas.",
+      "mecanismo": "Após a morte celular, enzimas lisossômicas digerem os componentes da célula; o fixador as inativa e estabiliza as proteínas."
+    },
+    {
+      "id": "imuno-histoquimica-tumores",
+      "titulo": "Imuno-histoquímica no diagnóstico de tumores",
+      "descricao": "Em tumor pouco diferenciado, um painel de anticorpos define a linhagem: citoqueratinas (carcinoma), CD45 (linfoma), marcadores melanocíticos como S-100 (melanoma), desmina (tumores musculares). No câncer de mama, receptores de estrogênio e progesterona e HER2 orientam o tratamento.",
+      "mecanismo": "Anticorpos reconhecem proteínas características de cada linhagem; a ligação é revelada por cromógeno (DAB, castanho) ou por fluorescência."
+    },
+    {
+      "id": "lipidios-em-parafina",
+      "titulo": "Lipídios que 'desaparecem' na parafina (esteatose)",
+      "descricao": "Na esteatose hepática, as gotículas de gordura aparecem na HE em parafina como vacúolos vazios. Para provar que eram lipídios, é preciso corar com Sudan ou óleo vermelho O um corte de congelação.",
+      "mecanismo": "Álcool e xilol do processamento dissolvem os lipídios; o corte de congelação não passa por esses solventes."
+    },
+    {
+      "id": "amiloide-vermelho-congo",
+      "titulo": "Amiloidose: histoquímica pelo vermelho Congo",
+      "descricao": "Depósitos de amiloide, róseos e amorfos na HE, coram-se pelo vermelho Congo e mostram birrefringência verde-maçã à microscopia de polarização, o que confirma o diagnóstico.",
+      "mecanismo": "As fibrilas de amiloide têm estrutura em folha β pregueada que alinha as moléculas do corante, tornando-as birrefringentes."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-01-q01",
+      "tipo": "multipla",
+      "enunciado": "A principal finalidade da fixação de uma amostra de tecido destinada ao exame histológico é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Tornar o tecido translúcido para que seja impregnado pela parafina"
+        },
+        {
+          "id": "b",
+          "texto": "Remover a água do tecido, que não se mistura com a parafina"
+        },
+        {
+          "id": "c",
+          "texto": "Interromper a autólise e a decomposição, preservando a estrutura"
+        },
+        {
+          "id": "d",
+          "texto": "Aumentar a afinidade dos núcleos celulares pela hematoxilina"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A fixação estabiliza proteínas e outros componentes, inativa as enzimas lisossômicas que digeririam a célula após a morte (autólise), impede a decomposição bacteriana e endurece o tecido, preservando sua arquitetura. Tornar o tecido translúcido e miscível com a parafina (a) é a diafanização, feita com xilol. Remover a água (b) é a desidratação, feita com álcoois crescentes. Aumentar a afinidade pela hematoxilina (d) não é o objetivo da fixação; fixação inadequada, aliás, piora a coloração.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "fixacao",
+        "preparo-histologico"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q02",
+      "tipo": "multipla",
+      "enunciado": "O fixador de rotina dos laboratórios de histologia e de patologia é o formol a 10% tamponado (pH neutro). O tampão é usado principalmente para:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Evitar o pigmento de formol, precipitado castanho formado em meio ácido"
+        },
+        {
+          "id": "b",
+          "texto": "Dissolver os lipídios da amostra antes da inclusão em parafina"
+        },
+        {
+          "id": "c",
+          "texto": "Dispensar a desidratação, pois o tampão retira a água do tecido"
+        },
+        {
+          "id": "d",
+          "texto": "Permitir o exame de células ainda vivas logo após a coleta"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O formol não tamponado se acidifica (forma-se ácido fórmico) e, em tecidos ricos em sangue, produz o pigmento de formol (hematina ácida de formol), um precipitado castanho-escuro que pode ser confundido com pigmentos patológicos; o pH neutro também favorece a preservação. O tampão não dissolve lipídios (b): quem os extrai são os solventes do processamento (álcool, xilol). Ele não substitui a desidratação (c), que continua necessária antes da parafina. Fixar significa matar e estabilizar as células, de modo que o material fixado não permite examinar células vivas (d).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "fixacao",
+        "formol",
+        "artefato"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1; Bancroft 8th ed. (fixação)"
+    },
+    {
+      "id": "his-01-q03",
+      "tipo": "multipla",
+      "enunciado": "Antes da inclusão em parafina, o tecido fixado passa por banhos de etanol em concentrações crescentes e, depois, por xilol. Essa sequência é necessária porque:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O etanol e o xilol fixam melhor as proteínas e substituem o formol"
+        },
+        {
+          "id": "b",
+          "texto": "O xilol cora os núcleos e o etanol cora o citoplasma antes da HE"
+        },
+        {
+          "id": "c",
+          "texto": "O etanol remove o formol e o xilol endurece o tecido para o corte"
+        },
+        {
+          "id": "d",
+          "texto": "A parafina não se mistura com água, e o xilol é miscível com ambos"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A parafina é hidrofóbica: toda a água precisa ser retirada, o que se faz em álcoois de concentração crescente até o absoluto (a troca gradual reduz a distorção). Como álcool e parafina também não se misturam bem, usa-se um solvente intermediário, o xilol, miscível com o álcool e com a parafina, que deixa o tecido translúcido (diafanização). Os álcoois não substituem a fixação em formol na rotina (a). Etanol e xilol não são corantes (b). Quem dá consistência ao tecido para o corte é a parafina solidificada, não o xilol (c).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "desidratacao",
+        "diafanizacao",
+        "inclusao"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q04",
+      "tipo": "multipla",
+      "enunciado": "Na lâmina corada por HE, qual destes componentes aparece roxo-azulado, isto é, basófilo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Citoplasma das hemácias"
+        },
+        {
+          "id": "b",
+          "texto": "Fibras colágenas da derme"
+        },
+        {
+          "id": "c",
+          "texto": "Miofibrilas do músculo esquelético"
+        },
+        {
+          "id": "d",
+          "texto": "Cromatina do núcleo"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A hematoxilina comporta-se como corante básico e se liga a estruturas ácidas, como os grupos fosfato do DNA da cromatina (e o RNA dos ribossomos), que ficam roxo-azulados. Hemácias (a), fibras colágenas (b) e miofibrilas (c) são ricas em proteínas que ligam a eosina, corante ácido: são acidófilas (eosinófilas) e aparecem em rosa ou vermelho.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "he",
+        "basofilia",
+        "acidofilia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q05",
+      "tipo": "multipla",
+      "contexto": "Na lâmina de glândula salivar corada por HE, as células dos ácinos serosos exibem a região basal do citoplasma intensamente roxo-azulada e o ápice repleto de grânulos rosados.",
+      "enunciado": "A basofilia da região basal dessas células deve-se principalmente a:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Acúmulo de glicogênio, que se liga à hematoxilina"
+        },
+        {
+          "id": "b",
+          "texto": "Abundância de retículo endoplasmático granuloso"
+        },
+        {
+          "id": "c",
+          "texto": "Grande quantidade de mitocôndrias alongadas"
+        },
+        {
+          "id": "d",
+          "texto": "Grânulos de secreção ricos em enzimas digestivas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O retículo endoplasmático granuloso e os ribossomos são ricos em RNA, cujos grupos fosfato ligam a hematoxilina; células que sintetizam muitas proteínas de exportação, como as serosas e os plasmócitos, mostram essa basofilia citoplasmática (ergastoplasma). O glicogênio (a) não é basófilo na HE e é demonstrado pelo PAS. Mitocôndrias (c) são acidófilas. Os grânulos de secreção (zimogênio) (d) ficam no ápice e são acidófilos: são os grânulos rosados descritos.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "he",
+        "basofilia",
+        "ergastoplasma",
+        "lamina-descrita"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1 e 4; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q06",
+      "tipo": "multipla",
+      "contexto": "Durante a ressecção de um tumor de pele, o cirurgião precisa saber, em poucos minutos e com o paciente ainda anestesiado, se as margens da peça estão livres de neoplasia, antes de fechar a ferida.",
+      "enunciado": "Qual método atende a essa necessidade?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Inclusão em parafina com coloração por HE"
+        },
+        {
+          "id": "b",
+          "texto": "Microscopia eletrônica de transmissão da margem"
+        },
+        {
+          "id": "c",
+          "texto": "Corte por congelação em criostato, corado na hora"
+        },
+        {
+          "id": "d",
+          "texto": "Painel completo de imuno-histoquímica em parafina"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "No exame de congelação intraoperatório, o fragmento é congelado e cortado no criostato e corado em minutos, sem desidratação nem parafina. A morfologia é inferior (cristais de gelo), e o diagnóstico final é confirmado no material em parafina. A inclusão em parafina (a) exige fixação e processamento que levam horas. A MET (b) exige fixação especial, inclusão em resina e cortes ultrafinos, também demorados, e examina áreas minúsculas. A imuno-histoquímica em parafina (d) depende do processamento completo e de várias etapas de incubação.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "congelacao",
+        "criostato",
+        "caso-clinico"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q07",
+      "tipo": "multipla",
+      "contexto": "Biópsia hepática de paciente com suspeita de doença hepática gordurosa. No corte em parafina corado por HE, muitos hepatócitos contêm vacúolos arredondados e vazios que deslocam o núcleo.",
+      "enunciado": "Para demonstrar que os vacúolos continham lipídios, o patologista deve:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Corar por Sudan ou óleo vermelho O um corte de congelação"
+        },
+        {
+          "id": "b",
+          "texto": "Corar outro corte do bloco de parafina pelo método PAS"
+        },
+        {
+          "id": "c",
+          "texto": "Fazer impregnação argêntica em outro corte do bloco"
+        },
+        {
+          "id": "d",
+          "texto": "Corar outro corte do bloco de parafina pela orceína"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No processamento em parafina, álcool e xilol dissolvem os lipídios, que deixam vacúolos vazios. Para corá-los é preciso preservar o lipídio: corte de congelação (de tecido fixado, mas não processado em parafina) corado por corantes lipossolúveis, como Sudan ou óleo vermelho O. O PAS (b) demonstra glicogênio e mucinas. A impregnação argêntica (c) evidencia fibras reticulares. A orceína (d) cora fibras elásticas. Além disso, em (b), (c) e (d) o lipídio já teria sido extraído do bloco.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "lipidios",
+        "sudan",
+        "congelacao",
+        "caso-clinico"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q08",
+      "tipo": "multipla",
+      "contexto": "Em dois cortes seriados de fígado, o primeiro, corado por PAS, mostra os hepatócitos com citoplasma magenta. O segundo foi tratado com diástase (amilase) antes do PAS, e a coloração magenta desapareceu.",
+      "enunciado": "O material PAS-positivo era provavelmente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Mucina neutra de células caliciformes"
+        },
+        {
+          "id": "b",
+          "texto": "Glicogênio armazenado no citoplasma"
+        },
+        {
+          "id": "c",
+          "texto": "Glicoproteínas da membrana basal"
+        },
+        {
+          "id": "d",
+          "texto": "Colágeno tipo I das fibras da cápsula"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O ácido periódico oxida grupos glicol de carboidratos a aldeídos, que o reativo de Schiff revela em magenta. A diástase digere o glicogênio, mas não as mucinas nem as glicoproteínas; a perda da cor após a digestão identifica glicogênio, abundante nos hepatócitos. Mucinas (a) e membrana basal (c) continuariam PAS-positivas após a diástase — e o parênquima hepático não tem células caliciformes. O colágeno tipo I (d) é fracamente reativo ao PAS e não é digerido pela amilase.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "pas",
+        "diastase",
+        "glicogenio",
+        "histoquimica",
+        "lamina-descrita"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q09",
+      "tipo": "multipla",
+      "enunciado": "Um estudante examina uma lâmina com objetiva de 40× e ocular de 10×. O aumento total da imagem é de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "50×"
+        },
+        {
+          "id": "b",
+          "texto": "40×"
+        },
+        {
+          "id": "c",
+          "texto": "400×"
+        },
+        {
+          "id": "d",
+          "texto": "4.000×"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "No microscópio óptico composto, o aumento total é o produto do aumento da objetiva pelo da ocular: 40 × 10 = 400×. Somar os aumentos (a) é um erro comum. 40× (b) é o aumento só da objetiva. 4.000× (d) multiplica por dez a mais; além disso, aumentar a imagem sem ganhar resolução ('aumento vazio') não revela detalhes novos.",
+      "dificuldade": 1,
+      "bloom": "aplicar",
+      "tags": [
+        "microscopia-optica",
+        "aumento"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q10",
+      "tipo": "multipla",
+      "enunciado": "O limite de resolução do microscópio óptico é de cerca de 0,2 µm. Qual destes detalhes só pode ser resolvido ao microscópio eletrônico de transmissão?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Os lóbulos do núcleo de um neutrófilo"
+        },
+        {
+          "id": "b",
+          "texto": "Hemácias enfileiradas dentro de um capilar"
+        },
+        {
+          "id": "c",
+          "texto": "Os feixes de fibras colágenas da derme"
+        },
+        {
+          "id": "d",
+          "texto": "As camadas da membrana plasmática"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A membrana plasmática tem cerca de 7,5–10 nm de espessura, muito abaixo de 0,2 µm (200 nm); ao MET aparece como duas linhas densas separadas por uma clara. Os lóbulos nucleares do neutrófilo (a), as hemácias, com cerca de 7–8 µm (b), e os feixes de colágeno da derme (c) estão bem acima do limite de resolução e são vistos ao microscópio óptico.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "resolucao",
+        "microscopia-eletronica"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q11",
+      "tipo": "multipla",
+      "enunciado": "Uma imagem tridimensional da superfície do epitélio traqueal, mostrando o 'tapete' de cílios e as aberturas das células caliciformes, foi obtida por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Microscopia eletrônica de varredura"
+        },
+        {
+          "id": "b",
+          "texto": "Microscopia eletrônica de transmissão"
+        },
+        {
+          "id": "c",
+          "texto": "Microscopia óptica de contraste de fase"
+        },
+        {
+          "id": "d",
+          "texto": "Microscopia óptica de polarização"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No MEV, um feixe de elétrons varre a superfície da amostra (desidratada e recoberta por fina camada metálica), e os elétrons emitidos pela superfície formam uma imagem com aspecto tridimensional. O MET (b) forma imagem com elétrons que atravessam cortes ultrafinos: mostra o interior das células, como o axonema dos cílios em corte, mas não o relevo da superfície. O contraste de fase (c) permite ver células vivas não coradas, e a polarização (d) revela estruturas birrefringentes, como o colágeno; nenhum dos dois produz imagem tridimensional de superfície com essa resolução.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "microscopia-eletronica",
+        "mev"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q12",
+      "tipo": "multipla",
+      "contexto": "Homem de 60 anos tem linfonodo cervical aumentado. A biópsia mostra o linfonodo substituído por células neoplásicas pouco diferenciadas, cuja linhagem não pode ser definida na HE. A imuno-histoquímica mostra positividade difusa para citoqueratinas e negatividade para CD45 (antígeno leucocitário comum).",
+      "enunciado": "Qual é a interpretação mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Linfoma, neoplasia de linfócitos do próprio linfonodo"
+        },
+        {
+          "id": "b",
+          "texto": "Carcinoma metastático, neoplasia de origem epitelial"
+        },
+        {
+          "id": "c",
+          "texto": "Sarcoma, neoplasia de origem mesenquimal"
+        },
+        {
+          "id": "d",
+          "texto": "Hiperplasia reacional das células do linfonodo"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Citoqueratinas são filamentos intermediários característicos de células epiteliais; sua expressão em neoplasia indiferenciada indica carcinoma, que em linfonodo cervical de adulto é, em geral, metástase (por exemplo, de carcinoma epidermoide de cabeça e pescoço). Linfomas (a) expressam CD45, negativo aqui. Sarcomas (c) costumam expressar vimentina e marcadores de sua linhagem (por exemplo, desmina nos musculares) e, em geral, não expressam citoqueratinas de forma difusa. A hiperplasia reacional (d) é benigna, preserva a arquitetura do linfonodo e suas células são CD45-positivas.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "imuno-histoquimica",
+        "citoqueratina",
+        "carcinoma",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1; Robbins 10ª ed. (neoplasia)"
+    },
+    {
+      "id": "his-01-q13",
+      "tipo": "multipla",
+      "contexto": "Na lâmina de rim corada por HE, estruturas tubulares do mesmo tipo aparecem em alguns pontos como anéis de células em torno de uma luz central, em outros como duas fileiras paralelas de células com a luz entre elas e em outros como perfis ovais.",
+      "enunciado": "A explicação mais provável é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cada perfil corresponde a um tipo diferente de túbulo renal"
+        },
+        {
+          "id": "b",
+          "texto": "Os perfis ovais são artefatos de retração causados pelo álcool"
+        },
+        {
+          "id": "c",
+          "texto": "São planos diferentes de corte: transversal, longitudinal e oblíquo"
+        },
+        {
+          "id": "d",
+          "texto": "As fileiras são túbulos em divisão, e os anéis, túbulos maduros"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Um corte é um plano através de uma estrutura tridimensional. Um tubo cortado perpendicularmente ao seu eixo aparece como anel; paralelamente, como duas faixas de células com a luz entre elas; obliquamente, como oval. Como os túbulos são tortuosos, o mesmo tipo de túbulo aparece com os três perfis em um só corte. A forma do perfil, por si só, não indica tipos diferentes de túbulo (a); a distinção exige outros critérios (altura das células, borda em escova, acidofilia). A retração (b) produz espaços vazios e descolamentos, não perfis ovais regulares. Túbulos não se dividem (d) de modo a gerar esses perfis.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": [
+        "interpretacao-de-cortes",
+        "planos-de-corte",
+        "lamina-descrita"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1; Junqueira 14ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q14",
+      "tipo": "multipla",
+      "contexto": "Em um corte de pele corado por HE, uma faixa estreita e mais intensamente corada atravessa a lâmina; nela, o tecido parece sobreposto a si mesmo, com espessura dupla, e a faixa não respeita os limites entre epiderme e derme.",
+      "enunciado": "Trata-se mais provavelmente de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Dobra do corte, artefato de microtomia ou de montagem"
+        },
+        {
+          "id": "b",
+          "texto": "Pigmento de formol depositado por fixador ácido"
+        },
+        {
+          "id": "c",
+          "texto": "Área de autólise por atraso na fixação da peça"
+        },
+        {
+          "id": "d",
+          "texto": "Fenda de retração entre a epiderme e a derme"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Quando o corte se dobra ao ser estendido no banho-maria ou recolhido na lâmina, a região dobrada tem espessura dupla, fica mais corada e cruza estruturas sem respeitar limites anatômicos — achado típico de artefato. O pigmento de formol (b) aparece como grânulos finos castanho-escuros, em geral em áreas ricas em sangue, e não como faixa de tecido sobreposto. A autólise (c) produz perda da nitidez nuclear e da coesão celular, sem sobreposição de tecido. A retração (d) forma espaços claros (vazios), não faixas mais coradas.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": [
+        "artefatos",
+        "microtomia",
+        "lamina-descrita"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1; Bancroft 8th ed. (microtomia e artefatos)"
+    },
+    {
+      "id": "his-01-q15",
+      "tipo": "vf",
+      "enunciado": "A eosina é um corante ácido e cora estruturas acidófilas, como o citoplasma e as fibras colágenas.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A eosina é aniônica e se liga a grupos catiônicos de proteínas, corando em rosa o citoplasma, as mitocôndrias, as fibras colágenas, as fibras musculares e as hemácias (estruturas acidófilas ou eosinófilas).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "he",
+        "acidofilia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q16",
+      "tipo": "vf",
+      "enunciado": "No preparo de rotina em parafina, os lipídios são preservados e podem ser corados pelo Sudan no mesmo corte.",
+      "correta": false,
+      "explicacao": "Falso. Álcool e xilol extraem os lipídios durante o processamento; por isso adipócitos e gotículas de gordura aparecem como espaços vazios na HE. Lipídios são demonstrados por Sudan ou óleo vermelho O em cortes de congelação.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "lipidios",
+        "sudan",
+        "congelacao"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q17",
+      "tipo": "vf",
+      "enunciado": "O microscópio eletrônico de varredura forma a imagem com elétrons que atravessam cortes ultrafinos.",
+      "correta": false,
+      "explicacao": "Falso. Isso descreve o microscópio eletrônico de transmissão. O MEV varre a superfície da amostra, recoberta por metal, e forma a imagem com os elétrons emitidos pela superfície, mostrando o relevo em três dimensões.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "microscopia-eletronica",
+        "mev",
+        "met"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q18",
+      "tipo": "vf",
+      "enunciado": "Se, em um corte, uma célula aparece sem núcleo, conclui-se que essa célula é anucleada.",
+      "correta": false,
+      "explicacao": "Falso. O núcleo ocupa só parte do volume da célula; se o plano de corte passar pela periferia dela, a célula aparece sem núcleo. Conclusões sobre a forma tridimensional exigem examinar muitos perfis ou cortes seriados. Poucas células são de fato anucleadas, como as hemácias maduras dos mamíferos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "interpretacao-de-cortes",
+        "planos-de-corte"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q19",
+      "tipo": "vf",
+      "enunciado": "Na imuno-histoquímica indireta, um anticorpo secundário marcado reconhece o anticorpo primário ligado ao antígeno, o que amplifica o sinal.",
+      "correta": true,
+      "explicacao": "Verdadeiro. No método direto, o próprio anticorpo primário é marcado. No indireto, vários anticorpos secundários marcados (com enzima, como a peroxidase revelada pelo DAB em castanho, ou com fluorocromo) ligam-se a cada anticorpo primário, aumentando a sensibilidade.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "imuno-histoquimica"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q20",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do preparo de um corte histológico em parafina, depois da coleta:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Microtomia"
+        },
+        {
+          "id": "2",
+          "texto": "Fixação em formol tamponado"
+        },
+        {
+          "id": "3",
+          "texto": "Montagem com meio e lamínula"
+        },
+        {
+          "id": "4",
+          "texto": "Diafanização em xilol"
+        },
+        {
+          "id": "5",
+          "texto": "Desidratação em álcoois crescentes"
+        },
+        {
+          "id": "6",
+          "texto": "Coloração"
+        },
+        {
+          "id": "7",
+          "texto": "Inclusão em parafina"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "5",
+        "4",
+        "7",
+        "1",
+        "6",
+        "3"
+      ],
+      "explicacao": "Fixação (preserva e interrompe a autólise) → desidratação (retira a água) → diafanização (xilol, miscível com álcool e parafina) → inclusão em parafina (bloco) → microtomia (cortes de poucos micrômetros) → coloração (após desparafinizar e hidratar) → montagem.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "preparo-histologico",
+        "sequencia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas da coloração por HE de um corte em parafina já colado na lâmina:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Hematoxilina"
+        },
+        {
+          "id": "2",
+          "texto": "Remoção da parafina em xilol"
+        },
+        {
+          "id": "3",
+          "texto": "Eosina"
+        },
+        {
+          "id": "4",
+          "texto": "Hidratação em álcoois decrescentes até a água"
+        },
+        {
+          "id": "5",
+          "texto": "Desidratação, diafanização e montagem"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "3",
+        "5"
+      ],
+      "explicacao": "Os corantes da HE são aquosos ou hidroalcoólicos: primeiro se remove a parafina com xilol e se reidrata o corte; cora-se pela hematoxilina (núcleos) e depois pela eosina (citoplasma e matriz); por fim, o corte é desidratado, diafanizado e montado sob lamínula.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "he",
+        "coloracao",
+        "sequencia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Bancroft 8th ed. (hematoxilinas e eosina)"
+    },
+    {
+      "id": "his-01-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene do menor para o maior:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Diâmetro de uma hemácia"
+        },
+        {
+          "id": "2",
+          "texto": "Espessura da membrana plasmática"
+        },
+        {
+          "id": "3",
+          "texto": "Limite de resolução do microscópio óptico"
+        },
+        {
+          "id": "4",
+          "texto": "Diâmetro de um ribossomo"
+        },
+        {
+          "id": "5",
+          "texto": "Diâmetro de um adipócito unilocular"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "3",
+        "1",
+        "5"
+      ],
+      "explicacao": "Membrana plasmática (cerca de 7,5–10 nm) < ribossomo (algumas dezenas de nanômetros) < limite de resolução do microscópio óptico (cerca de 0,2 µm = 200 nm) < hemácia (cerca de 7–8 µm) < adipócito unilocular (dezenas de micrômetros, muitas vezes maior que uma hemácia). Os dois primeiros só são resolvidos ao MET.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "resolucao",
+        "escala"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1 e 2; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q23",
+      "tipo": "associar",
+      "enunciado": "Associe cada coloração ao que ela evidencia:",
+      "pares": [
+        {
+          "esquerda": "PAS",
+          "direita": "Glicogênio, mucinas e membrana basal (magenta)"
+        },
+        {
+          "esquerda": "Impregnação argêntica",
+          "direita": "Fibras reticulares (pretas)"
+        },
+        {
+          "esquerda": "Orceína",
+          "direita": "Fibras elásticas (castanho-avermelhadas)"
+        },
+        {
+          "esquerda": "Sudan",
+          "direita": "Lipídios em cortes de congelação"
+        },
+        {
+          "esquerda": "Giemsa (Romanowsky)",
+          "direita": "Células do sangue em esfregaço"
+        },
+        {
+          "esquerda": "Tricrômico de Masson",
+          "direita": "Colágeno (azul ou verde)"
+        }
+      ],
+      "explicacao": "PAS revela carboidratos (glicogênio, mucinas, membrana basal); a prata, fibras reticulares (argirófilas); a orceína, fibras elásticas; o Sudan, lipídios preservados na congelação; os corantes de Romanowsky (Wright, Leishman, Giemsa), as células do sangue; o tricrômico de Masson diferencia colágeno de músculo e citoplasma.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "coloracoes",
+        "histoquimica"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q24",
+      "tipo": "associar",
+      "enunciado": "Associe cada etapa do preparo ao reagente ou instrumento usado:",
+      "pares": [
+        {
+          "esquerda": "Fixação",
+          "direita": "Formol a 10% tamponado"
+        },
+        {
+          "esquerda": "Desidratação",
+          "direita": "Etanol em concentrações crescentes"
+        },
+        {
+          "esquerda": "Diafanização",
+          "direita": "Xilol"
+        },
+        {
+          "esquerda": "Inclusão",
+          "direita": "Parafina fundida"
+        },
+        {
+          "esquerda": "Microtomia",
+          "direita": "Micrótomo"
+        },
+        {
+          "esquerda": "Corte por congelação",
+          "direita": "Criostato"
+        }
+      ],
+      "explicacao": "Cada etapa tem seu reagente: formol fixa, etanol desidrata, xilol diafaniza, parafina dá suporte para o corte no micrótomo; o criostato é um micrótomo dentro de câmara refrigerada, usado nos cortes por congelação.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "preparo-histologico"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada tipo de microscopia à sua aplicação típica:",
+      "pares": [
+        {
+          "esquerda": "Eletrônica de transmissão",
+          "direita": "Ultraestrutura de organelas e junções em cortes ultrafinos"
+        },
+        {
+          "esquerda": "Eletrônica de varredura",
+          "direita": "Relevo tridimensional de superfícies"
+        },
+        {
+          "esquerda": "Contraste de fase",
+          "direita": "Células vivas não coradas em cultura"
+        },
+        {
+          "esquerda": "Polarização",
+          "direita": "Estruturas birrefringentes, como colágeno e amiloide corado pelo vermelho Congo"
+        },
+        {
+          "esquerda": "Confocal",
+          "direita": "Cortes ópticos de amostras espessas marcadas com fluorescência"
+        }
+      ],
+      "explicacao": "O MET mostra o interior das células em cortes ultrafinos; o MEV, a superfície em relevo; o contraste de fase converte diferenças de índice de refração em contraste, dispensando coloração; a polarização revela estruturas birrefringentes; o confocal usa laser e um orifício que elimina a luz fora de foco, produzindo cortes ópticos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "microscopia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed., GEN Guanabara Koogan, 2023",
+      "capitulo": "1 — Métodos de estudo em histologia"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed., GEN Guanabara Koogan, 2021",
+      "capitulo": "1 — Métodos"
+    },
+    {
+      "obra": "Gartner LP. Tratado de Histologia, 4ª ed., Elsevier",
+      "capitulo": "1 — Introdução à histologia e técnicas histológicas básicas"
+    },
+    {
+      "obra": "Suvarna SK, Layton C, Bancroft JD. Bancroft's Theory and Practice of Histological Techniques, 8th ed., Elsevier, 2019",
+      "capitulo": "Capítulos sobre fixação, processamento, microtomia e artefatos, hematoxilinas e eosina, imuno-histoquímica"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia — Bases Patológicas das Doenças, 10ª ed. (orig. 2020)",
+      "capitulo": "Neoplasia (diagnóstico laboratorial: imuno-histoquímica); Doenças do sistema imune (amiloidose)"
+    },
+    {
+      "obra": "Allison KH et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. J Clin Oncol, 2020",
+      "capitulo": "Recomendações pré-analíticas (tempo até a fixação e duração da fixação)"
+    }
+  ],
+  "notasDivergencia": [
+    "Espessura dos cortes em parafina: Junqueira cita cortes em geral de 1 a 10 µm; na rotina de patologia são comuns 3–5 µm (Bancroft). O resumo usa 'poucos micrômetros'.",
+    "Resolução do MET: as obras citam valores entre décimos de nanômetro (limite do instrumento) e cerca de 1–3 nm (prática com cortes biológicos). O conteúdo usa apenas 'escala de nanômetros' e a comparação qualitativa com o MO e o MEV.",
+    "Hematoxilina: Junqueira a trata simplesmente como corante básico; Ross e Bancroft explicam que o corante ativo é a hemateína (produto de oxidação) ligada a um mordente (alumínio), complexo catiônico que se comporta como corante básico. O conteúdo usa 'comporta-se como corante básico'.",
+    "Diâmetro da hemácia: Junqueira ~7,5 µm; Ross ~7,8 µm. Faixa adotada: 7–8 µm."
+  ],
+  "incertezas": [
+    "Os números e títulos de capítulos da 14ª ed. de Junqueira e da 8ª ed. de Ross foram citados de memória, com base na organização das edições anteriores; conferir nas edições adotadas.",
+    "Recomendações ASCO/CAP (até 1 hora entre a retirada e a imersão em formol; fixação por 6 a 72 horas) citadas de memória da atualização de 2020; conferir o texto da diretriz.",
+    "Espessura dos cortes ultrafinos para MET e diâmetro exato do ribossomo foram omitidos por variarem entre as obras; a questão de ordenação usa apenas ordens de grandeza que não se sobrepõem.",
+    "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida."
+  ],
+  "revisao": {
+    "autor": "agente-redator-histologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

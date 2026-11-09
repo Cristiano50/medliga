@@ -1,0 +1,672 @@
+{
+  "id": "his-09-muscular",
+  "disciplina": "histologia",
+  "ordem": 9,
+  "titulo": "Tecido muscular",
+  "subtitulo": "Músculo estriado esquelético, estriado cardíaco e liso",
+  "objetivos": [
+    "Descrever a fibra muscular esquelética e as bainhas de tecido conjuntivo (endomísio, perimísio e epimísio).",
+    "Identificar as bandas e linhas do sarcômero e explicar o que muda nelas durante a contração.",
+    "Explicar o acoplamento excitação-contração, relacionando túbulos T, retículo sarcoplasmático, tríade e Ca²⁺.",
+    "Descrever a junção neuromuscular e a unidade motora.",
+    "Comparar as fibras esqueléticas dos tipos I e II e explicar o papel das células satélites na regeneração.",
+    "Reconhecer o músculo cardíaco e descrever os componentes dos discos intercalares e a díade.",
+    "Descrever o músculo liso e o mecanismo de contração por calmodulina e cinase da cadeia leve da miosina.",
+    "Correlacionar distrofia de Duchenne, miastenia grave, infarto do miocárdio, leiomioma e hipertrofia × hiperplasia com a histologia muscular."
+  ],
+  "resumo": "O **tecido muscular** é formado por células alongadas, as **fibras musculares**, especializadas em contração pela interação de filamentos de **actina** e **miosina**. Há três tipos: **estriado esquelético**, **estriado cardíaco** e **liso**. A membrana plasmática chama-se **sarcolema**; o citoplasma, **sarcoplasma**; o retículo endoplasmático liso, **retículo sarcoplasmático**.\n\n**Músculo estriado esquelético.** Cada fibra é um **sincício multinucleado**, formado pela fusão de mioblastos, longo e cilíndrico, com muitos **núcleos periféricos**, logo abaixo do sarcolema. Três bainhas de tecido conjuntivo organizam o músculo: o **epimísio** envolve o músculo inteiro; o **perimísio** envolve **fascículos** de fibras; o **endomísio** (lâmina basal e fibras reticulares) envolve cada fibra. Elas transmitem a força ao tendão e conduzem vasos e nervos.\n\n**Sarcômero.** As miofibrilas mostram **estriações transversais** pela repetição do **sarcômero**, o segmento entre duas **linhas Z** (~2,5 µm no músculo em repouso). A **banda A** (anisotrópica, escura) corresponde ao comprimento dos filamentos grossos de **miosina II**, com filamentos finos sobrepostos nas extremidades; no centro fica a **banda H**, só com filamentos grossos, cortada pela **linha M**. A **banda I** (isotrópica, clara) tem filamentos finos sem filamentos grossos e é atravessada pela linha Z. Os filamentos finos são de **actina F**, **tropomiosina** e **troponina** (TnT, TnC, TnI); a **α-actinina** os ancora na linha Z, e a **titina** liga a linha Z à linha M. Na contração os filamentos **deslizam**: as bandas **I e H encurtam**, as linhas Z se aproximam e a **banda A não muda**.\n\n**Acoplamento excitação-contração.** O sarcolema invagina-se em **túbulos T**, que, no músculo esquelético de mamíferos, ficam na **junção das bandas A e I**, entre duas **cisternas terminais** do retículo sarcoplasmático: a **tríade**. O potencial de ação percorre os túbulos T; o sensor de voltagem (receptor de di-hidropiridina) abre os **receptores de rianodina** do retículo, que libera **Ca²⁺**. O Ca²⁺ liga-se à **troponina C**, a tropomiosina se desloca e expõe os sítios da actina, e as cabeças de miosina formam **pontes cruzadas** que hidrolisam ATP e puxam os filamentos finos para o centro do sarcômero. No relaxamento, a bomba de Ca²⁺ do retículo (SERCA) recaptura o íon; o ATP também é necessário para desfazer as pontes, e sua falta após a morte causa a rigidez cadavérica.\n\n**Junção neuromuscular.** O axônio motor perde a mielina e termina em botões numa depressão da fibra. A membrana pós-sináptica forma **dobras juncionais**, com **receptores nicotínicos de acetilcolina** concentrados nas cristas; a **acetilcolinesterase** da lâmina basal encerra o sinal. Um neurônio motor e as fibras que ele inerva formam uma **unidade motora**.\n\n**Tipos de fibra.** As fibras **tipo I** (lentas, oxidativas, 'vermelhas') têm muita mioglobina, mitocôndrias e capilares e resistem à fadiga. As **tipo II** (rápidas) incluem as IIa, oxidativo-glicolíticas, e as glicolíticas (IIb nos livros clássicos; IIx no ser humano), ricas em glicogênio e fatigáveis. O tipo depende da inervação, e os músculos humanos são mistos.\n\n**Regeneração.** As **células satélites**, mononucleadas e quiescentes, ficam entre o sarcolema e a lâmina basal. Após lesão, proliferam e se fundem, reparando fibras ou formando novas, que de início têm núcleos centrais. As fibras maduras não se dividem; o músculo cresce por **hipertrofia**.\n\n**Músculo estriado cardíaco.** Células alongadas e **ramificadas**, com **um ou dois núcleos centrais**, unidas pelos **discos intercalares**, linhas transversais em degrau. Na porção transversal do disco há **zônulas de adesão** (fáscias aderentes, que ancoram a actina) e **desmossomos**; na porção lateral, **junções comunicantes**, que acoplam eletricamente as células e fazem o miocárdio contrair como uma unidade. Os túbulos T, mais calibrosos, ficam na **linha Z** e associam-se a uma cisterna de um retículo pouco desenvolvido, formando **díades**; o Ca²⁺ que entra do meio extracelular dispara a liberação do Ca²⁺ do retículo. As células são ricas em mitocôndrias, e as dos átrios têm grânulos com **peptídeo natriurético atrial**. Não há células satélites, e a **capacidade regenerativa é mínima**: o miocárdio necrosado é substituído por **cicatriz** de tecido conjuntivo, e a sobrecarga leva à **hipertrofia** dos cardiomiócitos.\n\n**Músculo liso.** Células **fusiformes**, com **um núcleo central alongado** (em saca-rolhas quando contraídas) e **sem estriações**: os filamentos de actina e miosina formam uma rede oblíqua presa a **corpos densos** (com α-actinina), no citoplasma e junto à membrana. Cada célula é envolvida por lâmina basal e fibras reticulares, e **junções comunicantes** coordenam a contração em muitos órgãos. Não há troponina: o Ca²⁺ liga-se à **calmodulina**, que ativa a **cinase da cadeia leve da miosina**; a fosforilação da miosina permite sua interação com a actina. A contração é lenta e sustentada. As células lisas sintetizam matriz extracelular (colágeno, elastina, proteoglicanos) e **mantêm capacidade de divisão**, crescendo por **hipertrofia e hiperplasia**, como no útero gravídico.\n\n**Correlações.** Na **distrofia muscular de Duchenne**, a falta de **distrofina**, que liga a actina subsarcolemal ao complexo de glicoproteínas preso à lâmina basal, fragiliza o sarcolema e leva a necrose e substituição por gordura e fibrose. Na **miastenia grave**, autoanticorpos contra **receptores de acetilcolina** reduzem os receptores funcionais, e a fraqueza piora com o esforço. O **infarto do miocárdio** cicatriza com colágeno. O **leiomioma** é um tumor benigno de músculo liso, muito comum no útero.",
+  "pontosChave": [
+    "A fibra esquelética é um sincício multinucleado, com núcleos periféricos logo abaixo do sarcolema.",
+    "Epimísio envolve o músculo; perimísio, os fascículos; endomísio, cada fibra.",
+    "O sarcômero vai de uma linha Z à seguinte; na contração, as bandas I e H encurtam e a banda A não muda.",
+    "No músculo esquelético de mamíferos, a tríade (túbulo T entre duas cisternas terminais) fica na junção das bandas A e I.",
+    "Nos músculos estriados, o Ca²⁺ liga-se à troponina C; no liso, à calmodulina, que ativa a cinase da cadeia leve da miosina.",
+    "Na placa motora, os receptores nicotínicos de acetilcolina concentram-se nas cristas das dobras juncionais.",
+    "Fibras tipo I são lentas, oxidativas e resistentes à fadiga; fibras tipo II glicolíticas são rápidas e fatigáveis.",
+    "Células satélites, entre o sarcolema e a lâmina basal, permitem a regeneração do músculo esquelético.",
+    "O cardiomiócito é ramificado, tem um ou dois núcleos centrais e une-se às vizinhas por discos intercalares (zônulas de adesão, desmossomos e junções comunicantes).",
+    "O miocárdio adulto quase não se regenera: o infarto cicatriza com tecido conjuntivo.",
+    "Músculo liso: células fusiformes, núcleo central, corpos densos e ausência de estriações; as células podem dividir-se.",
+    "Falta distrofina na distrofia de Duchenne; na miastenia grave há perda de receptores de acetilcolina."
+  ],
+  "estruturas": [
+    {
+      "id": "fibra-muscular-esqueletica",
+      "nome": "Fibra muscular esquelética",
+      "sinonimos": ["rabdomiócito"],
+      "definicao": "Célula cilíndrica longa e multinucleada (sincício), com núcleos periféricos sob o sarcolema e estriações transversais.",
+      "origem": "Fusão de mioblastos derivados dos somitos (mesoderma paraxial)."
+    },
+    {
+      "id": "estriacoes-transversais",
+      "nome": "Estriações transversais",
+      "sinonimos": ["estrias transversais"],
+      "definicao": "Alternância regular de faixas escuras (bandas A) e claras (bandas I) ao longo das fibras estriadas, resultante do alinhamento dos sarcômeros das miofibrilas."
+    },
+    {
+      "id": "endomisio",
+      "nome": "Endomísio",
+      "sinonimos": [],
+      "definicao": "Delicada camada de tecido conjuntivo (lâmina basal e fibras reticulares, com capilares) que envolve cada fibra muscular."
+    },
+    {
+      "id": "perimisio",
+      "nome": "Perimísio",
+      "sinonimos": [],
+      "definicao": "Septo de tecido conjuntivo que envolve cada fascículo (feixe de fibras) e conduz vasos e nervos maiores."
+    },
+    {
+      "id": "epimisio",
+      "nome": "Epimísio",
+      "sinonimos": [],
+      "definicao": "Camada de tecido conjuntivo denso que envolve o músculo inteiro e se continua com o tendão."
+    },
+    {
+      "id": "miofibrila",
+      "nome": "Miofibrila",
+      "sinonimos": [],
+      "definicao": "Feixe cilíndrico longitudinal do sarcoplasma formado por sarcômeros em série; contém os filamentos finos e grossos."
+    },
+    {
+      "id": "sarcomero",
+      "nome": "Sarcômero",
+      "sinonimos": [],
+      "definicao": "Unidade contrátil da miofibrila estriada, compreendida entre duas linhas Z consecutivas (~2,5 µm em repouso)."
+    },
+    {
+      "id": "banda-a",
+      "nome": "Banda A",
+      "sinonimos": ["banda anisotrópica"],
+      "definicao": "Faixa escura do sarcômero que corresponde ao comprimento dos filamentos grossos de miosina, com sobreposição de filamentos finos nas extremidades; não muda de comprimento na contração."
+    },
+    {
+      "id": "banda-i",
+      "nome": "Banda I",
+      "sinonimos": ["banda isotrópica"],
+      "definicao": "Faixa clara formada por filamentos finos sem filamentos grossos, atravessada ao meio pela linha Z; encurta na contração."
+    },
+    {
+      "id": "banda-h",
+      "nome": "Banda H",
+      "sinonimos": [],
+      "definicao": "Região central mais clara da banda A, onde há só filamentos grossos; encurta na contração."
+    },
+    {
+      "id": "linha-z",
+      "nome": "Linha Z",
+      "sinonimos": ["disco Z"],
+      "definicao": "Limite do sarcômero, rico em α-actinina, onde se ancoram os filamentos finos de sarcômeros vizinhos."
+    },
+    {
+      "id": "linha-m",
+      "nome": "Linha M",
+      "sinonimos": [],
+      "definicao": "Linha no centro da banda H, onde proteínas de ligação mantêm unidos os filamentos grossos."
+    },
+    {
+      "id": "tubulo-t",
+      "nome": "Túbulo T",
+      "sinonimos": ["túbulo transversal"],
+      "definicao": "Invaginação tubular do sarcolema que leva o potencial de ação ao interior da fibra; no músculo esquelético fica na junção A-I e, no cardíaco, na linha Z."
+    },
+    {
+      "id": "reticulo-sarcoplasmatico",
+      "nome": "Retículo sarcoplasmático",
+      "sinonimos": [],
+      "definicao": "Retículo endoplasmático liso das fibras musculares, que armazena Ca²⁺, o libera pelos receptores de rianodina e o recaptura pela SERCA."
+    },
+    {
+      "id": "triade",
+      "nome": "Tríade",
+      "sinonimos": [],
+      "definicao": "Complexo de um túbulo T entre duas cisternas terminais do retículo sarcoplasmático, típico do músculo esquelético; local do acoplamento excitação-contração."
+    },
+    {
+      "id": "juncao-neuromuscular",
+      "nome": "Junção neuromuscular",
+      "sinonimos": ["placa motora"],
+      "definicao": "Sinapse entre o terminal de um axônio motor e a fibra esquelética; a membrana pós-sináptica forma dobras juncionais com receptores nicotínicos de acetilcolina, e a lâmina basal da fenda contém acetilcolinesterase."
+    },
+    {
+      "id": "celula-satelite-muscular",
+      "nome": "Célula satélite (muscular)",
+      "sinonimos": [],
+      "definicao": "Célula mononucleada quiescente situada entre o sarcolema e a lâmina basal da fibra esquelética; após lesão, prolifera e se funde, regenerando fibras."
+    },
+    {
+      "id": "fibra-muscular-cardiaca",
+      "nome": "Fibra muscular cardíaca",
+      "sinonimos": ["cardiomiócito"],
+      "definicao": "Célula estriada, alongada e ramificada, com um ou dois núcleos centrais, unida às vizinhas por discos intercalares."
+    },
+    {
+      "id": "disco-intercalar",
+      "nome": "Disco intercalar",
+      "sinonimos": [],
+      "definicao": "Linha transversal em degrau entre cardiomiócitos; a porção transversal tem zônulas de adesão (fáscias aderentes) e desmossomos, e a porção lateral, junções comunicantes."
+    },
+    {
+      "id": "fibra-de-purkinje",
+      "nome": "Fibra de Purkinje (cardíaca)",
+      "sinonimos": ["célula de Purkinje do coração"],
+      "definicao": "Cardiomiócito modificado do sistema de condução, maior, com poucas miofibrilas periféricas e citoplasma claro rico em glicogênio, situado no subendocárdio."
+    },
+    {
+      "id": "fibra-muscular-lisa",
+      "nome": "Fibra muscular lisa",
+      "sinonimos": ["leiomiócito"],
+      "definicao": "Célula fusiforme, sem estriações, com um núcleo central alongado; envolvida por lâmina basal e fibras reticulares."
+    },
+    {
+      "id": "corpos-densos",
+      "nome": "Corpos densos",
+      "sinonimos": [],
+      "definicao": "Estruturas citoplasmáticas e submembranosas do músculo liso, ricas em α-actinina, onde se ancoram os filamentos de actina; funcionam como as linhas Z."
+    }
+  ],
+  "eventos": [
+    { "id": "e09-potencial-terminal-motor", "descricao": "O potencial de ação chega ao terminal do axônio motor e a acetilcolina é liberada", "ordem": 1 },
+    { "id": "e09-despolarizacao-placa", "descricao": "A acetilcolina ativa receptores nicotínicos e despolariza a placa motora", "ordem": 2 },
+    { "id": "e09-propagacao-tubulos-t", "descricao": "O potencial de ação propaga-se pelo sarcolema e pelos túbulos T", "ordem": 3 },
+    { "id": "e09-liberacao-calcio", "descricao": "O sensor de voltagem do túbulo T abre os receptores de rianodina e o retículo sarcoplasmático libera Ca²⁺", "ordem": 4 },
+    { "id": "e09-troponina-tropomiosina", "descricao": "O Ca²⁺ liga-se à troponina C e a tropomiosina expõe os sítios de ligação da actina", "ordem": 5 },
+    { "id": "e09-pontes-cruzadas", "descricao": "As cabeças de miosina formam pontes cruzadas, os filamentos finos deslizam e o sarcômero encurta", "ordem": 6 },
+    { "id": "e09-relaxamento", "descricao": "A SERCA recaptura o Ca²⁺ para o retículo e a fibra relaxa", "ordem": 7 }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "distrofia-duchenne",
+      "titulo": "Distrofia muscular de Duchenne",
+      "descricao": "Doença de herança recessiva ligada ao X, em meninos, com fraqueza proximal progressiva desde a infância, sinal de Gowers, pseudo-hipertrofia das panturrilhas e CK muito elevada. A biópsia mostra fibras de tamanhos variados, necrose, regeneração e substituição por tecido adiposo e conjuntivo; a imuno-histoquímica não marca distrofina.",
+      "mecanismo": "Sem distrofina, que liga a actina subsarcolemal ao complexo distroglicano–sarcoglicanos preso à laminina da lâmina basal, o sarcolema se rompe durante a contração; ciclos de necrose e regeneração esgotam as células satélites."
+    },
+    {
+      "id": "miastenia-grave",
+      "titulo": "Miastenia grave",
+      "descricao": "Doença autoimune com fraqueza flutuante que piora com o esforço repetido e melhora com repouso, muitas vezes iniciada por ptose e diplopia; responde a inibidores da acetilcolinesterase. Associa-se a alterações do timo (hiperplasia, timoma).",
+      "mecanismo": "Autoanticorpos, na maioria dos casos contra o receptor nicotínico de acetilcolina (em parte dos demais, contra a MuSK), reduzem os receptores funcionais da placa motora e simplificam as dobras juncionais."
+    },
+    {
+      "id": "infarto-miocardio",
+      "titulo": "Infarto do miocárdio e cicatriz",
+      "descricao": "Necrose isquêmica de cardiomiócitos seguida de inflamação (neutrófilos, depois macrófagos), tecido de granulação e cicatriz colágena densa, que não contrai nem conduz o impulso como o miocárdio.",
+      "mecanismo": "O miocárdio adulto não tem células satélites e quase não renova cardiomiócitos; o reparo é feito por fibroblastos, com deposição de colágeno."
+    },
+    {
+      "id": "leiomioma",
+      "titulo": "Leiomioma",
+      "descricao": "Tumor benigno de músculo liso, muito frequente no útero (miomas), dependente de estrogênio; pode causar aumento do fluxo menstrual e dor. Histologia: nódulos bem delimitados com feixes entrecruzados de células fusiformes, núcleos uniformes, sem atipia e com raras mitoses.",
+      "mecanismo": "Proliferação clonal benigna de células musculares lisas, que mantêm a capacidade de divisão."
+    },
+    {
+      "id": "hipertrofia-hiperplasia",
+      "titulo": "Hipertrofia × hiperplasia muscular",
+      "descricao": "Hipertrofia é o aumento do volume das células; hiperplasia, do seu número. O músculo esquelético (exercício) e o miocárdio adulto (hipertensão, valvopatias) crescem sobretudo por hipertrofia; o miométrio na gestação cresce por hipertrofia e hiperplasia.",
+      "mecanismo": "Fibras esqueléticas e cardiomiócitos maduros não se dividem e aumentam o número de miofibrilas (as fibras esqueléticas também recebem núcleos de células satélites); as células musculares lisas mantêm capacidade mitótica."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-09-q01",
+      "tipo": "multipla",
+      "enunciado": "Durante a contração de uma fibra muscular esquelética, qual componente do sarcômero mantém o seu comprimento?",
+      "alternativas": [
+        { "id": "a", "texto": "Banda I" },
+        { "id": "b", "texto": "Banda H" },
+        { "id": "c", "texto": "Distância entre as linhas Z" },
+        { "id": "d", "texto": "Banda A" }
+      ],
+      "correta": "d",
+      "explicacao": "Na contração, os filamentos finos deslizam sobre os grossos em direção à linha M, sem que nenhum dos dois encurte. A banda A (d) corresponde ao comprimento dos filamentos grossos e, por isso, não se altera. A banda I (a), que tem só filamentos finos, e a banda H (b), que tem só filamentos grossos, encurtam porque a sobreposição aumenta; a distância entre as linhas Z (c), que é o próprio comprimento do sarcômero, diminui.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["sarcomero", "contracao", "bandas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q02",
+      "tipo": "multipla",
+      "enunciado": "Na fibra muscular esquelética de mamíferos, a tríade, vista ao microscópio eletrônico na junção das bandas A e I, é formada por:",
+      "alternativas": [
+        { "id": "a", "texto": "Um túbulo T entre duas cisternas terminais do retículo sarcoplasmático" },
+        { "id": "b", "texto": "Uma cisterna terminal do retículo entre dois túbulos T adjacentes" },
+        { "id": "c", "texto": "Um túbulo T associado a uma única cisterna do retículo sarcoplasmático" },
+        { "id": "d", "texto": "Duas linhas Z e uma linha M pertencentes ao mesmo sarcômero" }
+      ],
+      "correta": "a",
+      "explicacao": "Na tríade, um túbulo T (invaginação do sarcolema) fica entre duas cisternas terminais do retículo sarcoplasmático (a); ali o sensor de voltagem do túbulo T se acopla aos receptores de rianodina do retículo, que liberam Ca²⁺. A disposição inversa (b) não existe. Um túbulo T com uma só cisterna (c) é a díade, típica do músculo cardíaco. Linhas Z e M (d) são componentes das miofibrilas, não do sistema de membranas.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["triade", "tubulo-t", "reticulo-sarcoplasmatico"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q03",
+      "tipo": "multipla",
+      "enunciado": "No músculo esquelético, o Ca²⁺ liberado do retículo sarcoplasmático desencadeia a contração ao se ligar:",
+      "alternativas": [
+        { "id": "a", "texto": "À calmodulina, que ativa a cinase da cadeia leve da miosina" },
+        { "id": "b", "texto": "À troponina C, o que desloca a tropomiosina dos sítios da actina" },
+        { "id": "c", "texto": "À cabeça da miosina, que passa a hidrolisar ATP sem a actina" },
+        { "id": "d", "texto": "À titina, que se encurta e aproxima as linhas Z do sarcômero" }
+      ],
+      "correta": "b",
+      "explicacao": "Nos músculos estriados, a regulação está no filamento fino: o Ca²⁺ liga-se à troponina C, o complexo da troponina muda de conformação e desloca a tropomiosina, expondo na actina os sítios de ligação da miosina (b); formam-se então as pontes cruzadas. A via calmodulina–cinase da cadeia leve da miosina (a) é a do músculo liso. A miosina (c) não é o receptor do Ca²⁺ no músculo esquelético e precisa da actina para o ciclo de força. A titina (d) é uma proteína elástica que liga a linha Z à linha M e não é o alvo do Ca²⁺ que inicia a contração.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["acoplamento-excitacao-contracao", "troponina", "calcio"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q04",
+      "tipo": "multipla",
+      "enunciado": "Na junção neuromuscular esquelética, as dobras juncionais da membrana pós-sináptica:",
+      "alternativas": [
+        { "id": "a", "texto": "Armazenam acetilcolina em vesículas para liberação por exocitose" },
+        { "id": "b", "texto": "Contêm os canais de Ca²⁺ que disparam a liberação do neurotransmissor" },
+        { "id": "c", "texto": "Formam a bainha de mielina que recobre o terminal do axônio motor" },
+        { "id": "d", "texto": "Aumentam a área da membrana e concentram receptores de acetilcolina" }
+      ],
+      "correta": "d",
+      "explicacao": "O sarcolema sob o terminal axônico forma dobras (fendas sinápticas secundárias) que ampliam a superfície pós-sináptica; os receptores nicotínicos de acetilcolina concentram-se nas cristas dessas dobras (d), e a acetilcolinesterase fica na lâmina basal da fenda. As vesículas com acetilcolina (a) e os canais de Ca²⁺ dependentes de voltagem (b) estão no terminal pré-sináptico. O terminal motor perde a mielina (c) e é recoberto apenas por uma célula de Schwann.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["juncao-neuromuscular", "acetilcolina"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q05",
+      "tipo": "multipla",
+      "enunciado": "Comparadas às fibras do tipo II glicolíticas, as fibras do tipo I do músculo esquelético têm:",
+      "alternativas": [
+        { "id": "a", "texto": "Mais glicogênio, menos mitocôndrias e fadiga rápida" },
+        { "id": "b", "texto": "Mais mioglobina, mais mitocôndrias e resistência à fadiga" },
+        { "id": "c", "texto": "Menos capilares, menos mioglobina e contração mais rápida" },
+        { "id": "d", "texto": "Mais retículo sarcoplasmático e contração mais rápida" }
+      ],
+      "correta": "b",
+      "explicacao": "As fibras tipo I (lentas, oxidativas, 'vermelhas') têm muita mioglobina, muitas mitocôndrias e rica rede capilar; produzem ATP por fosforilação oxidativa e resistem à fadiga, como nos músculos posturais (b). Mais glicogênio com fadiga rápida (a), menos capilares e mioglobina (c) e retículo mais desenvolvido com contração rápida (d) são características das fibras tipo II glicolíticas.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["tipos-de-fibra", "musculo-esqueletico"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q06",
+      "tipo": "multipla",
+      "contexto": "Atleta de 22 anos sofre contusão grave no quadríceps. A biópsia, semanas depois, mostra, entre fibras normais, fibras finas de citoplasma basófilo com núcleos centrais dispostos em fileira.",
+      "enunciado": "Essas fibras em regeneração originam-se principalmente de:",
+      "alternativas": [
+        { "id": "a", "texto": "Células satélites situadas entre o sarcolema e a lâmina basal" },
+        { "id": "b", "texto": "Fibroblastos do endomísio que se diferenciam em fibras musculares" },
+        { "id": "c", "texto": "Divisão mitótica das fibras musculares maduras vizinhas à lesão" },
+        { "id": "d", "texto": "Monócitos do sangue que se fundem e formam novos sincícios" }
+      ],
+      "correta": "a",
+      "explicacao": "As células satélites, mononucleadas e quiescentes, ficam entre o sarcolema e a lâmina basal de cada fibra (a); após lesão, proliferam e se fundem, reparando fibras danificadas ou formando novas, que de início têm citoplasma basófilo (muitos ribossomos) e núcleos centrais. Fibroblastos (b) produzem colágeno e, em lesões extensas, cicatriz, não fibras musculares. As fibras esqueléticas maduras (c) não se dividem. Monócitos (d) originam macrófagos, que removem restos necróticos, mas não formam fibras musculares.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["celulas-satelites", "regeneracao", "caso-clinico"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q07",
+      "tipo": "multipla",
+      "contexto": "Em corte longitudinal corado por HE, observam-se células estriadas e ramificadas, com um ou dois núcleos centrais, cruzadas de espaço em espaço por linhas transversais escuras dispostas em degrau.",
+      "enunciado": "As linhas em degrau correspondem a:",
+      "alternativas": [
+        { "id": "a", "texto": "Linhas Z de sarcômeros intensamente contraídos" },
+        { "id": "b", "texto": "Discos intercalares, junções entre células vizinhas" },
+        { "id": "c", "texto": "Tríades formadas por túbulo T e retículo sarcoplasmático" },
+        { "id": "d", "texto": "Bandas A, ricas em filamentos grossos de miosina" }
+      ],
+      "correta": "b",
+      "explicacao": "Células estriadas, ramificadas e com núcleo central são cardiomiócitos; as linhas transversais em degrau são os discos intercalares (b), onde células vizinhas se unem por zônulas de adesão, desmossomos e junções comunicantes. Linhas Z (a) e bandas A (d) se repetem em cada sarcômero, com espaçamento regular e muito menor, e formam as estriações. Tríades (c) só são resolvidas ao microscópio eletrônico e são típicas do músculo esquelético; no cardíaco predominam díades.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["musculo-cardiaco", "disco-intercalar", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q08",
+      "tipo": "multipla",
+      "enunciado": "Nos discos intercalares, a estrutura que acopla eletricamente os cardiomiócitos e permite que o miocárdio se contraia como uma unidade é:",
+      "alternativas": [
+        { "id": "a", "texto": "A zônula de adesão (fáscia aderente)" },
+        { "id": "b", "texto": "O desmossomo (mácula aderente)" },
+        { "id": "c", "texto": "A junção comunicante (junção gap)" },
+        { "id": "d", "texto": "A zônula de oclusão (junção oclusiva)" }
+      ],
+      "correta": "c",
+      "explicacao": "As junções comunicantes (c), na porção lateral (longitudinal) dos discos, formam canais de conexinas que deixam passar íons entre células vizinhas e propagam a despolarização. As zônulas de adesão (a) ancoram os filamentos de actina dos sarcômeros terminais, e os desmossomos (b) ancoram filamentos intermediários; ambos dão resistência mecânica, sem acoplamento elétrico. Junções oclusivas (d) vedam o espaço entre células epiteliais e endoteliais e não fazem parte dos discos intercalares.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["musculo-cardiaco", "disco-intercalar", "juncoes"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q09",
+      "tipo": "multipla",
+      "enunciado": "No músculo liso, o aumento do Ca²⁺ citosólico desencadeia a contração porque o Ca²⁺:",
+      "alternativas": [
+        { "id": "a", "texto": "Liga-se à troponina C dos filamentos finos e desloca a tropomiosina" },
+        { "id": "b", "texto": "Liga-se aos corpos densos, que se encurtam e puxam a membrana" },
+        { "id": "c", "texto": "Liga-se à actina, que passa a hidrolisar ATP e puxa a miosina" },
+        { "id": "d", "texto": "Liga-se à calmodulina, que ativa a cinase da cadeia leve da miosina" }
+      ],
+      "correta": "d",
+      "explicacao": "O complexo Ca²⁺-calmodulina ativa a cinase da cadeia leve da miosina, que fosforila a cadeia leve reguladora; só então a miosina interage com a actina e forma pontes cruzadas (d). A desfosforilação pela fosfatase da miosina leva ao relaxamento. O músculo liso não tem troponina (a). Os corpos densos (b) são pontos de ancoragem dos filamentos de actina, equivalentes às linhas Z, e não se contraem. Quem hidrolisa ATP no ciclo das pontes cruzadas é a cabeça da miosina, não a actina (c).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["musculo-liso", "calmodulina", "contracao"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q10",
+      "tipo": "multipla",
+      "contexto": "Em corte da parede do intestino corado por HE, uma camada é formada por células fusiformes, sem estriações transversais, cada uma com um núcleo central e alongado, que em algumas células tem aspecto de saca-rolhas.",
+      "enunciado": "Sobre essas células, é correto afirmar:",
+      "alternativas": [
+        { "id": "a", "texto": "Podem dividir-se e sintetizam componentes da matriz extracelular" },
+        { "id": "b", "texto": "São sincícios multinucleados formados pela fusão de mioblastos" },
+        { "id": "c", "texto": "Unem-se por discos intercalares com desmossomos e junções gap" },
+        { "id": "d", "texto": "Têm túbulos T que formam tríades na junção das bandas A e I" }
+      ],
+      "correta": "a",
+      "explicacao": "A descrição é a de músculo liso; o núcleo em saca-rolhas indica célula contraída. Suas células mantêm capacidade de divisão e sintetizam colágeno, elastina e proteoglicanos (a). Sincícios multinucleados (b) caracterizam a fibra esquelética. Discos intercalares (c) existem apenas no músculo cardíaco; no liso, as células se unem por junções comunicantes isoladas. Túbulos T organizados em tríades (d) são do músculo esquelético; o liso tem cavéolas e retículo sarcoplasmático pouco desenvolvido.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["musculo-liso", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q11",
+      "tipo": "multipla",
+      "contexto": "Menino de 5 anos tem quedas frequentes, dificuldade para subir escadas e, para se levantar do chão, apoia as mãos nas coxas (sinal de Gowers); as panturrilhas são aumentadas e a CK sérica, muito elevada. A biópsia mostra fibras de tamanhos variados, necrose e substituição por tecido adiposo e conjuntivo; a imuno-histoquímica não marca uma proteína normalmente presente sob o sarcolema.",
+      "enunciado": "Qual proteína está ausente e qual é a sua função?",
+      "alternativas": [
+        { "id": "a", "texto": "Distrofina; ancora o citoesqueleto à matriz extracelular" },
+        { "id": "b", "texto": "Titina; mola elástica que liga a linha Z à linha M" },
+        { "id": "c", "texto": "Desmina; une as linhas Z de miofibrilas vizinhas" },
+        { "id": "d", "texto": "Receptor de acetilcolina; despolariza a placa motora" }
+      ],
+      "correta": "a",
+      "explicacao": "Na distrofia muscular de Duchenne (herança recessiva ligada ao X), mutações no gene da distrofina eliminam essa proteína, que liga os filamentos de actina subsarcolemais ao complexo distroglicano–sarcoglicanos, preso à laminina da lâmina basal (a). Sem ela, o sarcolema se rompe com a contração; as fibras necrosam, a regeneração se esgota e o músculo é substituído por gordura e fibrose (pseudo-hipertrofia das panturrilhas). Titina (b) e desmina (c) são proteínas do sarcômero e do citoesqueleto cuja falta não produz esse quadro. A perda de receptores de acetilcolina (d) ocorre na miastenia grave, que causa fraqueza flutuante sem necrose nem CK elevada.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["distrofia-duchenne", "distrofina", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Nervos periféricos e músculos esqueléticos; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q12",
+      "tipo": "multipla",
+      "contexto": "Mulher de 28 anos tem ptose palpebral e visão dupla que pioram no fim do dia, e fraqueza que aumenta com esforço repetido e melhora com repouso. Os sintomas melhoram com um inibidor da acetilcolinesterase.",
+      "enunciado": "O alvo mais comum dos autoanticorpos nessa doença é:",
+      "alternativas": [
+        { "id": "a", "texto": "O canal de Ca²⁺ dependente de voltagem do terminal pré-sináptico" },
+        { "id": "b", "texto": "A acetilcolinesterase presente na lâmina basal da fenda sináptica" },
+        { "id": "c", "texto": "O receptor nicotínico de acetilcolina da membrana pós-sináptica" },
+        { "id": "d", "texto": "O receptor de rianodina do retículo sarcoplasmático da fibra" }
+      ],
+      "correta": "c",
+      "explicacao": "Na miastenia grave, autoanticorpos, na maioria dos casos contra o receptor nicotínico de acetilcolina (c) e em parte dos demais contra a MuSK, reduzem o número de receptores funcionais e simplificam as dobras juncionais; a transmissão falha com estímulos repetidos, daí a fraqueza flutuante que melhora com inibidores da acetilcolinesterase. Anticorpos contra canais de Ca²⁺ pré-sinápticos (a) causam a síndrome miastênica de Lambert-Eaton. A acetilcolinesterase (b) não é alvo da doença; inibi-la é justamente o tratamento sintomático. Receptores de rianodina (d) liberam Ca²⁺ do retículo e se relacionam à hipertermia maligna, não à miastenia.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["miastenia-grave", "juncao-neuromuscular", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Nervos periféricos e músculos esqueléticos; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q13",
+      "tipo": "multipla",
+      "contexto": "Homem de 62 anos teve infarto agudo extenso da parede anterior do ventrículo esquerdo há 3 meses. A ecocardiografia mostra essa região adelgaçada e sem contração.",
+      "enunciado": "Nessa fase, a área infartada é formada principalmente por:",
+      "alternativas": [
+        { "id": "a", "texto": "Cardiomiócitos novos originados de células satélites cardíacas" },
+        { "id": "b", "texto": "Cardiomiócitos hipertrofiados, com núcleos grandes e hipercromáticos" },
+        { "id": "c", "texto": "Tecido conjuntivo denso rico em colágeno, formando uma cicatriz" },
+        { "id": "d", "texto": "Infiltrado de neutrófilos sobre fibras com necrose de coagulação" }
+      ],
+      "correta": "c",
+      "explicacao": "O músculo cardíaco adulto tem capacidade regenerativa mínima: os cardiomiócitos necrosados são removidos e substituídos por tecido de granulação e, depois, por cicatriz colágena (c), que não contrai; daí a região adelgaçada e acinética. O miocárdio não tem células satélites (a). A hipertrofia de cardiomiócitos (b) ocorre no miocárdio viável remanescente, não na área necrosada. O infiltrado de neutrófilos sobre necrose de coagulação (d) é característico dos primeiros dias após o infarto.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["musculo-cardiaco", "infarto", "regeneracao", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Coração; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q14",
+      "tipo": "multipla",
+      "contexto": "Durante a gestação, o útero aumenta muitas vezes de tamanho. Já no hipertenso crônico, a massa do ventrículo esquerdo aumenta progressivamente.",
+      "enunciado": "Como cresce o tecido muscular em cada caso?",
+      "alternativas": [
+        { "id": "a", "texto": "Miométrio: só hiperplasia; miocárdio adulto: sobretudo hiperplasia" },
+        { "id": "b", "texto": "Miométrio: hipertrofia e hiperplasia; miocárdio adulto: hipertrofia" },
+        { "id": "c", "texto": "Miométrio: só hipertrofia; miocárdio adulto: hipertrofia e hiperplasia" },
+        { "id": "d", "texto": "Nos dois órgãos, pela proliferação de células satélites residentes" }
+      ],
+      "correta": "b",
+      "explicacao": "As células musculares lisas do miométrio aumentam de volume (hipertrofia) e também se dividem (hiperplasia) na gestação; os cardiomiócitos adultos praticamente não se dividem, e o coração sob sobrecarga cresce por hipertrofia, com mais miofibrilas e maior volume celular (b). A alternativa (a) erra nos dois tecidos: o miométrio também hipertrofia e o miocárdio adulto não cresce por hiperplasia. A alternativa (c) nega a hiperplasia do miométrio e a atribui ao miocárdio adulto. Células satélites (d) existem no músculo esquelético, não no liso nem no cardíaco.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": ["hipertrofia", "hiperplasia", "musculo-liso", "musculo-cardiaco"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Robbins 10ª ed., Adaptações celulares"
+    },
+    {
+      "id": "his-09-q15",
+      "tipo": "multipla",
+      "contexto": "Mulher de 40 anos tem aumento do fluxo menstrual; a ultrassonografia mostra nódulos bem delimitados no miométrio. Na histologia, os nódulos têm feixes entrecruzados de células fusiformes, de núcleos alongados e uniformes, sem atipia e com raras mitoses.",
+      "enunciado": "O diagnóstico mais provável é:",
+      "alternativas": [
+        { "id": "a", "texto": "Leiomiossarcoma uterino" },
+        { "id": "b", "texto": "Rabdomiossarcoma uterino" },
+        { "id": "c", "texto": "Leiomioma uterino" },
+        { "id": "d", "texto": "Adenomiose uterina" }
+      ],
+      "correta": "c",
+      "explicacao": "Nódulos bem delimitados de músculo liso (feixes entrecruzados de células fusiformes) sem atipia e com raras mitoses caracterizam o leiomioma (c), tumor benigno muito frequente do útero e dependente de estrogênio. O leiomiossarcoma (a) mostra atipia nuclear, muitas mitoses e, com frequência, necrose das células tumorais. O rabdomiossarcoma (b) é um tumor maligno com diferenciação muscular esquelética, raro no útero de adultas. A adenomiose (d) é a presença de glândulas e estroma endometriais no miométrio, que não aparecem na descrição.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["leiomioma", "musculo-liso", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Trato genital feminino; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q16",
+      "tipo": "vf",
+      "enunciado": "Na fibra muscular esquelética, os numerosos núcleos localizam-se na periferia, logo abaixo do sarcolema.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A fibra esquelética é um sincício formado pela fusão de mioblastos, com muitos núcleos periféricos. Núcleos centrais são esperados nos músculos cardíaco e liso; no esquelético, indicam fibras em regeneração ou miopatias.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["musculo-esqueletico", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q17",
+      "tipo": "vf",
+      "enunciado": "O sarcômero é o segmento da miofibrila compreendido entre duas linhas M consecutivas.",
+      "correta": false,
+      "explicacao": "Falso. O sarcômero vai de uma linha Z à seguinte; a linha M fica no centro do sarcômero, no meio da banda H, onde os filamentos grossos se unem.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["sarcomero"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q18",
+      "tipo": "vf",
+      "enunciado": "O perimísio é a bainha de tecido conjuntivo que envolve individualmente cada fibra muscular esquelética.",
+      "correta": false,
+      "explicacao": "Falso. Cada fibra é envolvida pelo endomísio (lâmina basal e fibras reticulares); o perimísio envolve feixes de fibras (fascículos), e o epimísio, o músculo inteiro.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["endomisio", "perimisio", "epimisio"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q19",
+      "tipo": "vf",
+      "enunciado": "No músculo cardíaco, os túbulos T situam-se na altura da linha Z e associam-se em geral a uma única cisterna do retículo sarcoplasmático, formando díades.",
+      "correta": true,
+      "explicacao": "Verdadeiro. No cardiomiócito os túbulos T são mais calibrosos, ficam na linha Z e formam díades com um retículo pouco desenvolvido; parte do Ca²⁺ vem do meio extracelular e dispara a liberação do Ca²⁺ do retículo. No músculo esquelético de mamíferos, os túbulos T ficam na junção A-I e formam tríades.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["musculo-cardiaco", "diade", "tubulo-t"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q20",
+      "tipo": "vf",
+      "enunciado": "O músculo cardíaco adulto tem células satélites semelhantes às do músculo esquelético, o que lhe confere boa capacidade de regeneração após o infarto.",
+      "correta": false,
+      "explicacao": "Falso. O miocárdio não tem células satélites, e a renovação de cardiomiócitos no adulto é mínima; após o infarto, o tecido necrosado é substituído por cicatriz de tecido conjuntivo.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["musculo-cardiaco", "regeneracao", "infarto"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q21",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos do acoplamento excitação-contração no músculo esquelético:",
+      "itens": [
+        { "id": "1", "texto": "O Ca²⁺ liga-se à troponina C e a tropomiosina expõe os sítios da actina" },
+        { "id": "2", "texto": "O potencial de ação percorre o sarcolema e penetra pelos túbulos T" },
+        { "id": "3", "texto": "A acetilcolina liga-se aos receptores nicotínicos da placa motora" },
+        { "id": "4", "texto": "As cabeças de miosina formam pontes cruzadas e os filamentos finos deslizam" },
+        { "id": "5", "texto": "O sensor de voltagem do túbulo T abre os receptores de rianodina e o retículo libera Ca²⁺" },
+        { "id": "6", "texto": "O potencial de ação chega ao terminal do axônio motor" }
+      ],
+      "ordemCorreta": ["6", "3", "2", "5", "1", "4"],
+      "explicacao": "Potencial de ação no terminal motor → a acetilcolina ativa receptores nicotínicos e despolariza a placa → potencial de ação no sarcolema e nos túbulos T → o sensor de voltagem (receptor de di-hidropiridina) abre os receptores de rianodina e o retículo libera Ca²⁺ → o Ca²⁺ liga-se à troponina C e a tropomiosina se desloca → pontes cruzadas e deslizamento dos filamentos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["acoplamento-excitacao-contracao", "linha-do-tempo"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os níveis de organização do músculo esquelético, do maior para o menor:",
+      "itens": [
+        { "id": "1", "texto": "Miofibrila" },
+        { "id": "2", "texto": "Fascículo (envolvido pelo perimísio)" },
+        { "id": "3", "texto": "Músculo (envolvido pelo epimísio)" },
+        { "id": "4", "texto": "Filamentos de actina e miosina" },
+        { "id": "5", "texto": "Fibra muscular (envolvida pelo endomísio)" },
+        { "id": "6", "texto": "Sarcômero" }
+      ],
+      "ordemCorreta": ["3", "2", "5", "1", "6", "4"],
+      "explicacao": "Músculo (epimísio) → fascículos (perimísio) → fibras musculares (endomísio) → miofibrilas → sarcômeros, repetidos em série ao longo de cada miofibrila → filamentos finos (actina) e grossos (miosina).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["musculo-esqueletico", "organizacao"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q23",
+      "tipo": "ordenar",
+      "enunciado": "Partindo da cabeça de miosina 'engatilhada' (com ADP e fosfato ligados), ordene as etapas do ciclo das pontes cruzadas:",
+      "itens": [
+        { "id": "1", "texto": "O ATP liga-se à miosina, que se desprende da actina" },
+        { "id": "2", "texto": "A cabeça de miosina liga-se a um sítio exposto da actina" },
+        { "id": "3", "texto": "A hidrólise do ATP reengatilha a cabeça de miosina" },
+        { "id": "4", "texto": "A liberação do fosfato desencadeia o golpe de força" },
+        { "id": "5", "texto": "O ADP é liberado e a miosina fica firmemente ligada à actina (estado de rigor)" }
+      ],
+      "ordemCorreta": ["2", "4", "5", "1", "3"],
+      "explicacao": "Ligação à actina → liberação do fosfato e golpe de força (o filamento fino desliza em direção à linha M) → liberação do ADP (estado de rigor) → ligação de ATP, que desfaz a ponte → hidrólise do ATP, que reengatilha a cabeça para novo ciclo. Sem ATP as pontes não se desfazem, o que explica a rigidez cadavérica.",
+      "dificuldade": 4,
+      "bloom": "compreender",
+      "tags": ["pontes-cruzadas", "contracao", "atp"],
+      "referencia": "Ross 8ª ed., cap. 11; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as alterações histológicas do infarto do miocárdio, da mais precoce à mais tardia:",
+      "itens": [
+        { "id": "1", "texto": "Tecido de granulação, com neovasos e fibroblastos" },
+        { "id": "2", "texto": "Infiltrado de neutrófilos na área necrosada" },
+        { "id": "3", "texto": "Cicatriz de tecido conjuntivo denso, rico em colágeno" },
+        { "id": "4", "texto": "Necrose de coagulação dos cardiomiócitos" },
+        { "id": "5", "texto": "Macrófagos removem as fibras necrosadas" }
+      ],
+      "ordemCorreta": ["4", "2", "5", "1", "3"],
+      "explicacao": "Necrose de coagulação (primeiras horas a 1 dia) → infiltrado de neutrófilos (1–3 dias) → macrófagos fagocitam as fibras mortas (3–7 dias) → tecido de granulação (a partir de 7–10 dias) → cicatriz colágena densa (a partir de cerca de 2 meses), segundo Robbins. Como não há regeneração relevante de cardiomiócitos, o reparo termina em cicatriz.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["infarto", "musculo-cardiaco", "linha-do-tempo"],
+      "referencia": "Robbins 10ª ed., Coração"
+    },
+    {
+      "id": "his-09-q25",
+      "tipo": "associar",
+      "enunciado": "Associe cada região do sarcômero ao seu conteúdo:",
+      "pares": [
+        { "esquerda": "Banda I", "direita": "Filamentos finos sem filamentos grossos, cortada pela linha Z" },
+        { "esquerda": "Banda A", "direita": "Comprimento total dos filamentos grossos, com sobreposição de finos" },
+        { "esquerda": "Banda H", "direita": "Parte central da banda A, só com filamentos grossos" },
+        { "esquerda": "Linha M", "direita": "Centro do sarcômero, onde se unem os filamentos grossos" },
+        { "esquerda": "Linha Z", "direita": "Limite do sarcômero, onde se ancoram os filamentos finos" }
+      ],
+      "explicacao": "A banda I tem só filamentos finos e é atravessada pela linha Z; a banda A corresponde aos filamentos grossos; a banda H é a parte central da banda A sem sobreposição de finos; a linha M une os filamentos grossos no centro; a linha Z, rica em α-actinina, ancora os filamentos finos e delimita o sarcômero.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["sarcomero", "bandas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada tipo de músculo a uma característica exclusiva dele:",
+      "pares": [
+        { "esquerda": "Estriado esquelético", "direita": "Fibras multinucleadas com núcleos periféricos" },
+        { "esquerda": "Estriado cardíaco", "direita": "Discos intercalares entre células ramificadas" },
+        { "esquerda": "Liso", "direita": "Corpos densos e ausência de estriações transversais" }
+      ],
+      "explicacao": "Só o esquelético forma sincícios multinucleados com núcleos periféricos; só o cardíaco tem discos intercalares; só o liso tem corpos densos no lugar das linhas Z e não apresenta estriações.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["tipos-de-musculo", "laminas"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada doença à estrutura ou célula muscular primariamente envolvida:",
+      "pares": [
+        { "esquerda": "Distrofia muscular de Duchenne", "direita": "Distrofina subsarcolemal da fibra esquelética" },
+        { "esquerda": "Miastenia grave", "direita": "Receptores de acetilcolina da placa motora" },
+        { "esquerda": "Infarto do miocárdio", "direita": "Cardiomiócitos, substituídos por cicatriz colágena" },
+        { "esquerda": "Leiomioma", "direita": "Células musculares lisas, em proliferação benigna" }
+      ],
+      "explicacao": "Duchenne: falta distrofina; miastenia grave: autoanticorpos contra receptores de acetilcolina; infarto: necrose de cardiomiócitos reparada por cicatriz; leiomioma: tumor benigno de músculo liso.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["correlacoes-clinicas", "distrofia-duchenne", "miastenia-grave", "infarto", "leiomioma"],
+      "referencia": "Robbins 10ª ed.; Junqueira 14ª ed., Tecido muscular"
+    }
+  ],
+  "referencias": [
+    { "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed. Rio de Janeiro: GEN Guanabara Koogan, 2023", "capitulo": "Tecido muscular (cap. 10 na 13ª ed.)" },
+    { "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed. GEN Guanabara Koogan, 2021", "capitulo": "11 — Tecido muscular" },
+    { "obra": "Kierszenbaum AL, Tres LL. Histologia e Biologia Celular: uma introdução à patologia, 5ª ed. Elsevier", "capitulo": "7 — Tecido muscular" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Coração (infarto do miocárdio: sequência morfológica)" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Nervos periféricos e músculos esqueléticos (distrofias musculares; miastenia grave)" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Trato genital feminino (leiomioma)" },
+    { "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)", "capitulo": "Respostas celulares ao estresse: adaptações (hipertrofia e hiperplasia)" },
+    { "obra": "Bergmann O et al. Evidence for cardiomyocyte renewal in humans. Science. 2009;324(5923):98-102", "capitulo": "Renovação de cardiomiócitos medida por carbono-14" }
+  ],
+  "notasDivergencia": [
+    "Comprimento do sarcômero em repouso: Junqueira ~2,5 µm; Ross 2–3 µm. Adotado ~2,5 µm, sem cobrança numérica.",
+    "Nomenclatura das fibras rápidas glicolíticas: Junqueira e Ross usam I, IIa e IIb; no ser humano, a fibra rápida glicolítica expressa sobretudo a isoforma IIx da cadeia pesada da miosina (a IIb praticamente não é expressa), e textos de fisiologia usam 'IIx'. As questões falam em 'tipo II glicolíticas' para evitar o conflito.",
+    "Regeneração do miocárdio: os livros de histologia descrevem capacidade ausente ou mínima; estudos com carbono-14 (Bergmann et al., 2009) estimaram renovação de cerca de 1% dos cardiomiócitos ao ano aos 25 anos, caindo para ~0,45% aos 75, insuficiente para reparar um infarto. O conteúdo usa 'mínima'.",
+    "Cronologia do infarto (Robbins): necrose de coagulação visível a partir de ~4–12 h, neutrófilos com pico em 1–3 dias, macrófagos em 3–7 dias, tecido de granulação a partir de 7–10 dias e cicatriz densa após ~2 meses. Os intervalos são aproximados e variam com o tamanho do infarto; a questão cobra só a ordem."
+  ],
+  "incertezas": [
+    "Números de capítulo de Junqueira 14ª ed. não conferidos (citado como 'Tecido muscular', cap. 10 na 13ª ed.). Capítulos de Ross 8ª ed. (11), Kierszenbaum 5ª ed. (7) e títulos de capítulos de Robbins 10ª ed. citados de memória.",
+    "Localização dos receptores nicotínicos nas cristas das dobras juncionais (com canais de Na⁺ nas depressões) segue Ross; Junqueira descreve apenas as dobras com receptores.",
+    "Tamanho das fibras (diâmetro, comprimento) e proporção de mitocôndrias no cardiomiócito omitidos por não terem sido conferidos."
+  ],
+  "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [], "humano": null }
+}
