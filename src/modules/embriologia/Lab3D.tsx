@@ -107,6 +107,20 @@ export default function Lab3DTela() {
         </div>
       </div>
 
+      <div className="linha quebra" role="group" aria-label="Estruturas deste estágio" style={{ gap: 6 }}>
+        {estagio.estruturas.map((s) => (
+          <button
+            key={s.id}
+            className={`selo ${selecionado === s.id ? 'ia' : ''}`}
+            style={{ cursor: 'pointer', minHeight: 32, fontSize: '0.8rem' }}
+            aria-pressed={selecionado === s.id}
+            onClick={() => setSelecionado((x) => (x === s.id ? null : s.id))}
+          >
+            {s.nome}
+          </button>
+        ))}
+      </div>
+
       {modelo?.legendaCamadas && (
         <div className="legenda-camadas">
           <span style={{ ['--c' as string]: 'var(--ecto)' }}>Ectoderma</span>
