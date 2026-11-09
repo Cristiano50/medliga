@@ -291,7 +291,7 @@
     {
       "id": "acido-folico-prevencao",
       "titulo": "Prevenção dos DTN com ácido fólico",
-      "descricao": "Suplementação periconcepcional com 0,4 mg (400 µg)/dia para todas as mulheres que podem engravidar e 4 mg/dia no alto risco (gestação anterior com DTN ou DTN em um dos genitores; no Brasil é comum o comprimido de 5 mg), iniciada pelo menos 1 mês antes da concepção e mantida até o fim do 1º trimestre, reduz a incidência de DTN (até 70%, segundo Sadler). No Brasil, a fortificação das farinhas de trigo e milho com ácido fólico é obrigatória desde 2004. Fatores de risco incluem DTN prévio, diabetes materno, obesidade, hipertermia e anticonvulsivantes como valproato e carbamazepina.",
+      "descricao": "Suplementação periconcepcional com 0,4 mg (400 µg)/dia para todas as mulheres que podem engravidar e, no alto risco (gestação anterior com DTN ou DTN em um dos genitores), 4 mg/dia segundo a FEBRASGO ou 5 mg/dia segundo o Ministério da Saúde, iniciada pelo menos 1 mês antes da concepção e mantida até o fim do 1º trimestre, reduz a incidência de DTN (até 70%, segundo Sadler). No Brasil, a fortificação das farinhas de trigo e milho com ácido fólico é obrigatória desde 2004. Fatores de risco incluem DTN prévio, diabetes materno, obesidade, hipertermia e anticonvulsivantes como valproato e carbamazepina.",
       "mecanismo": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; o folato participa da síntese de nucleotídeos e da metilação, essenciais à proliferação do neuroepitélio."
     },
     {
@@ -591,7 +591,7 @@
         { "id": "d", "texto": "Iniciar pelo menos 1 mês antes da concepção, em dose maior que a habitual, e manter no 1º trimestre" }
       ],
       "correta": "d",
-      "explicacao": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; por isso a suplementação deve começar antes da concepção. Com gestação prévia afetada, recomenda-se dose alta (4 mg/dia segundo a FEBRASGO e as diretrizes internacionais; no Brasil é comum o comprimido de 5 mg), em vez dos 0,4 mg (400 µg)/dia habituais. Iniciar após o teste positivo (a) é tardio, e o tubo não se fecha no 2º trimestre. A fortificação (b) reduz os DTN na população, mas não substitui a suplementação, sobretudo no alto risco. Na 12ª semana de gestação (c), o tubo neural já está fechado há semanas; além disso, o período embrionário termina no fim da 8ª semana após a fertilização (≈ 10ª semana de idade gestacional), não na 12ª.",
+      "explicacao": "O tubo neural fecha-se até o fim da 4ª semana após a fertilização (≈ 6 semanas de idade gestacional), em geral antes de a gestação ser reconhecida; por isso a suplementação deve começar antes da concepção. Com gestação prévia afetada, recomenda-se dose alta (4 mg/dia segundo a FEBRASGO e as diretrizes internacionais; 5 mg/dia segundo o Ministério da Saúde), em vez dos 0,4 mg (400 µg)/dia habituais. Iniciar após o teste positivo (a) é tardio, e o tubo não se fecha no 2º trimestre. A fortificação (b) reduz os DTN na população, mas não substitui a suplementação, sobretudo no alto risco. Na 12ª semana de gestação (c), o tubo neural já está fechado há semanas; além disso, o período embrionário termina no fim da 8ª semana após a fertilização (≈ 10ª semana de idade gestacional), não na 12ª.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": ["acido-folico", "defeitos-tubo-neural", "prevencao", "caso-clinico"],
@@ -856,7 +856,7 @@
       "capitulo": "Fortificação com ácido fólico no Brasil"
     },
     {
-      "obra": "FEBRASGO. Prevenção dos defeitos abertos do tubo neural (série Orientações e Recomendações FEBRASGO), 2ª ed., 2020",
+      "obra": "Mariani Neto C. Prevenção dos defeitos abertos do tubo neural – DTN. 2ª ed. São Paulo: FEBRASGO; 2020 (Orientações e Recomendações FEBRASGO, n. 1). Disponível em: https://www.febrasgo.org.br/wp-content/uploads/2026/05/Serie-DTN-2a-ed-web.pdf",
       "capitulo": "Doses de ácido fólico: 0,4 mg/dia (risco habitual) e 4 mg/dia (alto risco)"
     },
     {
@@ -866,6 +866,14 @@
     {
       "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia Orientada para a Clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
       "capitulo": "Resumo dos nervos cranianos (nervo hipoglosso: lesão do neurônio motor inferior)"
+    },
+    {
+      "obra": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Prevenção dos defeitos abertos do tubo neural. 3ª ed. São Paulo: FEBRASGO; 2025 (Protocolo FEBRASGO-Obstetrícia, n. 16/Comissão Nacional Especializada em Assistência Pré-Natal). Disponível em: https://www.febrasgo.org.br/wp-content/uploads/2026/05/O-Prevencao-dos-defeitos-abertos-do-tubo-neural-2026-05-13_edicao-3.pdf",
+      "capitulo": "Recomendações finais: 400 µg/dia no baixo risco e 4 mg/dia no risco aumentado para DTN; iniciar 30 dias antes da provável concepção e manter até o fim do 1º trimestre"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Atenção ao pré-natal de baixo risco. Brasília: Ministério da Saúde; 2012 (Cadernos de Atenção Básica, n. 32). Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf",
+      "capitulo": "Atenção pré-concepcional: ácido fólico 5 mg/dia por via oral, de 60 a 90 dias antes da concepção, especialmente nas mulheres com antecedente de defeito do tubo neural"
     }
   ],
   "notasDivergencia": [
@@ -875,7 +883,7 @@
     "Perda da conexão da bolsa de Rathke com a cavidade oral: Moore, por volta da 6ª semana; Sadler, fim do 2º mês. Faixa adotada: dias 36–56. Aparecimento da bolsa: Sadler, por volta da 3ª semana; Moore, início da 4ª semana.",
     "Terminologia das camadas do tubo neural: Sadler usa camadas neuroepitelial (ventricular), do manto e marginal; Moore usa zonas ventricular, intermediária e marginal.",
     "Encefalocele: Moore a descreve como crânio bífido no contexto dos DTN; Sadler a relaciona a defeitos de ossificação dos ossos do crânio. Mantida a descrição morfológica, sem afirmar o mecanismo como fato.",
-    "Redução dos DTN com ácido fólico: Sadler cita até 70%; outras fontes citam 50–70%. Dose: 0,4 mg/dia no risco habitual e 4 mg/dia no alto risco (FEBRASGO, série sobre DTN, 2ª ed., 2020; diretrizes internacionais); materiais do Ministério da Saúde citam 4–5 mg/dia no alto risco, e no Brasil é comum o uso do comprimido de 5 mg."
+    "Redução dos DTN com ácido fólico: Sadler cita até 70%; outras fontes citam 50–70%. Dose: 0,4 mg/dia no risco habitual e 4 mg/dia no alto risco segundo a FEBRASGO (Orientações e Recomendações n. 1, 2ª ed., 2020; Protocolo FEBRASGO-Obstetrícia n. 16, 3ª ed., 2025) e as diretrizes internacionais; o Ministério da Saúde indica 5 mg/dia, de 60 a 90 dias antes da concepção, sobretudo com antecedente de DTN (Cadernos de Atenção Básica n. 32, 2012), e o Manual de gestação de alto risco (2022) cita 4 a 5 mg/dia — conferido no texto integral (conferencia-fontes-v1, 2026-11-09)."
   ],
   "incertezas": [
     "Prevalências de DTN, de hidrocefalia e de holoprosencefalia e a proporção de mielomeningoceles com Chiari II/hidrocefalia não foram conferidas nas edições adotadas; usadas apenas expressões qualitativas ('praticamente todos', 'maioria').",
@@ -915,6 +923,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "camada avançada (ids emb-18-q25 a emb-18-q29): 0 correções; conferidos medula presa (cone em L4 e filamento espessado no lactente), lesão do núcleo do hipoglosso (placa basal, desvio para o lado lesado), Chiari II e resultados do MOMS (menos derivação e herniação, mais prematuridade e deiscência uterina), anencefalia com polidrâmnio × agenesia renal com anidrâmnio e trajeto do liquor (2-6-4-1-5-7-3). Dificuldade 4 da q29 (ordenar de recordação): opinião registrada no relatório, sem alteração."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "conferência de fontes primárias (só a dose de ácido fólico): 1 correção (menor). Lidos na íntegra: FEBRASGO — Orientações e Recomendações n. 1 (2ª ed., 2020) e Protocolo FEBRASGO-Obstetrícia n. 16 (3ª ed., 2025): 4 mg/dia no alto risco, de 30 dias (1 mês) antes da concepção até o fim do 1º trimestre; Ministério da Saúde — Cadernos de Atenção Básica n. 32 (2012): 5 mg/dia de 60 a 90 dias antes da concepção, especialmente com antecedente de DTN, e Manual de gestação de alto risco (2022): 4 a 5 mg/dia. A frase não conferida “no Brasil é comum o comprimido de 5 mg” foi trocada por “5 mg/dia segundo o Ministério da Saúde” na correlação acido-folico-prevencao e na explicação da q15; notasDivergencia[6] e referências atualizadas (URL da série FEBRASGO; FEBRASGO n. 16 e CAB n. 32 acrescentados). Início “pelo menos 1 mês antes da concepção” confirmado pela FEBRASGO. Gabarito, letras, ids e alternativas inalterados."
       }
     ],
     "humano": null

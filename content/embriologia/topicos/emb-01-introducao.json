@@ -913,7 +913,7 @@
         "datacao",
         "ciclo-menstrual"
       ],
-      "referencia": "ACOG CO 700 (2017); Guia do Pré-natal na APS (SES-RS, 2024); Moore 11ª ed., cap. 2 e 6"
+      "referencia": "ACOG CO 700 (2017, reafirmado em 2025); consenso CBR/FEBRASGO (2020); Protocolo FEBRASGO-Obstetrícia n. 63 (2021); Guia do Pré-natal na APS (SES-RS, 2024); Moore 11ª ed., cap. 2 e 6"
     },
     {
       "id": "emb-01-q27",
@@ -948,7 +948,7 @@
         "datacao",
         "reproducao-assistida"
       ],
-      "referencia": "ACOG CO 700 (2017); Moore 11ª ed., cap. 2 e 6"
+      "referencia": "ACOG CO 700 (2017, reafirmado em 2025); Protocolo FEBRASGO-Obstetrícia n. 63 (2021); Moore 11ª ed., cap. 2 e 6"
     },
     {
       "id": "emb-01-q28",
@@ -1100,8 +1100,8 @@
       "capitulo": "9 — Defeitos congênitos e diagnóstico pré-natal"
     },
     {
-      "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 700: Methods for estimating the due date. Obstet Gynecol. 2017;129:e150–4 (reafirmado)",
-      "capitulo": "Datação pelo CCN no 1º trimestre; limites para corrigir a DUM; gestações por reprodução assistida"
+      "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 700: Methods for estimating the due date. Obstet Gynecol. 2017;129(5):e150–4 (reafirmado em 2025). Disponível em: https://www.acog.org/clinical/guidance/committee-opinion/2017/05/methods-for-estimating-the-due-date",
+      "capitulo": "Datação pelo CCN no 1º trimestre; limites para corrigir a DUM; gestações por reprodução assistida (vigência e resumo conferidos no site da ACOG em 2026-11-09; texto integral não aberto)"
     },
     {
       "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
@@ -1110,6 +1110,18 @@
     {
       "obra": "Rio Grande do Sul. Secretaria da Saúde. Guia do Pré-natal e Puerpério na Atenção Primária à Saúde (APS). Porto Alegre; 2024",
       "capitulo": "Cálculo da idade gestacional: DUM × ultrassonografia (desvio esperado de 3 a 7 dias no 1º trimestre) — questão avançada q26"
+    },
+    {
+      "obra": "Colégio Brasileiro de Radiologia e Diagnóstico por Imagem (CBR); Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Normatização de exames de ultrassonografia e protocolos de exames de ultrassom obstétricos: consenso CBR/FEBRASGO (ofício OF/CBR/0111/2020, de 20 mar. 2020). Disponível em: https://cbr.org.br/wp-content/uploads/2022/12/consenso-CBR-Febrasgo-GO.pdf",
+      "capitulo": "Ultrassonografia obstétrica inicial (endovaginal), item “Idade gestacional”: redefinir a idade gestacional pela ultrassonografia se a discordância com a DUM for de mais de 5 dias até a 9ª semana e de 7 dias ou mais entre a 9ª e a 14ª semana. Questão avançada q26"
+    },
+    {
+      "obra": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Ultrassonografia no primeiro trimestre de gestação. São Paulo: FEBRASGO; 2021 (Protocolo FEBRASGO-Obstetrícia, n. 63/Comissão Nacional Especializada em Ultrassonografia em GO). Disponível em: https://www.febrasgo.org.br/wp-content/uploads/2026/05/O-Ultrassonografia-no-primeiro-trimestre-de-gestacao-2026-05-13.pdf",
+      "capitulo": "Cálculo da idade gestacional: com DUM conhecida e ciclos regulares, mantém-se a idade pela DUM se a diferença para o CCN for inferior a 5 dias; com 5 dias ou mais, vale a idade pelo CCN; na fertilização assistida, tempo desde a transferência + dias desde a fertilização + 2 semanas. Questões avançadas q26 e q27"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Manual de gestação de alto risco. Brasília: Ministério da Saúde; 2022. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+      "capitulo": "9.2 (gravidez prolongada, diagnóstico): ultrassonografia de 9 a 12 semanas como método mais fidedigno de datação; 68.2.2.3: erro do CCN de cerca de 3 dias com 7 semanas e de 7 dias com 12 semanas. Não fixa limiar numérico para redatar"
     }
   ],
   "notasDivergencia": [
@@ -1117,12 +1129,12 @@
     "Idade atribuída ao estágio 23 de Carnegie: tabelas derivadas de Moore situam-no em ~56 dias; as revisões de O’Rahilly e Müller atribuem idades ligeiramente maiores (aprox. 56–60 dias). Faixa adotada: fim da 8ª semana (~56 dias, podendo chegar a ~60).",
     "Limites dos trimestres: as obras de embriologia definem os trimestres como períodos de ~3 meses; convenções obstétricas os definem pela idade gestacional (comumente 1º trimestre até 13–14 semanas, 3º a partir de 28 semanas). Nenhum limite em semanas é cobrado nas questões.",
     "Linha do tempo: “fim do período embrionário” e “início do período fetal” são o mesmo marco (fim da 8ª/início da 9ª semana); receberam a mesma “ordem” para que o jogo nunca os peça em sequência um do outro (revisor-embriologia-v1, 2026-11-09).",
-    "Critério para redatar pela ultrassonografia do 1º trimestre: o ACOG (CO 700) redata quando a diferença DUM × CCN passa de 5 dias até 8 semanas e 6 dias pela DUM, e de 7 dias entre 9 semanas e 13 semanas e 6 dias; guias brasileiros de pré-natal na atenção primária (SES-RS, 2024; SMS-Rio, 2019) mantêm a DUM quando a diferença cabe na margem de erro do exame no 1º trimestre (3 a 7 dias). Os critérios divergem para diferenças de 6 a 7 dias antes de 9 semanas; a q26 usa uma diferença de ~9 dias, que leva a redatar por todos eles (revisor-obstetricia-avancado-v1, 2026-11-09)."
+    "Critério para redatar pela ultrassonografia do 1º trimestre: o ACOG (CO 700) redata quando a diferença DUM × CCN passa de 5 dias até 8 semanas e 6 dias pela DUM, e de 7 dias entre 9 semanas e 13 semanas e 6 dias; o consenso CBR/FEBRASGO (2020) usa o mesmo corte antes da 9ª semana (mais de 5 dias) e redata com 7 dias ou mais entre a 9ª e a 14ª semana; o Protocolo FEBRASGO-Obstetrícia n. 63 (2021) não separa faixas e redata quando a diferença é de 5 dias ou mais; guias brasileiros de pré-natal na atenção primária (SES-RS, 2024; SMS-Rio, 2019) mantêm a DUM quando a diferença cabe na margem de erro do exame no 1º trimestre (3 a 7 dias); o Manual de gestação de alto risco do Ministério da Saúde (2022) não fixa limiar. Os critérios divergem para diferenças de 5 a 7 dias (exatamente 5 dias antes de 9 semanas redatam pela FEBRASGO n. 63, mas não pelo ACOG nem pelo consenso; depois de 9 semanas, a FEBRASGO n. 63 redata a partir de 5 dias e o ACOG só acima de 7); a q26 usa uma diferença de ~9 dias, que leva a redatar por todos eles (revisor-obstetricia-avancado-v1, 2026-11-09; textos da FEBRASGO, do consenso CBR/FEBRASGO e do Ministério da Saúde lidos na íntegra por conferencia-fontes-v1, 2026-11-09)."
   ],
   "incertezas": [
     "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
     "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões.",
-    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md). — revisor-embriologia-avancado-v1 (2026-11-09): a busca não encontrou o texto oficial da FEBRASGO nem do Ministério da Saúde (Manual de Gestação de Alto Risco, 2022) com limiares de correção da DUM; o MSD Manual em português reproduz os limiares do ACOG. A q26 passou a nomear o ACOG CO 700 no enunciado, para que o gabarito não dependa dessa confirmação; a pendência continua para o revisor humano. — revisor-obstetricia-avancado-v1 (2026-11-09), achados por busca, sem acesso ao texto integral: (1) consenso CBR/FEBRASGO de ultrassonografia (ofício de 2020; PDF no site do CBR): trecho indica corrigir a DUM quando a discordância passa de 5 dias até a 9ª semana e é de 7 dias ou mais depois, ou seja, os limiares do ACOG; (2) protocolo FEBRASGO de ultrassonografia de 1º trimestre: trecho indica manter a DUM quando a diferença para o CCN é menor que 5 dias (número e ano do protocolo não confirmados); (3) Guia do Pré-natal e Puerpério na APS (SES-RS, 2024): desvio esperado de 3 a 7 dias no 1º trimestre, com a DUM mantida se a diferença couber nele; (4) guia institucional do Hospital Israelita Albert Einstein: segue o ACOG. Como uma diferença de 7 dias leva a redatar pelos critérios (1), (2) e (4), mas não pelo (3), o ciclo da q26 passou de 35 para 37 dias (diferença ~9 dias) e o enunciado deixou de depender do ACOG. Continua pendente conferir os textos da FEBRASGO e do consenso CBR/FEBRASGO."
+    "Datação nas questões avançadas q26 e q27 — conferência de fontes (conferencia-fontes-v1, 2026-11-09): lidos na íntegra o consenso CBR/FEBRASGO (2020: redefinir a idade gestacional se a discordância passar de 5 dias até a 9ª semana ou for de 7 dias ou mais entre a 9ª e a 14ª), o Protocolo FEBRASGO-Obstetrícia n. 63 (2021: redatar com diferença de 5 dias ou mais; na reprodução assistida, tempo desde a transferência + idade do embrião + 2 semanas) e o Manual de gestação de alto risco do Ministério da Saúde (2022, sem limiar numérico). Com a diferença de ~9 dias, a q26 tem gabarito (c) por todos os critérios lidos; a q27 (40 + 5 + 14 = 59 dias = 8 semanas e 3 dias) segue a regra da FEBRASGO n. 63. Fica pendente apenas o texto integral do ACOG CO 700, hospedado em journals.lww.com, fora da rede da sessão (a página da ACOG confirma que segue vigente, reafirmado em 2025): a tabela de limiares (> 5 dias até 8 semanas e 6 dias; > 7 dias de 9 semanas a 13 semanas e 6 dias) e a data provável do parto 261 dias após a transferência de blastocisto D5 (280 − 19) foram conferidas só em fontes secundárias. O Guia do Pré-natal da SES-RS (2024) não foi reaberto."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1155,6 +1167,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-01-q26 a emb-01-q30): 1 correção (0 críticas, 1 importante, 0 menores). Principal: q26 — com ciclo de 35 dias a diferença DUM × CCN era de 7 dias, o que leva a redatar pelo ACOG (> 5 dias antes de 9 semanas) e, segundo trechos obtidos por busca, pela FEBRASGO e pelo consenso CBR/FEBRASGO, mas cabe na margem de 3 a 7 dias usada por guias brasileiros de pré-natal na atenção primária (SES-RS 2024): o gabarito dependia do critério. O ciclo passou a 37 dias (ovulação ~23º dia; embrião com 33 dias após a fertilização = 6 semanas e 5 dias de IG; diferença ~9 dias), o que leva a redatar por todos os critérios; o enunciado deixou de depender do ACOG, a explicação cita o ACOG e os guias brasileiros e a refutação de (b) foi refeita; letra correta mantida (c). Conferidos sem erro: q27 (datação pela transferência: 19 + 40 = 59 dias = 8 semanas e 3 dias, como no ACOG CO 700), q28, q29 e q30. Nova nota de divergência sobre os critérios de redatação; incerteza da datação atualizada com o que foi achado."
+      },
+      {
+        "area": "conferencia-fontes",
+        "agente": "conferencia-fontes-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado",
+        "notas": "conferência de fontes primárias (bloco de obstetrícia, item datação pelo CCN): 0 correções de conteúdo; referências, nota de divergência e incerteza atualizadas. Lidos na íntegra: consenso CBR/FEBRASGO (ofício OF/CBR/0111/2020) — redefinir a idade gestacional se a discordância DUM × CCN passar de 5 dias até a 9ª semana ou for de 7 dias ou mais entre a 9ª e a 14ª; Protocolo FEBRASGO-Obstetrícia n. 63 (2021) — manter a DUM se a diferença for menor que 5 dias e redatar com 5 dias ou mais, sem faixas, e datar a reprodução assistida pela transferência + idade do embrião + 2 semanas; Manual de gestação de alto risco (MS, 2022) — sem limiar numérico. Contas refeitas: q26 (ciclo de 37 dias → ovulação ~23º dia; 56 − 23 = 33 dias após a fertilização = 47 dias = 6 semanas e 5 dias de IG; diferença de 9 dias → (c) pelo ACOG, pelo consenso CBR/FEBRASGO, pela FEBRASGO n. 63 e pelos guias de APS); q27 (40 + 5 + 14 = 59 dias = 8 semanas e 3 dias). ACOG CO 700 vigente (reafirmado em 2025), texto integral não aberto: a tabela de limiares do ACOG segue conferida só em fontes secundárias e fica como pendência residual. Acrescentadas 3 referências (consenso CBR/FEBRASGO, FEBRASGO n. 63, Manual de gestação de alto risco); campo referencia de q26 e q27 completado; notasDivergencia[4] e incertezas[2] reescritas. Gabaritos, letras, ids, enunciados e explicações inalterados."
       }
     ],
     "humano": null
