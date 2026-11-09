@@ -1256,7 +1256,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Saco vitelino secundário, na cavidade coriônica, fora do âmnio"
+          "texto": "Saco vitelino secundário, situado na cavidade coriônica, fora do âmnio"
         },
         {
           "id": "b",
@@ -1308,7 +1308,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "O blastocisto D5 tinha 5 dias após a fertilização na transferência; 9 dias depois, o concepto tem 14 dias após a fertilização, o fim da 2ª semana, o que corresponde a cerca de 4 semanas de idade gestacional (14 + 14 = 28 dias). Nessa fase ele já está totalmente inserido no endométrio (dias 10–12), tem disco bilaminar, cavidade amniótica, saco vitelino secundário e vilosidades primárias, e há hCG suficiente para teste positivo (b). (a) Esquece os 5 dias de vida do embrião antes da transferência; além disso, a adesão começa por volta do 6º–7º dia, não do 9º. (c) Subtrai as 2 semanas em vez de somá-las, e a linha primitiva, que inicia a formação do disco trilaminar, só aparece na 3ª semana. (d) Confunde idade gestacional com idade após a fertilização: 28 dias de idade gestacional equivalem a 14 dias após a fertilização.",
+      "explicacao": "O blastocisto D5 tinha 5 dias após a fertilização na transferência; 9 dias depois, o concepto tem 14 dias após a fertilização, o fim da 2ª semana, o que corresponde a cerca de 4 semanas de idade gestacional (14 + 14 = 28 dias). Nessa fase ele já está totalmente inserido no endométrio (dias 10–12), tem disco bilaminar, cavidade amniótica, saco vitelino secundário e vilosidades primárias, e há hCG suficiente para teste positivo (b). (a) Esquece os 5 dias de vida do embrião antes da transferência; além disso, a adesão começa por volta do 6º–7º dia, não do 9º. (c) Iguala a idade após a fertilização à idade gestacional, sem somar as 2 semanas; além disso, a linha primitiva, que inicia a formação do disco trilaminar, só aparece na 3ª semana. (d) Confunde idade gestacional com idade após a fertilização: 28 dias de idade gestacional equivalem a 14 dias após a fertilização.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1480,7 +1480,7 @@
     "Percentuais de evolução para neoplasia trofoblástica gestacional: as fontes divergem (mola completa ~15–20%; parcial de menos de 1% a ~5%, conforme a série). Não usados em questões; o conteúdo diz apenas “maior na completa”.",
     "Incidência global de gravidez ectópica (comumente citada em 1–2% das gestações) não foi usada nas questões.",
     "Questão q24 (ordem das cavidades): Sadler separa o celoma extraembrionário (dias 11–12) do saco vitelino secundário (dia 13); Moore diz que o saco secundário se forma “à medida que” o celoma se forma. Na revisão de obstetrícia/histologia (2026-11-09) o enunciado passou a pedir a ordem em que as cavidades “começam a se formar” e o item 1 a “primeiros espaços do celoma”, o que torna a sequência compatível com as duas descrições. Tabelas de estágios de Carnegie situam a transição saco primário → secundário entre os estágios 5c e 6 sem separar claramente os dois eventos; vale a conferência humana.",
-    "Questão avançada q30 (2026-11-09): a origem dispérmica das molas completas heterozigotas (46,XY ou 46,XX com dois alelos paternos diferentes) foi confirmada por SNP-array em série pequena (Usui et al., 2019: 12 de 13 casos); a origem por espermatozoide diploide não está excluída em casos isolados, por isso o enunciado pede o mecanismo que “explica melhor”. A ausência de molas 46,YY é descrita em revisões (presumida inviabilidade), sem referência primária conferida."
+    "Questão avançada q30 (2026-11-09): a origem dispérmica das molas completas heterozigotas (46,XY ou 46,XX com dois alelos paternos diferentes) foi confirmada por SNP-array em série pequena (Usui et al., 2019: 12 de 13 casos); a origem por espermatozoide diploide não está excluída em casos isolados, por isso o enunciado pede o mecanismo que “explica melhor”. A ausência de molas 46,YY é descrita em revisões (presumida inviabilidade), sem referência primária conferida. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) (resumo): Usui et al. 2019 encontraram zigosidade centromérica mista, compatível com dispermia, em 12 das 13 molas completas heterozigotas. A frase “46,YY não é observada” continua sem fonte primária conferida (pendência humana)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1499,6 +1499,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "8 correções (0 críticas, 1 importante, 7 menores) + pistas de comprimento removidas em 8 questões (q03, q06, q07, q09, q11, q13, q15, q16), sem mudar gabarito nem ids; principais: pendência da q24 tratada — enunciado pede a ordem em que as cavidades começam a se formar e o item 1 passou a “primeiros espaços do celoma”, compatível com Sadler e Moore (incerteza mantida, reduzida); placenta prévia com a terminologia atual (prévia × inserção baixa a <2 cm; total/parcial/marginal abandonados), migração placentária e risco de acretismo com cesárea prévia; ectópica com diagnóstico por β-hCG + USG TV, zona discriminatória com contexto (ACOG: até 3.500 mUI/mL, valor isolado não decide), gestação de localização desconhecida, heterotópica, metade sem fator de risco, DIU/laqueadura e cicatriz de cesárea; mola com aspiração a vácuo, hCG seriada, contracepção e p57; hCG com equivalência em idade gestacional; q10 cita a mola completa biparental familiar; q15 corrige o momento da ruptura intersticial."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-05-q30 a emb-05-q34): 2 correções (0 críticas, 1 importante, 1 menor). Principal: q32 a refutação de (c) dizia “subtrai as 2 semanas em vez de somá-las”, mas a alternativa iguala a idade após a fertilização à idade gestacional (não soma as 2 semanas); corrigida. Conta refeita: blastocisto D5 + 9 dias = 14 dias após a fertilização = 28 dias = 4 semanas de IG. q31 a correta era a alternativa mais curta (texto de a ampliado). Conferidos sem erro: q30 (46,XY sem alelos maternos e com dois alelos paternos = mola completa dispérmica; Usui 2019, 12/13), q33 (lacuna → sincício → citotrofoblasto → mesoderma somático → celoma → mesoderma esplâncnico → endoderma do saco), q34."
       }
     ],
     "humano": null

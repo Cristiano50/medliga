@@ -1360,7 +1360,7 @@
         },
         {
           "id": "c",
-          "texto": "Cerca de 44 a 48 dias após a fertilização (7ª semana), ou cerca de 9 semanas de idade gestacional"
+          "texto": "Cerca de 44 a 48 dias após a fertilização (7ª semana), ou cerca de 8 a 9 semanas de idade gestacional"
         },
         {
           "id": "d",
@@ -1535,6 +1535,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "10 correções (0 críticas, 0 importantes, 10 menores), todas de pistas involuntárias de comprimento: nas questões q01, q02, q06, q07, q08, q10, q11, q12, q16 e q17 a alternativa correta era 1,4 a 3,7 vezes mais longa que a média dos distratores; equilibrei comprimento e especificidade sem mudar gabarito, letras nem ids, mantendo cada distrator claramente errado. Conferidos sem erro: dobramento e posição do septo transverso, derivados por folheto, colinearidade dos genes HOX, SHH/BMP/FGF/WNT7a, embriopatia retinoica, janela da talidomida (mantida sem número neste tópico), conversão idade de fertilização × idade gestacional em q08, herniação umbilical fisiológica × onfalocele (inclusive a ressalva do fígado herniado) e datação pelo CCN até 13 semanas e 6 dias com erro de ±5 a 7 dias. As idades e os CCN da Tabela 5-1 de Moore seguem pendentes de conferência pelo revisor humano, como registrado na etapa 1."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q30–q34): 1 correção (0 críticas, 1 importante, 0 menores). (importante) q32: o distrator (c) convertia \"44 a 48 dias após a fertilização\" em \"cerca de 9 semanas de idade gestacional\", mas a conta dá 8 semanas e 2 dias a 8 semanas e 6 dias — corrigido para \"cerca de 8 a 9 semanas\"; o gabarito (b) não muda e o distrator continua claramente errado pelos achados morfológicos (estágio 18, com entalhes entre os raios digitais). Refeita a conta do gabarito: CCN de 9 mm com placas dos pés, pigmento retiniano, saliências auriculares e raios digitais sem entalhes = estágio 16 da Tabela 5-1 adotada no tópico (8 a 11 mm; 37 a 42 dias), que somados 14 dias dão 7 semanas e 2 dias a 8 semanas de idade gestacional — (b) correto e único; coerente com emb-07-q13 (estágio 16 na 6ª semana) e com o resumo. Conferidos sem erro: gastrosquise sem membrana, ao lado de cordão de inserção normal, com alfafetoproteína elevada, e a atribuição explícita do mecanismo a Moore com o debate registrado em notasDivergencia, na mesma redação de emb-15-digestorio (q30); zona de atividade polarizadora, SHH e eixo anteroposterior × FGF da crista ectodérmica apical, WNT7a e BMP interdigital (q31); septo transverso formando apenas o tendão central e hérnia diafragmática por falha de fusão da membrana pleuroperitoneal (q33); pares de q34. As idades e os CCN da Tabela 5-1 seguem pendentes de conferência humana, como já registrado nas incertezas."
       }
     ],
     "humano": null

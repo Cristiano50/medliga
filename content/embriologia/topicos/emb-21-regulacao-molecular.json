@@ -13,7 +13,7 @@
     "Reconhecer a apoptose, a epigenética/imprinting e os níveis de potência celular (totipotência, pluripotência, iPS).",
     "Correlacionar vias moleculares a malformações (holoprosencefalia, acondroplasia, craniossinostoses, aniridia, sinpolidactilia, heterotaxia)."
   ],
-  "resumo": "**Indução e competência.** No desenvolvimento, grupos de células comunicam-se continuamente. Na **indução**, um tecido (indutor) altera o destino de outro (respondedor); o respondedor só reage se for **competente**, isto é, se expressar os receptores e os fatores necessários. A vesícula óptica, por exemplo, induz o cristalino apenas no ectoderma competente. Muitas induções são **recíprocas** (broto ureteral ↔ blastema metanéfrico).\n\n**Centros sinalizadores.** Regiões especializadas organizam o padrão ao redor: o **nó primitivo** (organizador, homólogo ao de Spemann-Mangold), a **notocorda** (ventraliza o tubo neural), a **crista ectodérmica apical (AER)** e a **zona de atividade polarizadora (ZPA)** no broto do membro, e o **organizador ístmico** (istmo entre mesencéfalo e rombencéfalo, com FGF8 e WNT1). Eles secretam **morfógenos**: sinais que formam gradientes e, por diferentes **limiares**, especificam destinos distintos (o SHH da ZPA define a identidade dos dedos).\n\n**Sinalização parácrina — poucas famílias.** Quatro famílias respondem pela maior parte da sinalização entre células vizinhas:\n- **FGF**: ligam-se a **receptores tirosina quinase (FGFR)** e ativam a via RAS–MAPK.\n- **Hedgehog (SHH, IHH, DHH)**: o ligante liga-se ao receptor **Patched (PTCH1)**, que deixa de inibir **Smoothened (SMO)**; seguem-se os fatores de transcrição **GLI**. Em vertebrados, a transdução ocorre no **cílio primário**, e o **colesterol** modifica a molécula de SHH e é necessário à sua sinalização.\n- **WNT**: na via **canônica**, estabilizam a **β-catenina**, que ativa fatores **TCF/LEF**; há vias não canônicas (polaridade planar).\n- **Superfamília TGF-β** (inclui **BMP**, **Nodal** e activina): receptores **serina/treonina quinase** fosforilam **SMADs**. Antagonistas de BMP (noggin, cordina, folistatina) liberam destinos como o neural.\nA via **Notch-Delta** é **justácrina** (contato direto): a ligação libera o domínio intracelular **NICD**, que vai ao núcleo; medeia a **inibição lateral** (neurogênese, somitogênese). O **ácido retinoico** age por **receptores nucleares** (RAR/RXR).\n\n**Fatores de transcrição.** Os sinais convergem em fatores de transcrição que executam o programa. Os **genes HOX** (quatro agrupamentos, HOXA–HOXD) conferem identidade ao longo do eixo craniocaudal, em **colinearidade** (genes 3' expressos antes e mais cranialmente), regulados pelo ácido retinoico. Outras famílias: **PAX** (PAX6, gene mestre do olho; PAX3, crista neural e músculo), **SOX** (SOX9, cartilagem e testículo; SOX10, crista neural), **TBX** (TBX5, membro superior e coração; TBX4, membro inferior e pulmão; TBX1, aparelho faríngeo) e **T/Brachyury**, da notocorda e do mesoderma.\n\n**Lateralidade.** A assimetria esquerda-direita começa no **nó**: cílios móveis geram um fluxo de líquido para a esquerda, captado por cílios sensoriais; isso ativa **Nodal** no mesoderma lateral esquerdo, que induz **Lefty** (barreira na linha média) e **PITX2** (morfogênese assimétrica das vísceras).\n\n**Apoptose, epigenética e células-tronco.** A **apoptose** (morte celular programada) esculpe estruturas — separa os dedos (regiões interdigitais) e remodela o tubo neural. A **epigenética** (metilação do DNA, modificações de histonas) regula a expressão sem alterar a sequência; no **imprinting genômico**, a expressão depende da origem parental do alelo (Prader-Willi/Angelman). Quanto ao potencial: o zigoto e os primeiros blastômeros são **totipotentes** (formam embrião e anexos); a massa celular interna e as **células ES** são **pluripotentes** (três camadas, sem placenta); a crista neural é **multipotente**. Células adultas podem ser reprogramadas em **células-tronco pluripotentes induzidas (iPS)** por fatores de transcrição definidos.\n\n**Correlações.** Erros nessas vias causam malformações: **holoprosencefalia** (perda de SHH; a síntese deficiente de colesterol na síndrome de **Smith-Lemli-Opitz** prejudica SHH), **acondroplasia** e displasia tanatofórica (ganho de função de **FGFR3**), **craniossinostoses** sindrômicas (FGFR2 — Apert, Crouzon), **aniridia** (PAX6), **sinpolidactilia** (expansão em HOXD13), **heterotaxia** (cascata de lateralidade) e a **embriopatia por isotretinoína** (excesso de ácido retinoico sobre os genes HOX e a crista neural).",
+  "resumo": "**Indução e competência.** No desenvolvimento, grupos de células comunicam-se continuamente. Na **indução**, um tecido (indutor) altera o destino de outro (respondedor); o respondedor só reage se for **competente**, isto é, se expressar os receptores e os fatores necessários. A vesícula óptica, por exemplo, induz o cristalino apenas no ectoderma competente. Muitas induções são **recíprocas** (broto ureteral ↔ blastema metanéfrico).\n\n**Centros sinalizadores.** Regiões especializadas organizam o padrão ao redor: o **nó primitivo** (organizador, homólogo ao de Spemann-Mangold), a **notocorda** (ventraliza o tubo neural), a **crista ectodérmica apical (AER)** e a **zona de atividade polarizadora (ZPA)** no broto do membro, e o **organizador ístmico** (istmo entre mesencéfalo e rombencéfalo, com FGF8 e WNT1). Eles secretam **morfógenos**: sinais que formam gradientes e, por diferentes **limiares**, especificam destinos distintos (o SHH da ZPA define a identidade dos dedos).\n\n**Sinalização parácrina — poucas famílias.** Quatro famílias respondem pela maior parte da sinalização entre células vizinhas:\n- **FGF**: ligam-se a **receptores tirosina quinase (FGFR)** e ativam a via RAS–MAPK.\n- **Hedgehog (SHH, IHH, DHH)**: o ligante liga-se ao receptor **Patched (PTCH1)**, que deixa de inibir **Smoothened (SMO)**; seguem-se os fatores de transcrição **GLI**. Em vertebrados, a transdução ocorre no **cílio primário**, e o **colesterol** modifica a molécula de SHH e é necessário à sua sinalização.\n- **WNT**: na via **canônica**, estabilizam a **β-catenina**, que ativa fatores **TCF/LEF**; há vias não canônicas (polaridade planar).\n- **Superfamília TGF-β** (inclui **BMP**, **Nodal** e activina): receptores **serina/treonina quinase** fosforilam **SMADs**. Antagonistas de BMP (noggin, cordina, folistatina) liberam destinos como o neural.\nA via **Notch-Delta** é **justácrina** (contato direto): a ligação libera o domínio intracelular **NICD**, que vai ao núcleo; medeia a **inibição lateral** (neurogênese) e participa do relógio da segmentação (somitogênese). O **ácido retinoico** age por **receptores nucleares** (RAR/RXR).\n\n**Fatores de transcrição.** Os sinais convergem em fatores de transcrição que executam o programa. Os **genes HOX** (quatro agrupamentos, HOXA–HOXD) conferem identidade ao longo do eixo craniocaudal, em **colinearidade** (genes 3' expressos antes e mais cranialmente), regulados pelo ácido retinoico. Outras famílias: **PAX** (PAX6, gene mestre do olho; PAX3, crista neural e músculo), **SOX** (SOX9, cartilagem e testículo; SOX10, crista neural), **TBX** (TBX5, membro superior e coração; TBX4, membro inferior e pulmão; TBX1, aparelho faríngeo) e **T/Brachyury**, da notocorda e do mesoderma.\n\n**Lateralidade.** A assimetria esquerda-direita começa no **nó**: cílios móveis geram um fluxo de líquido para a esquerda, captado por cílios sensoriais; isso ativa **Nodal** no mesoderma lateral esquerdo, que induz **LEFTY** (LEFTY1 na linha média, como barreira; LEFTY2 no mesoderma lateral, limitando Nodal) e **PITX2** (morfogênese assimétrica das vísceras).\n\n**Apoptose, epigenética e células-tronco.** A **apoptose** (morte celular programada) esculpe estruturas — separa os dedos (regiões interdigitais) e remodela o tubo neural. A **epigenética** (metilação do DNA, modificações de histonas) regula a expressão sem alterar a sequência; no **imprinting genômico**, a expressão depende da origem parental do alelo (Prader-Willi/Angelman). Quanto ao potencial: o zigoto e os primeiros blastômeros são **totipotentes** (formam embrião e anexos); a massa celular interna e as **células ES** são **pluripotentes** (três camadas, sem placenta); a crista neural é **multipotente**. Células adultas podem ser reprogramadas em **células-tronco pluripotentes induzidas (iPS)** por fatores de transcrição definidos.\n\n**Correlações.** Erros nessas vias causam malformações: **holoprosencefalia** (perda de SHH; a síntese deficiente de colesterol na síndrome de **Smith-Lemli-Opitz** prejudica SHH), **acondroplasia** e displasia tanatofórica (ganho de função de **FGFR3**), **craniossinostoses** sindrômicas (FGFR2 — Apert, Crouzon), **aniridia** (PAX6), **sinpolidactilia** (expansão em HOXD13), **heterotaxia** (cascata de lateralidade) e a **embriopatia por isotretinoína** (excesso de ácido retinoico sobre os genes HOX e a crista neural).",
   "pontosChave": [
     "Na indução, um tecido altera o destino de outro competente; muitas induções são recíprocas.",
     "Centros sinalizadores (nó primitivo, notocorda, AER, ZPA, organizador ístmico) secretam morfógenos que agem por limiares de concentração.",
@@ -54,7 +54,7 @@
       ],
       "definicao": "Fronteira entre mesencéfalo e rombencéfalo que secreta FGF8 e WNT1 e padroniza o mesencéfalo e o cerebelo.",
       "origem": "Tubo neural, na junção mesencéfalo-rombencéfalo.",
-      "destino": "Teto do mesencéfalo e cerebelo."
+      "destino": "Centro sinalizador (não forma um órgão próprio); padroniza o teto do mesencéfalo e o cerebelo, que se forma do rombômero 1, adjacente."
     },
     {
       "id": "crista-ectodermica-apical",
@@ -274,7 +274,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: ligante (Delta/Jagged) e receptor (Notch) são ancorados às membranas de células adjacentes; o contato libera o domínio intracelular NICD, e a via medeia a inibição lateral. (b) descreve um morfógeno difusível, não Notch. (c) nenhum receptor de superfície liga-se diretamente ao DNA — o NICD é que vai ao núcleo com o fator CSL. (d) a via não usa AMPc como mensageiro central.",
+      "explicacao": "(a) Correta: ligante (Delta/Jagged) e receptor (Notch) são ancorados às membranas de células adjacentes; o contato libera o domínio intracelular NICD, e a via medeia a inibição lateral. (b) descreve um morfógeno difusível, não Notch. (c) descreve os receptores nucleares (como os do ácido retinoico); Notch é receptor transmembrana, e o NICD liberado vai ao núcleo com o fator CSL. (d) a via não usa AMPc como mensageiro central.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -351,7 +351,7 @@
         "genes-HOX",
         "cenario-experimental"
       ],
-      "referencia": "Sadler 14ª ed., cap. 1; Moore 11ª ed., cap. 21"
+      "referencia": "Sadler 14ª ed., caps. 1 e 6; Moore 11ª ed., cap. 21"
     },
     {
       "id": "emb-21-q07",
@@ -433,7 +433,7 @@
         },
         {
           "id": "b",
-          "texto": "o cristalino do olho"
+          "texto": "o cristalino e a retina neural do olho"
         },
         {
           "id": "c",
@@ -445,7 +445,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "(a) Correta: T/Brachyury é fator de transcrição necessário à notocorda e ao mesoderma posterior; sua falha trunca o eixo caudal. (b) o cristalino depende de PAX6 e da indução pela vesícula óptica. (c) a medula suprarrenal deriva da crista neural. (d) o esmalte é produzido por ameloblastos do ectoderma oral.",
+      "explicacao": "(a) Correta: T/Brachyury é fator de transcrição necessário à notocorda e ao mesoderma posterior; sua falha trunca o eixo caudal. (b) o cristalino e a retina dependem de PAX6 (vesícula óptica e indução do cristalino), não de T. (c) a medula suprarrenal deriva da crista neural. (d) o esmalte é produzido por ameloblastos do ectoderma oral.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
@@ -488,11 +488,12 @@
         "Nodal",
         "caso-clinico"
       ],
-      "referencia": "Sadler 14ª ed., cap. 1; Moore 11ª ed., cap. 21"
+      "referencia": "Sadler 14ª ed., cap. 5; Moore 11ª ed., cap. 21"
     },
     {
       "id": "emb-21-q11",
       "tipo": "multipla",
+      "contexto": "Lactente com microcefalia, hipotelorismo, fenda palatina e sindactilia do 2º e 3º artelhos; a ressonância mostra holoprosencefalia, e as dosagens revelam colesterol plasmático baixo e 7-desidrocolesterol elevado.",
       "enunciado": "Qual mecanismo liga essa condição à via SHH?",
       "alternativas": [
         {
@@ -648,14 +649,14 @@
         }
       ],
       "correta": "c",
-      "explicacao": "(c) Correta: a totipotência (zigoto e primeiros blastômeros) inclui os tecidos embrionários e os anexos. (a) a pluripotência (massa celular interna, células ES) forma as três camadas germinativas, mas não a placenta. (b) a multipotência limita-se a uma linhagem (p. ex., a crista neural). (d) a unipotência gera um único tipo celular.",
+      "explicacao": "(c) Correta: a totipotência (zigoto e primeiros blastômeros) inclui os tecidos embrionários e os anexos. (a) a pluripotência (massa celular interna, células ES) forma as três camadas germinativas, mas não a placenta. (b) a multipotência origina vários tipos celulares, mas não todos (p. ex., a crista neural). (d) a unipotência gera um único tipo celular.",
       "dificuldade": 2,
       "bloom": "lembrar",
       "tags": [
         "celulas-tronco",
         "potencia"
       ],
-      "referencia": "Sadler 14ª ed., cap. 1"
+      "referencia": "Sadler 14ª ed., cap. 1; Moore 11ª ed., cap. 21"
     },
     {
       "id": "emb-21-q16",
@@ -774,7 +775,7 @@
         "celulas-tronco",
         "potencia"
       ],
-      "referencia": "Sadler 14ª ed., cap. 1"
+      "referencia": "Sadler 14ª ed., cap. 1; Moore 11ª ed., cap. 21"
     },
     {
       "id": "emb-21-q23",
@@ -878,7 +879,7 @@
         "3",
         "4"
       ],
-      "explicacao": "O fluxo nodal para a esquerda (1) ativa Nodal no mesoderma lateral esquerdo (2); Nodal induz Lefty2 (barreira na linha média) e PITX2 (3); PITX2 comanda a assimetria das vísceras (4). A disfunção dessa cascata causa heterotaxia.",
+      "explicacao": "O fluxo nodal para a esquerda (1) ativa Nodal no mesoderma lateral esquerdo (2); Nodal induz Lefty2, que limita a própria sinalização de Nodal (a barreira na linha média é o Lefty1), e PITX2 (3); PITX2 comanda a assimetria das vísceras (4). A disfunção dessa cascata causa heterotaxia.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -886,7 +887,7 @@
         "Nodal",
         "PITX2"
       ],
-      "referencia": "Sadler 14ª ed., cap. 1; Moore 11ª ed., cap. 21"
+      "referencia": "Sadler 14ª ed., cap. 5; Moore 11ª ed., cap. 21"
     },
     {
       "id": "emb-21-q26",
@@ -1037,6 +1038,14 @@
       "capitulo": "1 — Introdução à regulação molecular e à sinalização"
     },
     {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "5 — Terceira semana (estabelecimento dos eixos; lateralidade)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "6 — Da terceira à oitava semana (genes HOX e padrão craniocaudal)"
+    },
+    {
       "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
       "capitulo": "21 — Vias de sinalização comuns usadas durante o desenvolvimento"
     },
@@ -1056,17 +1065,26 @@
   "notasDivergencia": [
     "Nomenclatura dos agrupamentos HOX (HOXA–HOXD) e colinearidade 3'→5' seguem Sadler cap. 1 e Moore cap. 21, como no tópico emb-07.",
     "A dependência da via Hedgehog em relação ao cílio primário está bem estabelecida em vertebrados (dados de camundongo); a extrapolação ao ser humano apoia-se nas ciliopatias humanas.",
-    "A cascata de lateralidade Nodal/Lefty/PITX2 e o papel dos cílios do nó foram demonstrados sobretudo em camundongo; no ser humano, a associação baseia-se na discinesia ciliar primária e na heterotaxia (ver tópico emb-06)."
+    "A cascata de lateralidade Nodal/Lefty/PITX2 e o papel dos cílios do nó foram demonstrados sobretudo em camundongo; no ser humano, a associação baseia-se na discinesia ciliar primária e na heterotaxia (ver tópico emb-06).",
+    "Fatores de iPS (incerteza do redator resolvida pelo revisor de embriologia, 2026-11-09): o conjunto clássico de Yamanaka (OCT4, SOX2, KLF4 e MYC) reprogramou fibroblastos de camundongo (Takahashi & Yamanaka, Cell 2006;126:663–676) e humanos (Takahashi et al., Cell 2007;131:861–872); outros protocolos usam combinações diferentes (p. ex., OCT4, SOX2, NANOG e LIN28; Yu et al., Science 2007). Por isso a q16 cita o conjunto apenas como exemplo ('p. ex.').",
+    "Experimentos clássicos citados nas questões vêm de modelos animais: enxerto de notocorda em embrião de galinha (q05); transformações homeóticas de vértebras por ácido retinoico em camundongo (q06; Kessel & Gruss, Cell 1991); olhos ectópicos por expressão dirigida de eyeless/Pax6 em Drosophila (q07; Halder, Callaerts & Gehring, Science 1995). A extrapolação ao ser humano apoia-se na conservação dos genes e em fenótipos humanos (aniridia, embriopatia retinoica)."
   ],
   "incertezas": [
-    "Os fatores exatos usados na reprogramação para iPS variam entre protocolos; citou-se o conjunto clássico de Yamanaka (OCT4, SOX2, KLF4, MYC) a título de exemplo.",
     "Prevalências de holoprosencefalia, acondroplasia, craniossinostoses e aniridia não foram conferidas nas edições adotadas e foram omitidas.",
     "A relação quantitativa entre o nível de BMP e o destino celular (epiderme/crista/placa neural) é apresentada de forma qualitativa."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
     "data": "2026-11-09",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "11 correções (0 críticas, 2 importantes, 9 menores); principais: (importante) q11 sem contexto — o enunciado citava 'essa condição' sem caso; acrescentada vinheta de Smith-Lemli-Opitz com holoprosencefalia (colesterol baixo, 7-desidrocolesterol alto); (importante) q25 dizia que Lefty2 é a barreira da linha média (é o Lefty1; o Lefty2, no mesoderma lateral esquerdo, limita Nodal), corrigido também no resumo; (menor) Notch na somitogênese como relógio da segmentação, não inibição lateral; multipotência na q15; pista de comprimento da q09; destino do organizador ístmico; referências de lateralidade (Sadler cap. 5) e HOX (Sadler cap. 6); incerteza dos fatores de iPS resolvida com Takahashi & Yamanaka 2006/2007 e nota sobre os experimentos clássicos em modelos animais. Gabaritos corretos; letras 4/4/4/4; sem pista de comprimento."
+      }
+    ],
     "humano": null
   }
 }

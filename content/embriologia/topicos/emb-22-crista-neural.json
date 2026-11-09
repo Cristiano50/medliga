@@ -1,0 +1,1177 @@
+{
+  "id": "emb-22-crista-neural",
+  "disciplina": "embriologia",
+  "ordem": 22,
+  "titulo": "Crista neural e neurocristopatias",
+  "subtitulo": "Indução, migração, derivados e doenças da 'quarta camada germinativa'",
+  "periodo": {
+    "diaInicio": 17,
+    "diaFim": 56,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Localizar a origem da crista neural e descrever sua indução (BMP intermediário, WNT, FGF) e seus especificadores.",
+    "Explicar a transição epitélio-mesênquima e as vias de migração no tronco (ventral e dorsolateral).",
+    "Distinguir as populações de crista (craniana, cardíaca, vagal, sacral, do tronco) e seus principais derivados.",
+    "Listar os derivados da crista neural, separando-os dos de outras camadas (p. ex., córtex × medula suprarrenal).",
+    "Reconhecer a divergência sobre a origem das células C da tireoide (crista neural × endoderma).",
+    "Relacionar as neurocristopatias (Hirschsprung, 22q11.2, Treacher Collins, Waardenburg, CHARGE, neuroblastoma, feocromocitoma, NF1) aos derivados e genes correspondentes."
+  ],
+  "resumo": "**O que é a crista neural.** A **crista neural** é uma população de células que surge na **borda das pregas neurais**, entre a placa neural e o ectoderma de superfície. Pela diversidade de seus derivados — neurônios, glia, pigmento, esqueleto e músculo liso —, é por vezes chamada de 'quarta camada germinativa'. Sua indução depende de um **nível intermediário de BMP** (entre a inibição total, que dá placa neural, e o nível alto, que dá epiderme), com **WNT** e **FGF**; seguem-se os especificadores da borda (**PAX3**, **ZIC1**) e, depois, os especificadores da crista (**SNAIL2/SLUG**, **FOXD3**, **SOX9**, **SOX10**).\n\n**Delaminação e migração.** Para deixar o tubo neural, as células sofrem **transição epitélio-mesênquima**, com queda das **caderinas** e perda de adesão, e passam a migrar. No tronco há **duas vias**: a **ventral**, que atravessa apenas a metade **anterior (rostral)** de cada esclerótomo (a metade posterior as repele por efrinas) e forma gânglios e medula suprarrenal — daí a disposição **segmentar** dos gânglios; e a **dorsolateral** (mais tardia), sob o ectoderma, que forma **melanócitos**.\n\n**Populações por nível do eixo.** A crista **craniana (cefálica)** forma o **ectomesênquima** da face; a **cardíaca** (um subgrupo cefálico) forma o **septo aorticopulmonar**; a **vagal** e a **sacral** colonizam o intestino e formam o **sistema nervoso entérico** (a vagal é a principal fonte); a do **tronco** forma gânglios sensitivos e simpáticos, medula suprarrenal, células de Schwann e melanócitos.\n\n**Derivados.** Resumidamente: neurônios dos **gânglios sensitivos** (raiz dorsal; parte dos gânglios dos nervos cranianos, com os placoides) e **autônomos** (simpáticos, parassimpáticos e **entéricos**); **células de Schwann** e satélites; **melanócitos**; **células cromafins** da medula suprarrenal; **ectomesênquima craniofacial** (ossos membranosos e grande parte das cartilagens dos arcos — as da laringe vêm sobretudo do mesoderma da placa lateral —, **odontoblastos/dentina**, derme da face); **estroma e endotélio da córnea**; **leptomeninges** rostrais (pia-máter e aracnoide); e o **septo aorticopulmonar** (crista cardíaca).\n\n**Células C da tireoide — uma divergência honesta.** Classicamente, as **células C (parafoliculares)**, produtoras de calcitonina, são atribuídas à crista neural, que povoaria o **corpo ultimofaríngeo** incorporado à tireoide. Estudos de linhagem em **camundongo** (marcação do endoderma por Sox17 × da crista por Wnt1-Cre) indicam, porém, origem **endodérmica** nessa espécie. Os dados humanos são indiretos; por isso, aqui, a divergência é apresentada e **não se afirma** a camada germinativa de origem no ser humano.\n\n**Neurocristopatias.** Doenças que atingem derivados da crista neural:\n- **Doença de Hirschsprung**: falha da colonização do intestino distal pela crista (vagal/sacral); gene principal **RET** (perda de função), além de **EDNRB/EDN3** e **SOX10**.\n- **Deleção 22q11.2 (DiGeorge/velocardiofacial)**: contribuição deficiente da **crista cardíaca** e das 3ª/4ª bolsas; **TBX1**; cardiopatia conotruncal, hipoplasia de timo e paratireoides.\n- **Treacher Collins**: deficiência de crista dos 1º/2º arcos por **estresse ribossômico** (**TCOF1**), com apoptose do neuroepitélio.\n- **Waardenburg**: surdez e distúrbios pigmentares (**PAX3**, **MITF**, **SOX10**); o tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.\n- **CHARGE**: coloboma, atresia de coanas, cardiopatia e anomalias de orelha; gene **CHD7**.\n- **Tumores**: **neuroblastoma** (crista simpática), **feocromocitoma/paraganglioma** (células cromafins) e, na **neurofibromatose tipo 1** (**NF1**), neurofibromas (células de Schwann) e manchas café com leite (melanócitos).",
+  "pontosChave": [
+    "A crista neural surge na borda das pregas neurais e dá origem a neurônios, glia, melanócitos, medula suprarrenal, ectomesênquima da face e septo aorticopulmonar.",
+    "Sua indução requer nível intermediário de BMP, com WNT e FGF; especificadores: PAX3/ZIC1 e depois SNAIL2, FOXD3, SOX9, SOX10.",
+    "A migração exige transição epitélio-mesênquima, com redução de caderinas.",
+    "No tronco, a via ventral (metade rostral do esclerótomo) forma gânglios e medula suprarrenal (disposição segmentar); a dorsolateral forma melanócitos.",
+    "Populações: craniana (face), cardíaca (septo aorticopulmonar), vagal/sacral (sistema nervoso entérico) e do tronco (gânglios, melanócitos, cromafins).",
+    "Células de Schwann, melanócitos, cromafins e odontoblastos são derivados da crista; o córtex suprarrenal, não (é mesodérmico).",
+    "A crista craniana forma ossos e cartilagens da face, dentina, estroma/endotélio da córnea e leptomeninges rostrais.",
+    "Células C: atribuídas classicamente à crista neural; estudos de linhagem em camundongo (Johansson 2015) indicam origem endodérmica, e a camada de origem no ser humano permanece em discussão.",
+    "Hirschsprung: falha de colonização entérica pela crista; gene RET (perda de função), além de EDNRB/EDN3/SOX10.",
+    "22q11.2 (TBX1) afeta a crista cardíaca; Treacher Collins (TCOF1) afeta a crista dos 1º/2º arcos por estresse ribossômico.",
+    "Waardenburg (PAX3/MITF/SOX10), CHARGE (CHD7), neuroblastoma, feocromocitoma e NF1 são neurocristopatias."
+  ],
+  "estruturas": [
+    {
+      "id": "crista-neural",
+      "nome": "Crista neural",
+      "sinonimos": [],
+      "definicao": "População de células da borda das pregas neurais que sofre transição epitélio-mesênquima e migra, originando derivados neurais, pigmentares, endócrinos e ectomesenquimais.",
+      "origem": "Borda da placa neural / pregas neurais (ectoderma).",
+      "destino": "Gânglios, glia, melanócitos, medula suprarrenal, ectomesênquima da face e septo aorticopulmonar."
+    },
+    {
+      "id": "borda-da-placa-neural",
+      "nome": "Borda da placa neural",
+      "sinonimos": [],
+      "definicao": "Faixa de transição entre a placa neural e o ectoderma de superfície, onde níveis intermediários de BMP (com WNT/FGF) especificam a crista neural.",
+      "origem": "Ectoderma dorsal.",
+      "destino": "Crista neural e parte do ectoderma."
+    },
+    {
+      "id": "crista-neural-craniana",
+      "nome": "Crista neural craniana (cefálica)",
+      "sinonimos": [],
+      "definicao": "Crista dos níveis do prosencéfalo ao rombencéfalo que forma o ectomesênquima craniofacial.",
+      "origem": "Pregas neurais cefálicas.",
+      "destino": "Ossos e cartilagens da face, dentina, estroma da córnea, leptomeninges rostrais e gânglios cranianos."
+    },
+    {
+      "id": "crista-neural-cardiaca",
+      "nome": "Crista neural cardíaca",
+      "sinonimos": [],
+      "definicao": "Subpopulação cefálica (rombencéfalo, arcos 3, 4 e 6) que migra ao trato de saída do coração.",
+      "origem": "Rombencéfalo caudal (do nível do placoide ótico ao do 3º somito).",
+      "destino": "Septo aorticopulmonar e músculo liso das grandes artérias."
+    },
+    {
+      "id": "crista-neural-vagal",
+      "nome": "Crista neural vagal",
+      "sinonimos": [],
+      "definicao": "Crista do tubo neural ao nível dos somitos 1–7 (região occipital e cervical alta), principal fonte do sistema nervoso entérico.",
+      "origem": "Tubo neural ao nível dos somitos 1–7 (as células vêm do tubo neural, não dos somitos).",
+      "destino": "Plexos mioentérico e submucoso (colonização craniocaudal do intestino)."
+    },
+    {
+      "id": "crista-neural-do-tronco",
+      "nome": "Crista neural do tronco",
+      "sinonimos": [],
+      "definicao": "Crista dos níveis do tronco, com migração ventral e dorsolateral.",
+      "origem": "Pregas neurais do tronco.",
+      "destino": "Gânglios da raiz dorsal, cadeia simpática, medula suprarrenal, células de Schwann e melanócitos."
+    },
+    {
+      "id": "ectomesenquima",
+      "nome": "Ectomesênquima",
+      "sinonimos": [
+        "mesênquima da crista neural"
+      ],
+      "definicao": "Mesênquima derivado da crista neural (e não do mesoderma) que forma esqueleto e conjuntivo da face.",
+      "origem": "Crista neural craniana.",
+      "destino": "Ossos membranosos da face, grande parte das cartilagens dos arcos (as da laringe vêm sobretudo do mesoderma da placa lateral), derme da face e odontoblastos."
+    },
+    {
+      "id": "septo-aorticopulmonar",
+      "nome": "Septo aorticopulmonar",
+      "sinonimos": [
+        "septo troncoconal"
+      ],
+      "definicao": "Septo espiral que separa a aorta do tronco pulmonar, formado com participação da crista neural cardíaca.",
+      "origem": "Cristas troncoconais (crista neural cardíaca).",
+      "destino": "Separação dos grandes vasos; sua falha causa defeitos conotruncais."
+    },
+    {
+      "id": "corpo-ultimofaringeo",
+      "nome": "Corpo ultimofaríngeo",
+      "sinonimos": [],
+      "definicao": "Derivado da 4ª bolsa faríngea que se incorpora à tireoide e dá origem às células C (origem clássica na crista neural; ver divergência).",
+      "origem": "4ª bolsa faríngea (endoderma), povoada classicamente por crista neural.",
+      "destino": "Células C (parafoliculares) da tireoide."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e22-inducao-borda",
+      "descricao": "Indução da crista na borda da placa neural (BMP intermediário, WNT)",
+      "ordem": 1
+    },
+    {
+      "id": "e22-especificacao",
+      "descricao": "Especificação da crista (SNAIL2, FOXD3, SOX10)",
+      "ordem": 2
+    },
+    {
+      "id": "e22-tem-delaminacao",
+      "descricao": "Transição epitélio-mesênquima e delaminação do tubo neural",
+      "ordem": 3
+    },
+    {
+      "id": "e22-migracao",
+      "descricao": "Migração pelas vias ventral e dorsolateral",
+      "ordem": 4
+    },
+    {
+      "id": "e22-diferenciacao",
+      "descricao": "Diferenciação nos derivados (neurônios, glia, melanócitos, cromafins, ectomesênquima)",
+      "ordem": 5
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "doenca-hirschsprung-crista",
+      "titulo": "Doença de Hirschsprung (neurocristopatia)",
+      "descricao": "Aganglionose de um segmento distal que sempre inclui o reto; atraso de mecônio, distensão e constipação grave, com risco de enterocolite. Associa-se à síndrome de Down e à Waardenburg-Shah.",
+      "mecanismo": "Falha da colonização craniocaudal do intestino pelos precursores entéricos da crista neural (vagal e sacral); gene RET (perda de função), além de EDNRB, EDN3 e SOX10."
+    },
+    {
+      "id": "delecao-22q11-crista-cardiaca",
+      "titulo": "Deleção 22q11.2 e a crista cardíaca",
+      "descricao": "Cardiopatia conotruncal (tronco arterial comum, tetralogia de Fallot, interrupção do arco aórtico), hipoplasia de timo e paratireoides, fenda palatina e dismorfismo facial.",
+      "mecanismo": "Contribuição deficiente da crista neural cardíaca ao septo aorticopulmonar e das 3ª/4ª bolsas faríngeas; gene TBX1."
+    },
+    {
+      "id": "treacher-collins-ribossomo",
+      "titulo": "Síndrome de Treacher Collins",
+      "descricao": "Hipoplasia malar e mandibular, fissuras palpebrais oblíquas para baixo, colobomas das pálpebras inferiores e anomalias de orelha, com inteligência normal; herança autossômica dominante na maioria dos casos (TCOF1; mais raramente outros genes da biogênese ribossômica, como POLR1D e POLR1C).",
+      "mecanismo": "Deficiência de crista neural dos 1º e 2º arcos por falha da biogênese ribossômica (proteína treacle), com estabilização de p53 e apoptose do neuroepitélio."
+    },
+    {
+      "id": "waardenburg-crista",
+      "titulo": "Síndrome de Waardenburg",
+      "descricao": "Surdez neurossensorial e distúrbios pigmentares (mecha branca, heterocromia de íris; distopia dos cantos no tipo 1). O tipo 4 (Waardenburg-Shah) associa-se à doença de Hirschsprung.",
+      "mecanismo": "Deficiência de derivados da crista neural, sobretudo melanócitos (e neurônios entéricos no tipo 4); genes PAX3 (tipos 1 e 3), MITF (tipo 2) e SOX10/EDNRB/EDN3 (tipo 4)."
+    },
+    {
+      "id": "charge-chd7",
+      "titulo": "Síndrome CHARGE",
+      "descricao": "Coloboma, cardiopatia, atresia de coanas, restrição de crescimento/desenvolvimento, anomalias genitais e de orelha (incluindo hipoplasia dos canais semicirculares).",
+      "mecanismo": "Mutações em CHD7, que afeta a crista neural e os placoides ectodérmicos; sobrepõe-se em parte ao fenótipo da deleção 22q11.2."
+    },
+    {
+      "id": "neuroblastoma",
+      "titulo": "Neuroblastoma",
+      "descricao": "Tumor sólido extracraniano mais comum da primeira infância, de gânglios simpáticos ou medula suprarrenal; massa que cruza a linha média, produção de catecolaminas e, às vezes, síndrome de opsoclonia-mioclonia. A amplificação de MYCN indica pior prognóstico.",
+      "mecanismo": "Proliferação maligna de neuroblastos simpáticos da crista neural."
+    },
+    {
+      "id": "feocromocitoma",
+      "titulo": "Feocromocitoma e paraganglioma",
+      "descricao": "Tumor de células cromafins com hipertensão, cefaleia, palpitações e sudorese (excesso de catecolaminas). Associa-se a NEM 2 (RET), von Hippel-Lindau, NF1 e paragangliomas por mutações de SDHx.",
+      "mecanismo": "Tumor das células cromafins (medula suprarrenal e paragânglios), derivadas da crista neural."
+    },
+    {
+      "id": "neurofibromatose-nf1",
+      "titulo": "Neurofibromatose tipo 1 (NF1)",
+      "descricao": "Manchas café com leite, neurofibromas, nódulos de Lisch, efélides axilares/inguinais e risco de glioma óptico; herança autossômica dominante.",
+      "mecanismo": "Perda da neurofibromina (supressor tumoral da via RAS) em derivados da crista neural — células de Schwann (neurofibromas) e melanócitos (manchas)."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-22-q01",
+      "tipo": "multipla",
+      "enunciado": "As células da crista neural originam-se:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "na borda entre a placa neural e o ectoderma de superfície"
+        },
+        {
+          "id": "b",
+          "texto": "no assoalho do tubo neural, imediatamente acima da notocorda"
+        },
+        {
+          "id": "c",
+          "texto": "no mesoderma paraxial, que forma os somitos"
+        },
+        {
+          "id": "d",
+          "texto": "no endoderma do intestino faríngeo primitivo"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "(a) Correta: a crista neural surge na borda das pregas neurais, entre a placa neural e o ectoderma de superfície, e destaca-se durante e após o fechamento do tubo. (b) o assoalho do tubo (placa do assoalho) é induzido por SHH da notocorda, mas não origina a crista. (c) o mesoderma paraxial forma os somitos (esclerótomo, miótomo, dermátomo). (d) o endoderma faríngeo forma bolsas e seus derivados (timo, paratireoides).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural",
+        "origem"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q02",
+      "tipo": "multipla",
+      "enunciado": "A indução da borda neural, de onde surge a crista, depende de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "inibição total de BMP, como no centro da placa neural"
+        },
+        {
+          "id": "b",
+          "texto": "nível intermediário de BMP, somado a WNT e FGF"
+        },
+        {
+          "id": "c",
+          "texto": "nível alto de BMP, como no ectoderma de superfície"
+        },
+        {
+          "id": "d",
+          "texto": "SHH da notocorda, que ventraliza o tubo neural"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "(b) Correta: a crista forma-se onde o BMP está em nível intermediário (nem a inibição total, que dá placa neural, nem o nível alto, que dá epiderme), com contribuição de WNT e FGF. (a) a inibição total de BMP especifica a placa neural, não a borda. (c) o nível alto de BMP especifica a epiderme (ectoderma de superfície). (d) o SHH da notocorda ventraliza o tubo neural (placa do assoalho, neurônios motores); a crista surge na borda dorsal, onde predominam BMP e WNT.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "inducao",
+        "BMP"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q03",
+      "tipo": "multipla",
+      "enunciado": "Para deixar o tubo neural e migrar, as células da crista neural precisam:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "reforçar as junções aderentes e permanecer epiteliais"
+        },
+        {
+          "id": "b",
+          "texto": "fundir-se em um sincício multinucleado, como o do trofoblasto placentário"
+        },
+        {
+          "id": "c",
+          "texto": "sofrer transição epitélio-mesênquima, com redução de caderinas"
+        },
+        {
+          "id": "d",
+          "texto": "entrar em apoptose, como no espaço interdigital"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "(c) Correta: a delaminação exige transição epitélio-mesênquima (TEM), com queda de caderinas e perda de adesão, permitindo a migração. (a) é o oposto — manter o estado epitelial impediria a saída. (b) a crista não forma sincício. (d) a apoptose elimina células; não é o mecanismo de migração.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "transicao-epitelio-mesenquima",
+        "migracao"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q04",
+      "tipo": "multipla",
+      "contexto": "Em embriões de ave, marcadores mostram que as células da crista do tronco, na via ventral, atravessam apenas a metade anterior (rostral) de cada esclerótomo; a metade posterior as repele por efrinas.",
+      "enunciado": "A consequência dessa migração segmentar é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "a formação dos melanócitos na camada basal da epiderme"
+        },
+        {
+          "id": "b",
+          "texto": "a ausência completa de gânglios sensitivos no tronco"
+        },
+        {
+          "id": "c",
+          "texto": "a formação do septo aorticopulmonar do coração"
+        },
+        {
+          "id": "d",
+          "texto": "a disposição segmentar dos gânglios da raiz dorsal"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "(d) Correta: como a crista só cruza a metade rostral de cada esclerótomo, os gânglios da raiz dorsal e os gânglios simpáticos ficam dispostos metamericamente, acompanhando os somitos. (a) os melanócitos vêm da via dorsolateral, não da ventral. (b) a via ventral justamente forma os gânglios sensitivos. (c) o septo aorticopulmonar é obra da crista cardíaca, de nível cefálico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "crista-neural",
+        "migracao",
+        "ganglios",
+        "cenario-experimental"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q05",
+      "tipo": "multipla",
+      "enunciado": "As células da crista do tronco que seguem a via dorsolateral, sob o ectoderma, originam principalmente:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "melanócitos"
+        },
+        {
+          "id": "b",
+          "texto": "neurônios motores somáticos"
+        },
+        {
+          "id": "c",
+          "texto": "condrócitos das vértebras"
+        },
+        {
+          "id": "d",
+          "texto": "hepatócitos"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "(a) Correta: a via dorsolateral (tardia) conduz precursores que se tornam melanócitos da pele. (b) os neurônios motores derivam da placa basal do tubo neural, não da crista. (c) os condrócitos vertebrais vêm do esclerótomo (mesoderma paraxial). (d) os hepatócitos derivam do endoderma (divertículo hepático).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "melanocitos",
+        "vias-de-migracao"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q06",
+      "tipo": "multipla",
+      "enunciado": "No desenvolvimento do dente, as células da crista neural (papila dentária) originam:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "os ameloblastos, que produzem o esmalte"
+        },
+        {
+          "id": "b",
+          "texto": "os odontoblastos, que produzem a dentina"
+        },
+        {
+          "id": "c",
+          "texto": "o esmalte diretamente, sem células intermediárias"
+        },
+        {
+          "id": "d",
+          "texto": "o epitélio da gengiva"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "(b) Correta: os odontoblastos diferenciam-se da papila dentária, mesênquima de crista neural, e produzem a dentina (persistem após a erupção). (a) os ameloblastos vêm do órgão do esmalte (ectoderma oral) e produzem o esmalte. (c) o esmalte precisa dos ameloblastos. (d) o epitélio gengival é ectodérmico, não derivado da papila.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural",
+        "odontoblastos",
+        "dentina"
+      ],
+      "referencia": "Moore 11ª ed., cap. 19; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q07",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com tronco arterial comum e deleção 22q11.2 confirmada.",
+      "enunciado": "A população de crista neural envolvida e sua contribuição são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "crista do tronco, que forma os gânglios sensitivos da raiz dorsal"
+        },
+        {
+          "id": "b",
+          "texto": "crista sacral, que forma o plexo entérico da porção distal"
+        },
+        {
+          "id": "c",
+          "texto": "crista neural cardíaca, que forma o septo aorticopulmonar"
+        },
+        {
+          "id": "d",
+          "texto": "crista do tronco, que forma os melanócitos da pele"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "(c) Correta: a crista neural cardíaca migra pelos arcos 3, 4 e 6 e forma o septo aorticopulmonar; sua deficiência (como na deleção 22q11.2, com TBX1) causa defeitos conotruncais, entre eles o tronco arterial comum. (a) e (d) a crista do tronco forma gânglios sensitivos e melanócitos, não o trato de saída. (b) a crista sacral contribui para o plexo entérico distal, sem relação com o coração.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "crista-neural-cardiaca",
+        "septo-aorticopulmonar",
+        "22q11",
+        "caso-clinico"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-22-q08",
+      "tipo": "multipla",
+      "contexto": "RN a termo sem eliminação de mecônio em 48 h, com distensão abdominal; biópsia retal por sucção sem células ganglionares e com troncos nervosos hipertróficos.",
+      "enunciado": "A base de crista neural e o principal gene associados são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "recanalização incompleta do reto, sem relação com a crista neural"
+        },
+        {
+          "id": "b",
+          "texto": "proliferação excessiva de melanócitos na mucosa, por mutação de PAX6"
+        },
+        {
+          "id": "c",
+          "texto": "falha do fechamento do neuroporo caudal, por mutação de SHH"
+        },
+        {
+          "id": "d",
+          "texto": "falha da colonização do intestino pela crista vagal/sacral; gene RET"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "(d) Correta: na doença de Hirschsprung, os precursores entéricos derivados da crista neural (sobretudo vagal) não colonizam o segmento distal; o gene RET (perda de função) é a principal causa, ao contrário do ganho de função de RET das neoplasias endócrinas múltiplas (NEM 2). (a) a recanalização não explica aganglionose. (b) não há excesso de melanócitos; PAX6 é do olho. (c) o defeito não é do tubo neural.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "doenca-hirschsprung",
+        "crista-neural",
+        "RET",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+    },
+    {
+      "id": "emb-22-q09",
+      "tipo": "multipla",
+      "contexto": "Criança com hipoplasia malar e mandibular, fissuras palpebrais oblíquas para baixo, colobomas das pálpebras inferiores e orelhas malformadas; mãe com traços semelhantes mais leves; inteligência normal.",
+      "enunciado": "O mecanismo de crista neural mais provável é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "deficiência de crista dos 1º/2º arcos por estresse ribossômico (TCOF1)"
+        },
+        {
+          "id": "b",
+          "texto": "excesso de crista neural cardíaca migrando ao trato de saída do coração"
+        },
+        {
+          "id": "c",
+          "texto": "aganglionose do colo distal por falha da crista neural vagal e sacral"
+        },
+        {
+          "id": "d",
+          "texto": "ausência de melanócitos na estria vascular da cóclea, com surdez isolada"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "(a) Correta: na síndrome de Treacher Collins, variantes em TCOF1 reduzem a biogênese de ribossomos, estabilizam p53 e levam à apoptose do neuroepitélio, com déficit de crista neural para os 1º e 2º arcos — daí a hipoplasia malar/mandibular, os colobomas palpebrais e as anomalias de orelha, com inteligência normal e herança autossômica dominante. (b) o excesso de crista cardíaca não gera esse quadro facial. (c) a aganglionose é a doença de Hirschsprung. (d) a falta de melanócitos cocleares isolada não explica a face.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "treacher-collins",
+        "crista-neural",
+        "ribossomo",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q10",
+      "tipo": "multipla",
+      "contexto": "Criança com surdez neurossensorial congênita, mecha branca de cabelo (poliose), heterocromia da íris e aganglionose do colo (doença de Hirschsprung).",
+      "enunciado": "Qual mecanismo unifica os achados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "falha do fechamento do tubo neural na 4ª semana, com defeito na região caudal"
+        },
+        {
+          "id": "b",
+          "texto": "deficiência de melanócitos e de neurônios entéricos (SOX10/EDNRB/EDN3)"
+        },
+        {
+          "id": "c",
+          "texto": "trissomia do cromossomo 21, com aganglionose associada"
+        },
+        {
+          "id": "d",
+          "texto": "deficiência materna de ácido fólico no período periconcepcional"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "(b) Correta: a síndrome de Waardenburg tipo 4 (Waardenburg-Shah) combina distúrbios pigmentares e surdez (melanócitos) com doença de Hirschsprung (neurônios entéricos), ambos derivados da crista neural, por mutações em SOX10, EDNRB ou EDN3. (a) os achados não são de defeito do tubo neural. (c) embora o Hirschsprung se associe à trissomia 21, esta não explica a poliose e a heterocromia. (d) o folato previne defeitos do tubo neural, não neurocristopatias.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "waardenburg",
+        "crista-neural",
+        "SOX10",
+        "caso-clinico"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q11",
+      "tipo": "multipla",
+      "contexto": "RN com coloboma de íris e retina, atresia de coanas, cardiopatia, orelhas displásicas e hipoplasia dos canais semicirculares.",
+      "enunciado": "A condição e o gene mais prováveis são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "síndrome de Treacher Collins, por TCOF1"
+        },
+        {
+          "id": "b",
+          "texto": "síndrome de Waardenburg, por PAX3"
+        },
+        {
+          "id": "c",
+          "texto": "síndrome CHARGE, por mutação em CHD7"
+        },
+        {
+          "id": "d",
+          "texto": "síndrome da deleção 22q11.2, por TBX1"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "(c) Correta: a síndrome CHARGE (Coloboma, Heart [coração], Atresia de coanas, Retardo do crescimento/desenvolvimento, Genital, Ear [orelha]) deve-se, na maioria, a mutações em CHD7, que afeta a crista neural e os placoides; a hipoplasia dos canais semicirculares é característica. (a) Treacher Collins (TCOF1) tem coloboma da pálpebra inferior, não de íris e retina, e não explica a cardiopatia nem a hipoplasia dos canais semicirculares. (b) Waardenburg (PAX3) dá surdez e pigmentação. (d) a deleção 22q11.2 pode sobrepor-se ao fenótipo, mas o conjunto com coloboma e atresia de coanas aponta CHD7.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "charge",
+        "CHD7",
+        "crista-neural",
+        "caso-clinico"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q12",
+      "tipo": "multipla",
+      "contexto": "Lactente com massa abdominal que cruza a linha média, nódulos subcutâneos azulados, metabólitos urinários das catecolaminas (HVA/VMA) elevados e, por vezes, movimentos oculares caóticos (opsoclonia-mioclonia).",
+      "enunciado": "A origem embrionária do tumor é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "o córtex da glândula suprarrenal, que é de origem mesodérmica"
+        },
+        {
+          "id": "b",
+          "texto": "o mesoderma intermediário, que origina o rim definitivo (metanefro)"
+        },
+        {
+          "id": "c",
+          "texto": "o endoderma do tubo intestinal primitivo"
+        },
+        {
+          "id": "d",
+          "texto": "a crista neural simpática (gânglios simpáticos/suprarrenal)"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "(d) Correta: o neuroblastoma origina-se de neuroblastos simpáticos da crista neural (gânglios simpáticos ou medula suprarrenal), produz catecolaminas e é o tumor sólido extracraniano mais comum da primeira infância. (a) o córtex suprarrenal é mesodérmico (origem de tumores adrenocorticais). (b) o mesoderma intermediário forma o rim (tumor de Wilms). (c) o endoderma não origina esse tumor.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "neuroblastoma",
+        "crista-neural",
+        "caso-clinico"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14; Moore 11ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q13",
+      "tipo": "multipla",
+      "contexto": "Adulto jovem com crises de hipertensão, cefaleia pulsátil, palpitações e sudorese; metanefrinas plasmáticas elevadas e massa na medula da suprarrenal.",
+      "enunciado": "A célula de origem do tumor deriva de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "crista neural (células cromafins)"
+        },
+        {
+          "id": "b",
+          "texto": "córtex da suprarrenal (mesoderma)"
+        },
+        {
+          "id": "c",
+          "texto": "crista neural cardíaca"
+        },
+        {
+          "id": "d",
+          "texto": "endoderma do intestino anterior"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "(a) Correta: o feocromocitoma origina-se das células cromafins da medula suprarrenal, derivadas da crista neural; produz catecolaminas e associa-se a NEM 2 (RET), von Hippel-Lindau, NF1 e paragangliomas por SDHx. (b) o córtex suprarrenal é mesodérmico. (c) a crista cardíaca forma o septo do trato de saída, não células cromafins abdominais. (d) o endoderma do intestino anterior origina epitélios (p. ex., timo, paratireoides, fígado), não células cromafins.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "feocromocitoma",
+        "celulas-cromafins",
+        "crista-neural",
+        "caso-clinico"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14; Moore 11ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q14",
+      "tipo": "multipla",
+      "enunciado": "A neurofibromatose tipo 1 (neurofibromas, manchas café com leite, nódulos de Lisch) envolve derivados da crista neural porque:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "os neurofibromas vêm do endoderma e as manchas café com leite, de hemácias extravasadas"
+        },
+        {
+          "id": "b",
+          "texto": "as células de Schwann e os melanócitos vêm da crista; a neurofibromina regula a via RAS"
+        },
+        {
+          "id": "c",
+          "texto": "a proteína NF1 ativa diretamente a via Hedgehog (SHH) no tubo neural"
+        },
+        {
+          "id": "d",
+          "texto": "a doença decorre de excesso de ácido retinoico na organogênese"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "(b) Correta: as células de Schwann (neurofibromas) e os melanócitos (manchas café com leite) derivam da crista neural; a neurofibromina (NF1) é um supressor tumoral que inativa a via RAS, e sua perda aumenta a sinalização. (a) a origem é a crista neural, não o endoderma/hemácias. (c) NF1 regula RAS, não ativa SHH. (d) não há relação com retinoides.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "neurofibromatose",
+        "NF1",
+        "crista-neural",
+        "celulas-de-schwann"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14"
+    },
+    {
+      "id": "emb-22-q15",
+      "tipo": "multipla",
+      "enunciado": "As células C (parafoliculares) da tireoide são classicamente atribuídas à crista neural, mas estudos de linhagem em camundongo (Sox17/Wnt1-Cre) sugerem origem endodérmica nessa espécie. A postura cientificamente mais adequada é:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "afirmar, como fato consolidado, que no ser humano as células C são endodérmicas"
+        },
+        {
+          "id": "b",
+          "texto": "negar a existência do corpo ultimofaríngeo e das próprias células C"
+        },
+        {
+          "id": "c",
+          "texto": "apresentar as duas propostas, sem afirmar a camada de origem no ser humano"
+        },
+        {
+          "id": "d",
+          "texto": "classificar as células C como derivadas do mesoderma paraxial"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "(c) Correta: o rigor exige apresentar a origem clássica (crista neural, via corpo ultimofaríngeo) e os dados de linhagem em camundongo que apontam origem endodérmica, sem afirmar categoricamente a camada no ser humano (os dados humanos são indiretos). (a) extrapola dados de camundongo ao ser humano como certeza. (b) o corpo ultimofaríngeo existe e incorpora-se à tireoide. (d) não há suporte para origem mesodérmica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "celulas-C",
+        "corpo-ultimofaringeo",
+        "divergencia"
+      ],
+      "referencia": "Johansson et al., Development 2015 (dev.126581); Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q16",
+      "tipo": "multipla",
+      "enunciado": "Além dos derivados neurais e pigmentares, a crista neural craniana contribui para:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "o miocárdio e o endocárdio do coração em desenvolvimento"
+        },
+        {
+          "id": "b",
+          "texto": "o epitélio alveolar e os pneumócitos do pulmão"
+        },
+        {
+          "id": "c",
+          "texto": "o córtex da glândula suprarrenal (não a medula)"
+        },
+        {
+          "id": "d",
+          "texto": "ossos da face, dentina e estroma da córnea"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "(d) Correta: a crista craniana forma o ectomesênquima da face — ossos membranosos, grande parte das cartilagens dos arcos (as da laringe vêm sobretudo do mesoderma da placa lateral), odontoblastos/dentina — e o estroma e o endotélio da córnea, além das leptomeninges rostrais. (a) o miocárdio vem do mesoderma esplâncnico. (b) o epitélio pulmonar é endodérmico. (c) o córtex suprarrenal é mesodérmico (a medula, sim, é da crista).",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural-craniana",
+        "ectomesenquima",
+        "cornea"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q17",
+      "tipo": "vf",
+      "enunciado": "A crista neural, pela diversidade de seus derivados, é por vezes chamada de quarta camada germinativa.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Por originar neurônios, glia, melanócitos, medula suprarrenal, esqueleto e conjuntivo da face, entre outros, a crista neural é frequentemente descrita como uma 'quarta camada germinativa'.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q18",
+      "tipo": "vf",
+      "enunciado": "Para migrar, as células da crista neural reforçam suas junções aderentes e permanecem epiteliais.",
+      "correta": false,
+      "explicacao": "Falso. É o contrário: as células sofrem transição epitélio-mesênquima, reduzem as caderinas e perdem a adesão para poder delaminar e migrar.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "transicao-epitelio-mesenquima"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q19",
+      "tipo": "vf",
+      "enunciado": "As células de Schwann e os melanócitos derivam da crista neural.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Ambos são derivados clássicos da crista neural: as células de Schwann mielinizam os nervos periféricos e os melanócitos produzem melanina na pele e em outros locais.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q20",
+      "tipo": "vf",
+      "enunciado": "O córtex da glândula suprarrenal, tal como a medula, deriva da crista neural.",
+      "correta": false,
+      "explicacao": "Falso. Só a medula suprarrenal (células cromafins) deriva da crista neural; o córtex deriva do mesoderma (epitélio celômico).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "suprarrenal"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q21",
+      "tipo": "vf",
+      "enunciado": "Na doença de Hirschsprung, o segmento sem células ganglionares resulta da falha da colonização do intestino pela crista neural.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A aganglionose decorre de falha da migração craniocaudal dos precursores entéricos derivados da crista neural, deixando o segmento distal sem plexos mioentérico e submucoso.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "doenca-hirschsprung",
+        "crista-neural"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+    },
+    {
+      "id": "emb-22-q22",
+      "tipo": "vf",
+      "enunciado": "Há consenso definitivo de que, no ser humano, as células C da tireoide derivam do endoderma.",
+      "correta": false,
+      "explicacao": "Falso. A origem clássica é a crista neural (via corpo ultimofaríngeo); estudos de linhagem em camundongo apontam origem endodérmica, mas os dados humanos são indiretos e não há consenso definitivo para a espécie humana.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "celulas-C",
+        "divergencia"
+      ],
+      "referencia": "Johansson et al., Development 2015 (dev.126581); Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas do programa da crista neural:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Indução na borda da placa neural (BMP intermediário, WNT)"
+        },
+        {
+          "id": "2",
+          "texto": "Especificação da crista (SNAIL2, FOXD3, SOX10)"
+        },
+        {
+          "id": "3",
+          "texto": "Transição epitélio-mesênquima e delaminação do tubo neural"
+        },
+        {
+          "id": "4",
+          "texto": "Migração pelas vias ventral e dorsolateral"
+        },
+        {
+          "id": "5",
+          "texto": "Diferenciação nos derivados"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explicacao": "A borda neural é induzida (1) e as células são especificadas como crista (2); então sofrem transição epitélio-mesênquima e delaminam (3), migram pelas vias de migração (4) e diferenciam-se nos derivados finais (5).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural",
+        "programa"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a colonização do intestino pela crista neural (sistema nervoso entérico):",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A crista vagal entra no intestino anterior (~4ª semana)"
+        },
+        {
+          "id": "2",
+          "texto": "Migração rostrocaudal ao longo do intestino médio"
+        },
+        {
+          "id": "3",
+          "texto": "Colonização do intestino posterior/terminal (~7ª semana)"
+        },
+        {
+          "id": "4",
+          "texto": "Maturação dos plexos mioentérico e submucoso ao longo de todo o intestino (período fetal)"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explicacao": "Os precursores entéricos (sobretudo vagais) entram pelo intestino anterior (1), migram em sentido rostrocaudal (2) e atingem o intestino posterior por volta da 7ª semana (3); os plexos mioentérico e submucoso completam a maturação ao longo de todo o intestino no período fetal (4); nas porções rostrais, a diferenciação neuronal já começa enquanto a migração avança. A interrupção craniocaudal desse processo explica a extensão contínua da aganglionose na doença de Hirschsprung.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "crista-neural-vagal",
+        "sistema-nervoso-enterico"
+      ],
+      "referencia": "Wallace & Burns, Cell Tissue Res 2005; Larsen 5ª ed., cap. 10"
+    },
+    {
+      "id": "emb-22-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a cascata que leva à hipoplasia craniofacial na síndrome de Treacher Collins:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Haploinsuficiência de TCOF1 reduz a biogênese de ribossomos"
+        },
+        {
+          "id": "2",
+          "texto": "Estresse nucleolar e estabilização de p53"
+        },
+        {
+          "id": "3",
+          "texto": "Apoptose do neuroepitélio"
+        },
+        {
+          "id": "4",
+          "texto": "Déficit de crista neural para os 1º e 2º arcos"
+        },
+        {
+          "id": "5",
+          "texto": "Hipoplasia craniofacial"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explicacao": "A redução de TCOF1 compromete a biogênese de ribossomos (1), o que estabiliza p53 por estresse nucleolar (2) e desencadeia apoptose do neuroepitélio (3); faltam então células da crista para os 1º e 2º arcos (4), resultando em hipoplasia craniofacial (5). Em camundongos Tcof1+/−, a inibição de p53 durante a gestação preveniu o fenótipo craniofacial (Jones et al., 2008), achado experimental sem aplicação clínica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "treacher-collins",
+        "ribossomo",
+        "p53"
+      ],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a participação da crista neural cardíaca na septação do trato de saída:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A crista cardíaca migra do rombencéfalo pelos arcos 3, 4 e 6"
+        },
+        {
+          "id": "2",
+          "texto": "Coloniza o cone e o tronco arterial"
+        },
+        {
+          "id": "3",
+          "texto": "Participa da formação das cristas (coxins) troncoconais, em espiral"
+        },
+        {
+          "id": "4",
+          "texto": "O septo aorticopulmonar separa a aorta do tronco pulmonar"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explicacao": "A crista cardíaca migra do rombencéfalo pelos arcos faríngeos (1), coloniza o trato de saída (2), participa da formação das cristas troncoconais em espiral, junto ao mesênquima derivado do endocárdio (3) e, com a fusão delas, o septo aorticopulmonar divide a aorta e o tronco pulmonar (4). Sua deficiência causa defeitos conotruncais.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "crista-neural-cardiaca",
+        "septo-aorticopulmonar"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-22-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada população de crista neural ao seu principal derivado:",
+      "pares": [
+        {
+          "esquerda": "Crista cardíaca",
+          "direita": "Septo aorticopulmonar"
+        },
+        {
+          "esquerda": "Crista vagal",
+          "direita": "Plexos entéricos (maior parte)"
+        },
+        {
+          "esquerda": "Crista do tronco",
+          "direita": "Gânglios da raiz dorsal e cadeia simpática"
+        },
+        {
+          "esquerda": "Crista craniana",
+          "direita": "Esqueleto e conjuntivo da face (ectomesênquima)"
+        },
+        {
+          "esquerda": "Via dorsolateral",
+          "direita": "Melanócitos"
+        }
+      ],
+      "explicacao": "A crista cardíaca forma o septo aorticopulmonar; a vagal, a maior parte do sistema nervoso entérico; a do tronco, gânglios sensitivos e simpáticos; a craniana, o ectomesênquima da face; e a via dorsolateral conduz os futuros melanócitos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "crista-neural",
+        "populacoes",
+        "derivados"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6 e 18; Moore 11ª ed., cap. 4 e 17"
+    },
+    {
+      "id": "emb-22-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada neurocristopatia ao gene/mecanismo correspondente:",
+      "pares": [
+        {
+          "esquerda": "Doença de Hirschsprung",
+          "direita": "RET (falha de colonização entérica)"
+        },
+        {
+          "esquerda": "Deleção 22q11.2 (DiGeorge)",
+          "direita": "TBX1 e crista cardíaca"
+        },
+        {
+          "esquerda": "Treacher Collins",
+          "direita": "TCOF1 (biogênese ribossômica)"
+        },
+        {
+          "esquerda": "Waardenburg tipo 1",
+          "direita": "PAX3"
+        },
+        {
+          "esquerda": "CHARGE",
+          "direita": "CHD7"
+        }
+      ],
+      "explicacao": "Hirschsprung: RET (perda de função); deleção 22q11.2: TBX1, com crista cardíaca deficiente; Treacher Collins: TCOF1 (ribossomos); Waardenburg tipo 1: PAX3; CHARGE: CHD7.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "neurocristopatias",
+        "genetica"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-22-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada tumor/lesão à célula de origem derivada da crista neural:",
+      "pares": [
+        {
+          "esquerda": "Neuroblastoma",
+          "direita": "Neuroblastos simpáticos (gânglio/medula suprarrenal)"
+        },
+        {
+          "esquerda": "Feocromocitoma",
+          "direita": "Células cromafins"
+        },
+        {
+          "esquerda": "Melanoma",
+          "direita": "Melanócitos"
+        },
+        {
+          "esquerda": "Neurofibroma (NF1)",
+          "direita": "Células de Schwann"
+        }
+      ],
+      "explicacao": "Neuroblastoma: neuroblastos simpáticos; feocromocitoma: células cromafins; melanoma: melanócitos; neurofibroma (NF1): células de Schwann. Todos derivam de linhagens da crista neural.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "crista-neural",
+        "tumores"
+      ],
+      "referencia": "Thompson & Thompson 8ª ed., cap. 14"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "6 — Da terceira à oitava semana: o período embrionário (crista neural)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "17 — Cabeça e pescoço (crista neural, arcos; Treacher Collins, Waardenburg)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "18 — Sistema nervoso central (crista neural no SNP)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "5 — Da quarta à oitava semana (crista neural e seus derivados)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular (crista neural cardíaca)"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "10 — Desenvolvimento do sistema nervoso periférico"
+    },
+    {
+      "obra": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica, 8ª ed., 2016",
+      "capitulo": "14 — Genética do desenvolvimento e defeitos congênitos"
+    },
+    {
+      "obra": "Johansson E, et al. Revising the embryonic origin of thyroid C cells in mice and humans. Development. 2015;142(20):3519–3528",
+      "capitulo": "Origem das células C (linhagem Sox17/Wnt1-Cre)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "4 — Terceira semana (neurulação e formação da crista neural)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "9 — Aparelho faríngeo, face e pescoço (Treacher Collins)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "11 — Sistema digestório (doença de Hirschsprung)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "17 — Sistema nervoso (sistema nervoso periférico; derivados da crista)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "19 — Sistema tegumentar (dentes: odontoblastos)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular (crista neural cardíaca)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "15 — Sistema digestório (doença de Hirschsprung)"
+    },
+    {
+      "obra": "Wallace AS, Burns AJ. Development of the enteric nervous system, smooth muscle and interstitial cells of Cajal in the human gastrointestinal tract. Cell Tissue Res. 2005;319(3):367–382",
+      "capitulo": "Colonização entérica rostrocaudal em embriões humanos"
+    },
+    {
+      "obra": "Jones NC, et al. Prevention of the neurocristopathy Treacher Collins syndrome through inhibition of p53 function. Nat Med. 2008;14(2):125–133",
+      "capitulo": "Resgate por inibição de p53 em camundongo (experimental)"
+    }
+  ],
+  "notasDivergencia": [
+    "Origem das células C (parafoliculares): atribuição clássica à crista neural (via corpo ultimofaríngeo) × origem endodérmica demonstrada por linhagem em camundongo (Johansson et al., Development 2015, dev.126581; marcação Sox17 do endoderma × Wnt1-Cre da crista). A divergência é registrada; as questões não afirmam a camada germinativa no ser humano (coerente com emb-12 e emb-25).",
+    "Cartilagens da laringe (4º/6º arcos): embora os arcos sejam povoados pela crista neural, suas cartilagens derivam sobretudo do mesoderma da placa lateral (ver emb-12); por isso o texto diz que a crista forma 'grande parte', e não todo, o esqueleto dos arcos.",
+    "Colonização entérica rostrocaudal concluída por volta da 7ª semana (Wallace & Burns, Cell Tissue Res 2005, em embriões humanos); a contribuição relativa da crista sacral varia entre as fontes.",
+    "Os limites exatos entre a contribuição da crista neural e a do mesoderma para alguns ossos do crânio variam entre estudos (modelos animais), como registrado em emb-19."
+  ],
+  "incertezas": [
+    "O resgate do fenótipo de Treacher Collins pela inibição de p53 (pifitrina-α) foi demonstrado em camundongo (Jones et al., Nature Medicine 2008); é descrito como achado experimental, sem aplicação clínica.",
+    "Genótipos de Waardenburg (tipos 1–4) e de CHARGE (CHD7) seguem a literatura de genética clínica; prevalências não foram conferidas e foram omitidas. Revisor de embriologia (2026-11-09): genes conferidos com a literatura de genética clínica (Waardenburg: PAX3 nos tipos 1 e 3; MITF como principal no tipo 2, que também tem SOX10 e SNAI2; EDNRB, EDN3 e SOX10 no tipo 4 — Pingault et al., Hum Mutat 2010; CHARGE: CHD7 — Vissers et al., Nat Genet 2004); prevalências continuam omitidas.",
+    "As associações de feocromocitoma/paraganglioma (NEM 2, von Hippel-Lindau, NF1, SDHx) seguem a prática clínica atual e não foram quantificadas.",
+    "A proporção de casos de Hirschsprung por gene (RET e outros) e a contribuição de melanócitos cocleares não foram quantificadas.",
+    "O modelo de 'nível intermediário de BMP' para a borda neural vem sobretudo de anfíbios e peixe-zebra; em amniotas a contribuição relativa de BMP, WNT e FGF é debatida. O conteúdo o usa de forma qualitativa, como Sadler.",
+    "Idades da colonização entérica (≈4ª e ≈7ª semanas, q24): Wallace & Burns (2005) datam os embriões em semanas; o revisor não confirmou se a contagem é pós-concepção ou desde a DUM (presumida pós-concepção, pelo estadiamento embrionário)."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "24 correções (0 críticas, 5 importantes, 19 menores); principais: (importante) q15 tinha como correta 'manter a atribuição clássica à crista neural', contrária à regra de não afirmar a camada das células C no ser humano — reescrita para 'apresentar as duas propostas, sem afirmar a camada'; (importante) explicação da q11 negava coloboma na Treacher Collins (há coloboma palpebral); (importante) q24: item 4 (diferenciação dos plexos) não era inequivocamente posterior à colonização do intestino terminal — passou a 'maturação ao longo de todo o intestino (período fetal)'; (importante) q25: inibição de p53 'reverte' → 'preveniu em camundongo (Jones 2008), sem aplicação clínica'; (importante) crista vagal com origem 'somitos 1–7' → tubo neural ao nível dos somitos 1–7; (menor) cartilagens laríngeas ('grande parte' do esqueleto dos arcos) no resumo, no ectomesênquima e na q16; HVA/VMA como metabólitos; 'síndrome CHARGE'; distratores implausíveis da q02 (SRY, hCG) trocados; Carnegie 9–13 incoerente com dias 17–56 removido; 9 referências citadas nas questões acrescentadas. Gabaritos corretos; letras 4/4/4/4; sem pista de comprimento."
+      }
+    ],
+    "humano": null
+  }
+}

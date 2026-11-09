@@ -1590,8 +1590,8 @@
         "Ao nascer, cessa o fluxo placentário, a resistência pulmonar cai com a aeração e a pressão no átrio esquerdo passa a superar a do direito: o forame oval fecha-se funcionalmente e o ducto arterioso contrai-se. Remanescentes: ligamento redondo do fígado, ligamento venoso, fossa oval, ligamento arterial e ligamentos umbilicais mediais."
       ],
       "topicos": [
-        "emb-13-cardiovascular",
-        "emb-24-circulacao-fetal"
+        "emb-24-circulacao-fetal",
+        "emb-13-cardiovascular"
       ],
       "estruturas": [
         {
@@ -1605,7 +1605,7 @@
           "descricao": "Contém duas artérias e uma veia, enroladas em espiral e envoltas pela geleia de Wharton (translúcida no modelo)."
         },
         {
-          "id": "veia-umbilical",
+          "id": "veias-umbilicais",
           "nome": "Veia umbilical (esquerda)",
           "descricao": "Única veia umbilical que persiste (a direita regride no período embrionário). Leva o sangue mais oxigenado do feto da placenta ao fígado, onde parte segue pelo ducto venoso e parte chega aos sinusoides hepáticos pelo ramo esquerdo da veia porta. Após o nascimento, forma o ligamento redondo do fígado."
         },
@@ -1657,12 +1657,12 @@
         {
           "id": "ventriculo-esquerdo",
           "nome": "Ventrículo esquerdo",
-          "descricao": "Bombeia para a aorta ascendente o sangue que chegou pelo forame oval; os primeiros ramos da aorta levam esse sangue, o mais oxigenado que sai do coração, às coronárias e ao encéfalo."
+          "descricao": "Bombeia para a aorta ascendente o sangue que chegou pelo forame oval, o mais oxigenado que sai do coração; os ramos da aorta ascendente e do arco o levam ao próprio coração (coronárias), à cabeça e aos membros superiores."
         },
         {
           "id": "septum-secundum",
           "nome": "Septum secundum",
-          "descricao": "Septo muscular, do lado direito, cuja abertura é o forame oval; sua borda inferior (crista dividens) separa as correntes que chegam pela veia cava inferior. Forma depois o limbo da fossa oval."
+          "descricao": "Septo muscular em crescente, do lado direito, cuja borda livre delimita o forame oval; a borda inferior (crista dividens) dirige preferencialmente ao forame a corrente mais oxigenada da veia cava inferior. Forma depois o limbo da fossa oval."
         },
         {
           "id": "septum-primum",
@@ -1672,7 +1672,7 @@
         {
           "id": "forame-oval",
           "nome": "Forame oval",
-          "descricao": "Passagem do átrio direito para o esquerdo, no septum secundum, coberta à esquerda pelo septum primum. Fecha-se funcionalmente ao nascer; a fusão posterior dos septos forma a fossa oval. Pode permanecer patente ('à sonda') em parte dos adultos."
+          "descricao": "Passagem do átrio direito para o esquerdo, delimitada pela borda do septum secundum e coberta à esquerda pelo septum primum. Fecha-se funcionalmente ao nascer; a fusão posterior dos septos forma a fossa oval. Pode permanecer patente ('à sonda') em parte dos adultos."
         },
         {
           "id": "tronco-pulmonar",

@@ -1320,7 +1320,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Com 9 semanas de idade gestacional, o feto tem cerca de 7 semanas após a fertilização: o tubo neural se fechou entre os dias 24 e 28 (≈6 semanas de idade gestacional), antes da consulta, e a suplementação iniciada agora não previne nem desfaz um defeito do tubo neural — (b). O que permanece útil é a avaliação morfológica dirigida e a revisão do esquema antiepiléptico com o neurologista, porque o valproato também acarreta prejuízo cognitivo dose-dependente, e o sistema nervoso central segue vulnerável no período fetal; a medicação não deve ser suspensa por iniciativa da paciente. A (a) estende indevidamente a janela de fechamento do tubo neural. A (c) nega uma teratogenicidade bem estabelecida em doses terapêuticas. A (d) transfere ao valproato a assinatura da talidomida — defeitos de redução de membros, dias 20 a 36 após a fertilização — e ignora o risco cognitivo.",
+      "explicacao": "Com 9 semanas de idade gestacional, o feto tem cerca de 7 semanas após a fertilização: o tubo neural se fechou entre os dias 24 e 28 (≈5,5 a 6 semanas de idade gestacional), antes da consulta, e a suplementação iniciada agora não previne nem desfaz um defeito do tubo neural — (b). O que permanece útil é a avaliação morfológica dirigida e a revisão do esquema antiepiléptico com o neurologista, porque o valproato também acarreta prejuízo cognitivo dose-dependente, e o sistema nervoso central segue vulnerável no período fetal; a medicação não deve ser suspensa por iniciativa da paciente. A (a) estende indevidamente a janela de fechamento do tubo neural. A (c) nega uma teratogenicidade bem estabelecida em doses terapêuticas. A (d) transfere ao valproato a assinatura da talidomida — defeitos de redução de membros, dias 20 a 36 após a fertilização — e ignora o risco cognitivo.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1528,6 +1528,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "Revisão transversal focal das alterações do farmacologista: ressalva ao tudo-ou-nada, transferência seletiva placentária e reformulação de emb-10-q19 sem substituição universal de anticoagulante. Conferidas OTIS/MotherToBaby e SMFM #61; sem nova correção. Não é revisão integral do tópico nem conferência médica."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q31–q35): 1 correção (0 críticas, 0 importantes, 1 menor). (menor) q32: a explicação convertia o fechamento do tubo neural (dias 24 a 28 após a fertilização) em \"≈6 semanas de idade gestacional\"; a conta dá 5 semanas e 3 dias a 6 semanas, agora \"≈5,5 a 6 semanas\" (q15, já aprovada nas etapas anteriores, usa o arredondamento mais grosseiro \"por volta de 6 semanas\": harmonização sugerida ao revisor humano). Refeitas as contas: 9 semanas de idade gestacional = ~7 semanas após a fertilização, depois do fechamento do tubo neural (q32); 10 semanas de idade gestacional = ~8 semanas após a concepção, início da janela de maior suscetibilidade do sistema nervoso central (8 a 15 semanas após a concepção) (q33). Conferidos sem erro: herança multifatorial com modelo de limiar nos defeitos do tubo neural, dose alta de ácido fólico de 4 a 5 mg/dia iniciada pelo menos 30 dias antes da concepção (faixa já adotada no tópico, com a pendência FEBRASGO 4 mg × Ministério da Saúde 5 mg mantida para o revisor humano) e rastreamento com alfafetoproteína de 15 a 20 semanas e ultrassonografia morfológica, coerentes com pontosChave, correlações e q15 e q28 (q31); valproato teratogênico em doses terapêuticas, com prejuízo cognitivo dose-dependente e sem suspensão por iniciativa da paciente, e a assinatura da talidomida (dias 20 a 36) atribuída corretamente ao distrator (q32); radiação diagnóstica mantida qualitativa quanto aos limiares de dose, com a relação dose-resposta preservada e sem endosso de conduta não prevista em diretriz (q33); janelas de talidomida, ácido fólico, IECA/BRA, radiação e andrógenos (q34); fenilcetonúria materna com passagem placentária da fenilalanina, feto heterozigoto e prevenção pré-concepcional (q35)."
       }
     ],
     "humano": null

@@ -741,7 +741,7 @@
         { "id": "d", "texto": "Porque o cone em L4, normal nessa idade, só alcançará L1–L2 após a ossificação dos arcos" }
       ],
       "correta": "c",
-      "explicacao": "Marcadores cutâneos lombossacros (tufo de pelos, fosseta, hemangioma, lipoma) associam-se a disrafismo oculto e medula presa. No 3º mês a medula ocupa todo o canal vertebral; depois, a coluna e a dura-máter crescem mais rapidamente, e o cone 'sobe' relativamente, até cerca de L2–L3 ao nascer (Moore; à ultrassonografia do recém-nascido a termo, em geral L1–L2) e L1–L2 no adulto. Um filamento terminal espessado fixa o cone em posição baixa; com o crescimento da coluna, a medula é tracionada, e podem surgir déficits motores, sensitivos, dor e disfunção vesical progressivos (c). A pele íntegra afasta defeito aberto do tubo neural (a). A Chiari II (b) acompanha a mielomeningocele aberta, com vazamento de liquor. O cone em L4 não é posição normal do lactente (d): é justamente o achado que pede seguimento. A ultrassonografia é viável nos primeiros meses porque os arcos posteriores ainda não se ossificaram.",
+      "explicacao": "Marcadores cutâneos lombossacros (tufo de pelos, fosseta, hemangioma, lipoma) associam-se a disrafismo oculto e medula presa. No 3º mês a medula ocupa todo o canal vertebral; depois, a coluna e a dura-máter crescem mais rapidamente, e o cone 'sobe' relativamente, até cerca de L2–L3 ao nascer (Moore; à ultrassonografia do recém-nascido a termo, em geral L1–L2) e L1–L2 no adulto. Um filamento terminal espessado fixa o cone em posição baixa; com o crescimento da coluna, a medula é tracionada, e podem surgir déficits motores, sensitivos, dor e disfunção vesical progressivos (c). A pele íntegra afasta defeito aberto do tubo neural (a). A Chiari II (b) acompanha a mielomeningocele aberta, com vazamento de liquor. O cone em L4 não é posição normal do lactente (d): é justamente o achado que pede seguimento. A ultrassonografia é viável nos primeiros meses porque os elementos posteriores das vértebras ainda estão pouco ossificados (processos espinhosos cartilagíneos e metades dos arcos ainda não fundidas).",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["avancado", "medula-presa", "cone-medular", "disrafismo-oculto", "caso-clinico"],
@@ -759,7 +759,7 @@
         { "id": "d", "texto": "Lábios rômbicos; seus neuroblastos migram ventromedialmente e formam os núcleos motores do bulbo" }
       ],
       "correta": "c",
-      "explicacao": "A lesão do núcleo do hipoglosso (neurônio motor inferior) causa atrofia e fasciculações da hemilíngua e desvio da língua para o lado lesado. Esse núcleo é motor somático e deriva da placa basal do mielencéfalo (c). No tubo neural, a placa basal é ventral e a alar, dorsal; a flexura pontina afasta as paredes laterais do rombencéfalo e afina seu teto, de modo que, no assoalho do quarto ventrículo, os núcleos motores (basais) ficam mediais e os sensitivos (alares) laterais, separados pelo sulco limitante. A placa alar (a) origina núcleos sensitivos, que ficam laterais. As placas do teto e do assoalho (b) não contêm neuroblastos. Os lábios rômbicos (d), porções dorsais das placas alares do metencéfalo, formam o cerebelo. A preservação da sensibilidade facial e do paladar é coerente com uma lesão restrita a um núcleo de origem basal.",
+      "explicacao": "A lesão do núcleo do hipoglosso (neurônio motor inferior) causa atrofia e fasciculações da hemilíngua e desvio da língua para o lado lesado. Esse núcleo é motor somático e deriva da placa basal do mielencéfalo (c). No tubo neural, a placa basal é ventral e a alar, dorsal; a flexura pontina afasta as paredes laterais do rombencéfalo e afina seu teto, de modo que, no assoalho do quarto ventrículo, os núcleos motores (basais) ficam mediais e os sensitivos (alares) laterais, separados pelo sulco limitante. A placa alar (a) origina núcleos sensitivos, que ficam laterais. As placas do teto e do assoalho (b) não contêm neuroblastos. Os lábios rômbicos (d), porções dorsais das placas alares do metencéfalo, formam o cerebelo; os neuroblastos alares que migram ventralmente no rombencéfalo formam núcleos de retransmissão, como os olivares e os pontinos, e não núcleos motores. A preservação da sensibilidade facial e do paladar é coerente com uma lesão restrita a um núcleo de origem basal.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": ["avancado", "placa-basal", "placa-alar", "sulco-limitante", "tronco-encefalico", "nervo-hipoglosso", "caso-clinico"],
@@ -817,7 +817,7 @@
       "ordemCorreta": ["2", "6", "4", "1", "5", "7", "3"],
       "explicacao": "A luz do tubo neural forma o sistema ventricular: ventrículos laterais (telencéfalo) → forames interventriculares → terceiro ventrículo (diencéfalo) → aqueduto do mesencéfalo → quarto ventrículo (rombencéfalo) → aberturas mediana e laterais do quarto ventrículo → espaço subaracnóideo, de onde o liquor é reabsorvido pelas granulações aracnóideas. Esse trajeto explica o padrão das hidrocefalias: na estenose do aqueduto, causa congênita mais comum, dilatam-se os ventrículos laterais e o terceiro, com quarto ventrículo normal; a obstrução das aberturas do quarto ventrículo dilata também o quarto; a falha das granulações causa hidrocefalia comunicante.",
       "dificuldade": 4,
-      "bloom": "aplicar",
+      "bloom": "compreender",
       "tags": ["avancado", "sistema-ventricular", "liquor", "vesiculas-encefalicas", "hidrocefalia", "anatomia"],
       "referencia": "Moore 11ª ed., cap. 17; Sadler 14ª ed., cap. 18"
     }
@@ -901,6 +901,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "14 correções (0 crítica, 7 importantes, 7 menores); principais: pista de comprimento eliminada em 6 questões; evento 'coluna passa a crescer mais que a medula (3º mês)' reescrito e com posição compartilhada com a desconexão da bolsa de Rathke; doses de ácido fólico (0,4 mg/dia; 4 mg/dia no alto risco, FEBRASGO 2020); conduta da mielomeningocele (cirurgia fetal antes de 26 semanas de IG no MOMS, fechamento pós-natal em 48–72 h, DVP ou terceiroventriculostomia, cateterismo intermitente limpo); vinheta da q09 mais realista (ventriculomegalia em vez de macrocefalia ao nascer; déficit abaixo do nível da lesão); dados de imagem neonatal do cone medular e da medula presa; punção lombar em L3–L4/L4–L5; epidemiologia bimodal do craniofaringioma."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-18-q25 a emb-18-q29): 3 correções (0 crítica, 0 importante, 3 menores); principais: q25, janela da ultrassonografia atribuída à ossificação incompleta dos elementos posteriores (não à ausência de ossificação dos arcos); q26, refutação dos lábios rômbicos completada (neuroblastos alares que migram ventralmente formam núcleos olivares e pontinos, não motores); q29 com bloom 'compreender'. Conferidos sem erro: medula presa (cone em L4 anormal), núcleo do hipoglosso na placa basal, medial após a abertura do rombencéfalo, Chiari II × resultados do MOMS (menos derivação e menos herniação; mais prematuridade), polidrâmnio na anencefalia × anidrâmnio na agenesia renal, trajeto do liquor (sequência refeita)."
       }
     ],
     "humano": null

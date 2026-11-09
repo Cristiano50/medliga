@@ -1138,7 +1138,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Durante a ascensão, o metanefro recebe ramos sucessivos de vasos próximos (ilíacas comuns e aorta distal, depois aorta mais alta), e os ramos inferiores normalmente involuem. No rim em ferradura, o istmo fica retido sob a raiz da artéria mesentérica inferior e o rim permanece baixo, irrigado por vasos próximos; por isso é comum que ramos caudais persistam como artérias múltiplas, originadas da aorta abaixo do nível habitual ou das ilíacas (a). Essa informação é importante no planejamento da cirurgia da aorta, à frente da qual passa o istmo. Uma artéria única em L1–L2 (b) é o padrão do rim que completou a ascensão; a irrigação acompanha a subida, não a precede. A AMI (c) é a estrutura que retém o istmo, não a fonte da irrigação renal, e não substitui as artérias vindas da aorta. As artérias umbilicais (d) levam sangue à placenta e não são a fonte da irrigação renal.",
+      "explicacao": "Durante a ascensão, o metanefro recebe ramos sucessivos de vasos próximos (ilíacas comuns e aorta distal, depois aorta mais alta), e os ramos inferiores normalmente involuem. No rim em ferradura, o istmo fica retido sob a raiz da artéria mesentérica inferior e o rim permanece baixo, irrigado por vasos próximos; por isso é comum que ramos caudais persistam como artérias múltiplas, originadas da aorta abaixo do nível habitual ou das ilíacas (a). Essa informação é importante no planejamento da cirurgia da aorta, à frente da qual passa o istmo. Uma artéria única em L1–L2 (b) é o padrão do rim que completou a ascensão; a irrigação acompanha a subida, não a precede. A AMI (c) é a estrutura que retém o istmo; como variação, pode mandar algum ramo ao rim, mas não é a fonte habitual da irrigação nem substitui as artérias vindas da aorta. As artérias umbilicais (d) levam sangue à placenta e não são a fonte da irrigação renal.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1236,7 +1236,7 @@
       "correta": true,
       "explicacao": "Verdadeiro. Durante a ascensão, os rins recebem ramos sucessivos de vasos próximos, e os inferiores normalmente involuem; os que persistem formam artérias renais acessórias, presentes em cerca de 25% dos rins de adultos segundo Moore. Uma artéria para o polo inferior pode cruzar anteriormente o ureter e obstruí-lo, com hidronefrose. Por serem artérias terminais, sua lesão causa isquemia do segmento correspondente, o que precisa ser considerado no planejamento cirúrgico.",
       "dificuldade": 4,
-      "bloom": "analisar",
+      "bloom": "compreender",
       "tags": [
         "avancado",
         "arterias-renais",
@@ -1294,8 +1294,8 @@
     "A regra de Weigert–Meyer, a apresentação clínica detalhada da válvula de uretra posterior e o padrão de incontinência no ureter ectópico vêm da literatura urológica e pediátrica; sua presença literal nos capítulos citados não foi conferida.",
     "O mecanismo da válvula de uretra posterior (inserção anômala dos ductos mesonéfricos para o tipo mais comum) é hipótese, apresentada como tal.",
     "A faixa de dias dos eventos 'brotos prostáticos' (fim do 3º mês, dias 78–91) e 'fim da nefrogênese' (dias 224–252) é aproximada, derivada de descrições em meses e semanas.",
-    "Camada avançada (q26): a explicação da posição cruzada dos orifícios na duplicação completa (o ureter do polo superior tende a ser levado caudalmente com o ducto mesonéfrico) aplica a regra de Weigert–Meyer e a descrição de Sadler do broto anômalo que desce com o ducto mesonéfrico; a teoria detalhada da posição dos brotos (Mackie–Stephens) é da literatura urológica e não foi usada como gabarito. A diretriz EAU/ESPU de urologia pediátrica (capítulo de ureterocele e ureter ectópico) não pôde ser aberta nesta sessão.",
-    "Camada avançada (q27): a irrigação por artérias múltiplas no rim em ferradura foi deduzida da descrição dos livros-texto (ramos de vasos próximos ao rim que não completou a ascensão); a frequência desse padrão não foi conferida e não é citada."
+    "Camada avançada (q26): a explicação da posição cruzada dos orifícios na duplicação completa (o ureter do polo superior tende a ser levado caudalmente com o ducto mesonéfrico) aplica a regra de Weigert–Meyer e a descrição de Sadler do broto anômalo que desce com o ducto mesonéfrico; a teoria detalhada da posição dos brotos (Mackie–Stephens) é da literatura urológica e não foi usada como gabarito. A diretriz EAU/ESPU de urologia pediátrica (capítulo de ureterocele e ureter ectópico) não pôde ser aberta nesta sessão. Revisor de embriologia (2026-11-09): a regra e sua explicação (o broto mais cranial no ducto mesonéfrico, que drena o polo superior, é levado caudalmente e termina em posição caudal e medial, com ureterocele ou ectopia; o do polo inferior fica cranial e lateral, com túnel submucoso curto e refluxo) conferem com fontes de urologia pediátrica e radiologia consultadas por busca (Pediatric Urology Book, capítulo de rim duplo, ureterocele e ureter ectópico; Radiopaedia, verbete Weigert–Meyer law); a diretriz EAU/ESPU continua não conferida.",
+    "Camada avançada (q27): a irrigação por artérias múltiplas no rim em ferradura foi deduzida da descrição dos livros-texto (ramos de vasos próximos ao rim que não completou a ascensão); a frequência desse padrão não foi conferida e não é citada. Revisor de embriologia (2026-11-09): relatos de correção de aneurisma da aorta em pacientes com rim em ferradura descrevem artérias vindas da aorta (inclusive do próprio aneurisma), das ilíacas comuns e, como variação, da artéria mesentérica inferior; a explicação do distrator (c) foi ajustada para não negar essa possibilidade."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1314,6 +1314,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "12 correções (0 crítica, 12 importantes, 0 menor); principais: pista de comprimento eliminada em 11 questões de múltipla escolha (q02–q05, q07, q09–q13, q15), com distratores reescritos e corretas encurtadas, sem mudar gabarito nem ids; evento 'brotos prostáticos' passou a compartilhar a posição 5 com 'rins na região lombar', porque a ordem entre eles não é inequívoca nas fontes. Clínica (Potter, válvula de uretra posterior, ureter ectópico, DRPAR/DRPAD, úraco) e anatomia (ascensão e irrigação renal, rim em ferradura retido pela AMI, artéria polar inferior cruzando o ureter) conferidas sem erro."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-16-q26 a emb-16-q30): 2 correções (0 crítica, 1 importante, 1 menor); principais: q27, a explicação do distrator (c) negava que a artéria mesentérica inferior pudesse irrigar o rim em ferradura, o que ocorre como variação; corrigida sem mudar o gabarito; q30 com bloom 'compreender'. Conferidos sem erro: regra de Weigert–Meyer (orifício do polo superior caudal e medial, com ureterocele ou ectopia; do polo inferior cranial e lateral, com refluxo), artérias múltiplas no rim em ferradura, rim displásico multicístico unilateral com líquido amniótico normal (risco pulmonar baixo), artéria polar inferior terminal cruzando o ureter (Moore). Incertezas da camada avançada atualizadas com as fontes conferidas."
       }
     ],
     "humano": null

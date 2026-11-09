@@ -701,12 +701,12 @@
       "enunciado": "Qual raiz está comprimida, e qual fato embriológico explica a numeração?",
       "alternativas": [
         { "id": "a", "texto": "C6; como em toda a coluna, cada nervo espinal sai abaixo da vértebra de mesmo número" },
-        { "id": "b", "texto": "C7; com a ressegmentação, cada nervo cervical sai acima da vértebra de mesmo número" },
+        { "id": "b", "texto": "C7; com a ressegmentação, cada nervo de C1 a C7 sai acima da vértebra de mesmo número" },
         { "id": "c", "texto": "C8; o 8º nervo cervical sai entre C6 e C7, porque há uma vértebra cervical a mais que nervos" },
         { "id": "d", "texto": "T1; os nervos cervicais inferiores descem pelo canal e saem um nível abaixo do disco lesado" }
       ],
       "correta": "b",
-      "explicacao": "Com a ressegmentação, cada corpo vertebral forma-se da metade caudal de um esclerótomo e da metade cranial do seguinte, e os nervos espinais passam a sair entre as vértebras, junto aos discos. O 1º nervo cervical sai entre o occipital e o atlas, e o 8º, entre C7 e T1: há 8 nervos e 7 vértebras cervicais, e cada nervo de C1 a C7 sai acima da vértebra de mesmo número. Pelo forame entre C6 e C7 sai o nervo C7, comprimido pela hérnia posterolateral desse nível (b). A regra de sair abaixo da vértebra de mesmo número (a) só vale a partir de T1; o C6 sai entre C5 e C6. Há uma vértebra cervical a menos que nervos, e não a mais, e o C8 sai entre C7 e T1 (c). O T1 sai entre T1 e T2 (d); raízes que descem pelo canal antes de sair formam a cauda equina, abaixo do cone medular, e não existem na região cervical.",
+      "explicacao": "Com a ressegmentação, cada corpo vertebral forma-se da metade caudal de um esclerótomo e da metade cranial do seguinte, e os nervos espinais passam a sair entre as vértebras, junto aos discos. O 1º nervo cervical sai entre o occipital e o atlas, e o 8º, entre C7 e T1: há 8 nervos e 7 vértebras cervicais, e cada nervo de C1 a C7 sai acima da vértebra de mesmo número. Pelo forame entre C6 e C7 sai o nervo C7, comprimido pela hérnia posterolateral desse nível (b). A regra de sair abaixo da vértebra de mesmo número (a) só vale a partir de T1; o C6 sai entre C5 e C6. Há uma vértebra cervical a menos que nervos, e não a mais, e o C8 sai entre C7 e T1 (c). O T1 sai entre T1 e T2 (d); o trajeto longo das raízes dentro do canal antes de sair é próprio da região lombossacra (cauda equina, abaixo do cone medular); na região cervical, as raízes são curtas e quase horizontais.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["avancado", "ressegmentacao", "nervos-espinais", "hernia-discal", "anatomia", "caso-clinico"],
@@ -751,11 +751,11 @@
     {
       "id": "emb-19-q28",
       "tipo": "vf",
-      "enunciado": "Em consequência da ressegmentação dos esclerótomos, as artérias segmentares do tronco (como as intercostais posteriores e as lombares) cruzam a parte média dos corpos vertebrais, enquanto os nervos espinais saem pelos forames intervertebrais, junto aos discos.",
+      "enunciado": "Em consequência da ressegmentação dos esclerótomos, as artérias intersegmentares do tronco (no adulto, as intercostais posteriores e as lombares) cruzam a parte média dos corpos vertebrais, enquanto os nervos espinais saem pelos forames intervertebrais, junto aos discos.",
       "correta": true,
       "explicacao": "Verdadeiro. Antes da ressegmentação, as artérias intersegmentares passam entre os esclerótomos. Como cada corpo vertebral se forma da metade caudal de um esclerótomo e da metade cranial do seguinte, essas artérias passam a cruzar a parte média dos corpos vertebrais; no tórax e no abdome, elas persistem como artérias intercostais posteriores e lombares. Os nervos espinais, segmentares como os miótomos, ficam junto aos discos intervertebrais e saem pelos forames, e os miótomos passam a cruzar os discos, o que permite mover a coluna.",
       "dificuldade": 4,
-      "bloom": "analisar",
+      "bloom": "compreender",
       "tags": ["avancado", "ressegmentacao", "arterias-intersegmentares", "nervos-espinais", "anatomia"],
       "referencia": "Sadler 14ª ed., cap. 10 e 13; Moore 11ª ed., cap. 13 e 14"
     },
@@ -863,6 +863,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "13 correções (0 crítica, 10 importantes, 3 menores); principais: pista de comprimento eliminada em 10 questões; método de Ponseti detalhado (início nas primeiras semanas, gessos semanais, tenotomia na maioria, órtese em tempo integral por cerca de 3 meses e noturna até 4–5 anos); DDQ com encaminhamento ao ortopedista diante de manobra positiva, ultrassonografia por volta de 6 semanas nos lactentes com fatores de risco e radiografia após 4–6 meses (AAP 2016); explicação da q12 alinhada. Rotação dos membros, dermátomos espiralados do membro inferior, inervação epaxial/hipaxial e costela cervical (tronco inferior C8–T1 e artéria subclávia) conferidos sem erro."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-19-q25 a emb-19-q29): 2 correções (0 crítica, 0 importante, 2 menores); principais: q25, alternativa correta precisada ('cada nervo de C1 a C7') e explicação de (d) sem a afirmação absoluta de que raízes não descem no canal cervical; q28, 'artérias segmentares' trocado por 'artérias intersegmentares' (no adulto, intercostais posteriores e lombares), coerente com o resumo e a explicação, e bloom 'compreender'. Conferidos sem erro: hérnia C6–C7 → raiz C7 pela ressegmentação, acondroplasia (base endocondral × abóbada intramembranosa, forame magno estreito), ramos dorsais × latíssimo do dorso (nervo toracodorsal, plexo braquial), artérias intersegmentares na parte média dos corpos e nervos junto aos discos (Sadler), origens do disco, dos músculos e da derme."
       }
     ],
     "humano": null

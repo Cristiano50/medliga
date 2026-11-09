@@ -1253,7 +1253,7 @@
       "itens": [
         {
           "id": "1",
-          "texto": "Luteinização das células da granulosa e da teca interna, com secreção de progesterona"
+          "texto": "A parede do folículo rompido forma o corpo lúteo, que secreta progesterona"
         },
         {
           "id": "2",
@@ -1289,7 +1289,7 @@
         "1",
         "5"
       ],
-      "explicacao": "O FSH do início da fase folicular recruta folículos antrais (3); o folículo dominante, com estradiol e inibina B, reduz o FSH, e os demais sofrem atresia (6); o estradiol alto e sustentado desencadeia o pico de LH (2); em seguida, o ovócito primário completa a meiose I e para em metáfase II (7), antes da ovulação (4); a granulosa e a teca interna luteinizam-se e formam o corpo lúteo, que secreta progesterona (1); sem hCG do trofoblasto, o corpo lúteo regride (corpo albicans) e a queda de progesterona leva à fase isquêmica e à menstruação (5).",
+      "explicacao": "O FSH do início da fase folicular recruta folículos antrais (3); o folículo dominante, com estradiol e inibina B, reduz o FSH, e os demais sofrem atresia (6); o estradiol alto e sustentado desencadeia o pico de LH (2); em seguida, o ovócito primário completa a meiose I e para em metáfase II (7), antes da ovulação (4); a parede do folículo rompido forma o corpo lúteo, cujas células luteínicas (derivadas da granulosa e da teca interna) secretam progesterona (1) — a luteinização começa já com o pico de LH, mas o corpo lúteo só se organiza depois da ovulação; sem hCG do trofoblasto, o corpo lúteo regride (corpo albicans) e a queda de progesterona leva à fase isquêmica e à menstruação (5).",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1353,7 +1353,7 @@
     "Proporção de espermatozoides morfologicamente anormais no ejaculado (citada como até ~10% em textos de embriologia) — omitida do conteúdo até verificação.",
     "Duração das fases do ciclo menstrual em dias (Moore: menstrual ~4–5, proliferativa ~9, lútea ~13) — usada apenas de forma aproximada.",
     "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento).",
-    "Questão avançada q28 (2026-11-09): a atribuição da fase meiótica por marcadores junto ao centrômero pode errar quando há crossing-over entre o marcador e o centrômero (raro). Antonarakis et al. (1992) encontraram a maioria dos erros maternos na meiose I e não acharam diferença de idade materna entre erros da meiose I e da meiose II; por isso a explicação liga a idade materna à não disjunção materna em geral, não só à meiose I."
+    "Questão avançada q28 (2026-11-09): a atribuição da fase meiótica por marcadores junto ao centrômero pode errar quando há crossing-over entre o marcador e o centrômero (raro). Antonarakis et al. (1992) encontraram a maioria dos erros maternos na meiose I e não acharam diferença de idade materna entre erros da meiose I e da meiose II; por isso a explicação liga a idade materna à não disjunção materna em geral, não só à meiose I. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) no resumo do artigo: 188 casos maternos, 128 com erro na meiose I, 38 na meiose II e 22 não informativos (77,1% × 22,9%); sem diferença significativa de idade materna entre os dois grupos; os autores reconhecem possíveis erros raros de atribuição por crossing-over entre marcador e centrômero. Nada a mudar na questão."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1372,6 +1372,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "12 correções (0 críticas, 1 importante, 11 menores) + pistas de comprimento removidas em 3 questões (q10, q11, q14), sem mudar gabarito nem ids; principais: correlação de anovulação atribuía toda anovulação à falta de gonadotrofinas (na SOP o LH costuma estar alto) — mecanismo refeito e letrozol citado como 1ª linha (diretriz internacional 2023); resumo completado com modelo das duas células (LH→teca, FSH→granulosa), GnRH pulsátil, seleção do folículo dominante pela inibina B/estradiol, células luteínicas e inibina A, transição lúteo-placentária (~7–9 semanas de IG); teca passou a ser descrita no folículo primário em crescimento (Moore); barreira hematotesticular com compartimentos basal/adluminal; 45,X não se associa à idade materna; evento de crescimento folicular sem atribuir toda a sequência ao FSH; q12 com dor que alterna de lado; notas sobre nomenclatura folicular e duração do corpo lúteo."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-02-q28 a emb-02-q32): 1 correção (0 críticas, 1 importante, 0 menores). Principal: q32 (ordenar) punha a “luteinização da granulosa e da teca interna, com secreção de progesterona” depois da ruptura folicular, mas a luteinização e a subida da progesterona começam com o pico de LH, antes da ovulação; o item 1 passou a “o folículo rompido forma o corpo lúteo, que secreta progesterona” e a explicação registra a nuance. Conferidos sem erro: q28 (alelos A, B e C = erro na meiose I materna), q29 (2 espermátides dissômicas + 2 nulissômicas), q30 (queda do FSH pelo estradiol/inibina B), q31 (ciclo de 32 dias → ovulação ~18º dia → janela dos dias 16–18). Incerteza de q28 conferida no resumo de Antonarakis 1992."
       }
     ],
     "humano": null

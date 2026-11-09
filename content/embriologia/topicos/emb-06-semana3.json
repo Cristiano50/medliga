@@ -1288,7 +1288,7 @@
         },
         {
           "id": "b",
-          "texto": "Fechamento do neuroporo cranial; sua falha causa anencefalia"
+          "texto": "Fechamento do neuroporo cranial no polo rostral; sua falha causa anencefalia"
         },
         {
           "id": "c",
@@ -1300,7 +1300,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "A idade pós-fertilização é a idade gestacional menos cerca de 2 semanas: 5 semanas e 4 dias de idade gestacional correspondem a 3 semanas e 4 dias após a fertilização, isto é, ao dia 25 — dentro da faixa de fechamento do neuroporo cranial (dias 24 a 26), cuja falha produz anencefalia; por isso (b). A lesão da linha média anterior durante a gastrulação (a) ocorre no início da 3ª semana, por volta dos dias 15 a 17 (cerca de 4 semanas e meia de idade gestacional), antes dessa exposição. A fusão do palato secundário (c) ocorre entre a 7ª e a 10ª semana após a fertilização e a separação dos dedos (d), no fim da 8ª semana: ambas muito depois do dia 25. O exercício ilustra por que a janela de um teratógeno só pode ser julgada depois de converter a idade gestacional em idade de fertilização.",
+      "explicacao": "A idade pós-fertilização é a idade gestacional menos cerca de 2 semanas: 5 semanas e 4 dias de idade gestacional correspondem a 3 semanas e 4 dias após a fertilização, isto é, ao dia 25 — dentro da faixa de fechamento do neuroporo cranial (dias 24 a 26), cuja falha produz anencefalia; por isso (b). A lesão da linha média anterior durante a gastrulação (a) ocorre no início da 3ª semana, por volta dos dias 15 a 17 (pouco mais de 4 semanas de idade gestacional), antes dessa exposição. A fusão do palato secundário (c) ocorre entre a 7ª e a 10ª semana após a fertilização e a separação dos dedos (d), no fim da 8ª semana: ambas muito depois do dia 25. O exercício ilustra por que a janela de um teratógeno só pode ser julgada depois de converter a idade gestacional em idade de fertilização.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1351,7 +1351,7 @@
     {
       "id": "emb-06-q32",
       "tipo": "multipla",
-      "contexto": "Recém-nascido a termo eliminou mecônio apenas após 60 horas de vida e evoluiu com distensão abdominal e vômitos. Ao toque retal houve saída explosiva de gases e fezes. A biópsia retal mostra ausência de células ganglionares nos plexos submucoso e mioentérico do segmento distal.",
+      "contexto": "Recém-nascido a termo eliminou mecônio apenas após 60 horas de vida e evoluiu com distensão abdominal e vômitos. Ao toque retal houve saída explosiva de gases e fezes. A biópsia retal de espessura total mostra ausência de células ganglionares nos plexos submucoso e mioentérico do segmento distal.",
       "enunciado": "Qual falha do desenvolvimento explica o quadro?",
       "alternativas": [
         {
@@ -1536,6 +1536,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "7 correções (0 críticas, 0 importantes, 7 menores), todas de pistas involuntárias de comprimento: nas questões q06, q07, q09, q10, q11, q13 e q15 a alternativa correta era 1,5 a 2,6 vezes mais longa que a média dos distratores; reescrevi os distratores (e encurtei algumas corretas) para comprimento e especificidade parecidos, sem mudar gabarito, letras nem ids, conferindo que cada distrator alongado continua claramente errado. Conferidos com olhar de genética e medicina fetal, sem erro: gastrulação e origem epiblástica das três camadas, canal neurentérico, derivados da crista neural, lateralidade (cílios do nó, NODAL/LEFTY2/PITX2 e discinesia ciliar primária), somitos, teratoma sacrococcígeo, disgenesia caudal/sirenomelia com diabetes materno, holoprosencefalia por lesão da linha média anterior e sequência das vilosidades. Eventos em ordem inequívoca."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids q30–q34): 3 correções (0 críticas, 0 importantes, 3 menores). (menor) q30: a alternativa correta (b) era 26% mais curta que a média dos distratores — pista de comprimento desfeita com \"no polo rostral\", sem mudar gabarito nem letras; (menor) q30: a conversão do distrator (a) na explicação dizia que os dias 15 a 17 após a fertilização equivalem a \"cerca de 4 semanas e meia\" de idade gestacional, quando equivalem a 4 semanas e 1 dia a 4 semanas e 3 dias — agora \"pouco mais de 4 semanas\"; (menor) q32: \"biópsia retal\" passou a \"biópsia retal de espessura total\", porque o caso descreve ausência de células ganglionares nos plexos submucoso E mioentérico, e a biópsia por sucção (usada em emb-15-q13, corrigida na 2ª etapa daquele tópico) alcança apenas mucosa e submucosa. Refeitas as contas: 5s4d de idade gestacional = 3s4d após a fertilização = dia 25, dentro da faixa de fechamento do neuroporo cranial adotada no tópico (dias 24 a 26), gabarito (b) correto e único. Conferidos sem erro: SHH da notocorda × BMP dorsal e eixo HOX/ácido retinoico (q31); colonização craniocaudal do intestino pela crista neural vagal e distratores de atresia duodenal, divertículo ileal e onfalocele (q32), coerentes com emb-15-digestorio e com o novo emb-22-crista-neural; pares de q33 (cílios do nó e cascata NODAL/LEFTY2/PITX2, sirenomelia, teratoma sacrococcígeo × cordoma, neuroporo caudal); sequência de q34 (ectoderma → placa neural por inibição de BMP4 → transição epitélio-mesênquima na borda → migração → melanócito). Ordem a, b, c, d e citação de todas as letras nas explicações conferidas."
       }
     ],
     "humano": null

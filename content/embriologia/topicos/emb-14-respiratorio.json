@@ -999,7 +999,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A alternativa (c) está correta: o epitélio pulmonar fetal secreta líquido que mantém os pulmões distendidos e estimula seu crescimento. Na atresia laríngea esse líquido não sai pela via aérea, e os pulmões ficam aumentados e hiperecogênicos. A oclusão traqueal fetoscópica (balão colocado na traqueia por fetoscopia, em centros especializados) usa o mesmo princípio: retém o líquido e estimula o crescimento do pulmão hipoplásico na hérnia diafragmática grave, com aumento da sobrevida no ensaio TOTAL (Deprest et al., 2021). O volume de líquido amniótico é necessário ao crescimento pulmonar, mas não é líquido aspirado que distende os pulmões, e a amnioinfusão não é a terapia da hérnia (a). Os movimentos respiratórios fetais são necessários ao desenvolvimento pulmonar; suprimi-los não ajudaria (b). A recanalização da laringe não regula o surfactante, e o corticoide antenatal amadurece os pneumócitos, mas não corrige o número reduzido de vias aéreas (d).",
+      "explicacao": "A alternativa (c) está correta: o epitélio pulmonar fetal secreta líquido que mantém os pulmões distendidos e estimula seu crescimento. Na atresia laríngea esse líquido não sai pela via aérea, e os pulmões ficam aumentados e hiperecogênicos. A oclusão traqueal fetoscópica (balão colocado na traqueia por fetoscopia, em centros especializados) usa o mesmo princípio: retém o líquido e estimula o crescimento do pulmão hipoplásico na hérnia diafragmática esquerda grave, com aumento da sobrevida no ensaio TOTAL (Deprest et al., 2021). O volume de líquido amniótico é necessário ao crescimento pulmonar, mas não é líquido aspirado que distende os pulmões, e a amnioinfusão não é a terapia da hérnia (a). Os movimentos respiratórios fetais são necessários ao desenvolvimento pulmonar; suprimi-los não ajudaria (b). A recanalização da laringe não regula o surfactante, e o corticoide antenatal amadurece os pneumócitos, mas não corrige o número reduzido de vias aéreas (d).",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1037,7 +1037,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "A alternativa (a) está correta: atresia de esôfago com fístula, malformação anorretal e defeito radial do membro compõem a associação VACTERL (anomalias vertebrais, anais, cardíacas, traqueoesofágicas, renais e de membros) — ocorrência conjunta não aleatória, sem causa unificada conhecida. Por isso, antes da cirurgia, investigam-se os demais componentes: coração (ecocardiograma), rins e coluna. Numa sequência (b), uma anomalia primária provoca as outras; o polidrâmnio não causa defeitos de membro nem anorretais. A deleção 22q11.2 (c) cursa com cardiopatia conotruncal, hipocalcemia e hipoplasia tímica, não com esse conjunto. Deformações por compressão (d) ocorrem no oligoidrâmnio; a atresia de esôfago cursa com polidrâmnio, e as anomalias aqui são malformações.",
+      "explicacao": "A alternativa (a) está correta: atresia de esôfago com fístula, malformação anorretal e defeito radial do membro compõem a associação VACTERL (anomalias vertebrais, anais, cardíacas, traqueoesofágicas, renais e de membros) — ocorrência conjunta não aleatória, sem causa unificada conhecida. Por isso, antes da cirurgia, investigam-se os demais componentes: coração (ecocardiograma), rins e coluna. Numa sequência (b), uma anomalia primária provoca as outras; o polidrâmnio não causa defeitos de membro nem anorretais. A deleção 22q11.2 (c) cursa com cardiopatia conotruncal, hipocalcemia e hipoplasia tímica, não com esse conjunto. Deformações por compressão (d) ocorrem no oligoidrâmnio; a atresia de esôfago cursa com polidrâmnio, e as anomalias aqui são malformações. Por não ter causa única, a associação só se firma depois de afastadas condições com quadro sobreposto, como a anemia de Fanconi diante de defeito radial e as anomalias cromossômicas.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1048,7 +1048,7 @@
         "caso-clinico",
         "avancado"
       ],
-      "referencia": "Sadler 14ª ed., cap. 9 e 14; Moore 11ª ed., cap. 10"
+      "referencia": "Sadler 14ª ed., cap. 9 e 14; Moore 11ª ed., cap. 10; Solomon, Orphanet J Rare Dis 2011;6:56"
     },
     {
       "id": "emb-14-q26",
@@ -1074,7 +1074,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "A alternativa (b) está correta: 24 semanas de idade gestacional correspondem a cerca de 22 semanas após a fertilização (idade gestacional ≈ idade embrionária + 2 semanas), fase final do período canalicular (≈16ª–25ª/26ª semana após a fertilização em Moore e Sadler). Já existem bronquíolos respiratórios e ductos alveolares, com intensa vascularização, e começam a surgir sáculos de parede fina, o que torna a respiração possível com terapia intensiva; mas a área de troca é pequena, e a produção de surfactante, iniciada por volta da 20ª–24ª semana, ainda é mínima. O período pseudoglandular (a) termina por volta da 16ª–17ª semana. O período sacular (c) mal começou, e os brônquios segmentares formaram-se na 7ª semana. Os alvéolos maduros (d) surgem a partir do fim da vida fetal.",
+      "explicacao": "A alternativa (b) está correta: 24 semanas de idade gestacional correspondem a cerca de 22 semanas após a fertilização (idade gestacional ≈ idade embrionária + 2 semanas), fase final do período canalicular (≈16ª–25ª/26ª semana após a fertilização em Moore e Sadler). Já existem bronquíolos respiratórios e ductos alveolares, com intensa vascularização, e começam a surgir sáculos de parede fina, o que torna a respiração possível com terapia intensiva; mas a área de troca é pequena, e a produção de surfactante, iniciada por volta da 20ª–24ª semana, ainda é mínima. O período pseudoglandular (a) termina por volta da 16ª–17ª semana. O período sacular (c) ainda não começou (≈24ª/26ª semana após a fertilização), e os brônquios segmentares formaram-se na 7ª semana. Os alvéolos maduros (d) surgem a partir do fim da vida fetal.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1126,7 +1126,7 @@
     {
       "id": "emb-14-q28",
       "tipo": "ordenar",
-      "enunciado": "Ordene a cadeia de eventos que leva à hipoplasia pulmonar na agenesia renal bilateral:",
+      "enunciado": "Na agenesia renal bilateral, ordene a cadeia de eventos que leva à hipoplasia pulmonar e à insuficiência respiratória ao nascer:",
       "itens": [
         {
           "id": "1",
@@ -1234,6 +1234,9 @@
     },
     {
       "obra": "Deprest JA, Nicolaides KH, Benachi A et al. Randomized trial of fetal surgery for severe left diaphragmatic hernia. N Engl J Med. 2021;385(2):107–118"
+    },
+    {
+      "obra": "Solomon BD. VACTERL/VATER association. Orphanet J Rare Dis. 2011;6:56"
     }
   ],
   "notasDivergencia": [
@@ -1253,7 +1256,7 @@
     "Prevalências da síndrome do desconforto respiratório e da hérnia diafragmática congênita não foram conferidas nas edições adotadas e foram omitidas.",
     "Janela de uso do corticoide antenatal: a OMS (2022) recomenda entre 24 e 34 semanas de idade gestacional, com idade gestacional confiável, parto provável em até 7 dias, ausência de infecção materna e assistência neonatal adequada; o ACOG (2017) recomenda de 24 0/7 a 33 6/7 semanas, admite considerar idades menores na periviabilidade e, em casos selecionados, o pré-termo tardio. O Manual de Gestação de Alto Risco do Ministério da Saúde (2022) foi acrescentado às referências pela revisão de pediatria (2026-11-09), mas o texto exato da seção não pôde ser conferido (revisor humano: confirmar). A q10 (30 semanas) está dentro de todas as janelas; a faixa não foi usada como gabarito.",
     "Limite de viabilidade depende dos recursos de terapia intensiva; o tópico usa apenas a relação qualitativa com o fim do período canalicular.",
-    "Questões avançadas q24–q28 (acrescentadas em 2026-11-09, ainda sem revisão por agente): a q24 usa a oclusão traqueal fetoscópica apenas para cobrar o princípio fisiológico (retenção do líquido pulmonar estimula o crescimento), como descrito no ensaio TOTAL (Deprest et al., 2021); indicação e seleção de casos são de centros de medicina fetal e não são cobradas. A q25 apoia-se na definição de associação do tópico emb-10 e na investigação de anomalias associadas já registrada na correlação da atresia de esôfago."
+    "Questões avançadas q24–q28 (acrescentadas em 2026-11-09; revisadas pela etapa 1 de embriologia da camada avançada na mesma data, ver revisao.agentes): a q24 usa a oclusão traqueal fetoscópica apenas para cobrar o princípio fisiológico (retenção do líquido pulmonar estimula o crescimento), como descrito no ensaio TOTAL (Deprest et al., 2021), que incluiu só HDC esquerda grave; indicação e seleção de casos são de centros de medicina fetal e não são cobradas. A q25 apoia-se na definição de associação do tópico emb-10 e na investigação de anomalias associadas já registrada na correlação da atresia de esôfago; a frase sobre afastar quadros sobrepostos (anemia de Fanconi nos defeitos radiais, anomalias cromossômicas) segue a revisão de Solomon (Orphanet J Rare Dis 2011), que lista esses diagnósticos diferenciais — conferir com o revisor de genética. Q27 (revisão de embriologia, camada avançada): o caso descreve sequestro intralobar (dentro do lobo inferior esquerdo, pneumonias de repetição); Moore trata o sequestro como pulmão acessório e Sadler atribui lobos/pulmões ectópicos a brotos respiratórios adicionais do intestino anterior, mas parte da literatura de patologia considera adquirida a maioria dos sequestros intralobares, e as obras não distinguem intralobar de extralobar. A questão cobra só a explicação embriológica clássica, única defensável entre as alternativas — conferir com o revisor humano (cirurgia pediátrica/pneumologia)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1272,6 +1275,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "15 correções (0 críticas, 0 importantes, 15 menores); principais: fisiologia da depuração do líquido pulmonar ao nascer atualizada (reabsorção epitelial ativa de sódio como via principal; relação com a taquipneia transitória e a cesariana sem trabalho de parto); surfactante com referência temporal explícita (semanas após a fertilização); conduta inicial da atresia de esôfago acrescentada (sonda antes da 1ª mamada, jejum, cabeceira elevada, aspiração contínua do coto proximal, ecocardiograma); incerteza do corticoide antenatal resolvida com OMS 2022 e ACOG 2017 e acrescentadas as referências OMS 2022 e Ministério da Saúde 2022 (seção a confirmar pelo revisor humano); nota sobre a origem das cartilagens laríngeas (Sadler, placa lateral); distratores reescritos contra pista de comprimento em q01, q02, q03, q05, q06, q10, q11, q12 e q13 (gabaritos e ids inalterados). Conferidos: SDR (quadro, radiografia, CPAP e surfactante), corticoide antenatal (betametasona a 30 semanas), atresia de esôfago (polidrâmnio, sonda enrolada, ar no abdome), HDC, fases pulmonares e inervação laríngea."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-14-q24 a emb-14-q28): 5 correções (0 críticas, 1 importante, 4 menores); principais: (importante) q26 — a refutação de (c) dizia que o período sacular 'mal começou' com 24 semanas de idade gestacional (≈22 após a fertilização), o que contradiz as faixas do próprio tópico (sacular a partir de ≈24/26 após a fertilização); agora 'ainda não começou'; q24 — TOTAL restrito à HDC esquerda grave, como em emb-11; q25 — explicação acrescida de que a associação VACTERL só se firma depois de afastados quadros sobrepostos (anemia de Fanconi no defeito radial, anomalias cromossômicas), com a referência Solomon 2011; q28 — enunciado ajustado para incluir a insuficiência respiratória, último item da sequência; incerteza da camada avançada atualizada, com nota sobre a origem discutida do sequestro intralobar (q27). Gabaritos conferidos e únicos: q24 (c) — líquido pulmonar retido distende e estimula o pulmão (CHAOS), princípio da oclusão traqueal; q25 (a) — VACTERL (T, A, L presentes; investigar coração, rins e coluna); q26 (b) — canalicular tardio com 22 semanas após a fertilização; q27 (d) — pulmão acessório/sequestro com artéria sistêmica, na base esquerda (Moore, cap. 10); q28 — broto ureteral/indução → ausência de urina → oligoidrâmnio a partir do 2º trimestre → compressão e falta de líquido → insuficiência respiratória (sequência de Potter). Sem pista de comprimento; letras c/a/b/d; dificuldade 4–5 e Bloom adequados; coerentes com as faixas dos períodos pulmonares, com emb-10 (sequência × associação) e emb-11."
       }
     ],
     "humano": null

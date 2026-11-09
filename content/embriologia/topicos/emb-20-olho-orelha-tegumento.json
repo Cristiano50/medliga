@@ -771,7 +771,7 @@
         { "id": "d", "texto": "É improvável, porque o coloboma é sempre adquirido depois do nascimento, por trauma ou inflamação" }
       ],
       "correta": "c",
-      "explicacao": "O coloboma resulta da falha do fechamento da fissura coroide, na face inferior do cálice e da haste ópticos, que ocorre na 7ª semana após a fertilização, ou seja, por volta da 9ª semana de idade gestacional (idade gestacional ≈ idade embrionária + 2 semanas). Uma exposição com 14 semanas de idade gestacional ocorreu depois do fechamento e não explica o defeito (c); num coloboma bilateral, causas genéticas e associações sindrômicas, como a síndrome CHARGE (CHD7), devem ser procuradas. A fissura não se fecha no 2º trimestre (a); a reabertura das pálpebras, entre 26 e 28 semanas segundo Moore, é um evento independente. Lesões das fibras do cristalino (b) causam catarata, não coloboma. O coloboma típico é congênito, de origem embriológica, e não adquirido (d).",
+      "explicacao": "O coloboma resulta da falha do fechamento da fissura coroide, na face inferior do cálice e da haste ópticos, que ocorre na 7ª semana após a fertilização, ou seja, por volta da 9ª semana de idade gestacional (idade gestacional ≈ idade embrionária + 2 semanas). Uma exposição com 14 semanas de idade gestacional ocorreu depois do fechamento e não explica o defeito (c); num coloboma bilateral, causas genéticas e associações sindrômicas, como a síndrome CHARGE (CHD7), devem ser procuradas. A fissura não se fecha no 2º trimestre (a); a reabertura das pálpebras, entre 26 e 28 semanas após a fertilização, segundo Moore, é um evento independente. Lesões das fibras do cristalino (b) causam catarata, não coloboma. O coloboma típico é congênito, de origem embriológica, e não adquirido (d).",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": ["avancado", "coloboma", "fissura-coroide", "periodo-critico", "teratologia", "caso-clinico"],
@@ -786,7 +786,7 @@
         { "id": "a", "texto": "Catarata bilateral, porque as fibras secundárias do cristalino continuam a ser formadas nessa fase" },
         { "id": "b", "texto": "Persistência do canal arterial isolada, porque a septação cardíaca ainda está em andamento" },
         { "id": "c", "texto": "Coloboma de íris e retina, porque a fissura coroide permanece aberta até o fim do 2º trimestre" },
-        { "id": "d", "texto": "Surdez neurossensorial isolada; a orelha interna permanece suscetível por mais tempo" }
+        { "id": "d", "texto": "Surdez neurossensorial isolada, porque a orelha interna permanece suscetível por mais tempo" }
       ],
       "correta": "d",
       "explicacao": "Na rubéola congênita, o tipo de defeito depende da época da infecção. Catarata e cardiopatia resultam de infecções no início da gestação, quando se formam as fibras primárias do cristalino (entre a 4ª e a 7ª semana após a fertilização, segundo Moore) e o coração. Na série prospectiva de Miller e colaboradores (Lancet, 1982), as crianças infectadas entre 13 e 16 semanas de gestação que tiveram defeitos apresentaram apenas surdez, e não houve defeitos atribuíveis à rubéola após a 16ª semana: a orelha interna permanece suscetível por mais tempo que o olho e o coração (d). As fibras secundárias (a) são acrescentadas por toda a vida, mas a catarata da rubéola está ligada à infecção precoce, durante a formação das fibras primárias. A septação cardíaca (b) completa-se no período embrionário, e a cardiopatia da rubéola decorre de infecção precoce. A fissura coroide (c) fecha-se na 7ª semana após a fertilização. A triagem auditiva neonatal, obrigatória no Brasil, é especialmente importante nesse bebê.",
@@ -931,7 +931,7 @@
     "Prevalências de coloboma, catarata e glaucoma congênitos, apêndices pré-auriculares e politelia não foram conferidas e foram omitidas.",
     "Indicação de ultrassonografia renal em apêndices pré-auriculares isolados é controversa na literatura pediátrica; o conteúdo recomenda apenas triagem auditiva e busca clínica de outras anomalias.",
     "Janela cirúrgica da catarata congênita densa (4–6 semanas na unilateral; até ≈ 10 semanas na bilateral) e calendário de repetição do teste do reflexo vermelho variam entre as fontes; o guia do Ministério da Saúde para a triagem ocular neonatal está em revisão (consulta pública de 2026). Conferir a versão vigente antes da publicação.",
-    "Camada avançada (q26): os dados de Miller et al. (Lancet 1982) foram conferidos pelo resumo, não pelo texto integral; a idade gestacional da série é dada em semanas de gestação, e o sistema de contagem (provavelmente a partir da DUM) não foi confirmado. O protocolo da FEBRASGO sobre rubéola na gestação e o Guia de Vigilância em Saúde do Ministério da Saúde foram vistos só em trechos de busca e concordam qualitativamente (risco máximo no 1º trimestre, baixo após 16–20 semanas). A questão usa 15 semanas de idade gestacional, dentro da faixa do estudo nos dois sistemas de contagem plausíveis."
+    "Camada avançada (q26): os dados de Miller et al. (Lancet 1982) foram conferidos pelo resumo, não pelo texto integral; a idade gestacional da série é dada em semanas de gestação, e o sistema de contagem (provavelmente a partir da DUM) não foi confirmado. O protocolo da FEBRASGO sobre rubéola na gestação e o Guia de Vigilância em Saúde do Ministério da Saúde foram vistos só em trechos de busca e concordam qualitativamente (risco máximo no 1º trimestre, baixo após 16–20 semanas). A questão usa 15 semanas de idade gestacional, dentro da faixa do estudo nos dois sistemas de contagem plausíveis. Revisor de embriologia (2026-11-09): números do resumo reconfirmados (infecção congênita em mais de 80% até 12 semanas, 54% com 13–14 e 25% no fim do 2º trimestre; defeitos em todos os infectados antes da 11ª semana, sobretudo cardiopatia e surdez, e em 35% dos infectados com 13–16 semanas, só surdez; nenhum defeito atribuível à rubéola em 63 crianças infectadas após a 16ª semana); o sistema de contagem das semanas continua não confirmado."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -950,6 +950,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "12 correções (0 crítica, 10 importantes, 2 menores); principais: pista de comprimento eliminada em 10 questões; catarata congênita com teste do reflexo vermelho (Ministério da Saúde, 2013) e janela cirúrgica (4–6 semanas na unilateral; até cerca de 10 semanas na bilateral); triagem auditiva neonatal conforme as diretrizes do Ministério da Saúde de 2012 (24–48 h, no máximo até 1 mês; EOA ou PEATE automático conforme indicador de risco; diagnóstico até 3 e intervenção até 6 meses). Anatomia do olho e da orelha (artéria central da retina, ramo da oftálmica/carótida interna; tensor do tímpano pelo V e estapédio pelo VII) conferida sem erro."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-20-q25 a emb-20-q29): 2 correções (0 crítica, 0 importante, 2 menores); principais: q25, reabertura das pálpebras com o sistema de contagem explícito (após a fertilização), numa questão que contrasta idade gestacional e embrionária; q26, alternativa correta, a mais curta (84 caracteres; demais 90–98) e a única sem 'porque', reescrita no mesmo molde das outras, sem mudar o sentido. Conferidos sem erro: coloboma (fissura coroide fechada na 7ª semana após a fertilização, ≈ 9ª de IG) × exposição com 14 semanas de IG; rubéola com 15 semanas de IG → surdez isolada (resumo de Miller et al. 1982 reconfirmado; 15 semanas fica na faixa de 13–16 nos dois sistemas de contagem); microtia com atresia do meato → perda condutiva com orelha interna preservada; trajeto da luz e retina invertida (sequência refeita); origens das estruturas do olho e da orelha."
       }
     ],
     "humano": null

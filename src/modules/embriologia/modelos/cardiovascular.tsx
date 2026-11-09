@@ -54,14 +54,14 @@ const CORES = {
   septumPrimum: '#f3dcb2',
   septumSecundum: '#9b6fcf',
   coxins: '#8cc97a',
-  septoIV: '#7d2b3a',
+  septoIV: '#c27ba8',
   ostioSecundum: '#fde047',
   forameOval: '#fbbf24',
-  forameIV: '#93e5f5',
+  forameIV: '#67e8f9',
   canalAV: '#c7d2fe',
   ostioPrimum: '#f472b6',
   valvas: '#7c6fd6',
-  seio: '#3f3a7a',
+  seio: '#5b54a8',
 };
 
 // =============================================================================================
@@ -69,9 +69,17 @@ const CORES = {
 // =============================================================================================
 /** Dimensões do coração esquemático: átrios em cima (y > 0), ventrículos embaixo; plano AV em y = 0. */
 const C = { rx: 1, ryA: 0.9, ryV: 1.25, rz: 0.6, parede: 0.93, cis: 0.22 };
+const RX_IN = C.rx * C.parede;
 const RZ_IN = C.rz * C.parede;
 const RYA_IN = C.ryA * C.parede;
 const RYV_IN = C.ryV * C.parede;
+/** Septos oblíquos, como no coração real: a face direita olha para a frente e para a direita (giro em torno de y). */
+const BETA = Math.PI / 6;
+const SEN = Math.sin(BETA);
+const COS = Math.cos(BETA);
+/** Ângulo paramétrico (phi da SphereGeometry) em que a casca é dividida no plano dos septos. */
+const PHI_SEPTO = 1.5 * Math.PI + Math.atan((C.rz / C.rx) * Math.tan(BETA));
+const D_SEPTO = SEN ** 2 / RX_IN ** 2 + COS ** 2 / RZ_IN ** 2;
 
 /** O ápice aponta para a esquerda e para baixo: cisalhamento só abaixo do plano AV (y < 0). */
 function cisalhar<G extends THREE.BufferGeometry>(g: G): G {
@@ -85,9 +93,10 @@ function cisalhar<G extends THREE.BufferGeometry>(g: G): G {
   return g;
 }
 
-/** Quarto de elipsoide: metade posterior (z ≤ 0) de um lado (+1 = esquerdo do embrião) e de uma altura (átrio/ventrículo). */
+/** Parede de uma câmara: metade posterior (z ≤ 0) do elipsoide, de um lado do plano dos septos (+1 = esquerdo). */
 function quartoCasca(lado: 1 | -1, atrio: boolean, k = 1) {
-  const g = new THREE.SphereGeometry(1, 28, 14, lado > 0 ? Math.PI : 1.5 * Math.PI, Math.PI / 2, atrio ? 0 : Math.PI / 2, Math.PI / 2);
+  const [inicio, comprimento] = lado > 0 ? [Math.PI, PHI_SEPTO - Math.PI] : [PHI_SEPTO, 2 * Math.PI - PHI_SEPTO];
+  const g = new THREE.SphereGeometry(1, 28, 14, inicio, comprimento, atrio ? 0 : Math.PI / 2, Math.PI / 2);
   g.scale(C.rx * k, (atrio ? C.ryA : C.ryV) * k, C.rz * k);
   return atrio ? g : cisalhar(g);
 }
@@ -100,61 +109,68 @@ function corteParede(lado: 1 | -1, atrio: boolean) {
   return atrio ? g : cisalhar(g);
 }
 
-/** Profundidade (−z) da cavidade no plano sagital x = 0, à altura t. */
-const sAtrio = (t: number) => RZ_IN * Math.sqrt(Math.max(0, 1 - (t / RYA_IN) ** 2));
-const sVentriculo = (t: number) => RZ_IN * Math.sqrt(Math.max(0, 1 - (t / RYV_IN) ** 2));
+/** Profundidade máxima da cavidade no plano dos septos, à altura t. */
+const sAtrio = (t: number) => Math.sqrt(Math.max(0, 1 - (t / RYA_IN) ** 2) / D_SEPTO);
+const sVentriculo = (t: number) => Math.sqrt(Math.max(0, 1 - (t / RYV_IN) ** 2) / D_SEPTO);
 
-/** Forma no plano sagital: (s = profundidade −z, t = altura y) → geometria com x = x0. */
-function noPlanoSagital<G extends THREE.BufferGeometry>(g: G, x0: number): G {
+/** Ponto do plano dos septos: s = profundidade a partir do corte, t = altura, desvio > 0 para o lado esquerdo. */
+function pontoSepto(s: number, t: number, desvio = 0): V3 {
+  return [desvio * COS - s * SEN, t, -desvio * SEN - s * COS];
+}
+/** Forma desenhada em (s, t) → geometria no plano dos septos, deslocada `desvio` para a esquerda (+) ou direita (−). */
+function noSepto<G extends THREE.BufferGeometry>(g: G, desvio: number): G {
   g.rotateY(Math.PI / 2); // forma-x → −z ; normal da forma → +x
-  g.translate(x0, 0, 0);
+  g.translate(desvio, 0, 0);
+  g.rotateY(BETA);
   return g;
 }
+/** Primeira profundidade em que um plano deslocado para a direita fica atrás do corte (z ≤ 0). */
+const frente = (desvio: number) => Math.max(0, -desvio * Math.tan(BETA));
 
 interface Furo { s: number; t: number; rs: number; rt: number }
-const OSTIO_SECUNDUM: Furo = { s: 0.24, t: 0.56, rs: 0.12, rt: 0.085 };
-const FORAME_OVAL: Furo = { s: 0.26, t: 0.3, rs: 0.15, rt: 0.105 };
+const OSTIO_SECUNDUM: Furo = { s: 0.26, t: 0.57, rs: 0.13, rt: 0.085 };
+const FORAME_OVAL: Furo = { s: 0.3, t: 0.3, rs: 0.16, rt: 0.11 };
 const BASE_SEPTO_ATRIAL = 0.115; // topo dos coxins fundidos
+const SECUNDUM = { desvio: -0.15, espessura: 0.07 };
 
 function elipse(f: Furo) {
   return new THREE.Shape().absellipse(f.s, f.t, f.rs, f.rt, 0, Math.PI * 2, false);
 }
 
-/** Septo atrial: do teto ao plano dos coxins, ocupando a metade posterior do corte, com um furo. */
-function formaSeptoAtrial(furo: Furo) {
+/** Septo atrial: do teto ao plano dos coxins, da linha de corte à parede posterior, com um furo. */
+function formaSeptoAtrial(furo: Furo, s0 = 0) {
   const forma = new THREE.Shape();
-  forma.moveTo(0, BASE_SEPTO_ATRIAL);
+  forma.moveTo(s0, BASE_SEPTO_ATRIAL);
   const n = 24;
+  const tTopo = RYA_IN * Math.sqrt(Math.max(0, 1 - D_SEPTO * s0 * s0));
   for (let i = 0; i <= n; i++) {
-    const t = BASE_SEPTO_ATRIAL + ((RYA_IN - BASE_SEPTO_ATRIAL) * i) / n;
-    forma.lineTo(sAtrio(t), t);
+    const t = BASE_SEPTO_ATRIAL + ((tTopo - BASE_SEPTO_ATRIAL) * i) / n;
+    forma.lineTo(Math.max(s0, sAtrio(t)), t);
   }
-  forma.lineTo(0, RYA_IN);
   forma.closePath();
-  const f = new THREE.Path().absellipse(furo.s, furo.t, furo.rs, furo.rt, 0, Math.PI * 2, true);
-  forma.holes.push(f);
+  forma.holes.push(new THREE.Path().absellipse(furo.s, furo.t, furo.rs, furo.rt, 0, Math.PI * 2, true));
   return forma;
 }
 
 /** Septo interventricular muscular: cresce do ápice; borda livre côncava, mais baixa junto ao corte. */
-const CRISTA = { tCorte: -0.42, tPosterior: -0.15 };
+const CRISTA = { tCorte: -0.42, tPosterior: -0.15, s0: 0.03 };
 function bordaLivreIV() {
   const sPost = sVentriculo(CRISTA.tPosterior);
   const pontos: [number, number][] = [];
   for (let i = 0; i <= 16; i++) {
     const u = i / 16;
-    pontos.push([sPost * u, CRISTA.tCorte + (CRISTA.tPosterior - CRISTA.tCorte) * u * u]);
+    pontos.push([CRISTA.s0 + (sPost - CRISTA.s0) * u, CRISTA.tCorte + (CRISTA.tPosterior - CRISTA.tCorte) * u * u]);
   }
   return pontos;
 }
 function formaSeptoIV() {
   const forma = new THREE.Shape();
-  const base = -RYV_IN;
-  forma.moveTo(0, base);
+  const base = -RYV_IN * Math.sqrt(1 - D_SEPTO * CRISTA.s0 * CRISTA.s0);
+  forma.moveTo(CRISTA.s0, base);
   const n = 24;
   for (let i = 1; i <= n; i++) {
     const t = base + ((CRISTA.tPosterior - base) * i) / n;
-    forma.lineTo(sVentriculo(t), t);
+    forma.lineTo(Math.max(CRISTA.s0, sVentriculo(t)), t);
   }
   const borda = bordaLivreIV();
   for (let i = borda.length - 2; i >= 0; i--) forma.lineTo(borda[i][0], borda[i][1]);
@@ -165,12 +181,31 @@ function formaSeptoIV() {
 function formaForameIV() {
   const forma = new THREE.Shape();
   const borda = bordaLivreIV();
-  forma.moveTo(borda[0][0], borda[0][1]);
-  for (const [s, t] of borda.slice(1)) forma.lineTo(s, t);
+  forma.moveTo(0, borda[0][1]);
+  for (const [s, t] of borda) forma.lineTo(s, t);
   forma.lineTo(sVentriculo(-0.1), -0.1);
   forma.lineTo(0, -0.1);
   forma.closePath();
   return forma;
+}
+
+/** Coxins AV fundidos: placa arredondada ao longo da linha dos septos, faceada no plano do corte. */
+function geometriaCoxins() {
+  const bisel = 0.035;
+  const comprimento = sAtrio(0);
+  const pontos: THREE.Vector2[] = [];
+  for (let i = 0; i < 40; i++) {
+    const a = (i / 40) * Math.PI * 2;
+    const s = comprimento / 2 + (comprimento / 2) * Math.cos(a);
+    const w = 0.17 * Math.sin(a);
+    const x = w * COS - s * SEN;
+    const z = Math.min(-bisel, -w * SEN - s * COS);
+    pontos.push(new THREE.Vector2(x, z));
+  }
+  const g = new THREE.ExtrudeGeometry(new THREE.Shape(pontos), { depth: 0.17, bevelEnabled: true, bevelThickness: bisel, bevelSize: bisel, bevelSegments: 3 });
+  g.rotateX(Math.PI / 2); // forma-y → z ; extrusão → −y
+  g.translate(0, 0.085, 0);
+  return g;
 }
 
 export const PARTES_SEPTACAO = [
@@ -195,6 +230,7 @@ export const PARTES_SEPTACAO = [
  * Fim da 6ª a 7ª semana: forame oval já formado (septum secundum sobre o ostium secundum, ostium primum fechado)
  * e forame interventricular ainda aberto (a parte membranosa só o fecha no fim da 7ª semana).
  * Corte frontal: só a metade posterior (z ≤ 0); vias de saída (anteriores) removidas pelo corte.
+ * Vista padrão pela frente e pela direita: face direita dos septos (septum secundum translúcido sobre o ostium secundum).
  */
 export function ModeloSeptacaoCardiaca() {
   const g = useMemo(() => {
@@ -212,38 +248,36 @@ export function ModeloSeptacaoCardiaca() {
       veInt: quartoCasca(1, false, C.parede),
       veCorte: corteParede(1, false),
     };
-    // septum primum (fino) em x = 0; septum secundum (espesso, muscular) à direita, x ∈ [−0.15, −0.08]
-    const septumPrimum = noPlanoSagital(new THREE.ShapeGeometry(formaSeptoAtrial(OSTIO_SECUNDUM), 4), 0);
-    const ostioSecundum = noPlanoSagital(new THREE.ShapeGeometry(elipse(OSTIO_SECUNDUM), 24), 0.002);
-    const septumSecundum = noPlanoSagital(
-      new THREE.ExtrudeGeometry(formaSeptoAtrial(FORAME_OVAL), { depth: 0.07, bevelEnabled: false, curveSegments: 24 }),
-      -0.15,
+    // septum primum (fino) no plano dos septos; septum secundum (espesso, muscular) à direita dele
+    const septumPrimum = noSepto(new THREE.ShapeGeometry(formaSeptoAtrial(OSTIO_SECUNDUM), 4), 0);
+    const ostioSecundum = noSepto(new THREE.ShapeGeometry(elipse(OSTIO_SECUNDUM), 24), 0.003);
+    const septumSecundum = noSepto(
+      new THREE.ExtrudeGeometry(formaSeptoAtrial(FORAME_OVAL, frente(SECUNDUM.desvio)), { depth: SECUNDUM.espessura, bevelEnabled: false, curveSegments: 24 }),
+      SECUNDUM.desvio,
     );
-    const forameOval = noPlanoSagital(new THREE.ShapeGeometry(elipse(FORAME_OVAL), 24), -0.115);
+    const forameOval = noSepto(new THREE.ShapeGeometry(elipse(FORAME_OVAL), 24), SECUNDUM.desvio + SECUNDUM.espessura / 2);
     // ostium primum já fechado: linha de fusão do septum primum com os coxins
-    const ostioPrimum = tubo([[0, BASE_SEPTO_ATRIAL + 0.005, -0.01], [0, BASE_SEPTO_ATRIAL + 0.005, -sAtrio(BASE_SEPTO_ATRIAL) + 0.02]], 0.024, 8, 10);
-    // coxins AV fundidos: meio elipsoide (z ≤ 0) + face de corte
-    const coxins = new THREE.SphereGeometry(1, 28, 16, Math.PI, Math.PI).scale(0.21, 0.125, RZ_IN * 0.97);
-    const coxinsCorte = new THREE.CircleGeometry(1, 28).scale(0.21, 0.125, 1);
+    const tOP = BASE_SEPTO_ATRIAL + 0.01;
+    const ostioPrimum = tubo([pontoSepto(0.01, tOP), pontoSepto(sAtrio(tOP) - 0.02, tOP)], 0.024, 8, 10);
     // canais AV: meia-luva (parede posterior) + plano da abertura, à direita e à esquerda dos coxins
-    const canal = new THREE.CylinderGeometry(1, 1, 0.2, 28, 1, true, Math.PI / 2, Math.PI).scale(0.3, 1, 0.44);
-    const canalAbertura = new THREE.CircleGeometry(1, 28, Math.PI, Math.PI).rotateX(Math.PI / 2).scale(0.3, 1, 0.44);
+    const canal = new THREE.CylinderGeometry(1, 1, 0.2, 28, 1, true, Math.PI / 2, Math.PI);
+    const canalAbertura = new THREE.CircleGeometry(1, 28, Math.PI, Math.PI).rotateX(Math.PI / 2);
     // septo interventricular muscular (espesso) e forame interventricular
-    const septoIV = cisalhar(noPlanoSagital(new THREE.ExtrudeGeometry(formaSeptoIV(), { depth: 0.1, bevelEnabled: false }), -0.05));
-    const forameIV = cisalhar(noPlanoSagital(new THREE.ShapeGeometry(formaForameIV(), 4), 0));
+    const septoIV = cisalhar(noSepto(new THREE.ExtrudeGeometry(formaSeptoIV(), { depth: 0.1, bevelEnabled: false }), -0.05));
+    const forameIV = cisalhar(noSepto(new THREE.ShapeGeometry(formaForameIV(), 4), 0));
     const esfera = new THREE.SphereGeometry(1, 20, 14);
     const disco = new THREE.CircleGeometry(1, 28);
-    const seio = tubo([[0, 0, 0], [0, 0, 0.32]], 0.075, 6, 16);
-    return { ...camaras, septumPrimum, ostioSecundum, septumSecundum, forameOval, ostioPrimum, coxins, coxinsCorte, canal, canalAbertura, septoIV, forameIV, esfera, disco, seio };
+    const seio = tubo([[0, 0, 0], [0, 0, 0.2]], 0.07, 6, 16);
+    return { ...camaras, septumPrimum, ostioSecundum, septumSecundum, forameOval, ostioPrimum, coxins: geometriaCoxins(), canal, canalAbertura, septoIV, forameIV, esfera, disco, seio };
   }, []);
   useEffect(() => () => descartar(g), [g]);
 
   // Orifício sinoatrial na parede posterior do átrio direito, ladeado pelas valvas venosas.
   const sino = useMemo(() => {
-    const [x, y] = [-0.5, 0.44];
-    const z = -RZ_IN * Math.sqrt(1 - (x / (C.rx * C.parede)) ** 2 - (y / RYA_IN) ** 2);
+    const [x, y] = [-0.6, 0.42];
+    const z = -RZ_IN * Math.sqrt(1 - (x / RX_IN) ** 2 - (y / RYA_IN) ** 2);
     const p = new THREE.Vector3(x, y, z);
-    const n = new THREE.Vector3(x / (C.rx * C.parede) ** 2, y / RYA_IN ** 2, z / RZ_IN ** 2).normalize(); // para fora
+    const n = new THREE.Vector3(x / RX_IN ** 2, y / RYA_IN ** 2, z / RZ_IN ** 2).normalize(); // para fora
     const lateral = new THREE.Vector3(0, 1, 0).cross(n).normalize();
     const cima = n.clone().cross(lateral).normalize();
     const base = new THREE.Matrix4().makeBasis(lateral, cima, n.clone().negate());
@@ -253,8 +287,12 @@ export function ModeloSeptacaoCardiaca() {
     return { rot, centro: dentro(0.012), valvas: [dentro(0.03, -0.1), dentro(0.03, 0.1)], tuboRot: girarPara(n), tuboPos: p.toArray() as V3 };
   }, []);
 
+  const canais: { id: string; x: number; rx: number; rz: number }[] = [
+    { id: 'canal-av-direito', x: -0.62, rx: 0.25, rz: 0.4 },
+    { id: 'canal-av-esquerdo', x: 0.48, rx: 0.3, rz: 0.44 },
+  ];
   return (
-    <group position={[0.05, 0.12, 0.15]} rotation={[0.1, 0, 0]}>
+    <group position={[0.05, 0.12, 0.1]} rotation={[0.1, 0, 0]}>
       <Parte id="atrio-direito" cor={CORES.atrioDireito} prioridade={1} rotulo={[-0.85, 0.35, -0.2]}>
         <Malha geometria={g.adExt} />
         <Malha geometria={g.adInt} />
@@ -275,37 +313,34 @@ export function ModeloSeptacaoCardiaca() {
         <Malha geometria={g.veInt} />
         <Malha geometria={g.veCorte} />
       </Parte>
-      <Parte id="septum-primum" cor={CORES.septumPrimum} opacidade={0.92} prioridade={6} rotulo={[0, 0.75, -0.1]}>
+      <Parte id="septum-primum" cor={CORES.septumPrimum} prioridade={6} rotulo={pontoSepto(0.12, 0.78)}>
         <Malha geometria={g.septumPrimum} />
       </Parte>
-      <Parte id="ostium-secundum" cor={CORES.ostioSecundum} opacidade={0.55} prioridade={9} rotulo={[0, OSTIO_SECUNDUM.t, -OSTIO_SECUNDUM.s]}>
+      <Parte id="ostium-secundum" cor={CORES.ostioSecundum} opacidade={0.6} prioridade={9} rotulo={pontoSepto(OSTIO_SECUNDUM.s, OSTIO_SECUNDUM.t, 0.003)}>
         <Malha geometria={g.ostioSecundum} />
       </Parte>
-      <Parte id="septum-secundum" cor={CORES.septumSecundum} prioridade={7} rotulo={[-0.15, 0.62, -0.08]}>
+      <Parte id="septum-secundum" cor={CORES.septumSecundum} opacidade={0.78} prioridade={7} rotulo={pontoSepto(0.2, 0.7, SECUNDUM.desvio)}>
         <Malha geometria={g.septumSecundum} />
       </Parte>
-      <Parte id="forame-oval" cor={CORES.forameOval} opacidade={0.6} prioridade={9} rotulo={[-0.115, FORAME_OVAL.t, -FORAME_OVAL.s]}>
+      <Parte id="forame-oval" cor={CORES.forameOval} opacidade={0.6} prioridade={9} rotulo={pontoSepto(FORAME_OVAL.s, FORAME_OVAL.t, SECUNDUM.desvio)}>
         <Malha geometria={g.forameOval} />
       </Parte>
-      <Parte id="ostium-primum" cor={CORES.ostioPrimum} prioridade={9} rotulo={[0, BASE_SEPTO_ATRIAL, -0.3]}>
+      <Parte id="ostium-primum" cor={CORES.ostioPrimum} prioridade={9} rotulo={pontoSepto(0.3, BASE_SEPTO_ATRIAL)}>
         <Malha geometria={g.ostioPrimum} />
       </Parte>
-      <Parte id="coxins-endocardicos" cor={CORES.coxins} prioridade={7} rotulo={[0, -0.05, -0.05]}>
+      <Parte id="coxins-endocardicos" cor={CORES.coxins} prioridade={7} rotulo={pontoSepto(0.05, 0)}>
         <Malha geometria={g.coxins} />
-        <Malha geometria={g.coxinsCorte} />
       </Parte>
-      <Parte id="canal-av-direito" cor={CORES.canalAV} opacidade={0.55} prioridade={6} rotulo={[-0.55, 0, -0.42]}>
-        <Malha geometria={g.canal} posicao={[-0.52, 0, 0]} />
-        <Malha geometria={g.canalAbertura} posicao={[-0.52, 0, 0]} />
-      </Parte>
-      <Parte id="canal-av-esquerdo" cor={CORES.canalAV} opacidade={0.55} prioridade={6} rotulo={[0.55, 0, -0.42]}>
-        <Malha geometria={g.canal} posicao={[0.52, 0, 0]} />
-        <Malha geometria={g.canalAbertura} posicao={[0.52, 0, 0]} />
-      </Parte>
+      {canais.map((c) => (
+        <Parte key={c.id} id={c.id} cor={CORES.canalAV} opacidade={0.55} prioridade={6} rotulo={[c.x, 0, -c.rz]}>
+          <Malha geometria={g.canal} posicao={[c.x, 0, 0]} escala={[c.rx, 1, c.rz]} />
+          <Malha geometria={g.canalAbertura} posicao={[c.x, 0, 0]} escala={[c.rx, 1, c.rz]} />
+        </Parte>
+      ))}
       <Parte id="septo-interventricular" cor={CORES.septoIV} prioridade={6} rotulo={[0.1, -0.75, -0.02]}>
         <Malha geometria={g.septoIV} />
       </Parte>
-      <Parte id="forame-interventricular" cor={CORES.forameIV} opacidade={0.5} prioridade={9} rotulo={[0.04, -0.25, -0.12]}>
+      <Parte id="forame-interventricular" cor={CORES.forameIV} opacidade={0.55} prioridade={9} rotulo={[0.0, -0.22, -0.1]}>
         <Malha geometria={g.forameIV} />
       </Parte>
       <Parte id="seio-venoso" cor={CORES.seio} prioridade={7} rotulo={sino.centro}>
@@ -317,7 +352,7 @@ export function ModeloSeptacaoCardiaca() {
           <Malha key={i} geometria={g.esfera} posicao={p} rotacao={sino.rot} escala={[0.025, 0.16, 0.05]} />
         ))}
       </Parte>
-      <OrientacaoLados direita={[-1.0, 0.95, 0]} esquerda={[1.0, 0.95, 0]} sujeito="embrião" />
+      <OrientacaoLados direita={[-0.5, 1.08, 0]} esquerda={[0.5, 1.08, 0]} sujeito="embrião" />
     </group>
   );
 }
@@ -510,16 +545,23 @@ export function ModeloArcosAorticos() {
 // =============================================================================================
 // 3) Circulação fetal — feto a termo (esquema frontal)
 // =============================================================================================
+/** Coração do feto: coordenadas locais ampliadas em torno do centro (o coração aparece maior que na proporção real). */
+const CENTRO_CORACAO: V3 = [0, 0.72, 0];
+const K_CORACAO = 1.45;
+function h([x, y, z]: V3): V3 {
+  return [CENTRO_CORACAO[0] + K_CORACAO * x, CENTRO_CORACAO[1] + K_CORACAO * y, CENTRO_CORACAO[2] + K_CORACAO * z];
+}
+const hr = ([x, y, z]: V3): V3 => [K_CORACAO * x, K_CORACAO * y, K_CORACAO * z];
 const FETO = {
-  ad: { c: [-0.25, 0.86, 0.04] as V3, r: [0.21, 0.2, 0.2] as V3 },
-  ae: { c: [0.0, 0.93, -0.18] as V3, r: [0.17, 0.15, 0.16] as V3 },
-  vd: { c: [-0.06, 0.58, 0.14] as V3, r: [0.25, 0.2, 0.17] as V3 },
-  ve: { c: [0.2, 0.55, -0.04] as V3, r: [0.19, 0.25, 0.18] as V3 },
-  umbigo: [0.0, -0.55, 0.42] as V3,
-  juncao: [-0.08, 0.04, 0.1] as V3, // veia umbilical + ramo esquerdo da veia porta
-  entradaDV: [-0.22, 0.36, -0.12] as V3, // ducto venoso → veia cava inferior
-  bifAorta: [0.0, -0.8, -0.28] as V3,
-  bifPulmonar: [0.16, 1.04, -0.02] as V3,
+  ad: { c: h([-0.25, 0.11, 0.04]), r: hr([0.21, 0.2, 0.2]) },
+  ae: { c: h([-0.04, 0.16, -0.14]), r: hr([0.17, 0.15, 0.16]) },
+  vd: { c: h([-0.06, -0.17, 0.14]), r: hr([0.25, 0.2, 0.17]) },
+  ve: { c: h([0.2, -0.2, -0.04]), r: hr([0.19, 0.25, 0.18]) },
+  umbigo: [0.0, -0.7, 0.42] as V3,
+  juncao: [0.02, -0.16, 0.12] as V3, // veia umbilical + ramo esquerdo da veia porta
+  entradaDV: [-0.24, 0.12, -0.12] as V3, // ducto venoso → veia cava inferior
+  bifAorta: [0.0, -0.92, -0.28] as V3,
+  bifPulmonar: h([0.16, 0.29, -0.02]),
 };
 
 /** Septo interatrial esquemático entre os dois átrios (aproximados por esferas). */
@@ -533,13 +575,21 @@ function septoInteratrial() {
   const n = d.normalize();
   const x = (dist * dist + r1 * r1 - r2 * r2) / (2 * dist);
   const raio = Math.sqrt(Math.max(0.004, r1 * r1 - x * x));
-  return { centro: a.clone().addScaledVector(n, x), n, raio };
+  // "para baixo" no plano do septo e o ângulo correspondente no plano local dos discos (após girarPara(n))
+  const descer = new THREE.Vector3(0, -1, 0).projectOnPlane(n).normalize();
+  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), n);
+  const ex = new THREE.Vector3(1, 0, 0).applyQuaternion(q);
+  const ey = new THREE.Vector3(0, 1, 0).applyQuaternion(q);
+  const anguloBaixo = Math.atan2(descer.dot(ey), descer.dot(ex));
+  return { centro: a.clone().addScaledVector(n, x), n, raio, descer, anguloBaixo };
 }
+/** Abertura inferior do septum secundum em crescente (rad): por ela se vê a valva (septum primum). */
+const FENDA_SECUNDUM = 1.3;
 
 export const PARTES_CIRCULACAO_FETAL = [
   'placenta',
   'cordao-umbilical',
-  'veia-umbilical',
+  'veias-umbilicais',
   'arterias-umbilicais',
   'figado',
   'ducto-venoso',
@@ -561,16 +611,16 @@ export const PARTES_CIRCULACAO_FETAL = [
   'arterias-iliacas',
 ];
 /**
- * Feto a termo, vista frontal, fora de escala. Átrios translúcidos para mostrar o forame oval (septum secundum)
- * e sua valva (septum primum). O cordão segue até a placenta, reduzida e aproximada do feto.
+ * Feto a termo, vista frontal, fora de escala (coração ampliado; placenta reduzida, abaixo do feto).
+ * Átrios translúcidos para mostrar o forame oval (no septum secundum) e sua valva (septum primum).
  */
 export function ModeloCirculacaoFetal() {
   const septo = useMemo(septoInteratrial, []);
   const g = useMemo(() => {
     const cordaoCurva = new THREE.CatmullRomCurve3(
-      ([FETO.umbigo, [0.12, -0.63, 0.6], [0.45, -0.8, 0.78], [0.86, -0.97, 0.78], [1.16, -1.1, 0.6]] as V3[]).map(vetor),
+      ([FETO.umbigo, [0.1, -0.84, 0.6], [0.32, -1.04, 0.7], [0.52, -1.16, 0.64], [0.66, -1.22, 0.48]] as V3[]).map(vetor),
     );
-    // vasos do cordão em hélice ao redor do eixo (2 artérias e 1 veia)
+    // vasos do cordão em hélice ao redor do eixo (2 artérias e 1 veia central)
     const amostras = 80;
     const quadros = cordaoCurva.computeFrenetFrames(amostras, false);
     const helice = (fase: number, raio: number): V3[] => {
@@ -586,131 +636,132 @@ export function ModeloCirculacaoFetal() {
     const fim = cordaoCurva.getPointAt(1);
     const tangenteFim = cordaoCurva.getTangentAt(1);
     const arteriaCorpo = (l: number): V3[] => [
-      [l * 0.15, -0.98, -0.24],
-      [l * 0.2, -1.08, -0.08],
-      [l * 0.18, -0.98, 0.2],
-      [l * 0.1, -0.74, 0.38],
+      [l * 0.15, -1.1, -0.24],
+      [l * 0.2, -1.19, -0.08],
+      [l * 0.18, -1.09, 0.2],
+      [l * 0.1, -0.88, 0.38],
     ];
     const hA = helice(0, 0.055);
     const hB = helice(Math.PI, 0.055);
-    // começa a hélice pela artéria mais próxima de cada lado
     const [esq, dir] = hA[0][0] >= hB[0][0] ? [hA, hB] : [hB, hA];
     return {
-      placenta: new THREE.CylinderGeometry(0.5, 0.56, 0.13, 40),
-      placentaPos: fim.clone().addScaledVector(tangenteFim, 0.06).toArray() as V3,
+      placenta: new THREE.CylinderGeometry(0.3, 0.34, 0.1, 40),
+      placentaPos: fim.clone().addScaledVector(tangenteFim, 0.05).toArray() as V3,
       placentaRot: girarPara(tangenteFim, new THREE.Vector3(0, 1, 0)),
-      cordao: new THREE.TubeGeometry(cordaoCurva, 64, 0.11, 16, false),
+      cordao: new THREE.TubeGeometry(cordaoCurva, 64, 0.095, 16, false),
       veiaUmbilical: tubo(
-        [...cordaoCurva.getSpacedPoints(16).reverse().map((p) => p.toArray() as V3), [-0.02, -0.35, 0.36], [-0.05, -0.15, 0.28], [-0.07, -0.02, 0.18], FETO.juncao],
+        [...cordaoCurva.getSpacedPoints(16).reverse().map((p) => p.toArray() as V3), [0.01, -0.5, 0.38], [0.02, -0.34, 0.3], [0.02, -0.24, 0.2], FETO.juncao],
         0.042,
         96,
         10,
       ),
       arteriaEsq: tubo([...arteriaCorpo(1), ...esq], 0.028, 120, 8),
       arteriaDir: tubo([...arteriaCorpo(-1), ...dir], 0.028, 120, 8),
-      figado: new THREE.SphereGeometry(1, 36, 24),
-      ductoVenoso: tubo([FETO.juncao, [-0.14, 0.16, 0.0], [-0.2, 0.29, -0.09], FETO.entradaDV], 0.03, 24, 10),
-      veiaPorta: tubo([[0.14, -0.32, -0.06], [0.06, -0.14, 0.02], [-0.03, -0.01, 0.08], FETO.juncao], 0.035, 24, 10),
-      vci: tubo([[-0.12, -1.05, -0.26], [-0.15, -0.5, -0.25], [-0.2, 0.0, -0.2], FETO.entradaDV, [-0.24, 0.56, -0.04], [-0.25, 0.7, 0.02]], 0.06, 48, 12),
-      vcs: tubo([[-0.27, 1.48, 0.02], [-0.27, 1.22, 0.03], [-0.26, 1.02, 0.04]], 0.055, 16, 12),
       esfera: new THREE.SphereGeometry(1, 32, 22),
-      anel: new THREE.RingGeometry(0.42, 1, 36),
+      ductoVenoso: tubo([FETO.juncao, [-0.06, -0.06, 0.05], [-0.17, 0.05, -0.06], FETO.entradaDV], 0.037, 24, 10),
+      veiaPorta: tubo([[0.3, -0.5, -0.02], [0.2, -0.36, 0.06], [0.1, -0.24, 0.1], FETO.juncao], 0.042, 24, 10),
+      vci: tubo([[-0.12, -1.18, -0.26], [-0.15, -0.6, -0.25], [-0.21, -0.15, -0.2], FETO.entradaDV, h([-0.24, -0.19, -0.04]), h([-0.25, -0.05, 0.02])], 0.06, 48, 12),
+      vcs: tubo([[-0.38, 1.52, 0.04], h([-0.26, 0.45, 0.03]), h([-0.26, 0.27, 0.04])], 0.055, 16, 12),
+      anel: new THREE.RingGeometry(0.5, 1, 36, 1, septo.anguloBaixo + FENDA_SECUNDUM / 2, 2 * Math.PI - FENDA_SECUNDUM),
       disco: new THREE.CircleGeometry(1, 32),
-      tronco: tubo([[0.02, 0.7, 0.22], [0.08, 0.88, 0.24], [0.14, 1.0, 0.12], FETO.bifPulmonar], 0.05, 24, 12),
-      pulmonarDir: tubo([FETO.bifPulmonar, [0.06, 1.1, -0.06], [-0.1, 1.13, -0.12], [-0.32, 1.1, -0.15], [-0.52, 1.0, -0.12]], 0.032, 32, 8),
-      pulmonarEsq: tubo([FETO.bifPulmonar, [0.34, 1.05, -0.08], [0.52, 0.98, -0.1]], 0.032, 16, 8),
-      ducto: tubo([FETO.bifPulmonar, [0.22, 1.08, -0.17], [0.24, 1.03, -0.32]], 0.045, 16, 10),
+      tronco: tubo([h([0.02, -0.05, 0.22]), h([0.08, 0.13, 0.24]), h([0.14, 0.25, 0.12]), FETO.bifPulmonar], 0.055, 24, 12),
+      pulmonarDir: tubo([FETO.bifPulmonar, h([0.06, 0.35, -0.06]), h([-0.1, 0.38, -0.12]), h([-0.32, 0.35, -0.15]), h([-0.52, 0.25, -0.12])], 0.034, 32, 8),
+      pulmonarEsq: tubo([FETO.bifPulmonar, h([0.34, 0.3, -0.08]), h([0.52, 0.23, -0.1])], 0.034, 16, 8),
+      ducto: tubo([FETO.bifPulmonar, h([0.22, 0.33, -0.17]), h([0.24, 0.28, -0.32])], 0.052, 16, 10),
       aorta: tubo(
-        [[0.1, 0.66, 0.02], [0.04, 0.88, 0.12], [0.0, 1.08, 0.1], [0.04, 1.24, 0.0], [0.16, 1.22, -0.2], [0.24, 1.04, -0.36], [0.2, 0.6, -0.42], [0.12, 0.0, -0.38], [0.05, -0.5, -0.32], FETO.bifAorta],
-        0.055,
+        [h([0.1, -0.09, 0.02]), h([0.04, 0.13, 0.12]), h([0.0, 0.33, 0.1]), h([0.04, 0.49, 0.0]), h([0.16, 0.47, -0.2]), h([0.24, 0.29, -0.36]), [0.3, 0.5, -0.5], [0.16, 0.0, -0.42], [0.06, -0.55, -0.33], FETO.bifAorta],
+        0.06,
         96,
         12,
       ),
       ramoArco: tubo([[0, 0, 0], [0, 0.22, 0]], 0.03, 4, 8),
-      iliacaComum: tubo([FETO.bifAorta, [0.08, -0.9, -0.27], [0.15, -0.98, -0.24], [0.24, -1.12, -0.2], [0.3, -1.32, -0.18]], 0.038, 24, 10),
+      iliacaComum: tubo([FETO.bifAorta, [0.08, -1.02, -0.27], [0.15, -1.1, -0.24], [0.24, -1.24, -0.2], [0.3, -1.42, -0.18]], 0.038, 24, 10),
     };
-  }, []);
+  }, [septo]);
   useEffect(() => () => descartar(g), [g]);
   const sRot = girarPara(septo.n);
-  const deslocar = (d: number) => septo.centro.clone().addScaledVector(septo.n, d).toArray() as V3;
-  const baixo = new THREE.Vector3(0, -1, 0).projectOnPlane(septo.n).normalize();
-  const foramePos = septo.centro.clone();
+  const noSeptoFetal = (d: number, baixo = 0) => septo.centro.clone().addScaledVector(septo.n, d).addScaledVector(septo.descer, baixo).toArray() as V3;
+  const ramos: { p: V3; r: number }[] = [
+    { p: h([0.0, 0.47, 0.04]), r: 0.45 },
+    { p: h([0.07, 0.5, -0.06]), r: 0 },
+    { p: h([0.13, 0.46, -0.15]), r: -0.6 },
+  ];
   return (
-    <group position={[-0.32, 0, -0.1]}>
-      <Parte id="pulmoes" cor="#f4b6c2" opacidade={0.13} prioridade={0} rotulo={[-0.85, 0.75, -0.1]}>
-        <Malha geometria={g.esfera} posicao={[-0.62, 0.86, -0.14]} escala={[0.3, 0.42, 0.3]} />
-        <Malha geometria={g.esfera} posicao={[0.62, 0.86, -0.14]} escala={[0.27, 0.42, 0.3]} />
+    <group position={[-0.05, -0.05, -0.1]}>
+      <Parte id="pulmoes" cor="#f4b6c2" opacidade={0.13} prioridade={0} rotulo={[-1.05, 0.75, -0.1]}>
+        <Malha geometria={g.esfera} posicao={[-0.8, 0.85, -0.18]} escala={[0.29, 0.44, 0.3]} />
+        <Malha geometria={g.esfera} posicao={[0.8, 0.85, -0.18]} escala={[0.26, 0.44, 0.3]} />
       </Parte>
-      <Parte id="figado" cor={COR.figado} opacidade={0.22} prioridade={0.5} rotulo={[-0.7, 0.05, 0.1]}>
-        <Malha geometria={g.esfera} posicao={[-0.12, 0.06, 0.02]} escala={[0.62, 0.3, 0.38]} />
+      <Parte id="figado" cor={COR.figado} opacidade={0.22} prioridade={0.5} rotulo={[-0.68, -0.18, 0.1]}>
+        <Malha geometria={g.esfera} posicao={[-0.1, -0.14, 0.02]} escala={[0.6, 0.28, 0.38]} />
       </Parte>
-      <Parte id="placenta" cor={COR.placenta} prioridade={3} rotulo={[1.5, -1.25, 0.6]}>
+      <Parte id="placenta" cor={COR.placenta} prioridade={3} rotulo={[0.95, -1.4, 0.45]}>
         <Malha geometria={g.placenta} posicao={g.placentaPos} rotacao={g.placentaRot} />
       </Parte>
-      <Parte id="cordao-umbilical" cor={COR.cordao} opacidade={0.22} prioridade={1} rotulo={[0.45, -0.72, 0.88]}>
+      <Parte id="cordao-umbilical" cor={COR.cordao} opacidade={0.22} prioridade={1} rotulo={[0.36, -1.0, 0.8]}>
         <Malha geometria={g.cordao} />
       </Parte>
-      <Parte id="veia-umbilical" cor="#e0b100" prioridade={7} rotulo={[-0.03, -0.3, 0.36]}>
+      <Parte id="veias-umbilicais" cor="#e0b100" prioridade={7} rotulo={[0.02, -0.4, 0.34]}>
         <Malha geometria={g.veiaUmbilical} />
       </Parte>
-      <Parte id="arterias-umbilicais" cor="#c084fc" prioridade={7} rotulo={[0.18, -0.98, 0.2]}>
+      <Parte id="arterias-umbilicais" cor="#c084fc" prioridade={7} rotulo={[0.18, -1.09, 0.2]}>
         <Malha geometria={g.arteriaEsq} />
         <Malha geometria={g.arteriaDir} />
       </Parte>
-      <Parte id="ducto-venoso" cor="#f97316" prioridade={8} rotulo={[-0.15, 0.17, 0]}>
+      <Parte id="ducto-venoso" cor="#f97316" prioridade={8} rotulo={[-0.11, -0.01, 0]}>
         <Malha geometria={g.ductoVenoso} />
       </Parte>
-      <Parte id="veia-porta" cor="#84cc16" prioridade={7} rotulo={[0.12, -0.3, -0.05]}>
+      <Parte id="veia-porta" cor="#84cc16" prioridade={8} rotulo={[0.24, -0.42, 0.03]}>
         <Malha geometria={g.veiaPorta} />
       </Parte>
-      <Parte id="veia-cava-inferior" cor="#0f9b8e" prioridade={6} rotulo={[-0.15, -0.6, -0.25]}>
+      <Parte id="veia-cava-inferior" cor="#0f9b8e" prioridade={6} rotulo={[-0.15, -0.7, -0.25]}>
         <Malha geometria={g.vci} />
       </Parte>
-      <Parte id="veia-cava-superior" cor="#2f855a" prioridade={6} rotulo={[-0.27, 1.35, 0.02]}>
+      <Parte id="veia-cava-superior" cor="#2f855a" prioridade={6} rotulo={[-0.38, 1.42, 0.04]}>
         <Malha geometria={g.vcs} />
       </Parte>
-      <Parte id="atrio-direito" cor={CORES.atrioDireito} opacidade={0.4} prioridade={2} rotulo={[-0.42, 0.9, 0.08]}>
+      <Parte id="atrio-direito" cor={CORES.atrioDireito} opacidade={0.3} prioridade={2} rotulo={h([-0.42, 0.12, 0.08])}>
         <Malha geometria={g.esfera} posicao={FETO.ad.c} escala={FETO.ad.r} />
       </Parte>
-      <Parte id="atrio-esquerdo" cor={CORES.atrioEsquerdo} opacidade={0.5} prioridade={2} rotulo={[0.12, 1.0, -0.25]}>
+      <Parte id="atrio-esquerdo" cor={CORES.atrioEsquerdo} opacidade={0.45} prioridade={2} rotulo={h([0.05, 0.26, -0.22])}>
         <Malha geometria={g.esfera} posicao={FETO.ae.c} escala={FETO.ae.r} />
       </Parte>
-      <Parte id="ventriculo-direito" cor={CORES.ventriculoDireito} prioridade={3} rotulo={[-0.2, 0.5, 0.25]}>
+      <Parte id="ventriculo-direito" cor={CORES.ventriculoDireito} prioridade={3} rotulo={h([-0.2, -0.25, 0.25])}>
         <Malha geometria={g.esfera} posicao={FETO.vd.c} escala={FETO.vd.r} rotacao={[0, 0, 0.3]} />
       </Parte>
-      <Parte id="ventriculo-esquerdo" cor={CORES.ventriculoEsquerdo} prioridade={3} rotulo={[0.32, 0.42, 0.0]}>
+      <Parte id="ventriculo-esquerdo" cor={CORES.ventriculoEsquerdo} prioridade={3} rotulo={h([0.32, -0.33, 0.0])}>
         <Malha geometria={g.esfera} posicao={FETO.ve.c} escala={FETO.ve.r} rotacao={[0, 0, 0.5]} />
       </Parte>
-      <Parte id="septum-secundum" cor={CORES.septumSecundum} prioridade={7}>
-        <Malha geometria={g.anel} posicao={deslocar(-0.012)} rotacao={sRot} escala={septo.raio} />
+      <Parte id="septum-secundum" cor={CORES.septumSecundum} prioridade={7} rotulo={noSeptoFetal(-0.014, -septo.raio * 0.78)}>
+        <Malha geometria={g.anel} posicao={noSeptoFetal(-0.014)} rotacao={sRot} escala={septo.raio} />
       </Parte>
-      <Parte id="forame-oval" cor={CORES.forameOval} opacidade={0.7} prioridade={9}>
-        <Malha geometria={g.disco} posicao={foramePos.clone().addScaledVector(septo.n, -0.006).toArray() as V3} rotacao={sRot} escala={septo.raio * 0.44} />
+      <Parte id="forame-oval" cor={CORES.forameOval} opacidade={0.75} prioridade={9}>
+        <Malha geometria={g.disco} posicao={noSeptoFetal(-0.007)} rotacao={sRot} escala={septo.raio * 0.52} />
       </Parte>
-      <Parte id="septum-primum" cor={CORES.septumPrimum} prioridade={7}>
-        <Malha geometria={g.disco} posicao={foramePos.clone().addScaledVector(septo.n, 0.012).addScaledVector(baixo, septo.raio * 0.1).toArray() as V3} rotacao={sRot} escala={septo.raio * 0.62} />
+      <Parte id="septum-primum" cor={CORES.septumPrimum} prioridade={7} rotulo={noSeptoFetal(0.012, septo.raio * 0.85)}>
+        <Malha geometria={g.disco} posicao={noSeptoFetal(0.012, septo.raio * 0.3)} rotacao={sRot} escala={septo.raio * 0.78} />
       </Parte>
-      <Parte id="tronco-pulmonar" cor="#a78bfa" prioridade={6} rotulo={[0.08, 0.88, 0.24]}>
+      <Parte id="tronco-pulmonar" cor="#a78bfa" prioridade={6} rotulo={h([0.08, 0.13, 0.24])}>
         <Malha geometria={g.tronco} />
       </Parte>
-      <Parte id="arterias-pulmonares" cor="#ddd6fe" prioridade={7} rotulo={[0.42, 1.02, -0.09]}>
+      <Parte id="arterias-pulmonares" cor="#ddd6fe" prioridade={7} rotulo={h([0.42, 0.27, -0.09])}>
         <Malha geometria={g.pulmonarDir} />
         <Malha geometria={g.pulmonarEsq} />
       </Parte>
-      <Parte id="ducto-arterioso" cor="#ec4899" prioridade={8} rotulo={[0.22, 1.08, -0.17]}>
+      <Parte id="ducto-arterioso" cor="#ec4899" prioridade={9} rotulo={h([0.22, 0.33, -0.17])}>
         <Malha geometria={g.ducto} />
       </Parte>
-      <Parte id="aorta" cor="#e5534b" prioridade={6} rotulo={[0.12, 0.0, -0.38]}>
+      <Parte id="aorta" cor="#e5534b" prioridade={6} rotulo={[0.16, 0.0, -0.42]}>
         <Malha geometria={g.aorta} />
-        <Malha geometria={g.ramoArco} posicao={[0.0, 1.22, 0.04]} rotacao={[0, 0, 0.45]} />
-        <Malha geometria={g.ramoArco} posicao={[0.07, 1.25, -0.06]} />
-        <Malha geometria={g.ramoArco} posicao={[0.13, 1.21, -0.15]} rotacao={[0, 0, -0.6]} />
+        {ramos.map(({ p, r }, i) => (
+          <Malha key={i} geometria={g.ramoArco} posicao={p} rotacao={[0, 0, r]} />
+        ))}
       </Parte>
-      <Parte id="arterias-iliacas" cor="#f59e8b" prioridade={7} rotulo={[0.24, -1.12, -0.2]}>
+      <Parte id="arterias-iliacas" cor="#f59e8b" prioridade={7} rotulo={[0.24, -1.24, -0.2]}>
         <Malha geometria={g.iliacaComum} />
         <Malha geometria={g.iliacaComum} escala={[-1, 1, 1]} />
       </Parte>
-      <OrientacaoLados direita={[-0.95, 1.5, 0]} esquerda={[0.95, 1.5, 0]} sujeito="feto" />
+      <OrientacaoLados direita={[-0.8, 1.4, -0.18]} esquerda={[0.8, 1.4, -0.18]} sujeito="feto" />
     </group>
   );
 }

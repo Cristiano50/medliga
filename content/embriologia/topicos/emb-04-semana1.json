@@ -1093,7 +1093,7 @@
         },
         {
           "id": "c",
-          "texto": "Sem compactação, falha a separação entre células internas e externas"
+          "texto": "Sem compactação, falha a distinção entre células internas e externas da mórula"
         },
         {
           "id": "d",
@@ -1137,7 +1137,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Há duas gestações simultâneas, uma intrauterina e outra extrauterina: gestação heterotópica, rara na concepção espontânea e mais frequente após reprodução assistida (a). Os embriões são colocados na cavidade antes de começarem a implantar (o que ocorre por volta do 6º–7º dia após a fertilização) e ainda podem deslocar-se; uma tuba lesada por salpingite favorece que o embrião fique retido e se implante ali. (b) Um pseudossaco não contém saco vitelino nem embrião com batimentos; a imagem intrauterina descrita confirma gestação no útero. (c) A massa é separada do ovário e contém saco gestacional com saco vitelino, o que não corresponde a corpo lúteo. (d) Há embrião com batimentos e saco vitelino no útero e um segundo saco gestacional no anexo; nada sugere mola nem cisto ovariano.",
+      "explicacao": "Há duas gestações simultâneas, uma intrauterina e outra extrauterina: gestação heterotópica, rara na concepção espontânea e mais frequente após reprodução assistida (a). Os embriões são colocados na cavidade antes de começarem a implantar (o que ocorre por volta do 6º–7º dia após a fertilização); a explicação mais aceita é que um deles se desloque até a tuba, e a lesão tubária pela salpingite favorece que fique retido e se implante ali. (b) Um pseudossaco não contém saco vitelino nem embrião com batimentos; a imagem intrauterina descrita confirma gestação no útero. (c) A massa é separada do ovário e contém saco gestacional com saco vitelino, o que não corresponde a corpo lúteo. (d) Há embrião com batimentos e saco vitelino no útero e um segundo saco gestacional no anexo; nada sugere mola nem cisto ovariano.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1202,7 +1202,7 @@
         },
         {
           "id": "d",
-          "texto": "Houve implantação inicial, com sinciciotrofoblasto produtor de hCG"
+          "texto": "Houve implantação inicial, com o sinciciotrofoblasto já produzindo a hCG"
         }
       ],
       "correta": "d",
@@ -1292,7 +1292,8 @@
     "Momento exato (em dias) da separação que define cada tipo de gemelaridade monozigótica: descrito por estágio (clivagem x blastocisto), sem dias, para evitar números não consensuais.",
     "Horários de 30 h (2 células) e 40 h (4 células) seguem Sadler; podem variar em embriões cultivados in vitro.",
     "Numeração do capítulo de Carlson (6ª ed.) sobre clivagem e implantação: o capítulo é o 3 nas edições anteriores e pode ser o 4 na 6ª edição; a referência cita só o título. Conferir na edição usada (questão avançada q28, 2026-11-09).",
-    "Questão avançada q29 (2026-11-09): o deslocamento do embrião transferido para a tuba antes do início da implantação é a explicação usual da ectópica e da heterotópica após FIV, mas não aparece com esse detalhe nas obras-base de embriologia; o fato cobrado (gestação heterotópica mais frequente após reprodução assistida) vem do ACOG PB 193 e da correlação de emb-05."
+    "Questão avançada q29 (2026-11-09): o deslocamento do embrião transferido para a tuba antes do início da implantação é a explicação usual da ectópica e da heterotópica após FIV, mas não aparece com esse detalhe nas obras-base de embriologia; o fato cobrado (gestação heterotópica mais frequente após reprodução assistida) vem do ACOG PB 193 e da correlação de emb-05. — revisor-embriologia-avancado-v1 (2026-11-09): a explicação da q29 passou a apresentar o deslocamento do embrião para a tuba como “a explicação mais aceita”, sem afirmá-lo como fato estabelecido. Mantida para o revisor humano.",
+    "Questão avançada q27 (revisor-embriologia-avancado-v1, 2026-11-09): a referência “Thompson & Thompson 8ª ed., cap. 6 (mosaicismo)” deve ser conferida no livro; o mosaicismo cromossômico e o mosaicismo confinado à placenta podem estar descritos em outros capítulos (citogenética clínica; diagnóstico pré-natal)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1311,6 +1312,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "6 correções (0 críticas, 2 importantes, 4 menores) + pistas de comprimento removidas em 10 questões (q01, q02, q04, q05, q06, q09, q10, q11, q12, q15), sem mudar gabarito nem ids; principais: terminologia e prática do diagnóstico genético pré-implantacional atualizadas para PGT-A/PGT-M/PGT-SR (glossário ICMART 2017), com biópsia do trofectoderma e abandono da biópsia de blastômero (Scott 2013), limitação do PGT-A (ASRM 2024) e regra do CFM — resumo, correlação, objetivo, q10 e q23; q10 refutava (a) dizendo ser falso que o hipoblasto não contribui para o embrião, o que hoje se considera verdadeiro — refutação refeita; hCG com equivalência em idade gestacional; insuficiência lútea apresentada como controversa; trofectoderma como sinônimo; nota sobre gêmeos monozigóticos dicoriônicos após transferência de um blastocisto."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-04-q27 a emb-04-q31): 3 correções (0 críticas, 0 importantes, 3 menores). Principais: q29 o deslocamento do embrião transferido até a tuba (base da ectópica/heterotópica após FIV) passou a ser apresentado como a explicação mais aceita, pois não está nas obras-base; q28 e q31 a correta era a alternativa mais curta (textos de c e d ampliados, sem mudar o sentido). Conferidos sem erro: q27 (mosaico = evento mitótico pós-zigótico; trofectoderma pode diferir do embrioblasto), q30 (clivagem → DC/DA; embrioblasto → MC/DA; disco após o âmnio → MC/MA; divisão incompleta → unidos), q31 (hCG do sinciciotrofoblasto = implantação iniciada). Pendentes: capítulo de Carlson e de Thompson citados."
       }
     ],
     "humano": null

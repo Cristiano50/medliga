@@ -687,7 +687,7 @@
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["avancado", "DDS", "persistencia-ductos-muller", "AMH", "caso-clinico"],
-      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16; Lee et al., Pediatrics 2006"
     },
     {
       "id": "emb-17-q25",
@@ -697,21 +697,21 @@
       "alternativas": [
         { "id": "a", "texto": "Criptorquidia bilateral isolada em menino 46,XY; basta reavaliar a posição dos testículos aos 6 meses" },
         { "id": "b", "texto": "Hipospádia isolada e multifatorial; pode-se definir o sexo e fazer a circuncisão antes de corrigir a uretra" },
-        { "id": "c", "texto": "Feto 46,XX virilizado por HAC: as gônadas impalpáveis podem ser ovários, com risco de crise perdedora de sal" },
+        { "id": "c", "texto": "Criança 46,XX virilizada por HAC: gônadas impalpáveis podem ser ovários, com risco de crise perdedora de sal" },
         { "id": "d", "texto": "Deficiência de 5α-redutase tipo 2 em 46,XY; não há urgência, pois a virilização se completará na puberdade" }
       ],
       "correta": "c",
-      "explicacao": "Hipospádia proximal com gônadas impalpáveis dos dois lados exige investigar DDS, e a primeira hipótese a afastar é a de uma pessoa 46,XX com hiperplasia adrenal congênita por deficiência de 21-hidroxilase, causa mais comum de DDS 46,XX (c). Os andrógenos suprarrenais, convertidos em DHT nos tecidos-alvo durante a diferenciação da genitália externa (9ª a 12ª semana, segundo Moore), podem fundir as saliências labioescrotais e fechar parcialmente as pregas urogenitais, dando à genitália aspecto masculino; as 'gônadas' que não se palpam são ovários, e há útero, porque sem testículos não há AMH. A forma perdedora de sal pode causar crise adrenal nas primeiras semanas; por isso a SBP orienta tratar o caso como urgência, não atribuir o sexo na sala de parto e investigar HAC. Tratar o quadro como criptorquidia isolada (a) adiaria esse diagnóstico. Na hipospádia, a circuncisão é contraindicada antes da correção, porque o prepúcio pode ser usado na cirurgia, e a definição do sexo deve aguardar a investigação (b). Mesmo que a causa fosse uma deficiência de 5α-redutase (d), genitália atípica com gônadas impalpáveis exige excluir a HAC antes, pelo risco de crise perdedora de sal.",
+      "explicacao": "Hipospádia proximal com gônadas impalpáveis dos dois lados exige investigar DDS, e a primeira hipótese a afastar é a de uma pessoa 46,XX com hiperplasia adrenal congênita por deficiência de 21-hidroxilase, causa mais comum de DDS 46,XX (c). Os andrógenos suprarrenais, convertidos em DHT nos tecidos-alvo durante a diferenciação da genitália externa (9ª a 12ª semana após a fertilização, segundo Moore), podem fundir as saliências labioescrotais e fechar parcialmente as pregas urogenitais, dando à genitália aspecto masculino; as 'gônadas' que não se palpam são ovários, e há útero, porque sem testículos não há AMH. A forma perdedora de sal pode causar crise adrenal nas primeiras semanas; por isso a SBP orienta tratar o caso como urgência, não atribuir o sexo na sala de parto e investigar HAC. Tratar o quadro como criptorquidia isolada (a) adiaria esse diagnóstico. Na hipospádia, a circuncisão é contraindicada antes da correção, porque o prepúcio pode ser usado na cirurgia, e a definição do sexo deve aguardar a investigação (b). Mesmo que a causa fosse uma deficiência de 5α-redutase (d), genitália atípica com gônadas impalpáveis exige excluir a HAC antes, pelo risco de crise perdedora de sal.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": ["avancado", "DDS", "hiperplasia-adrenal-congenita", "hipospadia", "criptorquidia", "caso-clinico"],
-      "referencia": "Moore 11ª ed., cap. 12; SBP, DC Endocrinologia, 2026; Speiser et al., J Clin Endocrinol Metab 2018"
+      "referencia": "Moore 11ª ed., cap. 12; SBP, DC Endocrinologia, 2026; Speiser et al., J Clin Endocrinol Metab 2018; Kolon et al., J Urol 2014"
     },
     {
       "id": "emb-17-q26",
       "tipo": "multipla",
       "contexto": "Menina de 3 anos é operada de hérnia inguinal bilateral. Em cada saco herniário há uma gônada, e a biópsia mostra tecido testicular. O cariótipo é 46,XY, a genitália externa é feminina típica e a ultrassonografia não mostra útero. A investigação confirma insensibilidade completa aos andrógenos.",
-      "enunciado": "Os testículos chegaram à região inguinal, mas não às saliências labioescrotais. Qual fase da descida testicular falhou, e de que ela depende?",
+      "enunciado": "Os testículos chegaram à região inguinal, mas não aos lábios maiores (derivados das saliências labioescrotais). Qual fase da descida testicular falhou, e de que ela depende?",
       "alternativas": [
         { "id": "a", "texto": "Fase transabdominal, que depende do gubernáculo e do INSL3" },
         { "id": "b", "texto": "Fase inguinoescrotal, que depende da ação dos andrógenos" },
@@ -719,7 +719,7 @@
         { "id": "d", "texto": "Fase inguinoescrotal, que depende do INSL3, e não de andrógenos" }
       ],
       "correta": "b",
-      "explicacao": "A descida testicular tem duas fases. A transabdominal, que leva o testículo até a região do anel inguinal profundo, depende do gubernáculo e do INSL3 secretado pelas células de Leydig, e não dos andrógenos; por isso ocorre normalmente na insensibilidade completa aos andrógenos e não é a fase que falhou (a); pela mesma razão, não depende de andrógenos (c). A fase inguinoescrotal depende da ação androgênica; sem receptor funcional, os testículos costumam ficar no abdome ou na região inguinal e são muitas vezes descobertos em cirurgia de hérnia, como aqui (b). A alternativa (d) atribui ao INSL3 o papel que cabe aos andrógenos na fase inguinoescrotal. O processo vaginal pérvio forma o saco herniário. O AMH age normalmente, por isso não há útero.",
+      "explicacao": "A descida testicular tem duas fases. A transabdominal, que leva o testículo até a região do anel inguinal profundo, depende sobretudo do gubernáculo e do INSL3 secretado pelas células de Leydig; os andrógenos têm nela papel apenas acessório (regressão do ligamento suspensor cranial). Por isso ela ocorre normalmente na insensibilidade completa aos andrógenos e não é a fase que falhou (a). A alternativa (c) erra duas vezes: a fase transabdominal não falhou e não depende principalmente dos andrógenos. A fase inguinoescrotal depende da ação androgênica; sem receptor funcional, os testículos costumam ficar no abdome ou na região inguinal e são muitas vezes descobertos em cirurgia de hérnia, como aqui (b). A alternativa (d) atribui ao INSL3 o papel que cabe aos andrógenos na fase inguinoescrotal. O processo vaginal pérvio forma o saco herniário. O AMH age normalmente, por isso não há útero.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": ["avancado", "DDS", "insensibilidade-androgenos", "descida-testicular", "gubernaculo", "caso-clinico"],
@@ -733,11 +733,11 @@
       "alternativas": [
         { "id": "a", "texto": "Gonadectomia imediata na primeira, pelo risco tumoral alto; vigilância na segunda, cujas gônadas são ovários" },
         { "id": "b", "texto": "Gonadectomia imediata nas duas, porque ambas têm testículos funcionantes produtores de AMH" },
-        { "id": "c", "texto": "Gonadectomia nas duas antes da idade da puberdade, porque o risco de gonadoblastoma é o mesmo" },
+        { "id": "c", "texto": "Vigilância sem gonadectomia nas duas, porque o risco tumoral é baixo nas duas condições" },
         { "id": "d", "texto": "Decisão compartilhada, sem pressa, na primeira; gonadectomia indicada na segunda, pelo risco tumoral alto" }
       ],
       "correta": "d",
-      "explicacao": "A primeira tem insensibilidade completa aos andrógenos: os testículos secretam AMH (sem útero) e testosterona, que não age, mas é aromatizada a estradiol (mamas). O risco de tumor de células germinativas é baixo, sobretudo antes da puberdade; a gonadectomia, quando escolhida, costuma ser adiada para depois da puberdade espontânea, em decisão compartilhada, e a pessoa pode optar por manter as gônadas sob vigilância. A segunda tem disgenesia gonadal completa 46,XY (síndrome de Swyer): sem determinação testicular não há AMH (útero e tubas presentes) nem esteroides gonadais (sem puberdade), e as gônadas em fita têm alto risco de gonadoblastoma, com indicação de gonadectomia (d). A alternativa (a) inverte os riscos, e gônadas em fita não são ovários. Em (b), a segunda não tem testículos funcionantes nem AMH, o que explica o útero. Em (c), os riscos são diferentes, e a retirada precoce dos testículos na primeira suprimiria a puberdade espontânea.",
+      "explicacao": "A primeira tem insensibilidade completa aos andrógenos: os testículos secretam AMH (sem útero) e testosterona, que não age, mas é aromatizada a estradiol (mamas). O risco de tumor de células germinativas é baixo, sobretudo antes da puberdade; a gonadectomia, quando escolhida, costuma ser adiada para depois da puberdade espontânea, em decisão compartilhada, e a pessoa pode optar por manter as gônadas sob vigilância. A segunda tem disgenesia gonadal completa 46,XY (síndrome de Swyer): sem determinação testicular não há AMH (útero e tubas presentes) nem esteroides gonadais (sem puberdade), e as gônadas em fita têm alto risco de gonadoblastoma, com indicação de gonadectomia (d). A alternativa (a) inverte os riscos, e gônadas em fita não são ovários. Em (b), a segunda não tem testículos funcionantes nem AMH, o que explica o útero. Em (c), o risco tumoral só é baixo na primeira: nas gônadas em fita da disgenesia gonadal com cromossomo Y ele é alto, e a vigilância não é a conduta indicada.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": ["avancado", "DDS", "insensibilidade-androgenos", "disgenesia-gonadal", "gonadectomia", "caso-clinico"],
@@ -828,7 +828,8 @@
     "Prevalências de hipospádia, criptorquidia e hérnia inguinal: as obras citam valores diferentes (por exemplo, para hipospádia, Moore ~1 em 300 meninos e Sadler 3–5 por 1.000 nascimentos, segundo a memória do redator), não conferidos diretamente nas edições adotadas; por isso nenhum valor numérico foi usado.",
     "Momento exato do início da secreção de AMH pelas células de Sertoli (frequentemente citado como 6ª–7ª semana) não foi conferido nas edições adotadas e foi omitido.",
     "A proporção de pessoas com deficiência de 5α-redutase criadas no gênero feminino que assumem identidade masculina varia entre as séries; descrita apenas como 'parte'.",
-    "Papel de RSPO1 e FOXL2 na diferenciação ovariana: bem estabelecido na literatura de pesquisa, mas o resumo cita apenas WNT4, que é o gene mencionado por Sadler."
+    "Papel de RSPO1 e FOXL2 na diferenciação ovariana: bem estabelecido na literatura de pesquisa, mas o resumo cita apenas WNT4, que é o gene mencionado por Sadler.",
+    "Camada avançada (revisor de embriologia, 2026-11-09): na q26, a fase transabdominal da descida é atribuída sobretudo ao INSL3 e ao gubernáculo, com papel acessório dos andrógenos (regressão do ligamento suspensor cranial, demonstrada sobretudo em modelos animais); na q27, a conduta gonadal é descrita só de forma qualitativa (risco tumoral baixo na insensibilidade completa aos andrógenos, alto na disgenesia gonadal completa 46,XY), compatível com Lee et al. 2006 e 2016, cujos percentuais não foram usados; o texto integral de Lee et al. 2016 não foi conferido nesta revisão."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -847,6 +848,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "17 correções (0 crítica, 8 importantes, 9 menores); principais: terminologia padronizada como 'distúrbios/diferenças do desenvolvimento sexual (DDS)' (SBP, documento de 2026; Resolução CFM nº 2.455/2026), com nota de divergência; conduta atualizada na HAC por 21-hidroxilase (triagem no PNTN desde 2012, confirmação sérica, falso-positivo em prematuros, NaCl no lactente), na insensibilidade completa aos andrógenos (gonadectomia em geral adiada para depois da puberdade, decisão compartilhada, opção de manter as gônadas) e na criptorquidia (a partir dos 6 meses, de preferência até 12 e no máximo até 18); hipospádia descrita como multifatorial na maioria dos casos isolados; benefício controverso da ressecção do septo uterino (TRUST); pista de comprimento eliminada em 8 questões; 'glândula seminal' harmonizada com o emb-16; ordem Sertoli → Leydig da q20 mantida, com justificativa (DHH)."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-17-q24 a emb-17-q28): 5 correções (0 crítica, 1 importante, 4 menores); principais: q27, distrator (c) incoerente com a vinheta ('gonadectomia antes da idade da puberdade' em adolescentes de 16 anos) e refutado por argumento que não se aplicava; reescrito como 'vigilância nas duas' e explicação ajustada, gabarito mantido (d); q26, papel dos andrógenos na fase transabdominal descrito como acessório (regressão do ligamento suspensor cranial), em vez de nulo, e enunciado com 'lábios maiores'; q25, 'feto' trocado por 'criança', idade da diferenciação genital com o sistema de contagem explícito e referência à diretriz da AUA (gônadas impalpáveis bilaterais → investigar DDS); q24, referência ao consenso de 2006. Conferidos sem erro: persistência dos ductos de Müller (AMH/AMHR2), HAC em 46,XX como hipótese urgente na hipospádia proximal com gônadas impalpáveis, INSL3 × andrógenos nas fases da descida, conduta gonadal qualitativa na insensibilidade completa aos andrógenos × Swyer; terminologia DDS coerente com o tópico."
       }
     ],
     "humano": null

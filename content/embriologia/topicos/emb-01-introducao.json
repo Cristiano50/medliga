@@ -882,8 +882,8 @@
     {
       "id": "emb-01-q26",
       "tipo": "multipla",
-      "contexto": "Uma mulher de 30 anos, com ciclos menstruais regulares de 35 dias, sabe com segurança a data da última menstruação (DUM). Na ultrassonografia transvaginal, a idade gestacional calculada pela DUM é de 8 semanas e 0 dia. A ovulação e a fertilização ocorreram no momento esperado para a duração do seu ciclo.",
-      "enunciado": "Qual achado é esperado no comprimento cabeça-nádega (CCN) e qual deve ser a conduta quanto à datação?",
+      "contexto": "Uma mulher de 30 anos, com ciclos menstruais regulares de 35 dias, sabe com segurança a data da última menstruação (DUM). No dia da ultrassonografia transvaginal, a idade gestacional calculada pela DUM é de 8 semanas e 0 dia. A ovulação e a fertilização ocorreram no momento esperado para a duração do seu ciclo.",
+      "enunciado": "Qual achado é esperado no comprimento cabeça-nádega (CCN) e qual deve ser a conduta quanto à datação, segundo os critérios do ACOG (Committee Opinion 700)?",
       "alternativas": [
         {
           "id": "a",
@@ -903,7 +903,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 35 dias a ovulação, e com ela a fertilização, ocorre por volta do 21º dia, e não do 14º. No dia do exame (56 dias após a DUM), o embrião tem cerca de 35 dias após a fertilização, o que equivale a cerca de 7 semanas de idade gestacional (35 + 14 = 49 dias): o CCN mostrará cerca de 1 semana a menos que a DUM. Como, pela DUM, a gestação tem menos de 9 semanas, uma diferença de mais de 5 dias justifica redatar pela ultrassonografia (c). (a) Supõe ovulação no 14º dia, o que vale para ciclos de 28 dias. (b) O limite de 7 dias vale entre 9 semanas e 13 semanas e 6 dias; antes de 9 semanas o limite é de 5 dias. (d) Erra a direção: a ovulação tardia torna o embrião menor, e não maior, do que a DUM sugere.",
+      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 35 dias a ovulação, e com ela a fertilização, ocorre por volta do 21º dia, e não do 14º. No dia do exame (56 dias após a DUM), o embrião tem cerca de 35 dias após a fertilização, o que equivale a cerca de 7 semanas de idade gestacional (35 + 14 = 49 dias): o CCN mostrará cerca de 1 semana a menos que a DUM. Pelos critérios do ACOG, como a gestação tem menos de 9 semanas pela DUM, uma diferença de mais de 5 dias justifica redatar pela ultrassonografia (c). (a) Supõe ovulação no 14º dia, o que vale para ciclos de 28 dias. (b) O limite de 7 dias vale entre 9 semanas e 13 semanas e 6 dias; antes de 9 semanas o limite é de 5 dias. (d) Erra a direção: a ovulação tardia torna o embrião menor, e não maior, do que a DUM sugere.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1117,7 +1117,7 @@
   "incertezas": [
     "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
     "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões.",
-    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md)."
+    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md). — revisor-embriologia-avancado-v1 (2026-11-09): a busca não encontrou o texto oficial da FEBRASGO nem do Ministério da Saúde (Manual de Gestação de Alto Risco, 2022) com limiares de correção da DUM; o MSD Manual em português reproduz os limiares do ACOG. A q26 passou a nomear o ACOG CO 700 no enunciado, para que o gabarito não dependa dessa confirmação; a pendência continua para o revisor humano."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1136,6 +1136,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "4 correções (0 críticas, 2 importantes, 2 menores) + pistas de comprimento removidas em 4 questões (q09, q10, q12, q13), sem mudar gabarito nem ids; principais: datação apresentava o CCN como método mais preciso sem a exceção da reprodução assistida e sem a regra de confirmação/correção da DUM — resumo, ponto-chave e correlação alinhados ao ACOG CO 700; q13 dizia que o período fetal começa com ~11 semanas de IG (são ~10 semanas completas) e usava semana ordinal (~5ª) onde cabia cardinal; q03 (b) passou a semanas completas; q16 explicita ciclo regular de 28 dias."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-01-q26 a emb-01-q30): 1 correção (0 críticas, 1 importante, 0 menores). Contas refeitas sem erro: q26 (ciclo de 35 dias → ovulação ~21º dia; com 56 dias de DUM o embrião tem 35 dias após a fertilização = 7 semanas de IG; diferença de 7 dias > limite de 5 dias antes de 9 semanas); q27 (5 + 14 + 40 = 59 dias = 8 semanas e 3 dias); q29 (6/14/20/35/56/70 dias após a fertilização); q30 (11/37/75 dias). Principal: q26 só tem gabarito único com o limiar de 5 dias, específico do ACOG; o enunciado agora nomeia a diretriz (CO 700) e o contexto diz que a IG é a do dia do exame. Correspondência com FEBRASGO/MS não confirmada; mantida em incertezas."
       }
     ],
     "humano": null

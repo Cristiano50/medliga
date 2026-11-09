@@ -1014,7 +1014,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Dois embriões no mesmo saco coriônico, com âmnios separados, são gêmeos monocoriônicos e diamnióticos, que resultam da divisão do embrioblasto de um único blastocisto (gêmeos monozigóticos); o terceiro, em outro córion, vem do segundo blastocisto transferido (b). A gemelaridade monozigótica é mais frequente após a reprodução assistida, sobretudo com transferência de blastocisto. (a) Um embrião concebido de forma independente formaria seu próprio córion e não explicaria o par que compartilha a placenta. (c) Embriões transferidos no 5º dia já são blastocistos, fora da fase de clivagem; além disso, a separação na clivagem produz gêmeos dicoriônicos, cada um com seu córion. (d) A entrada de dois espermatozoides num ovócito produz um único concepto triploide, não dois embriões.",
+      "explicacao": "Dois embriões no mesmo saco coriônico, com âmnios separados, são gêmeos monocoriônicos e diamnióticos, que resultam da divisão do embrioblasto de um único blastocisto (gêmeos monozigóticos); o terceiro, em outro córion, vem do segundo blastocisto transferido (b). A gemelaridade monozigótica é mais frequente após a reprodução assistida, sobretudo com transferência de blastocisto. (a) Um embrião concebido de forma independente teria seu próprio córion, mas o par monocoriônico continuaria a exigir a divisão de um blastocisto, e o outro blastocisto transferido teria de não se implantar: combinação de eventos bem menos provável que (b). (c) Embriões transferidos no 5º dia já são blastocistos, fora da fase de clivagem; além disso, a separação na clivagem produz gêmeos dicoriônicos, cada um com seu córion. (d) A entrada de dois espermatozoides num ovócito produz um único concepto triploide, não dois embriões.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1049,7 +1049,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na ICSI, o ovócito é desnudado e recebe um único espermatozoide. Por isso, três pronúcleos após ICSI resultam, em geral, de falha na expulsão do segundo corpúsculo polar ao fim da meiose II: o conjunto haploide retido forma um segundo pronúcleo feminino, e o zigoto é triploide digínico (c); esses zigotos não são transferidos. (a) A dispermia é a causa habitual de três pronúcleos na FIV convencional, em que muitos espermatozoides cercam o ovócito, mas não na ICSI. (b) A não disjunção altera o número de cromossomos dentro de um pronúcleo (aneuploidia), não o número de pronúcleos. (d) Cada pronúcleo replica seu DNA antes da primeira mitose sem se dividir em dois. A triploidia digínica não se associa a mola; a mola parcial associa-se à triploidia diândrica.",
+      "explicacao": "Na ICSI, o ovócito é desnudado e recebe um único espermatozoide. Por isso, o mecanismo mais frequente de três pronúcleos após ICSI é a falha na expulsão do segundo corpúsculo polar ao fim da meiose II: o conjunto haploide retido forma um segundo pronúcleo feminino, e o zigoto é triploide digínico (c); esses zigotos não são transferidos. (a) A dispermia é a causa habitual de três pronúcleos na FIV convencional, em que muitos espermatozoides cercam o ovócito, mas não na ICSI. (b) A não disjunção altera o número de cromossomos dentro de um pronúcleo (aneuploidia), não o número de pronúcleos. (d) Cada pronúcleo replica seu DNA antes da primeira mitose sem se dividir em dois e sem gerar um conjunto cromossômico extra. Parte dos zigotos classificados como 3PN após ICSI é, na verdade, diploide (o terceiro “pronúcleo” não traz genoma a mais), mas entre os triploides predomina a retenção do segundo corpúsculo polar. A triploidia digínica não se associa a mola; a mola parcial associa-se à triploidia diândrica.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1081,7 +1081,7 @@
         },
         {
           "id": "d",
-          "texto": "Maior proporção de ovócitos com mais de um pronúcleo masculino"
+          "texto": "Aumento dos ovócitos com dois ou mais pronúcleos masculinos (polispermia)"
         }
       ],
       "correta": "d",
@@ -1213,7 +1213,7 @@
       "capitulo": "Artigo original (zigotos com três pronúcleos após ICSI: retenção do segundo corpúsculo polar) — questão avançada q28"
     },
     {
-      "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017",
+      "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017;108(3):393–406",
       "capitulo": "Definições de inseminação intrauterina, FIV, ICSI e GIFT — questão avançada q30"
     }
   ],
@@ -1229,8 +1229,8 @@
     "Proteínas da zona pelúcida: o papel de receptor primário e indutor da reação acrossômica atribuído à ZP3 vem de modelos murinos. Em humanos há quatro glicoproteínas (ZP1–ZP4); em camundongos transgênicos com zona “humanizada”, espermatozoides humanos ligam-se ao domínio N-terminal da ZP2, e não à ZP3 (Baibakov et al., J Cell Biol 2012; Avella et al., J Cell Biol 2014). Qual(is) ZP induz(em) a reação acrossômica no ser humano segue em discussão. O conteúdo não cobra qual ZP é o receptor.",
     "Sobrevida máxima dos espermatozoides no trato genital feminino (fontes clínicas citam até vários dias) — não cobrada em questões.",
     "Proteínas de fusão (Izumo1/Juno) não foram incluídas por não constarem com certeza nas edições de referência citadas.",
-    "Questão avançada q28 (2026-11-09): Grossmann et al. (1997), com FISH, mostraram que parte dos zigotos classificados como 3PN após ICSI é, na verdade, diploide (cerca de um terço na série); nos triploides, a retenção do segundo corpúsculo polar é o mecanismo principal. A questão pede só o mecanismo mais provável de um pronúcleo a mais; a frequência não é cobrada.",
-    "Questão avançada q27 (2026-11-09): par monocoriônico tratado como monozigótico (modelo dos livros). Há relatos raros de gêmeos dizigóticos monocoriônicos, sobretudo após reprodução assistida; por isso o enunciado pede a explicação “mais provável”."
+    "Questão avançada q28 (2026-11-09): Grossmann et al. (1997), com FISH, mostraram que parte dos zigotos classificados como 3PN após ICSI é, na verdade, diploide (cerca de um terço na série); nos triploides, a retenção do segundo corpúsculo polar é o mecanismo principal. A questão pede só o mecanismo mais provável de um pronúcleo a mais; a frequência não é cobrada. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) no resumo do artigo: 36% dos zigotos classificados como 3PN após ICSI eram diploides, e a não extrusão do segundo corpúsculo polar foi a principal causa da triploidia. A explicação da q28 passou a mencionar os 3PN diploides.",
+    "Questão avançada q27 (2026-11-09): par monocoriônico tratado como monozigótico (modelo dos livros). Há relatos raros de gêmeos dizigóticos monocoriônicos, sobretudo após reprodução assistida; por isso o enunciado pede a explicação “mais provável”. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) (resumo): a revisão sistemática de Peters et al. (Twin Res Hum Genet. 2017;20(2):161–8) reuniu 31 pares de gêmeos dizigóticos monocoriônicos, todos diamnióticos, 82,1% concebidos por reprodução assistida e cerca de 90% com quimerismo. O “mais provável” do enunciado basta; nada a mudar."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1249,6 +1249,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "7 correções (0 críticas, 2 importantes, 5 menores) + pistas de comprimento removidas em 9 questões (q02, q04, q06, q08, q11, q12, q14, q15, q16), sem mudar gabarito nem ids; principais: q09 descrevia transferência de 3 embriões aos 36 anos, acima do limite da Resolução CFM 2.320/2022 (até 2 até 37 anos) — vinheta passou a 2 embriões e explicação cita transferência única e descarte de zigotos com 3 pronúcleos; correlação de gestação múltipla atribuía o risco na FIV a ovulações múltiplas (os ovócitos são aspirados) — mecanismo refeito (dizigóticos por embrião transferido; monozigóticos mais frequentes com blastocisto); resumo de RA com confirmação por 2 pronúcleos, limite do CFM e GIFT raramente usada; hidrossalpinge antes da FIV; triploidia diândrica × digínica e mola parcial (Zaragoza 2000); q08 sem duas FIV convencionais antes da ICSI; corona radiata definida histologicamente."
+      },
+      {
+        "area": "embriologia",
+        "agente": "revisor-embriologia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-03-q27 a emb-03-q31): 4 correções (0 críticas, 1 importante, 3 menores). Principais: q27 a refutação de (a) dizia que um embrião concebido naturalmente “não explicaria o par monocoriônico”, mas a alternativa só atribui a ele o terceiro embrião; refeita (exigiria também a divisão de um blastocisto e a falha do outro, combinação menos provável); q28 explicação ajustada a Grossmann 1997 (parte dos 3PN pós-ICSI é diploide; entre os triploides predomina a retenção do 2º corpúsculo polar); q29 a correta era a alternativa mais curta (texto de d ampliado, sem mudar o sentido); referência do glossário ICMART completada com volume e páginas. Conferidos sem erro: q30 (cada descrição serve a uma só técnica) e q31 (XmXpY = erro na meiose I paterna)."
       }
     ],
     "humano": null
