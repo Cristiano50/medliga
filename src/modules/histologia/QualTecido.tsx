@@ -6,6 +6,7 @@ import { criarRng, embaralhar } from '../../core/random.ts';
 import { salvarMinijogo, type Jogada } from '../../games/minijogo.ts';
 import { Barra } from '../../ui/comum.tsx';
 import { Visor } from './Visor.tsx';
+import { AREA_PADRAO, LAMINAS_RENDER } from './laminas/index.ts';
 
 const RODADAS = 10;
 
@@ -22,10 +23,12 @@ function montar(semente: number): Rodada[] {
     .map((l) => {
       // distratores com nome de tecido diferente do correto
       const outras = embaralhar(LAMINAS.filter((x) => x.tecido !== l.tecido), rng).slice(0, 3);
+      // o centro do campo de 10× cai na área diagnóstica da lâmina (onde o tecido-resposta aparece)
+      const [x0, y0, x1, y1] = LAMINAS_RENDER[l.id]?.areaDiagnostica ?? AREA_PADRAO;
       return {
         laminaId: l.id,
         opcoes: embaralhar([l.id, ...outras.map((x) => x.id)], rng),
-        centro: { x: 250 + rng() * 500, y: 200 + rng() * 300 },
+        centro: { x: x0 + rng() * (x1 - x0), y: y0 + rng() * (y1 - y0) },
       };
     });
 }

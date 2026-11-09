@@ -46,7 +46,7 @@ describe('questões de múltipla escolha', () => {
 });
 
 import laminas from '../content/histologia/laminas.json';
-import { LAMINAS_RENDER } from '../src/modules/histologia/laminas/index.ts';
+import { AREA_PADRAO, LAMINAS_RENDER } from '../src/modules/histologia/laminas/index.ts';
 import { LaminasArquivoSchema } from '../src/content/schema.ts';
 
 describe('lâminas do microscópio virtual', () => {
@@ -58,6 +58,16 @@ describe('lâminas do microscópio virtual', () => {
   it('estruturas do texto e do desenho são as mesmas (o jogo não pede o que não existe)', () => {
     for (const l of dados.laminas) {
       expect(new Set(l.estruturas.map((e) => e.id)), l.id).toEqual(new Set(LAMINAS_RENDER[l.id].partes));
+    }
+  });
+  it('o campo do jogo "Qual é o tecido?" é sorteado numa área diagnóstica dentro do SVG', () => {
+    // lâminas em que um campo de 10× fora da área mostraria só conjuntivo ou só neurópilo
+    for (const id of ['epitelio-pseudoestratificado-traqueia', 'pele-espessa', 'epitelio-transicao-bexiga', 'neuronio-medula']) {
+      expect(LAMINAS_RENDER[id].areaDiagnostica, id).toBeDefined();
+    }
+    for (const [id, r] of Object.entries(LAMINAS_RENDER)) {
+      const [x0, y0, x1, y1] = r.areaDiagnostica ?? AREA_PADRAO;
+      expect(x0 < x1 && y0 < y1 && x0 >= 0 && y0 >= 0 && x1 <= 1000 && y1 <= 700, id).toBe(true);
     }
   });
 });
