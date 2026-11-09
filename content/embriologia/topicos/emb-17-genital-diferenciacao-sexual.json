@@ -829,7 +829,8 @@
     "Momento exato do início da secreção de AMH pelas células de Sertoli (frequentemente citado como 6ª–7ª semana) não foi conferido nas edições adotadas e foi omitido.",
     "A proporção de pessoas com deficiência de 5α-redutase criadas no gênero feminino que assumem identidade masculina varia entre as séries; descrita apenas como 'parte'.",
     "Papel de RSPO1 e FOXL2 na diferenciação ovariana: bem estabelecido na literatura de pesquisa, mas o resumo cita apenas WNT4, que é o gene mencionado por Sadler.",
-    "Camada avançada (revisor de embriologia, 2026-11-09): na q26, a fase transabdominal da descida é atribuída sobretudo ao INSL3 e ao gubernáculo, com papel acessório dos andrógenos (regressão do ligamento suspensor cranial, demonstrada sobretudo em modelos animais); na q27, a conduta gonadal é descrita só de forma qualitativa (risco tumoral baixo na insensibilidade completa aos andrógenos, alto na disgenesia gonadal completa 46,XY), compatível com Lee et al. 2006 e 2016, cujos percentuais não foram usados; o texto integral de Lee et al. 2016 não foi conferido nesta revisão."
+    "Camada avançada (revisor de embriologia, 2026-11-09): na q26, a fase transabdominal da descida é atribuída sobretudo ao INSL3 e ao gubernáculo, com papel acessório dos andrógenos (regressão do ligamento suspensor cranial, demonstrada sobretudo em modelos animais); na q27, a conduta gonadal é descrita só de forma qualitativa (risco tumoral baixo na insensibilidade completa aos andrógenos, alto na disgenesia gonadal completa 46,XY), compatível com Lee et al. 2006 e 2016, cujos percentuais não foram usados; o texto integral de Lee et al. 2016 não foi conferido nesta revisão.",
+    "Camada avançada (revisor clínico, 2026-11-09): o documento da SBP citado na q25 existe (Documento Científico nº 232, Departamento Científico de Endocrinologia, 12/02/2026), mas o texto integral não pôde ser aberto; as orientações que a q25 lhe atribui (tratar o caso como urgência, não atribuir o sexo na sala de parto, investigar HAC) coincidem com a literatura sobre genitália atípica e com a AUA (Kolon 2014), e devem ser confirmadas no documento. Na q27, a conduta qualitativa foi mantida: uma série retrospectiva de Cambridge (J Pediatr Urol, 2017) sobre insensibilidade completa aos andrógenos, conferida por resumo, encontrou as neoplasias sobretudo depois da puberdade e propõe discutir a gonadectomia na vida adulta, o que é compatível com a alternativa (d); o texto integral de Lee et al. 2016 continua não conferido."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -855,6 +856,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-17-q24 a emb-17-q28): 5 correções (0 crítica, 1 importante, 4 menores); principais: q27, distrator (c) incoerente com a vinheta ('gonadectomia antes da idade da puberdade' em adolescentes de 16 anos) e refutado por argumento que não se aplicava; reescrito como 'vigilância nas duas' e explicação ajustada, gabarito mantido (d); q26, papel dos andrógenos na fase transabdominal descrito como acessório (regressão do ligamento suspensor cranial), em vez de nulo, e enunciado com 'lábios maiores'; q25, 'feto' trocado por 'criança', idade da diferenciação genital com o sistema de contagem explícito e referência à diretriz da AUA (gônadas impalpáveis bilaterais → investigar DDS); q24, referência ao consenso de 2006. Conferidos sem erro: persistência dos ductos de Müller (AMH/AMHR2), HAC em 46,XX como hipótese urgente na hipospádia proximal com gônadas impalpáveis, INSL3 × andrógenos nas fases da descida, conduta gonadal qualitativa na insensibilidade completa aos andrógenos × Swyer; terminologia DDS coerente com o tópico."
+      },
+      {
+        "area": "clinica-pediatrica/urologia/neurologia/anatomia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado",
+        "notas": "camada avançada (ids emb-17-q24 a emb-17-q28): 0 correções; conferidos persistência dos ductos de Müller (q24), HAC a afastar primeiro na hipospádia proximal com gônadas impalpáveis, pelo risco de crise perdedora de sal (q25), INSL3 e fase inguinoescrotal dependente de andrógenos (q26), conduta gonadal qualitativa na insensibilidade completa × Swyer, compatível com Lee 2006/2016 (q27), e as vias SRY/AMH/testosterona/DHT/CYP21A2 (q28); terminologia DDS coerente com o tópico. Nova incerteza: documento nº 232 da SBP e Lee 2016 não abertos na íntegra."
       }
     ],
     "humano": null

@@ -724,11 +724,11 @@
         { "id": "d", "texto": "A base do crânio, endocondral, cresce pouco; a abóbada, intramembranosa, é relativamente poupada" }
       ],
       "correta": "d",
-      "explicacao": "Na acondroplasia, o FGFR3 com ganho de função inibe a proliferação e a diferenciação dos condrócitos e prejudica a ossificação endocondral, que forma os ossos longos e a base do crânio (condrocrânio), incluindo a parte do occipital em torno do forame magno; a abóbada, de ossificação intramembranosa, é relativamente poupada (d). Por isso coexistem crânio grande e forame magno estreito, com risco de compressão da junção bulbomedular. A craniossinostose (a) não é o mecanismo da acondroplasia e restringiria o crescimento da abóbada, em vez de produzir macrocefalia. Na hidrocefalia (b), o forame magno não se alarga, e a imagem mostra justamente um forame estreito. A alternativa (c) inverte os tipos de ossificação: a base do crânio é endocondral, e a abóbada, intramembranosa.",
+      "explicacao": "Na acondroplasia, o FGFR3 com ganho de função inibe a proliferação e a diferenciação dos condrócitos e prejudica a ossificação endocondral, que forma os ossos longos e a base do crânio (condrocrânio), incluindo a parte do occipital em torno do forame magno; a abóbada, de ossificação intramembranosa, é relativamente poupada (d). Por isso coexistem crânio grande e forame magno estreito, com risco de compressão da junção bulbomedular, que no lactente pode causar apneia central e morte súbita; a Academia Americana de Pediatria recomenda neuroimagem e polissonografia logo após o diagnóstico, e um lactente com compressão na imagem, como este, precisa de avaliação neurocirúrgica. A craniossinostose (a) não é o mecanismo da acondroplasia e restringiria o crescimento da abóbada, em vez de produzir macrocefalia. Na hidrocefalia (b), o forame magno não se alarga, e a imagem mostra justamente um forame estreito. A alternativa (c) inverte os tipos de ossificação: a base do crânio é endocondral, e a abóbada, intramembranosa.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": ["avancado", "acondroplasia", "FGFR3", "ossificacao-endocondral", "cranio", "forame-magno", "caso-clinico"],
-      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10"
+      "referencia": "Moore 11ª ed., cap. 14; Sadler 14ª ed., cap. 10; Hoover-Fong et al., Pediatrics 2020 (AAP)"
     },
     {
       "id": "emb-19-q27",
@@ -830,6 +830,10 @@
     {
       "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
       "capitulo": "13 — Sistema cardiovascular (artérias intersegmentares: intercostais e lombares)"
+    },
+    {
+      "obra": "Hoover-Fong J, Scott CI, Jones MC; AAP Committee on Genetics. Health supervision for people with achondroplasia. Pediatrics. 2020;145(6):e20201010",
+      "capitulo": "Lactente: compressão da junção craniocervical, neuroimagem e polissonografia"
     }
   ],
   "notasDivergencia": [
@@ -844,7 +848,8 @@
   "incertezas": [
     "Prevalências de polidactilia, sindactilia, pé torto, DDQ, costela cervical e craniossinostoses não foram conferidas nas edições adotadas e foram omitidas.",
     "Mecanismo molecular da teratogenicidade da talidomida (cereblon/SALL4, efeito antiangiogênico): baseado em estudos experimentais recentes, descrito como 'proposto'.",
-    "Idade de fusão das metades do arco vertebral (Moore: primeiros 3–5 anos) e término da ossificação vertebral (~25 anos) foram reproduzidos de memória do texto de Moore e devem ser conferidos pelo revisor."
+    "Idade de fusão das metades do arco vertebral (Moore: primeiros 3–5 anos) e término da ossificação vertebral (~25 anos) foram reproduzidos de memória do texto de Moore e devem ser conferidos pelo revisor.",
+    "Camada avançada (q26, revisor clínico, 2026-11-09): o risco de apneia central e morte súbita no lactente e a recomendação de neuroimagem e polissonografia logo após o diagnóstico, com avaliação neurocirúrgica quando há compressão, vêm do relatório da AAP (Hoover-Fong et al., Pediatrics 2020), conferido por resumos e sínteses secundárias, não pelo texto integral; nenhuma frequência foi usada. A SBP publicou em outubro de 2023 o documento 'Acondroplasia: etiologia, apresentação clínica e tratamento', cujo texto integral não pôde ser aberto; conferir se as recomendações para o lactente coincidem e, se for o caso, citá-lo."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -870,6 +875,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-19-q25 a emb-19-q29): 2 correções (0 crítica, 0 importante, 2 menores); principais: q25, alternativa correta precisada ('cada nervo de C1 a C7') e explicação de (d) sem a afirmação absoluta de que raízes não descem no canal cervical; q28, 'artérias segmentares' trocado por 'artérias intersegmentares' (no adulto, intercostais posteriores e lombares), coerente com o resumo e a explicação, e bloom 'compreender'. Conferidos sem erro: hérnia C6–C7 → raiz C7 pela ressegmentação, acondroplasia (base endocondral × abóbada intramembranosa, forame magno estreito), ramos dorsais × latíssimo do dorso (nervo toracodorsal, plexo braquial), artérias intersegmentares na parte média dos corpos e nervos junto aos discos (Sadler), origens do disco, dos músculos e da derme."
+      },
+      {
+        "area": "clinica-pediatrica/urologia/neurologia/anatomia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-19-q25 a emb-19-q29): 1 correção (0 crítica, 1 importante, 0 menor); principal: q26, a explicação citava só o 'risco de compressão' da junção bulbomedular; passou a dizer o risco no lactente (apneia central e morte súbita), a recomendação de neuroimagem e polissonografia logo após o diagnóstico e a avaliação neurocirúrgica do lactente com compressão (Hoover-Fong et al., Pediatrics 2020, acrescentado às referências). Conferidos C6–C7 → raiz C7 (q25), ramos dorsais × latíssimo do dorso (q27), artérias intersegmentares (q28) e origens (q29). Dificuldade 4 das q28 e q29: opinião registrada no relatório, sem alteração."
       }
     ],
     "humano": null

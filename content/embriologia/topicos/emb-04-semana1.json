@@ -1044,7 +1044,7 @@
     {
       "id": "emb-04-q27",
       "tipo": "multipla",
-      "contexto": "Num ciclo de FIV com teste genético pré-implantacional para aneuploidias (PGT-A), a biópsia do trofectoderma de um blastocisto no 5º dia mostra trissomia de um cromossomo em parte das células e constituição normal nas demais (resultado em mosaico).",
+      "contexto": "Num ciclo de FIV com teste genético pré-implantacional para aneuploidias (PGT-A), retiram-se algumas células do trofectoderma de um blastocisto no 5º dia, analisadas em conjunto. Para um cromossomo, o número de cópias fica entre o esperado para duas cópias (normal) e para três (trissomia), e o laudo é de resultado em mosaico.",
       "enunciado": "Qual mecanismo explica esse resultado e qual limitação do teste ele ilustra?",
       "alternativas": [
         {
@@ -1065,7 +1065,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Um resultado em mosaico indica duas linhagens celulares, o que exige um evento de segregação numa mitose após a fertilização: não disjunção mitótica num embrião inicialmente normal ou perda do cromossomo extra em parte das células de um zigoto trissômico. Como trofoblasto e embrioblasto se separam a partir da compactação e da formação do blastocisto, a linhagem anormal pode ficar restrita a um deles; por isso as células biopsiadas, que formariam a placenta, podem não representar o futuro embrião (b). (a) e (d) Um erro meiótico, paterno ou materno, já está no zigoto e passa a todas as células; sozinho, não gera mosaico nem fica restrito ao trofoblasto. (c) A parede do blastocisto é o trofoblasto (trofectoderma); o hipoblasto fica no interior, voltado para a blastocele, e não é biopsiado. O mosaicismo é uma das limitações do PGT-A, cujo benefício como rastreamento de rotina para todas as pacientes de FIV não foi demonstrado.",
+      "explicacao": "Um valor intermediário é interpretado como mistura de células com e sem a trissomia, isto é, duas linhagens celulares; um mosaicismo real exige um evento de segregação numa mitose após a fertilização: não disjunção mitótica num embrião inicialmente normal ou perda do cromossomo extra em parte das células de um zigoto trissômico. Como trofoblasto e embrioblasto se separam a partir da compactação e da formação do blastocisto, a linhagem anormal pode ficar restrita a um deles; por isso as células biopsiadas, que formariam a placenta, podem não representar o futuro embrião (b). (a) e (d) Um erro meiótico, paterno ou materno, já está no zigoto e passa a todas as células; sozinho, não gera mosaico nem fica restrito ao trofoblasto. (c) A parede do blastocisto é o trofoblasto (trofectoderma); o hipoblasto fica no interior, voltado para a blastocele, e não é biopsiado. O mosaicismo é uma das limitações do PGT-A, cujo benefício como rastreamento de rotina para todas as pacientes de FIV não foi demonstrado. Além disso, como poucas células são analisadas em conjunto, parte dos resultados em mosaico reflete variação técnica, e a mesma amostra pode ser laudada como mosaico, euploide ou aneuploide por laboratórios diferentes; um embrião com esse laudo pode ser transferido após aconselhamento genético, em geral quando não há embrião euploide.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1075,7 +1075,7 @@
         "mosaicismo",
         "trofoblasto"
       ],
-      "referencia": "ASRM 2024 (PGT-A); Thompson & Thompson 8ª ed., cap. 6; Moore 11ª ed., cap. 2"
+      "referencia": "ASRM 2024 (PGT-A); ASRM 2023 (resultados em mosaico); Thompson & Thompson 8ª ed., cap. 6; Moore 11ª ed., cap. 2"
     },
     {
       "id": "emb-04-q28",
@@ -1137,7 +1137,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Há duas gestações simultâneas, uma intrauterina e outra extrauterina: gestação heterotópica, rara na concepção espontânea e mais frequente após reprodução assistida (a). Os embriões são colocados na cavidade antes de começarem a implantar (o que ocorre por volta do 6º–7º dia após a fertilização); a explicação mais aceita é que um deles se desloque até a tuba, e a lesão tubária pela salpingite favorece que fique retido e se implante ali. (b) Um pseudossaco não contém saco vitelino nem embrião com batimentos; a imagem intrauterina descrita confirma gestação no útero. (c) A massa é separada do ovário e contém saco gestacional com saco vitelino, o que não corresponde a corpo lúteo. (d) Há embrião com batimentos e saco vitelino no útero e um segundo saco gestacional no anexo; nada sugere mola nem cisto ovariano.",
+      "explicacao": "Há duas gestações simultâneas, uma intrauterina e outra extrauterina: gestação heterotópica, rara na concepção espontânea e bem mais frequente após reprodução assistida (a); por isso, numa gestação obtida por reprodução assistida, ver uma gestação intrauterina não afasta uma ectópica ao mesmo tempo. Os embriões são colocados na cavidade antes de começarem a implantar (o que ocorre por volta do 6º–7º dia após a fertilização); a explicação mais aceita é que um deles se desloque até a tuba, e a lesão tubária pela salpingite favorece que fique retido e se implante ali. (b) Um pseudossaco não contém saco vitelino nem embrião com batimentos; a imagem intrauterina descrita confirma gestação no útero. (c) A massa é separada do ovário e contém saco gestacional com saco vitelino, o que não corresponde a corpo lúteo. (d) Há embrião com batimentos e saco vitelino no útero e um segundo saco gestacional no anexo; nada sugere mola nem cisto ovariano.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1147,7 +1147,7 @@
         "reproducao-assistida",
         "ultrassonografia"
       ],
-      "referencia": "Moore 11ª ed., cap. 2 e 3; ACOG Practice Bulletin 193 (2018)"
+      "referencia": "Moore 11ª ed., cap. 2 e 3; ACOG Practice Bulletin 193 (2018); Refaat et al., Reprod Biol Endocrinol 2015"
     },
     {
       "id": "emb-04-q30",
@@ -1206,7 +1206,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "A hCG é produzida pelo sinciciotrofoblasto, que só se forma depois que o blastocisto adere ao endométrio (~6º dia) e o trofoblasto se diferencia; ela chega ao sangue materno pelo tecido invadido. Neste contexto, um β-hCG sérico positivo indica que houve fertilização e que a implantação começou, ainda que o concepto tenha sido perdido logo depois (d). (a) O corpo lúteo não produz hCG: é mantido por ela e secreta progesterona e estrogênio. (b) A mórula ainda está livre, dentro da zona pelúcida, sem sinciciotrofoblasto nem contato com o sangue materno. (c) Com sangramento, β-hCG que negativa e nenhuma imagem de gestação, o quadro é de perda precoce; a ausência de saco intrauterino, isoladamente, não define a localização da gestação.",
+      "explicacao": "A hCG é produzida pelo sinciciotrofoblasto, que só se forma depois que o blastocisto adere ao endométrio (~6º dia) e o trofoblasto se diferencia; ela chega ao sangue materno pelo tecido invadido. Neste contexto (concepção espontânea, sem hCG exógena, que em tratamentos de fertilidade pode dar resultado positivo nos dias seguintes à aplicação), um β-hCG sérico positivo indica que houve fertilização e que a implantação começou, ainda que o concepto tenha sido perdido logo depois (d). É a chamada gravidez bioquímica (perda gestacional bioquímica): gestação reconhecida só pela hCG, sem chegar a ser vista à ultrassonografia. (a) O corpo lúteo não produz hCG: é mantido por ela e secreta progesterona e estrogênio. (b) A mórula ainda está livre, dentro da zona pelúcida, sem sinciciotrofoblasto nem contato com o sangue materno. (c) Com sangramento, β-hCG que negativa e nenhuma imagem de gestação, o quadro é de perda precoce; a ausência de saco intrauterino, isoladamente, não define a localização da gestação.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1216,7 +1216,7 @@
         "perda-embrionaria",
         "clinica"
       ],
-      "referencia": "Moore 11ª ed., cap. 2 e 3; Sadler 14ª ed., cap. 3"
+      "referencia": "Moore 11ª ed., cap. 2 e 3; Sadler 14ª ed., cap. 3; Kolte et al. (ESHRE), Hum Reprod 2015"
     }
   ],
   "referencias": [
@@ -1253,8 +1253,8 @@
       "capitulo": "Ensaio clínico (biópsia de blastômero × trofectoderma)"
     },
     {
-      "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017",
-      "capitulo": "Terminologia PGT-A, PGT-M, PGT-SR"
+      "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017;108(3):393–406",
+      "capitulo": "Terminologia PGT-A, PGT-M, PGT-SR; gravidez bioquímica"
     },
     {
       "obra": "Conselho Federal de Medicina. Resolução CFM nº 2.320/2022 — normas éticas para a utilização das técnicas de reprodução assistida",
@@ -1275,6 +1275,18 @@
     {
       "obra": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 193: Tubal Ectopic Pregnancy. Obstet Gynecol. 2018",
       "capitulo": "Gestação heterotópica após reprodução assistida; pseudossaco — questão avançada q29"
+    },
+    {
+      "obra": "Practice Committee and Genetic Counseling Professional Group of the American Society for Reproductive Medicine. Clinical management of mosaic results from preimplantation genetic testing for aneuploidy (PGT-A) of blastocysts: a committee opinion. Fertil Steril. 2023;120:973–82 (substitui a versão de 2020)",
+      "capitulo": "Resultado em mosaico: definição, variação entre laboratórios, transferência após aconselhamento — questão avançada q27"
+    },
+    {
+      "obra": "Refaat B, Dalton E, Ledger WL. Ectopic pregnancy secondary to in vitro fertilisation-embryo transfer: pathogenic mechanisms and management strategies. Reprod Biol Endocrinol. 2015;13:30",
+      "capitulo": "Revisão (ectópica após transferência de embriões: dano tubário, volume do meio de transferência, transferência de vários embriões) — questão avançada q29"
+    },
+    {
+      "obra": "Kolte AM et al. Terminology for pregnancy loss prior to viability: a consensus statement from the ESHRE early pregnancy special interest group. Hum Reprod. 2015;30(3):495–8",
+      "capitulo": "Perda gestacional bioquímica (perda não visualizada) — questão avançada q31"
     }
   ],
   "notasDivergencia": [
@@ -1292,8 +1304,9 @@
     "Momento exato (em dias) da separação que define cada tipo de gemelaridade monozigótica: descrito por estágio (clivagem x blastocisto), sem dias, para evitar números não consensuais.",
     "Horários de 30 h (2 células) e 40 h (4 células) seguem Sadler; podem variar em embriões cultivados in vitro.",
     "Numeração do capítulo de Carlson (6ª ed.) sobre clivagem e implantação: o capítulo é o 3 nas edições anteriores e pode ser o 4 na 6ª edição; a referência cita só o título. Conferir na edição usada (questão avançada q28, 2026-11-09).",
-    "Questão avançada q29 (2026-11-09): o deslocamento do embrião transferido para a tuba antes do início da implantação é a explicação usual da ectópica e da heterotópica após FIV, mas não aparece com esse detalhe nas obras-base de embriologia; o fato cobrado (gestação heterotópica mais frequente após reprodução assistida) vem do ACOG PB 193 e da correlação de emb-05. — revisor-embriologia-avancado-v1 (2026-11-09): a explicação da q29 passou a apresentar o deslocamento do embrião para a tuba como “a explicação mais aceita”, sem afirmá-lo como fato estabelecido. Mantida para o revisor humano.",
-    "Questão avançada q27 (revisor-embriologia-avancado-v1, 2026-11-09): a referência “Thompson & Thompson 8ª ed., cap. 6 (mosaicismo)” deve ser conferida no livro; o mosaicismo cromossômico e o mosaicismo confinado à placenta podem estar descritos em outros capítulos (citogenética clínica; diagnóstico pré-natal)."
+    "Questão avançada q29 (2026-11-09): o deslocamento do embrião transferido para a tuba antes do início da implantação é a explicação usual da ectópica e da heterotópica após FIV, mas não aparece com esse detalhe nas obras-base de embriologia; o fato cobrado (gestação heterotópica mais frequente após reprodução assistida) vem do ACOG PB 193 e da correlação de emb-05. — revisor-embriologia-avancado-v1 (2026-11-09): a explicação da q29 passou a apresentar o deslocamento do embrião para a tuba como “a explicação mais aceita”, sem afirmá-lo como fato estabelecido. Mantida para o revisor humano. — revisor-obstetricia-avancado-v1 (2026-11-09), parcialmente resolvida: a revisão de Refaat et al. (Reprod Biol Endocrinol 2015;13:30; conferida pelo resumo, obtido por busca) parte de que, após a transferência, o embrião não percorre a tuba, de modo que a implantação tubária exige fatores que o levem até ela e o retenham; aponta o dano tubário como fator predominante e lista como fatores de risco infertilidade tubária, doença inflamatória pélvica, volume grande do meio de transferência e transferência de vários embriões. A formulação “explicação mais aceita” é compatível; referência acrescentada.",
+    "Questão avançada q27 (revisor-embriologia-avancado-v1, 2026-11-09): a referência “Thompson & Thompson 8ª ed., cap. 6 (mosaicismo)” deve ser conferida no livro; o mosaicismo cromossômico e o mosaicismo confinado à placenta podem estar descritos em outros capítulos (citogenética clínica; diagnóstico pré-natal).",
+    "Questão avançada q27 (revisor-obstetricia-avancado-v1, 2026-11-09): no PGT-A atual (sequenciamento de poucas células do trofectoderma analisadas em conjunto), o “mosaico” é um valor intermediário de número de cópias, não a contagem de células anormais; a vinheta foi reescrita nesse sentido. ASRM 2023 (conferido pelo resumo e por trechos obtidos por busca): resultados em mosaico em 2% a mais de 20% das biópsias, conforme o laboratório; a mesma biópsia pode ser laudada como mosaico, euploide ou aneuploide em laboratórios diferentes; esses embriões costumam ser transferidos só quando não há euploide. As recomendações específicas (por exemplo, por nível de mosaico) não foram conferidas no texto integral e não são cobradas."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1319,6 +1332,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-04-q27 a emb-04-q31): 3 correções (0 críticas, 0 importantes, 3 menores). Principais: q29 o deslocamento do embrião transferido até a tuba (base da ectópica/heterotópica após FIV) passou a ser apresentado como a explicação mais aceita, pois não está nas obras-base; q28 e q31 a correta era a alternativa mais curta (textos de c e d ampliados, sem mudar o sentido). Conferidos sem erro: q27 (mosaico = evento mitótico pós-zigótico; trofectoderma pode diferir do embrioblasto), q30 (clivagem → DC/DA; embrioblasto → MC/DA; disco após o âmnio → MC/MA; divisão incompleta → unidos), q31 (hCG do sinciciotrofoblasto = implantação iniciada). Pendentes: capítulo de Carlson e de Thompson citados."
+      },
+      {
+        "area": "obstetricia/reproducao-humana/genetica",
+        "agente": "revisor-obstetricia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-04-q27 a emb-04-q31): 4 correções (0 críticas, 1 importante, 3 menores). Principal: q27 (PGT-A em mosaico) — a vinheta dizia que a biópsia “mostra trissomia em parte das células e constituição normal nas demais”, como se as células fossem contadas uma a uma, e a explicação tratava o laudo como prova de duas linhagens; no PGT-A atual o mosaico é um valor intermediário de número de cópias em poucas células analisadas em conjunto, com parte dos resultados por variação técnica e laudos que divergem entre laboratórios (ASRM 2023); vinheta e explicação ajustadas, referência acrescentada, gabarito (b) mantido. Menores: q29 — explicação acrescenta que, após reprodução assistida, gestação intrauterina não afasta ectópica concomitante, e o mecanismo passou a ter fonte (Refaat et al. 2015); q31 — explicação nomeia a gravidez bioquímica (ICMART; ESHRE 2015) e lembra que hCG exógena de tratamento de fertilidade pode dar falso-positivo; referência do glossário ICMART completada. Conferidos sem erro: q28 e q30 (modelo dos livros, com a ressalva dos monozigóticos dicoriônicos após transferência de um blastocisto já registrada)."
       }
     ],
     "humano": null

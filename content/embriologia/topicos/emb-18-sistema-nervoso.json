@@ -908,6 +908,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-18-q25 a emb-18-q29): 3 correções (0 crítica, 0 importante, 3 menores); principais: q25, janela da ultrassonografia atribuída à ossificação incompleta dos elementos posteriores (não à ausência de ossificação dos arcos); q26, refutação dos lábios rômbicos completada (neuroblastos alares que migram ventralmente formam núcleos olivares e pontinos, não motores); q29 com bloom 'compreender'. Conferidos sem erro: medula presa (cone em L4 anormal), núcleo do hipoglosso na placa basal, medial após a abertura do rombencéfalo, Chiari II × resultados do MOMS (menos derivação e menos herniação; mais prematuridade), polidrâmnio na anencefalia × anidrâmnio na agenesia renal, trajeto do liquor (sequência refeita)."
+      },
+      {
+        "area": "clinica-pediatrica/urologia/neurologia/anatomia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado",
+        "notas": "camada avançada (ids emb-18-q25 a emb-18-q29): 0 correções; conferidos medula presa (cone em L4 e filamento espessado no lactente), lesão do núcleo do hipoglosso (placa basal, desvio para o lado lesado), Chiari II e resultados do MOMS (menos derivação e herniação, mais prematuridade e deiscência uterina), anencefalia com polidrâmnio × agenesia renal com anidrâmnio e trajeto do liquor (2-6-4-1-5-7-3). Dificuldade 4 da q29 (ordenar de recordação): opinião registrada no relatório, sem alteração."
       }
     ],
     "humano": null

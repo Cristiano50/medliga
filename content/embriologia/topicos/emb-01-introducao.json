@@ -882,8 +882,8 @@
     {
       "id": "emb-01-q26",
       "tipo": "multipla",
-      "contexto": "Uma mulher de 30 anos, com ciclos menstruais regulares de 35 dias, sabe com segurança a data da última menstruação (DUM). No dia da ultrassonografia transvaginal, a idade gestacional calculada pela DUM é de 8 semanas e 0 dia. A ovulação e a fertilização ocorreram no momento esperado para a duração do seu ciclo.",
-      "enunciado": "Qual achado é esperado no comprimento cabeça-nádega (CCN) e qual deve ser a conduta quanto à datação, segundo os critérios do ACOG (Committee Opinion 700)?",
+      "contexto": "Uma mulher de 30 anos, com ciclos menstruais regulares de 37 dias, sabe com segurança a data da última menstruação (DUM). No dia da ultrassonografia transvaginal, a idade gestacional calculada pela DUM é de 8 semanas e 0 dia. A ovulação e a fertilização ocorreram no momento esperado para a duração do seu ciclo.",
+      "enunciado": "Qual achado é esperado no comprimento cabeça-nádega (CCN) e qual deve ser a conduta quanto à datação?",
       "alternativas": [
         {
           "id": "a",
@@ -903,7 +903,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 35 dias a ovulação, e com ela a fertilização, ocorre por volta do 21º dia, e não do 14º. No dia do exame (56 dias após a DUM), o embrião tem cerca de 35 dias após a fertilização, o que equivale a cerca de 7 semanas de idade gestacional (35 + 14 = 49 dias): o CCN mostrará cerca de 1 semana a menos que a DUM. Pelos critérios do ACOG, como a gestação tem menos de 9 semanas pela DUM, uma diferença de mais de 5 dias justifica redatar pela ultrassonografia (c). (a) Supõe ovulação no 14º dia, o que vale para ciclos de 28 dias. (b) O limite de 7 dias vale entre 9 semanas e 13 semanas e 6 dias; antes de 9 semanas o limite é de 5 dias. (d) Erra a direção: a ovulação tardia torna o embrião menor, e não maior, do que a DUM sugere.",
+      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 37 dias a ovulação, e com ela a fertilização, ocorre por volta do 23º dia, e não do 14º. No dia do exame (56 dias após a DUM), o embrião tem cerca de 33 dias após a fertilização, o que equivale a cerca de 6 semanas e 5 dias de idade gestacional (33 + 14 = 47 dias): o CCN mostrará cerca de 9 dias a menos que a DUM. Uma diferença desse tamanho leva a redatar pela ultrassonografia (c) por qualquer dos critérios em uso: pelo ACOG (Committee Opinion 700), como a gestação tem menos de 9 semanas pela DUM, basta uma diferença de mais de 5 dias; guias brasileiros de pré-natal na atenção primária mantêm a DUM só quando a diferença cabe na margem de erro do exame no 1º trimestre (até cerca de 7 dias). (a) Supõe ovulação no 14º dia, o que vale para ciclos de 28 dias. (b) A diferença é de cerca de 9 dias, e não de até 7; além disso, pelo ACOG o limite de 7 dias só vale de 9 semanas a 13 semanas e 6 dias, e antes disso é de 5 dias. (d) Erra a direção: a ovulação tardia torna o embrião menor, e não maior, do que a DUM sugere.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -913,7 +913,7 @@
         "datacao",
         "ciclo-menstrual"
       ],
-      "referencia": "ACOG CO 700 (2017); Moore 11ª ed., cap. 2 e 6"
+      "referencia": "ACOG CO 700 (2017); Guia do Pré-natal na APS (SES-RS, 2024); Moore 11ª ed., cap. 2 e 6"
     },
     {
       "id": "emb-01-q27",
@@ -1106,18 +1106,23 @@
     {
       "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
       "capitulo": "2 — Primeira semana do desenvolvimento humano (ciclo menstrual e ovulação; blastocisto; fertilização in vitro) — questões avançadas q26, q27 e q29"
+    },
+    {
+      "obra": "Rio Grande do Sul. Secretaria da Saúde. Guia do Pré-natal e Puerpério na Atenção Primária à Saúde (APS). Porto Alegre; 2024",
+      "capitulo": "Cálculo da idade gestacional: DUM × ultrassonografia (desvio esperado de 3 a 7 dias no 1º trimestre) — questão avançada q26"
     }
   ],
   "notasDivergencia": [
     "Delimitação do período embrionário: Moore conta o período embrionário da fertilização ao fim da 8ª semana; Sadler descreve as semanas 1 e 2 em capítulos próprios e chama de “período embrionário” (ou de organogênese) as semanas 3–8; o termo “pré-embrionário” (semanas 1–2) aparece em parte da literatura e em contextos bioéticos/legais. Convenção adotada: período embrionário = semanas 1–8, registrando que “pré-embrionário” é usado por alguns autores.",
     "Idade atribuída ao estágio 23 de Carnegie: tabelas derivadas de Moore situam-no em ~56 dias; as revisões de O’Rahilly e Müller atribuem idades ligeiramente maiores (aprox. 56–60 dias). Faixa adotada: fim da 8ª semana (~56 dias, podendo chegar a ~60).",
     "Limites dos trimestres: as obras de embriologia definem os trimestres como períodos de ~3 meses; convenções obstétricas os definem pela idade gestacional (comumente 1º trimestre até 13–14 semanas, 3º a partir de 28 semanas). Nenhum limite em semanas é cobrado nas questões.",
-    "Linha do tempo: “fim do período embrionário” e “início do período fetal” são o mesmo marco (fim da 8ª/início da 9ª semana); receberam a mesma “ordem” para que o jogo nunca os peça em sequência um do outro (revisor-embriologia-v1, 2026-11-09)."
+    "Linha do tempo: “fim do período embrionário” e “início do período fetal” são o mesmo marco (fim da 8ª/início da 9ª semana); receberam a mesma “ordem” para que o jogo nunca os peça em sequência um do outro (revisor-embriologia-v1, 2026-11-09).",
+    "Critério para redatar pela ultrassonografia do 1º trimestre: o ACOG (CO 700) redata quando a diferença DUM × CCN passa de 5 dias até 8 semanas e 6 dias pela DUM, e de 7 dias entre 9 semanas e 13 semanas e 6 dias; guias brasileiros de pré-natal na atenção primária (SES-RS, 2024; SMS-Rio, 2019) mantêm a DUM quando a diferença cabe na margem de erro do exame no 1º trimestre (3 a 7 dias). Os critérios divergem para diferenças de 6 a 7 dias antes de 9 semanas; a q26 usa uma diferença de ~9 dias, que leva a redatar por todos eles (revisor-obstetricia-avancado-v1, 2026-11-09)."
   ],
   "incertezas": [
     "Formulação exata de Moore 11ª ed. sobre o termo “pré-embrião” (se o desaconselha explicitamente ou apenas não o usa) — verificar no cap. 1.",
     "Faixas de comprimento (CCN) por estágio de Carnegie variam entre tabelas; por isso não foram usadas em questões.",
-    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md). — revisor-embriologia-avancado-v1 (2026-11-09): a busca não encontrou o texto oficial da FEBRASGO nem do Ministério da Saúde (Manual de Gestação de Alto Risco, 2022) com limiares de correção da DUM; o MSD Manual em português reproduz os limiares do ACOG. A q26 passou a nomear o ACOG CO 700 no enunciado, para que o gabarito não dependa dessa confirmação; a pendência continua para o revisor humano."
+    "Questões avançadas q26 e q27 (2026-11-09): aplicam as regras de datação do ACOG CO 700 — redatar quando a diferença DUM × CCN passa de 5 dias antes de 9 semanas; na reprodução assistida, datar pela transferência e pela idade do embrião (blastocisto D5 = 19 dias de idade gestacional no dia da transferência; data provável do parto 261 dias depois). Falta confirmar se FEBRASGO e Ministério da Saúde adotam os mesmos limites (pendência já registrada em docs/pendencias-conferencia-medica.md). — revisor-embriologia-avancado-v1 (2026-11-09): a busca não encontrou o texto oficial da FEBRASGO nem do Ministério da Saúde (Manual de Gestação de Alto Risco, 2022) com limiares de correção da DUM; o MSD Manual em português reproduz os limiares do ACOG. A q26 passou a nomear o ACOG CO 700 no enunciado, para que o gabarito não dependa dessa confirmação; a pendência continua para o revisor humano. — revisor-obstetricia-avancado-v1 (2026-11-09), achados por busca, sem acesso ao texto integral: (1) consenso CBR/FEBRASGO de ultrassonografia (ofício de 2020; PDF no site do CBR): trecho indica corrigir a DUM quando a discordância passa de 5 dias até a 9ª semana e é de 7 dias ou mais depois, ou seja, os limiares do ACOG; (2) protocolo FEBRASGO de ultrassonografia de 1º trimestre: trecho indica manter a DUM quando a diferença para o CCN é menor que 5 dias (número e ano do protocolo não confirmados); (3) Guia do Pré-natal e Puerpério na APS (SES-RS, 2024): desvio esperado de 3 a 7 dias no 1º trimestre, com a DUM mantida se a diferença couber nele; (4) guia institucional do Hospital Israelita Albert Einstein: segue o ACOG. Como uma diferença de 7 dias leva a redatar pelos critérios (1), (2) e (4), mas não pelo (3), o ciclo da q26 passou de 35 para 37 dias (diferença ~9 dias) e o enunciado deixou de depender do ACOG. Continua pendente conferir os textos da FEBRASGO e do consenso CBR/FEBRASGO."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1143,6 +1148,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-01-q26 a emb-01-q30): 1 correção (0 críticas, 1 importante, 0 menores). Contas refeitas sem erro: q26 (ciclo de 35 dias → ovulação ~21º dia; com 56 dias de DUM o embrião tem 35 dias após a fertilização = 7 semanas de IG; diferença de 7 dias > limite de 5 dias antes de 9 semanas); q27 (5 + 14 + 40 = 59 dias = 8 semanas e 3 dias); q29 (6/14/20/35/56/70 dias após a fertilização); q30 (11/37/75 dias). Principal: q26 só tem gabarito único com o limiar de 5 dias, específico do ACOG; o enunciado agora nomeia a diretriz (CO 700) e o contexto diz que a IG é a do dia do exame. Correspondência com FEBRASGO/MS não confirmada; mantida em incertezas."
+      },
+      {
+        "area": "obstetricia/reproducao-humana/genetica",
+        "agente": "revisor-obstetricia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-01-q26 a emb-01-q30): 1 correção (0 críticas, 1 importante, 0 menores). Principal: q26 — com ciclo de 35 dias a diferença DUM × CCN era de 7 dias, o que leva a redatar pelo ACOG (> 5 dias antes de 9 semanas) e, segundo trechos obtidos por busca, pela FEBRASGO e pelo consenso CBR/FEBRASGO, mas cabe na margem de 3 a 7 dias usada por guias brasileiros de pré-natal na atenção primária (SES-RS 2024): o gabarito dependia do critério. O ciclo passou a 37 dias (ovulação ~23º dia; embrião com 33 dias após a fertilização = 6 semanas e 5 dias de IG; diferença ~9 dias), o que leva a redatar por todos os critérios; o enunciado deixou de depender do ACOG, a explicação cita o ACOG e os guias brasileiros e a refutação de (b) foi refeita; letra correta mantida (c). Conferidos sem erro: q27 (datação pela transferência: 19 + 40 = 59 dias = 8 semanas e 3 dias, como no ACOG CO 700), q28, q29 e q30. Nova nota de divergência sobre os critérios de redatação; incerteza da datação atualizada com o que foi achado."
       }
     ],
     "humano": null

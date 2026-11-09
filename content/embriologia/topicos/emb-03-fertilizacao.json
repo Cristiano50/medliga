@@ -1119,7 +1119,7 @@
           "direita": "Dispensa a ovulação e a captação pelas fímbrias, mas não a fertilização na tuba"
         }
       ],
-      "explicacao": "Na ICSI o espermatozoide é injetado no citoplasma do ovócito, sem passar pela corona e pela zona e sem fusão espontânea. Na FIV convencional, ovócitos aspirados e espermatozoides capacitados encontram-se no meio de cultura, o que dispensa as tubas, mas cada espermatozoide ainda precisa atravessar a corona e a zona e fundir-se ao ovócito. Na inseminação intrauterina, espermatozoides preparados em laboratório são colocados na cavidade uterina; a ovulação, a captação do ovócito pelas fímbrias e a fertilização na ampola continuam naturais, o que exige tubas pérvias. Na GIFT, os ovócitos são aspirados dos folículos antes da ovulação e colocados com os espermatozoides na tuba, onde ocorre a fertilização. Cada descrição serve a uma só técnica: FIV e ICSI também dispensam a ovulação, mas não ocorrem na tuba; a GIFT também dispensa a travessia do colo, mas dispensa ainda a ovulação.",
+      "explicacao": "Na ICSI o espermatozoide é injetado no citoplasma do ovócito, sem passar pela corona e pela zona e sem fusão espontânea. Na FIV convencional, ovócitos aspirados e espermatozoides capacitados encontram-se no meio de cultura, o que dispensa as tubas, mas cada espermatozoide ainda precisa atravessar a corona e a zona e fundir-se ao ovócito. Na inseminação intrauterina, espermatozoides preparados em laboratório são colocados na cavidade uterina; a ovulação, a captação do ovócito pelas fímbrias e a fertilização na ampola continuam naturais, o que exige tubas pérvias. Na GIFT, os ovócitos são aspirados dos folículos antes da ovulação e colocados com os espermatozoides na tuba, onde ocorre a fertilização. Cada descrição serve a uma só técnica: FIV e ICSI também dispensam a ovulação, mas não ocorrem na tuba; a GIFT também dispensa a travessia do colo, mas dispensa ainda a ovulação. Na terminologia do glossário internacional (ICMART), “FIV” designa todo o processo de fertilização fora do corpo e inclui tanto a inseminação in vitro convencional (a “FIV convencional” desta questão) quanto a ICSI; a inseminação intrauterina não é técnica de reprodução assistida (TRA) em sentido estrito, porque não há manipulação de ovócitos fora do corpo, e entra na categoria mais ampla de reprodução medicamente assistida.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1164,7 +1164,7 @@
         "meiose",
         "genetica"
       ],
-      "referencia": "Thompson & Thompson 8ª ed., cap. 6; Moore 11ª ed., cap. 2 e 20"
+      "referencia": "Thompson & Thompson 8ª ed., cap. 6; Thomas & Hassold, Hum Reprod Update 2003; Moore 11ª ed., cap. 2 e 20"
     }
   ],
   "referencias": [
@@ -1193,7 +1193,7 @@
       "capitulo": "Artigo original (origem parental da triploidia)"
     },
     {
-      "obra": "Hviid KVR, Malchau SS, Pinborg A, Nielsen HS. Determinants of monozygotic twinning in ART: a systematic review and a meta-analysis. Hum Reprod Update. 2018",
+      "obra": "Hviid KVR, Malchau SS, Pinborg A, Nielsen HS. Determinants of monozygotic twinning in ART: a systematic review and a meta-analysis. Hum Reprod Update. 2018;24(4):468–83",
       "capitulo": "Revisão sistemática (gemelaridade monozigótica após transferência de blastocisto)"
     },
     {
@@ -1215,6 +1215,10 @@
     {
       "obra": "Zegers-Hochschild F et al. The International Glossary on Infertility and Fertility Care, 2017. Fertil Steril. 2017;108(3):393–406",
       "capitulo": "Definições de inseminação intrauterina, FIV, ICSI e GIFT — questão avançada q30"
+    },
+    {
+      "obra": "Thomas NS, Hassold TJ. Aberrant recombination and the origin of Klinefelter syndrome. Hum Reprod Update. 2003;9(4):309–17",
+      "capitulo": "Revisão (quase metade dos 47,XXY vem de não disjunção paterna na meiose I) — questão avançada q31"
     }
   ],
   "notasDivergencia": [
@@ -1230,7 +1234,9 @@
     "Sobrevida máxima dos espermatozoides no trato genital feminino (fontes clínicas citam até vários dias) — não cobrada em questões.",
     "Proteínas de fusão (Izumo1/Juno) não foram incluídas por não constarem com certeza nas edições de referência citadas.",
     "Questão avançada q28 (2026-11-09): Grossmann et al. (1997), com FISH, mostraram que parte dos zigotos classificados como 3PN após ICSI é, na verdade, diploide (cerca de um terço na série); nos triploides, a retenção do segundo corpúsculo polar é o mecanismo principal. A questão pede só o mecanismo mais provável de um pronúcleo a mais; a frequência não é cobrada. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) no resumo do artigo: 36% dos zigotos classificados como 3PN após ICSI eram diploides, e a não extrusão do segundo corpúsculo polar foi a principal causa da triploidia. A explicação da q28 passou a mencionar os 3PN diploides.",
-    "Questão avançada q27 (2026-11-09): par monocoriônico tratado como monozigótico (modelo dos livros). Há relatos raros de gêmeos dizigóticos monocoriônicos, sobretudo após reprodução assistida; por isso o enunciado pede a explicação “mais provável”. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) (resumo): a revisão sistemática de Peters et al. (Twin Res Hum Genet. 2017;20(2):161–8) reuniu 31 pares de gêmeos dizigóticos monocoriônicos, todos diamnióticos, 82,1% concebidos por reprodução assistida e cerca de 90% com quimerismo. O “mais provável” do enunciado basta; nada a mudar."
+    "Questão avançada q27 (2026-11-09): par monocoriônico tratado como monozigótico (modelo dos livros). Há relatos raros de gêmeos dizigóticos monocoriônicos, sobretudo após reprodução assistida; por isso o enunciado pede a explicação “mais provável”. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) (resumo): a revisão sistemática de Peters et al. (Twin Res Hum Genet. 2017;20(2):161–8) reuniu 31 pares de gêmeos dizigóticos monocoriônicos, todos diamnióticos, 82,1% concebidos por reprodução assistida e cerca de 90% com quimerismo. O “mais provável” do enunciado basta; nada a mudar.",
+    "Glossário ICMART (revisor-obstetricia-avancado-v1, 2026-11-09): saiu a 4ª edição (The International Glossary on Infertility and Fertility Care, 2025; Hum Reprod. 2026;41(6):892–909), com 79 termos novos, 14 excluídos e vários modificados em relação à de 2017. As definições usadas na q30 (FIV como processo que inclui inseminação convencional e ICSI; IIU fora das TRA; GIFT) foram conferidas na edição de 2017 por fontes secundárias obtidas por busca; falta conferir se mudaram na edição de 2025 e decidir se a referência deve ser atualizada.",
+    "Questão avançada q31 (revisor-obstetricia-avancado-v1, 2026-11-09): “cerca de metade dos 47,XXY é de origem paterna” conferido no resumo de Thomas & Hassold (2003), que atribui quase metade dos casos à não disjunção paterna; outras séries citam 50–60%. O número do capítulo de Thompson & Thompson continua citado de memória."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1256,6 +1262,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-03-q27 a emb-03-q31): 4 correções (0 críticas, 1 importante, 3 menores). Principais: q27 a refutação de (a) dizia que um embrião concebido naturalmente “não explicaria o par monocoriônico”, mas a alternativa só atribui a ele o terceiro embrião; refeita (exigiria também a divisão de um blastocisto e a falha do outro, combinação menos provável); q28 explicação ajustada a Grossmann 1997 (parte dos 3PN pós-ICSI é diploide; entre os triploides predomina a retenção do 2º corpúsculo polar); q29 a correta era a alternativa mais curta (texto de d ampliado, sem mudar o sentido); referência do glossário ICMART completada com volume e páginas. Conferidos sem erro: q30 (cada descrição serve a uma só técnica) e q31 (XmXpY = erro na meiose I paterna)."
+      },
+      {
+        "area": "obstetricia/reproducao-humana/genetica",
+        "agente": "revisor-obstetricia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-03-q27 a emb-03-q31): 3 correções (0 críticas, 0 importantes, 3 menores). Principais: q30 — a explicação passou a registrar a terminologia do glossário ICMART (“FIV” inclui inseminação convencional e ICSI; IIU não é TRA em sentido estrito, e sim reprodução medicamente assistida); q31 — “cerca de metade dos 47,XXY é de origem paterna” passou a ter fonte (Thomas & Hassold, Hum Reprod Update 2003); referência de Hviid et al. completada com volume e páginas (blastocisto × clivagem: OR 2,18 para gêmeos monozigóticos, conferido no resumo). Conferidos sem erro: q27 (2 blastocistos aos 34 anos respeita o limite do CFM nas resoluções de 2017, 2021 e 2022; par MC/DA = divisão do embrioblasto; monozigóticos mais frequentes com blastocisto), q28 (3PN após ICSI = retenção do 2º corpúsculo polar; checagem de pronúcleos 16–18 h após a ICSI), q29 e q31 (XmXpY = espermatozoide 24,XY por erro na meiose I paterna). Nova edição do glossário ICMART (2025, publicada em 2026) registrada em incertezas."
       }
     ],
     "humano": null

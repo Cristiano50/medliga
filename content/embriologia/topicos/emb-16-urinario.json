@@ -1112,7 +1112,7 @@
         "refluxo-vesicoureteral",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16"
+      "referencia": "Moore 11ª ed., cap. 12; Sadler 14ª ed., cap. 16; EAU/ESPU, Guidelines on Paediatric Urology (ureterocele e ureter ectópico)"
     },
     {
       "id": "emb-16-q27",
@@ -1175,7 +1175,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na segunda metade da gestação, a urina fetal é a principal fonte do líquido amniótico, e o crescimento pulmonar exige volume adequado de líquido amniótico e de líquido pulmonar, além de espaço torácico e movimentos respiratórios fetais. A hipoplasia pulmonar da sequência de Potter decorre do oligoidrâmnio grave e precoce, não da doença renal em si; com um rim contralateral que produz urina, bexiga que enche e líquido normal, o risco é baixo (c). O rim displásico multicístico, em geral unilateral e esporádico, fica no retroperitônio e não comprime o tórax (a). Os resíduos metabólicos fetais são eliminados pela placenta, sem uremia intrauterina, mesmo sem nenhum rim (b). O crescimento pulmonar não depende só dos movimentos respiratórios (d): o oligoidrâmnio grave causa hipoplasia mesmo com movimentos presentes.",
+      "explicacao": "Na segunda metade da gestação, a urina fetal é a principal fonte do líquido amniótico, e o crescimento pulmonar exige volume adequado de líquido amniótico e de líquido pulmonar, além de espaço torácico e movimentos respiratórios fetais. A hipoplasia pulmonar da sequência de Potter decorre do oligoidrâmnio grave e precoce, não da doença renal em si; com um rim contralateral que produz urina, bexiga que enche e líquido normal, o risco é baixo (c). O rim displásico multicístico, em geral unilateral e esporádico, fica no retroperitônio e não comprime o tórax (a). Os resíduos metabólicos fetais são eliminados pela placenta, sem uremia intrauterina, mesmo sem nenhum rim (b). O crescimento pulmonar não depende só dos movimentos respiratórios (d): o oligoidrâmnio grave causa hipoplasia mesmo com movimentos presentes. A tranquilização depende do rim direito, que será o único funcionante: como anomalias contralaterais (sobretudo refluxo vesicoureteral e obstrução da junção ureteropélvica) são relativamente frequentes, ele precisa de seguimento ultrassonográfico na gestação e após o nascimento, quando também se acompanham a involução do rim displásico e a hipertrofia compensadora do contralateral.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1186,7 +1186,7 @@
         "rim-displasico-multicistico",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 7, 10 e 12; Sadler 14ª ed., cap. 8 e 16"
+      "referencia": "Moore 11ª ed., cap. 7, 10 e 12; Sadler 14ª ed., cap. 8 e 16; Schreuder et al., Nephrol Dial Transplant 2009; Rabelo et al., J Pediatr (Rio J) 2005"
     },
     {
       "id": "emb-16-q29",
@@ -1275,6 +1275,18 @@
     {
       "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia Orientada para a Clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
       "capitulo": "Abdome (rins, aorta abdominal e seus ramos; anomalias congênitas dos rins)"
+    },
+    {
+      "obra": "European Association of Urology (EAU) / European Society for Paediatric Urology (ESPU). EAU Guidelines on Paediatric Urology. Arnhem: EAU Guidelines Office (edição vigente)",
+      "capitulo": "Ureterocele e ureter ectópico (rim duplo, regra de Weigert–Meyer, refluxo para o polo inferior)"
+    },
+    {
+      "obra": "Schreuder MF, Westland R, van Wijk JAE. Unilateral multicystic dysplastic kidney: a meta-analysis of observational studies on the incidence, associated urinary tract malformations and the contralateral kidney. Nephrol Dial Transplant. 2009;24(6):1810-8",
+      "capitulo": "Anomalias do rim contralateral no rim displásico multicístico unilateral"
+    },
+    {
+      "obra": "Rabelo EAS, Oliveira EA, Silva JMP, et al. Conservative management of multicystic dysplastic kidney: clinical course and ultrasound outcome. J Pediatr (Rio J). 2005;81(5):400-4",
+      "capitulo": "Seguimento conservador: involução do rim displásico e hipertrofia compensadora do rim contralateral"
     }
   ],
   "notasDivergencia": [
@@ -1294,8 +1306,9 @@
     "A regra de Weigert–Meyer, a apresentação clínica detalhada da válvula de uretra posterior e o padrão de incontinência no ureter ectópico vêm da literatura urológica e pediátrica; sua presença literal nos capítulos citados não foi conferida.",
     "O mecanismo da válvula de uretra posterior (inserção anômala dos ductos mesonéfricos para o tipo mais comum) é hipótese, apresentada como tal.",
     "A faixa de dias dos eventos 'brotos prostáticos' (fim do 3º mês, dias 78–91) e 'fim da nefrogênese' (dias 224–252) é aproximada, derivada de descrições em meses e semanas.",
-    "Camada avançada (q26): a explicação da posição cruzada dos orifícios na duplicação completa (o ureter do polo superior tende a ser levado caudalmente com o ducto mesonéfrico) aplica a regra de Weigert–Meyer e a descrição de Sadler do broto anômalo que desce com o ducto mesonéfrico; a teoria detalhada da posição dos brotos (Mackie–Stephens) é da literatura urológica e não foi usada como gabarito. A diretriz EAU/ESPU de urologia pediátrica (capítulo de ureterocele e ureter ectópico) não pôde ser aberta nesta sessão. Revisor de embriologia (2026-11-09): a regra e sua explicação (o broto mais cranial no ducto mesonéfrico, que drena o polo superior, é levado caudalmente e termina em posição caudal e medial, com ureterocele ou ectopia; o do polo inferior fica cranial e lateral, com túnel submucoso curto e refluxo) conferem com fontes de urologia pediátrica e radiologia consultadas por busca (Pediatric Urology Book, capítulo de rim duplo, ureterocele e ureter ectópico; Radiopaedia, verbete Weigert–Meyer law); a diretriz EAU/ESPU continua não conferida.",
-    "Camada avançada (q27): a irrigação por artérias múltiplas no rim em ferradura foi deduzida da descrição dos livros-texto (ramos de vasos próximos ao rim que não completou a ascensão); a frequência desse padrão não foi conferida e não é citada. Revisor de embriologia (2026-11-09): relatos de correção de aneurisma da aorta em pacientes com rim em ferradura descrevem artérias vindas da aorta (inclusive do próprio aneurisma), das ilíacas comuns e, como variação, da artéria mesentérica inferior; a explicação do distrator (c) foi ajustada para não negar essa possibilidade."
+    "Camada avançada (q26): a explicação da posição cruzada dos orifícios na duplicação completa (o ureter do polo superior tende a ser levado caudalmente com o ducto mesonéfrico) aplica a regra de Weigert–Meyer e a descrição de Sadler do broto anômalo que desce com o ducto mesonéfrico; a teoria detalhada da posição dos brotos (Mackie–Stephens) é da literatura urológica e não foi usada como gabarito. A diretriz EAU/ESPU de urologia pediátrica (capítulo de ureterocele e ureter ectópico) não pôde ser aberta nesta sessão. Revisor de embriologia (2026-11-09): a regra e sua explicação (o broto mais cranial no ducto mesonéfrico, que drena o polo superior, é levado caudalmente e termina em posição caudal e medial, com ureterocele ou ectopia; o do polo inferior fica cranial e lateral, com túnel submucoso curto e refluxo) conferem com fontes de urologia pediátrica e radiologia consultadas por busca (Pediatric Urology Book, capítulo de rim duplo, ureterocele e ureter ectópico; Radiopaedia, verbete Weigert–Meyer law); a diretriz EAU/ESPU continua não conferida. Revisor clínico (2026-11-09): o capítulo de ureterocele e ureter ectópico da diretriz EAU/ESPU de urologia pediátrica foi conferido por trechos de busca (no rim duplo, a ureterocele drena sobretudo o polo superior, e o refluxo vesicoureteral é frequente no polo inferior), não pelo texto integral; a diretriz foi acrescentada às referências e à q26, que não usa números nem conduta.",
+    "Camada avançada (q27): a irrigação por artérias múltiplas no rim em ferradura foi deduzida da descrição dos livros-texto (ramos de vasos próximos ao rim que não completou a ascensão); a frequência desse padrão não foi conferida e não é citada. Revisor de embriologia (2026-11-09): relatos de correção de aneurisma da aorta em pacientes com rim em ferradura descrevem artérias vindas da aorta (inclusive do próprio aneurisma), das ilíacas comuns e, como variação, da artéria mesentérica inferior; a explicação do distrator (c) foi ajustada para não negar essa possibilidade. Revisor clínico (2026-11-09): uma revisão de anatomia do rim em ferradura (Surg Radiol Anat, 2014) e um estudo tomográfico de 145 pacientes (Urol Res Pract, 2023), consultados por busca, confirmam a grande variabilidade, com artérias múltiplas e acessórias de origem aórtica e ilíaca; as frequências dos padrões não foram usadas.",
+    "Camada avançada (q28, revisor clínico, 2026-11-09): o seguimento do rim contralateral foi acrescentado à explicação de forma qualitativa. A meta-análise de Schreuder et al. (Nephrol Dial Transplant 2009), conferida pelo resumo, descreve anomalias no rim contralateral em cerca de um terço dos casos de rim displásico multicístico unilateral, sobretudo refluxo vesicoureteral; outra meta-análise (2019) dá frequência menor de refluxo. A série brasileira de Rabelo et al. (J Pediatr (Rio J) 2005), conferida pelo resumo, descreve involução do rim displásico e hipertrofia compensadora do contralateral sob conduta conservadora. Não foi encontrado documento da SBP ou da SBU sobre esse seguimento; a indicação de uretrocistografia miccional (de rotina ou seletiva) diverge entre serviços e não foi incluída."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1321,6 +1334,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-16-q26 a emb-16-q30): 2 correções (0 crítica, 1 importante, 1 menor); principais: q27, a explicação do distrator (c) negava que a artéria mesentérica inferior pudesse irrigar o rim em ferradura, o que ocorre como variação; corrigida sem mudar o gabarito; q30 com bloom 'compreender'. Conferidos sem erro: regra de Weigert–Meyer (orifício do polo superior caudal e medial, com ureterocele ou ectopia; do polo inferior cranial e lateral, com refluxo), artérias múltiplas no rim em ferradura, rim displásico multicístico unilateral com líquido amniótico normal (risco pulmonar baixo), artéria polar inferior terminal cruzando o ureter (Moore). Incertezas da camada avançada atualizadas com as fontes conferidas."
+      },
+      {
+        "area": "clinica-pediatrica/urologia/neurologia/anatomia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-16-q26 a emb-16-q30): 2 correções (0 crítica, 1 importante, 1 menor); principais: q28, a explicação tranquilizava os pais sem mencionar o seguimento do rim contralateral, que passa a ser o único funcionante e tem anomalias associadas com alguma frequência; acrescentado o seguimento ultrassonográfico na gestação e após o nascimento, de forma qualitativa (Schreuder 2009; Rabelo 2005, nas referências); q26, referência à diretriz EAU/ESPU (ureterocele e ureter ectópico), de onde vem a regra de Weigert–Meyer. Gabaritos e vinhetas conferidos, nenhum gabarito alterado. Dificuldade 4 da q30 (V/F de recordação): opinião registrada no relatório, sem alteração."
       }
     ],
     "humano": null

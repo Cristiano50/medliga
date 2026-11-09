@@ -449,7 +449,7 @@ export function ModeloArcosAorticos() {
   useEffect(() => () => descartar(g), [g]);
   const lados = [-1, 1];
   const intersegmentares: { p: V3; r: number }[] = [
-    ...[1.0, 0.6, 0.18, -0.25, -0.75].flatMap((y) => lados.map((l) => ({ p: [l * DORSAL.x, y, DORSAL.z - 0.05] as V3, r: -l * 0.35 }))),
+    ...[1.0, 0.6, 0.18, -0.22].flatMap((y) => lados.map((l) => ({ p: [l * DORSAL.x, y, DORSAL.z - 0.05] as V3, r: -l * 0.35 }))),
     ...[-1.3, -1.6].flatMap((y) => lados.map((l) => ({ p: [l * 0.04, y, DORSAL.z - 0.06] as V3, r: -l * 0.45 }))),
   ];
   return (

@@ -1235,7 +1235,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 32 dias a ovulação ocorre por volta do 18º dia (32 − 14). Como os espermatozoides sobrevivem cerca de 2 dias e o ovócito só pode ser fertilizado nas horas seguintes à ovulação, as relações dos 2 dias anteriores e do próprio dia da ovulação são as de maior chance (b). (a) Aplica a regra do 14º dia, válida para ciclos de 28 dias; espermatozoides depositados nos dias 12 a 14 em geral não sobrevivem até o 18º dia. (c) A partir do 20º dia já se passaram mais de 24 horas da ovulação, e o ovócito não fertilizado degenera. (d) Corresponde à fase lútea avançada, perto da menstruação seguinte.",
+      "explicacao": "A fase lútea dura cerca de 14 dias de modo relativamente constante; num ciclo de 32 dias a ovulação ocorre por volta do 18º dia (32 − 14). Como os espermatozoides sobrevivem cerca de 2 dias e o ovócito só pode ser fertilizado nas horas seguintes à ovulação, as relações dos 2 dias anteriores e do próprio dia da ovulação são as de maior chance (b). Estudos clínicos com a ovulação estimada por dosagens hormonais diárias (Wilcox et al., 1995) mostram que a janela fértil é um pouco mais longa, de cerca de 5 dias antes da ovulação até o próprio dia, porque parte dos espermatozoides sobrevive mais de 48 horas; ainda assim, a chance de concepção é maior nos 2 dias anteriores e no dia da ovulação, e a resposta não muda. (a) Aplica a regra do 14º dia, válida para ciclos de 28 dias; os dias 12 a 14 ficam 4 a 6 dias antes da ovulação, fora da janela fértil ou no seu início, quando a chance de concepção é bem menor. (c) A partir do 20º dia já se passaram mais de 24 horas da ovulação, e o ovócito não fertilizado degenera. (d) Corresponde à fase lútea avançada, perto da menstruação seguinte.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1244,7 +1244,7 @@
         "ovulacao",
         "fertilizacao"
       ],
-      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3"
+      "referencia": "Moore 11ª ed., cap. 2; Sadler 14ª ed., cap. 3; Wilcox et al., N Engl J Med 1995"
     },
     {
       "id": "emb-02-q32",
@@ -1337,6 +1337,10 @@
     {
       "obra": "Antonarakis SE et al. The meiotic stage of nondisjunction in trisomy 21: determination by using DNA polymorphisms. Am J Hum Genet. 1992;50(3):544–50",
       "capitulo": "Artigo original (marcadores pericentroméricos para distinguir erro na meiose I × meiose II) — questão avançada q28"
+    },
+    {
+      "obra": "Wilcox AJ, Weinberg CR, Baird DD. Timing of sexual intercourse in relation to ovulation — effects on the probability of conception, survival of the pregnancy, and sex of the baby. N Engl J Med. 1995;333(23):1517–21",
+      "capitulo": "Estudo de coorte (janela fértil de 6 dias terminando no dia da ovulação) — questão avançada q31"
     }
   ],
   "notasDivergencia": [
@@ -1353,7 +1357,8 @@
     "Proporção de espermatozoides morfologicamente anormais no ejaculado (citada como até ~10% em textos de embriologia) — omitida do conteúdo até verificação.",
     "Duração das fases do ciclo menstrual em dias (Moore: menstrual ~4–5, proliferativa ~9, lútea ~13) — usada apenas de forma aproximada.",
     "Evidências de células-tronco ovarianas na vida pós-natal são controversas; o conteúdo segue o modelo clássico de Moore e Sadler (nenhum ovócito novo após o nascimento).",
-    "Questão avançada q28 (2026-11-09): a atribuição da fase meiótica por marcadores junto ao centrômero pode errar quando há crossing-over entre o marcador e o centrômero (raro). Antonarakis et al. (1992) encontraram a maioria dos erros maternos na meiose I e não acharam diferença de idade materna entre erros da meiose I e da meiose II; por isso a explicação liga a idade materna à não disjunção materna em geral, não só à meiose I. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) no resumo do artigo: 188 casos maternos, 128 com erro na meiose I, 38 na meiose II e 22 não informativos (77,1% × 22,9%); sem diferença significativa de idade materna entre os dois grupos; os autores reconhecem possíveis erros raros de atribuição por crossing-over entre marcador e centrômero. Nada a mudar na questão."
+    "Questão avançada q28 (2026-11-09): a atribuição da fase meiótica por marcadores junto ao centrômero pode errar quando há crossing-over entre o marcador e o centrômero (raro). Antonarakis et al. (1992) encontraram a maioria dos erros maternos na meiose I e não acharam diferença de idade materna entre erros da meiose I e da meiose II; por isso a explicação liga a idade materna à não disjunção materna em geral, não só à meiose I. — Conferido por revisor-embriologia-avancado-v1 (2026-11-09) no resumo do artigo: 188 casos maternos, 128 com erro na meiose I, 38 na meiose II e 22 não informativos (77,1% × 22,9%); sem diferença significativa de idade materna entre os dois grupos; os autores reconhecem possíveis erros raros de atribuição por crossing-over entre marcador e centrômero. Nada a mudar na questão.",
+    "Questão avançada q31 (revisor-obstetricia-avancado-v1, 2026-11-09): a premissa de sobrevida dos espermatozoides de ~48 h segue Moore; Wilcox et al. (1995) encontraram concepção só com relações nos 6 dias que terminam no dia estimado da ovulação, com probabilidade de ~10% 5 dias antes a ~33% no próprio dia (conferido pelo resumo, obtido por busca). A explicação passou a mencionar a janela de ~6 dias; o gabarito não muda. Decidir se o resumo do tópico (fora do escopo desta revisão) também deve citar a janela fértil clínica."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1379,6 +1384,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-02-q28 a emb-02-q32): 1 correção (0 críticas, 1 importante, 0 menores). Principal: q32 (ordenar) punha a “luteinização da granulosa e da teca interna, com secreção de progesterona” depois da ruptura folicular, mas a luteinização e a subida da progesterona começam com o pico de LH, antes da ovulação; o item 1 passou a “o folículo rompido forma o corpo lúteo, que secreta progesterona” e a explicação registra a nuance. Conferidos sem erro: q28 (alelos A, B e C = erro na meiose I materna), q29 (2 espermátides dissômicas + 2 nulissômicas), q30 (queda do FSH pelo estradiol/inibina B), q31 (ciclo de 32 dias → ovulação ~18º dia → janela dos dias 16–18). Incerteza de q28 conferida no resumo de Antonarakis 1992."
+      },
+      {
+        "area": "obstetricia/reproducao-humana/genetica",
+        "agente": "revisor-obstetricia-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-02-q28 a emb-02-q32): 1 correção (0 críticas, 1 importante, 0 menores). Principal: q31 (janela fértil) — a explicação ensinava uma janela de ~3 dias (sobrevida dos espermatozoides de ~48 h) e refutava (a) dizendo que os espermatozoides dos dias 12–14 não sobrevivem; a evidência clínica (Wilcox et al., NEJM 1995) e o aconselhamento contraceptivo usam janela de ~6 dias (5 dias antes da ovulação até o dia dela), com maior chance nos 2 dias anteriores e no dia da ovulação; explicação e refutação de (a) refeitas, referência acrescentada; gabarito (b) mantido. Conferidos sem erro: q28 (alelos A, B e C nos marcadores pericentroméricos = não disjunção na meiose I materna; Antonarakis 1992), q29 (2 espermátides com 24 e 2 com 22 cromossomos), q30 (FSH exógeno contorna a queda do FSH pelo estradiol e pela inibina B do folículo dominante) e q32 (sequência do ciclo ovariano, já ajustada na etapa anterior)."
       }
     ],
     "humano": null

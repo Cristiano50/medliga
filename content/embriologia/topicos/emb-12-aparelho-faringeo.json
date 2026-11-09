@@ -756,11 +756,11 @@
         { "id": "d", "texto": "Parte dorsal da 3ª bolsa; migrou caudalmente com o timo e ultrapassou a posição habitual" }
       ],
       "correta": "d",
-      "explicacao": "A alternativa (d) está correta: a glândula que falta na posição habitual é uma inferior, derivada da parte dorsal da 3ª bolsa. Ela migra caudalmente junto com o timo (parte ventral da mesma bolsa) e normalmente para junto ao polo inferior da tireoide, abaixo da paratireoide da 4ª bolsa; se acompanhar o timo além desse ponto, fica no mediastino anterossuperior, onde adenomas precisam ser procurados. As glândulas da 4ª bolsa (a) migram pouco e ficam na face posterior da parte superior da tireoide. O epitélio tímico (b) não produz paratormônio; o tecido paratireoidiano vem da parte dorsal da bolsa. A parte ventral da 4ª bolsa (c) forma o corpo ultimofaríngeo, origem das células C, e o ducto tireoglosso é o trajeto da tireoide, que nasce no assoalho da faringe e não de uma bolsa.",
+      "explicacao": "A alternativa (d) está correta: a glândula que falta na posição habitual é uma inferior, derivada da parte dorsal da 3ª bolsa. Ela migra caudalmente junto com o timo (parte ventral da mesma bolsa) e normalmente para junto ao polo inferior da tireoide, abaixo da paratireoide da 4ª bolsa; se acompanhar o timo além desse ponto, fica no mediastino anterossuperior, onde adenomas precisam ser procurados. As glândulas da 4ª bolsa (a) migram pouco e ficam na face posterior da parte superior da tireoide; quando ectópicas, costumam ficar atrás da faringe ou do esôfago, rumo ao mediastino posterior, e neste caso as duas superiores foram encontradas. O epitélio tímico (b) não produz paratormônio; o tecido paratireoidiano vem da parte dorsal da bolsa. A parte ventral da 4ª bolsa (c) forma o corpo ultimofaríngeo, origem das células C, e o ducto tireoglosso é o trajeto da tireoide, que nasce no assoalho da faringe e não de uma bolsa.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["paratireoides", "bolsas-faringeas", "timo", "anatomia", "caso-clinico", "avancado"],
-      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17; Phitayakorn e McHenry, Am J Surg 2006"
     },
     {
       "id": "emb-12-q28",
@@ -809,11 +809,11 @@
         { "esquerda": "Fenda do palato secundário", "direita": "Processos palatinos laterais das proeminências maxilares" },
         { "esquerda": "Micrognatia e orelhas malformadas", "direita": "Mesênquima do 1º e do 2º arcos faríngeos" }
       ],
-      "explicacao": "As paratireoides vêm das partes dorsais da 3ª e da 4ª bolsas (hipocalcemia por hipoparatireoidismo), e o epitélio tímico, da parte ventral da 3ª (linfopenia T, ausência de sombra tímica). A crista neural cardíaca migra pelos arcos 3, 4 e 6 até as cristas conotruncais, que formam o septo aorticopulmonar; sua deficiência causa defeitos conotruncais, como o tronco arterial persistente e a tetralogia de Fallot. A fenda palatina resulta da falha de fusão dos processos palatinos laterais. A mandíbula (1º arco) e o pavilhão auricular (saliências do 1º e do 2º arcos) formam-se de mesênquima dos arcos, em grande parte derivado da crista neural. A microdeleção (que inclui TBX1) compromete as bolsas e a contribuição da crista neural, o que une achados aparentemente desconexos.",
+      "explicacao": "As paratireoides vêm das partes dorsais da 3ª e da 4ª bolsas (hipocalcemia por hipoparatireoidismo), e o epitélio tímico, da parte ventral da 3ª (linfopenia T, sombra tímica pequena ou ausente; em geral há hipoplasia tímica, e a aplasia completa é rara). A crista neural cardíaca migra pelos arcos 3, 4 e 6 até as cristas conotruncais, que formam o septo aorticopulmonar; sua deficiência causa defeitos conotruncais, como o tronco arterial persistente e a tetralogia de Fallot. A fenda palatina resulta da falha de fusão dos processos palatinos laterais; na 22q11.2, as anomalias do palato mais comuns são a insuficiência velofaríngea e a fenda submucosa, e a fenda franca é menos frequente. A mandíbula (1º arco) e o pavilhão auricular (saliências do 1º e do 2º arcos) formam-se de mesênquima dos arcos, em grande parte derivado da crista neural. A microdeleção (que inclui TBX1) compromete as bolsas e a contribuição da crista neural, o que une achados aparentemente desconexos.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": ["sindrome-22q11", "bolsas-faringeas", "crista-neural-cardiaca", "integracao", "avancado"],
-      "referencia": "Moore 11ª ed., cap. 9 e 13; Sadler 14ª ed., cap. 13 e 17"
+      "referencia": "Moore 11ª ed., cap. 9 e 13; Sadler 14ª ed., cap. 13 e 17; McDonald-McGinn et al., Nat Rev Dis Primers 2015"
     }
   ],
   "referencias": [
@@ -851,6 +851,12 @@
     },
     {
       "obra": "Heidsieck DSP, Smarius BJA, Oomen KPQ, Breugem CC. The role of the tensor veli palatini muscle in the development of cleft palate-associated middle ear problems. Clin Oral Investig. 2016;20(7):1389–1401"
+    },
+    {
+      "obra": "Phitayakorn R, McHenry CR. Incidence and location of ectopic abnormal parathyroid glands. Am J Surg. 2006;191(3):418–423"
+    },
+    {
+      "obra": "McDonald-McGinn DM, Sullivan KE, Marino B et al. 22q11.2 deletion syndrome. Nat Rev Dis Primers. 2015;1:15071"
     }
   ],
   "notasDivergencia": [
@@ -872,7 +878,7 @@
     "Frequência do lobo piramidal e época de início da função tireoidiana não foram incluídas por não terem sido conferidas.",
     "Mecanismo molecular da síndrome de Treacher Collins (falha da biogênese ribossômica com apoptose do neuroepitélio, proteína treacle) e a associação da sequência de Pierre Robin com a síndrome de Stickler vêm da literatura de genética clínica e não foram conferidos nas edições adotadas; conferir com o revisor de genética.",
     "Condutas citadas (operação de Sistrunk, avaliação da tireoide antes da cirurgia, microarranjo cromossômico ou FISH) seguem a prática clínica corrente, e não as obras de embriologia; conferir com os revisores de cirurgia pediátrica e genética.",
-    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09; revisadas pela etapa 1 de embriologia da camada avançada na mesma data, ver revisao.agentes): hiperacusia por paralisia do estapédio, padrão da paralisia facial central × periférica e ação do tensor e do levantador do véu palatino na abertura da tuba auditiva seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). Revisão de embriologia (camada avançada): Moore, Dalley e Agur descrevem a abertura ativa da parte cartilagínea da tuba pela ação conjunta dos dois músculos (o ventre do levantador, ao se contrair, empurra uma parede enquanto o tensor traciona a outra), o que sustenta a alternativa correta da q28; o tensor é tratado na literatura como o principal dilatador. A disfunção da tuba auditiva na fenda palatina é multifatorial, e a revisão de Heidsieck et al. (2016) conclui que a evidência sobre o papel exato do tensor ainda é limitada; a q28 cobra apenas o raciocínio anatômico (músculos sem inserção mediana) — conferir com otorrinolaringologia/cirurgia craniofacial."
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09; revisadas pela etapa 1 de embriologia da camada avançada na mesma data, ver revisao.agentes): hiperacusia por paralisia do estapédio, padrão da paralisia facial central × periférica e ação do tensor e do levantador do véu palatino na abertura da tuba auditiva seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). Revisão de embriologia (camada avançada): Moore, Dalley e Agur descrevem a abertura ativa da parte cartilagínea da tuba pela ação conjunta dos dois músculos (o ventre do levantador, ao se contrair, empurra uma parede enquanto o tensor traciona a outra), o que sustenta a alternativa correta da q28; o tensor é tratado na literatura como o principal dilatador. A disfunção da tuba auditiva na fenda palatina é multifatorial, e a revisão de Heidsieck et al. (2016) conclui que a evidência sobre o papel exato do tensor ainda é limitada; a q28 cobra apenas o raciocínio anatômico (músculos sem inserção mediana) — conferir com otorrinolaringologia/cirurgia craniofacial. Revisão de pediatria/cirurgia pediátrica/cardiologia/anatomia (camada avançada, 2026-11-09): (1) q27 — a refutação de (a) passou a dizer que as paratireoides superiores, quando ectópicas, tendem ao espaço retrofaríngeo/retroesofágico e ao mediastino posterior, e as inferiores, ao timo e ao mediastino anterior (literatura de cirurgia endócrina, por exemplo Phitayakorn e McHenry, Am J Surg 2006; resumo conferido, sem acesso ao texto integral); (2) q30 — na 22q11.2, o comprometimento tímico costuma ser hipoplasia (aplasia completa rara), e as anomalias palatais mais comuns são a insuficiência velofaríngea e a fenda submucosa, com fenda franca menos frequente (McDonald-McGinn et al., Nat Rev Dis Primers 2015; conferido por fontes secundárias, sem frequências no texto do aluno)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -898,6 +904,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "camada avançada (ids emb-12-q26 a emb-12-q30): 0 correções de conteúdo; só a nota da camada avançada em notasDivergencia foi atualizada (status e descrição de Moore, Dalley e Agur da abertura da tuba pelo tensor e pelo levantador). Conferidos: q26 (a) — lesão intratemporal do facial proximal ao nervo do estapédio e à corda do tímpano: paralisia de toda a hemiface (inclusive a fronte), hiperacusia e perda da gustação dos 2/3 anteriores, com V3 (mastigação e sensibilidade geral) preservado; padrão central com fronte poupada corretamente usado como distrator; q27 (d) — paratireoide inferior (parte dorsal da 3ª bolsa) arrastada pelo timo até o mediastino anterossuperior; corpo ultimofaríngeo descrito como no resumo (4ª bolsa ventral; 5ª para Sadler, já em notasDivergencia); q28 (b) — tuba da 1ª bolsa, tensor (1º arco, V3) e levantador (4º arco, ramo faríngeo do vago) sem inserção mediana na fenda; q29 — ordem crânio-caudal cavidade timpânica → tonsila palatina → paratireoide superior → paratireoide inferior → timo refeita e inequívoca (inversão 3ª/4ª pela migração do timo); q30 — 22q11.2: paratireoides (dorsais da 3ª e 4ª), timo (ventral da 3ª), cristas conotruncais e crista neural cardíaca pelos arcos 3, 4 e 6, processos palatinos laterais e mesênquima do 1º e 2º arcos, sem pares ambíguos. Sem pista de comprimento; letras a/d/b; dificuldade 4–5 e Bloom adequados; coerentes com o resumo e com emb-13."
+      },
+      {
+        "area": "pediatria/cirurgia-pediatrica/cardiologia/anatomia",
+        "agente": "revisor-pediatria-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-12-q26 a emb-12-q30): 2 correções (0 críticas, 0 importantes, 2 menores): q27 — a refutação de (a) não afastava a possibilidade de uma paratireoide superior descer ao mediastino; agora diz que as superiores ectópicas tendem ao espaço retroesofágico e ao mediastino posterior e que as duas superiores foram encontradas (Phitayakorn e McHenry, Am J Surg 2006); q30 — explicação precisada sob a ótica pediátrica: em geral há hipoplasia tímica (aplasia completa rara), e as anomalias palatais mais comuns da 22q11.2 são a insuficiência velofaríngea e a fenda submucosa (McDonald-McGinn et al., 2015); referências e incerteza da camada avançada atualizadas. Conferidos sem mudança: q26 (a) — lesão intratemporal do facial: paralisia periférica de toda a hemiface (inclusive a fronte), hiperacusia e perda gustativa dos 2/3 anteriores, com V3 preservado; o padrão central (fronte poupada) está corretamente como distrator; q28 (b) — otite média com efusão na fenda palatina não operada aos 10 meses, por disfunção da tuba (tensor e levantador sem inserção mediana), vinheta realista; q29 — ordem crânio-caudal inequívoca; q30 — pares sem ambiguidade. Gabaritos e ids inalterados; sem pista de comprimento."
       }
     ],
     "humano": null

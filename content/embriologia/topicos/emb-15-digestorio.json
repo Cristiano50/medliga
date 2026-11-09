@@ -1122,7 +1122,7 @@
     {
       "id": "emb-15-q26",
       "tipo": "multipla",
-      "contexto": "Recém-nascido de 5 dias, que mamava bem, apresenta vômitos biliosos súbitos e, horas depois, distensão abdominal, sangue nas fezes e sinais de choque. Na laparotomia, o intestino médio está torcido em torno de um pedículo mesentérico estreito (volvo), com alças escurecidas.",
+      "contexto": "Recém-nascido de 5 dias, que mamava bem, apresenta vômitos biliosos súbitos e, horas depois, distensão abdominal, sangue nas fezes e sinais de choque. Na laparotomia de urgência, o intestino médio está torcido em torno de um pedículo mesentérico estreito (volvo), com alças escurecidas.",
       "enunciado": "Qual extensão do tubo digestório está em risco de necrose, e por que o estômago e o colo descendente costumam ser poupados?",
       "alternativas": [
         {
@@ -1143,7 +1143,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A alternativa (c) está correta: na má rotação, a raiz do mesentério fica estreita, e o intestino médio pode torcer-se em torno da artéria mesentérica superior, eixo da alça intestinal primária. A torção obstrui a drenagem venosa e o fluxo arterial de todo o território da AMS: do duodeno distal à desembocadura do colédoco até cerca dos dois terços proximais do colo transverso. O estômago e o duodeno proximal, derivados do intestino anterior, são irrigados pelo tronco celíaco; o terço distal do colo transverso, o colo descendente, o sigmoide e o reto, derivados do intestino posterior, pela AMI; por isso ficam fora da isquemia. Por esse risco, vômito bilioso no recém-nascido exige excluir volvo com urgência. O tronco celíaco não é o eixo da torção e irriga o estômago, que fica poupado (a). A AMS não irriga o colo descendente nem o reto (b). O ducto vitelino (d) liga-se ao ápice da alça, mas a isquemia do volvo atinge todo o território da AMS, não só o íleo terminal.",
+      "explicacao": "A alternativa (c) está correta: na má rotação, a raiz do mesentério fica estreita, e o intestino médio pode torcer-se em torno da artéria mesentérica superior, eixo da alça intestinal primária. A torção obstrui a drenagem venosa e o fluxo arterial de todo o território da AMS: do duodeno distal à desembocadura do colédoco até cerca dos dois terços proximais do colo transverso. O estômago e o duodeno proximal, derivados do intestino anterior, são irrigados pelo tronco celíaco; o terço distal do colo transverso, o colo descendente, o sigmoide e o reto, derivados do intestino posterior, pela AMI; por isso ficam fora da isquemia. Por esse risco, o volvo é emergência cirúrgica: após reanimação rápida, laparotomia imediata, com distorção das alças e procedimento de Ladd; por isso, vômito bilioso no recém-nascido exige excluir volvo com urgência. O tronco celíaco não é o eixo da torção e irriga o estômago, que fica poupado (a). A AMS não irriga o colo descendente nem o reto (b). O ducto vitelino (d) liga-se ao ápice da alça, mas a isquemia do volvo atinge todo o território da AMS, não só o íleo terminal.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1155,7 +1155,7 @@
         "caso-clinico",
         "avancado"
       ],
-      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15; Holcomb e Ashcraft, Pediatric Surgery, 7ª ed., 2019, cap. 31"
     },
     {
       "id": "emb-15-q27",
@@ -1340,6 +1340,10 @@
     {
       "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
       "capitulo": "Abdome (duodeno e artéria mesentérica superior); Pelve e períneo (canal anal, plexos venosos retais e hemorroidas)"
+    },
+    {
+      "obra": "Holcomb GW III, Murphy JP, St Peter SD. Holcomb and Ashcraft's Pediatric Surgery. 7th ed. Philadelphia: Elsevier; 2019",
+      "capitulo": "31 — Malrotation"
     }
   ],
   "notasDivergencia": [
@@ -1361,7 +1365,7 @@
     "Momento da fusão dos brotos pancreáticos não foi fixado em dias, por variar entre as fontes consultadas.",
     "Janela da portoenterostomia de Kasai: o texto usa 'idealmente antes dos 60 dias de vida', marco da campanha Alerta Amarelo (SBP/Ministério da Saúde), e o limiar de 14 dias para investigar icterícia persistente; séries clínicas mostram melhores resultados quanto mais cedo, e o limite exato varia (revisão de pediatria, 2026-11-09; conferido por fontes secundárias).",
     "Faixa de dias do evento 'brotos pancreáticos' (dias 26–35) corresponde à 4ª–5ª semana descrita nas obras; o dia exato do surgimento de cada broto não foi conferido.",
-    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09; revisadas pela etapa 1 de embriologia da camada avançada na mesma data, ver revisao.agentes): a relação da 3ª parte do duodeno com a AMS e a aorta e a distinção entre hemorroidas internas (indolores, acima da linha pectínea) e externas trombosadas (dolorosas, abaixo dela) seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). A explicação embriológica da passagem do ramo cranial por trás da AMS segue a descrição do retorno das alças em Moore (cap. 11)."
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09; revisadas pela etapa 1 de embriologia da camada avançada na mesma data, ver revisao.agentes): a relação da 3ª parte do duodeno com a AMS e a aorta e a distinção entre hemorroidas internas (indolores, acima da linha pectínea) e externas trombosadas (dolorosas, abaixo dela) seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). A explicação embriológica da passagem do ramo cranial por trás da AMS segue a descrição do retorno das alças em Moore (cap. 11). Revisão de pediatria/cirurgia pediátrica/cardiologia/anatomia (camada avançada, 2026-11-09): a q26 passou a dizer expressamente que o volvo do intestino médio é emergência cirúrgica (reanimação, laparotomia imediata, distorção e procedimento de Ladd), conforme Holcomb e Ashcraft (Pediatric Surgery, 7ª ed., 2019, cap. 31 — Malrotation; a 8ª ed., de 2026, não foi consultada); a extensão em risco é cobrada pelo território anatômico da AMS, e a extensão real da necrose varia com o grau e a duração da torção. Meckel (q27, 'regra dos 2' só como mnemônica aproximada), duodeno × AMS (q28), remanescentes umbilicais (q29) e hemorroidas internas × externas (q30) foram conferidos sob a ótica clínica, sem mudança."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
@@ -1387,6 +1391,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-15-q26 a emb-15-q30): 1 correção (0 críticas, 0 importantes, 1 menor): q28 — na explicação, o ramo cranial passou a incluir 'parte do íleo', como no resumo e na estrutura da alça intestinal primária (antes: só 'duodeno distal e jejuno'); status da nota da camada avançada em notasDivergencia atualizado (não contado como correção). Gabaritos conferidos e únicos: q26 (c) — volvo em torno da AMS com isquemia de todo o seu território (duodeno distal à papila até ≈2/3 proximais do transverso), estômago (celíaco) e colo descendente (AMI) poupados; q27 (a) — Meckel na borda antimesentérica do íleo, 40–50 cm (Moore) ou 40–60 cm (Sadler) da junção ileocecal, diverticulite simulando apendicite e sangramento indolor prévio; a 'regra dos 2' aparece expressamente como mnemônica aproximada, como na correlação e na q sobre Meckel; q28 (d) — 270° anti-horários em torno da AMS: ramo cranial volta primeiro por trás da artéria (3ª parte do duodeno entre AMS e aorta), caudal à frente (colo transverso anterior); rotação reversa e não rotação descritas como no resumo; q29 — úraco pérvio, fístula onfaloentérica, cordão fibroso, Meckel com mucosa gástrica (pertecnetato) e onfalocele (saco de âmnio e peritônio), sem pares ambíguos; q30 (b) — 2/3 superiores do canal anal do intestino posterior (visceral, indolor; hemorroida interna do plexo retal interno) × 1/3 inferior do proctodeu (nervo retal inferior, do pudendo; trombose do plexo retal externo, dolorosa); irrigação retal superior (AMI) × retais inferiores (pudenda interna). Sem pista de comprimento; letras c/a/d/b; dificuldade 4–5 e Bloom adequados; coerentes com o resumo e com emb-11 (ligamentos e mesentérios)."
+      },
+      {
+        "area": "pediatria/cirurgia-pediatrica/cardiologia/anatomia",
+        "agente": "revisor-pediatria-avancado-v1",
+        "data": "2026-11-09",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids emb-15-q26 a emb-15-q30): 1 correção (0 críticas, 0 importantes, 1 menor): q26 — a explicação dizia só que o vômito bilioso exige excluir volvo com urgência; agora afirma que o volvo do intestino médio é emergência cirúrgica (reanimação rápida, laparotomia imediata, distorção e procedimento de Ladd), e o caso fala em laparotomia de urgência; referência de cirurgia pediátrica acrescentada (Holcomb e Ashcraft, 7ª ed., 2019, cap. 31); incerteza da camada avançada atualizada. Conferidos sem mudança: q26 (c) — território da AMS em risco, estômago (celíaco) e colo descendente (AMI) poupados; q27 (a) — Meckel com diverticulite simulando apendicite e sangramento indolor prévio, borda antimesentérica do íleo; a 'regra dos 2' aparece só como mnemônica aproximada; q28 (d) — 3ª parte do duodeno entre AMS e aorta pela rotação de 270° anti-horária; q29 — úraco pérvio, fístula onfaloentérica, cordão fibroso, Meckel (pertecnetato) e onfalocele; q30 (b) — hemorroida interna indolor acima da linha pectínea × externa trombosada dolorosa abaixo dela (pudendo). Gabaritos e ids inalterados; sem pista de comprimento."
       }
     ],
     "humano": null
