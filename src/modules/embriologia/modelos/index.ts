@@ -13,6 +13,14 @@ import {
   PARTES_CORACAO_ALCA,
   PARTES_APARELHO_FARINGEO,
 } from './sistemas.tsx';
+import {
+  ModeloSeptacaoCardiaca,
+  ModeloArcosAorticos,
+  ModeloCirculacaoFetal,
+  PARTES_SEPTACAO,
+  PARTES_ARCOS_AORTICOS,
+  PARTES_CIRCULACAO_FETAL,
+} from './cardiovascular.tsx';
 
 export interface ModeloEstagio {
   Componente: ComponentType;
@@ -41,6 +49,9 @@ export const MODELOS: Record<string, ModeloEstagio> = {
   'coracao-tubular': { Componente: ModeloCoracaoTubular, partes: PARTES_CORACAO_TUBULAR, camera: [0.3, 0.3, 4], raio: 1.75 },
   'coracao-alca': { Componente: ModeloCoracaoAlca, partes: PARTES_CORACAO_ALCA, camera: [0.2, 0.3, 4], raio: 1.45 },
   'aparelho-faringeo': { Componente: ModeloAparelhoFaringeo, partes: PARTES_APARELHO_FARINGEO, camera: [1.2, 0.5, 3], raio: 1.55 },
+  'septacao-cardiaca': { Componente: ModeloSeptacaoCardiaca, partes: PARTES_SEPTACAO, camera: [-1.1, 0.55, 3], raio: 1.4 },
+  'arcos-aorticos': { Componente: ModeloArcosAorticos, partes: PARTES_ARCOS_AORTICOS, camera: [0.9, 0.45, 3], raio: 1.75 },
+  'circulacao-fetal': { Componente: ModeloCirculacaoFetal, partes: PARTES_CIRCULACAO_FETAL, camera: [-0.5, 0.25, 3], raio: 1.75 },
 };
 
 /** Nomes de partes que não são estruturas do conteúdo (só exibição). */

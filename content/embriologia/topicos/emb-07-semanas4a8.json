@@ -1270,6 +1270,189 @@
         "morfologia-externa"
       ],
       "referencia": "Moore 11ª ed., cap. 5 (Tabela 5-1)"
+    },
+    {
+      "id": "emb-07-q30",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia morfológica com 20 semanas de idade gestacional mostra alças intestinais livres, flutuando no líquido amniótico, saindo por um defeito da parede abdominal à direita do cordão umbilical, que tem inserção normal. Não há membrana recobrindo as alças, e a alfafetoproteína sérica materna está elevada.",
+      "enunciado": "Qual é o diagnóstico e a sua base no desenvolvimento da parede do corpo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Herniação umbilical fisiológica: achado esperado nessa idade gestacional, que regride espontaneamente até o início do terceiro trimestre"
+        },
+        {
+          "id": "b",
+          "texto": "Onfalocele: as alças não retornaram ao abdome e permanecem recobertas por âmnio e peritônio, com o cordão inserido no saco"
+        },
+        {
+          "id": "c",
+          "texto": "Gastrosquise: defeito da parede ao lado do umbigo, atribuído por Moore ao fechamento incompleto das pregas laterais do corpo"
+        },
+        {
+          "id": "d",
+          "texto": "Hérnia diafragmática congênita: as alças alcançam o tórax pela abertura pleuroperitoneal que permaneceu aberta"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Alças evisceradas sem membrana, por um defeito ao lado de um cordão de inserção normal, caracterizam a gastrosquise — (c); Moore atribui o defeito ao fechamento incompleto das pregas laterais do corpo durante o dobramento da 4ª semana, e a alfafetoproteína elevada é esperada nos defeitos abertos de parede (o mecanismo é debatido: ver notas de divergência). A (a) não se sustenta na cronologia, porque a herniação fisiológica termina por volta da 10ª semana após a fertilização, cerca de 12 semanas de idade gestacional. A (b) descreve a onfalocele, em que um saco de âmnio e peritônio recobre as vísceras e o cordão se insere nesse saco — ausente aqui. A (d) descreve a hérnia diafragmática congênita, em que as vísceras ocupam o tórax e não o líquido amniótico.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "dobramento",
+        "gastrosquise",
+        "onfalocele",
+        "ultrassonografia",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5 e 11; Sadler 14ª ed., cap. 7 e 9"
+    },
+    {
+      "id": "emb-07-q31",
+      "tipo": "multipla",
+      "contexto": "Em embrião de galinha, um fragmento da zona de atividade polarizadora, retirado da margem posterior do broto do membro, é implantado na margem anterior de outro broto. O membro resultante apresenta duplicação dos dígitos em imagem especular.",
+      "enunciado": "Qual sinal foi acrescentado pelo implante e qual eixo do membro ele padroniza?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "FGF da crista ectodérmica apical, que sustenta a padronização do eixo proximodistal do membro"
+        },
+        {
+          "id": "b",
+          "texto": "WNT7a do ectoderma dorsal, que padroniza o eixo dorsoventral do membro em formação"
+        },
+        {
+          "id": "c",
+          "texto": "BMP do mesênquima interdigital, que comanda a apoptose entre os raios digitais da placa"
+        },
+        {
+          "id": "d",
+          "texto": "SHH da zona de atividade polarizadora, que padroniza o eixo anteroposterior do membro"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A zona de atividade polarizadora, na margem posterior do broto, é a fonte de SHH que dá identidade anteroposterior aos dígitos; uma segunda fonte na margem anterior cria um segundo gradiente, e os dígitos se duplicam em espelho — daí (d). A (a) descreve o FGF da crista ectodérmica apical, que sustenta o crescimento distal: sua remoção encurta o membro, em vez de duplicar dígitos. A (b) descreve o WNT7a, que define o lado dorsal: sua perda inverteria estruturas dorsais e ventrais, sem alterar o número de dígitos. A (c) descreve a BMP interdigital, cuja falha produz sindactilia, não duplicação. Note que o SHH atua no eixo anteroposterior do membro e no eixo dorsoventral do tubo neural: o mesmo sinal, papéis diferentes conforme o contexto. O experimento é de modelo aviário (ver incertezas).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "membros",
+        "SHH",
+        "sinalizacao",
+        "cenario-experimental"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 12; Moore 11ª ed., cap. 16 e 21"
+    },
+    {
+      "id": "emb-07-q32",
+      "tipo": "multipla",
+      "contexto": "Um embrião obtido em abortamento espontâneo tem comprimento cabeça-nádega de 9 mm. Apresenta placas dos pés formadas, pigmento na retina, saliências auriculares visíveis e raios digitais nas mãos, ainda sem entalhes entre eles.",
+      "enunciado": "Pela tabela de estágios de Moore, qual é a idade aproximada desse embrião e a idade gestacional correspondente?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Cerca de 28 a 32 dias após a fertilização (fim da 4ª semana), ou cerca de 6 semanas de idade gestacional"
+        },
+        {
+          "id": "b",
+          "texto": "Cerca de 37 a 42 dias após a fertilização (6ª semana), ou cerca de 7 a 8 semanas de idade gestacional"
+        },
+        {
+          "id": "c",
+          "texto": "Cerca de 44 a 48 dias após a fertilização (7ª semana), ou cerca de 9 semanas de idade gestacional"
+        },
+        {
+          "id": "d",
+          "texto": "Cerca de 56 a 60 dias após a fertilização (fim da 8ª semana), ou cerca de 10 semanas de idade gestacional"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Comprimento cabeça-nádega de 8 a 11 mm, com placas dos pés, pigmento retiniano e saliências auriculares, define o estágio 16, de 37 a 42 dias após a fertilização; somando as 2 semanas da convenção obstétrica, chega-se a cerca de 7 a 8 semanas de idade gestacional — (b). A (a) corresponde ao estágio 13 (comprimento de 4 a 6 mm), em que os brotos dos membros inferiores acabaram de surgir e não há placa do pé. A (c) corresponde ao estágio 18 (13 a 17 mm), que já tem entalhes entre os raios digitais das mãos e pálpebras em formação. A (d) corresponde ao estágio 23 (27 a 31 mm), com dedos livres e eminência caudal ausente. As idades e os comprimentos por estágio seguem a Tabela 5-1 de Moore, cuja conferência está registrada nas incertezas do tópico.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "carnegie",
+        "CCN",
+        "idade-gestacional",
+        "estimativa-de-idade"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5 (Tabela 5-1)"
+    },
+    {
+      "id": "emb-07-q33",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo apresenta desconforto respiratório grave nos primeiros minutos de vida, abdome escavado e ausência de murmúrio vesicular no hemitórax esquerdo. A radiografia mostra alças intestinais no tórax esquerdo, com desvio do mediastino para a direita.",
+      "enunciado": "Considerando o destino do septo transverso, qual falha do desenvolvimento explica o quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Fusão defeituosa da membrana pleuroperitoneal com o septo transverso e o mesentério dorsal do esôfago"
+        },
+        {
+          "id": "b",
+          "texto": "Ausência do septo transverso, que normalmente origina todo o diafragma, inclusive as porções posterolaterais"
+        },
+        {
+          "id": "c",
+          "texto": "Fechamento incompleto das pregas laterais do corpo, com defeito de toda a espessura da parede ao lado do umbigo"
+        },
+        {
+          "id": "d",
+          "texto": "Falha do retorno das alças do intestino médio, que ficam no celoma do cordão umbilical recobertas por membrana"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O septo transverso forma apenas o tendão central do diafragma; o restante vem das membranas pleuroperitoneais, do mesentério dorsal do esôfago e da musculatura da parede do corpo. Quando a membrana pleuroperitoneal não se funde a esses componentes, persiste a abertura pleuroperitoneal posterolateral e, ao retornarem do cordão umbilical, as vísceras passam ao tórax — (a); o predomínio à esquerda é a regra. A (b) erra o destino do septo transverso, que nunca forma o diafragma inteiro. A (c) descreve a gastrosquise e a (d), a onfalocele: ambas são defeitos da parede abdominal, com vísceras fora do abdome, não no tórax. O dobramento cefálico é o que leva o septo transverso para a posição caudal ao coração, onde ele participa do diafragma.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "septo-transverso",
+        "dobramento",
+        "diafragma",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5 e 8"
+    },
+    {
+      "id": "emb-07-q34",
+      "tipo": "associar",
+      "enunciado": "Associe cada defeito ao processo do período embrionário (ou do início do fetal) que falhou:",
+      "pares": [
+        {
+          "esquerda": "Gastrosquise",
+          "direita": "Fechamento incompleto das pregas laterais do corpo durante o dobramento da 4ª semana (Moore)"
+        },
+        {
+          "esquerda": "Onfalocele",
+          "direita": "Falha do retorno das alças do intestino médio à cavidade abdominal"
+        },
+        {
+          "esquerda": "Divertículo ileal (de Meckel)",
+          "direita": "Persistência da porção proximal do ducto vitelino"
+        },
+        {
+          "esquerda": "Sindactilia",
+          "direita": "Falha da apoptose do mesênquima entre os raios digitais"
+        },
+        {
+          "esquerda": "Meromelia",
+          "direita": "Agressão ao broto do membro durante a sua diferenciação inicial"
+        }
+      ],
+      "explicacao": "Os cinco defeitos decorrem de processos distintos de um mesmo intervalo. A gastrosquise é defeito da parede do corpo, que Moore atribui ao fechamento incompleto das pregas laterais no dobramento da 4ª semana (mecanismo debatido: ver notas de divergência). A onfalocele não é defeito do dobramento, mas falha do retorno das alças herniadas, que permanecem recobertas por âmnio e peritônio. O divertículo ileal é remanescente da porção proximal do ducto vitelino, que normalmente se oblitera. A sindactilia decorre da falha da apoptose interdigital, que separa os dedos no fim da 8ª semana. A meromelia segue a regra geral da teratologia: o defeito aparece quando o agente atinge o primórdio em formação — no caso, o broto do membro, no início do período embrionário.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "dobramento",
+        "defeitos-de-parede",
+        "membros",
+        "correlacao-clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 5, 11, 16 e 20; Sadler 14ª ed., cap. 7 e 12"
     }
   ],
   "referencias": [
@@ -1312,6 +1495,10 @@
     {
       "obra": "American College of Obstetricians and Gynecologists. Committee Opinion No. 700: Methods for Estimating the Due Date. Obstet Gynecol. 2017",
       "capitulo": "Datação ultrassonográfica no 1º trimestre"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "8 — Cavidades corporais, mesentérios e diafragma (hérnia diafragmática congênita)"
     }
   ],
   "notasDivergencia": [
@@ -1320,13 +1507,16 @@
     "Idades por estágio de Carnegie: adotada a Tabela 5-1 de Moore (ex.: estágio 10 = 22–23 dias; estágio 23 = 56–60 dias). As revisões de O'Rahilly & Müller atribuem idades pós-ovulatórias diferentes (em geral maiores nos estágios iniciais). Os estágios são definidos pela morfologia, e não pela idade.",
     "Brotos dos membros: Moore, superiores por volta dos dias 26–27 e inferiores no fim da 4ª semana; Sadler, brotos visíveis no fim da 4ª semana e em forma de remo no início da 5ª. O tamanho do atraso dos membros inferiores é citado de formas diferentes (cerca de 1 a 2 dias para o aparecimento dos brotos, segundo as datas dos estágios 12 e 13; valores maiores, de 4 a 5 dias, aparecem para o conjunto das etapas seguintes). Por isso o conteúdo afirma apenas 'alguns dias', sem número.",
     "Agrupamento dos estágios por semana: as faixas de idade de estágios vizinhos se sobrepõem (ex.: estágio 15 = 35–38 dias, transição 5ª/6ª semana; estágio 17 = 42–44 dias, transição 6ª/7ª), e o resumo agrupa os estágios por semana de forma aproximada.",
-    "Pavilhão auricular: a descrição clássica (seis saliências auriculares do 1º e do 2º arcos) é a dos livros-texto adotados; estudos mais recentes sugerem predomínio do 2º arco na formação do pavilhão."
+    "Pavilhão auricular: a descrição clássica (seis saliências auriculares do 1º e do 2º arcos) é a dos livros-texto adotados; estudos mais recentes sugerem predomínio do 2º arco na formação do pavilhão.",
+    "Mecanismo da gastrosquise: Moore atribui o defeito ao fechamento incompleto das pregas laterais do corpo na 4ª semana; Sadler propõe o enfraquecimento da parede à direita pela involução da veia umbilical direita, e há ainda a hipótese de ruptura vascular local. A questão emb-07-q30 nomeia a atribuição de Moore e a explicação registra o debate, na mesma redação adotada em emb-15-digestorio."
   ],
   "incertezas": [
     "Os valores de idade e CCN por estágio de Carnegie foram reproduzidos da Tabela 5-1 de Moore (11ª ed.); recomenda-se conferência direta pelo revisor, pois diferem de outras tabelas (O'Rahilly & Müller).",
     "Sadler apresenta uma tabela de CCN por semana; seus valores não foram conferidos nesta redação e não foram usados.",
     "Janela de sensibilidade à talidomida: dias 20 a 36 após a fertilização (34 a 50 dias após a DUM). A faixa foi conferida na revisão de 2026-11-09 em revisões da literatura sobre a embriopatia (e é a adotada no tópico emb-10-malformacoes); mantida sem número nas questões deste tópico, que tratam do mecanismo, e não da data.",
-    "Contagens de somitos dos estágios 13 em diante não foram incluídas por variarem entre fontes."
+    "Contagens de somitos dos estágios 13 em diante não foram incluídas por variarem entre fontes.",
+    "O experimento da zona de atividade polarizadora citado em emb-07-q31 provém de modelos aviários; o papel do SHH no eixo anteroposterior do membro humano é inferido desses modelos e da genética das polidactilias.",
+    "Predomínio esquerdo da hérnia diafragmática congênita (emb-07-q33): afirmado sem percentual, porque as fontes variam; a explicação pelo fechamento mais precoce da abertura pleuroperitoneal direita é uma proposta de Moore, não comprovada (como registrado em emb-11-cavidades-diafragma)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

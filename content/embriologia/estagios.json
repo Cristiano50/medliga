@@ -1345,6 +1345,372 @@
         ],
         "humano": null
       }
+    },
+    {
+      "id": "septacao-cardiaca",
+      "grupo": "sistemas",
+      "ordem": 104,
+      "titulo": "Septação do coração",
+      "dias": "Fim da 6ª à 7ª semana após a fertilização (antes do fechamento do forame interventricular)",
+      "diaReferencia": 42,
+      "carnegie": [],
+      "descricao": "Coração em corte frontal: só a metade posterior aparece, e as vias de saída, anteriores, foram removidas pelo corte. Momento único escolhido: fim da 6ª à 7ª semana, quando o forame oval já existe e o septo interventricular ainda não está completo. Nos átrios, o septum primum já se fundiu aos coxins endocárdicos (o ostium primum está fechado; a linha rosa marca onde ficava) e tem no alto o ostium secundum. À direita dele, o septum secundum, muscular e incompleto, recobre o ostium secundum e tem, mais abaixo, o forame oval, coberto à esquerda pelo septum primum. Os coxins atrioventriculares fundidos dividem o canal AV em canais direito e esquerdo. Nos ventrículos, o septo muscular cresce a partir do ápice, e o forame interventricular, entre sua borda livre e os coxins, continua aberto: a parte membranosa, que o fecha no fim da 7ª semana, ainda não existe. Esquema fora de escala: septos e aberturas simplificados, e cada abertura aparece como uma película translúcida para poder ser tocada. Cores identificam estruturas; não representam oxigenação.",
+      "destaques": [
+        "Sequência nos átrios: septum primum e ostium primum → ostium secundum (por apoptose, antes de o ostium primum se fechar) → fusão do septum primum com os coxins (fecha o ostium primum) → septum secundum, cuja abertura é o forame oval.",
+        "Forame oval (embaixo, no septum secundum) e ostium secundum (no alto, no septum primum) não se alinham: o sangue passa da direita para a esquerda entre os dois septos, e o septum primum funciona como valva unidirecional.",
+        "O forame interventricular fecha-se no fim da 7ª semana pela parte membranosa (tecido dos coxins e das cristas conotruncais); a falha dessa parte é a base da CIV membranosa."
+      ],
+      "topicos": [
+        "emb-13-cardiovascular"
+      ],
+      "estruturas": [
+        {
+          "id": "atrio-direito",
+          "nome": "Átrio direito",
+          "descricao": "Recebe o retorno venoso pelo seio venoso. Sua parte lisa (seio das veias cavas) vem da incorporação do corno direito do seio venoso; a aurícula, trabeculada, vem do átrio primitivo."
+        },
+        {
+          "id": "atrio-esquerdo",
+          "nome": "Átrio esquerdo",
+          "descricao": "Sua parte lisa vem da incorporação da veia pulmonar primitiva e de seus ramos (não representados); a aurícula vem do átrio primitivo. Recebe, pelo ostium secundum, o sangue que atravessa o forame oval."
+        },
+        {
+          "id": "ventriculo-direito",
+          "nome": "Ventrículo direito",
+          "descricao": "A parte trabeculada vem da parte proximal do bulbo cardíaco; a via de saída (cone arterial ou infundíbulo) vem do cone e fica na metade anterior, removida pelo corte."
+        },
+        {
+          "id": "ventriculo-esquerdo",
+          "nome": "Ventrículo esquerdo",
+          "descricao": "A parte trabeculada vem do ventrículo primitivo; a via de saída (vestíbulo da aorta) vem do cone e fica na metade anterior, removida pelo corte."
+        },
+        {
+          "id": "septum-primum",
+          "nome": "Septum primum (septo primário)",
+          "descricao": "Membrana fina que cresceu do teto do átrio em direção aos coxins endocárdicos. Aqui já está fundido aos coxins e tem, no alto, o ostium secundum. Sua parte inferior cobre o forame oval pelo lado esquerdo e funciona como valva; depois do nascimento forma o assoalho da fossa oval."
+        },
+        {
+          "id": "ostium-primum",
+          "nome": "Ostium primum (já fechado)",
+          "descricao": "Abertura entre a borda livre do septum primum e os coxins endocárdicos. Neste momento já não existe: a linha rosa marca onde ficava. Fechou-se quando o septum primum se fundiu aos coxins. Quando os coxins são deficientes e não se fundem ao septum primum, o ostium primum persiste (defeito do septo AV)."
+        },
+        {
+          "id": "ostium-secundum",
+          "nome": "Ostium secundum (forame secundário)",
+          "descricao": "Abertura na parte cranial do septum primum, formada pela confluência de perfurações por apoptose antes de o ostium primum se fechar. Mantém a passagem da direita para a esquerda e é recoberta, pelo lado direito, pelo septum secundum. A reabsorção excessiva do septum primum é uma das causas da CIA tipo ostium secundum."
+        },
+        {
+          "id": "septum-secundum",
+          "nome": "Septum secundum (septo secundário)",
+          "descricao": "Prega muscular espessa que cresce da parede ventrocranial do átrio direito, à direita do septum primum, durante a 5ª e a 6ª semanas (Moore). Não forma partição completa: recobre o ostium secundum e deixa uma abertura, o forame oval. Sua borda livre forma depois o limbo da fossa oval."
+        },
+        {
+          "id": "forame-oval",
+          "nome": "Forame oval",
+          "descricao": "Abertura no septum secundum, mais baixa que o ostium secundum e coberta à esquerda pelo septum primum, que funciona como valva unidirecional. Trajeto do sangue: forame oval → espaço entre os septos → ostium secundum → átrio esquerdo. Ao nascer, a pressão maior no átrio esquerdo encosta a valva no septum secundum (fechamento funcional); anatomicamente, forma a fossa oval."
+        },
+        {
+          "id": "coxins-endocardicos",
+          "nome": "Coxins endocárdicos atrioventriculares (fundidos)",
+          "descricao": "Os coxins dorsal e ventral do canal AV, formados por transição epitélio-mesênquima do endocárdio na geleia cardíaca, já se fundiram e dividem o canal em direito e esquerdo. Participam das valvas AV, do fechamento do ostium primum e, com as cristas conotruncais, da parte membranosa do septo interventricular. A falha de fusão causa o defeito do septo AV, fortemente associado à trissomia 21."
+        },
+        {
+          "id": "canal-av-direito",
+          "nome": "Canal atrioventricular direito",
+          "descricao": "Passagem do átrio direito para o ventrículo direito, à direita dos coxins fundidos; em torno dela se formam os folhetos da valva tricúspide."
+        },
+        {
+          "id": "canal-av-esquerdo",
+          "nome": "Canal atrioventricular esquerdo",
+          "descricao": "Passagem do átrio esquerdo para o ventrículo esquerdo, à esquerda dos coxins fundidos; em torno dela se formam os folhetos da valva mitral."
+        },
+        {
+          "id": "septo-interventricular",
+          "nome": "Septo interventricular (parte muscular)",
+          "descricao": "Crista muscular que cresce do assoalho, junto ao ápice, sobretudo pela dilatação dos dois ventrículos de cada lado dela. Sua borda livre, côncava, ainda não alcança os coxins; a parte membranosa, que completará o septo, ainda não se formou."
+        },
+        {
+          "id": "forame-interventricular",
+          "nome": "Forame interventricular",
+          "descricao": "Comunicação entre os ventrículos, entre a borda livre do septo muscular e os coxins fundidos. Fecha-se no fim da 7ª semana pela parte membranosa do septo, formada por tecido dos coxins endocárdicos e das cristas conotruncais. Se não se fecha, persiste uma CIV na região membranosa."
+        },
+        {
+          "id": "valvas-venosas",
+          "nome": "Valvas venosas (do seio venoso)",
+          "descricao": "Pregas direita e esquerda que ladeiam o orifício sinoatrial na parede dorsal do átrio direito. A valva esquerda funde-se ao septo atrial; a parte inferior da direita forma a valva da veia cava inferior e a valva do seio coronário."
+        },
+        {
+          "id": "seio-venoso",
+          "nome": "Seio venoso (orifício sinoatrial)",
+          "descricao": "Entrada do seio venoso no átrio direito. O corno direito, que recebe as futuras veias cavas, é incorporado ao átrio e forma sua parte lisa; o esquerdo forma o seio coronário. No modelo, o tubo atrás da parede indica a chegada do seio, sem as veias."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "arcos-aorticos",
+      "grupo": "sistemas",
+      "ordem": 105,
+      "titulo": "Arcos aórticos",
+      "dias": "≈ 6ª–8ª semana após a fertilização (quadro de transição, esquemático)",
+      "diaReferencia": 49,
+      "carnegie": [],
+      "descricao": "Esquema clássico das artérias dos arcos aórticos em vista ventral, durante a remodelação que Moore situa entre a 6ª e a 8ª semana. Os pares não coexistem: o 1º e o 2º já regrediram (restam cotos discretos) e o 5º não aparece, porque não se forma ou é rudimentar. Persistem o 3º, o 4º e o 6º pares. À direita, a parte distal do 6º arco já regrediu; por isso o nervo laríngeo recorrente direito subiu e contorna o 4º arco direito, enquanto o esquerdo continua sob a parte distal do 6º esquerdo, o ducto arterioso. O ducto carotídeo e a aorta dorsal direita caudal à 7ª artéria intersegmentar aparecem afinados, em regressão. É um quadro intermediário didático: as fontes não fixam a ordem exata dessas regressões, e o modelo não representa um dia exato. As estruturas aparecem com os nomes embrionários; os derivados estão nas descrições. O coração foi omitido: a via de saída já está dividida pelo septo aorticopulmonar, e a parte aórtica continua no saco aórtico (3º e 4º arcos), enquanto o tronco pulmonar dá os 6os arcos. Os arcos contornam a faringe (translúcida), da frente (saco aórtico) para trás (aortas dorsais). Cores identificam estruturas; não representam oxigenação.",
+      "destaques": [
+        "3º arco: carótida comum e parte proximal da carótida interna. 4º esquerdo: segmento do arco da aorta. 4º direito: parte proximal da subclávia direita. 6º: partes proximais das artérias pulmonares e, à esquerda, o ducto arterioso.",
+        "Os laríngeos recorrentes, nervos do 6º arco, passam de início sob as artérias desse arco. À direita, a parte distal do 6º regride e o nervo sobe até contornar a subclávia direita (4º arco); à esquerda, fica sob o ducto arterioso e o arco da aorta.",
+        "Subclávia esquerda: 7ª intersegmentar esquerda. Subclávia direita: 4º arco direito + aorta dorsal direita + 7ª intersegmentar direita.",
+        "Anomalias: arco duplo (persistência da aorta dorsal direita distal), subclávia direita aberrante (regressão do 4º arco direito) e interrupção do arco tipo B (4º esquerdo; associada à deleção 22q11.2)."
+      ],
+      "topicos": [
+        "emb-23-arcos-aorticos-veias",
+        "emb-13-cardiovascular"
+      ],
+      "estruturas": [
+        {
+          "id": "saco-aortico",
+          "nome": "Saco aórtico",
+          "descricao": "Dilatação distal à via de saída, de onde partem o 3º e o 4º pares de arcos. O corno direito forma o tronco braquiocefálico; o esquerdo, a parte proximal do arco da aorta. O tubo abaixo dele é a via de saída aórtica, cortada (coração omitido)."
+        },
+        {
+          "id": "tronco-pulmonar",
+          "nome": "Tronco pulmonar",
+          "descricao": "Canal pulmonar da via de saída, separado do aórtico pelo septo aorticopulmonar; dá origem às artérias do 6º arco."
+        },
+        {
+          "id": "arco-aortico-3",
+          "nome": "Artérias do 3º arco (par)",
+          "descricao": "Formam as carótidas comuns e a parte proximal das carótidas internas; as carótidas externas brotam delas. A parte distal da carótida interna vem da aorta dorsal cranial ao 3º arco."
+        },
+        {
+          "id": "arco-aortico-4-direito",
+          "nome": "Artéria do 4º arco direito",
+          "descricao": "Forma a parte proximal da subclávia direita. Neste quadro, o laríngeo recorrente direito já passa sob ela. Sua regressão anormal origina a subclávia direita aberrante, retroesofágica."
+        },
+        {
+          "id": "arco-aortico-4-esquerdo",
+          "nome": "Artéria do 4º arco esquerdo",
+          "descricao": "Forma o segmento do arco da aorta entre a carótida comum esquerda e a subclávia esquerda. Sua regressão anormal causa a interrupção do arco tipo B, associada à deleção 22q11.2."
+        },
+        {
+          "id": "arco-aortico-6-direito",
+          "nome": "Artéria do 6º arco direito",
+          "descricao": "A parte proximal forma a parte proximal da artéria pulmonar direita; o ramo que desce vai ao broto pulmonar. A parte distal, que a ligava à aorta dorsal direita, já regrediu, e por isso o laríngeo recorrente direito ficou livre para subir."
+        },
+        {
+          "id": "arco-aortico-6-esquerdo",
+          "nome": "Artéria do 6º arco esquerdo (parte proximal)",
+          "descricao": "Forma a parte proximal da artéria pulmonar esquerda; o ramo que desce vai ao broto pulmonar esquerdo. Sua parte distal é o ducto arterioso."
+        },
+        {
+          "id": "ducto-arterioso",
+          "nome": "Ducto arterioso (canal arterial)",
+          "descricao": "Parte distal do 6º arco esquerdo, que liga o tronco pulmonar à aorta dorsal esquerda; no feto, desvia a maior parte do sangue do tronco pulmonar para a aorta. O laríngeo recorrente esquerdo passa sob ele. Após o nascimento, contrai-se e forma o ligamento arterial."
+        },
+        {
+          "id": "aorta-dorsal-direita",
+          "nome": "Aorta dorsal direita",
+          "descricao": "Cranial ao 3º arco, forma a parte distal da carótida interna direita. O segmento entre o 4º arco e a 7ª intersegmentar entra na subclávia direita; caudalmente à 7ª intersegmentar, até a junção com a esquerda, regride (afinado no modelo). Se esse segmento persiste, forma-se um arco aórtico duplo (anel vascular)."
+        },
+        {
+          "id": "aorta-dorsal-esquerda",
+          "nome": "Aorta dorsal esquerda",
+          "descricao": "Cranial ao 3º arco, forma a parte distal da carótida interna esquerda. Caudalmente ao 4º arco, forma a parte distal do arco da aorta e, com a aorta dorsal única, a aorta descendente."
+        },
+        {
+          "id": "aorta-dorsal-fundida",
+          "nome": "Aorta dorsal única (segmento fundido)",
+          "descricao": "Caudalmente aos arcos, as duas aortas dorsais fundem-se num vaso único na linha média, que forma a aorta descendente."
+        },
+        {
+          "id": "ducto-carotideo",
+          "nome": "Ducto carotídeo (em regressão)",
+          "descricao": "Segmento de cada aorta dorsal entre o 3º e o 4º arcos. Oblitera-se dos dois lados durante a remodelação dos arcos; aparece afinado no modelo."
+        },
+        {
+          "id": "arteria-intersegmentar-7",
+          "nome": "7ª artérias intersegmentares (par)",
+          "descricao": "Ramos das aortas dorsais para os brotos dos membros superiores. A esquerda forma toda a subclávia esquerda, cuja origem depois sobe para junto da carótida comum esquerda; a direita forma a parte distal da subclávia direita."
+        },
+        {
+          "id": "arterias-intersegmentares",
+          "nome": "Artérias intersegmentares",
+          "descricao": "Ramos dorsais das aortas que passam entre os somitos; só alguns, esquemáticos, aparecem no modelo. Anastomoses longitudinais das cervicais formam as artérias vertebrais; no tronco persistem como intercostais posteriores e lombares."
+        },
+        {
+          "id": "remanescentes-arcos-1-2",
+          "nome": "Remanescentes do 1º e do 2º arcos",
+          "descricao": "As artérias do 1º e do 2º arcos regrediram quase totalmente: do 1º resta parte da artéria maxilar; do 2º, as artérias hióidea e estapédia (Sadler). No modelo, cotos discretos sem forma anatômica."
+        },
+        {
+          "id": "nervo-vago",
+          "nome": "Nervo vago (X)",
+          "descricao": "Desce lateralmente aos arcos e dá os nervos laríngeos recorrentes, nervos do 6º arco, que inervam os músculos intrínsecos da laringe, exceto o cricotireóideo."
+        },
+        {
+          "id": "nervo-laringeo-recorrente-direito",
+          "nome": "Nervo laríngeo recorrente direito",
+          "descricao": "Passava sob o 6º arco direito. Com a regressão da parte distal desse arco, sobe e contorna o 4º arco direito, futura subclávia direita, e segue até a laringe (não representada)."
+        },
+        {
+          "id": "nervo-laringeo-recorrente-esquerdo",
+          "nome": "Nervo laríngeo recorrente esquerdo",
+          "descricao": "Continua sob a parte distal do 6º arco esquerdo (ducto arterioso); depois do nascimento, contorna o ligamento arterial e o arco da aorta, o que explica seu trajeto mais longo, pelo tórax."
+        },
+        {
+          "id": "faringe-primitiva",
+          "nome": "Faringe primitiva",
+          "descricao": "Intestino anterior na região dos arcos faríngeos, translúcido no modelo. As artérias dos arcos a contornam lateralmente, do saco aórtico, na frente, às aortas dorsais, atrás."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "circulacao-fetal",
+      "grupo": "sistemas",
+      "ordem": 106,
+      "titulo": "Circulação fetal",
+      "dias": "Feto a termo (≈ 38 semanas após a fertilização)",
+      "diaReferencia": 266,
+      "carnegie": [],
+      "descricao": "Esquema frontal da circulação de um feto a termo, fora de escala: a placenta foi reduzida e aproximada do feto, e os átrios são translúcidos para mostrar o septo interatrial. Três desvios poupam órgãos que ainda não fazem sua função: o ducto venoso leva parte do sangue da veia umbilical direto à veia cava inferior, sem passar pelos sinusoides hepáticos; o forame oval leva a corrente mais oxigenada da cava inferior do átrio direito ao esquerdo; e o ducto arterioso desvia a maior parte do sangue do tronco pulmonar para a aorta, porque a resistência pulmonar é alta. As artérias umbilicais, ramos das ilíacas internas, devolvem o sangue à placenta. Convenção de cores: como no restante do laboratório, as cores identificam estruturas e não representam oxigenação. A escolha é deliberada: no feto, a veia umbilical leva o sangue mais oxigenado e as artérias umbilicais, o menos oxigenado, e as correntes se misturam em parte na cava inferior, nos átrios e na aorta descendente. Um código vermelho/azul induziria à leitura do adulto, e uma escala de saturação exigiria valores que variam entre as fontes; a oxigenação relativa está descrita no texto de cada vaso.",
+      "destaques": [
+        "Placenta → veia umbilical → ducto venoso (e fígado) → veia cava inferior → átrio direito → forame oval → átrio esquerdo → ventrículo esquerdo → aorta ascendente (coração e encéfalo).",
+        "Veia cava superior → átrio direito → ventrículo direito → tronco pulmonar → ducto arterioso → aorta descendente → artérias umbilicais → placenta.",
+        "Ao nascer, cessa o fluxo placentário, a resistência pulmonar cai com a aeração e a pressão no átrio esquerdo passa a superar a do direito: o forame oval fecha-se funcionalmente e o ducto arterioso contrai-se. Remanescentes: ligamento redondo do fígado, ligamento venoso, fossa oval, ligamento arterial e ligamentos umbilicais mediais."
+      ],
+      "topicos": [
+        "emb-13-cardiovascular",
+        "emb-24-circulacao-fetal"
+      ],
+      "estruturas": [
+        {
+          "id": "placenta",
+          "nome": "Placenta (reduzida)",
+          "descricao": "Órgão das trocas materno-fetais; no feto, faz o papel dos pulmões nas trocas gasosas. Desenhada pequena e perto do feto; o cordão real é bem mais longo."
+        },
+        {
+          "id": "cordao-umbilical",
+          "nome": "Cordão umbilical",
+          "descricao": "Contém duas artérias e uma veia, enroladas em espiral e envoltas pela geleia de Wharton (translúcida no modelo)."
+        },
+        {
+          "id": "veia-umbilical",
+          "nome": "Veia umbilical (esquerda)",
+          "descricao": "Única veia umbilical que persiste (a direita regride no período embrionário). Leva o sangue mais oxigenado do feto da placenta ao fígado, onde parte segue pelo ducto venoso e parte chega aos sinusoides hepáticos pelo ramo esquerdo da veia porta. Após o nascimento, forma o ligamento redondo do fígado."
+        },
+        {
+          "id": "arterias-umbilicais",
+          "nome": "Artérias umbilicais",
+          "descricao": "Par de artérias, ramos das ilíacas internas, que sobem pela parede abdominal anterior, ao lado da bexiga (não representada), até o umbigo e levam à placenta o sangue menos oxigenado. Após o nascimento, as partes proximais persistem como ilíacas internas e artérias vesicais superiores, e as distais formam os ligamentos umbilicais mediais."
+        },
+        {
+          "id": "figado",
+          "nome": "Fígado",
+          "descricao": "Volumoso no feto e translúcido no modelo. Parte do sangue da veia umbilical passa por seus sinusoides e chega à veia cava inferior pelas veias hepáticas (não representadas)."
+        },
+        {
+          "id": "ducto-venoso",
+          "nome": "Ducto venoso",
+          "descricao": "Comunicação, dentro do fígado, entre a veia umbilical e a veia cava inferior; desvia parte do sangue umbilical dos sinusoides hepáticos. Oblitera-se após o nascimento e forma o ligamento venoso."
+        },
+        {
+          "id": "veia-porta",
+          "nome": "Veia porta",
+          "descricao": "Traz o sangue do intestino ao fígado. Seu ramo esquerdo comunica-se com a veia umbilical, e o sangue de ambas se distribui pelos sinusoides hepáticos."
+        },
+        {
+          "id": "veia-cava-inferior",
+          "nome": "Veia cava inferior",
+          "descricao": "Recebe o retorno da metade inferior do corpo, o ducto venoso e as veias hepáticas, e desemboca no átrio direito. As correntes misturam-se pouco: a mais oxigenada, vinda sobretudo do ducto venoso, é dirigida pela borda do septum secundum (crista dividens) ao forame oval."
+        },
+        {
+          "id": "veia-cava-superior",
+          "nome": "Veia cava superior",
+          "descricao": "Traz ao átrio direito o sangue pouco oxigenado da cabeça e dos membros superiores, que segue sobretudo para o ventrículo direito."
+        },
+        {
+          "id": "atrio-direito",
+          "nome": "Átrio direito",
+          "descricao": "Translúcido no modelo. Recebe as duas veias cavas. O sangue da cava superior desce sobretudo ao ventrículo direito; a corrente mais oxigenada da cava inferior é dirigida ao forame oval."
+        },
+        {
+          "id": "atrio-esquerdo",
+          "nome": "Átrio esquerdo",
+          "descricao": "Recebe o sangue que atravessa o forame oval e o pequeno retorno dos pulmões pelas veias pulmonares (não representadas)."
+        },
+        {
+          "id": "ventriculo-direito",
+          "nome": "Ventrículo direito",
+          "descricao": "Bombeia para o tronco pulmonar; no feto, a maior parte desse débito segue pelo ducto arterioso, e não pelos pulmões."
+        },
+        {
+          "id": "ventriculo-esquerdo",
+          "nome": "Ventrículo esquerdo",
+          "descricao": "Bombeia para a aorta ascendente o sangue que chegou pelo forame oval; os primeiros ramos da aorta levam esse sangue, o mais oxigenado que sai do coração, às coronárias e ao encéfalo."
+        },
+        {
+          "id": "septum-secundum",
+          "nome": "Septum secundum",
+          "descricao": "Septo muscular, do lado direito, cuja abertura é o forame oval; sua borda inferior (crista dividens) separa as correntes que chegam pela veia cava inferior. Forma depois o limbo da fossa oval."
+        },
+        {
+          "id": "septum-primum",
+          "nome": "Septum primum (valva do forame oval)",
+          "descricao": "Lâmina fina, do lado esquerdo, que funciona como valva: abre-se para a esquerda com o fluxo fetal e, ao nascer, é pressionada contra o septum secundum. Forma o assoalho da fossa oval."
+        },
+        {
+          "id": "forame-oval",
+          "nome": "Forame oval",
+          "descricao": "Passagem do átrio direito para o esquerdo, no septum secundum, coberta à esquerda pelo septum primum. Fecha-se funcionalmente ao nascer; a fusão posterior dos septos forma a fossa oval. Pode permanecer patente ('à sonda') em parte dos adultos."
+        },
+        {
+          "id": "tronco-pulmonar",
+          "nome": "Tronco pulmonar",
+          "descricao": "Sai do ventrículo direito e divide-se nas artérias pulmonares. Como a resistência pulmonar fetal é alta, a maior parte do fluxo segue pelo ducto arterioso."
+        },
+        {
+          "id": "arterias-pulmonares",
+          "nome": "Artérias pulmonares",
+          "descricao": "Levam aos pulmões a pequena parte do débito do ventrículo direito que não passa pelo ducto arterioso."
+        },
+        {
+          "id": "pulmoes",
+          "nome": "Pulmões",
+          "descricao": "Translúcidos no modelo. Cheios de líquido e sem trocas gasosas, têm resistência vascular alta. Com a aeração ao nascer, a resistência cai e o fluxo pulmonar aumenta."
+        },
+        {
+          "id": "ducto-arterioso",
+          "nome": "Ducto arterioso (canal arterial)",
+          "descricao": "Liga o tronco pulmonar, junto à origem da artéria pulmonar esquerda, à aorta, distal à subclávia esquerda; desvia o sangue do ventrículo direito para a aorta descendente. Contrai-se ao nascer (mais oxigênio, menos prostaglandinas) e forma o ligamento arterial."
+        },
+        {
+          "id": "aorta",
+          "nome": "Aorta",
+          "descricao": "A parte ascendente e o arco recebem o sangue do ventrículo esquerdo; os ramos do arco (tronco braquiocefálico, carótida comum e subclávia esquerdas) aparecem como cotos. Depois da entrada do ducto arterioso, a aorta descendente leva sangue misturado ao restante do corpo e às artérias umbilicais."
+        },
+        {
+          "id": "arterias-iliacas",
+          "nome": "Artérias ilíacas",
+          "descricao": "Ramos terminais da aorta. As ilíacas internas dão as artérias umbilicais, e as externas seguem para os membros inferiores (cotos). No modelo, as umbilicais saem do ponto em que nasceriam as ilíacas internas, que não são desenhadas à parte."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-09",
+        "agentes": [],
+        "humano": null
+      }
     }
   ]
 }

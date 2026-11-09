@@ -647,6 +647,95 @@
       "bloom": "compreender",
       "tags": ["mesenterio-dorsal", "mesenterio-ventral", "derivados"],
       "referencia": "Sadler 14ª ed., cap. 7 e 15; Moore 11ª ed., cap. 11"
+    },
+    {
+      "id": "emb-11-q26",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia morfológica com 22 semanas de idade gestacional mostra estômago e alças intestinais no hemitórax esquerdo e o coração desviado para a direita. Considere que as vísceras passaram ao tórax quando as alças do intestino médio retornaram do cordão umbilical, na 10ª semana após a fertilização, e permaneceram ali desde então.",
+      "enunciado": "Em que período do desenvolvimento pulmonar a compressão começou, e qual alteração estrutural ela produz de modo mais característico?",
+      "alternativas": [
+        { "id": "a", "texto": "Período sacular: os sáculos terminais deixam de se formar, mas o número de gerações de vias aéreas permanece normal" },
+        { "id": "b", "texto": "Período pseudoglandular: menos gerações de ramificação brônquica e leito vascular reduzido, inclusive à direita" },
+        { "id": "c", "texto": "Período canalicular: apenas a produção de surfactante diminui, sem redução do número de vias aéreas" },
+        { "id": "d", "texto": "Período embrionário: os brônquios lobares do pulmão esquerdo deixam de surgir, com agenesia lobar" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a 10ª semana após a fertilização está no período pseudoglandular (≈5ª–16ª/17ª semana), quando a árvore condutora se forma por ramificação até os bronquíolos terminais. Vísceras que ocupam o tórax desde então comprimem o pulmão em ramificação, que fica com menos gerações de brônquios e bronquíolos, menos alvéolos e leito vascular reduzido (hipoplasia e hipertensão pulmonares). O desvio do mediastino comprime também o pulmão direito, que pode ser hipoplásico. As 22 semanas de idade gestacional correspondem a ≈20 semanas após a fertilização (período canalicular), mas a compressão começou antes. O período sacular (a) só começa por volta da 24ª–26ª semana, e a lesão da HDC inclui redução das vias aéreas. A deficiência de surfactante (c) pode coexistir, mas não é a alteração principal nem ocorre sem perda de vias aéreas. Os brônquios lobares (d) surgem na 5ª semana, antes da herniação, e a HDC causa hipoplasia, não agenesia lobar.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["hernia-diafragmatica-congenita", "hipoplasia-pulmonar", "maturacao-pulmonar", "integracao", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 8 e 10; Sadler 14ª ed., cap. 7 e 14"
+    },
+    {
+      "id": "emb-11-q27",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 4.500 g, nascido de parto vaginal com distocia de ombro, mantém o membro superior direito aduzido e em rotação medial, com o antebraço estendido e pronado (paralisia braquial alta, de Erb, raízes C5–C6). Evolui com taquipneia. A radiografia mostra elevação da hemicúpula diafragmática direita, de contorno liso, sem vísceras no tórax, e a ultrassonografia mostra que essa hemicúpula sobe na inspiração (movimento paradoxal).",
+      "enunciado": "Qual é a explicação mais provável para o achado diafragmático?",
+      "alternativas": [
+        { "id": "a", "texto": "Hérnia posterolateral direita (Bochdalek), por falha de fusão da membrana pleuroperitoneal desse lado" },
+        { "id": "b", "texto": "Lesão do nervo vago direito, que seria responsável pela inervação motora da hemicúpula direita" },
+        { "id": "c", "texto": "Lesão dos intercostais inferiores, responsáveis pela inervação motora da porção muscular periférica" },
+        { "id": "d", "texto": "Lesão por tração do frênico, formado por C3–C5, segmentos vizinhos aos lesados na paralisia de Erb" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: o nervo frênico é formado por fibras de C3, C4 e C5 — trajeto que reflete a posição cervical inicial do septo transverso — e dá a inervação motora de todo o diafragma. A tração do pescoço na distocia de ombro, que lesou as raízes C5–C6 (paralisia de Erb), pode lesar também o frênico; a hemicúpula paralisada fica elevada e sobe na inspiração. É a elevação diafragmática adquirida que o tópico distingue da eventração congênita. Na hérnia de Bochdalek (a) haveria vísceras abdominais no tórax. O vago (b) não inerva o diafragma. Os intercostais inferiores (c) levam apenas fibras sensitivas à margem costal; a inervação motora de todo o músculo é frênica.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["nervo-frenico", "diafragma", "tocotraumatismo", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 8; Sadler 14ª ed., cap. 7; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (membro superior: plexo braquial)"
+    },
+    {
+      "id": "emb-11-q28",
+      "tipo": "multipla",
+      "contexto": "Homem de 55 anos tem úlcera péptica perfurada na parede posterior do estômago. A tomografia mostra coleção de líquido e gás atrás do estômago e à frente do pâncreas, inicialmente contida nesse espaço.",
+      "enunciado": "Em que espaço está a coleção, como esse espaço se formou e por onde ele se comunica com o restante da cavidade peritoneal?",
+      "alternativas": [
+        { "id": "a", "texto": "Bolsa omental, formada no mesogástrio dorsal levado à esquerda pela rotação do estômago; comunica-se pelo forame omental" },
+        { "id": "b", "texto": "Espaço retroperitoneal, formado pela fusão do mesoduodeno dorsal à parede posterior; comunica-se pelo hiato esofágico" },
+        { "id": "c", "texto": "Recesso entre o fígado e o rim direito, formado no mesentério ventral; comunica-se pela borda livre do ligamento falciforme" },
+        { "id": "d", "texto": "Cavidade pleural esquerda, por um canal pericardioperitoneal que persistiu; comunica-se pelo forame posterolateral do diafragma" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: a bolsa omental (saco menor) fica atrás do estômago e à frente do pâncreas. Forma-se por fendas no mesogástrio dorsal que coalescem e é ampliada quando a rotação do estômago leva esse mesentério para a esquerda; o lado direito original do estômago torna-se a parede posterior, voltada para a bolsa. Ela se comunica com a cavidade peritoneal (saco maior) pelo forame omental, cujo limite anterior é a borda livre do ligamento hepatoduodenal, derivado do mesentério ventral. Por isso o conteúdo de uma perfuração da parede posterior acumula-se primeiro na bolsa omental. A coleção está numa parte da cavidade peritoneal, não no retroperitônio, e o hiato esofágico liga o abdome ao tórax, não à bolsa (b). O recesso hepatorrenal (c) fica fora da bolsa, e o ligamento falciforme não é uma abertura. Uma abertura pleuroperitoneal persistente (d) corresponde à hérnia de Bochdalek e não explica uma coleção atrás do estômago.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["bolsa-omental", "mesogastrio-dorsal", "forame-omental", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 8 e 11; Sadler 14ª ed., cap. 15; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (abdome: bolsa omental)"
+    },
+    {
+      "id": "emb-11-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada prega peritoneal do adulto, derivada dos mesentérios embrionários, às estruturas que ela conduz:",
+      "pares": [
+        { "esquerda": "Ligamento gastroesplênico", "direita": "Vasos gástricos curtos e gastromentais esquerdos" },
+        { "esquerda": "Ligamento esplenorrenal", "direita": "Vasos esplênicos e cauda do pâncreas" },
+        { "esquerda": "Ligamento hepatoduodenal", "direita": "Veia porta, artéria hepática própria e ducto colédoco" },
+        { "esquerda": "Mesentério do jejuno e do íleo", "direita": "Ramos jejunais e ileais dos vasos mesentéricos superiores" },
+        { "esquerda": "Mesocólon transverso", "direita": "Vasos cólicos médios" }
+      ],
+      "explicacao": "O baço, que se desenvolve entre as lâminas do mesogástrio dorsal, divide-o em ligamento gastroesplênico (entre estômago e baço, com os vasos gástricos curtos e gastromentais esquerdos) e ligamento esplenorrenal (entre baço e rim esquerdo, com os vasos esplênicos e a cauda do pâncreas, que cresceu no mesentério dorsal). O ligamento hepatoduodenal, parte do omento menor, vem do mesentério ventral e leva a tríade portal na borda livre. O mesentério do jejuno e do íleo é a parte do mesentério dorsal que conduz os ramos da artéria mesentérica superior, artéria do intestino médio; o mesocólon transverso, que persiste sem se fundir à parede posterior, conduz os vasos cólicos médios, também ramos dos vasos mesentéricos superiores.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["mesenterio-dorsal", "mesenterio-ventral", "mesogastrio-dorsal", "anatomia", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 8 e 11; Sadler 14ª ed., cap. 7 e 15; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (abdome: peritônio)"
+    },
+    {
+      "id": "emb-11-q30",
+      "tipo": "multipla",
+      "contexto": "Homem de 40 anos com pneumonia do lobo inferior direito e pleurite que acomete a pleura diafragmática periférica, junto à margem costal, refere dor em pontada no hipocôndrio direito e na parede abdominal lateral, que piora na inspiração profunda. Não há dor no ombro.",
+      "enunciado": "Qual explicação anatômico-embriológica justifica a localização da dor?",
+      "alternativas": [
+        { "id": "a", "texto": "A pleura visceral do lobo inferior é sensível à dor e a projeta para a parede abdominal pelos nervos esplâncnicos" },
+        { "id": "b", "texto": "A margem do diafragma deriva do septo transverso, e o frênico projeta a dor para a pele do hipocôndrio e do flanco direitos" },
+        { "id": "c", "texto": "A margem periférica do diafragma vem da parede lateral do corpo e tem inervação sensitiva dos intercostais inferiores" },
+        { "id": "d", "texto": "A pleura diafragmática periférica é inervada pelo vago, cujas fibras aferentes projetam a dor para o abdome superior" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: a margem periférica do diafragma forma-se com o crescimento muscular da parede lateral do corpo (9ª–12ª semana) e recebe fibras sensitivas dos nervos intercostais inferiores, os mesmos que inervam a parede toracoabdominal; a irritação da pleura que a reveste é percebida nessa parede. A parte central, derivada do septo transverso, tem inervação sensitiva frênica (C3–C5), e sua irritação causa dor referida no ombro, ausente aqui. A pleura visceral (a) não tem sensibilidade dolorosa, e os esplâncnicos não inervam a pleura. O septo transverso forma o tendão central, não a margem periférica, e a dor frênica é referida ao ombro (b). O vago (d) não inerva a pleura diafragmática.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["diafragma", "inervacao", "dor-referida", "pleura", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 8; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (tórax: inervação das pleuras)"
     }
   ],
   "referencias": [
@@ -677,6 +766,14 @@
     {
       "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
       "capitulo": "11 — Desenvolvimento do sistema respiratório e das cavidades corporais"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "14 — Sistema respiratório (períodos da maturação pulmonar)"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Tórax (pleuras); Abdome (peritônio, bolsa omental e ligamentos peritoneais); Membro superior (plexo braquial)"
     }
   ],
   "notasDivergencia": [
@@ -689,7 +786,8 @@
     "Prevalência da hérnia diafragmática congênita: os valores divergem entre as obras e os estudos populacionais e não foram conferidos nas edições adotadas; foram omitidos.",
     "Nível vertebral atingido pela parte dorsal do diafragma (L1) ao fim do período embrionário: Moore e Sadler dão marcos temporais diferentes (fim do 2º mês vs. início do 3º mês, conforme a leitura); omitido nas questões.",
     "Frequência de cardiopatias associadas à HDC não foi quantificada; a questão afirma apenas que não estão presentes na maioria dos casos.",
-    "Condutas de sala de parto citadas na HDC (evitar ventilação com balão e máscara, intubação traqueal e descompressão gástrica) e a terapia fetal por oclusão traqueal seguem a prática neonatal e cirúrgica corrente, e não as obras de embriologia. Revisão de pediatria (2026-11-09): condutas compatíveis com o consenso europeu CDH EURO (atualização de 2015; Snoek et al., Neonatology 2016) e com as Diretrizes de Reanimação Neonatal da SBP (2022), que incluem o diagnóstico de hérnia diafragmática entre as indicações de ventilação por cânula traqueal; a oclusão traqueal fetoscópica aumentou a sobrevida na HDC esquerda grave (ensaio TOTAL, N Engl J Med 2021). O texto integral das diretrizes da SBP não pôde ser acessado nesta revisão (conferido por fontes secundárias); conferir a edição vigente."
+    "Condutas de sala de parto citadas na HDC (evitar ventilação com balão e máscara, intubação traqueal e descompressão gástrica) e a terapia fetal por oclusão traqueal seguem a prática neonatal e cirúrgica corrente, e não as obras de embriologia. Revisão de pediatria (2026-11-09): condutas compatíveis com o consenso europeu CDH EURO (atualização de 2015; Snoek et al., Neonatology 2016) e com as Diretrizes de Reanimação Neonatal da SBP (2022), que incluem o diagnóstico de hérnia diafragmática entre as indicações de ventilação por cânula traqueal; a oclusão traqueal fetoscópica aumentou a sobrevida na HDC esquerda grave (ensaio TOTAL, N Engl J Med 2021). O texto integral das diretrizes da SBP não pôde ser acessado nesta revisão (conferido por fontes secundárias); conferir a edição vigente.",
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09, ainda sem revisão por agente): a inervação sensitiva da pleura (parte costal e diafragmática periférica pelos intercostais, parte diafragmática central pelo frênico, pleura visceral insensível à dor), o acúmulo do conteúdo de úlcera perfurada da parede posterior do estômago na bolsa omental, o conteúdo dos ligamentos peritoneais e as raízes da paralisia de Erb (C5–C6) seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.), não as obras de embriologia; o texto impresso da edição brasileira não foi conferido. A coexistência de paralisia frênica e paralisia braquial no tocotraumatismo é cobrada só como raciocínio anatômico (raízes vizinhas), sem frequência."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

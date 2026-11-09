@@ -1413,6 +1413,189 @@
         "corio-frondoso"
       ],
       "referencia": "Moore 11ª ed., cap. 7; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-09-q31",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia de 12 semanas de idade gestacional em gestação gemelar espontânea: dois fetos do mesmo sexo, duas massas placentárias e membrana divisória espessa, com uma projeção triangular de tecido coriônico em sua inserção na placenta (sinal do lambda).",
+      "enunciado": "Qual conclusão se sustenta nesses achados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Gestação monocoriônica diamniótica, com placenta compartilhada e necessidade de vigilância estrita para transfusão feto-fetal"
+        },
+        {
+          "id": "b",
+          "texto": "Gestação dicoriônica diamniótica; a zigosidade não fica definida pela imagem e a transfusão feto-fetal não é esperada"
+        },
+        {
+          "id": "c",
+          "texto": "Gestação monoamniótica, com risco de enovelamento dos cordões umbilicais e de óbito de um dos fetos"
+        },
+        {
+          "id": "d",
+          "texto": "Gestação necessariamente monozigótica, por divisão do embrioblasto entre o 4º e o 8º dia após a fertilização"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Membrana divisória espessa com sinal do lambda e duas massas placentárias definem gestação dicoriônica, e a membrana entre os fetos a torna diamniótica — (b). Como os dizigóticos são sempre dicoriônicos e a divisão monozigótica até cerca do 3º dia também gera dois córions, dois fetos do mesmo sexo em gestação dicoriônica podem ser dizigóticos ou monozigóticos: a ultrassonografia determina corionicidade, não zigosidade. E, sem placenta compartilhada, não há anastomoses — a transfusão feto-fetal é exclusiva das monocoriônicas. A (a) contraria o sinal do lambda, pois nas monocoriônicas a membrana é fina e se insere em T. A (c) é incompatível com a existência de membrana divisória. A (d) transforma uma possibilidade em certeza e, além disso, a divisão entre o 4º e o 8º dia produziria gestação monocoriônica.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "gemelaridade",
+        "corionicidade",
+        "ultrassonografia",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-09-q32",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com icterícia, hepatoesplenomegalia e calcificações intracranianas. A sorologia do sangue do recém-nascido mostra IgG e IgM específicas positivas para Toxoplasma gondii.",
+      "enunciado": "Por que a IgM específica no sangue do recém-nascido indica infecção congênita, enquanto a IgG não permite essa conclusão?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque a IgM materna atravessa a membrana placentária apenas no terceiro trimestre, depois do desaparecimento do citotrofoblasto"
+        },
+        {
+          "id": "b",
+          "texto": "Porque a IgM específica é produzida pelo sinciciotrofoblasto em resposta à infecção e lançada na circulação fetal"
+        },
+        {
+          "id": "c",
+          "texto": "Porque a IgM materna não atravessa a placenta: a detectada é de produção fetal, ao contrário da IgG, transferida da mãe"
+        },
+        {
+          "id": "d",
+          "texto": "Porque a IgG não atravessa a placenta, de modo que a IgG do recém-nascido também é necessariamente de produção própria"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A IgG materna atravessa a membrana placentária por transcitose mediada por receptor e confere imunidade passiva, de modo que a IgG do recém-nascido pode ser apenas a da mãe; a IgM, por seu tamanho, não atravessa, e a IgM específica encontrada no sangue do recém-nascido foi produzida por ele — prova de contato com o agente ainda no útero, como em (c). A (a) está errada: nem o afinamento da membrana após cerca de 20 semanas, com o desaparecimento do citotrofoblasto em grandes áreas, torna a membrana permeável à IgM. A (b) atribui ao sinciciotrofoblasto uma função que ele não tem: ele sintetiza hormônios (hCG, progesterona, estrogênios e somatomamotrofina coriônica humana), não imunoglobulinas específicas. A (d) inverte os dois fatos, pois é justamente a IgG que atravessa a placenta.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "membrana-placentaria",
+        "igg",
+        "infeccoes-congenitas",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7 e 20; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-09-q33",
+      "tipo": "multipla",
+      "contexto": "Primigesta de 19 anos com 30 semanas de idade gestacional apresenta hipertensão e proteinúria. A ultrassonografia mostra placenta de pequenas dimensões, peso fetal estimado abaixo do percentil 10 e Doppler das artérias uterinas com índice de pulsatilidade aumentado.",
+      "enunciado": "Qual alteração da placentação explica melhor esse conjunto de achados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ausência da decídua basal no sítio de implantação, com aderência anormal das vilosidades ao miométrio subjacente"
+        },
+        {
+          "id": "b",
+          "texto": "Anastomoses vasculares desequilibradas na placenta, com transferência crônica de sangue entre dois territórios"
+        },
+        {
+          "id": "c",
+          "texto": "Perda da separação entre os sangues materno e fetal no espaço interviloso, com hemólise e anemia fetal progressiva"
+        },
+        {
+          "id": "d",
+          "texto": "Invasão deficiente das artérias espiraladas pelo trofoblasto, que permanecem de alta resistência"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Na placentação normal o trofoblasto extraviloso invade as artérias espiraladas e destrói sua camada musculoelástica, convertendo-as em vasos de baixa resistência que perfundem o espaço interviloso de modo contínuo. Quando essa invasão é deficiente, os vasos seguem reativos e de alta resistência, a perfusão cai, a placenta se torna isquêmica e surgem pré-eclâmpsia e restrição de crescimento, com índices de resistência elevados no Doppler — por isso (d). A (a) descreve o espectro do acretismo, que se manifesta por falha de dequitação e hemorragia, não por hipertensão. A (b) descreve a transfusão feto-fetal, possível apenas em gestação monocoriônica, e aqui a gestação é única. A (c) descreve algo que não acontece: os sangues materno e fetal permanecem separados pela membrana placentária, e a doença hemolítica perinatal decorre de anticorpos maternos que a atravessam, não de mistura de sangues.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "arterias-espiraladas",
+        "pre-eclampsia",
+        "circulacao-placentaria",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-09-q34",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado ou complicação à sua base na placentação e nas membranas:",
+      "pares": [
+        {
+          "esquerda": "Sinal do lambda na ultrassonografia de primeiro trimestre",
+          "direita": "Gestação dicoriônica, com projeção de tecido coriônico entre as membranas"
+        },
+        {
+          "esquerda": "Síndrome de transfusão feto-fetal",
+          "direita": "Anastomoses vasculares desequilibradas em placenta monocoriônica"
+        },
+        {
+          "esquerda": "Enovelamento dos cordões umbilicais",
+          "direita": "Gestação monoamniótica, por divisão após a formação do âmnio"
+        },
+        {
+          "esquerda": "Gêmeos unidos",
+          "direita": "Divisão incompleta do embrião depois do aparecimento da linha primitiva"
+        },
+        {
+          "esquerda": "Falha de dequitação com hemorragia grave",
+          "direita": "Ausência da decídua basal, que é o plano natural de clivagem"
+        }
+      ],
+      "explicacao": "Quanto mais tardia a divisão do embrião monozigótico, mais estruturas são compartilhadas, e cada grau de compartilhamento tem o seu risco. O sinal do lambda mostra tecido coriônico insinuado entre as membranas e identifica a gestação dicoriônica. A transfusão feto-fetal depende de placenta única com anastomoses desequilibradas e, por isso, só ocorre nas monocoriônicas. O enovelamento de cordões exige uma cavidade amniótica comum, resultado de divisão após a formação do âmnio (8º ao 13º dia). Os gêmeos unidos resultam de divisão incompleta após o aparecimento da linha primitiva. Já a falha de dequitação com hemorragia pertence a outra categoria: é o acretismo, por ausência da decídua basal, a camada pela qual a placenta normalmente se descola.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "gemelaridade",
+        "corionicidade",
+        "acretismo-placentario",
+        "correlacao-clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7; Sadler 14ª ed., cap. 8"
+    },
+    {
+      "id": "emb-09-q35",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia de 30 semanas de idade gestacional: polidrâmnio acentuado e, no abdome superior do feto, estômago e duodeno proximal distendidos (imagem de 'dupla bolha'). A translucência nucal do primeiro trimestre havia sido de 3,5 mm.",
+      "enunciado": "Qual é a explicação mais adequada para o polidrâmnio e qual investigação se impõe?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Obstrução duodenal, que impede a absorção do líquido deglutido; impõe-se o estudo citogenético fetal"
+        },
+        {
+          "id": "b",
+          "texto": "Agenesia renal bilateral, que acumula líquido por ausência de reabsorção tubular; impõe-se avaliar a função renal fetal"
+        },
+        {
+          "id": "c",
+          "texto": "Transfusão feto-fetal com este feto no papel de receptor; impõe-se o mapeamento das anastomoses por fetoscopia"
+        },
+        {
+          "id": "d",
+          "texto": "Hérnia diafragmática com o estômago no tórax; impõe-se a avaliação do volume pulmonar por ressonância magnética"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "O feto deglute até cerca de 400 mL de líquido amniótico por dia e o absorve no intestino; uma obstrução alta — atresia de esôfago ou duodenal — interrompe esse circuito e o líquido se acumula, daí o polidrâmnio. Estômago e duodeno proximal distendidos ('dupla bolha') localizam a obstrução no duodeno, e uma parcela importante dos afetados tem síndrome de Down, o que, somado à translucência nucal aumentada, justifica o estudo citogenético — por isso (a). A (b) inverte o efeito: sem urina fetal há oligoidrâmnio, não polidrâmnio. A (c) é impossível em gestação única e não explicaria a dupla bolha. A (d) erra a topografia: na hérnia diafragmática o estômago está no tórax, enquanto aqui as duas bolhas estão no abdome superior.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "polidramnio",
+        "liquido-amniotico",
+        "aneuploidias",
+        "ultrassonografia",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 7, 11 e 20"
     }
   ],
   "referencias": [
@@ -1435,6 +1618,14 @@
     {
       "obra": "Sadler TW. Langman Embriologia Médica, 14ª ed., 2021",
       "capitulo": "4 — Segunda semana do desenvolvimento: disco germinativo bilaminar"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "11 — Sistema digestório (atresia duodenal, polidrâmnio)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (agentes infecciosos; passagem placentária)"
     }
   ],
   "notasDivergencia": [
@@ -1450,7 +1641,8 @@
     "Frequência da síndrome de transfusão feto-fetal entre gestações monocoriônicas: as séries citam faixas distintas; nenhum valor numérico foi afirmado.",
     "Proporção de gêmeos dizigóticos e monozigóticos: a literatura clássica cita cerca de dois terços de dizigóticos, mas a proporção varia conforme a população e o uso de técnicas de reprodução assistida; por isso, não foi fixado valor numérico no conteúdo.",
     "Frequência do divertículo ileal (de Meckel) na população: as fontes citam faixas em torno de 2% a 4%; não foi afirmado um valor único.",
-    "Incidência da sequência de bandas amnióticas: não incluída por variação importante entre as fontes consultadas."
+    "Incidência da sequência de bandas amnióticas: não incluída por variação importante entre as fontes consultadas.",
+    "Proporção de atresias duodenais associadas à trissomia 21: as fontes variam (emb-15-digestorio registra 20 a 30%, segundo Moore); em emb-09-q35 a associação é descrita qualitativamente, sem percentual."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

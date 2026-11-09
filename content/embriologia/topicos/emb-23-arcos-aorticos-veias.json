@@ -1,0 +1,760 @@
+{
+  "id": "emb-23-arcos-aorticos-veias",
+  "disciplina": "embriologia",
+  "ordem": 23,
+  "titulo": "Arcos aórticos e sistemas venosos",
+  "subtitulo": "Do saco aórtico ao padrão arterial do adulto; veias vitelinas, umbilicais e cardinais; linfáticos e anomalias vasculares",
+  "periodo": {
+    "diaInicio": 22,
+    "diaFim": 56,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever o saco aórtico, as artérias dos arcos aórticos e as aortas dorsais e relacionar cada segmento ao seu derivado no adulto.",
+    "Explicar a origem das artérias subclávias e vertebrais a partir das artérias intersegmentares e a assimetria dos nervos laríngeos recorrentes.",
+    "Relacionar as artérias vitelinas e umbilicais aos seus derivados.",
+    "Descrever a transformação das veias vitelinas, umbilicais e cardinais no sistema porta, no ducto venoso, nas veias cavas e no sistema ázigo.",
+    "Descrever a origem do sistema linfático e relacioná-la ao higroma cístico e à síndrome de Turner.",
+    "Correlacionar anomalias dos arcos aórticos e das veias sistêmicas com seus achados clínicos e de imagem."
+  ],
+  "resumo": "**Saco aórtico e arcos aórticos.** Na 4ª e na 5ª semana, cada arco faríngeo recebe uma artéria que sai do **saco aórtico**, dilatação distal ao tronco arterial, e termina na **aorta dorsal** do mesmo lado. Os pares não coexistem: quando o 4º se forma, o 1º já regrediu em grande parte, e o 5º não se forma ou é rudimentar. Caudalmente aos arcos, as duas aortas dorsais fundem-se numa aorta única. Entre a 6ª e a 8ª semana o sistema é remodelado:\n- **1º e 2º**: regridem quase totalmente (restam parte da artéria maxilar e as artérias hióidea e estapédia).\n- **3º**: carótida comum e parte proximal da carótida interna; a parte distal da interna vem da aorta dorsal cranial ao 3º arco, e a carótida externa brota do próprio 3º arco. O segmento da aorta dorsal entre o 3º e o 4º arcos (**ducto carotídeo**) desaparece dos dois lados.\n- **4º**: à esquerda, o segmento do **arco da aorta** entre a carótida comum e a subclávia esquerdas (a parte proximal do arco vem do saco aórtico; a distal, da aorta dorsal esquerda); à direita, a parte proximal da **subclávia direita**. O corno direito do saco aórtico forma o **tronco braquiocefálico**.\n- **6º**: partes proximais das **artérias pulmonares**; à esquerda, a parte distal forma o **ducto arterioso**; à direita, regride.\n- A **aorta dorsal direita** desaparece entre a origem da 7ª artéria intersegmentar e a junção com a esquerda.\n\n**Intersegmentares e subclávias.** Ramos dorsais da aorta passam entre os somitos (**artérias intersegmentares**). A **7ª intersegmentar** forma toda a **subclávia esquerda**; a direita tem parte proximal do 4º arco direito e parte distal da aorta dorsal direita e da 7ª intersegmentar direita. Com o crescimento diferencial, a origem da subclávia esquerda sobe para junto da carótida comum esquerda. Anastomoses longitudinais das intersegmentares cervicais formam as **artérias vertebrais**; no tronco, as intersegmentares persistem como **intercostais posteriores** e **lombares**.\n\n**Laríngeos recorrentes.** Nervos do 6º arco, passam de início sob as artérias desse arco. À direita, a parte distal do 6º regride, e o nervo sobe até contornar a subclávia direita; à esquerda, fica sob o ducto arterioso (depois ligamento arterial) e o arco da aorta. Se a subclávia direita é aberrante, o laríngeo inferior direito sai do vago no pescoço (**não recorrente**).\n\n**Artérias vitelinas e umbilicais.** As **vitelinas** fundem-se no mesentério dorsal e formam o **tronco celíaco** e as **mesentéricas superior** e **inferior**. As **umbilicais**, de início ramos ventrais das aortas dorsais, acompanham o alantoide até a placenta e depois passam a sair das ilíacas. Após o nascimento, as partes proximais persistem como **ilíacas internas** e **vesicais superiores**, e as distais formam os **ligamentos umbilicais mediais**.\n\n**Veias.** Na 5ª semana, três pares chegam ao **seio venoso**:\n- **Vitelinas**: formam um plexo ao redor do duodeno e, no septo transverso, são interrompidas pelos cordões hepáticos, formando os **sinusoides hepáticos**. O plexo periduodenal origina a **veia porta**; a vitelina direita, a **mesentérica superior**. Com o desvio do retorno venoso para a direita, a parte cranial da vitelina esquerda desaparece, e a da direita (canal hepatocardíaco) forma o **segmento hepático da veia cava inferior**.\n- **Umbilicais**: a **direita** e a parte cranial da esquerda regridem, e a **umbilical esquerda** leva todo o sangue placentário ao fígado. O **ducto venoso** liga-a diretamente ao canal hepatocardíaco direito.\n- **Cardinais**: anteriores (região cefálica) e posteriores (restante do corpo), unidas nas **cardinais comuns**. Uma anastomose entre as anteriores forma a **braquiocefálica esquerda**. A **veia cava superior** vem da cardinal comum direita e da parte proximal da cardinal anterior direita. As posteriores regridem quase por completo e são substituídas por **subcardinais** e **supracardinais**.\n\nA **veia cava inferior**, formada por veias do lado direito, tem, segundo Moore, segmentos **hepático** (vitelina direita), **pré-renal** (subcardinal direita), **renal** (anastomose subcardinal–supracardinal) e **pós-renal** (supracardinal direita). A **ázigo** vem da supracardinal direita, e a **hemiázigo**, da esquerda.\n\n**Linfáticos.** Surgem depois dos vasos sanguíneos (5ª–6ª semana) como seis **sacos linfáticos**: dois **jugulares** (junto à junção das subclávias com as cardinais anteriores), dois ilíacos, um retroperitoneal e a cisterna do quilo. O **ducto torácico** drena no ângulo venoso esquerdo. O **higroma cístico** cervical provém de partes do saco jugular que não se conectam às vias linfáticas; no 1º trimestre, associa-se a aneuploidias, sobretudo à **síndrome de Turner**, cujo pescoço alado e linfedema refletem essa drenagem deficiente.\n\n**Anomalias.**\n- **Coarctação**: estreitamento justaductal, distal à subclávia esquerda; pulsos femorais fracos e atrasados, pressão maior nos braços.\n- **Interrupção do arco tipo B** (entre carótida comum e subclávia esquerdas): regressão anormal do 4º arco esquerdo; associa-se à **deleção 22q11.2** e depende do canal arterial.\n- **Arco duplo**: persistência da aorta dorsal direita distal; anel vascular ao redor da traqueia e do esôfago.\n- **Arco à direita**: persistem o 4º arco e a aorta dorsal direitos.\n- **Subclávia direita aberrante**: regressão do 4º arco direito; artéria retroesofágica, às vezes com **disfagia lusória**.\n- **Veia cava superior esquerda persistente**: drena no **seio coronário**, que fica dilatado.\n- **Veia cava inferior interrompida com continuação ázigo**: o sangue infra-hepático chega à cava superior pela ázigo; associa-se à heterotaxia com isomerismo esquerdo.",
+  "pontosChave": [
+    "As artérias dos arcos saem do saco aórtico e terminam nas aortas dorsais; os pares não coexistem, e o 5º não se forma ou é rudimentar.",
+    "3º arco: carótida comum e parte proximal da interna; a carótida externa brota do 3º arco, e a parte distal da interna vem da aorta dorsal.",
+    "Arco da aorta: saco aórtico (proximal), 4º arco esquerdo (entre a carótida comum e a subclávia esquerdas) e aorta dorsal esquerda (distal); tronco braquiocefálico: corno direito do saco aórtico.",
+    "Subclávia esquerda: 7ª intersegmentar; subclávia direita: 4º arco direito (proximal), aorta dorsal direita e 7ª intersegmentar (distal).",
+    "A aorta dorsal direita regride caudalmente à 7ª intersegmentar; sua persistência produz o arco aórtico duplo.",
+    "O laríngeo recorrente direito contorna a subclávia direita, e o esquerdo, o ligamento arterial; com subclávia direita aberrante, o laríngeo inferior direito não é recorrente.",
+    "Artérias vitelinas → tronco celíaco e mesentéricas; umbilicais → ilíacas internas e vesicais superiores (proximal) e ligamentos umbilicais mediais (distal).",
+    "Veias vitelinas → veia porta, mesentérica superior, sinusoides hepáticos e segmento hepático da veia cava inferior.",
+    "A veia umbilical direita regride; a esquerda leva o sangue placentário e liga-se à veia cava inferior pelo ducto venoso.",
+    "Veia cava superior: cardinal comum direita e cardinal anterior direita proximal; braquiocefálica esquerda: anastomose entre as cardinais anteriores; ázigo e hemiázigo: supracardinais.",
+    "Veia cava superior esquerda persistente drena no seio coronário dilatado; veia cava inferior interrompida com continuação ázigo associa-se à heterotaxia com isomerismo esquerdo.",
+    "O higroma cístico vem do saco linfático jugular sem conexão com as vias linfáticas e associa-se à síndrome de Turner e a outras aneuploidias."
+  ],
+  "estruturas": [
+    {
+      "id": "saco-aortico",
+      "nome": "Saco aórtico",
+      "sinonimos": [],
+      "definicao": "Dilatação distal ao tronco arterial, com cornos direito e esquerdo, da qual partem as artérias dos arcos aórticos.",
+      "destino": "Corno direito: tronco braquiocefálico; corno esquerdo: parte proximal do arco da aorta."
+    },
+    {
+      "id": "arcos-aorticos",
+      "nome": "Artérias dos arcos aórticos (arcos faríngeos)",
+      "sinonimos": ["arcos aórticos"],
+      "definicao": "Artérias que saem do saco aórtico, percorrem cada arco faríngeo e terminam na aorta dorsal do mesmo lado; surgem em sequência craniocaudal e não coexistem.",
+      "destino": "3º: carótidas comuns e parte proximal das internas; 4º esquerdo: segmento do arco da aorta; 4º direito: subclávia direita proximal; 6º: artérias pulmonares proximais e, à esquerda, ducto arterioso."
+    },
+    {
+      "id": "aortas-dorsais",
+      "nome": "Aortas dorsais",
+      "sinonimos": [],
+      "definicao": "Par de artérias longitudinais que recebem as artérias dos arcos; caudalmente aos arcos fundem-se numa aorta dorsal única.",
+      "destino": "Cranial ao 3º arco: parte distal das carótidas internas; esquerda: parte distal do arco da aorta e aorta descendente; direita: contribui para a subclávia direita e regride caudalmente à 7ª intersegmentar."
+    },
+    {
+      "id": "ducto-carotideo",
+      "nome": "Ducto carotídeo",
+      "sinonimos": [],
+      "definicao": "Segmento da aorta dorsal entre o 3º e o 4º arcos.",
+      "destino": "Oblitera-se dos dois lados durante a remodelação dos arcos."
+    },
+    {
+      "id": "arterias-intersegmentares",
+      "nome": "Artérias intersegmentares",
+      "sinonimos": [],
+      "definicao": "Ramos dorsais da aorta que passam entre os somitos.",
+      "destino": "7ª (cervical): subclávia esquerda e parte distal da direita; anastomoses longitudinais das cervicais: artérias vertebrais; torácicas: intercostais posteriores; abdominais: lombares."
+    },
+    {
+      "id": "ducto-arterioso",
+      "nome": "Ducto arterioso",
+      "sinonimos": ["canal arterial"],
+      "definicao": "Vaso fetal que liga o tronco pulmonar (na origem da artéria pulmonar esquerda) à face inferior do arco da aorta, distal à subclávia esquerda.",
+      "origem": "Parte distal da artéria do 6º arco esquerdo.",
+      "destino": "Contrai-se ao nascer e oblitera-se, formando o ligamento arterial."
+    },
+    {
+      "id": "nervos-laringeos-recorrentes",
+      "nome": "Nervos laríngeos recorrentes",
+      "sinonimos": ["nervos laríngeos inferiores"],
+      "definicao": "Ramos do vago que inervam os músculos do 6º arco (intrínsecos da laringe, exceto o cricotireóideo) e passam inicialmente sob as artérias do 6º arco.",
+      "destino": "Direito: contorna a subclávia direita; esquerdo: contorna o ligamento arterial e o arco da aorta."
+    },
+    {
+      "id": "arterias-vitelinas",
+      "nome": "Artérias vitelinas (onfalomesentéricas)",
+      "sinonimos": [],
+      "definicao": "Artérias que irrigam o saco vitelino e se fundem no mesentério dorsal.",
+      "destino": "Tronco celíaco (intestino anterior), artéria mesentérica superior (médio) e artéria mesentérica inferior (posterior)."
+    },
+    {
+      "id": "arterias-umbilicais",
+      "nome": "Artérias umbilicais",
+      "sinonimos": [],
+      "definicao": "Par de artérias que acompanham o alantoide e levam sangue do embrião à placenta; de início ramos ventrais das aortas dorsais, depois saem das ilíacas.",
+      "destino": "Partes proximais: ilíacas internas e artérias vesicais superiores; partes distais: ligamentos umbilicais mediais."
+    },
+    {
+      "id": "veias-vitelinas",
+      "nome": "Veias vitelinas (onfalomesentéricas)",
+      "sinonimos": [],
+      "definicao": "Veias do saco vitelino que formam um plexo ao redor do duodeno e atravessam o septo transverso até o seio venoso.",
+      "destino": "Veia porta, veia mesentérica superior, sinusoides hepáticos e segmento hepático da veia cava inferior (vitelina direita)."
+    },
+    {
+      "id": "veias-umbilicais",
+      "nome": "Veias umbilicais",
+      "sinonimos": [],
+      "definicao": "Par de veias que trazem sangue da placenta; a direita e a parte cranial da esquerda regridem.",
+      "destino": "A umbilical esquerda leva todo o sangue placentário ao fígado e, após o nascimento, forma o ligamento redondo do fígado."
+    },
+    {
+      "id": "ducto-venoso",
+      "nome": "Ducto venoso",
+      "sinonimos": [],
+      "definicao": "Comunicação direta, no fígado, entre a veia umbilical esquerda e o canal hepatocardíaco direito (segmento hepático da veia cava inferior).",
+      "destino": "Oblitera-se após o nascimento e forma o ligamento venoso."
+    },
+    {
+      "id": "veias-cardinais",
+      "nome": "Veias cardinais",
+      "sinonimos": [],
+      "definicao": "Veias cardinais anteriores (região cefálica) e posteriores (restante do corpo), que se unem nas cardinais comuns e drenam nos cornos do seio venoso.",
+      "destino": "Veia cava superior (cardinal comum e cardinal anterior direitas), veias jugulares internas, veia braquiocefálica esquerda (anastomose entre as anteriores); as posteriores regridem quase totalmente."
+    },
+    {
+      "id": "veias-subcardinais",
+      "nome": "Veias subcardinais",
+      "sinonimos": [],
+      "definicao": "Veias que surgem medialmente às cardinais posteriores, unidas por anastomoses ventrais à aorta.",
+      "destino": "Subcardinal direita: segmento pré-renal da veia cava inferior (Moore); anastomoses: participam das veias renais; a esquerda contribui para a veia gonadal esquerda."
+    },
+    {
+      "id": "veias-supracardinais",
+      "nome": "Veias supracardinais",
+      "sinonimos": [],
+      "definicao": "Últimas veias longitudinais do tronco a surgir, dorsais às subcardinais.",
+      "destino": "Direita: veia ázigo e, segundo Moore, segmento pós-renal da veia cava inferior; esquerda: veia hemiázigo."
+    },
+    {
+      "id": "veia-cava-superior",
+      "nome": "Veia cava superior",
+      "sinonimos": [],
+      "definicao": "Veia que drena a metade superior do corpo no átrio direito.",
+      "origem": "Cardinal comum direita e parte proximal da cardinal anterior direita."
+    },
+    {
+      "id": "veia-cava-inferior",
+      "nome": "Veia cava inferior",
+      "sinonimos": [],
+      "definicao": "Veia que drena a metade inferior do corpo no átrio direito, à direita da aorta.",
+      "origem": "Segundo Moore: segmento hepático (vitelina direita e sinusoides), pré-renal (subcardinal direita), renal (anastomose subcardinal–supracardinal) e pós-renal (supracardinal direita)."
+    },
+    {
+      "id": "sistema-azigo",
+      "nome": "Sistema ázigo",
+      "sinonimos": ["veias ázigo e hemiázigo"],
+      "definicao": "Veias paravertebrais torácicas que drenam a parede posterior do tórax para a veia cava superior.",
+      "origem": "Ázigo: supracardinal direita (terminação: cardinal posterior direita); hemiázigo: supracardinal esquerda."
+    },
+    {
+      "id": "sacos-linfaticos-jugulares",
+      "nome": "Sacos linfáticos jugulares",
+      "sinonimos": [],
+      "definicao": "Primeiros sacos linfáticos primários, junto à junção das veias subclávias com as cardinais anteriores (futuras jugulares internas).",
+      "destino": "Linfonodos cervicais e conexão do ducto torácico com o sistema venoso; partes isoladas originam o higroma cístico."
+    },
+    {
+      "id": "ducto-toracico",
+      "nome": "Ducto torácico",
+      "sinonimos": [],
+      "definicao": "Principal canal linfático, formado a partir dos ductos torácicos direito e esquerdo e de sua anastomose, entre a cisterna do quilo e o saco jugular esquerdo.",
+      "destino": "Drena no ângulo venoso esquerdo (junção das veias jugular interna e subclávia esquerdas)."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e23-arco-1",
+      "descricao": "Surge a artéria do 1º arco faríngeo, ligando o saco aórtico à aorta dorsal",
+      "diaMin": 22,
+      "diaMax": 28,
+      "ordem": 1
+    },
+    {
+      "id": "e23-arco-6",
+      "descricao": "Forma-se a artéria do 6º arco, quando a do 1º já regrediu em grande parte",
+      "ordem": 2
+    },
+    {
+      "id": "e23-remodelacao-arcos",
+      "descricao": "Remodelação no padrão arterial do adulto: regridem o ducto carotídeo e a aorta dorsal direita caudal à 7ª intersegmentar",
+      "diaMin": 36,
+      "diaMax": 56,
+      "ordem": 3
+    },
+    {
+      "id": "e23-ducto-arterioso-contrai",
+      "descricao": "Ao nascer, o ducto arterioso contrai-se (fechamento funcional)",
+      "ordem": 4
+    },
+    {
+      "id": "e23-ligamento-arterial",
+      "descricao": "O ducto arterioso oblitera-se e forma o ligamento arterial (semanas a meses após o nascimento)",
+      "ordem": 5
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "coarctacao-aorta-exame",
+      "titulo": "Coarctação da aorta: relação com o canal arterial e exame físico",
+      "descricao": "Estreitamento da aorta torácica, tipicamente justaductal (junto à inserção do ducto ou ligamento arterial) e distal à subclávia esquerda. Exame: hipertensão nos membros superiores, pulsos femorais fracos e atrasados em relação aos radiais e pressão sistólica menor nas pernas que nos braços; pode haver sopro sistólico no dorso, entre as escápulas. Em crianças maiores e adultos, colaterais das torácicas internas para as intercostais posteriores dilatam estas, que erodem as bordas inferiores das costelas. Na forma crítica do recém-nascido, a perfusão da parte inferior do corpo depende do canal arterial: quando ele se fecha, surgem choque e acidose, e a prostaglandina E1 mantém o canal aberto até a correção. Associa-se à valva aórtica bicúspide e à síndrome de Turner. A oximetria de triagem neonatal pode não detectá-la, e a palpação dos pulsos femorais continua indispensável.",
+      "mecanismo": "Incerto. Hipóteses: extensão de tecido muscular do ducto arterioso para a parede aórtica, que se contrai junto com o canal após o nascimento; involução anormal de um segmento da aorta dorsal; e redução do fluxo pelo istmo aórtico na vida fetal, que limitaria seu crescimento (hipótese hemodinâmica)."
+    },
+    {
+      "id": "interrupcao-arco-aortico",
+      "titulo": "Interrupção do arco aórtico (tipo B e deleção 22q11.2)",
+      "descricao": "Falta de continuidade entre segmentos do arco. Pela classificação de Celoria e Patton: tipo A, distal à subclávia esquerda; tipo B, entre a carótida comum esquerda e a subclávia esquerda (o mais frequente); tipo C, entre o tronco braquiocefálico e a carótida comum esquerda. Em geral há comunicação interventricular, e a aorta descendente (no tipo B, também a subclávia esquerda) recebe sangue do tronco pulmonar pelo canal arterial; com o fechamento do canal nos primeiros dias surgem choque, acidose e pulsos femorais ausentes. Conduta inicial: prostaglandina E1 para manter o canal aberto até a correção cirúrgica. O tipo B associa-se fortemente à deleção 22q11.2, que deve ser pesquisada, com atenção à calcemia.",
+      "mecanismo": "Tipo B: regressão anormal da artéria do 4º arco esquerdo (Sadler), cuja formação depende da crista neural cardíaca e do mesoderma faríngeo, ambos afetados na deleção 22q11.2 (gene TBX1)."
+    },
+    {
+      "id": "arco-aortico-duplo",
+      "titulo": "Arco aórtico duplo (anel vascular)",
+      "descricao": "Os arcos direito e esquerdo envolvem a traqueia e o esôfago e se unem na aorta descendente, formando um anel vascular completo; em geral o direito é o maior. Manifesta-se no lactente com estridor, sibilância persistente, infecções respiratórias de repetição e disfagia ou engasgos. A angiotomografia ou a ressonância definem a anatomia; o tratamento, quando há sintomas, é cirúrgico (secção do arco menor).",
+      "mecanismo": "Persistência do segmento distal da aorta dorsal direita, entre a origem da 7ª artéria intersegmentar e a junção com a aorta dorsal esquerda, que normalmente regride."
+    },
+    {
+      "id": "arco-aortico-direita",
+      "titulo": "Arco aórtico à direita",
+      "descricao": "O arco cruza o brônquio principal direito, à direita da traqueia. Com ramificação em imagem em espelho, associa-se a cardiopatias congênitas, sobretudo tetralogia de Fallot e tronco arterial persistente, e à deleção 22q11.2. Com subclávia esquerda aberrante (retroesofágica), o ligamento arterial à esquerda pode completar um anel vascular.",
+      "mecanismo": "Regressão do 4º arco e da aorta dorsal esquerdos, com persistência dos segmentos correspondentes do lado direito."
+    },
+    {
+      "id": "subclavia-direita-aberrante-lusoria",
+      "titulo": "Subclávia direita aberrante, disfagia lusória e laríngeo não recorrente",
+      "descricao": "A subclávia direita nasce como último ramo do arco, distal à subclávia esquerda, e cruza a linha média atrás do esôfago; costuma ser achado incidental, mas pode causar disfagia (disfagia lusória), sobretudo quando a artéria se dilata. Nesses pacientes, o laríngeo inferior direito costuma ser não recorrente: sai do vago no pescoço e vai direto à laringe, o que precisa ser lembrado na cirurgia da tireoide e das paratireoides. No pré-natal, é um dos achados ultrassonográficos associados à trissomia 21.",
+      "mecanismo": "Regressão do 4º arco aórtico direito e da parte proximal da aorta dorsal direita, com persistência da parte distal da aorta dorsal direita, que forma a subclávia com a 7ª intersegmentar. Sem a artéria do 4º arco direito, o nervo do 6º arco não fica retido sob nenhum vaso."
+    },
+    {
+      "id": "vcs-esquerda-persistente",
+      "titulo": "Veia cava superior esquerda persistente",
+      "descricao": "Em geral assintomática e descoberta por acaso: seio coronário dilatado ao ecocardiograma; cateter venoso central ou fio de marca-passo introduzido pela subclávia esquerda que desce pela borda esquerda do mediastino; ou solução salina agitada injetada no braço esquerdo que opacifica o seio coronário antes do átrio direito. Na maioria dos casos coexiste com a veia cava superior direita (veia cava superior dupla), e a braquiocefálica esquerda é frequentemente pequena ou ausente. Importa no acesso venoso central, no implante de dispositivos e na cirurgia cardíaca.",
+      "mecanismo": "Persistência da veia cardinal anterior esquerda e da cardinal comum esquerda, que drenam no corno esquerdo do seio venoso, futuro seio coronário. Normalmente regridem após a formação da braquiocefálica esquerda, restando a veia oblíqua do átrio esquerdo."
+    },
+    {
+      "id": "vci-interrompida-continuacao-azigo",
+      "titulo": "Veia cava inferior interrompida com continuação ázigo",
+      "descricao": "Falta o segmento hepático da veia cava inferior: o sangue da metade inferior do corpo sobe pela ázigo (ou hemiázigo), muito dilatada, até a veia cava superior, e as veias hepáticas drenam diretamente no átrio direito. Na imagem, a ázigo dilatada pode simular massa paratraqueal direita. Associa-se à heterotaxia com isomerismo esquerdo (poliesplenia) e a cardiopatias congênitas; importa no cateterismo pela veia femoral e no planejamento cirúrgico.",
+      "mecanismo": "A veia subcardinal direita não se conecta ao segmento hepático (derivado da vitelina direita) e desvia seu sangue para a supracardinal direita, que forma a ázigo."
+    },
+    {
+      "id": "higroma-cistico-turner",
+      "titulo": "Higroma cístico e síndrome de Turner",
+      "descricao": "Coleção cística, geralmente septada, na região cervical posterolateral, vista na ultrassonografia do 1º trimestre (translucência nucal muito aumentada) ou ao nascer como massa cervical mole e transiluminável. No feto, associa-se a aneuploidias — síndrome de Turner (45,X) e trissomias 21, 18 e 13 — e a cardiopatias, o que indica estudo genético e ecocardiograma fetal; formas grandes podem evoluir com hidropisia. Na síndrome de Turner, a regressão do higroma deixa o pescoço alado, e o linfedema de mãos e pés ao nascer reflete a mesma falha de drenagem; pesquisar coarctação da aorta e valva aórtica bicúspide.",
+      "mecanismo": "Partes do saco linfático jugular que se isolam, ou espaços linfáticos que não se conectam às vias linfáticas principais e ao sistema venoso, acumulam linfa."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-23-q01",
+      "tipo": "multipla",
+      "enunciado": "O tronco braquiocefálico do adulto deriva principalmente de:",
+      "alternativas": [
+        { "id": "a", "texto": "Artéria do 4º arco aórtico direito" },
+        { "id": "b", "texto": "Artéria do 3º arco aórtico direito" },
+        { "id": "c", "texto": "Corno direito do saco aórtico" },
+        { "id": "d", "texto": "Segmento cranial da aorta dorsal direita" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: o saco aórtico tem dois cornos; o direito forma o tronco braquiocefálico, e o esquerdo, a parte proximal do arco da aorta. A artéria do 4º arco direito (a) forma a parte proximal da subclávia direita, que nasce do tronco braquiocefálico. A do 3º arco direito (b) forma a carótida comum direita e a parte proximal da carótida interna direita. O segmento da aorta dorsal cranial ao 3º arco (d) forma a parte distal da carótida interna.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["arcos-aorticos", "saco-aortico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q02",
+      "tipo": "multipla",
+      "enunciado": "A artéria subclávia esquerda deriva:",
+      "alternativas": [
+        { "id": "a", "texto": "Inteiramente da 7ª artéria intersegmentar esquerda" },
+        { "id": "b", "texto": "Da artéria do 4º arco esquerdo, em toda a sua extensão" },
+        { "id": "c", "texto": "Da parte proximal da artéria do 6º arco esquerdo" },
+        { "id": "d", "texto": "Do corno esquerdo do saco aórtico e da aorta dorsal esquerda" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: a subclávia esquerda não deriva de arco aórtico; forma-se da 7ª artéria intersegmentar esquerda, cuja origem sobe com o crescimento diferencial até ficar junto da carótida comum esquerda. A artéria do 4º arco esquerdo (b) forma o segmento do arco da aorta entre a carótida comum e a subclávia esquerdas, não a subclávia. A parte proximal do 6º arco esquerdo (c) forma a parte proximal da artéria pulmonar esquerda. O corno esquerdo do saco aórtico e a aorta dorsal esquerda (d) formam, respectivamente, as partes proximal e distal do arco da aorta. A subclávia direita, ao contrário, tem origem tripla: 4º arco direito, aorta dorsal direita e 7ª intersegmentar direita.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["arterias-intersegmentares", "subclavias"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q03",
+      "tipo": "multipla",
+      "enunciado": "Durante a remodelação dos arcos aórticos, qual segmento das aortas dorsais desaparece dos dois lados?",
+      "alternativas": [
+        { "id": "a", "texto": "O segmento cranial ao 3º arco, que formaria a carótida interna" },
+        { "id": "b", "texto": "O segmento entre o 4º e o 6º arcos, que formaria o arco da aorta" },
+        { "id": "c", "texto": "O segmento caudal à 7ª intersegmentar, do lado esquerdo" },
+        { "id": "d", "texto": "O segmento entre o 3º e o 4º arcos (ducto carotídeo)" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: o segmento da aorta dorsal entre o 3º e o 4º arcos, o ducto carotídeo, oblitera-se dos dois lados, separando as carótidas (3º arco) do sistema do 4º arco. O segmento cranial ao 3º arco (a) persiste e forma a parte distal da carótida interna. O segmento entre o 4º e o 6º arcos (b) persiste: à esquerda, compõe a parte distal do arco da aorta; à direita, contribui para a subclávia direita. O segmento caudal à 7ª intersegmentar (c) persiste à esquerda como aorta descendente; o que regride é o segmento correspondente do lado direito, até a junção com a aorta dorsal esquerda.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["aortas-dorsais", "ducto-carotideo", "arcos-aorticos"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q04",
+      "tipo": "multipla",
+      "contexto": "Lactente de 5 meses tem estridor desde as primeiras semanas, sibilância que não responde a broncodilatador, pneumonias de repetição e engasgos ao iniciar alimentos pastosos. A angiotomografia mostra dois arcos aórticos, um de cada lado da traqueia, que envolvem a traqueia e o esôfago e se unem atrás deles na aorta descendente.",
+      "enunciado": "Qual falha da remodelação vascular explica esse anel?",
+      "alternativas": [
+        { "id": "a", "texto": "Regressão do 4º arco direito com persistência da aorta dorsal direita distal" },
+        { "id": "b", "texto": "Persistência da aorta dorsal direita caudal à 7ª intersegmentar" },
+        { "id": "c", "texto": "Persistência da parte distal da artéria do 6º arco direito" },
+        { "id": "d", "texto": "Regressão do 4º arco e da aorta dorsal esquerdos, com persistência dos direitos" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: normalmente o segmento da aorta dorsal direita entre a origem da 7ª artéria intersegmentar e a junção com a aorta dorsal esquerda regride. Se persiste, há dois arcos — o direito passa à direita da traqueia e do esôfago e se une ao esquerdo atrás deles —, formando um anel vascular completo que comprime as duas estruturas: estridor, sibilância, infecções respiratórias e disfagia. A alternativa (a) produz a subclávia direita aberrante, com um único arco. A persistência da parte distal do 6º arco direito (c) produz um ducto arterioso à direita, não um segundo arco aórtico. A regressão dos vasos esquerdos com persistência dos direitos (d) produz um arco aórtico à direita, único.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["arco-aortico-duplo", "aortas-dorsais", "anel-vascular", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q05",
+      "tipo": "multipla",
+      "contexto": "Mulher de 52 anos será submetida a tireoidectomia total. Na angiotomografia, feita antes para investigar disfagia leve para sólidos, a artéria subclávia direita nasce como último ramo do arco da aorta, distal à subclávia esquerda, e cruza a linha média atrás do esôfago.",
+      "enunciado": "Que particularidade do nervo laríngeo inferior direito o cirurgião deve esperar, e por quê?",
+      "alternativas": [
+        { "id": "a", "texto": "Contorna o arco da aorta, como o esquerdo, porque o ducto arterioso se formou à direita" },
+        { "id": "b", "texto": "Contorna a subclávia aberrante atrás do esôfago, porque ela deriva do 4º arco direito" },
+        { "id": "c", "texto": "Está ausente, porque o nervo do 6º arco direito regride com a artéria desse arco" },
+        { "id": "d", "texto": "É não recorrente: sai do vago no pescoço, porque falta a artéria do 4º arco direito" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: na subclávia direita aberrante, a artéria do 4º arco direito e a parte proximal da aorta dorsal direita regridem, e a subclávia forma-se da parte distal da aorta dorsal direita com a 7ª intersegmentar. Sem a artéria do 4º arco direito, não há vaso sob o qual o nervo do 6º arco fique retido quando o coração e as grandes artérias descem para o tórax; o laríngeo inferior direito sai do vago no pescoço e vai diretamente à laringe (nervo não recorrente), com risco de lesão se for procurado no trajeto habitual. A disfagia (disfagia lusória) decorre do trajeto retroesofágico. É o nervo esquerdo que contorna o arco e o ligamento arterial (a), e o ducto arterioso normalmente é esquerdo. A subclávia aberrante não deriva do 4º arco direito (b), que regrediu. O nervo não está ausente (c): a inervação da laringe é mantida, só o trajeto muda.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["subclavia-direita-aberrante", "nervo-laringeo-recorrente", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q06",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 4 dias, que estava bem, apresenta má perfusão, oligúria e acidose metabólica. O pulso braquial direito é palpável; os pulsos braquial esquerdo e femorais são muito fracos. Tem convulsão por hipocalcemia, e a radiografia não mostra sombra tímica. O ecocardiograma mostra comunicação interventricular, falta de continuidade do arco aórtico entre a carótida comum esquerda e a subclávia esquerda e canal arterial em constrição, que supre a aorta descendente.",
+      "enunciado": "Qual alternativa combina corretamente o mecanismo embriológico e a medida inicial?",
+      "alternativas": [
+        { "id": "a", "texto": "Regressão anormal do 4º arco esquerdo; prostaglandina E1 para manter o canal aberto" },
+        { "id": "b", "texto": "Regressão anormal do 4º arco esquerdo; ibuprofeno para completar o fechamento do canal" },
+        { "id": "c", "texto": "Persistência da aorta dorsal direita distal; prostaglandina E1 para manter o canal aberto" },
+        { "id": "d", "texto": "Regressão da parte distal do 6º arco esquerdo; oxigênio a 100% para dilatar o canal" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: trata-se de interrupção do arco aórtico tipo B (entre a carótida comum esquerda e a subclávia esquerda), atribuída à regressão anormal da artéria do 4º arco esquerdo, que normalmente forma esse segmento. O tronco braquiocefálico e a carótida comum esquerda saem da aorta ascendente, por isso o pulso braquial direito se mantém; a subclávia esquerda e a aorta descendente recebem sangue do tronco pulmonar pelo canal arterial, e o fechamento do canal nos primeiros dias causa choque. A prostaglandina E1 mantém ou reabre o canal até a correção cirúrgica. Hipocalcemia e ausência de sombra tímica sugerem deleção 22q11.2, fortemente associada ao tipo B porque a crista neural e o mesoderma faríngeo participam da formação do 4º arco. O ibuprofeno (b) fecharia o canal e agravaria o choque. A persistência da aorta dorsal direita distal (c) causa arco duplo, não interrupção. A parte distal do 6º arco esquerdo (d) é o próprio canal, presente no caso, e o oxigênio contrai o canal em vez de dilatá-lo.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["interrupcao-arco-aortico", "sindrome-22q11", "canal-dependente", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13 e 17; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q07",
+      "tipo": "multipla",
+      "contexto": "Estudante de 19 anos tem hipertensão arterial descoberta em exame admissional: 168/92 mmHg no braço direito e pressão sistólica menor na coxa. Os pulsos femorais são fracos e atrasados em relação aos radiais, e há sopro sistólico no dorso, entre as escápulas. A radiografia de tórax mostra pequenas erosões nas bordas inferiores de várias costelas.",
+      "enunciado": "O que explica as erosões costais?",
+      "alternativas": [
+        { "id": "a", "texto": "Compressão das costelas por um arco aórtico duplo que envolve a traqueia" },
+        { "id": "b", "texto": "Reabsorção óssea causada pela hipertensão renovascular secundária" },
+        { "id": "c", "texto": "Artérias intercostais dilatadas que levam fluxo colateral à aorta distal" },
+        { "id": "d", "texto": "Veia ázigo dilatada por continuação da veia cava inferior interrompida" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: na coarctação, o sangue chega à aorta abaixo do estreitamento por colaterais — das subclávias às torácicas internas, às intercostais anteriores e, em fluxo retrógrado, às intercostais posteriores, que desembocam na aorta descendente. As intercostais posteriores, dilatadas e tortuosas, erodem as bordas inferiores das costelas, sinal de crianças maiores e adultos. A hipertensão nos membros superiores, a pressão menor nas pernas, os pulsos femorais fracos e atrasados e o sopro interescapular completam o quadro de coarctação justaductal, distal à subclávia esquerda. O arco duplo (a) causa sintomas respiratórios e disfagia na infância, não erosões costais. A hipertensão renovascular (b) não reabsorve costelas. A continuação ázigo (d) dilata uma veia paravertebral, sem erodir costelas e sem diferença de pulso entre braços e pernas.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["coarctacao-aorta", "circulacao-colateral", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q08",
+      "tipo": "multipla",
+      "contexto": "Prematuro de 26 semanas de idade gestacional é submetido a ligadura cirúrgica do canal arterial por toracotomia esquerda. Após a extubação, tem choro fraco e rouco, estridor e engasgos na alimentação; a nasofibrolaringoscopia mostra paralisia da prega vocal esquerda.",
+      "enunciado": "Qual nervo foi provavelmente lesado e por que ele está nesse campo cirúrgico?",
+      "alternativas": [
+        { "id": "a", "texto": "Frênico esquerdo, que acompanha o canal arterial até o diafragma" },
+        { "id": "b", "texto": "Laríngeo recorrente esquerdo, que contorna o canal arterial (6º arco)" },
+        { "id": "c", "texto": "Laríngeo superior esquerdo, nervo do 4º arco que contorna o arco aórtico" },
+        { "id": "d", "texto": "Laríngeo recorrente direito, que cruza a linha média sob o canal arterial" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: o laríngeo recorrente esquerdo, nervo do 6º arco, passa sob a parte distal da artéria do 6º arco esquerdo, que persiste como canal arterial; por isso contorna o canal (depois o ligamento arterial) e o arco da aorta e fica no campo da ligadura. Sua lesão paralisa a prega vocal esquerda (rouquidão, estridor, aspiração). O frênico (a) passa anteriormente ao hilo pulmonar, não acompanha o canal, e sua lesão paralisa o diafragma, não a prega vocal. O laríngeo superior (c) não desce ao tórax: sai do vago no pescoço e inerva o cricotireóideo. O laríngeo recorrente direito (d) contorna a subclávia direita, no pescoço, e não cruza a linha média.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["nervo-laringeo-recorrente", "ducto-arterioso", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q09",
+      "tipo": "multipla",
+      "enunciado": "A artéria mesentérica superior deriva:",
+      "alternativas": [
+        { "id": "a", "texto": "Das artérias umbilicais, que acompanham o alantoide" },
+        { "id": "b", "texto": "De anastomoses das artérias intersegmentares lombares" },
+        { "id": "c", "texto": "Das artérias vitelinas, fundidas no mesentério dorsal" },
+        { "id": "d", "texto": "Dos ramos laterais da aorta que irrigam o mesonefro" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: as artérias vitelinas, que irrigam o saco vitelino, fundem-se no mesentério dorsal e formam as três artérias ímpares do intestino: tronco celíaco (intestino anterior), mesentérica superior (médio) e mesentérica inferior (posterior). As umbilicais (a) levam sangue à placenta e originam as ilíacas internas, as vesicais superiores e os ligamentos umbilicais mediais. As intersegmentares lombares (b) persistem como artérias lombares. Os ramos laterais da aorta (d) formam as artérias renais, suprarrenais e gonadais.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["arterias-vitelinas"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q10",
+      "tipo": "multipla",
+      "enunciado": "A veia porta forma-se a partir de:",
+      "alternativas": [
+        { "id": "a", "texto": "Plexo das veias vitelinas ao redor do duodeno" },
+        { "id": "b", "texto": "Parte cranial da veia umbilical esquerda" },
+        { "id": "c", "texto": "Anastomose entre as veias subcardinais" },
+        { "id": "d", "texto": "Segmento caudal da veia cardinal posterior direita" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: as veias vitelinas formam um plexo ao redor do duodeno antes de atravessar o septo transverso; anastomoses desse plexo originam um vaso único, a veia porta, enquanto a vitelina direita forma a mesentérica superior. A parte cranial da umbilical esquerda (b), entre o fígado e o seio venoso, regride. A anastomose entre as subcardinais (c) participa da veia renal esquerda, segundo Sadler. A cardinal posterior direita (d) regride quase totalmente e não drena o intestino.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["veias-vitelinas", "veia-porta"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q11",
+      "tipo": "multipla",
+      "enunciado": "O segmento hepático da veia cava inferior deriva de:",
+      "alternativas": [
+        { "id": "a", "texto": "Veia umbilical direita, que perde sua ligação com a placenta" },
+        { "id": "b", "texto": "Veia subcardinal direita, que se une aos sinusoides hepáticos" },
+        { "id": "c", "texto": "Veia supracardinal direita, que forma também a veia ázigo" },
+        { "id": "d", "texto": "Parte cranial da veia vitelina direita (canal hepatocardíaco)" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: com o desvio do retorno venoso para a direita, a parte cranial da vitelina direita, entre o fígado e o seio venoso (canal hepatocardíaco direito), aumenta e forma o segmento hepático da veia cava inferior, que recebe também o ducto venoso e as veias hepáticas. A umbilical direita (a) regride inteiramente. A subcardinal direita (b) forma o segmento logo abaixo do fígado (pré-renal, segundo Moore); quando não se liga ao segmento hepático, a veia cava fica interrompida. A supracardinal direita (c) forma a ázigo e, segundo Moore, o segmento pós-renal, não o hepático.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["veia-cava-inferior", "veias-vitelinas"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q12",
+      "tipo": "multipla",
+      "contexto": "Homem de 63 anos vai implantar marca-passo por punção da veia subclávia esquerda. Na radioscopia, o fio-guia desce pela borda esquerda do mediastino, sem cruzar para a direita, e alcança o átrio direito por trás do coração. O ecocardiograma prévio mostrara seio coronário dilatado, sem shunt entre as câmaras.",
+      "enunciado": "Qual estrutura embrionária persistiu?",
+      "alternativas": [
+        { "id": "a", "texto": "Veia umbilical direita, que drena no corno direito do seio venoso" },
+        { "id": "b", "texto": "Veia cardinal anterior esquerda, que drena no seio coronário" },
+        { "id": "c", "texto": "Veia supracardinal esquerda, que forma uma veia cava inferior esquerda" },
+        { "id": "d", "texto": "Veia vitelina esquerda, que mantém o canal hepatocardíaco esquerdo" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: normalmente, depois que a anastomose entre as cardinais anteriores forma a braquiocefálica esquerda, a cardinal anterior esquerda e a cardinal comum esquerda regridem, restando a veia oblíqua do átrio esquerdo. Se persistem, formam a veia cava superior esquerda, que desce à esquerda do mediastino e drena no corno esquerdo do seio venoso — o seio coronário, dilatado pelo volume extra. Por isso o fio-guia segue esse trajeto. A veia umbilical direita (a) regride durante o período embrionário e não recebe a subclávia. A supracardinal esquerda (c) forma a hemiázigo e, quando persiste abaixo dos rins, uma veia cava inferior esquerda; nenhuma delas recebe a subclávia nem drena no seio coronário. A vitelina esquerda (d) relaciona-se ao fígado e ao sistema porta.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["veia-cava-superior-esquerda", "veias-cardinais", "seio-coronario", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q13",
+      "tipo": "multipla",
+      "contexto": "Menina de 2 anos com cardiopatia congênita e heterotaxia faz cateterismo cardíaco pela veia femoral direita. O cateter não passa da região renal ao fígado: sobe por uma veia paravertebral muito calibrosa, entra na veia cava superior e chega ao átrio direito por cima. A tomografia mostra múltiplos baços pequenos, e as veias hepáticas drenam diretamente no átrio direito.",
+      "enunciado": "Qual falha do desenvolvimento venoso explica esse trajeto?",
+      "alternativas": [
+        { "id": "a", "texto": "Persistência da veia cardinal anterior esquerda, que drena no seio coronário" },
+        { "id": "b", "texto": "Persistência da supracardinal esquerda como veia cava inferior esquerda" },
+        { "id": "c", "texto": "A subcardinal direita não se une ao segmento hepático e drena pela ázigo" },
+        { "id": "d", "texto": "Falta da anastomose entre as cardinais anteriores, sem braquiocefálica" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: na veia cava inferior interrompida com continuação ázigo, a subcardinal direita não se conecta ao segmento hepático (derivado da vitelina direita); o sangue da metade inferior do corpo desvia para a supracardinal direita, que forma a ázigo, muito dilatada, e chega à veia cava superior. As veias hepáticas drenam diretamente no átrio direito. A poliesplenia indica heterotaxia com isomerismo esquerdo, frequentemente acompanhada de cardiopatia. A veia cava superior esquerda persistente (a) altera a drenagem da metade superior do corpo, não a do abdome. Uma veia cava inferior esquerda (b) sobe à esquerda da aorta e cruza para a direita pela veia renal esquerda, alcançando o fígado normalmente. A falta da braquiocefálica esquerda (d) ocorre na veia cava superior dupla e não altera o trajeto pela veia cava inferior.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["veia-cava-inferior", "continuacao-azigo", "heterotaxia", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q14",
+      "tipo": "multipla",
+      "contexto": "Na ultrassonografia de 12 semanas de idade gestacional, o feto apresenta grande coleção cística septada na região cervical posterior e edema subcutâneo. A biópsia de vilo corial mostra cariótipo 45,X.",
+      "enunciado": "Qual alternativa relaciona corretamente a origem da lesão e o achado cardiovascular a pesquisar?",
+      "alternativas": [
+        { "id": "a", "texto": "Saco linfático jugular sem conexão com as vias linfáticas; coarctação da aorta" },
+        { "id": "b", "texto": "Saco linfático jugular sem conexão com as vias linfáticas; defeito do septo AV" },
+        { "id": "c", "texto": "Restos do seio cervical e do 2º sulco faríngeo; coarctação da aorta" },
+        { "id": "d", "texto": "Persistência do ducto tireoglosso na linha média; tetralogia de Fallot" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o higroma cístico resulta de partes do saco linfático jugular que se isolam ou de espaços linfáticos que não se conectam às vias linfáticas principais e ao sistema venoso, acumulando linfa na região cervical. Na síndrome de Turner, explica o pescoço alado e acompanha-se de linfedema; as anomalias cardiovasculares mais típicas são a coarctação da aorta e a valva aórtica bicúspide, e o ecocardiograma fetal está indicado. O defeito do septo AV (b) é a cardiopatia típica da trissomia 21, não da monossomia X. Restos do seio cervical (c) formam cistos laterais, na borda anterior do esternocleidomastóideo, que surgem na infância ou no adulto jovem. O ducto tireoglosso (d) produz cistos medianos e anteriores e não se associa à 45,X nem à tetralogia.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["higroma-cistico", "sindrome-de-turner", "linfaticos", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13 e 20"
+    },
+    {
+      "id": "emb-23-q15",
+      "tipo": "multipla",
+      "enunciado": "O ducto venoso forma-se como uma comunicação direta entre:",
+      "alternativas": [
+        { "id": "a", "texto": "A veia umbilical direita e a veia cava superior" },
+        { "id": "b", "texto": "A veia porta e a veia cardinal posterior direita" },
+        { "id": "c", "texto": "A veia vitelina esquerda e o corno esquerdo do seio venoso" },
+        { "id": "d", "texto": "A veia umbilical esquerda e o canal hepatocardíaco direito" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: quando a umbilical direita e a parte cranial da esquerda regridem, a umbilical esquerda passa a levar todo o sangue placentário ao fígado; forma-se então o ducto venoso, que a liga diretamente ao canal hepatocardíaco direito (futuro segmento hepático da veia cava inferior) e desvia parte do sangue dos sinusoides. A umbilical direita (a) regride e nunca se liga à cava superior. A veia porta (b) deriva das vitelinas e drena nos sinusoides, e a cardinal posterior direita regride quase totalmente. A parte cranial da vitelina esquerda (c) desaparece com o desvio do retorno venoso para a direita, e o corno esquerdo do seio venoso forma o seio coronário.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["ducto-venoso", "veias-umbilicais"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q16",
+      "tipo": "multipla",
+      "enunciado": "A parte distal (cranial) da artéria carótida interna deriva de:",
+      "alternativas": [
+        { "id": "a", "texto": "Artéria do 2º arco aórtico (artéria hióidea)" },
+        { "id": "b", "texto": "Aorta dorsal cranial ao 3º arco" },
+        { "id": "c", "texto": "Artéria do 1º arco aórtico (artéria maxilar)" },
+        { "id": "d", "texto": "Ducto carotídeo, entre o 3º e o 4º arcos" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a carótida interna tem origem dupla — a parte proximal vem da artéria do 3º arco, e a distal, da aorta dorsal cranial ao 3º arco, que persiste. A artéria do 2º arco (a) regride quase totalmente (restam as artérias hióidea e estapédia). A do 1º arco (c) deixa apenas parte da artéria maxilar, ramo da carótida externa. O ducto carotídeo (d) oblitera-se dos dois lados.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["arcos-aorticos", "carotidas", "aortas-dorsais"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q17",
+      "tipo": "vf",
+      "enunciado": "O 5º par de artérias dos arcos aórticos origina as artérias vertebrais.",
+      "correta": false,
+      "explicacao": "Falso. O 5º par não se forma ou é rudimentar e regride sem deixar derivados. As artérias vertebrais formam-se por anastomoses longitudinais das artérias intersegmentares cervicais, que depois perdem sua ligação com a aorta dorsal, exceto a 7ª, que forma a subclávia, da qual a vertebral passa a nascer.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["arcos-aorticos", "arterias-intersegmentares"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q18",
+      "tipo": "vf",
+      "enunciado": "No fim da 4ª semana, as seis artérias dos arcos aórticos estão presentes ao mesmo tempo.",
+      "correta": false,
+      "explicacao": "Falso. As artérias dos arcos surgem em sequência craniocaudal e não coexistem: quando a do 4º arco se forma, a do 1º já regrediu em grande parte, e o 5º par não se forma ou é rudimentar. Os esquemas que mostram seis pares juntos são apenas didáticos.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["arcos-aorticos"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q19",
+      "tipo": "vf",
+      "enunciado": "A veia cava inferior forma-se a partir de veias predominantemente do lado direito, o que explica sua posição à direita da aorta.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Com o desvio do retorno venoso para a direita, a veia cava inferior forma-se do canal hepatocardíaco direito (vitelina direita), da subcardinal direita, da anastomose subcardinal–supracardinal e, no segmento caudal, da supracardinal direita (Moore) ou da sacrocardinal direita (Sadler). As veias do lado esquerdo regridem ou tornam-se tributárias, como parte da veia renal esquerda.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["veia-cava-inferior"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q20",
+      "tipo": "vf",
+      "enunciado": "A veia umbilical direita persiste e forma o ligamento redondo do fígado.",
+      "correta": false,
+      "explicacao": "Falso. A veia umbilical direita regride no período embrionário; é a esquerda que leva o sangue placentário ao fígado na vida fetal e, após o nascimento, oblitera-se e forma o ligamento redondo do fígado, na borda livre do ligamento falciforme.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["veias-umbilicais", "remanescentes-fetais"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q21",
+      "tipo": "vf",
+      "enunciado": "O higroma cístico cervical detectado no 1º trimestre associa-se a aneuploidias, como a síndrome de Turner.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O higroma resulta de falha da conexão do saco linfático jugular com as vias linfáticas e venosas. Detectado no 1º trimestre, associa-se a aneuploidias (síndrome de Turner e trissomias 21, 18 e 13) e a cardiopatias, o que indica estudo genético e ecocardiograma fetal.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["higroma-cistico", "sindrome-de-turner", "linfaticos"],
+      "referencia": "Moore 11ª ed., cap. 13 e 20"
+    },
+    {
+      "id": "emb-23-q22",
+      "tipo": "vf",
+      "enunciado": "O arco aórtico à direita com ramificação em imagem em espelho associa-se a cardiopatias congênitas, como a tetralogia de Fallot e o tronco arterial persistente.",
+      "correta": true,
+      "explicacao": "Verdadeiro. No arco à direita, regridem o 4º arco e a aorta dorsal esquerdos e persistem os direitos. Na forma com ramificação em imagem em espelho (tronco braquiocefálico esquerdo, depois carótida comum e subclávia direitas), é frequente a associação com cardiopatias conotruncais — tetralogia de Fallot e tronco arterial persistente — e com a deleção 22q11.2. A forma com subclávia esquerda aberrante costuma ser isolada, mas pode formar anel vascular com o ligamento arterial esquerdo.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["arco-aortico-direita", "tetralogia-de-fallot"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene, de proximal para distal ao longo do arco da aorta normal, estes ramos e marcos (com sua origem embrionária):",
+      "itens": [
+        { "id": "1", "texto": "Subclávia esquerda (7ª intersegmentar esquerda)" },
+        { "id": "2", "texto": "Tronco braquiocefálico (corno direito do saco aórtico)" },
+        { "id": "3", "texto": "Inserção do ligamento arterial (6º arco esquerdo)" },
+        { "id": "4", "texto": "Carótida comum esquerda (3º arco esquerdo)" }
+      ],
+      "ordemCorreta": ["2", "4", "1", "3"],
+      "explicacao": "Tronco braquiocefálico (corno direito do saco aórtico) → carótida comum esquerda (3º arco) → subclávia esquerda (7ª intersegmentar, cuja origem subiu até junto da carótida) → inserção do ligamento arterial, na face inferior do arco, logo distal à origem da subclávia esquerda. O segmento do arco entre a carótida comum e a subclávia esquerdas deriva do 4º arco esquerdo; o segmento após a subclávia, da aorta dorsal esquerda.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["arcos-aorticos", "arco-da-aorta"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene cronologicamente:",
+      "itens": [
+        { "id": "1", "texto": "Forma-se a artéria do 6º arco" },
+        { "id": "2", "texto": "O ducto arterioso contrai-se ao nascer" },
+        { "id": "3", "texto": "Surge a artéria do 1º arco" },
+        { "id": "4", "texto": "Forma-se o ligamento arterial" },
+        { "id": "5", "texto": "Regride a aorta dorsal direita caudal à 7ª intersegmentar" }
+      ],
+      "ordemCorreta": ["3", "1", "5", "2", "4"],
+      "explicacao": "As artérias dos arcos surgem em sequência craniocaudal na 4ª e na 5ª semana (1º antes do 6º); a remodelação no padrão do adulto, com a regressão da aorta dorsal direita caudal à 7ª intersegmentar, ocorre entre a 6ª e a 8ª semana; o ducto arterioso contrai-se ao nascer e oblitera-se nas semanas a meses seguintes, formando o ligamento arterial.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["arcos-aorticos", "linha-do-tempo"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q25",
+      "tipo": "ordenar",
+      "enunciado": "Num paciente com veia cava inferior interrompida e continuação ázigo, ordene o trajeto do sangue venoso do membro inferior direito até o coração:",
+      "itens": [
+        { "id": "1", "texto": "Veia cava superior" },
+        { "id": "2", "texto": "Segmento infra-hepático (renal) da veia cava inferior" },
+        { "id": "3", "texto": "Átrio direito" },
+        { "id": "4", "texto": "Veia ilíaca comum direita" },
+        { "id": "5", "texto": "Veia ázigo dilatada" }
+      ],
+      "ordemCorreta": ["4", "2", "5", "1", "3"],
+      "explicacao": "Sem o segmento hepático, o sangue sobe da ilíaca comum pelo segmento infra-hepático da veia cava inferior (derivado das subcardinais e supracardinais) e desvia para a ázigo (supracardinal direita), que desemboca na veia cava superior e chega ao átrio direito. As veias hepáticas drenam separadamente no átrio direito.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["continuacao-azigo", "veia-cava-inferior"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada anomalia vascular ao seu mecanismo embriológico:",
+      "pares": [
+        { "esquerda": "Arco aórtico duplo", "direita": "Persistência da aorta dorsal direita caudal à 7ª intersegmentar, com os dois 4º arcos" },
+        { "esquerda": "Subclávia direita aberrante", "direita": "Regressão do 4º arco direito e da aorta dorsal direita proximal, com persistência da distal" },
+        { "esquerda": "Interrupção do arco aórtico tipo B", "direita": "Regressão do 4º arco esquerdo sem substituição; aorta descendente suprida pelo canal" },
+        { "esquerda": "Arco aórtico à direita", "direita": "Regressão do 4º arco e da aorta dorsal esquerdos, com persistência dos direitos" },
+        { "esquerda": "Veia cava superior esquerda persistente", "direita": "Persistência da cardinal anterior esquerda, que drena no seio coronário" }
+      ],
+      "explicacao": "Arco duplo: persiste o segmento distal da aorta dorsal direita, que normalmente regride. Subclávia direita aberrante: some o 4º arco direito e a subclávia forma-se da aorta dorsal direita distal com a 7ª intersegmentar, nascendo como último ramo do arco. Interrupção tipo B: falta o segmento do 4º arco esquerdo, entre a carótida comum e a subclávia esquerdas. Arco à direita: o lado direito substitui o esquerdo. Veia cava superior esquerda: a cardinal anterior esquerda não regride e drena no seio coronário.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["anomalias-arcos-aorticos", "veias-cardinais"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada veia do adulto à sua origem embrionária:",
+      "pares": [
+        { "esquerda": "Veia porta", "direita": "Plexo das veias vitelinas ao redor do duodeno" },
+        { "esquerda": "Segmento hepático da veia cava inferior", "direita": "Parte cranial da veia vitelina direita" },
+        { "esquerda": "Ligamento redondo do fígado", "direita": "Veia umbilical esquerda" },
+        { "esquerda": "Veia braquiocefálica esquerda", "direita": "Anastomose entre as veias cardinais anteriores" },
+        { "esquerda": "Veia cava superior", "direita": "Cardinal comum direita e parte proximal da cardinal anterior direita" },
+        { "esquerda": "Veia ázigo", "direita": "Veia supracardinal direita, em sua maior parte" }
+      ],
+      "explicacao": "Vitelinas: veia porta (plexo periduodenal) e segmento hepático da veia cava inferior (vitelina direita). Umbilical esquerda: ligamento redondo do fígado. Cardinais: braquiocefálica esquerda (anastomose entre as anteriores) e veia cava superior (cardinal comum e cardinal anterior direitas). Supracardinais: ázigo (direita) e hemiázigo (esquerda); a terminação da ázigo vem da cardinal posterior direita.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["veias-vitelinas", "veias-umbilicais", "veias-cardinais", "derivados"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-23-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada artéria embrionária ao seu derivado no adulto:",
+      "pares": [
+        { "esquerda": "Artérias vitelinas", "direita": "Tronco celíaco e artérias mesentéricas superior e inferior" },
+        { "esquerda": "Partes proximais das artérias umbilicais", "direita": "Artérias ilíacas internas e vesicais superiores" },
+        { "esquerda": "Partes distais das artérias umbilicais", "direita": "Ligamentos umbilicais mediais" },
+        { "esquerda": "Anastomoses longitudinais das intersegmentares cervicais", "direita": "Artérias vertebrais" },
+        { "esquerda": "Intersegmentares torácicas", "direita": "Artérias intercostais posteriores" }
+      ],
+      "explicacao": "As vitelinas, fundidas no mesentério dorsal, formam as artérias ímpares do intestino. As umbilicais persistem proximalmente como ilíacas internas e vesicais superiores e, distalmente, obliteram-se nos ligamentos umbilicais mediais. As intersegmentares cervicais, unidas por anastomoses longitudinais, formam as vertebrais; as torácicas persistem como intercostais posteriores.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["arterias-vitelinas", "arterias-umbilicais", "arterias-intersegmentares"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular (arcos aórticos, veias, linfáticos)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (síndrome de Turner)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "13 — Desenvolvimento da vasculatura"
+    },
+    {
+      "obra": "Celoria GC, Patton RB. Congenital absence of the aortic arch. Am Heart J. 1959 (classificação da interrupção do arco aórtico)"
+    },
+    {
+      "obra": "Pedra SRFF et al. Diretriz Brasileira de Cardiologia Fetal – 2019. Arq Bras Cardiol. 2019 (indicações de ecocardiograma fetal)"
+    }
+  ],
+  "notasDivergencia": [
+    "Quinto arco: Moore e Sadler descrevem-no como ausente ou rudimentar e transitório; estudos morfológicos recentes questionam se chega a existir no ser humano. O texto diz 'não se forma ou é rudimentar' e as questões cobram apenas que ele não deixa derivados.",
+    "Artérias dos 1º e 2º arcos: Sadler cita parte da artéria maxilar (1º) e as artérias hióidea e estapédia (2º); Moore cita a maxilar, com possível contribuição para a carótida externa, e o tronco das estapédias. Mesma nota do emb-12.",
+    "Segmento caudal da veia cava inferior: Moore descreve quatro segmentos (hepático, pré-renal, renal e pós-renal), com o pós-renal derivado da supracardinal direita; Sadler descreve um segmento renal da subcardinal direita e um segmento caudal derivado da sacrocardinal direita. As questões cobram só o segmento hepático (vitelina direita), consenso entre as obras.",
+    "Início do sistema linfático: Moore situa no fim da 6ª semana; Sadler, na 5ª semana. Faixa adotada no texto: 5ª–6ª semana; não usado na linha do tempo.",
+    "Período de remodelação dos arcos: Moore situa a transformação no padrão do adulto entre a 6ª e a 8ª semana, faixa usada no evento da linha do tempo (dias 36–56); Sadler descreve as mudanças sem a mesma delimitação por semana.",
+    "Arco da aorta: Moore atribui a parte proximal ao saco aórtico; Sadler especifica o corno esquerdo do saco aórtico (o direito forma o tronco braquiocefálico). As descrições são compatíveis.",
+    "Veia ázigo: Sadler a deriva da supracardinal direita; Moore acrescenta que sua terminação (raiz) vem da cardinal posterior direita. Compatíveis; o par de associação usa 'em sua maior parte'.",
+    "Coarctação da aorta: Moore e Sadler apresentam mecanismos não comprovados (tecido ductal na parede aórtica; involução anormal de segmento da aorta dorsal); a hipótese hemodinâmica (fluxo fetal reduzido pelo istmo) vem da literatura de cardiologia pediátrica. O texto apresenta o mecanismo como incerto, como o emb-13."
+  ],
+  "incertezas": [
+    "Prevalências (subclávia direita aberrante, veia cava superior esquerda persistente, arco à direita, continuação ázigo, interrupção do arco e fração da interrupção tipo B com deleção 22q11.2) não foram conferidas nas edições adotadas e foram omitidas; o texto usa termos qualitativos ('geralmente', 'fortemente associada').",
+    "'Tipo B é o mais frequente' e a classificação A/B/C da interrupção do arco vêm da literatura de cardiologia pediátrica (Celoria e Patton), não das obras de embriologia; conferir com o revisor clínico.",
+    "O nervo laríngeo inferior direito não recorrente associado à subclávia direita aberrante é descrito na literatura anatômica e cirúrgica; emb-13 já registra o fato. Também vêm da literatura clínica a coexistência habitual da veia cava superior esquerda com a direita, a associação da subclávia direita aberrante com a trissomia 21 no pré-natal e a da continuação ázigo com isomerismo esquerdo.",
+    "Condutas citadas (prostaglandina E1 nas lesões canal-dependentes, cirurgia do anel vascular, pesquisa da deleção 22q11.2 e da calcemia, estudo genético e ecocardiograma fetal no higroma) seguem a prática corrente de cardiologia pediátrica e medicina fetal, não as obras de embriologia. A Diretriz Brasileira de Cardiologia Fetal (SBC, 2019) foi citada de memória para a indicação de ecocardiograma fetal; o texto não pôde ser aberto nesta sessão (sites de sociedades bloqueados na rede). Não foi identificada diretriz brasileira específica para anéis vasculares.",
+    "Origem da veia renal esquerda (anastomose entre as subcardinais, segundo Sadler) e participação das supracardinais no colar renal variam entre as obras; não cobrada em questão, exceto como explicação de distrator.",
+    "Dias da linha do tempo: a artéria do 1º arco foi situada na 4ª semana (dias 22–28), junto com o aparecimento dos primeiros arcos faríngeos (emb-12 adota dias 22–24 para os primeiros arcos); a artéria do 6º arco ficou sem dias por falta de data consensual."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

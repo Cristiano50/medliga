@@ -1118,6 +1118,194 @@
         "correlacao-clinica"
       ],
       "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+    },
+    {
+      "id": "emb-15-q26",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 5 dias, que mamava bem, apresenta vômitos biliosos súbitos e, horas depois, distensão abdominal, sangue nas fezes e sinais de choque. Na laparotomia, o intestino médio está torcido em torno de um pedículo mesentérico estreito (volvo), com alças escurecidas.",
+      "enunciado": "Qual extensão do tubo digestório está em risco de necrose, e por que o estômago e o colo descendente costumam ser poupados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Do estômago ao íleo terminal, porque o volvo ocorre em torno do tronco celíaco e poupa só os colos supridos pela AMI"
+        },
+        {
+          "id": "b",
+          "texto": "Do ângulo duodenojejunal ao reto, porque a AMS irriga todo o intestino distal ao duodeno, inclusive o colo descendente"
+        },
+        {
+          "id": "c",
+          "texto": "Do duodeno distal à papila aos dois terços proximais do colo transverso, território da AMS, eixo da torção"
+        },
+        {
+          "id": "d",
+          "texto": "Apenas o íleo terminal e o ceco, ao redor do ducto vitelino, porque o restante do intestino tem circulação colateral"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: na má rotação, a raiz do mesentério fica estreita, e o intestino médio pode torcer-se em torno da artéria mesentérica superior, eixo da alça intestinal primária. A torção obstrui a drenagem venosa e o fluxo arterial de todo o território da AMS: do duodeno distal à desembocadura do colédoco até cerca dos dois terços proximais do colo transverso. O estômago e o duodeno proximal, derivados do intestino anterior, são irrigados pelo tronco celíaco; o terço distal do colo transverso, o colo descendente, o sigmoide e o reto, derivados do intestino posterior, pela AMI; por isso ficam fora da isquemia. Por esse risco, vômito bilioso no recém-nascido exige excluir volvo com urgência. O tronco celíaco não é o eixo da torção e irriga o estômago, que fica poupado (a). A AMS não irriga o colo descendente nem o reto (b). O ducto vitelino (d) liga-se ao ápice da alça, mas a isquemia do volvo atinge todo o território da AMS, não só o íleo terminal.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "ma-rotacao",
+        "volvo",
+        "arteria-mesenterica-superior",
+        "irrigacao",
+        "integracao",
+        "caso-clinico",
+        "avancado"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+    },
+    {
+      "id": "emb-15-q27",
+      "tipo": "multipla",
+      "contexto": "Menino de 7 anos tem dor abdominal periumbilical que migrou para o quadrante inferior direito, febre e defesa localizada. Aos 3 anos, teve um episódio de sangramento retal indolor que não foi investigado. Na laparoscopia, o apêndice vermiforme está normal.",
+      "enunciado": "Qual remanescente embrionário é a causa mais provável, e onde o cirurgião deve procurá-lo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Divertículo de Meckel, na borda antimesentérica do íleo, a dezenas de centímetros da junção ileocecal"
+        },
+        {
+          "id": "b",
+          "texto": "Cisto do úraco, na linha média infraumbilical, entre o ápice da bexiga e o umbigo, sob a parede abdominal"
+        },
+        {
+          "id": "c",
+          "texto": "Divertículo de Meckel, na borda mesentérica do jejuno proximal, logo depois do ângulo duodenojejunal"
+        },
+        {
+          "id": "d",
+          "texto": "Cisto de duplicação no colo sigmoide, derivado do septo urorretal, na pelve, à esquerda da linha média"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o divertículo de Meckel, remanescente da parte proximal do ducto vitelino, fica na borda antimesentérica do íleo, onde o ducto se prendia ao ápice da alça intestinal primária — a 40–50 cm da junção ileocecal segundo Moore (40–60 cm segundo Sadler). A diverticulite simula apendicite, e o sangramento indolor prévio sugere mucosa gástrica ectópica; é no íleo distal, portanto, que ele deve ser procurado. A 'regra dos 2' (≈2% da população, ≈2 pés da valva ileocecal, ≈2 polegadas de comprimento, 2 tipos de tecido ectópico, sintomas frequentemente antes dos 2 anos) ajuda a memorizar, mas é aproximada. O cisto do úraco (b), remanescente da alantoide, manifesta-se como massa dolorosa na linha média infraumbilical e não explica o sangramento retal. O divertículo de Meckel não fica na borda mesentérica nem no jejuno proximal (c). Duplicações intestinais não derivam do septo urorretal, que divide a cloaca (d).",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "diverticulo-de-meckel",
+        "ducto-vitelino",
+        "abdome-agudo",
+        "caso-clinico",
+        "avancado"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11 e 12; Sadler 14ª ed., cap. 15"
+    },
+    {
+      "id": "emb-15-q28",
+      "tipo": "multipla",
+      "contexto": "Na tomografia de abdome de um adulto sem doença intestinal, a 3ª parte do duodeno cruza a linha média da direita para a esquerda entre a aorta, posterior, e a artéria mesentérica superior (AMS), anterior; o colo transverso passa anteriormente à AMS.",
+      "enunciado": "Qual etapa do desenvolvimento explica essas relações com a AMS?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A rotação de 90° do estômago em torno de seu eixo longitudinal, que leva todo o duodeno para trás da AMS"
+        },
+        {
+          "id": "b",
+          "texto": "Uma rotação horária (vista ventral) do intestino médio durante o retorno das alças, a partir da 10ª semana"
+        },
+        {
+          "id": "c",
+          "texto": "O retorno das alças sem nenhuma rotação, que as mantém na mesma posição em que entraram no cordão umbilical"
+        },
+        {
+          "id": "d",
+          "texto": "A rotação anti-horária de 270° em torno da AMS: o ramo cranial passa atrás dela, e o caudal, à frente"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: a alça intestinal primária gira cerca de 270° em sentido anti-horário (vista ventral) em torno da AMS. No retorno ao abdome, na 10ª semana, o ramo cranial (duodeno distal e jejuno) volta primeiro, passando por trás da artéria, e se aloja à esquerda; o ramo caudal (ceco e colo) passa à frente dela. Por isso, no adulto, a 3ª parte do duodeno cruza entre a AMS e a aorta, e o colo transverso fica anterior à AMS. A rotação do estômago (a) ocorre em torno do eixo do próprio estômago e explica a forma em C do duodeno e a posição dos vagos, não a passagem do duodeno distal, derivado do intestino médio, por trás da AMS. Na rotação horária (b), dita 'reversa' e anômala, o duodeno passa anteriormente à AMS e o colo transverso, posteriormente. Na não rotação (c), o delgado fica à direita e o colo à esquerda, sem que o duodeno cruze a linha média por trás da artéria.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "rotacao-intestinal",
+        "arteria-mesenterica-superior",
+        "duodeno",
+        "anatomia",
+        "caso-clinico",
+        "avancado"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (abdome: duodeno)"
+    },
+    {
+      "id": "emb-15-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada apresentação clínica ao remanescente ou defeito embrionário que a explica:",
+      "pares": [
+        {
+          "esquerda": "Lactente com saída de urina pelo umbigo",
+          "direita": "Úraco pérvio, remanescente da alantoide"
+        },
+        {
+          "esquerda": "Lactente com saída de conteúdo intestinal pelo umbigo",
+          "direita": "Ducto vitelino pérvio em toda a extensão (fístula onfaloentérica)"
+        },
+        {
+          "esquerda": "Criança com obstrução por alça torcida em torno de uma faixa entre o íleo e o umbigo",
+          "direita": "Cordão fibroso do ducto vitelino obliterado"
+        },
+        {
+          "esquerda": "Criança com sangramento retal indolor e captação de pertecnetato no quadrante inferior direito",
+          "direita": "Divertículo de Meckel com mucosa gástrica ectópica"
+        },
+        {
+          "esquerda": "Recém-nascido com alças num saco de âmnio e peritônio no qual se insere o cordão",
+          "direita": "Alças herniadas que não retornaram ao abdome (onfalocele)"
+        }
+      ],
+      "explicacao": "O úraco (alantoide intraembrionária) liga o ápice da bexiga ao umbigo e normalmente se oblitera; pérvio, drena urina. O ducto vitelino liga o ápice da alça intestinal primária ao saco vitelino: se persiste inteiro, o umbigo elimina conteúdo intestinal (fístula onfaloentérica); se fica como cordão fibroso entre o íleo e o umbigo, alças podem torcer-se em torno dele; se persiste só a parte proximal, forma o divertículo de Meckel, cuja mucosa gástrica ectópica ulcera o íleo e capta o pertecnetato. A onfalocele resulta da falha do retorno das alças herniadas fisiologicamente, que ficam no cordão, num saco de âmnio e peritônio.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "ducto-vitelino",
+        "uraco",
+        "diverticulo-de-meckel",
+        "onfalocele",
+        "integracao",
+        "avancado"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11 e 12; Sadler 14ª ed., cap. 7 e 15"
+    },
+    {
+      "id": "emb-15-q30",
+      "tipo": "multipla",
+      "contexto": "Dois adultos procuram o ambulatório. O primeiro tem sangramento vermelho-vivo indolor às evacuações e mamilos que prolapsam pelo ânus, originados acima da linha pectínea. O segundo tem dor anal intensa há dois dias e nódulo violáceo, endurecido e coberto por pele na margem anal, abaixo da linha pectínea.",
+      "enunciado": "Qual explicação embriológica justifica a diferença de dor entre os dois quadros?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Acima da linha pectínea a mucosa vem do proctodeu e é insensível; abaixo, vem do intestino posterior e tem inervação somática"
+        },
+        {
+          "id": "b",
+          "texto": "Acima da linha pectínea a mucosa vem do intestino posterior, de inervação visceral; abaixo, do proctodeu, inervado pelo pudendo"
+        },
+        {
+          "id": "c",
+          "texto": "As duas regiões vêm do endoderma da cloaca; a dor depende só da trombose, que ocorre apenas nas veias tributárias do sistema porta"
+        },
+        {
+          "id": "d",
+          "texto": "A linha pectínea separa os territórios da AMS e da AMI, que levam fibras sensitivas diferentes para a parede do canal anal"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: os dois terços superiores do canal anal derivam do intestino posterior (endoderma) e têm inervação visceral (autonômica), pouco sensível à dor; o terço inferior deriva do proctodeu (ectoderma) e é inervado pelo nervo retal inferior, ramo do pudendo, somático e sensível à dor. Por isso as hemorroidas internas — prolapsos da mucosa com o plexo venoso retal interno, acima da linha pectínea — sangram sem dor, enquanto a trombose do plexo venoso retal externo, sob a pele abaixo da linha pectínea (hemorroida externa trombosada), é muito dolorosa. A alternativa (a) inverte as origens. Em (c), as regiões têm origens diferentes, e o plexo externo, abaixo da linha pectínea, drena para o sistema da veia cava. Em (d), a parte acima da linha pectínea é irrigada pela artéria retal superior (da AMI) e a parte abaixo, pelas retais inferiores (da pudenda interna); a AMS não participa.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "canal-anal",
+        "linha-pectinea",
+        "proctodeu",
+        "hemorroidas",
+        "anatomia",
+        "caso-clinico",
+        "avancado"
+      ],
+      "referencia": "Moore 11ª ed., cap. 11; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (pelve e períneo: canal anal)"
     }
   ],
   "referencias": [
@@ -1144,6 +1332,14 @@
     {
       "obra": "Carlson BM. Embriologia Humana e Biologia do Desenvolvimento, 6ª ed., 2020",
       "capitulo": "15 — Sistemas digestório e respiratório e cavidades corporais"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "12 — Sistema urogenital (alantoide e úraco)"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Abdome (duodeno e artéria mesentérica superior); Pelve e períneo (canal anal, plexos venosos retais e hemorroidas)"
     }
   ],
   "notasDivergencia": [
@@ -1164,7 +1360,8 @@
     "Prevalências de estenose hipertrófica do piloro, doença de Hirschsprung, malformações anorretais, onfalocele, gastrosquise e atresia biliar não foram conferidas nas edições adotadas e foram omitidas.",
     "Momento da fusão dos brotos pancreáticos não foi fixado em dias, por variar entre as fontes consultadas.",
     "Janela da portoenterostomia de Kasai: o texto usa 'idealmente antes dos 60 dias de vida', marco da campanha Alerta Amarelo (SBP/Ministério da Saúde), e o limiar de 14 dias para investigar icterícia persistente; séries clínicas mostram melhores resultados quanto mais cedo, e o limite exato varia (revisão de pediatria, 2026-11-09; conferido por fontes secundárias).",
-    "Faixa de dias do evento 'brotos pancreáticos' (dias 26–35) corresponde à 4ª–5ª semana descrita nas obras; o dia exato do surgimento de cada broto não foi conferido."
+    "Faixa de dias do evento 'brotos pancreáticos' (dias 26–35) corresponde à 4ª–5ª semana descrita nas obras; o dia exato do surgimento de cada broto não foi conferido.",
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09, ainda sem revisão por agente): a relação da 3ª parte do duodeno com a AMS e a aorta e a distinção entre hemorroidas internas (indolores, acima da linha pectínea) e externas trombosadas (dolorosas, abaixo dela) seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). A explicação embriológica da passagem do ramo cranial por trás da AMS segue a descrição do retorno das alças em Moore (cap. 11)."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

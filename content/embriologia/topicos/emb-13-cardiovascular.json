@@ -765,6 +765,97 @@
       "bloom": "lembrar",
       "tags": ["tubo-cardiaco", "derivados"],
       "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q26",
+      "tipo": "multipla",
+      "contexto": "Ultrassonografia morfológica com 22 semanas de idade gestacional, em gestação de baixo risco. O corte de quatro câmaras parece normal. No corte da via de saída do ventrículo esquerdo, a raiz da aorta é ampla e cavalga uma comunicação interventricular situada logo abaixo dela; o tronco pulmonar, anterior, é estreito.",
+      "enunciado": "Qual evento da septação explica o achado, e por que o corte de quatro câmaras não o revelou?",
+      "alternativas": [
+        { "id": "a", "texto": "Falha de fusão dos coxins AV; o defeito do septo AV só se torna visível após o nascimento, quando a pressão pulmonar cai" },
+        { "id": "b", "texto": "Desvio anterossuperior do septo conotruncal; o defeito fica no trato de saída, acima do plano das valvas AV" },
+        { "id": "c", "texto": "Septo aorticopulmonar sem trajeto espiral; a aorta sai do ventrículo direito, num plano que o corte de quatro câmaras não mostra" },
+        { "id": "d", "texto": "Falha das cristas truncais e conais; o tronco arterial único só aparece no corte de três vasos e traqueia" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: aorta ampla cavalgando uma CIV subaórtica, com via de saída pulmonar estreita, é a tetralogia de Fallot, causada pelo desvio anterossuperior do septo conotruncal (infundibular), que divide o cone de forma desigual e deixa uma CIV por desalinhamento. O corte de quatro câmaras mostra átrios, ventrículos, valvas atrioventriculares e a parte do septo junto a elas, mas não as vias de saída; por isso pode parecer normal nos defeitos conotruncais, e as diretrizes de rastreamento cardíaco fetal incluem os cortes das vias de saída (ISUOG, 2023). O defeito do septo AV (a) altera justamente o corte de quatro câmaras e pode ser visto no pré-natal. Na transposição (c), a aorta sairia do ventrículo direito e o tronco pulmonar do esquerdo, em paralelo; aqui a aorta sai do ventrículo esquerdo (corte da via de saída esquerda), cavalgando a CIV, com tronco pulmonar estreito. No tronco arterial persistente (d) há um único vaso arterial, e aqui há dois.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["tetralogia-de-fallot", "septo-aorticopulmonar", "diagnostico-pre-natal", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13; ISUOG Practice Guidelines (updated): fetal cardiac screening, 2023"
+    },
+    {
+      "id": "emb-13-q27",
+      "tipo": "multipla",
+      "contexto": "Menina de 6 anos, sem síndrome genética conhecida, tem sopro cardíaco e cansaço leve aos esforços. O ecocardiograma mostra comunicação interatrial na parte mais baixa do septo atrial, imediatamente acima das valvas atrioventriculares, e fenda no folheto anterior da valva mitral, com insuficiência mitral. Há dois orifícios atrioventriculares separados, e o septo interventricular está íntegro.",
+      "enunciado": "Qual é o mecanismo embriológico desse defeito?",
+      "alternativas": [
+        { "id": "a", "texto": "Reabsorção excessiva do septum primum, que deixa curta ou fenestrada a valva do forame oval" },
+        { "id": "b", "texto": "Desvio anterossuperior do septo conotruncal, com comunicação por desalinhamento logo abaixo da aorta" },
+        { "id": "c", "texto": "Falha da aderência anatômica entre o septum primum e o septum secundum depois do nascimento" },
+        { "id": "d", "texto": "Coxins endocárdicos AV deficientes, sem fusão com o septum primum: o ostium primum fica aberto" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: os coxins endocárdicos dividem o canal AV, fecham o ostium primum ao se fundirem com o septum primum e participam das valvas AV. Quando são deficientes e o septum primum não se funde a eles, o ostium primum persiste — CIA tipo ostium primum, na parte baixa do septo, junto às valvas —, em geral com fenda do folheto anterior da mitral. Com dois orifícios AV e septo interventricular íntegro, é a forma parcial do defeito do septo AV; a forma total, com valva AV comum e CIV de via de entrada, é a típica da trissomia 21. A reabsorção excessiva do septum primum (a) causa a CIA ostium secundum, na região da fossa oval, sem fenda mitral. O desvio do septo conotruncal (b) é o mecanismo da tetralogia de Fallot, e o septo interventricular aqui está íntegro. A falha de aderência após o nascimento (c) produz o forame oval patente, também na região da fossa oval.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["defeito-septo-av", "coxins-endocardicos", "septacao-atrial", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q28",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo, bem nas primeiras 36 horas, evolui no 3º dia com palidez, pulsos fracos nos quatro membros, má perfusão, oligúria e acidose metabólica. O ecocardiograma mostra valva aórtica atrésica, ventrículo esquerdo e aorta ascendente muito hipoplásicos, fluxo retrógrado na aorta ascendente e canal arterial estreito, em fechamento.",
+      "enunciado": "Qual é a base do agravamento, e qual medida mantém a perfusão sistêmica até o tratamento cirúrgico?",
+      "alternativas": [
+        { "id": "a", "texto": "O canal arterial desvia sangue da aorta para os pulmões; um inibidor da ciclo-oxigenase deve fechá-lo" },
+        { "id": "b", "texto": "O forame oval fechou e isolou o átrio esquerdo; oxigênio a 100% reabre o forame e assim restaura a perfusão" },
+        { "id": "c", "texto": "A circulação sistêmica depende do fluxo do tronco pulmonar pelo canal; prostaglandina E1 o mantém aberto" },
+        { "id": "d", "texto": "A perfusão depende da comunicação interventricular; a digoxina reforça o ventrículo esquerdo hipoplásico" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: na atresia da valva aórtica, o ventrículo esquerdo e a aorta ascendente ficam hipoplásicos (síndrome do coração esquerdo hipoplásico). O sangue das veias pulmonares passa do átrio esquerdo ao direito pelo forame oval, o ventrículo direito bombeia todo o débito para o tronco pulmonar, e o canal arterial leva sangue à aorta descendente e, em sentido retrógrado, ao arco, à aorta ascendente e às coronárias. Ao nascer, o aumento do oxigênio e a queda das prostaglandinas contraem o canal, e a perfusão sistêmica cai: é uma cardiopatia dependente do canal, que é mantido aberto com prostaglandina E1 até a cirurgia. Aqui o fluxo pelo canal vai do tronco pulmonar para a aorta, e fechá-lo com inibidor da ciclo-oxigenase (a) agravaria o choque. O oxigênio (b) favorece a constrição do canal e não reabre o forame oval. Um ventrículo esquerdo que não tem saída para a aorta não sustenta a perfusão, com ou sem CIV, e a digoxina não resolve a obstrução (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["coracao-esquerdo-hipoplasico", "atresia-aortica", "ducto-arterioso", "cardiopatia-canal-dependente", "caso-clinico", "avancado"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q29",
+      "tipo": "ordenar",
+      "enunciado": "Na atresia tricúspide com comunicação interventricular e grandes artérias em posição normal, ordene o trajeto do sangue venoso sistêmico até chegar aos pulmões:",
+      "itens": [
+        { "id": "1", "texto": "Ventrículo esquerdo" },
+        { "id": "2", "texto": "Átrio direito" },
+        { "id": "3", "texto": "Comunicação interatrial (forame oval ou CIA)" },
+        { "id": "4", "texto": "Tronco pulmonar" },
+        { "id": "5", "texto": "Átrio esquerdo" },
+        { "id": "6", "texto": "Ventrículo direito hipoplásico, através da CIV" },
+        { "id": "7", "texto": "Veias cavas superior e inferior" }
+      ],
+      "ordemCorreta": ["7", "2", "3", "5", "1", "6", "4"],
+      "explicacao": "Veias cavas → átrio direito → comunicação interatrial → átrio esquerdo → ventrículo esquerdo → CIV → ventrículo direito hipoplásico → tronco pulmonar. Como o orifício atrioventricular direito está obliterado, todo o retorno venoso sistêmico precisa atravessar o septo atrial: a comunicação interatrial é obrigatória para a sobrevida. No átrio esquerdo esse sangue mistura-se ao das veias pulmonares (daí a cianose), e o ventrículo esquerdo, hipertrofiado, ejeta para a aorta e, pela CIV, para o ventrículo direito pequeno e o tronco pulmonar. Sem CIV, o fluxo pulmonar dependeria do canal arterial.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["atresia-tricuspide", "septacao-atrial", "cardiopatia-cianotica", "avancado"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-13-q30",
+      "tipo": "associar",
+      "enunciado": "Associe cada tipo de comunicação interventricular, descrito no ecocardiograma, ao mecanismo embriológico que o explica:",
+      "pares": [
+        { "esquerda": "CIV perimembranosa isolada, logo abaixo da valva aórtica", "direita": "Falha da parte membranosa, formada pelos coxins e pelas cristas conotruncais" },
+        { "esquerda": "CIV da via de entrada, com valva atrioventricular comum", "direita": "Falha de fusão dos coxins endocárdicos atrioventriculares" },
+        { "esquerda": "CIV de desalinhamento, com aorta cavalgante e estenose infundibular", "direita": "Desvio anterossuperior do septo conotruncal" },
+        { "esquerda": "CIV sob um vaso único que origina aorta, artérias pulmonares e coronárias", "direita": "Falha de formação e fusão das cristas truncais e conais" },
+        { "esquerda": "Várias CIVs pequenas no septo trabecular", "direita": "Defeitos da parte muscular do septo interventricular" }
+      ],
+      "explicacao": "A parte membranosa fecha o forame interventricular no fim da 7ª semana com tecido dos coxins e das cristas conotruncais; sua falha isolada dá a CIV perimembranosa. Os coxins AV também participam da porção de entrada do septo, e sua falha de fusão dá a CIV de via de entrada com valva AV comum (defeito do septo AV). Na tetralogia de Fallot, o desvio anterossuperior do septo conotruncal (infundibular) o desalinha do septo muscular e deixa a CIV sob a aorta cavalgante. No tronco arterial persistente, as cristas conotruncais não se formam ou não se fundem; como elas também participam do septo membranoso, há quase sempre CIV sob o vaso único. Defeitos da parte muscular, que cresce do assoalho dos ventrículos, podem surgir em qualquer ponto do septo e ser múltiplos.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["civ", "septo-interventricular", "septacao-ventricular", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
     }
   ],
   "referencias": [
@@ -787,6 +878,9 @@
     {
       "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
       "capitulo": "13 — Desenvolvimento da vasculatura"
+    },
+    {
+      "obra": "Carvalho JS, Axt-Fliedner R, Chaoui R et al. ISUOG Practice Guidelines (updated): fetal cardiac screening. Ultrasound Obstet Gynecol. 2023;61(6):788–803"
     }
   ],
   "notasDivergencia": [
@@ -804,7 +898,8 @@
     "Defeito do septo AV na trissomia 21: é descrito como a cardiopatia mais típica e muito frequente, mas sua posição como a mais comum varia entre populações; o texto usa 'uma das mais típicas e frequentes'.",
     "Frequência de coarctação na síndrome de Turner e de cardiopatias na trissomia 21 não foram conferidas nas edições adotadas e foram omitidas.",
     "Sistema venoso apresentado em nível essencial; detalhes da formação dos segmentos da veia cava inferior (subcardinais, supracardinais e anastomoses) e as variantes venosas não foram cobrados nas questões.",
-    "Condutas clínicas citadas nas explicações (prostaglandina E1, atriosseptostomia, inibidores da ciclo-oxigenase, cirurgia de troca arterial) seguem a prática pediátrica e cardiológica corrente, e não as obras de embriologia. Revisão de pediatria/cardiologia pediátrica (2026-11-09): condutas compatíveis com a prática atual; acrescentados o paracetamol como alternativa no canal arterial do prematuro, a indicação individualizada desse tratamento (muitos canais fecham espontaneamente) e a prostaglandina E1 na coarctação crítica."
+    "Condutas clínicas citadas nas explicações (prostaglandina E1, atriosseptostomia, inibidores da ciclo-oxigenase, cirurgia de troca arterial) seguem a prática pediátrica e cardiológica corrente, e não as obras de embriologia. Revisão de pediatria/cardiologia pediátrica (2026-11-09): condutas compatíveis com a prática atual; acrescentados o paracetamol como alternativa no canal arterial do prematuro, a indicação individualizada desse tratamento (muitos canais fecham espontaneamente) e a prostaglandina E1 na coarctação crítica.",
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09, ainda sem revisão por agente): (1) atresia tricúspide — Sadler a descreve associada a forame oval patente, CIV, ventrículo direito pequeno e hipertrofia do ventrículo esquerdo, mas em séries clínicas a CIV pode faltar (o fluxo pulmonar passa a depender do canal arterial); por isso a q29 especifica 'com CIV' e só a comunicação interatrial é dada como obrigatória (texto exato de Sadler não conferido); (2) a q26 apoia-se na diretriz ISUOG 2023 (cortes das vias de saída no rastreamento) para afirmar que o corte de quatro câmaras pode parecer normal nos defeitos conotruncais — o texto integral não pôde ser lido nesta sessão (site bloqueado na rede); (3) a prostaglandina E1 na atresia aórtica (q28) segue a regra já registrada para as cardiopatias dependentes do canal; (4) a CIV muscular múltipla (q30) segue Moore, cap. 13."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

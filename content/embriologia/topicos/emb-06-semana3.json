@@ -1275,6 +1275,194 @@
         "placa-precordal"
       ],
       "referencia": "Moore 11ª ed., cap. 4; Sadler 14ª ed., cap. 5"
+    },
+    {
+      "id": "emb-06-q30",
+      "tipo": "multipla",
+      "contexto": "Mulher com ciclos regulares de 28 dias e data da última menstruação confiável, concordante com a ultrassonografia de primeiro trimestre, foi exposta em uma única ocasião a um agente teratogênico em dose alta, quando estava com 5 semanas e 4 dias de idade gestacional.",
+      "enunciado": "Qual evento do desenvolvimento estava em curso naquele dia e qual defeito resulta de sua falha?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Gastrulação na linha média anterior do disco embrionário; sua falha causa holoprosencefalia"
+        },
+        {
+          "id": "b",
+          "texto": "Fechamento do neuroporo cranial; sua falha causa anencefalia"
+        },
+        {
+          "id": "c",
+          "texto": "Fusão dos processos palatinos na linha média; sua falha causa fenda palatina"
+        },
+        {
+          "id": "d",
+          "texto": "Apoptose do mesênquima entre os raios digitais; sua falha causa sindactilia"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A idade pós-fertilização é a idade gestacional menos cerca de 2 semanas: 5 semanas e 4 dias de idade gestacional correspondem a 3 semanas e 4 dias após a fertilização, isto é, ao dia 25 — dentro da faixa de fechamento do neuroporo cranial (dias 24 a 26), cuja falha produz anencefalia; por isso (b). A lesão da linha média anterior durante a gastrulação (a) ocorre no início da 3ª semana, por volta dos dias 15 a 17 (cerca de 4 semanas e meia de idade gestacional), antes dessa exposição. A fusão do palato secundário (c) ocorre entre a 7ª e a 10ª semana após a fertilização e a separação dos dedos (d), no fim da 8ª semana: ambas muito depois do dia 25. O exercício ilustra por que a janela de um teratógeno só pode ser julgada depois de converter a idade gestacional em idade de fertilização.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "neurulacao",
+        "periodo-critico",
+        "idade-gestacional",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4, 17 e 20; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q31",
+      "tipo": "multipla",
+      "contexto": "Em um experimento com embrião de galinha, um fragmento de notocorda é implantado ao lado do tubo neural, junto à sua porção dorsal. Dois dias depois, do lado do implante, surgem uma segunda placa do assoalho e neurônios motores em posição dorsal, onde normalmente não existiriam.",
+      "enunciado": "Qual mecanismo explica melhor esse resultado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A notocorda implantada reprograma as células da crista neural vizinhas, que passam a originar neurônios motores"
+        },
+        {
+          "id": "b",
+          "texto": "A notocorda implantada secreta BMP4, que impõe destinos ventrais ao neuroectoderma adjacente"
+        },
+        {
+          "id": "c",
+          "texto": "O ácido retinoico liberado pelo implante desloca a expressão dos genes HOX e muda a identidade do segmento"
+        },
+        {
+          "id": "d",
+          "texto": "O SHH secretado pela notocorda implantada impõe destinos ventrais ao neuroectoderma vizinho"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A notocorda é a fonte de SHH que ventraliza o tubo neural: o gradiente induz a placa do assoalho e, acima dela, os neurônios motores. Uma notocorda em posição ectópica cria um segundo centro de SHH e, com ele, um segundo polo ventral — daí (d). A alternativa (b) inverte os sinais: o BMP4 vem do ectoderma dorsal e da placa do teto e dorsaliza o tubo neural, em gradiente oposto ao do SHH. A (c) troca de eixo: ácido retinoico e genes HOX padronizam o eixo craniocaudal e não produziriam placa do assoalho ectópica. A (a) atribui à crista neural uma competência que ela não tem: os neurônios motores derivam do neuroectoderma do tubo neural, enquanto a crista origina gânglios sensitivos e autônomos, células de Schwann e melanócitos. O experimento é de modelo animal (ver incertezas).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "notocorda",
+        "inducao",
+        "SHH",
+        "cenario-experimental"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 5, 6 e 18; Moore 11ª ed., cap. 4"
+    },
+    {
+      "id": "emb-06-q32",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo eliminou mecônio apenas após 60 horas de vida e evoluiu com distensão abdominal e vômitos. Ao toque retal houve saída explosiva de gases e fezes. A biópsia retal mostra ausência de células ganglionares nos plexos submucoso e mioentérico do segmento distal.",
+      "enunciado": "Qual falha do desenvolvimento explica o quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Falha da colonização craniocaudal do intestino distal pelos precursores derivados da crista neural"
+        },
+        {
+          "id": "b",
+          "texto": "Falha da recanalização da luz intestinal depois da fase sólida de proliferação do epitélio duodenal"
+        },
+        {
+          "id": "c",
+          "texto": "Persistência da porção proximal do ducto vitelino junto à borda antimesentérica do íleo terminal"
+        },
+        {
+          "id": "d",
+          "texto": "Falha do retorno das alças do intestino médio à cavidade abdominal no fim do primeiro trimestre"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os gânglios entéricos derivam da crista neural (principalmente vagal), que coloniza o intestino em sentido craniocaudal; quando a colonização para antes de alcançar o segmento distal, o reto fica agangliônico, contraído e obstrutivo — a doença de Hirschsprung, descrita em (a). A (b) corresponde ao mecanismo das atresias e estenoses duodenais, que cursam com vômitos nas primeiras horas e 'dupla bolha', e não com aganglionose. A (c) descreve o divertículo ileal (de Meckel), em geral assintomático ou com sangramento, em intestino com inervação normal. A (d) descreve a onfalocele, defeito visível da parede abdominal, ausente neste recém-nascido. A questão liga os derivados da crista neural da 3ª semana a um quadro cirúrgico neonatal.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "crista-neural",
+        "intestino",
+        "caso-clinico"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4 e 11; Sadler 14ª ed., cap. 6"
+    },
+    {
+      "id": "emb-06-q33",
+      "tipo": "associar",
+      "enunciado": "Associe cada quadro clínico ao evento da gastrulação ou da neurulação cuja falha o explica:",
+      "pares": [
+        {
+          "esquerda": "Situs inversus totalis na discinesia ciliar primária",
+          "direita": "Cílios imóveis no nó primitivo, que não geram o fluxo iniciador da cascata NODAL/LEFTY2/PITX2"
+        },
+        {
+          "esquerda": "Sirenomelia (disgenesia caudal)",
+          "direita": "Mesoderma insuficiente na região mais caudal do embrião durante a gastrulação"
+        },
+        {
+          "esquerda": "Teratoma sacrococcígeo",
+          "direita": "Persistência de restos pluripotentes da linha primitiva"
+        },
+        {
+          "esquerda": "Cordoma da base do crânio",
+          "direita": "Persistência de remanescentes da notocorda"
+        },
+        {
+          "esquerda": "Mielomeningocele lombossacra",
+          "direita": "Falha de fechamento do neuroporo caudal"
+        }
+      ],
+      "explicacao": "Os cinco quadros têm origem em etapas diferentes de um mesmo intervalo. A lateralidade depende do fluxo gerado pelos cílios do nó primitivo, que ativa NODAL e LEFTY2 à esquerda e, por eles, PITX2; cílios imóveis tornam a lateralidade aleatória. A sirenomelia resulta de mesoderma caudal insuficiente formado na gastrulação. O teratoma sacrococcígeo vem de restos pluripotentes da linha primitiva, e por isso contém tecidos das três camadas; o cordoma vem de remanescentes de uma única linhagem, a notocorda. A mielomeningocele é falha de fechamento do neuroporo caudal, já na 4ª semana — distinção que importa diante de uma massa sacrococcígea ao exame pré-natal.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "gastrulacao",
+        "neurulacao",
+        "correlacao-clinica"
+      ],
+      "referencia": "Moore 11ª ed., cap. 4 e 17; Sadler 14ª ed., cap. 5 e 6"
+    },
+    {
+      "id": "emb-06-q34",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas pelas quais uma célula do epiblasto se torna um melanócito da pele:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "A célula migra pelo mesênquima até a epiderme em formação"
+        },
+        {
+          "id": "2",
+          "texto": "A célula permanece na superfície do disco embrionário e compõe o ectoderma"
+        },
+        {
+          "id": "3",
+          "texto": "A célula se diferencia em melanócito e passa a produzir melanina"
+        },
+        {
+          "id": "4",
+          "texto": "O ectoderma situado sobre a notocorda é induzido a formar a placa neural, pela inibição de BMP4"
+        },
+        {
+          "id": "5",
+          "texto": "Na borda da prega neural, a célula sofre transição epitélio-mesênquima e torna-se célula da crista neural"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Só as células do epiblasto que não ingressam pela linha primitiva permanecem na superfície e formam o ectoderma (2). A notocorda e o mesoderma adjacente induzem nele a placa neural, pela inibição de BMP4 (4). Nas bordas das pregas neurais, essas células sofrem transição epitélio-mesênquima e constituem a crista neural (5), que migra extensamente pelo embrião (1) e, na pele, se diferencia em melanócitos (3). O percurso explica por que o melanócito é derivado ectodérmico, mas não do ectoderma superficial que forma a epiderme — e por que o epitélio pigmentar da retina, de origem neuroectodérmica, não segue essa rota.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "crista-neural",
+        "melanocitos",
+        "camadas-germinativas"
+      ],
+      "referencia": "Sadler 14ª ed., cap. 6; Moore 11ª ed., cap. 4"
     }
   ],
   "referencias": [
@@ -1305,6 +1493,14 @@
     {
       "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
       "capitulo": "3 — Terceira semana: tornando-se trilaminar e estabelecendo os eixos do corpo"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "11 — Sistema digestório (doença de Hirschsprung)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "20 — Defeitos congênitos humanos (períodos críticos)"
     }
   ],
   "notasDivergencia": [
@@ -1320,7 +1516,8 @@
   "incertezas": [
     "Incidência do teratoma sacrococcígeo: o valor numérico não foi conferido nas edições adotadas e foi omitido; mantido apenas 'tumor congênito mais comum do recém-nascido, mais frequente no sexo feminino'.",
     "Origem das células C (parafoliculares) da tireoide: classicamente atribuída à crista neural, mas há evidências recentes de origem endodérmica; por isso não foi usada nas questões sobre derivados da crista neural.",
-    "O papel dos cílios do nó na lateralidade foi demonstrado sobretudo em camundongos; a extrapolação para o ser humano apoia-se na associação com discinesia ciliar primária."
+    "O papel dos cílios do nó na lateralidade foi demonstrado sobretudo em camundongos; a extrapolação para o ser humano apoia-se na associação com discinesia ciliar primária.",
+    "Os experimentos de implante de notocorda citados em emb-06-q31 provêm de modelos animais (anfíbios e aves); a extrapolação ao ser humano é indireta, como a dos cílios do nó primitivo na lateralidade."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",

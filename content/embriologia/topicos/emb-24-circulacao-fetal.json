@@ -1,0 +1,720 @@
+{
+  "id": "emb-24-circulacao-fetal",
+  "disciplina": "embriologia",
+  "ordem": 24,
+  "titulo": "Circulação fetal e transição neonatal",
+  "subtitulo": "Desvios fetais, mudanças ao nascer, remanescentes e as condições clínicas que dependem deles",
+  "periodo": {
+    "diaInicio": 35,
+    "diaFim": 266,
+    "carnegie": []
+  },
+  "objetivos": [
+    "Descrever o trajeto do sangue fetal da veia umbilical às artérias umbilicais, identificando os três desvios e as correntes preferenciais.",
+    "Explicar como as resistências placentária e pulmonar determinam o sentido do fluxo no forame oval e no canal arterial.",
+    "Explicar as mudanças circulatórias ao nascer e os mecanismos do fechamento funcional e anatômico do forame oval, do canal arterial e do ducto venoso.",
+    "Relacionar cada estrutura da circulação fetal ao seu remanescente no adulto.",
+    "Aplicar a fisiologia da transição ao clampeamento do cordão, ao canal arterial do prematuro, às cardiopatias canal-dependentes, à hipertensão pulmonar persistente do recém-nascido e ao teste do coraçãozinho.",
+    "Explicar o forame oval patente e a embolia paradoxal no adulto."
+  ],
+  "resumo": "**Por que há desvios.** No feto, a troca gasosa ocorre na placenta. Os pulmões, cheios de líquido e com arteríolas contraídas pela baixa PO₂, têm **resistência vascular pulmonar alta**; a placenta é um leito de **baixa resistência** que recebe grande parte do débito cardíaco. Três desvios — **ducto venoso**, **forame oval** e **ducto (canal) arterioso** — fazem a maior parte do sangue contornar o fígado e os pulmões, e os dois ventrículos trabalham em paralelo.\n\n**Trajeto.**\n1. A **veia umbilical** traz da placenta o sangue mais oxigenado do feto (Sadler cita saturação em torno de 80%).\n2. No fígado, parte desse sangue segue pelo **ducto venoso** direto à **veia cava inferior**; o restante passa pelos sinusoides hepáticos, com o sangue portal, e chega à cava pelas veias hepáticas.\n3. A corrente rápida e mais oxigenada do ducto venoso mistura-se pouco ao sangue que vem da parte inferior do corpo. No átrio direito, a borda inferior do septum secundum, a **crista dividens**, dirige-a preferencialmente pelo **forame oval** ao **átrio esquerdo**, onde se soma ao pequeno retorno das veias pulmonares.\n4. Do **ventrículo esquerdo**, esse sangue sai pela **aorta ascendente** e irriga coração, cabeça e membros superiores.\n5. O sangue pouco oxigenado da **veia cava superior** e do seio coronário, com parte do sangue da cava inferior, passa ao **ventrículo direito** e ao **tronco pulmonar**. Como a resistência pulmonar é alta, só uma pequena fração chega aos pulmões; a maior parte segue pelo **canal arterial** à **aorta descendente**, distal à subclávia esquerda. Por isso o sangue pós-ductal é menos oxigenado que o da aorta ascendente.\n6. Pelas **artérias umbilicais**, ramos das ilíacas internas, o sangue volta à placenta.\n\nO fluxo pelo forame oval (direita → esquerda) e pelo canal (tronco pulmonar → aorta) segue os gradientes criados por essas resistências. O canal é mantido aberto pela **baixa PO₂** e pela **prostaglandina E2**, produzida pela placenta e pela parede do próprio canal e pouco metabolizada nos pulmões, que recebem pouco fluxo.\n\n**Ao nascer.** Dois eventos mudam a circulação em minutos:\n- **Aeração pulmonar**: a expansão alveolar, o aumento da PO₂ e vasodilatadores como o óxido nítrico fazem a **resistência pulmonar cair** abruptamente; o fluxo pulmonar aumenta muito, e o retorno venoso eleva a pressão no átrio esquerdo. A resistência continua a cair nas semanas seguintes, com o remodelamento das arteríolas.\n- **Perda da placenta**: as artérias umbilicais contraem-se e o cordão é clampeado; a resistência sistêmica sobe, e cessa o retorno umbilical ao átrio direito, cuja pressão cai.\n\nConsequências:\n- **Forame oval**: com pressão maior no átrio esquerdo, o septum primum é apertado contra o septum secundum — **fechamento funcional**, reversível nos primeiros dias. A fusão anatômica é gradual e forma a **fossa oval**: o assoalho vem do septum primum, e o limbo, do septum secundum.\n- **Canal arterial**: com a resistência pulmonar abaixo da sistêmica, o fluxo inverte-se (aorta → pulmonar) até o fechamento. O aumento da PO₂ e a queda da PGE2 contraem sua parede: **fechamento funcional** em horas a poucos dias no recém-nascido a termo; a obliteração anatômica leva semanas a meses e forma o **ligamento arterial**.\n- **Ducto venoso**: sem fluxo umbilical, fecha-se em dias a semanas (mais tarde no prematuro) e forma o **ligamento venoso**.\n- **Vasos umbilicais**: as artérias contraem-se em minutos, mas a veia continua aberta, o que permite a **transfusão placentária**. Remanescentes: **ligamento redondo do fígado** (veia) e **ligamentos umbilicais mediais** (partes distais das artérias; as proximais persistem como artérias vesicais superiores).\n\n**Clampeamento tardio.** A OMS recomenda clampear o cordão não antes de 1 minuto após o nascimento nos recém-nascidos que não precisam de reanimação. A SBP e a FEBRASGO (2022) recomendam, com boa vitalidade, pelo menos 60 segundos a partir de 34 semanas de idade gestacional e pelo menos 30 segundos abaixo de 34 semanas. No termo, aumenta as reservas de ferro; no prematuro, reduz transfusões e mortalidade.\n\n**Correlações.**\n- **Canal arterial no prematuro**: a parede imatura responde menos ao oxigênio e mais às prostaglandinas; o shunt aorta → pulmonar causa hiperfluxo pulmonar. Muitos fecham espontaneamente; o tratamento é individualizado.\n- **Cardiopatias canal-dependentes**: o fluxo pulmonar (atresia pulmonar), o sistêmico (coração esquerdo hipoplásico, coarctação crítica, interrupção do arco) ou a mistura (transposição) dependem do canal; quando ele se fecha, surgem cianose grave ou choque. A **prostaglandina E1** mantém ou reabre o canal.\n- **Hipertensão pulmonar persistente do recém-nascido**: a resistência pulmonar não cai, e persiste shunt direita → esquerda pelo forame e pelo canal, com saturação pré-ductal maior que a pós-ductal.\n- **Teste do coraçãozinho**: oximetria no **membro superior direito** (pré-ductal) e em um **membro inferior** (pós-ductal), entre 24 e 48 horas de vida; normal com saturação ≥ 95% nos dois e diferença ≤ 3% (SBP, 2022). Não detecta todas as cardiopatias críticas.\n- **Forame oval patente**: em cerca de um quinto a um quarto dos adultos, a fusão não se completa; se a pressão no átrio direito sobe (Valsalva), um trombo venoso pode passar ao átrio esquerdo (**embolia paradoxal**).",
+  "pontosChave": [
+    "No feto, a placenta é um leito de baixa resistência e os pulmões, de alta; ducto venoso, forame oval e canal arterial desviam o sangue do fígado e dos pulmões.",
+    "A veia umbilical traz o sangue mais oxigenado; parte dele passa pelo ducto venoso direto à veia cava inferior.",
+    "A crista dividens dirige preferencialmente a corrente mais oxigenada da cava inferior pelo forame oval ao átrio esquerdo, ao ventrículo esquerdo e à aorta ascendente.",
+    "O sangue da cava superior vai ao ventrículo direito e ao tronco pulmonar; a maior parte segue pelo canal arterial à aorta descendente, que por isso é menos oxigenada que a ascendente.",
+    "No feto, a baixa PO₂ e a prostaglandina E2 mantêm o canal arterial aberto.",
+    "Ao nascer, a aeração reduz a resistência pulmonar e a perda da placenta reduz o retorno ao átrio direito: a pressão no átrio esquerdo supera a do direito e fecha funcionalmente o forame oval.",
+    "O aumento da PO₂ e a queda da PGE2 contraem o canal arterial em horas a dias; a obliteração anatômica forma o ligamento arterial.",
+    "Remanescentes: ligamento redondo do fígado (veia umbilical), ligamento venoso, fossa oval, ligamento arterial e ligamentos umbilicais mediais.",
+    "O clampeamento tardio (OMS: não antes de 1 minuto; SBP/FEBRASGO: ≥ 60 s a partir de 34 semanas com boa vitalidade) permite a transfusão placentária.",
+    "A prostaglandina E1 mantém o canal aberto nas cardiopatias canal-dependentes; inibidores da ciclo-oxigenase e o paracetamol favorecem seu fechamento no prematuro.",
+    "Na hipertensão pulmonar persistente do recém-nascido e nas obstruções críticas do arco aórtico com shunt pelo canal, a saturação pré-ductal (membro superior direito) supera a pós-ductal (membro inferior), base do teste do coraçãozinho.",
+    "O forame oval patente, presente em cerca de um quinto a um quarto dos adultos, permite embolia paradoxal quando a pressão no átrio direito sobe."
+  ],
+  "estruturas": [
+    {
+      "id": "veias-umbilicais",
+      "nome": "Veia umbilical",
+      "sinonimos": ["veia umbilical esquerda"],
+      "definicao": "Veia única do cordão na vida fetal, que traz da placenta o sangue mais oxigenado do feto e chega ao fígado pela borda livre do ligamento falciforme.",
+      "origem": "Veia umbilical esquerda; a direita regride no período embrionário.",
+      "destino": "Após o nascimento, oblitera-se e forma o ligamento redondo do fígado."
+    },
+    {
+      "id": "ducto-venoso",
+      "nome": "Ducto venoso",
+      "sinonimos": [],
+      "definicao": "Vaso fetal intra-hepático que liga a veia umbilical à veia cava inferior e desvia parte do sangue placentário dos sinusoides hepáticos.",
+      "destino": "Fecha-se em dias a semanas após o nascimento e forma o ligamento venoso."
+    },
+    {
+      "id": "crista-dividens",
+      "nome": "Crista dividens",
+      "sinonimos": [],
+      "definicao": "Borda inferior do septum secundum, voltada para a desembocadura da veia cava inferior, que divide o sangue que chega por ela e dirige preferencialmente a corrente mais oxigenada ao forame oval.",
+      "destino": "Faz parte do limbo da fossa oval no adulto."
+    },
+    {
+      "id": "forame-oval",
+      "nome": "Forame oval",
+      "sinonimos": [],
+      "definicao": "Abertura no septum secundum, coberta à esquerda pelo septum primum, que funciona como valva unidirecional (direita → esquerda) no feto.",
+      "destino": "Fechamento funcional ao nascer; a fusão anatômica forma a fossa oval; se a fusão não se completa, persiste como forame oval patente."
+    },
+    {
+      "id": "ducto-arterioso",
+      "nome": "Ducto arterioso",
+      "sinonimos": ["canal arterial"],
+      "definicao": "Vaso fetal que leva sangue do tronco pulmonar à aorta descendente, distal à subclávia esquerda, desviando-o dos pulmões.",
+      "origem": "Parte distal da artéria do 6º arco esquerdo.",
+      "destino": "Fechamento funcional em horas a poucos dias no recém-nascido a termo; obliteração anatômica em semanas a meses, formando o ligamento arterial."
+    },
+    {
+      "id": "arterias-umbilicais",
+      "nome": "Artérias umbilicais",
+      "sinonimos": [],
+      "definicao": "Par de artérias, ramos das ilíacas internas no feto, que levam sangue pouco oxigenado à placenta.",
+      "destino": "Contraem-se minutos após o nascimento; as partes proximais persistem como artérias vesicais superiores, e as distais formam os ligamentos umbilicais mediais."
+    },
+    {
+      "id": "cordao-umbilical",
+      "nome": "Cordão umbilical",
+      "sinonimos": ["funículo umbilical"],
+      "definicao": "Estrutura que une o feto à placenta, com duas artérias e uma veia umbilicais envolvidas por geleia de Wharton.",
+      "destino": "Clampeado ao nascer; o coto mumifica e cai nos primeiros dias a semanas de vida."
+    },
+    {
+      "id": "ligamento-redondo-figado",
+      "nome": "Ligamento redondo do fígado",
+      "sinonimos": ["ligamentum teres hepatis"],
+      "definicao": "Cordão fibroso na borda livre do ligamento falciforme, do umbigo ao fígado.",
+      "origem": "Veia umbilical (esquerda) obliterada."
+    },
+    {
+      "id": "ligamento-venoso",
+      "nome": "Ligamento venoso",
+      "sinonimos": [],
+      "definicao": "Cordão fibroso na fissura da face visceral do fígado, entre o lobo caudado e o lobo esquerdo.",
+      "origem": "Ducto venoso obliterado."
+    },
+    {
+      "id": "fossa-oval",
+      "nome": "Fossa oval",
+      "sinonimos": [],
+      "definicao": "Depressão na face direita do septo interatrial, com assoalho fino e borda saliente (limbo).",
+      "origem": "Assoalho: septum primum; limbo: borda livre do septum secundum."
+    },
+    {
+      "id": "ligamento-arterial",
+      "nome": "Ligamento arterial",
+      "sinonimos": ["ligamentum arteriosum"],
+      "definicao": "Cordão fibroso entre a origem da artéria pulmonar esquerda e a face inferior do arco da aorta; o laríngeo recorrente esquerdo passa sob ele.",
+      "origem": "Ducto arterioso obliterado."
+    },
+    {
+      "id": "ligamentos-umbilicais-mediais",
+      "nome": "Ligamentos umbilicais mediais",
+      "sinonimos": [],
+      "definicao": "Cordões fibrosos pares que elevam as pregas umbilicais mediais da parede abdominal anterior.",
+      "origem": "Partes distais das artérias umbilicais obliteradas."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "e24-forame-oval-formado",
+      "descricao": "O septum secundum cresce e deixa o forame oval, coberto pelo septum primum (período embrionário)",
+      "ordem": 1
+    },
+    {
+      "id": "e24-ducto-arterioso-formado",
+      "descricao": "A parte distal da artéria do 6º arco esquerdo forma o ducto arterioso (período embrionário)",
+      "ordem": 1
+    },
+    {
+      "id": "e24-primeira-respiracao",
+      "descricao": "Primeiras respirações: aeração pulmonar e queda abrupta da resistência vascular pulmonar",
+      "ordem": 2
+    },
+    {
+      "id": "e24-fechamento-funcional-fo",
+      "descricao": "Fechamento funcional do forame oval: o septum primum é apertado contra o septum secundum",
+      "ordem": 3
+    },
+    {
+      "id": "e24-fechamento-funcional-canal",
+      "descricao": "Fechamento funcional do canal arterial por contração de sua parede (horas a poucos dias no recém-nascido a termo)",
+      "ordem": 3
+    },
+    {
+      "id": "e24-ligamento-arterial",
+      "descricao": "Obliteração anatômica do canal arterial, que forma o ligamento arterial",
+      "ordem": 4
+    },
+    {
+      "id": "e24-fossa-oval",
+      "descricao": "Fusão anatômica do septum primum com o septum secundum, formando a fossa oval",
+      "ordem": 4
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "clampeamento-tardio-cordao",
+      "titulo": "Clampeamento tardio do cordão umbilical",
+      "descricao": "A OMS recomenda clampear o cordão não antes de 1 minuto após o nascimento (idealmente entre 1 e 3 minutos) nos recém-nascidos que não precisam de reanimação. As recomendações conjuntas da SBP e da FEBRASGO (2022) indicam, no recém-nascido com boa vitalidade ao nascer (respira ou chora e tem bom tônus), clampeamento após pelo menos 60 segundos a partir de 34 semanas de idade gestacional e após pelo menos 30 segundos abaixo de 34 semanas. No termo, aumenta a hemoglobina neonatal e as reservas de ferro nos primeiros meses, com pequeno aumento da necessidade de fototerapia em alguns estudos; no prematuro, reduz a necessidade de transfusão e, em revisões sistemáticas, a mortalidade hospitalar. No recém-nascido sem boa vitalidade, a conduta segue as diretrizes de reanimação neonatal.",
+      "mecanismo": "Transfusão placentária: as artérias umbilicais contraem-se em minutos, mas a veia continua trazendo sangue da placenta. Estudos em cordeiros mostram ainda que, quando os pulmões são aerados antes do clampeamento, o retorno venoso pulmonar substitui o retorno umbilical como pré-carga do ventrículo esquerdo, evitando queda abrupta do débito cardíaco."
+    },
+    {
+      "id": "canal-arterial-prematuro",
+      "titulo": "Persistência do canal arterial no prematuro",
+      "descricao": "Frequente em prematuros extremos. Com a queda da resistência pulmonar, o shunt passa a ser da aorta para o tronco pulmonar: hiperfluxo pulmonar, piora respiratória, pulsos amplos, precórdio hiperdinâmico e roubo de fluxo diastólico sistêmico. Muitos canais fecham espontaneamente; o tratamento farmacológico (ibuprofeno, indometacina ou paracetamol) é individualizado e reservado ao canal hemodinamicamente significativo, e o fechamento cirúrgico ou por cateterismo, a casos selecionados.",
+      "mecanismo": "Parede ductal imatura, menos responsiva ao aumento da PO₂ e mais sensível às prostaglandinas; os inibidores da ciclo-oxigenase e o paracetamol reduzem a síntese de prostaglandinas."
+    },
+    {
+      "id": "cardiopatias-canal-dependentes",
+      "titulo": "Cardiopatias canal-dependentes e prostaglandina E1",
+      "descricao": "Lesões em que o fluxo pulmonar (atresia pulmonar, estenose pulmonar crítica), o fluxo sistêmico (síndrome do coração esquerdo hipoplásico, coarctação crítica, interrupção do arco aórtico) ou a mistura entre as circulações (transposição das grandes artérias) dependem do canal arterial. Quando o canal se fecha, nos primeiros dias, surgem cianose grave ou choque, muitas vezes após a alta da maternidade. A prostaglandina E1 (alprostadil) em infusão contínua mantém ou reabre o canal até o tratamento definitivo; exige monitorização de apneia.",
+      "mecanismo": "O canal arterial, derivado do 6º arco esquerdo, liga tronco pulmonar e aorta; sua contração fisiológica após o nascimento elimina a única via de fluxo pulmonar, sistêmico ou de mistura nessas lesões."
+    },
+    {
+      "id": "hipertensao-pulmonar-persistente-rn",
+      "titulo": "Hipertensão pulmonar persistente do recém-nascido",
+      "descricao": "Hipoxemia grave, desproporcional à doença pulmonar, em recém-nascido a termo ou próximo do termo, associada a aspiração de mecônio, sepse ou pneumonia, hérnia diafragmática e hipoplasia pulmonar, ou idiopática. A saturação pré-ductal (membro superior direito) é maior que a pós-ductal quando há shunt pelo canal; o ecocardiograma exclui cardiopatia estrutural e mostra o shunt direita → esquerda. Manejo: oxigenação e ventilação adequadas, surfactante quando há doença do parênquima, óxido nítrico inalatório (vasodilatador pulmonar seletivo) na hipoxemia grave e ECMO nos casos refratários (diretriz AHA/ATS de hipertensão pulmonar pediátrica, 2015).",
+      "mecanismo": "A resistência vascular pulmonar não cai ao nascer (vasoconstrição persistente, remodelamento ou hipoplasia vascular): persiste a fisiologia fetal, com shunt da direita para a esquerda pelo forame oval e pelo canal arterial."
+    },
+    {
+      "id": "teste-do-coracaozinho",
+      "titulo": "Triagem neonatal de cardiopatia congênita crítica (teste do coraçãozinho)",
+      "descricao": "Oximetria de pulso universal, incorporada à triagem neonatal do SUS pela Portaria SCTIE/MS nº 20/2014. Mede-se a saturação no membro superior direito (pré-ductal) e em um dos membros inferiores (pós-ductal), entre 24 e 48 horas de vida, antes da alta, em recém-nascidos aparentemente saudáveis (a atualização da SBP de 2022 cita 35 semanas de idade gestacional ou mais; o protocolo de 2014, acima de 34 semanas). Pela atualização da SBP: normal se a saturação for ≥ 95% nos dois locais com diferença ≤ 3%; valores de 90% a 94% ou diferença ≥ 4% exigem repetição após 1 hora (até duas vezes); saturação ≤ 89% indica avaliação urgente com ecocardiograma. O teste não detecta todas as cardiopatias críticas: lesões obstrutivas esquerdas, como a coarctação, podem passar, e o exame físico (pulsos femorais) continua essencial.",
+      "mecanismo": "A subclávia direita nasce do tronco braquiocefálico, antes da inserção do canal; os membros inferiores recebem sangue da aorta distal ao canal, que pode conter sangue pouco oxigenado vindo do tronco pulmonar."
+    },
+    {
+      "id": "forame-oval-patente-embolia",
+      "titulo": "Forame oval patente e embolia paradoxal",
+      "descricao": "Presente em cerca de um quinto a um quarto dos adultos, em geral sem consequência. Quando a pressão no átrio direito supera a do esquerdo (manobra de Valsalva, tosse, esforço), um trombo venoso pode passar ao átrio esquerdo e causar AVC isquêmico ou embolia sistêmica; associa-se também à doença descompressiva em mergulhadores. Diagnóstico por ecocardiograma (de preferência transesofágico) ou Doppler transcraniano com solução salina agitada (microbolhas). Em pacientes de 18 a 60 anos com AVC isquêmico não lacunar sem outra causa e forame oval patente de alto risco, o fechamento percutâneo com antiagregação prolongada é considerado razoável (diretriz AHA/ASA de prevenção secundária do AVC, 2021).",
+      "mecanismo": "Falta de fusão anatômica do septum primum com o septum secundum após o fechamento funcional do nascimento; a passagem em fenda fica fechada enquanto a pressão no átrio esquerdo é maior."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "emb-24-q01",
+      "tipo": "multipla",
+      "enunciado": "No feto, qual é a função do ducto venoso?",
+      "alternativas": [
+        { "id": "a", "texto": "Ligar a veia porta à veia cava superior, desviando o sangue intestinal do fígado" },
+        { "id": "b", "texto": "Levar parte do sangue umbilical à veia cava inferior, sem passar pelos sinusoides" },
+        { "id": "c", "texto": "Ligar a veia cava inferior ao átrio esquerdo, atravessando o septo interatrial" },
+        { "id": "d", "texto": "Levar o sangue do tronco pulmonar à aorta descendente, desviando os pulmões" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: o ducto venoso, no fígado, liga a veia umbilical à veia cava inferior e desvia parte do sangue placentário dos sinusoides hepáticos; o restante perfunde o fígado junto com o sangue portal. Não há ligação fisiológica entre a veia porta e a veia cava superior (a). A passagem da cava inferior ao átrio esquerdo (c) se faz pelo forame oval, e o desvio do tronco pulmonar para a aorta (d), pelo ducto (canal) arterioso.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["ducto-venoso", "circulacao-fetal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q02",
+      "tipo": "multipla",
+      "enunciado": "No feto, por que o sangue da aorta descendente, abaixo da inserção do canal arterial, é menos oxigenado que o da aorta ascendente?",
+      "alternativas": [
+        { "id": "a", "texto": "Porque o ducto venoso leva o sangue umbilical diretamente à aorta descendente" },
+        { "id": "b", "texto": "Porque o sangue da aorta ascendente passa antes pelos pulmões, onde é oxigenado" },
+        { "id": "c", "texto": "Porque o forame oval desvia para a aorta descendente o sangue da veia cava superior" },
+        { "id": "d", "texto": "Porque o canal acrescenta sangue do ventrículo direito, vindo sobretudo da cava superior" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: a aorta ascendente recebe do ventrículo esquerdo a corrente mais oxigenada, que cruzou o forame oval; seus ramos (coronárias, tronco braquiocefálico, carótida comum e subclávia esquerdas) saem antes da inserção do canal. Distalmente, o canal arterial acrescenta o sangue ejetado pelo ventrículo direito, formado sobretudo pelo retorno pouco oxigenado da veia cava superior e do seio coronário. O ducto venoso (a) termina na veia cava inferior, não na aorta. Os pulmões fetais (b) não oxigenam o sangue. O sangue da cava superior (c) vai preferencialmente ao ventrículo direito, não pelo forame oval.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal", "ducto-arterioso"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q03",
+      "tipo": "multipla",
+      "enunciado": "No feto, a maior parte do sangue do tronco pulmonar segue pelo canal arterial para a aorta porque:",
+      "alternativas": [
+        { "id": "a", "texto": "A resistência pulmonar é alta e a sistêmica, baixa, graças ao leito placentário" },
+        { "id": "b", "texto": "A pressão na aorta é maior que a do tronco pulmonar durante todo o ciclo" },
+        { "id": "c", "texto": "O canal arterial tem uma valva que se abre apenas no sentido da aorta" },
+        { "id": "d", "texto": "O forame oval desvia para os pulmões o sangue mais oxigenado da cava inferior" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: os pulmões fetais, cheios de líquido e com arteríolas contraídas pela baixa PO₂, oferecem alta resistência, enquanto a placenta é um leito de baixa resistência; por isso a pressão no tronco pulmonar iguala ou supera a da aorta, e o sangue segue pelo canal para a aorta descendente. Se a pressão aórtica fosse maior (b), o fluxo seria da aorta para o tronco pulmonar, como ocorre após o nascimento. O canal não tem valva (c): o sentido do fluxo depende só do gradiente de pressão. O forame oval (d) leva o sangue da cava inferior ao átrio esquerdo, não aos pulmões.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal", "resistencia-vascular-pulmonar"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q04",
+      "tipo": "multipla",
+      "enunciado": "Quais fatores mantêm o canal arterial aberto no feto?",
+      "alternativas": [
+        { "id": "a", "texto": "Alta PO₂ arterial e níveis elevados de bradicinina" },
+        { "id": "b", "texto": "Alta PO₂ arterial e baixos níveis de prostaglandina E2" },
+        { "id": "c", "texto": "Baixa PO₂ e prostaglandina E2 circulante e local" },
+        { "id": "d", "texto": "Baixa PO₂ e inibição da ciclo-oxigenase na parede" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: a baixa PO₂ fetal e a prostaglandina E2, produzida pela placenta e pela parede do próprio canal e pouco metabolizada nos pulmões (que recebem pouco fluxo), relaxam a musculatura lisa do canal. A alta PO₂ com bradicinina (a) e a alta PO₂ com pouca PGE2 (b) são justamente as condições do fechamento após o nascimento: o aumento da PO₂ é o principal estímulo de contração, e Sadler cita a bradicinina, liberada pelos pulmões na primeira insuflação, como mediadora do fechamento, e não da patência. A inibição da ciclo-oxigenase (d) reduz as prostaglandinas e favorece o fechamento — base do uso de ibuprofeno e indometacina no prematuro.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["ducto-arterioso", "prostaglandinas"],
+      "referencia": "Sadler 14ª ed., cap. 13; Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q05",
+      "tipo": "multipla",
+      "enunciado": "O fechamento funcional do forame oval logo após o nascimento resulta de:",
+      "alternativas": [
+        { "id": "a", "texto": "Contração do septum secundum, que é muscular e oclui o forame ativamente" },
+        { "id": "b", "texto": "Pressão maior no átrio esquerdo, que aperta o septum primum contra o secundum" },
+        { "id": "c", "texto": "Fusão imediata dos coxins endocárdicos com a borda livre do septum secundum" },
+        { "id": "d", "texto": "Aumento da pressão no átrio direito, causado pela queda da resistência pulmonar" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: com a aeração, o fluxo pulmonar e o retorno venoso ao átrio esquerdo aumentam; com a perda da placenta, o retorno ao átrio direito diminui. A pressão no átrio esquerdo passa a superar a do direito e aperta o septum primum (valva do forame) contra o septum secundum. O fechamento é funcional, por aposição; a fusão anatômica vem depois. O septum secundum não fecha o forame por contração (a). Os coxins endocárdicos (c) fecham o ostium primum, ainda no período embrionário. A pressão no átrio direito cai (d), em vez de subir; seu aumento, como no choro intenso dos primeiros dias, tende a reabrir o forame.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["forame-oval", "transicao-neonatal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q06",
+      "tipo": "multipla",
+      "contexto": "Lactente com comunicação interventricular perimembranosa grande, vista no ecocardiograma do 2º dia de vida, estava assintomático ao nascer. Com 6 semanas, apresenta taquipneia, sudorese às mamadas, baixo ganho de peso e hepatomegalia.",
+      "enunciado": "Por que os sinais de insuficiência cardíaca surgiram só após algumas semanas?",
+      "alternativas": [
+        { "id": "a", "texto": "Porque a resistência pulmonar aumentou após o nascimento, invertendo o shunt" },
+        { "id": "b", "texto": "Porque o fechamento anatômico do forame oval sobrecarregou o ventrículo esquerdo" },
+        { "id": "c", "texto": "Porque a comunicação interventricular aumentou de tamanho com o crescimento do coração" },
+        { "id": "d", "texto": "Porque a resistência pulmonar continuou caindo, e o shunt esquerda-direita aumentou" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: ao nascer, a resistência vascular pulmonar cai abruptamente, mas continua a cair nas semanas seguintes, com o remodelamento das arteríolas pulmonares. Enquanto ela é relativamente alta, limita o shunt pela CIV; à medida que cai, o fluxo da esquerda para a direita e o hiperfluxo pulmonar aumentam, e surgem os sinais de insuficiência cardíaca, tipicamente após algumas semanas de vida. A resistência pulmonar não sobe após o nascimento (a); sua elevação tardia, por doença vascular pulmonar, levaria à inversão do shunt (síndrome de Eisenmenger), não a este quadro. O fechamento do forame oval (b) não sobrecarrega o ventrículo esquerdo. A CIV não aumenta com o crescimento (c); defeitos perimembranosos podem até diminuir ou fechar.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["resistencia-vascular-pulmonar", "civ", "transicao-neonatal", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q07",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo, com líquido amniótico meconial, evolui com hipoxemia grave nas primeiras horas. A saturação de oxigênio é de 95% na mão direita e de 82% no pé. O ecocardiograma mostra coração estruturalmente normal, pressão pulmonar elevada e fluxo da direita para a esquerda pelo canal arterial e pelo forame oval.",
+      "enunciado": "O que explica a diferença de saturação entre a mão direita e o pé?",
+      "alternativas": [
+        { "id": "a", "texto": "O pé recebe sangue misturado ao do tronco pulmonar, que entra na aorta pelo canal" },
+        { "id": "b", "texto": "A mão direita recebe sangue da aorta distal ao canal, mais oxigenado no feto" },
+        { "id": "c", "texto": "O shunt da esquerda para a direita pelo canal reduz o fluxo aos membros inferiores" },
+        { "id": "d", "texto": "O forame oval leva sangue venoso diretamente às artérias dos membros inferiores" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: na hipertensão pulmonar persistente do recém-nascido, a resistência pulmonar não cai, e o sangue pouco oxigenado do tronco pulmonar passa pelo canal arterial para a aorta descendente (shunt da direita para a esquerda). A subclávia direita nasce do tronco braquiocefálico, antes da inserção do canal: a mão direita é pré-ductal e recebe sangue do ventrículo esquerdo; os membros inferiores são pós-ductais e recebem a mistura. A mão direita não é distal ao canal (b). O shunt descrito é da direita para a esquerda, não da esquerda para a direita (c). O shunt pelo forame oval (d) dessatura o sangue do átrio esquerdo e, portanto, toda a circulação sistêmica, igualmente antes e depois do canal; não cria diferença entre os membros.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["hipertensao-pulmonar-persistente", "pre-pos-ductal", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Abman et al., Circulation 2015 (diretriz AHA/ATS)"
+    },
+    {
+      "id": "emb-24-q08",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 39 semanas com hipertensão pulmonar persistente secundária a aspiração de mecônio continua com hipoxemia grave apesar de ventilação mecânica otimizada e surfactante. O ecocardiograma confirma coração estruturalmente normal, com shunt da direita para a esquerda pelo canal arterial e pelo forame oval.",
+      "enunciado": "Qual medida atua diretamente no mecanismo fisiopatológico e é recomendada nessa situação?",
+      "alternativas": [
+        { "id": "a", "texto": "Ibuprofeno intravenoso, para fechar o canal e interromper o shunt" },
+        { "id": "b", "texto": "Indometacina, para reduzir as prostaglandinas e a resistência pulmonar" },
+        { "id": "c", "texto": "Óxido nítrico inalatório, vasodilatador pulmonar seletivo" },
+        { "id": "d", "texto": "Restrição de oxigênio, para evitar o fechamento do canal arterial" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: o problema central é a falta da queda da resistência vascular pulmonar após o nascimento. O óxido nítrico inalatório chega aos alvéolos ventilados e relaxa seletivamente a vasculatura pulmonar, reduzindo o shunt da direita para a esquerda; está indicado no recém-nascido a termo ou próximo do termo com hipoxemia grave por hipertensão pulmonar persistente, e a ECMO fica para os casos refratários (diretriz AHA/ATS de hipertensão pulmonar pediátrica, 2015). Fechar o canal (a) não reduz a resistência pulmonar e pode sobrecarregar o ventrículo direito. A indometacina (b) não é vasodilatadora pulmonar; ao inibir a síntese de prostaglandinas, reduz inclusive as vasodilatadoras. O oxigênio é vasodilatador pulmonar, e a hipoxemia agrava a vasoconstrição (d).",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["hipertensao-pulmonar-persistente", "oxido-nitrico", "caso-clinico"],
+      "referencia": "Abman et al., Circulation 2015 (diretriz AHA/ATS); Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q09",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido a termo recebe alta com 36 horas de vida. No 3º dia, volta com palidez, taquipneia, pulsos fracos nos quatro membros, hepatomegalia e acidose metabólica. O ecocardiograma mostra ventrículo esquerdo e aorta ascendente hipoplásicos, valva aórtica atrésica e canal arterial de calibre muito reduzido.",
+      "enunciado": "Qual medida inicial é coerente com a fisiologia desse quadro?",
+      "alternativas": [
+        { "id": "a", "texto": "Oxigênio a 100%, para reduzir a resistência pulmonar e melhorar a perfusão" },
+        { "id": "b", "texto": "Prostaglandina E1 em infusão contínua, para reabrir e manter o canal arterial" },
+        { "id": "c", "texto": "Ibuprofeno, para completar o fechamento do canal e reduzir o hiperfluxo pulmonar" },
+        { "id": "d", "texto": "Atriosseptostomia por balão como medida única, sem intervir no canal arterial" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: na síndrome do coração esquerdo hipoplásico, o ventrículo direito sustenta as duas circulações, e o fluxo sistêmico — inclusive o retrógrado para a aorta ascendente e as coronárias — chega pelo canal arterial, do tronco pulmonar para a aorta. Quando o canal se fecha nos primeiros dias, surge choque; a prostaglandina E1 em infusão contínua reabre e mantém o canal até o tratamento definitivo, com monitorização de apneia. O oxigênio em alta concentração (a) reduz a resistência pulmonar e desvia ainda mais sangue para os pulmões, à custa da circulação sistêmica, além de favorecer a contração do canal. O ibuprofeno (c) fecharia o canal, com risco de morte. A atriosseptostomia (d) pode ser necessária quando o septo interatrial é restritivo, mas não substitui a manutenção do canal, da qual depende o débito sistêmico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["canal-dependente", "prostaglandina-e1", "coracao-esquerdo-hipoplasico", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q10",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 39 semanas, assintomático, faz o teste do coraçãozinho com 30 horas de vida: saturação de 97% no membro superior direito e de 90% no membro inferior.",
+      "enunciado": "Como interpretar o resultado e qual é a conduta?",
+      "alternativas": [
+        { "id": "a", "texto": "Normal, porque a saturação pré-ductal é ≥ 95%; alta hospitalar de rotina" },
+        { "id": "b", "texto": "Normal, porque diferenças entre membros são fisiológicas antes de 48 horas" },
+        { "id": "c", "texto": "Alterado por shunt da esquerda para a direita no forame; repetir no dia seguinte" },
+        { "id": "d", "texto": "Não normal (pós-ductal baixa); repetir em 1 hora e, se persistir, ecocardiograma" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: o teste mede a saturação no membro superior direito (pré-ductal) e em um membro inferior (pós-ductal), entre 24 e 48 horas de vida. Só é normal quando os dois valores são ≥ 95% e a diferença entre eles é pequena (≤ 3% na atualização da SBP de 2022). Aqui a saturação pós-ductal é de 90% e a diferença é de 7%: o resultado não é normal, e a orientação, tanto no protocolo incorporado ao SUS em 2014 quanto na atualização da SBP, é repetir a medida após 1 hora e, se a alteração persistir, indicar ecocardiograma antes da alta. A saturação pós-ductal menor sugere passagem de sangue pouco oxigenado do tronco pulmonar para a aorta pelo canal, como nas obstruções críticas do arco aórtico (coarctação, interrupção) e na hipertensão pulmonar persistente. A saturação normal só no membro superior (a) não basta. A diferença de 7% não é fisiológica (b). Um shunt da esquerda para a direita (c) não reduz a saturação arterial, e a repetição não deve esperar o dia seguinte.",
+      "dificuldade": 5,
+      "bloom": "aplicar",
+      "tags": ["teste-do-coracaozinho", "pre-pos-ductal", "triagem-neonatal", "caso-clinico"],
+      "referencia": "SBP, Manual de Orientação nº 4 (2022); Portaria SCTIE/MS nº 20/2014"
+    },
+    {
+      "id": "emb-24-q11",
+      "tipo": "multipla",
+      "enunciado": "No teste do coraçãozinho, por que se mede a saturação no membro superior direito e em um membro inferior?",
+      "alternativas": [
+        { "id": "a", "texto": "O membro superior direito é pré-ductal, e os inferiores são pós-ductais" },
+        { "id": "b", "texto": "O membro superior direito é pós-ductal, e os inferiores são pré-ductais" },
+        { "id": "c", "texto": "O membro superior esquerdo nunca recebe sangue da aorta pré-ductal" },
+        { "id": "d", "texto": "Os dois locais medem a perfusão periférica, sem relação com o canal" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: a subclávia direita nasce do tronco braquiocefálico, antes da inserção do canal arterial, e por isso o membro superior direito recebe sangue pré-ductal; os membros inferiores recebem sangue da aorta descendente, distal ao canal (pós-ductal). Comparar os dois revela a passagem de sangue pouco oxigenado do tronco pulmonar para a aorta pelo canal. A alternativa (b) inverte as posições. O membro superior esquerdo (c) é evitado porque a origem da subclávia esquerda fica perto da inserção do canal e sua saturação pode ser pré ou pós-ductal — não porque nunca seja pré-ductal. O teste avalia a oxigenação arterial antes e depois do canal, não a perfusão periférica genérica (d).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["teste-do-coracaozinho", "pre-pos-ductal", "arcos-aorticos"],
+      "referencia": "SBP, Manual de Orientação nº 4 (2022); Moore 11ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q12",
+      "tipo": "multipla",
+      "contexto": "Mulher de 38 anos, sem fatores de risco cardiovascular, tem AVC isquêmico logo após levantar uma mala pesada, no fim de uma viagem de avião de 12 horas. O ultrassom mostra trombose venosa profunda na panturrilha. No ecocardiograma com solução salina agitada, microbolhas surgem no átrio esquerdo logo após a manobra de Valsalva; não há fluxo contínuo entre os átrios ao Doppler em repouso.",
+      "enunciado": "Qual falha do desenvolvimento explica o mecanismo do AVC?",
+      "alternativas": [
+        { "id": "a", "texto": "Falha de fusão do septum primum com os coxins endocárdicos (ostium primum)" },
+        { "id": "b", "texto": "Septum secundum deficiente, com comunicação interatrial ampla e fluxo contínuo" },
+        { "id": "c", "texto": "Falta de fusão anatômica do septum primum ao secundum após o nascimento" },
+        { "id": "d", "texto": "Persistência do canal arterial, com shunt da artéria pulmonar para a aorta" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: após o fechamento funcional do forame oval, o septum primum deveria aderir ao septum secundum; quando essa fusão não se completa, persiste o forame oval patente, uma passagem em fenda que fica fechada enquanto a pressão no átrio esquerdo é maior. Na manobra de Valsalva (ou ao levantar peso), a pressão no átrio direito sobe transitoriamente, e um trombo venoso pode passar ao átrio esquerdo e à circulação sistêmica — embolia paradoxal. As microbolhas que surgem no átrio esquerdo após a Valsalva, sem fluxo contínuo em repouso, são típicas. O defeito tipo ostium primum (a) e a comunicação interatrial por septum secundum deficiente (b) são comunicações verdadeiras, com shunt contínuo visível ao Doppler. O canal arterial (d) desemboca na aorta descendente, distal às artérias que irrigam o encéfalo, e não explica a embolia cerebral.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["forame-oval-patente", "embolia-paradoxal", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13; Kleindorfer et al., Stroke 2021 (diretriz AHA/ASA)"
+    },
+    {
+      "id": "emb-24-q13",
+      "tipo": "multipla",
+      "enunciado": "No adulto, a fossa oval tem um assoalho fino e uma borda saliente (limbo). De onde derivam essas partes?",
+      "alternativas": [
+        { "id": "a", "texto": "Assoalho do septum secundum; limbo do septum primum" },
+        { "id": "b", "texto": "Assoalho dos coxins endocárdicos; limbo do septum primum" },
+        { "id": "c", "texto": "Assoalho do corno direito do seio venoso; limbo do septum secundum" },
+        { "id": "d", "texto": "Assoalho do septum primum; limbo do septum secundum" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: o septum primum, fino, funcionava como valva do forame oval e, fundido ao septum secundum após o nascimento, forma o assoalho da fossa oval; a borda livre do septum secundum, espessa e muscular, forma o limbo. A alternativa (a) inverte as origens. Os coxins endocárdicos (b) fecham o ostium primum e participam das valvas atrioventriculares e do septo membranoso, não do assoalho da fossa. O corno direito do seio venoso (c) forma a parte lisa do átrio direito (seio das veias cavas), não o assoalho da fossa oval.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["fossa-oval", "remanescentes-fetais", "septacao-atrial"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q14",
+      "tipo": "multipla",
+      "enunciado": "Qual é a principal base fisiológica do benefício do clampeamento tardio do cordão no recém-nascido a termo com boa vitalidade?",
+      "alternativas": [
+        { "id": "a", "texto": "A veia umbilical contrai-se antes das artérias, retendo sangue no recém-nascido" },
+        { "id": "b", "texto": "Transfusão placentária: a veia segue aberta enquanto as artérias se contraem" },
+        { "id": "c", "texto": "A placenta mantém a troca gasosa por horas, dispensando as primeiras respirações" },
+        { "id": "d", "texto": "O fluxo umbilical mantém o canal arterial aberto e evita hipertensão pulmonar" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: logo após o nascimento, as artérias umbilicais contraem-se em minutos, mas a veia umbilical continua levando sangue da placenta ao recém-nascido. Aguardar o clampeamento permite essa transfusão placentária, que aumenta o volume sanguíneo e as reservas de ferro nos primeiros meses; em alguns estudos houve pequeno aumento da necessidade de fototerapia. A alternativa (a) inverte a sequência: são as artérias que se contraem primeiro. A placenta não sustenta a troca gasosa por horas (c), e a respiração não deve ser adiada. O clampeamento tardio não visa manter o canal arterial aberto (d).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["clampeamento-do-cordao", "transicao-neonatal"],
+      "referencia": "Sadler 14ª ed., cap. 13; McDonald et al., Cochrane 2013; OMS 2014"
+    },
+    {
+      "id": "emb-24-q15",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido de 39 semanas nasce de parto vaginal, chora logo ao nascer e tem bom tônus muscular. Não há sangramento materno nem outra intercorrência.",
+      "enunciado": "Segundo a OMS e as recomendações da SBP e da FEBRASGO (2022), quando clampear o cordão umbilical?",
+      "alternativas": [
+        { "id": "a", "texto": "Após pelo menos 60 segundos, com o recém-nascido junto à mãe" },
+        { "id": "b", "texto": "Imediatamente, para reduzir o risco de icterícia e policitemia" },
+        { "id": "c", "texto": "Só depois da dequitação da placenta, para completar a transfusão" },
+        { "id": "d", "texto": "Entre 15 e 30 segundos, faixa indicada para o recém-nascido a termo" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: a OMS recomenda o clampeamento tardio, não antes de 1 minuto após o nascimento (idealmente entre 1 e 3 minutos), nos recém-nascidos que não precisam de reanimação; a SBP e a FEBRASGO (2022) recomendam, no recém-nascido com 34 semanas ou mais e boa vitalidade, clampear após pelo menos 60 segundos (e, abaixo de 34 semanas com boa vitalidade, após pelo menos 30 segundos). O clampeamento imediato (b) não é indicado para o recém-nascido vigoroso; o pequeno aumento da necessidade de fototerapia visto em alguns estudos não supera o benefício nas reservas de ferro. Aguardar a dequitação (c) não é recomendado. Intervalos de 15 a 30 segundos (d) são mais curtos que o recomendado para o recém-nascido a termo.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["clampeamento-do-cordao", "diretriz", "caso-clinico"],
+      "referencia": "OMS 2014 (clampeamento tardio do cordão); SBP/FEBRASGO 2022"
+    },
+    {
+      "id": "emb-24-q16",
+      "tipo": "multipla",
+      "contexto": "Prematuro de 27 semanas de idade gestacional, no 5º dia de vida, apresenta pulsos amplos, precórdio hiperdinâmico, sopro sistólico na borda esternal esquerda alta e piora do padrão respiratório. O ecocardiograma mostra canal arterial amplo.",
+      "enunciado": "Qual é o sentido do fluxo pelo canal e por que ele tende a persistir no prematuro?",
+      "alternativas": [
+        { "id": "a", "texto": "Do tronco pulmonar para a aorta; o prematuro tem resistência pulmonar mais alta que a sistêmica" },
+        { "id": "b", "texto": "Da aorta para o tronco pulmonar; a parede do canal do prematuro contrai-se mais ao oxigênio" },
+        { "id": "c", "texto": "Da aorta para o tronco pulmonar; o canal imaturo responde menos ao O₂ e mais às prostaglandinas" },
+        { "id": "d", "texto": "Do tronco pulmonar para a aorta; o oxigênio suplementar dilata o canal do prematuro" }
+      ],
+      "correta": "c",
+      "explicacao": "A alternativa (c) está correta: após o nascimento, a resistência pulmonar cai abaixo da sistêmica, e o fluxo pelo canal pérvio inverte-se em relação ao feto: passa da aorta para o tronco pulmonar (shunt da esquerda para a direita), com hiperfluxo pulmonar, roubo de fluxo diastólico sistêmico e pulsos amplos. No prematuro, a parede do canal é imatura: responde menos ao aumento da PO₂ e é mais sensível às prostaglandinas, e por isso o canal tende a permanecer aberto. Em (a) e (d), o sentido descrito é o fetal, que neste quadro só ocorreria com resistência pulmonar muito elevada; além disso, o oxigênio contrai, não dilata, o canal (d). Em (b), o sentido está correto, mas o canal do prematuro contrai-se menos, não mais, ao oxigênio. Muitos desses canais fecham espontaneamente; o tratamento (ibuprofeno, indometacina ou paracetamol) é individualizado conforme a repercussão hemodinâmica.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["persistencia-canal-arterial", "prematuridade", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 13; Hundscheid et al., N Engl J Med 2023"
+    },
+    {
+      "id": "emb-24-q17",
+      "tipo": "vf",
+      "enunciado": "No feto, o fluxo pelo forame oval ocorre do átrio esquerdo para o átrio direito.",
+      "correta": false,
+      "explicacao": "Falso. No feto, a pressão no átrio direito é maior, e o fluxo pelo forame oval vai da direita para a esquerda: a corrente mais oxigenada da veia cava inferior, dirigida pela crista dividens, passa ao átrio esquerdo. O septum primum funciona como valva unidirecional.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["forame-oval", "circulacao-fetal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q18",
+      "tipo": "vf",
+      "enunciado": "Após o nascimento, a resistência vascular pulmonar cai abruptamente com a aeração dos pulmões e continua a cair nas semanas seguintes.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A expansão alveolar, o aumento da PO₂ e vasodilatadores como o óxido nítrico reduzem bruscamente a resistência pulmonar ao nascer; depois, o remodelamento das arteríolas pulmonares mantém a queda gradual nas semanas seguintes. Isso explica por que o shunt de uma CIV grande aumenta ao longo das primeiras semanas.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["resistencia-vascular-pulmonar", "transicao-neonatal"],
+      "referencia": "Moore 11ª ed., cap. 13; Kiserud, Semin Fetal Neonatal Med 2005"
+    },
+    {
+      "id": "emb-24-q19",
+      "tipo": "vf",
+      "enunciado": "Nos primeiros dias de vida, o fechamento funcional do forame oval é reversível, e o choro intenso pode produzir shunt transitório da direita para a esquerda.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O fechamento inicial é só funcional, por aposição do septum primum ao septum secundum. Quando a pressão no átrio direito sobe transitoriamente, como no choro intenso, o forame pode reabrir e permitir shunt da direita para a esquerda — explicação dada por Sadler para episódios de cianose transitória do recém-nascido. A fusão anatômica é gradual.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["forame-oval", "transicao-neonatal"],
+      "referencia": "Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q20",
+      "tipo": "vf",
+      "enunciado": "A prostaglandina E1, usada para manter o canal arterial aberto nas cardiopatias canal-dependentes, pode causar apneia.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A prostaglandina E1 (alprostadil) relaxa a musculatura do canal e o mantém aberto, ou o reabre, até o tratamento definitivo; a apneia é um efeito adverso importante, que exige monitorização e preparo para suporte ventilatório. Febre, rubor cutâneo e hipotensão também ocorrem.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["prostaglandina-e1", "canal-dependente"],
+      "referencia": "Moore 11ª ed., cap. 13; prática de cardiologia pediátrica (ver incertezas)"
+    },
+    {
+      "id": "emb-24-q21",
+      "tipo": "vf",
+      "enunciado": "Um teste do coraçãozinho normal exclui todas as cardiopatias congênitas críticas, inclusive a coarctação da aorta.",
+      "correta": false,
+      "explicacao": "Falso. A oximetria detecta sobretudo cardiopatias com hipoxemia ou com shunt da direita para a esquerda pelo canal; pode ser normal em lesões obstrutivas do coração esquerdo, como a coarctação, quando não há shunt da direita para a esquerda pelo canal no momento do teste. Por isso o exame físico (pulsos femorais, sopros, perfusão) continua indispensável antes da alta e no seguimento.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["teste-do-coracaozinho", "coarctacao-aorta"],
+      "referencia": "SBP, Manual de Orientação nº 4 (2022)"
+    },
+    {
+      "id": "emb-24-q22",
+      "tipo": "vf",
+      "enunciado": "O ligamento umbilical mediano é o remanescente das artérias umbilicais.",
+      "correta": false,
+      "explicacao": "Falso. As partes distais das artérias umbilicais formam os ligamentos umbilicais mediais (pares), e as proximais persistem como artérias vesicais superiores. O ligamento umbilical mediano, ímpar, é o remanescente do úraco, porção intraembrionária do alantoide.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["remanescentes-fetais", "arterias-umbilicais"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o trajeto do sangue fetal que chega pela veia cava superior até voltar à placenta:",
+      "itens": [
+        { "id": "1", "texto": "Ventrículo direito" },
+        { "id": "2", "texto": "Veia cava superior" },
+        { "id": "3", "texto": "Canal arterial" },
+        { "id": "4", "texto": "Artéria umbilical" },
+        { "id": "5", "texto": "Tronco pulmonar" },
+        { "id": "6", "texto": "Átrio direito" },
+        { "id": "7", "texto": "Aorta descendente" }
+      ],
+      "ordemCorreta": ["2", "6", "1", "5", "3", "7", "4"],
+      "explicacao": "Veia cava superior → átrio direito → ventrículo direito → tronco pulmonar → canal arterial (a resistência pulmonar alta desvia a maior parte do sangue dos pulmões) → aorta descendente → artérias umbilicais, ramos das ilíacas internas → placenta.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["circulacao-fetal", "ducto-arterioso"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a cadeia de eventos que leva ao fechamento funcional do forame oval ao nascer:",
+      "itens": [
+        { "id": "1", "texto": "O septum primum é apertado contra o septum secundum" },
+        { "id": "2", "texto": "Aeração pulmonar nas primeiras respirações" },
+        { "id": "3", "texto": "A pressão no átrio esquerdo passa a superar a do direito" },
+        { "id": "4", "texto": "Queda da resistência vascular pulmonar e aumento do fluxo pulmonar" },
+        { "id": "5", "texto": "Aumento do retorno venoso pulmonar ao átrio esquerdo" }
+      ],
+      "ordemCorreta": ["2", "4", "5", "3", "1"],
+      "explicacao": "Aeração → queda da resistência pulmonar e aumento do fluxo → mais sangue volta pelas veias pulmonares ao átrio esquerdo → a pressão no átrio esquerdo supera a do direito (que também cai com a perda do retorno umbilical) → o septum primum é apertado contra o septum secundum: fechamento funcional do forame oval.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["forame-oval", "transicao-neonatal"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene, do sangue mais oxigenado para o menos oxigenado, estes locais da circulação fetal:",
+      "itens": [
+        { "id": "1", "texto": "Aorta descendente, abaixo do canal arterial" },
+        { "id": "2", "texto": "Veia umbilical" },
+        { "id": "3", "texto": "Veia cava superior" },
+        { "id": "4", "texto": "Aorta ascendente" }
+      ],
+      "ordemCorreta": ["2", "4", "1", "3"],
+      "explicacao": "A veia umbilical traz da placenta o sangue mais oxigenado do feto. A aorta ascendente recebe do ventrículo esquerdo a corrente que cruzou o forame oval, já misturada ao pequeno retorno pulmonar e a parte do sangue da cava inferior. A aorta descendente recebe, além disso, pelo canal arterial, o sangue do ventrículo direito, rico em retorno da cava superior, e por isso é menos oxigenada. A veia cava superior, que drena cabeça e membros superiores, tem o sangue menos oxigenado desses quatro locais. A ordem é qualitativa e consensual; os valores absolutos variam entre os estudos.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["circulacao-fetal", "oxigenacao"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13; Kiserud, Semin Fetal Neonatal Med 2005"
+    },
+    {
+      "id": "emb-24-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada remanescente da circulação fetal à sua localização no adulto:",
+      "pares": [
+        { "esquerda": "Ligamento redondo do fígado", "direita": "Borda livre do ligamento falciforme" },
+        { "esquerda": "Ligamento venoso", "direita": "Fissura da face visceral do fígado, entre o lobo caudado e o lobo esquerdo" },
+        { "esquerda": "Ligamento arterial", "direita": "Entre a origem da artéria pulmonar esquerda e a face inferior do arco da aorta" },
+        { "esquerda": "Ligamentos umbilicais mediais", "direita": "Pregas umbilicais mediais da parede abdominal anterior" },
+        { "esquerda": "Fossa oval", "direita": "Face direita do septo interatrial" }
+      ],
+      "explicacao": "A veia umbilical obliterada (ligamento redondo) segue na borda livre do ligamento falciforme; o ducto venoso (ligamento venoso) fica na fissura entre o lobo caudado e o lobo esquerdo; o ducto arterioso (ligamento arterial) une a artéria pulmonar esquerda ao arco da aorta, com o laríngeo recorrente esquerdo passando sob ele; as artérias umbilicais (ligamentos umbilicais mediais) elevam as pregas umbilicais mediais; o forame oval deixa a fossa oval no lado direito do septo interatrial.",
+      "dificuldade": 3,
+      "bloom": "lembrar",
+      "tags": ["remanescentes-fetais", "anatomia"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada condição neonatal à fisiologia do canal arterial que a caracteriza:",
+      "pares": [
+        { "esquerda": "Atresia pulmonar com septo interventricular íntegro", "direita": "Fluxo pulmonar dependente do canal, da aorta para o tronco pulmonar" },
+        { "esquerda": "Síndrome do coração esquerdo hipoplásico", "direita": "Fluxo sistêmico dependente do canal, do tronco pulmonar para a aorta" },
+        { "esquerda": "Transposição das grandes artérias", "direita": "Circulações em paralelo; a sobrevida depende da mistura pelo forame oval e pelo canal" },
+        { "esquerda": "Hipertensão pulmonar persistente do recém-nascido", "direita": "Coração normal, com shunt da direita para a esquerda pelo canal e pelo forame" },
+        { "esquerda": "Canal arterial do prematuro", "direita": "Shunt da esquerda para a direita, com hiperfluxo pulmonar e pulsos amplos" }
+      ],
+      "explicacao": "Na atresia pulmonar, o sangue só chega aos pulmões pela aorta, através do canal. No coração esquerdo hipoplásico, o ventrículo direito perfunde a circulação sistêmica pelo canal. Na transposição, as circulações em paralelo dependem da mistura. Na hipertensão pulmonar persistente, a fisiologia fetal persiste num coração estruturalmente normal. No prematuro, com a resistência pulmonar já baixa, o canal pérvio desvia sangue da aorta para os pulmões. A prostaglandina E1 está indicada nas três primeiras condições.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["canal-dependente", "hipertensao-pulmonar-persistente", "persistencia-canal-arterial"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    },
+    {
+      "id": "emb-24-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada fator ao seu efeito sobre o canal arterial:",
+      "pares": [
+        { "esquerda": "Aumento da PO₂ após as primeiras respirações", "direita": "Contração da musculatura lisa da parede do canal" },
+        { "esquerda": "Prostaglandina E2 da placenta e da parede do canal", "direita": "Manutenção do canal aberto durante a vida fetal" },
+        { "esquerda": "Ibuprofeno ou indometacina", "direita": "Inibição da ciclo-oxigenase, usada para fechar o canal do prematuro" },
+        { "esquerda": "Alprostadil (prostaglandina E1) intravenoso", "direita": "Reabertura do canal nas cardiopatias canal-dependentes" },
+        { "esquerda": "Perda da placenta e aumento do fluxo pulmonar", "direita": "Queda da PGE2 circulante, por menor produção e maior metabolização" }
+      ],
+      "explicacao": "No feto, a baixa PO₂ e a PGE2 (da placenta e do próprio canal) mantêm o canal aberto. Ao nascer, o aumento da PO₂ contrai sua parede, e a PGE2 cai porque a placenta deixa de produzi-la e os pulmões, agora bem perfundidos, a metabolizam. Os inibidores da ciclo-oxigenase reduzem as prostaglandinas e favorecem o fechamento no prematuro; a prostaglandina E1 exógena faz o oposto e mantém o canal aberto nas cardiopatias canal-dependentes.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["ducto-arterioso", "prostaglandinas", "farmacologia"],
+      "referencia": "Moore 11ª ed., cap. 13; Sadler 14ª ed., cap. 13"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "13 — Sistema cardiovascular (circulação fetal e neonatal)"
+    },
+    {
+      "obra": "Sadler. Langman Embriologia Médica, 14ª ed., 2021",
+      "capitulo": "13 — Sistema cardiovascular (circulação antes e depois do nascimento)"
+    },
+    {
+      "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
+      "capitulo": "13 — Desenvolvimento da vasculatura"
+    },
+    {
+      "obra": "Kiserud T. Physiology of the fetal circulation. Semin Fetal Neonatal Med. 2005"
+    },
+    {
+      "obra": "Organização Mundial da Saúde. Guideline: delayed umbilical cord clamping for improved maternal and infant health and nutrition outcomes. Genebra: OMS; 2014"
+    },
+    {
+      "obra": "Sociedade Brasileira de Pediatria e FEBRASGO. Recomendações sobre o clampeamento do cordão umbilical. 2022"
+    },
+    {
+      "obra": "Sociedade Brasileira de Pediatria (Departamentos de Cardiologia e Neonatologia). Manual de Orientação nº 4: Sistematização do atendimento ao recém-nascido com suspeita ou diagnóstico de cardiopatia congênita. 2022"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria SCTIE/MS nº 20, de 10 de junho de 2014 (incorpora a oximetria de pulso — teste do coraçãozinho — à triagem neonatal no SUS)"
+    },
+    {
+      "obra": "Abman SH et al. Pediatric pulmonary hypertension: guidelines from the American Heart Association and American Thoracic Society. Circulation. 2015"
+    },
+    {
+      "obra": "Kleindorfer DO et al. 2021 Guideline for the prevention of stroke in patients with stroke and transient ischemic attack (AHA/ASA). Stroke. 2021"
+    },
+    {
+      "obra": "Hundscheid T et al. Expectant management or early ibuprofen for patent ductus arteriosus. N Engl J Med. 2023"
+    },
+    {
+      "obra": "McDonald SJ et al. Effect of timing of umbilical cord clamping of term infants on maternal and neonatal outcomes. Cochrane Database Syst Rev. 2013"
+    },
+    {
+      "obra": "Rabe H et al. Effect of timing of umbilical cord clamping and other strategies to influence placental transfusion at preterm birth. Cochrane Database Syst Rev. 2019"
+    }
+  ],
+  "notasDivergencia": [
+    "Fração do sangue umbilical que passa pelo ducto venoso: Moore fala em cerca de metade; Sadler, na maior parte; estudos de Doppler em fetos humanos estimam fração menor, em torno de 20% a 30% na segunda metade da gestação (Kiserud, 2005). O texto diz apenas 'parte', e nenhuma questão cobra a proporção.",
+    "Esfíncter do ducto venoso: Sadler descreve um mecanismo esfinctérico na entrada do ducto; estudos anatômicos em humanos não demonstram esfíncter muscular definido, e a regulação do fluxo é atribuída ao istmo do ducto e a mecanismos neuro-humorais. Não cobrado.",
+    "Mistura na veia cava inferior: Moore descreve a mistura do sangue do ducto venoso com o da cava inferior antes do átrio direito; estudos de Doppler mostram correntes preferenciais, com a corrente do ducto venoso pouco misturada. O texto usa 'mistura-se pouco' e 'preferencialmente', compatível com as duas leituras.",
+    "Mediadores do fechamento do canal arterial: Sadler destaca a bradicinina liberada pelos pulmões na primeira insuflação; Moore e a fisiologia neonatal destacam o aumento da PO₂ e a queda da prostaglandina E2. O texto enfatiza O₂ e PGE2 e cita a bradicinina, segundo Sadler, na explicação da q04.",
+    "Tempos de fechamento: canal arterial — funcional em horas a poucos dias no recém-nascido a termo; anatômico até cerca de 12 semanas (Moore) ou em 1 a 3 meses (Sadler). Forame oval — Sadler situa a fusão anatômica em cerca de 1 ano; outras fontes, nos primeiros meses. Ducto venoso — fechamento funcional em dias a semanas, mais tardio no prematuro, segundo estudos de Doppler. Nenhuma questão cobra esses números, e a linha do tempo só ordena funcional antes de anatômico.",
+    "Forame oval patente no adulto: Moore cita até cerca de 25%; Sadler, cerca de 20%; o estudo de necropsia de Hagen et al. (Mayo Clin Proc, 1984) encontrou cerca de 27%, com redução nas idades mais avançadas. O texto usa 'cerca de um quinto a um quarto'.",
+    "Teste do coraçãozinho: no protocolo de 2014 (Ministério da Saúde/SBP), o resultado é normal com saturação ≥ 95% nos dois locais e diferença < 3%; qualquer valor < 95% ou diferença ≥ 3% leva a nova medida após 1 hora e, se confirmado, a ecocardiograma em até 24 horas; idade gestacional acima de 34 semanas. Na atualização da SBP (2022), segundo fontes secundárias: normal com ≥ 95% e diferença ≤ 3%; duvidoso com 90% a 94% ou diferença ≥ 4% (repetir após 1 hora, até duas vezes); positivo com ≤ 89% (ecocardiograma urgente); idade gestacional de 35 semanas ou mais. A q10 usa valores (97% e 90%) que levam à mesma conduta nos dois protocolos, e nenhuma questão cobra o limite exato de 3%.",
+    "Saturações na circulação fetal: Sadler cita cerca de 80% na veia umbilical; os demais valores vêm de estudos em ovinos e de ressonância em fetos humanos e variam entre si. O texto e a q25 usam só a ordem qualitativa."
+  ],
+  "incertezas": [
+    "Os textos primários da SBP (Manual de Orientação nº 4, 2022), das recomendações SBP/FEBRASGO sobre clampeamento (2022) e da Portaria SCTIE/MS nº 20/2014 não puderam ser abertos nesta sessão (sbp.com.br bloqueado na rede); os critérios foram conferidos por resultados de busca e resumos secundários (portais médicos e protocolos institucionais). Conferir na fonte primária: idade gestacional mínima (34 ou 35 semanas), limiares (89%; 90% a 94%; diferença ≥ 4%), número de repetições e o tempo exato do clampeamento por faixa de idade gestacional.",
+    "A saturação de cerca de 80% na veia umbilical foi atribuída a Sadler (cap. 13) de memória; conferir na edição brasileira.",
+    "Condutas (clampeamento tardio, prostaglandina E1 e risco de apneia, ibuprofeno, indometacina e paracetamol, óxido nítrico inalatório, ECMO, fechamento percutâneo do forame oval patente) seguem as diretrizes e revisões citadas (OMS 2014; SBP/FEBRASGO 2022; AHA/ATS 2015; AHA/ASA 2021; Cochrane 2013 e 2019; BeNeDuctus 2023), e não as obras de embriologia. Não foi encontrada nesta sessão diretriz brasileira específica para hipertensão pulmonar persistente do recém-nascido nem para fechamento do forame oval patente; conferir com os revisores de neonatologia e neurologia.",
+    "Benefícios do clampeamento tardio (reservas de ferro no termo; menos transfusão e menor mortalidade hospitalar no prematuro) vêm de revisões sistemáticas (McDonald et al., 2013; Rabe et al., 2019); a magnitude não é cobrada.",
+    "A fisiologia do clampeamento após a aeração (retorno venoso pulmonar como pré-carga do ventrículo esquerdo) vem de estudos em cordeiros (Bhatt et al., J Physiol 2013); citada só na correlação, sem questão.",
+    "Período do tópico: o início (dia 35) marca de modo aproximado a formação dos desvios (septum secundum e ducto arterioso, na 5ª–7ª semana); esses eventos ficaram sem dias na linha do tempo, compartilhando a primeira posição."
+  ],
+  "revisao": {
+    "autor": "agente-redator-embriologia",
+    "data": "2026-11-09",
+    "agentes": [],
+    "humano": null
+  }
+}

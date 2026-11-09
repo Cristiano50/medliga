@@ -647,6 +647,95 @@
       "bloom": "analisar",
       "tags": ["marcos-fetais", "cronologia", "intervalos"],
       "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q30",
+      "tipo": "multipla",
+      "contexto": "Gestante de 36 anos: a ultrassonografia de 8 semanas de idade gestacional mostrava dois sacos gestacionais, cada um com um embrião e atividade cardíaca. Com 12 semanas, há um feto único vivo e um segundo saco com embrião sem atividade cardíaca. O teste de DNA fetal livre, colhido no mesmo dia, resultou de alto risco para trissomia 21.",
+      "enunciado": "Qual é a interpretação correta desse resultado?",
+      "alternativas": [
+        { "id": "a", "texto": "O resultado é diagnóstico de trissomia 21 e dispensa confirmação invasiva, dada a alta acurácia do método" },
+        { "id": "b", "texto": "O resultado é inválido, porque o teste de DNA fetal livre só pode ser realizado a partir de 20 semanas de idade gestacional" },
+        { "id": "c", "texto": "O resultado afasta aneuploidia no feto vivo, pois o DNA analisado provém de linfócitos fetais íntegros circulantes" },
+        { "id": "d", "texto": "O resultado pode vir do DNA placentário do gemelar que faleceu e exige confirmação invasiva" }
+      ],
+      "correta": "d",
+      "explicacao": "O DNA fetal livre é de origem placentária e o teste é um rastreamento: a placenta do gemelar que morreu continua liberando DNA no plasma materno, e essa é uma das causas clássicas de discordância, ao lado do mosaicismo confinado à placenta, da fração fetal baixa e de alterações cromossômicas maternas. A confirmação se faz por biópsia de vilo corial ou amniocentese — por isso (d). A (a) comete o erro conceitual mais perigoso da área: nenhum resultado de rastreamento, por bom que seja, fecha diagnóstico. A (b) atrasa indevidamente a janela, pois o exame é possível a partir de cerca de 10 semanas de idade gestacional. A (c) erra o material e a conclusão: trata-se de DNA livre fragmentado, não de linfócitos fetais íntegros, e um resultado de alto risco não afasta aneuploidia.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "dna-fetal-livre", "nipt", "rastreamento", "gemelaridade", "caso-clinico"],
+      "referencia": "Sadler 14ª ed., cap. 9; Moore 11ª ed., cap. 6 e 7"
+    },
+    {
+      "id": "emb-08-q31",
+      "tipo": "multipla",
+      "contexto": "Gestante com 24 semanas e 3 dias de idade gestacional, datação confiável pelo comprimento cabeça-nádega do primeiro trimestre, é internada em trabalho de parto prematuro. Ela pergunta se o pulmão do bebê 'já está pronto'.",
+      "enunciado": "Qual resposta é embriologicamente correta?",
+      "alternativas": [
+        { "id": "a", "texto": "Cerca de 26 semanas após a fertilização, com secreção de surfactante estabelecida há várias semanas e risco respiratório desprezível" },
+        { "id": "b", "texto": "Cerca de 22 semanas após a fertilização, mas a maturação depende da ossificação do gradil costal, completada por volta de 28 semanas" },
+        { "id": "c", "texto": "Cerca de 22 semanas após a fertilização, antes do início habitual da secreção de surfactante, que se dá por volta da 24ª semana" },
+        { "id": "d", "texto": "Cerca de 22 semanas após a fertilização, sem maturação possível antes do termo, quando começa a secreção de surfactante" }
+      ],
+      "correta": "c",
+      "explicacao": "A idade pós-fertilização é a idade gestacional menos cerca de 2 semanas: 24 semanas e 3 dias de idade gestacional correspondem a cerca de 22 semanas após a fertilização. Como os pneumócitos tipo II começam a secretar surfactante por volta da 24ª semana após a fertilização (≈26 semanas de idade gestacional), ainda não se espera produção suficiente — (c); é exatamente esse o lugar da corticoterapia antenatal, que acelera a maturação, e do surfactante exógeno após o nascimento. A (a) soma as 2 semanas em vez de subtraí-las, invertendo a conversão. A (b) atribui a maturação à ossificação das costelas, quando o fator limitante é a interface alveolocapilar com surfactante, somada à maturação do sistema nervoso central. A (d) empurra o início da secreção para o termo, o que contraria a cronologia e tornaria inexplicável a sobrevida de prematuros.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "surfactante-pulmonar", "pneumocito-tipo-ii", "idade-gestacional", "viabilidade", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 6 e 10"
+    },
+    {
+      "id": "emb-08-q32",
+      "tipo": "multipla",
+      "contexto": "Prematuro de 30 semanas de idade gestacional, com 1.250 g, apresenta hipotermia na sala de parto, apesar da secagem imediata e das medidas de aquecimento.",
+      "enunciado": "Qual característica do desenvolvimento fetal explica melhor a facilidade com que esse recém-nascido perde calor?",
+      "alternativas": [
+        { "id": "a", "texto": "A gordura branca subcutânea, que isola termicamente, só se acumula de forma substancial no terceiro trimestre" },
+        { "id": "b", "texto": "A gordura parda, responsável pela termogênese sem tremor, só começa a se formar poucos dias antes do nascimento" },
+        { "id": "c", "texto": "O vérnix caseoso, que reduz a perda de calor pela pele, só aparece depois de 34 semanas após a fertilização" },
+        { "id": "d", "texto": "A deficiência de surfactante reduz a produção de calor pelo pulmão, o principal órgão termogênico do feto" }
+      ],
+      "correta": "a",
+      "explicacao": "Com 30 semanas de idade gestacional (≈28 semanas após a fertilização), o feto tem pouca gordura branca subcutânea: ela corresponde a cerca de 3,5% do peso corporal no intervalo de 26 a 29 semanas após a fertilização, a cerca de 8% ao final de 30 a 34 semanas e a cerca de 16% no termo. Pouco isolamento e grande superfície corporal relativa explicam a perda de calor — (a). A (b) erra a cronologia: a gordura parda, sítio da termogênese, forma-se entre 17 e 20 semanas após a fertilização e já está presente nesse prematuro. A (c) também erra a data, pois o vérnix caseoso aparece entre 17 e 20 semanas após a fertilização. A (d) inventa uma função: o surfactante participa da mecânica respiratória, e o pulmão não é órgão termogênico. A distinção entre as duas gorduras é o ponto: a parda gera calor, a branca o conserva.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "gordura-parda", "gordura-branca", "termorregulacao", "prematuridade", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "emb-08-q33",
+      "tipo": "associar",
+      "enunciado": "Associe cada situação clínica ao método de avaliação fetal mais adequado:",
+      "pares": [
+        { "esquerda": "Rastreamento de aneuploidias a partir de cerca de 10 semanas, sem risco de perda gestacional", "direita": "Teste de DNA fetal livre no plasma materno" },
+        { "esquerda": "Diagnóstico citogenético mais precoce, por amostra da parte fetal da placenta", "direita": "Biópsia de vilo corial" },
+        { "esquerda": "Diagnóstico citogenético a partir de 15 semanas, no mesmo material em que se dosa a alfafetoproteína", "direita": "Amniocentese" },
+        { "esquerda": "Confirmação de anemia fetal com possibilidade de tratamento no mesmo ato", "direita": "Cordocentese" },
+        { "esquerda": "Marcador de risco medido por imagem entre 11 semanas e 13 semanas e 6 dias", "direita": "Translucência nucal" }
+      ],
+      "explicacao": "A escolha do método depende da pergunta, da janela e da aceitação do risco. O DNA fetal livre é rastreamento, de origem placentária, disponível a partir de cerca de 10 semanas e sem risco de perda, mas exige confirmação invasiva quando alterado. A biópsia de vilo corial (10 a 13 semanas) é o exame diagnóstico mais precoce e amostra vilosidades coriônicas. A amniocentese, a partir de 15 semanas, fornece amniócitos para citogenética e líquido para dosagens, entre elas a alfafetoproteína e a acetilcolinesterase dos defeitos abertos do tubo neural. A cordocentese dá acesso ao sangue fetal e permite a transfusão intrauterina no mesmo acesso. A translucência nucal é medida por ultrassonografia entre 11 e 13 semanas e 6 dias e, aumentada, associa-se a aneuploidias, cardiopatias e síndromes genéticas.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "diagnostico-pre-natal", "rastreamento", "conduta"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
+    },
+    {
+      "id": "emb-08-q34",
+      "tipo": "multipla",
+      "contexto": "Gestante de 22 anos, datação confiável pelo comprimento cabeça-nádega. A translucência nucal medida com 12 semanas foi de 3,8 mm. Na ultrassonografia de 20 semanas, todas as medidas biométricas estão abaixo do percentil 10, de forma proporcional, com volume normal de líquido amniótico e Doppler da artéria umbilical normal.",
+      "enunciado": "Qual é a interpretação mais adequada desse padrão de crescimento?",
+      "alternativas": [
+        { "id": "a", "texto": "Insuficiência uteroplacentária, que caracteristicamente cursa com restrição proporcional e Doppler umbilical normal" },
+        { "id": "b", "texto": "Causa intrínseca ao feto, provavelmente cromossômica ou genética, com indicação de exame diagnóstico invasivo" },
+        { "id": "c", "texto": "Erro de datação, devendo a gestação ser redatada pela biometria da ultrassonografia de 20 semanas" },
+        { "id": "d", "texto": "Variação da normalidade, inteiramente explicada pela translucência nucal aumentada do primeiro trimestre" }
+      ],
+      "correta": "b",
+      "explicacao": "Restrição precoce e proporcional (simétrica), com líquido amniótico e Doppler umbilical normais, aponta para causa intrínseca ao feto — cromossômica, genética ou infecciosa —, hipótese reforçada pela translucência nucal aumentada; o passo seguinte é um exame diagnóstico, e não outro rastreamento: por isso (b). A (a) inverte o padrão, pois a insuficiência uteroplacentária produz restrição assimétrica, com circunferência abdominal mais afetada e resistência aumentada na artéria umbilical. A (c) contraria a hierarquia da datação: o comprimento cabeça-nádega do primeiro trimestre é o parâmetro mais acurado, e a biometria tardia não redata a gestação. A (d) trata como normal a soma de dois achados de risco. A oposição simétrica × assimétrica é a dos textos adotados; ver notas de divergência sobre as classificações obstétricas mais recentes.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "rciu", "crescimento-fetal", "translucencia-nucal", "diagnostico-pre-natal", "caso-clinico"],
+      "referencia": "Moore 11ª ed., cap. 6; Sadler 14ª ed., cap. 9"
     }
   ],
   "referencias": [
@@ -662,7 +751,8 @@
     "Limite de viabilidade: Moore (11ª ed., cap. 6) enfatiza que não existe limite nítido de idade ou peso a partir do qual o feto se torne viável, e descreve a possibilidade de sobrevida no intervalo de 26 a 29 semanas após a fertilização (≈28 a 31 semanas de idade gestacional), com sobrevida habitual a partir de cerca de 32 semanas. A literatura neonatal atual discute a periviabilidade em idade gestacional, na faixa de 22 a 25 semanas, com sobrevida progressiva e dependente de cuidado intensivo; o intervalo de Moore é de idade pós-fertilização e não deve ser lido como limiar clínico. Os limiares praticados em neonatologia variam entre serviços e países e dependem do cuidado intensivo disponível; por isso, o conteúdo evita fixar uma idade gestacional única como limite de viabilidade.",
     "Janela da biópsia de vilo corial: as fontes descrevem janelas ligeiramente distintas (10 a 12 semanas em Moore; 10 a 13 semanas na prática obstétrica corrente, com parte da literatura brasileira citando até 14 semanas). Faixa adotada: 10 a 13 semanas de idade gestacional, com a ressalva de não realizar antes de 10 semanas.",
     "Janela da amniocentese: o conteúdo usa a janela clássica de 15 a 18 semanas de idade gestacional; o protocolo da FEBRASGO descreve a amniocentese genética habitualmente entre 15 e 20 semanas e a indica como método preferido a partir de 15 semanas completas. A amniocentese precoce (11 a 12 semanas) associou-se, em estudo randomizado, a mais perda fetal, pé torto e perda de líquido amniótico — razão do limite inferior de 15 semanas, agora explícito no resumo.",
-    "Percepção materna dos movimentos: Moore descreve o quickening entre 17 e 20 semanas após a fertilização; textos obstétricos costumam citar 18 a 20 semanas de idade gestacional em primigestas e 16 a 18 em multíparas. Adotada a referência embriológica, com conversão explícita para idade gestacional."
+    "Percepção materna dos movimentos: Moore descreve o quickening entre 17 e 20 semanas após a fertilização; textos obstétricos costumam citar 18 a 20 semanas de idade gestacional em primigestas e 16 a 18 em multíparas. Adotada a referência embriológica, com conversão explícita para idade gestacional.",
+    "Classificação da restrição de crescimento fetal: os textos adotados descrevem o padrão simétrico (precoce, de causa intrínseca) × assimétrico (insuficiência uteroplacentária, com centralização), usado em emb-08-q13 e emb-08-q34; consensos obstétricos mais recentes classificam a restrição por início precoce × tardio e por critérios de Doppler. Nenhuma das duas descrições é apresentada como superior."
   ],
   "incertezas": [
     "Risco de perda gestacional atribuível aos procedimentos invasivos: as estimativas variam conforme a série e a época (valores históricos em torno de 0,5% para a amniocentese, estimativas contemporâneas menores, e risco maior para a cordocentese). Nenhum valor numérico foi afirmado no conteúdo; descreve-se apenas que o risco existe e é pequeno, maior na cordocentese.",

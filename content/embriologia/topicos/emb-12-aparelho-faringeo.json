@@ -725,6 +725,95 @@
       "bloom": "lembrar",
       "tags": ["face", "proeminencias-faciais"],
       "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-12-q26",
+      "tipo": "multipla",
+      "contexto": "Homem de 35 anos sofreu fratura do osso temporal, com lesão completa do nervo facial no seu trajeto intratemporal, proximal à saída do nervo para o músculo estapédio e da corda do tímpano.",
+      "enunciado": "Considerando os arcos faríngeos de origem das estruturas envolvidas, qual combinação de achados é esperada do lado da lesão?",
+      "alternativas": [
+        { "id": "a", "texto": "Paralisia de toda a mímica da hemiface, hiperacusia e perda da gustação nos dois terços anteriores da língua, com mastigação preservada" },
+        { "id": "b", "texto": "Paralisia da mímica e dos músculos da mastigação e perda da sensibilidade geral nos dois terços anteriores da língua, com audição normal" },
+        { "id": "c", "texto": "Paralisia da mímica e do estilofaríngeo e perda da gustação no terço posterior da língua, com o reflexo do estapédio preservado" },
+        { "id": "d", "texto": "Paralisia da mímica só na metade inferior da face, com a fronte poupada por dupla inervação e a gustação normal" }
+      ],
+      "correta": "a",
+      "explicacao": "A alternativa (a) está correta: o facial é o nervo do 2º arco e inerva os músculos derivados dele — expressão facial (inclusive a fronte), estapédio, estilo-hióideo e ventre posterior do digástrico. Com o estapédio paralisado, perde-se o amortecimento dos sons intensos na orelha média (hiperacusia). A corda do tímpano, ramo do facial que sai no trajeto intratemporal, leva a gustação dos dois terços anteriores da língua, cuja mucosa vem do 1º arco; a sensibilidade geral dessa região e os músculos da mastigação dependem do trigêmeo (V3, nervo do 1º arco) e ficam preservados, o que exclui (b). O estilofaríngeo e o terço posterior da língua (c) pertencem ao 3º arco e ao glossofaríngeo. A paralisia restrita à metade inferior da face, com fronte poupada (d), é o padrão da lesão central (supranuclear); na lesão do próprio nervo, toda a hemiface é afetada.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["nervo-facial", "arcos-faringeos", "estapedio", "corda-do-timpano", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (cabeça: nervo facial e orelha média)"
+    },
+    {
+      "id": "emb-12-q27",
+      "tipo": "multipla",
+      "contexto": "Mulher de 50 anos mantém hiperparatireoidismo primário após exploração cervical: o cirurgião identificou as duas paratireoides superiores e a inferior direita, todas normais, mas não encontrou a inferior esquerda. Um exame de imagem funcional mostra tecido paratireoidiano hiperfuncionante no mediastino anterossuperior.",
+      "enunciado": "Qual é a origem embriológica mais provável dessa glândula, e por que ela está nesse local?",
+      "alternativas": [
+        { "id": "a", "texto": "Parte dorsal da 4ª bolsa; desceu com o corpo ultimofaríngeo e a tireoide até o mediastino" },
+        { "id": "b", "texto": "Parte ventral da 3ª bolsa; é tecido tímico acessório que passou a secretar paratormônio" },
+        { "id": "c", "texto": "Parte ventral da 4ª bolsa; acompanhou a tireoide ao longo do trajeto do ducto tireoglosso" },
+        { "id": "d", "texto": "Parte dorsal da 3ª bolsa; migrou caudalmente com o timo e ultrapassou a posição habitual" }
+      ],
+      "correta": "d",
+      "explicacao": "A alternativa (d) está correta: a glândula que falta na posição habitual é uma inferior, derivada da parte dorsal da 3ª bolsa. Ela migra caudalmente junto com o timo (parte ventral da mesma bolsa) e normalmente para junto ao polo inferior da tireoide, abaixo da paratireoide da 4ª bolsa; se acompanhar o timo além desse ponto, fica no mediastino anterossuperior, onde adenomas precisam ser procurados. As glândulas da 4ª bolsa (a) migram pouco e ficam na face posterior da parte superior da tireoide. O epitélio tímico (b) não produz paratormônio; o tecido paratireoidiano vem da parte dorsal da bolsa. A parte ventral da 4ª bolsa (c) forma o corpo ultimofaríngeo, origem das células C, e o ducto tireoglosso é o trajeto da tireoide, que nasce no assoalho da faringe e não de uma bolsa.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["paratireoides", "bolsas-faringeas", "timo", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-12-q28",
+      "tipo": "multipla",
+      "contexto": "Lactente de 10 meses com fenda palatina isolada do palato secundário, ainda não operada, tem otite média com efusão bilateral persistente e perda auditiva condutiva leve. As membranas timpânicas estão íntegras e opacas, e os meatos acústicos externos são normais.",
+      "enunciado": "Qual raciocínio anatômico-embriológico explica melhor a efusão na orelha média?",
+      "alternativas": [
+        { "id": "a", "texto": "A fenda comunica diretamente a cavidade nasal com a cavidade timpânica, que se enche de leite durante as mamadas" },
+        { "id": "b", "texto": "Tensor (1º arco) e levantador do véu palatino (4º arco), que abrem a tuba auditiva, não têm a inserção mediana normal" },
+        { "id": "c", "texto": "A 1ª membrana faríngea não se diferenciou, e a membrana timpânica ficou espessa demais para ventilar a orelha média" },
+        { "id": "d", "texto": "O 1º sulco faríngeo não se canalizou por completo, e a estenose do meato acústico externo retém secreção na orelha média" }
+      ],
+      "correta": "b",
+      "explicacao": "A alternativa (b) está correta: a tuba auditiva deriva da 1ª bolsa (recesso tubotimpânico) e é aberta durante a deglutição pela musculatura do palato mole, sobretudo pelo tensor do véu palatino (1º arco, V3), com participação do levantador (4º arco, ramo faríngeo do vago). Na fenda palatina, esses músculos não se unem na linha média e não abrem a tuba de modo eficaz; a orelha média deixa de ser ventilada e acumula efusão, com perda auditiva condutiva. A fenda não liga a cavidade nasal diretamente à orelha média (a): a comunicação normal entre a nasofaringe e a cavidade timpânica é a própria tuba. A membrana timpânica (c), formada pela 1ª membrana faríngea, está íntegra e não é a causa. O meato acústico externo (d), derivado do 1º sulco, é normal neste caso.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["fenda-palatina", "tuba-auditiva", "bolsas-faringeas", "arcos-faringeos", "anatomia", "caso-clinico", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17; Moore, Dalley e Agur, Anatomia orientada para a clínica, 8ª ed. (cabeça: palato mole e tuba auditiva); Heidsieck et al., Clin Oral Investig 2016"
+    },
+    {
+      "id": "emb-12-q29",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os derivados das bolsas faríngeas segundo a posição habitual que ocupam no adulto, do mais cranial ao mais caudal:",
+      "itens": [
+        { "id": "1", "texto": "Paratireoide superior" },
+        { "id": "2", "texto": "Timo" },
+        { "id": "3", "texto": "Cavidade timpânica" },
+        { "id": "4", "texto": "Paratireoide inferior" },
+        { "id": "5", "texto": "Tonsila palatina" }
+      ],
+      "ordemCorreta": ["3", "5", "1", "4", "2"],
+      "explicacao": "Cavidade timpânica (1ª bolsa, no osso temporal) → tonsila palatina (2ª bolsa, na parede lateral da orofaringe) → paratireoide superior (4ª bolsa, na face posterior da parte superior da tireoide) → paratireoide inferior (3ª bolsa, junto ao polo inferior da tireoide) → timo (3ª bolsa, no mediastino superior). A sequência acompanha a numeração das bolsas, exceto pela inversão entre a 3ª e a 4ª: o timo migra caudalmente e leva a paratireoide da 3ª bolsa para baixo da paratireoide da 4ª, que migra pouco.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["bolsas-faringeas", "paratireoides", "timo", "anatomia", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 9; Sadler 14ª ed., cap. 17"
+    },
+    {
+      "id": "emb-12-q30",
+      "tipo": "associar",
+      "enunciado": "Na síndrome da deleção 22q11.2, associe cada achado à estrutura embrionária cujo desenvolvimento deficiente o explica:",
+      "pares": [
+        { "esquerda": "Hipocalcemia neonatal", "direita": "Partes dorsais da 3ª e da 4ª bolsas faríngeas" },
+        { "esquerda": "Linfopenia T e ausência de sombra tímica", "direita": "Parte ventral da 3ª bolsa faríngea" },
+        { "esquerda": "Tronco arterial persistente ou tetralogia de Fallot", "direita": "Cristas conotruncais colonizadas pela crista neural cardíaca" },
+        { "esquerda": "Fenda do palato secundário", "direita": "Processos palatinos laterais das proeminências maxilares" },
+        { "esquerda": "Micrognatia e orelhas malformadas", "direita": "Mesênquima do 1º e do 2º arcos faríngeos" }
+      ],
+      "explicacao": "As paratireoides vêm das partes dorsais da 3ª e da 4ª bolsas (hipocalcemia por hipoparatireoidismo), e o epitélio tímico, da parte ventral da 3ª (linfopenia T, ausência de sombra tímica). A crista neural cardíaca migra pelos arcos 3, 4 e 6 até as cristas conotruncais, que formam o septo aorticopulmonar; sua deficiência causa defeitos conotruncais, como o tronco arterial persistente e a tetralogia de Fallot. A fenda palatina resulta da falha de fusão dos processos palatinos laterais. A mandíbula (1º arco) e o pavilhão auricular (saliências do 1º e do 2º arcos) formam-se de mesênquima dos arcos, em grande parte derivado da crista neural. A microdeleção (que inclui TBX1) compromete as bolsas e a contribuição da crista neural, o que une achados aparentemente desconexos.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["sindrome-22q11", "bolsas-faringeas", "crista-neural-cardiaca", "integracao", "avancado"],
+      "referencia": "Moore 11ª ed., cap. 9 e 13; Sadler 14ª ed., cap. 13 e 17"
     }
   ],
   "referencias": [
@@ -755,6 +844,13 @@
     {
       "obra": "Schoenwolf GC et al. Larsen Embriologia Humana, 5ª ed., 2016",
       "capitulo": "17 — Desenvolvimento do aparelho faríngeo e da face"
+    },
+    {
+      "obra": "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª ed. Rio de Janeiro: Guanabara Koogan; 2019",
+      "capitulo": "Cabeça (nervo facial, orelha média, palato mole e tuba auditiva)"
+    },
+    {
+      "obra": "Heidsieck DSP, Smarius BJA, Oomen KPQ, Breugem CC. The role of the tensor veli palatini muscle in the development of cleft palate-associated middle ear problems. Clin Oral Investig. 2016;20(7):1389–1401"
     }
   ],
   "notasDivergencia": [
@@ -775,7 +871,8 @@
     "Dia exato do primórdio da tireoide (~24 dias) segue Moore; Sadler não fixa o dia. Revisão de embriologia (2026-11-09): o estadiamento de Carnegie (O'Rahilly e colaboradores) já identifica o primórdio da tireoide no estágio 10 (~22 dias), o mesmo estágio em que Moore situa os dois primeiros pares de arcos; como a ordem relativa entre os dois eventos não é inequívoca, o evento 'primórdio da tireoide' foi retirado da linha do tempo (o fato continua no resumo e nas estruturas).",
     "Frequência do lobo piramidal e época de início da função tireoidiana não foram incluídas por não terem sido conferidas.",
     "Mecanismo molecular da síndrome de Treacher Collins (falha da biogênese ribossômica com apoptose do neuroepitélio, proteína treacle) e a associação da sequência de Pierre Robin com a síndrome de Stickler vêm da literatura de genética clínica e não foram conferidos nas edições adotadas; conferir com o revisor de genética.",
-    "Condutas citadas (operação de Sistrunk, avaliação da tireoide antes da cirurgia, microarranjo cromossômico ou FISH) seguem a prática clínica corrente, e não as obras de embriologia; conferir com os revisores de cirurgia pediátrica e genética."
+    "Condutas citadas (operação de Sistrunk, avaliação da tireoide antes da cirurgia, microarranjo cromossômico ou FISH) seguem a prática clínica corrente, e não as obras de embriologia; conferir com os revisores de cirurgia pediátrica e genética.",
+    "Questões avançadas q26–q30 (acrescentadas em 2026-11-09, ainda sem revisão por agente): hiperacusia por paralisia do estapédio, padrão da paralisia facial central × periférica e ação do tensor e do levantador do véu palatino na abertura da tuba auditiva seguem a anatomia do adulto (Moore, Dalley e Agur, 8ª ed.; texto impresso não conferido). A disfunção da tuba auditiva na fenda palatina é multifatorial, e a revisão de Heidsieck et al. (2016) conclui que a evidência sobre o papel exato do tensor ainda é limitada; a q28 cobra apenas o raciocínio anatômico (músculos sem inserção mediana) — conferir com otorrinolaringologia/cirurgia craniofacial."
   ],
   "revisao": {
     "autor": "agente-redator-embriologia",
