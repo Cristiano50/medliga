@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { mergeGeometries, mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
-import { fatorEmbriao } from '../../tres3d/qualidade.ts';
+import { fatorEmbriao, semWebGL } from '../../tres3d/qualidade.ts';
+import { avisarGeometriaAtualizada } from '../../tres3d/geometria-atualizada.ts';
 
 type V3 = [number, number, number];
 type Volume = (x: number, y: number, z: number) => number;
@@ -176,13 +177,59 @@ const esculturas = new Map<string, THREE.BufferGeometry>();
 /** Isosuperfície por tetraedros: malha suave única, sem texturas ou arquivos externos.
  * As normais vêm do gradiente do campo, calculadas depois do mergeVertices (uma vez por vértice);
  * a orientação de cada triângulo segue essas normais. O dispose do componente libera só a GPU:
- * a geometria em cache continua válida e é reenviada se o modelo voltar. */
+ * a geometria em cache continua válida e é reenviada se o modelo voltar.
+ * No nível alto (grade acima da padrão, sem argumento explícito e com Worker disponível), devolve na hora
+ * uma provisória na grade padrão e troca o conteúdo pelo da grade alta quando o worker termina. */
 export function esculpirSemana8(resolucao: ResolucaoEscultura = {}) {
   const padrao = resolucaoEscultura();
   const nx = resolucao.nx ?? padrao.nx, ny = resolucao.ny ?? padrao.ny, nz = resolucao.nz ?? padrao.nz;
   const chave = `${nx}x${ny}x${nz}`;
   const pronta = esculturas.get(chave);
   if (pronta) return pronta;
+  const base = resolucaoEscultura(1);
+  const explicita = resolucao.nx !== undefined || resolucao.ny !== undefined || resolucao.nz !== undefined;
+  if (!explicita && nx > base.nx && typeof Worker !== 'undefined' && !semWebGL()) {
+    const provisoria = (esculturas.get(`${base.nx}x${base.ny}x${base.nz}`) ?? gerarEscultura(base.nx, base.ny, base.nz)).clone();
+    esculturas.set(chave, provisoria);
+    esculpirNoWorker(provisoria, nx, ny, nz);
+    return provisoria;
+  }
+  const geometria = gerarEscultura(nx, ny, nz);
+  esculturas.set(chave, geometria);
+  return geometria;
+}
+
+/** Troca o conteúdo da geometria (mesmo objeto, que o componente já desenha) pelos arrays prontos. */
+function substituir(g: THREE.BufferGeometry, posicoes: Float32Array, normais: Float32Array, indices: Uint32Array) {
+  g.dispose(); // buffers antigos saem da GPU
+  g.boundsTree = undefined; // o BVH da provisória não vale mais; a cena refaz
+  g.setAttribute('position', new THREE.BufferAttribute(posicoes, 3));
+  g.setAttribute('normal', new THREE.BufferAttribute(normais, 3));
+  g.setIndex(new THREE.BufferAttribute(indices, 1));
+  g.computeBoundingBox();
+  g.computeBoundingSphere();
+  avisarGeometriaAtualizada();
+}
+
+function esculpirNoWorker(g: THREE.BufferGeometry, nx: number, ny: number, nz: number) {
+  let trabalhador: Worker;
+  try {
+    trabalhador = new Worker(new URL('./escultura.worker.ts', import.meta.url), { type: 'module' });
+  } catch {
+    const pronta = gerarEscultura(nx, ny, nz);
+    substituir(g, pronta.getAttribute('position').array as Float32Array, pronta.getAttribute('normal').array as Float32Array, Uint32Array.from(pronta.getIndex()!.array));
+    return;
+  }
+  trabalhador.onmessage = (e: MessageEvent<{ posicoes: Float32Array; normais: Float32Array; indices: Uint32Array }>) => {
+    trabalhador.terminate();
+    substituir(g, e.data.posicoes, e.data.normais, e.data.indices);
+  };
+  trabalhador.onerror = () => trabalhador.terminate(); // fica a provisória (grade padrão)
+  trabalhador.postMessage({ nx, ny, nz });
+}
+
+/** Geração pura (sem cache), usada na thread principal e no worker. */
+export function gerarEscultura(nx: number, ny: number, nz: number): THREE.BufferGeometry {
   const campo = campoSemana8();
   const min: V3 = [-0.8, -1.05, -0.7], max: V3 = [0.7, 1.45, 0.7];
   const passo = max.map((v, i) => (v - min[i]) / [nx, ny, nz][i]);
@@ -252,6 +299,5 @@ export function esculpirSemana8(resolucao: ResolucaoEscultura = {}) {
     if (vb.cross(vc).dot(soma) < 0) { idx.setX(i + 1, c); idx.setX(i + 2, b); }
   }
   compacta.computeBoundingBox(); compacta.computeBoundingSphere();
-  esculturas.set(chave, compacta);
   return compacta;
 }

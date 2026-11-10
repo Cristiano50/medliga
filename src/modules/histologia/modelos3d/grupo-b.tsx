@@ -74,7 +74,7 @@ const COR_LOBULO = {
   hepatocito: '#d9a27c',
   sinusoide: '#d9534f',
   disse: '#f2cf5b',
-  kupffer: '#22c3d6',
+  kupffer: '#33e0f0',
   canaliculo: '#2fbf6a',
   conjuntivo: '#e9e2d0',
   veiaPorta: '#8b5cf6',
@@ -132,11 +132,11 @@ function ModeloLobulo() {
       <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.25, topo, 0.95]}>
         <Malha geometria={placas} />
       </Parte>
-      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.6} prioridade={6} rotulo={[0, 0.1, 0.62]}>
+      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.45} prioridade={6} rotulo={[0, 0.1, 0.62]}>
         <Malha geometria={luz} />
       </Parte>
       {/* Casca de Disse em volta da luz: prioridade menor que a do sinusoide que ela envolve. */}
-      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.32} prioridade={5} rotulo={[-0.1, 0.13, 1.1]}>
+      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.26} prioridade={5} rotulo={[-0.1, 0.13, 1.1]}>
         <Malha geometria={disse} />
       </Parte>
       <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={kFrente?.centro}>
@@ -427,7 +427,8 @@ function ModeloJuncoes() {
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xa, JUNCOES.oclusao[0], 0]} />
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xb, JUNCOES.oclusao[0], 0]} />
       </Parte>
-      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} prioridade={7} rotulo={[xa, JUNCOES.adesao[0], frente]}>
+      {/* Translúcida, para mostrar o cinturão de actina por dentro da célula, na mesma altura. */}
+      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.55} prioridade={7} rotulo={[xa, JUNCOES.adesao[0], frente]}>
         <Malha geometria={adesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
         <Malha geometria={adesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
       </Parte>

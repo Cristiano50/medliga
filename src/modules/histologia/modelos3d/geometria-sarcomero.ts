@@ -34,10 +34,10 @@ export const SARCOMERO = {
   raioBandas: 0.5,
   /** anéis do túbulo T e das cisternas terminais em volta da miofibrila */
   raioAnel: 0.58,
-  tuboT: 0.032,
-  tuboCisterna: 0.045,
+  tuboT: 0.026,
+  tuboCisterna: 0.036,
   /** distância entre o centro do túbulo T e o de cada cisterna terminal */
-  afastamentoCisterna: 0.085,
+  afastamentoCisterna: 0.07,
   /** barra de cota do sarcômero (abaixo do modelo) */
   alturaCota: -0.8,
 } as const;
@@ -253,7 +253,7 @@ export function geometriaReticulo(fator = 1): THREE.BufferGeometry {
   const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), new THREE.Vector3(1, 0, 0));
   for (let k = 0; k < 6; k++) {
     const ang = ((30 + 60 * k) * Math.PI) / 180;
-    const c = new THREE.CylinderGeometry(0.017, 0.017, comprimento, seg(6, fator), seg(8, fator, 1), true);
+    const c = new THREE.CylinderGeometry(0.012, 0.012, comprimento, seg(6, fator), seg(8, fator, 1), true);
     partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(x0 + comprimento / 2, raioAnel * Math.cos(ang), raioAnel * Math.sin(ang)), q, new THREE.Vector3(1, 1, 1))));
   }
   return mesclar(partes);

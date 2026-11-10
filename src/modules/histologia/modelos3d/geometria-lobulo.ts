@@ -39,7 +39,7 @@ export const LOBULO = {
   raioPorta: 0.27,
   raioCanaliculo: 0.014,
   /** semieixos da célula de Kupffer (ao longo do sinusoide; transversais) */
-  kupffer: [0.052, 0.032] as [number, number],
+  kupffer: [0.06, 0.038] as [number, number],
   /** altura das colunas (veias, espaço porta) acima e abaixo da fatia */
   alturaVasos: 0.62,
   alturaPorta: 0.52,
@@ -342,9 +342,10 @@ function construirKupffer(trechos: TrechoSinusoide[]): Kupffer[] {
     const raio = (x: number) => t.raioInicio + ((t.raioFim - t.raioInicio) * (x - t.inicio)) / (t.fim - t.inicio);
     const luz = Math.min(raio(a - ax), raio(a + ax)) - LOBULO.disse;
     if (luz < tr + 0.012) return;
-    // Presa à parede (endotélio): centro deslocado do eixo até quase tocar a parede, alternando o lado.
+    // Presa à parede (endotélio): centro deslocado do eixo até quase tocar a parede, na metade de cima da
+    // luz (visível de cima), alternando o lado.
     const lado = i % 2 ? 1 : -1;
-    const beta = (lado * 50 * Math.PI) / 180;
+    const beta = ((90 + lado * 40) * Math.PI) / 180;
     const desvio = luz - tr - 0.004;
     const u = direcao(t.angulo);
     const n = normal(t.angulo);

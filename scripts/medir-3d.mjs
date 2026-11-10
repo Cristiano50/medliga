@@ -10,6 +10,7 @@
 //   --porta 4173
 //   --saida medicoes-3d            pasta de saída (JSON, tabela em Markdown e capturas)
 //   --modelos zigoto,semana-8      padrão: todos os estágios de content/embriologia/estagios.json
+//   --disciplina histologia        mede os modelos de content/histologia/modelos3d*.json (rota /lab3d/histologia)
 //   --niveis baixa,media,alta      níveis de src/modules/tres3d/qualidade.ts; "auto" = sem override
 //   --viewport 390x844             tamanho da janela (CSS px)
 //   --escala 2                     deviceScaleFactor
@@ -18,7 +19,7 @@
 // Playwright não é dependência do projeto: o script usa o pacote instalado no sistema (NODE_PATH) ou no projeto.
 import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -40,9 +41,19 @@ function carregarPlaywright() {
   process.exit(2);
 }
 
-const estagios = JSON.parse(readFileSync(join(raiz, 'content/embriologia/estagios.json'), 'utf8'));
-const listaEstagios = (Array.isArray(estagios) ? estagios : estagios.estagios ?? []).map((e) => e.id);
-const modelos = (opcao('modelos', '') || listaEstagios.join(',')).split(',').filter(Boolean);
+const disciplina = opcao('disciplina', 'embriologia');
+function idsPadrao() {
+  if (disciplina === 'histologia') {
+    const dir = join(raiz, 'content/histologia');
+    return readdirSync(dir).filter((f) => /^modelos3d.*\.json$/.test(f)).sort()
+      .flatMap((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')).modelos ?? [])
+      .sort((a, b) => a.ordem - b.ordem).map((m) => m.id);
+  }
+  const estagios = JSON.parse(readFileSync(join(raiz, 'content/embriologia/estagios.json'), 'utf8'));
+  return (Array.isArray(estagios) ? estagios : estagios.estagios ?? []).map((e) => e.id);
+}
+const rotaDoModelo = (id) => (disciplina === 'histologia' ? `/lab3d/histologia?modelo=${id}` : `/lab3d?estagio=${id}`);
+const modelos = (opcao('modelos', '') || idsPadrao().join(',')).split(',').filter(Boolean);
 const niveis = opcao('niveis', 'baixa,media,alta').split(',').filter(Boolean);
 const saida = resolve(opcao('saida', join(raiz, 'medicoes-3d')));
 const [vw, vh] = opcao('viewport', '390x844').split('x').map(Number);
@@ -174,7 +185,7 @@ async function main() {
         for (let tentativa = 1; tentativa <= 2; tentativa++) {
           try {
             await page.goto('about:blank');
-            await page.goto(`${base}/#/lab3d?estagio=${id}`);
+            await page.goto(`${base}/#${rotaDoModelo(id)}`);
             await page.waitForSelector('.palco3d canvas', { timeout: 30000 });
             await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
             // Estável: um quadro desenhado e nenhum quadro novo por 600 ms.

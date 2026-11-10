@@ -8,7 +8,7 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import type { ModeloEstagio } from '../../embriologia/modelos/index.ts';
 import { Malha, Parte } from '../../embriologia/tres/nucleo.tsx';
-import { vec, type V3 } from './geometria-comum.ts';
+import { girarYPara, vec, type V3 } from './geometria-comum.ts';
 import {
   CORPUSCULO,
   curvaAferente,
@@ -65,7 +65,7 @@ type Geometrias = Record<string, THREE.BufferGeometry | THREE.BufferGeometry[]>;
 
 /** Cria as geometrias uma vez por montagem e as libera no desmonte. */
 function useGeometrias<T extends Geometrias>(fabrica: () => T): T {
-  const g = useMemo(fabrica, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const g = useMemo(fabrica, []);
   useEffect(() => () => {
     for (const v of Object.values(g)) for (const x of Array.isArray(v) ? v : [v]) x.dispose();
   }, [g]);
@@ -82,7 +82,6 @@ function unir(partes: THREE.BufferGeometry[]): THREE.BufferGeometry {
 }
 const transformada = (g: THREE.BufferGeometry, posicao: THREE.Vector3, rotacao = new THREE.Quaternion(), escala: V3 = [1, 1, 1]) =>
   g.applyMatrix4(new THREE.Matrix4().compose(posicao, rotacao, vec(escala)));
-const girarYPara = (d: THREE.Vector3) => new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), d.clone().normalize());
 const euler = (q: THREE.Quaternion) => new THREE.Euler().setFromQuaternion(q);
 
 const COR_NEFRON = {
@@ -286,7 +285,7 @@ export function ModeloAlveolo() {
     const capilares: Record<string, THREE.BufferGeometry[]> = {};
     for (const a of ALVEOLOS) {
       const k = chaveCapilar(a);
-      capilares[k] ??= capilaresLocais(a.raio, a.parede).map((c, i) => new THREE.TubeGeometry(c, i === 0 ? 48 : 40, capilarDe(a.raio, a.parede).raio, 8, i === 0));
+      capilares[k] ??= capilaresLocais(a.raio, a.parede).map((c, i) => new THREE.TubeGeometry(c, i === 0 ? 64 : 40, capilarDe(a.raio, a.parede).raio, 8, i === 0));
     }
     const h = HEROI;
     const th = h.meiaAbertura;
@@ -395,5 +394,5 @@ export function ModeloAlveolo() {
 
 export const MODELOS_HISTO_A: Record<string, ModeloEstagio> = {
   nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.35, -0.08, 1], raio: 1.75 },
-  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.75 },
+  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.5 },
 };

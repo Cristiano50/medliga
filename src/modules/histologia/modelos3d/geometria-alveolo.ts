@@ -109,8 +109,12 @@ export function capilaresLocais(raio: number, parede: number): THREE.CatmullRomC
   const { eixo } = capilarDe(raio, parede);
   const ponto = (polar: number, azimute: number) =>
     new THREE.Vector3(Math.sin(polar) * Math.cos(azimute) * eixo, -Math.cos(polar) * eixo, Math.sin(polar) * Math.sin(azimute) * eixo);
+  // anel ondulado (rede capilar esquemática): polar 50° ± 9°
   const anel: THREE.Vector3[] = [];
-  for (let i = 0; i < 16; i++) anel.push(ponto((50 * Math.PI) / 180, (i / 16) * Math.PI * 2));
+  for (let i = 0; i < 24; i++) {
+    const t = (i / 24) * Math.PI * 2;
+    anel.push(ponto(((50 + 9 * Math.sin(3 * t)) * Math.PI) / 180, t));
+  }
   const meridiano: THREE.Vector3[] = [];
   for (let i = -7; i <= 7; i++) {
     const polar = (Math.abs(i) / 7) * ((70 * Math.PI) / 180);

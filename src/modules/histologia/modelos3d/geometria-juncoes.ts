@@ -22,7 +22,7 @@ export const JUNCOES = {
   oclusao: [0.86, 0.94] as [number, number],
   adesao: [0.66, 0.79] as [number, number],
   /** cinturão de actina: recuo da membrana para dentro e raio do feixe */
-  cinturao: { recuo: 0.065, raio: 0.024 },
+  cinturao: { recuo: 0.065, raio: 0.028 },
   /** desmossomos na face lateral comum: o primeiro (mais apical) completa o complexo juncional */
   desmossomos: [
     { y: 0.53, z: -0.12, alcas: [0.34, 0.24] },
