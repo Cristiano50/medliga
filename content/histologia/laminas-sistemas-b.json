@@ -71,6 +71,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado",
             "notas": "Sem correções de texto. Barrett descrito como metaplasia intestinal com caliciformes (definição do ACG, coerente com his-02, que registra a divergência com a BSG). Desenho conferido como esôfago normal: uma camada basal (≈7% da espessura) e papilas até ≈28–41% da espessura, sem o padrão de refluxo (hiperplasia basal, papilas alongadas)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (ducto excretor com duas camadas de núcleos, achatado dentro do epitélio). P3 em parte aplicados: ácinos mucosos sem sobreposição e com luz maior, papilas de ponta arredondada. Resta P3: células intermediárias do mesmo tamanho (no esôfago crescem e clareiam para a superfície). Sem erro novo."
           }
         ],
         "humano": null
@@ -157,6 +164,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 correções (1 importante, 1 menor): retirado \"ovo frito\" da célula parietal (na patologia o termo designa o halo perinuclear do oligodendroglioma; mesmo critério usado para \"olho de coruja\" na revisão v1); muco foveolar neutro (PAS-positivo), base para distinguir das caliciformes da metaplasia intestinal. Gastrite autoimune e anemia perniciosa conferidas com o his-14. Jogo: \"Epitélio simples cilíndrico\" como distrator é resposta defensável neste campo (P1 de jogo no relatório)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (fossetas em funil a cada 104 un; ainda ≈1/4 da mucosa, 132 de 520 un). P3 aplicado: parietais com 90% da área de células em y 228–300 e principais com 94% na base (494–545). Resta P3, novo: glândulas encostadas umas nas outras no corpo da mucosa, sem a faixa fina de lâmina própria com capilares entre elas (o texto diz \"pouca\", não \"nenhuma\")."
           }
         ],
         "humano": null
@@ -169,7 +183,7 @@
       "tecido": "Intestino grosso (cólon)",
       "orgao": "Cólon: parede em corte transversal (luz em cima)",
       "coloracao": "HE",
-      "descricao": "Mucosa sem vilosidades, de superfície plana, com glândulas intestinais (criptas de Lieberkühn) retas, paralelas e muito próximas, que vão da superfície até a muscular da mucosa. O epitélio é simples cilíndrico, com células absortivas (colonócitos) e muitas células caliciformes ao longo das criptas; na superfície predominam as absortivas. A lâmina própria entre as criptas é rica em linfócitos e plasmócitos. Seguem a muscular da mucosa, a submucosa (vasos, adipócitos) e a muscular externa, com camada circular interna, plexo mioentérico e camada longitudinal externa. Esquema: a camada longitudinal externa aparece contínua, mas no cólon ela se concentra nas três tênias do cólon e entre elas é delgada; as células estão maiores que na escala real.",
+      "descricao": "Mucosa sem vilosidades, de superfície plana, com glândulas intestinais (criptas de Lieberkühn) retas, paralelas e muito próximas, que vão da superfície até a muscular da mucosa. O epitélio é simples cilíndrico, com células absortivas (colonócitos) e muitas células caliciformes ao longo das criptas; na superfície predominam as absortivas. A lâmina própria entre as criptas é rica em linfócitos e plasmócitos. Seguem a muscular da mucosa, a submucosa (vasos, adipócitos) e a muscular externa, com camada circular interna, plexo mioentérico e camada longitudinal externa, e, por fora, a serosa. A camada longitudinal é delgada e se concentra nas três tênias do cólon; o campo mostra uma delas. Esquema: num trecho, junto à muscular da mucosa, as criptas aparecem cortadas de través, como anéis de células em volta da luz (corte oblíquo; as criptas acima delas não são mais curtas, só saem do plano); as células estão maiores que na escala real.",
       "destaques": [
         "Sem vilosidades: a superfície é plana, com as aberturas das criptas. É o que distingue o cólon do intestino delgado.",
         "Células caliciformes abundantes: o muco lubrifica o conteúdo, que vai ficando sólido à medida que os colonócitos absorvem água e eletrólitos.",
@@ -188,7 +202,7 @@
         {
           "id": "cripta-intestinal",
           "nome": "Cripta (glândula intestinal de Lieberkühn)",
-          "descricao": "Tubo reto, de luz estreita (com muco), que vai da superfície até perto da muscular da mucosa. A parede é de epitélio simples cilíndrico: células absortivas e caliciformes, além de células-tronco e enteroendócrinas no fundo (não desenhadas)."
+          "descricao": "Tubo reto, de luz estreita (com muco), que vai da superfície até perto da muscular da mucosa; cortada de través, aparece como anel de células em volta da luz. A parede é de epitélio simples cilíndrico: células absortivas e caliciformes, além de células-tronco e enteroendócrinas no fundo (não desenhadas)."
         },
         {
           "id": "celula-caliciforme",
@@ -238,6 +252,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 correções (menores): adenocarcinoma colorretal pela sequência adenoma–carcinoma e, em parte, pela via serrilhada (alinhado ao his-03); mucinas ácidas das caliciformes (PAS e azul alciano); Hirschsprung sem células ganglionares nos dois plexos, diagnóstico em biópsia retal com submucosa (his-14, ERNICA). Paneth ausente no cólon distal coerente com o his-14. Veredito só do texto: o desenho tem P1 (ver entrada de histologia)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: P1 resolvido. Superfície plana (boca com R 4,5), criptas em tubo de ensaio a cada 50 un com fundo em U e luz de 9 un, lâmina própria de ≈8 un, sem cúpulas e com planura estriada fina; a 10× não lembra mais as vilosidades da lâmina do delgado. P2 da tênia resolvido (longitudinal de 18 un com uma tênia). 2 correções de texto para acompanhar o desenho: a nota de esquema dizia que a longitudinal aparecia contínua (agora mostra a tênia), e a serosa e as criptas em anel passaram a ser citadas. Restam P3: o trecho de corte oblíquo tem 4 criptas encurtadas com fundo em U fechado sobre os anéis, o que pode ser lido como encurtamento de criptas (sinal de colite crônica); a nota de texto explica, e o ideal é terminar esses perfis abertos, saindo do plano. Também a tênia em cunha (o melhor seria em lente). Caliciformes: 16% na superfície e 30–38% nas criptas, mantido (decisão no relatório). Continua o P1 do jogo (distrator \"Epitélio simples cilíndrico\"), que é de código."
           }
         ],
         "humano": null
@@ -319,6 +340,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 correções (menores): canalículos invisíveis no HE normal, mas dilatados com tampões de bile na colestase; células estreladas no espaço de Disse (fibrose); placa limitante destruída na hepatite de interface (his-15). Zona 3, hipóxia e paracetamol conferidos com o his-15."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (placa limitante como anel contínuo de hepatócitos em volta de cada espaço porta). Kupffer agora com contorno irregular; tocável (0,61% da área, ponto robusto na medição final). Restam P3: hepatócitos em tijolo e sinusoides retos e radiais demais. Sem erro novo."
           }
         ],
         "humano": null
@@ -390,6 +418,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado",
             "notas": "Sem correções. Diabetes tipo 1 (destruição autoimune das células β), secreção de bicarbonato pelas centroacinosas e ductais (secretina) e zimogênios conferidos com o his-15."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (ducto intercalado sai da célula centroacinosa, com epitélio cúbico baixo; 0,59% da área). Capilares da ilhota com núcleos endoteliais. Restam P3: ilhota em grade hexagonal, não em cordões; ácinos em favo regular; o ducto é desenhado por cima das células acinosas em vez de afastá-las."
           }
         ],
         "humano": null

@@ -171,7 +171,7 @@ Critério da v1: o esquema precisa mostrar os **aspectos diagnósticos** que o t
 
 ## 5. Pontos para o revisor humano
 
-1. **Veredito do cólon.** A histologia ficou `reprovado` por causa do desenho (P1-1). O texto está correto e sem correções. Na v1, desenhos P1 ficaram com `aprovado-com-correcoes` e nota. Decidir o padrão. Como `seloRevisao` mostra "Revisado por IA" se **alguma** entrada não for `reprovado`, o selo do cólon continua "revisado-ia" por causa da entrada de patologia. Se a intenção é segurar a lâmina até o redesenho, ela não deveria ir para o `main` antes disso.
+1. **Veredito do cólon.** A histologia ficou `reprovado` por causa do desenho (P1-1). **Atualização:** o P1 foi resolvido no redesenho v2 (§7), e a nova entrada é `aprovado-com-correcoes`; a `reprovado` fica como histórico. O texto está correto e sem correções. Na v1, desenhos P1 ficaram com `aprovado-com-correcoes` e nota. Decidir o padrão. Como `seloRevisao` mostra "Revisado por IA" se **alguma** entrada não for `reprovado`, o selo do cólon continua "revisado-ia" por causa da entrada de patologia. Se a intenção é segurar a lâmina até o redesenho, ela não deveria ir para o `main` antes disso.
 2. **Jogo (P1-2).** Decidir como impedir distratores defensáveis: cólon/estômago × "Epitélio simples cilíndrico"; pele fina × "Epitélio estratificado pavimentoso queratinizado".
 3. **"Cólon" × "colo".** O his-14 usa "colo", "tênia do colo" e "colo esquerdo"; a lâmina usa "cólon" no título, no tecido e no texto. Mantive "cólon", que é comum nos livros de histologia brasileiros e evita confusão com o "colo" da glândula gástrica na lâmina vizinha. Escolher um termo para a disciplina.
 4. **"Espaço porta" × "espaço portal".** Adotei o termo do his-15. Confirmar a preferência.
@@ -203,3 +203,83 @@ Critério da v1: o esquema precisa mostrar os **aspectos diagnósticos** que o t
   - Attanasio G, Caltabiano R, Amato F, et al. Beyond oligodendroglioma… *Int J Mol Sci*. 2026;27(16):7163. doi:10.3390/ijms27167163 (PMID 42653168; PMC13513445). Trecho: "The classic 'fried egg' appearance, with round nuclei and perinuclear halos, was historically regarded as highly suggestive of oligodendroglioma."
   - Cai J, Huang Y, Luo Y, et al. Differential risk and protective factors for conventional adenomas and serrated lesions. *Front Public Health*. 2026;14:1949376. doi:10.3389/fpubh.2026.1949376 (PMID 42953785; PMC13715656). Trecho: "serrated lesions … may account for approximately 15–30% of CRC cases". Usado só qualitativamente ("outra parte").
 - **Capturas usadas:** as do desenhista em `/tmp/claude-0/-home-user/dffebdf6-4feb-54e6-87ea-f3ab03870b86/scratchpad/lam-b/` (app, out, campos) e a medição de toque `toque.log`. Os scripts desta revisão estão em `/tmp/claude-0/-home-user/dffebdf6-4feb-54e6-87ea-f3ab03870b86/scratchpad/rev-lam-b/` (`editar.py`, `estomago_camadas.py`, `grepx.py`, `fontes/`), fora do repositório.
+
+## 7. Reavaliação do desenho (v2)
+
+- Agente: `revisor-laminas-v2` · Data: 2026-11-10.
+- Objeto: redesenho do commit `cf28fe1` (só `src/modules/histologia/laminas/sistemas-b.tsx`; ids, `partes` e `areaDiagnostica` inalterados).
+- Material: capturas em `/tmp/claude-0/-home-user/dffebdf6-4feb-54e6-87ea-f3ab03870b86/scratchpad/lam-b/v2/` (`cmp-*`, `cmp-recortes-*`, `cmp-colon-vs-delgado.png`, `campos-10x-depois.png`, `app/m-app-4x-10x-40x.png`, `app/m-toques-40x.png`, `depois/`, `toque.json`).
+- Nenhum código foi alterado nesta etapa. O texto do cólon foi ajustado ao novo desenho (§7.3), e cada lâmina ganhou uma entrada nova em `revisao.agentes`. A entrada `reprovado` do cólon fica como histórico.
+
+### 7.1 O P1 do cólon foi resolvido
+
+- **Geometria nova:**
+  - superfície plana: a boca da cripta só é arredondada (`R` 4,5);
+  - criptas a cada 50 un, com luz de 9 un e fundo em U;
+  - lâmina própria entre criptas de ≈ 8 un, menor que a luz da cripta (antes eram 17 un, 2,4× a luz);
+  - planura estriada como linha fina, só no topo plano.
+- **Resultado:** a 4×, a 10× e nos quatro cantos da área de sorteio, a mucosa lê-se como **tubos de ensaio paralelos** pendurados numa superfície plana, que chegam à muscular da mucosa. Na comparação lado a lado (`cmp-colon-vs-delgado.png`), não lembra mais as vilosidades da lâmina `epitelio-cilindrico-intestino`: não há cúpulas nem eixos de lâmina própria largos, e os fundos em U deixam claro que o elemento repetido é a glândula.
+- **Tênia (antigo P2-1):** resolvida. A longitudinal tem 18 un e engrossa numa tênia (perfil cos², 300 un de largura).
+- **Toque:** as 8 estruturas são tocáveis (`toque.json`). A área sem estrutura subiu de 3,7% para 12,5% porque a serosa foi desenhada como decoração. A serosa não está na lista de estruturas, e o texto agora a cita.
+
+### 7.2 Situação de cada lâmina
+
+| Lâmina | Ajustes resolvidos | Erro novo? | Veredito v2 |
+|---|---|---|---|
+| esofago | P2-5: ducto excretor com duas camadas de núcleos, achatado dentro do epitélio. P3 em parte: ácinos mucosos sem sobreposição e com luz maior, papilas com ponta arredondada | não | aprovado |
+| estomago-fundo | P2-2: fossetas em funil a cada 104 un, ainda ≈ 1/4 da mucosa (132 de 520 un). P3: principais saem do terço superior; parietais com 90% da área de células em y 228–300, principais com 94% na base (494–545) | P3 (glândulas encostadas, sem lâmina própria entre elas) | aprovado |
+| colon | P1-1 e P2-1 (acima) | P3 (trecho oblíquo com criptas encurtadas) | aprovado-com-correcoes (texto ajustado ao desenho) |
+| figado | P2-3: placa limitante como anel contínuo de hepatócitos em volta de cada espaço porta. Kupffer com contorno irregular, ainda tocável (0,61%, ponto robusto na medição final de `toque.json`) | não | aprovado |
+| pancreas | P2-4: ducto intercalado sai da célula centroacinosa, com epitélio cúbico baixo (0,59% da área). Capilares da ilhota com núcleos endoteliais | P3 (ducto por cima das células acinosas) | aprovado |
+
+Contagem do estômago v2: `rev-lam-b/estomago_camadas.py` sobre `lam-b/v2/depois/estomago-fundo.svg`. Áreas de células parietais por faixa:
+
+| y | 162–228 | 228–300 | 300–370 | 370–440 | 440–494 | 494–545 |
+|---|---|---|---|---|---|---|
+| parietais | 37% (colo, com 194 mucosas do colo) | 90% | 76% | 64% | 26% | 6% |
+
+### 7.3 Correções de texto que acompanham o desenho (cólon, 2 menores)
+
+| campo | antes | depois | motivo |
+|---|---|---|---|
+| `descricao` | "Esquema: a camada longitudinal externa aparece contínua, mas no cólon ela se concentra nas três tênias…" | "…e, por fora, a serosa. A camada longitudinal é delgada e se concentra nas três tênias do cólon; o campo mostra uma delas. Esquema: num trecho, junto à muscular da mucosa, as criptas aparecem cortadas de través, como anéis de células em volta da luz (corte oblíquo; as criptas acima delas não são mais curtas, só saem do plano)…" | A nota antiga ficou falsa com o desenho novo. A serosa e os anéis agora aparecem no campo e precisam de explicação. |
+| `cripta-intestinal` | "Tubo reto… até perto da muscular da mucosa." | "…; cortada de través, aparece como anel de células em volta da luz." | Explica os anéis, que tocam como "Cripta". |
+
+### 7.4 Lista que resta
+
+**P1:** nenhum de desenho. Continua o **P1-2 do jogo** (`QualTecido.tsx`, linha 25): "Epitélio simples cilíndrico" é distrator defensável para cólon e estômago (e, fora do grupo, "Epitélio estratificado pavimentoso queratinizado" para a pele fina). É código, e o redesenho não o resolve.
+
+**P2:** nenhum.
+
+**P3, opcionais:**
+1. **cólon, trecho oblíquo** (`LaminaColon`: `rosetaX = [640, 690, 740, 790]`, `rosetaY = 263`; criptas com `curta`, fundo 196–204).
+   - As 4 criptas acima dos anéis terminam ≈ 80 un antes das outras, com o fundo em U **fechado**. Abaixo delas ficam ≈ 21 un de lâmina própria, os anéis e mais ≈ 22 un até a muscular da mucosa.
+   - Na patologia, criptas que não chegam à muscular da mucosa são sinal de distorção arquitetural (colite crônica). Os anéis e a nota de texto tornam a leitura de corte oblíquo a mais provável.
+   - O ideal: terminar esses 4 perfis **abertos** (parede que sai do plano, sem o U) logo acima dos anéis, ou pôr os anéis colados ao fundo de criptas de comprimento normal.
+2. **cólon, tênia:** em cunha (cos²) que ultrapassa a borda do campo. Seria melhor em lente plano-convexa, com a serosa por fora.
+3. **estômago, lâmina própria entre glândulas:** no corpo da mucosa (y ≈ 230–530), glândulas vizinhas se encostam. A parietal de uma toca a principal da outra, sem a faixa fina de lâmina própria com capilares. O texto diz "pouca", não "nenhuma". Deixar 3–5 un entre glândulas, com um capilar de vez em quando.
+4. **esôfago:** as células intermediárias continuam do mesmo tamanho; no órgão, crescem e clareiam (glicogênio) para a superfície antes de achatar.
+5. **fígado (não aplicados):** hepatócitos em tijolo; sinusoides retos e radiais demais.
+6. **pâncreas:**
+   - ilhota ainda em grade hexagonal, não em cordões ao longo dos capilares;
+   - ácinos em favo regular (não aplicado);
+   - o ducto intercalado é desenhado por cima das células acinosas (`out c-pancreas-40x-ducto2`) em vez de afastá-las. O conceito está certo: o ducto começa dentro do ácino.
+
+### 7.5 Decisão: proporção de caliciformes do cólon
+
+**Manter** a do redesenho: 16% na superfície, 30% na metade superior da cripta, 38% na metade inferior e nos anéis, e nenhuma no U do fundo (células-tronco e absortivas jovens).
+
+Justificativa:
+- Assim as absortivas **predominam em todos os níveis**, como no texto ("na superfície predominam as absortivas") e na descrição de Ross (de memória: absortivas mais numerosas na maior parte do cólon).
+- As caliciformes continuam visivelmente mais numerosas que no intestino delgado e aumentam em profundidade.
+- Kim e Ho (*Curr Gastroenterol Rep* 2010, PMC2933006, texto integral) dão a média de todo o epitélio: "The proportion of goblet cells among epithelial cell types increases caudally from duodenum (4%) to distal colon (16%)". O dado vem em boa parte de estudos experimentais e não separa cripta de superfície, por isso não justifica reduzir as criptas. Textos de patologia descrevem as caliciformes como muito numerosas no terço inferior das criptas humanas, sobretudo no cólon esquerdo e no reto.
+
+Não reduzir abaixo de ≈ 25% nas criptas (o cólon perderia o aspecto característico) nem passar de ≈ 40% (as caliciformes passariam a predominar, contra o texto).
+
+**Revisor humano:** confirmar a proporção preferida pela disciplina (item 5 de §5).
+
+### 7.6 Evidências (v2)
+
+- `npm run validar-conteudo` → `Conteúdo OK — disciplinas: embriologia, histologia; tópicos: 45; questões: 1363; escolas: 441.`
+- `npx vitest run` → `Test Files 10 passed (10) · Tests 96 passed (96)`.
+- `revisao.agentes`: cada lâmina tem agora 3 entradas (histologia v2, patologia v2 e reavaliação do desenho v2). `revisao.humano` continua `null`.
