@@ -25,7 +25,7 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 - Completar o cadastro de escolas (≈ 30 cursos faltantes; precisa liberar e-mec.mec.gov.br na rede do ambiente).
 
 ## v0.3+ — Novos módulos (cada um com jogabilidade própria)
-1. **Histologia** — [x] histologia geral entregue (09/11/2026): microscópio virtual com 16 lâminas, jogos Identifique na lâmina e Qual é o tecido?, 10 tópicos (260 questões) revisados por agentes em duas etapas; conferência médica pendente. Próximo: histologia dos sistemas (pele, digestório, respiratório, urinário, endócrino, reprodutor) com novas lâminas.
+1. **Histologia** — [x] histologia geral entregue (09/11/2026): microscópio virtual com 16 lâminas, jogos Identifique na lâmina e Qual é o tecido?, 10 tópicos revisados por agentes em duas etapas. [x] Aprofundamento (10/11/2026): histologia dos sistemas (tópicos 11–20), camada avançada (50 questões de dificuldade 4–5), 18 lâminas novas (34 no total) e laboratório 3D da histologia (néfron, alvéolo, lóbulo hepático, sarcômero, junções celulares), tudo com revisão por agentes em duas etapas e conferência de fonte primária; conferência médica pendente. Próximo: órgãos dos sentidos, sistema nervoso central, cavidade oral e dente, placenta e cordão; colorações especiais no microscópio (PAS, tricrômico, prata).
 2. **Anatomia** — dissecção 3D por camadas (modelos próprios ou base aberta compatível com uso comercial).
 3. **Bioquímica** — montar vias metabólicas, achar a enzima bloqueada.
 4. **Genética** — heredogramas e cariótipos interativos (liga com teratologia).

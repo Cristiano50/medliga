@@ -188,6 +188,24 @@ relatório tem uma seção "Pontos para o revisor humano"; aqui ficam só as dec
 **J4. Harmonização feita em tópicos já publicados** (verificada por script: nenhuma questão nem gabarito mudou)
 - Mecônio: atraso > 24 h no RN a termo (ERNICA 2026) em emb-15/emb-22; origem da papila dérmica conforme a região (emb-20); compartimento basal com espermatócitos pré-leptóteno (emb-02); sinônimo de papila-dermica; cálices renais no urotélio (his-02); B12 × folato na neuropatia (his-08); 9 ids de estrutura unificados (pneumócitos, bronquíolo respiratório, Sertoli/Leydig, folículo tireoidiano, ilhota, ducto intercalado). Os nomes no plural de emb-14/17/25 continuam sob ids no singular (decidir se passam ao singular).
 
+**J5. Modelos 3D da histologia** (relatórios `modelos3d-histologia-a.md` §6 e §9, `modelos3d-histologia-b.md`, "Pontos para o revisor humano" e §9)
+- Néfron: nome "Túbulo proximal (contorcido e reto)" para a peça que inclui a porção reta; mácula densa desenhada no fim do ramo espesso (posição da fisiologia e de Ross; his-17 cita também a de Junqueira); ressalva da aquaporina-1 nas alças curtas (parte humana só de resumo); túbulo de conexão não desenhado e sem origem afirmada; células justaglomerulares só na aferente no desenho.
+- Alvéolo: "mais de 90%" e "menos de 10%" da superfície (os 7% de Crapo 1982 vêm só do resumo); anéis finos de músculo liso nas bocas dos alvéolos do ducto (redação do aviso).
+- Lóbulo hepático: é um esquema idealizado (placas com passagens, tríade completa nos seis ângulos, setas de sentido); "no fígado as placas são contínuas" repete os livros, sem fonte primária lida; calibre dos sinusoides apoiado em dois resumos de estudos em rato.
+- Sarcômero: os comprimentos mostrados (2,5 / 1,6 / 1,0 µm) são os dos livros e vêm da rã; nos músculos humanos medidos o filamento fino tem cerca de 1,2 a 1,4 µm (Gokhin 2012, texto integral). Decidir se o esquema passa a usar valores humanos. "Banda H" × "zona H": mantido como no his-09.
+- Junções: BP180/BP230 só no hemidesmossomo de epitélios estratificados e pseudoestratificados (Walko 2015, texto integral); a definição no his-02 foi precisada e ganhou nota de divergência. "Desmogleína 2 nos epitélios simples" é inferência de uma revisão (apagar se preferir só o texto de livro). Função de cerca da zônula de oclusão mantida como nos livros.
+- Junqueira, Ross e Guyton não abriram nesta rede: o que se atribui a eles nos modelos vem dos tópicos.
+
+**J6. Lâminas do grupo C** (relatório `laminas-sistemas-c.md` §7 e §10)
+- Frequência de mitoses no endométrio proliferativo do desenho (25 em 1.638 células glandulares; sem fonte lida com o índice normal) e orientação da placa metafásica.
+- Números com fonte lida: ovócito primordial 30–35 µm; fasciculada ≈ 3/4 e glomerulosa ≈ 15% do córtex adrenal; alvéolo adulto ≈ 200 µm.
+- Estruturas desenhadas sem id próprio: saco alveolar, teca externa, cúmulo e corona radiata; uma só camada de células mioides no testículo.
+
+**J7. Limites técnicos do 3D, a conferir em aparelho real**
+- Tempos de quadro e de troca de modelo foram medidos só com renderização por software; o rebaixamento automático de resolução (mediana acima de 28 ms durante o giro) não foi validado em GPU real.
+- Alvos pequenos no celular pedem aproximação: mácula densa, poro alveolar, barreira hematoaérea, linha Z, zônulas, canalículo biliar.
+- Proposto, não feito: gerar a escultura da semana 8 no nível alto fora da thread principal (hoje leva cerca de 0,7 s ao abrir o modelo nesse nível).
+
 ## Como registrar a sua conferência
 
 Ver `docs/revisao-medica.md`: preencha `revisao.humano` do tópico (`conferidoPor`, `conferidoEm`, opcional `registro` e `notas`) ou envie a lista do que conferiu para o agente registrar exatamente o que você informar. `npm run revisao` mostra o estado.
