@@ -5,7 +5,7 @@
 // vão juntas num único <path> com vários subcaminhos: o desenho fica com poucas dezenas de elementos, leve no celular.
 // Tudo é sorteado pelo rng da lâmina (semente fixa = id), então o desenho é sempre o mesmo.
 import type { ReactElement } from 'react';
-import { Deco, E, H, HE, W, entre, type Rng } from '../he.tsx';
+import { Deco, E, H, HE, W, cunha, entre, type Rng } from '../he.tsx';
 import type { LaminaRender } from './index.ts';
 
 // ---------------------------------------------------------------------------------------------
@@ -588,11 +588,12 @@ export function LaminaPulmao(rng: Rng) {
   const amRb = amostrar(rb, Math.round(perimetro(rb, false) / 2), false);
   const Lrb = amRb[amRb.length - 1].s;
   // aberturas de alvéolos (≈ 40 un) centradas em alguns alvéolos da fileira; o resto da parede é contínuo
-  const aberturas: Record<number, number[]> = { 1: [posRb[1], posRb[4]], [-1]: [posRb[2], posRb[5]] };
+  // 3–4 aberturas por lado no trecho visível (uma por alvéolo da fileira), separadas por segmentos curtos de parede
+  const aberturas: Record<number, number[]> = { 1: posRb.slice(1), [-1]: posRb.slice(1) };
   const paredes: [number, number, number][] = [];
   for (const lado of [1, -1]) {
     let ini = 0;
-    for (const a of aberturas[lado].filter((v) => v !== undefined && v < Lrb - 60)) {
+    for (const a of aberturas[lado].filter((v) => v !== undefined && v < Lrb - 40)) {
       paredes.push([lado, ini, a - 17]);
       ini = a + 17;
     }
@@ -813,10 +814,10 @@ export function LaminaPulmao(rng: Rng) {
 // =============================================================================================
 // 2. RIM, CÓRTEX — escala 1 un ≈ 0,75 µm: corpúsculo renal ≈ 180 µm; TCP ≈ 57 µm de diâmetro externo; TCD ≈ 42 µm;
 // hemácia ≈ 10 un.
-export const PARTES_RIM = ['glomerulo', 'espaco-urinario', 'capsula-glomerular', 'tubulo-contorcido-proximal', 'tubulo-contorcido-distal', 'macula-densa', 'arteriola-aferente', 'arteriola-eferente', 'capilar'];
+export const PARTES_RIM = ['glomerulo', 'espaco-urinario', 'capsula-glomerular', 'tubulo-contorcido-proximal', 'tubulo-contorcido-distal', 'macula-densa', 'arteriola-aferente', 'celulas-justaglomerulares', 'arteriola-eferente', 'capilar'];
 
 /** Arteríola em corte longitudinal entre p0 e p1: parede de músculo liso, endotélio e hemácias na luz. */
-function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, jg: number, mostrar: (x: number, y: number) => boolean) {
+function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, jg: number, mostrar: (x: number, y: number) => boolean, fimJg = 26) {
   const L = Math.hypot(p1[0] - p0[0], p1[1] - p0[1]);
   const tx = (p1[0] - p0[0]) / L;
   const ty = (p1[1] - p0[1]) / L;
@@ -833,7 +834,7 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
   for (let s = 4; s < L - 3; s += entre(rng, 8, 13)) {
     for (const lado of [1, -1]) {
       if (rng() < 0.3) continue;
-      if (s > L - jg && lado === 1) continue; // trecho com células justaglomerulares
+      if (jg && s > L - jg - fimJg - 2 && s < L - fimJg + 2 && lado === 1) continue; // trecho com células justaglomerulares
       // músculo liso circular cortado de través: núcleos curtos, transversais ao eixo do vaso
       const [x, y] = em(s + entre(rng, -2.5, 2.5), lado * (om + entre(rng, -1.2, 1.2)));
       if (mostrar(x, y)) nucM.push(elipse(x, y, 1.7, 2.6, ang));
@@ -847,8 +848,9 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
     const [x, y] = em(s, entre(rng, -hl + 4, hl - 4));
     hem.push(hemacia(x, y, 4.6, ang + entre(rng, -30, 30), 2.6));
   }
-  // células justaglomerulares: células musculares lisas modificadas, epitelioides, com grânulos de renina
-  for (let s = L - jg; s < L - 4; s += 8.5) {
+  // células justaglomerulares: células musculares lisas modificadas, epitelioides, com grânulos de renina, na média da
+  // aferente logo antes de ela entrar no polo vascular (trecho que termina `fimJg` un antes da ponta, já dentro do tufo)
+  for (let s = L - jg - fimJg; s < L - fimJg - 4; s += 8.5) {
     jgCel.push(faixa(hl + 0.3, hw - 0.3, s, s + 8));
     const [x, y] = em(s + 4, om);
     if (mostrar(x, y)) jgNuc.push(circulo(x, y, 2.4));
@@ -857,7 +859,9 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
       if (Math.hypot(gx - x, gy - y) > 3.2) jgGraos.push(circulo(gx, gy, 0.6));
     }
   }
-  return { parede: faixa(-hw, hw), luz: faixa(-hl, hl), nucM: nucM.join(''), nucE: nucE.join(''), hem: hem.join(''), jgCel: jgCel.join(''), jgNuc: jgNuc.join(''), jgGraos: jgGraos.join('') };
+  // área de toque das células justaglomerulares: a faixa delas, alargada ~2 un para a luz e para fora
+  const jgToque = jg ? faixa(hl - 2, hw + 2, L - jg - fimJg - 1.5, L - fimJg - 2.5) : '';
+  return { parede: faixa(-hw, hw), luz: faixa(-hl, hl), nucM: nucM.join(''), nucE: nucE.join(''), hem: hem.join(''), jgCel: jgCel.join(''), jgNuc: jgNuc.join(''), jgGraos: jgGraos.join(''), jgToque };
 }
 
 /** Córtex renal: corpúsculos renais (glomérulo, espaço urinário, cápsula), túbulos contorcidos e aparelho justaglomerular. */
@@ -891,13 +895,16 @@ export function LaminaRimCortex(rng: Rng) {
     }
   }
   occ.marcar(MD.x, MD.y, MD.R + 2);
-  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.8 ? entre(rng, 33, 37) : entre(rng, 24, 27)), () => true, occ, 0);
+  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => entre(rng, 31, 36), () => true, occ, 0);
+  // ≈ 1 túbulo em cada 5,5 é TCD, independente do lugar: o TCP, segmento mais longo do néfron, predomina no córtex.
+  // O TCD recebe peso menor e fica com perfil menor (os vizinhos ocupam o espaço que sobra).
+  const ehTcd = tubSem.map(() => rng() < 1 / 5.5);
   const mdSitio: Sitio = { x: MD.x, y: MD.y, w: MD.R + 3 };
-  const sitios: Sitio[] = [...tubSem.map(([x, y, r]) => ({ x, y, w: r })), mdSitio, ...fixos];
+  const sitios: Sitio[] = [...tubSem.map(([x, y, r], i) => ({ x, y, w: ehTcd[i] ? r - 8 : r })), mdSitio, ...fixos];
   relaxar(sitios, tubSem.length, (st) => st.w * 1.8, 2);
   const forma = (st: Sitio) => arredondar(chaikin(celulaPotencia(st, sitios, st.w * 1.6, 4.2), 2), 1.16, 0.42);
-  const proximais = sitios.slice(0, tubSem.length).filter((q) => q.w >= 31).map(forma);
-  const distais = sitios.slice(0, tubSem.length).filter((q) => q.w < 31).map(forma);
+  const proximais = sitios.slice(0, tubSem.length).filter((_, i) => !ehTcd[i]).map(forma);
+  const distais = sitios.slice(0, tubSem.length).filter((_, i) => ehTcd[i]).map(forma);
   const contornoMd = forma(mdSitio);
   const centroide = (pol: P[]): P => [pol.reduce((a, p) => a + p[0], 0) / pol.length, pol.reduce((a, p) => a + p[1], 0) / pol.length];
   // distância do centro até o contorno na direção a (interseção do raio com as arestas)
@@ -1066,7 +1073,11 @@ export function LaminaRimCortex(rng: Rng) {
   const tufos: string[] = [];
   const alcas: string[] = [];
   const hemTufo: string[] = [];
-  const nucTufo: string[] = [];
+  const mesangio: string[] = [];
+  const nucMes: string[] = [];
+  const podCorpo: string[] = [];
+  const podNuc: string[] = [];
+  const endoTufo: string[] = [];
   corpusculos.forEach((c) => {
     espacos.push(circulo(c.x, c.y, c.R));
     capsulas.push(circulo(c.x, c.y, c.R + 0.6));
@@ -1088,13 +1099,50 @@ export function LaminaRimCortex(rng: Rng) {
     tufos.push(lob.map(([x, y, r]) => circulo(x, y, r)).join(''));
     const noTufo = (x: number, y: number, m: number) => lob.some(([lx, ly, r]) => Math.hypot(x - lx, y - ly) < r - m);
     const occG = ocupacao(16, 8);
-    const loops = dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => entre(rng, 5, 8), (x, y, r) => noTufo(x, y, r * 0.5), occG, 2);
+    // células mesangiais: 1–2 núcleos no eixo de cada lóbulo, numa pequena área de matriz mesangial
+    lob.forEach(([lx, ly, r], i) => {
+      if (c.polo && i === lob.length - 1) return; // haste do polo vascular
+      mesangio.push(elipse(lx, ly, r * 0.17, r * 0.13, entre(rng, 0, 180)));
+      const n = r > 45 ? 2 : 1;
+      const a0 = entre(rng, 0, Math.PI * 2);
+      for (let k = 0; k < n; k++) {
+        const x = lx + (n > 1 ? Math.cos(a0 + Math.PI * k) * 3.8 : 0);
+        const y = ly + (n > 1 ? Math.sin(a0 + Math.PI * k) * 3.8 : 0);
+        if (!occG.livre(x, y, 3.1, 0.4)) continue;
+        occG.marcar(x, y, 3.1);
+        nucMes.push(circulo(x, y, 3.1));
+      }
+    });
+    // podócitos: na superfície externa dos lóbulos, salientes para o espaço urinário (não no polo vascular)
+    const polo: P = [c.x, c.y - c.R];
+    lob.forEach(([lx, ly, r]) => {
+      const n = Math.floor((2 * Math.PI * r) / 16);
+      const g = entre(rng, 0, 1);
+      for (let k = 0; k < n; k++) {
+        const a = g + (2 * Math.PI * k) / n;
+        const bx = lx + Math.cos(a) * r;
+        const by = ly + Math.sin(a) * r;
+        if (lob.some(([ox, oy, orr]) => (ox !== lx || oy !== ly) && Math.hypot(bx - ox, by - oy) < orr + 3)) continue;
+        if ((c.polo && Math.hypot(bx - polo[0], by - polo[1]) < 50) || rng() < 0.3) continue;
+        const px = lx + Math.cos(a) * (r + 1.4);
+        const py = ly + Math.sin(a) * (r + 1.4);
+        if (!occG.livre(px, py, 4.2, 0.4)) continue;
+        occG.marcar(px, py, 4.2);
+        const ang = (a * 180) / Math.PI + 90;
+        podCorpo.push(elipse(px + Math.cos(a) * 0.8, py + Math.sin(a) * 0.8, 5.4, 3.8, ang));
+        podNuc.push(elipse(px, py, 3.4, 2.3, ang));
+      }
+    });
+    // alças capilares compactas (a matriz mesangial fica restrita aos eixos); hemácias ou núcleo endotelial na parede
+    const loops = dardos(rng, 6000, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => entre(rng, 5, 7.6), (x, y, r) => noTufo(x, y, r * 0.55), occG, 0.8);
     for (const [x, y, r] of loops) {
       alcas.push(circulo(x, y, r));
-      if (rng() < 0.6) hemTufo.push(hemacia(x, y, Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3.2, r - 2.4)));
+      if (rng() < 0.55) hemTufo.push(hemacia(x, y, Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3.2, r - 2.4)));
+      else if (rng() < 0.55) {
+        const a = entre(rng, 0, Math.PI * 2);
+        endoTufo.push(elipse(x + Math.cos(a) * (r - 1.5), y + Math.sin(a) * (r - 1.5), Math.min(2.8, r * 0.42), 1, (a * 180) / Math.PI + 90));
+      }
     }
-    // núcleos de células mesangiais, endoteliais e podócitos entre as alças (não se sobrepõem às alças)
-    dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => 3.2, (x, y) => noTufo(x, y, 1), occG, 0.9).forEach(([x, y, r]) => nucTufo.push(circulo(x, y, r)));
   });
   // dentro da cápsula a arteríola entra no tufo: sem núcleos da parede ali (o tufo a cobre)
   const foraDoCorpusculo = (x: number, y: number) => Math.hypot(x - corpusculos[0].x, y - corpusculos[0].y) > corpusculos[0].R - 2;
@@ -1140,13 +1188,16 @@ export function LaminaRimCortex(rng: Rng) {
       </E>
       <E id="arteriola-aferente">
         <path d={af.parede} fill={cor.parede} />
-        <path d={af.jgCel} fill={cor.jg} stroke="#d98bb0" strokeWidth={0.5} />
-        <path d={af.jgGraos} fill="#b9427c" />
-        <path d={af.jgNuc} fill={HE.nucleo} />
         <path d={af.nucM} fill={HE.nucleo} />
         <path d={af.luz} fill={HE.luz} />
         <path d={af.nucE} fill={HE.nucleoEscuro} />
         <path d={af.hem} fill={HE.hemacia} />
+      </E>
+      <E id="celulas-justaglomerulares">
+        <path d={af.jgToque} fill="transparent" />
+        <path d={af.jgCel} fill={cor.jg} stroke="#d98bb0" strokeWidth={0.5} />
+        <path d={af.jgGraos} fill="#b9427c" />
+        <path d={af.jgNuc} fill={HE.nucleo} />
       </E>
       <E id="arteriola-eferente">
         <path d={ef.parede} fill={cor.parede} />
@@ -1157,9 +1208,13 @@ export function LaminaRimCortex(rng: Rng) {
       </E>
       <E id="glomerulo">
         <path d={tufos.join('')} fill={cor.tufo} />
+        <path d={mesangio.join('')} fill="#d987ae" />
         <path d={alcas.join('')} fill={cor.alca} stroke={cor.mb} strokeWidth={1} />
         <path d={hemTufo.join('')} fill={HE.hemacia} />
-        <path d={nucTufo.join('')} fill={HE.nucleo} />
+        <path d={endoTufo.join('')} fill={HE.nucleoEscuro} />
+        <path d={nucMes.join('')} fill={HE.nucleo} />
+        <path d={podCorpo.join('')} fill="#efc5d8" stroke={cor.mb} strokeWidth={0.6} />
+        <path d={podNuc.join('')} fill={HE.nucleo} />
       </E>
     </>
   );
@@ -1215,7 +1270,7 @@ export function LaminaTireoide(rng: Rng) {
     // folículos grandes têm epitélio mais baixo (menos ativos); os pequenos, mais alto
     const temC = r > 34 && r < 70 && comC < 14 && rng() < 0.6;
     if (temC) comC++;
-    const h = temC ? 12 : r > 70 ? 7 : r > 45 ? 9 : 10.5;
+    const h = temC ? 13 : r > 70 ? 7 : r > 45 ? 9 : 10.5;
     const ep = epitelio(pol, 9, () => h, 1);
     ep.celulas.forEach((c) => celulas.push(contorno(c)));
     const k0 = temC ? Math.floor(rng() * ep.n) : -10;
@@ -1233,8 +1288,9 @@ export function LaminaTireoide(rng: Rng) {
     if (temC) {
       // célula C: base do epitélio, entre os tirócitos e a lâmina basal, sem alcançar o coloide
       const b = ep.base[(k0 + 1) % ep.n];
-      const cx = b.x + b.nx * 4;
-      const cy = b.y + b.ny * 4;
+      // centro a 5,5 un da lâmina basal: a elipse (5,3 un no sentido radial) fica inteira por dentro dela e longe do coloide
+      const cx = b.x + b.nx * 5.5;
+      const cy = b.y + b.ny * 5.5;
       cCel.push(elipse(cx, cy, 8.6, 5.3, graus(b.nx, b.ny) + 90));
       cNuc.push(circulo(cx + b.nx * 0.4, cy + b.ny * 0.4, 3.2));
       occN.marcar(cx, cy, 8.6);
@@ -1336,14 +1392,15 @@ export function LaminaTireoide(rng: Rng) {
 // =============================================================================================
 // 4. ADRENAL — escala 1 un ≈ 1 µm nas células (espongiócito ≈ 20 µm); as espessuras das zonas estão comprimidas para
 // caberem todas no campo (na glândula real a fasciculada é bem mais espessa que as outras).
-export const PARTES_ADRENAL = ['capsula', 'zona-glomerulosa', 'zona-fasciculada', 'zona-reticular', 'medula-suprarrenal', 'celula-cromafim', 'capilar', 'veia-central'];
+export const PARTES_ADRENAL = ['capsula-suprarrenal', 'zona-glomerulosa', 'zona-fasciculada', 'zona-reticular', 'medula-suprarrenal', 'celula-cromafim', 'capilar', 'veia-central-suprarrenal'];
 
 /** Adrenal: cápsula, zonas glomerulosa, fasciculada e reticular do córtex, e medula com células cromafins. */
 export function LaminaAdrenal(rng: Rng) {
   const cor = { capsula: '#e9a2c2', sinusoide: '#fbeaf1', zg: '#e7a0c0', zgBorda: '#cf7ea5', zf: '#f6dce7', zfBorda: '#d79bb8', zr: '#dd85ab', zrBorda: '#c46b95', lipofuscina: '#8a5a32', med: '#c9b5dc', medBorda: '#a68cc4', medNuc: '#5b4b9c', espuma: '#fdf6f9' };
   const yG = (x: number) => 24 + 3 * Math.sin(x / 50); // cápsula → glomerulosa
   const yR = (x: number) => 420 + 10 * Math.sin(x / 80 + 2); // fasciculada → reticular
-  const yM = (x: number) => 542 + 10 * Math.sin(x / 45) + 6 * Math.sin(x / 17 + 1); // reticular → medula
+  // reticular → medula: ≈ 60 un de reticular (≈ 1/7 do córtex desenhado), com limite irregular (interdigitação)
+  const yM = (x: number) => 482 + 9 * Math.sin(x / 38) + 6 * Math.sin(x / 13 + 1);
   const faixaY = (f0: (x: number) => number, f1: (x: number) => number) => {
     const xs = Array.from({ length: 53 }, (_, k) => -20 + k * 20);
     return contorno([...xs.map((x): P => [x, f0(x)]), ...[...xs].reverse().map((x): P => [x, f1(x)])]);
@@ -1356,13 +1413,13 @@ export function LaminaAdrenal(rng: Rng) {
   const occNuc = ocupacao(20, 8);
   const zgCel: string[] = [];
   const zgNuc: string[] = [];
-  for (let x = 6; x < W + 40; x += entre(rng, 62, 68)) {
-    const a = entre(rng, 28, 31);
-    const b = 33.5;
-    const cy = 59.5;
+  // grupos de tamanhos variados, alternando ovoides ("glomérulos") e arcos (cordões em U invertido abertos para a
+  // fasciculada); entre eles, capilares
+  const ovoide = (x: number, cy: number, a: number, b: number) => {
     const ctr = pontosPolar(x, cy, (t) => (a * b) / Math.hypot(b * Math.cos(t), a * Math.sin(t)), 48);
+    const raioMedio = (a + b) / 2;
     const sem: Sitio[] = [{ x, y: cy, w: 0 }];
-    for (const [fr, n] of [[0.78, 15], [0.44, 7]] as [number, number][]) {
+    for (const [fr, n] of [[0.78, Math.max(6, Math.round((2 * Math.PI * 0.78 * raioMedio) / 9.5))], [0.44, Math.max(3, Math.round((2 * Math.PI * 0.44 * raioMedio) / 9.5))]] as [number, number][]) {
       const g = entre(rng, 0, 1);
       for (let k = 0; k < n; k++) {
         const t = g + (2 * Math.PI * k) / n;
@@ -1396,6 +1453,44 @@ export function LaminaAdrenal(rng: Rng) {
       occNuc.marcar(px, py, 2.9);
       zgNuc.push(circulo(px, py, 2.9));
     });
+  };
+  const arco = (cx: number, rc: number) => {
+    // uma fileira de células colunares, radiadas, em U invertido; as pernas descem até a fasciculada
+    const meia = 6.5;
+    const cy = 27 + rc + meia;
+    const n = Math.max(6, Math.round((Math.PI * rc) / 9));
+    for (let k = 0; k < n; k++) {
+      const a0 = Math.PI + (Math.PI * k) / n;
+      const a1 = Math.PI + (Math.PI * (k + 1)) / n;
+      const am = (a0 + a1) / 2;
+      zgCel.push(cunha(cx, cy, rc - meia, rc + meia, a0, a1));
+      const px = cx + Math.cos(am) * (rc + 1.2);
+      const py = cy + Math.sin(am) * (rc + 1.2);
+      if (!occNuc.livre(px, py, 2.8, 0.4)) continue;
+      occNuc.marcar(px, py, 2.8);
+      zgNuc.push(circulo(px, py, 2.8));
+    }
+    for (const lx of [cx - rc, cx + rc])
+      for (let y = cy; y < 89; y += 9) {
+        const y1 = Math.min(y + 9, 93.5);
+        zgCel.push(contorno([[lx - meia, y], [lx + meia, y], [lx + meia, y1], [lx - meia, y1]]));
+        const py = (y + y1) / 2;
+        if (!occNuc.livre(lx, py, 2.8, 0.4)) continue;
+        occNuc.marcar(lx, py, 2.8);
+        zgNuc.push(circulo(lx, py, 2.8));
+      }
+  };
+  for (let xz = entre(rng, -30, -5); xz < W + 40; ) {
+    if (rng() < 0.42) {
+      const rc = entre(rng, 18, 27);
+      arco(xz + rc + 6.5, rc);
+      xz += 2 * (rc + 6.5) + entre(rng, 4, 9);
+    } else {
+      const a = entre(rng, 19, 32);
+      const b = entre(rng, 23, 33.5);
+      ovoide(xz + a, 27 + b + entre(rng, 0, Math.max(0, 66.5 - 2 * b)), a, b);
+      xz += 2 * a + entre(rng, 4, 9);
+    }
   }
 
   // zona fasciculada: cordões retos, de 1–2 células, perpendiculares à cápsula, separados por capilares sinusoides;
@@ -1455,13 +1550,13 @@ export function LaminaAdrenal(rng: Rng) {
   // Os furos da rede (sinusoides) entram como sítios fixos com peso; as células, relaxadas, ficam poligonais e
   // encostadas umas nas outras, contornando os sinusoides.
   const occR = ocupacao(40, 21);
-  const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
-  const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occR, 22);
+  const furosR = dardos(rng, 800, [-20, 400, W + 20, 520], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
+  const furosM = dardos(rng, 800, [-20, 465, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 8 && !naVeia(x, y, 16), occR, 22);
   for (const [x, y] of furosR) hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
   const hemMedula = furosM.map(([x, y]) => hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4)).join('');
   const occC = ocupacao(24, 9);
-  const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occC, 0);
-  const semM0 = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occC, 0);
+  const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 520], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occC, 0);
+  const semM0 = dardos(rng, 7000, [-20, 455, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occC, 0);
   const sitRM: Sitio[] = [
     ...semR0.map(([x, y]) => ({ x, y, w: 0 })),
     ...semM0.map(([x, y]) => ({ x, y, w: 5 })),
@@ -1539,7 +1634,7 @@ export function LaminaAdrenal(rng: Rng) {
         <path d={hemacias.join('')} fill={HE.hemacia} />
         <path d={endotelio.join('')} fill={HE.nucleoEscuro} />
       </E>
-      <E id="capsula">
+      <E id="capsula-suprarrenal">
         <path d={faixaY(() => -20, yG)} fill={cor.capsula} />
         <path d={capNuc.join('')} fill={HE.nucleo} />
       </E>
@@ -1565,7 +1660,7 @@ export function LaminaAdrenal(rng: Rng) {
         <path d={medCel.join('')} fill={cor.med} stroke={cor.medBorda} strokeWidth={0.7} />
         <path d={medNuc.join('')} fill={cor.medNuc} />
       </E>
-      <E id="veia-central">
+      <E id="veia-central-suprarrenal">
         <path d={elipse(veia.x, veia.y, veia.rx + 3, veia.ry + 3)} fill="#e7a7c4" />
         <path d={feixes.join('')} fill={HE.musculo} />
         <path d={nucFeixe.join('')} fill={HE.nucleo} />
@@ -1580,7 +1675,7 @@ export function LaminaAdrenal(rng: Rng) {
 // =============================================================================================
 // 5. TESTÍCULO — escala 1 un ≈ 0,8 µm: túbulo seminífero ≈ 190 µm; epitélio ≈ 60 µm; espermatócito ≈ 15 µm;
 // espermátide redonda ≈ 8 µm; célula de Leydig ≈ 14 µm. A túnica albugínea real é mais espessa que a faixa do esquema.
-export const PARTES_TESTICULO = ['tunica-albuginea', 'celula-mioide-peritubular', 'espermatogonia', 'espermatocito', 'espermatide', 'celula-de-sertoli', 'espermatozoide', 'celula-de-leydig', 'capilar'];
+export const PARTES_TESTICULO = ['tunica-albuginea', 'tubulo-seminifero', 'celula-mioide-peritubular', 'espermatogonia', 'espermatocito', 'espermatide', 'celula-de-sertoli', 'espermatozoide', 'celula-de-leydig', 'capilar'];
 
 /** Testículo: túnica albugínea, túbulos seminíferos com epitélio germinativo e células de Sertoli, interstício com Leydig. */
 export function LaminaTesticulo(rng: Rng) {
@@ -1595,6 +1690,7 @@ export function LaminaTesticulo(rng: Rng) {
   const propria: string[] = [];
   const mioides: string[] = [];
   const sertoliFundo: string[] = [];
+  const tubulosToque: string[] = [];
   const sertoliNuc: string[] = [];
   const nucleolos: string[] = [];
   const luzes: string[] = [];
@@ -1615,6 +1711,7 @@ export function LaminaTesticulo(rng: Rng) {
       mioides.push(elipse(x + Math.cos(a) * (R + 3.6), y + Math.sin(a) * (R + 3.6), 6, 1.3, (a * 180) / Math.PI + 90));
     }
     sertoliFundo.push(circulo(x, y, R));
+    tubulosToque.push(circulo(x, y, R + LP + 2.5));
     const rl = R - 80;
     luzes.push(circulo(x, y, rl));
     const occ = ocupacao(16, 10);
@@ -1775,6 +1872,11 @@ export function LaminaTesticulo(rng: Rng) {
         <path d={leyVac.join('')} fill="#f8e3ec" />
         <path d={leyNuc.join('')} fill={HE.nucleo} />
       </E>
+      {/* túbulo seminífero como unidade: disco sob todas as suas partes (que contam por ele no jogo); área própria só na
+          faixa de ~2,5 un logo por fora da lâmina própria. Cor do interstício: não muda o desenho */}
+      <E id="tubulo-seminifero">
+        <path d={tubulosToque.join('')} fill={cor.interst} />
+      </E>
       <E id="celula-mioide-peritubular">
         <path d={propria.join('')} fill={cor.propria} fillRule="evenodd" />
         <path d={mioides.join('')} fill={HE.nucleoEscuro} />
@@ -1812,7 +1914,7 @@ export function LaminaTesticulo(rng: Rng) {
 // =============================================================================================
 // 6. OVÁRIO — escala 1 un ≈ 1 µm: folículo primordial ≈ 35 µm (ovócito ≈ 27 µm); primário unilaminar ≈ 65 µm;
 // folículo secundário (antral) ≈ 400 µm, com ovócito de ≈ 104 µm e zona pelúcida de ≈ 7 µm.
-export const PARTES_OVARIO = ['epitelio-superficial-do-ovario', 'tunica-albuginea', 'foliculo-primordial', 'foliculo-primario', 'foliculo-secundario', 'ovocito-primario', 'zona-pelucida', 'celulas-da-granulosa', 'teca-interna'];
+export const PARTES_OVARIO = ['epitelio-superficial-do-ovario', 'tunica-albuginea-ovariana', 'foliculo-primordial', 'foliculo-primario', 'foliculo-secundario', 'ovocito-primario', 'zona-pelucida', 'celulas-da-granulosa', 'teca-interna'];
 
 /** Córtex do ovário: epitélio superficial, túnica albugínea, folículos primordiais, primários e um folículo secundário. */
 export function LaminaOvario(rng: Rng) {
@@ -1964,7 +2066,7 @@ export function LaminaOvario(rng: Rng) {
       <path d={`M-20,-20H${W + 20}V${f1(ySup(W + 20))}` + Array.from({ length: 53 }, (_, k) => `L${W + 20 - k * 20},${f1(ySup(W + 20 - k * 20))}`).join('') + 'Z'} fill={HE.vidro} />
       <path d={contorno([[-20, yAlb(-20)], ...Array.from({ length: 53 }, (_, k): P => [-20 + k * 20, yAlb(-20 + k * 20)]), [W + 20, H + 20], [-20, H + 20]])} fill={cor.estroma} />
       <path d={estNuc.join('')} fill={HE.nucleo} />
-      <E id="tunica-albuginea">
+      <E id="tunica-albuginea-ovariana">
         <path d={contorno([...Array.from({ length: 53 }, (_, k): P => [-20 + k * 20, ySup(-20 + k * 20) + 8]), ...Array.from({ length: 53 }, (_, k): P => [W + 20 - k * 20, yAlb(W + 20 - k * 20) + 1])])} fill={cor.albuginea} />
         <path d={albFib} stroke={cor.fibra} strokeWidth={1.2} fill="none" />
         <path d={albNuc.join('')} fill={HE.nucleo} />
@@ -2033,7 +2135,7 @@ export function LaminaOvario(rng: Rng) {
 // =============================================================================================
 // 7. ÚTERO, FASE PROLIFERATIVA — escala 1 un ≈ 1,2 µm: glândula ≈ 60 µm de diâmetro; células glandulares ≈ 20 µm de
 // altura. As espessuras estão comprimidas: o endométrio proliferativo tem 1–4 mm e o miométrio, 1–2 cm.
-export const PARTES_UTERO = ['epitelio-simples-cilindrico', 'lumen', 'endometrio-funcional', 'endometrio-basal', 'glandula-endometrial', 'arteria-espiralada', 'miometrio'];
+export const PARTES_UTERO = ['epitelio-simples-cilindrico', 'lumen', 'endometrio-funcional', 'endometrio-basal', 'estroma-endometrial', 'glandula-endometrial', 'arteria-espiralada', 'miometrio'];
 
 /** Endométrio proliferativo: glândulas retas, estroma denso, artérias espiraladas, camada basal e miométrio. */
 export function LaminaUteroProliferativo(rng: Rng) {
@@ -2061,19 +2163,23 @@ export function LaminaUteroProliferativo(rng: Rng) {
     const ep = epitelio(contornoExt, 7.4, () => h, 1);
     ep.celulas.forEach((c, k) => {
       glCel.push(contorno(c));
-      // núcleos alongados em alturas diferentes (aspecto pseudoestratificado do epitélio proliferativo)
-      if (rng() < 0.012 && nMitose < 6) {
-        nMitose++;
+      // mitose (≈ 1 a cada 2–3 perfis glandulares): placa metafásica escura com halo claro, na metade apical da célula
+      if (rng() < 0.04 && nMitose < 25) {
         const m = ep.meio(k, 0.72);
-        halos.push(elipse(m.x, m.y, 3.4, 4.6, m.ang + 90));
-        mitoses.push(elipse(m.x, m.y, 3.2, 1.1, m.ang + 90));
-        return;
+        if (m.y > ySup(m.x) + 6 && occGl.livre(m.x, m.y, 4, 0.4)) {
+          occGl.marcar(m.x, m.y, 4.4);
+          nMitose++;
+          halos.push(elipse(m.x, m.y, 5, 4, m.ang + 90));
+          mitoses.push(elipse(m.x, m.y, 4.4, 1.5, m.ang + 90));
+          return;
+        }
       }
-      const m = ep.meio(k, entre(rng, 0.32, 0.66));
+      // núcleos alongados em alturas bem diferentes (aspecto pseudoestratificado do epitélio proliferativo)
+      const m = ep.meio(k, entre(rng, 0.24, 0.74));
       if (m.y < ySup(m.x) + 3) return; // trecho da glândula acima da superfície (coberto pela luz do útero)
       // nas curvas fechadas (fundo de saco, perfis pequenos) as células convergem: núcleo que tocaria o vizinho fica fora do plano
-      if (!occGl.livre(m.x, m.y, 2.6, 0.4)) return;
-      occGl.marcar(m.x, m.y, 2.6);
+      if (!occGl.livre(m.x, m.y, 1.8, 0.4)) return;
+      occGl.marcar(m.x, m.y, 1.8);
       glNuc.push(elipse(m.x, m.y, 4.4, 1.9, m.ang));
     });
     glLuz.push(contorno(ep.topo));
@@ -2160,15 +2266,17 @@ export function LaminaUteroProliferativo(rng: Rng) {
     const bas = y > yB(x);
     (bas ? estB : estF).push(elipse(x, y, entre(rng, 3, 3.6), entre(rng, 1.5, 2), entre(rng, 0, 180)));
   });
-  // mitoses ocasionais também no estroma
-  for (let k = 0, n = 0; k < 200 && n < 3; k++) {
-    const x = entre(rng, 50, W - 50);
-    const y = entre(rng, 120, 380);
-    if (!occE.livre(x, y, 4.6, 0.5) || naGlandula(x, y, 5)) continue;
-    occE.marcar(x, y, 4.6);
+  // mitoses também no estroma (8–10 no campo)
+  const halosE: string[] = [];
+  const mitosesE: string[] = [];
+  for (let k = 0, n = 0; k < 600 && n < 9; k++) {
+    const x = entre(rng, 40, W - 40);
+    const y = entre(rng, 90, 470);
+    if (y > yM(x) - 12 || !occE.livre(x, y, 5.2, 0.5) || naGlandula(x, y, 6)) continue;
+    occE.marcar(x, y, 5.2);
     n++;
-    halos.push(circulo(x, y, 4.4));
-    mitoses.push(elipse(x, y, 3.2, 1.1, entre(rng, 0, 180)));
+    halosE.push(circulo(x, y, 4.8));
+    mitosesE.push(elipse(x, y, 4, 1.4, entre(rng, 0, 180)));
   }
 
   // epitélio de revestimento: simples cilíndrico (células secretoras e algumas ciliadas), interrompido nas aberturas das glândulas
@@ -2235,15 +2343,21 @@ export function LaminaUteroProliferativo(rng: Rng) {
         <path d={vasosM.map(([x, y, r]) => circulo(x, y, r)).join('')} fill={HE.luz} stroke="#c9578d" strokeWidth={3.5} />
         <path d={vasosM.map(([x, y, r]) => hemacia(x - r * 0.3, y, 3.6, 30, 2.6) + hemacia(x + r * 0.3, y + 2, 3.6, -40, 2.6)).join('')} fill={HE.hemacia} />
       </E>
+      {/* as camadas são regiões: ficam por baixo do estroma, das glândulas e das artérias, que contam por elas no jogo
+          (contem); no microscópio, o botão da camada a destaca */}
       <E id="endometrio-basal">
         <path d={faixa(yB, yM)} fill={cor.basal} />
-        <path d={estB.join('')} fill={HE.nucleoEscuro} />
       </E>
       <E id="endometrio-funcional">
         <path d={faixa(ySup, yB)} fill={cor.funcional} />
+      </E>
+      <E id="estroma-endometrial">
+        <path d={faixa(ySup, yB)} fill={cor.funcional} />
+        <path d={faixa(yB, yM)} fill={cor.basal} />
         <path d={estF.join('')} fill={HE.nucleo} />
-        <path d={halos.slice(nMitose).join('')} fill={cor.mitose} />
-        <path d={mitoses.slice(nMitose).join('')} fill={HE.nucleoEscuro} />
+        <path d={estB.join('')} fill={HE.nucleoEscuro} />
+        <path d={halosE.join('')} fill={cor.mitose} />
+        <path d={mitosesE.join('')} fill={HE.nucleoEscuro} />
       </E>
       <E id="arteria-espiralada">
         <path d={artMedia.join('')} fill={HE.musculo} stroke="#c45a8a" strokeWidth={0.8} />
@@ -2256,8 +2370,8 @@ export function LaminaUteroProliferativo(rng: Rng) {
         <path d={contornosGl.map((pol) => contorno(pol)).join('')} fill={cor.glandula} stroke={cor.glBorda} strokeWidth={1} />
         <path d={glCel.join('')} fill={cor.glandula} stroke={cor.glBorda} strokeWidth={0.5} />
         <path d={glNuc.join('')} fill={HE.nucleo} />
-        <path d={halos.slice(0, nMitose).join('')} fill={cor.mitose} />
-        <path d={mitoses.slice(0, nMitose).join('')} fill={HE.nucleoEscuro} />
+        <path d={halos.join('')} fill={cor.mitose} />
+        <path d={mitoses.join('')} fill={HE.nucleoEscuro} />
         <path d={glLuz.join('')} fill={HE.luz} />
       </E>
       <E id="lumen">
@@ -2274,14 +2388,62 @@ export function LaminaUteroProliferativo(rng: Rng) {
 
 // =============================================================================================
 export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {
-  pulmao: { desenhar: LaminaPulmao, partes: PARTES_PULMAO },
+  pulmao: {
+    desenhar: LaminaPulmao,
+    partes: PARTES_PULMAO,
+    // capilares e pneumócitos fazem parte do septo; os macrófagos desenhados estão na luz do alvéolo
+    contem: { 'septo-interalveolar': ['capilar', 'pneumocito-tipo-i', 'pneumocito-tipo-ii'], alveolo: ['macrofago-alveolar'] },
+    // o bronquíolo (epitélio simples cúbico a cilíndrico baixo) entra em metade dos campos do jogo
+    distratoresExcluidos: ['epitelio-cubico-rim'],
+  },
   // o campo do jogo precisa mostrar um corpúsculo renal: sem ele, só túbulos, o campo lembraria a lâmina epitelio-cubico-rim
-  'rim-cortex': { desenhar: LaminaRimCortex, partes: PARTES_RIM, areaDiagnostica: [280, 260, 400, 400] },
-  tireoide: { desenhar: LaminaTireoide, partes: PARTES_TIREOIDE },
+  'rim-cortex': {
+    desenhar: LaminaRimCortex,
+    partes: PARTES_RIM,
+    areaDiagnostica: [280, 260, 400, 400],
+    // células justaglomerulares na média da aferente; mácula densa na parede do túbulo distal
+    contem: { 'arteriola-aferente': ['celulas-justaglomerulares'], 'tubulo-contorcido-distal': ['macula-densa'] },
+    // TCP e TCD são epitélio simples cúbico em todos os campos: "Epitélio simples cúbico" também descreveria o campo
+    distratoresExcluidos: ['epitelio-cubico-rim'],
+  },
+  tireoide: {
+    desenhar: LaminaTireoide,
+    partes: PARTES_TIREOIDE,
+    // células C ficam fora: existem também nos grupos entre os folículos
+    contem: { 'foliculo-tireoidiano': ['coloide', 'tirocito'], 'septo-conjuntivo': ['capilar'] },
+    // tirócitos (epitélio simples cúbico) em todos os campos
+    distratoresExcluidos: ['epitelio-cubico-rim'],
+  },
   // a fasciculada (cordões de espongiócitos) é o aspecto mais característico: o campo sempre pega ela e uma vizinha
-  adrenal: { desenhar: LaminaAdrenal, partes: PARTES_ADRENAL, areaDiagnostica: [250, 160, 750, 420] },
-  testiculo: { desenhar: LaminaTesticulo, partes: PARTES_TESTICULO },
-  ovario: { desenhar: LaminaOvario, partes: PARTES_OVARIO },
-  // o campo do jogo precisa pegar endométrio com glândulas: um campo só de miométrio lembraria a lâmina de músculo liso
-  'utero-proliferativo': { desenhar: LaminaUteroProliferativo, partes: PARTES_UTERO, areaDiagnostica: [200, 170, 800, 400] },
+  adrenal: {
+    desenhar: LaminaAdrenal,
+    partes: PARTES_ADRENAL,
+    areaDiagnostica: [250, 160, 750, 420],
+    contem: { 'medula-suprarrenal': ['celula-cromafim', 'veia-central-suprarrenal'] },
+  },
+  // o túbulo é a unidade: as células e a luz são partes dele (área própria: só a borda externa)
+  testiculo: {
+    desenhar: LaminaTesticulo,
+    partes: PARTES_TESTICULO,
+    contem: { 'tubulo-seminifero': ['celula-mioide-peritubular', 'espermatogonia', 'espermatocito', 'espermatide', 'celula-de-sertoli', 'espermatozoide'] },
+  },
+  ovario: {
+    desenhar: LaminaOvario,
+    partes: PARTES_OVARIO,
+    contem: { 'foliculo-secundario': ['ovocito-primario', 'zona-pelucida', 'celulas-da-granulosa', 'teca-interna'] },
+  },
+  // y ≤ 350: o campo de 10× não chega ao miométrio (que lembraria a lâmina de músculo liso), mas ainda pega a camada
+  // basal e as artérias espiraladas
+  'utero-proliferativo': {
+    desenhar: LaminaUteroProliferativo,
+    partes: PARTES_UTERO,
+    areaDiagnostica: [200, 170, 800, 350],
+    // as camadas são regiões: estroma, glândulas e artérias dentro delas contam pela camada sob o toque
+    contem: {
+      'endometrio-funcional': ['epitelio-simples-cilindrico', 'estroma-endometrial', 'glandula-endometrial', 'arteria-espiralada'],
+      'endometrio-basal': ['estroma-endometrial', 'glandula-endometrial'],
+    },
+    // glândulas e superfície: epitélio simples cilíndrico; glândulas proliferativas com núcleos pseudoestratificados e células ciliadas na superfície
+    distratoresExcluidos: ['epitelio-cilindrico-intestino', 'epitelio-pseudoestratificado-traqueia'],
+  },
 };

@@ -138,6 +138,11 @@
           "descricao": "Leva sangue ao glomérulo e é mais calibrosa que a eferente. Perto do polo vascular, parte das células musculares lisas da média é substituída por células justaglomerulares, epitelioides, com grânulos de renina (no esquema, as células claras com grânulos na parede junto à cápsula)."
         },
         {
+          "id": "celulas-justaglomerulares",
+          "nome": "Células justaglomerulares",
+          "descricao": "Células musculares lisas modificadas da túnica média da arteríola aferente, junto ao polo vascular: epitelioides, claras, com grânulos de renina (no esquema, as células claras com grânulos na parede da aferente, perto da cápsula). Liberam renina quando cai a pressão de perfusão, quando cai o NaCl percebido pela mácula densa ou sob estímulo simpático. A área de toque é um pouco mais larga que as células desenhadas."
+        },
+        {
           "id": "arteriola-eferente",
           "nome": "Arteríola eferente",
           "descricao": "Sai do glomérulo pelo mesmo polo vascular, com calibre menor; nos néfrons corticais, ramifica-se nos capilares peritubulares. No corte real nem sempre se distingue da aferente com segurança."
@@ -258,7 +263,7 @@
       ],
       "estruturas": [
         {
-          "id": "capsula",
+          "id": "capsula-suprarrenal",
           "nome": "Cápsula",
           "descricao": "Conjuntivo denso que envolve a glândula; por ela chegam as artérias que formam o plexo subcapsular, de onde partem os sinusoides do córtex."
         },
@@ -293,7 +298,7 @@
           "descricao": "Capilar de luz ampla e endotélio fenestrado entre os cordões do córtex; corre da cápsula para a medula e leva para ela o cortisol produzido no córtex."
         },
         {
-          "id": "veia-central",
+          "id": "veia-central-suprarrenal",
           "nome": "Veia central (medular)",
           "descricao": "Veia calibrosa no centro da medula, com feixes de músculo liso longitudinal dispostos de modo excêntrico na parede; recolhe o sangue dos sinusoides do córtex e da medula."
         }
@@ -341,6 +346,11 @@
           "id": "tunica-albuginea",
           "nome": "Túnica albugínea",
           "descricao": "Cápsula de conjuntivo denso, espessa e esbranquiçada, que envolve o testículo; logo abaixo dela corre a túnica vascular, com vasos. É mais espessa do que no esquema."
+        },
+        {
+          "id": "tubulo-seminifero",
+          "nome": "Túbulo seminífero",
+          "descricao": "Túbulo enovelado, local da espermatogênese, com túnica própria (lâmina basal, colágeno e células mioides) e epitélio seminífero formado por células de Sertoli e células germinativas; suas extremidades continuam nos túbulos retos. No esquema, o túbulo é o conjunto dessas partes: o toque em qualquer uma delas vale quando o alvo é o túbulo, e a área própria é só uma faixa estreita na borda externa."
         },
         {
           "id": "celula-mioide-peritubular",
@@ -428,7 +438,7 @@
           "descricao": "Epitélio simples cúbico (ou pavimentoso) que reveste o ovário, contínuo com o mesotélio do peritônio. Foi chamado de 'epitélio germinativo' por um engano histórico: não origina as células germinativas."
         },
         {
-          "id": "tunica-albuginea",
+          "id": "tunica-albuginea-ovariana",
           "nome": "Túnica albugínea",
           "descricao": "Camada de conjuntivo denso, pouco vascularizado, logo abaixo do epitélio superficial, que dá ao ovário a cor esbranquiçada."
         },
@@ -526,6 +536,11 @@
           "id": "endometrio-basal",
           "nome": "Camada basal do endométrio",
           "descricao": "Parte profunda, junto ao miométrio, que não descama: estroma mais denso e os fundos das glândulas, de onde se regeneram o epitélio e as glândulas depois da menstruação. É irrigada por artérias retas (basais), que não sofrem as alterações cíclicas."
+        },
+        {
+          "id": "estroma-endometrial",
+          "nome": "Estroma endometrial",
+          "descricao": "Conjuntivo muito celular do endométrio, que prolifera sob estrogênio, fica edemaciado na fase secretora e forma células pré-deciduais e deciduais sob progesterona. Na fase proliferativa é denso, de células fusiformes ou ovais com pouco citoplasma, algumas em mitose; na camada basal, mais denso ainda. No esquema, o toque no estroma vale também para a camada (funcional ou basal) em que ele está."
         },
         {
           "id": "glandula-endometrial",
