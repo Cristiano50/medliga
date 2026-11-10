@@ -588,14 +588,15 @@ export function LaminaPulmao(rng: Rng) {
   const amRb = amostrar(rb, Math.round(perimetro(rb, false) / 2), false);
   const Lrb = amRb[amRb.length - 1].s;
   // aberturas de alvéolos (≈ 40 un) centradas em alguns alvéolos da fileira; o resto da parede é contínuo
-  // 3–4 aberturas por lado no trecho visível (uma por alvéolo da fileira), separadas por segmentos curtos de parede
-  const aberturas: Record<number, number[]> = { 1: posRb.slice(1), [-1]: posRb.slice(1) };
+  // aberturas alternadas nos dois lados (4 no trecho visível, cada uma na boca de um alvéolo da fileira); com uma
+  // abertura em todo alvéolo, a parede vira blocos soltos e o tubo deixa de ser reconhecível
+  const aberturas: Record<number, number[]> = { 1: [posRb[1], posRb[3]], [-1]: [posRb[2], posRb[4]] };
   const paredes: [number, number, number][] = [];
   for (const lado of [1, -1]) {
     let ini = 0;
     for (const a of aberturas[lado].filter((v) => v !== undefined && v < Lrb - 40)) {
-      paredes.push([lado, ini, a - 17]);
-      ini = a + 17;
+      paredes.push([lado, ini, a - 15]);
+      ini = a + 15;
     }
     paredes.push([lado, ini, Lrb - 30]);
   }
@@ -1634,6 +1635,12 @@ export function LaminaAdrenal(rng: Rng) {
         <path d={hemacias.join('')} fill={HE.hemacia} />
         <path d={endotelio.join('')} fill={HE.nucleoEscuro} />
       </E>
+      {/* medula: o toque entre os grupos de células cromafins (sinusoides, vênulas, conjuntivo) identifica a medula.
+          Pintada antes do córtex: as células da reticular que passam do limite ficam por cima (sem faixa clara na junção) */}
+      <E id="medula-suprarrenal">
+        <path d={faixaY(yM, () => H + 20)} fill={cor.sinusoide} />
+        <path d={hemMedula} fill={HE.hemacia} />
+      </E>
       <E id="capsula-suprarrenal">
         <path d={faixaY(() => -20, yG)} fill={cor.capsula} />
         <path d={capNuc.join('')} fill={HE.nucleo} />
@@ -1650,11 +1657,6 @@ export function LaminaAdrenal(rng: Rng) {
         <path d={zrCel.join('')} fill={cor.zr} stroke={cor.zrBorda} strokeWidth={0.6} />
         <path d={lipof.join('')} fill={cor.lipofuscina} />
         <path d={zrNuc.join('')} fill={HE.nucleoEscuro} />
-      </E>
-      {/* medula: o toque entre os grupos de células cromafins (sinusoides, vênulas, conjuntivo) identifica a medula */}
-      <E id="medula-suprarrenal">
-        <path d={faixaY(yM, () => H + 20)} fill={cor.sinusoide} />
-        <path d={hemMedula} fill={HE.hemacia} />
       </E>
       <E id="celula-cromafim">
         <path d={medCel.join('')} fill={cor.med} stroke={cor.medBorda} strokeWidth={0.7} />
