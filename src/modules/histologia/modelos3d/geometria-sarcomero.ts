@@ -119,6 +119,16 @@ export function redeFilamentos(): { grossos: Ponto2[]; finos: Ponto2[] } {
   return { grossos, finos };
 }
 
+/**
+ * Filamentos finos dos sarcômeros vizinhos (do outro lado de cada linha Z): as mesmas posições giradas 30° em
+ * torno do eixo da miofibrila, para ficarem ENTRE as do sarcômero central. Na linha Z, os filamentos dos dois
+ * lados terminam e se intercalam; não atravessam o disco.
+ */
+export function finosVizinhos(): Ponto2[] {
+  const g = Math.PI / 6;
+  return redeFilamentos().finos.map(([y, z]) => [y * Math.cos(g) - z * Math.sin(g), y * Math.sin(g) + z * Math.cos(g)] as Ponto2);
+}
+
 /** Cabeças de miosina de um filamento grosso: posição ao longo de x, ângulo em volta do eixo e lado. */
 export function cabecasMiosina(): { x: number; angulo: number; lado: -1 | 1 }[] {
   const { escala: k, grosso, zonaNua, passoCoroa } = SARCOMERO;
@@ -207,6 +217,34 @@ export function geometriaCabecas(grossos: Ponto2[], fator = 1): THREE.BufferGeom
   }
   cabeca.dispose();
   pescoco.dispose();
+  return mesclar(partes);
+}
+
+/** Raio da haste do filamento grosso na zona nua (cintura que marca o trecho sem cabeças). */
+export const RAIO_ZONA_NUA = SARCOMERO.raioGrosso * 0.7;
+
+/** Hastes dos filamentos grossos, com a zona nua central mais fina (marca do trecho sem cabeças). */
+export function geometriaHastes(grossos: Ponto2[], fator = 1): THREE.BufferGeometry {
+  const { raioGrosso, grosso, zonaNua, escala } = SARCOMERO;
+  const meiaA = (grosso / 2) * escala;
+  const meiaNua = (zonaNua / 2) * escala;
+  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), new THREE.Vector3(1, 0, 0));
+  const um = new THREE.Vector3(1, 1, 1);
+  const radiais = seg(14, fator);
+  const partes: THREE.BufferGeometry[] = [];
+  for (const g of grossos) {
+    const trecho = (x0: number, x1: number, r0: number, r1: number, tampas: boolean) => {
+      // CylinderGeometry: raio de cima (+y → +x) primeiro
+      const c = new THREE.CylinderGeometry(r1, r0, x1 - x0, radiais, 1, !tampas);
+      partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3((x0 + x1) / 2, g[0], g[1]), q, um)));
+    };
+    const rampa = 0.02;
+    trecho(-meiaA, -meiaNua - rampa, raioGrosso, raioGrosso, true);
+    trecho(-meiaNua - rampa, -meiaNua, raioGrosso, RAIO_ZONA_NUA, false);
+    trecho(-meiaNua, meiaNua, RAIO_ZONA_NUA, RAIO_ZONA_NUA, false);
+    trecho(meiaNua, meiaNua + rampa, RAIO_ZONA_NUA, raioGrosso, false);
+    trecho(meiaNua + rampa, meiaA, raioGrosso, raioGrosso, true);
+  }
   return mesclar(partes);
 }
 

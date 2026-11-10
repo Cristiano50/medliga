@@ -21,8 +21,12 @@ export const JUNCOES = {
   /** faixas (zônulas) em y: [baixo, cima] */
   oclusao: [0.845, 0.945] as [number, number],
   adesao: [0.66, 0.79] as [number, number],
-  /** cinturão de actina: recuo da membrana para dentro e raio do feixe */
-  cinturao: { recuo: 0.065, raio: 0.028 },
+  /** zônula de adesão: placa citoplasmática (do recuo `placa[0]` ao `placa[1]`, para dentro da membrana) e
+   *  bastonetes de caderina que cruzam a fenda, em duas fileiras, espaçados ao longo do contorno da célula */
+  adesaoPlaca: [0.004, 0.02] as [number, number],
+  caderina: { raio: 0.009, passo: 0.058, fileiras: [0.3, 0.7] as [number, number] },
+  /** cinturão de actina: recuo do eixo do feixe em relação à membrana (encostado na placa) e raio do feixe */
+  cinturao: { recuo: 0.048, raio: 0.028 },
   /** desmossomos na face lateral comum: o primeiro (mais apical) completa o complexo juncional */
   desmossomos: [
     { y: 0.53, z: -0.12, alcas: [0.34, 0.24] },
@@ -33,6 +37,10 @@ export const JUNCOES = {
   placaDesmossomo: { raio: 0.1, espessura: 0.03 },
   /** junção comunicante (placa de conexons) na face lateral comum */
   comunicante: { y: 0.22, z: 0.1, raioPlaca: 0.115, passo: 0.05, raioConexon: 0.018 },
+  /** na junção comunicante, cada membrana faz um ressalto e o espaço entre elas se estreita até `fendaComunicante` */
+  fendaComunicante: 0.012,
+  /** cada metade de um canal (conexon): do meio da fenda estreita até dentro da membrana da sua célula */
+  meioConexon: [0.002, 0.056] as [number, number],
   /** hemidesmossomos: deslocamento em x a partir do centro de cada célula, para o lado da face comum */
   hemidesmossomos: [
     { dx: 0.2, z: -0.16 },
@@ -86,8 +94,62 @@ export function conexons(): [number, number][] {
   return lista;
 }
 
-/** Comprimento de cada par de conexons: atravessa a fenda e as duas membranas. */
-export const COMPRIMENTO_CONEXON = JUNCOES.fenda + 0.04;
+/** Altura (em x) do ressalto de cada membrana na junção comunicante. */
+export const RESSALTO_COMUNICANTE = (JUNCOES.fenda - JUNCOES.fendaComunicante) / 2;
+
+/** Pontos do contorno (membrana lateral) de uma célula centrada na origem, com a normal para fora, a cada `passo`. */
+export function contornoCelula(passo: number): { p: [number, number]; n: [number, number] }[] {
+  const { largura, profundidade, canto: r } = JUNCOES;
+  const [x, z] = [largura / 2, profundidade / 2];
+  // quatro lados retos e quatro cantos em arco, no sentido anti-horário, a partir do meio do lado +x
+  type Trecho = { comprimento: number; em: (d: number) => { p: [number, number]; n: [number, number] } };
+  const reto = (p0: [number, number], d: [number, number], n: [number, number], comprimento: number): Trecho => ({ comprimento, em: (t) => ({ p: [p0[0] + d[0] * t, p0[1] + d[1] * t], n }) });
+  const arco = (c: [number, number], a0: number): Trecho => ({ comprimento: (r * Math.PI) / 2, em: (t) => { const a = a0 + t / r; return { p: [c[0] + r * Math.cos(a), c[1] + r * Math.sin(a)], n: [Math.cos(a), Math.sin(a)] }; } });
+  const trechos: Trecho[] = [
+    reto([x, -z + r], [0, 1], [1, 0], 2 * (z - r)),
+    arco([x - r, z - r], 0),
+    reto([x - r, z], [-1, 0], [0, 1], 2 * (x - r)),
+    arco([-x + r, z - r], Math.PI / 2),
+    reto([-x, z - r], [0, -1], [-1, 0], 2 * (z - r)),
+    arco([-x + r, -z + r], Math.PI),
+    reto([-x + r, -z], [1, 0], [0, -1], 2 * (x - r)),
+    arco([x - r, -z + r], 1.5 * Math.PI),
+  ];
+  const total = trechos.reduce((s, t) => s + t.comprimento, 0);
+  const n = Math.round(total / passo);
+  const pontos: { p: [number, number]; n: [number, number] }[] = [];
+  for (let i = 0; i < n; i++) {
+    let d = ((i + 0.5) * total) / n;
+    for (const t of trechos) {
+      if (d <= t.comprimento) { pontos.push(t.em(d)); break; }
+      d -= t.comprimento;
+    }
+  }
+  return pontos;
+}
+
+/**
+ * Bastonetes de caderina da zônula de adesão: de cada membrana até o meio da fenda (onde encontram os da
+ * célula vizinha), em volta de toda a célula. Devolve os extremos de cada bastonete.
+ */
+export function bastonetesCaderina(): { a: Ponto3; b: Ponto3 }[] {
+  const [y0, y1] = JUNCOES.adesao;
+  const lista: { a: Ponto3; b: Ponto3 }[] = [];
+  const meia = JUNCOES.fenda / 2;
+  centrosCelulas().forEach((xc, celula) => {
+    // a célula B é a imagem da A no espelho x → −x: na face comum, os bastonetes das duas ficam frente a frente
+    const espelho = celula === 0 ? 1 : -1;
+    JUNCOES.caderina.fileiras.forEach((f, fileira) => {
+      const y = y0 + f * (y1 - y0);
+      contornoCelula(JUNCOES.caderina.passo).forEach(({ p, n }, i) => {
+        if ((i + fileira) % 2) return; // fileiras alternadas
+        const [px, nx] = [espelho * p[0], espelho * n[0]];
+        lista.push({ a: [xc + px, y, p[1]], b: [xc + px + nx * meia, y, p[1] + n[1] * meia] });
+      });
+    });
+  });
+  return lista;
+}
 
 /** Hemidesmossomos: centro da placa (dentro da célula, logo acima da membrana basal). */
 export function placasHemidesmossomo(): { celula: 0 | 1; centro: Ponto3 }[] {
@@ -246,21 +308,69 @@ export function geometriaDesmossomos(fator = 1): THREE.BufferGeometry {
     const c = new THREE.CylinderGeometry(raio, raio, espessura, seg(20, fator), 1, false);
     partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(...p.centro), EIXO_X, UM)));
   }
+  // Entre as duas placas, o vão fica à mostra: bastonetes (caderinas desmossômicas) cruzam a fenda e uma
+  // lâmina fina no meio lembra a linha densa central.
   for (const d of JUNCOES.desmossomos) {
-    const c = new THREE.CylinderGeometry(raio * 0.82, raio * 0.82, JUNCOES.fenda + 0.014, seg(20, fator), 1, false);
-    partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(0, d.y, d.z), EIXO_X, UM)));
+    const linha = new THREE.CylinderGeometry(raio * 0.85, raio * 0.85, 0.008, seg(20, fator), 1, false);
+    partes.push(linha.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(0, d.y, d.z), EIXO_X, UM)));
+    for (const [dy, dz] of pontosDesmossomo()) {
+      const c = new THREE.CylinderGeometry(0.011, 0.011, JUNCOES.fenda + 0.014, seg(6, fator), 1, false);
+      partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(0, d.y + dy, d.z + dz), EIXO_X, UM)));
+    }
   }
   return mesclar(partes);
 }
 
-export function geometriaConexons(fator = 1): THREE.BufferGeometry {
-  const r = JUNCOES.comunicante.raioConexon;
+/** Posições (em relação ao centro do disco) dos bastonetes que cruzam a fenda no desmossomo. */
+export function pontosDesmossomo(): [number, number][] {
+  const r = JUNCOES.placaDesmossomo.raio * 0.58;
+  return [[0, 0], ...Array.from({ length: 6 }, (_, k) => [r * Math.cos((k * Math.PI) / 3), r * Math.sin((k * Math.PI) / 3)] as [number, number])];
+}
+
+/** Bastonetes de caderina da zônula de adesão (das duas células), numa malha só. */
+export function geometriaCaderinas(fator = 1): THREE.BufferGeometry {
+  const r = JUNCOES.caderina.raio;
+  const y = new THREE.Vector3(0, 1, 0);
   return mesclar(
-    conexons().map(([y, z]) => {
-      const c = new THREE.CylinderGeometry(r, r, COMPRIMENTO_CONEXON, seg(8, fator), 1, false);
-      return c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(0, y, z), EIXO_X, UM));
+    bastonetesCaderina().map(({ a, b }) => {
+      const va = new THREE.Vector3(...a);
+      const d = new THREE.Vector3(...b).sub(va);
+      const c = new THREE.CylinderGeometry(r, r, d.length(), seg(6, fator), 1, false);
+      return c.applyMatrix4(new THREE.Matrix4().compose(va.addScaledVector(d, 0.5), new THREE.Quaternion().setFromUnitVectors(y, d.clone().normalize()), UM));
     }),
   );
+}
+
+/** Placa citoplasmática da zônula de adesão: lâmina fina por dentro da membrana, em volta da célula. */
+export function geometriaPlacaAdesao(altura: number): THREE.ExtrudeGeometry {
+  const { largura, profundidade, canto, adesaoPlaca } = JUNCOES;
+  const [fora, dentro] = adesaoPlaca;
+  const forma = contornoArredondado(new THREE.Shape(), largura - 2 * fora, profundidade - 2 * fora, canto - fora);
+  forma.holes.push(contornoArredondado(new THREE.Path(), largura - 2 * dentro, profundidade - 2 * dentro, canto - dentro));
+  return new THREE.ExtrudeGeometry(forma, { depth: altura, bevelEnabled: false, curveSegments: 6 });
+}
+
+/** Ressalto de cada membrana na junção comunicante (disco que avança na fenda e a estreita). */
+export function geometriaRessalto(): THREE.CylinderGeometry {
+  const r = JUNCOES.comunicante.raioPlaca + 0.022;
+  return new THREE.CylinderGeometry(r, r, RESSALTO_COMUNICANTE, 32, 1, false);
+}
+
+/** Conexons: cada canal em duas metades (uma de cada célula), tubos ocos com um poro no eixo. */
+export function geometriaConexons(fator = 1): THREE.BufferGeometry {
+  const r = JUNCOES.comunicante.raioConexon;
+  const [x0, x1] = JUNCOES.meioConexon;
+  const partes: THREE.BufferGeometry[] = [];
+  for (const [y, z] of conexons()) {
+    for (const lado of [-1, 1]) {
+      const c = new THREE.CylinderGeometry(r, r, x1 - x0, seg(8, fator), 1, true);
+      partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3((lado * (x0 + x1)) / 2, y, z), EIXO_X, UM)));
+      // parede interna do poro
+      const poro = new THREE.CylinderGeometry(r * 0.42, r * 0.42, x1 - x0, seg(6, fator), 1, true);
+      partes.push(poro.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3((lado * (x0 + x1)) / 2, y, z), EIXO_X, UM)));
+    }
+  }
+  return mesclar(partes);
 }
 
 export function geometriaQueratina(fator = 1): THREE.BufferGeometry {

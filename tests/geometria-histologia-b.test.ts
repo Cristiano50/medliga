@@ -5,36 +5,47 @@ import { createElement } from 'react';
 import * as THREE from 'three';
 import { _roots, act, createRoot, extend } from '@react-three/fiber';
 import {
+  ALTURA_CANALICULO_SETOR,
   ALTURA_FATIA,
   LOBULO,
-  COBERTURA_DISSE,
-  RAIO_MAXIMO_TRECHO,
+  TOPO_TERCEIRA_CAMADA,
   alturasCanaliculos,
   barrasMoldura,
   cantosCelula,
   convexosSeCruzam,
   dentroHexagono,
   distanciaPoligono,
+  distanciaPontoSegmento,
+  distanciaSegmentoPoligono,
+  estacoesSinusoides,
+  fragmentos,
   geometriaLobulo,
   hepatocitos,
-  mangasDisse,
-  pegadaTrecho,
+  hepatocitosTranslucidos,
+  noSetorTranslucido,
+  nucleosTranslucidos,
+  tracosMoldura,
   verticesHexagono,
+  type Ponto2,
+  type Ponto3,
 } from '../src/modules/histologia/modelos3d/geometria-lobulo.ts';
-import { SARCOMERO, bandas, cabecasMiosina, comprimentoSarcomero, redeFilamentos } from '../src/modules/histologia/modelos3d/geometria-sarcomero.ts';
+import { RAIO_ZONA_NUA, SARCOMERO, bandas, cabecasMiosina, comprimentoSarcomero, finosVizinhos, redeFilamentos } from '../src/modules/histologia/modelos3d/geometria-sarcomero.ts';
 import {
-  COMPRIMENTO_CONEXON,
   JUNCOES,
+  RESSALTO_COMUNICANTE,
+  bastonetesCaderina,
   centrosCelulas,
   centrosNucleos,
   conexons,
   geometriaFaixa,
+  geometriaPlacaAdesao,
   microvilosidades,
   placasDesmossomo,
   placasHemidesmossomo,
+  pontosDesmossomo,
   trajetosQueratina,
 } from '../src/modules/histologia/modelos3d/geometria-juncoes.ts';
-import { MODELOS_HISTO_B } from '../src/modules/histologia/modelos3d/grupo-b.tsx';
+import { MODELOS_HISTO_B, legendaContracao } from '../src/modules/histologia/modelos3d/grupo-b.tsx';
 import { resolverToque } from '../src/modules/embriologia/tres/nucleo.tsx';
 import { forcarNivel, NIVEIS, PARAMETROS, type NivelQualidade } from '../src/modules/tres3d/qualidade.ts';
 import { contarCena, prepararMalhas } from '../src/modules/tres3d/refinar.ts';
@@ -101,9 +112,16 @@ describe('lóbulo hepático clássico', () => {
         expect(d).toBeLessThan(LOBULO.raioPorta + 0.03);
       }
     });
+    // linha tracejada: os traços ocupam a barra inteira, com vãos entre eles
+    const tracos = tracosMoldura();
+    const total = LOBULO.raioHex - 2 * (LOBULO.raioPorta + 0.012);
+    expect(tracos.length).toBeGreaterThanOrEqual(5);
+    expect(tracos[0].centro - tracos[0].comprimento / 2).toBeCloseTo(-total / 2, 9);
+    expect(tracos[tracos.length - 1].centro + tracos[0].comprimento / 2).toBeCloseTo(total / 2, 9);
+    for (let i = 1; i < tracos.length; i++) expect(tracos[i].centro - tracos[i - 1].centro).toBeGreaterThan(tracos[i].comprimento * 1.2);
   });
 
-  it('placas de uma célula de espessura, radiais a partir da veia, dentro do lóbulo e sem sobreposição', () => {
+  it('placas de uma célula de espessura, radiais a partir da veia, com forquilhas e passagens', () => {
     expect(g.placas.filter((p) => p.zona === 'A')).toHaveLength(6);
     expect(g.placas.filter((p) => p.zona === 'B')).toHaveLength(12);
     expect(g.placas.filter((p) => p.zona === 'C')).toHaveLength(24);
@@ -119,106 +137,279 @@ describe('lóbulo hepático clássico', () => {
       for (let j = i + 1; j < pegadas.length; j++) expect(convexosSeCruzam(pegadas[i].poligono, pegadas[j].poligono, 1e-9), `${i} × ${j}`).toBe(false);
     }
     // Zona A encosta na veia; cada placa B/C começa encostada (forquilha) numa célula da placa-mãe.
-    for (const p of g.placas.filter((x) => x.zona === 'A')) expect(p.celulas[0][0] - LOBULO.raioVeia).toBeLessThanOrEqual(LOBULO.folga + 1e-9);
+    for (const p of g.placas.filter((x) => x.zona === 'A')) {
+      expect(p.celulas[0][0] - LOBULO.raioVeia).toBeLessThanOrEqual(LOBULO.folga + 1e-9);
+      expect(p.passagem).toBeNull();
+      expect(fragmentos(p)).toHaveLength(1);
+    }
     for (const p of g.placas.filter((x) => x.mae !== null)) {
       const mae = g.placas[p.mae!];
       const primeira = cantosCelula(p.angulo, ...p.celulas[0]);
       const distancia = Math.min(...mae.celulas.map(([a, b]) => Math.min(...cantosCelula(mae.angulo, a, b).map((c) => distanciaPoligono(c, primeira)))));
       expect(distancia, `placa ${p.indice}`).toBeLessThan(0.02);
-      expect(p.celulas.length).toBeGreaterThanOrEqual(2);
+      // numa das duas placas de cada forquilha, logo depois dela, uma passagem do tamanho de uma célula
+      if (p.passagem === null) { expect(fragmentos(p)).toHaveLength(1); continue; }
+      const meio = p.passagem;
+      const [ini, fim] = [meio - LOBULO.comprimento / 2, meio + LOBULO.comprimento / 2];
+      expect(p.celulas.every(([a, b]) => b <= ini + 1e-9 || a >= fim - 1e-9)).toBe(true);
+      expect(p.celulas.some(([, b]) => b <= ini)).toBe(true);
+      expect(p.celulas.some(([a]) => a >= fim)).toBe(true);
+      expect(fragmentos(p)).toHaveLength(2);
     }
   });
 
-  it('sinusoides entre duas placas, sem atravessar hepatócitos, da periferia até a veia centrolobular', () => {
-    expect(g.sinusoides.length).toBeGreaterThanOrEqual(36);
-    const placaEm = (ang: number, a: number, b: number) =>
-      g.placas.some((p) => difAngulo(p.angulo, ang) < 1e-9 && p.celulas.some(([x, y]) => x < b && y > a - 0.15));
+  it('uma passagem por forquilha: cada placa-mãe tem uma filha com passagem e outra contínua', () => {
+    for (const mae of g.placas.filter((p) => p.zona !== 'C')) {
+      const filhas = g.placas.filter((p) => p.mae === mae.indice);
+      expect(filhas).toHaveLength(2);
+      expect(filhas.filter((p) => p.passagem !== null)).toHaveLength(1);
+    }
+  });
+
+  it('terceira camada translúcida só no setor da frente, com núcleos dentro das células', () => {
+    const translucidos = hepatocitosTranslucidos();
+    const placasDoSetor = g.placas.filter(noSetorTranslucido);
+    expect(placasDoSetor.length).toBeGreaterThan(0);
+    expect(placasDoSetor.length).toBeLessThan(g.placas.length / 4);
+    expect(translucidos).toHaveLength(placasDoSetor.reduce((n, p) => n + p.celulas.length, 0));
+    for (const h of translucidos) {
+      expect(noSetorTranslucido(g.placas[h.placa])).toBe(true);
+      expect(h.centro[1] - LOBULO.altura / 2).toBeGreaterThan(ALTURA_FATIA / 2);
+      expect(h.centro[1] + LOBULO.altura / 2).toBeCloseTo(TOPO_TERCEIRA_CAMADA, 9);
+    }
+    const nucleos = nucleosTranslucidos();
+    // um núcleo por célula e algumas células binucleadas
+    expect(nucleos.length).toBeGreaterThan(translucidos.length);
+    expect(nucleos.length).toBeLessThanOrEqual(translucidos.length + 4);
+    // cada núcleo inteiro dentro de uma célula translúcida (ao longo da placa, de lado e na altura)
+    for (const n of nucleos) {
+      const dentro = translucidos.some((h) => {
+        const [dx, dz] = [n[0] - h.centro[0], n[2] - h.centro[2]];
+        const ao = dx * Math.cos(h.angulo) + dz * Math.sin(h.angulo);
+        const lado = -dx * Math.sin(h.angulo) + dz * Math.cos(h.angulo);
+        const r = LOBULO.raioNucleo;
+        return Math.abs(ao) <= LOBULO.comprimento / 2 - r + 1e-9 && Math.abs(lado) <= LOBULO.espessura / 2 - r + 1e-9 && Math.abs(n[1] - h.centro[1]) <= LOBULO.altura / 2 - r;
+      });
+      expect(dentro).toBe(true);
+    }
+  });
+
+  const xz = (p: Ponto3): Ponto2 => [p[0], p[2]];
+  const chave = (p: Ponto3) => `${Math.round(p[0] * 1e5)},${Math.round(p[2] * 1e5)}`;
+
+  it('sinusoides de calibre quase constante, no plano médio, sem atravessar hepatócitos', () => {
+    const raios = g.sinusoides.map((t) => t.raio);
+    // luz ≈ 0,04 a 0,05 em toda a rede (sem funil); o tronco que chega à veia é o mais largo
+    expect(Math.min(...raios)).toBeGreaterThanOrEqual(0.04);
+    expect(Math.max(...raios)).toBeLessThanOrEqual(0.05);
+    for (const t of g.sinusoides) expect(t.raio).toBe(t.tipo === 'tronco' ? LOBULO.luzTronco : LOBULO.luz);
+    expect(LOBULO.luzTronco).toBeGreaterThan(LOBULO.luz);
+    const contagem = (tipo: string) => g.sinusoides.filter((t) => t.tipo === tipo).length;
+    expect(contagem('tronco')).toBe(6);
+    expect(contagem('haste')).toBeGreaterThanOrEqual(24);
+    expect(contagem('passagem')).toBe(18);
+    expect(contagem('ponte')).toBe(36);
     for (const t of g.sinusoides) {
-      const pegada = pegadaTrecho(t);
-      for (const { poligono } of pegadas) expect(convexosSeCruzam(pegada, poligono, 1e-6)).toBe(false);
-      // ladeado por placas reais nos dois lados do eixo
-      expect(placaEm(t.angulo - t.meiaAbertura, t.inicio, t.fim), `${t.zona} ${t.angulo}`).toBe(true);
-      expect(placaEm(t.angulo + t.meiaAbertura, t.inicio, t.fim), `${t.zona} ${t.angulo}`).toBe(true);
-      // luz aberta e casca dentro da fatia
-      expect(t.raioInicio - LOBULO.disse).toBeGreaterThanOrEqual(LOBULO.luzMinima - 1e-9);
-      expect(Math.max(t.raioInicio, t.raioFim)).toBeLessThanOrEqual(RAIO_MAXIMO_TRECHO + 1e-9);
-      expect(RAIO_MAXIMO_TRECHO).toBeLessThan(ALTURA_FATIA / 2);
-      for (const c of pegada) expect(dentroHexagono(c)).toBe(true);
+      expect(t.a[1]).toBe(0);
+      expect(t.b[1]).toBe(0);
+      for (const { poligono } of pegadas) expect(distanciaSegmentoPoligono(xz(t.a), xz(t.b), poligono), `${t.tipo}`).toBeGreaterThanOrEqual(t.raio + LOBULO.margem);
+      for (const v of verticesHexagono()) expect(distanciaPontoSegmento(v, xz(t.a), xz(t.b))).toBeGreaterThanOrEqual(LOBULO.raioPorta);
+      if (t.tipo !== 'tronco') for (const p of [t.a, t.b]) expect(dentroHexagono(xz(p), t.raio * 0.5)).toBe(true);
     }
-    // Do espaço porta à veia centrolobular: em cada eixo voltado para um vértice, trechos contínuos A → B → C,
-    // o primeiro encostado na veia e o último encostado no conjuntivo do espaço porta.
-    for (const t of g.triades) {
-      const cadeia = g.sinusoides.filter((s) => difAngulo(s.angulo, t.angulo) < 1e-9).sort((a, b) => a.inicio - b.inicio);
-      expect(cadeia.map((s) => s.zona)).toEqual(['A', 'B', 'C']);
-      expect(cadeia[0].inicio - LOBULO.raioVeia).toBeLessThan(0.01);
-      for (let i = 1; i < cadeia.length; i++) expect(cadeia[i].inicio).toBeCloseTo(cadeia[i - 1].fim, 9);
-      const ultimo = cadeia[cadeia.length - 1];
-      expect(distanciaPoligono(t.vertice, pegadaTrecho(ultimo))).toBeLessThan(LOBULO.raioPorta + 0.01);
+  });
+
+  it('onde o vão alarga há dois tubos junto das placas, unidos por pontes; passagens atravessam as placas', () => {
+    const e = estacoesSinusoides(g.placas);
+    const pares = new Set(g.sinusoides.filter((t) => t.tipo === 'par').flatMap((t) => [chave(t.a), chave(t.b)]));
+    for (const t of g.sinusoides.filter((x) => x.tipo === 'ponte')) {
+      // a ponte liga os dois tubos do par, simétricos em relação ao eixo do vão (múltiplo de 15°)
+      expect(pares.has(chave(t.a))).toBe(true);
+      expect(pares.has(chave(t.b))).toBe(true);
+      const meio: Ponto2 = [(t.a[0] + t.b[0]) / 2, (t.a[2] + t.b[2]) / 2];
+      const eixo = Math.atan2(meio[1], meio[0]) / (15 * GRAU);
+      expect(Math.abs(eixo - Math.round(eixo))).toBeLessThan(1e-6);
+      // cada ponta da ponte fica junto de uma placa: a célula mais próxima está a menos de um raio de tubo
+      for (const p of [t.a, t.b]) {
+        const d = Math.min(...pegadas.map(({ poligono }) => distanciaPoligono(xz(p), poligono)));
+        expect(d - t.raio).toBeLessThan(LOBULO.luz);
+        expect(d - t.raio).toBeGreaterThanOrEqual(LOBULO.margem);
+      }
+      // o par só existe onde cabem dois tubos lado a lado
+      expect(Math.hypot(t.a[0] - t.b[0], t.a[2] - t.b[2])).toBeGreaterThan(2 * LOBULO.luz);
     }
+    // passagens: cruzam a placa pela falta de uma célula, perpendiculares a ela, e ligam os nós dos dois vãos
+    const passagens = g.sinusoides.filter((t) => t.tipo === 'passagem');
+    const filhas = g.placas.filter((p) => p.passagem !== null);
+    expect(passagens).toHaveLength(filhas.length);
+    for (const p of filhas) {
+      const centro: Ponto2 = [Math.cos(p.angulo) * p.passagem!, Math.sin(p.angulo) * p.passagem!];
+      const t = passagens.find((x) => Math.hypot((x.a[0] + x.b[0]) / 2 - centro[0], (x.a[2] + x.b[2]) / 2 - centro[1]) < 1e-9);
+      expect(t, `placa ${p.indice}`).toBeTruthy();
+      const d: Ponto2 = [t!.b[0] - t!.a[0], t!.b[2] - t!.a[2]];
+      expect(Math.abs(d[0] * Math.cos(p.angulo) + d[1] * Math.sin(p.angulo))).toBeLessThan(1e-9);
+      // as duas pontas caem nos nós dos vãos vizinhos (a mesma distância do centro)
+      const no = p.zona === 'B' ? e.noB : e.noC;
+      for (const q of [t!.a, t!.b]) expect(Math.hypot(q[0], q[2])).toBeCloseTo(no, 9);
+    }
+  });
+
+  it('a rede é contínua: todo sinusoide chega à veia centrolobular por um orifício e a uma ponta periférica', () => {
+    // seis troncos entram na luz da veia pelos orifícios da parede, nos eixos dos vértices
+    const troncos = g.sinusoides.filter((t) => t.tipo === 'tronco');
+    expect(g.orificios).toHaveLength(6);
+    expect(LOBULO.raioOrificio).toBeGreaterThan(LOBULO.luzTronco);
+    troncos.forEach((t) => {
+      const [dentro, fora] = Math.hypot(t.a[0], t.a[2]) < Math.hypot(t.b[0], t.b[2]) ? [t.a, t.b] : [t.b, t.a];
+      expect(Math.hypot(dentro[0], dentro[2])).toBeLessThan(LOBULO.raioVeia - LOBULO.paredeVeia);
+      expect(Math.hypot(fora[0], fora[2])).toBeGreaterThan(LOBULO.raioVeia);
+      const ang = Math.atan2(fora[2], fora[0]);
+      expect(g.orificios.some((o) => difAngulo(o, ang) < 1e-9)).toBe(true);
+      expect(g.triades.some((tr) => difAngulo(tr.angulo, ang) < 1e-9)).toBe(true);
+    });
+    // grafo pelos extremos dos trechos: a partir das bocas na veia, alcança-se a rede inteira
+    const vizinhos = new Map<string, Set<string>>();
+    const liga = (a: string, b: string) => { (vizinhos.get(a) ?? vizinhos.set(a, new Set()).get(a)!).add(b); (vizinhos.get(b) ?? vizinhos.set(b, new Set()).get(b)!).add(a); };
+    for (const t of g.sinusoides) liga(chave(t.a), chave(t.b));
+    const visto = new Set<string>();
+    const fila = troncos.map((t) => (Math.hypot(t.a[0], t.a[2]) < Math.hypot(t.b[0], t.b[2]) ? chave(t.a) : chave(t.b)));
+    while (fila.length) {
+      const n = fila.pop()!;
+      if (visto.has(n)) continue;
+      visto.add(n);
+      for (const m of vizinhos.get(n) ?? []) fila.push(m);
+    }
+    expect(visto.size).toBe(vizinhos.size);
+    // pontas periféricas: duas por vão da zona C (24 vãos), todas ligadas à veia
+    expect(g.pontas).toHaveLength(48);
+    for (const p of g.pontas) {
+      expect(visto.has(chave(p))).toBe(true);
+      expect(vizinhos.get(chave(p))!.size).toBe(1);
+      expect(Math.hypot(p[0], p[2])).toBeGreaterThan(1.2);
+    }
+    // não há fundo cego: fora as bocas na veia e as pontas periféricas, todo nó tem ao menos dois trechos
+    const pontas = new Set(g.pontas.map(chave));
+    const bocas = new Set(troncos.map((t) => (Math.hypot(t.a[0], t.a[2]) < Math.hypot(t.b[0], t.b[2]) ? chave(t.a) : chave(t.b))));
+    for (const [n, v] of vizinhos) if (!pontas.has(n) && !bocas.has(n)) expect(v.size, n).toBeGreaterThanOrEqual(2);
+  });
+
+  it('ramos terminais da veia porta e da artéria saem do espaço porta pelas arestas e abrem nos sinusoides', () => {
+    const apotema = LOBULO.raioHex * Math.cos(30 * GRAU);
+    for (const [ramos, vaso, raio, raioEntrada, y] of [
+      [g.porta, 'veia', LOBULO.ramoPorta, LOBULO.entradaPorta, LOBULO.alturaRamoPorta],
+      [g.arteria, 'arteria', LOBULO.ramoArteria, LOBULO.entradaArteria, LOBULO.alturaRamoArteria],
+    ] as const) {
+      // de cada tríade, um ramo para cada aresta vizinha: sai do vaso e corre por fora da aresta
+      expect(ramos.ramos).toHaveLength(24);
+      for (let i = 0; i < ramos.ramos.length; i += 2) {
+        const [saida, aresta] = [ramos.ramos[i], ramos.ramos[i + 1]];
+        const t = g.triades[Math.floor(i / 4)];
+        expect(Math.hypot(saida.a[0] - t[vaso].centro[0], saida.a[2] - t[vaso].centro[1])).toBeLessThan(1e-9);
+        expect(chave(saida.b)).toBe(chave(aresta.a));
+        // dentro do conjuntivo na saída; depois, paralelo à aresta, a `afastamentoRamo` por fora dela
+        expect(Math.hypot(aresta.a[0] - t.vertice[0], aresta.a[2] - t.vertice[1])).toBeLessThan(LOBULO.raioPorta);
+        const normalDaAresta = [0, 1, 2, 3, 4, 5].map((k) => (30 + 60 * k) * GRAU).find((m) => Math.abs(aresta.a[0] * Math.cos(m) + aresta.a[2] * Math.sin(m) - apotema - LOBULO.afastamentoRamo) < 1e-9);
+        expect(normalDaAresta).toBeDefined();
+        expect(aresta.b[0] * Math.cos(normalDaAresta!) + aresta.b[2] * Math.sin(normalDaAresta!)).toBeCloseTo(apotema + LOBULO.afastamentoRamo, 9);
+        for (const s of [saida, aresta]) for (const p of [s.a, s.b]) expect(p[1]).toBe(y);
+      }
+      // uma entrada por ponta de sinusoide: começa num ramo e termina na ponta
+      expect(ramos.entradas).toHaveLength(g.pontas.length);
+      for (const p of g.pontas) {
+        const minhas = ramos.entradas.filter((en) => Math.hypot(en.b[0] - p[0], en.b[2] - p[2]) < 1e-9);
+        expect(minhas).toHaveLength(1);
+        const en = minhas[0];
+        expect(Math.abs(en.b[1])).toBeLessThan(LOBULO.luz);
+        expect(Math.min(...ramos.ramos.map((r) => distanciaPontoSegmento(xz(en.a), xz(r.a), xz(r.b))))).toBeLessThan(1e-9);
+        expect(en.a[1]).toBe(y);
+      }
+      // nada disso atravessa hepatócitos
+      for (const s of [...ramos.ramos, ...ramos.entradas]) for (const { poligono } of pegadas) expect(distanciaSegmentoPoligono(xz(s.a), xz(s.b), poligono)).toBeGreaterThan(raio);
+      expect(raioEntrada).toBeLessThan(raio);
+    }
+    // vênula portal mais calibrosa que a arteríola, em alturas diferentes (não se cruzam)
+    expect(LOBULO.ramoPorta).toBeGreaterThan(LOBULO.ramoArteria);
+    expect(LOBULO.alturaRamoPorta - LOBULO.ramoPorta).toBeGreaterThan(LOBULO.alturaRamoArteria + LOBULO.ramoArteria);
   });
 
   it('células de Kupffer dentro da luz dos sinusoides', () => {
-    expect(g.kupffer.length).toBeGreaterThan(12);
+    expect(g.kupffer.length).toBeGreaterThanOrEqual(12);
     const [ax, tr] = LOBULO.kupffer;
     for (const k of g.kupffer) {
-      const t = g.sinusoides[k.trecho];
-      const u = [Math.cos(t.angulo), Math.sin(t.angulo)];
-      const a = k.centro[0] * u[0] + k.centro[2] * u[1];
-      const lateral = -k.centro[0] * u[1] + k.centro[2] * u[0];
-      const desvio = Math.hypot(lateral, k.centro[1]);
-      const raio = (x: number) => t.raioInicio + ((t.raioFim - t.raioInicio) * (x - t.inicio)) / (t.fim - t.inicio);
-      expect(a - ax).toBeGreaterThan(t.inicio);
-      expect(a + ax).toBeLessThan(t.fim);
-      expect(desvio + tr).toBeLessThanOrEqual(Math.min(raio(a - ax), raio(a + ax)) - LOBULO.disse + 1e-9);
-      expect(k.angulo).toBe(t.angulo);
+      const hastes = g.sinusoides.filter((t) => t.tipo === 'haste' && distanciaPontoSegmento(xz(k.centro), xz(t.a), xz(t.b)) < 1e-9);
+      expect(hastes.length).toBeGreaterThanOrEqual(1);
+      const t = hastes[0];
+      // inteira dentro do tubo: de lado e ao longo dele
+      expect(Math.abs(k.centro[1]) + tr).toBeLessThanOrEqual(t.raio);
+      for (const p of [t.a, t.b]) expect(Math.hypot(k.centro[0] - p[0], k.centro[2] - p[2])).toBeGreaterThan(ax);
+      expect(difAngulo(Math.atan2(t.b[2] - t.a[2], t.b[0] - t.a[0]), k.angulo)).toBeLessThan(1e-6);
     }
   });
 
-  it('casca de Disse: manga no trecho médio de cada sinusoide, por fora da luz', () => {
-    const mangas = mangasDisse(g.sinusoides);
-    expect(mangas).toHaveLength(g.sinusoides.length);
-    mangas.forEach((m, i) => {
-      const t = g.sinusoides[i];
-      expect(m.angulo).toBe(t.angulo);
-      expect(m.inicio).toBeGreaterThan(t.inicio);
-      expect(m.fim).toBeLessThan(t.fim);
-      expect((m.fim - m.inicio) / (t.fim - t.inicio)).toBeCloseTo(COBERTURA_DISSE, 9);
-      // centrada no trecho, com o raio externo do trecho (a luz fica LOBULO.disse por dentro)
-      expect((m.inicio + m.fim) / 2).toBeCloseTo((t.inicio + t.fim) / 2, 9);
-      const raio = (a: number) => t.raioInicio + ((t.raioFim - t.raioInicio) * (a - t.inicio)) / (t.fim - t.inicio);
-      expect(m.raioInicio).toBeCloseTo(raio(m.inicio), 9);
-      expect(m.raioFim).toBeCloseTo(raio(m.fim), 9);
-      expect(m.raioInicio - LOBULO.disse).toBeGreaterThan(0);
-    });
+  it('casca de Disse em volta de trechos de haste, por fora da luz e sem tocar hepatócitos', () => {
+    expect(g.mangas.length).toBeGreaterThanOrEqual(24);
+    for (const m of g.mangas) {
+      const tubo = g.sinusoides.find((t) => (t.tipo === 'haste' || t.tipo === 'tronco') && distanciaPontoSegmento(xz(m.a), xz(t.a), xz(t.b)) < 1e-9 && distanciaPontoSegmento(xz(m.b), xz(t.a), xz(t.b)) < 1e-9);
+      expect(tubo).toBeTruthy();
+      expect(m.raio).toBeCloseTo(tubo!.raio + LOBULO.disse, 12);
+      for (const { poligono } of pegadas) expect(distanciaSegmentoPoligono(xz(m.a), xz(m.b), poligono)).toBeGreaterThanOrEqual(m.raio + LOBULO.margem);
+    }
   });
 
-  it('canalículos biliares entre hepatócitos vizinhos, no plano médio das placas', () => {
+  it('canalículos só entre hepatócitos vizinhos, finos, longe das faces sinusoidais e das pontas das placas', () => {
     const meia = ALTURA_FATIA / 2;
     const alturas = alturasCanaliculos();
-    // uma altura por face de contato: as duas faces de corte da fatia e cada interface entre camadas
-    expect(alturas).toHaveLength(LOBULO.camadas + 1);
-    expect(alturas[0]).toBeCloseTo(-meia, 12);
-    expect(alturas[alturas.length - 1]).toBeCloseTo(meia, 12);
-    for (let c = 1; c < LOBULO.camadas; c++) expect(alturas[c]).toBeCloseTo(-meia + c * LOBULO.altura + (c - 0.5) * LOBULO.folga, 12);
+    // uma altura por face de contato entre camadas da fatia; nada sobre as faces de corte
+    expect(alturas).toHaveLength(LOBULO.camadas - 1);
+    for (const y of alturas) expect(Math.abs(y)).toBeLessThan(meia - LOBULO.altura / 2);
+    expect(LOBULO.raioCanaliculo).toBeLessThanOrEqual(0.012);
+    // no plano médio da placa, a mais de três raios de cada face sinusoidal
+    expect(LOBULO.espessura / 2 - LOBULO.raioCanaliculo).toBeGreaterThan(3 * LOBULO.raioCanaliculo);
+    // o recuo da ponta é maior que o chanfro do hepatócito (o tubo não aflora na ponta da placa)
+    expect(LOBULO.recuoCanaliculo).toBeGreaterThan(0.022);
     let horizontais = 0;
     for (const { a, b } of g.canaliculos) {
       const m = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2];
-      // no plano médio de uma placa (desvio lateral nulo): nunca na face voltada para o sinusoide
       const placa = g.placas.find((p) => Math.abs(-m[0] * Math.sin(p.angulo) + m[2] * Math.cos(p.angulo)) < 1e-9 && m[0] * Math.cos(p.angulo) + m[2] * Math.sin(p.angulo) > 0);
       expect(placa).toBeTruthy();
-      expect(LOBULO.raioCanaliculo).toBeLessThan(LOBULO.espessura / 2);
-      expect(Math.max(Math.abs(a[1]), Math.abs(b[1]))).toBeLessThanOrEqual(meia + 1e-9);
+      const setor = noSetorTranslucido(placa!);
+      const [ra, rb] = [Math.hypot(a[0], a[2]), Math.hypot(b[0], b[2])].sort((x, y) => x - y);
       if (Math.abs(a[1] - b[1]) > 1e-9) {
-        // vertical: na folga entre duas células consecutivas da placa
-        const r = Math.hypot(m[0], m[2]);
-        expect(placa!.celulas.some(([, fim], i) => i + 1 < placa!.celulas.length && r > fim && r < placa!.celulas[i + 1][0])).toBe(true);
+        // vertical: na folga entre duas células consecutivas do mesmo trecho da placa, da base ao topo das camadas
+        expect(fragmentos(placa!).some((f) => f.some(([, fim], i) => i + 1 < f.length && ra > fim && ra < f[i + 1][0]))).toBe(true);
+        expect(Math.min(a[1], b[1])).toBeCloseTo(-meia, 9);
+        expect(Math.max(a[1], b[1])).toBeCloseTo(setor ? TOPO_TERCEIRA_CAMADA : meia, 9);
       } else {
-        // horizontal: numa face de contato entre camadas, ao longo da placa
-        expect(alturas.some((y) => Math.abs(y - a[1]) < 1e-9)).toBe(true);
+        // horizontal: numa face de contato entre duas camadas existentes, recuado das pontas do trecho
+        const entreCamadas = alturas.some((y) => Math.abs(y - a[1]) < 1e-9);
+        const sobTranslucida = setor && Math.abs(a[1] - ALTURA_CANALICULO_SETOR) < 1e-9;
+        expect(entreCamadas || sobTranslucida).toBe(true);
+        expect(fragmentos(placa!).some((f) => ra >= f[0][0] + LOBULO.recuoCanaliculo - 1e-9 && rb <= f[f.length - 1][1] - LOBULO.recuoCanaliculo + 1e-9)).toBe(true);
         horizontais++;
       }
     }
-    expect(horizontais).toBe(g.placas.length * alturas.length);
+    const trechos = g.placas.reduce((n, p) => n + fragmentos(p).length * (alturas.length + (noSetorTranslucido(p) ? 1 : 0)), 0);
+    expect(horizontais).toBe(trechos);
+  });
+
+  it('canal de Hering: liga os canalículos de uma placa ao ducto biliar de cada espaço porta', () => {
+    expect(g.hering).toHaveLength(g.triades.length);
+    expect(LOBULO.raioHering).toBeGreaterThan(LOBULO.raioCanaliculo);
+    g.hering.forEach((h, k) => {
+      const t = g.triades[k];
+      // começa na ponta periférica de um canalículo (entre as camadas) …
+      const pontasDeCanaliculo = g.canaliculos.filter((c) => Math.abs(c.a[1] - c.b[1]) < 1e-9).flatMap((c) => [c.a, c.b]);
+      expect(Math.min(...pontasDeCanaliculo.map((p) => Math.hypot(p[0] - h.a[0], p[1] - h.a[1], p[2] - h.a[2])))).toBeLessThan(1e-9);
+      // … e termina dentro do ducto biliar da mesma tríade, atravessando o conjuntivo do espaço porta
+      expect(Math.hypot(h.b[0] - t.ducto.centro[0], h.b[2] - t.ducto.centro[1])).toBeLessThan(t.ducto.raioInterno);
+      expect(Math.hypot(h.a[0] - t.vertice[0], h.a[2] - t.vertice[1])).toBeGreaterThan(LOBULO.raioPorta);
+      expect(Math.hypot(h.a[0] - t.vertice[0], h.a[2] - t.vertice[1])).toBeLessThan(LOBULO.raioPorta + 0.12);
+      // sem cruzar sinusoides nem os vasos vizinhos da tríade
+      for (const s of g.sinusoides) {
+        const d = Math.min(distanciaPontoSegmento(xz(s.a), xz(h.a), xz(h.b)), distanciaPontoSegmento(xz(s.b), xz(h.a), xz(h.b)), distanciaPontoSegmento(xz(h.a), xz(s.a), xz(s.b)), distanciaPontoSegmento(xz(h.b), xz(s.a), xz(s.b)));
+        expect(d).toBeGreaterThan(s.raio + LOBULO.raioHering);
+      }
+      for (const vaso of [t.veia, t.arteria]) expect(distanciaPontoSegmento(vaso.centro, xz(h.a), xz(h.b))).toBeGreaterThan(vaso.raioExterno + LOBULO.raioHering);
+    });
   });
 });
 
@@ -308,6 +499,37 @@ describe('sarcômero', () => {
     for (const f of finos) for (const g of grossos) expect(Math.hypot(f[0] - g[0], f[1] - g[1])).toBeGreaterThan(SARCOMERO.raioFino + SARCOMERO.raioGrosso);
   });
 
+  it('filamentos finos dos sarcômeros vizinhos intercalados, e não em linha com os do sarcômero central', () => {
+    const centrais = redeFilamentos().finos;
+    const vizinhos = finosVizinhos();
+    expect(vizinhos).toHaveLength(centrais.length);
+    for (const v of vizinhos) {
+      // nenhum vizinho fica em linha com um filamento do sarcômero central (do outro lado da linha Z) …
+      const perto = Math.min(...centrais.map((c) => Math.hypot(v[0] - c[0], v[1] - c[1])));
+      expect(perto).toBeGreaterThan(2 * SARCOMERO.raioFino);
+      // … e fica dentro do disco Z, à mesma distância do eixo que algum filamento central (giro de 30°)
+      expect(Math.hypot(...v) + SARCOMERO.raioFino).toBeLessThan(SARCOMERO.raioDiscoZ);
+      expect(centrais.some((c) => Math.abs(Math.hypot(...c) - Math.hypot(...v)) < 1e-9)).toBe(true);
+    }
+    // o conjunto é simétrico em z: vale igual para os dois lados (o lado direito é o esquerdo girado 180° em y)
+    for (const v of vizinhos) expect(vizinhos.some((w) => Math.abs(w[0] - v[0]) < 1e-9 && Math.abs(w[1] + v[1]) < 1e-9)).toBe(true);
+  });
+
+  it('legenda do controle: valores do esquema, aproximados, com uma casa decimal', () => {
+    expect(legendaContracao(0)).toBe('Esquema: sarcômero ≈ 2,5 µm · A ≈ 1,6 µm (constante) · I ≈ 0,9 µm · H ≈ 0,5 µm');
+    expect(legendaContracao(1)).toBe('Esquema: sarcômero ≈ 2,1 µm · A ≈ 1,6 µm (constante) · I ≈ 0,5 µm · H ≈ 0,1 µm');
+    expect(legendaContracao(0.5)).toMatch(/^Esquema: sarcômero ≈ \d,\d µm · A ≈ 1,6 µm \(constante\) · I ≈ \d,\d µm · H ≈ \d,\d µm$/);
+  });
+
+  it('zona nua do filamento grosso marcada por uma haste mais fina, sem cabeças', () => {
+    expect(RAIO_ZONA_NUA).toBeLessThan(SARCOMERO.raioGrosso * 0.8);
+    const meiaNua = (SARCOMERO.zonaNua / 2) * k;
+    expect(cabecasMiosina().every((c) => Math.abs(c.x) > meiaNua)).toBe(true);
+    // a zona nua fica dentro da banda H em todo o curso do controle
+    for (const c of niveis) expect(bandas(c).bandaH[1]).toBeGreaterThan(0);
+    expect(meiaNua).toBeLessThan(bandas(0).bandaH[1]);
+  });
+
   it('cabeças de miosina fora da zona nua, voltadas para a linha Z do seu lado', () => {
     const cabecas = cabecasMiosina();
     expect(cabecas.length).toBeGreaterThan(30);
@@ -366,7 +588,37 @@ describe('junções celulares', () => {
     faixa.dispose();
   });
 
-  it('desmossomos com uma placa em cada célula; conexons atravessam a fenda e as duas membranas', () => {
+  it('zônula de adesão: placa por dentro da membrana, bastonetes cruzam a fenda e o vão fica à mostra', () => {
+    const [fora, dentro] = JUNCOES.adesaoPlaca;
+    // placa citoplasmática: lâmina fina inteiramente por dentro da membrana
+    const placa = geometriaPlacaAdesao(0.1);
+    placa.computeBoundingBox();
+    expect(placa.boundingBox!.max.x).toBeCloseTo(JUNCOES.largura / 2 - fora, 6);
+    expect(placa.boundingBox!.max.x).toBeLessThan(JUNCOES.largura / 2);
+    expect(dentro - fora).toBeLessThan(0.03);
+    placa.dispose();
+    // cinturão de actina encostado na face citoplasmática da placa
+    expect(JUNCOES.cinturao.recuo - JUNCOES.cinturao.raio).toBeCloseTo(dentro, 9);
+    // bastonetes: da membrana até o meio da fenda, na altura da zônula
+    const bastonetes = bastonetesCaderina();
+    expect(bastonetes.length).toBeGreaterThan(40);
+    for (const { a, b } of bastonetes) {
+      expect(Math.hypot(b[0] - a[0], b[1] - a[1], b[2] - a[2])).toBeCloseTo(JUNCOES.fenda / 2, 9);
+      expect(a[1]).toBeGreaterThan(JUNCOES.adesao[0]);
+      expect(a[1]).toBeLessThan(JUNCOES.adesao[1]);
+    }
+    // na face comum, os bastonetes das duas células se encontram no meio: juntos, cruzam a fenda inteira
+    const daA = bastonetes.filter(({ a, b }) => Math.abs(a[0] + JUNCOES.fenda / 2) < 1e-9 && Math.abs(b[0]) < 1e-9);
+    const daB = bastonetes.filter(({ a, b }) => Math.abs(a[0] - JUNCOES.fenda / 2) < 1e-9 && Math.abs(b[0]) < 1e-9);
+    expect(daA.length).toBeGreaterThanOrEqual(6);
+    expect(daB).toHaveLength(daA.length);
+    for (const r of daA) expect(daB.some((q) => Math.abs(q.b[1] - r.b[1]) < 1e-9 && Math.abs(q.b[2] - r.b[2]) < 1e-9)).toBe(true);
+    // o espaço intercelular é mantido: por fileira, os bastonetes cobrem menos de metade da face
+    const porFileira = daA.length / JUNCOES.caderina.fileiras.length;
+    expect((porFileira * 2 * JUNCOES.caderina.raio) / (JUNCOES.profundidade - 2 * JUNCOES.canto)).toBeLessThan(0.5);
+  });
+
+  it('desmossomos com placa em cada célula e vão entre elas; junção comunicante com a fenda estreitada', () => {
     const placas = placasDesmossomo();
     expect(placas).toHaveLength(2 * JUNCOES.desmossomos.length);
     for (const p of placas) {
@@ -376,9 +628,20 @@ describe('junções celulares', () => {
       expect(Math.abs(p.centro[0]) - meia).toBeGreaterThan(JUNCOES.fenda / 2);
       expect(Math.abs(p.centro[0]) - meia - JUNCOES.fenda / 2).toBeLessThan(0.02);
     }
+    // entre as placas, bastonetes separados cruzam a fenda (o vão não é preenchido)
+    const pontos = pontosDesmossomo();
+    expect(pontos.length).toBeGreaterThanOrEqual(5);
+    for (const [dy, dz] of pontos) expect(Math.hypot(dy, dz)).toBeLessThan(JUNCOES.placaDesmossomo.raio);
+    for (let i = 0; i < pontos.length; i++) for (let j = i + 1; j < pontos.length; j++) expect(Math.hypot(pontos[i][0] - pontos[j][0], pontos[i][1] - pontos[j][1])).toBeGreaterThan(0.04);
+    // junção comunicante: cada membrana faz um ressalto, e a fenda cai a menos de um terço
+    expect(2 * RESSALTO_COMUNICANTE + JUNCOES.fendaComunicante).toBeCloseTo(JUNCOES.fenda, 12);
+    expect(JUNCOES.fendaComunicante).toBeLessThan(JUNCOES.fenda / 3);
+    // cada canal em duas metades (um conexon de cada célula): quase se tocam no meio e entram na membrana
+    const [x0, x1] = JUNCOES.meioConexon;
+    expect(x0).toBeLessThan(JUNCOES.fendaComunicante / 2);
+    expect(x1).toBeGreaterThan(JUNCOES.fenda / 2);
     const lista = conexons();
     expect(lista.length).toBeGreaterThanOrEqual(7);
-    expect(COMPRIMENTO_CONEXON).toBeGreaterThan(JUNCOES.fenda);
     for (const [y, z] of lista) {
       expect(Math.hypot(y - JUNCOES.comunicante.y, z - JUNCOES.comunicante.z)).toBeLessThanOrEqual(JUNCOES.comunicante.raioPlaca);
       expect(Math.abs(z)).toBeLessThan(JUNCOES.profundidade / 2);
@@ -541,7 +804,7 @@ describe('modelos do grupo B montados', () => {
     const { palco, desmontar } = await montar('sarcomero');
     const entrada = palco.querySelector('input[type="range"]') as HTMLInputElement;
     expect(entrada).toBeTruthy();
-    expect(palco.querySelector('output')!.textContent).toMatch(/Sarcômero 2,50 µm · A 1,60 µm \(constante\) · I 0,90 µm · H 0,50 µm/);
+    expect(palco.querySelector('output')!.textContent).toBe(legendaContracao(0));
     let vazou = false;
     palco.addEventListener('pointerdown', () => { vazou = true; });
     entrada.dispatchEvent(new Event('pointerdown', { bubbles: true }));
@@ -550,7 +813,7 @@ describe('modelos do grupo B montados', () => {
       entrada.value = '1';
       entrada.dispatchEvent(new Event('input', { bubbles: true }));
     });
-    expect(palco.querySelector('output')!.textContent).toMatch(/Sarcômero 2,10 µm · A 1,60 µm \(constante\) · I 0,50 µm · H 0,10 µm/);
+    expect(palco.querySelector('output')!.textContent).toBe(legendaContracao(1));
     await desmontar();
     expect(palco.querySelector('input')).toBeNull();
   });

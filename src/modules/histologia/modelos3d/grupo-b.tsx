@@ -14,21 +14,28 @@ import { assinarQualidade, fatorSegmentos } from '../../tres3d/qualidade.ts';
 import {
   ALTURA_FATIA,
   LOBULO,
+  estacoesSinusoides,
   geometriaCanaliculos,
   geometriaKupffer,
   geometriaLobulo,
   geometriaMoldura,
   geometriaPlacas,
-  geometriaTrechos,
+  geometriaPlacasTranslucidas,
+  geometriaRamos,
+  geometriaSetas,
   geometriaTuboOco,
-  mangasDisse,
+  geometriaTubos,
+  geometriaVeiaCentral,
+  pontoAxial,
 } from './geometria-lobulo.ts';
 import {
   DESVIO_TITINA,
   SARCOMERO,
   bandas,
   geometriaCabecas,
+  finosVizinhos,
   geometriaFinos,
+  geometriaHastes,
   geometriaMolasTitina,
   geometriaReticulo,
   geometriaTitinaBandaA,
@@ -38,6 +45,8 @@ import {
   JUNCOES,
   centrosCelulas,
   centrosNucleos,
+  RESSALTO_COMUNICANTE,
+  geometriaCaderinas,
   geometriaCelula,
   geometriaCinturao,
   geometriaConexons,
@@ -46,7 +55,9 @@ import {
   geometriaHemidesmossomos,
   geometriaLamina,
   geometriaMicrovilosidades,
+  geometriaPlacaAdesao,
   geometriaQueratina,
+  geometriaRessalto,
 } from './geometria-juncoes.ts';
 
 type V3 = [number, number, number];
@@ -71,10 +82,12 @@ const AO_LONGO_DE_X: V3 = [0, 0, -Math.PI / 2];
 // 1) Lóbulo hepático clássico
 // =============================================================================================
 const COR_LOBULO = {
-  moldura: '#a9bcff',
+  // cinza neutro: a moldura é um limite imaginário e não deve lembrar um vaso
+  moldura: '#cbd5e1',
   veiaCentral: '#3b82f6',
   hepatocito: '#d9a27c',
-  sinusoide: '#d9534f',
+  // sangue misto (em maior parte portal): entre o violeta do ramo portal e o vermelho da artéria
+  sinusoide: '#b8387a',
   disse: '#f2cf5b',
   kupffer: '#33e0f0',
   canaliculo: '#2fbf6a',
@@ -82,6 +95,8 @@ const COR_LOBULO = {
   veiaPorta: '#8b5cf6',
   arteria: '#c8243f',
   ducto: '#178a4a',
+  setaSangue: '#ffb3c7',
+  setaBile: '#b9f6ca',
 };
 
 export const PARTES_LOBULO = [
@@ -98,31 +113,56 @@ export const PARTES_LOBULO = [
   'ducto-biliar',
 ];
 
+const semToque = () => {};
+
+/**
+ * Setas de sentido acima da fatia: sangue da periferia para o centro, bile do centro para a periferia.
+ * Decoração: não são partes (sem toque, sem marcador) e somem quando uma estrutura é isolada.
+ */
+function SetasFluxo() {
+  const { isolado } = useCena();
+  const sangue = useGeo(() => geometriaSetas('sangue'), []);
+  const bile = useGeo(() => geometriaSetas('bile'), []);
+  const materiais = useMemo(
+    () => [new THREE.MeshBasicMaterial({ color: COR_LOBULO.setaSangue }), new THREE.MeshBasicMaterial({ color: COR_LOBULO.setaBile })],
+    [],
+  );
+  useEffect(() => () => materiais.forEach((m) => m.dispose()), [materiais]);
+  if (isolado) return null;
+  return (
+    <group name="setas-de-fluxo">
+      <mesh geometry={sangue} material={materiais[0]} raycast={semToque} />
+      <mesh geometry={bile} material={materiais[1]} raycast={semToque} />
+    </group>
+  );
+}
+
 function ModeloLobulo() {
   const fator = useFator();
   const lob = geometriaLobulo();
   const placas = useGeo(() => geometriaPlacas(lob), [lob]);
-  const disse = useGeo(() => geometriaTrechos(mangasDisse(lob.sinusoides), 0, fator), [lob, fator]);
-  // Seis segmentos ao longo de cada trecho: há anéis de vértices nas pontas à mostra (fora da casca de Disse).
-  const luz = useGeo(() => geometriaTrechos(lob.sinusoides, LOBULO.disse, fator, 6), [lob, fator]);
-  // Âncora do sinusoide: ponta periférica, à mostra, do trecho voltado para a câmera (eixo +z).
-  const trechoFrente = lob.sinusoides.reduce((m, t) => (Math.sin(t.angulo) * t.fim > Math.sin(m.angulo) * m.fim ? t : m), lob.sinusoides[0]);
-  const aFrente = trechoFrente.inicio + (5 / 6) * (trechoFrente.fim - trechoFrente.inicio);
+  const translucidas = useGeo(() => geometriaPlacasTranslucidas(lob, fator), [lob, fator]);
+  const luz = useGeo(() => geometriaTubos(lob.sinusoides, fator), [lob, fator]);
+  const disse = useGeo(() => geometriaTubos(lob.mangas, fator), [lob, fator]);
   const kupffer = useGeo(() => geometriaKupffer(lob, fator), [lob, fator]);
   const canaliculos = useGeo(() => geometriaCanaliculos(lob, fator), [lob, fator]);
   const moldura = useGeo(() => geometriaMoldura(), []);
-  const veia = useGeo(() => geometriaTuboOco(LOBULO.raioVeia - LOBULO.paredeVeia, LOBULO.raioVeia, LOBULO.alturaVasos, 40), []);
+  const veia = useGeo(() => geometriaVeiaCentral(fator), [fator]);
   const t0 = lob.triades[0];
   const veiaPorta = useGeo(() => geometriaTuboOco(t0.veia.raioInterno, t0.veia.raioExterno, LOBULO.alturaVasos, 32), [t0]);
   const arteria = useGeo(() => geometriaTuboOco(t0.arteria.raioInterno, t0.arteria.raioExterno, LOBULO.alturaVasos, 24), [t0]);
   const ducto = useGeo(() => geometriaTuboOco(t0.ducto.raioInterno, t0.ducto.raioExterno, LOBULO.alturaVasos * 0.94, 24), [t0]);
   const conjuntivo = useGeo(() => new THREE.CylinderGeometry(LOBULO.raioPorta, LOBULO.raioPorta, LOBULO.alturaPorta, 40), []);
+  // Ramos terminais (pelas arestas do hexágono) e entradas nos sinusoides, na parte do vaso de origem.
+  const ramosPorta = useGeo(() => geometriaRamos(lob.porta, LOBULO.ramoPorta, LOBULO.entradaPorta, fator), [lob, fator]);
+  const ramosArteria = useGeo(() => geometriaRamos(lob.arteria, LOBULO.ramoArteria, LOBULO.entradaArteria, fator), [lob, fator]);
 
   const topo = ALTURA_FATIA / 2;
   const yMoldura = topo + 0.021;
   const apotema = LOBULO.raioHex * Math.cos(Math.PI / 6);
-  // Âncoras dos marcadores: pontos voltados para a câmera padrão (de +z, por cima), no corpo de cada parte.
-  const kFrente = lob.kupffer.reduce((m, k) => (k.centro[2] > m.centro[2] ? k : m), lob.kupffer[0]);
+  const grau = Math.PI / 180;
+  // Âncoras dos marcadores: pontos voltados para a câmera padrão (de +z, por cima), no corpo de cada parte,
+  // fora do setor translúcido (60° a 120°).
   const frente = lob.triades[1];
   const ao = (p: [number, number], y: number): V3 => [p[0], y, p[1]];
   /** parede externa do vaso voltada para a câmera, acima da fatia */
@@ -130,31 +170,40 @@ function ModeloLobulo() {
   // Conjuntivo do espaço porta: borda de fora de uma coluna de trás (atrás dela não há parênquima no raio do toque).
   const atras = lob.triades[4].vertice;
   const fora = (LOBULO.raioHex + LOBULO.raioPorta) / LOBULO.raioHex;
+  const eixoFrente = 30 * grau; // vão do meio de uma aresta, à direita do setor translúcido
+  const e = estacoesSinusoides(lob.placas);
+  const h = lob.hering[1];
   return (
     <group>
-      {/* Moldura: limite imaginário entre os espaços porta (no ser humano não há septo em volta do lóbulo). */}
-      <Parte id="lobulo-hepatico" cor={COR_LOBULO.moldura} opacidade={0.6} prioridade={6} rotulo={[0, yMoldura + 0.009, apotema]}>
+      {/* Moldura tracejada: limite imaginário entre os espaços porta (no ser humano não há septo em volta do lóbulo). */}
+      <Parte id="lobulo-hepatico" cor={COR_LOBULO.moldura} opacidade={0.5} prioridade={6} acabamento="padrao" rotulo={[0, yMoldura + 0.007, apotema]}>
         <Malha geometria={moldura} posicao={[0, yMoldura, 0]} />
         <Malha geometria={moldura} posicao={[0, -yMoldura, 0]} />
       </Parte>
       <Parte id="veia-centrolobular" cor={COR_LOBULO.veiaCentral} prioridade={6} rugosidade={0.5} rotulo={[0, LOBULO.alturaVasos / 2, LOBULO.raioVeia]}>
         <Malha geometria={veia} />
       </Parte>
-      <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.25, topo, 0.95]}>
+      {/* Terceira camada, translúcida, só no setor da frente: mostra o canalículo ENTRE dois hepatócitos e os
+          núcleos. Mesma estrutura das placas (mesmo id); vem antes para o marcador ficar com a camada opaca. */}
+      <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} opacidade={0.3} prioridade={2} rugosidade={0.7}>
+        <Malha geometria={translucidas} />
+      </Parte>
+      <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.67, topo, 0.87]}>
         <Malha geometria={placas} />
       </Parte>
-      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[Math.cos(trechoFrente.angulo) * aFrente, 0.1, Math.sin(trechoFrente.angulo) * aFrente]}>
+      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.45} prioridade={6} rotulo={pontoAxial(eixoFrente, e.uniaoB + 0.01, 0, LOBULO.luz)}>
         <Malha geometria={luz} />
       </Parte>
-      {/* Casca de Disse só no trecho médio de cada sinusoide (as pontas mostram a luz): mesma prioridade do
-          sinusoide, e a casca, por fora, ganha o toque onde cobre a luz. */}
-      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.4} prioridade={6} rotulo={[0.13, 0.05, 1.12]}>
+      {/* Casca de Disse só em trechos de haste: mesma prioridade do sinusoide, e a casca, por fora, ganha o
+          toque onde cobre a luz. */}
+      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.4} prioridade={6} rotulo={pontoAxial(eixoFrente, 1.03, 0, LOBULO.luz + LOBULO.disse)}>
         <Malha geometria={disse} />
       </Parte>
-      <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={kFrente?.centro}>
+      <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={pontoAxial(eixoFrente, 0.87, 0, LOBULO.luz)}>
         <Malha geometria={kupffer} />
       </Parte>
-      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[-0.14, topo + LOBULO.raioCanaliculo, 1.0]}>
+      {/* Âncora no canal de Hering da tríade da frente (trecho mais calibroso e à mostra no conjuntivo). */}
+      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[(h.a[0] + h.b[0]) / 2, h.a[1] + LOBULO.raioHering, (h.a[2] + h.b[2]) / 2]}>
         <Malha geometria={canaliculos} />
       </Parte>
       <Parte id="triade-portal" cor={COR_LOBULO.conjuntivo} opacidade={0.34} prioridade={2} rotulo={[atras[0] * fora, LOBULO.alturaPorta / 2, atras[1] * fora]}>
@@ -166,17 +215,20 @@ function ModeloLobulo() {
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={veiaPorta} posicao={ao(t.veia.centro, 0)} />
         ))}
+        <Malha geometria={ramosPorta} />
       </Parte>
       <Parte id="ramo-da-arteria-hepatica" cor={COR_LOBULO.arteria} prioridade={6} rugosidade={0.45} rotulo={paredeDaFrente(frente.arteria)}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={arteria} posicao={ao(t.arteria.centro, 0)} />
         ))}
+        <Malha geometria={ramosArteria} />
       </Parte>
       <Parte id="ducto-biliar" cor={COR_LOBULO.ducto} prioridade={6} rugosidade={0.5} rotulo={paredeDaFrente(frente.ducto)}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={ducto} posicao={ao(t.ducto.centro, 0)} />
         ))}
       </Parte>
+      <SetasFluxo />
     </group>
   );
 }
@@ -212,7 +264,13 @@ export const PARTES_SARCOMERO = [
   'reticulo-sarcoplasmatico',
 ];
 
-const virgula = (v: number) => v.toFixed(2).replace('.', ',');
+/** Valores da legenda com uma casa decimal: são os números do esquema (de livro), não medidas. */
+const virgula = (v: number) => v.toFixed(1).replace('.', ',');
+/** Legenda ao vivo do controle de contração. */
+export function legendaContracao(contracao: number): string {
+  const b = bandas(contracao);
+  return `Esquema: sarcômero ≈ ${virgula(b.sarcomero)} µm · A ≈ ${virgula(b.larguraA)} µm (constante) · I ≈ ${virgula(b.larguraI)} µm · H ≈ ${virgula(b.larguraH)} µm`;
+}
 
 /**
  * Controle de contração: um <input type="range"> em DOM comum sobre o palco (sem raiz React aninhada),
@@ -282,9 +340,8 @@ function ControleContracao({ valor, onMudar }: { valor: number; onMudar: (v: num
   useEffect(() => {
     const el = elementos.current;
     if (!el) return;
-    const b = bandas(valor);
     if (Number(el.entrada.value) !== valor) el.entrada.value = String(valor);
-    el.legenda.textContent = `Sarcômero ${virgula(b.sarcomero)} µm · A ${virgula(b.larguraA)} µm (constante) · I ${virgula(b.larguraI)} µm · H ${virgula(b.larguraH)} µm`;
+    el.legenda.textContent = legendaContracao(valor);
   }, [valor, modoJogo]);
   return null;
 }
@@ -301,10 +358,13 @@ function ModeloSarcomero() {
   const [zEsq, zDir] = b.linhaZ;
 
   const finos = useGeo(() => geometriaFinos(rede.finos, comprimentoFino, fator), [rede, comprimentoFino, fator]);
-  // Meias bandas I dos sarcômeros vizinhos (filamentos finos do outro lado de cada linha Z, cortados).
-  const vizinhos = useGeo(() => geometriaFinos(rede.finos, meiaI, fator), [rede, meiaI, fator]);
+  // Meias bandas I dos sarcômeros vizinhos (filamentos finos do outro lado de cada linha Z, cortados), em
+  // posições giradas 30°: ficam entre os do sarcômero central, e não em linha com eles.
+  const posicoesVizinhos = useMemo(() => finosVizinhos(), []);
+  const vizinhos = useGeo(() => geometriaFinos(posicoesVizinhos, meiaI, fator), [posicoesVizinhos, meiaI, fator]);
   const cabecas = useGeo(() => geometriaCabecas(rede.grossos, fator), [rede, fator]);
-  const haste = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioGrosso, SARCOMERO.raioGrosso, 2 * meiaA, 16, 1), [meiaA]);
+  // Hastes com a zona nua central mais fina (marca do trecho sem cabeças, junto da linha M).
+  const hastes = useGeo(() => geometriaHastes(rede.grossos, fator), [rede, fator]);
   // Mola da titina: da linha Z até a ponta do filamento grosso (= meia banda I); comprime na contração.
   const molas = useGeo(() => geometriaMolasTitina(rede.grossos, meiaI, fator), [rede, meiaI, fator]);
   const titinaA = useGeo(() => geometriaTitinaBandaA(rede.grossos, fator), [rede, fator]);
@@ -357,9 +417,7 @@ function ModeloSarcomero() {
         <Malha geometria={vizinhos} posicao={[zDir, 0, 0]} />
       </Parte>
       <Parte id="filamento-grosso" cor={COR_SARCOMERO.grosso} prioridade={8} rugosidade={0.5} rotulo={[0.42, frenteGrosso[0], frenteGrosso[1] + 0.1]}>
-        {rede.grossos.map((g, i) => (
-          <Malha key={i} geometria={haste} rotacao={AO_LONGO_DE_X} posicao={[0, g[0], g[1]]} />
-        ))}
+        <Malha geometria={hastes} />
         <Malha geometria={cabecas} />
       </Parte>
       <Parte id="titina" cor={COR_SARCOMERO.titina} prioridade={8} rotulo={[zEsq + meiaI * 0.35, frenteGrosso[0] + DESVIO_TITINA[0], frenteGrosso[1] + DESVIO_TITINA[1] + 0.03]}>
@@ -384,7 +442,8 @@ function ModeloSarcomero() {
 // =============================================================================================
 const COR_JUNCOES = {
   celula: '#f3cfae',
-  microvilos: '#f4a259',
+  // tom da célula, mais escuro (distinto do laranja dos hemidesmossomos)
+  microvilos: '#b08d72',
   oclusao: '#0f9488',
   adesao: '#5fb7f0',
   actina: '#e02424',
@@ -413,7 +472,12 @@ function ModeloJuncoes() {
   const celula = useGeo(() => geometriaCelula(), []);
   const nucleo = useGeo(() => new THREE.SphereGeometry(1, 32, 24), []);
   const oclusao = useGeo(() => geometriaFaixa(JUNCOES.oclusao[1] - JUNCOES.oclusao[0]), []);
-  const adesao = useGeo(() => geometriaFaixa(JUNCOES.adesao[1] - JUNCOES.adesao[0]), []);
+  // Zônula de adesão: placa citoplasmática por dentro de cada membrana e bastonetes (caderinas) que cruzam a
+  // fenda, que fica à mostra entre eles (não é uma segunda vedação).
+  const placaAdesao = useGeo(() => geometriaPlacaAdesao(JUNCOES.adesao[1] - JUNCOES.adesao[0]), []);
+  const caderinas = useGeo(() => geometriaCaderinas(fator), [fator]);
+  // Ressalto de cada membrana na junção comunicante: ali o espaço entre as células se estreita.
+  const ressalto = useGeo(() => geometriaRessalto(), []);
   const cinturao = useGeo(() => geometriaCinturao(), []);
   const microvilos = useGeo(() => geometriaMicrovilosidades(fator), [fator]);
   const desmossomos = useGeo(() => geometriaDesmossomos(fator), [fator]);
@@ -437,6 +501,9 @@ function ModeloJuncoes() {
         {centrosNucleos().map((p, i) => (
           <Malha key={i} geometria={nucleo} posicao={p} escala={JUNCOES.nucleo.raios} />
         ))}
+        {[-1, 1].map((lado) => (
+          <Malha key={`r${lado}`} geometria={ressalto} rotacao={AO_LONGO_DE_X} posicao={[lado * (JUNCOES.fenda / 2 - RESSALTO_COMUNICANTE / 2), c.y, c.z]} />
+        ))}
       </Parte>
       <Parte id="microvilosidades" cor={COR_JUNCOES.microvilos} prioridade={7} rotulo={[xa, JUNCOES.base + JUNCOES.altura + 0.25, 0.2]}>
         <Malha geometria={microvilos} />
@@ -445,12 +512,13 @@ function ModeloJuncoes() {
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xa, JUNCOES.oclusao[0], 0]} />
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xb, JUNCOES.oclusao[0], 0]} />
       </Parte>
-      {/* Translúcida, para mostrar o cinturão de actina por dentro da célula, na mesma altura. */}
-      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.3} prioridade={7} acabamento="padrao" rotulo={[xa, JUNCOES.adesao[0], frente]}>
-        <Malha geometria={adesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
-        <Malha geometria={adesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
+      {/* Um pouco translúcida, para o cinturão de actina, encostado na placa por dentro, aparecer através dela. */}
+      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.62} prioridade={7} acabamento="padrao" rotulo={[xa, yCinturao, frente]}>
+        <Malha geometria={placaAdesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
+        <Malha geometria={placaAdesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
+        <Malha geometria={caderinas} />
       </Parte>
-      {/* Visto através da faixa translúcida da zônula de adesão: prioridade um pouco maior que a dela. */}
+      {/* Preso à placa da zônula de adesão e visto através dela: prioridade um pouco maior que a dela. */}
       <Parte id="cinturao-de-actina" cor={COR_JUNCOES.actina} prioridade={7.5} rotulo={[xb, yCinturao, JUNCOES.profundidade / 2 - JUNCOES.cinturao.recuo]}>
         <Malha geometria={cinturao} posicao={[xa, yCinturao, 0]} />
         <Malha geometria={cinturao} posicao={[xb, yCinturao, 0]} />
