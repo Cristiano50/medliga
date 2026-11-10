@@ -1,6 +1,6 @@
 // Carregamento do conteúdo empacotado no build (funciona offline).
 // A validação completa acontece antes do build (scripts/validar-conteudo.ts); aqui só tipamos e indexamos.
-import type { Topico, Estagio, DerivadosArquivo, Escola, Estrutura, Lamina } from './schema.ts';
+import type { Topico, Estagio, DerivadosArquivo, Escola, Estrutura, Lamina, ModeloHistologia3D } from './schema.ts';
 import estagiosJson from '../../content/embriologia/estagios.json';
 import derivadosJson from '../../content/embriologia/derivados.json';
 
@@ -50,6 +50,12 @@ export const LAMINAS: Lamina[] = Object.values(arquivosLaminas)
   .flatMap((a) => a.laminas)
   .sort((a, b) => a.ordem - b.ordem);
 
+/** Modelos 3D da histologia (content/histologia/modelos3d.json; o glob tolera o arquivo ainda não existir). */
+const arquivosModelos3d = import.meta.glob('../../content/histologia/modelos3d.json', { eager: true, import: 'default' }) as Record<string, { modelos: ModeloHistologia3D[] }>;
+export const MODELOS_HISTOLOGIA_3D: ModeloHistologia3D[] = Object.values(arquivosModelos3d)
+  .flatMap((a) => a.modelos)
+  .sort((a, b) => a.ordem - b.ordem);
+
 /** Registro de estruturas: primeiro as definições dos tópicos carregados, complementadas pelas dos estágios 3D. */
 export function estruturas(): Map<string, Estrutura & { topicoId?: string }> {
   if (estruturasCache) return estruturasCache;
@@ -57,6 +63,9 @@ export function estruturas(): Map<string, Estrutura & { topicoId?: string }> {
   for (const t of POR_ID.values()) for (const e of t.estruturas) if (!m.has(e.id)) m.set(e.id, { ...e, topicoId: t.id });
   for (const s of ESTAGIOS)
     for (const e of s.estruturas)
+      if (!m.has(e.id)) m.set(e.id, { id: e.id, nome: e.nome, sinonimos: [], definicao: e.descricao });
+  for (const md of MODELOS_HISTOLOGIA_3D)
+    for (const e of md.estruturas)
       if (!m.has(e.id)) m.set(e.id, { id: e.id, nome: e.nome, sinonimos: [], definicao: e.descricao });
   estruturasCache = m;
   return m;

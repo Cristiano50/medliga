@@ -9,6 +9,7 @@ import {
   DerivadosArquivoSchema,
   EscolasArquivoSchema,
   LaminasArquivoSchema,
+  ModelosHistologia3DArquivoSchema,
 } from '../src/content/schema.ts';
 
 const raiz = fileURLToPath(new URL('..', import.meta.url));
@@ -115,6 +116,26 @@ for (const f of arquivosLaminas) {
   if (new Set(ids).size !== ids.length) erros.push('lâminas: ids repetidos entre os arquivos laminas*.json');
   const ordens = todasLaminas.map((l) => l.ordem);
   if (new Set(ordens).size !== ordens.length) erros.push('lâminas: valores de "ordem" repetidos entre os arquivos laminas*.json');
+}
+
+// Modelos 3D da histologia: ids únicos (também em relação aos estágios 3D da embriologia, que dividem o catálogo).
+const arqModelos3d = join(raiz, 'content/histologia/modelos3d.json');
+if (existsSync(arqModelos3d)) {
+  const r = ModelosHistologia3DArquivoSchema.safeParse(ler(arqModelos3d));
+  if (!r.success) formatarIssues('content/histologia/modelos3d.json', r.error.issues);
+  else {
+    const ids = r.data.modelos.map((m) => m.id);
+    if (new Set(ids).size !== ids.length) erros.push('modelos3d.json: ids de modelo repetidos');
+    const ordens = r.data.modelos.map((m) => m.ordem);
+    if (new Set(ordens).size !== ordens.length) erros.push('modelos3d.json: valores de "ordem" repetidos');
+    const idsEstagios = existsSync(arqEstagios) ? new Set((ler(arqEstagios) as { estagios: { id: string }[] }).estagios.map((e) => e.id)) : new Set<string>();
+    for (const m of r.data.modelos) {
+      if (idsEstagios.has(m.id)) erros.push(`modelos3d.json: id ${m.id} coincide com um estágio 3D da embriologia`);
+      const ide = m.estruturas.map((e) => e.id);
+      if (new Set(ide).size !== ide.length) erros.push(`modelos3d.json: modelo ${m.id} com estruturas repetidas`);
+      for (const tp of m.topicos) if (!idsTopicos.has(tp)) avisos.push(`modelos3d.json: modelo ${m.id} cita tópico inexistente ${tp}`);
+    }
+  }
 }
 
 const arqEscolas = join(raiz, 'content/escolas/escolas-medicas-br.json');

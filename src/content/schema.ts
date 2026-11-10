@@ -183,6 +183,24 @@ export const LaminaSchema = z.object({
 export const LaminasArquivoSchema = z.object({ laminas: z.array(LaminaSchema) });
 export type Lamina = z.infer<typeof LaminaSchema>;
 
+// Modelos 3D da histologia (content/histologia/modelos3d.json): esquemas tridimensionais fora de escala.
+export const ModeloHistologia3DSchema = z.object({
+  id: idKebab,
+  ordem: z.number().int(),
+  titulo: z.string(),
+  /** Aviso de escala mostrado junto do modelo (ex.: "Esquema fora de escala"). */
+  escala: z.string().min(5),
+  /** Avisos de interpretação (o que o modelo simplifica ou omite). */
+  contexto: z.array(z.string().min(10)).min(1),
+  descricao: z.string(),
+  destaques: z.array(z.string()),
+  topicos: z.array(z.string()).min(1),
+  estruturas: z.array(z.object({ id: idKebab, nome: z.string(), descricao: z.string() })).min(4),
+  revisao: RevisaoSchema,
+});
+export const ModelosHistologia3DArquivoSchema = z.object({ modelos: z.array(ModeloHistologia3DSchema) });
+export type ModeloHistologia3D = z.infer<typeof ModeloHistologia3DSchema>;
+
 export const EscolaSchema = z.object({
   id: idKebab,
   sigla: z.string(),

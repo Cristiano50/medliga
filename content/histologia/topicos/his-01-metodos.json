@@ -976,7 +976,7 @@
         "controle-interno",
         "caso-clinico"
       ],
-      "referencia": "Hammond et al., Arch Pathol Lab Med 2010 (diretriz ASCO/CAP de RE/RP, texto integral); Allison et al., J Clin Oncol 2020"
+      "referencia": "Hammond et al., Arch Pathol Lab Med 2010 (diretriz ASCO/CAP de RE/RP, texto integral); Allison et al., J Clin Oncol 2020; Cho et al., J Breast Cancer 2021 (síntese da atualização de 2020, texto integral)"
     },
     {
       "id": "his-01-q27",
@@ -1002,7 +1002,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Depósitos de amiloide, róseos e amorfos na HE, coram-se pelo vermelho Congo e mostram birrefringência verde-maçã à microscopia de polarização, o que confirma tratar-se de amiloide: a estrutura em folha β pregueada das fibrilas alinha as moléculas do corante. Depois, a tipagem da proteína (por imuno-histoquímica, imunofluorescência ou espectrometria de massa) define o tipo, como AL ou ATTR, do qual depende a conduta (c). (a) A cor vermelha em luz comum não basta: o que confirma o amiloide é a birrefringência verde-maçã sob luz polarizada, e a cor não informa o tipo da proteína. (b) O tricrômico destaca o colágeno (azul ou verde) e serve para avaliar fibrose; não identifica nem tipa amiloide. (d) No bloco de parafina, os lipídios já foram extraídos pelo álcool e pelo xilol; além disso, o caráter róseo (acidófilo) dos depósitos na HE é próprio de material proteico, como o amiloide.",
+      "explicacao": "Depósitos de amiloide, róseos e amorfos na HE, coram-se pelo vermelho Congo e, à microscopia de polarização (polarizador e analisador cruzados), mostram birrefringência, classicamente descrita como verde-maçã (muitas vezes o verde vem acompanhado de outras cores, sobretudo o amarelo: são as chamadas cores anômalas), o que confirma tratar-se de amiloide: a estrutura em folha β pregueada das fibrilas alinha as moléculas do corante. Depois, a tipagem da proteína (por imuno-histoquímica, imunofluorescência ou, de preferência, espectrometria de massa) define o tipo, como AL ou ATTR, do qual depende a conduta (c). (a) A cor vermelha em luz comum não basta: o que confirma o amiloide é a birrefringência sob luz polarizada, e o vermelho Congo não identifica o tipo da proteína precursora. (b) O tricrômico destaca o colágeno (azul ou verde) e serve para avaliar fibrose; não identifica nem tipa amiloide. (d) No bloco de parafina, os lipídios já foram extraídos pelo álcool e pelo xilol; além disso, o caráter róseo (acidófilo) dos depósitos na HE é próprio de material proteico, como o amiloide.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -1012,7 +1012,7 @@
         "polarizacao",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (amiloidose); Junqueira 14ª ed., cap. 1; Bancroft 8th ed."
+      "referencia": "Robbins 10ª ed. (amiloidose); Junqueira 14ª ed., cap. 1; Bancroft 8th ed.; Simões et al., posicionamento da SBC sobre amiloidose cardíaca, Arq Bras Cardiol 2021 (texto integral); Howie e Owen-Casey, Ann Med 2022"
     },
     {
       "id": "his-01-q28",
@@ -1176,13 +1176,26 @@
     {
       "obra": "Wolff AC, Hammond MEH, Hicks DG, et al. Recommendations for human epidermal growth factor receptor 2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline update. J Clin Oncol. 2013;31(31):3997–4013. doi:10.1200/JCO.2013.50.9984. PMID 24101045 (também Arch Pathol Lab Med. 2014;138(2):241–256, PMID 24099077)",
       "capitulo": "HER2: tempo até o fixador de no máximo 1 hora; fixação em formol tamponado a 10% por 6 a 72 horas (limite ampliado de 48 para 72 horas nesta atualização; texto integral, PMC4086638)"
+    },
+    {
+      "obra": "Simões MV, Fernandes F, Marcondes-Braga FG, et al. Posicionamento sobre diagnóstico e tratamento da amiloidose cardíaca – 2021. Arq Bras Cardiol. 2021;117(3):561-598. doi:10.36660/abc.20210718. PMID 34550244 (texto integral: PMC8462947)",
+      "capitulo": "6.1.1 — Biópsia: o vermelho Congo com birrefringência sob luz polarizada confirma o amiloide, mas não identifica a proteína precursora; tipagem por imuno-histoquímica ou, de preferência, microdissecção a laser e espectrometria de massa — questão avançada q27"
+    },
+    {
+      "obra": "Howie AJ, Owen-Casey MP. Systematic review of accuracy of reporting of Congo red-stained amyloid in 2010-2020 compared with earlier. Ann Med. 2022;54(1):2511-2516. doi:10.1080/07853890.2022.2123558. PMID 36120888 (texto integral: PMC9518257)",
+      "capitulo": "Cores anômalas × 'birrefringência verde-maçã' no amiloide corado pelo vermelho Congo — questão avançada q27"
+    },
+    {
+      "obra": "Cho SY, Park SY, Bae YK, et al. Standardized pathology report for breast cancer. J Breast Cancer. 2021;24(1):1-21. doi:10.4048/jbc.2021.24.e5. PMID 33634617 (texto integral: PMC7920867)",
+      "capitulo": "Receptores hormonais: síntese da atualização ASCO/CAP de 2020 (categoria ER Low Positive; isquemia fria prolongada e controles internos ou externos inadequados tornam o resultado não interpretável, com repetição em outro bloco ou amostra) — fonte secundária para a questão avançada q26"
     }
   ],
   "notasDivergencia": [
     "Espessura dos cortes em parafina: Junqueira cita cortes em geral de 1 a 10 µm; na rotina de patologia são comuns 3–5 µm (Bancroft). O resumo usa 'poucos micrômetros'.",
     "Resolução do MET: as obras citam valores entre décimos de nanômetro (limite do instrumento) e cerca de 1–3 nm (prática com cortes biológicos). O conteúdo usa apenas 'escala de nanômetros' e a comparação qualitativa com o MO e o MEV.",
     "Hematoxilina: Junqueira a trata simplesmente como corante básico; Ross e Bancroft explicam que o corante ativo é a hemateína (produto de oxidação) ligada a um mordente (alumínio), complexo catiônico que se comporta como corante básico. O resumo explica o papel da hemateína e do mordente; questões e pontos-chave usam apenas 'comporta-se como corante básico', formulação compatível com as três obras.",
-    "Diâmetro da hemácia: Junqueira ~7,5 µm; Ross ~7,8 µm. Faixa adotada: 7–8 µm."
+    "Diâmetro da hemácia: Junqueira ~7,5 µm; Ross ~7,8 µm. Faixa adotada: 7–8 µm.",
+    "Cor da birrefringência do amiloide (questão avançada q27): Robbins e a maioria dos textos descrevem 'birrefringência verde-maçã'; o posicionamento da SBC (2021) fala apenas em 'birrefringência sob a luz polarizada'; Howie e Owen-Casey (Ann Med 2022, revisão sistemática) mostram que o verde nem sempre aparece e costuma vir com outras cores (a combinação mais comum nas imagens publicadas foi verde e amarelo) e preferem o termo 'cores anômalas'. A q27 diz 'birrefringência, classicamente descrita como verde-maçã' e menciona as cores anômalas (revisão de patologia da camada avançada, 2026-11-10)."
   ],
   "incertezas": [
     "Os números e títulos de capítulos da 14ª ed. de Junqueira e da 8ª ed. de Ross foram citados de memória, com base na organização das edições anteriores; conferir nas edições adotadas.",
@@ -1190,7 +1203,8 @@
     "Espessura dos cortes ultrafinos para MET e diâmetro exato do ribossomo foram omitidos por variarem entre as obras; a questão de ordenação usa apenas ordens de grandeza que não se sobrepõem.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
     "Camada avançada (redator, 2026-11-10), q26: conferida no texto integral da diretriz ASCO/CAP de RE/RP de 2010 (Hammond et al., Arch Pathol Lab Med 2010, PMC3073033): 'Uninterpretable for ER or PgR if finding that no tumor nuclei are immunoreactive and that internal epithelial elements present in the sample ... lack any nuclear staining'; 'samples where fixation was delayed for more than 1 hour' entre as causas de resultado não interpretável; 'an alternative potential sample for retesting should be suggested'; células mioepiteliais e estroma como controle negativo embutido; RE negativo se < 1% dos núcleos tumorais corados. Da atualização vigente (Allison et al., 2020) só o resumo pôde ser lido (texto integral fora da rede): ele mantém o limiar de < 1% e manda relatar o estado dos controles nos casos com 0% a 10% de marcação. Conferir no texto integral de 2020 se a categoria 'não interpretável' manteve a mesma redação.",
-    "Camada avançada, q29: a sequência omite a contracoloração (em geral pela hematoxilina), etapa de rotina entre a revelação pelo DAB e a desidratação, porque o protocolo não foi conferido em fonte; a ordem das etapas listadas não muda com ela. q27, q28 e q30 usam só fatos já revisados de his-01 e his-03."
+    "Camada avançada, q29: a sequência omite a contracoloração (em geral pela hematoxilina), etapa de rotina entre a revelação pelo DAB e a desidratação, porque o protocolo não foi conferido em fonte; a ordem das etapas listadas não muda com ela. q27, q28 e q30 usam só fatos já revisados de his-01 e his-03.",
+    "Revisão de patologia da camada avançada (2026-11-10): q26 — Hammond et al. 2010 relido no texto integral (PMC3073033): 'Uninterpretable for ER or PgR if finding that no tumor nuclei are immunoreactive and that internal epithelial elements present in the sample ... lack any nuclear staining'; entre as causas, 'samples where fixation was delayed for more than 1 hour'; o controle interno positivo 'must display a heterogeneous staining pattern of the luminal cells'. O texto integral de Allison et al. 2020 continua fora da rede (ascopubs.org, meridian.allenpress.com e www.cap.org recusados pelo proxy; documents.cap.org com erro 502). Uma fonte secundária aberta que cita Allison 2020 (Cho et al., J Breast Cancer 2021, PMC7920867) reproduz a regra: 'prolonged cold ischemia time ... inappropriate external/internal controls ... These cases are uninterpretable, and repeat staining of another block or specimen is recommended'. O conceito cobrado vale nas duas versões; continua pendente conferir no texto integral de 2020 a redação exata do rótulo. q27 — tipagem do amiloide conferida no posicionamento brasileiro da SBC (Simões et al. 2021, PMC8462947): 'a coloração vermelho-congo permite a confirmação da infiltração amiloide nos tecidos, porém não identifica o tipo da proteína precursora'; tipagem por 'imuno-histoquímica ou, preferencialmente, de microdissecção a laser do material amiloide da biópsia com realização de espectrometria de massa'."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1223,6 +1237,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado",
         "notas": "camada avançada (ids his-01-q26 a his-01-q30): 0 correções. Gabaritos, explicações (letras a–d citadas), distratores, comprimento das alternativas, dificuldade e bloom conferidos. q26 conferida no texto integral de Hammond et al. 2010 (PMC3073033): \"Uninterpretable ... if ... no tumor nuclei are immunoreactive and ... internal epithelial elements ... lack any nuclear staining\"; \"samples where fixation was delayed for more than 1 hour\"; 6–72 h; mioepitélio e estroma \"must invariably show a negative result\". Allison 2020: só o resumo (texto integral fora da rede); a redação da categoria \"não interpretável\" em 2020 continua pendente (incerteza já registrada). q28: limite de resolução de ~0,2 µm coerente com o resumo e com a questão de ordens de grandeza do tópico."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-01-q26 a his-01-q30): 2 correções (0 críticas, 0 importantes, 2 menores); gabaritos corretos. q26: Hammond et al. 2010 relido no texto integral (PMC3073033); Allison 2020 continua sem texto integral na rede, mas a categoria 'uninterpretable' (isquemia fria prolongada, controles internos inadequados, repetir em outro bloco ou amostra) aparece, citando Allison 2020, em Cho et al. 2021 (PMC7920867), acrescentada como fonte secundária. q27: birrefringência 'classicamente descrita como verde-maçã', com menção às cores anômalas (Howie e Owen-Casey 2022, texto integral), e tipagem com espectrometria de massa preferencial; o vermelho Congo não identifica a proteína (posicionamento da SBC 2021, texto integral). q28, q29 e q30 sem alteração."
       }
     ],
     "humano": null

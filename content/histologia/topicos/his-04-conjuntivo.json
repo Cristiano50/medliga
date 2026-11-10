@@ -1079,7 +1079,7 @@
         "aorta",
         "caso-clinico"
       ],
-      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 1 e 5; Halushka et al., Cardiovasc Pathol 2016"
+      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 1 e 5; Halushka et al., Cardiovasc Pathol 2016; Loeys et al., J Med Genet 2010 (nosologia de Ghent revisada)"
     },
     {
       "id": "his-04-q28",
@@ -1167,7 +1167,7 @@
         "colageno",
         "classificacao"
       ],
-      "referencia": "Malfait et al., Am J Med Genet C 2017"
+      "referencia": "Malfait et al., Am J Med Genet C 2017; Forghani, Balkan Med J 2019 (texto integral)"
     }
   ],
   "referencias": [
@@ -1214,6 +1214,14 @@
     {
       "obra": "Bain CC, Bravo-Blas A, Scott CL, et al. Constant replenishment from circulating monocytes maintains the macrophage pool in the intestine of adult mice. Nat Immunol. 2014;15(10):929-937. doi:10.1038/ni.2967. PMID 25151491 (texto integral: PMC4169290)",
       "capitulo": "Macrófagos intestinais do adulto repostos por monócitos — exceção registrada na questão avançada q28"
+    },
+    {
+      "obra": "Loeys BL, Dietz HC, Braverman AC, et al. The revised Ghent nosology for the Marfan syndrome. J Med Genet. 2010;47(7):476-485. doi:10.1136/jmg.2009.072785. PMID 20591885",
+      "capitulo": "Aneurisma da raiz da aorta e ectopia do cristalino como manifestações cardinais; sem história familiar, as duas juntas bastam para o diagnóstico (resumo lido) — questão avançada q27"
+    },
+    {
+      "obra": "Forghani I. Updates in clinical and genetics aspects of hypermobile Ehlers Danlos syndrome. Balkan Med J. 2019;36(1):12-16. doi:10.4274/balkanmedj.2018.1113. PMID 30063214 (texto integral: PMC6335943)",
+      "capitulo": "Tipo hipermóvel como o subtipo mais comum da classificação de 2017, ainda sem base molecular conhecida — questão avançada q30"
     }
   ],
   "notasDivergencia": [
@@ -1228,9 +1236,10 @@
     "Valores numéricos das forças de Starling e da proporção de colágeno no peso corporal foram omitidos por variarem entre as obras.",
     "Maior frequência do queloide em pessoas de pele negra: afirmação qualitativa presente em Junqueira e Robbins; percentuais não foram incluídos.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
-    "Momento ideal de coleta da triptase omitido; o texto usa \"primeiras horas\" (a WAO 2020 indica coleta nas primeiras horas após o início dos sintomas). Guia brasileiro de anafilaxia (ASBAI) não conferido; a frase de tratamento é atribuída à WAO 2020 (revisão de patologia/clínica, 09/11/2026).",
+    "Momento de coleta da triptase: conferido no texto integral da WAO 2020 (Cardona et al., PMC7607509): a triptase sérica fica elevada de cerca de 15 minutos a 3 horas ou mais após o início, com pico entre 1 e 2 horas, e a basal deve ser colhida pelo menos 24 horas após a resolução; essa cinética está na questão avançada q29. A correlação clínica mantém a formulação qualitativa \"sobe nas primeiras horas\", compatível com a diretriz. Guia brasileiro de anafilaxia (ASBAI) continua não conferido (asbai.org.br e aaai-asbai.org.br sem conexão nesta rede em 10/11/2026); a frase de tratamento é atribuída à WAO 2020 (revisão de patologia/clínica, 09/11/2026; atualizada pela revisão de patologia da camada avançada, 10/11/2026).",
     "Camada avançada (redator, 2026-11-10), q29: a cinética da triptase foi conferida no texto integral da WAO 2020 (Cardona et al., PMC7607509): 'serum tryptase levels are increased from 15 min to 3 h or even longer, after the onset; levels peak between 1 and 2 h'; níveis elevados apoiam o diagnóstico, e normais não o excluem; triptase basal 'at least 24 h after'; 'neither does a normal baseline tryptase' exclui mastocitose. q26 e q28 são cenários experimentais didáticos, hipotéticos, construídos só com fatos já revisados do tópico; o resultado da q28 é compatível com a literatura sobre a origem dos macrófagos, mas não reproduz um experimento publicado específico. q30 usa a classificação de 2017 já citada no tópico (Malfait et al.), cujo texto integral não foi lido nesta etapa.",
-    "Revisão da camada avançada (histologia, 2026-11-10): q28 — a alternativa correta generalizava (\"os residentes se mantêm sem monócitos\"); várias populações residentes se automantêm (Ginhoux e Guilliams 2016, resumo: \"several tissue-resident macrophage populations are seeded during waves of embryonic hematopoiesis and self-maintain independently of BM contribution\"; Hashimoto et al., Immunity 2013, PMID 23601688), mas os macrófagos intestinais do adulto são repostos por monócitos (Bain et al. 2014, resumo: \"replaced around the time of weaning by the ... influx of Ly6Chi monocytes ... had to be continued throughout adult life\"). A alternativa passou a se referir aos órgãos avaliados. q27 — Halushka et al. 2016 (resumo): as alterações da média são \"both distinct and nonspecific\"; a explicação registra que o padrão não é exclusivo do Marfan. q29 — WAO 2020 conferida no texto integral (PMC7607509), como registrado pelo redator. q30 — Malfait et al. 2017 (resumo): diagnóstico definitivo de todos os subtipos, \"except for the hypermobile type\", depende de variante causal; GeneReviews (Hakim, atualização de 2024, PMID 20301456): \"no underlying genetic ... etiology has been identified for hEDS\". \"O mais comum\" não foi conferido no texto integral."
+    "Revisão da camada avançada (histologia, 2026-11-10): q28 — a alternativa correta generalizava (\"os residentes se mantêm sem monócitos\"); várias populações residentes se automantêm (Ginhoux e Guilliams 2016, resumo: \"several tissue-resident macrophage populations are seeded during waves of embryonic hematopoiesis and self-maintain independently of BM contribution\"; Hashimoto et al., Immunity 2013, PMID 23601688), mas os macrófagos intestinais do adulto são repostos por monócitos (Bain et al. 2014, resumo: \"replaced around the time of weaning by the ... influx of Ly6Chi monocytes ... had to be continued throughout adult life\"). A alternativa passou a se referir aos órgãos avaliados. q27 — Halushka et al. 2016 (resumo): as alterações da média são \"both distinct and nonspecific\"; a explicação registra que o padrão não é exclusivo do Marfan. q29 — WAO 2020 conferida no texto integral (PMC7607509), como registrado pelo redator. q30 — Malfait et al. 2017 (resumo): diagnóstico definitivo de todos os subtipos, \"except for the hypermobile type\", depende de variante causal; GeneReviews (Hakim, atualização de 2024, PMID 20301456): \"no underlying genetic ... etiology has been identified for hEDS\". \"O mais comum\" não foi conferido no texto integral.",
+    "Revisão de patologia da camada avançada (2026-11-10): q27 — Loeys et al. 2010 (nosologia de Ghent revisada, resumo, PMID 20591885): 'aortic root aneurysm and ectopia lentis are the cardinal clinical features. In the absence of any family history, the presence of these two manifestations is sufficient for the unequivocal diagnosis of MFS'; a vinheta (ectopia do cristalino e dissecção da aorta ascendente) é inequívoca. q29 — WAO 2020 relida no texto integral (PMC7607509): 'serum tryptase levels are increased from 15 min to 3 h or even longer, after the onset; levels peak between 1 and 2 h'; 'Although elevated levels support a diagnosis of anaphylaxis, normal levels do not exclude anaphylaxis'; basal 'at least 24 h after resolution of anaphylaxis symptoms'; 'Excluding urticaria pigmentosa does not exclude mastocytosis, neither does a normal baseline tryptase'. A diretriz cita também a equação de consenso de 2010 (pico > 1,2 × basal + 2), não cobrada na questão; no texto da WAO a unidade da equação aparece como 'ng/L', provável erro de digitação (o limite citado no mesmo parágrafo é 11,4 µg/L). A incerteza antiga sobre o momento de coleta foi atualizada. q30 — 'o mais comum' conferido no texto integral de Forghani 2019 (PMC6335943): 'The 2017 classification describes 13 subtypes of EDS, with hEDS being the most common subtype'; Malfait et al. 2017 (resumo): o diagnóstico definitivo de todos os subtipos, 'except for the hypermobile type', depende de variante causal."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1256,6 +1265,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids his-04-q26 a his-04-q30): 3 correções (0 críticas, 1 importante, 2 menores). Importante: q28 — alternativa correta (a) generalizava para todos os macrófagos residentes, mas os intestinais do adulto são repostos por monócitos (Bain et al. 2014); texto passou a \"os residentes desses órgãos\" e a explicação registra a exceção. Menores: q27 — explicação registra que a degeneração da média não é específica do Marfan (Halushka 2016); q30 — bloom analisar → lembrar (V/F de classificação). q26 (cenários com fibroblastos) e q29 (cinética da triptase, WAO 2020 no texto integral) corretas."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-04-q26 a his-04-q30): 3 correções (0 críticas, 0 importantes, 3 menores); gabaritos corretos. q27: referência à nosologia de Ghent revisada (Loeys et al. 2010: ectopia do cristalino e aneurisma ou dissecção da raiz da aorta bastam para o diagnóstico). q30: 'o tipo hipermóvel, o mais comum' conferido no texto integral (Forghani 2019), referência acrescentada. Incerteza antiga da triptase atualizada: a cinética (elevada de 15 min a 3 h ou mais, pico em 1–2 h, basal pelo menos 24 h após a resolução) foi conferida no texto integral da WAO 2020 e está na q29. q26, q28 e q29 sem alteração."
       }
     ],
     "humano": null

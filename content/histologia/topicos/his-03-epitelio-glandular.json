@@ -1046,7 +1046,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na mama, ductos e ácinos normais, a maioria das lesões benignas e o carcinoma in situ mantêm a camada de células mioepiteliais, situada entre a lâmina basal e as células luminais; no carcinoma invasivo, os ninhos tumorais não a têm. p63 e calponina, marcadores mioepiteliais, estão ausentes em torno dos ninhos atípicos que infiltram o estroma: o quadro é de carcinoma invasivo (c). (a) A actina de músculo liso marca também os miofibroblastos do estroma; células fusiformes positivas junto aos ninhos não provam camada mioepitelial. Por isso se usa um painel: a p63, marcador nuclear, não cora miofibroblastos, e é lida junto com um marcador citoplasmático, como a calponina, que pode corá-los em parte dos casos. (b) O ducto normal marcado é o controle interno: mostra que a reação funcionou, mas não torna benignos ninhos atípicos sem mioepitélio. (d) Pelo mesmo motivo, a marcação do ducto normal na mesma lâmina afasta falha técnica: a ausência de p63 e calponina em torno dos ninhos é um resultado verdadeiro.",
+      "explicacao": "Na mama, ductos e ácinos normais, a maioria das lesões benignas e o carcinoma ductal in situ mantêm a camada de células mioepiteliais, situada entre a lâmina basal e as células luminais; no carcinoma invasivo, os ninhos tumorais não a têm. p63 e calponina, marcadores mioepiteliais, estão ausentes em torno dos ninhos atípicos que infiltram o estroma: o quadro é de carcinoma invasivo (c). A ausência de mioepitélio é sempre lida junto com a morfologia, como aqui (ninhos e cordões irregulares e atípicos num estroma denso), porque há exceções: o carcinoma papilífero encapsulado e o carcinoma papilífero sólido podem ser classificados como in situ, embora não tenham mioepitélio na periferia. (a) A actina de músculo liso marca também os miofibroblastos do estroma; células fusiformes positivas junto aos ninhos não provam camada mioepitelial. Por isso se usa um painel: a p63, marcador nuclear, não cora miofibroblastos, e é lida junto com um marcador citoplasmático, como a calponina, que pode corá-los em parte dos casos. (b) O ducto normal marcado é o controle interno: mostra que a reação funcionou, mas não torna benignos ninhos atípicos sem mioepitélio. (d) Pelo mesmo motivo, a marcação do ducto normal na mesma lâmina afasta falha técnica: a ausência de p63 e calponina em torno dos ninhos é um resultado verdadeiro.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1057,7 +1057,7 @@
         "carcinoma-invasivo",
         "caso-clinico"
       ],
-      "referencia": "OMS, Breast Tumours, 5ª ed., 2019; Werling et al., Am J Surg Pathol 2003; Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+      "referencia": "OMS, Breast Tumours, 5ª ed., 2019; Werling et al., Am J Surg Pathol 2003; Quinn et al., Histopathology 2023 (texto integral); Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
     },
     {
       "id": "his-03-q28",
@@ -1083,7 +1083,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "A área com ductos, células mioepiteliais e estroma mixoide e condroide é de adenoma pleomórfico, a neoplasia mais comum das glândulas salivares. O adenoma pleomórfico raramente sofre transformação maligna, risco que aumenta com o tempo de evolução; o crescimento rápido de um nódulo antigo e o componente de células muito atípicas, com mitoses e infiltração dos tecidos vizinhos, indicam carcinoma surgido no adenoma, o carcinoma ex-adenoma pleomórfico (d). (a) O tumor nunca foi operado, e a recidiva de um adenoma pleomórfico continuaria benigna, sem o componente atípico infiltrativo. (b) Estroma condroide abundante faz parte do adenoma pleomórfico, mas não explica ninhos de células muito atípicas que infiltram os tecidos vizinhos. (c) O linfoma MALT, associado à síndrome de Sjögren, é uma proliferação de células linfoides, e não ninhos de células epiteliais atípicas junto a um adenoma pleomórfico.",
+      "explicacao": "A área com ductos, células mioepiteliais e estroma mixoide e condroide é de adenoma pleomórfico, a neoplasia mais comum das glândulas salivares. O adenoma pleomórfico raramente sofre transformação maligna; o risco aumenta com o tempo de evolução sem tratamento, a idade, o tamanho do tumor e as recidivas múltiplas. O crescimento rápido de um nódulo antigo e o componente de células muito atípicas, com mitoses e infiltração dos tecidos vizinhos, indicam carcinoma surgido no adenoma, o carcinoma ex-adenoma pleomórfico (d). (a) O tumor nunca foi operado, o que afasta a recidiva; além disso, a recidiva de um adenoma pleomórfico é, em si, um tumor benigno, e um componente atípico e infiltrativo também indicaria carcinoma ex-adenoma pleomórfico, que pode surgir tanto no tumor primário quanto numa recidiva. (b) Estroma condroide abundante faz parte do adenoma pleomórfico, mas não explica ninhos de células muito atípicas que infiltram os tecidos vizinhos. (c) O linfoma MALT, associado à síndrome de Sjögren, é uma proliferação de células linfoides, e não ninhos de células epiteliais atípicas junto a um adenoma pleomórfico.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1093,7 +1093,7 @@
         "glandulas-salivares",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (cabeça e pescoço — glândulas salivares); Ross 8ª ed., cap. 16"
+      "referencia": "Robbins 10ª ed. (cabeça e pescoço — glândulas salivares); Ross 8ª ed., cap. 16; Scarini et al., Front Oral Health 2023 (texto integral); Antony et al., Head Neck Pathol 2012"
     },
     {
       "id": "his-03-q29",
@@ -1247,6 +1247,18 @@
     {
       "obra": "Werling RW, Hwang H, Yaziji H, Gown AM. Immunohistochemical distinction of invasive from noninvasive breast lesions: a comparative study of p63 versus calponin and smooth muscle myosin heavy chain. Am J Surg Pathol. 2003;27(1):82-90. doi:10.1097/00000478-200301000-00009. PMID 12502930",
       "capitulo": "p63 não marca miofibroblastos; calponina e miosina de músculo liso podem marcá-los — questão avançada q27"
+    },
+    {
+      "obra": "Quinn C, Maguire A, Rakha E. Pitfalls in breast pathology. Histopathology. 2023;82(1):140-161. doi:10.1111/his.14799. PMID 36482276 (texto integral: PMC10107929)",
+      "capitulo": "Imuno-histoquímica de células mioepiteliais: pelo menos dois marcadores (nuclear e citoplasmático); a p63 não cora miofibroblastos, e calponina, actina de músculo liso e miosina de músculo liso podem corá-los; a ausência de mioepitélio é interpretada no contexto (carcinomas papilíferos encapsulado e sólido) — questão avançada q27"
+    },
+    {
+      "obra": "Scarini JF, de Lima-Souza RA, Lavareze L, et al. Heterogeneity and versatility of the extracellular matrix during the transition from pleomorphic adenoma to carcinoma ex pleomorphic adenoma: cumulative findings from basic research and new insights. Front Oral Health. 2023;4:942604. doi:10.3389/froh.2023.942604. PMID 37138857 (texto integral: PMC10149834)",
+      "capitulo": "Adenoma pleomórfico como tumor salivar mais comum; transformação maligna quando não tratado; fatores de risco (recidivas múltiplas, sexo masculino, idade, radioterapia prévia, tamanho do tumor) — questão avançada q28"
+    },
+    {
+      "obra": "Antony J, Gopalan V, Smith RA, Lam AK. Carcinoma ex pleomorphic adenoma: a comprehensive review of clinical, pathological and molecular data. Head Neck Pathol. 2012;6(1):1-9. doi:10.1007/s12105-011-0281-z. PMID 21744105",
+      "capitulo": "Definição: carcinoma surgido em adenoma pleomórfico primário ou recidivado (resumo lido) — questão avançada q28"
     }
   ],
   "notasDivergencia": [
@@ -1262,7 +1274,8 @@
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
     "Diretrizes brasileiras de fibrose cística (Athanazio et al., 2017): o texto integral não pôde ser aberto nesta sessão. Os pontos de corte (≥ 60 mmol/L; 30–59 mmol/L intermediário) vêm do consenso CFF 2017 e de estudos brasileiros que descrevem dois testes com cloreto ≥ 60 mmol/L como padrão; conferir a redação da diretriz brasileira e do manual de triagem neonatal (revisão de patologia/clínica, 09/11/2026).",
     "Camada avançada (redator, 2026-11-10), q26: critérios ACR/EULAR de 2016 conferidos no texto integral da versão do Arthritis Rheumatol (Shiboski et al. 2017, PMC5650478, manuscrito do autor): peso 3 para a biópsia de glândula salivar labial com sialoadenite linfocítica focal e escore de foco ≥ 1 foco/4 mm² e para o anti-SSA(Ro); peso 1 para escore de coloração ocular ≥ 5 (ou van Bijsterveld ≥ 4) em pelo menos um olho, Schirmer ≤ 5 mm/5 min em pelo menos um olho e fluxo salivar não estimulado ≤ 0,1 mL/min; classificação com soma ≥ 4, em quem preenche a inclusão e não tem condição de exclusão. O resumo dessa versão traz 'foci/mm²', erro de digitação; a tabela e a nota de rodapé dizem 'foci/4 mm²'. q27 a q30 usam só fatos já revisados do tópico.",
-    "Revisão da camada avançada (histologia, 2026-11-10): q26 — conta refeita: 6 focos em 12 mm² = 0,5 foco/mm² = 2 focos/4 mm² (escore de foco 2); biópsia 3 + Schirmer 4 mm/5 min em um olho 1 = 4 pontos, mínimo para classificar; inclusão (boca seca diária > 3 meses; beber líquidos para engolir alimento seco) e exclusões conferidas na Tabela do texto integral (PMC5650478); foco = agregado de ≥ 50 células mononucleares, sobretudo linfócitos (Fisher et al., Ann Rheum Dis 2017, PMC5530351). q27 — Werling et al. 2003 (resumo, PMID 12502930): \"No case showed p63 expression by myofibroblasts ... whereas myofibroblasts expressed, in 8% and 76% of cases, SMM-HC and calponin\"; a explicação deixou de sugerir que a calponina, como a p63, não cora miofibroblastos. O texto integral não foi lido."
+    "Revisão da camada avançada (histologia, 2026-11-10): q26 — conta refeita: 6 focos em 12 mm² = 0,5 foco/mm² = 2 focos/4 mm² (escore de foco 2); biópsia 3 + Schirmer 4 mm/5 min em um olho 1 = 4 pontos, mínimo para classificar; inclusão (boca seca diária > 3 meses; beber líquidos para engolir alimento seco) e exclusões conferidas na Tabela do texto integral (PMC5650478); foco = agregado de ≥ 50 células mononucleares, sobretudo linfócitos (Fisher et al., Ann Rheum Dis 2017, PMC5530351). q27 — Werling et al. 2003 (resumo, PMID 12502930): \"No case showed p63 expression by myofibroblasts ... whereas myofibroblasts expressed, in 8% and 76% of cases, SMM-HC and calponin\"; a explicação deixou de sugerir que a calponina, como a p63, não cora miofibroblastos. O texto integral não foi lido.",
+    "Revisão de patologia da camada avançada (2026-11-10): q26 — conta refeita e conferida de novo na Tabela 3 do texto integral (PMC5650478): 6 focos/12 mm² = 0,5 foco/mm² = 2 focos/4 mm²; biópsia (peso 3) + Schirmer ≤ 5 mm/5 min em pelo menos um olho (peso 1) = 4, o mínimo ('score ≥ 4 when summing the weights'); inclusão pelas perguntas 4 e 5 e exclusões conferidas. A recomendação da SBR para o diagnóstico (Trevisani et al., Adv Rheumatol 2019;59:58, PMID 31852541) só pôde ser lida no resumo (advancesinrheumatology.biomedcentral.com recusado pelo proxy): 'Minor salivary gland biopsy is recommended for all anti-Ro negative or incomplete criteria cases', coerente com a vinheta. q27 — Quinn et al. 2023 (Histopathology, texto integral, PMC10107929): 'it is recommended that at least two MEC markers are used, usually a combination of a nuclear and cytoplasmic stain'; a p63 tem 'no expression in blood vessels or myofibroblasts', e os marcadores citoplasmáticos (actina de músculo liso, calponina, miosina de músculo liso, CD10) tendem a corar miofibroblastos; 'The absence of MECs at the periphery of a lesion may support a diagnosis of invasive malignancy but must be interpreted in context and with caution', pois 'encapsulated and solid papillary carcinoma may be categorised as in situ lesions despite the absence of a peripheral MEC layer'. A explicação passou a registrar essa ressalva. q28 — Scarini et al. 2023 (texto integral, PMC10149834): o adenoma pleomórfico é o tumor salivar mais comum; 'If untreated, it is estimated that up to 6.2% of PAs undergo malignant transformation'; 'Multiple recurrences, male sex, advanced age, previous radiation therapy, and tumor size are the most frequently reported risk factors'. Antony et al. 2012 (resumo): carcinoma 'arising from a primary or recurrent benign pleomorphic adenoma'. A explicação dizia que uma recidiva 'continuaria benigna, sem o componente atípico infiltrativo', o que contradiz esses dados, e foi corrigida. A relação do risco com o tempo de evolução vem de Robbins e de Eneroth e Zetterberg 1974 (PMID 4365171, sem resumo no PubMed), não lidos; nenhum percentual foi usado."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1288,6 +1301,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids his-03-q26 a his-03-q30): 1 correção (0 críticas, 1 importante, 0 menores). Importante: q27 — a explicação da alternativa a sugeria que a calponina, como a p63, não marca miofibroblastos; a calponina os marca em parte dos casos (Werling et al. 2003), e o texto passou a descrever o painel p63 (nuclear, sem miofibroblastos) + marcador citoplasmático. q26: escore de foco recalculado (6 focos/12 mm² = 2 focos/4 mm²; 3 + 1 = 4 pontos, classifica) e critérios ACR/EULAR 2016 conferidos no texto integral (PMC5650478); gabarito b correto. q28 a q30 corretas."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-03-q26 a his-03-q30): 2 correções (0 críticas, 2 importantes, 0 menores); gabaritos corretos. Importantes: q27 — a explicação dizia, sem ressalva, que o carcinoma in situ mantém o mioepitélio; passou a registrar que a ausência de mioepitélio é lida com a morfologia, porque os carcinomas papilíferos encapsulado e sólido podem ser classificados como in situ sem mioepitélio periférico (Quinn et al. 2023, texto integral); q28 — a explicação dizia que uma recidiva de adenoma pleomórfico 'continuaria benigna, sem o componente atípico', mas o carcinoma ex-adenoma pleomórfico também surge em recidivas, e as recidivas múltiplas são fator de risco (Scarini et al. 2023, texto integral; Antony et al. 2012, resumo). q26: conta do ACR/EULAR 2016 refeita (2 focos/4 mm²; 3 + 1 = 4 pontos) e conferida na Tabela 3 do texto integral. q29 e q30 sem alteração."
       }
     ],
     "humano": null
