@@ -80,7 +80,7 @@
       "sinonimos": [
         "muscular própria"
       ],
-      "definicao": "Camadas de músculo que produzem a peristalse: em geral circular interna e longitudinal externa, lisas; três camadas no estômago (oblíqua interna); músculo esquelético no terço superior do esôfago."
+      "definicao": "Camadas de músculo que produzem a peristalse: em geral circular interna e longitudinal externa, lisas; três camadas no estômago (oblíqua interna); músculo esquelético no terço superior do esôfago, na descrição clássica."
     },
     {
       "id": "plexo-mioenterico",
@@ -311,31 +311,31 @@
     {
       "id": "barrett-biopsia",
       "titulo": "Esôfago de Barrett: o que a biópsia mostra",
-      "descricao": "Definição, critério endoscópico e risco de adenocarcinoma estão no tópico de epitélio de revestimento. Na biópsia do esôfago distal, a metaplasia intestinal é reconhecida por células caliciformes verdadeiras entre células colunares; suas mucinas são ácidas e coram-se pelo azul alciano em pH 2,5, ao contrário das células foveolares gástricas, de muco neutro (células foveolares distendidas, as 'pseudocaliciformes', não contam). O laudo também informa se há displasia e de que grau, o que define o risco. O carcinoma epidermoide do esôfago, ao contrário, surge do epitélio pavimentoso.",
+      "descricao": "Definição, critério endoscópico e risco de adenocarcinoma estão no tópico de epitélio de revestimento. Na biópsia do esôfago distal, a metaplasia intestinal é reconhecida por células caliciformes verdadeiras entre células colunares; suas mucinas são ácidas e coram-se pelo azul alciano em pH 2,5, ao contrário das células foveolares gástricas, de muco neutro (células foveolares distendidas, as 'pseudocaliciformes', não contam). O laudo também informa se há displasia e de que grau: o grau orienta o risco de progressão e o intervalo de vigilância, e o comprimento do segmento também pesa (ACG, 2022). O carcinoma epidermoide do esôfago, ao contrário, surge do epitélio pavimentoso.",
       "mecanismo": "O refluxo crônico de ácido e bile leva à substituição do epitélio pavimentoso por epitélio colunar, mais resistente; em uma minoria dos pacientes, a sequência metaplasia → displasia → adenocarcinoma se completa."
     },
     {
       "id": "gastrite-h-pylori",
       "titulo": "Gastrite por Helicobacter pylori",
-      "descricao": "Causa mais comum de gastrite crônica. O bacilo gram-negativo, curvo ou espiralado, vive na camada de muco sobre o epitélio foveolar, sobretudo do antro. A biópsia mostra gastrite crônica ativa: plasmócitos e linfócitos na lâmina própria, neutrófilos no epitélio das fossetas e folículos linfoides; a bactéria é mais bem vista com Giemsa, impregnação pela prata ou imuno-histoquímica. Associa-se a úlcera péptica, a adenocarcinoma gástrico e a linfoma MALT.",
-      "mecanismo": "A urease converte ureia em amônia, que neutraliza o ácido ao redor da bactéria; flagelos, adesinas e toxinas (como a CagA) sustentam a inflamação. Em parte dos pacientes, a inflamação crônica evolui para gastrite atrófica, metaplasia intestinal e displasia."
+      "descricao": "Causa mais comum de gastrite crônica. O bacilo gram-negativo, curvo ou espiralado, vive na camada de muco sobre o epitélio foveolar, sobretudo do antro. A biópsia mostra gastrite crônica ativa: plasmócitos e linfócitos na lâmina própria, neutrófilos no epitélio das fossetas e folículos linfoides; a bactéria costuma ser vista na HE, e o Giemsa, a impregnação pela prata ou a imuno-histoquímica aumentam a detecção (V Consenso Brasileiro, 2026). Associa-se a úlcera péptica, a adenocarcinoma gástrico e a linfoma MALT.",
+      "mecanismo": "A urease converte ureia em amônia, que neutraliza o ácido ao redor da bactéria; flagelos, adesinas e toxinas (como a CagA) sustentam a inflamação. Em parte dos pacientes, a inflamação crônica evolui para gastrite atrófica, metaplasia intestinal e displasia. A atrofia e a metaplasia intestinal são condições pré-cancerosas que podem regredir após a erradicação, e a displasia regride menos; o V Consenso Brasileiro (2026) recomenda erradicar a bactéria em toda gastrite associada a ela."
     },
     {
       "id": "gastrite-autoimune",
       "titulo": "Gastrite autoimune e anemia perniciosa",
-      "descricao": "Atrofia da mucosa do corpo e do fundo, com antro poupado: perda de células parietais e principais, infiltrado de linfócitos e plasmócitos, metaplasia intestinal e hiperplasia de células ECL. Acloridria, gastrina sérica elevada, anticorpos contra células parietais e contra fator intrínseco e deficiência de vitamina B12 (anemia megaloblástica e lesão neurológica). Aumenta o risco de tumores neuroendócrinos gástricos; a associação com adenocarcinoma é debatida, porque pode depender de infecção concomitante ou prévia pelo H. pylori.",
+      "descricao": "Atrofia da mucosa do corpo e do fundo, com antro poupado: perda de células parietais e principais, infiltrado de linfócitos e plasmócitos, metaplasia intestinal e hiperplasia de células ECL. Acloridria, gastrina sérica elevada, anticorpos contra células parietais e contra fator intrínseco e deficiência de vitamina B12 (anemia megaloblástica e lesão neurológica). Aumenta o risco de tumores neuroendócrinos gástricos (tipo 1); a associação com adenocarcinoma é debatida: um estudo prospectivo de pacientes sem H. pylori não achou excesso de risco e atribuiu o risco relatado à infecção concomitante ou prévia, mas metanálises recentes acham risco aumentado também sem ela.",
       "mecanismo": "Ataque autoimune à H⁺/K⁺-ATPase das células parietais e ao fator intrínseco; sem ácido, as células G do antro deixam de ser inibidas, e a gastrina elevada estimula as células ECL."
     },
     {
       "id": "doenca-celiaca",
       "titulo": "Doença celíaca",
-      "descricao": "Enteropatia imunomediada desencadeada pelo glúten (trigo, centeio, cevada) em pessoas com HLA-DQ2 ou HLA-DQ8: diarreia, distensão, perda de peso, anemia ferropriva ou quadros com poucos sintomas; associa-se à dermatite herpetiforme. O diagnóstico combina anticorpo IgA antitransglutaminase tecidual e biópsias duodenais, com o paciente ainda ingerindo glúten; a diretriz europeia (ESsCD, 2025) recomenda ao menos quatro biópsias do duodeno distal e duas do bulbo, e admite diagnóstico sem biópsia em adultos selecionados com título muito alto. Classificação de Marsh modificada: tipo 1, aumento de linfócitos intraepiteliais (achado inespecífico); tipo 2, também hiperplasia das criptas; tipo 3, também atrofia vilositária (parcial, subtotal ou total). Sorologia positiva com Marsh 2 ou 3 confirma o diagnóstico. O tratamento é a dieta sem glúten, estrita e por toda a vida (ESsCD, parte 2, 2026).",
+      "descricao": "Enteropatia imunomediada desencadeada pelo glúten (trigo, centeio, cevada) em pessoas com HLA-DQ2 ou HLA-DQ8: diarreia, distensão, perda de peso, anemia ferropriva ou quadros com poucos sintomas; associa-se à dermatite herpetiforme. O diagnóstico combina anticorpo IgA antitransglutaminase tecidual (com dosagem de IgA total, porque a deficiência de IgA dá falso-negativo) e biópsias duodenais, com o paciente ainda ingerindo glúten. O PCDT brasileiro (2025) e a diretriz europeia (ESsCD, 2025) pedem ao menos quatro biópsias da segunda porção do duodeno e duas do bulbo. A ESsCD admite diagnóstico sem biópsia em adultos selecionados com título muito alto; o PCDT exige a confirmação por biópsia, com poucas exceções (como quem não pode fazer endoscopia). Classificação de Marsh modificada: tipo 1, aumento de linfócitos intraepiteliais (achado inespecífico); tipo 2, também hiperplasia das criptas; tipo 3, também atrofia vilositária (parcial, subtotal ou total). Sorologia positiva com Marsh 2 ou 3 confirma o diagnóstico. O tratamento é a dieta sem glúten, estrita e por toda a vida (PCDT, 2025; ESsCD, parte 2, 2026).",
       "mecanismo": "A transglutaminase tecidual desamida peptídeos da gliadina, que se ligam ao HLA-DQ2/DQ8 e ativam linfócitos T CD4 da lâmina própria; linfócitos intraepiteliais citotóxicos lesam os enterócitos. A perda de vilosidades reduz a superfície de absorção e as enzimas da borda estriada; como a lesão predomina no duodeno, onde o ferro é absorvido, a anemia ferropriva é frequente."
     },
     {
       "id": "crohn-retocolite",
       "titulo": "Doença de Crohn × retocolite ulcerativa",
-      "descricao": "Doença de Crohn: qualquer segmento, da boca ao ânus (mais o íleo terminal), com lesões salteadas, inflamação transmural, úlceras lineares e fissuras, granulomas não caseosos, fístulas, estenoses e gordura que envolve a alça. Retocolite ulcerativa: só o colo, a partir do reto e de modo contínuo, com inflamação da mucosa (e da submucosa superficial), abscessos de cripta, úlceras e pseudopólipos, sem granulomas. Nas duas, a cronicidade se mostra por distorção das criptas, plasmócitos na base da mucosa e metaplasia de células de Paneth no colo esquerdo, e a colite de longa duração aumenta o risco de adenocarcinoma.",
+      "descricao": "Doença de Crohn: qualquer segmento, da boca ao ânus (mais o íleo terminal), com lesões salteadas, inflamação transmural, úlceras lineares e fissuras, granulomas não caseosos, fístulas, estenoses e gordura que envolve a alça. Retocolite ulcerativa: só o colo, a partir do reto e, em geral, de modo contínuo, com inflamação da mucosa (e da submucosa superficial), abscessos de cripta, úlceras e pseudopólipos, sem granulomas. Nas duas, a cronicidade se mostra por distorção das criptas, plasmócitos na base da mucosa e metaplasia de células de Paneth no colo esquerdo, e a colite de longa duração aumenta o risco de adenocarcinoma.",
       "mecanismo": "Resposta imune anormal à microbiota intestinal em pessoas geneticamente suscetíveis (por exemplo, variantes de NOD2 na doença de Crohn). A profundidade da inflamação explica as complicações: transmural no Crohn (fístulas, abscessos, estenoses), mucosa na retocolite (sangramento, úlceras, pseudopólipos)."
     },
     {
@@ -347,7 +347,7 @@
     {
       "id": "adenocarcinoma-gastrico",
       "titulo": "Adenocarcinoma gástrico: tipos intestinal e difuso",
-      "descricao": "Na classificação de Lauren, o tipo intestinal forma glândulas e surge, em geral, sobre gastrite atrófica com metaplasia intestinal, muitas vezes ligada ao H. pylori; o tipo difuso é formado por células pouco coesas, muitas em anel de sinete, que infiltram a parede sem formar glândulas e podem deixá-la espessa e rígida (linite plástica). Mutações germinativas de CDH1 causam o câncer gástrico difuso hereditário. O adenocarcinoma colorretal e a sequência adenoma–carcinoma estão no tópico de epitélio glandular.",
+      "descricao": "Na classificação de Lauren, o tipo intestinal forma glândulas e surge, em geral, sobre gastrite atrófica com metaplasia intestinal, muitas vezes ligada ao H. pylori; o tipo difuso é formado por células pouco coesas, muitas em anel de sinete, que infiltram a parede sem formar glândulas e podem deixá-la espessa e rígida (linite plástica). Mutações germinativas que inativam CDH1, gene da E-caderina, causam a maioria dos casos de câncer gástrico difuso hereditário (uma minoria tem variantes de CTNNA1). O adenocarcinoma colorretal e a sequência adenoma–carcinoma estão no tópico de epitélio glandular.",
       "mecanismo": "No tipo difuso, a perda da E-caderina, proteína da zônula de adesão, desfaz a coesão entre as células, que infiltram isoladas; no tipo intestinal predomina a sequência inflamação crônica → atrofia → metaplasia intestinal → displasia → carcinoma."
     }
   ],
@@ -686,7 +686,7 @@
         "gastrite",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15; V Consenso Brasileiro sobre H. pylori (Arq Gastroenterol 2026)"
     },
     {
       "id": "his-14-q11",
@@ -746,7 +746,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Sorologia positiva com linfócitos intraepiteliais aumentados, hiperplasia das criptas e atrofia vilositária é a lesão Marsh 3 da doença celíaca, que confirma o diagnóstico (ESsCD, 2025) (c). A lesão predomina no duodeno e no jejuno proximal, onde o ferro é absorvido; por isso a anemia ferropriva que não responde ao ferro oral é uma apresentação frequente. Marsh 1 (a) tem só aumento de linfócitos intraepiteliais, achado inespecífico, e Marsh 2 (b) acrescenta hiperplasia das criptas, com vilosidades ainda preservadas. Não há granulomas descritos, e o íleo terminal absorve vitamina B12 e sais biliares, não ferro (d).",
+      "explicacao": "Sorologia positiva com linfócitos intraepiteliais aumentados, hiperplasia das criptas e atrofia vilositária é a lesão Marsh 3 da doença celíaca, que confirma o diagnóstico (ESsCD, 2025; PCDT brasileiro, 2025) (c). A lesão predomina no duodeno e no jejuno proximal, onde o ferro é absorvido; por isso a anemia ferropriva que não responde ao ferro oral é uma apresentação frequente. Marsh 1 (a) tem só aumento de linfócitos intraepiteliais, achado inespecífico, e Marsh 2 (b) acrescenta hiperplasia das criptas, com vilosidades ainda preservadas. Não há granulomas descritos, e o íleo terminal absorve vitamina B12 e sais biliares, não ferro (d).",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -755,7 +755,7 @@
         "vilosidade-intestinal",
         "caso-clinico"
       ],
-      "referencia": "ESsCD 2025 (Al-Toma et al.); Robbins 10ª ed. (trato gastrintestinal)"
+      "referencia": "ESsCD 2025 (Al-Toma et al.); PCDT da Doença Celíaca (MS, 2025); Robbins 10ª ed. (trato gastrintestinal)"
     },
     {
       "id": "his-14-q13",
@@ -781,7 +781,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "A lesão da mucosa e os anticorpos dependem da exposição ao glúten: com a dieta isenta, a sorologia se negativa e a histologia volta ao normal, e os exames dão falso-negativo. Segundo a diretriz da ESsCD (2025), nessa situação o diagnóstico exige reexposição ao glúten, com a biópsia duodenal como desfecho preferido; a tipagem HLA-DQ2/DQ8 negativa, ao contrário, exclui a doença (a). A alternativa (b) ignora esse efeito da dieta. A doença celíaca acomete o intestino delgado, não o cólon (c). A sensibilidade ao glúten não celíaca (d) só pode ser considerada depois de excluídas a doença celíaca e a alergia ao trigo com o paciente ainda ingerindo glúten.",
+      "explicacao": "A lesão da mucosa e os anticorpos dependem da exposição ao glúten: com a dieta isenta, a sorologia se negativa e a histologia volta ao normal, e os exames dão falso-negativo. Segundo a diretriz da ESsCD (2025), nessa situação o diagnóstico exige reexposição ao glúten, com a biópsia duodenal como desfecho preferido; a tipagem HLA-DQ2/DQ8 negativa, ao contrário, exclui a doença, embora a genotipagem não tenha sido incorporada ao SUS (PCDT, 2025) (a). A alternativa (b) ignora esse efeito da dieta. A doença celíaca acomete o intestino delgado, não o cólon (c). A sensibilidade ao glúten não celíaca (d) só pode ser considerada depois de excluídas a doença celíaca e a alergia ao trigo com o paciente ainda ingerindo glúten.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -789,7 +789,7 @@
         "biopsia",
         "caso-clinico"
       ],
-      "referencia": "ESsCD 2025 (Al-Toma et al.)"
+      "referencia": "ESsCD 2025 (Al-Toma et al.); PCDT da Doença Celíaca (MS, 2025)"
     },
     {
       "id": "his-14-q14",
@@ -823,7 +823,7 @@
         "retocolite-ulcerativa",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal)"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); PCDT da Doença de Crohn (MS, 2026); PCDT da Retocolite Ulcerativa (MS, 2024)"
     },
     {
       "id": "his-14-q15",
@@ -884,7 +884,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Células em anel de sinete isoladas, que infiltram a parede sem formar glândulas e a deixam espessa e rígida (linite plástica), caracterizam o adenocarcinoma gástrico do tipo difuso (classificação de Lauren). Sua marca é a perda da E-caderina (gene CDH1), proteína das zônulas de adesão: sem ela, as células se soltam umas das outras; mutações germinativas de CDH1 causam o câncer gástrico difuso hereditário, sugerido pela história familiar (a). O tipo intestinal (b) forma glândulas e costuma surgir sobre metaplasia intestinal; a perda de claudinas não é sua alteração característica. O tumor estromal (c) é formado por células fusiformes ou epitelioides da parede muscular, sem muco. O linfoma MALT (d) é formado por linfócitos B, não por células com vacúolo de muco.",
+      "explicacao": "Células em anel de sinete isoladas, que infiltram a parede sem formar glândulas e a deixam espessa e rígida (linite plástica), caracterizam o adenocarcinoma gástrico do tipo difuso (classificação de Lauren). Sua marca é a perda da E-caderina (gene CDH1), proteína das zônulas de adesão: sem ela, as células se soltam umas das outras; mutações germinativas de CDH1 causam a maioria dos casos de câncer gástrico difuso hereditário, sugerido pela história familiar (a). O tipo intestinal (b) forma glândulas e costuma surgir sobre metaplasia intestinal; a perda de claudinas não é sua alteração característica. O tumor estromal (c) é formado por células fusiformes ou epitelioides da parede muscular, sem muco. O linfoma MALT (d) é formado por linfócitos B, não por células com vacúolo de muco.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -892,7 +892,7 @@
         "e-caderina",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 4"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 4; IGCLC (Blair et al., Lancet Oncol 2020)"
     },
     {
       "id": "his-14-q17",
@@ -1015,14 +1015,14 @@
         "retocolite-ulcerativa",
         "doenca-de-crohn"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal)"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); PCDT da Doença de Crohn (MS, 2026); PCDT da Retocolite Ulcerativa (MS, 2024)"
     },
     {
       "id": "his-14-q23",
       "tipo": "vf",
       "enunciado": "O critério histológico clássico de apendicite aguda é a infiltração da muscular própria (muscular externa) do apêndice por neutrófilos.",
       "correta": true,
-      "explicacao": "Verdadeiro. Neutrófilos apenas na mucosa podem ser achados inespecíficos; a infiltração neutrofílica da muscular própria (inflamação transmural) define a apendicite aguda, embora alguns patologistas aceitem critérios mais brandos. A obstrução da luz estreita (por fecálito ou hiperplasia do abundante tecido linfoide) favorece a distensão, a isquemia e a invasão bacteriana da parede.",
+      "explicacao": "Verdadeiro. Neutrófilos apenas na mucosa podem ser achados inespecíficos; a infiltração neutrofílica da muscular própria (inflamação transmural) define a apendicite aguda, embora alguns patologistas aceitem critérios mais brandos. A obstrução da luz estreita (por fecálito ou hiperplasia do abundante tecido linfoide) é o mecanismo clássico, que favorece a distensão, a isquemia e a invasão bacteriana da parede, mas a diretriz sueca considera a etiologia multifatorial e não totalmente compreendida.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
@@ -1190,7 +1190,7 @@
         "h-pylori",
         "metaplasia"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal)"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); V Consenso Brasileiro sobre H. pylori (Arq Gastroenterol 2026)"
     },
     {
       "id": "his-14-q28",
@@ -1375,6 +1375,38 @@
     {
       "obra": "Salö M, Tiselius C, Rosemar A, et al. Swedish national guidelines for diagnosis and management of acute appendicitis in adults and children. BJS Open. 2025;9(2):zrae165. doi:10.1093/bjsopen/zrae165 (PMID 40203150; PMC11980984)",
       "capitulo": "Critério histopatológico (inflamação transmural, granulócitos na muscular própria)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Doença Celíaca (Portaria Conjunta SAES/SECTICS nº 8, de 23/06/2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-celiaca",
+      "capitulo": "3. Diagnóstico (sorologia com IgA total; seis biópsias; confirmação histológica); 6. Tratamento (dieta isenta de glúten por toda a vida)"
+    },
+    {
+      "obra": "Coelho LGV, Sanches BSF, Maguilnik I, et al. Vth Brazilian Consensus Conference on Helicobacter pylori infection. Arq Gastroenterol. 2026;63:e26043. doi:10.1590/S0004-2803.24612026-043 (PMID 42585493; PMC13460752); errata: doi:10.1590/S0004-2803.24612026-E43",
+      "capitulo": "Afirmações 4 (gastrite crônica), 8 (condições e lesões pré-cancerosas), 9 (linfoma MALT) e 19 (histologia)"
+    },
+    {
+      "obra": "Shaheen NJ, Falk GW, Iyer PG, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. Am J Gastroenterol. 2022;117(4):559-587. doi:10.14309/ajg.0000000000001680 (PMID 35354777; PMC10259184)",
+      "capitulo": "Definição (metaplasia com caliciformes); vigilância pelo grau de displasia; comprimento do segmento"
+    },
+    {
+      "obra": "Blair VR, McLeod M, Carneiro F, et al. Hereditary diffuse gastric cancer: updated clinical practice guidelines. Lancet Oncol. 2020;21(8):e386-e397. doi:10.1016/S1470-2045(20)30219-9 (PMID 32758476; PMC7116190)",
+      "capitulo": "CDH1 (E-caderina) e CTNNA1 no câncer gástrico difuso hereditário"
+    },
+    {
+      "obra": "Rugge M, Bricca L, Guzzinati S, et al. Autoimmune gastritis: long-term natural history in naïve Helicobacter pylori-negative patients. Gut. 2023;72(1):30-38. doi:10.1136/gutjnl-2022-327827 (PMID 35772926)",
+      "capitulo": "Risco de câncer gástrico na gastrite autoimune sem H. pylori (resumo)"
+    },
+    {
+      "obra": "Liu X, Xu J, Wu Y, et al. The role of autoimmune gastritis in gastric cancer risk: a systematic review and meta-analysis. BMC Gastroenterol. 2026;26:305. doi:10.1186/s12876-026-04796-4 (PMID 41963817; PMC13181878)",
+      "capitulo": "Risco de câncer gástrico na gastrite autoimune, por estado do H. pylori"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Doença de Crohn (Portaria Conjunta SAES/SCTIE nº 51, de 18/05/2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/d/pcdt-doenca-de-crohn.pdf",
+      "capitulo": "1. Introdução; 3.2 Diagnóstico histopatológico"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Retocolite Ulcerativa (Portaria Conjunta SAES/SECTICS nº 9, de 12/09/2024). https://www.gov.br/saude/pt-br/assuntos/pcdt/r/retocolite-ulcerativa",
+      "capitulo": "1. Introdução; 3. Diagnóstico (endoscopia e histopatologia)"
     }
   ],
   "notasDivergencia": [
@@ -1386,17 +1418,21 @@
     "Abscessos de cripta e metaplasia de Paneth ocorrem nas duas doenças inflamatórias intestinais; os textos destacam os abscessos na retocolite. A q14 usa a inflamação transmural como diferença, e a associação da q30 usa a continuidade e a restrição à mucosa, não o abscesso de cripta isolado.",
     "Submucosa: Ross a descreve como conjuntivo denso não modelado; outras descrições falam em conjuntivo moderadamente denso. O conteúdo diz 'conjuntivo mais denso que o da lâmina própria'. A classificação morfológica das glândulas de Brunner (tubuloacinosas ou tubulosas ramificadas) também varia e não foi cobrada.",
     "Esôfago de Barrett e azul alciano: a mucina ácida das caliciformes cora-se em azul pelo azul alciano em pH 2,5, e a mucina neutra gástrica, em magenta pelo PAS (Bhardwaj et al., 2012). Células colunares não caliciformes às vezes também se coram em azul ('células colunares azuis'), e por isso o diagnóstico depende da forma da caliciforme, não só da cor (Maslyonkina et al., Cancer Med 2022, PMID 34870375).",
-    "Gastrite autoimune e adenocarcinoma: uma metanálise relata risco relativo de câncer gástrico aumentado, mas um estudo prospectivo não encontrou câncer em pacientes sem H. pylori, e a associação é debatida (Ahn e Kim, 2025). O risco de tumor neuroendócrino tipo 1, por hipergastrinemia e hiperplasia de células ECL, é consensual. O conteúdo afirma só este e registra o debate.",
-    "Apendicite aguda: a diretriz sueca (Salö et al., 2025) adota como padrão-ouro a inflamação transmural, com granulócitos na muscular própria, e registra que patologistas aplicam critérios diferentes; Roupakias et al. (Cureus 2025, PMID 40308422) descrevem a mesma controvérsia (inflamação só da mucosa aceita por alguns como apendicite inicial). A q23 fala em 'critério clássico'."
+    "Gastrite autoimune e adenocarcinoma: a associação é debatida (Ahn e Kim, 2025). O estudo prospectivo de Rugge et al. (Gut 2023; PMID 35772926; lido só o resumo), com pacientes sem H. pylori, não achou excesso de risco de câncer gástrico e atribuiu o risco relatado à infecção não reconhecida. A metanálise de Liu et al. (BMC Gastroenterol 2026; PMC13181878; texto integral) achou risco aumentado, maior nos pacientes sem H. pylori, com heterogeneidade alta entre os estudos; a de He et al. (Helicobacter 2025; PMID 41398405; resumo) concluiu que a ausência de H. pylori não protege; o documento de posição italiano ARIOSO (Dig Liver Dis 2026; PMID 41198445; resumo) fala em risco 'possivelmente' aumentado. O risco de tumor neuroendócrino tipo 1, por hipergastrinemia e hiperplasia de células ECL, é consensual. O conteúdo apresenta o debate sem números.",
+    "Apendicite aguda: a diretriz sueca (Salö et al., 2025) adota como padrão-ouro a inflamação transmural, com granulócitos na muscular própria, e registra que patologistas aplicam critérios diferentes; Roupakias et al. (Cureus 2025, PMID 40308422) descrevem a mesma controvérsia (inflamação só da mucosa aceita por alguns como apendicite inicial). A q23 fala em 'critério clássico'.",
+    "Doença celíaca, PCDT brasileiro (Portaria Conjunta SAES/SECTICS nº 8, de 23/06/2025) × ESsCD 2025: as duas pedem dois fragmentos do bulbo e quatro da segunda porção do duodeno e o diagnóstico em vigência de glúten. O PCDT diz que o diagnóstico 'deve ser sempre confirmado por exame histológico de biópsia de duodeno' (exceções: quem não pode fazer endoscopia, como gestantes e pessoas com distúrbio de coagulação, e, segundo diretrizes internacionais, parentes de primeiro grau sintomáticos com tTG IgA 10 vezes acima do limite e EMA positivo); a ESsCD admite a via sem biópsia em adultos com menos de 45 anos e IgA anti-TG2 ≥ 10 vezes o limite, confirmada numa segunda amostra. O PCDT classifica a histologia por Marsh sem subdivisão do tipo 3 ou por Corazza e Villanacci; a ESsCD mantém a Marsh modificada como padrão. O PCDT não recomenda a genotipagem HLA-DQ2/DQ8 (não incorporada ao SUS); a ESsCD a recomenda em casos de dúvida, porque um resultado negativo exclui a doença. O conteúdo não cobra números.",
+    "Retocolite ulcerativa: o PCDT (Portaria Conjunta SAES/SECTICS nº 9, de 12/09/2024) descreve acometimento predominante da mucosa, do reto para cima, 'em geral de forma contínua', e registra acometimento periapendicular em alguns pacientes com doença distal; por isso a correlação diz 'em geral'. O PCDT da Doença de Crohn (Portaria Conjunta SAES/SCTIE nº 51, de 18/05/2026) descreve acometimento 'segmentar, assimétrico e transmural' da boca ao ânus e, citando a ECCO, diz que não há achado histológico patognomônico (granulomas, alterações focais das criptas, infiltrado focal e preservação de mucina).",
+    "Esôfago de Barrett: definição e critério endoscópico estão no his-02 (ACG 2022: epitélio colunar de pelo menos 1 cm com metaplasia intestinal; a BSG 2014 aceita epitélio colunar sem caliciformes). A diretriz do ACG (texto integral, PMC10259184) define o Barrett como substituição do epitélio pavimentoso por 'specialized columnar epithelium with goblet cells', chama-o de único precursor conhecido do adenocarcinoma de esôfago e indica vigilância em intervalos 'dictated by the degree of dysplasia', com o comprimento do segmento como fator de risco de progressão. Não se achou diretriz brasileira (FBG ou SOBED) em rede liberada."
   ],
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. (15, 4) e Ross 8ª ed. (17) citados de memória, com base nas edições anteriores; conferir.",
-    "Doença celíaca: conferida no texto integral da ESsCD 2025, parte 1 (PMC12704582) — ao menos quatro biópsias do duodeno distal e duas do bulbo; Marsh modificada como padrão; Marsh 1 inespecífico; sorologia positiva com Marsh 2 ou 3 confirma; reexposição ao glúten quando a dieta já foi retirada, com a histologia duodenal como desfecho preferido; HLA-DQ2/DQ8 negativo exclui; via sem biópsia em adultos selecionados com IgA antitransglutaminase ≥ 10 vezes o limite superior (número não usado no texto do aluno). A dieta sem glúten estrita e por toda a vida está na parte 2 (2026; PMC13097674: 'The treatment for CeD is a lifelong adherence to a GFD'), conferida pelo revisor. O PCDT brasileiro da doença celíaca não foi consultado.",
+    "Doença celíaca: conferida no texto integral da ESsCD 2025, parte 1 (PMC12704582) — ao menos quatro biópsias do duodeno distal e duas do bulbo; Marsh modificada como padrão; Marsh 1 inespecífico; sorologia positiva com Marsh 2 ou 3 confirma; reexposição ao glúten quando a dieta já foi retirada, com a histologia duodenal como desfecho preferido; HLA-DQ2/DQ8 negativo exclui; via sem biópsia em adultos selecionados com IgA antitransglutaminase ≥ 10 vezes o limite superior (número não usado no texto do aluno). A dieta sem glúten estrita e por toda a vida está na parte 2 (2026; PMC13097674: 'The treatment for CeD is a lifelong adherence to a GFD'), conferida pelo revisor. O PCDT brasileiro da doença celíaca (Portaria Conjunta SAES/SECTICS nº 8, de 23/06/2025; https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-celiaca) foi lido no texto integral pelo revisor clínico: 'Ao menos seis fragmentos da mucosa intestinal, incluindo dois fragmentos do bulbo duodenal e quatro da segunda porção do duodeno'; dosagem simultânea de tTG IgA e IgA total; confirmação histológica obrigatória, salvo exceções; dieta isenta de glúten 'por toda sua vida'. A divergência com a ESsCD está nas notas.",
     "Doença de Hirschsprung: conferida no texto integral da ERNICA 2026 (PMC13342790, Tabela 1) — parede posterior ou lateral do reto, pelo menos 2 cm acima da linha denteada ou 3 cm da margem anal, com submucosa representativa; qualquer célula ganglionar na HE exclui; HE com calretinina recomendada; acetilcolinesterase aumentada e calretinina negativa na doença. A justificativa da zona hipoganglionar foi conferida em Monforte et al. (2025, PMC12314976): 'inserted approximately 2–3 cm from the dentate line, bypassing the normally hypoganglionic zone'.",
-    "Itens de patologia conferidos pelo revisor em fontes de texto integral (10/11/2026): critério de apendicite aguda (diretriz sueca, Salö et al., 2025); abetalipoproteinemia (Takahashi et al., 2021: MTTP, enterócitos repletos de lipídio, acantócitos, esteatorreia na infância); gastrite autoimune (Ahn e Kim, 2025: atrofia do corpo, hipergastrinemia, hiperplasia de ECL, anticorpos contra a H⁺/K⁺-ATPase e o fator intrínseco); carcinoma do canal anal associado ao HPV, com o HIV como fator de amplificação (Gomes et al., 2025). Tipos de Lauren: conferidos só em revisão (Muratore et al., Front Oncol 2026, PMID 42713041); a perda de E-caderina (CDH1) no tipo difuso e o câncer gástrico difuso hereditário seguem Robbins, de memória.",
+    "Itens de patologia conferidos pelo revisor em fontes de texto integral (10/11/2026): critério de apendicite aguda (diretriz sueca, Salö et al., 2025); abetalipoproteinemia (Takahashi et al., 2021: MTTP, enterócitos repletos de lipídio, acantócitos, esteatorreia na infância); gastrite autoimune (Ahn e Kim, 2025: atrofia do corpo, hipergastrinemia, hiperplasia de ECL, anticorpos contra a H⁺/K⁺-ATPase e o fator intrínseco); carcinoma do canal anal associado ao HPV, com o HIV como fator de amplificação (Gomes et al., 2025). Tipos de Lauren: conferidos só em revisão (Muratore et al., Front Oncol 2026, PMID 42713041). O câncer gástrico difuso hereditário foi conferido na diretriz do IGCLC (Blair et al., Lancet Oncol 2020; PMC7116190; texto integral): 'largely caused by inactivating germline mutations in the tumour suppressor gene CDH1, although pathogenic variants in CTNNA1 occur in a minority'; E-caderina 'localised to the adherens junctions'. A perda de E-caderina nos tumores difusos esporádicos segue Robbins, de memória.",
     "Azul alciano em pH 2,5 para as mucinas ácidas das caliciformes da metaplasia intestinal: conferido em revisões de patologia (Bhardwaj et al., 2012; Maslyonkina et al., 2022); não há diretriz que o exija.",
     "Profundidade relativa das fossetas (rasas no corpo; cerca de metade da espessura da mucosa no antro): Ross, de memória.",
-    "Conduta no H. pylori, na gastrite autoimune e nas doenças inflamatórias intestinais não foi incluída; o IV Consenso Brasileiro sobre H. pylori não foi consultado."
+    "H. pylori: o IV Consenso Brasileiro (Arq Gastroenterol 2018; PMID 30043876) não abriu nesta rede (doi.org e www.scielo.br recusaram o acesso automatizado) e foi substituído pelo V Consenso Brasileiro (Coelho et al., Arq Gastroenterol 2026; PMC13460752; errata PMC13637691), lido no texto integral pelo revisor clínico: H. pylori é 'the leading cause of chronic gastritis', com risco de úlcera, adenocarcinoma e linfoma MALT (afirmação 4); erradicação recomendada em toda gastrite associada ao H. pylori (afirmação 4) e nas condições pré-cancerosas (atrofia e metaplasia intestinal), que 'possess the potential for regression following H. pylori treatment', enquanto a displasia tem 'a lower chance of regression' (afirmação 8); a bactéria 'is easily identified using H&E staining', e o Giemsa e a imuno-histoquímica aumentam a detecção. Nenhum esquema de tratamento foi incluído; a conduta na gastrite autoimune e nas doenças inflamatórias intestinais também não.",
+    "Hemorroidas: o tópico não trata dos coxins vasculares do canal anal nem das hemorroidas (o tema está no emb-15, q30). A inclusão foi proposta ao revisor humano, sem edição, por ser conteúdo novo."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1408,6 +1444,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "10 correções (0 críticas, 2 importantes, 8 menores); nenhum gabarito alterado. Principais: q04 ambígua (a divisão em terços da muscular do esôfago é convenção; Meyer 1986 acha só 4–6% proximais esqueléticos) — enunciado passou a pedir a divisão clássica; q18 dizia que a zona de transição anal é revestida por epitélio pavimentoso (é variável); zona de transição situada em torno da linha pectínea, sobretudo logo acima (Fenger 1979; Li 2026) no resumo, nos pontos-chave e na estrutura linha-pectinea; risco de adenocarcinoma na gastrite autoimune apresentado como debatido; dieta sem glúten por toda a vida atribuída à parte 2 da ESsCD (2026); título da ERNICA corrigido. Conferidos no texto integral sem correção: ESsCD 2025 parte 1 (biópsias, Marsh, reexposição, HLA), ERNICA 2026 (biópsia ≥ 2 cm acima da linha denteada, submucosa, HE, calretinina, acetilcolinesterase), Monforte 2025, critério de apendicite (diretriz sueca 2025), abetalipoproteinemia, azul alciano no Barrett. Relatório: content/revisoes/hs1314-histologia.md."
+      },
+      {
+        "area": "dermatologia/gastroenterologia",
+        "agente": "revisor-derma-gastro-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 1 importante, 9 menores); nenhum gabarito, id ou alternativa alterado. Importante: doença celíaca — a correlação trazia só a conduta europeia (ESsCD 2025, com via sem biópsia em adultos); agora traz o PCDT brasileiro de 2025 (tTG IgA com IgA total, seis biópsias, confirmação histológica com poucas exceções, dieta por toda a vida), com a divergência nas notas e reflexo nas q12 e q13 (genotipagem HLA não incorporada ao SUS). Menores: Barrett (grau de displasia e comprimento do segmento orientam risco e vigilância, ACG 2022); H. pylori visível na HE, colorações especiais aumentam a detecção, e atrofia e metaplasia intestinal podem regredir após a erradicação, recomendada em toda gastrite por H. pylori (V Consenso Brasileiro 2026, que substitui o IV, inacessível); gastrite autoimune com os dois lados do debate sobre adenocarcinoma (Rugge 2023 × Liu 2026) e nota corrigida; retocolite 'em geral' contínua (PCDT 2024); CDH1 causa a maioria dos casos de câncer gástrico difuso hereditário (IGCLC 2020) na correlação e na q16; q23 com etiologia multifatorial da apendicite (diretriz sueca 2025); estrutura muscular-externa coerente com a q04; registro das fontes e da lacuna sobre hemorroidas. Conferidos sem correção: ERNICA 2026 (Hirschsprung), ESsCD 2025 partes 1 e 2, PCDT da Doença de Crohn 2026, Lauren, apendicite, canal anal. Relatório: content/revisoes/hs1314-clinica.md."
       }
     ],
     "humano": null
