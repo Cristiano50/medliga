@@ -319,7 +319,7 @@
         "autor": "agente-arquiteto",
         "data": "2026-11-10",
         "agentes": [
-          {"area": "histologia", "agente": "revisor-laminas-v2", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 correção (importante): a seleção negativa começa no córtex e se completa na medula (o texto a punha só na medula, contra his-12). Desenho: ajustar (P2): a área do jogo deixa cerca de 1 em 5 campos sem corpúsculo de Hassall; proposta de área no relatório."},
+          {"area": "histologia", "agente": "revisor-laminas-v2", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 correção (importante): a seleção negativa começa no córtex e se completa na medula (o texto a punha só na medula, contra his-12). Desenho: ajustar (P2): a área do jogo deixa cerca de 1 em 4 campos sem corpúsculo de Hassall; proposta de área no relatório."},
           {"area": "patologia", "agente": "revisor-laminas-patologia-v2", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "2 correções (1 importante, 1 menor): \"céu estrelado\" retirado da descrição do córtex normal e explicado na estrutura macrófago (na patologia é padrão do linfoma de Burkitt e de parte dos linfoblásticos T; o timo pediátrico normal não o mostra); folículos linfoides no timo indicam hiperplasia folicular tímica (miastenia grave de início precoce). Desenho: reduzir a densidade de macrófagos do córtex (P2)."}
         ],
         "humano": null
