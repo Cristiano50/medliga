@@ -293,7 +293,7 @@
     },
     {
       "id": "h16-laringe",
-      "descricao": "Atravessa a laringe, entre as pregas vestibulares e as pregas vocais",
+      "descricao": "Atravessa a laringe, passando entre as pregas vestibulares e depois entre as pregas vocais (rima da glote)",
       "ordem": 3
     },
     {
@@ -343,7 +343,7 @@
     {
       "id": "bronquite-cronica",
       "titulo": "Bronquite crônica",
-      "descricao": "Definida clinicamente pela tosse produtiva persistente, em geral em tabagistas. Histologia: hipertrofia das glândulas submucosas da traqueia e dos brônquios, hiperplasia de caliciformes (inclusive em bronquíolos, onde normalmente são raras), inflamação, metaplasia escamosa e fibrose da parede dos bronquíolos, que contribui para a obstrução.",
+      "descricao": "Definida clinicamente pela tosse produtiva persistente, em geral em tabagistas. Histologia: hipertrofia das glândulas submucosas da traqueia e dos brônquios, hiperplasia de caliciformes (inclusive em bronquíolos, onde normalmente são raras), inflamação, metaplasia escamosa do epitélio brônquico e fibrose da parede dos bronquíolos, que contribui para a obstrução.",
       "mecanismo": "Irritantes inalados estimulam a produção de muco e a hiperplasia glandular; o excesso de muco e a lesão dos cílios prejudicam o transporte mucociliar e favorecem infecções."
     },
     {
@@ -517,7 +517,7 @@
     {
       "id": "his-16-q05",
       "tipo": "multipla",
-      "enunciado": "Na parte delgada do septo interalveolar, o oxigênio passa do ar alveolar ao plasma atravessando:",
+      "enunciado": "Na parte delgada do septo interalveolar, depois de se dissolver na película de surfactante e líquido que reveste o alvéolo, o oxigênio passa ao plasma atravessando:",
       "alternativas": [
         {
           "id": "a",
@@ -537,7 +537,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Na parte delgada do septo, a barreira hematoaérea (b) tem o citoplasma do pneumócito tipo I, as lâminas basais do epitélio e do endotélio fundidas numa só e o citoplasma da célula endotelial de um capilar contínuo; muitos autores incluem a película de surfactante e líquido. O pneumócito tipo II (a) ocupa uma fração pequena da superfície, e o interstício com fibroblastos fica na parte espessa do septo; os capilares alveolares não são fenestrados. Macrófagos (c) não fazem parte da barreira, e o endotélio não é descontínuo. Fibras elásticas e células musculares (d) ficam no interstício e nos ductos, fora da parte delgada.",
+      "explicacao": "Na parte delgada do septo, a barreira hematoaérea (b) tem o citoplasma do pneumócito tipo I, as lâminas basais do epitélio e do endotélio fundidas numa só e o citoplasma da célula endotelial de um capilar contínuo; muitos autores incluem na barreira também a película de surfactante e líquido, citada no enunciado. O pneumócito tipo II (a) ocupa uma fração pequena da superfície, e o interstício com fibroblastos fica na parte espessa do septo; os capilares alveolares não são fenestrados. Macrófagos (c) não fazem parte da barreira, e o endotélio não é descontínuo. Fibras elásticas e células musculares (d) ficam no interstício e nos ductos, fora da parte delgada.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -570,7 +570,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na bronquite crônica, componente da DPOC ligado ao tabagismo, os irritantes inalados levam à hipertrofia das glândulas submucosas da traqueia e dos brônquios e à hiperplasia de caliciformes (c), que se estende aos bronquíolos, onde normalmente são raras; há também inflamação, metaplasia escamosa e fibrose dos bronquíolos. Atrofia glandular e perda de caliciformes (a) reduziriam o muco. Membranas hialinas (b) são do dano alveolar difuso e da doença da membrana hialina do prematuro. Granulomas com necrose caseosa (d) sugerem tuberculose, não bronquite crônica.",
+      "explicacao": "Na bronquite crônica, componente da DPOC ligado ao tabagismo, os irritantes inalados levam à hipertrofia das glândulas submucosas da traqueia e dos brônquios e à hiperplasia de caliciformes (c), que se estende aos bronquíolos, onde normalmente são raras; há também inflamação, metaplasia escamosa do epitélio brônquico e fibrose da parede dos bronquíolos. Atrofia glandular e perda de caliciformes (a) reduziriam o muco. Membranas hialinas (b) são do dano alveolar difuso e da doença da membrana hialina do prematuro. Granulomas com necrose caseosa (d) sugerem tuberculose, não bronquite crônica.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -879,7 +879,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Na proteinose alveolar autoimune, a forma mais frequente da doença, autoanticorpos bloqueiam o GM-CSF, necessário para que os macrófagos alveolares degradem o surfactante usado (a); o surfactante se acumula nos alvéolos, e os macrófagos ficam espumosos. Pela diretriz da European Respiratory Society (2024), a lavagem pulmonar total e o GM-CSF inalatório são o tratamento de primeira linha da forma autoimune sintomática. A síntese pelos pneumócitos tipo II (b) continua; uma falha de síntese levaria a colapso alveolar, não a acúmulo. O transporte mucociliar (c) atua nas vias condutoras e não explica alvéolos cheios. A secreção de CC16 (d) é bronquiolar e não tem relação com o GM-CSF.",
+      "explicacao": "Na proteinose alveolar autoimune, a forma mais frequente da doença, autoanticorpos bloqueiam o GM-CSF, necessário para que os macrófagos alveolares degradem o surfactante usado (a); o surfactante se acumula nos alvéolos, e os macrófagos ficam espumosos. Pela diretriz da European Respiratory Society (2024), a lavagem pulmonar total e/ou o GM-CSF inalatório são o tratamento de primeira linha da forma autoimune sintomática ou progressiva. A síntese pelos pneumócitos tipo II (b) continua; uma falha de síntese levaria a colapso alveolar, não a acúmulo. O transporte mucociliar (c) atua nas vias condutoras e não explica alvéolos cheios. A secreção de CC16 (d) é bronquiolar e não tem relação com o GM-CSF.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1326,28 +1326,40 @@
     {
       "obra": "Irwin RS, Augustyn N, French CT, et al. Spread the word about the journal in 2013: from citation manipulation to invalidation of patient-reported outcomes measures to renaming the Clara cell to new journal features. Chest. 2013;143(1):1-4. doi:10.1378/chest.12-2762 (PMID 23276834)",
       "capitulo": "Adoção do termo 'célula clube'"
+    },
+    {
+      "obra": "Rayamajhi D, Ege M, Ukhanov K, et al. The forkhead transcription factor Foxj1 controls vertebrate olfactory cilia biogenesis and sensory neuron differentiation. PLoS Biol. 2024;22(1):e3002468. doi:10.1371/journal.pbio.3002468 (PMID 38271330; PMC10810531)",
+      "capitulo": "Cílios olfatórios imóveis (texto integral)"
     }
   ],
   "notasDivergencia": [
     "Diâmetro-limite dos bronquíolos: Ross usa cerca de 1 mm ou menos; outras obras e edições citam valores diferentes. O tópico não usa número: o bronquíolo é definido pela ausência de cartilagem e de glândulas.",
     "Superfície coberta pelos pneumócitos tipo I: livros-texto citam cerca de 95%; o estudo morfométrico de Crapo et al. (1982) encontrou tipo I = 8% e tipo II = 16% das células da região alveolar, com o tipo II cobrindo 7% da superfície (portanto, tipo I ≈ 93%). O tópico diz 'mais de 90%' e as questões cobram só que o tipo I, menos numeroso, cobre a maior parte da superfície.",
-    "Componentes da barreira hematoaérea: Junqueira e Ross listam citoplasma do pneumócito tipo I, lâminas basais fundidas e citoplasma endotelial; muitos autores incluem a película de surfactante e líquido. A questão de ordenar inclui a película como primeira camada atravessada, o que vale nas duas descrições.",
+    "Componentes da barreira hematoaérea: há descrições que listam só os componentes teciduais (citoplasma do pneumócito tipo I, lâminas basais fundidas e citoplasma endotelial) e outras, como a de Ross (citado de memória; conferir na 8ª ed.), que incluem a película de surfactante e líquido. A q05 cita a película no enunciado e pede só as camadas seguintes; a questão de ordenar inclui a película como primeira camada atravessada, o que vale nas duas descrições.",
     "Origem dos macrófagos alveolares: os livros-texto os descrevem como derivados de monócitos do sangue; em camundongos, a população residente deriva de monócitos fetais que colonizam o pulmão ao nascer e se mantêm por autorrenovação, com pouca contribuição de monócitos circulantes no estado basal (Guilliams et al., J Exp Med 2013). Nenhuma questão cobra a origem.",
-    "Ácino pulmonar × lóbulo pulmonar: Robbins define o ácino como a parte do pulmão distal ao bronquíolo terminal; Ross inclui o próprio bronquíolo terminal na definição; o 'lóbulo' tem definições diferentes entre anatomistas, radiologistas e patologistas. O tópico usa o ácino, base da classificação do enfisema, e não cobra o lóbulo.",
-    "Célula clube: o termo 'célula de Clara' foi substituído por 'célula clube' a partir de 2013 por periódicos de pneumologia, porque Max Clara foi membro ativo do partido nazista e usou tecidos de prisioneiros executados (Winkelmann e Noack, 2010). Livros-texto brasileiros ainda podem usar o termo antigo; o tópico usa o novo e registra o antigo como sinônimo."
+    "Ácino pulmonar × lóbulo pulmonar: Robbins define o ácino como a parte do pulmão distal ao bronquíolo terminal; alguns livros de histologia (Ross, citado de memória) incluem o próprio bronquíolo terminal na definição; o 'lóbulo' tem definições diferentes entre anatomistas, radiologistas e patologistas. O tópico usa o ácino, base da classificação do enfisema, e não cobra o lóbulo.",
+    "Célula clube: o termo 'célula de Clara' foi substituído por 'célula clube' a partir de 2013 por periódicos de pneumologia, porque Max Clara foi membro ativo do partido nazista e usou tecidos de prisioneiros executados (Winkelmann e Noack, 2010). Livros-texto brasileiros ainda podem usar o termo antigo; o tópico usa o novo e registra o antigo como sinônimo.",
+    "Conferido (incerteza resolvida): cílios dos neurônios olfatórios imóveis. Têm axonema 9+2, mas sem braços de dineína, e os genes de motilidade ciliar estão reprimidos nos neurônios olfatórios de peixe-zebra, camundongo e ser humano (Rayamajhi et al., PLoS Biol 2024, PMC10810531, texto integral: 'the immotile nature of olfactory cilia')."
   ],
   "incertezas": [
     "Números de capítulo da 14ª ed. de Junqueira (17) e da 8ª ed. de Ross (19) citados de memória, com base nas edições anteriores; Gartner, Kierszenbaum e Robbins citados só pelo título do capítulo. Conferir.",
     "Deficiência de α1-antitripsina: indicações de dosagem (todo adulto com obstrução persistente após broncodilatador; enfisema antes dos 45 anos, em não fumante, de predomínio basal; história familiar; paniculite; doença hepática sem causa) e critérios de reposição intravenosa foram conferidos no texto integral da recomendação da SBPT (Feitosa et al., 2024; PMC11601085). O limiar de concentração sérica para reposição citado pela SBPT foi omitido de propósito.",
     "Proteinose alveolar: forma autoimune como a mais frequente, falha da depuração do surfactante por bloqueio do GM-CSF, lavado com material PAS-positivo e tratamento de primeira linha (lavagem pulmonar total e/ou GM-CSF inalatório) conferidos no texto integral do resumo para clínicos da diretriz ERS (Alfaro et al., Breathe 2025; PMC12070199); a diretriz completa (Eur Respir J 2024) não foi aberta.",
     "Cobertura da superfície alveolar (Crapo 1982), origem dos macrófagos alveolares (Guilliams 2013) e histórico do epônimo de Clara (Winkelmann e Noack 2010; Irwin et al. 2013) conferidos só nos resumos do PubMed.",
-    "Achados de patologia (enfisema, bronquite crônica, asma, membrana hialina, pneumoconioses, células da insuficiência cardíaca, bronquiolite respiratória do fumante, edema de Reinke) seguem Robbins e os livros de histologia, não conferidos no texto impresso. Números (Reid, cargas tabágicas, tamanhos de partículas, prevalências) foram omitidos de propósito.",
-    "A afirmação de que os cílios dos neurônios olfatórios são imóveis segue Ross; Junqueira descreve os cílios olfatórios sem detalhar a motilidade nas edições consultadas de memória. Conferir."
+    "Achados de patologia (enfisema, bronquite crônica, asma, membrana hialina, pneumoconioses, células da insuficiência cardíaca, bronquiolite respiratória do fumante, edema de Reinke) seguem Robbins e os livros de histologia, não conferidos no texto impresso. Números (Reid, cargas tabágicas, tamanhos de partículas, prevalências) foram omitidos de propósito."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "0 crítica, 0 importante, 7 menores. Gabaritos, letras e textos das alternativas inalterados; distribuição a4/b5/c4/d4, sem pista de comprimento; ids já coincidem com a lâmina 'pulmao' (PARTES_PULMAO). Principais: q05 passa a citar a película de surfactante no enunciado (a barreira inclui ou não o surfactante conforme o autor) e a nota sobre a barreira deixa de atribuir a Ross a lista sem surfactante; metaplasia escamosa da bronquite crônica situada no epitélio brônquico; evento da laringe sem ambiguidade; q15 com 'e/ou' e 'sintomática ou progressiva' como na diretriz. Conferidos em texto integral: SBPT 2024 (indicações de dosagem e de reposição), ERS PAP (Breathe 2025), cílios olfatórios imóveis (PLoS Biol 2024); Crapo 1982 (tipo II cobre 7% da superfície) e Guilliams 2013 no resumo. Relatório: content/revisoes/hs1516-histologia.md."
+      }
+    ],
     "humano": null
   }
 }

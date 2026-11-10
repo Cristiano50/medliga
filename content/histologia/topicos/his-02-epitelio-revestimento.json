@@ -1148,7 +1148,7 @@
     {
       "id": "his-02-q27",
       "tipo": "multipla",
-      "contexto": "Homem de 52 anos tem, há 1 ano, bolhas tensas e erosões no dorso das mãos, nos cotovelos e nos joelhos, que surgem após pequenos traumas e cicatrizam deixando cicatrizes atróficas e milia. A biópsia mostra clivagem subepidérmica com pouco infiltrado inflamatório, e a imunofluorescência direta da pele perilesional mostra IgG e C3 lineares na zona da membrana basal. Na imunofluorescência indireta, usa-se pele humana normal tratada com NaCl 1 mol/L, que separa a epiderme da derme na altura da lâmina lúcida (técnica do salt-split): o soro do paciente marca só o assoalho (lado dérmico) da fenda.",
+      "contexto": "Homem de 52 anos tem, há 1 ano, bolhas tensas e erosões no dorso das mãos, nos cotovelos e nos joelhos, que surgem após pequenos traumas e cicatrizam deixando cicatrizes atróficas e milia; não há lesões nas mucosas. A biópsia mostra clivagem subepidérmica com pouco infiltrado inflamatório, e a imunofluorescência direta da pele perilesional mostra IgG e C3 lineares na zona da membrana basal. Na imunofluorescência indireta, usa-se pele humana normal tratada com NaCl 1 mol/L, que separa a epiderme da derme na altura da lâmina lúcida (técnica do salt-split): o soro do paciente marca só o assoalho (lado dérmico) da fenda.",
       "enunciado": "Contra qual componente da junção dermoepidérmica os autoanticorpos são mais provavelmente dirigidos?",
       "alternativas": [
         {
@@ -1169,7 +1169,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "No salt-split, a fenda se forma na lâmina lúcida: a célula basal e seus hemidesmossomos ficam no teto, e a lâmina densa e as fibrilas de ancoragem, situadas abaixo dela (sublâmina densa), ficam no assoalho; o BP180, que atravessa a lâmina lúcida, pode aparecer no teto ou nos dois lados. Marcação só no assoalho, num paciente com fragilidade cutânea em áreas de trauma, cicatrizes atróficas e milia, é o padrão clássico da epidermólise bolhosa adquirida, em que os autoanticorpos se dirigem ao colágeno VII das fibrilas de ancoragem (c). (a) e (d) No penfigoide bolhoso, os anticorpos anti-BP180 e anti-BP230 marcam o lado epidérmico (teto) ou os dois lados da fenda, e não só o assoalho. (b) Anticorpos antidesmogleína 1 (pênfigo foliáceo) causam clivagem intraepidérmica, logo abaixo do estrato córneo, com IgG na superfície dos queratinócitos, e não depósito linear na zona da membrana basal.",
+      "explicacao": "No salt-split, a fenda se forma na lâmina lúcida: a célula basal e seus hemidesmossomos ficam no teto, e a lâmina densa e as fibrilas de ancoragem, situadas abaixo dela (sublâmina densa), ficam no assoalho; o BP180, que atravessa a lâmina lúcida, pode aparecer no teto ou nos dois lados. Marcação só no assoalho, num paciente com fragilidade cutânea em áreas de trauma, cicatrizes atróficas e milia, é o padrão clássico da epidermólise bolhosa adquirida, em que os autoanticorpos se dirigem ao colágeno VII das fibrilas de ancoragem (c). A marcação do assoalho não é exclusiva da EBA: ocorre também no penfigoide de membranas mucosas com anticorpos contra a laminina 332, componente dos filamentos de ancoragem, e no penfigoide anti-p200 (antilaminina γ1). Aqui, o quadro mecanobolhoso, com cicatrizes atróficas e milia e sem lesões mucosas, aponta para a EBA, cujo diagnóstico definitivo exige exames complementares, como a pesquisa de anticorpos contra o colágeno VII. (a) e (d) No penfigoide bolhoso, os anticorpos anti-BP180 e anti-BP230 marcam o lado epidérmico (teto) ou os dois lados da fenda, e não só o assoalho. (b) Anticorpos antidesmogleína 1 (pênfigo foliáceo) causam clivagem intraepidérmica, logo abaixo do estrato córneo, com IgG na superfície dos queratinócitos, e não depósito linear na zona da membrana basal.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1180,7 +1180,7 @@
         "imunofluorescencia",
         "caso-clinico"
       ],
-      "referencia": "Santi et al., consenso da SBD sobre penfigoides e EBA, An Bras Dermatol 2019 (texto integral); Ross 8ª ed., cap. 5 e 15"
+      "referencia": "Santi et al., consenso da SBD sobre penfigoides e EBA, An Bras Dermatol 2019 (texto integral); Ross 8ª ed., cap. 5 e 15; Shi et al., Biomolecules 2022; Kridin e Ahmed, Front Immunol 2019"
     },
     {
       "id": "his-02-q28",
@@ -1257,9 +1257,9 @@
     {
       "id": "his-02-q30",
       "tipo": "vf",
-      "enunciado": "O pênfigo neonatal, causado pela passagem placentária de IgG materna, é mais raro em filhos de mães com pênfigo foliáceo do que em filhos de mães com pênfigo vulgar, porque na pele do recém-nascido a desmogleína 3 predomina sobre a desmogleína 1.",
+      "enunciado": "O pênfigo neonatal, causado pela passagem placentária de IgG materna, é mais raro em filhos de mães com pênfigo foliáceo do que em filhos de mães com pênfigo vulgar, porque na pele do recém-nascido, ao contrário da do adulto, a desmogleína 3 está presente também nas camadas superficiais da epiderme.",
       "correta": true,
-      "explicacao": "Verdadeiro. A IgG materna atravessa a placenta e pode causar lesões transitórias no recém-nascido. No pênfigo foliáceo, os anticorpos se dirigem à desmogleína 1; como na pele do recém-nascido predomina a desmogleína 3, que mantém a adesão entre os queratinócitos (o mesmo mecanismo de compensação que poupa as mucosas no adulto), o pênfigo foliáceo neonatal é mais raro que o pênfigo vulgar neonatal, em que os anticorpos atingem justamente a desmogleína 3.",
+      "explicacao": "Verdadeiro. A IgG materna atravessa a placenta e pode causar lesões transitórias no recém-nascido. No pênfigo foliáceo, os anticorpos se dirigem à desmogleína 1; como na pele do recém-nascido a desmogleína 3, restrita às camadas profundas da epiderme no adulto, está presente em toda a sua espessura e mantém a adesão entre os queratinócitos (o mesmo mecanismo de compensação que poupa as mucosas no adulto), o pênfigo foliáceo neonatal é mais raro que o pênfigo vulgar neonatal, em que os anticorpos atingem justamente a desmogleína 3.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1269,7 +1269,7 @@
         "placenta",
         "integracao"
       ],
-      "referencia": "Porro et al., consenso da SBD sobre pênfigos, An Bras Dermatol 2019 (texto integral); Moore 11ª ed., cap. 7"
+      "referencia": "Porro et al., consenso da SBD sobre pênfigos, An Bras Dermatol 2019 (texto integral); Moore 11ª ed., cap. 7; Brazel et al., Medicina (Kaunas) 2021"
     }
   ],
   "referencias": [
@@ -1324,6 +1324,18 @@
     {
       "obra": "Moore KL, Persaud TVN, Torchia MG. Embriologia Clínica, 11ª ed. Rio de Janeiro: GEN Guanabara Koogan; 2020",
       "capitulo": "7 — Placenta e membranas fetais (transporte de IgG materna) — questão avançada q30; conteúdo já revisado no tópico emb-09"
+    },
+    {
+      "obra": "Shi L, Li X, Qian H. Anti-laminin 332-type mucous membrane pemphigoid. Biomolecules. 2022;12(10):1461. doi:10.3390/biom12101461. PMID 36291670 (texto integral: PMC9599625)",
+      "capitulo": "Laminina 332 nos filamentos de ancoragem; IgG contra laminina 332 marca o lado dérmico do salt-split — diagnóstico diferencial da questão avançada q27"
+    },
+    {
+      "obra": "Kridin K, Ahmed AR. Anti-p200 pemphigoid: a systematic review. Front Immunol. 2019;10:2466. doi:10.3389/fimmu.2019.02466. PMID 31695695 (texto integral: PMC6817563)",
+      "capitulo": "Penfigoide anti-p200 (antilaminina γ1): soro marca o lado dérmico do salt-split — diagnóstico diferencial da questão avançada q27"
+    },
+    {
+      "obra": "Brazel M, Desai A, Are A, Motaparthi K. Staphylococcal scalded skin syndrome and bullous impetigo. Medicina (Kaunas). 2021;57(11):1157. doi:10.3390/medicina57111157. PMID 34833375 (texto integral: PMC8623226)",
+      "capitulo": "Desmogleína 3 em toda a espessura da epiderme do recém-nascido e só nas camadas profundas no adulto — questão avançada q30"
     }
   ],
   "notasDivergencia": [
@@ -1342,7 +1354,8 @@
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
     "Proporção de pacientes com discinesia ciliar primária e ultraestrutura ciliar normal: varia entre as séries e foi omitida (revisão de patologia/clínica, 09/11/2026); o conteúdo diz apenas \"parte dos pacientes\".",
     "Camada avançada (redator, 2026-11-10), q26, q27 e q30: conferidas no texto integral dos consensos da SBD de 2019. Pênfigos (Porro et al., PMC6544031): no pênfigo foliáceo, 'cleavage below the stratum corneum ... with acantholytic keratinocytes in or adjacent to the granulosa layer' e lesões que 'do not compromise the mucous membranes'; 'Dsg-1 expression is more intense in the upper portions of the epidermis, whereas ... Dsg-3 predominates in the lower layers of the epidermis and in mucous membranes'; 'Neither DIF nor IIF distinguishes PF from PV'; fogo selvagem em adultos jovens de áreas rurais, com casos na família, sobretudo no Centro-Oeste; 'Neonatal pemphigus foliaceus is rarer than neonatal PV, due to the predominance of Dsg-3 compared with Dsg-1 in the newborn's skin'. Penfigoides e EBA (Santi et al., PMC6544032): salt-split com NaCl 1 M e clivagem na lâmina lúcida; IgG no lado epidérmico (ou nos dois lados) no penfigoide e no lado dérmico na EBA; colágeno VII como principal componente das fibrilas de ancoragem da sublâmina densa; forma mecanobolhosa da EBA com fragilidade em áreas de trauma, cicatrizes atróficas e milia.",
-    "Camada avançada, q29: a diretriz da ERS de 2017 (texto integral, PMC6054534) diz que a ultraestrutura normal não exclui a DCP ('16% PCD positive patients have TEM without a detectable defect'), recomenda prosseguir a investigação quando a ultraestrutura é normal e a suspeita clínica é forte e registra que alterações secundárias do batimento ciliar se normalizam após cultura. O percentual não foi usado no conteúdo, que continua dizendo 'parte dos pacientes'. q28 é cenário experimental didático, hipotético, construído só com fatos já revisados do tópico."
+    "Camada avançada, q29: a diretriz da ERS de 2017 (texto integral, PMC6054534) diz que a ultraestrutura normal não exclui a DCP ('16% PCD positive patients have TEM without a detectable defect'), recomenda prosseguir a investigação quando a ultraestrutura é normal e a suspeita clínica é forte e registra que alterações secundárias do batimento ciliar se normalizam após cultura. O percentual não foi usado no conteúdo, que continua dizendo 'parte dos pacientes'. q28 é cenário experimental didático, hipotético, construído só com fatos já revisados do tópico.",
+    "Revisão da camada avançada (histologia, 2026-11-10): q27 — a marcação do assoalho no salt-split não é exclusiva da EBA: ocorre no penfigoide anti-laminina 332 (Shi et al. 2022, PMC9599625: \"IgG autoantibodies against LM332 react with the dermal side of salt-split normal human skin\") e no penfigoide anti-p200 (Kridin e Ahmed 2019, PMC6817563: lado dérmico em 90/108 casos e dérmico e epidérmico em 16/108), além do lúpus bolhoso, citado pelo consenso da SBD como diagnóstico diferencial. A vinheta passou a dizer que as mucosas estão poupadas, e a explicação registra o diferencial; o gabarito (colágeno VII) não mudou. O consenso da SBD (Santi et al.) diz que o diagnóstico definitivo da EBA \"requires additional techniques\". q30 — o consenso da SBD fala em \"predominance of Dsg-3 compared with Dsg-1 in the newborn's skin\"; a afirmação V/F passou a usar a formulação mais precisa da distribuição (Dsg3 em toda a epiderme do recém-nascido e só nas camadas profundas no adulto; Brazel et al. 2021, PMC8623226, citando o estudo original de Wu et al., N Engl J Med 2000;343:31-35, PMID 10882766, cujo texto não foi lido: o PubMed não traz resumo). Conferir no artigo original de Wu et al."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1361,6 +1374,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "4 correções (0 críticas, 0 importantes, 4 menores); gabaritos corretos. Principais: DCP com cílios imóveis ou discinéticos (resumo) e diagnóstico combinado em que microscopia eletrônica normal não exclui a doença (correlação e q09; ERS 2017, ATS 2018); vinheta de Barrett (q10) com mucosa cor de salmão e extensão de ~3 cm; critério ACG 2022 (≥1 cm + metaplasia intestinal) na correlação e na nota de divergência com a BSG 2014. Pênfigo, penfigoide, metaplasia escamosa e carcinoma in situ conferidos sem correção."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-02-q26 a his-02-q30): 2 correções (0 críticas, 1 importante, 1 menor). Importante: q27 — salt-split com marcação do assoalho também ocorre no penfigoide anti-laminina 332 e no anti-p200; vinheta passou a dizer \"não há lesões nas mucosas\" e a explicação registra o diferencial (gabarito c mantido; nenhum desses antígenos está entre as alternativas). Menor: q30 — \"a desmogleína 3 predomina sobre a 1\" trocado pela distribuição (Dsg3 também nas camadas superficiais da epiderme do recém-nascido), afirmação continua verdadeira. q26 (fogo selvagem, compensação pela Dsg3 nas mucosas), q28 e q29 corretas; fontes conferidas no texto integral (Porro et al. e Santi et al. 2019; ERS 2017)."
       }
     ],
     "humano": null

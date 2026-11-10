@@ -1068,7 +1068,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Alta estatura, aracnodactilia, ectopia do cristalino e dissecção da aorta compõem a síndrome de Marfan, por mutações em FBN1. A fibrilina-1 forma as microfibrilas que servem de arcabouço às fibras elásticas e regulam a disponibilidade de TGF-β. A técnica de Verhoeff cora as fibras elásticas em preto e mostra, na média da aorta, fragmentação e perda das lâminas elásticas com acúmulo de matriz mucoide (degeneração da média, antes chamada necrose cística da média) (d). (a) Mutações em COL3A1 causam a síndrome de Ehlers-Danlos vascular, com pele fina e translúcida e rupturas de artérias, intestino e útero, sem ectopia do cristalino nem hábito marfanoide. (b) A deleção de ELN ocorre na síndrome de Williams, com estenose aórtica supravalvar, e não com dilatação e dissecção da aorta num paciente marfanoide. (c) A falta de vitamina C causa escorbuto, com sangramentos e má cicatrização, e não esse quadro.",
+      "explicacao": "Alta estatura, aracnodactilia, ectopia do cristalino e dissecção da aorta compõem a síndrome de Marfan, por mutações em FBN1. A fibrilina-1 forma as microfibrilas que servem de arcabouço às fibras elásticas e regulam a disponibilidade de TGF-β. A técnica de Verhoeff cora as fibras elásticas em preto e mostra, na média da aorta, fragmentação e perda das lâminas elásticas com acúmulo de matriz mucoide (degeneração da média, antes chamada necrose cística da média). Esse padrão não é exclusivo do Marfan e aparece em outras doenças da aorta; é o quadro clínico que aponta para FBN1 (d). (a) Mutações em COL3A1 causam a síndrome de Ehlers-Danlos vascular, com pele fina e translúcida e rupturas de artérias, intestino e útero, sem ectopia do cristalino nem hábito marfanoide. (b) A deleção de ELN ocorre na síndrome de Williams, com estenose aórtica supravalvar, e não com dilatação e dissecção da aorta num paciente marfanoide. (c) A falta de vitamina C causa escorbuto, com sangramentos e má cicatrização, e não esse quadro.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1089,7 +1089,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Os residentes se mantêm sem monócitos; os recrutados na inflamação derivam deles"
+          "texto": "Os residentes desses órgãos se mantêm sem monócitos; os recrutados derivam deles"
         },
         {
           "id": "b",
@@ -1105,7 +1105,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Os residentes mantiveram seu número sem monócitos, o que indica renovação no próprio tecido, e a inflamação quase não recrutou macrófagos, o que mostra que os recrutados derivam de monócitos (a). Isso é compatível com o que se sabe hoje: parte dos macrófagos residentes vem de precursores embrionários e se renova localmente, enquanto os que chegam na inflamação derivam de monócitos do sangue. O experimento, sozinho, não prova a origem embrionária dos residentes; para isso seriam necessários estudos de rastreamento de linhagem. (b) Se os residentes dependessem igualmente de monócitos, seu número cairia após semanas sem monócitos. (c) Fibroblastos sintetizam a matriz e não se transformam em macrófagos; nos animais sem monócitos, foi a falta destes que impediu o acúmulo. (d) O acúmulo de macrófagos na pele inflamada praticamente não ocorreu, o que exclui a substituição por residentes vindos de outros órgãos.",
+      "explicacao": "Os residentes dos órgãos avaliados mantiveram seu número sem monócitos, o que indica renovação no próprio tecido, e a inflamação quase não recrutou macrófagos, o que mostra que os recrutados derivam de monócitos (a). Isso é compatível com o que se sabe hoje: várias populações de macrófagos residentes vêm de precursores embrionários e se renovam localmente, enquanto os que chegam na inflamação derivam de monócitos do sangue. A conclusão não vale para todos os órgãos: no intestino do adulto, por exemplo, os macrófagos residentes são repostos continuamente por monócitos. O experimento, sozinho, não prova a origem embrionária dos residentes; para isso seriam necessários estudos de rastreamento de linhagem. (b) Se os residentes dependessem igualmente de monócitos, seu número cairia após semanas sem monócitos. (c) Fibroblastos sintetizam a matriz e não se transformam em macrófagos; nos animais sem monócitos, foi a falta destes que impediu o acúmulo. (d) O acúmulo de macrófagos na pele inflamada praticamente não ocorreu, o que exclui a substituição por residentes vindos de outros órgãos.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1115,7 +1115,7 @@
         "origem-celular",
         "cenario-experimental"
       ],
-      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 5"
+      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 5; Ginhoux e Guilliams, Immunity 2016; Bain et al., Nat Immunol 2014"
     },
     {
       "id": "his-04-q29",
@@ -1160,7 +1160,7 @@
       "correta": false,
       "explicacao": "Falso. Pela classificação internacional de 2017, o tipo hipermóvel, o mais comum, ainda não tem gene identificado, de modo que nenhum teste genético o confirma. Mutações em COL5A1 ou COL5A2 causam o tipo clássico, e mutações em COL3A1, o tipo vascular.",
       "dificuldade": 4,
-      "bloom": "analisar",
+      "bloom": "lembrar",
       "tags": [
         "avancado",
         "ehlers-danlos",
@@ -1206,6 +1206,14 @@
     {
       "obra": "GeneReviews NBK1295. COL1A1- and COL1A2-related osteogenesis imperfecta",
       "capitulo": "Genética (formas dominantes e recessivas)"
+    },
+    {
+      "obra": "Ginhoux F, Guilliams M. Tissue-resident macrophage ontogeny and homeostasis. Immunity. 2016;44(3):439-449. doi:10.1016/j.immuni.2016.02.024. PMID 26982352",
+      "capitulo": "Origem embrionária e automanutenção de várias populações de macrófagos residentes — questão avançada q28"
+    },
+    {
+      "obra": "Bain CC, Bravo-Blas A, Scott CL, et al. Constant replenishment from circulating monocytes maintains the macrophage pool in the intestine of adult mice. Nat Immunol. 2014;15(10):929-937. doi:10.1038/ni.2967. PMID 25151491 (texto integral: PMC4169290)",
+      "capitulo": "Macrófagos intestinais do adulto repostos por monócitos — exceção registrada na questão avançada q28"
     }
   ],
   "notasDivergencia": [
@@ -1221,7 +1229,8 @@
     "Maior frequência do queloide em pessoas de pele negra: afirmação qualitativa presente em Junqueira e Robbins; percentuais não foram incluídos.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
     "Momento ideal de coleta da triptase omitido; o texto usa \"primeiras horas\" (a WAO 2020 indica coleta nas primeiras horas após o início dos sintomas). Guia brasileiro de anafilaxia (ASBAI) não conferido; a frase de tratamento é atribuída à WAO 2020 (revisão de patologia/clínica, 09/11/2026).",
-    "Camada avançada (redator, 2026-11-10), q29: a cinética da triptase foi conferida no texto integral da WAO 2020 (Cardona et al., PMC7607509): 'serum tryptase levels are increased from 15 min to 3 h or even longer, after the onset; levels peak between 1 and 2 h'; níveis elevados apoiam o diagnóstico, e normais não o excluem; triptase basal 'at least 24 h after'; 'neither does a normal baseline tryptase' exclui mastocitose. q26 e q28 são cenários experimentais didáticos, hipotéticos, construídos só com fatos já revisados do tópico; o resultado da q28 é compatível com a literatura sobre a origem dos macrófagos, mas não reproduz um experimento publicado específico. q30 usa a classificação de 2017 já citada no tópico (Malfait et al.), cujo texto integral não foi lido nesta etapa."
+    "Camada avançada (redator, 2026-11-10), q29: a cinética da triptase foi conferida no texto integral da WAO 2020 (Cardona et al., PMC7607509): 'serum tryptase levels are increased from 15 min to 3 h or even longer, after the onset; levels peak between 1 and 2 h'; níveis elevados apoiam o diagnóstico, e normais não o excluem; triptase basal 'at least 24 h after'; 'neither does a normal baseline tryptase' exclui mastocitose. q26 e q28 são cenários experimentais didáticos, hipotéticos, construídos só com fatos já revisados do tópico; o resultado da q28 é compatível com a literatura sobre a origem dos macrófagos, mas não reproduz um experimento publicado específico. q30 usa a classificação de 2017 já citada no tópico (Malfait et al.), cujo texto integral não foi lido nesta etapa.",
+    "Revisão da camada avançada (histologia, 2026-11-10): q28 — a alternativa correta generalizava (\"os residentes se mantêm sem monócitos\"); várias populações residentes se automantêm (Ginhoux e Guilliams 2016, resumo: \"several tissue-resident macrophage populations are seeded during waves of embryonic hematopoiesis and self-maintain independently of BM contribution\"; Hashimoto et al., Immunity 2013, PMID 23601688), mas os macrófagos intestinais do adulto são repostos por monócitos (Bain et al. 2014, resumo: \"replaced around the time of weaning by the ... influx of Ly6Chi monocytes ... had to be continued throughout adult life\"). A alternativa passou a se referir aos órgãos avaliados. q27 — Halushka et al. 2016 (resumo): as alterações da média são \"both distinct and nonspecific\"; a explicação registra que o padrão não é exclusivo do Marfan. q29 — WAO 2020 conferida no texto integral (PMC7607509), como registrado pelo redator. q30 — Malfait et al. 2017 (resumo): diagnóstico definitivo de todos os subtipos, \"except for the hypermobile type\", depende de variante causal; GeneReviews (Hakim, atualização de 2024, PMID 20301456): \"no underlying genetic ... etiology has been identified for hEDS\". \"O mais comum\" não foi conferido no texto integral."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1240,6 +1249,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "7 correções (0 críticas, 0 importantes, 7 menores); gabaritos corretos. Principais: conduta da anafilaxia atribuída à diretriz (WAO 2020) na correlação e na q08; anafilaxia não mediada por IgE e triptase sérica; miofibroblastos e contração no tecido de granulação (q22); edema com cacifo inconstante e retenção de sódio; Ehlers-Danlos pela classificação de 2017 (hipermóvel sem gene conhecido); degeneração da média aórtica no Marfan; osteogênese imperfeita com formas recessivas (q23). Escorbuto, queloide, mastócitos e plasmócitos conferidos sem correção; mieloma ausente do conteúdo (proposta no relatório)."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-04-q26 a his-04-q30): 3 correções (0 críticas, 1 importante, 2 menores). Importante: q28 — alternativa correta (a) generalizava para todos os macrófagos residentes, mas os intestinais do adulto são repostos por monócitos (Bain et al. 2014); texto passou a \"os residentes desses órgãos\" e a explicação registra a exceção. Menores: q27 — explicação registra que a degeneração da média não é específica do Marfan (Halushka 2016); q30 — bloom analisar → lembrar (V/F de classificação). q26 (cenários com fibroblastos) e q29 (cinética da triptase, WAO 2020 no texto integral) corretas."
       }
     ],
     "humano": null

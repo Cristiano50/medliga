@@ -576,7 +576,8 @@ export function LaminaEstomago(rng: Rng) {
   const yMM1 = 588;
   const R = 26; // raio do "ombro" entre a superfície e a fosseta
   const lwPit = (y: number) => 8.5 - 4.5 * Math.min(1, Math.max(0, (y - yS - R) / (yPit - yS - R))); // funil
-  const lwGl = (y: number, yb: number) => (y > yb - 40 ? 3.2 + (1.6 * (y - yb + 40)) / 40 : 3.2); // base um pouco dilatada
+  const lG = 3.6; // meia-largura da luz da glândula
+  const lwGl = (y: number, yb: number) => (y > yb - 40 ? lG + (1.4 * (y - yb + 40)) / 40 : lG); // base um pouco dilatada
   const yN = yPit + 48; // fim do colo inclinado: daí para baixo a glândula é reta
   const yC = yPit + 8; // topo da crista entre as duas glândulas que se abrem na mesma fosseta
   const rC = 16; // raio da crista (≈ altura das células, para elas não se cruzarem)
@@ -589,12 +590,12 @@ export function LaminaEstomago(rng: Rng) {
   /** Luz de uma glândula do topo do colo (junto à fosseta) até o fundo, como contorno no sentido da luz à esquerda. */
   const paredeGlandula = (g: (typeof glandulas)[number]) => {
     const px = g.fosseta;
-    const esq: P[] = g.lado < 0 ? passos([px - lwPit(yPit), yPit], [g.x - 3.2, yN], 9) : passos([px + rC, yC + rC], [g.x - 3.2, yN], 6);
+    const esq: P[] = g.lado < 0 ? passos([px - lwPit(yPit), yPit], [g.x - lG, yN], 9) : passos([px + rC, yC + rC], [g.x - lG, yN], 6);
     for (let y = yN + 4; y < g.fundo; y += 4) esq.push([g.x - lwGl(y, g.fundo), y]);
     const fundo = arco(g.x, g.fundo, 4.8, 180, 0, 8);
     const dir: P[] = [];
     for (let y = g.fundo - 4; y > yN; y -= 4) dir.push([g.x + lwGl(y, g.fundo), y]);
-    dir.push(...(g.lado < 0 ? passos([g.x + 3.2, yN], [px - rC, yC + rC], 6) : passos([g.x + 3.2, yN], [px + lwPit(yPit), yPit], 9)));
+    dir.push(...(g.lado < 0 ? passos([g.x + lG, yN], [px - rC, yC + rC], 6) : passos([g.x + lG, yN], [px + lwPit(yPit), yPit], 9)));
     return [...esq, ...fundo, ...dir];
   };
 
@@ -672,6 +673,10 @@ export function LaminaEstomago(rng: Rng) {
     }
     luzFosseta += pg([...esq, [px, yPit + 4], ...dir, ...arco(px + l0 + R, yS + R, R, 180, 270, 10)]);
   }
+  // eixo de cada glândula, do fundo da fosseta ao fundo da glândula: área de toque transparente sobre a luz (que é
+  // estreita, ≈ 7 un), para "toque na glândula" funcionar no meio dela sem tirar das células a maior parte da área
+  let eixos = '';
+  for (const g of glandulas) eixos += lin([[g.fosseta + g.lado * 3, yPit + 2], [g.x, yN], [g.x, g.fundo + 2]]);
   for (const g of glandulas) {
     const fecho: P[] = g.lado < 0 ? [[g.fosseta, yC], [g.fosseta, yPit]] : [[g.fosseta, yPit], [g.fosseta, yC]];
     luzGlandula += pg([...(g.lado < 0 ? [] : fecho), ...paredeGlandula(g), ...(g.lado < 0 ? fecho : [])]);
@@ -739,6 +744,9 @@ export function LaminaEstomago(rng: Rng) {
       <E id="celula-parietal">
         <path d={d.parietal} fill="#f294b8" stroke="#c8578a" strokeWidth={0.8} />
         <path d={d.parietalNuc} fill={HE.nucleo} />
+      </E>
+      <E id="glandula-fundica">
+        <path d={eixos} stroke="transparent" strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" fill="none" />
       </E>
       <E id="muscular-da-mucosa">
         <path d={`M-10 ${yMM0}H${W + 10}V${yMM1}H-10Z`} fill={COR_LISO.fundo} />
@@ -1257,13 +1265,13 @@ export function LaminaPancreas(rng: Rng) {
       if (d > il.r + 90) continue;
       const ux = (il.x - x) / d;
       const uy = (il.y - y) / d;
-      poli = cortar(poli, ux, uy, ux * il.x + uy * il.y - raioIlhota(il, Math.atan2(-uy, -ux)) - 4);
+      poli = cortar(poli, ux, uy, ux * il.x + uy * il.y - raioIlhota(il, Math.atan2(-uy, -ux)) - 2.5);
     }
     const sx = septoX(y);
     if (Math.abs(x - sx) < 120) poli = x < sx ? cortar(poli, 1, 0, sx - septoL(y) - 3) : cortar(poli, -1, 0, -(sx + septoL(y) + 3));
     if (poli.length < 3 || area(poli) < 900 || x < -28 || x > W + 28 || y < -28 || y > H + 28) return;
     // o centro precisa ficar bem dentro do perfil (senão núcleos e grânulos cairiam fora do ácino, no conjuntivo)
-    if (Array.from({ length: 12 }, (_, k) => raioPoligono(poli, x, y, (Math.PI * k) / 6)).some((r) => !(r >= 13 && r < 40))) return;
+    if (Array.from({ length: 12 }, (_, k) => raioPoligono(poli, x, y, (Math.PI * k) / 6)).some((r) => !(r >= 11 && r < 40))) return;
     basal += pg(poli);
     apical += pg(poli.map(([px, py]): P => [x + (px - x) * 0.56, y + (py - y) * 0.56]));
     const comCentro = centroacinosas.has(i) || rng() < 0.5;

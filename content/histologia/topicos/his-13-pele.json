@@ -65,6 +65,12 @@
       "definicao": "Várias camadas de queratinócitos poligonais unidos por desmossomos; é onde se concentram as células de Langerhans."
     },
     {
+      "id": "estrato-granuloso",
+      "nome": "Estrato granuloso",
+      "sinonimos": [],
+      "definicao": "Poucas camadas de células achatadas com grânulos basófilos de querato-hialina e grânulos lamelares, cujos lipídios formam a barreira à água; os núcleos começam a degenerar."
+    },
+    {
       "id": "estrato-lucido",
       "nome": "Estrato lúcido",
       "sinonimos": [],
@@ -301,7 +307,7 @@
     {
       "id": "queimaduras-profundidade",
       "titulo": "Queimaduras: profundidade e reepitelização",
-      "descricao": "Classificação pela profundidade: 1º grau, só a epiderme (pele vermelha e dolorosa, sem bolhas, cura sem cicatriz); 2º grau superficial, epiderme e parte superficial da derme (bolhas, leito rosado e úmido, muito doloroso, que empalidece à pressão); 2º grau profundo, até a derme reticular (leito mais seco, menos sensível, que não empalidece); 3º grau ou espessura total, toda a derme, às vezes com a hipoderme (leito branco, acastanhado ou carbonizado, seco e quase indolor). As características clínicas de cada grau seguem a revisão de Jeschke et al. (2020); a conduta não é abordada aqui.",
+      "descricao": "Classificação pela profundidade: 1º grau, só a epiderme (pele vermelha e dolorosa, sem bolhas, cura sem cicatriz); 2º grau superficial, epiderme e parte superficial (papilar) da derme (bolhas, leito vermelho ou rosado e úmido, muito doloroso, que empalidece à pressão); 2º grau profundo, até a derme reticular (leito mais seco, esbranquiçado ou amarelado, em geral menos sensível, que não empalidece); 3º grau ou espessura total, toda a derme, às vezes com a hipoderme (leito seco, com aspecto de couro, branco ou escuro, que não empalidece e em geral é indolor). As características clínicas de cada grau seguem as revisões de Jeschke et al. (2020) e de Toussaint e Singer (2014); a conduta não é abordada aqui.",
       "mecanismo": "A dor depende das terminações nervosas livres, e o empalidecimento à pressão, dos capilares da derme papilar: ambos são preservados na lesão superficial e destruídos na profunda. Enquanto restam folículos pilosos e glândulas sudoríparas na derme, suas células epiteliais proliferam e migram, reepitelizando a ferida a partir de muitas ilhas; sem anexos, a epiderme só avança das bordas, lentamente, com mais contração e fibrose."
     },
     {
@@ -319,7 +325,7 @@
     {
       "id": "melanoma",
       "titulo": "Melanoma cutâneo",
-      "descricao": "Neoplasia maligna dos melanócitos, menos frequente e mais agressiva que os carcinomas de pele. O INCA usa a regra ABCDE como sinal de alerta: Assimetria, Bordas irregulares, Cor variável, Diâmetro maior que 6 mm e Evolução (mudança de tamanho, forma ou cor); alguns melanomas não são pigmentados. O INCA não recomenda rastreamento populacional, e o diagnóstico é confirmado pelo exame histopatológico. No laudo do tumor localizado, o principal fator prognóstico é a espessura de Breslow, medida da camada granulosa ao ponto mais profundo de invasão.",
+      "descricao": "Neoplasia maligna dos melanócitos, menos frequente e mais agressiva que os carcinomas de pele. O INCA usa a regra ABCDE como sinal de alerta: Assimetria, Bordas irregulares, Cor variável, Diâmetro maior que 6 mm e Evolução (mudança de tamanho, forma ou cor); alguns melanomas não são pigmentados. O INCA não recomenda rastreamento populacional, e o diagnóstico é confirmado pelo exame histopatológico. No laudo do tumor localizado, o principal fator prognóstico é a espessura de Breslow, medida do topo da camada granulosa (ou da base da úlcera, se houver) ao ponto mais profundo de invasão.",
       "mecanismo": "Radiação ultravioleta e predisposição genética; mutações de BRAF são frequentes. Na fase de crescimento radial, os melanócitos atípicos espalham-se na epiderme e na derme papilar; na fase vertical, invadem a derme profunda, onde há vasos sanguíneos e linfáticos que permitem metástases."
     },
     {
@@ -337,7 +343,7 @@
     {
       "id": "vitiligo",
       "titulo": "Vitiligo × albinismo",
-      "descricao": "Vitiligo: manchas acrômicas adquiridas, bem delimitadas, muitas vezes simétricas na face, nas mãos e ao redor de orifícios; a área afetada não tem melanócitos. No albinismo oculocutâneo, congênito, os melanócitos existem em número normal mas não produzem melanina (no tipo 1, por defeito da tirosinase). Nas efélides (sardas), o número de melanócitos é normal e há mais melanina nos queratinócitos basais.",
+      "descricao": "Vitiligo: manchas acrômicas adquiridas, bem delimitadas, muitas vezes simétricas na face, nas mãos e ao redor de orifícios; a área afetada não tem melanócitos. No albinismo oculocutâneo, congênito, os melanócitos existem em número normal, mas produzem pouca ou nenhuma melanina (no tipo 1, por defeito da tirosinase). Nas efélides (sardas), o número de melanócitos é normal e há mais melanina nos queratinócitos basais.",
       "mecanismo": "No vitiligo, destruição autoimune dos melanócitos, sobretudo por linfócitos T citotóxicos; no albinismo, falha da síntese de melanina."
     }
   ],
@@ -365,7 +371,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "A pele espessa tem estrato córneo grosso e estrato lúcido distinto, cristas epidérmicas e papilas dérmicas altas, muitas glândulas sudoríparas écrinas e nenhum folículo piloso, glândula sebácea ou músculo eretor (b). Epiderme delgada com folículos e sebáceas (a) e estrato córneo fino sem lúcido, com eretores (d), descrevem a pele fina. A pele espessa é justamente a mais rica em sudoríparas écrinas e tem papilas dérmicas altas, que formam as impressões digitais (c).",
+      "explicacao": "A pele espessa tem estrato córneo grosso e estrato lúcido distinto, cristas epidérmicas e papilas dérmicas altas, muitas glândulas sudoríparas écrinas e nenhum folículo piloso, glândula sebácea ou músculo eretor (b). Epiderme delgada com folículos e sebáceas (a) e estrato córneo fino sem lúcido, com eretores (d), descrevem a pele fina. A pele espessa é justamente a mais rica em sudoríparas écrinas e tem cristas epidérmicas e papilas dérmicas altas, cujo arranjo desenha as impressões digitais (c).",
       "dificuldade": 1,
       "bloom": "lembrar",
       "tags": [
@@ -417,7 +423,7 @@
         },
         {
           "id": "b",
-          "texto": "Célula melanocítica"
+          "texto": "Melanócito"
         },
         {
           "id": "c",
@@ -604,7 +610,7 @@
     {
       "id": "his-13-q09",
       "tipo": "multipla",
-      "contexto": "Homem de 35 anos derramou óleo quente no braço. Na área A, há bolhas rompidas e leito rosado, úmido, muito doloroso, que empalidece à pressão e volta a corar ao soltar. Na área B, o leito é esbranquiçado, seco e endurecido, não empalidece à pressão, e o paciente quase não sente a picada de uma agulha.",
+      "contexto": "Homem de 35 anos derramou óleo quente no braço. Na área A, há bolhas rompidas e leito rosado, úmido, muito doloroso, que empalidece à pressão e volta a corar ao soltar. Na área B, o leito é branco, seco e com aspecto de couro, não empalidece à pressão, e o paciente não sente a picada de uma agulha.",
       "enunciado": "Qual interpretação histológica é a mais adequada?",
       "alternativas": [
         {
@@ -625,7 +631,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A área A é de 2º grau superficial: a epiderme e a parte superficial da derme foram lesadas, mas restam capilares da derme (por isso empalidece e volta a corar), terminações nervosas livres expostas e irritadas (dor intensa) e anexos na derme reticular, de onde virá a reepitelização. A área B é de espessura total (3º grau): toda a derme, com vasos, terminações nervosas e anexos, foi destruída; o leito não empalidece, é quase indolor, e a epiderme só pode voltar a partir das bordas (c). Lesão de 1º grau (a) não forma bolhas, e um leito seco e quase indolor não tem anexos preservados. A alternativa (b) inverte os achados: lesão só da epiderme seria dolorosa. A profundidade, e não a espessura da epiderme (d), explica a diferença de dor e de enchimento capilar.",
+      "explicacao": "A área A é de 2º grau superficial: a epiderme e a parte superficial da derme foram lesadas, mas restam capilares da derme (por isso empalidece e volta a corar), terminações nervosas livres expostas e irritadas (dor intensa) e anexos na derme reticular, de onde virá a reepitelização. A área B é de espessura total (3º grau): toda a derme, com vasos, terminações nervosas e anexos, foi destruída; o leito tem aspecto de couro, não empalidece, é indolor, e a epiderme só pode voltar a partir das bordas (c). Lesão de 1º grau (a) não forma bolhas, e um leito branco, seco, com aspecto de couro e insensível à agulha indica lesão de espessura total, não de 2º grau superficial. A alternativa (b) inverte os achados: lesão só da epiderme seria dolorosa. A profundidade, e não a espessura da epiderme (d), explica a diferença de dor e de enchimento capilar.",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [
@@ -633,7 +639,7 @@
         "reepitelizacao",
         "caso-clinico"
       ],
-      "referencia": "Jeschke et al., Nat Rev Dis Primers 2020; Ross 8ª ed., cap. 15"
+      "referencia": "Jeschke et al., Nat Rev Dis Primers 2020; Toussaint e Singer, Clin Exp Emerg Med 2014; Ross 8ª ed., cap. 15"
     },
     {
       "id": "his-13-q10",
@@ -766,7 +772,7 @@
         "breslow",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (pele); INCA (melanoma, versão para profissionais de saúde)"
+      "referencia": "Robbins 10ª ed. (pele); ICCR (Scolyer et al., Am J Surg Pathol 2013); INCA (melanoma, versão para profissionais de saúde)"
     },
     {
       "id": "his-13-q14",
@@ -860,7 +866,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "A criança A tem vitiligo: manchas adquiridas, bem delimitadas e simétricas, por destruição autoimune dos melanócitos, que desaparecem da camada basal. A criança B tem albinismo oculocutâneo: os melanócitos existem em número normal, mas não produzem melanina — no tipo 1, por defeito da tirosinase; a falta de pigmento no olho explica o nistagmo (b). Falha de migração da crista neural (a) causaria lesões presentes desde o nascimento (como no piebaldismo), não adquiridas, e em B os melanossomos estão vazios, não retidos no melanócito. A alternativa (c) inverte os mecanismos. Uma falha de transferência (d) não explicaria a ausência de melanócitos em A nem os melanossomos sem melanina em B.",
+      "explicacao": "A criança A tem vitiligo: manchas adquiridas, bem delimitadas e simétricas, por destruição autoimune dos melanócitos, que desaparecem da camada basal. A criança B tem albinismo oculocutâneo: os melanócitos existem em número normal, mas não produzem melanina — no tipo 1, por defeito da tirosinase; a falta de melanina durante o desenvolvimento do olho prejudica a formação da fóvea, o que explica o nistagmo e a baixa visão (b). Falha de migração da crista neural (a) causaria lesões presentes desde o nascimento (como no piebaldismo), não adquiridas, e em B os melanossomos estão vazios, não retidos no melanócito. A alternativa (c) inverte os mecanismos. Uma falha de transferência (d) não explicaria a ausência de melanócitos em A nem os melanossomos sem melanina em B.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -903,21 +909,21 @@
         "efluvio-telogeno",
         "caso-clinico"
       ],
-      "referencia": "Ross 8ª ed., cap. 15; Robbins 10ª ed. (pele)"
+      "referencia": "Ross 8ª ed., cap. 15; Rebora, Clin Cosmet Investig Dermatol 2019"
     },
     {
       "id": "his-13-q18",
       "tipo": "vf",
       "enunciado": "As glândulas sudoríparas écrinas recebem inervação simpática cujas fibras pós-ganglionares liberam acetilcolina.",
       "correta": true,
-      "explicacao": "Verdadeiro. As écrinas são uma exceção no sistema simpático: as fibras pós-ganglionares são colinérgicas, e a acetilcolina age em receptores muscarínicos das células secretoras; por isso fármacos anticolinérgicos reduzem o suor. As apócrinas, em contraste, são descritas com inervação adrenérgica.",
+      "explicacao": "Verdadeiro. As écrinas são uma exceção no sistema simpático: as fibras pós-ganglionares são colinérgicas, e a acetilcolina age em receptores muscarínicos das células secretoras; por isso fármacos anticolinérgicos reduzem o suor. A inervação das apócrinas é menos conhecida: os livros de histologia a descrevem como adrenérgica, e glândulas isoladas respondem tanto a estímulos adrenérgicos quanto colinérgicos.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": [
         "glandula-sudoripara-ecrina",
         "inervacao"
       ],
-      "referencia": "Ross 8ª ed., cap. 15"
+      "referencia": "Ross 8ª ed., cap. 15; Baker, Temperature 2019"
     },
     {
       "id": "his-13-q19",
@@ -1244,6 +1250,26 @@
       "capitulo": "Classificação por profundidade (dor, enchimento capilar, necessidade de cirurgia)"
     },
     {
+      "obra": "Toussaint J, Singer AJ. The evaluation and management of thermal injuries: 2014 update. Clin Exp Emerg Med. 2014;1(1):8-18. doi:10.15441/ceem.14.029 (PMID 27752547; PMC5052819)",
+      "capitulo": "Burn depth (camada atingida e aspecto de cada grau)"
+    },
+    {
+      "obra": "Scolyer RA, Judge MJ, Evans A, et al. Data set for pathology reporting of cutaneous invasive melanoma: recommendations from the International Collaboration on Cancer Reporting (ICCR). Am J Surg Pathol. 2013;37(12):1797-1814. doi:10.1097/PAS.0b013e31829d7f35 (PMID 24061524; PMC3864181)",
+      "capitulo": "Breslow thickness (medida e valor prognóstico)"
+    },
+    {
+      "obra": "Baker LB. Physiology of sweat gland function: the roles of sweating and sweat composition in human health. Temperature (Austin). 2019;6(3):211-259. doi:10.1080/23328940.2019.1632145 (PMID 31608304; PMC6773238)",
+      "capitulo": "Glândulas écrinas (inervação simpática colinérgica, receptores muscarínicos) e apócrinas"
+    },
+    {
+      "obra": "Natarelli N, Gahoonia N, Sivamani RK. Integrative and mechanistic approach to the hair growth cycle and hair loss. J Clin Med. 2023;12(3):893. doi:10.3390/jcm12030893 (PMID 36769541; PMC9917549)",
+      "capitulo": "Fases do ciclo do pelo e sua duração"
+    },
+    {
+      "obra": "Rebora A. Telogen effluvium: a comprehensive review. Clin Cosmet Investig Dermatol. 2019;12:583-590. doi:10.2147/CCID.S200471 (PMID 31686886; PMC6709511)",
+      "capitulo": "Eflúvio telógeno pós-parto"
+    },
+    {
       "obra": "Morrison KM, Miesegaes GR, Lumpkin EA, Maricich SM. Mammalian Merkel cells are descended from the epidermal lineage. Dev Biol. 2009;336(1):76-83. doi:10.1016/j.ydbio.2009.09.032 (PMID 19782676)",
       "capitulo": "Origem das células de Merkel (camundongo)"
     },
@@ -1259,21 +1285,21 @@
   "notasDivergencia": [
     "Origem das células de Langerhans: Junqueira e Ross as derivam de precursores da medula óssea (linhagem monocítica). Estudos de linhagem em camundongo (Hoeffel et al., J Exp Med 2012; PMID 22565823) mostram que as células de Langerhans do adulto derivam sobretudo de monócitos do fígado fetal, com pequena contribuição do saco vitelino, e se mantêm por renovação local; após inflamação intensa, podem ser repostas por monócitos do sangue. O conteúdo usa 'origem hematopoética', compatível com as duas descrições.",
     "Origem das células de Merkel: textos clássicos as atribuem à crista neural; estudos de linhagem em camundongo (Morrison et al., Dev Biol 2009, PMID 19782676; Van Keymeulen et al., J Cell Biol 2009, PMID 19786578) mostram origem epidérmica, dependente de Atoh1. Os dados humanos são indiretos; nenhuma questão cobra a origem.",
-    "Glândulas sudoríparas 'apócrinas': o nome é histórico; Ross descreve secreção principalmente merócrina (mesma nota do tópico his-03). O resumo evita o modo de secreção.",
-    "Queimaduras: no Brasil usam-se 1º, 2º (superficial e profundo) e 3º graus; Jeschke et al. (2020) acrescentam um 4º grau (músculo, osso). A revisão descreve as queimaduras de 2º grau como de 'espessura parcial' da derme e as de 3º como de 'toda a derme'; a correspondência '2º grau superficial = derme papilar; profundo = derme reticular' segue os textos de referência.",
-    "Duração das fases do ciclo do pelo: as obras dão valores diferentes conforme a região do corpo; o conteúdo usa ordens de grandeza (anos, semanas) e cobra só a sequência. A fase exógena (eliminação do pelo) é descrita como coincidente com o início do novo anágeno; por isso os dois eventos dividem a mesma posição na linha do tempo.",
+    "Glândulas sudoríparas 'apócrinas': o nome é histórico; Ross descreve secreção principalmente merócrina (mesma nota do tópico his-03; não conferido no texto), e há descrições de secreção por decapitação. O resumo, as estruturas e as questões evitam o modo de secreção.",
+    "Espessura de Breslow: conferida no conjunto de dados do ICCR (Scolyer et al., 2013), que a define como o fator prognóstico isolado mais importante do melanoma primário clinicamente localizado e a mede do topo da camada granulosa (ou da base da úlcera) até a célula invasiva mais profunda. O mesmo texto registra que o estado do linfonodo sentinela, quando pesquisado, é preditor ainda mais forte; a q13 pergunta só por medidas do tumor primário.",
+    "Queimaduras: no Brasil usam-se 1º, 2º (superficial e profundo) e 3º graus; Jeschke et al. (2020) acrescentam um 4º grau (músculo, osso), e Toussaint e Singer (2014) põem no 4º grau também a gordura subcutânea, que a classificação brasileira inclui no 3º. A correspondência '2º grau superficial = derme papilar; profundo = derme reticular' está em Toussaint e Singer. Sensibilidade no 2º grau profundo: Jeschke descreve-o como 'menos sensível'; Toussaint e Singer, como em geral muito doloroso, às vezes com sensibilidade diminuída; por isso a q09 usa, para separar os graus, o aspecto de couro, a ausência de empalidecimento e a insensibilidade, típicos do 3º grau. As duas revisões registram que a avaliação clínica da profundidade é imprecisa.",
+    "Duração das fases do ciclo do pelo: as obras dão valores diferentes conforme a região do corpo; no couro cabeludo, anágena de 2 a 8 anos e catágena de cerca de 2 semanas (Natarelli et al., 2023). O conteúdo usa ordens de grandeza (anos, semanas) e cobra só a sequência. A fase exógena (eliminação do pelo) é descrita como coincidente com o início do novo anágeno; por isso os dois eventos dividem a mesma posição na linha do tempo.",
     "Unidade epidermomelânica: o número de queratinócitos por melanócito varia entre as fontes e as regiões do corpo; foi omitido.",
     "Papila dérmica × derme papilar: o id canônico papila-dermica (tópico his-02) traz 'derme papilar' como sinônimo; a rigor, a derme papilar é a camada superficial da derme, que inclui as papilas. Mantido o id existente para coerência com a lâmina da pele espessa."
   ],
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. (18) e Ross 8ª ed. (15) citados de memória, com base nas edições anteriores; conferir.",
-    "Cartilha do Ministério da Saúde para tratamento de emergência das queimaduras (bvsms.saude.gov.br): o site recusou o acesso automatizado (HTTP 403 do firewall do próprio site) em 10/11/2026. A classificação por profundidade e os sinais de dor e de enchimento capilar foram conferidos no texto integral de Jeschke et al. (2020; PMC7224101). Nenhuma conduta de tratamento foi incluída.",
+    "Cartilha do Ministério da Saúde para tratamento de emergência das queimaduras (bvsms.saude.gov.br): o site recusou o acesso automatizado (HTTP 403 do firewall do próprio site) em 10/11/2026, também na nova tentativa do revisor. A classificação por profundidade e os sinais de dor, de enchimento capilar e de aspecto do leito foram conferidos no texto integral de Jeschke et al. (2020; PMC7224101) e de Toussaint e Singer (2014; PMC5052819). Nenhuma conduta de tratamento foi incluída.",
     "Regra ABCDE e rastreamento: conferidos no texto da página do INCA (versão para profissionais de saúde, atualizada em 31/07/2023; acesso em 10/11/2026): 'Diâmetro: maior que 6 milímetros'; 'alguns melanomas não são pigmentados'; rastreamento do melanoma na população geral não recomendado. As questões cobram a regra só de forma qualitativa.",
-    "Espessura de Breslow como principal fator prognóstico do melanoma localizado: Robbins (de memória); o manual de estadiamento AJCC (8ª ed.) não foi consultado.",
-    "Inervação adrenérgica das glândulas apócrinas e colinérgica das écrinas: Ross (de memória); textos de fisiologia descrevem respostas mistas das apócrinas. A questão V/F cobra só a inervação das écrinas.",
+    "Inervação das glândulas sudoríparas: a das écrinas (simpática pós-ganglionar colinérgica, receptores muscarínicos) foi conferida em Baker (2019); a das apócrinas é descrita como adrenérgica por Ross (de memória) e como pouco conhecida, com resposta a estímulos adrenérgicos e colinérgicos, por Baker. A questão V/F cobra só a inervação das écrinas.",
     "Afirmações de Ross citadas de memória: pele do dorso classificada como 'fina' apesar da derme espessa; linhas de Langer na derme reticular; reepitelização a partir dos anexos.",
-    "Eflúvio telógeno, eflúvio anágeno, alopecia areata, alopecias cicatriciais e miliária (q17, q21 e distratores da q15): descrições qualitativas de dermatologia e patologia, de memória; nenhum número foi usado.",
-    "Albinismo oculocutâneo tipo 1 por defeito da tirosinase e melanócitos em número normal: Robbins (de memória)."
+    "Eflúvio anágeno, alopecia areata, alopecias cicatriciais e miliária (q21 e distratores da q15 e da q17): descrições qualitativas de dermatologia e patologia, de memória; nenhum número foi usado. O eflúvio telógeno pós-parto (q17: sincronização dos ciclos na gestação, queda 2 a 4 meses após o parto) foi conferido em Rebora (2019).",
+    "Albinismo oculocutâneo tipo 1 por defeito da tirosinase e melanócitos em número normal: Robbins (de memória). A redução ou ausência de melanina e a associação com nistagmo e hipoplasia da fóvea foram conferidas em Ma e Wang (J Med Case Rep 2024; PMC11654439), relato com revisão, fonte apenas de apoio."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",

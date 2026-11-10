@@ -902,6 +902,7 @@ export function LaminaRimCortex(rng: Rng) {
     }
 
   // TCP: células altas e eosinófilas, limites pouco nítidos, poucos núcleos por corte, borda em escova e luz estreita
+  const occNuc = ocupacao(20, 6);
   const tcpNuc: string[] = [];
   const tcpEscova: string[] = [];
   const tcpEstrias: string[] = [];
@@ -914,7 +915,11 @@ export function LaminaRimCortex(rng: Rng) {
     for (let k = 0; k < n; k++) {
       const a = giro + (2 * Math.PI * k) / n + entre(rng, -0.2, 0.2);
       const r = raioEm(pol, c, a) * 0.64;
-      tcpNuc.push(circulo(c[0] + Math.cos(a) * r, c[1] + Math.sin(a) * r, 4.4));
+      const px = c[0] + Math.cos(a) * r;
+      const py = c[1] + Math.sin(a) * r;
+      if (!occNuc.livre(px, py, 4.4, 0.5)) continue;
+      occNuc.marcar(px, py, 4.4);
+      tcpNuc.push(circulo(px, py, 4.4));
     }
     const f1 = entre(rng, 0, 6);
     const f2 = entre(rng, 0, 6);
@@ -957,15 +962,24 @@ export function LaminaRimCortex(rng: Rng) {
         const meio: P = [(cel[0][0] + cel[1][0]) / 2, (cel[0][1] + cel[1][1]) / 2];
         const meioT: P = [(cel[2][0] + cel[3][0]) / 2, (cel[2][1] + cel[3][1]) / 2];
         mdCel.push(contorno([cel[0], meio, meioT, cel[3]]), contorno([meio, cel[1], cel[2], meioT]));
-        for (const u of [0.25, 0.75]) {
+        for (const [u, prof] of [[0.25, 0.42], [0.75, 0.66]]) {
           const bx = cel[0][0] + (cel[1][0] - cel[0][0]) * u;
           const by = cel[0][1] + (cel[1][1] - cel[0][1]) * u;
-          mdNuc.push(elipse(bx + nx * h * 0.56, by + ny * h * 0.56, 3.7, 1.9, graus(nx, ny)));
+          const nxp = bx + nx * h * prof;
+          const nyp = by + ny * h * prof;
+          if (!occNuc.livre(nxp, nyp, 1.8, 0.3)) continue;
+          occNuc.marcar(nxp, nyp, 1.8);
+          mdNuc.push(elipse(nxp, nyp, 3.6, 1.7, graus(nx, ny)));
         }
         return;
       }
       tcdCel.push(contorno(cel));
-      if (rng() < 0.85) tcdNuc.push(circulo(mxp + nx * h * 0.5, myp + ny * h * 0.5, 3.4));
+      const px = mxp + nx * h * 0.5;
+      const py = myp + ny * h * 0.5;
+      if (rng() < 0.85 && occNuc.livre(px, py, 3.4, 0.5)) {
+        occNuc.marcar(px, py, 3.4);
+        tcdNuc.push(circulo(px, py, 3.4));
+      }
     });
     tcdLuz.push(contorno(topo));
   };
@@ -1191,9 +1205,11 @@ export function LaminaTireoide(rng: Rng) {
   // septo: conjuntivo denso com fibroblastos, uma arteríola e uma vênula
   const fib: string[] = [];
   const amS = amostrar(septo, 120, false);
-  for (let k = 0; k < 40; k++) {
+  for (let k = 0; k < 60 && fib.length < 40; k++) {
     const p = amS[Math.floor(rng() * amS.length)];
     const o = entre(rng, -HS + 3, HS - 3);
+    if (!occN.livre(p.x + p.nx * o, p.y + p.ny * o, 5.5, 0.5)) continue;
+    occN.marcar(p.x + p.nx * o, p.y + p.ny * o, 5.5);
     fib.push(elipse(p.x + p.nx * o, p.y + p.ny * o, 5.5, 1.3, graus(p.tx, p.ty) + entre(rng, -10, 10)));
   }
   const fibras = [-9, -3, 4, 10].map((o) => contorno(amS.map((p): P => [p.x + p.nx * o, p.y + p.ny * o]), false)).join('');

@@ -1046,7 +1046,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na mama, ductos e ácinos normais, a maioria das lesões benignas e o carcinoma in situ mantêm a camada de células mioepiteliais, situada entre a lâmina basal e as células luminais; no carcinoma invasivo, os ninhos tumorais não a têm. p63 e calponina, marcadores mioepiteliais, estão ausentes em torno dos ninhos atípicos que infiltram o estroma: o quadro é de carcinoma invasivo (c). (a) A actina de músculo liso marca também os miofibroblastos do estroma; células fusiformes positivas junto aos ninhos não provam camada mioepitelial, e por isso se usam marcadores como p63 e calponina. (b) O ducto normal marcado é o controle interno: mostra que a reação funcionou, mas não torna benignos ninhos atípicos sem mioepitélio. (d) Pelo mesmo motivo, a marcação do ducto normal na mesma lâmina afasta falha técnica: a ausência de p63 e calponina em torno dos ninhos é um resultado verdadeiro.",
+      "explicacao": "Na mama, ductos e ácinos normais, a maioria das lesões benignas e o carcinoma in situ mantêm a camada de células mioepiteliais, situada entre a lâmina basal e as células luminais; no carcinoma invasivo, os ninhos tumorais não a têm. p63 e calponina, marcadores mioepiteliais, estão ausentes em torno dos ninhos atípicos que infiltram o estroma: o quadro é de carcinoma invasivo (c). (a) A actina de músculo liso marca também os miofibroblastos do estroma; células fusiformes positivas junto aos ninhos não provam camada mioepitelial. Por isso se usa um painel: a p63, marcador nuclear, não cora miofibroblastos, e é lida junto com um marcador citoplasmático, como a calponina, que pode corá-los em parte dos casos. (b) O ducto normal marcado é o controle interno: mostra que a reação funcionou, mas não torna benignos ninhos atípicos sem mioepitélio. (d) Pelo mesmo motivo, a marcação do ducto normal na mesma lâmina afasta falha técnica: a ausência de p63 e calponina em torno dos ninhos é um resultado verdadeiro.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -1057,7 +1057,7 @@
         "carcinoma-invasivo",
         "caso-clinico"
       ],
-      "referencia": "OMS, Breast Tumours, 5ª ed., 2019; Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+      "referencia": "OMS, Breast Tumours, 5ª ed., 2019; Werling et al., Am J Surg Pathol 2003; Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
     },
     {
       "id": "his-03-q28",
@@ -1243,6 +1243,10 @@
     {
       "obra": "Shiboski CH, Shiboski SC, Seror R, et al. 2016 American College of Rheumatology/European League Against Rheumatism classification criteria for primary Sjögren's syndrome: a consensus and data-driven methodology involving three international patient cohorts. Arthritis Rheumatol. 2017;69(1):35-45. doi:10.1002/art.39859. PMID 27785888 (texto integral: PMC5650478)",
       "capitulo": "Tabela 3 — itens, pesos, soma ≥ 4, critérios de inclusão e exclusão; escore de foco por 4 mm² (publicação simultânea da mesma diretriz citada acima no Ann Rheum Dis) — questão avançada q26"
+    },
+    {
+      "obra": "Werling RW, Hwang H, Yaziji H, Gown AM. Immunohistochemical distinction of invasive from noninvasive breast lesions: a comparative study of p63 versus calponin and smooth muscle myosin heavy chain. Am J Surg Pathol. 2003;27(1):82-90. doi:10.1097/00000478-200301000-00009. PMID 12502930",
+      "capitulo": "p63 não marca miofibroblastos; calponina e miosina de músculo liso podem marcá-los — questão avançada q27"
     }
   ],
   "notasDivergencia": [
@@ -1257,7 +1261,8 @@
     "Não foi conferido se a 14ª ed. de Junqueira já menciona a hipótese de artefato das meias-luas serosas.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
     "Diretrizes brasileiras de fibrose cística (Athanazio et al., 2017): o texto integral não pôde ser aberto nesta sessão. Os pontos de corte (≥ 60 mmol/L; 30–59 mmol/L intermediário) vêm do consenso CFF 2017 e de estudos brasileiros que descrevem dois testes com cloreto ≥ 60 mmol/L como padrão; conferir a redação da diretriz brasileira e do manual de triagem neonatal (revisão de patologia/clínica, 09/11/2026).",
-    "Camada avançada (redator, 2026-11-10), q26: critérios ACR/EULAR de 2016 conferidos no texto integral da versão do Arthritis Rheumatol (Shiboski et al. 2017, PMC5650478, manuscrito do autor): peso 3 para a biópsia de glândula salivar labial com sialoadenite linfocítica focal e escore de foco ≥ 1 foco/4 mm² e para o anti-SSA(Ro); peso 1 para escore de coloração ocular ≥ 5 (ou van Bijsterveld ≥ 4) em pelo menos um olho, Schirmer ≤ 5 mm/5 min em pelo menos um olho e fluxo salivar não estimulado ≤ 0,1 mL/min; classificação com soma ≥ 4, em quem preenche a inclusão e não tem condição de exclusão. O resumo dessa versão traz 'foci/mm²', erro de digitação; a tabela e a nota de rodapé dizem 'foci/4 mm²'. q27 a q30 usam só fatos já revisados do tópico."
+    "Camada avançada (redator, 2026-11-10), q26: critérios ACR/EULAR de 2016 conferidos no texto integral da versão do Arthritis Rheumatol (Shiboski et al. 2017, PMC5650478, manuscrito do autor): peso 3 para a biópsia de glândula salivar labial com sialoadenite linfocítica focal e escore de foco ≥ 1 foco/4 mm² e para o anti-SSA(Ro); peso 1 para escore de coloração ocular ≥ 5 (ou van Bijsterveld ≥ 4) em pelo menos um olho, Schirmer ≤ 5 mm/5 min em pelo menos um olho e fluxo salivar não estimulado ≤ 0,1 mL/min; classificação com soma ≥ 4, em quem preenche a inclusão e não tem condição de exclusão. O resumo dessa versão traz 'foci/mm²', erro de digitação; a tabela e a nota de rodapé dizem 'foci/4 mm²'. q27 a q30 usam só fatos já revisados do tópico.",
+    "Revisão da camada avançada (histologia, 2026-11-10): q26 — conta refeita: 6 focos em 12 mm² = 0,5 foco/mm² = 2 focos/4 mm² (escore de foco 2); biópsia 3 + Schirmer 4 mm/5 min em um olho 1 = 4 pontos, mínimo para classificar; inclusão (boca seca diária > 3 meses; beber líquidos para engolir alimento seco) e exclusões conferidas na Tabela do texto integral (PMC5650478); foco = agregado de ≥ 50 células mononucleares, sobretudo linfócitos (Fisher et al., Ann Rheum Dis 2017, PMC5530351). q27 — Werling et al. 2003 (resumo, PMID 12502930): \"No case showed p63 expression by myofibroblasts ... whereas myofibroblasts expressed, in 8% and 76% of cases, SMM-HC and calponin\"; a explicação deixou de sugerir que a calponina, como a p63, não cora miofibroblastos. O texto integral não foi lido."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1276,6 +1281,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "6 correções (0 críticas, 0 importantes, 6 menores); gabaritos corretos. Principais: infertilidade masculina na FC por ausência congênita bilateral dos ductos deferentes (resumo e correlação); teste do suor com ponto de corte (≥60 mmol/L; 30–59 intermediário; CFF 2017) e triagem neonatal brasileira (correlação e q10); Sjögren com biópsia de glândula salivar menor (escore de foco, ACR/EULAR 2016) e linfoma MALT; marcadores mioepiteliais (p63, calponina, SMMHC) e exceção da adenose microglandular; via serrilhada; carcinoma ex-adenoma pleomórfico. Pendente: texto integral da diretriz brasileira de FC."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-03-q26 a his-03-q30): 1 correção (0 críticas, 1 importante, 0 menores). Importante: q27 — a explicação da alternativa a sugeria que a calponina, como a p63, não marca miofibroblastos; a calponina os marca em parte dos casos (Werling et al. 2003), e o texto passou a descrever o painel p63 (nuclear, sem miofibroblastos) + marcador citoplasmático. q26: escore de foco recalculado (6 focos/12 mm² = 2 focos/4 mm²; 3 + 1 = 4 pontos, classifica) e critérios ACR/EULAR 2016 conferidos no texto integral (PMC5650478); gabarito b correto. q28 a q30 corretas."
       }
     ],
     "humano": null

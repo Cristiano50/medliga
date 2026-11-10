@@ -948,7 +948,7 @@
     {
       "id": "his-05-q27",
       "tipo": "multipla",
-      "contexto": "Cenário experimental: fragmentos de tecido adiposo multilocular de um mamífero são mantidos em meio de cultura, e mede-se a produção de calor em quatro situações. (1) Com noradrenalina, o calor aumenta muito. (2) Com noradrenalina após o bloqueio dos receptores β-adrenérgicos, o calor não aumenta. (3) Com adição direta de ácidos graxos, mesmo com os receptores β bloqueados, o calor aumenta. (4) Com noradrenalina, em tecido de um animal geneticamente sem UCP1 (termogenina).",
+      "contexto": "Cenário experimental: fragmentos do depósito interescapular de tecido adiposo multilocular (pardo clássico) de camundongos são mantidos em meio de cultura, e mede-se a produção de calor em quatro situações. (1) Com noradrenalina, o calor aumenta muito. (2) Com noradrenalina após o bloqueio dos receptores β-adrenérgicos, o calor não aumenta. (3) Com adição direta de ácidos graxos, mesmo com os receptores β bloqueados, o calor aumenta. (4) Com noradrenalina, em tecido do mesmo depósito de um camundongo geneticamente sem UCP1 (termogenina).",
       "enunciado": "Qual resultado é esperado na situação 4 e por quê?",
       "alternativas": [
         {
@@ -969,7 +969,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "Na termogênese sem tremor, a noradrenalina age em receptores β-adrenérgicos e ativa a lipólise; os ácidos graxos liberados são oxidados e ativam a UCP1, que deixa os prótons voltarem à matriz mitocondrial sem passar pela ATP sintase, dissipando a energia do gradiente como calor. As situações 2 e 3 mostram que o receptor β é necessário para a resposta à noradrenalina e que os ácidos graxos agem depois dele. Sem UCP1, a sinalização e a lipólise continuam, mas os prótons voltam pela ATP sintase, e a energia do gradiente não é dissipada como calor (c). (a) A lipólise apenas fornece os ácidos graxos; no tecido multilocular, o calor vem da dissipação do gradiente de prótons pela UCP1, que falta nesse animal. (b) A lipólise está antes da UCP1 na sequência e depende do receptor β e da lipase, e não da termogenina. (d) Os ácidos graxos ativam a UCP1, e não a ATP sintase; e a passagem de prótons pela ATP sintase produz ATP, em vez de dissipar a energia como calor.",
+      "explicacao": "Na termogênese sem tremor, a noradrenalina age em receptores β-adrenérgicos e ativa a lipólise; os ácidos graxos liberados são oxidados e ativam a UCP1, que deixa os prótons voltarem à matriz mitocondrial sem passar pela ATP sintase, dissipando a energia do gradiente como calor. As situações 2 e 3 mostram que o receptor β é necessário para a resposta à noradrenalina e que os ácidos graxos agem depois dele. Sem UCP1, a sinalização e a lipólise continuam, mas os prótons só podem voltar pela ATP sintase, no ritmo do consumo de ATP: o gradiente não é dissipado, a respiração não acelera, e o calor quase não aumenta (c). Foi o que se observou em adipócitos pardos de camundongos sem UCP1: lipólise normal e resposta térmica à noradrenalina praticamente abolida. (a) A lipólise apenas fornece os ácidos graxos; no tecido multilocular, o calor vem da dissipação do gradiente de prótons pela UCP1, que falta nesse animal. (b) A lipólise está antes da UCP1 na sequência e depende do receptor β e da lipase, e não da termogenina. (d) Os ácidos graxos ativam a UCP1, e não a ATP sintase; e a passagem de prótons pela ATP sintase produz ATP, em vez de dissipar a energia como calor. O resultado vale para o tecido pardo clássico: no tecido bege, há também termogênese independente da UCP1, por ciclos fúteis que consomem ATP (de creatina e de Ca²⁺), que contribuem para o calor no animal sem UCP1.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -979,7 +979,7 @@
         "adipocito-multilocular",
         "cenario-experimental"
       ],
-      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9"
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9; Matthias et al., J Biol Chem 2000; Kazak et al., Cell 2015; Ikeda et al., Nat Med 2017"
     },
     {
       "id": "his-05-q28",
@@ -1091,7 +1091,7 @@
         "leptina",
         "integracao"
       ],
-      "referencia": "Robbins 10ª ed. (tumores de partes moles); OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Ross 8ª ed., cap. 9"
+      "referencia": "Robbins 10ª ed. (tumores de partes moles); OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Rabbitts et al., Nat Genet 1993; Sirvent et al., Am J Surg Pathol 2007; Ross 8ª ed., cap. 9"
     },
     {
       "id": "his-05-q31",
@@ -1100,14 +1100,14 @@
       "correta": false,
       "explicacao": "Falso. Lipoblastos (células com vacúolos lipídicos que endentam um núcleo hipercromático) reforçam o diagnóstico quando presentes, mas não são obrigatórios nem exclusivos: aparecem também em lesões benignas, como o lipoblastoma da infância. O achado mais específico do lipossarcoma bem diferenciado é a amplificação de MDM2 nas células atípicas. Em histologia, 'lipoblasto' designa ainda o precursor normal do adipócito, outro motivo para não tomá-lo isoladamente como sinal de malignidade.",
       "dificuldade": 4,
-      "bloom": "analisar",
+      "bloom": "compreender",
       "tags": [
         "avancado",
         "lipossarcoma",
         "lipoblasto",
         "diagnostico-diferencial"
       ],
-      "referencia": "OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Robbins 10ª ed.; Junqueira 14ª ed., cap. 6"
+      "referencia": "OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Hisaoka, J UOEH 2014; Robbins 10ª ed.; Junqueira 14ª ed., cap. 6"
     }
   ],
   "referencias": [
@@ -1150,6 +1150,30 @@
     {
       "obra": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours, 5th ed. Lyon: IARC; 2020",
       "capitulo": "Adipocytic tumours (lipoma, hibernoma, atypical lipomatous tumour/well-differentiated liposarcoma, myxoid liposarcoma)"
+    },
+    {
+      "obra": "Matthias A, Ohlson KB, Fredriksson JM, et al. Thermogenic responses in brown fat cells are fully UCP1-dependent: UCP2 or UCP3 do not substitute for UCP1 in adrenergically or fatty acid-induced thermogenesis. J Biol Chem. 2000;275(33):25073-25081. doi:10.1074/jbc.M000547200. PMID 10825155",
+      "capitulo": "Adipócitos pardos sem UCP1: lipólise e cAMP normais, termogênese à noradrenalina e a ácidos graxos praticamente abolida — questão avançada q27"
+    },
+    {
+      "obra": "Kazak L, Chouchani ET, Jedrychowski MP, et al. A creatine-driven substrate cycle enhances energy expenditure and thermogenesis in beige fat. Cell. 2015;163(3):643-655. doi:10.1016/j.cell.2015.09.035. PMID 26496606 (texto integral: PMC4656041)",
+      "capitulo": "Termogênese independente da UCP1 no tecido bege (ciclo da creatina) — questão avançada q27"
+    },
+    {
+      "obra": "Ikeda K, Kang Q, Yoneshiro T, et al. UCP1-independent signaling involving SERCA2b-mediated calcium cycling regulates beige fat thermogenesis and systemic glucose homeostasis. Nat Med. 2017;23(12):1454-1465. doi:10.1038/nm.4429. PMID 29131158 (texto integral: PMC5727902)",
+      "capitulo": "Termogênese independente da UCP1 no tecido bege (ciclo de Ca²⁺) — questão avançada q27"
+    },
+    {
+      "obra": "Rabbitts TH, Forster A, Larson R, Nathan P. Fusion of the dominant negative transcription regulator CHOP with a novel gene FUS by translocation t(12;16) in malignant liposarcoma. Nat Genet. 1993;4(2):175-180. doi:10.1038/ng0693-175. PMID 7503811 (também Crozat A et al., Nature. 1993;363:640-644, PMID 8510758)",
+      "capitulo": "t(12;16)(q13;p11) e fusão FUS-CHOP (DDIT3) no lipossarcoma mixoide — questão avançada q30"
+    },
+    {
+      "obra": "Sirvent N, Coindre JM, Maire G, et al. Detection of MDM2-CDK4 amplification by fluorescence in situ hybridization in 200 paraffin-embedded tumor samples: utility in diagnosing adipocytic lesions and comparison with immunohistochemistry and real-time PCR. Am J Surg Pathol. 2007;31(10):1476-1489. doi:10.1097/PAS.0b013e3180581fff. PMID 17895748",
+      "capitulo": "Amplificação de MDM2/CDK4 no tumor lipomatoso atípico/lipossarcoma bem diferenciado — questão avançada q30"
+    },
+    {
+      "obra": "Hisaoka M. Lipoblast: morphologic features and diagnostic value. J UOEH. 2014;36(2):115-121. doi:10.7888/juoeh.36.115. PMID 24930875",
+      "capitulo": "Lipoblastos não são pré-requisito do diagnóstico de lipossarcoma e ocorrem em tumores benignos — questão avançada q31"
     }
   ],
   "notasDivergencia": [
@@ -1168,7 +1192,8 @@
     "Origem dos adipócitos pardos e beges: os dados sobre precursores próprios (aparentados aos do músculo esquelético) e sobre o surgimento de adipócitos beges vêm sobretudo de estudos em roedores; mantido em nível introdutório, sem questões.",
     "Lipossarcoma: detalhes moleculares (MDM2 no bem diferenciado; t(12;16) no mixoide) conferidos de memória em Robbins; conferir na edição adotada. A ressalva de que lipoblastos não são obrigatórios para o diagnóstico do bem diferenciado segue a classificação da OMS de tumores de partes moles; conferir a redação de Robbins.",
     "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 9; Junqueira 6 e 1) continuam pendentes de conferência humana.",
-    "Camada avançada (redator, 2026-11-10): q27 é cenário experimental didático, hipotético, construído com a sequência da termogênese já revisada no tópico (noradrenalina → receptor β → lipólise → ácidos graxos oxidados ativam a UCP1 → retorno de prótons sem ATP sintase → calor); não reproduz um experimento publicado específico. q28 a q31 usam só fatos já revisados deste tópico e de his-01 e his-03 (extração dos lipídios no processamento, PAS para mucinas, citoqueratinas em carcinomas, critérios do lipossarcoma e do lipoma, deficiência congênita de leptina)."
+    "Camada avançada (redator, 2026-11-10): q27 é cenário experimental didático, hipotético, construído com a sequência da termogênese já revisada no tópico (noradrenalina → receptor β → lipólise → ácidos graxos oxidados ativam a UCP1 → retorno de prótons sem ATP sintase → calor); não reproduz um experimento publicado específico. q28 a q31 usam só fatos já revisados deste tópico e de his-01 e his-03 (extração dos lipídios no processamento, PAS para mucinas, citoqueratinas em carcinomas, critérios do lipossarcoma e do lipoma, deficiência congênita de leptina).",
+    "Revisão da camada avançada (histologia, 2026-11-10): q27 — a vinheta dizia \"tecido adiposo multilocular de um mamífero\", o que incluiria o tecido bege, que tem termogênese independente da UCP1 (Kazak et al. 2015; Ikeda et al. 2017, que a descreve também no porco, espécie sem UCP1 funcional); passou a especificar o depósito interescapular de camundongos, situação em que a resposta é UCP1-dependente (Matthias et al. 2000, resumo: células Ucp1-/- \"were as potent as wild-type in norepinephrine-induced cAMP accumulation and lipolysis\" e responderam a ~3% da termogênese normal; \"no other adrenergically induced thermogenic mechanism exists in brown adipocytes except that mediated by UCP1\"). O percentual não foi usado no conteúdo. Trabalhos posteriores sobre ciclos fúteis também no tecido pardo não foram lidos; conferir. q30 e q31 — t(12;16)(q13;p11) com fusão FUS-CHOP no lipossarcoma mixoide (Rabbitts et al. 1993; Crozat et al. 1993, resumos), amplificação de MDM2-CDK4 no tumor lipomatoso atípico/lipossarcoma bem diferenciado (Sirvent et al. 2007, resumo) e lipoblastos \"not a prerequisite for the diagnosis of liposarcoma\", presentes também em tumores benignos (Hisaoka 2014, resumo) conferidos em fonte primária; isso resolve, para esses fatos, a incerteza sobre os detalhes moleculares conferidos de memória em Robbins (a redação de Robbins e da OMS 2020 continua não lida)."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1194,6 +1219,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "Conferência de fontes primárias (textos integrais das diretrizes de reanimação da SBP de 2022 e 2026): 1 correção menor. Diretrizes de 2022 (<34 semanas, DOI 10.25060/PRN-SBP-2022-1, item 4.1): todo prematuro <34 semanas vai à mesa de reanimação; o corpo é introduzido no saco plástico de polietileno sem secar, com touca dupla e calor radiante; temperatura axilar de 36,5–37,5 °C; sala a 23–25 °C. (≥34 semanas, DOI 10.25060/PRN-SBP-2022-2): secar corpo e cabeça com compressas aquecidas, touca, pele a pele. As diretrizes de 2026 mantêm essas medidas, mas o prematuro moderado (32 0/7 a 33 6/7 semanas) com boa vitalidade pode ficar em pele a pele, com o corpo seco, touca dupla e cobertura plástica sem saco (item 4.1); por isso a correlação passou a dizer 'prematuro com menos de 34 semanas levado à mesa de reanimação' e registra a exceção de 2026. Referências com títulos exatos, DOI e URL (2022 e 2026); incerteza resolvida retirada. Relatório: content/revisoes/conferencia-fontes-sbp.md."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-05-q27 a his-05-q31): 3 correções (0 críticas, 1 importante, 2 menores). Importante: q27 — \"tecido multilocular de um mamífero\" incluiria o tecido bege, com termogênese sem UCP1 (creatina, Ca²⁺); a vinheta passou ao depósito interescapular de camundongos (Matthias et al. 2000: lipólise normal, termogênese praticamente abolida sem UCP1) e a explicação foi precisada (controle respiratório) e registra a exceção bege; gabarito c mantido. Menores: q30 — referências primárias da t(12;16) e da amplificação de MDM2; q31 — bloom analisar → compreender e referência sobre lipoblastos (Hisaoka 2014). q28 e q29 corretas."
       }
     ],
     "humano": null

@@ -775,7 +775,8 @@ function LaminaFeixe(rng: Rng) {
         <path d={elipses(hemArt)} fill={HE.hemacia} />
       </E>
       <E id="tunica-intima">
-        <path d={linha(polar((t) => rLum(t) + 1.5, 312), true)} stroke="transparent" strokeWidth={7} fill="none" />
+        {/* faixa de toque mais larga que a íntima (que é muito delgada na artéria muscular) */}
+        <path d={linha(polar((t) => rLum(t) + 0.5, 312), true)} stroke="transparent" strokeWidth={11} fill="none" />
         <path d={linha(polar(rLum, 312), true)} stroke="#cf6f9c" strokeWidth={1.2} fill="none" />
         <path d={elipses(nucEnd)} fill={HE.nucleo} />
       </E>
@@ -1205,11 +1206,12 @@ function LaminaBaco(rng: Rng) {
       nucSin.push([x, y, 4.2, 1.8, (Math.atan2(t[1], t[0]) * 180) / Math.PI]);
       oc.por(x, y, 2.6);
     }
-    const faixas = s.w === 15 ? [0] : s.w === 19 ? [-3.2, 3.2] : [-4.6, 0, 4.6];
+    // fileiras de hemácias; a segunda fileira, defasada meio passo, para que caibam lado a lado sem sobreposição
+    const faixas = s.w === 15 ? [0] : s.w === 19 ? [-3.6, 3.6] : [-4.6, 4.6];
     for (let u = -4; u < comp + 4; u += 7.2)
-      for (const f of faixas) {
+      for (const [fi, f] of faixas.entries()) {
         if (rng() > 0.94) continue;
-        const { p, t } = em(Math.max(0, Math.min(comp, u + entre(rng, -1, 1))));
+        const { p, t } = em(Math.max(0, Math.min(comp, u + fi * 3.6 + entre(rng, -0.6, 0.6))));
         const off = f + entre(rng, -0.8, 0.8);
         if (Math.abs(off) > meia - 3.3) continue;
         const x = p[0] - t[1] * off;

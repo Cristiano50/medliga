@@ -47,6 +47,8 @@ const mediana = (xs: number[]) => {
 /** Depois do último movimento da câmera, quanto esperar para voltar ao dpr parado. */
 const PAUSA_MS = 140;
 const LIMITE_QUADRO_MS = 28;
+/** Depois de soltar, o amortecimento do OrbitControls ainda gira a câmera por cerca de 1 s. */
+const INERCIA_MS = 2000;
 
 /**
  * Resolução adaptativa própria. O PerformanceMonitor/AdaptiveDpr do drei não servem com frameloop="demand":
@@ -60,7 +62,7 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
   const controles = useThree((s) => s.controls) as THREE.EventDispatcher<{ start: object; change: object; end: object }> | null;
   const invalidate = useThree((s) => s.invalidate);
   const gl = useThree((s) => s.gl);
-  const estado = useRef({ arrastando: false, ultimaMudanca: -Infinity, ultimoQuadro: 0, amostras: [] as number[], reducao: lerReducaoDprMovimento() });
+  const estado = useRef({ arrastando: false, ultimaInteracao: -Infinity, ultimaMudanca: -Infinity, ultimoQuadro: 0, amostras: [] as number[], reducao: lerReducaoDprMovimento() });
 
   // Mediana dos quadros do giro acima do limite: desce 0,25 no dpr de movimento e lembra a escolha.
   const avaliar = (minimo: number) => {
@@ -86,9 +88,15 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
       clearTimeout(espera);
       espera = setTimeout(() => invalidate(), PAUSA_MS + 30);
     };
-    const inicio = () => { e.arrastando = true; e.ultimoQuadro = 0; };
-    const mudanca = () => { e.ultimaMudanca = performance.now(); voltarAoParado(); };
-    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; avaliarRef.current(12); voltarAoParado(); };
+    const inicio = () => { e.arrastando = true; e.ultimoQuadro = 0; e.ultimaInteracao = performance.now(); };
+    // Só movimento do usuário (arraste, roda/pinça e a inércia que segue): o recentrar da câmera não baixa o dpr.
+    const mudanca = () => {
+      const agora = performance.now();
+      if (!e.arrastando && agora - e.ultimaInteracao > INERCIA_MS) return;
+      e.ultimaMudanca = agora;
+      voltarAoParado();
+    };
+    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; e.ultimaInteracao = performance.now(); avaliarRef.current(12); voltarAoParado(); };
     controles.addEventListener('start', inicio);
     controles.addEventListener('change', mudanca);
     controles.addEventListener('end', fim);

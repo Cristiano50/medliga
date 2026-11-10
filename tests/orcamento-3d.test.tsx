@@ -2,7 +2,7 @@
 // (jsdom não tem WebGL), aplica o refino do nível e soma os triângulos das malhas visíveis.
 import { afterAll, describe, expect, it } from 'vitest';
 import * as THREE from 'three';
-import { act, createRoot, extend } from '@react-three/fiber';
+import { _roots, act, createRoot, extend } from '@react-three/fiber';
 import { MODELOS } from '../src/modules/embriologia/modelos/index.ts';
 import { forcarNivel, NIVEIS, PARAMETROS, type NivelQualidade } from '../src/modules/tres3d/qualidade.ts';
 import { contarCena, prepararMalhas } from '../src/modules/tres3d/refinar.ts';
@@ -41,7 +41,7 @@ async function montar(id: string) {
     const { Componente } = MODELOS[id];
     root.render(<group name="modelo"><Componente /></group>);
   });
-  const cena = (await import('@react-three/fiber'))._roots.get(canvas)!.store.getState().scene as THREE.Scene;
+  const cena = _roots.get(canvas)!.store.getState().scene as THREE.Scene;
   return {
     cena,
     desmontar: async () => { await act(async () => root.unmount()); canvas.remove(); },

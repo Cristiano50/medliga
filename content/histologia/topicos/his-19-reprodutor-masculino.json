@@ -706,7 +706,7 @@
     {
       "id": "his-19-q13",
       "tipo": "multipla",
-      "contexto": "Homem de 29 anos, em investigação de infertilidade, teve o testículo direito, que não havia descido, operado aos 15 anos. A biópsia desse testículo mostra túbulos com espermatogênese muito reduzida e, alinhadas junto à lâmina basal, dentro dos túbulos, células germinativas grandes, de citoplasma claro, núcleo volumoso e nucléolo proeminente. Não há células atípicas no interstício. Essas células são positivas para OCT3/4 e PLAP na imuno-histoquímica.",
+      "contexto": "Homem de 29 anos, em investigação de infertilidade, teve o testículo direito, que não havia descido, operado aos 15 anos. A biópsia desse testículo, colhida durante a extração de espermatozoides para reprodução assistida, mostra túbulos com espermatogênese muito reduzida e, alinhadas junto à lâmina basal, dentro dos túbulos, células germinativas grandes, de citoplasma claro, núcleo volumoso e nucléolo proeminente. Não há células atípicas no interstício. Essas células são positivas para OCT3/4 e PLAP na imuno-histoquímica.",
       "enunciado": "Qual é o diagnóstico histológico?",
       "alternativas": [
         {
@@ -1244,7 +1244,15 @@
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "6 correções (0 críticas, 0 importantes, 6 menores); nenhum gabarito errado, nenhum id alterado. Principais: duração total da espermatogênese alinhada a emb-02 (cerca de 2 meses, 64–74 dias, quatro a cinco ciclos de ~16 dias; antes “cerca de quatro ciclos”); epidídimo × capacitação (ver emb-03); q08 sem atribuir às células principais a reabsorção da maior parte do fluido (dúctulos eferentes); nota sobre o epitélio da glândula seminal; vinheta da q13 com a biópsia colhida durante a extração de espermatozoides (a EAU desaconselha biópsia testicular isolada, sem extração terapêutica). Conferência no texto integral: frutose seminal baixa na ausência congênita dos ductos deferentes (Front Genet 2022, PMC8873976) — mantida na vinheta da q16; OCT3/4 e PLAP na GCNIS (BJU Int 2022, PMC9796833); p63/34βE12 negativos e AMACR no adenocarcinoma de próstata (Oncotarget 2018, PMC5865702); EAU Male Infertility relida (biópsia para GCNIS no adulto, varicocele isolada à direita, CBAVD com volume < 1 mL e pH < 7,0, recuperação em 6–12 meses após anabolizantes). Distribuição das letras 4/4/4/4; correta é a mais longa em 5 de 16. Relatório: content/revisoes/hs1920-histologia.md."
+      }
+    ],
     "humano": null
   }
 }

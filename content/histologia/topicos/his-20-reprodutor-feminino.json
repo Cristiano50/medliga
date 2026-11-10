@@ -1289,7 +1289,15 @@
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 3 importantes, 7 menores); nenhum gabarito errado, nenhum id alterado. Importantes: ovócito primário descrito “no centro” dos folículos antrais (fica excêntrico, no cumulus oophorus); q21 sem “risco padrão” (para imunossuprimidas o intervalo após teste negativo é de 3 anos, Recomendação 39, e a afirmação ficaria verdadeira); q26 com par da tuba não exclusivo (o epitélio do endométrio também tem células ciliadas e secretoras). Menores: correlação do HPV e ponto-chave com risco padrão × imunossuprimidas (Recomendações 39–40); mitoses “predominantemente” basais na LSIL (Quadro 2 da Parte II); sinônimo “artéria helicoidal”; redação e fonte primária da PMOS (Lancet 2026); referências e incertezas atualizadas. Item 1 confirmado no texto integral: Parte I = Portaria Conjunta SAES/SECTICS nº 13, de 29/07/2025 (DOU 18/08/2025), DNA-HPV dos 25 aos 64 anos, 5 anos se negativo, 16/18 → colposcopia, outros → citologia reflexa; Parte II = Portaria Conjunta SAES/SCTIE nº 105, de 20/10/2026 (DOU 28/10/2026, p. 129), Quadro 2 com terminologia LAST. Item 2 confirmado: PMOS como novo nome por consenso internacional (Lancet 2026, resumo; AJOG 2026, resumo: critérios inalterados; RBGO 2026, texto integral) — mantido. Distribuição das letras 4/4/4/4; correta é a mais longa em 5 de 16. Relatório: content/revisoes/hs1920-histologia.md."
+      }
+    ],
     "humano": null
   }
 }
