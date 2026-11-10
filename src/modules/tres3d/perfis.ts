@@ -27,6 +27,8 @@ export interface Perfil3D {
   sombra: TipoSombra;
   /** opacidade da sombra de contato */
   sombraContato?: number;
+  /** ajuste das cores dos materiais (HSL) pelo perfil, sem tocar nos modelos */
+  ajusteCor?: { saturacao?: number; luminosidade?: number };
 }
 
 const BASE_ESQUEMA: Perfil3D = {
@@ -64,6 +66,8 @@ export const PERFIS: Record<TipoPerfil, Perfil3D> = {
     preenchimento: { posicao: [-4, 2, -3], intensidade: 0.38, cor: '#e8efff' },
     luzAmbiente: 0.04,
     sombra: 'pcf',
+    // O Neutral não dessatura como o ACES: a pele subia de 0,27 para 0,35 de saturação (captura); 0,85 a devolve.
+    ajusteCor: { saturacao: 0.85 },
   },
 };
 

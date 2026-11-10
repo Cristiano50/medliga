@@ -1,8 +1,8 @@
 // Infraestrutura de renderização do 3D (todos os modelos): resolução adaptativa própria para frameloop="demand",
 // ambiente PMREM local, sombras estáticas/de contato, refino de geometria e diagnóstico.
-import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore, type RefObject } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, type RefObject } from 'react';
 import { addAfterEffect, useFrame, useThree } from '@react-three/fiber';
-import { ContactShadows } from '@react-three/drei';
+import { ContactShadows, Outlines } from '@react-three/drei';
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import {
@@ -25,7 +25,8 @@ const diagnostico: {
   monitor: { amostras: number; ultimaMediana: number | null; reducao: number; rebaixamentos: number };
   refino: ResultadoRefino | null;
   sombra: string;
-} = { emMovimento: false, monitor: { amostras: 0, ultimaMediana: null, reducao: 0, rebaixamentos: 0 }, refino: null, sombra: 'nenhuma' };
+  precompilacao: { variantes: number; ms: number } | null;
+} = { emMovimento: false, monitor: { amostras: 0, ultimaMediana: null, reducao: 0, rebaixamentos: 0 }, refino: null, sombra: 'nenhuma', precompilacao: null };
 
 export function useNivelQualidade(): NivelQualidade {
   return useSyncExternalStore(assinarQualidade, nivelAtual, () => 'baixa');
@@ -269,6 +270,74 @@ export function RefinarCena({ raiz, raio, fator }: { raiz: RefObject<THREE.Objec
   return null;
 }
 
+const ocioso = (f: () => void): (() => void) => {
+  const janela = globalThis as typeof globalThis & { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number; cancelIdleCallback?: (id: number) => void };
+  if (janela.requestIdleCallback) {
+    const id = janela.requestIdleCallback(f, { timeout: 600 });
+    return () => janela.cancelIdleCallback?.(id);
+  }
+  const id = setTimeout(f, 120);
+  return () => clearTimeout(id);
+};
+
+/**
+ * Pré-compilação (gl.compileAsync) das variantes de shader que o primeiro toque pede, depois que o modelo
+ * aparece: as partes "apagadas" (transparentes, sem escrita de profundidade) e o contorno do drei. Os clones
+ * ficam vivos até o modelo mudar, para os programas continuarem no cache do renderer.
+ */
+export function PreCompilar({ raiz, versao }: { raiz: RefObject<THREE.Object3D | null>; versao: string }) {
+  const gl = useThree((s) => s.gl);
+  const scene = useThree((s) => s.scene);
+  const camera = useThree((s) => s.camera);
+  const hospedeContorno = useRef<THREE.Mesh>(null);
+  const geometria = useMemo(() => {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0.001, 0, 0, 0, 0.001, 0], 3));
+    g.setAttribute('normal', new THREE.Float32BufferAttribute([0, 0, 1, 0, 0, 1, 0, 0, 1], 3));
+    return g;
+  }, []);
+  useEffect(() => () => geometria.dispose(), [geometria]);
+  useEffect(() => {
+    let vivo = true;
+    const clones: THREE.Material[] = [];
+    const cancelar = ocioso(() => {
+      const r = raiz.current;
+      if (!vivo || !r) return;
+      const temporaria = new THREE.Scene();
+      const vistos = new Set<THREE.Material>();
+      r.traverse((o) => {
+        const m = o as THREE.Mesh;
+        if (!m.isMesh || !ehMaterialDoModelo(m.material) || vistos.has(m.material as THREE.Material)) return;
+        vistos.add(m.material as THREE.Material);
+        const apagado = (m.material as THREE.MeshStandardMaterial).clone();
+        apagado.transparent = true;
+        apagado.depthWrite = false;
+        apagado.opacity = 0.4;
+        const malha = new THREE.Mesh(geometria, apagado);
+        malha.receiveShadow = m.receiveShadow;
+        temporaria.add(malha);
+        clones.push(apagado);
+      });
+      if (hospedeContorno.current) temporaria.add(hospedeContorno.current.clone(true));
+      const inicio = performance.now();
+      gl.compileAsync(temporaria, camera, scene)
+        .then(() => { if (vivo) diagnostico.precompilacao = { variantes: clones.length + 1, ms: Math.round(performance.now() - inicio) }; })
+        .catch(() => { /* contexto perdido: o desenho normal compila quando precisar */ });
+    });
+    return () => {
+      vivo = false;
+      cancelar();
+      clones.forEach((c) => c.dispose());
+    };
+  }, [gl, scene, camera, raiz, versao, geometria]);
+  // Hospedeiro invisível do contorno de seleção (só para compilar o shader do drei; não é desenhado nem tocado).
+  return (
+    <mesh ref={hospedeContorno} geometry={geometria} visible={false}>
+      <Outlines thickness={2} color="#2dd4bf" />
+    </mesh>
+  );
+}
+
 /** Com localStorage medliga:diag3d = "1", publica renderer.info em window.__diag3d depois de cada quadro. */
 export function Diagnostico3D({ nivel, modelo }: { nivel: NivelQualidade; modelo: string }) {
   const gl = useThree((s) => s.gl);
@@ -291,6 +360,7 @@ export function Diagnostico3D({ nivel, modelo }: { nivel: NivelQualidade; modelo
         monitor: { ...diagnostico.monitor },
         refino: diagnostico.refino,
         sombra: diagnostico.sombra,
+        precompilacao: diagnostico.precompilacao,
       };
     });
   }, [gl, nivel, modelo]);

@@ -8,9 +8,11 @@ import { MODELOS, type ModeloEstagio } from './modelos/index.ts';
 import { CamadaMarcadores, RotulosProvider, type QuadroMarcadores } from './tres/rotulos.tsx';
 import { perfilDoModelo, type Perfil3D } from '../tres3d/perfis.ts';
 import { PARAMETROS, semWebGL } from '../tres3d/qualidade.ts';
+import { AcabamentoContext, acabamentoDoPerfil, type AmbienteAcabamento } from '../tres3d/materiais.ts';
 import {
   AmbientePMREM,
   Diagnostico3D,
+  PreCompilar,
   dprInicial,
   RefinarCena,
   ResolucaoAdaptativa,
@@ -104,6 +106,11 @@ export function Cena3D(p: Cena3DProps) {
   const versao = `${p.estagioId}:${nivel}`;
   const [quadro, setQuadro] = useState<QuadroMarcadores>({ pontos: [], largura: 0, altura: 0 });
   const meia = raio * 1.25;
+  // Acabamento das superfícies pelo perfil (materiais.ts); as partes podem pedir outro pela prop `acabamento`.
+  const acabamento = useMemo<AmbienteAcabamento>(
+    () => ({ ...acabamentoDoPerfil(perfil.tipo), nivel, saturacao: perfil.ajusteCor?.saturacao, luminosidade: perfil.ajusteCor?.luminosidade }),
+    [perfil, nivel],
+  );
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
       <Canvas
@@ -151,13 +158,15 @@ export function Cena3D(p: Cena3DProps) {
             onEscolher: p.onEscolher,
           }}
         >
-          <Suspense fallback={null}>
-            <RotulosProvider key={versao} onQuadro={setQuadro}>
-              <group ref={raiz}>
-                <Tocavel>{Componente && <Componente />}</Tocavel>
-              </group>
-            </RotulosProvider>
-          </Suspense>
+          <AcabamentoContext.Provider value={acabamento}>
+            <Suspense fallback={null}>
+              <RotulosProvider key={versao} onQuadro={setQuadro}>
+                <group ref={raiz}>
+                  <Tocavel>{Componente && <Componente />}</Tocavel>
+                </group>
+              </RotulosProvider>
+            </Suspense>
+          </AcabamentoContext.Provider>
         </CenaProvider>
         <RefinarCena raiz={raiz} raio={raio} fator={fator} />
         {perfil.sombra === 'pcf' && <SombrasEstaticas raiz={raiz} projetar={exploracaoLivre} versao={versao} />}
@@ -165,6 +174,7 @@ export function Cena3D(p: Cena3DProps) {
           <SombraContato key={versao} raiz={raiz} opacidade={perfil.sombraContato ?? 0.5} nivel={nivel} versao={versao} />
         )}
         <ResolucaoAdaptativa nivel={nivel} dprRef={dpr} />
+        <PreCompilar raiz={raiz} versao={versao} />
         <Diagnostico3D nivel={nivel} modelo={p.estagioId} />
         <OrbitControls makeDefault enableDamping dampingFactor={0.12} minDistance={1} maxDistance={16} enablePan={false} />
         <Camera estagioId={p.estagioId} modelo={modelo} versao={p.versaoCamera ?? 0} />

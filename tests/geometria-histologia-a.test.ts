@@ -22,6 +22,8 @@ import {
   curvaEferente,
   curvaDescendenteDelgado,
   DUCTO_X,
+  MACULA,
+  RAIO_MESANGIAL_EXTRA,
 } from '../src/modules/histologia/modelos3d/geometria-nefron.ts';
 import {
   ALVEOLOS,
@@ -88,12 +90,13 @@ describe('néfron', () => {
     // o túbulo passa no ângulo entre as arteríolas, sem atravessá-las
     for (const [arteriola, r] of [[curvaAferente(), RAIOS.aferente], [curvaEferente(), RAIOS.eferente]] as const) {
       const menor = Math.min(...amostrar(arteriola, 400).map((p) => p.distanceTo(m)));
-      expect(menor).toBeGreaterThan(RAIOS.espesso + r);
+      expect(menor).toBeGreaterThan(MACULA.raio + r);
     }
-    // células mesangiais extraglomerulares entre o polo vascular e a mácula
+    // células mesangiais extraglomerulares entre o polo vascular e a mácula, fora da cápsula
     for (const p of posicoesMesangiaisExtraglomerulares()) {
       expect(p.y).toBeGreaterThan(pv.y);
-      expect(p.y).toBeLessThan(m.y);
+      expect(p.y + RAIO_MESANGIAL_EXTRA * 0.8).toBeLessThan(m.y - MACULA.raio + 0.01);
+      expect(p.distanceTo(C)).toBeGreaterThan(CORPUSCULO.raioParietalExterno);
     }
   });
 

@@ -156,16 +156,17 @@ export function ModeloNefron() {
       aferente: new THREE.TubeGeometry(curvaAferente(), 48, RAIOS.aferente, 12, false),
       eferente: new THREE.TubeGeometry(curvaEferente(), 48, RAIOS.eferente, 10, false),
       tampa: new THREE.SphereGeometry(1, 16, 12),
-      justaglomerular: new THREE.TubeGeometry(trechoJustaglomerular(), 12, RAIOS.aferente + 0.014, 12, false),
+      justaglomerular: new THREE.TubeGeometry(trechoJustaglomerular(), 12, RAIOS.aferente + 0.016, 12, false),
       mesangial: unir(posicoesMesangiaisExtraglomerulares().map((p) => transformada(new THREE.SphereGeometry(RAIO_MESANGIAL_EXTRA, 10, 8), p, undefined, [1, 0.8, 1]))),
-      macula: new THREE.CylinderGeometry(MACULA.raio, MACULA.raio, MACULA.comprimento, 16, 1, true, -MACULA.arco / 2, MACULA.arco),
+      // setor de cilindro fechado: a face da frente aparece como um crescente sob o túbulo
+      macula: new THREE.CylinderGeometry(MACULA.raio, MACULA.raio, MACULA.comprimento, 16, 1, false, -MACULA.arco / 2, MACULA.arco),
       proximal: new THREE.TubeGeometry(curvaProximal(), 180, RAIOS.proximal, 14, false),
       delgado: new THREE.TubeGeometry(curvaDescendenteDelgado(), 40, RAIOS.delgado, 10, false),
       espesso: new THREE.TubeGeometry(curvaAscendenteEspesso(), 160, RAIOS.espesso, 12, false),
       distal: new THREE.TubeGeometry(curvaDistal(), 120, RAIOS.distal, 12, false),
       // ducto coletor em estilo distinto: prisma facetado com anéis (não faz parte do néfron)
       coletor: new THREE.LatheGeometry(perfil, 12),
-      aneisColetor: unir([1.35, 0.95, 0.55, 0.1, -0.35, -0.8, -1.25].map((y) => anelColetor(y, raioColetorEm(y) + 0.004))),
+      aneisColetor: unir([1.5, 1.05, 0.6, 0.15, -0.3, -0.75, -1.2].map((y) => anelColetor(y, raioColetorEm(y) + 0.004))),
     };
   });
   const c = CORPUSCULO.centro;
@@ -178,7 +179,7 @@ export function ModeloNefron() {
   const meiaAlturaMedula = (REGIOES.juncao + REGIOES.base) / 2;
   const xMeio = (REGIOES.xMin + REGIOES.xMax) / 2;
   return (
-    <group position={[0, 0.05, 0]}>
+    <group position={[0, -0.015, 0]}>
       <Parte id="cortex-renal" cor={COR_NEFRON.cortex} opacidade={0.1} prioridade={0.5} rotulo={[REGIOES.xMin, REGIOES.topo, REGIOES.zMax]}>
         <Malha geometria={g.cortex} posicao={[xMeio, meiaAlturaCortex, 0]} />
       </Parte>
@@ -189,31 +190,31 @@ export function ModeloNefron() {
         <Malha geometria={g.aferente} />
         <Malha geometria={g.tampa} posicao={fimAferente} escala={RAIOS.aferente} />
       </Parte>
-      <Parte id="glomerulo" cor={COR_NEFRON.glomerulo} prioridade={6} acabamentoOrganico rotulo={[c[0], c[1] - 0.2, c[2] + 0.1]}>
+      <Parte id="glomerulo" cor={COR_NEFRON.glomerulo} prioridade={6} acabamentoOrganico rotulo={[c[0], c[1] - 0.25, c[2] + 0.12]}>
         {g.alcas.map((a, i) => <Malha key={i} geometria={a} />)}
       </Parte>
       <Parte id="arteriola-eferente" cor={COR_NEFRON.eferente} prioridade={6} acabamentoOrganico>
         <Malha geometria={g.eferente} />
         <Malha geometria={g.tampa} posicao={fimEferente} escala={RAIOS.eferente} />
       </Parte>
-      <Parte id="capsula-glomerular" cor={COR_NEFRON.capsula} opacidade={0.42} prioridade={3} rotulo={[c[0] - 0.36, c[1], c[2]]}>
+      <Parte id="capsula-glomerular" cor={COR_NEFRON.capsula} opacidade={0.42} prioridade={3} rotulo={[c[0] - CORPUSCULO.raioParietalExterno, c[1], c[2]]}>
         {/* torno em torno do eixo da janela (+y local → +z) */}
         <Malha geometria={g.capsula} posicao={c} rotacao={[Math.PI / 2, 0, 0]} />
       </Parte>
-      <Parte id="espaco-urinario" cor={COR_NEFRON.espaco} opacidade={0.16} prioridade={3} rotulo={[c[0] + 0.15, c[1] - 0.15, c[2] + 0.28]}>
+      <Parte id="espaco-urinario" cor={COR_NEFRON.espaco} opacidade={0.16} prioridade={3} rotulo={[c[0] + 0.2, c[1] - 0.2, c[2] + 0.33]}>
         <Malha geometria={g.espaco} posicao={c} />
       </Parte>
       <Parte id="podocito" cor={COR_NEFRON.podocito} prioridade={7} acabamentoOrganico>
         <Malha geometria={g.podocitos} />
       </Parte>
-      <Parte id="tubulo-contorcido-proximal" cor={COR_NEFRON.proximal} prioridade={6} acabamentoOrganico rotulo={[-0.92, 0.44, 0.3]}>
+      <Parte id="tubulo-contorcido-proximal" cor={COR_NEFRON.proximal} prioridade={6} acabamentoOrganico rotulo={[-1.02, 0.38, 0.24]}>
         <Malha geometria={g.proximal} />
         <Malha geometria={g.tampa} posicao={fimProximal} escala={RAIOS.proximal} />
       </Parte>
       <Parte id="ramo-descendente-delgado" cor={COR_NEFRON.delgado} prioridade={6} acabamentoOrganico>
         <Malha geometria={g.delgado} />
       </Parte>
-      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.1, -0.3, -0.15]}>
+      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.12, -0.3, -0.15]}>
         <Malha geometria={g.espesso} />
         <Malha geometria={g.tampa} posicao={inicioEspesso} escala={RAIOS.espesso} />
       </Parte>
@@ -226,7 +227,7 @@ export function ModeloNefron() {
       <Parte id="celulas-mesangiais-extraglomerulares" cor={COR_NEFRON.mesangial} prioridade={8} acabamentoOrganico>
         <Malha geometria={g.mesangial} />
       </Parte>
-      <Parte id="tubulo-contorcido-distal" cor={COR_NEFRON.distal} prioridade={6} acabamentoOrganico rotulo={[0.52, 0.72, 0.36]}>
+      <Parte id="tubulo-contorcido-distal" cor={COR_NEFRON.distal} prioridade={6} acabamentoOrganico rotulo={[0.63, 0.96, 0.32]}>
         <Malha geometria={g.distal} />
       </Parte>
       <Parte id="ducto-coletor" cor={COR_NEFRON.coletor} prioridade={6} sombreamentoPlano rugosidade={0.8} rotulo={[DUCTO_X + 0.1, -1.0, 0]}>
@@ -393,6 +394,6 @@ export function ModeloAlveolo() {
 }
 
 export const MODELOS_HISTO_A: Record<string, ModeloEstagio> = {
-  nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.45, 0.2, 1], raio: 1.85 },
+  nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.35, -0.08, 1], raio: 1.75 },
   alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.75 },
 };

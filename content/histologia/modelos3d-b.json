@@ -1,3 +1,244 @@
 {
-  "modelos": []
+  "modelos": [
+    {
+      "id": "lobulo-hepatico",
+      "ordem": 3,
+      "titulo": "Lóbulo hepático clássico",
+      "escala": "Esquema fora de escala",
+      "contexto": [
+        "Esquema fora de escala: uma fatia fina de um lóbulo clássico idealizado. O lóbulo real é um prisma mais longo que largo; a veia centrolobular e os espaços porta aparecem cortados acima e abaixo da fatia.",
+        "Número reduzido de hepatócitos: as células estão muito maiores que na proporção real, por isso há poucas células entre a veia centrolobular e a periferia, e só duas camadas de altura.",
+        "As placas aparecem como paredes retas que se bifurcam em direção à periferia. No fígado real, elas se anastomosam numa rede tridimensional irregular, e os sinusoides formam uma rede contínua entre elas; aqui, cada sinusoide é um tubo liso, sem o endotélio fenestrado desenhado.",
+        "Espaço porta em todos os seis ângulos, sempre com a tríade completa: idealização. No corte real, os lóbulos são irregulares e nem todo ângulo mostra os três elementos; linfáticos, nervos, canais de Hering e células estreladas (de Ito) não estão desenhados.",
+        "O espaço de Disse e os canalículos biliares só se resolvem ao microscópio eletrônico; no modelo, estão muito exagerados para poderem ser vistos e tocados. Os canalículos formam uma rede entre hepatócitos vizinhos da mesma placa.",
+        "Cores convencionais, não HE: hepatócitos em tom de areia, sangue dos sinusoides em vermelho, veia centrolobular em azul, ramo da veia porta em violeta, artéria em vermelho-escuro, bile (canalículos e ducto) em verde, espaço de Disse em amarelo e células de Kupffer em ciano.",
+        "Lóbulo portal e ácino hepático (zonas 1, 2 e 3) são outras formas de dividir o mesmo parênquima e não estão desenhados; a moldura marca só o lóbulo clássico."
+      ],
+      "descricao": "Fatia de um lóbulo hepático clássico idealizado: prisma hexagonal com a veia centrolobular no centro e um espaço porta em cada ângulo. Placas de hepatócitos com uma célula de espessura irradiam da veia centrolobular para a periferia e se ramificam; entre elas, os sinusoides levam o sangue misto, portal e arterial, dos espaços porta até a veia centrolobular. Em volta de cada sinusoide, o espaço perissinusoidal (de Disse) separa o endotélio dos hepatócitos; na luz, células de Kupffer presas ao endotélio. Entre hepatócitos vizinhos, a rede de canalículos biliares leva a bile no sentido contrário ao do sangue, para o ducto biliar do espaço porta.",
+      "destaques": [
+        "Sangue e bile correm em sentidos opostos: o sangue vai da periferia (ramos da veia porta e da artéria hepática) para a veia centrolobular; a bile vai dos canalículos, entre os hepatócitos, para o ducto biliar do espaço porta.",
+        "Tríade portal: ramo da veia porta (o maior, de parede fina), ramo da artéria hepática (menor, de parede muscular espessa em relação à luz) e ducto biliar (epitélio simples cúbico), no conjuntivo do espaço porta, que tem também linfáticos e nervos.",
+        "Placas de uma célula de espessura no adulto: o hepatócito tem faces voltadas para os sinusoides de cada lado da placa (microvilosidades no espaço de Disse) e faces de contato com os hepatócitos vizinhos, onde ficam os canalículos biliares.",
+        "O lóbulo clássico é uma das três formas de dividir o mesmo parênquima; no ácino hepático, a zona 3, em volta da veia centrolobular, é a menos oxigenada e a mais vulnerável à hipóxia e a alguns tóxicos, como o paracetamol."
+      ],
+      "topicos": ["his-15-glandulas-anexas"],
+      "estruturas": [
+        {
+          "id": "lobulo-hepatico",
+          "nome": "Lóbulo hepático clássico (limite)",
+          "descricao": "Prisma hexagonal de parênquima centrado na veia centrolobular, com espaços porta nos ângulos. A moldura marca o limite, que no ser humano é uma linha imaginária traçada entre os espaços porta, sem septo de conjuntivo (no porco, há septos)."
+        },
+        {
+          "id": "veia-centrolobular",
+          "nome": "Veia centrolobular",
+          "descricao": "Vênula de parede fina no centro do lóbulo, cercada só por placas de hepatócitos; recebe os sinusoides e drena para as veias sublobulares e, por elas, para as veias hepáticas."
+        },
+        {
+          "id": "placas-de-hepatocitos",
+          "nome": "Placas de hepatócitos",
+          "descricao": "Lâminas de hepatócitos com uma célula de espessura que irradiam da veia centrolobular para a periferia e se ramificam, separadas pelos sinusoides. Hepatócitos são células epiteliais poliédricas; no modelo, blocos de faces planas em duas camadas."
+        },
+        {
+          "id": "sinusoide-hepatico",
+          "nome": "Sinusoide hepático",
+          "descricao": "Capilar de luz ampla e irregular entre as placas, com endotélio descontínuo e fenestrado e lâmina basal ausente ou incompleta; leva o sangue misto dos ramos portais e arteriais, na periferia, até a veia centrolobular."
+        },
+        {
+          "id": "espaco-perissinusoidal",
+          "nome": "Espaço perissinusoidal (de Disse)",
+          "descricao": "Casca fina entre o endotélio do sinusoide e a face sinusoidal dos hepatócitos, onde o plasma banha as microvilosidades dos hepatócitos; contém fibras reticulares e células estreladas (não desenhadas) e nele se forma a linfa hepática."
+        },
+        {
+          "id": "celula-de-kupffer",
+          "nome": "Célula de Kupffer",
+          "descricao": "Macrófago residente na luz do sinusoide, preso ao endotélio; fagocita hemácias senescentes e partículas vindas do intestino pela veia porta. Realçada no esquema; na HE de rotina, é difícil distingui-la das células endoteliais."
+        },
+        {
+          "id": "canaliculo-biliar",
+          "nome": "Canalículo biliar",
+          "descricao": "Sulco entre as faces de contato de hepatócitos vizinhos, sem parede própria e vedado por zônulas de oclusão; os canalículos formam uma rede na placa e levam a bile para a periferia do lóbulo, onde os canais de Hering a passam ao ducto biliar."
+        },
+        {
+          "id": "triade-portal",
+          "nome": "Espaço porta (tríade portal)",
+          "descricao": "Coluna de tecido conjuntivo em cada ângulo do lóbulo clássico, compartilhada com os lóbulos vizinhos, com a tríade portal (ramo da veia porta, ramo da artéria hepática e ducto biliar), além de linfáticos e nervos, não desenhados."
+        },
+        {
+          "id": "ramo-da-veia-porta",
+          "nome": "Ramo da veia porta",
+          "descricao": "Maior vaso do espaço porta, de luz ampla e parede fina; traz o sangue venoso do tubo digestivo, do baço e do pâncreas, rico em nutrientes e pobre em oxigênio, que ramos de distribuição levam aos sinusoides."
+        },
+        {
+          "id": "ramo-da-arteria-hepatica",
+          "nome": "Ramo da artéria hepática",
+          "descricao": "Arteríola do espaço porta, menor que o ramo portal e de parede muscular espessa em relação à luz; traz sangue oxigenado, que se mistura ao portal nos sinusoides, e irriga os ductos biliares."
+        },
+        {
+          "id": "ducto-biliar",
+          "nome": "Ducto biliar interlobular",
+          "descricao": "Ducto do espaço porta revestido por epitélio simples cúbico (colangiócitos); recebe a bile dos canalículos pelos canais de Hering e a leva para fora do lóbulo, no sentido oposto ao do sangue."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "sarcomero",
+      "ordem": 4,
+      "titulo": "Sarcômero do músculo esquelético",
+      "escala": "Esquema fora de escala",
+      "contexto": [
+        "Esquema fora de escala: o diâmetro dos filamentos e a distância entre eles foram muito aumentados em relação ao comprimento, e a dupla hélice da actina está bem mais esticada que a real.",
+        "Comprimentos proporcionais a valores aproximados dos livros-texto: sarcômero de cerca de 2,5 µm em repouso, filamento grosso de cerca de 1,6 µm (1,5 µm em algumas fontes) e filamento fino de cerca de 1,0 µm. Os valores variam entre fontes, espécies e músculos.",
+        "Número reduzido de filamentos: sete grossos e doze finos de cada lado. Uma miofibrila tem centenas de filamentos no corte transversal, em rede hexagonal contínua.",
+        "Cabeças de miosina desenhadas uma a uma, em coroas de três; na molécula de miosina II, as cabeças vêm aos pares. As cabeças não se movem quando o controle de contração é usado.",
+        "Tropomiosina, complexo da troponina, nebulina e as proteínas das linhas Z (α-actinina) e M não estão desenhados à parte; as linhas Z e M aparecem como discos. Há uma titina por meio filamento grosso, enrolada como mola na banda I; na realidade são várias.",
+        "Túbulos T e retículo sarcoplasmático aparecem como anéis em volta de uma única miofibrila. Na fibra, eles formam redes entre as miofibrilas; o retículo da banda I, que liga tríades de sarcômeros vizinhos, não foi desenhado.",
+        "Fora do sarcômero central, aparecem só as metades das bandas I dos sarcômeros vizinhos, com os filamentos finos cortados. A barra sob o modelo marca o comprimento do sarcômero (de uma linha Z à seguinte) e não é uma estrutura do tecido.",
+        "Contração mostrada de cerca de 2,5 µm (repouso) a 2,1 µm; abaixo de cerca de 2,0 µm, os filamentos finos dos dois lados se sobrepõem no centro, o que o modelo não mostra.",
+        "Cores convencionais, não HE: actina em vermelho, miosina em azul, titina em verde, linha Z branca, linha M amarela, túbulo T lilás e retículo sarcoplasmático verde-água; bandas como volumes translúcidos."
+      ],
+      "descricao": "Um sarcômero de uma miofibrila de músculo esquelético de mamífero, entre duas linhas Z, com as metades vizinhas das bandas I. Filamentos finos de actina ancoram-se nas linhas Z; filamentos grossos de miosina II, com as cabeças voltadas para as linhas Z e um centro sem cabeças, ficam centrados na linha M, em rede hexagonal com os finos. A banda A corresponde ao comprimento dos filamentos grossos; a banda I, só com filamentos finos, é atravessada pela linha Z; a banda H, no centro da banda A, só tem filamentos grossos. A titina liga a linha Z à linha M. Na junção das bandas A e I, cada túbulo T fica entre duas cisternas terminais do retículo sarcoplasmático, formando uma tríade. O controle de contração mostra o deslizamento dos filamentos: as bandas I e H encurtam, e a banda A não muda.",
+      "destaques": [
+        "Na contração, os filamentos finos deslizam sobre os grossos em direção à linha M, e nenhum dos dois encurta. Por isso a banda A fica constante, e as bandas I e H e o próprio sarcômero (distância entre linhas Z) encurtam.",
+        "Arranjo hexagonal na região de sobreposição: cada filamento grosso é cercado por seis finos, e cada fino fica entre três grossos.",
+        "No músculo esquelético de mamíferos, a tríade (túbulo T entre duas cisternas terminais) fica na junção das bandas A e I, duas por sarcômero; no músculo cardíaco, o túbulo T fica na linha Z e forma díades.",
+        "Linha Z: a α-actinina ancora os filamentos finos dos sarcômeros vizinhos. Linha M: proteínas de ligação mantêm unidos os filamentos grossos. Titina: proteína elástica que vai da linha Z à linha M e mantém o filamento grosso centrado."
+      ],
+      "topicos": ["his-09-muscular"],
+      "estruturas": [
+        {
+          "id": "sarcomero",
+          "nome": "Sarcômero",
+          "descricao": "Unidade contrátil da miofibrila estriada, de uma linha Z à seguinte (cerca de 2,5 µm em repouso). A barra sob o modelo marca seu comprimento, que diminui na contração."
+        },
+        {
+          "id": "linha-z",
+          "nome": "Linha Z",
+          "descricao": "Disco no limite do sarcômero, rico em α-actinina, onde se ancoram os filamentos finos dos dois sarcômeros vizinhos; fica no meio da banda I."
+        },
+        {
+          "id": "linha-m",
+          "nome": "Linha M",
+          "descricao": "Disco no centro do sarcômero, no meio da banda H, onde proteínas de ligação mantêm unidos e alinhados os filamentos grossos."
+        },
+        {
+          "id": "banda-a",
+          "nome": "Banda A",
+          "descricao": "Faixa escura (anisotrópica) com o comprimento dos filamentos grossos; nas extremidades, filamentos finos se sobrepõem aos grossos. Não muda de comprimento na contração."
+        },
+        {
+          "id": "banda-i",
+          "nome": "Banda I",
+          "descricao": "Faixa clara (isotrópica) só com filamentos finos, atravessada ao meio pela linha Z: cada metade pertence a um sarcômero. Encurta na contração."
+        },
+        {
+          "id": "banda-h",
+          "nome": "Banda H",
+          "descricao": "Região central da banda A só com filamentos grossos, cortada pela linha M; encurta na contração e pode desaparecer na contração intensa."
+        },
+        {
+          "id": "filamento-fino",
+          "nome": "Filamento fino (actina)",
+          "descricao": "Dupla hélice de actina F, com tropomiosina e troponina (não desenhadas), ancorada na linha Z pela α-actinina; mede cerca de 1,0 µm. Na contração, desliza em direção à linha M."
+        },
+        {
+          "id": "filamento-grosso",
+          "nome": "Filamento grosso (miosina II)",
+          "descricao": "Feixe bipolar de moléculas de miosina II com cerca de 1,6 µm: as cabeças, que formam as pontes cruzadas e hidrolisam ATP, voltam-se para as linhas Z, e o centro, junto da linha M, não tem cabeças."
+        },
+        {
+          "id": "titina",
+          "nome": "Titina",
+          "descricao": "Proteína gigante e elástica que vai da linha Z à linha M: na banda I funciona como mola e, na banda A, prende-se ao filamento grosso e o mantém centrado no sarcômero."
+        },
+        {
+          "id": "tubulo-t",
+          "nome": "Túbulo T",
+          "descricao": "Invaginação do sarcolema que leva o potencial de ação ao interior da fibra; no músculo esquelético de mamíferos, fica na junção das bandas A e I, entre duas cisternas terminais, formando a tríade."
+        },
+        {
+          "id": "reticulo-sarcoplasmatico",
+          "nome": "Retículo sarcoplasmático",
+          "descricao": "Retículo endoplasmático liso da fibra muscular, com túbulos longitudinais sobre a banda A e cisternas terminais junto aos túbulos T; armazena Ca²⁺, libera-o pelos receptores de rianodina e o recaptura pela SERCA."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "juncoes-celulares",
+      "ordem": 5,
+      "titulo": "Junções celulares do epitélio",
+      "escala": "Esquema fora de escala",
+      "contexto": [
+        "Esquema fora de escala: o espaço entre as células, de poucas dezenas de nanômetros, as junções e os filamentos foram muito aumentados em relação ao tamanho das células.",
+        "Só duas células: num epitélio, cada célula tem vizinhas em todos os lados e as zônulas circundam a célula inteira, por isso as faixas aparecem também nas faces sem vizinha desenhada.",
+        "Desmossomos e junção comunicante estão desenhados só na face lateral comum; a posição da junção comunicante na face lateral varia, e ela não faz parte do complexo juncional.",
+        "A zônula de oclusão aparece como faixa contínua; ao microscópio eletrônico, ela se vê como pontos de fusão das membranas, formados por fileiras de claudinas e ocludina.",
+        "Microvilosidades em número muito menor e mais grossas que as reais; o eixo de actina de cada uma e a trama terminal não foram desenhados. Núcleos sem detalhe; organelas omitidas.",
+        "Lâmina basal: só a lâmina densa está desenhada; a faixa clara entre ela e a célula corresponde à lâmina lúcida, atravessada pelos filamentos de ancoragem, e que o Ross registra poder ser artefato de fixação.",
+        "Cores convencionais, não HE: células translúcidas, zônula de oclusão em verde-petróleo, zônula de adesão em azul, actina em vermelho, desmossomos em roxo, queratina em verde, conexons em rosa, hemidesmossomos em laranja e lâmina basal em cinza."
+      ],
+      "descricao": "Duas células vizinhas de um epitélio simples cilíndrico, com microvilosidades no ápice. Na face lateral, logo abaixo do ápice, o complexo juncional: a zônula de oclusão, a mais apical; a zônula de adesão, com o cinturão de filamentos de actina por dentro de cada célula; e o desmossomo, com placas presas a filamentos intermediários de queratina. Mais abaixo, outros desmossomos e uma junção comunicante, placa de conexons que liga os citoplasmas. Na base, hemidesmossomos prendem as células à lâmina basal.",
+      "destaques": [
+        "Complexo juncional, do ápice para a base: zônula de oclusão (claudinas e ocludina; veda a via paracelular e separa os domínios apical e basolateral), zônula de adesão (E-caderina, ligada por cateninas ao cinturão de actina) e desmossomo (desmogleínas e desmocolinas, com placa ancorada a filamentos de queratina).",
+        "Zônulas são faixas contínuas em volta de toda a célula; o desmossomo é uma mácula, junção em forma de disco.",
+        "Junção comunicante: conexons de conexinas, alinhados entre as duas membranas, formam canais por onde passam íons e pequenas moléculas de um citoplasma ao outro.",
+        "Hemidesmossomo: integrina α6β4 e BP180 (colágeno XVII) prendem a célula à lâmina basal, e a placa (BP230, plectina) recebe filamentos de queratina. Autoanticorpos contra desmogleínas causam o pênfigo; contra componentes do hemidesmossomo, o penfigoide bolhoso."
+      ],
+      "topicos": ["his-02-epitelio-revestimento"],
+      "estruturas": [
+        {
+          "id": "epitelio-simples-cilindrico",
+          "nome": "Epitélio simples cilíndrico (células)",
+          "descricao": "Células mais altas que largas, com núcleo próximo à base, apoiadas na lâmina basal; o ápice tem microvilosidades, e as faces laterais, as junções com as células vizinhas."
+        },
+        {
+          "id": "microvilosidades",
+          "nome": "Microvilosidades",
+          "descricao": "Projeções digitiformes curtas da membrana apical, com eixo de filamentos de actina ancorado na trama terminal; aumentam a superfície de absorção."
+        },
+        {
+          "id": "zonula-de-oclusao",
+          "nome": "Zônula de oclusão",
+          "descricao": "Faixa contínua no ponto mais apical da face lateral, onde claudinas e ocludina fundem pontualmente as membranas vizinhas; veda a via paracelular e separa os domínios apical e basolateral."
+        },
+        {
+          "id": "zonula-de-adesao",
+          "nome": "Zônula de adesão",
+          "descricao": "Faixa contínua logo abaixo da zônula de oclusão, com E-caderina no espaço entre as células, ligada por cateninas ao cinturão de actina de cada célula."
+        },
+        {
+          "id": "cinturao-de-actina",
+          "nome": "Cinturão de actina",
+          "descricao": "Feixe de filamentos de actina que contorna o citoplasma apical na altura da zônula de adesão, preso à E-caderina pelas cateninas e associado à trama terminal."
+        },
+        {
+          "id": "desmossomo",
+          "nome": "Desmossomo",
+          "descricao": "Junção em forma de disco (mácula de adesão): desmogleínas e desmocolinas no espaço entre as células e, de cada lado, uma placa citoplasmática que ancora filamentos de queratina; dá resistência mecânica. O mais apical completa o complexo juncional."
+        },
+        {
+          "id": "filamentos-de-queratina",
+          "nome": "Filamentos intermediários de queratina",
+          "descricao": "Filamentos intermediários das células epiteliais que se prendem às placas dos desmossomos e dos hemidesmossomos e formam uma rede que distribui a tensão mecânica pela camada de células."
+        },
+        {
+          "id": "juncao-comunicante",
+          "nome": "Junção comunicante",
+          "descricao": "Placa de conexons alinhados entre as membranas vizinhas; cada conexon tem seis conexinas, e o par de conexons forma um canal por onde passam íons e pequenas moléculas entre os citoplasmas."
+        },
+        {
+          "id": "hemidesmossomo",
+          "nome": "Hemidesmossomo",
+          "descricao": "Junção da face basal que prende a célula à lâmina basal por integrina α6β4 e BP180 (colágeno XVII); a placa citoplasmática (BP230, plectina) recebe filamentos de queratina."
+        },
+        {
+          "id": "lamina-basal",
+          "nome": "Lâmina basal",
+          "descricao": "Camada de matriz sob o epitélio, produzida pelas células epiteliais: colágeno IV, laminina, nidogênio (entactina) e perlecan. No esquema, a placa cinza é a lâmina densa."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    }
+  ]
 }

@@ -7,15 +7,15 @@ import * as THREE from 'three';
 import { curva, fracaoMaisProxima, TrechoDeCurva, vec, type V3 } from './geometria-comum.ts';
 
 /** Faixas de córtex e medula (caixas translúcidas). */
-export const REGIOES = { topo: 1.62, juncao: 0, base: -1.72, xMin: -1.3, xMax: 1.25, zMin: -0.6, zMax: 0.6 };
+export const REGIOES = { topo: 1.75, juncao: 0, base: -1.72, xMin: -1.3, xMax: 1.2, zMin: -0.6, zMax: 0.6 };
 
 /** Corpúsculo renal: cápsula com folheto parietal aberto em janela para +z (modelo em corte). */
 export const CORPUSCULO = {
-  centro: [-0.38, 0.95, 0] as V3,
-  raioParietalExterno: 0.36,
-  raioParietalInterno: 0.325,
+  centro: [-0.36, 0.95, 0] as V3,
+  raioParietalExterno: 0.46,
+  raioParietalInterno: 0.415,
   /** volume translúcido do espaço capsular, logo dentro do folheto parietal */
-  raioEspaco: 0.319,
+  raioEspaco: 0.408,
   /** meio-ângulo da janela aberta para +z (rad) */
   janela: 0.85,
 };
@@ -26,7 +26,7 @@ export const DIRECAO_POLO_URINARIO: V3 = (() => {
 })();
 
 export const RAIOS = {
-  alcaCapilar: 0.024,
+  alcaCapilar: 0.028,
   aferente: 0.048,
   eferente: 0.036,
   proximal: 0.062,
@@ -41,7 +41,7 @@ export const polovascular = (): THREE.Vector3 => centro().addScaledVector(vec(DI
 export const poloUrinario = (): THREE.Vector3 => centro().addScaledVector(vec(DIRECAO_POLO_URINARIO), CORPUSCULO.raioParietalExterno);
 
 /** Hilo do tufo: onde a arteríola aferente se ramifica e a eferente se forma. */
-const HILO_Y = 1.17;
+const HILO_Y = CORPUSCULO.centro[1] + 0.28;
 
 // ----------------------------------------------------------------------------------- glomérulo
 /** Alças capilares do glomérulo: saem do hilo (lado aferente), vão a um lóbulo e voltam (lado eferente). */
@@ -62,13 +62,13 @@ export function curvasAlcasGlomerulares(n = 14): THREE.CatmullRomCurve3[] {
     const lado = (k % 2 ? 1 : -1) * 0.012;
     const ponto = (r: number, desvio: number) => c.clone().addScaledVector(d, r).addScaledVector(t, desvio);
     const pontos = [
-      new THREE.Vector3(c.x + 0.035 + lado, HILO_Y, c.z + lado),
-      ponto(0.1, 0.05),
-      ponto(0.17, 0.045),
-      ponto(0.205, 0),
-      ponto(0.17, -0.045),
-      ponto(0.1, -0.05),
-      new THREE.Vector3(c.x - 0.035 + lado, HILO_Y, c.z - lado),
+      new THREE.Vector3(c.x + 0.045 + lado, HILO_Y, c.z + lado),
+      ponto(0.13, 0.065),
+      ponto(0.22, 0.058),
+      ponto(0.265, 0),
+      ponto(0.22, -0.058),
+      ponto(0.13, -0.065),
+      new THREE.Vector3(c.x - 0.045 + lado, HILO_Y, c.z - lado),
     ];
     alcas.push(new THREE.CatmullRomCurve3(pontos, false, 'centripetal'));
   }
@@ -81,93 +81,94 @@ export function posicoesPodocitos(n = 14): { corpo: THREE.Vector3; normal: THREE
   return curvasAlcasGlomerulares(n).map((alca, k) => {
     const ponta = alca.getPoint(0.5);
     const normal = ponta.clone().sub(c).normalize();
-    const corpo = c.clone().addScaledVector(normal, 0.245);
+    const corpo = c.clone().addScaledVector(normal, 0.31);
     const t = alca.getTangent(0.5).normalize();
     const b = new THREE.Vector3().crossVectors(normal, t).normalize();
     const prolongamentos = [t, t.clone().negate(), k % 2 ? b : b.clone().negate()].map((dir) => [
-      c.clone().addScaledVector(normal, 0.24),
-      c.clone().addScaledVector(normal.clone().addScaledVector(dir, 0.3).normalize(), 0.232),
-      c.clone().addScaledVector(normal.clone().addScaledVector(dir, 0.55).normalize(), 0.226),
+      c.clone().addScaledVector(normal, 0.305),
+      c.clone().addScaledVector(normal.clone().addScaledVector(dir, 0.3).normalize(), 0.296),
+      c.clone().addScaledVector(normal.clone().addScaledVector(dir, 0.55).normalize(), 0.288),
     ]);
     return { corpo, normal, prolongamentos };
   });
 }
-export const RAIO_CORPO_PODOCITO = 0.034;
-export const RAIO_PROLONGAMENTO = 0.011;
+export const RAIO_CORPO_PODOCITO = 0.04;
+export const RAIO_PROLONGAMENTO = 0.013;
 
 // ---------------------------------------------------------------------------------- arteríolas
 /** A aferente (mais calibrosa) chega pela direita; a eferente sai pela esquerda; o túbulo distal passa entre as duas. */
 export function curvaAferente(): THREE.CatmullRomCurve3 {
-  return curva([[-0.33, HILO_Y - 0.01, 0], [-0.33, 1.3, 0], [-0.24, 1.37, 0], [-0.06, 1.46, 0], [0.12, 1.57, 0]]);
+  return curva([[-0.27, HILO_Y - 0.01, 0], [-0.27, 1.4, 0], [-0.16, 1.47, 0], [0, 1.57, 0], [0.16, 1.66, 0]]);
 }
 export function curvaEferente(): THREE.CatmullRomCurve3 {
-  return curva([[-0.43, HILO_Y - 0.01, 0], [-0.43, 1.3, 0], [-0.53, 1.37, 0], [-0.7, 1.46, 0], [-0.86, 1.56, 0]]);
+  return curva([[-0.45, HILO_Y - 0.01, 0], [-0.45, 1.4, 0], [-0.56, 1.47, 0], [-0.74, 1.57, 0], [-0.9, 1.66, 0]]);
 }
 /** Trecho da aferente com células justaglomerulares (túnica média junto ao polo vascular, fora da cápsula). */
 export function trechoJustaglomerular(): TrechoDeCurva {
   const aferente = curvaAferente();
-  const inicio = fracaoMaisProxima(aferente, new THREE.Vector3(-0.33, 1.32, 0));
-  const fim = fracaoMaisProxima(aferente, new THREE.Vector3(-0.2, 1.39, 0));
+  const inicio = fracaoMaisProxima(aferente, new THREE.Vector3(-0.27, 1.42, 0));
+  const fim = fracaoMaisProxima(aferente, new THREE.Vector3(-0.14, 1.48, 0));
   return new TrechoDeCurva(aferente, inicio, fim);
 }
 
 // --------------------------------------------------------------------------------- túbulos
 export function curvaProximal(): THREE.CatmullRomCurve3 {
-  const inicio = centro().addScaledVector(vec(DIRECAO_POLO_URINARIO), 0.3);
+  const inicio = centro().addScaledVector(vec(DIRECAO_POLO_URINARIO), 0.4);
   return curva([
     [inicio.x, inicio.y, inicio.z],
-    [-0.475, 0.56, 0],
-    [-0.53, 0.42, 0.1],
-    [-0.7, 0.36, 0.26],
-    [-0.92, 0.44, 0.22],
-    [-1.0, 0.64, 0.05],
-    [-0.9, 0.82, -0.15],
-    [-0.7, 0.74, -0.28],
-    [-0.6, 0.52, -0.22],
-    [-0.74, 0.3, -0.06],
-    [-0.98, 0.22, 0.1],
-    [-1.06, 0.02, 0.06],
+    [-0.49, 0.44, 0],
+    [-0.58, 0.3, 0.12],
+    [-0.8, 0.26, 0.26],
+    [-1.02, 0.38, 0.18],
+    [-1.1, 0.62, 0],
+    [-1.0, 0.84, -0.2],
+    [-0.82, 0.78, -0.32],
+    [-0.78, 0.52, -0.26],
+    [-0.9, 0.3, -0.08],
+    [-1.1, 0.2, 0.08],
+    [-1.14, 0, 0.04],
     // parte reta (pars recta), descendo pela medula externa
-    [-1.02, -0.22, 0],
-    [-0.99, -0.4, 0],
+    [-1.08, -0.22, 0],
+    [-1.04, -0.4, 0],
   ]);
 }
 export function curvaDescendenteDelgado(): THREE.CatmullRomCurve3 {
-  return curva([[-0.99, -0.4, 0], [-0.97, -0.75, 0], [-0.94, -1.05, 0], [-0.9, -1.25, 0]]);
+  return curva([[-1.04, -0.4, 0], [-1.02, -0.75, 0], [-0.99, -1.05, 0], [-0.95, -1.25, 0]]);
 }
 
 /** Ponto do túbulo distal encostado no polo vascular: no ângulo entre as arteríolas, acima das células mesangiais extraglomerulares. */
-export const DISTANCIA_TUBULO_AO_POLO = 0.12;
+export const DISTANCIA_TUBULO_AO_POLO = 0.15;
 export const pontoMacula = (): THREE.Vector3 => polovascular().addScaledVector(vec(DIRECAO_POLO_VASCULAR), DISTANCIA_TUBULO_AO_POLO);
 
 /** Túbulo distal inteiro (ramo ascendente espesso + túbulo contorcido distal), dividido na mácula densa. */
 export function curvaDistalCompleta(): THREE.CatmullRomCurve3 {
   const m = pontoMacula();
   return curva([
-    [-0.9, -1.25, 0],
-    [-0.86, -1.42, 0.02],
-    [-0.7, -1.52, -0.02],
-    [-0.52, -1.42, -0.08],
-    [-0.32, -1.0, -0.15],
-    [-0.1, -0.3, -0.2],
-    [0.02, 0.4, -0.24],
-    [0, 0.95, -0.28],
-    [-0.16, 1.32, -0.34],
-    [-0.32, m.y - 0.01, -0.24],
+    [-0.95, -1.25, 0],
+    [-0.91, -1.42, 0.02],
+    [-0.75, -1.52, -0.02],
+    [-0.57, -1.42, -0.08],
+    [-0.36, -1.0, -0.15],
+    [-0.12, -0.3, -0.22],
+    [0.1, 0.4, -0.3],
+    [0.12, 0.95, -0.36],
+    [-0.05, 1.4, -0.42],
+    [-0.26, m.y - 0.01, -0.3],
     // trecho reto ao longo de z, atravessando o ângulo entre as arteríolas no polo vascular
-    [m.x, m.y, -0.12],
+    [m.x, m.y, -0.13],
     [m.x, m.y, 0],
-    [m.x, m.y, 0.12],
-    [-0.3, 1.38, 0.3],
-    [-0.1, 1.25, 0.4],
-    [0.1, 1.05, 0.33],
-    [0.15, 0.8, 0.15],
-    [0.32, 0.62, 0.12],
-    [0.52, 0.72, 0.32],
-    [0.62, 0.95, 0.22],
-    [0.7, 1.1, 0.05],
+    [m.x, m.y, 0.13],
+    // túbulo contorcido distal: sobe por cima do polo (sem cobri-lo) e desce à direita do corpúsculo
+    [-0.2, 1.62, 0.28],
+    [0.06, 1.55, 0.36],
+    [0.26, 1.33, 0.3],
+    [0.3, 1.06, 0.12],
+    [0.46, 0.86, 0.05],
+    [0.63, 0.96, 0.28],
+    [0.67, 1.2, 0.2],
+    [0.73, 1.33, 0.05],
     // fim no ducto coletor (o túbulo de conexão não é destacado)
-    [0.9, 1.15, 0],
+    [0.9, 1.36, 0],
   ]);
 }
 export function divisaoMacula(): number {
@@ -180,20 +181,21 @@ export function curvaDistal(): TrechoDeCurva {
   return new TrechoDeCurva(curvaDistalCompleta(), divisaoMacula(), 1);
 }
 
-/** Mácula densa: placa de células altas na parede do túbulo voltada para o polo vascular (−y), ao longo de z. */
-export const MACULA = { comprimento: 0.16, raio: RAIOS.espesso + 0.007, arco: (2 * Math.PI) / 3 };
+/** Mácula densa: placa de células altas (mais espessa que o resto da parede) voltada para o polo vascular (−y), ao longo de z. */
+export const MACULA = { comprimento: 0.16, raio: RAIOS.espesso + 0.022, arco: (2 * Math.PI) / 3 };
 /** Centro da face da mácula voltada para o polo vascular. */
 export const centroFaceMacula = (): THREE.Vector3 => pontoMacula().addScaledVector(vec(DIRECAO_POLO_VASCULAR), -MACULA.raio);
 
 /** Células mesangiais extraglomerulares: entre o polo vascular, as arteríolas e a mácula densa. */
 export function posicoesMesangiaisExtraglomerulares(): THREE.Vector3[] {
   const p = polovascular();
-  const y = p.y + 0.035;
+  // no ângulo entre as arteríolas (x entre os dois pedículos), sob a mácula densa; nenhuma à frente dela
+  const y = p.y + 0.045;
   return [
-    [-0.38, y, 0.09], [-0.38, y, -0.09], [-0.32, y + 0.005, 0.1], [-0.44, y + 0.005, 0.1], [-0.32, y + 0.005, -0.1], [-0.44, y + 0.005, -0.1],
+    [p.x - 0.006, y, 0], [p.x, y - 0.002, -0.066], [p.x - 0.01, y - 0.004, -0.13], [p.x - 0.012, y - 0.006, 0.058],
   ].map(([x, yy, z]) => new THREE.Vector3(x, yy, z));
 }
-export const RAIO_MESANGIAL_EXTRA = 0.03;
+export const RAIO_MESANGIAL_EXTRA = 0.031;
 
 /** Ducto coletor: perfil (raio, y) de uma revolução em torno do eixo vertical em x = DUCTO_X. */
 export const DUCTO_X = 0.95;
@@ -222,6 +224,5 @@ export function perfilCapsula(passos = 24): THREE.Vector2[] {
     pts.push(new THREE.Vector2(ri * Math.sin(t), ri * Math.cos(t)));
   }
   pts.push(pts[0].clone());
-  // o eixo do torno não pode ter raio exatamente 0 repetido (polo): mantém como está, o Lathe fecha o polo
   return pts.map((p) => new THREE.Vector2(Math.max(0, p.x), p.y));
 }
