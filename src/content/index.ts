@@ -50,8 +50,8 @@ export const LAMINAS: Lamina[] = Object.values(arquivosLaminas)
   .flatMap((a) => a.laminas)
   .sort((a, b) => a.ordem - b.ordem);
 
-/** Modelos 3D da histologia (content/histologia/modelos3d.json; o glob tolera o arquivo ainda não existir). */
-const arquivosModelos3d = import.meta.glob('../../content/histologia/modelos3d.json', { eager: true, import: 'default' }) as Record<string, { modelos: ModeloHistologia3D[] }>;
+/** Modelos 3D da histologia: content/histologia/modelos3d-*.json (um arquivo por grupo de modelos). */
+const arquivosModelos3d = import.meta.glob('../../content/histologia/modelos3d*.json', { eager: true, import: 'default' }) as Record<string, { modelos: ModeloHistologia3D[] }>;
 export const MODELOS_HISTOLOGIA_3D: ModeloHistologia3D[] = Object.values(arquivosModelos3d)
   .flatMap((a) => a.modelos)
   .sort((a, b) => a.ordem - b.ordem);

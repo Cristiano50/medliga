@@ -24,7 +24,7 @@ for (const disc of readdirSync(join(raiz, 'content'))) {
     ]);
   }
 }
-for (const extra of ['content/embriologia/estagios.json', 'content/embriologia/derivados.json', 'content/histologia/modelos3d.json']) {
+for (const extra of ['content/embriologia/estagios.json', 'content/embriologia/derivados.json', 'content/histologia/modelos3d-a.json', 'content/histologia/modelos3d-b.json']) {
   if (!existsSync(join(raiz, extra))) continue;
   const d = JSON.parse(readFileSync(join(raiz, extra), 'utf8'));
   const lista = d.estagios ?? d.modelos;
