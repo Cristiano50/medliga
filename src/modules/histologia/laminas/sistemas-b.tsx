@@ -330,12 +330,12 @@ export function LaminaEsofago(rng: Rng) {
   const dDucto = (x: number, y: number) => distLinha(ducto, x, y);
   // papilas da lâmina própria projetando-se no epitélio
   const papilas: { x: number; h: number; w: number }[] = [];
-  for (let x = entre(rng, 30, 70); x < W + 40; x += entre(rng, 92, 128)) if (Math.abs(x - 745) > 42) papilas.push({ x, h: entre(rng, 58, 84), w: entre(rng, 15, 20) });
+  for (let x = entre(rng, 30, 70); x < W + 40; x += entre(rng, 92, 128)) if (Math.abs(x - 745) > 44) papilas.push({ x, h: entre(rng, 58, 82), w: entre(rng, 17, 22) });
   const juncao = (x: number) => {
     let y = 240 + 4 * Math.sin(x / 90);
     for (const p of papilas) {
       const u = (x - p.x) / p.w;
-      if (Math.abs(u) < 1) y -= p.h * Math.pow(Math.cos((u * Math.PI) / 2), 1.3);
+      if (Math.abs(u) < 1) y -= p.h * Math.pow(1 - Math.pow(Math.abs(u), 2.4), 1.3); // ponta arredondada
     }
     return y;
   };
@@ -359,7 +359,7 @@ export function LaminaEsofago(rng: Rng) {
   for (const { x, y, tx, ty } of reamostrar(curvaFina, 9.6, 4)) {
     const nx = ty; // normal para dentro do epitélio (para cima)
     const ny = -tx;
-    if (dDucto(x, y) < 12) continue;
+    if (dDucto(x, y) < 13) continue;
     const em = (u: number, v: number): P => [x + tx * u + nx * v, y + ty * u + ny * v];
     const [cx, cy] = em(0, 7.5);
     // no fundo das cristas a curva é côncava e as células convergem: pula a que encostaria na vizinha
@@ -372,15 +372,21 @@ export function LaminaEsofago(rng: Rng) {
   let profCel = '';
   let medCel = '';
   let medNuc = '';
-  for (const [x, y] of grade(rng, 17, [-10, 60, W + 10, 270], 0.11)) {
-    const s = sup(x);
-    if (y < s + 47 || y > juncao(x) - 4 || distJuncao(x, y) < 16.5 || dDucto(x, y) < 11.5) continue;
-    const k = (y - s) / (juncao(x) - s); // 0 = superfície, 1 = base
-    const fy = k > 0.55 ? 1 : 0.86;
-    const pts = hexagono(rng, x, y, 9.7).map(([px, py]): P => [x + (px - x) * 1.02, y + (py - y) * fy]);
-    if (k > 0.62) profCel += pg(pts);
-    else medCel += pg(pts);
-    if (esp.tentar(x, y, 5)) medNuc += circ(x + entre(rng, -1, 1), y + entre(rng, -1, 1), k > 0.62 ? 3.6 : 3.3);
+  const faixa = (x: number, y: number) => (y - sup(x)) / (juncao(x) - sup(x)); // 0 = superfície, 1 = base
+  for (const [x, y] of grade(rng, 15, [-10, 60, W + 10, 270], 0.1)) {
+    // parabasais: pequenas, mais basófilas
+    if (y < sup(x) + 47 || y > juncao(x) - 4 || distJuncao(x, y) < 16 || dDucto(x, y) < 12.5 || faixa(x, y) <= 0.58) continue;
+    esp.marcar(x, y, 7.4);
+    profCel += pg(hexagono(rng, x, y, 8.6));
+    medNuc += circ(x + entre(rng, -0.8, 0.8), y + entre(rng, -0.8, 0.8), 3.4);
+  }
+  for (const [x, y] of grade(rng, 19.5, [-10, 50, W + 10, 270], 0.08)) {
+    // intermediárias: maiores e claras (glicogênio); a grade fecha sem vãos (epitélio coeso)
+    const k = faixa(x, y);
+    if (y < sup(x) + 46 || y > juncao(x) - 4 || distJuncao(x, y) < 18 || dDucto(x, y) < 13.5 || k > 0.64 || !esp.livre(x, y, 7.6)) continue;
+    esp.marcar(x, y, 9.4);
+    medCel += pg(hexagono(rng, x, y, 11.4));
+    medNuc += circ(x + entre(rng, -1, 1), y + entre(rng, -0.8, 0.8), 3.3);
   }
   // camadas superficiais: células achatadas que mantêm o núcleo (não há camada córnea)
   let supCel = '';
@@ -420,13 +426,13 @@ export function LaminaEsofago(rng: Rng) {
       </g>,
     );
   }
-  const dentroLP = (x: number, y: number) => y > juncao(x) + 5 && y < yMM0 - 5 && dDucto(x, y) > 11;
+  const dentroLP = (x: number, y: number) => y > juncao(x) + 5 && y < yMM0 - 5 && dDucto(x, y) > 13;
 
   // --- muscular da mucosa: músculo liso longitudinal, aqui cortado de través, em feixes
   const cortesMM = [-10];
   while (cortesMM[cortesMM.length - 1] < W) cortesMM.push(cortesMM[cortesMM.length - 1] + entre(rng, 70, 120));
   const entreFeixes = (x: number) => cortesMM.some((c) => Math.abs(x - c) < 3);
-  const mm = lisoTransversal(rng, yMM0, yMM1, (x, y) => entreFeixes(x) || dDucto(x, y) < 11);
+  const mm = lisoTransversal(rng, yMM0, yMM1, (x, y) => entreFeixes(x) || dDucto(x, y) < 12.5);
 
   // --- submucosa: conjuntivo denso com vasos e glândulas esofágicas (mucosas)
   const glandulas: { cx: number; cy: number; acinos: P[] }[] = [
@@ -434,38 +440,44 @@ export function LaminaEsofago(rng: Rng) {
     { cx: 712, cy: 404, acinos: [] },
   ];
   for (const g of glandulas)
-    for (const [x, y] of grade(rng, 31, [g.cx - 80, g.cy - 50, g.cx + 80, g.cy + 50], 0.08))
-      if (((x - g.cx) / 74) ** 2 + ((y - g.cy) / 44) ** 2 < 1) g.acinos.push([x, y]);
+    for (const [x, y] of grade(rng, 31, [g.cx - 80, g.cy - 50, g.cx + 80, g.cy + 50], 0.04))
+      if (((x - g.cx) / 74) ** 2 + ((y - g.cy) / 44) ** 2 < 1 && dDucto(x, y) > 13 + 13.6) g.acinos.push([x, y]);
   let acinoCel = '';
   let acinoLim = '';
   let acinoNuc = '';
   let acinoLuz = '';
   for (const g of glandulas)
     for (const [x, y] of g.acinos) {
-      const r = 15;
+      const r = 13.6; // grade de 31 un com pouco desvio: ácinos vizinhos não se sobrepõem
       acinoCel += circ(x, y, r);
       const n = 7;
       const giro = entre(rng, 0, 1);
       for (let i = 0; i < n; i++) {
         const a = (2 * Math.PI * i) / n + giro;
-        acinoLim += `M${q(x + Math.cos(a) * 3)} ${q(y + Math.sin(a) * 3)}L${q(x + Math.cos(a) * r)} ${q(y + Math.sin(a) * r)}`;
+        acinoLim += `M${q(x + Math.cos(a) * 4.4)} ${q(y + Math.sin(a) * 4.4)}L${q(x + Math.cos(a) * r)} ${q(y + Math.sin(a) * r)}`;
         const am = a + Math.PI / n;
         acinoNuc += seg(x + Math.cos(am) * (r - 2.6), y + Math.sin(am) * (r - 2.6), 4.2, am + Math.PI / 2);
       }
-      acinoLuz += circ(x, y, 2.4);
+      acinoLuz += circ(x, y, 4); // luz mais ampla que a de um ácino seroso
     }
-  // ducto: luz estreita revestida por epitélio cúbico; dentro do epitélio da mucosa, por células achatadas
+  // ducto excretor: epitélio estratificado de duas camadas (luminal cúbica a cilíndrica baixa e basal achatada);
+  // dentro do epitélio da mucosa, perto da abertura, o revestimento se achata (pavimentoso)
   let ductoBordas = '';
-  let ductoNucC = '';
+  const ductoLum: P[] = [];
+  let ductoBas = '';
   let ductoNucA = '';
-  for (const { x, y, tx, ty } of reamostrar(ducto, 6.4, 3)) {
+  for (const { x, y, tx, ty } of reamostrar(ducto, 6.2, 3)) {
     const noEpitelio = y < juncao(x) - 2;
     for (const lado of [-1, 1]) {
       const nx = -ty * lado;
       const ny = tx * lado;
-      if (!noEpitelio) ductoBordas += `M${q(x + tx * 3.2 + nx * 2.6)} ${q(y + ty * 3.2 + ny * 2.6)}L${q(x + tx * 3.2 + nx * 8.4)} ${q(y + ty * 3.2 + ny * 8.4)}`;
-      if (noEpitelio) ductoNucA += seg(x + nx * 5.4, y + ny * 5.4, 3.6, Math.atan2(ty, tx));
-      else ductoNucC += pt(x + nx * 5.6, y + ny * 5.6);
+      if (noEpitelio) {
+        ductoNucA += seg(x + nx * 5.4, y + ny * 5.4, 3.6, Math.atan2(ty, tx));
+        continue;
+      }
+      ductoBordas += `M${q(x + tx * 3.1 + nx * 2.5)} ${q(y + ty * 3.1 + ny * 2.5)}L${q(x + tx * 3.1 + nx * 7)} ${q(y + ty * 3.1 + ny * 7)}`;
+      ductoLum.push([x + nx * 4.7, y + ny * 4.7]);
+      ductoBas += seg(x + tx * 1.6 + nx * 8.8, y + ty * 1.6 + ny * 8.8, 3.4, Math.atan2(ty, tx));
     }
   }
   const vasosSM = [vaso(rng, 460, 420, 15, true, 'a1'), vaso(rng, 515, 432, 22, false, 'v1'), vaso(rng, 905, 380, 11, true, 'a2'), vaso(rng, 60, 440, 16, false, 'v2')];
@@ -501,7 +513,7 @@ export function LaminaEsofago(rng: Rng) {
         {capilares}
       </E>
       <E id="epitelio-estratificado-pavimentoso">
-        <path d={epitelio} fill="#eebad1" />
+        <path d={epitelio} fill="#efc0d6" />
         <path d={profCel} fill="#e9a7c5" stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
         <path d={medCel} fill="#f2c6da" stroke="#dc93b5" strokeWidth={0.8} />
         <path d={supCel} fill="#f6d6e5" stroke="#d98fb2" strokeWidth={0.8} />
@@ -536,12 +548,13 @@ export function LaminaEsofago(rng: Rng) {
         <path d={acinoLuz} fill={HE.luz} />
         <path d={acinoNuc} stroke={HE.nucleoEscuro} strokeWidth={2.4} strokeLinecap="round" />
         <Deco>
-          <path d={lin(ducto.slice(0, 5))} stroke={HE.colagenoClaro} strokeWidth={23} strokeLinejoin="round" fill="none" />
+          <path d={lin(ducto.slice(0, 5))} stroke={HE.colagenoClaro} strokeWidth={27} strokeLinejoin="round" fill="none" />
         </Deco>
-        <path d={lin(ducto)} stroke="#eab3cd" strokeWidth={17} strokeLinejoin="round" fill="none" />
+        <path d={lin(ducto)} stroke="#e8adc9" strokeWidth={21} strokeLinejoin="round" fill="none" />
         <path d={ductoBordas} stroke="#d58db0" strokeWidth={0.8} />
         <path d={lin(ducto)} stroke={HE.luz} strokeWidth={4.6} strokeLinejoin="round" strokeLinecap="round" fill="none" />
-        <path d={ductoNucC} stroke={HE.nucleo} strokeWidth={3.8} strokeLinecap="round" />
+        <path d={pontos(ductoLum)} stroke={HE.nucleo} strokeWidth={3.6} strokeLinecap="round" />
+        <path d={ductoBas} stroke={HE.nucleoEscuro} strokeWidth={2.2} strokeLinecap="round" />
         <path d={ductoNucA} stroke={HE.nucleoEscuro} strokeWidth={2.3} strokeLinecap="round" />
       </E>
       <E id="muscular-externa">
@@ -574,18 +587,26 @@ export function LaminaEstomago(rng: Rng) {
   const yPit = 162; // fundo das fossetas
   const yMM0 = 550;
   const yMM1 = 588;
-  const R = 26; // raio do "ombro" entre a superfície e a fosseta
-  const lwPit = (y: number) => 8.5 - 4.5 * Math.min(1, Math.max(0, (y - yS - R) / (yPit - yS - R))); // funil
-  const lG = 3.6; // meia-largura da luz da glândula
+  const R = 11; // raio do "ombro" entre a superfície e a boca da fosseta
+  // fosseta em funil: boca larga (≈ 28 un), afinando até ≈ 9 un no fundo
+  const lwPit = (y: number) => 4.5 + 9.5 * (1 - Math.min(1, Math.max(0, (y - yS - R) / (yPit - yS - R)))) ** 1.6;
+  const lG = 3.4; // meia-largura da luz da glândula
   const lwGl = (y: number, yb: number) => (y > yb - 40 ? lG + (1.4 * (y - yb + 40)) / 40 : lG); // base um pouco dilatada
-  const yN = yPit + 48; // fim do colo inclinado: daí para baixo a glândula é reta
-  const yC = yPit + 8; // topo da crista entre as duas glândulas que se abrem na mesma fosseta
-  const rC = 16; // raio da crista (≈ altura das células, para elas não se cruzarem)
-  const fossetas = Array.from({ length: 8 }, (_, k) => 50 + 136 * k + entre(rng, -5, 5));
+  const yN = yPit + 40; // fim do colo inclinado: daí para baixo a glândula é reta
+  const yC = yPit + 6; // topo da crista entre as duas glândulas que se abrem na mesma fosseta
+  const rC = 10; // raio da crista (as células ali são baixas, para não se cruzarem)
+  // fossetas próximas (a cada 104 un), cada uma com duas glândulas: eixo de lâmina própria entre fossetas ≈ 34 un
+  const PF = 104;
+  const fossetas = Array.from({ length: 10 }, (_, k) => 52 + PF * k + entre(rng, -3, 3));
   const glandulas = fossetas.flatMap((x) => [
-    { x: x - 34 + entre(rng, -2, 2), fosseta: x, lado: -1, fundo: entre(rng, 524, 538) },
-    { x: x + 34 + entre(rng, -2, 2), fosseta: x, lado: 1, fundo: entre(rng, 524, 538) },
+    { x: x - 26 + entre(rng, -1.5, 1.5), fosseta: x, lado: -1, fundo: entre(rng, 524, 538) },
+    { x: x + 26 + entre(rng, -1.5, 1.5), fosseta: x, lado: 1, fundo: entre(rng, 524, 538) },
   ]);
+  /** Topo da crista entre duas fossetas: levemente arqueado (crista estreita e arredondada, não um platô). */
+  const topoCrista = (x0: number, x1: number): P[] => {
+    const n = Math.max(2, Math.round((x1 - x0) / 5));
+    return Array.from({ length: n + 1 }, (_, i): P => [x0 + ((x1 - x0) * i) / n, yS - 7 * Math.sin((Math.PI * i) / n)]);
+  };
   const passos = (a: P, b: P, n: number) => Array.from({ length: n }, (_, i): P => [a[0] + ((b[0] - a[0]) * (i + 1)) / n, a[1] + ((b[1] - a[1]) * (i + 1)) / n]);
   /** Luz de uma glândula do topo do colo (junto à fosseta) até o fundo, como contorno no sentido da luz à esquerda. */
   const paredeGlandula = (g: (typeof glandulas)[number]) => {
@@ -600,35 +621,42 @@ export function LaminaEstomago(rng: Rng) {
   };
 
   // contorno apical contínuo: superfície → fosseta → glândula esquerda → crista → glândula direita → fosseta → superfície
-  const cont: P[] = [[-30, yS]];
+  const cont: P[] = [];
+  let xAnterior = -60;
   for (let k = 0; k < fossetas.length; k++) {
     const px = fossetas[k];
     const l0 = lwPit(yS + R);
-    cont.push(...arco(px - l0 - R, yS + R, R, -90, 0, 10));
+    cont.push(...topoCrista(xAnterior, px - l0 - R).slice(0, -1));
+    cont.push(...arco(px - l0 - R, yS + R, R, -90, 0, 6));
     for (let y = yS + R + 4; y <= yPit; y += 4) cont.push([px - lwPit(y), y]);
     cont.push(...paredeGlandula(glandulas[2 * k]));
-    cont.push(...arco(px, yC + rC, rC, 180, 360, 10));
+    cont.push(...arco(px, yC + rC, rC, 180, 360, 8));
     cont.push(...paredeGlandula(glandulas[2 * k + 1]));
     for (let y = yPit - 4; y > yS + R; y -= 4) cont.push([px + lwPit(y), y]);
-    cont.push(...arco(px + l0 + R, yS + R, R, 180, 270, 10));
+    cont.push(...arco(px + l0 + R, yS + R, R, 180, 270, 6));
+    xAnterior = px + l0 + R;
   }
-  cont.push([W + 60, yS]);
+  cont.push(...topoCrista(xAnterior, W + 60));
 
-  // tipo de célula pela profundidade: superfície/fosseta → colo → corpo → base
+  // tipo de célula pela profundidade: superfície/fosseta → colo → metade superior → base
   const escolher = (a: { x: number; y: number }) => {
     const y = a.y;
-    if (y < yPit + 2) return { tipo: 'sup', n: 2, prof: 22 };
+    if (y < yPit + 2) return { tipo: 'sup', n: 2, prof: 21 };
     const r = rng();
     // na crista as células convergem: só células mucosas do colo, mais baixas
-    if (fossetas.some((px) => Math.hypot(a.x - px, y - yC - rC) < rC + 3)) return { tipo: 'colo', n: 2, prof: 14 };
+    if (fossetas.some((px) => Math.hypot(a.x - px, y - yC - rC) < rC + 3)) return { tipo: 'colo', n: 2, prof: 9 };
     // logo abaixo da crista, o septo entre os dois colos é estreito: a altura das células não passa da metade
     // da largura dele (senão as células dos dois lados se sobreporiam)
     const px = fossetas.reduce((m, f) => (Math.abs(f - a.x) < Math.abs(m - a.x) ? f : m));
-    if (y < yN + 2 && Math.abs(a.x - px) < 30) return { tipo: 'colo', n: 2, prof: Math.max(7, Math.min(17, Math.abs(a.x - px) - 1.5)) };
-    if (y < 228) return r < 0.62 ? { tipo: 'colo', n: 2, prof: 17 } : { tipo: 'parietal', n: 4, prof: 20, bojo: 4 };
-    // no fundo curvo da glândula, só células principais (uma parietal ali ficaria deformada)
-    const pPar = y < 440 ? 0.64 - (0.34 * (y - 228)) / 212 : y < 494 ? 0.2 : 0;
-    return r < pPar ? { tipo: 'parietal', n: 4, prof: 20, bojo: 4 } : { tipo: 'principal', n: 2, prof: 18 };
+    if (y < yN + 2 && Math.abs(a.x - px) < 23) return { tipo: 'colo', n: 2, prof: Math.max(6, Math.min(16, Math.abs(a.x - px) - 1.5)) };
+    const parietal = { tipo: 'parietal', n: 4, prof: 17, bojo: 4 };
+    if (y < 228) return r < 0.6 ? { tipo: 'colo', n: 2, prof: 16 } : parietal;
+    // metade superior: parietais, com algumas mucosas do colo; as principais só aparecem mais abaixo
+    if (y < 300) return r < 0.8 ? parietal : { tipo: 'colo', n: 2, prof: 16 };
+    const g = glandulas.reduce((m, gl) => (Math.abs(gl.x - a.x) < Math.abs(m.x - a.x) ? gl : m));
+    // na base, poucas parietais espalhadas; no fundo curvo, só principais (uma parietal ali ficaria deformada)
+    const pPar = y < 440 ? 0.65 - (0.3 * (y - 300)) / 140 : y < g.fundo - 24 ? 0.15 : 0;
+    return r < pPar ? parietal : { tipo: 'principal', n: 2, prof: 15 };
   };
   const celulas = celulasNoContorno(reamostrar(cont, 5), escolher);
 
@@ -646,8 +674,9 @@ export function LaminaEstomago(rng: Rng) {
       if (espNuc.tentar(x, y, 3.2)) d.supNuc += seg(x, y, 4, Math.atan2(c.ny, c.nx));
     } else if (c.tipo === 'colo') {
       d.colo += pg(c.poli);
-      const [x, y] = naCelula(c, 0.84);
-      if (espNuc.tentar(x, y, 3)) d.coloNuc += seg(x, y, 4.5, Math.atan2(c.ty, c.tx));
+      // núcleo ovoide na base da célula
+      const [x, y] = naCelula(c, 0.78);
+      if (c.prof > 10 && espNuc.tentar(x, y, 3)) d.coloNuc += seg(x, y, 1.6, Math.atan2(c.ny, c.nx));
     } else if (c.tipo === 'parietal') {
       d.parietal += pg(c.poli);
       const [x, y] = naCelula(c, 0.5);
@@ -738,7 +767,7 @@ export function LaminaEstomago(rng: Rng) {
       </E>
       <E id="celula-mucosa-do-colo">
         <path d={d.colo} fill="#e5d8ea" stroke="#bfa8cf" strokeWidth={0.7} />
-        <path d={d.coloNuc} stroke={HE.nucleoEscuro} strokeWidth={2.8} strokeLinecap="round" />
+        <path d={d.coloNuc} stroke={HE.nucleoEscuro} strokeWidth={4.4} strokeLinecap="round" />
       </E>
       <E id="celula-principal">
         <path d={d.principal} fill="#9f88cd" stroke="#8068b6" strokeWidth={0.7} />
@@ -775,86 +804,196 @@ export function LaminaEstomago(rng: Rng) {
 }
 
 // ---------------------------------------------------------------------------------------------
+// Faixa de epitélio simples entre dois contornos com os mesmos vértices-chave (apical e basal): cada trecho é dividido
+// em n células, e o ponto basal de cada limite fica na mesma fração do trecho basal que o apical no trecho apical.
+// Assim as células ladrilham a faixa sem vãos nem sobreposição, inclusive onde convergem (boca da cripta) ou se
+// abrem em leque (fundo da cripta).
+function comprimento(l: P[]) {
+  let s = 0;
+  for (let i = 1; i < l.length; i++) s += Math.hypot(l[i][0] - l[i - 1][0], l[i][1] - l[i - 1][1]);
+  return s;
+}
+/** Ponto na fração f (0–1) do comprimento de uma polilinha. */
+function noPercurso(l: P[], f: number): P {
+  const total = comprimento(l);
+  if (!total) return l[0];
+  let alvo = f * total;
+  for (let i = 1; i < l.length; i++) {
+    const s = Math.hypot(l[i][0] - l[i - 1][0], l[i][1] - l[i - 1][1]);
+    if (alvo <= s || i === l.length - 1) {
+      const t = s ? Math.min(1, alvo / s) : 0;
+      return [l[i - 1][0] + (l[i][0] - l[i - 1][0]) * t, l[i - 1][1] + (l[i][1] - l[i - 1][1]) * t];
+    }
+    alvo -= s;
+  }
+  return l[l.length - 1];
+}
+/** Trecho de uma polilinha entre as frações f0 e f1, com os vértices internos. */
+function trechoDe(l: P[], f0: number, f1: number): P[] {
+  const total = comprimento(l);
+  const out: P[] = [noPercurso(l, f0)];
+  let s = 0;
+  for (let i = 1; i < l.length - 1; i++) {
+    s += Math.hypot(l[i][0] - l[i - 1][0], l[i][1] - l[i - 1][1]);
+    if (total && s / total > f0 && s / total < f1) out.push(l[i]);
+  }
+  out.push(noPercurso(l, f1));
+  return out;
+}
+type Trecho = { ap: P[]; ba: P[]; zona: string };
+type CelulaFaixa = { poli: P[]; a0: P; a1: P; b0: P; b1: P; zona: string };
+function celulasEmFaixa(trechos: Trecho[], largura: number) {
+  const cel: CelulaFaixa[] = [];
+  for (const t of trechos) {
+    // nos leques (fundo da cripta, anéis) conta a linha média, senão as poucas células ficariam largas demais na base
+    const n = Math.max(1, Math.round(Math.max(comprimento(t.ap), (comprimento(t.ap) + comprimento(t.ba)) / 2) / largura));
+    for (let j = 0; j < n; j++) {
+      const ap = trechoDe(t.ap, j / n, (j + 1) / n);
+      const ba = trechoDe(t.ba, j / n, (j + 1) / n);
+      cel.push({ poli: [...ap, ...ba.reverse()], a0: ap[0], a1: ap[ap.length - 1], b0: ba[ba.length - 1], b1: ba[0], zona: t.zona });
+    }
+  }
+  return cel;
+}
+/** Ponto no eixo da célula da faixa: v = fração da altura (0 = ápice). */
+const noEixo = (c: CelulaFaixa, v: number): P => {
+  const ax = (c.a0[0] + c.a1[0]) / 2;
+  const ay = (c.a0[1] + c.a1[1]) / 2;
+  const bx = (c.b0[0] + c.b1[0]) / 2;
+  const by = (c.b0[1] + c.b1[1]) / 2;
+  return [ax + (bx - ax) * v, ay + (by - ay) * v];
+};
+
 export const PARTES_COLON = ['epitelio-simples-cilindrico', 'cripta-intestinal', 'celula-caliciforme', 'lamina-propria', 'muscular-da-mucosa', 'submucosa', 'muscular-externa', 'plexo-mioenterico'];
 /**
- * Intestino grosso (cólon), corte transversal da parede: superfície plana, sem vilosidades, com criptas retas,
- * paralelas e muito próximas, ricas em células caliciformes. Luz em cima.
+ * Intestino grosso (cólon), corte transversal da parede, luz em cima. Mucosa sem vilosidades: superfície plana e
+ * contínua entre as bocas das criptas; criptas retas, muito próximas (pouca lâmina própria entre elas), de fundo em
+ * "U", com caliciformes. Num trecho perto da muscular da mucosa as criptas aparecem cortadas de través (anéis),
+ * como acontece quando o corte pega o fundo delas obliquamente. Muscular externa: circular interna, plexo
+ * mioentérico e longitudinal externa delgada, espessada numa tênia do cólon; abaixo, a serosa.
  */
 export function LaminaColon(rng: Rng) {
-  const yS = 24;
+  const yS = 24; // superfície (plana)
   const yMM0 = 306;
   const yMM1 = 324;
   const yME0 = 436;
-  const ySepto0 = 578;
-  const ySepto1 = 594;
-  const R = 13; // ombro entre a superfície e a boca da cripta; ali as células são mais baixas para não se cruzarem
-  const prof = 18; // altura das células (≈ 2× a largura)
-  const lw = (y: number) => (y < yS + R + 24 ? 6 - (2.5 * (y - yS - R)) / 24 : 3.5); // luz estreita, boca um pouco mais larga
-  // criptas muito próximas ("tubos de ensaio"): pouca lâmina própria entre elas
-  const criptas = Array.from({ length: 17 }, (_, k) => ({ x: 20 + 60 * k + entre(rng, -3, 3), fundo: entre(rng, 284, 296) }));
-  const cont: P[] = [[-40, yS]];
+  const ySepto0 = 590;
+  const ySepto1 = 604;
+  const P = 50; // passo das criptas
+  const lw = 4.5; // meia-largura da luz da cripta (luz de 9 un, com muco)
+  const R = 4.5; // só arredonda a boca da cripta
+  const dS = 13; // altura das células da superfície e da boca
+  const dC = 16.5; // altura das células da cripta (≈ 2× a largura)
+  // altura da parede: um pouco menor junto à boca, onde a lâmina própria entre as criptas se alarga sob a superfície
+  const dParede = (y: number) => dS + (dC - dS) * Math.min(1, Math.max(0, (y - yS - dS) / 36));
+  const rosetaX = [640, 690, 740, 790];
+  const rosetaY = 263;
+  const rR = lw + dC; // raio externo do anel de células
+  const criptas = Array.from({ length: 21 }, (_, k) => {
+    const x = 15 + P * k + entre(rng, -1.5, 1.5);
+    // sobre as criptas cortadas de través (anéis), as longitudinais terminam mais acima
+    const curta = x > 600 && x < 810;
+    return { x, fundo: curta ? entre(rng, 196, 204) : entre(rng, 272, 283) };
+  });
+
+  // contornos apical (luz) e basal (lâmina própria), trecho a trecho
+  const trechos: Trecho[] = [];
+  const cont: P[] = [[-60, yS]];
+  let basalAnterior: P = [-60, yS + dS];
+  let apicalAnterior: P = [-60, yS];
   for (const c of criptas) {
-    cont.push(...arco(c.x - 6 - R, yS + R, R, -90, 0, 7));
-    for (let y = yS + R + 4; y < c.fundo; y += 4) cont.push([c.x - lw(y), y]);
-    cont.push(...arco(c.x, c.fundo, 4.5, 180, 0, 6));
-    for (let y = c.fundo - 4; y > yS + R; y -= 4) cont.push([c.x + lw(y), y]);
-    cont.push(...arco(c.x + 6 + R, yS + R, R, 180, 270, 7));
+    const mE: P = [c.x - lw - dS, yS + dS]; // canto basal (onde a superfície e a parede se encontram)
+    const mD: P = [c.x + lw + dS, yS + dS];
+    const ombroE = arco(c.x - lw - R, yS + R, R, -90, 0, 4);
+    const ombroD = arco(c.x + lw + R, yS + R, R, 180, 270, 4);
+    // superfície entre a cripta anterior e esta
+    trechos.push({ ap: [apicalAnterior, ombroE[0]], ba: [basalAnterior, mE], zona: 'sup' });
+    trechos.push({ ap: ombroE, ba: [mE, mE], zona: 'sup' });
+    const apE: P[] = [];
+    const baE: P[] = [];
+    for (let y = yS + R; y <= c.fundo; y += 6) apE.push([c.x - lw, y]);
+    for (let y = yS + dS; y <= c.fundo; y += 6) baE.push([c.x - lw - dParede(y), y]);
+    apE.push([c.x - lw, c.fundo]);
+    baE.push([c.x - lw - dC, c.fundo]);
+    trechos.push({ ap: apE, ba: baE, zona: 'cri' });
+    trechos.push({ ap: arco(c.x, c.fundo, lw, 180, 0, 12), ba: arco(c.x, c.fundo, lw + dC, 180, 0, 12), zona: 'fundo' });
+    trechos.push({ ap: [...apE].reverse().map(([x, y]): P => [2 * c.x - x, y]), ba: [...baE].reverse().map(([x, y]): P => [2 * c.x - x, y]), zona: 'cri' });
+    trechos.push({ ap: ombroD, ba: [mD, mD], zona: 'sup' });
+    cont.push(...ombroE, ...apE, ...arco(c.x, c.fundo, lw, 180, 0, 12), ...[...apE].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...ombroD);
+    apicalAnterior = ombroD[ombroD.length - 1];
+    basalAnterior = mD;
   }
-  cont.push([W + 40, yS]);
-  // caliciformes: ~1 em 3 na superfície, ~1 em 2 no terço inferior das criptas
-  const celulas = celulasNoContorno(reamostrar(cont, 4.6), (a) => ({
-    tipo: rng() < (a.y < yS + R ? 0.28 : a.y < 150 ? 0.4 : 0.52) ? 'cal' : 'abs',
-    n: 2,
-    prof: a.y > yS + 1 && a.y < yS + R + 2 ? 12 : prof,
-  }));
+  trechos.push({ ap: [apicalAnterior, [W + 60, yS]], ba: [basalAnterior, [W + 60, yS + dS]], zona: 'sup' });
+  cont.push([W + 60, yS]);
+  // criptas cortadas de través: anel de células em volta de uma luz central
+  for (const x of rosetaX)
+    trechos.push({ ap: arco(x, rosetaY, lw, 0, 360, 24), ba: arco(x, rosetaY, rR, 0, 360, 24), zona: 'anel' });
+
+  const celulas = celulasEmFaixa(trechos, 8.6);
+  // caliciformes: poucas na superfície (predominam as absortivas), cerca de 1 em 3 nas criptas, mais no fundo;
+  // no "U" do fundo ficam células-tronco e absortivas jovens (sem teca)
+  const pCal = (c: CelulaFaixa) => (c.zona === 'sup' ? 0.16 : c.zona === 'fundo' ? 0 : c.zona === 'anel' ? 0.38 : (c.a0[1] + c.a1[1]) / 2 > 150 ? 0.38 : 0.3);
   const espNuc = new Espaco();
   const d = { sup: '', supNuc: '', borda: '', cri: '', criNuc: '', cal: '', calTeca: '', calNuc: '' };
   for (const c of celulas) {
-    const naSuperficie = c.ay < yS + R - 2;
-    if (c.tipo === 'cal') {
+    const wA = Math.hypot(c.a1[0] - c.a0[0], c.a1[1] - c.a0[1]);
+    const wB = Math.hypot(c.b1[0] - c.b0[0], c.b1[1] - c.b0[1]);
+    const [ax, ay] = noEixo(c, 0);
+    const [bx, by] = noEixo(c, 1);
+    const h = Math.hypot(bx - ax, by - ay);
+    const eixo = Math.atan2(by - ay, bx - ax);
+    if (h < 4) continue;
+    const caliciforme = wA > 3 && rng() < pCal(c);
+    if (caliciforme) {
       d.cal += pg(c.poli);
-      const [tx, ty] = naCelula(c, 0.36);
-      d.calTeca += elip(tx, ty, c.prof * 0.34, 4.5, Math.atan2(c.ny, c.nx));
-      const [x, y] = naCelula(c, 0.86);
-      if (espNuc.tentar(x, y, 2.6)) d.calNuc += seg(x, y, 3, Math.atan2(c.ty, c.tx));
+      // teca dentro da célula: não passa da superfície apical nem das paredes laterais
+      const w = wA * 0.64 + wB * 0.36;
+      const [tx, ty] = noEixo(c, 0.38);
+      d.calTeca += elip(tx, ty, Math.min(0.3 * h, 0.38 * h - 0.9), Math.max(1.2, Math.min(4.4, w / 2 - 0.9)), eixo);
+      const [x, y] = noEixo(c, 0.86);
+      if (espNuc.tentar(x, y, 2.4)) d.calNuc += seg(x, y, 2.6, eixo + Math.PI / 2);
+      continue;
+    }
+    // na superfície as células convergem para a lâmina própria estreita: núcleo mais curto, para o leque não lembrar
+    // a ponta de uma vilosidade
+    const [x, y] = noEixo(c, c.zona === 'sup' ? 0.6 : 0.66);
+    const nuc = espNuc.tentar(x, y, 2.6) ? seg(x, y, c.zona === 'sup' ? 2.4 : 4.6, eixo) : '';
+    if (c.zona === 'sup') {
+      d.sup += pg(c.poli);
+      d.supNuc += nuc;
+      // planura estriada fina, só no topo plano das células absortivas da superfície
+      if (Math.abs(c.a0[1] - yS) < 0.5 && Math.abs(c.a1[1] - yS) < 0.5) d.borda += lin([[c.a0[0] + 0.4, yS + 0.7], [c.a1[0] - 0.4, yS + 0.7]]);
     } else {
-      const [x, y] = naCelula(c, 0.66);
-      const nuc = espNuc.tentar(x, y, 2.8) ? seg(x, y, 5, Math.atan2(c.ny, c.nx)) : '';
-      if (naSuperficie) {
-        d.sup += pg(c.poli);
-        d.supNuc += nuc;
-        // planura estriada (microvilosidades): faixa fina sobre as células absortivas da superfície
-        const k = c.poli.length / 2;
-        d.borda += lin(c.poli.slice(0, k).map(([px, py]): P => [px + c.nx * 1, py + c.ny * 1]));
-      } else {
-        d.cri += pg(c.poli);
-        d.criNuc += nuc;
-      }
+      d.cri += pg(c.poli);
+      d.criNuc += nuc;
     }
   }
   let luzCripta = '';
   for (const c of criptas) {
-    const esq: P[] = [];
-    const dir: P[] = [];
-    for (let y = yS + R; y < c.fundo; y += 4) {
-      esq.push([c.x - lw(y), y]);
-      dir.unshift([c.x + lw(y), y]);
+    const ap: P[] = [];
+    for (let y = yS + R; y <= c.fundo; y += 6) ap.push([c.x - lw, y]);
+    luzCripta += pg([[c.x - lw - R, yS - 0.5], ...arco(c.x - lw - R, yS + R, R, -90, 0, 4), ...ap, ...arco(c.x, c.fundo, lw, 180, 0, 12), ...[...ap].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...arco(c.x + lw + R, yS + R, R, 180, 270, 4), [c.x + lw + R, yS - 0.5]]);
+  }
+  luzCripta += rosetaX.map((x) => circ(x, rosetaY, lw)).join('');
+
+  // lâmina própria: colunas estreitas entre as criptas, faixa sob o fundo delas e em volta dos anéis
+  const naLP = (x: number, y: number, m: number) => {
+    if (y < yS + dS + m || y > yMM0 - m) return false;
+    if (rosetaX.some((rx) => Math.hypot(x - rx, y - rosetaY) < rR + m)) return false;
+    for (const c of criptas) {
+      if (Math.abs(x - c.x) > P) continue;
+      if (y <= c.fundo ? Math.abs(x - c.x) < lw + dParede(y) + m : Math.hypot(x - c.x, y - c.fundo) < lw + dC + m) return false;
     }
-    luzCripta += pg([[c.x - 6, yS + R - 6], ...esq, ...arco(c.x, c.fundo, 4.5, 180, 0, 6), ...dir, [c.x + 6, yS + R - 6]]);
-  }
-  // lâmina própria rica em células (linfócitos, plasmócitos), capilares junto às criptas
+    return true;
+  };
   const espLP = new Espaco();
-  for (const c of celulas) {
-    const [x, y] = naCelula(c, 0.5);
-    espLP.marcar(x, y, 10);
-  }
   let capLP = '';
   let hemLP = '';
-  for (let k = 0; k < 500 && capLP.length < 1500; k++) {
+  for (let k = 0; k < 900 && capLP.length < 1400; k++) {
     const x = entre(rng, 0, W);
-    const y = entre(rng, yS + 30, yMM0 - 8);
-    if (!espLP.tentar(x, y, 7)) continue;
-    capLP += elip(x, y, 3.2, 5, 0);
+    const y = entre(rng, yS + 30, yMM0 - 6);
+    if (!naLP(x, y, 4.4) || !espLP.tentar(x, y, 5.5)) continue;
+    capLP += elip(x, y, 2.8, 4.2, Math.PI / 2);
     hemLP += pt(x, y);
   }
   const mm = lisoLongitudinal(rng, yMM0, yMM1);
@@ -868,44 +1007,65 @@ export function LaminaColon(rng: Rng) {
     const x = entre(rng, -60, W);
     return `M${q(x)} ${q(y)}q${q(entre(rng, 25, 40))} ${q(entre(rng, -10, 10))} ${q(entre(rng, 60, 90))} 0t${q(entre(rng, 60, 90))} 0`;
   }).join('');
+
+  // muscular externa: circular interna; longitudinal externa delgada (≈ 18 un), espessada numa tênia do cólon
+  const tenia = (x: number) => {
+    const u = (x - 700) / 150;
+    return Math.abs(u) < 1 ? Math.cos((u * Math.PI) / 2) ** 2 : 0;
+  };
+  const yLong = (x: number) => ySepto1 + 18 + 88 * tenia(x); // limite externo da longitudinal
+  const ySerosa = (x: number) => yLong(x) + 8 + 52 * (1 - tenia(x)); // superfície serosa (mesotélio)
   const ganglios: [number, number, number, number, number][] = [
-    [140, 586, 44, 16, 3],
-    [480, 585, 52, 17, 4],
-    [820, 587, 40, 15, 3],
+    [140, 597, 44, 15, 3],
+    [430, 597, 50, 16, 4],
+    [760, 598, 40, 14, 3],
   ];
   const noGanglio = (x: number, y: number, m: number) => ganglios.some(([gx, gy, rx, ry]) => ((x - gx) / (rx + m)) ** 2 + ((y - gy) / (ry + m)) ** 2 < 1);
   const circular = lisoLongitudinal(rng, yME0, ySepto0, (x, y) => noGanglio(x, y, 4));
   const cortes = [-10];
-  while (cortes[cortes.length - 1] < W) cortes.push(cortes[cortes.length - 1] + entre(rng, 90, 150));
-  const longit = lisoTransversal(rng, ySepto1, H + 6, (x, y) => noGanglio(x, y, 3) || cortes.some((c) => Math.abs(x - c) < 3), 8);
-  const nervos = `M-10 586C40 582 80 588 100 586M190 586C280 583 360 590 430 585M530 585C620 582 720 590 782 587M858 587C920 584 970 589 1010 586`;
+  while (cortes[cortes.length - 1] < W) cortes.push(cortes[cortes.length - 1] + entre(rng, 70, 110));
+  const longit = lisoTransversal(rng, ySepto1, H + 14, (x, y) => y > yLong(x) - 2 || noGanglio(x, y, 3) || cortes.some((c) => Math.abs(x - c) < 2.5), 8);
+  const nervos = `M-10 597C40 593 80 599 96 597M184 597C260 594 330 601 380 596M480 596C580 593 680 601 720 598M800 598C880 595 960 600 1010 597`;
+  const xs = Array.from({ length: 53 }, (_, k) => -20 + k * 20);
+  const contornoLong = xs.map((x): P => [x, yLong(x)]);
+  const contornoSerosa = xs.map((x): P => [x, ySerosa(x)]);
+  let mesotelio = '';
+  for (let x = 4; x < W; x += 13) if (ySerosa(x) < H - 2) mesotelio += seg(x, ySerosa(x) - 1.4, 5, Math.atan2(ySerosa(x + 1) - ySerosa(x - 1), 2));
+  const espSer = new Espaco();
+  let serNuc = '';
+  for (let k = 0; k < 120; k++) {
+    const x = entre(rng, 0, W);
+    const y = entre(rng, ySepto1 + 20, H);
+    if (y < yLong(x) + 5 || y > ySerosa(x) - 5 || !espSer.tentar(x, y, 6)) continue;
+    serNuc += seg(x, y, 6, entre(rng, -0.4, 0.4));
+  }
 
   return (
     <>
       <rect width={W} height={H} fill={HE.luz} />
       <E id="lamina-propria">
-        <path d={pg([...cont, [W + 40, yMM0 + 2], [-40, yMM0 + 2]])} fill="#f3c0d6" />
+        <path d={pg([...cont, [W + 60, yMM0 + 2], [-60, yMM0 + 2]])} fill="#f3c0d6" />
         <Deco>
-          <path d={capLP} fill={HE.luz} stroke={HE.citoplasmaEscuro} strokeWidth={1.1} />
-          <path d={hemLP} stroke={HE.hemacia} strokeWidth={4.4} strokeLinecap="round" />
+          <path d={capLP} fill={HE.luz} stroke={HE.citoplasmaEscuro} strokeWidth={1} />
+          <path d={hemLP} stroke={HE.hemacia} strokeWidth={3.8} strokeLinecap="round" />
         </Deco>
-        {celulasConjuntivo(rng, 420, [0, yS + 16, W, yMM0 - 3], () => true, espLP, 0.8)}
+        {celulasConjuntivo(rng, 520, [0, yS + 14, W, yMM0 - 2], (x, y) => naLP(x, y, 2.6), espLP, 0.8)}
       </E>
       <E id="cripta-intestinal">
-        {/* luz estreita com muco */}
+        {/* luz com muco */}
         <path d={luzCripta} fill="#e6dcee" />
         <path d={d.cri} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
-        <path d={d.criNuc} stroke={HE.nucleo} strokeWidth={3.6} strokeLinecap="round" />
+        <path d={d.criNuc} stroke={HE.nucleo} strokeWidth={3.4} strokeLinecap="round" />
       </E>
       <E id="epitelio-simples-cilindrico">
         <path d={d.sup} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
-        <path d={d.supNuc} stroke={HE.nucleo} strokeWidth={3.6} strokeLinecap="round" />
-        <path d={d.borda} stroke="#c4467c" strokeWidth={2} fill="none" strokeLinecap="round" />
+        <path d={d.supNuc} stroke={HE.nucleo} strokeWidth={3.4} strokeLinecap="round" />
+        <path d={d.borda} stroke="#cf6a97" strokeWidth={1.4} fill="none" />
       </E>
       <E id="celula-caliciforme">
         <path d={d.cal} fill={HE.citoplasmaClaro} stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
-        <path d={d.calTeca} fill={HE.muco} stroke="#b9acd3" strokeWidth={1.1} />
-        <path d={d.calNuc} stroke={HE.nucleoEscuro} strokeWidth={3} strokeLinecap="round" />
+        <path d={d.calTeca} fill={HE.muco} stroke="#b9acd3" strokeWidth={1} />
+        <path d={d.calNuc} stroke={HE.nucleoEscuro} strokeWidth={2.8} strokeLinecap="round" />
       </E>
       <E id="muscular-da-mucosa">
         <path d={`M-10 ${yMM0}H${W + 10}V${yMM1}H-10Z`} fill={COR_LISO.fundo} />
@@ -921,8 +1081,16 @@ export function LaminaColon(rng: Rng) {
         {celulasConjuntivo(rng, 26, [0, yMM1 + 6, W, yME0 - 6], () => true, espSM, 0.25)}
         {vasosSM.map(([x, y, r, a], i) => vaso(rng, x, y, r, a, `s${i}`))}
       </E>
+      {/* serosa (subserosa e mesotélio) e cavidade peritoneal: fora das estruturas desta lâmina, sem toque */}
+      <Deco>
+        <path d={pg([...contornoLong, [W + 20, H + 20], [-20, H + 20]])} fill={HE.colagenoClaro} />
+        <path d={pg([...contornoSerosa, [W + 20, H + 20], [-20, H + 20]])} fill={HE.luz} />
+        <path d={lin(contornoSerosa)} stroke="#e7a3c3" strokeWidth={2.4} fill="none" />
+        <path d={mesotelio} stroke={HE.nucleo} strokeWidth={1.8} strokeLinecap="round" />
+        <path d={serNuc} stroke={HE.nucleo} strokeWidth={2.2} strokeLinecap="round" />
+      </Deco>
       <E id="muscular-externa">
-        <path d={`M-10 ${yME0}H${W + 10}V${H + 10}H-10Z`} fill={COR_LISO.fundo} />
+        <path d={pg([[-20, yME0], [W + 20, yME0], ...[...contornoLong].reverse()])} fill={COR_LISO.fundo} />
         <path d={circular.cel} fill="#e08cb1" stroke={COR_LISO.borda} strokeWidth={0.5} />
         <path d={circular.nuc} stroke={HE.nucleo} strokeWidth={2.6} strokeLinecap="round" />
         <path d={`M-10 ${ySepto0}H${W + 10}V${ySepto1}H-10Z`} fill={HE.colagenoClaro} />
@@ -965,6 +1133,7 @@ export function LaminaFigado(rng: Rng) {
     return apotema / Math.cos(d);
   };
   const rVC = 21;
+  const ANEL = 14; // espessura da placa limitante (uma fileira de hepatócitos em volta do espaço porta)
 
   let celulas = '';
   let nucleos = '';
@@ -992,13 +1161,13 @@ export function LaminaFigado(rng: Rng) {
         if ((a1 - a0) * rm > 36) nb.push(a0 + (a1 - a0) * entre(rng, 0.4, 0.6));
       });
       // os limites desviam um pouco a cada passo: sinusoides tortuosos, placas irregulares
-      b = nb.map((a0) => a0 + entre(rng, -1.7, 1.7) / rm);
+      b = nb.map((a0) => a0 + entre(rng, -3, 3) / rm);
       // limite à direita de cada placa: sinusoide comum, ponte (anastomose entre placas) ou sinusoide com Kupffer
       const tipos = b.map(() => {
         const t = rng();
-        return t < 0.15 ? 0 : t < 0.185 ? 2 : 1;
+        return t < 0.2 ? 0 : t < 0.235 ? 2 : 1;
       });
-      const largs = tipos.map((t) => (t === 0 ? 0 : t === 2 ? 11 : entre(rng, 5.5, 7.5)));
+      const largs = tipos.map((t) => (t === 0 ? 0 : t === 2 ? 12.5 : entre(rng, 5.5, 7.5)));
       b.forEach((a0, j) => {
         const a1 = j < b.length - 1 ? b[j + 1] : b[0] + 2 * Math.PI;
         const tD = tipos[j];
@@ -1007,10 +1176,10 @@ export function LaminaFigado(rng: Rng) {
         const bm = (b0 + b1) / 2;
         const fora = (a: number) => Math.max(r, Math.min(r + h, rho(a)));
         const [mx, my] = em(bm, (r + fora(bm)) / 2);
-        if (fora(bm) - r < 3 || mx < -25 || mx > W + 25 || my < -25 || my > H + 25 || noPortal(mx, my, -6)) return;
+        if (fora(bm) - r < 3 || mx < -25 || mx > W + 25 || my < -25 || my > H + 25 || noPortal(mx, my, ANEL + 2)) return;
         celulas += pg([em(b0, r), em(bm, r), em(b1, r), em(b1, fora(b1)), em(bm, fora(bm)), em(b0, fora(b0))]);
         const larguraArco = (b1 - b0) * rm;
-        if (fora(bm) - r > 10 && larguraArco > 9 && !noPortal(mx, my, 5)) {
+        if (fora(bm) - r > 10 && larguraArco > 9 && !noPortal(mx, my, ANEL + 6)) {
           if (larguraArco > 19 && rng() < 0.12) {
             // hepatócito binucleado
             const [x1, y1] = em(bm - 4.3 / rm, (r + fora(bm)) / 2);
@@ -1033,13 +1202,20 @@ export function LaminaFigado(rng: Rng) {
           const rs = r + h / 2;
           if (rs > rho(as) - h / 2) return;
           const [sx, sy] = em(as, rs);
-          if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10 || noPortal(sx, sy, 8)) return;
+          if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10 || noPortal(sx, sy, ANEL + 9)) return;
           // na luz, encostada num dos lados (no endotélio): sobra luz livre do outro lado
           const c = Math.min(7, h / 2 - 1.2);
           const lado = rng() < 0.5 ? -1 : 1;
-          const kx = sx - Math.sin(as) * 1.2 * lado;
-          const ky = sy + Math.cos(as) * 1.2 * lado;
-          kupffer += elip(kx, ky, c, 4.3, as);
+          const kx = sx - Math.sin(as) * 1 * lado;
+          const ky = sy + Math.cos(as) * 1 * lado;
+          const contorno = Array.from({ length: 10 }, (_, i): P => {
+            const t = (2 * Math.PI * i) / 10;
+            const k = entre(rng, 0.82, 1);
+            const u = Math.cos(t) * c * k;
+            const v = Math.sin(t) * 5 * (i === 3 || i === 7 ? 1 : k);
+            return [kx + Math.cos(as) * u - Math.sin(as) * v, ky + Math.sin(as) * u + Math.cos(as) * v];
+          });
+          kupffer += pg(contorno);
           kupfferNuc += elip(kx + Math.cos(as) * 0.8, ky + Math.sin(as) * 0.8, 3.3, 2.2, as);
           espS.marcar(sx, sy, c);
           return;
@@ -1047,7 +1223,7 @@ export function LaminaFigado(rng: Rng) {
         const rs = r + h * entre(rng, 0.3, 0.7);
         if (rs > rho(as) - 2) return;
         const [sx, sy] = em(as, rs);
-        if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10 || noPortal(sx, sy, 2)) return;
+        if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10 || noPortal(sx, sy, ANEL + 3)) return;
         const t = rng();
         if (t < 0.4 && espS.tentar(sx, sy, 3)) hemacias += pt(sx, sy);
         else if (t < 0.65) {
@@ -1057,6 +1233,34 @@ export function LaminaFigado(rng: Rng) {
         }
       });
       r += h;
+    }
+  }
+
+  // placa limitante: fileira contínua de hepatócitos inteiros em volta de cada espaço porta, onde as placas
+  // terminam; poucos sinusoides a atravessam (vindos dos ramos de distribuição)
+  let limitante = '';
+  let limNuc = '';
+  let limNucleolo = '';
+  for (const p of portais) {
+    const raioMedio = p.r + ANEL / 2;
+    const n = Math.round((2 * Math.PI * raioMedio) / 18);
+    const giro = entre(rng, 0, 2 * Math.PI);
+    const entradas = new Set([0, Math.round(n / 3) + 1, Math.round((2 * n) / 3)].map((k) => (k + Math.floor(entre(rng, 0, n))) % n));
+    for (let k = 0; k < n; k++) {
+      const a0 = giro + (2 * Math.PI * k) / n + (entradas.has(k) ? 2.6 / raioMedio : 0);
+      const a1 = giro + (2 * Math.PI * (k + 1)) / n - (entradas.has((k + 1) % n) ? 2.6 / raioMedio : 0);
+      const am = (a0 + a1) / 2;
+      const em = (a: number, d: number): P => {
+        const r = raioPortal(p, a) + d;
+        return [p.x + Math.cos(a) * r, p.y + Math.sin(a) * r];
+      };
+      const [cx, cy] = em(am, 0.4 + ANEL / 2);
+      if (cx < -25 || cx > W + 25 || cy < -25 || cy > H + 25) continue;
+      limitante += pg([em(a0, 0.4), em(am, 0.4), em(a1, 0.4), em(a1, 0.4 + ANEL), em(am, 0.4 + ANEL), em(a0, 0.4 + ANEL)]);
+      if (espN.tentar(cx, cy, 4.4)) {
+        limNuc += pt(cx, cy);
+        limNucleolo += pt(cx + 0.6, cy - 0.4);
+      }
     }
   }
 
@@ -1170,6 +1374,11 @@ export function LaminaFigado(rng: Rng) {
         <path d={kupffer} fill="#dc9fc2" stroke="#b7739d" strokeWidth={0.7} />
         <path d={kupfferNuc} fill="#5c4596" />
       </E>
+      <E id="placas-de-hepatocitos">
+        <path d={limitante} fill="#eca4c4" stroke="#d084a9" strokeWidth={0.7} strokeLinejoin="round" />
+        <path d={limNuc} stroke="#5f4ba0" strokeWidth={7.6} strokeLinecap="round" />
+        <path d={limNucleolo} stroke={HE.nucleoEscuro} strokeWidth={1.8} strokeLinecap="round" />
+      </E>
       <E id="veia-centrolobular">
         {centros.map(([x, y], i) => {
           let hem = '';
@@ -1221,6 +1430,17 @@ export function LaminaPancreas(rng: Rng) {
   // ilhotas e ao septo, para nada ficar desenhado por cima de outra coisa
   const passo = 50;
   const centros = grade(rng, passo, [-40, -40, W + 40, H + 40], 0.17).filter(([x, y]) => !naIlhota(x, y, 8) && !noSepto(x, y, 8));
+  // ácinos encostados na ilhota (só uma cápsula fina de fibras reticulares entre eles): completa a grade onde ela
+  // deixou um vão em volta da ilhota
+  for (const il of ilhotas) {
+    const n = Math.round((2 * Math.PI * (il.r + 24)) / 44);
+    for (let k = 0; k < n; k++) {
+      const a = (2 * Math.PI * k) / n;
+      const x = il.x + Math.cos(a) * (raioIlhota(il, a) + 23);
+      const y = il.y + Math.sin(a) * (raioIlhota(il, a) + 23);
+      if (!noSepto(x, y, 8) && centros.every(([cx, cy]) => Math.hypot(cx - x, cy - y) > 36)) centros.push([x, y]);
+    }
+  }
   const vizinhos = centros.map(([x, y], i) => centros.map((_, j) => j).filter((j) => j !== i && Math.hypot(centros[j][0] - x, centros[j][1] - y) < passo * 1.6));
   // ductos intercalados: correm entre dois ácinos vizinhos (a fronteira entre eles se alarga para dar lugar ao tubo)
   const usados = new Set<number>();
@@ -1248,7 +1468,18 @@ export function LaminaPancreas(rng: Rng) {
     return out;
   };
   const area = (poli: P[]) => Math.abs(poli.reduce((s, [x0, y0], k) => s + x0 * poli[(k + 1) % poli.length][1] - poli[(k + 1) % poli.length][0] * y0, 0)) / 2;
-  const centroacinosas = new Set<number>(ductos.flat());
+  // cada ducto intercalado começa na célula centroacinosa do ácino i, sai entre duas células dele e segue pela
+  // fresta entre i e j (alargada para 14 un)
+  const trajetos = new Map<number, P[]>();
+  for (const [i, j] of ductos) {
+    const [x1, y1] = centros[i];
+    const [x2, y2] = centros[j];
+    const m: P = [(x1 + x2) / 2, (y1 + y2) / 2];
+    const t: P = [-(y2 - y1) / Math.hypot(x2 - x1, y2 - y1), (x2 - x1) / Math.hypot(x2 - x1, y2 - y1)];
+    const lado = rng() < 0.5 ? -1 : 1;
+    trajetos.set(i, [[x1, y1], m, [m[0] + t[0] * 12 * lado, m[1] + t[1] * 12 * lado]]);
+  }
+  const centroacinosas = new Set<number>(ductos.map(([i]) => i));
   let basal = '';
   let apical = '';
   const gr: P[] = [];
@@ -1285,7 +1516,10 @@ export function LaminaPancreas(rng: Rng) {
     const comCentro = centroacinosas.has(i) || rng() < 0.5;
     // 7 células por perfil de ácino: limites radiais do centro à borda, núcleo redondo na base, grânulos no ápice
     const n = 7;
-    const giro = entre(rng, 0, 1);
+    const trajeto = trajetos.get(i);
+    // no ácino de onde sai um ducto, um dos limites entre células fica alinhado com ele (o ducto passa entre duas células)
+    const giro = trajeto ? Math.atan2(trajeto[1][1] - y, trajeto[1][0] - x) : entre(rng, 0, 1);
+    const longeDoDucto = (px: number, py: number, m: number) => !trajeto || distSeg(px, py, trajeto[0], trajeto[1]) > m;
     for (let k = 0; k < n; k++) {
       const a = (2 * Math.PI * k) / n + giro;
       const rb = raioPoligono(poli, x, y, a);
@@ -1294,16 +1528,16 @@ export function LaminaPancreas(rng: Rng) {
       const rn = raioPoligono(poli, x, y, am) * 0.76;
       const nx = x + Math.cos(am) * rn;
       const ny = y + Math.sin(am) * rn;
-      if (espN.tentar(nx, ny, 3.4)) nucs.push([nx, ny]);
+      if (longeDoDucto(nx, ny, 7.4) && espN.tentar(nx, ny, 3.4)) nucs.push([nx, ny]);
       for (let g = 0; g < (k % 2 ? 1 : 2); g++) {
         const ag = a + (Math.PI / n) * entre(rng, 0.3, 1.7);
         const dg = raioPoligono(poli, x, y, ag) * entre(rng, comCentro ? 0.3 : 0.12, 0.5);
-        gr.push([x + Math.cos(ag) * dg, y + Math.sin(ag) * dg]);
+        if (longeDoDucto(x + Math.cos(ag) * dg, y + Math.sin(ag) * dg, 5.6)) gr.push([x + Math.cos(ag) * dg, y + Math.sin(ag) * dg]);
       }
     }
     if (comCentro) {
       // célula centroacinosa: início do ducto intercalado dentro do ácino; citoplasma muito pálido, núcleo claro ovoide
-      const a = entre(rng, 0, Math.PI);
+      const a = trajeto ? giro : entre(rng, 0, Math.PI);
       centroCel += elip(x, y, 6, 4.2, a);
       centroNuc += elip(x, y, 2.9, 1.9, a);
     } else luz.push([x, y]);
@@ -1311,19 +1545,14 @@ export function LaminaPancreas(rng: Rng) {
   let ductoParede = '';
   let ductoLuz = '';
   let ductoNuc = '';
-  for (const [i, j] of ductos) {
-    const [x1, y1] = centros[i];
-    const [x2, y2] = centros[j];
-    const mx = (x1 + x2) / 2;
-    const my = (y1 + y2) / 2;
-    const a = Math.atan2(y2 - y1, x2 - x1) + Math.PI / 2;
-    const c = Math.cos(a);
-    const sn = Math.sin(a);
-    const L = 12;
-    ductoParede += `M${q(mx - c * L)} ${q(my - sn * L)}L${q(mx + c * L)} ${q(my + sn * L)}`;
-    ductoLuz += `M${q(mx - c * (L + 3))} ${q(my - sn * (L + 3))}L${q(mx + c * (L + 3))} ${q(my + sn * (L + 3))}`;
-    for (let t = -L + 3; t <= L - 2; t += 7.5)
-      for (const lado of [-1, 1]) ductoNuc += seg(mx + c * (t + (lado > 0 ? 3.5 : 0)) - sn * 3.5 * lado, my + sn * (t + (lado > 0 ? 3.5 : 0)) + c * 3.5 * lado, 3.2, a);
+  for (const tr of trajetos.values()) {
+    // parede de epitélio cúbico baixo (pálido), luz estreita e núcleos redondos dos dois lados
+    ductoParede += lin(tr);
+    const [cx, cy] = tr[0];
+    const u = Math.hypot(tr[1][0] - cx, tr[1][1] - cy);
+    ductoLuz += lin([[cx + ((tr[1][0] - cx) * 6) / u, cy + ((tr[1][1] - cy) * 6) / u], tr[1], tr[2]]);
+    for (const am of reamostrar(tr, 6.5, 9))
+      for (const lado of [-1, 1]) ductoNuc += pt(am.x - am.ty * 3 * lado, am.y + am.tx * 3 * lado);
   }
 
   // ilhotas de Langerhans: cordões de células pálidas com núcleos redondos e capilares entre eles
@@ -1332,36 +1561,42 @@ export function LaminaPancreas(rng: Rng) {
   let ilCap = '';
   let ilHem = '';
   let ilBorda = '';
+  let ilEndo = '';
   for (const il of ilhotas) {
     const contorno = Array.from({ length: 36 }, (_, k): P => {
       const a = (2 * Math.PI * k) / 36;
       return [il.x + Math.cos(a) * raioIlhota(il, a), il.y + Math.sin(a) * raioIlhota(il, a)];
     });
     ilBorda += pg(contorno);
+    // rede de capilares (fenestrados) atravessando a ilhota; as células endócrinas formam cordões ao longo deles
     const caps: P[][] = [];
     const nCap = il.r > 70 ? 4 : 2;
     for (let k = 0; k < nCap; k++) {
-      const a = entre(rng, 0, Math.PI) + (k * Math.PI) / nCap;
+      const a = (k * Math.PI) / nCap + entre(rng, -0.25, 0.25);
+      const desloc = (k % 2 ? 1 : -1) * entre(rng, 0, il.r * 0.35);
       const pts: P[] = [];
-      for (let t = -1; t <= 1.001; t += 0.125) {
-        const u = t * il.r * 0.92;
-        const v = Math.sin(t * 3 + k) * il.r * 0.12 + (k - (nCap - 1) / 2) * il.r * 0.3;
+      for (let t = -1; t <= 1.001; t += 0.1) {
+        const u = t * il.r;
+        const v = desloc + Math.sin(t * 3.2 + k * 1.7) * il.r * 0.1;
         pts.push([il.x + Math.cos(a) * u - Math.sin(a) * v, il.y + Math.sin(a) * u + Math.cos(a) * v]);
       }
-      const dentro = pts.filter(([px, py]) => naIlhota(px, py, -6));
+      const dentro = pts.filter(([px, py]) => naIlhota(px, py, -5));
       if (dentro.length > 3) caps.push(dentro);
     }
     for (const c of caps) {
       ilCap += lin(c);
       reamostrar(c, 9, 4).forEach((a, k) => {
         if (k % 2 === 0) ilHem += pt(a.x, a.y);
+        else if (k % 4 === 1) ilEndo += seg(a.x - a.ty * 2.7 * (k % 8 === 1 ? 1 : -1), a.y + a.tx * 2.7 * (k % 8 === 1 ? 1 : -1), 3.2, Math.atan2(a.ty, a.tx));
       });
     }
     const esp = new Espaco();
-    for (const [x, y] of grade(rng, 12.5, [il.x - il.r - 10, il.y - il.r - 10, il.x + il.r + 10, il.y + il.r + 10], 0.1)) {
-      if (!naIlhota(x, y, -6) || caps.some((c) => distLinha(c, x, y) < 6.5)) continue;
-      ilCel += pg(hexagono(rng, x, y, 7));
-      if (esp.tentar(x, y, 3)) ilNuc += pt(x + entre(rng, -0.7, 0.7), y + entre(rng, -0.7, 0.7));
+    for (const [x, y] of grade(rng, 12, [il.x - il.r - 10, il.y - il.r - 10, il.x + il.r + 10, il.y + il.r + 10], 0.08)) {
+      const dc = Math.min(...caps.map((c) => distLinha(c, x, y)));
+      // cordões de duas a três células de cada lado do capilar
+      if (!naIlhota(x, y, -6) || dc < 5.5 || dc > 27) continue;
+      ilCel += pg(hexagono(rng, x, y, 6.8));
+      if (esp.tentar(x, y, 3)) ilNuc += pt(x + entre(rng, -0.6, 0.6), y + entre(rng, -0.6, 0.6));
     }
   }
 
@@ -1411,16 +1646,18 @@ export function LaminaPancreas(rng: Rng) {
         <path d={centroNuc} fill="#7d6ab6" />
       </E>
       <E id="ducto-intercalado">
-        <path d={ductoParede} stroke="#ecc3d7" strokeWidth={11} strokeLinecap="round" fill="none" />
-        <path d={ductoLuz} stroke="#fbf3f7" strokeWidth={3} strokeLinecap="round" fill="none" />
-        <path d={ductoNuc} stroke={HE.nucleo} strokeWidth={2.3} strokeLinecap="round" />
+        <path d={ductoParede} stroke="#d4a3bf" strokeWidth={10} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ductoParede} stroke="#f2d3e2" strokeWidth={8.4} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ductoLuz} stroke="#fbf3f7" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ductoNuc} stroke="#6a57a8" strokeWidth={2.9} strokeLinecap="round" />
       </E>
       <E id="ilhota-de-langerhans">
         <path d={ilBorda} fill="#f3dbe7" stroke="#d6a6c2" strokeWidth={1.6} />
         <path d={ilCel} fill="#f0d0e0" stroke="#dcb1c8" strokeWidth={0.6} />
-        <path d={ilCap} stroke="#e4b3cb" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-        <path d={ilCap} stroke={HE.luz} strokeWidth={5.4} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-        <path d={ilHem} stroke={HE.hemacia} strokeWidth={4.4} strokeLinecap="round" />
+        <path d={ilCap} stroke="#e4b3cb" strokeWidth={6.6} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ilCap} stroke={HE.luz} strokeWidth={4.4} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ilHem} stroke={HE.hemacia} strokeWidth={3.8} strokeLinecap="round" />
+        <path d={ilEndo} stroke={HE.nucleoEscuro} strokeWidth={1.6} strokeLinecap="round" />
         <path d={ilNuc} stroke="#6652a6" strokeWidth={5.2} strokeLinecap="round" />
       </E>
       <E id="ducto-interlobular">
