@@ -296,7 +296,7 @@
     {
       "id": "infertilidade-masculina-biopsia",
       "titulo": "Infertilidade masculina: padrões da histologia testicular",
-      "descricao": "Na azoospermia, a histologia testicular distingue espermatogênese preservada, que sugere obstrução das vias (por exemplo, ausência congênita bilateral dos ductos deferentes, ligada a mutações de CFTR, com ejaculado de volume baixo e pH ácido), de falha da produção: hipoespermatogênese (todas as fases presentes, em número reduzido), parada de maturação (a linhagem para num estágio, em geral no espermatócito) e síndrome de células de Sertoli isoladas (túbulos sem células germinativas). Na síndrome de Klinefelter (47,XXY), os túbulos são hialinizados e as células de Leydig formam aglomerados. Esteroides anabolizantes também causam oligozoospermia ou azoospermia; em geral, a produção melhora em meses após a suspensão.",
+      "descricao": "Na azoospermia, a histologia testicular distingue espermatogênese preservada, que sugere obstrução das vias (por exemplo, ausência congênita bilateral dos ductos deferentes, ligada a mutações de CFTR, com ejaculado de volume baixo e pH ácido), de falha da produção: hipoespermatogênese (todas as fases presentes, em número reduzido), parada de maturação (a linhagem para num estágio, como o de espermatócito ou o de espermátide) e síndrome de células de Sertoli isoladas (túbulos sem células germinativas). Na síndrome de Klinefelter (47,XXY), os túbulos são hialinizados e as células de Leydig formam aglomerados. Esteroides anabolizantes também causam oligozoospermia ou azoospermia; em geral, a produção melhora em meses após a suspensão.",
       "mecanismo": "O FSH tende a subir quando faltam espermatogônias e costuma ser normal na parada de maturação e na obstrução, porque a inibina B das células de Sertoli acompanha a espermatogênese. Andrógenos exógenos suprimem LH e FSH e derrubam a testosterona intratesticular, indispensável à espermatogênese, mesmo com a testosterona sérica alta."
     }
   ],
@@ -1054,7 +1054,7 @@
         "4",
         "5"
       ],
-      "explicacao": "Do capilar, a molécula atravessa o interstício e a túnica própria, cuja camada mais externa tem as células mioides, e chega à lâmina basal do epitélio. O compartimento basal, onde ficam as espermatogônias, é acessível; para alcançar o compartimento adluminal, ela precisa passar pelas junções oclusivas entre células de Sertoli, a barreira hematotesticular.",
+      "explicacao": "Do capilar, a molécula atravessa o interstício e a túnica própria, que contém as camadas de células mioides, e chega à lâmina basal do epitélio. O compartimento basal, onde ficam as espermatogônias, é acessível; para alcançar o compartimento adluminal, ela precisa passar pelas junções oclusivas entre células de Sertoli, a barreira hematotesticular.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [

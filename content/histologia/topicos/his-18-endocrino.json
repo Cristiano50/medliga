@@ -407,11 +407,11 @@
         },
         {
           "id": "b",
-          "texto": "Necrose da neuro-hipófise, que recebe sangue apenas pelas veias porta da haste"
+          "texto": "Necrose da neuro-hipófise, que recebe sangue apenas pelas veias porta da haste hipofisária"
         },
         {
           "id": "c",
-          "texto": "Hiperplasia persistente dos lactotrofos, que comprime os demais tipos celulares"
+          "texto": "Hiperplasia persistente dos lactotrofos da gestação, que comprime os demais tipos celulares"
         },
         {
           "id": "d",
@@ -508,7 +508,7 @@
         },
         {
           "id": "b",
-          "texto": "Células C, que acumulam calcitonina em grânulos eosinófilos"
+          "texto": "Células C da tireoide, que acumulam calcitonina em grânulos eosinófilos"
         },
         {
           "id": "c",
@@ -583,7 +583,7 @@
         },
         {
           "id": "d",
-          "texto": "Porque o adenoma folicular contém corpos psamomatosos, como o carcinoma"
+          "texto": "Porque o adenoma folicular também contém muitos corpos psamomatosos, como o carcinoma"
         }
       ],
       "correta": "b",
@@ -616,11 +616,11 @@
         },
         {
           "id": "d",
-          "texto": "Serem as principais produtoras de PTH durante a infância"
+          "texto": "Serem as principais produtoras de PTH durante a infância e a adolescência"
         }
       ],
       "correta": "a",
-      "explicacao": "As células oxífilas são maiores que as principais e têm citoplasma intensamente acidófilo, cheio de mitocôndrias; são raras na criança, aumentam com a idade e sua função é incerta (a). A calcitonina (b) é secretada pelas células C da tireoide. O PTH não é armazenado em coloide extracelular (c); as células principais o guardam em pequenos grânulos e o secretam conforme a calcemia. Na infância, quem produz o PTH são as células principais (d), e as oxífilas são raras.",
+      "explicacao": "As células oxífilas são maiores que as principais e têm citoplasma intensamente acidófilo, cheio de mitocôndrias; são raras na criança, aumentam com a idade e sua função é incerta (a). A calcitonina (b) é secretada pelas células C da tireoide. O PTH não é armazenado em coloide extracelular (c); as células principais o guardam em pequenos grânulos e o secretam conforme a calcemia. Na infância e na adolescência, quem produz o PTH são as células principais (d), e as oxífilas são raras na criança.",
       "dificuldade": 2,
       "bloom": "compreender",
       "tags": [
@@ -714,7 +714,7 @@
         },
         {
           "id": "c",
-          "texto": "Destruição do córtex por linfócitos, com a medula preservada"
+          "texto": "Destruição do córtex por infiltrado de linfócitos, com a medula preservada"
         },
         {
           "id": "d",

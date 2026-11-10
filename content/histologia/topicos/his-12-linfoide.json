@@ -341,7 +341,7 @@
       "enunciado": "Qual característica distingue os receptores de antígeno dos linfócitos T e B dos receptores da imunidade inata?",
       "alternativas": [
         { "id": "a", "texto": "São gerados por recombinação somática, com enorme diversidade clonal" },
-        { "id": "b", "texto": "São codificados na linhagem germinativa e iguais em muitas células" },
+        { "id": "b", "texto": "São codificados na linhagem germinativa e são iguais em muitas células" },
         { "id": "c", "texto": "Reconhecem só padrões moleculares comuns a grupos de microrganismos" },
         { "id": "d", "texto": "Dispensam a proliferação clonal e não deixam células de memória" }
       ],
@@ -358,7 +358,7 @@
       "enunciado": "Uma célula epitelial infectada por vírus apresenta peptídeos virais na superfície e é destruída por linfócitos T citotóxicos. Esses linfócitos reconhecem os peptídeos ligados a:",
       "alternativas": [
         { "id": "a", "texto": "Moléculas do MHC de classe II, expressas sobretudo por células dendríticas" },
-        { "id": "b", "texto": "Anticorpos IgE fixados em receptores Fc da membrana da célula infectada" },
+        { "id": "b", "texto": "Anticorpos IgE fixados em receptores Fc da membrana da própria célula infectada" },
         { "id": "c", "texto": "Moléculas do MHC de classe I, expressas por quase todas as células nucleadas" },
         { "id": "d", "texto": "Receptores do tipo Toll, que apresentam peptídeos aos linfócitos CD8" }
       ],
@@ -412,7 +412,7 @@
         { "id": "a", "texto": "Morrem por falta de sinal de sobrevivência (falha da seleção positiva)" },
         { "id": "b", "texto": "Tornam-se linfócitos T reguladores, que suprimem respostas autoimunes" },
         { "id": "c", "texto": "Migram para a medula e saem do timo como linfócitos T virgens" },
-        { "id": "d", "texto": "São eliminados por reagir fortemente a autoantígenos (seleção negativa)" }
+        { "id": "d", "texto": "São eliminados por reagirem demais a autoantígenos (seleção negativa)" }
       ],
       "correta": "a",
       "explicacao": "Na seleção positiva, só sobrevivem os timócitos cujo receptor reconhece, com afinidade baixa a moderada, o MHC próprio com peptídeos apresentados pelas células epiteliais corticais; os que não o reconhecem não recebem sinal de sobrevivência e morrem por apoptose (a). Essa etapa garante linfócitos restritos ao MHC próprio. Linfócitos T reguladores (b) surgem de timócitos com afinidade relativamente alta por autoantígenos, sobretudo na medula. Sem seleção positiva, o timócito não chega à medula nem sai do timo (c). A seleção negativa (d) elimina os que reagem com alta afinidade, o caso oposto.",
@@ -482,7 +482,7 @@
       "alternativas": [
         { "id": "a", "texto": "Permitir a entrada de linfócitos virgens do sangue no linfonodo" },
         { "id": "b", "texto": "Drenar a linfa do seio subcapsular para os seios medulares" },
-        { "id": "c", "texto": "Captar antígenos solúveis da linfa e apresentá-los aos linfócitos" },
+        { "id": "c", "texto": "Captar antígenos da linfa e apresentá-los aos linfócitos" },
         { "id": "d", "texto": "Filtrar o sangue, retirando dele as hemácias envelhecidas" }
       ],
       "correta": "a",
@@ -499,7 +499,7 @@
       "alternativas": [
         { "id": "a", "texto": "Seleção positiva e negativa de linfócitos T recém-formados" },
         { "id": "b", "texto": "Proliferação de linfócitos B, com hipermutação e seleção por afinidade" },
-        { "id": "c", "texto": "Diferenciação de células NK a partir de progenitores linfoides" },
+        { "id": "c", "texto": "Diferenciação de células NK a partir de progenitores linfoides da medula" },
         { "id": "d", "texto": "Maturação de linfócitos B virgens recém-chegados da circulação fetal" }
       ],
       "correta": "b",
@@ -515,7 +515,7 @@
       "contexto": "Mulher de 58 anos tem aumento indolor e progressivo de vários linfonodos há meses. Na biópsia de um linfonodo cervical, a arquitetura está apagada por folículos numerosos, de tamanho semelhante, encostados uns aos outros, inclusive na medula, sem zona do manto nítida, sem polarização em zonas clara e escura e quase sem macrófagos com corpos tingíveis. A imuno-histoquímica mostra BCL2 nas células dos folículos, e há restrição de cadeia leve kappa.",
       "enunciado": "Qual é a interpretação mais provável?",
       "alternativas": [
-        { "id": "a", "texto": "Hiperplasia folicular reacional, com centros germinativos ativos" },
+        { "id": "a", "texto": "Hiperplasia folicular reacional, com centros germinativos muito ativos" },
         { "id": "b", "texto": "Hiperplasia paracortical, típica de infecção viral recente" },
         { "id": "c", "texto": "Linfoma folicular, proliferação monoclonal de células foliculares" },
         { "id": "d", "texto": "Histiocitose sinusal, típica de linfonodo que drena um carcinoma" }
@@ -533,7 +533,7 @@
       "contexto": "Corte de baço corado por HE mostra nódulos arredondados e basófilos, cada um com uma pequena artéria de parede espessa em posição excêntrica, imediatamente envolvida por linfócitos; ao redor, extensas áreas avermelhadas com cordões celulares e vasos de paredes finas cheios de hemácias.",
       "enunciado": "Os linfócitos que envolvem imediatamente a pequena artéria formam:",
       "alternativas": [
-        { "id": "a", "texto": "A zona marginal, rica em plasmócitos produtores de IgA" },
+        { "id": "a", "texto": "A zona marginal, rica em plasmócitos que produzem IgA" },
         { "id": "b", "texto": "Os cordões esplênicos, ricos em linfócitos B virgens" },
         { "id": "c", "texto": "A bainha linfoide periarteriolar, rica em linfócitos T" },
         { "id": "d", "texto": "O paracórtex, com suas vênulas de endotélio alto" }
@@ -553,7 +553,7 @@
       "alternativas": [
         { "id": "a", "texto": "Na polpa branca, por linfócitos T citotóxicos que reconhecem a membrana" },
         { "id": "b", "texto": "Nos linfonodos, filtradas da linfa pelos macrófagos do seio subcapsular" },
-        { "id": "c", "texto": "Na medula óssea, antes de sair para o sangue, por apoptose dos eritroblastos" },
+        { "id": "c", "texto": "Na medula óssea, antes de sair para o sangue, por apoptose de eritroblastos" },
         { "id": "d", "texto": "Nos cordões da polpa vermelha, por não passarem pelas fendas dos sinusoides" }
       ],
       "correta": "d",
@@ -569,9 +569,9 @@
       "contexto": "Homem de 35 anos foi esplenectomizado após trauma abdominal há 4 anos. Hoje tem febre alta, hipotensão e púrpura, com piora em horas. O esfregaço de sangue mostra hemácias com pequenas inclusões arredondadas e basófilas (corpúsculos de Howell-Jolly).",
       "enunciado": "Qual explicação abrange o achado do esfregaço e o risco infeccioso?",
       "alternativas": [
-        { "id": "a", "texto": "Perda da filtração esplênica, que retirava inclusões das hemácias e bactérias encapsuladas" },
+        { "id": "a", "texto": "Perda da filtração esplênica de inclusões das hemácias e de bactérias encapsuladas" },
         { "id": "b", "texto": "Perda da hematopoese esplênica, que no adulto produz a maior parte dos linfócitos B" },
-        { "id": "c", "texto": "Perda das células NK, que no adulto são produzidas exclusivamente no baço" },
+        { "id": "c", "texto": "Perda das células NK, que no adulto são produzidas exclusivamente na polpa branca do baço" },
         { "id": "d", "texto": "Hiperesplenismo residual, com destruição excessiva de neutrófilos nos cordões" }
       ],
       "correta": "a",
@@ -588,7 +588,7 @@
       "enunciado": "As células epiteliais com bolsões basais têm como função principal:",
       "alternativas": [
         { "id": "a", "texto": "Secretar IgA dimérica diretamente para o lúmen intestinal" },
-        { "id": "b", "texto": "Transportar antígenos do lúmen para as células imunes da mucosa" },
+        { "id": "b", "texto": "Levar antígenos do lúmen às células imunes da mucosa" },
         { "id": "c", "texto": "Absorver lipídios e formar quilomícrons para os lácteos" },
         { "id": "d", "texto": "Produzir defensinas e lisozima no fundo das criptas" }
       ],
@@ -605,7 +605,7 @@
       "contexto": "Mulher de 52 anos tem ptose e diplopia flutuantes e anticorpos contra o receptor de acetilcolina. A tomografia mostra massa no mediastino anterior; a peça cirúrgica revela neoplasia formada por células epiteliais de núcleos ovais e uniformes, misturadas a numerosos linfócitos imaturos não neoplásicos.",
       "enunciado": "Qual é o diagnóstico mais provável da massa?",
       "alternativas": [
-        { "id": "a", "texto": "Linfoma de células B grandes do mediastino" },
+        { "id": "a", "texto": "Linfoma de células B grandes primário do mediastino" },
         { "id": "b", "texto": "Teratoma maduro do mediastino anterior" },
         { "id": "c", "texto": "Hiperplasia folicular do timo, sem neoplasia" },
         { "id": "d", "texto": "Timoma, neoplasia das células epiteliais tímicas" }

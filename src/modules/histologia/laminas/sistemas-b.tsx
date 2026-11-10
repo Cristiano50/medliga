@@ -20,17 +20,20 @@ const seg = (x: number, y: number, c: number, a: number) => {
   const dy = (Math.sin(a) * c) / 2;
   return `M${q(x - dx)} ${q(y - dy)}L${q(x + dx)} ${q(y + dy)}`;
 };
-/** Vários pontos num só caminho, com deslocamentos relativos (texto bem mais curto que pontos absolutos). */
+/**
+ * Vários pontos num só caminho, com deslocamentos relativos (texto bem mais curto que pontos absolutos). As contas
+ * são em décimos inteiros, para o arredondamento não se acumular de um ponto para o outro.
+ */
 function pontos(lista: P[]) {
   let d = '';
-  let px = 0;
-  let py = 0;
+  let cx = 0;
+  let cy = 0;
   lista.forEach(([x, y], i) => {
-    const rx = Math.round(x * 10) / 10;
-    const ry = Math.round(y * 10) / 10;
-    d += i ? `m${q(rx - px - 0.01)} ${q(ry - py)}h.01` : `M${q(rx)} ${q(ry)}h.01`;
-    px = rx;
-    py = ry;
+    const X = Math.round(x * 10);
+    const Y = Math.round(y * 10);
+    d += i ? `m${(X - cx) / 10} ${(Y - cy) / 10}h.1` : `M${X / 10} ${Y / 10}h.1`;
+    cx = X + 1; // o "h.1" anda um décimo para a direita
+    cy = Y;
   });
   return d;
 }
@@ -1184,7 +1187,7 @@ export function LaminaPancreas(rng: Rng) {
   // ácinos em mosaico irregular (células de Voronoi da grade), quase sem conjuntivo entre eles; recortados junto às
   // ilhotas e ao septo, para nada ficar desenhado por cima de outra coisa
   const passo = 50;
-  const centros = grade(rng, passo, [-40, -40, W + 40, H + 40], 0.17).filter(([x, y]) => !naIlhota(x, y, 16) && !noSepto(x, y, 12));
+  const centros = grade(rng, passo, [-40, -40, W + 40, H + 40], 0.17).filter(([x, y]) => !naIlhota(x, y, 8) && !noSepto(x, y, 8));
   const vizinhos = centros.map(([x, y], i) => centros.map((c, j) => j).filter((j) => j !== i && Math.hypot(centros[j][0] - x, centros[j][1] - y) < passo * 1.6));
   // ductos intercalados: correm entre dois ácinos vizinhos (a fronteira entre eles se alarga para dar lugar ao tubo)
   const usados = new Set<number>();
