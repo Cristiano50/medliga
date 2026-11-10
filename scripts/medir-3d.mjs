@@ -140,6 +140,7 @@ async function main() {
   base = base.replace(/\/$/, '');
   mkdirSync(saida, { recursive: true });
 
+  const gravar = () => writeFileSync(join(saida, 'medicao.json'), JSON.stringify({ data: new Date().toISOString(), viewport: [vw, vh], escala, niveis, resultados, erros }, null, 1));
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   const resultados = [];
   const erros = [];
@@ -154,8 +155,9 @@ async function main() {
           localStorage.removeItem('medliga:dprMovimento');
         } catch { /* sem armazenamento */ }
       }, nivel);
-      const page = await ctx.newPage();
-      page.on('pageerror', (e) => erros.push(`${nivel}: ${e.message}`));
+      let page = await ctx.newPage();
+      const ouvir = (p) => p.on('pageerror', (e) => erros.push(`${nivel}: ${e.message}`));
+      ouvir(page);
       // Perfil semeado pelo próprio onboarding (o laboratório exige um perfil).
       await page.goto(`${base}/`);
       await page.waitForSelector('#nome', { timeout: 30000 });
@@ -168,80 +170,93 @@ async function main() {
       mkdirSync(join(saida, nivel), { recursive: true });
 
       for (const id of modelos) {
-        await page.goto('about:blank');
-        await page.goto(`${base}/#/lab3d?estagio=${id}`);
-        await page.waitForSelector('.palco3d canvas', { timeout: 30000 });
-        await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
-        // Estável: um quadro desenhado e nenhum quadro novo por 600 ms.
-        const estavel = async (limite = 20000) => {
-          const fim = Date.now() + limite;
-          let ultimo = -1, desde = Date.now();
-          while (Date.now() < fim) {
-            const q = await page.evaluate(() => window.__glMedida?.quadros.at(-1)?.id ?? -1);
-            if (q !== ultimo) { ultimo = q; desde = Date.now(); } else if (q >= 0 && Date.now() - desde > 600) return true;
-            await page.waitForTimeout(100);
+        for (let tentativa = 1; tentativa <= 2; tentativa++) {
+          try {
+            await page.goto('about:blank');
+            await page.goto(`${base}/#/lab3d?estagio=${id}`);
+            await page.waitForSelector('.palco3d canvas', { timeout: 30000 });
+            await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
+            // Estável: um quadro desenhado e nenhum quadro novo por 600 ms.
+            const estavel = async (limite = 20000) => {
+              const fim = Date.now() + limite;
+              let ultimo = -1, desde = Date.now();
+              while (Date.now() < fim) {
+                const q = await page.evaluate(() => window.__glMedida?.quadros.at(-1)?.id ?? -1);
+                if (q !== ultimo) { ultimo = q; desde = Date.now(); } else if (q >= 0 && Date.now() - desde > 600) return true;
+                await page.waitForTimeout(100);
+              }
+              return false;
+            };
+            const t0 = Date.now();
+            await estavel();
+            const carregamentoMs = Date.now() - t0;
+            const parado = await page.evaluate(() => {
+              const c = document.querySelector('.palco3d canvas');
+              const g = window.__glMedida;
+              const q = g?.quadros.at(-1);
+              return {
+                dpr: c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null,
+                canvas: c ? [c.width, c.height] : null,
+                gl: q ? { chamadas: q.chamadas, triangulos: q.triangulos, programasVivos: g.vivos } : null,
+                diag: window.__diag3d ? JSON.parse(JSON.stringify(window.__diag3d)) : null,
+              };
+            });
+            if (!marcado('sem-capturas')) await capturarPalco(page, join(saida, nivel, `${id}.png`), erros);
+            let giro = null;
+            if (!marcado('sem-giro')) {
+              await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
+              await page.waitForTimeout(100);
+              const caixa = await page.locator('.palco3d canvas').boundingBox();
+              const x0 = caixa.x + caixa.width / 2, y0 = caixa.y + caixa.height / 2;
+              const antes = await page.evaluate(() => window.__glMedida.quadro);
+              await page.mouse.move(x0, y0);
+              await page.mouse.down();
+              let dprMovimento = null;
+              for (let i = 1; i <= 45; i++) {
+                await page.mouse.move(x0 + Math.sin(i / 45 * Math.PI * 2) * caixa.width * 0.3, y0 + Math.sin(i / 15) * 12);
+                await page.waitForTimeout(16);
+                if (i === 30) dprMovimento = await page.evaluate(() => { const c = document.querySelector('.palco3d canvas'); return c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null; });
+              }
+              await page.mouse.up();
+              const fimGiro = await page.evaluate(() => window.__glMedida.quadro);
+              await estavel(8000);
+              giro = await page.evaluate(([a, b]) => {
+                const qs = window.__glMedida.quadros.filter((q) => q.id > a && q.id <= b);
+                const intervalos = qs.slice(1).map((q, i) => q.inicio - qs[i].inicio);
+                const c = document.querySelector('.palco3d canvas');
+                return { quadros: qs.length, intervalos, envio: qs.map((q) => q.fim - q.inicio), dprDepois: c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null, diag: window.__diag3d?.monitor ?? null };
+              }, [antes, fimGiro]);
+              giro.dprMovimento = dprMovimento;
+              giro.medianaMs = mediana(giro.intervalos);
+              giro.p95Ms = percentil(giro.intervalos, 0.95);
+              giro.envioMedianoMs = mediana(giro.envio);
+              delete giro.envio;
+            }
+            if (!marcado('sem-capturas') && marcado('com-marcadores')) {
+              // Volta à vista inicial para comparar a posição dos marcadores entre versões.
+              await page.click('text=Restaurar vista');
+              await page.click('text=Mostrar marcadores');
+              await estavel(5000);
+              await capturarPalco(page, join(saida, nivel, `${id}-m.png`), erros);
+              await page.click('text=Ocultar marcadores');
+            }
+            const r = { nivel, id, carregamentoMs, ...parado, giro };
+            resultados.push(r);
+            const info = r.diag?.render;
+            console.log(`${nivel.padEnd(5)} ${id.padEnd(20)} dpr ${r.dpr} (giro ${giro?.dprMovimento ?? '-'}) · GL ${r.gl?.chamadas} chamadas ${r.gl?.triangulos} tri ${r.gl?.programasVivos} prog`
+              + (info ? ` · info ${info.calls}/${info.triangles} prog ${r.diag.programs}` : '')
+              + (giro ? ` · giro mediana ${giro.medianaMs?.toFixed(1)} ms p95 ${giro.p95Ms?.toFixed(1)} ms` : ''));
+            gravar();
+            break;
+          } catch (e) {
+            // Máquina sobrecarregada (SwiftShader): registra, abre outra aba no mesmo perfil e tenta de novo.
+            erros.push(`${nivel}/${id} (tentativa ${tentativa}): ${String(e.message).split('\n')[0]}`);
+            console.log(`${nivel.padEnd(5)} ${id.padEnd(20)} falhou (tentativa ${tentativa}): ${String(e.message).split('\n')[0]}`);
+            await page.close().catch(() => {});
+            page = await ctx.newPage();
+            ouvir(page);
           }
-          return false;
-        };
-        const t0 = Date.now();
-        await estavel();
-        const carregamentoMs = Date.now() - t0;
-        const parado = await page.evaluate(() => {
-          const c = document.querySelector('.palco3d canvas');
-          const g = window.__glMedida;
-          const q = g?.quadros.at(-1);
-          return {
-            dpr: c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null,
-            canvas: c ? [c.width, c.height] : null,
-            gl: q ? { chamadas: q.chamadas, triangulos: q.triangulos, programasVivos: g.vivos } : null,
-            diag: window.__diag3d ? JSON.parse(JSON.stringify(window.__diag3d)) : null,
-          };
-        });
-        if (!marcado('sem-capturas')) await capturarPalco(page, join(saida, nivel, `${id}.png`), erros);
-        let giro = null;
-        if (!marcado('sem-giro')) {
-          await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
-          await page.waitForTimeout(100);
-          const caixa = await page.locator('.palco3d canvas').boundingBox();
-          const x0 = caixa.x + caixa.width / 2, y0 = caixa.y + caixa.height / 2;
-          const antes = await page.evaluate(() => window.__glMedida.quadro);
-          await page.mouse.move(x0, y0);
-          await page.mouse.down();
-          let dprMovimento = null;
-          for (let i = 1; i <= 45; i++) {
-            await page.mouse.move(x0 + Math.sin(i / 45 * Math.PI * 2) * caixa.width * 0.3, y0 + Math.sin(i / 15) * 12);
-            await page.waitForTimeout(16);
-            if (i === 30) dprMovimento = await page.evaluate(() => { const c = document.querySelector('.palco3d canvas'); return c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null; });
-          }
-          await page.mouse.up();
-          const fimGiro = await page.evaluate(() => window.__glMedida.quadro);
-          await estavel(8000);
-          giro = await page.evaluate(([a, b]) => {
-            const qs = window.__glMedida.quadros.filter((q) => q.id > a && q.id <= b);
-            const intervalos = qs.slice(1).map((q, i) => q.inicio - qs[i].inicio);
-            const c = document.querySelector('.palco3d canvas');
-            return { quadros: qs.length, intervalos, envio: qs.map((q) => q.fim - q.inicio), dprDepois: c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null, diag: window.__diag3d?.monitor ?? null };
-          }, [antes, fimGiro]);
-          giro.dprMovimento = dprMovimento;
-          giro.medianaMs = mediana(giro.intervalos);
-          giro.p95Ms = percentil(giro.intervalos, 0.95);
-          giro.envioMedianoMs = mediana(giro.envio);
-          delete giro.envio;
         }
-        if (!marcado('sem-capturas') && marcado('com-marcadores')) {
-          // Volta à vista inicial para comparar a posição dos marcadores entre versões.
-          await page.click('text=Restaurar vista');
-          await page.click('text=Mostrar marcadores');
-          await estavel(5000);
-          await capturarPalco(page, join(saida, nivel, `${id}-m.png`), erros);
-          await page.click('text=Ocultar marcadores');
-        }
-        const r = { nivel, id, carregamentoMs, ...parado, giro };
-        resultados.push(r);
-        const info = r.diag?.render;
-        console.log(`${nivel.padEnd(5)} ${id.padEnd(20)} dpr ${r.dpr} (giro ${giro?.dprMovimento ?? '-'}) · GL ${r.gl?.chamadas} chamadas ${r.gl?.triangulos} tri ${r.gl?.programasVivos} prog`
-          + (info ? ` · info ${info.calls}/${info.triangles} prog ${r.diag.programs}` : '')
-          + (giro ? ` · giro mediana ${giro.medianaMs?.toFixed(1)} ms p95 ${giro.p95Ms?.toFixed(1)} ms` : ''));
       }
       await ctx.close();
     }
@@ -250,7 +265,7 @@ async function main() {
     servidor?.kill();
   }
 
-  writeFileSync(join(saida, 'medicao.json'), JSON.stringify({ data: new Date().toISOString(), viewport: [vw, vh], escala, niveis, resultados, erros }, null, 1));
+  gravar();
   const linhas = ['| nível | modelo | dpr parado | dpr giro | chamadas (GL) | triângulos (GL) | programas | info.calls | info.triangles | giro mediana (ms) |', '|---|---|---|---|---|---|---|---|---|---|'];
   for (const r of resultados) {
     linhas.push(`| ${r.nivel} | ${r.id} | ${r.dpr} | ${r.giro?.dprMovimento ?? '-'} | ${r.gl?.chamadas ?? '-'} | ${r.gl?.triangulos ?? '-'} | ${r.gl?.programasVivos ?? '-'} | ${r.diag?.render?.calls ?? '-'} | ${r.diag?.render?.triangles ?? '-'} | ${r.giro?.medianaMs?.toFixed(1) ?? '-'} |`);
