@@ -129,6 +129,9 @@ export function Cena3D(p: Cena3DProps) {
     () => ({ rotulosVisiveis: p.rotulosVisiveis, selecionado: p.selecionado, destaques, nomes: p.nomes, numeros, modoJogo: !!p.modoJogo, ocultos, isolado, corte, planosCorte: planos, onEscolher: p.onEscolher }),
     [p.rotulosVisiveis, p.selecionado, destaques, p.nomes, numeros, p.modoJogo, ocultos, isolado, corte, planos, p.onEscolher],
   );
+  // Elemento estável do modelo: quando só os marcadores mudam (setQuadro), o React não re-renderiza o modelo nem
+  // o <Tocavel>; funções e vetores novos nas props de um objeto do R3F pedem um quadro a cada re-render.
+  const modeloTocavel = useMemo(() => <Tocavel>{Componente && <Componente />}</Tocavel>, [Componente]);
   // Manipulador estável: uma função nova a cada render altera o estado do R3F, e toda alteração pede um quadro.
   const aoVazio = useRef(p.onVazio);
   aoVazio.current = p.onVazio;
@@ -170,9 +173,7 @@ export function Cena3D(p: Cena3DProps) {
           <AcabamentoContext.Provider value={acabamento}>
             <Suspense fallback={null}>
               <RotulosProvider key={versao} onQuadro={setQuadro}>
-                <group ref={raiz}>
-                  <Tocavel>{Componente && <Componente />}</Tocavel>
-                </group>
+                <group ref={raiz}>{modeloTocavel}</group>
               </RotulosProvider>
             </Suspense>
           </AcabamentoContext.Provider>

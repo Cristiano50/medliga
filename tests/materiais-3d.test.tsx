@@ -157,6 +157,38 @@ describe('acabamentos dos modelos 3D', () => {
     expect([malhaDe(store, 'corpo').opacity, malhaDe(store, 'corpo-umido').opacity]).toEqual([1, 1]);
   });
 
+  it('contorno de seleção fica fora do toque (recém-criado, ainda sem matriz de mundo)', async () => {
+    const amb: AmbienteAcabamento = { ...acabamentoDoPerfil('esquema'), nivel: 'alta' };
+    // Elemento estável do modelo (como o Cena3D faz): a parte re-renderiza só pelo contexto.
+    const modelo = (
+      <Parte id="pequena" cor="#ff0000" prioridade={8} posicao={[3, 0, 0]} escala={0.1}>
+        <MalhaNomeada nome="pequena" />
+      </Parte>
+    );
+    const arvore = (selecionado: string | null) => (
+      <AcabamentoContext.Provider value={amb}>
+        <CenaProvider value={cena({ selecionado })}>{modelo}</CenaProvider>
+      </AcabamentoContext.Provider>
+    );
+    // Como no app: o modelo já está montado e a seleção chega depois (o contorno nasce sem passar por um quadro).
+    const { store, render } = await montar(arvore(null));
+    await render(arvore('pequena'));
+    const cenaThree = store.getState().scene;
+    const contornos: THREE.Mesh[] = [];
+    cenaThree.traverse((o) => { const m = o as THREE.Mesh; if (m.isMesh && (m.material as THREE.Material).type === 'ShaderMaterial') contornos.push(m); });
+    expect(contornos).toHaveLength(1);
+    // Nenhum quadro foi desenhado: a matriz de mundo do contorno ainda é a identidade (esfera de raio 1 na origem).
+    expect(contornos[0].matrixWorld.equals(new THREE.Matrix4())).toBe(true);
+    const pelaOrigem = new THREE.Raycaster(new THREE.Vector3(0, 0, 5), new THREE.Vector3(0, 0, -1));
+    expect(pelaOrigem.intersectObject(cenaThree, true)).toHaveLength(0);
+    // A parte de verdade (em x = 3, escala 0,1) continua tocável depois que as matrizes são atualizadas.
+    cenaThree.updateMatrixWorld(true);
+    const pelaParte = new THREE.Raycaster(new THREE.Vector3(3, 0, 5), new THREE.Vector3(0, 0, -1));
+    const hits = pelaParte.intersectObject(cenaThree, true);
+    expect(hits.length).toBeGreaterThan(0);
+    expect(hits.every((h) => (h.object as THREE.Mesh).material !== contornos[0].material)).toBe(true);
+  });
+
   it('mudar o dpr não re-renderiza as partes (seletores no useThree)', async () => {
     // Modelo só com <Parte>/<Malha> (os textos Cranial/Caudal de rotulos.tsx ainda leem o estado inteiro).
     let commits = 0;

@@ -32,6 +32,11 @@ const MaterialCtx = createContext<THREE.Material | null>(null);
 const OutroAcabamentoCtx = createContext<((acabamento: Acabamento) => THREE.Material) | null>(null);
 const ContornoCtx = createContext<string | null>(null);
 
+const semToque = () => {};
+/** Malha do <Outlines>: material de shader próprio, dentro de um grupo filho da malha contornada. */
+const ehContorno = (m: THREE.Mesh) =>
+  !!(m.material as THREE.Material | undefined)?.isMaterial && (m.material as THREE.Material).type === 'ShaderMaterial' && !!(m.parent?.parent as THREE.Mesh | undefined)?.isMesh;
+
 /** Opacidade, transparência e escrita de profundidade do estado de destaque (a mesma regra para todo material). */
 function aplicarEstado(m: THREE.MeshStandardMaterial, estado: EstadoDestaque, opacidade: number) {
   m.emissive.set('#000000');
@@ -116,7 +121,9 @@ export function Parte({
   const estadoAtual = useRef(estado);
   estadoAtual.current = estado;
 
-  useEffect(() => {
+  // Efeito de layout: o estado entra antes do quadro pedido pelo mesmo commit (contorno, marcador). Como efeito
+  // passivo, rodava depois desse quadro e pedia outro — dois quadros inteiros por seleção, o 1º ainda sem o apagado.
+  useLayoutEffect(() => {
     aplicarEstado(material, estado, opacidade);
     extras.forEach((m) => aplicarEstado(m, estado, opacidade));
     invalidate();
@@ -182,6 +189,10 @@ export function Parte({
       if ((o as THREE.Mesh).isMesh) {
         // translúcidas: cascas externas (prioridade baixa) primeiro, internas por cima
         (o as THREE.Mesh).renderOrder = opacidade < 1 ? 2 + prioridade : 0;
+        // Contorno de seleção (drei): fora do toque. Recém-criado, ainda tem a matriz de mundo identidade até o
+        // próximo quadro, e um segundo toque rápido acertava essa malha "fantasma" na origem. Com a matriz certa,
+        // ele só repete as interseções da própria malha da parte.
+        if (ehContorno(o as THREE.Mesh)) o.raycast = semToque;
       }
     });
   });
