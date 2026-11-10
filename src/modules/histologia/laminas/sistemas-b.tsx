@@ -621,6 +621,10 @@ export function LaminaEstomago(rng: Rng) {
     const r = rng();
     // na crista as células convergem: só células mucosas do colo, mais baixas
     if (fossetas.some((px) => Math.hypot(a.x - px, y - yC - rC) < rC + 3)) return { tipo: 'colo', n: 2, prof: 14 };
+    // logo abaixo da crista, o septo entre os dois colos é estreito: a altura das células não passa da metade
+    // da largura dele (senão as células dos dois lados se sobreporiam)
+    const px = fossetas.reduce((m, f) => (Math.abs(f - a.x) < Math.abs(m - a.x) ? f : m));
+    if (y < yN + 2 && Math.abs(a.x - px) < 30) return { tipo: 'colo', n: 2, prof: Math.max(7, Math.min(17, Math.abs(a.x - px) - 1.5)) };
     if (y < 228) return r < 0.62 ? { tipo: 'colo', n: 2, prof: 17 } : { tipo: 'parietal', n: 4, prof: 20, bojo: 4 };
     // no fundo curvo da glândula, só células principais (uma parietal ali ficaria deformada)
     const pPar = y < 440 ? 0.64 - (0.34 * (y - 228)) / 212 : y < 494 ? 0.2 : 0;
@@ -1030,9 +1034,13 @@ export function LaminaFigado(rng: Rng) {
           if (rs > rho(as) - h / 2) return;
           const [sx, sy] = em(as, rs);
           if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10 || noPortal(sx, sy, 8)) return;
+          // na luz, encostada num dos lados (no endotélio): sobra luz livre do outro lado
           const c = Math.min(7, h / 2 - 1.2);
-          kupffer += elip(sx, sy, c, 4.3, as);
-          kupfferNuc += elip(sx + Math.cos(as) * 0.8, sy + Math.sin(as) * 0.8, 3.3, 2.2, as);
+          const lado = rng() < 0.5 ? -1 : 1;
+          const kx = sx - Math.sin(as) * 1.2 * lado;
+          const ky = sy + Math.cos(as) * 1.2 * lado;
+          kupffer += elip(kx, ky, c, 4.3, as);
+          kupfferNuc += elip(kx + Math.cos(as) * 0.8, ky + Math.sin(as) * 0.8, 3.3, 2.2, as);
           espS.marcar(sx, sy, c);
           return;
         }

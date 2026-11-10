@@ -1320,8 +1320,10 @@ export function LaminaAdrenal(rng: Rng) {
   const zfCel: string[] = [];
   const zfNuc: string[] = [];
   const passoC = 41;
+  // ondulação quase paralela entre cordões vizinhos (fases próximas): os cordões não se cruzam
+  const fase0 = entre(rng, 0, 6);
   for (let k = -1, x0 = 4; x0 < W + 40; k++, x0 += passoC) {
-    const fase = entre(rng, 0, 6);
+    const fase = fase0 + 0.12 * k;
     const xc = (y: number) => x0 + 5 * Math.sin(y / 70 + fase);
     const sem: Sitio[] = [];
     for (let y = 92; y < 432; y += entre(rng, 18, 21)) {

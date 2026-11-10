@@ -1304,7 +1304,15 @@
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "11 correções (0 críticas, 1 importante, 10 menores); nenhum gabarito alterado. Principais: q09 com a área B ambígua entre 2º grau profundo e 3º grau (vinheta passou a ter aspecto de couro e insensibilidade à agulha) e refutação incorreta da alternativa a; correlação de queimaduras alinhada ao texto integral de Jeschke 2020 e Toussaint e Singer 2014; Breslow conferida no ICCR 2013 (topo da camada granulosa ou base da úlcera); inervação das apócrinas e das écrinas conferida em Baker 2019; albinismo com 'pouca ou nenhuma melanina'; estrutura estrato-granuloso acrescentada (lâmina pele-espessa e his-02); alternativa 'Célula melanocítica' trocada por 'Melanócito'. Conferidos sem correção: INCA (ABCDE, rastreamento), origem das células de Langerhans e de Merkel (Hoeffel 2012; Morrison 2009; Van Keymeulen 2009), ciclo do pelo e eflúvio telógeno pós-parto. Relatório: content/revisoes/hs1314-histologia.md."
+      }
+    ],
     "humano": null
   }
 }

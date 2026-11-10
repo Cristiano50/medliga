@@ -1401,7 +1401,15 @@
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 2 importantes, 8 menores); nenhum gabarito alterado. Principais: q04 ambígua (a divisão em terços da muscular do esôfago é convenção; Meyer 1986 acha só 4–6% proximais esqueléticos) — enunciado passou a pedir a divisão clássica; q18 dizia que a zona de transição anal é revestida por epitélio pavimentoso (é variável); zona de transição situada em torno da linha pectínea, sobretudo logo acima (Fenger 1979; Li 2026) no resumo, nos pontos-chave e na estrutura linha-pectinea; risco de adenocarcinoma na gastrite autoimune apresentado como debatido; dieta sem glúten por toda a vida atribuída à parte 2 da ESsCD (2026); título da ERNICA corrigido. Conferidos no texto integral sem correção: ESsCD 2025 parte 1 (biópsias, Marsh, reexposição, HLA), ERNICA 2026 (biópsia ≥ 2 cm acima da linha denteada, submucosa, HE, calretinina, acetilcolinesterase), Monforte 2025, critério de apendicite (diretriz sueca 2025), abetalipoproteinemia, azul alciano no Barrett. Relatório: content/revisoes/hs1314-histologia.md."
+      }
+    ],
     "humano": null
   }
 }
