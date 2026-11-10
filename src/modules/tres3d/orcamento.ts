@@ -4,6 +4,10 @@
 //   mais chamadas = placenta-membranas com 114, no máximo 5 programas WebGL vivos.
 // Com o refino, os tetos de triângulos ficam em 100 mil / 200 mil / 350 mil; chamadas e programas não
 // dependem do nível (o refino não cria malhas; a sombra estática não redesenha a cena a cada quadro).
+// Fase 2 (acabamentos e pré-compilação, medição de 10/11/2026): triângulos e chamadas iguais; programas
+// vivos no quadro parado sobem de 2–7 para 5–11, porque as variantes do primeiro toque (partes apagadas e
+// contorno) ficam compiladas de antemão. O teto de 12 continua valendo para o quadro parado; com corte e
+// seleção ao mesmo tempo o three compila as variantes com clipping e o pico medido foi 25 (placenta, alta).
 import type { NivelQualidade } from './qualidade.ts';
 
 export interface Orcamento {
