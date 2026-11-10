@@ -1810,7 +1810,7 @@ export function LaminaTesticulo(rng: Rng) {
 }
 
 // =============================================================================================
-// 6. OVÁRIO — escala 1 un ≈ 1 µm: folículo primordial ≈ 35 µm (oócito ≈ 27 µm); primário unilaminar ≈ 65 µm;
+// 6. OVÁRIO — escala 1 un ≈ 1 µm: folículo primordial ≈ 35 µm (ovócito ≈ 27 µm); primário unilaminar ≈ 65 µm;
 // folículo secundário (antral) ≈ 400 µm, com ovócito de ≈ 104 µm e zona pelúcida de ≈ 7 µm.
 export const PARTES_OVARIO = ['epitelio-superficial-do-ovario', 'tunica-albuginea', 'foliculo-primordial', 'foliculo-primario', 'foliculo-secundario', 'ovocito-primario', 'zona-pelucida', 'celulas-da-granulosa', 'teca-interna'];
 
@@ -1863,7 +1863,7 @@ export function LaminaOvario(rng: Rng) {
     estNuc.push(elipse(x, y, 5.4, 1.4, ang));
   });
 
-  // folículos primordiais: oócito com núcleo excêntrico e nucléolo, envolto por uma camada de células foliculares achatadas
+  // folículos primordiais: ovócito com núcleo excêntrico e nucléolo, envolto por uma camada de células foliculares achatadas
   const pCel: string[] = [];
   const pNucF: string[] = [];
   const pOo: string[] = [];
@@ -1882,7 +1882,7 @@ export function LaminaOvario(rng: Rng) {
       pNucF.push(elipse(x + Math.cos(b) * 15, y + Math.sin(b) * 15, 5, 1.5, (b * 180) / Math.PI + 90));
     }
   }
-  // folículos primários unilaminares: oócito maior, zona pelúcida delgada e uma camada de células da granulosa cúbicas
+  // folículos primários unilaminares: ovócito maior, zona pelúcida delgada e uma camada de células da granulosa cúbicas
   const uCel: string[] = [];
   const uNuc: string[] = [];
   const uOo: string[] = [];
