@@ -36,8 +36,9 @@ export interface LaminaRender {
 export const AREA_PADRAO: [number, number, number, number] = [250, 200, 750, 500];
 
 export const LAMINAS_RENDER: Record<string, LaminaRender> = {
-  // o interstício (fundo de conjuntivo frouxo) é 50–70% de todo campo de 10× e a resposta é um tecido: "conjuntivo frouxo" também vale
-  'epitelio-cubico-rim': { desenhar: Ep.LaminaEpitelioCubico, partes: Ep.PARTES_EPITELIO_CUBICO, distratoresExcluidos: ['conjuntivo-frouxo'] },
+  // o interstício (fundo de conjuntivo frouxo) é 50–70% de todo campo de 10× e a resposta é um tecido: "conjuntivo frouxo" também vale;
+  // o campo são túbulos renais, então "Rim (córtex renal)" também vale
+  'epitelio-cubico-rim': { desenhar: Ep.LaminaEpitelioCubico, partes: Ep.PARTES_EPITELIO_CUBICO, distratoresExcluidos: ['conjuntivo-frouxo', 'rim-cortex'] },
   // a lâmina própria (conjuntivo frouxo) chega a 55% do campo e é a maior estrutura em 44% dos campos
   'epitelio-cilindrico-intestino': {
     desenhar: Ep.LaminaEpitelioCilindrico,
