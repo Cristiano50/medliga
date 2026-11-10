@@ -954,6 +954,175 @@
         "proteoglicanos"
       ],
       "referencia": "Junqueira 14ª ed., cap. 7; Ross 8ª ed., cap. 7"
+    },
+    {
+      "id": "his-06-q27",
+      "tipo": "multipla",
+      "contexto": "Num experimento, dois grupos de camundongos jovens são comparados a controles da mesma idade. No grupo 1, os condrócitos expressam uma forma permanentemente ativada (mutação ativadora) do receptor FGFR3. No grupo 2, animais normais recebem dieta pobre em vitamina D e em fosfato, sem exposição à luz ultravioleta. Semanas depois, cortes da placa epifisária da tíbia são corados por HE.",
+      "enunciado": "Qual par de achados (grupo 1; grupo 2) é o esperado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Grupo 1: zona hipertrófica alargada e desorganizada, com septos mal calcificados; grupo 2: colunas de proliferação curtas e zona hipertrófica estreita, com mineralização normal"
+        },
+        {
+          "id": "b",
+          "texto": "Grupo 1: colunas de proliferação curtas e zona hipertrófica estreita, com mineralização normal; grupo 2: zona hipertrófica alargada e desorganizada, com septos mal calcificados"
+        },
+        {
+          "id": "c",
+          "texto": "Grupo 1: placa de aspecto normal, mas osso cortical fino por colágeno tipo I anormal; grupo 2: cartilagem calcificada retida no interior de trabéculas densas, sem reabsorção pelos osteoclastos"
+        },
+        {
+          "id": "d",
+          "texto": "Grupo 1: proliferação excessiva de condrócitos, com placa espessa e colunas longas; grupo 2: placa de aspecto normal, com trabéculas finas e normalmente mineralizadas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A mutação ativadora de FGFR3, mecanismo da acondroplasia, inibe a proliferação e a hipertrofia dos condrócitos da placa epifisária: as colunas da zona de proliferação ficam curtas e a zona hipertrófica, estreita, mas a mineralização é normal (b). Com pouca vitamina D e pouco fosfato, como no raquitismo, a cartilagem da placa não se calcifica normalmente, os condrócitos hipertróficos não são removidos, e a zona hipertrófica alarga-se e desorganiza-se; o osteoide formado não se mineraliza. A alternativa (a) inverte os dois grupos. Colágeno tipo I anormal é o defeito da osteogênese imperfeita, e cartilagem calcificada retida em trabéculas densas é próprio da osteopetrose, em que os osteoclastos não a reabsorvem; nenhum dos dois corresponde aos tratamentos (c). A mutação é ativadora do receptor, mas o FGFR3 ativado inibe a proliferação, em vez de estimulá-la; e trabéculas finas, normalmente mineralizadas, descrevem a osteoporose, não a carência de vitamina D e de fosfato (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "placa-epifisaria",
+        "acondroplasia",
+        "raquitismo",
+        "fgfr3",
+        "experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 7 e 8; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; MS, PCDT Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022), 1 e 3.3"
+    },
+    {
+      "id": "his-06-q28",
+      "tipo": "multipla",
+      "contexto": "Num experimento, discos de cartilagem articular são incubados numa solução enzimática que remove a maior parte dos proteoglicanos da matriz (agrecano e seus glicosaminoglicanos sulfatados), preservando a rede de fibrilas de colágeno tipo II. Os discos tratados são comparados com discos não tratados em cortes corados por HE e por azul de toluidina e em testes mecânicos de compressão e de tração.",
+      "enunciado": "Qual resultado é esperado nos discos tratados?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Matriz mais basófila e mais metacromática, e maior resistência à compressão, porque o colágeno fica exposto"
+        },
+        {
+          "id": "b",
+          "texto": "Coloração inalterada, e perda da resistência à tração, porque os proteoglicanos são os principais responsáveis por ela"
+        },
+        {
+          "id": "c",
+          "texto": "Matriz quebradiça, como a do osso calcinado, porque perdeu a parte orgânica responsável pela flexibilidade"
+        },
+        {
+          "id": "d",
+          "texto": "Perda da basofilia e da metacromasia, e menor resistência à compressão, com tração relativamente preservada"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "As cargas negativas dos glicosaminoglicanos sulfatados do agrecano produzem a basofilia no HE e a metacromasia pelo azul de toluidina; essas mesmas cargas retêm água de solvatação, que dá à matriz resistência à compressão. Removidos os proteoglicanos, a matriz perde a basofilia e a metacromasia e cede mais sob compressão, enquanto as fibrilas de colágeno tipo II, que resistem à tração, continuam lá (d). A perda de proteoglicanos é também a primeira alteração da cartilagem na osteoartrite. A matriz não fica mais basófila nem mais resistente à compressão (a): a basofilia vem justamente dos proteoglicanos removidos. A resistência à tração depende das fibrilas colágenas, não dos proteoglicanos, e a coloração muda (b). A comparação com o osso calcinado não se aplica (c): na calcinação perde-se toda a parte orgânica, inclusive o colágeno, e restam os minerais; aqui a cartilagem não tem fase mineral, e o colágeno foi preservado.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "matriz",
+        "agrecano",
+        "proteoglicanos",
+        "osteoartrite",
+        "experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 7; Ross 8ª ed., cap. 7; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
+    },
+    {
+      "id": "his-06-q29",
+      "tipo": "multipla",
+      "contexto": "Jogadora de vôlei de 24 anos tem uma lesão condral de espessura total no côndilo femoral e é tratada por microfratura: o cirurgião remove a cartilagem lesada e faz pequenas perfurações no osso subcondral exposto, até sair sangue. Um ano depois, na artroscopia de revisão, o defeito está preenchido. A biópsia do tecido de reparo mostra feixes espessos de colágeno, predominantemente do tipo I na imuno-histoquímica, e condrócitos isolados ou em fileiras, com matriz basófila só ao redor das lacunas.",
+      "enunciado": "Qual interpretação é correta?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "É cartilagem hialina formada pelo pericôndrio articular; uma lesão restrita à cartilagem se repararia do mesmo modo"
+        },
+        {
+          "id": "b",
+          "texto": "É cartilagem elástica formada pelos condrócitos vizinhos; as perfurações do osso subcondral eram dispensáveis"
+        },
+        {
+          "id": "c",
+          "texto": "É fibrocartilagem formada por células da medula subcondral; sem as perfurações, o defeito quase não se repararia"
+        },
+        {
+          "id": "d",
+          "texto": "É osso primário, que ainda vai se converter em cartilagem hialina; as perfurações só serviram para nutrir a borda"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Feixes de colágeno tipo I, condrócitos isolados ou em fileiras e matriz basófila restrita às lacunas definem a fibrocartilagem. A cartilagem articular é avascular, não tem pericôndrio, e seus condrócitos, presos em lacunas, quase não proliferam nem migram; as perfurações levam ao defeito sangue e células da medula óssea subcondral, que formam o tecido de reparo fibrocartilaginoso, mecanicamente inferior à cartilagem hialina. Sem esse acesso à medula, um defeito restrito à cartilagem praticamente não cicatriza (c). Não há pericôndrio na superfície articular, e a lesão restrita à cartilagem não se repararia (a). Os condrócitos vizinhos não formam cartilagem elástica, que de todo modo tem colágeno tipo II e fibras elásticas, e não feixes de colágeno tipo I (b). Osso não se converte em cartilagem, e o tecido descrito não tem matriz óssea (d).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "reparo",
+        "cartilagem-articular",
+        "fibrocartilagem",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 7; Junqueira 14ª ed., cap. 7"
+    },
+    {
+      "id": "his-06-q30",
+      "tipo": "vf",
+      "enunciado": "Na acondroplasia, a macrocefalia resulta da proliferação excessiva de condrócitos na abóbada craniana, estimulada pela mutação ativadora do FGFR3.",
+      "correta": false,
+      "explicacao": "Falso. A mutação é ativadora do receptor, mas o FGFR3 ativado inibe a proliferação e a hipertrofia dos condrócitos; por isso os ossos formados por ossificação endocondral, como os ossos longos dos membros, ficam curtos. A abóbada craniana forma-se por ossificação intramembranosa, sem molde de cartilagem, e seu crescimento é relativamente preservado; esse contraste com a ossificação endocondral deficiente contribui para a macrocefalia.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "acondroplasia",
+        "fgfr3",
+        "ossificacao-intramembranosa",
+        "placa-epifisaria"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; Junqueira 14ª ed., cap. 7 e 8"
+    },
+    {
+      "id": "his-06-q31",
+      "tipo": "associar",
+      "enunciado": "Associe cada condição à alteração do tecido cartilaginoso que a explica:",
+      "pares": [
+        {
+          "esquerda": "Acondroplasia",
+          "direita": "Menos proliferação e hipertrofia dos condrócitos da placa epifisária"
+        },
+        {
+          "esquerda": "Raquitismo",
+          "direita": "Cartilagem da zona hipertrófica que não se calcifica e se acumula"
+        },
+        {
+          "esquerda": "Osteoartrite",
+          "direita": "Perda de proteoglicanos e fibrilação da cartilagem articular"
+        },
+        {
+          "esquerda": "Hérnia de disco",
+          "direita": "Ruptura de lamelas de fibrocartilagem do anel fibroso"
+        },
+        {
+          "esquerda": "Reparo após microfratura",
+          "direita": "Fibrocartilagem formada por células da medula subcondral"
+        },
+        {
+          "esquerda": "Condrossarcoma",
+          "direita": "Condrócitos atípicos que infiltram trabéculas ósseas preexistentes"
+        }
+      ],
+      "explicacao": "Na acondroplasia, o FGFR3 ativado reduz a proliferação e a hipertrofia dos condrócitos da placa; no raquitismo, a falta de cálcio e fosfato impede a calcificação da cartilagem, e a zona hipertrófica se alarga; na osteoartrite, a cartilagem articular perde proteoglicanos e sofre fibrilação; na hérnia de disco, rompem-se lamelas do anel fibroso e o núcleo pulposo extravasa; após a microfratura, o defeito é preenchido por fibrocartilagem vinda da medula subcondral; no condrossarcoma, condrócitos atípicos produzem matriz cartilaginosa e infiltram as trabéculas.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "correlacoes-clinicas",
+        "placa-epifisaria",
+        "osteoartrite",
+        "hernia-de-disco"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 7 e 8; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
     }
   ],
   "referencias": [
@@ -979,6 +1148,10 @@
     },
     {
       "obra": "Kraus VB, Blanco FJ, Englund M, Karsdal MA, Lohmander LS. Call for a standardized definition of osteoarthritis and risk stratification for clinical trials and clinical use. Osteoarthritis Cartilage. 2015;23(8):1233-41 (definição da OARSI)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas de Raquitismo e Osteomalácia. Portaria Conjunta SAES/SCTIE nº 2, de 11/01/2022 (revogou a Portaria SAS/MS nº 451/2016). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/r/raquitismo-e-osteomalacia",
+      "capitulo": "1 Introdução (raquitismo como deficiência de mineralização da placa de crescimento; a redução do fósforo como causa das alterações da placa) e 3.3 Diagnóstico radiológico (desorganização da placa de crescimento). Conferido no texto integral em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -996,7 +1169,8 @@
     "Proporção de água na matriz e espessura das camadas do pericôndrio foram omitidas por não terem sido conferidas.",
     "Frequência relativa do condrossarcoma entre os tumores ósseos malignos e a proporção de casos de acondroplasia por mutação nova (as obras citam valores diferentes) foram omitidas; mantidos apenas “adultos, em geral a partir dos 40 anos, porções centrais do esqueleto” e “maioria por mutação nova”.",
     "A afirmação de que a cartilagem elástica não tende a calcificar-se segue Ross; Junqueira diz que ela é “menos sujeita a processos degenerativos”.",
-    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 7; Junqueira 7) continuam pendentes de conferência humana. Faixa etária do condrossarcoma alinhada a Robbins (“40 anos ou mais”), de memória; conferir."
+    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 7; Junqueira 7) continuam pendentes de conferência humana. Faixa etária do condrossarcoma alinhada a Robbins (“40 anos ou mais”), de memória; conferir.",
+    "Camada avançada (10/11/2026, redator; ainda sem revisão da área nem transversal): his-06-q27 a q31 cobram fatos já revisados neste tópico e no his-07. Os cenários experimentais de q27 (camundongos com FGFR3 ativado; dieta pobre em vitamina D e fosfato) e de q28 (remoção enzimática dos proteoglicanos com colágeno preservado) são previsões a partir dos mecanismos do tópico, não resultados de um estudo citado. A placa no raquitismo foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (2022); a descrição da placa na acondroplasia (colunas curtas, zona hipertrófica estreita) deriva do mecanismo do tópico e de Robbins (de memória, não conferida). A técnica de microfratura (q29) aparece só em termos gerais (perfurações do osso subcondral); a imuno-histoquímica de colágeno tipo I no tecido de reparo é coerente com a fibrocartilagem do tópico, sem fonte primária lida."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",

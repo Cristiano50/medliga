@@ -693,6 +693,89 @@
       "bloom": "aplicar",
       "tags": ["anemia", "leucemia", "desvio-a-esquerda", "eosinofilia"],
       "referencia": "Hoffbrand 7ª ed.; Junqueira 14ª ed., Células do sangue"
+    },
+    {
+      "id": "his-08-q29",
+      "tipo": "multipla",
+      "contexto": "Mulher de 46 anos tem fluxo menstrual aumentado há anos e cansaço progressivo. Hemograma: hemoglobina baixa, VCM dentro da faixa de referência e RDW (índice de anisocitose) muito aumentado. No esfregaço corado por Leishman há duas populações de hemácias, umas pequenas e com halo central ampliado, outras grandes e ovais, e vários neutrófilos hipersegmentados. Ferritina e vitamina B12 séricas estão baixas.",
+      "enunciado": "Como se explica o VCM normal nessa paciente?",
+      "alternativas": [
+        { "id": "a", "texto": "Deficiência de ferro ainda inicial, normocítica; a vitamina B12 baixa não tem relação com o esfregaço" },
+        { "id": "b", "texto": "Hemorragia aguda recente, em que as hemácias perdidas são repostas por células de tamanho normal" },
+        { "id": "c", "texto": "Falta de eritropoetina, que produz anemia normocítica com hemácias de tamanho uniforme" },
+        { "id": "d", "texto": "O VCM é uma média: microcitose da falta de ferro e macrocitose da falta de B12 se compensam" }
+      ],
+      "correta": "d",
+      "explicacao": "O VCM é o volume médio das hemácias. Quando coexistem deficiência de ferro, que produz hemácias pequenas e hipocrômicas, e deficiência de vitamina B12, que produz hemácias grandes e ovais e neutrófilos hipersegmentados, as duas populações podem resultar numa média normal; o RDW muito alto e o esfregaço revelam a mistura (d). Na deficiência de ferro inicial a anemia pode mesmo ser normocítica, mas isso não explicaria macro-ovalócitos nem neutrófilos hipersegmentados, que indicam falha na síntese de DNA (a). A hemorragia aguda não produz duas populações de hemácias nem neutrófilos hipersegmentados, e a história é de anos (b). A anemia por falta de eritropoetina, típica da doença renal crônica, é normocítica e com hemácias de tamanho uniforme, o oposto de um RDW muito aumentado (c). O caso mostra por que se lê o esfregaço e o RDW, e não só o VCM.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "esfregaco", "anemia", "microcitose", "macrocitose", "rdw", "caso-clinico"],
+      "referencia": "Junqueira 14ª ed., Células do sangue; Hoffbrand 7ª ed. (anemias hipocrômicas e megaloblásticas); MS, PCDT Anemia por deficiência de ferro (Portaria SAS/MS nº 1.247/2014), 4.2"
+    },
+    {
+      "id": "his-08-q30",
+      "tipo": "multipla",
+      "contexto": "No mielograma de um paciente com anemia, muitos precursores eritroides são maiores que o habitual e têm núcleo de cromatina frouxa, finamente pontilhada, mesmo quando o citoplasma já está acidófilo, carregado de hemoglobina, como o de uma célula quase madura.",
+      "enunciado": "Qual mecanismo explica esse aspecto e que achado se espera no sangue periférico?",
+      "alternativas": [
+        { "id": "a", "texto": "Falta de ferro, que atrasa a síntese de hemoglobina; hemácias microcíticas e hipocrômicas no esfregaço" },
+        { "id": "b", "texto": "Síntese de DNA prejudicada e núcleo atrasado em relação ao citoplasma; macrocitose e hipersegmentação" },
+        { "id": "c", "texto": "Bloqueio clonal da maturação em blastos; células imaturas com bastonetes de Auer circulando no sangue" },
+        { "id": "d", "texto": "Falta de eritropoetina, com menos progenitores estimulados; anemia normocítica e reticulócitos baixos" }
+      ],
+      "correta": "b",
+      "explicacao": "A assincronia núcleo-citoplasma é a marca da eritropoese megaloblástica: na falta de vitamina B12 ou de folato, ou sob fármacos que inibem a síntese de DNA, o núcleo amadurece mais devagar, enquanto o citoplasma acumula hemoglobina normalmente; formam-se precursores grandes (megaloblastos), e no sangue aparecem hemácias macrocíticas e neutrófilos hipersegmentados (b). Na falta de ferro, o problema é a síntese de hemoglobina, no citoplasma; não haveria citoplasma bem hemoglobinizado ao lado de núcleo imaturo (a). Blastos de leucemia aguda têm citoplasma basófilo, sem hemoglobina, e não mostram essa dissociação (c). A falta de eritropoetina reduz a quantidade de precursores, mas não altera a relação entre a maturação do núcleo e a do citoplasma (d).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "mielograma", "eritropoese", "megaloblasto", "anemia"],
+      "referencia": "Junqueira 14ª ed., Hemocitopoese; Hoffbrand 7ª ed. (anemias megaloblásticas)"
+    },
+    {
+      "id": "his-08-q31",
+      "tipo": "multipla",
+      "contexto": "Homem de 63 anos tem formigamento nos pés e desequilíbrio ao andar há meses. O hemograma mostra anemia macrocítica, e o esfregaço, neutrófilos hipersegmentados.",
+      "enunciado": "Qual interpretação explica as alterações hematológicas e as neurológicas ao mesmo tempo?",
+      "alternativas": [
+        { "id": "a", "texto": "Deficiência de ácido fólico: é a única carência que causa megaloblastose com lesão da medula espinal" },
+        { "id": "b", "texto": "Deficiência de ferro: a anemia reduz a oferta de oxigênio aos nervos e explica a neuropatia" },
+        { "id": "c", "texto": "Deficiência de vitamina B12: causa megaloblastose e lesa o sistema nervoso, às vezes sem anemia" },
+        { "id": "d", "texto": "Falta de eritropoetina: a medula passa a produzir hemácias grandes para compensar a falta do hormônio" }
+      ],
+      "correta": "c",
+      "explicacao": "Anemia macrocítica com neutrófilos hipersegmentados indica eritropoese megaloblástica, por deficiência de vitamina B12 ou de folato. Das duas, só a de B12 causa também lesão neurológica, como neuropatia periférica e degeneração combinada subaguda da medula espinal; por isso formigamento e desequilíbrio apontam para ela (c). Segundo consensos de especialistas, a gravidade da lesão neurológica não acompanha a da anemia, que pode até faltar, e parte das lesões pode ser irreversível; por isso não se espera o hemograma alterar para investigar. A deficiência de folato causa o mesmo quadro hematológico, mas não essa lesão neurológica (a). A deficiência de ferro produz anemia microcítica e hipocrômica, não macrocitose com hipersegmentação (b). A falta de eritropoetina causa anemia normocítica com reticulócitos baixos, sem macrocitose compensatória (d).",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "anemia", "megaloblasto", "vitamina-b12", "integracao", "caso-clinico"],
+      "referencia": "Hoffbrand 7ª ed. (anemias megaloblásticas); Obeid R et al., J Clin Med 2024 (consenso Delphi, deficiência de B12); Cohen RV et al., eClinicalMedicine 2026 (consenso Delphi brasileiro)"
+    },
+    {
+      "id": "his-08-q32",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado do hemograma, do esfregaço ou do mielograma ao mecanismo que o produz:",
+      "pares": [
+        { "esquerda": "Neutrófilos hipersegmentados", "direita": "Síntese de DNA prejudicada nos precursores" },
+        { "esquerda": "Hemácias microcíticas e hipocrômicas", "direita": "Síntese insuficiente de hemoglobina" },
+        { "esquerda": "Aumento de bastonetes", "direita": "Liberação acelerada da reserva de neutrófilos da medula" },
+        { "esquerda": "Bastonetes de Auer", "direita": "Grânulos azurófilos fundidos em blastos mieloides" },
+        { "esquerda": "Policromasia por reticulócitos aumentados", "direita": "Resposta da medula à perda ou à destruição de hemácias" },
+        { "esquerda": "Anemia normocítica com reticulócitos baixos na doença renal crônica", "direita": "Produção insuficiente de eritropoetina" }
+      ],
+      "explicacao": "A falha na síntese de DNA (B12, folato) atrasa o núcleo e gera neutrófilos hipersegmentados; a falta de ferro ou de globina reduz a hemoglobina e gera hemácias pequenas e pálidas; infecções bacterianas mobilizam a reserva medular de neutrófilos jovens (desvio à esquerda); os bastonetes de Auer são grânulos azurófilos fundidos, próprios de blastos mieloides; reticulócitos aumentados, vistos como policromasia, indicam que a medula responde a hemorragia ou hemólise; na doença renal crônica, a falta de eritropoetina reduz a produção, com reticulócitos baixos.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "esfregaco", "mielograma", "fisiopatologia"],
+      "referencia": "Junqueira 14ª ed., Células do sangue e Hemocitopoese; Hoffbrand 7ª ed."
+    },
+    {
+      "id": "his-08-q33",
+      "tipo": "vf",
+      "enunciado": "Na anemia por deficiência de ferro, quando o tratamento com ferro é eficaz, o aumento dos reticulócitos aparece antes da elevação da hemoglobina.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Com ferro disponível, a medula retoma a produção, e as hemácias recém-liberadas, ainda com RNA residual (reticulócitos), aparecem no sangue nos primeiros dias; a hemoglobina sobe mais devagar, ao longo de uma a duas semanas, segundo o PCDT de anemia por deficiência de ferro. Por isso a contagem de reticulócitos é um indicador precoce da resposta da medula, como na recuperação após hemorragia.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "reticulocito", "anemia", "ferro"],
+      "referencia": "MS, PCDT Anemia por deficiência de ferro (Portaria SAS/MS nº 1.247/2014), 8.6; Junqueira 14ª ed., Células do sangue"
     }
   ],
   "referencias": [
@@ -706,7 +789,10 @@
     { "obra": "Döhner H et al. Diagnosis and management of AML in adults: 2022 recommendations from an international expert panel on behalf of the ELN. Blood. 2022;140(12):1345-77. doi:10.1182/blood.2022016867. PMID 35797463", "capitulo": "Diagnóstico da leucemia mieloide aguda: aspirado e biópsia de medula, imunofenotipagem, citogenética e biologia molecular" },
     { "obra": "Provan D et al. Updated international consensus report on the investigation and management of primary immune thrombocytopenia. Blood Adv. 2019;3(22):3780-817. doi:10.1182/bloodadvances.2019000812. PMID 31770441; Neunert C et al. The American Society of Hematology 2011 evidence-based practice guideline for immune thrombocytopenia. Blood. 2011;117(16):4190-207. doi:10.1182/blood-2010-08-302984. PMID 21325604", "capitulo": "Trombocitopenia imune: diagnóstico de exclusão; mielograma não necessário no quadro típico" },
     { "obra": "Kidney Disease: Improving Global Outcomes (KDIGO) Anemia Work Group. KDIGO 2026 Clinical Practice Guideline for the Management of Anemia in Chronic Kidney Disease (CKD). Kidney Int. 2026;109(1S):S1–S99. doi:10.1016/j.kint.2025.06.006. PMID 41485812", "capitulo": "Correção de causas reversíveis (ferro) antes dos agentes estimuladores da eritropoese; hemoglobina-alvo sem normalização (Practice Point 3.1.2; Recomendação 3.3.1: em adultos tratados com agentes estimuladores da eritropoese, hemoglobina-alvo abaixo de 11,5 g/dl)" },
-    { "obra": "U.S. National Library of Medicine. MedlinePlus: Reticulocyte count (acesso em 09/11/2026)", "capitulo": "Faixa de referência habitual de reticulócitos no adulto (0,5–2,5%)" }
+    { "obra": "U.S. National Library of Medicine. MedlinePlus: Reticulocyte count (acesso em 09/11/2026)", "capitulo": "Faixa de referência habitual de reticulócitos no adulto (0,5–2,5%)" },
+    { "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas: Anemia por deficiência de ferro. Portaria SAS/MS nº 1.247, de 10/11/2014 (versão servida na página oficial de PCDTs em 10/11/2026). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/anemia-deficiencia-de-ferro", "capitulo": "4.2 Diagnóstico laboratorial (anemia inicialmente normocítica com ferritina baixa; depois hipocrômica e microcítica; anisocitose com a piora); 8.6 Benefícios esperados (reticulocitose nos primeiros dias; hemoglobina sobe em uma a duas semanas). Conferido no texto integral em 10/11/2026" },
+    { "obra": "Obeid R et al. Diagnosis, Treatment and Long-Term Management of Vitamin B12 Deficiency in Adults: A Delphi Expert Consensus. J Clin Med. 2024;13(8):2176. doi:10.3390/jcm13082176. PMID 38673453", "capitulo": "Resultados: a anemia macrocítica não se relaciona com a presença ou a gravidade dos sintomas neurológicos; envolvimento neurológico; sintomas graves residuais em parte dos pacientes. Conferido no texto integral (PMC11050313) em 10/11/2026" },
+    { "obra": "Cohen RV et al. Vitamin B12 replacement strategies: a Brazilian Delphi consensus. EClinicalMedicine. 2026;100:104205. doi:10.1016/j.eclinm.2026.104205. PMID 42830915", "capitulo": "Introdução: manifestações da deficiência de B12 (anemia megaloblástica, neuropatia periférica, degeneração combinada subaguda da medula), que podem ser irreversíveis. Conferido no texto integral (PMC13634271) em 10/11/2026" }
   ],
   "notasDivergencia": [
     "Contagem diferencial de leucócitos no adulto: Junqueira (tabela do capítulo Células do sangue) cita neutrófilos 60–70%, linfócitos 20–30%, monócitos 3–8%, eosinófilos 2–4% e basófilos 0,5–1%. Ross e os laboratórios clínicos usam faixas próprias, em geral mais amplas e também em valores absolutos (/µL); cada laudo traz sua referência. Por isso as questões cobram só a ordem de frequência e o fato de o neutrófilo ser o mais numeroso e o basófilo o mais raro; a posição relativa de monócitos e eosinófilos (faixas que se aproximam) não é cobrada isoladamente.",
@@ -724,7 +810,8 @@
     "Tempos de permanência dos neutrófilos no sangue e nos tecidos e tamanho dos megacariócitos omitidos por divergência entre fontes e falta de conferência.",
     "Sobrevida das plaquetas (~10 dias) e tamanho (~2–4 µm) citados de memória de Junqueira e Ross; conferir.",
     "Capítulos de Hoffbrand 7ª ed. não conferidos.",
-    "Revisão clínica: ELN 2022 (leucemia mieloide aguda) e o consenso internacional de PTI (2019) foram conferidos por busca e de memória; o texto integral não pôde ser aberto nesta sessão. Conferência de fontes (2026-11-09): dados bibliográficos dos dois conferidos no PubMed e afirmações compatíveis com os resumos (textos integrais não liberados pela API); a KDIGO 2026 foi lida no texto integral (kdigo.org) e saiu desta lista. Conferir se convém citar também os PCDT do Ministério da Saúde (anemia por deficiência de ferro; anemia na doença renal crônica), que não foram consultados."
+    "Revisão clínica: ELN 2022 (leucemia mieloide aguda) e o consenso internacional de PTI (2019) foram conferidos por busca e de memória; o texto integral não pôde ser aberto nesta sessão. Conferência de fontes (2026-11-09): dados bibliográficos dos dois conferidos no PubMed e afirmações compatíveis com os resumos (textos integrais não liberados pela API); a KDIGO 2026 foi lida no texto integral (kdigo.org) e saiu desta lista. Conferir se convém citar também os PCDT do Ministério da Saúde (anemia por deficiência de ferro; anemia na doença renal crônica), que não foram consultados.",
+    "Camada avançada (10/11/2026, redator; ainda sem revisão da área nem transversal): his-08-q29 a q33. Conferidos no texto integral: PCDT de anemia por deficiência de ferro (2014; é o servido na página oficial, mas é antigo e cita a resposta reticulocitária como 'pode ser vista'), consenso Delphi europeu sobre deficiência de B12 (Obeid et al., 2024) e consenso Delphi brasileiro (Cohen et al., 2026). Não puderam ser abertos (host recusado pelo proxy): diretriz da British Society for Haematology (Devalia et al., 2014) e NICE NG239 (2024). Em q29, 'VCM normal por média de duas populações' é dedução da definição do VCM e do quadro do tópico, compatível com Hoffbrand (de memória). Em q30, 'blastos com citoplasma basófilo, sem hemoglobina' segue a descrição do mieloblasto no tópico. Os consensos Delphi não são diretrizes formais de sociedade; o revisor humano pode preferir citar a BSH ou o NICE."
   ],
   "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [
     {"area": "histologia", "agente": "revisor-histologia-v1", "data": "2026-11-09", "veredito": "aprovado-com-correcoes", "notas": "9 correções (0 críticas, 1 importante, 8 menores); nenhum gabarito errado. Principais: q11/resumo/estrutura medula vermelha diziam que a pelve é esqueleto axial e a estrutura omitia os ossos do quadril; medula como principal sítio no 3º trimestre (antes 'fim da gestação'), compatível com Moore e Sadler; critério de hipersegmentação alinhado à nota; núcleo do basófilo em q15 alinhado à lâmina; origem dos macrófagos alinhada a his-10; incerteza da célula produtora de eritropoetina resolvida (Hoffbrand). Leucograma: só a ordem de frequência é cobrada (q18), seguro; percentuais e capítulos da 14ª ed. ficam para o revisor humano."},

@@ -1,0 +1,838 @@
+{
+  "id": "his-11-circulatorio",
+  "disciplina": "histologia",
+  "ordem": 11,
+  "titulo": "Sistema circulatório",
+  "subtitulo": "Parede dos vasos, endotélio, linfáticos e histologia do coração",
+  "objetivos": [
+    "Descrever as túnicas íntima, média e adventícia e relacionar a composição de cada uma à função do vaso.",
+    "Diferenciar ao microscópio artérias elásticas, artérias musculares, arteríolas, veias e vasos linfáticos.",
+    "Classificar os capilares em contínuos, fenestrados e sinusoides e relacionar cada tipo aos órgãos em que predomina.",
+    "Explicar as funções do endotélio na hemostasia, no tônus vascular e na inflamação, incluindo o óxido nítrico, o fator de von Willebrand e os corpos de Weibel-Palade.",
+    "Descrever endocárdio, miocárdio, epicárdio, esqueleto fibroso, valvas e sistema de condução do coração.",
+    "Correlacionar aterosclerose, arteriolosclerose, aneurismas, varizes, endocardite infecciosa, isquemia subendocárdica e pré-excitação ventricular com a histologia normal."
+  ],
+  "resumo": "**Plano geral.** Exceto capilares e vênulas pós-capilares, os vasos têm três túnicas:\n- **Íntima**: **endotélio** (epitélio simples pavimentoso) com sua lâmina basal, **camada subendotelial** de conjuntivo frouxo e, nas artérias, a **lâmina elástica interna**, fenestrada, que deixa os nutrientes se difundirem para a média.\n- **Média**: camadas concêntricas de **células musculares lisas**, entre as quais há fibras elásticas, fibras reticulares e proteoglicanos produzidos pelas próprias células musculares (a média não tem fibroblastos). Nas artérias musculares maiores, a **lâmina elástica externa** separa a média da adventícia.\n- **Adventícia**: conjuntivo com colágeno tipo I e fibras elásticas, contínuo com o tecido vizinho. Nos vasos de grande calibre contém os **vasa vasorum**, que nutrem a adventícia e a parte externa da média (o restante da parede é nutrido por difusão a partir do lúmen), e nervos vasomotores.\n\n**Artérias.**\n- **Elásticas** (aorta, tronco pulmonar e seus grandes ramos): média com dezenas de **lâminas elásticas fenestradas** e células musculares lisas entre elas. Distendem-se na sístole e devolvem a energia na diástole, mantendo o fluxo contínuo.\n- **Musculares** (distribuidoras: coronárias, renais, radial, femoral): média predominantemente muscular e **lâmina elástica interna** nítida, ondulada no corte porque o vaso se contrai após a morte.\n- **Arteríolas**: uma ou duas camadas de músculo liso; lâmina elástica interna delgada ou ausente. São o principal local de **resistência periférica**: regulam o fluxo para os capilares e a pressão arterial.\n\n**Capilares.** Endotélio e lâmina basal, com diâmetro próximo ao de uma hemácia, muitas vezes acompanhados de **pericitos**, células contráteis que podem originar células endoteliais e musculares lisas no reparo.\n- **Contínuos**: sem fenestras, com junções oclusivas e vesículas de transcitose; músculos, conjuntivo, pulmão e sistema nervoso central, onde formam a barreira hematoencefálica.\n- **Fenestrados**: poros em geral fechados por diafragma e lâmina basal contínua; glândulas endócrinas, vilosidades intestinais, plexo coroide e glomérulo renal (neste, sem diafragma).\n- **Sinusoides**: calibre maior e irregular, fendas entre as células endoteliais, lâmina basal descontínua ou ausente e macrófagos associados; fígado, baço e medula óssea.\n\n**Vênulas e veias.** As **vênulas pós-capilares** (endotélio e pericitos) são o principal local de **diapedese** e de extravasamento de plasma na inflamação aguda; nos órgãos linfoides, as **vênulas de endotélio alto** recebem linfócitos do sangue (tópico his-12). As **veias** têm parede fina em relação ao lúmen, amplo e irregular, média delgada e **adventícia** em geral mais espessa que a média; nas grandes veias, ela tem feixes longitudinais de músculo liso, e junto ao coração as veias cavas e pulmonares recebem extensões de músculo cardíaco. Muitas veias de médio calibre, sobretudo dos membros inferiores, têm **valvas**: pregas da íntima revestidas de endotélio nas duas faces, que impedem o refluxo.\n\n**Endotélio.**\n- **Antitrombótico**: produz **prostaciclina** e **óxido nítrico** (inibem a agregação plaquetária), trombomodulina, heparan sulfato e ativador do plasminogênio tecidual.\n- **Pró-trombótico quando lesado ou ativado**: libera **fator de von Willebrand**, que prende as plaquetas ao colágeno subendotelial e transporta o fator VIII, e expõe fator tecidual.\n- **Tônus**: o **óxido nítrico**, sintetizado pela NO-sintase endotelial a partir da L-arginina, difunde-se para o músculo liso e o relaxa (via GMPc); a **endotelina** contrai; a enzima conversora de angiotensina da superfície endotelial forma angiotensina II.\n- **Inflamação**: expressa selectinas e ligantes de integrinas que capturam leucócitos.\nOs **corpos de Weibel-Palade**, grânulos alongados exclusivos do endotélio, armazenam fator de von Willebrand e **P-selectina**, liberados em minutos por estímulos como trombina e histamina.\n\n**Linfáticos.** Os **capilares linfáticos** começam em fundo cego; têm endotélio muito delgado, lâmina basal incompleta ou ausente, junções frouxas e **filamentos de ancoragem** que os mantêm abertos quando o líquido intersticial aumenta. Os vasos coletores, de parede semelhante à de veias delgadas e com **valvas** numerosas, levam a linfa aos linfonodos; o **ducto torácico** e o **ducto linfático direito** desembocam nas junções das jugulares internas com as subclávias.\n\n**Coração.**\n- **Endocárdio**: endotélio e camada subendotelial (homóloga da íntima), sobre a **camada subendocárdica**, de conjuntivo frouxo com vasos, nervos e ramos do sistema de condução.\n- **Miocárdio**: cardiomiócitos (tópico his-09), mais espesso nos ventrículos, sobretudo no esquerdo.\n- **Epicárdio**: folheto visceral do pericárdio seroso — mesotélio sobre conjuntivo com tecido adiposo, vasos coronários e nervos.\n- **Esqueleto fibroso**: conjuntivo denso dos anéis fibrosos, trígonos e parte membranosa do septo; sustenta as valvas, ancora o miocárdio e **isola eletricamente** átrios de ventrículos.\n- **Valvas**: eixo de conjuntivo denso, contínuo com os anéis fibrosos e revestido de endotélio nas duas faces; as cúspides são em grande parte **avasculares**.\n- **Sistema de condução** (cardiomiócitos modificados): **nó sinoatrial** (marca-passo, junto à desembocadura da veia cava superior), **nó atrioventricular** (retarda o impulso), **feixe atrioventricular (de His)**, única via normal através do esqueleto fibroso, seus **ramos** no septo e as **fibras de Purkinje**, no subendocárdio: grandes, claras (glicogênio), com poucas miofibrilas periféricas.\n\n**Correlações.** A **aterosclerose** é doença da íntima: células espumosas (**estria gordurosa**) e depois **placa** com núcleo lipídico e **capa fibrosa**; capa fina e inflamada rompe-se e causa trombose. A **arteriolosclerose hialina** (parede homogênea e rósea) acompanha envelhecimento, hipertensão e diabetes; a **hiperplásica** ('casca de cebola'), a hipertensão grave. **Aneurismas** resultam do enfraquecimento da média (aterosclerose, hipertensão, sífilis com endarterite dos vasa vasorum, Marfan). **Varizes** acompanham a insuficiência valvar. Na **endocardite infecciosa**, vegetações crescem sobre cúspides avasculares. O **subendocárdio** é a região mais vulnerável à isquemia, e uma via acessória através do anel fibroso causa **pré-excitação ventricular**.",
+  "pontosChave": [
+    "A parede vascular tem íntima (endotélio, camada subendotelial e, nas artérias, lâmina elástica interna), média (músculo liso) e adventícia (conjuntivo).",
+    "Artérias elásticas têm média com numerosas lâminas elásticas fenestradas; artérias musculares, média muscular e lâmina elástica interna nítida e ondulada.",
+    "As arteríolas, com uma ou duas camadas de músculo liso, são o principal local de resistência periférica.",
+    "Capilares contínuos (músculo, SNC), fenestrados (glândulas endócrinas, intestino, glomérulo) e sinusoides (fígado, baço, medula óssea).",
+    "Vênulas pós-capilares são o principal local de diapedese e de extravasamento de plasma na inflamação aguda.",
+    "Nas veias, a parede é fina em relação ao lúmen, a adventícia costuma ser a túnica mais espessa, e muitas veias têm valvas.",
+    "Vasa vasorum nutrem a adventícia e a parte externa da média dos vasos de grande calibre.",
+    "O endotélio produz óxido nítrico e prostaciclina e armazena fator de von Willebrand e P-selectina nos corpos de Weibel-Palade.",
+    "Capilares linfáticos começam em fundo cego, têm lâmina basal incompleta e são mantidos abertos por filamentos de ancoragem.",
+    "O esqueleto fibroso isola eletricamente átrios de ventrículos; normalmente só o feixe de His o atravessa.",
+    "Condução: nó sinoatrial → nó atrioventricular → feixe de His → ramos → fibras de Purkinje, no subendocárdio.",
+    "Na aterosclerose, placas com capa fibrosa fina, núcleo lipídico grande e muitos macrófagos rompem-se e causam trombose."
+  ],
+  "estruturas": [
+    {
+      "id": "lumen",
+      "nome": "Lúmen",
+      "sinonimos": ["luz"],
+      "definicao": "Espaço interno do vaso ou da câmara cardíaca, por onde circula o sangue ou a linfa."
+    },
+    {
+      "id": "endotelio",
+      "nome": "Endotélio",
+      "sinonimos": [],
+      "definicao": "Epitélio simples pavimentoso que reveste o lúmen de vasos sanguíneos, vasos linfáticos e câmaras cardíacas. Regula permeabilidade, tônus vascular, hemostasia e passagem de leucócitos.",
+      "origem": "Mesoderma (angioblastos)."
+    },
+    {
+      "id": "tunica-intima",
+      "nome": "Túnica íntima",
+      "sinonimos": ["íntima"],
+      "definicao": "Camada mais interna da parede vascular: endotélio com sua lâmina basal, camada subendotelial de conjuntivo frouxo e, nas artérias, lâmina elástica interna. É a sede da aterosclerose."
+    },
+    {
+      "id": "lamina-elastica-interna",
+      "nome": "Lâmina elástica interna",
+      "sinonimos": ["membrana elástica interna", "limitante elástica interna"],
+      "definicao": "Lâmina fenestrada de elastina na parte mais externa da íntima das artérias, que a separa da média; as fenestras permitem a difusão de nutrientes. Nítida e ondulada nas artérias musculares; delgada ou ausente nas arteríolas menores."
+    },
+    {
+      "id": "tunica-media",
+      "nome": "Túnica média",
+      "sinonimos": ["média"],
+      "definicao": "Camada intermediária, de células musculares lisas em disposição circular ou helicoidal, com fibras elásticas, fibras reticulares e proteoglicanos produzidos pelas próprias células musculares. Muito desenvolvida nas artérias e delgada nas veias."
+    },
+    {
+      "id": "lamina-elastica-externa",
+      "nome": "Lâmina elástica externa",
+      "sinonimos": ["membrana elástica externa", "limitante elástica externa"],
+      "definicao": "Lâmina de elastina que separa a média da adventícia nas artérias musculares de maior calibre; menos nítida que a interna."
+    },
+    {
+      "id": "tunica-adventicia",
+      "nome": "Túnica adventícia",
+      "sinonimos": ["adventícia", "túnica externa"],
+      "definicao": "Camada mais externa, de conjuntivo com colágeno tipo I e fibras elásticas, contínua com o tecido vizinho; nos vasos maiores contém vasa vasorum e nervos. Costuma ser a túnica mais espessa das veias."
+    },
+    {
+      "id": "vasa-vasorum",
+      "nome": "Vasa vasorum",
+      "sinonimos": ["vasos dos vasos"],
+      "definicao": "Pequenas artérias, capilares e veias que penetram pela adventícia dos vasos de grande calibre e nutrem a adventícia e a parte externa da média; a parte interna da parede é nutrida por difusão a partir do lúmen."
+    },
+    {
+      "id": "fibras-elasticas",
+      "nome": "Fibras elásticas",
+      "sinonimos": [],
+      "definicao": "Fibras de elastina com microfibrilas de fibrilina; nas artérias formam lâminas fenestradas (lâminas elásticas interna e externa e lâminas da média das artérias elásticas). Pouco visíveis no HE; evidentes com orceína ou resorcina-fucsina."
+    },
+    {
+      "id": "fibra-muscular-lisa",
+      "nome": "Fibra muscular lisa",
+      "sinonimos": ["célula muscular lisa"],
+      "definicao": "Célula fusiforme de núcleo central, sem estriações; na média dos vasos, contrai-se para regular o calibre e sintetiza a matriz extracelular da parede."
+    },
+    {
+      "id": "arteria-elastica",
+      "nome": "Artéria elástica",
+      "sinonimos": ["artéria condutora", "artéria de grande calibre"],
+      "definicao": "Artéria de grande calibre (aorta, tronco pulmonar e seus grandes ramos) com média formada por numerosas lâminas elásticas fenestradas e células musculares lisas entre elas; distende-se na sístole e mantém o fluxo na diástole."
+    },
+    {
+      "id": "arteria-muscular",
+      "nome": "Artéria muscular",
+      "sinonimos": ["artéria distribuidora", "artéria de médio calibre"],
+      "definicao": "Artéria com média predominantemente de músculo liso e lâmina elástica interna nítida, ondulada nos cortes; as maiores têm lâmina elástica externa. Distribui o sangue aos órgãos (coronárias, renais, radial, femoral)."
+    },
+    {
+      "id": "arteriola",
+      "nome": "Arteríola",
+      "sinonimos": [],
+      "definicao": "Menor ramo arterial, com uma ou duas camadas de músculo liso e lâmina elástica interna delgada ou ausente. Principal local da resistência periférica; regula o fluxo para os leitos capilares."
+    },
+    {
+      "id": "capilar",
+      "nome": "Capilar",
+      "sinonimos": [],
+      "definicao": "Vaso de menor calibre, com diâmetro próximo ao de uma hemácia, formado por endotélio e lâmina basal, muitas vezes com pericitos; local das trocas entre sangue e tecidos. Pode ser contínuo, fenestrado ou sinusoide."
+    },
+    {
+      "id": "capilar-continuo",
+      "nome": "Capilar contínuo",
+      "sinonimos": ["capilar somático"],
+      "definicao": "Capilar sem fenestras, com junções oclusivas entre as células endoteliais, vesículas de transcitose e lâmina basal contínua; típico de músculos, conjuntivo, pulmão e sistema nervoso central (barreira hematoencefálica)."
+    },
+    {
+      "id": "capilar-fenestrado",
+      "nome": "Capilar fenestrado",
+      "sinonimos": ["capilar visceral"],
+      "definicao": "Capilar com poros no endotélio, em geral fechados por diafragma, sobre lâmina basal contínua; típico de glândulas endócrinas, vilosidades intestinais, plexo coroide e glomérulo renal (neste, sem diafragma)."
+    },
+    {
+      "id": "capilar-sinusoide",
+      "nome": "Capilar sinusoide",
+      "sinonimos": ["sinusoide", "capilar descontínuo"],
+      "definicao": "Capilar de calibre maior e irregular, com fendas entre as células endoteliais e lâmina basal descontínua ou ausente, associado a macrófagos; fígado, baço e medula óssea."
+    },
+    {
+      "id": "pericito",
+      "nome": "Pericito",
+      "sinonimos": [],
+      "definicao": "Célula alongada, de prolongamentos contráteis, que envolve capilares e vênulas pós-capilares, envolvida por lâmina basal que se funde à do endotélio; pode originar células endoteliais e musculares lisas no reparo."
+    },
+    {
+      "id": "venula-pos-capilar",
+      "nome": "Vênula pós-capilar",
+      "sinonimos": [],
+      "definicao": "Vênula que recebe o sangue dos capilares, de parede formada por endotélio e pericitos; principal local de diapedese de leucócitos e de extravasamento de plasma na inflamação aguda."
+    },
+    {
+      "id": "veia-de-medio-calibre",
+      "nome": "Veia de médio calibre",
+      "sinonimos": [],
+      "definicao": "Veia de parede fina em relação ao lúmen, amplo e irregular, com média delgada de músculo liso e adventícia em geral mais espessa que a média; muitas, sobretudo nos membros inferiores, têm valvas."
+    },
+    {
+      "id": "veia-de-grande-calibre",
+      "nome": "Veia de grande calibre",
+      "sinonimos": [],
+      "definicao": "Veia como as cavas, de média pouco desenvolvida e adventícia espessa com feixes longitudinais de músculo liso; junto ao coração, as veias cavas e pulmonares recebem extensões de músculo cardíaco."
+    },
+    {
+      "id": "valva-venosa",
+      "nome": "Valva venosa",
+      "sinonimos": ["válvula venosa"],
+      "definicao": "Par de pregas da íntima, com eixo de conjuntivo e endotélio nas duas faces, que se fecha contra o refluxo de sangue; abundante nas veias dos membros inferiores."
+    },
+    {
+      "id": "capilar-linfatico",
+      "nome": "Capilar linfático",
+      "sinonimos": ["linfático inicial"],
+      "definicao": "Vaso linfático inicial, em fundo cego, de endotélio muito delgado, lâmina basal incompleta ou ausente e junções frouxas, mantido aberto por filamentos de ancoragem; recolhe líquido, proteínas e células do interstício."
+    },
+    {
+      "id": "vaso-linfatico",
+      "nome": "Vaso linfático coletor",
+      "sinonimos": ["vaso linfático"],
+      "definicao": "Vaso linfático de maior calibre, de parede semelhante à de uma veia delgada e com valvas numerosas; leva a linfa aos linfonodos e, pelos ductos torácico e linfático direito, ao sangue venoso."
+    },
+    {
+      "id": "corpos-de-weibel-palade",
+      "nome": "Corpos de Weibel-Palade",
+      "sinonimos": [],
+      "definicao": "Grânulos alongados exclusivos das células endoteliais, vistos à microscopia eletrônica, que armazenam fator de von Willebrand e P-selectina e os liberam por exocitose em resposta a estímulos como trombina e histamina."
+    },
+    {
+      "id": "endocardio",
+      "nome": "Endocárdio",
+      "sinonimos": [],
+      "definicao": "Revestimento interno do coração, homólogo da íntima: endotélio sobre camada subendotelial de conjuntivo com algumas células musculares lisas; recobre também as valvas."
+    },
+    {
+      "id": "camada-subendocardica",
+      "nome": "Camada subendocárdica",
+      "sinonimos": ["subendocárdio"],
+      "definicao": "Conjuntivo frouxo entre o endocárdio e o miocárdio, com vasos, nervos e ramos do sistema de condução (fibras de Purkinje)."
+    },
+    {
+      "id": "miocardio",
+      "nome": "Miocárdio",
+      "sinonimos": [],
+      "definicao": "Camada média do coração, a mais espessa, formada por cardiomiócitos unidos por discos intercalares; mais espessa nos ventrículos, sobretudo no esquerdo."
+    },
+    {
+      "id": "fibra-muscular-cardiaca",
+      "nome": "Fibra muscular cardíaca",
+      "sinonimos": ["cardiomiócito"],
+      "definicao": "Célula estriada, alongada e ramificada, com um ou dois núcleos centrais, unida às vizinhas por discos intercalares (tópico his-09)."
+    },
+    {
+      "id": "epicardio",
+      "nome": "Epicárdio",
+      "sinonimos": ["pericárdio visceral"],
+      "definicao": "Folheto visceral do pericárdio seroso: mesotélio sobre conjuntivo com tecido adiposo, vasos coronários e nervos."
+    },
+    {
+      "id": "esqueleto-fibroso",
+      "nome": "Esqueleto fibroso do coração",
+      "sinonimos": ["esqueleto cardíaco"],
+      "definicao": "Conjuntivo denso dos anéis fibrosos, trígonos fibrosos e parte membranosa do septo interventricular; sustenta as valvas, ancora o miocárdio e isola eletricamente átrios de ventrículos."
+    },
+    {
+      "id": "valva-cardiaca",
+      "nome": "Valva cardíaca",
+      "sinonimos": [],
+      "definicao": "Cúspides com eixo de conjuntivo denso, contínuo com o anel fibroso, revestido de endotélio nas duas faces; em grande parte avasculares, nutridas por difusão a partir do sangue."
+    },
+    {
+      "id": "no-sinoatrial",
+      "nome": "Nó sinoatrial",
+      "sinonimos": ["nó sinusal"],
+      "definicao": "Grupo de cardiomiócitos modificados, pequenos e pobres em miofibrilas, em meio a conjuntivo, na parede do átrio direito junto à desembocadura da veia cava superior; é o marca-passo do coração."
+    },
+    {
+      "id": "no-atrioventricular",
+      "nome": "Nó atrioventricular",
+      "sinonimos": [],
+      "definicao": "Grupo de cardiomiócitos modificados no assoalho do átrio direito, junto ao septo interatrial, que recebe o impulso dos átrios e o transmite com retardo ao feixe de His."
+    },
+    {
+      "id": "feixe-atrioventricular",
+      "nome": "Feixe atrioventricular (de His)",
+      "sinonimos": ["feixe de His"],
+      "definicao": "Continuação do nó atrioventricular que atravessa o esqueleto fibroso e se divide nos ramos direito e esquerdo, no septo interventricular; única via normal de condução entre átrios e ventrículos."
+    },
+    {
+      "id": "fibra-de-purkinje",
+      "nome": "Fibra de Purkinje (cardíaca)",
+      "sinonimos": ["célula de Purkinje do coração"],
+      "definicao": "Cardiomiócito modificado do sistema de condução, maior que os cardiomiócitos contráteis, com poucas miofibrilas periféricas e citoplasma claro rico em glicogênio, situado no subendocárdio; conduz rapidamente o impulso aos ventrículos."
+    },
+    {
+      "id": "celula-espumosa",
+      "nome": "Célula espumosa",
+      "sinonimos": [],
+      "definicao": "Macrófago (e, em menor grau, célula muscular lisa) da íntima repleto de vacúolos lipídicos, de citoplasma claro e espumoso no HE; forma a estria gordurosa e acumula-se nas placas ateroscleróticas.",
+      "origem": "Sobretudo monócitos do sangue que migram para a íntima e captam LDL modificada."
+    },
+    {
+      "id": "capa-fibrosa",
+      "nome": "Capa fibrosa",
+      "sinonimos": [],
+      "definicao": "Camada de células musculares lisas e colágeno que separa do lúmen o núcleo necrótico e lipídico da placa aterosclerótica; quando fina e inflamada, rompe-se e desencadeia trombose.",
+      "origem": "Células musculares lisas que migram da média para a íntima e produzem matriz extracelular."
+    }
+  ],
+  "eventos": [
+    { "id": "e11-disfuncao-endotelial", "descricao": "Disfunção endotelial (hipercolesterolemia, hipertensão, tabagismo, fluxo turbulento)", "ordem": 1 },
+    { "id": "e11-ldl-intima", "descricao": "LDL retida na íntima sofre oxidação e outras modificações", "ordem": 2 },
+    { "id": "e11-monocitos-intima", "descricao": "Monócitos aderem ao endotélio, migram para a íntima e tornam-se macrófagos", "ordem": 3 },
+    { "id": "e11-estria-gordurosa", "descricao": "Macrófagos repletos de lipídios (células espumosas) formam a estria gordurosa", "ordem": 4 },
+    { "id": "e11-capa-fibrosa", "descricao": "Células musculares lisas migram da média, proliferam e produzem a capa fibrosa", "ordem": 5 },
+    { "id": "e11-ruptura-trombose", "descricao": "A capa fibrosa se rompe e forma-se um trombo sobre a placa", "ordem": 6 }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "aterosclerose",
+      "titulo": "Aterosclerose",
+      "descricao": "Doença da íntima de artérias elásticas e musculares de médio e grande calibre; entre as mais acometidas estão a aorta abdominal, as coronárias, as poplíteas e as carótidas internas. A lesão inicial, a estria gordurosa, é plana e formada por células espumosas; a placa (ateroma) tem núcleo necrótico com lipídios, cristais de colesterol e células espumosas, coberto por uma capa fibrosa voltada para o lúmen. Placas de capa espessa estreitam o lúmen aos poucos (angina estável, claudicação); placas de capa fina, núcleo lipídico grande e muitos macrófagos rompem-se ou sofrem erosão e causam trombose (síndrome coronariana aguda, AVC isquêmico). A média sob a placa se adelgaça, o que contribui para aneurismas.",
+      "mecanismo": "Hipercolesterolemia, hipertensão, tabagismo, diabetes e fluxo turbulento nas bifurcações causam disfunção endotelial; a LDL retida na íntima é modificada (oxidada), o endotélio expressa moléculas de adesão, e monócitos entram e se tornam macrófagos que captam LDL modificada (células espumosas). Células musculares lisas migram da média, proliferam e produzem colágeno, formando a capa fibrosa; metaloproteinases secretadas por macrófagos a enfraquecem."
+    },
+    {
+      "id": "arteriolosclerose",
+      "titulo": "Arteriolosclerose hialina e hiperplásica",
+      "descricao": "Na forma hialina, a parede das arteríolas fica espessada por material homogêneo, róseo no HE, e o lúmen se estreita; é comum em idosos, mais intensa na hipertensão de longa duração e no diabetes, e no rim causa nefrosclerose. Na forma hiperplásica, própria das elevações graves da pressão arterial, a parede ganha lamelas concêntricas em 'casca de cebola', muitas vezes com necrose fibrinoide (arteriolite necrosante), sobretudo no rim.",
+      "mecanismo": "Hialina: extravasamento de proteínas plasmáticas através do endotélio lesado e aumento da matriz produzida pelas células musculares lisas. Hiperplásica: proliferação de células musculares lisas e espessamento com duplicação da lâmina basal, em resposta à agressão pressórica intensa."
+    },
+    {
+      "id": "aneurisma-media",
+      "titulo": "Aneurismas e enfraquecimento da média",
+      "descricao": "Aneurisma é a dilatação localizada e permanente de um vaso ou do coração. No verdadeiro, a parede, ainda que adelgaçada, está contínua; no falso (pseudoaneurisma), há ruptura da parede, e o hematoma é contido pelo tecido vizinho. Na aorta abdominal, a principal causa é a aterosclerose; na aorta ascendente, a hipertensão e doenças da média, como a síndrome de Marfan (tópico his-04). Na sífilis terciária, a endarterite obliterante dos vasa vasorum causa isquemia e cicatrização da média da aorta torácica, com aneurisma e, se a raiz se dilata, insuficiência aórtica.",
+      "mecanismo": "A resistência da parede depende da média (lâminas elásticas e células musculares lisas). Perda dessas estruturas, por isquemia (placa espessa que aumenta a distância de difusão a partir do lúmen; vasa vasorum obstruídos), por degradação inflamatória da matriz ou por defeito hereditário do conjuntivo, permite a dilatação progressiva."
+    },
+    {
+      "id": "varizes",
+      "titulo": "Varizes",
+      "descricao": "Veias superficiais dilatadas e tortuosas, sobretudo nos membros inferiores, com sensação de peso, edema e, nos casos crônicos, dermatite de estase e úlceras. Fatores de risco: idade, ortostatismo prolongado, gestações, obesidade e predisposição familiar. A parede alterna áreas adelgaçadas com áreas espessadas por hipertrofia do músculo liso e fibrose, e as valvas ficam deformadas e insuficientes. Varizes esofágicas (hipertensão portal) e hemorroidas são dilatações venosas de outros territórios.",
+      "mecanismo": "Pressão venosa elevada por tempo prolongado e enfraquecimento da parede levam à insuficiência das valvas; o refluxo aumenta ainda mais a pressão e a dilatação."
+    },
+    {
+      "id": "endocardite-infecciosa",
+      "titulo": "Endocardite infecciosa",
+      "descricao": "Infecção das valvas (ou do endocárdio mural) com vegetações friáveis de fibrina, plaquetas, microrganismos e células inflamatórias, que destroem as cúspides (insuficiência valvar) e podem embolizar. Formas agudas, por germes virulentos como Staphylococcus aureus, atingem também valvas normais (a tricúspide é típica em usuários de drogas injetáveis); formas subagudas, por microrganismos menos virulentos, como estreptococos do grupo viridans, costumam acometer valvas previamente lesadas. Hemoculturas e ecocardiograma são a base do diagnóstico, e o tratamento antimicrobiano é prolongado.",
+      "mecanismo": "Lesão do endotélio valvar e turbulência favorecem depósitos de fibrina e plaquetas, colonizados durante bacteriemias. Como as cúspides são em grande parte avasculares, leucócitos e antibióticos chegam com dificuldade aos microrganismos protegidos dentro da vegetação."
+    },
+    {
+      "id": "isquemia-subendocardica",
+      "titulo": "Isquemia miocárdica: subendocárdio e sistema de condução",
+      "descricao": "O infarto transmural acompanha, em geral, a oclusão de uma coronária epicárdica; o infarto subendocárdico, restrito ao terço interno da parede, pode ocorrer com estenoses difusas ou quedas globais da perfusão, como no choque. Uma faixa delgada de miocárdio imediatamente abaixo do endocárdio costuma ser poupada, por receber oxigênio da cavidade por difusão. Infartos que atingem o nó atrioventricular ou os ramos do feixe de His causam bloqueios da condução. A cronologia histológica da necrose e da cicatrização está no tópico his-09.",
+      "mecanismo": "As coronárias correm no epicárdio e penetram a parede de fora para dentro; o subendocárdio é o último território irrigado e sofre a maior pressão intramural durante a sístole."
+    },
+    {
+      "id": "pre-excitacao-ventricular",
+      "titulo": "Pré-excitação ventricular (padrão de Wolff-Parkinson-White)",
+      "descricao": "Eletrocardiograma com intervalo PR curto e onda delta (empastamento inicial do QRS), por ativação precoce de parte dos ventrículos; pode associar-se a taquicardias por reentrada.",
+      "mecanismo": "Uma via acessória de miocárdio atravessa o anel fibroso e conduz o impulso dos átrios aos ventrículos sem passar pelo retardo do nó atrioventricular, contornando o isolamento elétrico normalmente garantido pelo esqueleto fibroso."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-11-q01",
+      "tipo": "multipla",
+      "enunciado": "Em um corte de artéria muscular, a lâmina elástica interna marca o limite entre:",
+      "alternativas": [
+        { "id": "a", "texto": "A túnica íntima e a túnica média" },
+        { "id": "b", "texto": "A túnica média e a túnica adventícia" },
+        { "id": "c", "texto": "O endotélio e a camada subendotelial" },
+        { "id": "d", "texto": "A adventícia e o conjuntivo vizinho" }
+      ],
+      "correta": "a",
+      "explicacao": "A lâmina elástica interna, fenestrada, é o componente mais externo da íntima e a separa da média (a); nas artérias musculares aparece como linha eosinófila, refringente e ondulada. O limite entre média e adventícia (b) é a lâmina elástica externa, presente nas artérias musculares de maior calibre. Endotélio e camada subendotelial (c) pertencem ambos à íntima e são separados apenas pela lâmina basal do endotélio. A adventícia (d) continua-se com o conjuntivo vizinho, sem lâmina elástica entre eles.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["arteria-muscular", "lamina-elastica-interna", "tunicas"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q02",
+      "tipo": "multipla",
+      "contexto": "Corte transversal de um feixe vasculonervoso da coxa, corado por HE. O vaso A tem lúmen redondo, parede espessa formada sobretudo por várias camadas de células musculares lisas e, logo abaixo do endotélio, uma linha eosinófila, refringente e ondulada. O vaso B, vizinho, tem lúmen mais amplo e irregular, com hemácias, parede bem mais fina em relação ao lúmen e adventícia mais espessa que a média.",
+      "enunciado": "A identificação correta dos vasos é:",
+      "alternativas": [
+        { "id": "a", "texto": "A é artéria elástica; B é vaso linfático coletor" },
+        { "id": "b", "texto": "A é veia de médio calibre; B é artéria muscular" },
+        { "id": "c", "texto": "A é artéria muscular; B é veia de médio calibre" },
+        { "id": "d", "texto": "A é arteríola; B é vênula pós-capilar" }
+      ],
+      "correta": "c",
+      "explicacao": "Lúmen redondo, média muscular espessa e lâmina elástica interna ondulada (a linha refringente sob o endotélio) identificam a artéria muscular; parede fina em relação ao lúmen, lúmen irregular e adventícia mais espessa que a média são próprios da veia que a acompanha (c). Uma artéria elástica (a) teria a média formada por numerosas lâminas elásticas, e não por camadas musculares com uma única lâmina ondulada; além disso, o vaso B contém hemácias, o que não se espera de um linfático. A alternativa (b) inverte os critérios: é a veia que tem parede fina e lúmen irregular. Arteríolas (d) têm só uma ou duas camadas de músculo liso, e vênulas pós-capilares não têm média nem adventícia organizadas.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["arteria-muscular", "veia", "laminas"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q03",
+      "tipo": "multipla",
+      "enunciado": "A aorta e o tronco pulmonar têm a túnica média formada por numerosas lâminas elásticas fenestradas, com células musculares lisas entre elas. Essa organização permite que esses vasos:",
+      "alternativas": [
+        { "id": "a", "texto": "Regulem a resistência periférica por contração ativa da parede" },
+        { "id": "b", "texto": "Distendam-se na sístole e mantenham o fluxo durante a diástole" },
+        { "id": "c", "texto": "Dispensem os vasa vasorum, nutrindo toda a parede por difusão" },
+        { "id": "d", "texto": "Troquem gases e nutrientes com os tecidos através da parede" }
+      ],
+      "correta": "b",
+      "explicacao": "As artérias elásticas armazenam parte da energia da ejeção ao se distenderem na sístole e a devolvem na diástole, quando a parede volta ao calibre inicial; assim, tornam mais contínuo o fluxo intermitente que sai do coração (b). Quem regula a resistência periférica (a) são as arteríolas, pela contração do músculo liso. A parede da aorta é espessa demais para ser nutrida só por difusão e tem vasa vasorum na adventícia e na parte externa da média (c). As trocas com os tecidos (d) ocorrem nos capilares, de parede formada por endotélio e lâmina basal.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["arteria-elastica", "fibras-elasticas", "funcao"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q04",
+      "tipo": "multipla",
+      "contexto": "Uma micrografia eletrônica de transmissão mostra um capilar cujo endotélio, muito delgado, tem numerosos poros circulares fechados por um diafragma fino; a lâmina basal é contínua e não há fendas entre as células endoteliais.",
+      "enunciado": "Em qual destes locais esse tipo de capilar é característico?",
+      "alternativas": [
+        { "id": "a", "texto": "Lâmina própria das vilosidades do intestino delgado" },
+        { "id": "b", "texto": "Sistema nervoso central, na barreira hematoencefálica" },
+        { "id": "c", "texto": "Fígado, entre as placas de hepatócitos" },
+        { "id": "d", "texto": "Músculo esquelético, entre as fibras musculares" }
+      ],
+      "correta": "a",
+      "explicacao": "Poros com diafragma sobre lâmina basal contínua definem o capilar fenestrado, típico de locais com troca intensa de líquidos e moléculas: vilosidades intestinais (a), glândulas endócrinas, plexo coroide e glomérulo renal (neste, sem diafragma). No sistema nervoso central (b) e no músculo esquelético (d), os capilares são contínuos, sem fenestras; no encéfalo, as junções oclusivas do endotélio formam a barreira hematoencefálica. No fígado (c) há sinusoides, com fendas entre as células endoteliais e lâmina basal descontínua ou ausente.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["capilar-fenestrado", "microscopia-eletronica", "capilares"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q05",
+      "tipo": "multipla",
+      "contexto": "Minutos após uma picada de inseto, surge na pele uma pápula avermelhada e edemaciada. Os mastócitos da derme liberaram histamina.",
+      "enunciado": "Em que segmento da microcirculação ocorre principalmente o extravasamento de plasma, e por qual mecanismo?",
+      "alternativas": [
+        { "id": "a", "texto": "Nas arteríolas, por ruptura da lâmina elástica interna da parede dilatada" },
+        { "id": "b", "texto": "Nos capilares, pela perda dos pericitos que sustentam o endotélio lesado" },
+        { "id": "c", "texto": "Nas vênulas pós-capilares, por fendas entre células endoteliais contraídas" },
+        { "id": "d", "texto": "Nos vasos linfáticos, pelo refluxo de linfa através de valvas insuficientes" }
+      ],
+      "correta": "c",
+      "explicacao": "Na inflamação aguda, a histamina (e mediadores como bradicinina e leucotrienos) contrai as células endoteliais das vênulas pós-capilares e abre fendas entre elas, por onde sai líquido rico em proteínas (c); é uma resposta rápida e de curta duração. As vênulas pós-capilares são também o principal local de diapedese dos leucócitos. As arteríolas (a) dilatam-se e aumentam o fluxo, o que explica a vermelhidão, mas não se rompem. A perda de pericitos (b) não é o mecanismo do edema imediato. Os linfáticos (d) drenam o excesso de líquido; não são a fonte do extravasamento.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["venula-pos-capilar", "inflamacao", "permeabilidade-vascular", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Inflamação aguda; Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q06",
+      "tipo": "multipla",
+      "enunciado": "Os corpos de Weibel-Palade, grânulos alongados encontrados nas células endoteliais, armazenam:",
+      "alternativas": [
+        { "id": "a", "texto": "Óxido nítrico e prostaciclina, liberados para relaxar o músculo liso" },
+        { "id": "b", "texto": "Fator de von Willebrand e P-selectina, liberados por exocitose regulada" },
+        { "id": "c", "texto": "Peptídeo natriurético atrial, liberado quando a parede é distendida" },
+        { "id": "d", "texto": "Enzima conversora de angiotensina, que forma angiotensina II no sangue" }
+      ],
+      "correta": "b",
+      "explicacao": "Os corpos de Weibel-Palade são grânulos de secreção próprios do endotélio, com fator de von Willebrand e P-selectina (b). Estímulos como trombina e histamina provocam sua exocitose em minutos: o fator de von Willebrand prende plaquetas ao colágeno subendotelial, e a P-selectina, exposta na membrana, inicia o rolamento dos leucócitos. Óxido nítrico e prostaciclina (a) não ficam armazenados: são sintetizados sob demanda, e o NO, um gás, difunde-se através das membranas. O peptídeo natriurético atrial (c) fica em grânulos dos cardiomiócitos atriais. A enzima conversora de angiotensina (d) é uma enzima da membrana luminal do endotélio, e não conteúdo de grânulos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["endotelio", "weibel-palade", "von-willebrand", "hemostasia"],
+      "referencia": "Ross 8ª ed., cap. 13; Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q07",
+      "tipo": "multipla",
+      "contexto": "Em um experimento clássico, um anel de artéria isolada, pré-contraído, relaxa quando se adiciona acetilcolina ao banho. Se o endotélio é removido com cuidado antes do teste, preservando a média, a acetilcolina deixa de relaxar o vaso.",
+      "enunciado": "Qual mecanismo explica o relaxamento observado no vaso íntegro?",
+      "alternativas": [
+        { "id": "a", "texto": "O endotélio produz óxido nítrico, que se difunde e ativa a guanilil-ciclase do músculo liso" },
+        { "id": "b", "texto": "O endotélio libera endotelina, que se liga ao músculo liso e reduz o cálcio citosólico" },
+        { "id": "c", "texto": "O endotélio secreta fator de von Willebrand, que bloqueia os canais de cálcio da média" },
+        { "id": "d", "texto": "A acetilcolina age diretamente em receptores nicotínicos das células musculares lisas" }
+      ],
+      "correta": "a",
+      "explicacao": "O relaxamento dependente do endotélio, demonstrado por Furchgott e Zawadzki (1980), é mediado sobretudo pelo óxido nítrico (a): a acetilcolina age em receptores muscarínicos do endotélio e ativa a NO-sintase endotelial, que produz NO a partir da L-arginina; o NO difunde-se para as células musculares lisas, ativa a guanilil-ciclase solúvel, e o GMPc leva ao relaxamento. Sem endotélio, esse sinal desaparece. A endotelina (b) é vasoconstritora. O fator de von Willebrand (c) atua na adesão plaquetária, não no tônus vascular. Se a acetilcolina relaxasse diretamente o músculo (d), o vaso sem endotélio também relaxaria; no experimento original, sem endotélio, ela chegava a contrair a aorta, por receptores muscarínicos do músculo liso.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["endotelio", "oxido-nitrico", "tonus-vascular", "experimento"],
+      "referencia": "Ross 8ª ed., cap. 13; Furchgott e Zawadzki, Nature 1980"
+    },
+    {
+      "id": "his-11-q08",
+      "tipo": "multipla",
+      "contexto": "No eixo de uma vilosidade do intestino delgado, corada por HE, há um vaso central de parede formada só por endotélio muito delgado, sem hemácias, com conteúdo róseo pálido e raros linfócitos.",
+      "enunciado": "Que característica desse tipo de vaso lhe permite captar líquido, proteínas e células do interstício?",
+      "alternativas": [
+        { "id": "a", "texto": "Fenestras fechadas por diafragma, apoiadas sobre lâmina basal espessa e contínua" },
+        { "id": "b", "texto": "Camada de músculo liso que aspira o líquido do interstício para o lúmen" },
+        { "id": "c", "texto": "Pericitos contráteis que bombeiam o líquido através da lâmina basal" },
+        { "id": "d", "texto": "Lâmina basal incompleta e junções frouxas, abertas por filamentos de ancoragem" }
+      ],
+      "correta": "d",
+      "explicacao": "O vaso é um capilar linfático (no intestino, o lácteo central). Ele começa em fundo cego, tem endotélio muito delgado, lâmina basal incompleta ou ausente e junções frouxas, que funcionam como válvulas de entrada; filamentos de ancoragem presos à matriz mantêm o lúmen aberto quando o líquido intersticial aumenta (d). Fenestras com diafragma sobre lâmina basal contínua (a) descrevem capilares sanguíneos fenestrados. Capilares linfáticos não têm músculo liso (b) nem pericitos (c); nos vasos linfáticos coletores, a linfa avança pela contração da parede e pela compressão dos tecidos vizinhos, e as valvas impedem o refluxo.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["capilar-linfatico", "linfaticos", "laminas"],
+      "referencia": "Ross 8ª ed., cap. 13; Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q09",
+      "tipo": "multipla",
+      "contexto": "Em corte da parede do ventrículo esquerdo corado por HE, logo abaixo do endocárdio, há feixes de células maiores que os cardiomiócitos vizinhos, de citoplasma pálido, com poucas miofibrilas dispostas na periferia e um ou dois núcleos centrais.",
+      "enunciado": "Essas células são:",
+      "alternativas": [
+        { "id": "a", "texto": "Cardiomiócitos em necrose de coagulação, nas horas seguintes a um infarto" },
+        { "id": "b", "texto": "Adipócitos uniloculares do tecido adiposo subepicárdico" },
+        { "id": "c", "texto": "Células musculares lisas da camada subendotelial do endocárdio" },
+        { "id": "d", "texto": "Fibras de Purkinje, cardiomiócitos modificados do sistema de condução" }
+      ],
+      "correta": "d",
+      "explicacao": "Células grandes e claras (ricas em glicogênio), com poucas miofibrilas periféricas e núcleo central, na camada subendocárdica, são fibras de Purkinje (d), cardiomiócitos especializados em conduzir rapidamente o impulso aos ventrículos. Na necrose de coagulação (a), o citoplasma fica mais eosinófilo, não pálido, e os núcleos desaparecem. Adipócitos (b) ficam no epicárdio, não sob o endocárdio, e têm núcleo achatado na periferia de um grande vacúolo. As células musculares lisas do endocárdio (c) são pequenas e fusiformes, sem miofibrilas organizadas em sarcômeros.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["fibra-de-purkinje", "sistema-de-conducao", "laminas"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q10",
+      "tipo": "multipla",
+      "contexto": "Rapaz de 19 anos tem crises de palpitação. O eletrocardiograma em ritmo sinusal mostra intervalo PR curto e um empastamento no início do QRS (onda delta), sinal de que parte dos ventrículos é ativada antes do normal.",
+      "enunciado": "Qual alteração estrutural explica esse achado?",
+      "alternativas": [
+        { "id": "a", "texto": "Hipertrofia das fibras de Purkinje, que passam a conduzir mais rápido" },
+        { "id": "b", "texto": "Fibrose do nó atrioventricular, que aumenta o retardo da condução" },
+        { "id": "c", "texto": "Feixe muscular acessório que atravessa o anel fibroso fora do nó AV" },
+        { "id": "d", "texto": "Ausência do nó sinoatrial, substituído por um marca-passo ventricular" }
+      ],
+      "correta": "c",
+      "explicacao": "Normalmente o esqueleto fibroso isola átrios de ventrículos, e o impulso só passa pelo nó atrioventricular, onde sofre um retardo, e pelo feixe de His. Na pré-excitação (padrão de Wolff-Parkinson-White), um feixe acessório de miocárdio atravessa o anel fibroso e conduz o impulso sem esse retardo: o PR encurta, e a ativação precoce de parte do ventrículo, fora do sistema His-Purkinje, produz a onda delta (c). Hipertrofia das fibras de Purkinje (a) não cria ativação fora da sequência normal. Fibrose do nó atrioventricular (b) prolongaria o PR. Sem o nó sinoatrial (d) o ritmo não seria sinusal; um marca-passo ventricular de escape é lento e não produz onda P seguida de PR curto.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["esqueleto-fibroso", "sistema-de-conducao", "pre-excitacao", "caso-clinico"],
+      "referencia": "Ross 8ª ed., cap. 13 (sistema de condução); Robbins 10ª ed., Coração (arritmias)"
+    },
+    {
+      "id": "his-11-q11",
+      "tipo": "multipla",
+      "contexto": "Na autópsia, a artéria coronária descendente anterior tem uma placa na íntima com núcleo amorfo rico em lipídios, fendas de cristais de colesterol e células de citoplasma espumoso; voltada para o lúmen, há uma faixa de células musculares lisas e colágeno, rompida em um ponto, onde se prende um trombo.",
+      "enunciado": "Qual característica da faixa voltada para o lúmen favorece esse desfecho?",
+      "alternativas": [
+        { "id": "a", "texto": "Ser espessa, rica em colágeno e em células musculares lisas" },
+        { "id": "b", "texto": "Ser fina, com pouco colágeno e muitos macrófagos inflamatórios" },
+        { "id": "c", "texto": "Estar recoberta por endotélio íntegro produtor de óxido nítrico" },
+        { "id": "d", "texto": "Estar separada do núcleo lipídico pela lâmina elástica interna" }
+      ],
+      "correta": "b",
+      "explicacao": "A faixa é a capa fibrosa, formada por células musculares lisas que migraram da média e produziram colágeno. Placas vulneráveis têm capa fina, núcleo lipídico grande e muitos macrófagos e linfócitos; os macrófagos secretam metaloproteinases que degradam o colágeno, a capa se rompe e expõe ao sangue o conteúdo trombogênico do núcleo (b). Capa espessa e rica em colágeno (a) caracteriza placas estáveis, que estreitam o lúmen aos poucos. Endotélio íntegro produtor de NO (c) é antitrombótico. A lâmina elástica interna (d) fica entre a íntima e a média, abaixo da placa, e não entre a capa e o núcleo.",
+      "dificuldade": 3,
+      "bloom": "analisar",
+      "tags": ["aterosclerose", "capa-fibrosa", "trombose", "laminas"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos (aterosclerose)"
+    },
+    {
+      "id": "his-11-q12",
+      "tipo": "multipla",
+      "contexto": "Homem de 48 anos chega com pressão arterial de 230/140 mmHg, cefaleia, borramento visual e piora rápida da função renal. A biópsia renal mostra arteríolas com espessamento concêntrico e laminado da parede, em 'casca de cebola', por proliferação de células musculares lisas e duplicação da lâmina basal, com focos de necrose fibrinoide.",
+      "enunciado": "Qual é o diagnóstico histológico das arteríolas?",
+      "alternativas": [
+        { "id": "a", "texto": "Arteriolosclerose hialina, típica do envelhecimento e do diabetes" },
+        { "id": "b", "texto": "Esclerose medial calcificada de Mönckeberg" },
+        { "id": "c", "texto": "Arteriolosclerose hiperplásica, típica da hipertensão grave" },
+        { "id": "d", "texto": "Placa ateromatosa com núcleo lipídico e capa fibrosa" }
+      ],
+      "correta": "c",
+      "explicacao": "Lesões concêntricas em casca de cebola, por células musculares lisas proliferadas e lâmina basal espessada e duplicada, muitas vezes com necrose fibrinoide (arteriolite necrosante), definem a arteriolosclerose hiperplásica, própria das elevações graves da pressão arterial (c). A hialina (a) mostra espessamento homogêneo e róseo, sem lamelação, por extravasamento de proteínas plasmáticas e excesso de matriz; é comum em idosos, na hipertensão de longa duração e no diabetes. A esclerose de Mönckeberg (b) é a calcificação da média de artérias musculares, sem estreitamento importante do lúmen. Placas ateromatosas (d) acometem artérias elásticas e musculares de médio e grande calibre, não arteríolas.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["arteriolosclerose", "hipertensao", "rim", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos (arteriolosclerose)"
+    },
+    {
+      "id": "his-11-q13",
+      "tipo": "multipla",
+      "contexto": "Homem de 64 anos, com sífilis não tratada há décadas, tem dilatação aneurismática da aorta ascendente e insuficiência valvar aórtica. Na peça cirúrgica, os pequenos vasos da adventícia têm parede espessada e lúmen estreitado, com plasmócitos e linfócitos ao redor; na média, há áreas em que fibras elásticas e células musculares lisas foram substituídas por cicatriz.",
+      "enunciado": "Qual mecanismo explica o enfraquecimento da parede da aorta?",
+      "alternativas": [
+        { "id": "a", "texto": "Isquemia da média por endarterite obliterante dos vasa vasorum" },
+        { "id": "b", "texto": "Defeito hereditário da fibrilina-1 nas fibras elásticas da média" },
+        { "id": "c", "texto": "Compressão da média por uma placa aterosclerótica da íntima" },
+        { "id": "d", "texto": "Infecção das cúspides valvares com vegetações e êmbolos sépticos" }
+      ],
+      "correta": "a",
+      "explicacao": "Na sífilis terciária, a endarterite obliterante dos vasa vasorum da aorta torácica, com infiltrado perivascular de plasmócitos e linfócitos, reduz a irrigação da adventícia e da parte externa da média; a média sofre isquemia, perde fibras elásticas e células musculares e cicatriza, a parede cede e forma-se o aneurisma (a). A dilatação da raiz da aorta afasta as cúspides e causa insuficiência aórtica. Defeito da fibrilina-1 (b) é a base da síndrome de Marfan, sem vasculite dos vasa vasorum. A aterosclerose (c) predomina nos aneurismas da aorta abdominal e não explica a endarterite dos vasa vasorum descrita. Vegetações valvares (d) são próprias da endocardite infecciosa.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["vasa-vasorum", "aneurisma", "sifilis", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos (aneurismas; aortite sifilítica); Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q14",
+      "tipo": "multipla",
+      "contexto": "Mulher de 55 anos, que trabalha em pé há décadas e teve três gestações, tem veias superficiais dilatadas e tortuosas nas pernas, com edema e sensação de peso no fim do dia.",
+      "enunciado": "A falência de qual estrutura normal das veias está no centro dessa doença?",
+      "alternativas": [
+        { "id": "a", "texto": "Lâmina elástica interna espessa, como a das artérias musculares" },
+        { "id": "b", "texto": "Esfíncteres pré-capilares de músculo liso das metarteríolas" },
+        { "id": "c", "texto": "Feixes de músculo cardíaco na adventícia das veias superficiais" },
+        { "id": "d", "texto": "Valvas, pregas da íntima revestidas de endotélio nas duas faces" }
+      ],
+      "correta": "d",
+      "explicacao": "Varizes são veias superficiais dilatadas e tortuosas; a insuficiência das valvas (d), pregas da íntima com eixo de conjuntivo e endotélio nas duas faces, permite o refluxo, que aumenta a pressão e dilata a veia, num ciclo que se agrava. Ortostatismo prolongado, gestações, obesidade e predisposição familiar são fatores de risco. As veias não têm lâmina elástica interna espessa (a), marca das artérias musculares. Esfíncteres pré-capilares (b) controlam a entrada de sangue nos capilares, do lado arterial. Músculo cardíaco na adventícia (c) existe apenas nas veias cavas e pulmonares, junto ao coração.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": ["varizes", "valva-venosa", "veia", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos (veias varicosas); Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q15",
+      "tipo": "multipla",
+      "contexto": "Homem de 30 anos, usuário de drogas injetáveis, tem febre há duas semanas e sopro cardíaco novo. As hemoculturas isolam Staphylococcus aureus, e o ecocardiograma mostra uma massa móvel aderida à valva tricúspide.",
+      "enunciado": "Qual característica histológica normal das valvas cardíacas ajuda a explicar a dificuldade de erradicar essa infecção?",
+      "alternativas": [
+        { "id": "a", "texto": "Cúspides com eixo de miocárdio irrigado por ramos coronários terminais" },
+        { "id": "b", "texto": "Cúspides de conjuntivo denso em grande parte avascular, nutridas por difusão" },
+        { "id": "c", "texto": "Cúspides de cartilagem hialina, sem endotélio na face voltada para o átrio" },
+        { "id": "d", "texto": "Cúspides revestidas por mesotélio, como o epicárdio, com microvilosidades" }
+      ],
+      "correta": "b",
+      "explicacao": "As valvas têm um eixo de conjuntivo denso, contínuo com os anéis fibrosos e revestido de endotélio nas duas faces; as cúspides são em grande parte avasculares e nutridas por difusão (b). Na endocardite infecciosa, os microrganismos ficam dentro de vegetações de fibrina e plaquetas, longe de capilares, onde leucócitos e antibióticos chegam com dificuldade, o que ajuda a explicar a necessidade de tratamento antimicrobiano prolongado. As cúspides não têm eixo de miocárdio (a) nem de cartilagem hialina (c), e são revestidas por endotélio, não por mesotélio (d), que reveste o epicárdio e o pericárdio.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["valva-cardiaca", "endocardite", "caso-clinico"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Robbins 10ª ed., Coração (endocardite infecciosa)"
+    },
+    {
+      "id": "his-11-q16",
+      "tipo": "multipla",
+      "contexto": "Paciente morreu 3 dias após um choque prolongado, sem oclusão coronária. A autópsia mostra necrose circunferencial restrita ao terço interno da parede do ventrículo esquerdo; uma faixa estreita de cardiomiócitos imediatamente abaixo do endocárdio está preservada.",
+      "enunciado": "O que explica essa distribuição?",
+      "alternativas": [
+        { "id": "a", "texto": "As fibras de Purkinje do subendocárdio consomem o oxigênio antes de ele chegar aos cardiomiócitos" },
+        { "id": "b", "texto": "O tecido adiposo do epicárdio armazena oxigênio e protege da isquemia o terço externo da parede" },
+        { "id": "c", "texto": "O esqueleto fibroso comprime o terço externo da parede e assim reduz o seu consumo de oxigênio" },
+        { "id": "d", "texto": "O subendocárdio é o último território coronário; a faixa sob o endotélio recebe O₂ da cavidade" }
+      ],
+      "correta": "d",
+      "explicacao": "As coronárias correm no epicárdio e penetram a parede de fora para dentro; o subendocárdio é o território mais distal, sofre a maior pressão intramural na sístole e é o primeiro a sofrer quando a pressão de perfusão cai, como no choque, o que produz o infarto subendocárdico circunferencial. A faixa de miócitos imediatamente abaixo do endocárdio é poupada porque recebe oxigênio por difusão a partir do sangue da cavidade (d). As fibras de Purkinje (a) não retiram o oxigênio destinado ao miocárdio. O tecido adiposo epicárdico (b) não armazena oxigênio, e o esqueleto fibroso (c) fica na base do coração, junto às valvas, sem comprimir a parede livre. A cronologia histológica do infarto está no tópico his-09.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["infarto", "subendocardio", "isquemia", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Coração (infarto do miocárdio); Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q17",
+      "tipo": "vf",
+      "enunciado": "Nos vasos de grande calibre, os vasa vasorum nutrem a adventícia e a parte externa da média, enquanto a íntima e a parte interna da média são nutridas por difusão a partir do lúmen.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A parede espessa das grandes artérias e veias não pode ser nutrida só pelo sangue do lúmen; pequenos vasos que entram pela adventícia (vasa vasorum) irrigam a adventícia e a parte externa da média. Segundo Junqueira, são mais frequentes nas veias, cujo sangue é pobre em oxigênio. A obstrução dos vasa vasorum, como na aortite sifilítica, causa isquemia da média.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["vasa-vasorum", "tunicas"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q18",
+      "tipo": "vf",
+      "enunciado": "Na túnica média das artérias, as fibras elásticas, as fibras reticulares e os proteoglicanos situados entre as células musculares lisas são produzidos por fibroblastos.",
+      "correta": false,
+      "explicacao": "Falso. Na média não há fibroblastos: as próprias células musculares lisas sintetizam elastina, colágeno (inclusive o tipo III das fibras reticulares) e proteoglicanos. Essa capacidade secretora reaparece na aterosclerose, quando células musculares lisas migram para a íntima e produzem o colágeno da capa fibrosa.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["tunica-media", "fibra-muscular-lisa", "matriz-extracelular"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q19",
+      "tipo": "vf",
+      "enunciado": "Nos capilares contínuos do sistema nervoso central, as junções oclusivas entre as células endoteliais e a escassez de vesículas de transcitose são a base estrutural da barreira hematoencefálica.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A barreira hematoencefálica depende do endotélio contínuo, sem fenestras, com junções oclusivas e pouca transcitose; pericitos e pés vasculares dos astrócitos ajudam a induzir e manter essas propriedades (tópico his-10).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["capilar-continuo", "barreira-hematoencefalica"],
+      "referencia": "Ross 8ª ed., caps. 12 e 13; Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q20",
+      "tipo": "vf",
+      "enunciado": "Os capilares linfáticos têm lâmina basal espessa e contínua e junções oclusivas, que impedem a entrada de proteínas e células do líquido intersticial.",
+      "correta": false,
+      "explicacao": "Falso. Os capilares linfáticos, em fundo cego, têm endotélio delgado, lâmina basal incompleta ou ausente e junções frouxas, e filamentos de ancoragem os mantêm abertos. Essa estrutura permite recolher do interstício líquido, proteínas e células, como as células dendríticas que levam antígenos aos linfonodos.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["capilar-linfatico", "linfaticos"],
+      "referencia": "Ross 8ª ed., cap. 13; Junqueira 14ª ed., Sistema circulatório"
+    },
+    {
+      "id": "his-11-q21",
+      "tipo": "vf",
+      "enunciado": "O nó sinoatrial e o nó atrioventricular são formados por neurônios especializados que geram e conduzem o impulso cardíaco.",
+      "correta": false,
+      "explicacao": "Falso. O sistema de condução é formado por cardiomiócitos modificados, pobres em miofibrilas, em meio a conjuntivo. Fibras simpáticas e parassimpáticas (do vago) apenas modulam a frequência e a velocidade de condução; o coração transplantado, sem inervação, continua a bater pela automaticidade do nó sinoatrial.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["sistema-de-conducao", "no-sinoatrial"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q22",
+      "tipo": "vf",
+      "enunciado": "O esqueleto fibroso do coração, de tecido conjuntivo denso, isola eletricamente a musculatura atrial da ventricular; normalmente, o impulso só chega aos ventrículos pelo feixe atrioventricular (de His).",
+      "correta": true,
+      "explicacao": "Verdadeiro. Os anéis fibrosos, os trígonos e a parte membranosa do septo sustentam as valvas e servem de inserção ao miocárdio. Como o conjuntivo não conduz o impulso, a única via normal entre átrios e ventrículos é o nó atrioventricular seguido do feixe de His, que atravessa o esqueleto fibroso. Feixes acessórios que cruzam o anel fibroso causam pré-excitação ventricular.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["esqueleto-fibroso", "sistema-de-conducao"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q23",
+      "tipo": "vf",
+      "enunciado": "O endotélio íntegro é antitrombótico: entre outros mecanismos, produz prostaciclina e óxido nítrico, que inibem a agregação plaquetária.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Além de prostaciclina e NO, o endotélio expressa trombomodulina (que, ligada à trombina, ativa a proteína C anticoagulante), heparan sulfato (cofator da antitrombina) e ativador do plasminogênio tecidual. Lesado ou ativado, passa a favorecer a coagulação: libera fator de von Willebrand e expõe fator tecidual, e o colágeno subendotelial fica exposto às plaquetas.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["endotelio", "hemostasia", "oxido-nitrico"],
+      "referencia": "Robbins 10ª ed., Distúrbios hemodinâmicos (hemostasia); Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as camadas da parede de uma artéria muscular de grande calibre, do lúmen para fora:",
+      "itens": [
+        { "id": "1", "texto": "Túnica média (camadas de músculo liso)" },
+        { "id": "2", "texto": "Endotélio" },
+        { "id": "3", "texto": "Túnica adventícia" },
+        { "id": "4", "texto": "Lâmina elástica interna" },
+        { "id": "5", "texto": "Camada subendotelial" },
+        { "id": "6", "texto": "Lâmina elástica externa" }
+      ],
+      "ordemCorreta": ["2", "5", "4", "1", "6", "3"],
+      "explicacao": "Íntima (endotélio → camada subendotelial → lâmina elástica interna) → média muscular → lâmina elástica externa, presente nas artérias musculares de maior calibre → adventícia, de conjuntivo, que se continua com o tecido vizinho.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": ["tunicas", "arteria-muscular", "linha-do-tempo"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene a sequência normal de propagação do impulso elétrico no coração:",
+      "itens": [
+        { "id": "1", "texto": "Feixe atrioventricular (de His)" },
+        { "id": "2", "texto": "Nó sinoatrial" },
+        { "id": "3", "texto": "Fibras de Purkinje, no subendocárdio" },
+        { "id": "4", "texto": "Nó atrioventricular" },
+        { "id": "5", "texto": "Ramos direito e esquerdo do feixe, no septo" },
+        { "id": "6", "texto": "Cardiomiócitos contráteis dos ventrículos" }
+      ],
+      "ordemCorreta": ["2", "4", "1", "5", "3", "6"],
+      "explicacao": "O nó sinoatrial, marca-passo, despolariza os átrios; o impulso chega ao nó atrioventricular, onde sofre retardo (os átrios terminam de contrair-se antes dos ventrículos), segue pelo feixe de His, única via normal através do esqueleto fibroso, pelos ramos direito e esquerdo no septo e pelas fibras de Purkinje, que o distribuem rapidamente aos cardiomiócitos contráteis dos ventrículos.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["sistema-de-conducao", "linha-do-tempo"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q26",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos da formação e da complicação da placa aterosclerótica, do mais precoce ao mais tardio:",
+      "itens": [
+        { "id": "1", "texto": "Células musculares lisas migram para a íntima e produzem a capa fibrosa" },
+        { "id": "2", "texto": "Disfunção endotelial (hipercolesterolemia, tabagismo, hipertensão)" },
+        { "id": "3", "texto": "Macrófagos repletos de lipídios formam a estria gordurosa" },
+        { "id": "4", "texto": "LDL retida na íntima sofre oxidação" },
+        { "id": "5", "texto": "Monócitos aderem ao endotélio, migram para a íntima e viram macrófagos" },
+        { "id": "6", "texto": "Ruptura da capa fibrosa e formação de trombo" }
+      ],
+      "ordemCorreta": ["2", "4", "5", "3", "1", "6"],
+      "explicacao": "Disfunção endotelial → retenção e oxidação de LDL na íntima → adesão e migração de monócitos, que se tornam macrófagos → macrófagos captam LDL modificada e viram células espumosas (estria gordurosa) → células musculares lisas migram da média, proliferam e produzem matriz, formando a capa fibrosa sobre o núcleo lipídico → em placas vulneráveis, a ruptura da capa expõe o núcleo trombogênico e forma-se o trombo. Na lesão real as etapas se sobrepõem, mas esta é a sequência de início descrita por Robbins.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": ["aterosclerose", "linha-do-tempo"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos (aterosclerose)"
+    },
+    {
+      "id": "his-11-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada vaso à característica histológica que o identifica:",
+      "pares": [
+        { "esquerda": "Artéria elástica", "direita": "Média com numerosas lâminas elásticas fenestradas" },
+        { "esquerda": "Artéria muscular", "direita": "Lâmina elástica interna ondulada e média muscular espessa" },
+        { "esquerda": "Arteríola", "direita": "Uma ou duas camadas de músculo liso; regula a resistência" },
+        { "esquerda": "Capilar sinusoide", "direita": "Fendas entre células endoteliais e lâmina basal descontínua" },
+        { "esquerda": "Veia de médio calibre", "direita": "Valvas e adventícia mais espessa que a média" },
+        { "esquerda": "Capilar linfático", "direita": "Fundo cego, lâmina basal incompleta e filamentos de ancoragem" }
+      ],
+      "explicacao": "A artéria elástica tem média dominada por lâminas elásticas; a muscular, média de músculo liso e lâmina elástica interna nítida; a arteríola, uma ou duas camadas musculares que controlam a resistência periférica; o sinusoide (fígado, baço, medula óssea), endotélio com fendas e lâmina basal descontínua; a veia de médio calibre, valvas e adventícia desenvolvida; o capilar linfático, fundo cego, lâmina basal incompleta e filamentos de ancoragem.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": ["vasos", "capilares", "linfaticos"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada componente do coração à sua composição:",
+      "pares": [
+        { "esquerda": "Endocárdio", "direita": "Endotélio sobre fina camada de conjuntivo subendotelial" },
+        { "esquerda": "Camada subendocárdica", "direita": "Conjuntivo frouxo com vasos, nervos e fibras de Purkinje" },
+        { "esquerda": "Miocárdio", "direita": "Cardiomiócitos unidos por discos intercalares" },
+        { "esquerda": "Epicárdio", "direita": "Mesotélio sobre conjuntivo com tecido adiposo e vasos coronários" },
+        { "esquerda": "Esqueleto fibroso", "direita": "Conjuntivo denso dos anéis valvares, trígonos e septo membranoso" },
+        { "esquerda": "Cúspide valvar", "direita": "Eixo de conjuntivo denso revestido de endotélio nas duas faces" }
+      ],
+      "explicacao": "O endocárdio, homólogo da íntima, é endotélio sobre conjuntivo subendotelial; abaixo dele, a camada subendocárdica abriga vasos, nervos e fibras de Purkinje. O miocárdio é formado por cardiomiócitos unidos por discos intercalares. O epicárdio é o pericárdio visceral: mesotélio sobre conjuntivo com gordura e vasos coronários. O esqueleto fibroso é conjuntivo denso, e as cúspides valvares têm eixo de conjuntivo denso revestido de endotélio nas duas faces.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": ["coracao", "endocardio", "epicardio", "esqueleto-fibroso"],
+      "referencia": "Junqueira 14ª ed., Sistema circulatório; Ross 8ª ed., cap. 13"
+    },
+    {
+      "id": "his-11-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada condição à alteração histológica característica:",
+      "pares": [
+        { "esquerda": "Aterosclerose inicial (estria gordurosa)", "direita": "Células espumosas na íntima, sem obstruir o lúmen" },
+        { "esquerda": "Arteriolosclerose hialina", "direita": "Parede arteriolar homogênea e rósea, com lúmen estreitado" },
+        { "esquerda": "Arteriolosclerose hiperplásica", "direita": "Lamelas concêntricas em casca de cebola e necrose fibrinoide" },
+        { "esquerda": "Aneurisma sifilítico da aorta", "direita": "Endarterite obliterante dos vasa vasorum" },
+        { "esquerda": "Endocardite infecciosa", "direita": "Vegetações de fibrina, plaquetas e microrganismos na valva" },
+        { "esquerda": "Varizes", "direita": "Veias superficiais dilatadas, com valvas insuficientes" }
+      ],
+      "explicacao": "A estria gordurosa é plana e formada por células espumosas na íntima. A arteriolosclerose hialina deixa a parede homogênea e rósea; a hiperplásica, da hipertensão grave, forma lamelas em casca de cebola com necrose fibrinoide. Na aortite sifilítica, a endarterite dos vasa vasorum causa isquemia da média e aneurisma. A endocardite infecciosa forma vegetações sobre as cúspides. Nas varizes, as valvas ficam insuficientes e as veias superficiais se dilatam.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": ["correlacoes-clinicas", "aterosclerose", "arteriolosclerose", "aneurisma", "endocardite", "varizes"],
+      "referencia": "Robbins 10ª ed., Vasos sanguíneos e Coração"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed. Rio de Janeiro: GEN Guanabara Koogan, 2023",
+      "capitulo": "Sistema circulatório (cap. 11 na 13ª ed.)"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed. GEN Guanabara Koogan, 2021",
+      "capitulo": "13 — Sistema cardiovascular (e 12 — Tecido nervoso, para a barreira hematoencefálica)"
+    },
+    {
+      "obra": "Kierszenbaum AL, Tres LL. Histologia e Biologia Celular: uma introdução à patologia, 5ª ed. Elsevier",
+      "capitulo": "Sistema cardiovascular (número do capítulo não conferido)"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia: Bases Patológicas das Doenças, 10ª ed. (orig. 2020)",
+      "capitulo": "Vasos sanguíneos (aterosclerose, arteriolosclerose, aneurismas, veias varicosas); Coração (infarto, endocardite infecciosa, arritmias); Inflamação aguda (permeabilidade vascular); Distúrbios hemodinâmicos (hemostasia e endotélio) — títulos; números de capítulo não conferidos"
+    },
+    {
+      "obra": "Furchgott RF, Zawadzki JV. The obligatory role of endothelial cells in the relaxation of arterial smooth muscle by acetylcholine. Nature. 1980;288(5789):373-6. doi:10.1038/288373a0. PMID 6253831",
+      "capitulo": "Relaxamento dependente do endotélio (base da q07)"
+    },
+    {
+      "obra": "Louveau A et al. Structural and functional features of central nervous system lymphatic vessels. Nature. 2015;523(7560):337-41. doi:10.1038/nature14432",
+      "capitulo": "Vasos linfáticos meníngeos (nota de divergência)"
+    }
+  ],
+  "notasDivergencia": [
+    "Calibre das arteríolas: Ross dá diâmetro abaixo de 0,1 mm; Junqueira, de memória, menor que 0,5 mm. O conteúdo define a arteríola pela parede (uma ou duas camadas de músculo liso) e não cobra o número.",
+    "Número de lâminas elásticas da aorta: Ross cita 40 a 70 no adulto; Junqueira (de memória) descreve aumento com a idade, de cerca de 40 no recém-nascido a cerca de 70 no adulto. O texto diz 'dezenas' e nenhuma questão cobra o número.",
+    "Diâmetro dos capilares: Ross 5–10 µm; Junqueira cerca de 7–9 µm. Adotado 'próximo ao de uma hemácia', sem cobrança numérica.",
+    "Capilares de glândulas endócrinas (adeno-hipófise, córtex da adrenal): algumas obras os chamam de sinusoides fenestrados. O conteúdo usa como exemplos de sinusoides apenas fígado, baço e medula óssea, sobre os quais as fontes concordam.",
+    "Vias internodais entre os nós sinoatrial e atrioventricular: descritas em Ross, mas sua existência como tratos anatômicos distintos é discutida; o conteúdo não as menciona e a questão de ordenar não as inclui.",
+    "Linfáticos no sistema nervoso central: os livros clássicos dizem que não existem; vasos linfáticos funcionais foram descritos nas meninges (dura-máter) em 2015 (Louveau et al.). O conteúdo não afirma ausência de linfáticos em nenhum órgão.",
+    "Vasa vasorum mais frequentes nas veias que nas artérias: afirmação de Junqueira (de memória), atribuída ao livro na q17; Ross descreve vasa vasorum em ambos sem quantificar.",
+    "Sequência da aterogênese (q26 e eventos): Robbins descreve disfunção endotelial, acúmulo de lipoproteínas, adesão de monócitos, formação de células espumosas e recrutamento de células musculares lisas como etapas que se sobrepõem; a ordem cobrada é a de início de cada processo, que é a mesma nas fontes."
+  ],
+  "incertezas": [
+    "Números de capítulo de Junqueira 14ª ed. (citado pela numeração da 13ª: 11 — Sistema circulatório), Ross 8ª ed. (13), Kierszenbaum 5ª ed. e títulos de Robbins 10ª ed. citados de memória.",
+    "Fatos de patologia citados de memória de Robbins: faixa subendocárdica poupada por difusão a partir da cavidade; descrição da arteriolosclerose hiperplásica e da esclerose de Mönckeberg; aortite sifilítica com endarterite dos vasa vasorum; ordem dos territórios mais acometidos pela aterosclerose; cúspides valvares em grande parte avasculares. Conferir no livro.",
+    "Endocardite infecciosa: os critérios de Duke-ISCVID 2023 (Clin Infect Dis 2023) e a diretriz da ESC 2023 não tiveram texto integral disponível pela API do Europe PMC nesta sessão; por isso o conteúdo não cita critérios nem esquemas e usa redação qualitativa (hemoculturas e ecocardiograma como base do diagnóstico; tratamento antimicrobiano prolongado).",
+    "Pré-excitação ventricular (q10): mecanismo descrito em textos de cardiologia e fisiologia; não foi conferido se Ross ou Robbins 10ª ed. o mencionam."
+  ],
+  "revisao": {
+    "autor": "agente-redator-histologia",
+    "data": "2026-11-10",
+    "agentes": [],
+    "humano": null
+  }
+}

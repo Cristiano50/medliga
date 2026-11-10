@@ -645,6 +645,88 @@
       "bloom": "compreender",
       "tags": ["correlacoes-clinicas", "distrofia-duchenne", "miastenia-grave", "infarto", "leiomioma"],
       "referencia": "Robbins 10ª ed.; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q28",
+      "tipo": "multipla",
+      "contexto": "Num experimento clássico, fibras musculares esqueléticas têm a membrana permeabilizada, de modo que a solução do banho chega diretamente às miofibrilas. Numa solução sem ATP, as fibras tornam-se rígidas e resistem ao estiramento, com os sarcômeros fixos no comprimento em que estavam. Em seguida, são transferidas para uma solução com ATP e com Ca²⁺ muito baixo.",
+      "enunciado": "O que se espera na segunda solução e o que isso ensina sobre a rigidez cadavérica?",
+      "alternativas": [
+        { "id": "a", "texto": "Contração máxima, porque o ATP dispara o golpe de força mesmo sem Ca²⁺; a rigidez cadavérica seria uma contração ativa" },
+        { "id": "b", "texto": "Rigidez mantida, porque o ATP não desfaz pontes já formadas; a rigidez cadavérica seria coagulação do sarcoplasma" },
+        { "id": "c", "texto": "Relaxamento, porque o ATP ativa a calmodulina, que desfosforila a miosina; a rigidez cadavérica seria falta de calmodulina" },
+        { "id": "d", "texto": "Relaxamento: o ATP solta a miosina da actina e, sem Ca²⁺, a tropomiosina cobre os sítios; na morte, falta ATP" }
+      ],
+      "correta": "d",
+      "explicacao": "Sem ATP, as cabeças de miosina ficam presas à actina (estado de rigor) e a fibra não se estende: é o que acontece após a morte, quando o ATP se esgota (rigidez cadavérica). A ligação do ATP desprende a miosina da actina; com Ca²⁺ muito baixo, a troponina C fica sem Ca²⁺, a tropomiosina volta a bloquear os sítios da actina, novas pontes não se formam e a fibra relaxa (d). Se a solução tivesse ATP e Ca²⁺ alto, a fibra contrairia. O ATP sozinho não dispara a contração do músculo esquelético, cuja regulação depende do Ca²⁺ ligado à troponina C (a). O ATP desfaz as pontes de rigor, e a rigidez cadavérica não se deve à coagulação do sarcoplasma (b). A via da calmodulina e da cinase da cadeia leve da miosina é a do músculo liso, e o ATP não ativa a calmodulina (c).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "pontes-cruzadas", "rigidez-cadaverica", "troponina", "atp", "experimental"],
+      "referencia": "Ross 8ª ed., cap. 11; Junqueira 14ª ed., Tecido muscular"
+    },
+    {
+      "id": "his-09-q29",
+      "tipo": "multipla",
+      "contexto": "Menino de 12 anos é anestesiado com sevoflurano para uma cirurgia ortopédica e recebe succinilcolina. Minutos depois surgem rigidez do masseter, aumento inexplicado do CO₂ expirado, taquicardia e elevação rápida da temperatura; mais tarde, potássio sérico alto, CK muito elevada e urina escura.",
+      "enunciado": "Qual é o defeito primário, e por que surgem calor e CO₂ em excesso?",
+      "alternativas": [
+        { "id": "a", "texto": "Falta de ATP, como na rigidez cadavérica, que trava as pontes cruzadas e faz a fibra liberar calor" },
+        { "id": "b", "texto": "Ca²⁺ liberado sem controle pelo receptor de rianodina; contração e recaptação pela SERCA consomem ATP" },
+        { "id": "c", "texto": "Bloqueio dos receptores nicotínicos pela succinilcolina, como na miastenia grave, com fadiga e acidose" },
+        { "id": "d", "texto": "Excesso de Ca²⁺ ligado à calmodulina das fibras esqueléticas, que ativa a cinase da cadeia leve da miosina" }
+      ],
+      "correta": "b",
+      "explicacao": "O quadro é de hipertermia maligna, desencadeada por anestésicos inalatórios voláteis e pela succinilcolina em pessoas predispostas, frequentemente portadoras de variantes do gene RYR1 (às vezes do CACNA1S). O receptor de rianodina do retículo sarcoplasmático, que na tríade libera o Ca²⁺ da contração, passa a liberá-lo de forma acelerada, mais depressa do que a SERCA consegue recaptá-lo. O Ca²⁺ alto mantém as pontes cruzadas em ciclo (rigidez, como a do masseter), e tanto a contração quanto o bombeamento do Ca²⁺ de volta ao retículo consomem ATP: o metabolismo acelerado gera calor e CO₂, e a lesão das fibras libera potássio, mioglobina (urina escura) e CK (b). O dantroleno, usado no tratamento, age no próprio receptor de rianodina e reduz a liberação de Ca²⁺. A rigidez da hipertermia maligna é contração com alto consumo de ATP, ao contrário da rigidez cadavérica, em que o ATP falta (a). A succinilcolina é um relaxante muscular despolarizante, e um bloqueio da transmissão causaria fraqueza flácida, não rigidez com hipermetabolismo (c). Nas fibras esqueléticas o Ca²⁺ age pela troponina C; a via da calmodulina é a do músculo liso (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": ["avancado", "hipertermia-maligna", "receptor-de-rianodina", "triade", "rigidez-cadaverica", "caso-clinico"],
+      "referencia": "Tsutsumi YM et al. (Sociedade Japonesa de Anestesiologistas), J Anesth 2026;40(1):4-12 (diretriz de hipertermia maligna de 2025); Ross 8ª ed., cap. 11"
+    },
+    {
+      "id": "his-09-q30",
+      "tipo": "multipla",
+      "contexto": "Rapaz de 16 anos tem fraqueza proximal leve, que começou aos 11 anos, e ainda anda sem apoio. As panturrilhas são aumentadas e a CK sérica, muito elevada. O teste genético inicial não foi conclusivo. Na biópsia muscular há fibras de tamanhos variados, com necrose e regeneração; a imuno-histoquímica mostra distrofina no sarcolema, mas com marcação fraca e descontínua, e o western blot mostra uma distrofina menor e em menor quantidade que a normal.",
+      "enunciado": "Qual diagnóstico e mecanismo são os mais compatíveis?",
+      "alternativas": [
+        { "id": "a", "texto": "Distrofia de Becker: mutação que preserva a fase de leitura e produz distrofina reduzida ou truncada" },
+        { "id": "b", "texto": "Distrofia de Duchenne: ausência completa de distrofina, com quadro mais leve e tardio que o de Becker" },
+        { "id": "c", "texto": "Miastenia grave: perda de receptores de acetilcolina da placa, que reduz a marcação da distrofina" },
+        { "id": "d", "texto": "Hipertermia maligna: excesso de Ca²⁺ liberado pelo retículo, que degrada a distrofina nos esforços" }
+      ],
+      "correta": "a",
+      "explicacao": "Distrofina presente, mas em menor quantidade e de tamanho menor que o normal, num quadro que começou mais tarde e progride devagar (ainda anda aos 16 anos), indica distrofia de Becker: mutações no gene da distrofina que preservam a fase de leitura produzem uma proteína truncada ou reduzida (a). Na distrofia de Duchenne, a imuno-histoquímica não marca distrofina, e o quadro é mais precoce e mais grave, não mais leve (b). Na miastenia grave, o defeito está nos receptores de acetilcolina da placa motora; não há necrose, CK elevada nem alteração da distrofina (c). Na hipertermia maligna, o defeito é do receptor de rianodina, que se manifesta em crises desencadeadas por anestésicos, e não explica a distrofina reduzida (d). Pelas recomendações internacionais de 2018, o diagnóstico das distrofinopatias começa pelo teste genético; a biópsia, com imuno-histoquímica ou western blot para distrofina, fica para quando o teste não confirma o diagnóstico, como neste caso.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": ["avancado", "distrofia-becker", "distrofina", "biopsia-muscular", "caso-clinico"],
+      "referencia": "Robbins 10ª ed., Nervos periféricos e músculos esqueléticos; Birnkrant et al., Lancet Neurol 2018 (diagnóstico)"
+    },
+    {
+      "id": "his-09-q31",
+      "tipo": "associar",
+      "enunciado": "Associe cada condição ou fármaco ao ponto da transmissão neuromuscular ou do acoplamento excitação-contração em que atua:",
+      "pares": [
+        { "esquerda": "Miastenia grave", "direita": "Receptores nicotínicos de acetilcolina da membrana pós-sináptica" },
+        { "esquerda": "Síndrome miastênica de Lambert-Eaton", "direita": "Canais de Ca²⁺ dependentes de voltagem do terminal motor" },
+        { "esquerda": "Inibidor da acetilcolinesterase", "direita": "Enzima da lâmina basal da fenda que encerra o sinal" },
+        { "esquerda": "Hipertermia maligna", "direita": "Receptor de rianodina, que libera Ca²⁺ do retículo sarcoplasmático" },
+        { "esquerda": "Rigidez cadavérica", "direita": "Desligamento das pontes cruzadas, que depende de ATP" }
+      ],
+      "explicacao": "Na miastenia grave, autoanticorpos reduzem os receptores nicotínicos pós-sinápticos; na síndrome de Lambert-Eaton, os anticorpos atingem os canais de Ca²⁺ do terminal pré-sináptico, dos quais depende a liberação de acetilcolina; inibidores da acetilcolinesterase, enzima da lâmina basal da fenda, prolongam a ação da acetilcolina e são o tratamento sintomático da miastenia; na hipertermia maligna, o receptor de rianodina do retículo libera Ca²⁺ sem controle; na rigidez cadavérica, falta o ATP que desfaz as pontes cruzadas.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "juncao-neuromuscular", "acoplamento-excitacao-contracao", "hipertermia-maligna", "rigidez-cadaverica"],
+      "referencia": "Junqueira 14ª ed., Tecido muscular; Ross 8ª ed., cap. 11; Robbins 10ª ed., Nervos periféricos e músculos esqueléticos; Tsutsumi et al., J Anesth 2026"
+    },
+    {
+      "id": "his-09-q32",
+      "tipo": "vf",
+      "enunciado": "Num menino com fraqueza proximal, sinal de Gowers e CK muito elevada, a biópsia muscular com imuno-histoquímica para distrofina é hoje o primeiro exame para confirmar a distrofia de Duchenne.",
+      "correta": false,
+      "explicacao": "Falso. Pelas recomendações internacionais de cuidado da distrofia de Duchenne (2018), como a maioria dos pacientes tem deleção ou duplicação de um ou mais éxons do gene da distrofina, o primeiro exame confirmatório é o teste genético para deleções e duplicações; se ele for negativo, faz-se o sequenciamento do gene. A biópsia, com imuno-histoquímica ou western blot para distrofina, fica para quando o teste genético não confirma o diagnóstico clínico.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": ["avancado", "distrofia-duchenne", "diagnostico", "biopsia-muscular"],
+      "referencia": "Birnkrant DJ et al., Lancet Neurol 2018;17(3):251-67 (diagnóstico); Robbins 10ª ed., Nervos periféricos e músculos esqueléticos"
     }
   ],
   "referencias": [
@@ -661,7 +743,8 @@
     { "obra": "Thygesen K et al. Fourth universal definition of myocardial infarction (2018). Eur Heart J. 2019;40(3):237-69 (publicada simultaneamente em Circulation e J Am Coll Cardiol, 2018)", "capitulo": "Lesão miocárdica (troponina acima do percentil 99) e critérios de infarto" },
     { "obra": "Nicolau JC et al. Diretrizes da Sociedade Brasileira de Cardiologia sobre Angina Instável e Infarto Agudo do Miocárdio sem Supradesnível do Segmento ST – 2021. Arq Bras Cardiol. 2021;117(1):181-264", "capitulo": "Troponina como principal marcador de necrose miocárdica" },
     { "obra": "Birnkrant DJ et al. Diagnosis and management of Duchenne muscular dystrophy, part 1. Lancet Neurol. 2018;17(3):251-67", "capitulo": "Diagnóstico: CK, teste genético do gene DMD e biópsia quando o teste não é conclusivo" },
-    { "obra": "Bulun SE. Uterine fibroids. N Engl J Med. 2013;369(14):1344-55", "capitulo": "Dependência de estrogênio e progesterona" }
+    { "obra": "Bulun SE. Uterine fibroids. N Engl J Med. 2013;369(14):1344-55", "capitulo": "Dependência de estrogênio e progesterona" },
+    { "obra": "Tsutsumi YM, Nagasaka H, Mukaida K, et al. JSA guideline for management of malignant hyperthermia in 2025. J Anesth. 2026;40(1):4-12. doi:10.1007/s00540-025-03647-y. PMID 41504952", "capitulo": "Fisiopatologia (liberação de Ca²⁺ do retículo sarcoplasmático acelerada, acima da recaptação; contração sustentada e recaptação consomem ATP, com calor e CO₂; papel do RYR1; variantes de RYR1 ou CACNA1S em cerca de 50–70% dos predispostos); desencadeantes (anestésicos voláteis, suxametônio); sinais iniciais (hipercapnia, taquicardia, rigidez do masseter); dantroleno no RYR1. Conferido no texto integral (PMC12860801) em 10/11/2026" }
   ],
   "notasDivergencia": [
     "Comprimento do sarcômero em repouso: Junqueira ~2,5 µm; Ross 2–3 µm. Adotado ~2,5 µm, sem cobrança numérica.",
@@ -674,7 +757,8 @@
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. não conferidos (citado como 'Tecido muscular', cap. 10 na 13ª ed.). Capítulos de Ross 8ª ed. (11), Kierszenbaum 5ª ed. (7) e títulos de capítulos de Robbins 10ª ed. citados de memória.",
     "Tamanho das fibras (diâmetro, comprimento) e proporção de mitocôndrias no cardiomiócito omitidos por não terem sido conferidos.",
-    "Revisão clínica: a quarta definição universal de infarto e a diretriz da SBC (2021) foram conferidas por busca (resumos e sínteses), e Birnkrant 2018 (fluxo diagnóstico da distrofia de Duchenne: teste genético antes da biópsia) de memória; o texto integral não pôde ser aberto nesta sessão. Páginas de Nicolau et al. (Arq Bras Cardiol 2021) citadas de memória."
+    "Revisão clínica: a quarta definição universal de infarto e a diretriz da SBC (2021) foram conferidas por busca (resumos e sínteses), e Birnkrant 2018 (fluxo diagnóstico da distrofia de Duchenne: teste genético antes da biópsia) de memória; o texto integral não pôde ser aberto nesta sessão. Páginas de Nicolau et al. (Arq Bras Cardiol 2021) citadas de memória.",
+    "Camada avançada (10/11/2026, redator; ainda sem revisão da área nem transversal): his-09-q28 a q32. Hipertermia maligna conferida no texto integral da diretriz da Sociedade Japonesa de Anestesiologistas (2025); as diretrizes do European Malignant Hyperthermia Group (Br J Anaesth) não abriram (hosts recusados pelo proxy). Birnkrant 2018 foi lido no texto integral (PMC5869704) para o fluxo diagnóstico (q30, q32); o artigo fala de mutações que 'preservam ou rompem a fase de leitura', e a associação Becker = fase preservada segue a correlação já revisada do tópico. Na q28, o comportamento das fibras permeabilizadas (rigor sem ATP; relaxamento com ATP e Ca²⁺ baixo) é deduzido do ciclo das pontes cruzadas e da regulação pela troponina descritos no tópico, sem estudo primário lido. A redação 'frequentemente portadoras de variantes de RYR1 (às vezes do CACNA1S)' (q29) reflete a detecção dessas variantes em cerca de 50–70% dos predispostos, segundo a diretriz."
   ],
   "revisao": { "autor": "agente-redator-histologia", "data": "2026-11-09", "agentes": [
     {"area": "histologia", "agente": "revisor-histologia-v1", "data": "2026-11-09", "veredito": "aprovado-com-correcoes", "notas": "8 correções (0 críticas, 0 importantes, 8 menores); nenhum gabarito errado. Principais: q23 item 4 deixou de afirmar que a saída do fosfato desencadeia o golpe de força (ordem debatida; sequência cobrada inalterada); origem da fibra esquelética inclui o mesoderma paraxial cranial; q04 (dobras juncionais × fendas secundárias; terminal coberto por células de Schwann); q11 refuta titina/desmina com precisão; título de capítulo de Robbins 10ª ed. corrigido; incerteza sobre receptores de ACh nas cristas resolvida (Ross; Flucher e Daniels, 1989). Conferidos sem erro: IIb × IIx, Bergmann 2009 (~1%/ano aos 25 anos), cronologia do infarto (Robbins)."},

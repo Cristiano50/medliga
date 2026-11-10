@@ -1082,6 +1082,204 @@
         "estruturas"
       ],
       "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8"
+    },
+    {
+      "id": "his-07-q28",
+      "tipo": "multipla",
+      "contexto": "Um grupo de pesquisa vai estudar duas linhagens de camundongos geneticamente modificados: na linhagem 1, nenhuma célula produz RANKL; na linhagem 2, nenhuma célula produz osteoprotegerina (OPG). Antes de examinar os animais, os pesquisadores registram as previsões que decorrem da regulação conhecida da reabsorção óssea, incluindo o efeito de um transplante de medula óssea de um animal normal.",
+      "enunciado": "Qual previsão é coerente com essa regulação?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Linhagem 1: perda óssea grave, porque a OPG, sem RANKL para neutralizar, passa a ativar o RANK dos precursores; linhagem 2: osso denso e sem osteoclastos"
+        },
+        {
+          "id": "b",
+          "texto": "Linhagem 1: osso denso, que o transplante de medula normal corrigiria, pois o RANKL vem dos precursores dos osteoclastos; linhagem 2: perda óssea"
+        },
+        {
+          "id": "c",
+          "texto": "Linhagem 1: osso denso, quase sem osteoclastos, que o transplante de medula normal não corrigiria; linhagem 2: perda óssea por reabsorção excessiva"
+        },
+        {
+          "id": "d",
+          "texto": "Esqueleto normal nas duas linhagens, porque o PTH compensaria a falta agindo diretamente em receptores dos osteoclastos maduros"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A formação dos osteoclastos exige RANKL (com M-CSF), expresso por osteoblastos, células do estroma e osteócitos, que se liga ao receptor RANK dos precursores da linhagem monócito-macrófago. Sem RANKL, quase não se formam osteoclastos, o osso não é reabsorvido e fica denso, como na osteopetrose; como o RANKL vem de células de linhagem mesenquimal, um transplante de células hematopoéticas normais não repõe o fator, assim como nas raras formas humanas de osteopetrose por deficiência de RANKL. Sem OPG, receptor solúvel que bloqueia o RANKL, a sinalização RANKL–RANK fica livre, formam-se mais osteoclastos e o osso é perdido (c). A OPG não ativa o RANK: ela se liga ao RANKL e o impede de agir (a). O RANKL não é produzido pelos precursores dos osteoclastos, que têm o receptor RANK; por isso o transplante não corrigiria a linhagem 1 (b). O PTH age em receptores dos osteoblastos, aumentando RANKL e reduzindo OPG, e não diretamente nos osteoclastos; sem RANKL, esse caminho não funciona (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "rankl",
+        "opg",
+        "osteoclasto",
+        "osteopetrose",
+        "experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8; Wu et al., J Clin Endocrinol Metab 2017 (osteopetrose)"
+    },
+    {
+      "id": "his-07-q29",
+      "tipo": "multipla",
+      "contexto": "Mulher de 62 anos tem dor óssea difusa, mais intensa na pelve e nas coxas, fraqueza muscular proximal e duas fraturas após traumas mínimos. A radiografia mostra rarefação óssea, e a densitometria, densidade mineral baixa. A fosfatase alcalina está elevada, mas os demais exames de sangue não esclarecem a causa. Faz-se biópsia da crista ilíaca com dupla marcação por tetraciclina: o antibiótico, fluorescente, é dado em dois momentos separados por um intervalo conhecido e deposita-se como uma faixa onde a matriz está sendo mineralizada.",
+      "enunciado": "Qual resultado da biópsia confirma osteomalácia e a distingue da osteoporose?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Faixas largas de osteoide sobre as trabéculas e marcações de tetraciclina mais próximas entre si que o normal"
+        },
+        {
+          "id": "b",
+          "texto": "Trabéculas finas e escassas, com osteoide habitual e distância habitual entre as duas marcações de tetraciclina"
+        },
+        {
+          "id": "c",
+          "texto": "Marcações de tetraciclina mais afastadas entre si que o normal e osteoide reduzido, por mineralização acelerada"
+        },
+        {
+          "id": "d",
+          "texto": "Osteoclastos numerosos em lacunas de Howship, com fibrose da medula e depósitos de hemossiderina"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Cada marcação de tetraciclina registra onde a matriz estava se mineralizando no momento da dose, e a distância entre as duas faixas mede quanto a mineralização avançou no intervalo. Na osteomalácia, a mineralização é lenta e deficiente: as faixas ficam mais próximas, e o osteoide, matriz orgânica ainda não mineralizada, acumula-se em faixas largas sobre as trabéculas (a). É o critério histomorfométrico do PCDT de Raquitismo e Osteomalácia, que reserva a biópsia para os casos em que os exames clínicos, laboratoriais e radiológicos não esclarecem o diagnóstico; a radiografia e a densitometria podem mostrar rarefação nas duas doenças. Na osteoporose há menos osso, mas a matriz restante é normalmente mineralizada, sem acúmulo de osteoide (b). Faixas mais afastadas com osteoide reduzido indicariam mineralização mais rápida, o contrário da osteomalácia (c). Osteoclastos numerosos, fibrose medular e hemossiderina caracterizam a osteíte fibrosa do hiperparatireoidismo (d).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "osteomalacia",
+        "osteoporose",
+        "osteoide",
+        "histomorfometria",
+        "caso-clinico"
+      ],
+      "referencia": "MS, PCDT Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022), 3.1, 3.3 e 3.4; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; Junqueira 14ª ed., cap. 8"
+    },
+    {
+      "id": "his-07-q30",
+      "tipo": "multipla",
+      "contexto": "Lactente de 5 meses tem osteopetrose grave: ossos difusamente densos, cavidade medular quase ausente, anemia e plaquetopenia. O fígado e o baço estão aumentados, sem sinais de infecção.",
+      "enunciado": "Que achado é esperado ao exame histológico do fígado, e por quê?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Osteoclastos ineficientes acumulados nos sinusoides, por não encontrarem osso que possam reabsorver"
+        },
+        {
+          "id": "b",
+          "texto": "Infiltração difusa por mieloblastos de uma leucemia aguda, que substitui a medula e invade o fígado"
+        },
+        {
+          "id": "c",
+          "texto": "Fibrose com depósitos de hemossiderina, porque o excesso de PTH estimula a reabsorção também no fígado"
+        },
+        {
+          "id": "d",
+          "texto": "Focos de eritroblastos, precursores granulocíticos e megacariócitos, como no fígado do feto"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Na osteopetrose, os osteoclastos não reabsorvem o osso, e a cavidade medular, que abrigaria a medula vermelha, fica reduzida: falta espaço para a hematopoese, daí a anemia e a plaquetopenia. A produção passa a ocorrer em órgãos que foram hematopoéticos no período fetal, o fígado e o baço, que aumentam de volume (hematopoese extramedular); no fígado surgem focos de precursores eritroides e granulocíticos e megacariócitos (d). Os osteoclastos atuam na superfície do osso e não se acumulam nos sinusoides hepáticos (a). Uma leucemia aguda mostraria blastos monótonos de um clone neoplásico; aqui a hepatoesplenomegalia decorre da falta de espaço medular (b). Fibrose com hemossiderina pela ação do PTH é um achado ósseo do hiperparatireoidismo, e o PTH não promove reabsorção no fígado (c).",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "osteopetrose",
+        "hematopoese",
+        "medula-ossea",
+        "integracao"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; Junqueira 14ª ed., cap. 8 e Hemocitopoese; Moore 11ª ed., cap. 6"
+    },
+    {
+      "id": "his-07-q31",
+      "tipo": "associar",
+      "enunciado": "Associe cada doença à etapa da formação ou da remodelação óssea primariamente afetada:",
+      "pares": [
+        {
+          "esquerda": "Osteopetrose por deficiência de anidrase carbônica II",
+          "direita": "Acidificação do compartimento sob a borda pregueada do osteoclasto"
+        },
+        {
+          "esquerda": "Osteopetrose por deficiência de RANKL",
+          "direita": "Diferenciação de precursores da linhagem monócito-macrófago em osteoclastos"
+        },
+        {
+          "esquerda": "Osteomalácia",
+          "direita": "Mineralização do osteoide recém-depositado"
+        },
+        {
+          "esquerda": "Osteogênese imperfeita",
+          "direita": "Síntese do colágeno tipo I da matriz orgânica"
+        },
+        {
+          "esquerda": "Hiperparatireoidismo primário",
+          "direita": "Aumento de RANKL e queda de OPG nos osteoblastos por estímulo hormonal"
+        },
+        {
+          "esquerda": "Osteoporose pós-menopausa",
+          "direita": "Perda do freio estrogênico sobre a reabsorção"
+        }
+      ],
+      "explicacao": "A anidrase carbônica II gera o H⁺ que a bomba de prótons secreta sob a borda pregueada; sem ela, o osteoclasto não dissolve a hidroxiapatita. Sem RANKL, os precursores da linhagem monócito-macrófago não se diferenciam em osteoclastos. Na osteomalácia, o osteoide se forma, mas não se mineraliza. Na osteogênese imperfeita, o defeito está no colágeno tipo I, principal proteína da matriz. No hiperparatireoidismo, o PTH age nos osteoblastos, que aumentam RANKL e reduzem OPG. Na pós-menopausa, a falta de estrógeno remove um freio da reabsorção, que passa a superar a formação.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "remodelacao",
+        "osteopetrose",
+        "osteomalacia",
+        "osteoporose",
+        "regulacao"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles"
+    },
+    {
+      "id": "his-07-q32",
+      "tipo": "ordenar",
+      "enunciado": "Num corte de osso compacto em remodelação, acompanhe a formação de um novo ósteon. Ordene as etapas, da mais precoce à mais tardia:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Osteoblastos alinhados na parede do túnel depositam osteoide em lamelas concêntricas"
+        },
+        {
+          "id": "2",
+          "texto": "Precursores da linhagem monócito-macrófago fundem-se, sob ação de M-CSF e RANKL, e formam osteoclastos"
+        },
+        {
+          "id": "3",
+          "texto": "Na superfície escavada, forma-se a linha cimentante, que marca o limite da reabsorção"
+        },
+        {
+          "id": "4",
+          "texto": "O osteoide se mineraliza, osteoblastos envolvidos pela matriz tornam-se osteócitos e o túnel se estreita até restar o canal de Havers"
+        },
+        {
+          "id": "5",
+          "texto": "Osteoclastos escavam um túnel na matriz mineralizada"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "5",
+        "3",
+        "1",
+        "4"
+      ],
+      "explicacao": "A remodelação começa com a formação de osteoclastos a partir de precursores da medula, sob M-CSF e RANKL. Eles escavam um túnel, e a superfície em que a reabsorção parou fica marcada pela linha cimentante, que passa a delimitar o novo ósteon. Osteoblastos alinhados na parede depositam osteoide em lamelas concêntricas; o osteoide se mineraliza, os osteoblastos que ficam presos na matriz tornam-se osteócitos, e o túnel se estreita até restar o canal de Havers, com vasos e nervos. Como o túnel é preenchido da parede para o centro, a lamela mais próxima do canal é a mais jovem. Partes de ósteons antigos cortadas pelo túnel permanecem como lamelas intersticiais.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "remodelacao",
+        "osteon",
+        "linha-cimentante",
+        "linha-do-tempo"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8"
     }
   ],
   "referencias": [
@@ -1131,6 +1329,10 @@
     {
       "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran — Patologia: bases patológicas das doenças, 10ª ed.",
       "capitulo": "Sistema endócrino (carcinoma medular da tireoide; hiperparatireoidismo)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas de Raquitismo e Osteomalácia. Portaria Conjunta SAES/SCTIE nº 2, de 11/01/2022 (revogou a Portaria SAS/MS nº 451/2016). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/r/raquitismo-e-osteomalacia",
+      "capitulo": "3.1 Diagnóstico clínico (osteomalácia do adulto: dor óssea na coluna lombar, na pelve e nos membros inferiores, fraturas com trauma mínimo, fraqueza muscular proximal); 3.3 Diagnóstico radiológico (rarefação óssea; pseudofraturas de Looser); 3.4 Diagnóstico histomorfométrico (dupla marcação por tetraciclina: menor distância entre as bandas e aumento relevante do osteoide; biópsia reservada a casos sem correlação clínico-laboratorial). Conferido no texto integral em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -1150,7 +1352,8 @@
     "Papel dos osteócitos como fonte de RANKL e de esclerostina vem de pesquisas recentes descritas em Ross 8ª ed.; o resumo menciona os osteócitos apenas entre as fontes de RANKL e não cita esclerostina nas questões.",
     "Critério densitométrico de osteoporose (T-score ≤ −2,5) segue a definição da OMS, não as obras-base de histologia. Conferência de fontes (09/11/2026, texto integral): o PCDT de Osteoporose vigente é o da Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025 (DOU nº 208, 31/10/2025, seção 1, p. 145; a nº 23, da mesma data e da mesma página, aprova o PCDT da Acromegalia), que revogou a nº 19/2023. O item 3.1 mantém a definição clínica pela fratura por fragilidade, independentemente da massa óssea, e o T-escore ≤ −2,5 em mulheres na pós-menopausa e em homens “acima dos 50 anos”, e chama de osteoporose grave o T-escore ≤ −2,5 associado a fratura por fragilidade, como no tópico. Diferenças sem contradição, para o revisor humano: o PCDT não trata do Z-score (o uso antes da menopausa e em homens com menos de 50 anos segue só as posições oficiais da ISCD); inclui o terço do rádio entre os sítios; e acrescenta um critério que o tópico não cita (T-escore entre −1 e −2,49 com risco de fratura aumentado no FRAX).",
     "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 8; Junqueira 8) continuam pendentes de conferência humana.",
-    "Id de estrutura “lacuna”: aqui designa a lacuna do osteócito, mas o mesmo id canônico designa a lacuna do condrócito em his-06 e na lâmina de cartilagem hialina (na lâmina de osso compacto, a lacuna do osteócito usa o id “osteocito”). Ids não foram alterados; decisão de arquitetura pendente."
+    "Id de estrutura “lacuna”: aqui designa a lacuna do osteócito, mas o mesmo id canônico designa a lacuna do condrócito em his-06 e na lâmina de cartilagem hialina (na lâmina de osso compacto, a lacuna do osteócito usa o id “osteocito”). Ids não foram alterados; decisão de arquitetura pendente.",
+    "Camada avançada (10/11/2026, redator; ainda sem revisão da área nem transversal): his-07-q28 a q32. A histomorfometria com dupla marcação por tetraciclina (q29) foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022, seção 3.4; página oficial atualizada em 21/01/2025); o PCDT não fala da osteoporose, e a alternativa (b) de q29 apoia-se na definição do tópico (matriz restante normalmente mineralizada). O consenso de Munns (2016) não pôde ser lido no texto integral (a API do PMC só devolveu o resumo). A q28 pede previsões a partir da regulação RANKL/RANK/OPG do tópico, sem citar estudo com animais; a falha do transplante de medula na falta de RANKL segue a correlação já revisada (Wu et al., 2017). Na q32, o preenchimento do túnel da parede para o centro (lamela mais interna = mais jovem) decorre da descrição do tópico e de Ross, sem conferência no livro impresso."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",

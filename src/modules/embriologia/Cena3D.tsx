@@ -1,27 +1,32 @@
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { CenaProvider, Tocavel, type EstadoDestaque } from './tres/nucleo.tsx';
-import { MODELOS } from './modelos/index.ts';
+import { MODELOS, type ModeloEstagio } from './modelos/index.ts';
 import { CamadaMarcadores, RotulosProvider, type QuadroMarcadores } from './tres/rotulos.tsx';
+import { perfilDoModelo, type Perfil3D } from '../tres3d/perfis.ts';
+import { PARAMETROS, semWebGL } from '../tres3d/qualidade.ts';
+import {
+  AmbientePMREM,
+  Diagnostico3D,
+  dprInicial,
+  RefinarCena,
+  ResolucaoAdaptativa,
+  SombraContato,
+  SombrasEstaticas,
+  useNivelQualidade,
+} from '../tres3d/render.tsx';
 
-/** Reflexos amplos de estúdio gerados localmente; não carrega imagens ou HDR externos. */
-function AmbienteSuperficie() {
-  const { gl, scene, invalidate } = useThree();
+/** Tone mapping e exposição do perfil (o R3F aplica ACES por padrão). */
+function Exposicao({ perfil }: { perfil: Perfil3D }) {
+  const { gl, invalidate } = useThree();
   useEffect(() => {
-    const anterior = scene.environment;
-    const intensidadeAnterior = scene.environmentIntensity;
-    const sala = new RoomEnvironment();
-    const gerador = new THREE.PMREMGenerator(gl);
-    const ambiente = gerador.fromScene(sala, 0.04);
-    scene.environment = ambiente.texture;
-    scene.environmentIntensity = 0.2;
-    sala.dispose(); gerador.dispose(); invalidate();
-    return () => { scene.environment = anterior; scene.environmentIntensity = intensidadeAnterior; ambiente.dispose(); invalidate(); };
-  }, [gl, scene, invalidate]);
+    gl.toneMapping = perfil.toneMapping;
+    gl.toneMappingExposure = perfil.exposicao;
+    invalidate();
+  }, [gl, perfil.toneMapping, perfil.exposicao, invalidate]);
   return null;
 }
 
@@ -37,11 +42,10 @@ function Corte({ posicao }: { posicao: number | null }) {
   return null;
 }
 
-function Camera({ estagioId, versao }: { estagioId: string; versao: number }) {
+function Camera({ estagioId, modelo: m, versao }: { estagioId: string; modelo?: ModeloEstagio; versao: number }) {
   const { camera, invalidate, size } = useThree();
   const controles = useThree((s) => s.controls) as OrbitControlsImpl | null;
   useEffect(() => {
-    const m = MODELOS[estagioId];
     if (!m) return;
     // Enquadra o modelo inteiro considerando o campo de visão vertical e horizontal (telas em pé ou deitadas).
     const pc = camera as THREE.PerspectiveCamera;
@@ -56,7 +60,7 @@ function Camera({ estagioId, versao }: { estagioId: string; versao: number }) {
       controles.update();
     }
     invalidate();
-  }, [estagioId, versao, camera, controles, invalidate, size.width, size.height]);
+  }, [estagioId, m, versao, camera, controles, invalidate, size.width, size.height]);
   return null;
 }
 
@@ -75,33 +79,63 @@ export interface Cena3DProps {
   ocultos?: string[];
   isolado?: string | null;
   corte?: number | null;
+  /** modelo fora do registro da embriologia (ex.: laboratório de histologia); padrão MODELOS[estagioId] */
+  modelo?: ModeloEstagio;
+  /** perfil de iluminação; padrão pelo tipo do modelo */
+  perfil?: Perfil3D;
 }
 
 export function Cena3D(p: Cena3DProps) {
-  const modelo = MODELOS[p.estagioId];
+  const modelo = p.modelo ?? MODELOS[p.estagioId];
   const Componente = modelo?.Componente;
-  const organico = p.estagioId === 'semana-8';
-  const sombras = organico && !p.selecionado && !p.isolado && !p.ocultos?.length && p.corte == null;
+  const perfil = useMemo(() => p.perfil ?? perfilDoModelo(p.estagioId), [p.perfil, p.estagioId]);
+  const nivel = useNivelQualidade();
+  const qualidade = PARAMETROS[nivel];
+  const fator = semWebGL() ? 1 : qualidade.fator;
+  const ocultos = p.modoJogo ? [] : p.ocultos;
+  const isolado = p.modoJogo ? null : p.isolado;
+  const corte = p.modoJogo ? null : p.corte;
+  // Sombras só na exploração livre: o clipping do corte é global e o isolamento/ocultação mudam a silhueta.
+  const exploracaoLivre = !p.selecionado && !isolado && !ocultos?.length && corte == null;
+  const raio = modelo?.raio ?? 1.5;
+  const raiz = useRef<THREE.Group>(null);
+  const dpr = useRef(dprInicial(nivel));
+  const versao = `${p.estagioId}:${nivel}`;
   const [quadro, setQuadro] = useState<QuadroMarcadores>({ pontos: [], largura: 0, altura: 0 });
+  const meia = raio * 1.25;
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
       <Canvas
         frameloop="demand"
-        shadows={organico ? { type: THREE.PCFShadowMap } : false}
-        dpr={[1, 2]}
+        shadows={{ type: THREE.PCFShadowMap, autoUpdate: false }}
+        dpr={dpr.current}
         camera={{ fov: 40, near: 0.05, far: 100, position: modelo?.camera ?? [0, 0, 4] }}
-        gl={{ antialias: true, preserveDrawingBuffer: false }}
+        gl={{ antialias: true, preserveDrawingBuffer: false, toneMapping: perfil.toneMapping, toneMappingExposure: perfil.exposicao }}
         onPointerMissed={() => p.onVazio?.()}
         aria-label="Modelo 3D interativo"
       >
-        <color attach="background" args={[organico ? '#24151c' : '#0d1628']} />
-        {organico && <AmbienteSuperficie />}
-        <hemisphereLight args={[organico ? '#fff5ef' : '#dbeafe', organico ? '#47323d' : '#1e293b', organico ? 0.35 : 0.9]} />
-        <directionalLight position={[3, 4, 5]} intensity={organico ? 1.2 : 1.6} castShadow={sombras}
-          shadow-mapSize={[1024, 1024]} shadow-camera-left={-2} shadow-camera-right={2}
-          shadow-camera-top={2} shadow-camera-bottom={-2} shadow-normalBias={0.025} shadow-bias={-0.0001} />
-        <directionalLight position={[-4, 2, -3]} intensity={organico ? 0.4 : 0.65} color="#ffffff" />
-        <ambientLight intensity={organico ? 0.1 : 0.25} />
+        <color attach="background" args={[perfil.fundo]} />
+        <Exposicao perfil={perfil} />
+        <AmbientePMREM intensidade={perfil.ambiente} />
+        <hemisphereLight args={[perfil.hemisferio.ceu, perfil.hemisferio.chao, perfil.hemisferio.intensidade]} />
+        <directionalLight
+          position={perfil.principal.posicao}
+          intensity={perfil.principal.intensidade}
+          color={perfil.principal.cor}
+          castShadow={perfil.sombra === 'pcf'}
+          shadow-mapSize={[qualidade.mapaSombra, qualidade.mapaSombra]}
+          shadow-camera-left={-meia}
+          shadow-camera-right={meia}
+          shadow-camera-top={meia}
+          shadow-camera-bottom={-meia}
+          shadow-camera-near={1}
+          shadow-camera-far={16}
+          shadow-radius={3}
+          shadow-normalBias={0.025}
+          shadow-bias={-0.0001}
+        />
+        <directionalLight position={perfil.preenchimento.posicao} intensity={perfil.preenchimento.intensidade} color={perfil.preenchimento.cor} />
+        <ambientLight intensity={perfil.luzAmbiente} />
         <CenaProvider
           value={{
             rotulosVisiveis: p.rotulosVisiveis,
@@ -110,21 +144,30 @@ export function Cena3D(p: Cena3DProps) {
             nomes: p.nomes,
             numeros: Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])),
             modoJogo: !!p.modoJogo,
-            ocultos: p.modoJogo ? [] : p.ocultos,
-            isolado: p.modoJogo ? null : p.isolado,
-            corte: p.modoJogo ? null : p.corte,
+            ocultos,
+            isolado,
+            corte,
             onEscolher: p.onEscolher,
           }}
         >
           <Suspense fallback={null}>
-            <RotulosProvider key={p.estagioId} onQuadro={setQuadro}>
-              <Tocavel>{Componente && <Componente />}</Tocavel>
+            <RotulosProvider key={versao} onQuadro={setQuadro}>
+              <group ref={raiz}>
+                <Tocavel>{Componente && <Componente />}</Tocavel>
+              </group>
             </RotulosProvider>
           </Suspense>
         </CenaProvider>
+        <RefinarCena raiz={raiz} raio={raio} fator={fator} />
+        {perfil.sombra === 'pcf' && <SombrasEstaticas raiz={raiz} projetar={exploracaoLivre} versao={versao} />}
+        {perfil.sombra === 'contato' && exploracaoLivre && (
+          <SombraContato key={versao} raiz={raiz} opacidade={perfil.sombraContato ?? 0.5} nivel={nivel} versao={versao} />
+        )}
+        <ResolucaoAdaptativa nivel={nivel} dprRef={dpr} />
+        <Diagnostico3D nivel={nivel} modelo={p.estagioId} />
         <OrbitControls makeDefault enableDamping dampingFactor={0.12} minDistance={1} maxDistance={16} enablePan={false} />
-        <Camera estagioId={p.estagioId} versao={p.versaoCamera ?? 0} />
-        <Corte posicao={p.modoJogo ? null : p.corte ?? null} />
+        <Camera estagioId={p.estagioId} modelo={modelo} versao={p.versaoCamera ?? 0} />
+        <Corte posicao={corte ?? null} />
       </Canvas>
       <CamadaMarcadores quadro={quadro} />
     </div>

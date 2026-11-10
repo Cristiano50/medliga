@@ -1,5 +1,999 @@
 // Lâminas da histologia dos sistemas — grupo C: respiratório, urinário, endócrino e reprodutor.
 // Ids e estruturas = content/histologia/laminas-sistemas-c.json (teste em tests/conteudo.test.ts).
+// Esquemas em SVG com aspecto de HE. Cada lâmina declara a sua escala (1 un do SVG ≈ x µm) e mantém entre as
+// estruturas as proporções do Junqueira 14ª ed. e do Ross 8ª ed. Formas repetidas (núcleos, hemácias, células)
+// vão juntas num único <path> com vários subcaminhos: o desenho fica com poucas dezenas de elementos, leve no celular.
+// Tudo é sorteado pelo rng da lâmina (semente fixa = id), então o desenho é sempre o mesmo.
+import type { ReactElement } from 'react';
+import { Deco, E, H, HE, W, entre, type Rng } from '../he.tsx';
 import type { LaminaRender } from './index.ts';
 
-export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {};
+// ---------------------------------------------------------------------------------------------
+// Geometria
+type P = [number, number];
+const f = (v: number) => +v.toFixed(1);
+
+/** Elipse girada como subcaminho (várias no mesmo <path>). */
+function elipse(cx: number, cy: number, rx: number, ry: number, ang = 0): string {
+  const a = (ang * Math.PI) / 180;
+  const dx = f(Math.cos(a) * rx * 2);
+  const dy = f(Math.sin(a) * rx * 2);
+  const g = f(ang);
+  return `M${f(cx - dx / 2)},${f(cy - dy / 2)}a${f(rx)},${f(ry)} ${g} 1 0 ${dx},${dy}a${f(rx)},${f(ry)} ${g} 1 0 ${-dx},${-dy}z`;
+}
+const circulo = (cx: number, cy: number, r: number) => elipse(cx, cy, r, r);
+/** Polígono (ou polilinha) como subcaminho. */
+function contorno(pts: P[], fechar = true) {
+  return pts.map(([x, y], i) => `${i ? 'L' : 'M'}${f(x)},${f(y)}`).join('') + (fechar ? 'z' : '');
+}
+const graus = (nx: number, ny: number) => (Math.atan2(ny, nx) * 180) / Math.PI;
+
+/** Suaviza um polígono fechado (cantos arredondados), sem mudar a topologia. */
+function chaikin(pts: P[], iter = 2): P[] {
+  let p = pts;
+  for (let k = 0; k < iter; k++) {
+    const q: P[] = [];
+    p.forEach((a, i) => {
+      const b = p[(i + 1) % p.length];
+      q.push([a[0] * 0.75 + b[0] * 0.25, a[1] * 0.75 + b[1] * 0.25], [a[0] * 0.25 + b[0] * 0.75, a[1] * 0.25 + b[1] * 0.75]);
+    });
+    p = q;
+  }
+  return p;
+}
+
+/** Mantém a parte do polígono em que (p − m)·n ≤ 0. */
+function cortar(pol: P[], nx: number, ny: number, mx: number, my: number): P[] {
+  const lado = (p: P) => (p[0] - mx) * nx + (p[1] - my) * ny;
+  const novo: P[] = [];
+  pol.forEach((a, i) => {
+    const b = pol[(i + 1) % pol.length];
+    const la = lado(a);
+    const lb = lado(b);
+    if (la <= 0) novo.push(a);
+    if ((la < 0 && lb > 0) || (la > 0 && lb < 0)) {
+      const t = la / (la - lb);
+      novo.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]);
+    }
+  });
+  return novo;
+}
+
+/** Sítio de um diagrama de potência (Voronoi com pesos): `w` funciona como raio, para células de tamanhos variados. */
+interface Sitio {
+  x: number;
+  y: number;
+  w: number;
+}
+/** Célula do diagrama de potência, limitada a rMax e recuada `folga` de cada vizinho (vizinhos ficam separados por 2·folga). */
+function celulaPotencia(s: Sitio, sitios: Sitio[], rMax: number, folga: number): P[] {
+  let pol: P[] = Array.from({ length: 20 }, (_, k) => [s.x + Math.cos((Math.PI / 10) * k) * rMax, s.y + Math.sin((Math.PI / 10) * k) * rMax]);
+  for (const v of sitios) {
+    if (v === s) continue;
+    const nx = v.x - s.x;
+    const ny = v.y - s.y;
+    const d2 = nx * nx + ny * ny;
+    if (!d2) continue;
+    const d = Math.sqrt(d2);
+    const dist = (d2 + s.w * s.w - v.w * v.w) / (2 * d) - folga; // distância do plano até s
+    if (dist > rMax) continue;
+    pol = cortar(pol, nx / d, ny / d, s.x + (nx / d) * dist, s.y + (ny / d) * dist);
+    if (pol.length < 3) return [];
+  }
+  return pol;
+}
+
+/** Envoltória convexa (cadeia monótona). */
+function envoltoria(pts: P[]): P[] {
+  const p = [...pts].sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cruz = (o: P, a: P, b: P) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const baixo: P[] = [];
+  for (const q of p) {
+    while (baixo.length >= 2 && cruz(baixo[baixo.length - 2], baixo[baixo.length - 1], q) <= 0) baixo.pop();
+    baixo.push(q);
+  }
+  const cima: P[] = [];
+  for (const q of [...p].reverse()) {
+    while (cima.length >= 2 && cruz(cima[cima.length - 2], cima[cima.length - 1], q) <= 0) cima.pop();
+    cima.push(q);
+  }
+  return [...baixo.slice(0, -1), ...cima.slice(0, -1)];
+}
+
+function dentro(x: number, y: number, pol: P[]) {
+  let d = false;
+  for (let i = 0, j = pol.length - 1; i < pol.length; j = i++) {
+    const [xi, yi] = pol[i];
+    const [xj, yj] = pol[j];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) d = !d;
+  }
+  return d;
+}
+function distSeg(x: number, y: number, a: P, b: P) {
+  const vx = b[0] - a[0];
+  const vy = b[1] - a[1];
+  const t = Math.max(0, Math.min(1, ((x - a[0]) * vx + (y - a[1]) * vy) / (vx * vx + vy * vy || 1)));
+  return Math.hypot(x - a[0] - vx * t, y - a[1] - vy * t);
+}
+function distLinha(x: number, y: number, pts: P[], fechada: boolean) {
+  let m = Infinity;
+  const n = fechada ? pts.length : pts.length - 1;
+  for (let i = 0; i < n; i++) m = Math.min(m, distSeg(x, y, pts[i], pts[(i + 1) % pts.length]));
+  return m;
+}
+
+/** Curva suave (Catmull-Rom) pelos pontos de controle, amostrada a cada `passo` un. */
+function curva(ctrl: P[], passo: number): P[] {
+  const out: P[] = [];
+  for (let i = 0; i < ctrl.length - 1; i++) {
+    const p0 = ctrl[Math.max(0, i - 1)];
+    const p1 = ctrl[i];
+    const p2 = ctrl[i + 1];
+    const p3 = ctrl[Math.min(ctrl.length - 1, i + 2)];
+    const n = Math.max(2, Math.ceil(Math.hypot(p2[0] - p1[0], p2[1] - p1[1]) / passo));
+    for (let k = 0; k < n; k++) {
+      const t = k / n;
+      const t2 = t * t;
+      const t3 = t2 * t;
+      const c = (a: number, b: number, cc: number, d: number) => 0.5 * (2 * b + (-a + cc) * t + (2 * a - 5 * b + 4 * cc - d) * t2 + (-a + 3 * b - 3 * cc + d) * t3);
+      out.push([c(p0[0], p1[0], p2[0], p3[0]), c(p0[1], p1[1], p2[1], p3[1])]);
+    }
+  }
+  out.push(ctrl[ctrl.length - 1]);
+  return out;
+}
+
+/** Ponto de uma linha amostrado por comprimento de arco, com tangente (tx, ty) e normal (nx, ny). */
+interface Amostra {
+  x: number;
+  y: number;
+  tx: number;
+  ty: number;
+  nx: number;
+  ny: number;
+  s: number;
+}
+/**
+ * Reamostra uma linha (fechada ou aberta) em pontos equidistantes. Na linha fechada, a normal aponta para dentro;
+ * na aberta, é a normal à esquerda do sentido de percurso.
+ */
+function amostrar(pts: P[], n: number, fechada: boolean): Amostra[] {
+  const m = fechada ? pts.length : pts.length - 1;
+  const acum = [0];
+  for (let i = 0; i < m; i++) acum.push(acum[i] + Math.hypot(pts[(i + 1) % pts.length][0] - pts[i][0], pts[(i + 1) % pts.length][1] - pts[i][1]));
+  const L = acum[m];
+  let area = 0;
+  if (fechada) pts.forEach((a, i) => (area += a[0] * pts[(i + 1) % pts.length][1] - pts[(i + 1) % pts.length][0] * a[1]));
+  const sinal = !fechada || area > 0 ? 1 : -1;
+  let seg = 0;
+  const ponto = (s: number): P => {
+    s = fechada ? ((s % L) + L) % L : Math.max(0, Math.min(L, s));
+    if (acum[seg] > s) seg = 0;
+    while (seg < m - 1 && acum[seg + 1] < s) seg++;
+    const a = pts[seg];
+    const b = pts[(seg + 1) % pts.length];
+    const t = (s - acum[seg]) / (acum[seg + 1] - acum[seg] || 1);
+    return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+  };
+  const passo = fechada ? L / n : L / Math.max(1, n - 1);
+  const d = Math.min(2, passo / 2);
+  return Array.from({ length: n }, (_, k) => {
+    const s = k * passo;
+    const [x0, y0] = ponto(s - d);
+    const [x1, y1] = ponto(s + d);
+    const [x, y] = ponto(s);
+    const tl = Math.hypot(x1 - x0, y1 - y0) || 1;
+    const tx = (x1 - x0) / tl;
+    const ty = (y1 - y0) / tl;
+    return { x, y, tx, ty, nx: -ty * sinal, ny: tx * sinal, s };
+  });
+}
+function perimetro(pts: P[], fechada = true) {
+  let L = 0;
+  const m = fechada ? pts.length : pts.length - 1;
+  for (let i = 0; i < m; i++) L += Math.hypot(pts[(i + 1) % pts.length][0] - pts[i][0], pts[(i + 1) % pts.length][1] - pts[i][1]);
+  return L;
+}
+
+/** Registro de círculos ocupados (grade espacial): impede núcleos e células sobrepostos. */
+function ocupacao(passo: number, rMax: number) {
+  const m = new Map<number, number[]>();
+  const chave = (i: number, j: number) => (i + 2000) * 8192 + (j + 2000);
+  return {
+    livre(x: number, y: number, r: number, folga = 0.6) {
+      const alc = r + rMax + folga;
+      for (let i = Math.floor((x - alc) / passo); i <= Math.floor((x + alc) / passo); i++)
+        for (let j = Math.floor((y - alc) / passo); j <= Math.floor((y + alc) / passo); j++) {
+          const b = m.get(chave(i, j));
+          if (!b) continue;
+          for (let k = 0; k < b.length; k += 3) if (Math.hypot(b[k] - x, b[k + 1] - y) < b[k + 2] + r + folga) return false;
+        }
+      return true;
+    },
+    marcar(x: number, y: number, r: number) {
+      const k = chave(Math.floor(x / passo), Math.floor(y / passo));
+      const b = m.get(k);
+      if (b) b.push(x, y, r);
+      else m.set(k, [x, y, r]);
+    },
+  };
+}
+type Ocupacao = ReturnType<typeof ocupacao>;
+
+/** Pontos de um círculo (para envoltórias e contornos). */
+const pontosCirculo = (cx: number, cy: number, r: number, n = 48): P[] => Array.from({ length: n }, (_, k) => [cx + Math.cos((2 * Math.PI * k) / n) * r, cy + Math.sin((2 * Math.PI * k) / n) * r]);
+/** Contorno polar r(θ) em torno de (cx, cy). */
+const pontosPolar = (cx: number, cy: number, r: (a: number) => number, n = 180): P[] =>
+  Array.from({ length: n }, (_, k) => {
+    const a = (2 * Math.PI * k) / n;
+    return [cx + Math.cos(a) * r(a), cy + Math.sin(a) * r(a)];
+  });
+
+/**
+ * Epitélio de uma camada ao longo de um contorno fechado: uma célula a cada `largura` un, com altura `altura(k)`
+ * medida para dentro (sentido = +1) ou para fora (sentido = −1) do contorno. Devolve as células (quadriláteros que
+ * se tocam, sem vãos) e, para cada uma, o ponto no meio da célula à profundidade pedida e o ângulo da normal.
+ */
+function epitelio(contornoBasal: P[], largura: number, altura: (k: number) => number, sentido = 1) {
+  const n = Math.max(6, Math.round(perimetro(contornoBasal) / largura));
+  const b = amostrar(contornoBasal, n, true);
+  const alt = b.map((_, k) => altura(k));
+  const topo: P[] = b.map((p, k) => [p.x + p.nx * alt[k] * sentido, p.y + p.ny * alt[k] * sentido]);
+  const celulas = b.map((p, k) => {
+    const q = b[(k + 1) % n];
+    return [[p.x, p.y], [q.x, q.y], topo[(k + 1) % n], topo[k]] as P[];
+  });
+  const meio = (k: number, prof: number) => {
+    const p = b[k];
+    const q = b[(k + 1) % n];
+    const nx = (p.nx + q.nx) / 2;
+    const ny = (p.ny + q.ny) / 2;
+    const l = Math.hypot(nx, ny) || 1;
+    const h = (alt[k] + alt[(k + 1) % n]) / 2;
+    return { x: (p.x + q.x) / 2 + (nx / l) * prof * h * sentido, y: (p.y + q.y) / 2 + (ny / l) * prof * h * sentido, ang: graus(nx * sentido, ny * sentido), nx: (nx / l) * sentido, ny: (ny / l) * sentido };
+  };
+  return { n, base: b, topo, celulas, meio };
+}
+
+/** Amostragem por dardos com raio variável e registro de ocupação. */
+function dardos(rng: Rng, tentativas: number, area: [number, number, number, number], raio: () => number, aceitar: (x: number, y: number, r: number) => boolean, occ: Ocupacao, folga: number) {
+  const [x0, y0, x1, y1] = area;
+  const res: [number, number, number][] = [];
+  for (let t = 0; t < tentativas; t++) {
+    const x = entre(rng, x0, x1);
+    const y = entre(rng, y0, y1);
+    const r = raio();
+    if (!aceitar(x, y, r) || !occ.livre(x, y, r, folga)) continue;
+    occ.marcar(x, y, r);
+    res.push([x, y, r]);
+  }
+  return res;
+}
+
+/** Hemácia (disco bicôncavo visto de face ou de lado) como subcaminho. */
+const hemacia = (x: number, y: number, rx: number, ang: number, ry = rx * 0.75) => elipse(x, y, rx, ry, ang);
+
+// =============================================================================================
+// 1. PULMÃO — escala 1 un ≈ 1 µm: alvéolos de ~90–120 µm, septos de 6–10 µm, hemácia ≈ 7,5 µm.
+export const PARTES_PULMAO = ['bronquiolo', 'bronquiolo-respiratorio', 'ducto-alveolar', 'alveolo', 'septo-interalveolar', 'capilar', 'pneumocito-tipo-i', 'pneumocito-tipo-ii', 'macrofago-alveolar'];
+
+/** Porção respiratória do pulmão: bronquíolo com ramo da artéria pulmonar, bronquíolo respiratório, ductos e sacos alveolares. */
+export function LaminaPulmao(rng: Rng) {
+  const cor = { septo: '#e8a5c3', ar: HE.luz, bainha: '#f1cbdb', borda: '#cf7ea5', pneumoI: '#d585ac', pneumoII: '#f4cddd', espuma: '#fdf5f8', macrofago: '#e9cbd8', pigmento: '#7a5333', carvao: '#2f2723', capilar: '#f4d3e2', endotelio: '#d48cb0' };
+  // feixe broncovascular: bronquíolo e ramo da artéria pulmonar na mesma bainha de conjuntivo
+  const B: P = [212, 226];
+  const RB = 112;
+  const A: P = [198, 458];
+  const RA = 60;
+  const bainha = chaikin(envoltoria([...pontosCirculo(B[0], B[1], RB + 14), ...pontosCirculo(A[0], A[1], RA + 16)]), 2);
+  const foraBainha = (x: number, y: number, m: number) => !dentro(x, y, bainha) && distLinha(x, y, bainha, true) > m;
+
+  // vias aéreas da porção respiratória (luz = faixa ao redor de uma linha central)
+  const rb = curva([[392, -70], [410, 40], [470, 142], [546, 226]], 3);
+  const ad = curva([[546, 226], [640, 292], [736, 314], [842, 300], [918, 262]], 3);
+  const ad2 = curva([[736, 314], [770, 410], [794, 506]], 3);
+  const sacos: [number, number, number][] = [[950, 250, 42], [798, 556, 40]];
+  const HW_RB = 32;
+  const HW_AD = 27;
+  const dRb = (x: number, y: number) => distLinha(x, y, rb, false) - HW_RB;
+  const dAd = (x: number, y: number) => Math.min(distLinha(x, y, ad, false), distLinha(x, y, ad2, false)) - HW_AD;
+  const dSaco = (x: number, y: number) => Math.min(...sacos.map(([sx, sy, sr]) => Math.hypot(x - sx, y - sy) - sr));
+  const dLuz = (x: number, y: number) => Math.min(dRb(x, y), dAd(x, y), dSaco(x, y));
+  const noParenquima = (x: number, y: number, m: number) => x > -15 && x < W + 15 && y > -15 && y < H + 15 && dLuz(x, y) > m && foraBainha(x, y, m);
+
+  // alvéolos: diagrama de Voronoi. Primeiro, fileiras de sementes ao longo das vias aéreas (cada alvéolo abre na luz
+  // do ducto ou do bronquíolo respiratório entre dois septos); depois, sementes com distância mínima no resto do campo.
+  const occS = ocupacao(60, 50);
+  const sementes: [number, number, number][] = [];
+  const fileira = (pts: P[], dist: number, passo: number, s0: number) => {
+    const am = amostrar(pts, Math.round(perimetro(pts, false) / 2), false);
+    const L = am[am.length - 1].s;
+    const res: number[] = [];
+    for (let s = s0; s < L - 10; s += passo) {
+      const p = am[Math.min(am.length - 1, Math.round((s / L) * (am.length - 1)))];
+      res.push(s);
+      for (const lado of [1, -1]) {
+        const x = p.x + p.nx * dist * lado;
+        const y = p.y + p.ny * dist * lado;
+        if (!occS.livre(x, y, 34, 0) || !foraBainha(x, y, 24)) continue;
+        occS.marcar(x, y, 34);
+        sementes.push([x, y, 34]);
+      }
+    }
+    return res;
+  };
+  const posRb = fileira(rb, HW_RB + 60, 62, 34);
+  fileira(ad, HW_AD + 42, 64, 48);
+  fileira(ad2, HW_AD + 42, 64, 56);
+  for (const [sx, sy, sr] of sacos) {
+    const n = Math.round((2 * Math.PI * (sr + 42)) / 66);
+    for (let k = 0; k < n; k++) {
+      const a = (2 * Math.PI * k) / n;
+      const x = sx + Math.cos(a) * (sr + 42);
+      const y = sy + Math.sin(a) * (sr + 42);
+      if (!occS.livre(x, y, 34, 0)) continue;
+      occS.marcar(x, y, 34);
+      sementes.push([x, y, 34]);
+    }
+  }
+  sementes.push(...dardos(rng, 6000, [-110, -110, W + 110, H + 110], () => entre(rng, 40, 50), (x, y) => dLuz(x, y) > 40 && foraBainha(x, y, 24), occS, 0));
+  // pesos variados: alvéolos de tamanhos diferentes, como no corte real
+  const sitios: Sitio[] = sementes.map(([x, y, r]) => ({ x, y, w: r > 34 ? entre(rng, 0, 22) : 8 }));
+  const RMAX = 120;
+  const brutas = sitios.map((s) => celulaPotencia(s, sitios, RMAX, 0));
+  const alveolos = sitios.map((s) => chaikin(celulaPotencia(s, sitios, RMAX, 3.4), 2));
+
+  // septos (arestas do Voronoi) e junções (vértices)
+  const arestas: { a: P; b: P; i: number; j: number }[] = [];
+  brutas.forEach((pol, i) =>
+    pol.forEach((a, k) => {
+      const b = pol[(k + 1) % pol.length];
+      const mx = (a[0] + b[0]) / 2;
+      const my = (a[1] + b[1]) / 2;
+      const pot = (t: Sitio) => (mx - t.x) ** 2 + (my - t.y) ** 2 - t.w * t.w;
+      const di = pot(sitios[i]);
+      let j = -1;
+      let melhor = 40;
+      sitios.forEach((t, jj) => {
+        if (jj === i) return;
+        const dd = Math.abs(pot(t) - di);
+        if (dd < melhor) {
+          melhor = dd;
+          j = jj;
+        }
+      });
+      if (j > i) arestas.push({ a, b, i, j });
+    }),
+  );
+  const vertices = new Map<string, { p: P; cel: Set<number> }>();
+  for (const e of arestas)
+    for (const p of [e.a, e.b]) {
+      const k = `${Math.round(p[0])},${Math.round(p[1])}`;
+      const v = vertices.get(k) ?? { p, cel: new Set<number>() };
+      v.cel.add(e.i).add(e.j);
+      vertices.set(k, v);
+    }
+
+  const occ = ocupacao(30, 12);
+  // pneumócitos tipo II: cúbicos, abaulados para a luz, nas junções dos septos; citoplasma espumoso (corpos lamelares extraídos)
+  const tipoII: string[] = [];
+  const espuma: string[] = [];
+  const nucII: string[] = [];
+  for (const v of vertices.values()) {
+    if (v.cel.size < 3 || !noParenquima(v.p[0], v.p[1], 22) || rng() > 0.62) continue;
+    const cels = [...v.cel];
+    const c = cels[Math.floor(rng() * cels.length)];
+    let ux = sitios[c].x - v.p[0];
+    let uy = sitios[c].y - v.p[1];
+    const ul = Math.hypot(ux, uy) || 1;
+    ux /= ul;
+    uy /= ul;
+    let t = 0;
+    while (t < 40 && !dentro(v.p[0] + ux * t, v.p[1] + uy * t, alveolos[c])) t += 0.5;
+    if (t >= 40) continue;
+    const cx = v.p[0] + ux * (t + 4);
+    const cy = v.p[1] + uy * (t + 4);
+    if (!occ.livre(cx, cy, 7)) continue;
+    occ.marcar(cx, cy, 7);
+    const ang = graus(ux, uy);
+    tipoII.push(elipse(cx, cy, 5.6, 6.3, ang));
+    nucII.push(circulo(cx - ux * 1.2, cy - uy * 1.2, 2.5));
+    for (let k = 0; k < 5; k++) {
+      const a = entre(rng, -1.2, 1.2) + Math.atan2(uy, ux);
+      espuma.push(circulo(cx + Math.cos(a) * 3.8, cy + Math.sin(a) * 3.8, entre(rng, 0.8, 1.2)));
+    }
+  }
+  // capilares (com hemácia) e pneumócitos tipo I (núcleo achatado e citoplasma delgado) ao longo dos septos
+  const capilares: string[] = [];
+  const hemacias: string[] = [];
+  const endotelio: string[] = [];
+  const tipoI: string[] = [];
+  // área de toque do tipo I um pouco maior que o núcleo (o citoplasma delgado reveste a superfície alveolar)
+  const alvoI: string[] = [];
+  const nucI: string[] = [];
+  for (const e of arestas) {
+    const L = Math.hypot(e.b[0] - e.a[0], e.b[1] - e.a[1]);
+    if (L < 22) continue;
+    const tx = (e.b[0] - e.a[0]) / L;
+    const ty = (e.b[1] - e.a[1]) / L;
+    const nCap = Math.max(1, Math.floor((L - 22) / 19));
+    const vagaI = nCap >= 2 || rng() < 0.3 ? Math.floor(rng() * nCap) : -1;
+    for (let k = 0; k < nCap; k++) {
+      const s = 11 + ((k + 0.5) * (L - 22)) / nCap;
+      const x = e.a[0] + tx * s;
+      const y = e.a[1] + ty * s;
+      if (!noParenquima(x, y, 10)) continue;
+      const ang = graus(tx, ty);
+      if (k === vagaI && rng() < 0.75) {
+        // tipo I: do lado de um dos alvéolos, rente à superfície
+        const lado = rng() < 0.5 ? 1 : -1;
+        const px = x - ty * lado * 4.3;
+        const py = y + tx * lado * 4.3;
+        if (!occ.livre(px, py, 6.5)) continue;
+        occ.marcar(px, py, 6.5);
+        tipoI.push(elipse(px, py, 7, 2.4, ang));
+        alvoI.push(elipse(px - ty * lado * 0.8, py + tx * lado * 0.8, 8.5, 4.4, ang));
+        nucI.push(elipse(px - ty * lado * 0.3, py + tx * lado * 0.3, 4.2, 1.45, ang));
+        continue;
+      }
+      if (!occ.livre(x, y, 6.6)) continue;
+      occ.marcar(x, y, 6.6);
+      capilares.push(elipse(x, y, 6.6, 3.9, ang));
+      hemacias.push(hemacia(x + entre(rng, -1, 1) * tx, y + entre(rng, -1, 1) * ty, 3.5, ang, 2.6));
+      if (rng() < 0.25) endotelio.push(elipse(x + tx * 5.2 - ty * 3.6, y + ty * 5.2 + tx * 3.6, 2.4, 0.9, ang));
+    }
+  }
+
+  // extremidades livres dos septos na luz: botões de músculo liso no ducto alveolar; extremidade arredondada nas demais
+  const botoes: string[] = [];
+  const nucBotao: string[] = [];
+  const pontas: string[] = [];
+  for (const e of arestas) {
+    const L = Math.hypot(e.b[0] - e.a[0], e.b[1] - e.a[1]);
+    const n = Math.max(4, Math.ceil(L / 2));
+    let ant = dLuz(e.a[0], e.a[1]);
+    for (let k = 1; k <= n; k++) {
+      const x = e.a[0] + ((e.b[0] - e.a[0]) * k) / n;
+      const y = e.a[1] + ((e.b[1] - e.a[1]) * k) / n;
+      const d = dLuz(x, y);
+      if ((ant > 0) !== (d > 0) && x > -20 && x < W + 20 && y > -20 && y < H + 20 && foraBainha(x, y, 4)) {
+        // direção para a luz (gradiente numérico)
+        const gx = dLuz(x + 1, y) - dLuz(x - 1, y);
+        const gy = dLuz(x, y + 1) - dLuz(x, y - 1);
+        const gl = Math.hypot(gx, gy) || 1;
+        const doDucto = dAd(x, y) < Math.min(dRb(x, y), dSaco(x, y)) - 2;
+        if (doDucto) {
+          botoes.push(circulo(x - (gx / gl) * 2, y - (gy / gl) * 2, 5.4));
+          nucBotao.push(elipse(x - (gx / gl) * 2, y - (gy / gl) * 2, 3, 1.2, graus(-gy, gx)));
+        } else pontas.push(circulo(x - (gx / gl) * 1, y - (gy / gl) * 1, 4.2));
+      }
+      ant = d;
+    }
+  }
+
+  // bronquíolo respiratório: parede de epitélio cúbico + músculo liso, interrompida pelas aberturas dos alvéolos
+  const amRb = amostrar(rb, Math.round(perimetro(rb, false) / 2), false);
+  const Lrb = amRb[amRb.length - 1].s;
+  // aberturas de alvéolos (≈ 40 un) centradas em alguns alvéolos da fileira; o resto da parede é contínuo
+  const aberturas: Record<number, number[]> = { 1: [posRb[1], posRb[4]], [-1]: [posRb[2], posRb[5]] };
+  const paredes: [number, number, number][] = [];
+  for (const lado of [1, -1]) {
+    let ini = 0;
+    for (const a of aberturas[lado].filter((v) => v !== undefined && v < Lrb - 60)) {
+      paredes.push([lado, ini, a - 17]);
+      ini = a + 17;
+    }
+    paredes.push([lado, ini, Lrb - 30]);
+  }
+  const paredesUteis = paredes.filter(([, s0, s1]) => s1 - s0 > 24);
+  const celRb: string[] = [];
+  const nucRb: string[] = [];
+  const muscRb: string[] = [];
+  const nucMuscRb: string[] = [];
+  const ciliosRb: string[] = [];
+  const naFaixa = (lado: number, s0: number, s1: number, o0: number, o1: number) => {
+    const pts = amRb.filter((p) => p.s >= s0 && p.s <= s1);
+    return contorno([...pts.map((p): P => [p.x + p.nx * o0 * lado, p.y + p.ny * o0 * lado]), ...pts.reverse().map((p): P => [p.x + p.nx * o1 * lado, p.y + p.ny * o1 * lado])]);
+  };
+  for (const [lado, s0, s1] of paredesUteis) {
+    muscRb.push(naFaixa(lado, s0, s1, HW_RB + 9.5, HW_RB + 19));
+    for (let s = s0; s + 8 <= s1; s += 8.5) {
+      celRb.push(naFaixa(lado, s, s + 8.5, HW_RB - 0.5, HW_RB + 10));
+      const p = amRb[Math.min(amRb.length - 1, Math.round((s + 4.25) / 2))];
+      nucRb.push(circulo(p.x + p.nx * lado * (HW_RB + 5.2), p.y + p.ny * lado * (HW_RB + 5.2), 2.7));
+      if (rng() < 0.4)
+        for (const du of [-2.2, 0, 2.2]) {
+          const bx = p.x + p.tx * du + p.nx * lado * HW_RB;
+          const by = p.y + p.ty * du + p.ny * lado * HW_RB;
+          ciliosRb.push(`M${f(bx)},${f(by)}l${f(-p.nx * lado * 4.5)},${f(-p.ny * lado * 4.5)}`);
+        }
+    }
+    for (let s = s0 + 7; s + 7 <= s1; s += 13) {
+      const p = amRb[Math.min(amRb.length - 1, Math.round(s / 2))];
+      nucMuscRb.push(elipse(p.x + p.nx * lado * (HW_RB + 14.5), p.y + p.ny * lado * (HW_RB + 14.5), 5, 1.2, graus(p.tx, p.ty)));
+    }
+  }
+
+  // macrófagos alveolares ("células de poeira"): na luz alveolar, com pigmento fagocitado
+  const macrofagos: ReactElement[] = [];
+  const candidatos = sitios.map((s, i) => ({ s, i })).filter(({ s }) => s.x > 60 && s.x < W - 60 && s.y > 60 && s.y < H - 60 && noParenquima(s.x, s.y, 40));
+  for (let k = 0, feitos = 0; k < candidatos.length * 3 && feitos < 7; k++) {
+    const { s, i } = candidatos[Math.floor(rng() * candidatos.length)];
+    const x = s.x + entre(rng, -16, 16);
+    const y = s.y + entre(rng, -16, 16);
+    if (!dentro(x, y, alveolos[i]) || distLinha(x, y, alveolos[i], true) < 13 || !occ.livre(x, y, 11, 2)) continue;
+    occ.marcar(x, y, 11);
+    feitos++;
+    const corpo = chaikin(Array.from({ length: 9 }, (_, q): P => {
+      const a = (2 * Math.PI * q) / 9;
+      const r = entre(rng, 8, 10.5);
+      return [x + Math.cos(a) * r, y + Math.sin(a) * r];
+    }), 1);
+    const an = entre(rng, 0, Math.PI * 2);
+    const nx = x + Math.cos(an) * 3.2;
+    const ny = y + Math.sin(an) * 3.2;
+    const graos: string[] = [];
+    const preto: string[] = [];
+    for (let q = 0; q < 12; q++) {
+      const a = an + Math.PI + entre(rng, -1.3, 1.3);
+      const r = entre(rng, 1.5, 6.5);
+      (q % 3 ? graos : preto).push(circulo(x + Math.cos(a) * r, y + Math.sin(a) * r, entre(rng, 0.7, 1.3)));
+    }
+    macrofagos.push(
+      <g key={k}>
+        <path d={contorno(corpo)} fill={cor.macrofago} stroke={cor.borda} strokeWidth={0.8} />
+        <path d={graos.join('')} fill={cor.pigmento} />
+        <path d={preto.join('')} fill={cor.carvao} />
+        <path d={elipse(nx, ny, 3.8, 2.7, graus(Math.cos(an + 1.57), Math.sin(an + 1.57)))} fill={HE.nucleo} />
+      </g>,
+    );
+  }
+
+  // bronquíolo: epitélio simples cilíndrico baixo/cúbico (células ciliadas e células club), sem cartilagem nem glândulas
+  const fase = entre(rng, 0, 6);
+  const apical = pontosPolar(B[0], B[1], (a) => 57 + 6 * Math.cos(6 * a + fase), 240);
+  const ep = epitelio(apical, 8.5, () => 14, -1);
+  const ciliadas: string[] = [];
+  const club: string[] = [];
+  const nucEp: string[] = [];
+  const cilios: string[] = [];
+  ep.celulas.forEach((c, k) => {
+    if (k % 4 === 1) {
+      // célula club (de Clara): ápice em cúpula, sem cílios
+      const m = ep.meio(k, 0);
+      club.push(`${contorno([c[1], c[2], c[3], c[0]], false)}Q${f(m.x - m.nx * 10)},${f(m.y - m.ny * 10)} ${f(c[1][0])},${f(c[1][1])}z`);
+      const nn = ep.meio(k, 0.55);
+      nucEp.push(circulo(nn.x, nn.y, 2.7));
+    } else {
+      ciliadas.push(contorno(c));
+      const nn = ep.meio(k, 0.58);
+      nucEp.push(elipse(nn.x, nn.y, 3.4, 2.1, nn.ang));
+      for (const u of [0.2, 0.5, 0.8]) {
+        const bx = c[0][0] + (c[1][0] - c[0][0]) * u;
+        const by = c[0][1] + (c[1][1] - c[0][1]) * u;
+        const m = ep.meio(k, 0);
+        cilios.push(`M${f(bx)},${f(by)}l${f(-m.nx * 5 + entre(rng, -0.6, 0.6))},${f(-m.ny * 5 + entre(rng, -0.6, 0.6))}`);
+      }
+    }
+  });
+  const nucMusc: string[] = [];
+  for (let k = 0; k < 30; k++) {
+    const a = (2 * Math.PI * (k + entre(rng, -0.2, 0.2))) / 30;
+    nucMusc.push(elipse(B[0] + Math.cos(a) * 88.5, B[1] + Math.sin(a) * 88.5, 5.2, 1.3, (a * 180) / Math.PI + 90));
+  }
+  const nucAdv: string[] = [];
+  for (let k = 0; k < 16; k++) {
+    const a = entre(rng, 0, Math.PI * 2);
+    const r = entre(rng, 98, RB - 4);
+    nucAdv.push(elipse(B[0] + Math.cos(a) * r, B[1] + Math.sin(a) * r, 5, 1.4, (a * 180) / Math.PI + 90 + entre(rng, -20, 20)));
+  }
+
+  // ramo da artéria pulmonar (parede delgada para o calibre); não é estrutura do jogo
+  const hemArt: string[] = [];
+  const occA = ocupacao(12, 5);
+  for (let t = 0, n = 0; t < 400 && n < 16; t++) {
+    const a = entre(rng, 0, Math.PI * 2);
+    const r = Math.sqrt(rng()) * (RA - 16);
+    const x = A[0] + Math.cos(a) * r;
+    const y = A[1] + Math.sin(a) * r;
+    if (!occA.livre(x, y, 4.2, 0.4)) continue;
+    occA.marcar(x, y, 4.2);
+    n++;
+    hemArt.push(hemacia(x, y, 3.8, entre(rng, 0, 180), entre(rng, 2.2, 3)));
+  }
+  const nucMedia = Array.from({ length: 22 }, (_, k) => {
+    const a = (2 * Math.PI * k) / 22 + entre(rng, -0.08, 0.08);
+    return elipse(A[0] + Math.cos(a) * (RA - 4.5), A[1] + Math.sin(a) * (RA - 4.5), 4.6, 1.2, (a * 180) / Math.PI + 90);
+  }).join('');
+  const nucEndo = Array.from({ length: 7 }, (_, k) => {
+    const a = (2 * Math.PI * k) / 7 + entre(rng, -0.2, 0.2);
+    return elipse(A[0] + Math.cos(a) * (RA - 9.6), A[1] + Math.sin(a) * (RA - 9.6), 3.6, 1.1, (a * 180) / Math.PI + 90);
+  }).join('');
+  const nucBainha: string[] = [];
+  for (let t = 0, n = 0; t < 300 && n < 18; t++) {
+    const x = entre(rng, 70, 360);
+    const y = entre(rng, 100, 560);
+    if (!dentro(x, y, bainha) || Math.hypot(x - B[0], y - B[1]) < RB + 4 || Math.hypot(x - A[0], y - A[1]) < RA + 4) continue;
+    n++;
+    nucBainha.push(elipse(x, y, 5.5, 1.5, entre(rng, 0, 180)));
+  }
+
+  const luzRb = contorno(rb, false);
+  const luzAd = contorno(ad, false) + contorno(ad2, false);
+  return (
+    <>
+      <E id="septo-interalveolar">
+        <rect x={-20} y={-20} width={W + 40} height={H + 40} fill={cor.septo} />
+      </E>
+      <E id="alveolo">
+        <path d={alveolos.map((a) => contorno(a)).join('')} fill={cor.ar} stroke={cor.borda} strokeWidth={0.7} />
+      </E>
+      <E id="bronquiolo-respiratorio">
+        <path d={luzRb} stroke={cor.ar} strokeWidth={2 * HW_RB} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      </E>
+      <E id="ducto-alveolar">
+        <path d={luzAd} stroke={cor.ar} strokeWidth={2 * HW_AD} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={sacos.map(([x, y, r]) => circulo(x, y, r)).join('')} fill={cor.ar} />
+      </E>
+      <E id="septo-interalveolar">
+        <path d={pontas.join('')} fill={cor.septo} />
+      </E>
+      <E id="capilar">
+        <path d={capilares.join('')} fill={cor.capilar} stroke={cor.endotelio} strokeWidth={0.9} />
+        <path d={hemacias.join('')} fill={HE.hemacia} />
+        <path d={endotelio.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="pneumocito-tipo-i">
+        <path d={alvoI.join('')} fill="transparent" />
+        <path d={tipoI.join('')} fill={cor.pneumoI} />
+        <path d={nucI.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="pneumocito-tipo-ii">
+        <path d={tipoII.join('')} fill={cor.pneumoII} stroke={cor.borda} strokeWidth={0.7} />
+        <path d={espuma.join('')} fill={cor.espuma} />
+        <path d={nucII.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="ducto-alveolar">
+        <path d={botoes.join('')} fill={HE.musculo} stroke="#c45a8a" strokeWidth={0.8} />
+        <path d={nucBotao.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="bronquiolo-respiratorio">
+        <path d={muscRb.join('')} fill={HE.musculo} />
+        <path d={nucMuscRb.join('')} fill={HE.nucleo} />
+        <path d={celRb.join('')} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.6} />
+        <path d={nucRb.join('')} fill={HE.nucleo} />
+        <path d={ciliosRb.join('')} stroke="#c4467c" strokeWidth={0.6} fill="none" />
+      </E>
+      <E id="macrofago-alveolar">{macrofagos}</E>
+      {/* bainha conjuntiva broncovascular e ramo da artéria pulmonar: contexto, sem área de toque */}
+      <g>
+        <path d={contorno(bainha)} fill={cor.bainha} />
+        <Deco>
+          <path d={nucBainha.join('')} fill={HE.nucleo} />
+        </Deco>
+        <circle cx={A[0]} cy={A[1]} r={RA + 8} fill="#eebfd3" />
+        <circle cx={A[0]} cy={A[1]} r={RA} fill={HE.musculo} />
+        <path d={nucMedia} fill={HE.nucleo} />
+        <path d={contorno(pontosPolar(A[0], A[1], (a) => RA - 8.5 + 0.7 * Math.sin(48 * a), 192))} fill="none" stroke="#f6d7e5" strokeWidth={1.6} />
+        <circle cx={A[0]} cy={A[1]} r={RA - 9.4} fill={cor.ar} />
+        <path d={nucEndo} fill={HE.nucleoEscuro} />
+        <path d={hemArt.join('')} fill={HE.hemacia} />
+      </g>
+      <E id="bronquiolo">
+        <circle cx={B[0]} cy={B[1]} r={RB} fill="#efc2d5" />
+        <path d={nucAdv.join('')} fill={HE.nucleo} />
+        <circle cx={B[0]} cy={B[1]} r={94} fill={HE.musculo} />
+        <path d={nucMusc.join('')} fill={HE.nucleo} />
+        <circle cx={B[0]} cy={B[1]} r={83} fill="#f3d0df" />
+        <path d={ciliadas.join('')} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.6} />
+        <path d={contorno(apical)} fill={cor.ar} />
+        <path d={club.join('')} fill="#f3c6d8" stroke={HE.citoplasmaEscuro} strokeWidth={0.6} />
+        <path d={nucEp.join('')} fill={HE.nucleo} />
+        <path d={cilios.join('')} stroke="#c4467c" strokeWidth={0.7} fill="none" />
+      </E>
+    </>
+  );
+}
+
+// =============================================================================================
+// 2. RIM, CÓRTEX — escala 1 un ≈ 0,75 µm: corpúsculo renal ≈ 180 µm; TCP ≈ 57 µm de diâmetro externo; TCD ≈ 42 µm;
+// hemácia ≈ 10 un.
+export const PARTES_RIM = ['glomerulo', 'espaco-urinario', 'capsula-glomerular', 'tubulo-contorcido-proximal', 'tubulo-contorcido-distal', 'macula-densa', 'arteriola-aferente', 'arteriola-eferente', 'capilar'];
+
+/** Arteríola em corte longitudinal entre p0 e p1: parede de músculo liso, endotélio e hemácias na luz. */
+function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, jg: number) {
+  const L = Math.hypot(p1[0] - p0[0], p1[1] - p0[1]);
+  const tx = (p1[0] - p0[0]) / L;
+  const ty = (p1[1] - p0[1]) / L;
+  const em = (s: number, o: number): P => [p0[0] + tx * s - ty * o, p0[1] + ty * s + tx * o];
+  const faixa = (o0: number, o1: number, s0 = 0, s1 = L) => contorno([em(s0, o0), em(s1, o0), em(s1, o1), em(s0, o1)]);
+  const ang = graus(tx, ty);
+  const nucM: string[] = [];
+  const nucE: string[] = [];
+  const hem: string[] = [];
+  const jgCel: string[] = [];
+  const jgNuc: string[] = [];
+  const jgGraos: string[] = [];
+  const om = hl + (hw - hl) / 2;
+  for (let s = 4; s < L - 3; s += 7.5) {
+    for (const lado of [1, -1]) {
+      if (s > L - jg && lado === 1) continue; // trecho com células justaglomerulares
+      // músculo liso circular cortado de través: núcleos curtos, transversais ao eixo do vaso
+      const [x, y] = em(s + entre(rng, -1, 1), lado * om);
+      nucM.push(elipse(x, y, 1.7, 2.6, ang));
+    }
+  }
+  for (let s = 10; s < L - 6; s += 26) for (const lado of [1, -1]) {
+    const [x, y] = em(s + entre(rng, -4, 4), lado * (hl - 0.9));
+    nucE.push(elipse(x, y, 4, 1, ang));
+  }
+  for (let s = 8; s < L - 6; s += entre(rng, 10, 14)) {
+    const [x, y] = em(s, entre(rng, -hl + 4, hl - 4));
+    hem.push(hemacia(x, y, 4.6, ang + entre(rng, -30, 30), 2.6));
+  }
+  // células justaglomerulares: células musculares lisas modificadas, epitelioides, com grânulos de renina
+  for (let s = L - jg; s < L - 4; s += 8.5) {
+    jgCel.push(faixa(hl + 0.3, hw - 0.3, s, s + 8));
+    const [x, y] = em(s + 4, om);
+    jgNuc.push(circulo(x, y, 2.4));
+    for (let k = 0; k < 4; k++) {
+      const [gx, gy] = em(s + entre(rng, 1, 7), om + entre(rng, -3, 3));
+      if (Math.hypot(gx - x, gy - y) > 3.2) jgGraos.push(circulo(gx, gy, 0.6));
+    }
+  }
+  return { parede: faixa(-hw, hw), luz: faixa(-hl, hl), nucM: nucM.join(''), nucE: nucE.join(''), hem: hem.join(''), jgCel: jgCel.join(''), jgNuc: jgNuc.join(''), jgGraos: jgGraos.join('') };
+}
+
+/** Córtex renal: corpúsculos renais (glomérulo, espaço urinário, cápsula), túbulos contorcidos e aparelho justaglomerular. */
+export function LaminaRimCortex(rng: Rng) {
+  const cor = { interst: '#f3d5e2', tcp: '#dc79a4', escova: '#c8528c', estrias: '#ec9fc2', tcd: '#f1c2d6', tcdBorda: '#d590b2', membrana: '#c2578a', tufo: '#e597bb', alca: '#fbeef3', mb: '#cd6395', espaco: '#fcf5f8', capsula: '#cf769f', parede: '#e07eab', jg: '#efb7cf' };
+  // corpúsculos renais; o primeiro com o polo vascular (arteríolas) e a mácula densa
+  const corpusculos = [
+    { x: 330, y: 330, R: 120, polo: true },
+    { x: 790, y: 505, R: 104, polo: false },
+    { x: -24, y: 676, R: 112, polo: false },
+  ];
+  const aferente: [P, P] = [[172, 102], [312, 240]];
+  const eferente: [P, P] = [[350, 240], [492, 110]];
+  const MD = { x: 333, y: 171, R: 31 };
+  const occ = ocupacao(60, 130);
+  corpusculos.forEach((c) => occ.marcar(c.x, c.y, c.R + 3));
+  for (const [a, b] of [aferente, eferente]) {
+    const L = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    for (let s = 0; s <= L; s += 8) occ.marcar(a[0] + ((b[0] - a[0]) * s) / L, a[1] + ((b[1] - a[1]) * s) / L, 16);
+  }
+  occ.marcar(MD.x, MD.y, MD.R);
+  // túbulos em corte transversal: TCP (≈ 70%, maiores) e TCD; interstício estreito entre eles
+  const tubulos = dardos(rng, 9000, [-50, -50, W + 50, H + 50], () => (rng() < 0.7 ? entre(rng, 35, 42) : entre(rng, 26, 31)), () => true, occ, 6.5);
+  const proximais = tubulos.filter(([, , r]) => r >= 33);
+  const distais = tubulos.filter(([, , r]) => r < 33);
+  // tudo o que é circular, para medir o espaço livre do interstício
+  const solidos: [number, number, number][] = [...tubulos, ...corpusculos.map((c): [number, number, number] => [c.x, c.y, c.R + 2]), [MD.x, MD.y, MD.R]];
+  const folgaEm = (x: number, y: number) => {
+    let m = Infinity;
+    for (const [cx, cy, r] of solidos) m = Math.min(m, Math.hypot(x - cx, y - cy) - r);
+    for (const [[ax, ay], [bx, by], hw] of [[...aferente, 17], [...eferente, 13]] as [P, P, number][]) m = Math.min(m, distSeg(x, y, [ax, ay], [bx, by]) - hw);
+    return m;
+  };
+
+  // capilares peritubulares no interstício (com hemácias e núcleo endotelial)
+  const capilares: string[] = [];
+  const hemCap: string[] = [];
+  const nucCap: string[] = [];
+  const capPos: P[] = [];
+  for (let y = 2; y < H; y += 4)
+    for (let x = 2; x < W; x += 4) {
+      const c = folgaEm(x, y);
+      if (c < 5.5 || capPos.some(([px, py]) => Math.hypot(px - x, py - y) < 26)) continue;
+      // orientação: ao longo do espaço, perpendicular ao sólido mais próximo
+      let ang = 0;
+      let dm = Infinity;
+      for (const [cx, cy, r] of solidos) {
+        const d = Math.hypot(x - cx, y - cy) - r;
+        if (d < dm) {
+          dm = d;
+          ang = graus(x - cx, y - cy) + 90;
+        }
+      }
+      const ry = Math.min(c - 0.8, 7);
+      let rx = Math.min(ry * 2.2, 14);
+      const cabe = (rxx: number) =>
+        Array.from({ length: 12 }, (_, k) => {
+          const a = (2 * Math.PI * k) / 12;
+          const g = (ang * Math.PI) / 180;
+          const ex = Math.cos(a) * rxx;
+          const ey = Math.sin(a) * ry;
+          return folgaEm(x + ex * Math.cos(g) - ey * Math.sin(g), y + ex * Math.sin(g) + ey * Math.cos(g));
+        }).every((v) => v > 0.6);
+      while (rx > ry && !cabe(rx)) rx -= 1;
+      if (!cabe(rx)) continue;
+      capPos.push([x, y]);
+      capilares.push(elipse(x, y, rx, ry, ang));
+      if (ry >= 4.2) hemCap.push(hemacia(x, y, Math.min(4.8, rx - 1.2), ang, Math.min(3, ry - 1.2)));
+      if (rng() < 0.4) {
+        const g = (ang * Math.PI) / 180;
+        nucCap.push(elipse(x - Math.sin(g) * (ry - 0.8), y + Math.cos(g) * (ry - 0.8), Math.min(3.6, rx * 0.5), 1, ang));
+      }
+    }
+  const fibroblastos: string[] = [];
+  for (let t = 0, n = 0; t < 4000 && n < 40; t++) {
+    const x = entre(rng, 0, W);
+    const y = entre(rng, 0, H);
+    if (folgaEm(x, y) < 4 || capPos.some(([px, py]) => Math.hypot(px - x, py - y) < 16)) continue;
+    n++;
+    fibroblastos.push(elipse(x, y, 4, 1.3, entre(rng, 0, 180)));
+  }
+
+  // TCP: células altas e eosinófilas, limites pouco nítidos, poucos núcleos por corte, borda em escova e luz estreita
+  const tcpCorpo: string[] = [];
+  const tcpNuc: string[] = [];
+  const tcpEscova: string[] = [];
+  const tcpEstrias: string[] = [];
+  const tcpLuz: string[] = [];
+  for (const [x, y, R] of proximais) {
+    tcpCorpo.push(circulo(x, y, R));
+    const n = 4 + (R > 38 ? 1 : 0) + (rng() < 0.35 ? 1 : 0);
+    const giro = entre(rng, 0, Math.PI * 2);
+    for (let k = 0; k < n; k++) {
+      const a = giro + (2 * Math.PI * k) / n + entre(rng, -0.2, 0.2);
+      tcpNuc.push(circulo(x + Math.cos(a) * R * 0.66, y + Math.sin(a) * R * 0.66, 4.4));
+    }
+    const f1 = entre(rng, 0, 6);
+    const f2 = entre(rng, 0, 6);
+    const rl = (a: number) => Math.max(3.5, R * 0.29 * (1 + 0.3 * Math.sin(4 * a + f1) + 0.12 * Math.sin(7 * a + f2)));
+    tcpEscova.push(contorno(pontosPolar(x, y, (a) => rl(a) + 4.4, 60)));
+    tcpEstrias.push(contorno(pontosPolar(x, y, (a) => rl(a) + 2.2, 60)));
+    tcpLuz.push(contorno(pontosPolar(x, y, rl, 60)));
+  }
+  // TCD: células mais baixas e claras, limites nítidos, mais núcleos por corte, sem borda em escova, luz ampla
+  const tcdCel: string[] = [];
+  const tcdNuc: string[] = [];
+  const tcdLuz: string[] = [];
+  const mdCel: string[] = [];
+  const mdNuc: string[] = [];
+  const tubuloDistal = (x: number, y: number, R: number, md: boolean) => {
+    // na mácula densa (lado voltado para o polo vascular, abaixo) as células ficam mais altas e estreitas
+    const alt = (a: number) => {
+      if (!md) return 11.5;
+      const d = Math.abs(((a - Math.PI / 2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI);
+      return d < 0.95 ? 11.5 + 4.5 * Math.cos((d / 0.95) * (Math.PI / 2)) ** 2 : 11.5;
+    };
+    const ehMd = (a: number) => md && Math.abs(((a - Math.PI / 2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI) < 0.8;
+    const n = Math.round((2 * Math.PI * R) / 12.5);
+    const giro = entre(rng, 0, 1);
+    for (let k = 0; k < n; k++) {
+      const a0 = giro + (2 * Math.PI * k) / n;
+      const a1 = giro + (2 * Math.PI * (k + 1)) / n;
+      const am = (a0 + a1) / 2;
+      if (ehMd(am)) {
+        // duas células estreitas por fatia: núcleos apinhados, alongados e mais apicais
+        for (const [b0, b1] of [[a0, am], [am, a1]]) {
+          const bm = (b0 + b1) / 2;
+          const h = alt(bm);
+          mdCel.push(contorno([[x + Math.cos(b0) * R, y + Math.sin(b0) * R], [x + Math.cos(b1) * R, y + Math.sin(b1) * R], [x + Math.cos(b1) * (R - alt(b1)), y + Math.sin(b1) * (R - alt(b1))], [x + Math.cos(b0) * (R - alt(b0)), y + Math.sin(b0) * (R - alt(b0))]]));
+          const rn = R - h * 0.52;
+          mdNuc.push(elipse(x + Math.cos(bm) * rn, y + Math.sin(bm) * rn, 3.6, 1.9, (bm * 180) / Math.PI));
+        }
+        continue;
+      }
+      tcdCel.push(contorno([[x + Math.cos(a0) * R, y + Math.sin(a0) * R], [x + Math.cos(a1) * R, y + Math.sin(a1) * R], [x + Math.cos(a1) * (R - alt(a1)), y + Math.sin(a1) * (R - alt(a1))], [x + Math.cos(a0) * (R - alt(a0)), y + Math.sin(a0) * (R - alt(a0))]]));
+      if (rng() < 0.85) {
+        const rn = R - alt(am) * 0.5;
+        tcdNuc.push(circulo(x + Math.cos(am) * rn, y + Math.sin(am) * rn, 3.4));
+      }
+    }
+    tcdLuz.push(contorno(pontosPolar(x, y, (a) => R - alt(a) + 0.2, 72)));
+  };
+  for (const [x, y, R] of distais) tubuloDistal(x, y, R, false);
+  tubuloDistal(MD.x, MD.y, MD.R, true);
+
+  // corpúsculos: cápsula (folheto parietal), espaço urinário e tufo glomerular lobulado
+  const espacos: string[] = [];
+  const capsulas: string[] = [];
+  const capsulaNuc: string[] = [];
+  const tufos: string[] = [];
+  const alcas: string[] = [];
+  const hemTufo: string[] = [];
+  const nucTufo: string[] = [];
+  corpusculos.forEach((c) => {
+    espacos.push(circulo(c.x, c.y, c.R));
+    capsulas.push(circulo(c.x, c.y, c.R + 0.6));
+    const nN = Math.round((2 * Math.PI * c.R) / 46);
+    for (let k = 0; k < nN; k++) {
+      const a = (2 * Math.PI * (k + entre(rng, -0.2, 0.2))) / nN;
+      if (c.polo && Math.abs(a - (3 * Math.PI) / 2) < 0.5) continue;
+      capsulaNuc.push(elipse(c.x + Math.cos(a) * (c.R - 1), c.y + Math.sin(a) * (c.R - 1), 5.4, 1.8, (a * 180) / Math.PI + 90));
+    }
+    // lóbulos do tufo (alças capilares agrupadas); no polo vascular o tufo encosta na cápsula
+    const lob: [number, number, number][] = [[c.x, c.y, c.R * 0.47]];
+    const nl = 6;
+    const g0 = entre(rng, 0, 1);
+    for (let k = 0; k < nl; k++) {
+      const a = g0 + (2 * Math.PI * k) / nl + entre(rng, -0.15, 0.15);
+      lob.push([c.x + Math.cos(a) * c.R * 0.42, c.y + Math.sin(a) * c.R * 0.42, c.R * entre(rng, 0.35, 0.4)]);
+    }
+    if (c.polo) lob.push([c.x, c.y - c.R + 33, 30]);
+    tufos.push(lob.map(([x, y, r]) => circulo(x, y, r)).join(''));
+    const noTufo = (x: number, y: number, m: number) => lob.some(([lx, ly, r]) => Math.hypot(x - lx, y - ly) < r - m);
+    const occG = ocupacao(16, 8);
+    const loops = dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => entre(rng, 5.6, 7.4), (x, y, r) => noTufo(x, y, r * 0.55), occG, 2.6);
+    for (const [x, y, r] of loops) {
+      alcas.push(circulo(x, y, r));
+      if (rng() < 0.6) hemTufo.push(hemacia(x, y, Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3.2, r - 2.4)));
+    }
+    // núcleos de células mesangiais, endoteliais e podócitos entre as alças (não se sobrepõem às alças)
+    dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => 3.2, (x, y) => noTufo(x, y, 1), occG, 0.9).forEach(([x, y, r]) => nucTufo.push(circulo(x, y, r)));
+  });
+  const af = arteriolaLongitudinal(rng, aferente[0], aferente[1], 17, 8.5, 40);
+  const ef = arteriolaLongitudinal(rng, eferente[0], eferente[1], 13, 7, 0);
+
+  return (
+    <>
+      <rect x={-20} y={-20} width={W + 40} height={H + 40} fill={cor.interst} />
+      <Deco>
+        <path d={fibroblastos.join('')} fill={HE.nucleo} />
+      </Deco>
+      <E id="capilar">
+        <path d={capilares.join('')} fill={HE.luz} stroke={cor.membrana} strokeWidth={0.8} />
+        <path d={hemCap.join('')} fill={HE.hemacia} />
+        <path d={nucCap.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="tubulo-contorcido-proximal">
+        <path d={tcpCorpo.join('')} fill={cor.tcp} stroke={cor.membrana} strokeWidth={1.4} />
+        <path d={tcpNuc.join('')} fill={HE.nucleo} />
+        <path d={tcpEscova.join('')} fill={cor.escova} />
+        <path d={tcpEstrias.join('')} fill="none" stroke={cor.estrias} strokeWidth={4.4} strokeDasharray="0.6 1.2" />
+        <path d={tcpLuz.join('')} fill={HE.luz} />
+      </E>
+      <E id="tubulo-contorcido-distal">
+        <path d={distais.map(([x, y, R]) => circulo(x, y, R)).join('') + circulo(MD.x, MD.y, MD.R)} fill={cor.tcd} stroke={cor.membrana} strokeWidth={1.2} />
+        <path d={tcdCel.join('')} fill={cor.tcd} stroke={cor.tcdBorda} strokeWidth={0.7} />
+        <path d={tcdNuc.join('')} fill={HE.nucleo} />
+        <path d={tcdLuz.join('')} fill={HE.luz} />
+      </E>
+      <E id="macula-densa">
+        <path d={mdCel.join('')} fill="#eab3cb" stroke={cor.tcdBorda} strokeWidth={0.6} />
+        <path d={mdNuc.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="espaco-urinario">
+        <path d={espacos.join('')} fill={cor.espaco} />
+      </E>
+      <E id="capsula-glomerular">
+        {/* faixa de toque um pouco mais larga que o folheto parietal (que tem só 2–3 µm) */}
+        <path d={capsulas.join('')} fill="none" stroke="transparent" strokeWidth={10} />
+        <path d={capsulas.join('')} fill="none" stroke={cor.capsula} strokeWidth={3.4} />
+        <path d={capsulaNuc.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="arteriola-aferente">
+        <path d={af.parede} fill={cor.parede} />
+        <path d={af.jgCel} fill={cor.jg} stroke="#d98bb0" strokeWidth={0.5} />
+        <path d={af.jgGraos} fill="#b9427c" />
+        <path d={af.jgNuc} fill={HE.nucleo} />
+        <path d={af.nucM} fill={HE.nucleo} />
+        <path d={af.luz} fill={HE.luz} />
+        <path d={af.nucE} fill={HE.nucleoEscuro} />
+        <path d={af.hem} fill={HE.hemacia} />
+      </E>
+      <E id="arteriola-eferente">
+        <path d={ef.parede} fill={cor.parede} />
+        <path d={ef.nucM} fill={HE.nucleo} />
+        <path d={ef.luz} fill={HE.luz} />
+        <path d={ef.nucE} fill={HE.nucleoEscuro} />
+        <path d={ef.hem} fill={HE.hemacia} />
+      </E>
+      <E id="glomerulo">
+        <path d={tufos.join('')} fill={cor.tufo} />
+        <path d={alcas.join('')} fill={cor.alca} stroke={cor.mb} strokeWidth={1} />
+        <path d={hemTufo.join('')} fill={HE.hemacia} />
+        <path d={nucTufo.join('')} fill={HE.nucleo} />
+      </E>
+    </>
+  );
+}
+
+// =============================================================================================
+export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {
+  pulmao: { desenhar: LaminaPulmao, partes: PARTES_PULMAO },
+  // o campo do jogo precisa mostrar um corpúsculo renal: sem ele, só túbulos, o campo lembraria a lâmina epitelio-cubico-rim
+  'rim-cortex': { desenhar: LaminaRimCortex, partes: PARTES_RIM, areaDiagnostica: [280, 260, 400, 400] },
+};
