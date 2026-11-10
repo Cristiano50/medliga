@@ -165,7 +165,7 @@
       "id": "hemidesmossomo",
       "nome": "Hemidesmossomo",
       "sinonimos": [],
-      "definicao": "Junção da face basal que prende a célula à lâmina basal por integrina α6β4 e BP180 (colágeno XVII), com placa (BP230, plectina) ligada a filamentos de queratina."
+      "definicao": "Junção da face basal que prende a célula à lâmina basal por integrina α6β4, com placa (plectina) ligada a filamentos de queratina; nos epitélios estratificados e pseudoestratificados, como a epiderme, tem também BP180 (colágeno XVII) e BP230."
     },
     {
       "id": "juncao-comunicante",
@@ -1353,7 +1353,8 @@
     "Carcinoma basocelular: descrito como derivado de células semelhantes às basais da epiderme; há evidência de origem também em células-tronco do folículo piloso. O conteúdo usa 'células semelhantes às basais'.",
     "Nomenclatura do colo uterino: o termo 'carcinoma in situ' está incluído na categoria 'lesão intraepitelial escamosa de alto grau' (HSIL/NIC 3); a questão usa os dois termos.",
     "Situs inversus na discinesia ciliar primária: Robbins e outros textos dizem 'cerca de metade'; séries clínicas dão 47,7% de situs inversus total em 337 pacientes (PMID 17515466) e 38,5% em 559 pacientes (PMID 36342963, 2023), além de ~6% de heterotaxia. Faixa adotada: 40–50%.",
-    "Lâmina lúcida na técnica do salt-split (questão avançada q27): o consenso da SBD (2019) e a dermatopatologia descrevem a clivagem induzida pelo NaCl 1 mol/L 'na lâmina lúcida', embora Ross registre que a lâmina lúcida pode ser artefato de fixação. A q27 usa a terminologia do consenso; o raciocínio cobrado (o que fica no teto e o que fica no assoalho em relação à lâmina densa) não depende dessa discussão."
+    "Lâmina lúcida na técnica do salt-split (questão avançada q27): o consenso da SBD (2019) e a dermatopatologia descrevem a clivagem induzida pelo NaCl 1 mol/L 'na lâmina lúcida', embora Ross registre que a lâmina lúcida pode ser artefato de fixação. A q27 usa a terminologia do consenso; o raciocínio cobrado (o que fica no teto e o que fica no assoalho em relação à lâmina densa) não depende dessa discussão.",
+    "Composição do hemidesmossomo: o resumo e as questões descrevem o hemidesmossomo clássico (tipo I) da epiderme e de outros epitélios estratificados e pseudoestratificados, com integrina α6β4, plectina, BP180 (colágeno XVII) e BP230. Nos epitélios simples, como o do intestino, o hemidesmossomo (tipo II) tem só integrina α6β4 e plectina (Walko, Castañón e Wiche, Cell Tissue Res 2015; PMC4452579, texto integral). Por isso o modelo 3D das junções, que mostra um epitélio simples cilíndrico, não cita BP180/BP230 como componentes do hemidesmossomo desenhado."
   ],
   "incertezas": [
     "Números de capítulos da 14ª ed. de Junqueira (4 e 18), da 8ª ed. de Ross (5 e 15) e da 5ª ed. de Kierszenbaum (1) citados de memória, com base nas edições anteriores; conferir.",
@@ -1404,6 +1405,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "Harmonização (3 correções menores, 0 questão alterada): (1) papila-dermica tinha o sinônimo 'derme papilar', que é a camada superficial da derme e não a papila; sinônimo trocado por 'papila da derme', e a definição passou a dizer que as papilas são projeções da camada papilar da derme (derme papilar) (Junqueira 14ª ed., cap. 18; Ross 8ª ed., cap. 15 — livros, sem texto integral nesta rede). (2) Locais do urotélio: acrescentados os cálices renais no resumo e na definição de epitelio-de-transicao (cálices, pelve, ureteres, bexiga, parte da uretra), como já diz o his-17; Junqueira 14ª ed. (caps. 4 e de aparelho urinário) e Ross 8ª ed. (cap. 20) citados de memória; confirmação indireta em texto integral nas diretrizes EAU 2026 de carcinoma urotelial do trato superior (cap. 3.1: carcinoma urotelial nas cavidades pielocaliciais e no ureter; uroweb.org). A lâmina 'pele' (content/histologia/laminas.json) teve o nome da estrutura ajustado de 'Papila dérmica (derme papilar)' para 'Papila dérmica'."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização com o modelo 3D das junções celulares (content/revisoes/modelos3d-histologia-b.md, ponto 7): definição da estrutura hemidesmossomo precisada (BP180 e BP230 nos epitélios estratificados e pseudoestratificados; integrina α6β4 e plectina em todos) e nota de divergência sobre os tipos I e II (Walko 2015, PMC4452579, texto integral conferido pelo revisor dos modelos 3D). Resumo, questões e gabaritos intactos: todos tratam da epiderme."
       }
     ],
     "humano": null
