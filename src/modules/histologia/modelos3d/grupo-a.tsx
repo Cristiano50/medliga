@@ -16,8 +16,10 @@ import {
   curvaDescendenteDelgado,
   curvaDistal,
   curvaEferente,
-  curvaProximal,
+  curvaProximalContorcida,
+  curvaProximalReta,
   curvasAlcasGlomerulares,
+  curvasPontesGlomerulares,
   DUCTO_X,
   MACULA,
   perfilCapsula,
@@ -27,6 +29,7 @@ import {
   posicoesPodocitos,
   RAIO_CORPO_PODOCITO,
   RAIO_MESANGIAL_EXTRA,
+  RAIO_PONTE,
   RAIO_PROLONGAMENTO,
   RAIOS,
   REGIOES,
@@ -34,11 +37,14 @@ import {
 } from './geometria-nefron.ts';
 import {
   ALVEOLOS,
+  ANEL_DA_BOCA,
+  anelDaBoca,
   BARREIRA,
   baseNoHeroi,
   BRONQUIOLO,
   capilaresHeroi,
   capilaresLocais,
+  canalDoPoro,
   capilarDe,
   centroMacrofago,
   centroNucleoTipoI,
@@ -148,9 +154,12 @@ export function ModeloNefron() {
       capsula: new THREE.LatheGeometry(perfilCapsula(), 48),
       espaco: new THREE.SphereGeometry(CORPUSCULO.raioEspaco, 40, 28),
       alcas: curvasAlcasGlomerulares().map((c) => new THREE.TubeGeometry(c, 36, RAIOS.alcaCapilar, 8, false)),
+      // pontes curtas entre alças vizinhas (o tufo é uma rede); pequenas, numa só malha
+      pontes: unir(curvasPontesGlomerulares().map((c) => new THREE.TubeGeometry(c, 8, RAIO_PONTE, 6, false))),
+      // corpos achatados apoiados nos capilares, com prolongamentos ao longo deles e em volta deles
       podocitos: unir(
         podocitos.flatMap((p) => [
-          transformada(new THREE.SphereGeometry(RAIO_CORPO_PODOCITO, 12, 8), p.corpo, girarYPara(p.normal), [1, 0.55, 1]),
+          transformada(new THREE.SphereGeometry(RAIO_CORPO_PODOCITO, 12, 8), p.corpo, girarYPara(p.normal), [1, 0.5, 1]),
           ...p.prolongamentos.map((pts) => new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 6, RAIO_PROLONGAMENTO, 5, false)),
         ]),
       ),
@@ -161,17 +170,20 @@ export function ModeloNefron() {
       mesangial: unir(posicoesMesangiaisExtraglomerulares().map((p) => transformada(new THREE.SphereGeometry(RAIO_MESANGIAL_EXTRA, 10, 8), p, undefined, [1, 0.8, 1]))),
       // setor de cilindro fechado: a face da frente aparece como um crescente sob o túbulo
       macula: new THREE.CylinderGeometry(MACULA.raio, MACULA.raio, MACULA.comprimento, 16, 1, false, -MACULA.arco / 2, MACULA.arco),
-      proximal: new THREE.TubeGeometry(curvaProximal(), 180, RAIOS.proximal, 14, false),
-      delgado: new THREE.TubeGeometry(curvaDescendenteDelgado(), 40, RAIOS.delgado, 10, false),
-      espesso: new THREE.TubeGeometry(curvaAscendenteEspesso(), 160, RAIOS.espesso, 12, false),
-      distal: new THREE.TubeGeometry(curvaDistal(), 120, RAIOS.distal, 12, false),
+      // túbulo proximal: porção contorcida (voltas) e porção reta, retilínea e um pouco mais fina
+      proximal: new THREE.TubeGeometry(curvaProximalContorcida(), 300, RAIOS.proximal, 14, false),
+      proximalReto: new THREE.TubeGeometry(curvaProximalReta(), 8, RAIOS.proximalReto, 14, false),
+      delgado: new THREE.TubeGeometry(curvaDescendenteDelgado(), 8, RAIOS.delgado, 10, false),
+      espesso: new THREE.TubeGeometry(curvaAscendenteEspesso(), 200, RAIOS.espesso, 12, false),
+      distal: new THREE.TubeGeometry(curvaDistal(), 100, RAIOS.distal, 12, false),
       // ducto coletor em estilo distinto: prisma facetado com anéis (não faz parte do néfron)
       coletor: new THREE.LatheGeometry(perfil, 12),
       aneisColetor: unir([1.5, 1.05, 0.6, 0.15, -0.3, -0.75, -1.2].map((y) => anelColetor(y, raioColetorEm(y) + 0.004))),
     };
   });
   const c = CORPUSCULO.centro;
-  const fimProximal = curvaProximal().getPoint(1);
+  const fimContorcido = curvaProximalContorcida().getPoint(1);
+  const fimProximal = curvaProximalReta().getPoint(1);
   const inicioEspesso = curvaAscendenteEspesso().getPoint(0);
   const fimAferente = curvaAferente().getPoint(1);
   const fimEferente = curvaEferente().getPoint(1);
@@ -193,6 +205,7 @@ export function ModeloNefron() {
       </Parte>
       <Parte id="glomerulo" cor={COR_NEFRON.glomerulo} prioridade={6} acabamentoOrganico rotulo={[c[0], c[1] - 0.25, c[2] + 0.12]}>
         {g.alcas.map((a, i) => <Malha key={i} geometria={a} />)}
+        <Malha geometria={g.pontes} />
       </Parte>
       <Parte id="arteriola-eferente" cor={COR_NEFRON.eferente} prioridade={6} acabamentoOrganico>
         <Malha geometria={g.eferente} />
@@ -208,14 +221,17 @@ export function ModeloNefron() {
       <Parte id="podocito" cor={COR_NEFRON.podocito} prioridade={7} acabamentoOrganico>
         <Malha geometria={g.podocitos} />
       </Parte>
-      <Parte id="tubulo-contorcido-proximal" cor={COR_NEFRON.proximal} prioridade={6} acabamentoOrganico rotulo={[-1.02, 0.38, 0.24]}>
+      <Parte id="tubulo-contorcido-proximal" cor={COR_NEFRON.proximal} prioridade={6} acabamentoOrganico rotulo={[-1.18, 0.4, 0.42]}>
         <Malha geometria={g.proximal} />
-        <Malha geometria={g.tampa} posicao={fimProximal} escala={RAIOS.proximal} />
+        {/* ombro arredondado onde a porção contorcida passa à reta */}
+        <Malha geometria={g.tampa} posicao={fimContorcido} escala={RAIOS.proximal} />
+        <Malha geometria={g.proximalReto} />
+        <Malha geometria={g.tampa} posicao={fimProximal} escala={RAIOS.proximalReto} />
       </Parte>
       <Parte id="ramo-descendente-delgado" cor={COR_NEFRON.delgado} prioridade={6} acabamentoOrganico>
         <Malha geometria={g.delgado} />
       </Parte>
-      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.16, -0.15, -0.18]}>
+      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.8, -0.4, 0.04]}>
         <Malha geometria={g.espesso} />
         <Malha geometria={g.tampa} posicao={inicioEspesso} escala={RAIOS.espesso} />
       </Parte>
@@ -228,7 +244,7 @@ export function ModeloNefron() {
       <Parte id="celulas-mesangiais-extraglomerulares" cor={COR_NEFRON.mesangial} prioridade={8} acabamentoOrganico>
         <Malha geometria={g.mesangial} />
       </Parte>
-      <Parte id="tubulo-contorcido-distal" cor={COR_NEFRON.distal} prioridade={6} acabamentoOrganico rotulo={[0.63, 0.96, 0.32]}>
+      <Parte id="tubulo-contorcido-distal" cor={COR_NEFRON.distal} prioridade={6} acabamentoOrganico rotulo={[0.6, 1.14, 0.25]}>
         <Malha geometria={g.distal} />
       </Parte>
       <Parte id="ducto-coletor" cor={COR_NEFRON.coletor} prioridade={6} sombreamentoPlano rugosidade={0.8} rotulo={[DUCTO_X + 0.1, -1.0, 0]}>
@@ -270,8 +286,13 @@ export const PARTES_ALVEOLO = [
   'poro-alveolar',
 ];
 
-/** Deslocado para a esquerda: o alvéolo em corte fica perto do centro, para onde a aproximação (pinça/roda) converge. */
-const POSICAO_ALVEOLO: V3 = [-0.45, -0.12, 0.3];
+/**
+ * Enquadramento: o eixo bronquíolo → saco fica em diagonal (cerca de 45°), que aproveita igualmente a tela em pé
+ * do celular e a tela larga; o ponto entre o saco e o alvéolo em corte vai para a origem, para onde a
+ * aproximação (pinça/roda) converge.
+ */
+const GIRO_ALVEOLO: V3 = [0.2, -0.18, 0.78];
+const FOCO_ALVEOLO: V3 = [SACO.centro[0] + 0.08, 0, -0.1];
 const chaveTaca = (a: DefAlveolo) => `${a.raio}:${a.parede}:${a.meiaAbertura.toFixed(4)}`;
 const chaveCapilar = (a: DefAlveolo) => `${a.raio}:${a.parede}`;
 
@@ -298,12 +319,23 @@ export function ModeloAlveolo() {
     const mac = baseNoHeroi(MACROFAGO.polar, MACROFAGO.azimute);
     const cm = centroMacrofago();
     const dPoro = direcaoDoPoro();
+    const canal = canalDoPoro();
+    // botões de músculo liso do ducto: anel fino na borda da boca de cada alvéolo que se abre nele
+    const aneis = ALVEOLOS.filter((a) => a.grupo === 'ducto').map((a) => {
+      const anel = anelDaBoca(a);
+      return new THREE.TorusGeometry(anel.raio, ANEL_DA_BOCA.tubo, 8, 40)
+        .rotateX(Math.PI / 2)
+        .translate(0, anel.altura, 0)
+        .applyMatrix4(new THREE.Matrix4().compose(vec(a.centro), orientacaoAlveolo(a), new THREE.Vector3(1, 1, 1)));
+    });
     return {
       bronquiolo: new THREE.LatheGeometry(
         [new THREE.Vector2(re, -comp / 2), new THREE.Vector2(re, comp / 2), new THREE.Vector2(ri, comp / 2), new THREE.Vector2(ri, -comp / 2), new THREE.Vector2(re, -comp / 2)],
         40,
       ),
-      botao: new THREE.TorusGeometry(DUCTO.raioBotao, DUCTO.tuboBotao, 12, 48),
+      // luz do ducto alveolar (volume translúcido, do bronquíolo ao saco) e os anéis das bocas
+      luzDucto: new THREE.CylinderGeometry(DUCTO.raioLuz, DUCTO.raioLuz, DUCTO.fim - DUCTO.inicio, 32, 1, false),
+      aneisDaBoca: unir(aneis),
       saco: new THREE.SphereGeometry(SACO.raio, 40, 28),
       tacas: Object.values(tacas),
       capilares: Object.values(capilares).flat(),
@@ -331,7 +363,7 @@ export function ModeloAlveolo() {
       ]),
       barreira: new THREE.SphereGeometry(h.raio - 0.004, 16, 6, 0, Math.PI * 2, 0, BARREIRA.abertura),
       poroAnel: transformada(new THREE.TorusGeometry(PORO.raioAnel, PORO.tubo, 10, 32), centroPoro(), new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), dPoro)),
-      poroCanal: transformada(new THREE.CylinderGeometry(PORO.raioCanal, PORO.raioCanal, 0.12, 20, 1, true), vec(h.centro).addScaledVector(dPoro, h.raio + 0.06), girarYPara(dPoro)),
+      poroCanal: transformada(new THREE.CylinderGeometry(PORO.raioCanal, PORO.raioCanal, canal.comprimento, 16, 1, true), canal.centro, girarYPara(dPoro)),
     };
   });
   // índice da geometria compartilhada de cada alvéolo (mesma ordem de inserção usada na fábrica)
@@ -346,13 +378,21 @@ export function ModeloAlveolo() {
   // +y local da taça → −x (boca para o saco); o plano do corte fica em z = 0
   const giroHeroi: [number, number, number] = [0, 0, Math.PI / 2];
   const centroBronquiolo = (BRONQUIOLO.inicio + BRONQUIOLO.fim) / 2;
+  const centroDucto = (DUCTO.inicio + DUCTO.fim) / 2;
   return (
-    <group position={POSICAO_ALVEOLO} rotation={[0.2, -0.18, 0.4]}>
+    <group rotation={GIRO_ALVEOLO}>
+    <group position={[-FOCO_ALVEOLO[0], -FOCO_ALVEOLO[1], -FOCO_ALVEOLO[2]]}>
       <Parte id="bronquiolo-respiratorio" cor={COR_ALVEOLO.bronquiolo} prioridade={4} acabamentoOrganico>
         <Malha geometria={g.bronquiolo} posicao={[centroBronquiolo, 0, 0]} rotacao={[0, 0, -Math.PI / 2]} />
       </Parte>
-      <Parte id="ducto-alveolar" cor={COR_ALVEOLO.ducto} prioridade={5} acabamentoOrganico>
-        {DUCTO.botoes.map((x) => <Malha key={x} geometria={g.botao} posicao={[x, 0, 0]} rotacao={[0, Math.PI / 2, 0]} />)}
+      {/* O ducto alveolar tem duas peças com o mesmo id (uma <Parte> tem um só material): a luz, translúcida,
+          com a prioridade das paredes (a mais baixa do modelo; vence quando está à frente), e os anéis finos das
+          bocas dos alvéolos, opacos. Seleção, ocultação e marcador valem para as duas. */}
+      <Parte id="ducto-alveolar" cor={COR_ALVEOLO.ducto} opacidade={0.16} prioridade={4} rotulo={[centroDucto, 0, DUCTO.raioLuz]}>
+        <Malha geometria={g.luzDucto} posicao={[centroDucto, 0, 0]} rotacao={[0, 0, -Math.PI / 2]} />
+      </Parte>
+      <Parte id="ducto-alveolar" cor={COR_ALVEOLO.ducto} prioridade={5} acabamentoOrganico rotulo={[centroDucto, 0, DUCTO.raioLuz]}>
+        <Malha geometria={g.aneisDaBoca} />
       </Parte>
       <Parte id="saco-alveolar" cor={COR_ALVEOLO.saco} opacidade={0.18} prioridade={4} rotulo={[SACO.centro[0], SACO.centro[1] + 0.1, SACO.centro[2] + SACO.raio]}>
         <Malha geometria={g.saco} posicao={SACO.centro} />
@@ -393,10 +433,11 @@ export function ModeloAlveolo() {
         <Malha geometria={g.poroCanal} />
       </Parte>
     </group>
+    </group>
   );
 }
 
 export const MODELOS_HISTO_A: Record<string, ModeloEstagio> = {
   nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.35, -0.08, 1], raio: 1.75 },
-  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.95 },
+  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.55 },
 };

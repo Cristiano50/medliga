@@ -2,14 +2,14 @@
 // Bronquíolo respiratório (eixo x) → ducto alveolar → saco alveolar; alvéolos como taças abertas para a luz
 // do ducto/saco. Um alvéolo maior, à direita, fica aberto em corte (metade z ≤ 0) e mostra a parede:
 // pneumócitos tipo I (revestimento) e tipo II (nos cantos, com corpos lamelares), macrófago, capilares no
-// septo (fora da luz), barreira hematoaérea e poro alveolar para o vizinho de trás.
+// septo (fora da luz), barreira hematoaérea e poro alveolar para o alvéolo de trás do mesmo saco.
 import * as THREE from 'three';
 import { basePerpendicular, vec, type V3 } from './geometria-comum.ts';
 
 export interface DefAlveolo {
   id: string;
-  /** onde se abre (ducto alveolar, saco alveolar, bronquíolo respiratório ou vizinho do alvéolo em corte) */
-  grupo: 'ducto' | 'saco' | 'bronquiolo' | 'vizinho';
+  /** onde se abre (ducto alveolar, saco alveolar ou bronquíolo respiratório) */
+  grupo: 'ducto' | 'saco' | 'bronquiolo';
   centro: V3;
   /** raio da luz alveolar (face interna do epitélio) */
   raio: number;
@@ -29,8 +29,16 @@ export const PAREDE_ALVEOLO = 0.045;
 export const capilarDe = (raio: number, parede: number) => ({ eixo: raio + parede * 0.9, raio: Math.min(0.026, parede * 0.55) });
 
 export const BRONQUIOLO = { inicio: -1.75, fim: -0.95, raioExterno: 0.22, raioInterno: 0.17 };
-export const DUCTO = { inicio: -0.95, fim: 0.36, raioLuz: 0.18, botoes: [-0.95, -0.33, 0.36], raioBotao: 0.2, tuboBotao: 0.03 };
-export const SACO = { centro: [0.66, 0, 0] as V3, raio: 0.3 };
+export const SACO = { centro: [0.54, 0, 0] as V3, raio: 0.3 };
+/** Ducto alveolar: a luz (volume translúcido) vai do bronquíolo ao saco; a "parede" são as bocas dos alvéolos. */
+export const DUCTO = { inicio: BRONQUIOLO.fim, fim: SACO.centro[0] - SACO.raio, raioLuz: 0.18, estacoes: [-0.62, -0.04] };
+/** Botões de músculo liso e fibras elásticas: anel fino na borda da boca de cada alvéolo que se abre no ducto. */
+export const ANEL_DA_BOCA = { tubo: 0.016 };
+/** Anel da boca no referencial do alvéolo (+y = boca): raio do anel e altura do seu plano. */
+export function anelDaBoca(a: Pick<DefAlveolo, 'raio' | 'parede' | 'meiaAbertura'>): { raio: number; altura: number } {
+  const r = a.raio + a.parede / 2;
+  return { raio: r * Math.sin(a.meiaAbertura), altura: r * Math.cos(a.meiaAbertura) };
+}
 
 /** Alvéolo aberto em corte (metade z ≤ 0), maior que os outros para mostrar as células da parede. */
 export const HEROI = (() => {
@@ -38,7 +46,9 @@ export const HEROI = (() => {
   const parede = 0.065;
   const distancia = SACO.raio + raio * 0.55;
   const centro: V3 = [SACO.centro[0] + distancia, 0, 0];
-  return { id: 'aberto', centro, raio, parede, abertura: [-1, 0, 0] as V3, meiaAbertura: Math.acos((distancia - SACO.raio) / raio) };
+  // Boca um pouco mais fechada que a dos vizinhos (36°): a parede de trás chega ao encontro com o alvéolo de
+  // trás do mesmo saco, onde fica o poro alveolar.
+  return { id: 'aberto', centro, raio, parede, abertura: [-1, 0, 0] as V3, meiaAbertura: (36 * Math.PI) / 180 };
 })();
 
 function alveolosIntactos(): DefAlveolo[] {
@@ -46,7 +56,7 @@ function alveolosIntactos(): DefAlveolo[] {
   const dist = DUCTO.raioLuz + RAIO_ALVEOLO * 0.7;
   const meiaDucto = Math.acos((dist - DUCTO.raioLuz) / RAIO_ALVEOLO);
   const dirs: [string, V3][] = [['cima', [0, 1, 0]], ['baixo', [0, -1, 0]], ['tras', [0, 0, -1]]];
-  [-0.62, -0.04].forEach((x, e) =>
+  DUCTO.estacoes.forEach((x, e) =>
     dirs.forEach(([nome, d], i) =>
       lista.push({
         id: `ducto-${e + 1}-${nome}`, grupo: 'ducto', centro: [x + d[0] * dist, d[1] * dist, d[2] * dist], raio: RAIO_ALVEOLO, parede: PAREDE_ALVEOLO,
@@ -66,15 +76,8 @@ function alveolosIntactos(): DefAlveolo[] {
   const rb = 0.17;
   const yb = BRONQUIOLO.raioInterno + rb * 0.55;
   lista.push({
-    id: 'bronquiolo', grupo: 'bronquiolo', centro: [-1.32, yb, 0], raio: rb, parede: 0.04,
+    id: 'bronquiolo', grupo: 'bronquiolo', centro: [-1.15, yb, 0], raio: rb, parede: 0.04,
     abertura: [0, -1, 0], meiaAbertura: Math.acos((yb - BRONQUIOLO.raioInterno) / rb), giro: 0.4,
-  });
-  // vizinho atrás do alvéolo em corte, ligado a ele pelo poro alveolar
-  const dn = direcaoPoro();
-  const c = vec(HEROI.centro).addScaledVector(dn, DISTANCIA_VIZINHO);
-  lista.push({
-    id: 'vizinho', grupo: 'vizinho', centro: [c.x, c.y, c.z], raio: RAIO_ALVEOLO, parede: PAREDE_ALVEOLO,
-    abertura: [dn.x, dn.y, dn.z], meiaAbertura: (50 * Math.PI) / 180, giro: 2.1,
   });
   return lista;
 }
@@ -85,8 +88,9 @@ export function direcaoHeroi(polarGraus: number, azimuteGraus: number): THREE.Ve
   const t = (azimuteGraus * Math.PI) / 180;
   return new THREE.Vector3(Math.cos(f), Math.sin(f) * Math.cos(t), Math.sin(f) * Math.sin(t));
 }
-const direcaoPoro = () => direcaoHeroi(80, 270);
-export const DISTANCIA_VIZINHO = 0.7;
+const direcaoPoro = () => direcaoHeroi(PORO.polar, PORO.azimute);
+/** Alvéolo de trás do saco alveolar: vizinho do alvéolo em corte, com quem divide o septo do poro. */
+export const ID_VIZINHO_DO_PORO = 'saco-tras';
 
 export const ALVEOLOS: DefAlveolo[] = alveolosIntactos();
 
@@ -140,6 +144,20 @@ export function capilaresLocais(raio: number, parede: number): THREE.CatmullRomC
   return [new THREE.CatmullRomCurve3(anel, true, 'centripetal'), new THREE.CatmullRomCurve3(meridiano, false, 'centripetal')];
 }
 
+/**
+ * Distância do eixo de um capilar em anel ao centro do alvéolo em corte. Sob a mancha da barreira hematoaérea o
+ * capilar encosta no revestimento (parte delgada do septo); no resto, fica junto da face externa da parede.
+ */
+export function eixoCapilarHeroi(polar: number, azimute: number): number {
+  const { eixo, raio } = capilarDe(HEROI.raio, HEROI.parede);
+  if (polar !== BARREIRA.polar) return eixo;
+  const junto = HEROI.raio + raio + FOLGA_BARREIRA;
+  const peso = Math.exp(-(((azimute - BARREIRA.azimute) / 16) ** 2));
+  return eixo - (eixo - junto) * peso;
+}
+/** Espessura esquemática entre a luz e o capilar na parte delgada do septo. */
+export const FOLGA_BARREIRA = 0.004;
+
 /** Capilares do alvéolo em corte (referencial do modelo): meios-anéis na metade z ≤ 0 que terminam no plano do corte. */
 export const POLARES_CAPILARES_HEROI = [40, 65, 95, 118];
 export function capilaresHeroi(): { curvas: THREE.CatmullRomCurve3[]; raio: number; tampas: { centro: THREE.Vector3; normal: THREE.Vector3 }[] } {
@@ -149,7 +167,10 @@ export function capilaresHeroi(): { curvas: THREE.CatmullRomCurve3[]; raio: numb
   const tampas: { centro: THREE.Vector3; normal: THREE.Vector3 }[] = [];
   for (const polar of POLARES_CAPILARES_HEROI) {
     const pts: THREE.Vector3[] = [];
-    for (let i = 0; i <= 16; i++) pts.push(c.clone().addScaledVector(direcaoHeroi(polar, 180 + (180 * i) / 16), eixo));
+    for (let i = 0; i <= 24; i++) {
+      const azimute = 180 + (180 * i) / 24;
+      pts.push(c.clone().addScaledVector(direcaoHeroi(polar, azimute), eixoCapilarHeroi(polar, azimute)));
+    }
     curvas.push(new THREE.CatmullRomCurve3(pts, false, 'centripetal'));
     tampas.push({ centro: pts[0], normal: new THREE.Vector3(0, 0, 1) }, { centro: pts[pts.length - 1], normal: new THREE.Vector3(0, 0, 1) });
   }
@@ -180,25 +201,31 @@ export function capilaresNoModelo(): { curva: THREE.Curve<THREE.Vector3>; raio: 
  * Núcleos achatados dos pneumócitos tipo I no revestimento (polar, azimute em graus). Poucos, de propósito:
  * o tipo I é menos numeroso que o tipo II, mas cada célula cobre uma área muito maior (o revestimento inteiro).
  */
-export const NUCLEOS_TIPO_I: [number, number][] = [[35, 245], [98, 215]];
+export const NUCLEOS_TIPO_I: [number, number][] = [[40, 255], [102, 250]];
 export const RAIO_NUCLEO_TIPO_I = 0.05;
-/** Pneumócitos tipo II: nos cantos, junto à borda onde o alvéolo encontra o saco e os vizinhos. */
-export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338]];
+/**
+ * Pneumócitos tipo II: dispersos pela parede, entre os capilares, um deles junto ao encontro com o alvéolo de
+ * trás (perto do poro). Ficam embutidos na parede e salientes na luz.
+ */
+export const TIPO_II: [number, number][] = [[80, 200], [110, 292], [30, 212]];
 /** Células ampliadas em relação ao alvéolo (esquema fora de escala), para serem vistas e tocadas. */
 export const TIPO_II_DIMENSOES: V3 = [0.13, 0.095, 0.13];
+/** Quanto da altura da célula fica dentro da parede (o resto faz saliência na luz); não alcança os capilares. */
+export const TIPO_II_EMBUTIDO = 0.03;
 export const RAIO_CORPO_LAMELAR = 0.024;
 /** Corpos lamelares no referencial da célula (y = eixo apical, voltado para a luz). */
 export const CORPOS_LAMELARES_LOCAIS: V3[] = [[-0.032, 0.004, 0.026], [0.03, -0.004, 0.028], [0.004, 0.012, -0.034], [0.0, 0.05, 0.0]];
 export const MACROFAGO = { polar: 25, azimute: 290, raio: 0.072 };
-/** Sobre o capilar em anel de 65°, na parede de baixo e de trás (a face interna que a vista padrão mostra). */
-export const BARREIRA = { polar: 65, azimute: 222, abertura: 0.22 };
-export const PORO = { polar: 80, azimute: 270, raioAnel: 0.058, tubo: 0.015, raioCanal: 0.05 };
+/** Sobre o capilar em anel de 65°, no meio da parede de trás (a face interna que a vista padrão mostra de frente). */
+export const BARREIRA = { polar: 65, azimute: 275, abertura: 0.22 };
+/** Poro alveolar: orifício pequeno no septo entre o alvéolo em corte e o alvéolo de trás do saco. */
+export const PORO = { polar: 135, azimute: 270, raioAnel: 0.036, tubo: 0.009, raioCanal: 0.03 };
 
 export function centroNucleoTipoI([polar, az]: [number, number]): THREE.Vector3 {
   return vec(HEROI.centro).addScaledVector(direcaoHeroi(polar, az), HEROI.raio - 0.008);
 }
 export function centroTipoII([polar, az]: [number, number]): THREE.Vector3 {
-  return vec(HEROI.centro).addScaledVector(direcaoHeroi(polar, az), HEROI.raio - TIPO_II_DIMENSOES[1] / 2 + 0.006);
+  return vec(HEROI.centro).addScaledVector(direcaoHeroi(polar, az), HEROI.raio - TIPO_II_DIMENSOES[1] / 2 + TIPO_II_EMBUTIDO);
 }
 /** Orientação da célula sobre o revestimento: +y local aponta para a luz (centro do alvéolo). */
 export function orientacaoTipoII([polar, az]: [number, number]): THREE.Quaternion {
@@ -211,6 +238,22 @@ export function centroPoro(): THREE.Vector3 {
   return vec(HEROI.centro).addScaledVector(direcaoHeroi(PORO.polar, PORO.azimute), HEROI.raio - 0.004);
 }
 export const direcaoDoPoro = direcaoPoro;
+/**
+ * Canal do poro: do revestimento do alvéolo em corte até a luz do alvéolo de trás (as duas paredes se
+ * encostam ali, formando o septo comum). Devolve o centro e o comprimento, ao longo da direção do poro.
+ */
+export function canalDoPoro(): { centro: THREE.Vector3; comprimento: number } {
+  const c = vec(HEROI.centro);
+  const d = direcaoPoro();
+  const vizinho = ALVEOLOS.find((a) => a.id === ID_VIZINHO_DO_PORO)!;
+  // primeira interseção da reta c + t·d com a esfera da luz do vizinho
+  const oc = c.clone().sub(vec(vizinho.centro));
+  const b2 = oc.dot(d);
+  const delta = b2 * b2 - (oc.lengthSq() - vizinho.raio * vizinho.raio);
+  const inicio = HEROI.raio - 0.004;
+  const fim = delta > 0 ? -b2 - Math.sqrt(delta) : HEROI.raio + HEROI.parede;
+  return { centro: c.addScaledVector(d, (inicio + fim) / 2), comprimento: fim - inicio };
+}
 
 /** Base local de um ponto do alvéolo em corte (normal para fora + tangentes), para pseudópodes e manchas. */
 export function baseNoHeroi(polar: number, azimute: number): { normal: THREE.Vector3; t1: THREE.Vector3; t2: THREE.Vector3 } {
