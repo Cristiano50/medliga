@@ -752,6 +752,8 @@ export function LaminaPulmao(rng: Rng) {
         <path d={pontas.join('')} fill={cor.septo} />
       </E>
       <E id="capilar">
+        {/* margem de toque de ~1,75 un em volta do capilar (a parede endotelial), sob os pneumócitos */}
+        <path d={capilares.join('')} fill="none" stroke="transparent" strokeWidth={3.5} />
         <path d={capilares.join('')} fill={cor.capilar} stroke={cor.endotelio} strokeWidth={0.9} />
         <path d={hemacias.join('')} fill={HE.hemacia} />
         <path d={endotelio.join('')} fill={HE.nucleoEscuro} />
@@ -1227,7 +1229,7 @@ export function LaminaTireoide(rng: Rng) {
       nucleos.push(h < 8 ? elipse(m.x, m.y, 3.3, 2, m.ang + 90) : circulo(m.x, m.y, 2.9));
     });
     coloide.push(contorno(ep.topo));
-    contornos.push(contorno(pol));
+    contornos.push(contorno(pol.filter((_, k) => k % 2 === 0)));
     if (temC) {
       // célula C: base do epitélio, entre os tirócitos e a lâmina basal, sem alcançar o coloide
       const b = ep.base[(k0 + 1) % ep.n];
@@ -1268,7 +1270,8 @@ export function LaminaTireoide(rng: Rng) {
       visto.add(chave);
       if (distLinha(mx, my, septo, false) < HS + 12 || rng() > 0.6) return;
       const rx = Math.min(L / 2 - 6, 10);
-      if (!occC.livre(mx, my, rx, 3) || !occN.livre(mx, my, rx, 1)) return;
+      // o capilar fica no conjuntivo entre dois folículos; contra os núcleos basta testar a sua meia-largura
+      if (!occC.livre(mx, my, rx, 3) || !occN.livre(mx, my, 4.4, 0.5)) return;
       occC.marcar(mx, my, rx);
       const ang = graus(b[0] - a[0], b[1] - a[1]);
       capilares.push(elipse(mx, my, rx, 4.4, ang));
@@ -1350,7 +1353,7 @@ export function LaminaAdrenal(rng: Rng) {
 
   // zona glomerulosa: grupos ovoides compactos ("arcos"/"glomérulos") de células colunares baixas, núcleos escuros e
   // citoplasma mais acidófilo; os grupos são maciços (sem luz), separados por capilares
-  const occNuc = ocupacao(20, 6);
+  const occNuc = ocupacao(20, 8);
   const zgCel: string[] = [];
   const zgNuc: string[] = [];
   for (let x = 6; x < W + 40; x += entre(rng, 62, 68)) {
@@ -1451,7 +1454,7 @@ export function LaminaAdrenal(rng: Rng) {
   // reticular e medula num só diagrama de potência: a fronteira entre as zonas é a borda comum das células.
   // Os furos da rede (sinusoides) entram como sítios fixos com peso; as células, relaxadas, ficam poligonais e
   // encostadas umas nas outras, contornando os sinusoides.
-  const occR = ocupacao(40, 16);
+  const occR = ocupacao(40, 21);
   const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
   const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occR, 22);
   for (const [x, y] of furosR) hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
@@ -1741,9 +1744,13 @@ export function LaminaTesticulo(rng: Rng) {
   // túnica vascular: vasos sob a albugínea
   const vascular: [number, number, number][] = [[260, 80, 9], [520, 84, 11], [770, 79, 8]];
   const fibAlb: string[] = [];
-  for (let k = 0; k < 30; k++) {
+  const occA = ocupacao(20, 8);
+  for (let k = 0; k < 80 && fibAlb.length < 30; k++) {
     const x = entre(rng, 0, W);
-    fibAlb.push(elipse(x, entre(rng, 6, yA(x) - 6), 7, 1.4, entre(rng, -4, 4)));
+    const y = entre(rng, 6, yA(x) - 6);
+    if (!occA.livre(x, y, 7, 1)) continue;
+    occA.marcar(x, y, 7);
+    fibAlb.push(elipse(x, y, 7, 1.4, entre(rng, -4, 4)));
   }
   const fibrasAlb = Array.from({ length: 6 }, (_, k) => {
     const yy = 8 + k * 9.5;
@@ -1804,7 +1811,7 @@ export function LaminaTesticulo(rng: Rng) {
 
 // =============================================================================================
 // 6. OVÁRIO — escala 1 un ≈ 1 µm: folículo primordial ≈ 35 µm (oócito ≈ 27 µm); primário unilaminar ≈ 65 µm;
-// folículo secundário (antral) ≈ 400 µm, com oócito de ≈ 92 µm e zona pelúcida de ≈ 7 µm.
+// folículo secundário (antral) ≈ 400 µm, com ovócito de ≈ 104 µm e zona pelúcida de ≈ 7 µm.
 export const PARTES_OVARIO = ['epitelio-superficial-do-ovario', 'tunica-albuginea', 'foliculo-primordial', 'foliculo-primario', 'foliculo-secundario', 'ovocito-primario', 'zona-pelucida', 'celulas-da-granulosa', 'teca-interna'];
 
 /** Córtex do ovário: epitélio superficial, túnica albugínea, folículos primordiais, primários e um folículo secundário. */
@@ -1815,10 +1822,10 @@ export function LaminaOvario(rng: Rng) {
   const F: P = [662, 446]; // folículo secundário
   const R = { te: 196, ti: 178, g: 156, a: 116 };
   const angC = (140 * Math.PI) / 180;
-  const O: P = [F[0] + Math.cos(angC) * 82, F[1] + Math.sin(angC) * 82]; // oócito sobre o cúmulo oóforo
-  const RO = 46;
-  const RZ = 53;
-  const RCum = 72;
+  const O: P = [F[0] + Math.cos(angC) * 80, F[1] + Math.sin(angC) * 80]; // ovócito sobre o cúmulo oóforo
+  const RO = 52;
+  const RZ = 59;
+  const RCum = 75;
   const M: P = [212, 452]; // primário multilaminar (pré-antral)
   const unilam: P[] = [[150, 236], [372, 196], [918, 170], [430, 636], [96, 640]];
   const occ = ocupacao(40, 210);
@@ -2016,7 +2023,7 @@ export function LaminaOvario(rng: Rng) {
       </E>
       <E id="ovocito-primario">
         <circle cx={O[0]} cy={O[1]} r={RO} fill={cor.ooplasma} />
-        <circle cx={vesO[0]} cy={vesO[1]} r={13} fill={cor.vesicula} stroke="#9c8fcf" strokeWidth={0.8} />
+        <circle cx={vesO[0]} cy={vesO[1]} r={14} fill={cor.vesicula} stroke="#9c8fcf" strokeWidth={0.8} />
         <circle cx={vesO[0] + 2} cy={vesO[1] + 1} r={3.4} fill={HE.nucleoEscuro} />
       </E>
     </>
@@ -2048,6 +2055,7 @@ export function LaminaUteroProliferativo(rng: Rng) {
   const halos: string[] = [];
   const contornosGl: P[][] = [];
   let nMitose = 0;
+  const occGl = ocupacao(16, 4);
   const glandula = (contornoExt: P[], h: number) => {
     contornosGl.push(contornoExt);
     const ep = epitelio(contornoExt, 7.4, () => h, 1);
@@ -2063,6 +2071,9 @@ export function LaminaUteroProliferativo(rng: Rng) {
       }
       const m = ep.meio(k, entre(rng, 0.32, 0.66));
       if (m.y < ySup(m.x) + 3) return; // trecho da glândula acima da superfície (coberto pela luz do útero)
+      // nas curvas fechadas (fundo de saco, perfis pequenos) as células convergem: núcleo que tocaria o vizinho fica fora do plano
+      if (!occGl.livre(m.x, m.y, 2.6, 0.4)) return;
+      occGl.marcar(m.x, m.y, 2.6);
       glNuc.push(elipse(m.x, m.y, 4.4, 1.9, m.ang));
     });
     glLuz.push(contorno(ep.topo));
@@ -2100,6 +2111,7 @@ export function LaminaUteroProliferativo(rng: Rng) {
     grupos.push([x, y]);
   }
   const artMedia: string[] = [];
+  const perfisArt: P[] = [];
   const artLuz: string[] = [];
   const artNuc: string[] = [];
   const artHem: string[] = [];
@@ -2112,6 +2124,7 @@ export function LaminaUteroProliferativo(rng: Rng) {
       const x = gx + Math.cos(a) * 13;
       const y = gy + Math.sin(a) * 13;
       occ.marcar(x, y, 12);
+      perfisArt.push([x, y]);
       artMedia.push(circulo(x, y, 10));
       artLuz.push(circulo(x, y, 4.2));
       for (let q = 0; q < 5; q++) {
@@ -2139,8 +2152,8 @@ export function LaminaUteroProliferativo(rng: Rng) {
     });
 
   // estroma: denso e celular (núcleos ovais/fusiformes, pouco citoplasma); mais denso ainda na camada basal
-  const occE = ocupacao(16, 6);
-  for (const [gx, gy] of grupos) occE.marcar(gx, gy, 25);
+  const occE = ocupacao(16, 12); // rMax ≥ maior raio marcado (perfis arteriais)
+  for (const [x, y] of perfisArt) occE.marcar(x, y, 11.5);
   const estF: string[] = [];
   const estB: string[] = [];
   dardos(rng, 16000, [-10, 40, W + 10, 560], () => 3.5, (x, y) => y > ySup(x) + 22 && y < yM(x) - 5 && !naGlandula(x, y, 5.5), occE, 2.6).forEach(([x, y]) => {
@@ -2163,12 +2176,12 @@ export function LaminaUteroProliferativo(rng: Rng) {
   const supCel: string[] = [];
   const supNuc: string[] = [];
   const supCil: string[] = [];
-  const bocas = longas.map((l) => l[0][0]);
+  const bocas = longas.map((l) => (l.find((p) => p[1] >= 40) ?? l[0])[0]);
   for (let k = 0; k < sup.length - 1; k++) {
     const [x0, y0] = sup[k];
     const [x1, y1] = sup[k + 1];
     const xm = (x0 + x1) / 2;
-    if (bocas.some((b) => Math.abs(xm - b) < HWG - 2)) continue;
+    if (bocas.some((b) => Math.abs(xm - b) < HWG + 3)) continue;
     supCel.push(contorno([[x0, y0], [x1, y1], [x1, y1 + 18], [x0, y0 + 18]]));
     supNuc.push(elipse(xm, (y0 + y1) / 2 + entre(rng, 9, 12), 4.4, 1.9, 90));
     if (k % 5 === 2) supCil.push(`M${f1(x0 + 1.5)},${f1(y0)}l0,-4.5M${f1(xm)},${f1((y0 + y1) / 2)}l0,-4.5M${f1(x1 - 1.5)},${f1(y1)}l0,-4.5`);

@@ -1,3 +1,464 @@
 {
-  "laminas": []
+  "laminas": [
+    {
+      "id": "pulmao",
+      "ordem": 28,
+      "titulo": "Pulmão: porção respiratória",
+      "tecido": "Pulmão (porção respiratória)",
+      "orgao": "Pulmão, parênquima com bronquíolo, bronquíolo respiratório, ductos e sacos alveolares (esquema)",
+      "coloracao": "HE",
+      "descricao": "Parênquima pulmonar. À esquerda, um bronquíolo cortado de través: luz pregueada, epitélio simples cilíndrico baixo a cúbico (células ciliadas e células club, de ápice em cúpula), lâmina própria fina, camada de músculo liso e adventícia, sem cartilagem nem glândulas; logo abaixo, na mesma bainha de conjuntivo, um ramo da artéria pulmonar com hemácias (desenhado como contexto, sem área de toque). No alto, um bronquíolo respiratório cortado ao comprido: parede de epitélio cúbico sobre músculo liso, interrompida pelas aberturas de alvéolos. Ele continua num ducto alveolar, canal cuja parede é feita das aberturas de alvéolos, com botões de músculo liso nas bordas livres dos septos, que se ramifica e termina em sacos alveolares. Os alvéolos são separados por septos interalveolares finos, com capilares cheios de hemácias, pneumócitos tipo I (núcleo achatado) e tipo II (célula cúbica, de citoplasma espumoso, nos cantos dos alvéolos); na luz, macrófagos alveolares com pigmento fagocitado. Esquema: as proporções seguem a escala de 1 un ≈ 1 µm, mas no corte real os septos têm mais núcleos, e no HE os do pneumócito tipo I, do endotélio e dos fibroblastos são difíceis de distinguir entre si; aqui o núcleo do tipo I está destacado.",
+      "destaques": [
+        "Bronquíolo: sem cartilagem e sem glândulas; epitélio simples cilíndrico a cúbico, com células club e cada vez menos caliciformes; músculo liso proporcionalmente desenvolvido.",
+        "Sequência da porção respiratória: bronquíolo respiratório (parede com alvéolos) → ducto alveolar (botões de músculo liso nas bordas dos septos) → saco alveolar → alvéolos.",
+        "Septo interalveolar: capilares contínuos, pneumócitos tipo I (achatados, cobrem a maior parte da superfície) e tipo II (cúbicos, produzem surfactante e repõem o tipo I), fibras elásticas e reticulares; macrófagos no septo e na luz."
+      ],
+      "topicos": [
+        "his-16-respiratorio"
+      ],
+      "estruturas": [
+        {
+          "id": "bronquiolo",
+          "nome": "Bronquíolo",
+          "descricao": "Via aérea de condução sem cartilagem e sem glândulas: luz pregueada, epitélio simples cilíndrico baixo a cúbico (células ciliadas e células club, de ápice em cúpula e sem cílios), lâmina própria fina, camada de músculo liso e adventícia. Pelo calibre e pelo epitélio, o do esquema corresponde a um bronquíolo terminal. O vaso logo abaixo, na mesma bainha conjuntiva, é um ramo da artéria pulmonar, que acompanha a árvore brônquica."
+        },
+        {
+          "id": "bronquiolo-respiratorio",
+          "nome": "Bronquíolo respiratório",
+          "descricao": "Primeiro segmento da porção respiratória: tubo de epitélio simples cúbico (com células club e, no início, algumas ciliadas) sobre conjuntivo com músculo liso, cuja parede é interrompida por alvéolos que se abrem na luz; ali já há trocas gasosas."
+        },
+        {
+          "id": "ducto-alveolar",
+          "nome": "Ducto alveolar (e saco alveolar)",
+          "descricao": "Canal sem parede própria, formado por uma sequência de alvéolos abertos; nas bordas livres dos septos, entre as aberturas, há pequenos botões de músculo liso, eosinófilos, revestidos por epitélio pavimentoso. Termina em sacos alveolares, espaços comuns para onde se abrem vários alvéolos, já sem botões de músculo liso (no esquema, as duas extremidades arredondadas)."
+        },
+        {
+          "id": "alveolo",
+          "nome": "Alvéolo",
+          "descricao": "Espaço aéreo poligonal ou arredondado (no esquema, de 90 a 120 µm) em que ocorre a troca gasosa, delimitado por septos interalveolares e revestido por pneumócitos tipo I e tipo II."
+        },
+        {
+          "id": "septo-interalveolar",
+          "nome": "Septo interalveolar",
+          "descricao": "Parede fina entre dois alvéolos: rede de capilares, interstício com fibras elásticas e reticulares e poucas células, revestido nas duas faces por pneumócitos. Onde as lâminas basais do endotélio e do pneumócito tipo I se fundem fica a barreira hematoaérea, a parte mais delgada do septo."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar",
+          "descricao": "Capilar contínuo do septo interalveolar, com hemácias. A rede capilar ocupa a maior parte do septo e faz saliência na luz dos alvéolos."
+        },
+        {
+          "id": "pneumocito-tipo-i",
+          "nome": "Pneumócito tipo I",
+          "descricao": "Célula muito achatada, de núcleo alongado e citoplasma delgado, que reveste a maior parte da superfície alveolar (cerca de 95%) e forma a barreira hematoaérea com o endotélio; não se divide. No HE, seu núcleo é difícil de distinguir do núcleo endotelial; no esquema, está destacado, e a área de toque inclui um pouco do citoplasma em volta."
+        },
+        {
+          "id": "pneumocito-tipo-ii",
+          "nome": "Pneumócito tipo II",
+          "descricao": "Célula cúbica e arredondada que faz saliência na luz, em geral nos cantos onde os septos se encontram; núcleo redondo e citoplasma espumoso (os corpos lamelares, que guardam o surfactante, aparecem como vacúolos no HE). Secreta surfactante e é a célula que se divide e repõe os pneumócitos tipo I. É tão ou mais numerosa que o tipo I, mas cobre só cerca de 5% da superfície."
+        },
+        {
+          "id": "macrofago-alveolar",
+          "nome": "Macrófago alveolar",
+          "descricao": "Macrófago derivado de monócitos, no septo ou livre na luz do alvéolo, com partículas fagocitadas (poeira, carvão: as 'células de poeira'). Na congestão por insuficiência cardíaca, fagocita hemácias extravasadas e acumula hemossiderina, pigmento castanho-dourado."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "rim-cortex",
+      "ordem": 29,
+      "titulo": "Córtex renal",
+      "tecido": "Rim (córtex renal)",
+      "orgao": "Rim, córtex: corpúsculos renais e túbulos contorcidos em corte transversal (esquema)",
+      "coloracao": "HE",
+      "descricao": "Córtex renal com dois corpúsculos renais inteiros (e parte de um terceiro, no canto) entre túbulos cortados de través. Em cada corpúsculo, o glomérulo, tufo lobulado de capilares com hemácias e núcleos de células endoteliais, mesangiais e podócitos, é envolvido pelo espaço urinário e pelo folheto parietal da cápsula glomerular (de Bowman), um epitélio simples pavimentoso. No corpúsculo da esquerda aparece o polo vascular: a arteríola aferente, mais calibrosa e com células justaglomerulares na parede junto ao polo, e a arteríola eferente, mais fina; entre elas, um túbulo distal com a mácula densa voltada para o polo. Os túbulos contorcidos proximais, mais numerosos, têm células altas e muito eosinófilas, limites celulares pouco nítidos, poucos núcleos por perfil, borda em escova e luz estreita e irregular; os distais têm células mais baixas e claras, limites nítidos, mais núcleos por perfil, nenhuma borda em escova e luz ampla. No interstício estreito, capilares peritubulares. Esquema: num só plano de corte raramente aparecem juntas as duas arteríolas e a mácula densa; o polo urinário (a continuação do espaço urinário com o túbulo proximal) e as células mesangiais extraglomerulares não foram desenhados.",
+      "destaques": [
+        "Corpúsculo renal = glomérulo (capilares fenestrados) + cápsula glomerular, com folheto visceral (podócitos, colados aos capilares) e folheto parietal (simples pavimentoso); entre os dois, o espaço urinário recebe o filtrado.",
+        "TCP × TCD no corte transversal: o proximal tem células altas e eosinófilas, borda em escova, luz estreita e poucos núcleos por perfil; o distal, células mais baixas e claras, sem borda em escova, luz ampla e mais núcleos. No córtex predominam os perfis de TCP, o segmento mais longo do néfron.",
+        "Aparelho justaglomerular: mácula densa (percebe o NaCl no fluido tubular), células justaglomerulares (músculo liso modificado da arteríola aferente, secretam renina) e células mesangiais extraglomerulares."
+      ],
+      "topicos": [
+        "his-17-urinario"
+      ],
+      "estruturas": [
+        {
+          "id": "glomerulo",
+          "nome": "Glomérulo",
+          "descricao": "Tufo lobulado de alças capilares fenestradas, com hemácias, entre a arteríola aferente e a eferente. Os núcleos são de células endoteliais, de células mesangiais (no eixo dos lóbulos) e de podócitos (na superfície, voltados para o espaço urinário)."
+        },
+        {
+          "id": "espaco-urinario",
+          "nome": "Espaço urinário (de Bowman)",
+          "descricao": "Espaço entre os folhetos visceral e parietal da cápsula glomerular, que recebe o ultrafiltrado e se continua com a luz do túbulo contorcido proximal no polo urinário (fora deste plano de corte)."
+        },
+        {
+          "id": "capsula-glomerular",
+          "nome": "Cápsula glomerular (folheto parietal)",
+          "descricao": "Epitélio simples pavimentoso, de núcleos achatados, apoiado em lâmina basal, que delimita o corpúsculo por fora. O folheto visceral é formado pelos podócitos, colados aos capilares. Como o folheto parietal é muito fino, a área de toque é um pouco mais larga que a camada desenhada."
+        },
+        {
+          "id": "tubulo-contorcido-proximal",
+          "nome": "Túbulo contorcido proximal",
+          "descricao": "Epitélio simples cúbico alto, de citoplasma muito eosinófilo (rico em mitocôndrias), limites celulares pouco nítidos (interdigitações laterais), borda em escova (microvilosidades) e luz estreita; poucos núcleos por perfil. Reabsorve a maior parte do filtrado: cerca de dois terços da água e do sódio e, normalmente, toda a glicose e os aminoácidos."
+        },
+        {
+          "id": "tubulo-contorcido-distal",
+          "nome": "Túbulo contorcido distal",
+          "descricao": "Epitélio simples cúbico mais baixo e mais claro, de limites celulares nítidos, sem borda em escova, com luz ampla e mais núcleos por perfil. Reabsorve sódio e cloreto; nos segmentos finais do néfron, sob ação da aldosterona, troca sódio por potássio e H+."
+        },
+        {
+          "id": "macula-densa",
+          "nome": "Mácula densa",
+          "descricao": "Trecho da parede do túbulo distal (no fim do ramo espesso ascendente, junto ao início do contorcido distal) que encosta no polo vascular do próprio néfron: células mais altas e estreitas, de núcleos apinhados, que formam uma 'mancha' escura. Percebe a concentração de NaCl no fluido tubular e regula a filtração glomerular e a liberação de renina."
+        },
+        {
+          "id": "arteriola-aferente",
+          "nome": "Arteríola aferente",
+          "descricao": "Leva sangue ao glomérulo e é mais calibrosa que a eferente. Perto do polo vascular, parte das células musculares lisas da média é substituída por células justaglomerulares, epitelioides, com grânulos de renina (no esquema, as células claras com grânulos na parede junto à cápsula)."
+        },
+        {
+          "id": "arteriola-eferente",
+          "nome": "Arteríola eferente",
+          "descricao": "Sai do glomérulo pelo mesmo polo vascular, com calibre menor; nos néfrons corticais, ramifica-se nos capilares peritubulares. No corte real nem sempre se distingue da aferente com segurança."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar peritubular",
+          "descricao": "Capilar do interstício cortical, derivado da arteríola eferente, que envolve os túbulos e recolhe o que eles reabsorvem."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "tireoide",
+      "ordem": 30,
+      "titulo": "Tireoide",
+      "tecido": "Glândula tireoide",
+      "orgao": "Tireoide, parênquima com folículos (esquema)",
+      "coloracao": "HE",
+      "descricao": "Folículos de tamanhos variados, cada um formado por um epitélio simples de tirócitos em volta de uma luz cheia de coloide homogêneo e eosinófilo. Nos folículos maiores o epitélio é mais baixo (menos ativo); nos menores, cúbico, às vezes com vacúolos claros na periferia do coloide. Células parafoliculares (C), maiores e de citoplasma claro, ficam na base do epitélio, sem alcançar o coloide, ou em pequenos grupos entre os folículos. Entre os folículos, conjuntivo delicado com uma rede de capilares; embaixo, um septo de conjuntivo denso com vasos. Esquema: no HE real as células C são difíceis de reconhecer (aparecem bem com imuno-histoquímica para calcitonina); aqui estão destacadas e mais numerosas.",
+      "destaques": [
+        "Folículo tireoidiano = unidade da glândula: epitélio simples de tirócitos + coloide (tireoglobulina iodada). A altura do epitélio acompanha a atividade: achatado em repouso, cilíndrico quando muito estimulado pelo TSH.",
+        "O hormônio fica armazenado fora da célula, no coloide, caso único entre as glândulas endócrinas.",
+        "Células C (parafoliculares): secretam calcitonina, ficam por dentro da lâmina basal sem tocar o coloide e dão origem ao carcinoma medular da tireoide."
+      ],
+      "topicos": [
+        "his-18-endocrino"
+      ],
+      "estruturas": [
+        {
+          "id": "foliculo-tireoidiano",
+          "nome": "Folículo tireoidiano",
+          "descricao": "Unidade estrutural e funcional da glândula: esfera de epitélio simples (tirócitos) com coloide na luz, envolta por lâmina basal e por uma rede de capilares fenestrados. No esquema, a área de toque do folículo como um todo é a sua borda (lâmina basal); tirócitos, coloide e células C têm áreas próprias."
+        },
+        {
+          "id": "coloide",
+          "nome": "Coloide",
+          "descricao": "Conteúdo da luz do folículo: gel de tireoglobulina iodada, homogêneo e eosinófilo (PAS-positivo), reserva extracelular de hormônio. Os vacúolos claros na periferia, comuns em folículos ativos, são associados à endocitose do coloide (em parte, artefato de retração)."
+        },
+        {
+          "id": "tirocito",
+          "nome": "Tirócito (célula folicular)",
+          "descricao": "Célula do epitélio simples do folículo, de núcleo redondo e central: cúbica na atividade habitual, achatada em repouso e cilíndrica quando muito estimulada. Sintetiza a tireoglobulina, que é iodada no coloide; depois a reabsorve por endocitose e, nos lisossomos, libera T3 e T4 para os capilares."
+        },
+        {
+          "id": "celulas-parafoliculares",
+          "nome": "Células parafoliculares (C)",
+          "descricao": "Células maiores e de citoplasma claro, isoladas na base do epitélio folicular (entre os tirócitos e a lâmina basal, sem contato com o coloide) ou em grupos entre os folículos. Secretam calcitonina, que reduz a calcemia inibindo os osteoclastos. Destacadas no esquema: no HE real são difíceis de ver."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar",
+          "descricao": "Capilar fenestrado do conjuntivo entre os folículos, junto à lâmina basal, que recebe T3 e T4."
+        },
+        {
+          "id": "septo-conjuntivo",
+          "nome": "Conjuntivo (estroma e septo)",
+          "descricao": "Conjuntivo delicado entre os folículos e septo de conjuntivo denso, vindo da cápsula, que divide a glândula em lóbulos e leva vasos e nervos."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "adrenal",
+      "ordem": 31,
+      "titulo": "Glândula adrenal (suprarrenal)",
+      "tecido": "Glândula adrenal (suprarrenal)",
+      "orgao": "Adrenal: cápsula, as três zonas do córtex e a medula (esquema)",
+      "coloracao": "HE",
+      "descricao": "Da cápsula (em cima) para a medula (embaixo). Zona glomerulosa: grupos arredondados (\"glomérulos\" ou arcos) de células colunares baixas, de núcleo escuro e citoplasma mais acidófilo, com poucas gotículas de lipídio. Zona fasciculada, a mais espessa: cordões retos de uma ou duas células, perpendiculares à cápsula, separados por capilares sinusoides; espongiócitos grandes, de citoplasma vacuolizado (as gotículas de lipídio se dissolvem no preparo) e núcleo central, às vezes dois. Zona reticular: rede de cordões anastomosados de células menores e mais acidófilas, algumas com lipofuscina e núcleo picnótico. Medula: grupos de células cromafins, grandes, de citoplasma basófilo e granuloso, entre sinusoides, e a veia central, com feixes de músculo liso longitudinal na parede. Esquema: as espessuras foram comprimidas para caberem as quatro regiões no campo; na glândula real a fasciculada ocupa cerca de dois terços do córtex, e a glomerulosa e a reticular são bem mais finas.",
+      "destaques": [
+        "Córtex, de fora para dentro: glomerulosa → mineralocorticoide (aldosterona, sob angiotensina II e potássio); fasciculada → glicocorticoides (cortisol, sob ACTH); reticular → andrógenos fracos (DHEA) e algum cortisol.",
+        "Espongiócito: citoplasma 'espumoso' porque as gotículas de lipídio (ésteres de colesterol, matéria-prima dos esteroides) se dissolvem no preparo; tem muito retículo endoplasmático liso e mitocôndrias de cristas tubulares, como toda célula que produz esteroide.",
+        "Medula: células cromafins (neurônios pós-ganglionares simpáticos modificados, inervados por fibras pré-ganglionares) secretam adrenalina e noradrenalina; o cortisol que chega do córtex pelos sinusoides induz a enzima que converte noradrenalina em adrenalina."
+      ],
+      "topicos": [
+        "his-18-endocrino"
+      ],
+      "estruturas": [
+        {
+          "id": "capsula",
+          "nome": "Cápsula",
+          "descricao": "Conjuntivo denso que envolve a glândula; por ela chegam as artérias que formam o plexo subcapsular, de onde partem os sinusoides do córtex."
+        },
+        {
+          "id": "zona-glomerulosa",
+          "nome": "Zona glomerulosa",
+          "descricao": "Logo abaixo da cápsula: células colunares baixas ou piramidais em grupos ovoides e arcos, de núcleo escuro e citoplasma acidófilo com poucas gotículas de lipídio. Produz aldosterona, sob controle da angiotensina II e do potássio."
+        },
+        {
+          "id": "zona-fasciculada",
+          "nome": "Zona fasciculada",
+          "descricao": "A mais espessa: cordões retos de uma ou duas células, perpendiculares à superfície, separados por capilares sinusoides. Espongiócitos grandes e poliédricos, de citoplasma vacuolizado e núcleo central (às vezes dois). Produz glicocorticoides (cortisol) sob controle do ACTH."
+        },
+        {
+          "id": "zona-reticular",
+          "nome": "Zona reticular",
+          "descricao": "Junto à medula: rede de cordões anastomosados de células menores e mais acidófilas, com grânulos de lipofuscina e alguns núcleos picnóticos. Produz andrógenos fracos (desidroepiandrosterona) e algum glicocorticoide."
+        },
+        {
+          "id": "medula-suprarrenal",
+          "nome": "Medula da suprarrenal",
+          "descricao": "Porção central, derivada da crista neural: grupos e cordões de células cromafins entre capilares sinusoides e vênulas, com algumas células ganglionares. No esquema, o toque entre os grupos de células identifica a medula; as células cromafins e a veia central têm áreas próprias."
+        },
+        {
+          "id": "celula-cromafim",
+          "nome": "Célula cromafim",
+          "descricao": "Célula grande e poliédrica, de citoplasma basófilo e finamente granuloso e núcleo arredondado e claro. Seus grânulos guardam adrenalina ou noradrenalina e ficam castanhos com sais de cromo (reação cromafim)."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar sinusoide",
+          "descricao": "Capilar de luz ampla e endotélio fenestrado entre os cordões do córtex; corre da cápsula para a medula e leva para ela o cortisol produzido no córtex."
+        },
+        {
+          "id": "veia-central",
+          "nome": "Veia central (medular)",
+          "descricao": "Veia calibrosa no centro da medula, com feixes de músculo liso longitudinal dispostos de modo excêntrico na parede; recolhe o sangue dos sinusoides do córtex e da medula."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "testiculo",
+      "ordem": 32,
+      "titulo": "Testículo",
+      "tecido": "Testículo",
+      "orgao": "Testículo: túnica albugínea e túbulos seminíferos em corte transversal (esquema)",
+      "coloracao": "HE",
+      "descricao": "Abaixo da túnica albugínea (conjuntivo denso), túbulos seminíferos cortados de través. Cada túbulo é envolvido por uma lâmina própria com células mioides peritubulares e revestido pelo epitélio seminífero: células de Sertoli, de núcleo claro, ovalado ou triangular e com nucléolo evidente, perto da base; espermatogônias sobre a lâmina basal; espermatócitos primários, as maiores células germinativas, com cromatina em filamentos; espermátides redondas e, em parte dos túbulos, espermátides alongadas de núcleo escuro junto à luz; na luz, flagelos de espermatozoides já liberados. No interstício, grupos de células de Leydig, poligonais e eosinófilas, junto a capilares. Esquema: a albugínea real é mais espessa; os espermatócitos secundários, que duram pouco, quase não aparecem e não foram desenhados; e a combinação de tipos celulares em cada túbulo depende do estágio do ciclo do epitélio seminífero.",
+      "destaques": [
+        "Do fundo para a luz do túbulo: espermatogônias → espermatócitos primários → (secundários, raros no corte) → espermátides redondas → espermátides alongadas → espermatozoides.",
+        "Célula de Sertoli: sustenta e nutre as células germinativas, forma a barreira hematotesticular (junções de oclusão entre células vizinhas, acima das espermatogônias), fagocita os corpos residuais e secreta proteína ligante de andrógeno e inibina, sob FSH.",
+        "Célula de Leydig (intersticial): produz testosterona sob LH; citoplasma eosinófilo com gotículas de lipídio e, no ser humano, cristais de Reinke."
+      ],
+      "topicos": [
+        "his-19-reprodutor-masculino"
+      ],
+      "estruturas": [
+        {
+          "id": "tunica-albuginea",
+          "nome": "Túnica albugínea",
+          "descricao": "Cápsula de conjuntivo denso, espessa e esbranquiçada, que envolve o testículo; logo abaixo dela corre a túnica vascular, com vasos. É mais espessa do que no esquema."
+        },
+        {
+          "id": "celula-mioide-peritubular",
+          "nome": "Lâmina própria com células mioides peritubulares",
+          "descricao": "Envoltório do túbulo seminífero: lâmina basal, fibras colágenas e camadas de células mioides achatadas, contráteis, que ajudam a levar os espermatozoides, ainda sem motilidade, para fora do túbulo."
+        },
+        {
+          "id": "espermatogonia",
+          "nome": "Espermatogônia",
+          "descricao": "Célula germinativa diploide apoiada na lâmina basal, que se divide por mitose. No HE humano há o tipo A escuro (núcleo denso, reserva), o tipo A claro (núcleo pálido) e o tipo B (núcleo redondo, que origina os espermatócitos)."
+        },
+        {
+          "id": "espermatocito",
+          "nome": "Espermatócito primário",
+          "descricao": "A maior célula germinativa, logo acima das espermatogônias: núcleo grande com cromatina em filamentos grossos, porque passa semanas na prófase da primeira divisão da meiose. Os espermatócitos secundários, haploides, duram pouco e quase não se veem no corte."
+        },
+        {
+          "id": "espermatide",
+          "nome": "Espermátide",
+          "descricao": "Célula haploide que se diferencia em espermatozoide (espermiogênese) sem se dividir. As redondas têm núcleo pequeno e claro; as alongadas, núcleo condensado, escuro e afilado, com a cabeça mergulhada no ápice da célula de Sertoli e o flagelo voltado para a luz."
+        },
+        {
+          "id": "celula-de-sertoli",
+          "nome": "Célula de Sertoli",
+          "descricao": "Célula de sustentação que vai da lâmina basal até a luz e envolve as células germinativas; no esquema, o rosa claro entre elas é o seu citoplasma, de limites pouco nítidos no HE. Núcleo claro, ovalado ou triangular, perto da base, com nucléolo evidente. Junções de oclusão entre células vizinhas formam a barreira hematotesticular."
+        },
+        {
+          "id": "espermatozoide",
+          "nome": "Espermatozoides (na luz do túbulo)",
+          "descricao": "Espermatozoides recém-liberados na luz (espermiação); no corte, veem-se sobretudo os flagelos. Ainda não têm motilidade efetiva: são levados pelo fluido e pelas contrações das células mioides até o epidídimo, onde amadurecem."
+        },
+        {
+          "id": "celula-de-leydig",
+          "nome": "Célula de Leydig",
+          "descricao": "Célula intersticial, em grupos no conjuntivo entre os túbulos, junto a capilares: poligonal, de citoplasma eosinófilo com gotículas de lipídio (vacúolos claros) e núcleo redondo. Produz testosterona sob estímulo do LH. Os cristais de Reinke, típicos do ser humano, não foram desenhados."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar",
+          "descricao": "Capilares e pequenos vasos do conjuntivo intersticial, junto às células de Leydig, e da túnica vascular, logo abaixo da albugínea."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "ovario",
+      "ordem": 33,
+      "titulo": "Ovário: córtex com folículos",
+      "tecido": "Ovário (córtex com folículos)",
+      "orgao": "Ovário, córtex: superfície, folículos em várias fases e estroma (esquema)",
+      "coloracao": "HE",
+      "descricao": "Na superfície, epitélio simples cúbico (epitélio superficial) sobre a túnica albugínea, de conjuntivo denso. No córtex, estroma muito celular, de células fusiformes em redemoinhos, com folículos em várias fases: folículos primordiais logo abaixo da albugínea (ovócito de núcleo claro e nucléolo evidente, envolto por uma camada de células foliculares achatadas); folículos primários unilaminares (uma camada de células da granulosa cúbicas e zona pelúcida delgada) e um multilaminar (granulosa estratificada, zona pelúcida evidente e teca começando a se formar); e um folículo secundário (antral), com antro cheio de líquido folicular, granulosa, cúmulo oóforo com o ovócito, zona pelúcida e corona radiata, e as tecas interna (células epitelioides e capilares) e externa (conjuntivo condensado). Esquema: não há corpo lúteo nem folículos atrésicos; o estroma e a teca externa estão desenhados, mas não são alvos do jogo; e o ovócito do folículo secundário tem o núcleo no plano de corte, o que nem sempre acontece.",
+      "destaques": [
+        "Classificação dos folículos: primordial (células foliculares achatadas) → primário (granulosa cúbica; unilaminar e depois multilaminar, com zona pelúcida e teca) → secundário ou antral (antro com líquido folicular) → maduro (de Graaf).",
+        "O ovócito de todos esses folículos é um ovócito primário, parado na prófase da primeira divisão meiótica; a meiose I só termina pouco antes da ovulação.",
+        "Teca interna (andrógenos, sob LH) + granulosa (aromatase, sob FSH) = estrógeno. O 'epitélio germinativo' da superfície não forma células germinativas: o nome é histórico."
+      ],
+      "topicos": [
+        "his-20-reprodutor-feminino"
+      ],
+      "estruturas": [
+        {
+          "id": "epitelio-superficial-do-ovario",
+          "nome": "Epitélio superficial (simples cúbico)",
+          "descricao": "Epitélio simples cúbico (ou pavimentoso) que reveste o ovário, contínuo com o mesotélio do peritônio. Foi chamado de 'epitélio germinativo' por um engano histórico: não origina as células germinativas."
+        },
+        {
+          "id": "tunica-albuginea",
+          "nome": "Túnica albugínea",
+          "descricao": "Camada de conjuntivo denso, pouco vascularizado, logo abaixo do epitélio superficial, que dá ao ovário a cor esbranquiçada."
+        },
+        {
+          "id": "foliculo-primordial",
+          "nome": "Folículo primordial",
+          "descricao": "Ovócito primário (≈ 25–30 µm), de núcleo claro e excêntrico com nucléolo evidente, envolto por uma única camada de células foliculares achatadas sobre lâmina basal. Ficam em grande número logo abaixo da albugínea e formam a reserva ovariana."
+        },
+        {
+          "id": "foliculo-primario",
+          "nome": "Folículo primário",
+          "descricao": "As células foliculares ficam cúbicas (células da granulosa), o ovócito cresce e surge a zona pelúcida entre eles. Unilaminar: uma camada de granulosa; multilaminar (pré-antral): granulosa estratificada, com o estroma em volta começando a formar a teca. No esquema, a área de toque é o folículo inteiro."
+        },
+        {
+          "id": "foliculo-secundario",
+          "nome": "Folículo secundário (antro)",
+          "descricao": "Folículo com uma cavidade, o antro, cheia de líquido folicular (claro e levemente eosinófilo, com precipitado fino), formada pela confluência de espaços entre as células da granulosa. No esquema, o toque no antro identifica o folículo; o ovócito, a zona pelúcida, a granulosa e a teca interna têm áreas próprias."
+        },
+        {
+          "id": "ovocito-primario",
+          "nome": "Ovócito primário (folículo secundário)",
+          "descricao": "Célula germinativa grande (no esquema ≈ 100 µm), de citoplasma levemente eosinófilo e núcleo grande e claro (vesícula germinativa) com nucléolo evidente, parada na prófase I. Os ovócitos dos folículos menores também são ovócitos primários."
+        },
+        {
+          "id": "zona-pelucida",
+          "nome": "Zona pelúcida (folículo secundário)",
+          "descricao": "Camada acelular, espessa, homogênea e eosinófila (PAS-positiva), de glicoproteínas, entre o ovócito e as células da corona radiata; surge já no folículo primário. Tem os receptores que o espermatozoide reconhece na fecundação e, depois da reação cortical, impede a entrada de outros espermatozoides."
+        },
+        {
+          "id": "celulas-da-granulosa",
+          "nome": "Células da granulosa (folículo secundário)",
+          "descricao": "Células pequenas, de núcleo redondo e pouco citoplasma, em várias camadas sobre a lâmina basal: formam a parede do antro, o cúmulo oóforo, que sustenta o ovócito, e a corona radiata, a camada radiada colada à zona pelúcida. Convertem os andrógenos da teca em estrógeno (aromatase, sob FSH)."
+        },
+        {
+          "id": "teca-interna",
+          "nome": "Teca interna",
+          "descricao": "Camada de células epitelioides, de citoplasma claro com lipídios, rica em capilares, logo por fora da lâmina basal da granulosa; sob LH, produz androstenediona, que a granulosa converte em estrógeno. Por fora dela fica a teca externa, de conjuntivo condensado e contínua com o estroma (desenhada, mas sem área de toque)."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    },
+    {
+      "id": "utero-proliferativo",
+      "ordem": 34,
+      "titulo": "Útero: endométrio proliferativo",
+      "tecido": "Útero (endométrio proliferativo)",
+      "orgao": "Útero, parede: endométrio na fase proliferativa e parte do miométrio (esquema)",
+      "coloracao": "HE",
+      "descricao": "Da luz (em cima) para o miométrio (embaixo). Epitélio de revestimento simples cilíndrico, com células secretoras e algumas ciliadas. Camada funcional com glândulas tubulares retas, de luz estreita, cortadas ao comprido e de través, revestidas por epitélio cilíndrico de núcleos alongados em alturas diferentes (aspecto pseudoestratificado) e com mitoses; estroma denso e celular, de células fusiformes ou ovais com pouco citoplasma; e grupos de perfis de artérias espiraladas na parte profunda. A camada basal, logo acima do miométrio, tem estroma ainda mais denso e os fundos das glândulas. O miométrio, sem submucosa entre ele e o endométrio, é formado por feixes de músculo liso em várias direções (cortados ao comprido e de través), com conjuntivo e vasos entre eles. Esquema: as espessuras estão comprimidas, porque o endométrio real tem milímetros de espessura e o miométrio, mais de um centímetro; e o limite entre as camadas funcional e basal, gradual no corte real, aparece aqui como uma mudança de tom do estroma.",
+      "destaques": [
+        "Fase proliferativa (do fim da menstruação à ovulação, sob estrógeno): a camada funcional se refaz a partir da basal; glândulas retas e estreitas, sem secreção, com mitoses; estroma denso; artérias espiraladas crescendo.",
+        "Para comparar, na fase secretora (sob progesterona): glândulas tortuosas, com vacúolos subnucleares no início e secreção na luz depois, estroma edemaciado e artérias espiraladas mais enroladas.",
+        "Na menstruação, a camada funcional descama (isquemia após a contração das artérias espiraladas); a basal, irrigada por artérias retas, permanece e regenera o endométrio."
+      ],
+      "topicos": [
+        "his-20-reprodutor-feminino"
+      ],
+      "estruturas": [
+        {
+          "id": "epitelio-simples-cilindrico",
+          "nome": "Epitélio de revestimento (simples cilíndrico)",
+          "descricao": "Epitélio simples cilíndrico que reveste a luz uterina, com células secretoras e algumas ciliadas; continua-se com o epitélio das glândulas, que se abrem na superfície."
+        },
+        {
+          "id": "lumen",
+          "nome": "Luz uterina",
+          "descricao": "Cavidade do útero, para a qual se abrem as glândulas endometriais."
+        },
+        {
+          "id": "endometrio-funcional",
+          "nome": "Camada funcional do endométrio",
+          "descricao": "Parte superficial e mais espessa do endométrio, que descama na menstruação e se refaz a cada ciclo. Na fase proliferativa, o estroma é denso e celular (células fusiformes ou ovais, de pouco citoplasma, algumas em mitose). No esquema, o toque no estroma desta camada identifica a camada; glândulas e artérias espiraladas têm áreas próprias."
+        },
+        {
+          "id": "endometrio-basal",
+          "nome": "Camada basal do endométrio",
+          "descricao": "Parte profunda, junto ao miométrio, que não descama: estroma mais denso e os fundos das glândulas, de onde se regeneram o epitélio e as glândulas depois da menstruação. É irrigada por artérias retas (basais), que não sofrem as alterações cíclicas."
+        },
+        {
+          "id": "glandula-endometrial",
+          "nome": "Glândula endometrial",
+          "descricao": "Glândula tubular simples que se abre na superfície. Na fase proliferativa é reta, de luz estreita e sem secreção, com epitélio cilíndrico de núcleos alongados em alturas diferentes e mitoses (as figuras escuras com halo claro)."
+        },
+        {
+          "id": "arteria-espiralada",
+          "nome": "Artéria espiralada",
+          "descricao": "Ramo da artéria radial que sobe pela camada funcional enrolando-se; por isso o corte mostra grupos de pequenos perfis arteriais. Ainda pouco enrolada na fase proliferativa, cresce e se enrola mais na secretora; sua contração antes da menstruação causa a isquemia da camada funcional."
+        },
+        {
+          "id": "miometrio",
+          "nome": "Miométrio",
+          "descricao": "Camada muscular espessa, de feixes de músculo liso em várias direções separados por conjuntivo com vasos (as artérias arqueadas correm na camada média, a mais vascular). Fica em contato direto com a camada basal do endométrio, sem submucosa."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
+    }
+  ]
 }
