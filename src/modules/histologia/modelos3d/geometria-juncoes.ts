@@ -19,7 +19,7 @@ export const JUNCOES = {
   /** raio dos cantos verticais das células */
   canto: 0.08,
   /** faixas (zônulas) em y: [baixo, cima] */
-  oclusao: [0.86, 0.94] as [number, number],
+  oclusao: [0.845, 0.945] as [number, number],
   adesao: [0.66, 0.79] as [number, number],
   /** cinturão de actina: recuo da membrana para dentro e raio do feixe */
   cinturao: { recuo: 0.065, raio: 0.028 },

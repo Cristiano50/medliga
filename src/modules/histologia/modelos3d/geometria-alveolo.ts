@@ -90,6 +90,23 @@ export const DISTANCIA_VIZINHO = 0.7;
 
 export const ALVEOLOS: DefAlveolo[] = alveolosIntactos();
 
+/**
+ * Perfil (x, y) da parede de um alvéolo intacto para LatheGeometry em torno do eixo da boca (+y): face externa,
+ * face interna (a luz, no raio do alvéolo) e a borda da boca. Com as duas faces, quem olha para dentro da taça
+ * vê o revestimento, e não os capilares, que ficam na espessura da parede.
+ */
+export function perfilTaca(raio: number, parede: number, meiaAbertura: number, passos = 14): THREE.Vector2[] {
+  const pts: THREE.Vector2[] = [];
+  const arco = (r: number, i: number) => {
+    const t = meiaAbertura + ((Math.PI - meiaAbertura) * i) / passos;
+    return new THREE.Vector2(Math.max(0, r * Math.sin(t)), r * Math.cos(t));
+  };
+  for (let i = 0; i <= passos; i++) pts.push(arco(raio + parede, i));
+  for (let i = passos; i >= 0; i--) pts.push(arco(raio, i));
+  pts.push(pts[0].clone());
+  return pts;
+}
+
 /** Todas as luzes alveolares (para o teste: capilares sempre fora delas). */
 export function luzesAlveolares(): { id: string; centro: THREE.Vector3; raio: number }[] {
   return [...ALVEOLOS, HEROI].map((a) => ({ id: a.id, centro: vec(a.centro), raio: a.raio }));
@@ -159,18 +176,22 @@ export function capilaresNoModelo(): { curva: THREE.Curve<THREE.Vector3>; raio: 
 }
 
 // ------------------------------------------------------------------------------- células do alvéolo em corte
-/** Núcleos achatados dos pneumócitos tipo I no revestimento (polar, azimute em graus). */
-export const NUCLEOS_TIPO_I: [number, number][] = [[35, 240], [55, 200], [45, 345], [95, 215], [112, 305], [72, 250]];
+/**
+ * Núcleos achatados dos pneumócitos tipo I no revestimento (polar, azimute em graus). Poucos, de propósito:
+ * o tipo I é menos numeroso que o tipo II, mas cada célula cobre uma área muito maior (o revestimento inteiro).
+ */
+export const NUCLEOS_TIPO_I: [number, number][] = [[35, 245], [98, 215]];
 export const RAIO_NUCLEO_TIPO_I = 0.05;
 /** Pneumócitos tipo II: nos cantos, junto à borda onde o alvéolo encontra o saco e os vizinhos. */
-export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338]];
+export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338], [62, 196]];
 /** Células ampliadas em relação ao alvéolo (esquema fora de escala), para serem vistas e tocadas. */
 export const TIPO_II_DIMENSOES: V3 = [0.13, 0.095, 0.13];
 export const RAIO_CORPO_LAMELAR = 0.024;
 /** Corpos lamelares no referencial da célula (y = eixo apical, voltado para a luz). */
 export const CORPOS_LAMELARES_LOCAIS: V3[] = [[-0.032, 0.004, 0.026], [0.03, -0.004, 0.028], [0.004, 0.012, -0.034], [0.0, 0.05, 0.0]];
 export const MACROFAGO = { polar: 25, azimute: 290, raio: 0.072 };
-export const BARREIRA = { polar: 65, azimute: 320, abertura: 0.22 };
+/** Sobre o capilar em anel de 65°, na parede de baixo e de trás (a face interna que a vista padrão mostra). */
+export const BARREIRA = { polar: 65, azimute: 222, abertura: 0.22 };
 export const PORO = { polar: 80, azimute: 270, raioAnel: 0.058, tubo: 0.015, raioCanal: 0.05 };
 
 export function centroNucleoTipoI([polar, az]: [number, number]): THREE.Vector3 {

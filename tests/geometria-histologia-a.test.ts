@@ -27,7 +27,10 @@ import {
 } from '../src/modules/histologia/modelos3d/geometria-nefron.ts';
 import {
   ALVEOLOS,
+  BARREIRA,
+  capilarDe,
   capilaresNoModelo,
+  POLARES_CAPILARES_HEROI,
   centroMacrofago,
   centroNucleoTipoI,
   centroPoro,
@@ -36,6 +39,7 @@ import {
   HEROI,
   luzesAlveolares,
   NUCLEOS_TIPO_I,
+  perfilTaca,
   TIPO_II,
   TIPO_II_DIMENSOES,
 } from '../src/modules/histologia/modelos3d/geometria-alveolo.ts';
@@ -107,7 +111,10 @@ describe('néfron', () => {
     const delgado = amostrar(curvaDescendenteDelgado());
     expect(Math.max(...delgado.map((p) => p.y))).toBeLessThan(REGIOES.juncao);
     const espesso = amostrar(curvaAscendenteEspesso());
-    expect(Math.min(...espesso.map((p) => p.y))).toBeLessThan(REGIOES.juncao - 1);
+    // alça curta de néfron cortical: a curva fica na metade externa da medula, longe da papila
+    const fundo = Math.min(...espesso.map((p) => p.y));
+    expect(fundo).toBeLessThan(REGIOES.juncao - 0.5);
+    expect(fundo).toBeGreaterThan((REGIOES.juncao + REGIOES.base) / 2 - 0.2);
     expect(espesso.at(-1)!.y).toBeGreaterThan(REGIOES.juncao);
     // o túbulo distal termina no ducto coletor
     expect(Math.abs(curvaDistal().getPoint(1).x - DUCTO_X)).toBeLessThan(RAIOS.coletor[0] + 0.01);
@@ -171,12 +178,19 @@ describe('alvéolo', () => {
       expect(d).toBeGreaterThan(HEROI.raio - TIPO_II_DIMENSOES[1]);
       expect(naParede(p[0])).toBe(true);
       expect(centro.z).toBeLessThanOrEqual(0);
-      // "nos cantos": junto da borda da boca, onde o alvéolo encontra o saco e os vizinhos
-      expect(p[0]).toBeGreaterThan(95);
+      // "nos cantos": junto de uma borda da parede — a da boca (encontro com o saco e os vizinhos) ou a do corte
+      const juntoDaBoca = p[0] > 95;
+      const juntoDoCorte = Math.abs(centro.z) < 0.12;
+      expect(juntoDaBoca || juntoDoCorte, `${p}`).toBe(true);
     }
-    // os núcleos do tipo I ficam mais espalhados (cobrem a maior parte da superfície)
+    // tipo I: menos células que o tipo II, espalhadas pelo revestimento (que cobre a superfície inteira)
+    expect(TIPO_II.length).toBeGreaterThan(NUCLEOS_TIPO_I.length);
     const polares = NUCLEOS_TIPO_I.map((p) => p[0]);
     expect(Math.max(...polares) - Math.min(...polares)).toBeGreaterThan(60);
+    // nenhuma célula do tipo II atravessa o plano do corte nem cobre outra
+    for (const p of TIPO_II) expect(centroTipoII(p).z).toBeLessThan(-TIPO_II_DIMENSOES[0] / 2);
+    for (let i = 0; i < TIPO_II.length; i++)
+      for (let j = i + 1; j < TIPO_II.length; j++) expect(centroTipoII(TIPO_II[i]).distanceTo(centroTipoII(TIPO_II[j]))).toBeGreaterThan(TIPO_II_DIMENSOES[0] * 1.5);
   });
 
   it('macrófago na luz, encostado no revestimento; poro na parede, voltado para o alvéolo de trás', () => {
@@ -190,6 +204,30 @@ describe('alvéolo', () => {
     expect(dir.angleTo(direcaoHeroi(80, 270))).toBeLessThan(1e-6);
     // septo entre o alvéolo aberto e o vizinho: as luzes não se tocam
     expect(vizinho.centro.distanceTo(c)).toBeGreaterThan(HEROI.raio + vizinho.raio);
+  });
+
+  it('parede dos alvéolos intactos: face interna no raio da luz, capilares escondidos na espessura da parede', () => {
+    for (const a of ALVEOLOS) {
+      const raios = perfilTaca(a.raio, a.parede, a.meiaAbertura).map((p) => Math.hypot(p.x, p.y));
+      expect(Math.min(...raios), a.id).toBeCloseTo(a.raio, 6);
+      expect(Math.max(...raios), a.id).toBeCloseTo(a.raio + a.parede, 6);
+      const c = capilarDe(a.raio, a.parede);
+      // o capilar não aparece dentro da luz e faz relevo na face externa
+      expect(c.eixo - c.raio, a.id).toBeGreaterThan(a.raio);
+      expect(c.eixo + c.raio, a.id).toBeGreaterThan(a.raio + a.parede);
+    }
+  });
+
+  it('barreira hematoaérea sobre um capilar do septo, na face interna do alvéolo em corte', () => {
+    // a mancha fica no revestimento, em cima de um dos capilares em anel (a parte delgada do septo)
+    expect(POLARES_CAPILARES_HEROI).toContain(BARREIRA.polar);
+    const d = direcaoHeroi(BARREIRA.polar, BARREIRA.azimute);
+    expect(d.z).toBeLessThan(0); // na metade que existe (z ≤ 0)
+    expect(BARREIRA.polar).toBeLessThan(180 - (HEROI.meiaAbertura * 180) / Math.PI);
+    const { eixo, raio } = capilarDe(HEROI.raio, HEROI.parede);
+    // entre o ar (face interna, raio da luz) e o sangue (capilar) sobra só a espessura esquemática da barreira
+    expect(eixo - raio - HEROI.raio).toBeGreaterThan(0);
+    expect(eixo - raio - HEROI.raio).toBeLessThan(HEROI.parede / 2);
   });
 
   it('luzes alveolares não se sobrepõem', () => {

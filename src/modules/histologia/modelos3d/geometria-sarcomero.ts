@@ -31,7 +31,8 @@ export const SARCOMERO = {
   passoCoroa: 0.085,
   raioDiscoZ: 0.44,
   raioDiscoM: 0.42,
-  raioBandas: 0.5,
+  /** as bandas envolvem também os anéis do túbulo T e do retículo: sobra uma borda larga, só de banda, para o toque */
+  raioBandas: 0.66,
   /** anéis do túbulo T e das cisternas terminais em volta da miofibrila */
   raioAnel: 0.58,
   tuboT: 0.026,
@@ -217,7 +218,7 @@ export function geometriaMolasTitina(grossos: Ponto2[], comprimento: number, fat
   return mesclar(
     grossos.map((g, i) => {
       const centro: Ponto2 = [g[0] + DESVIO_TITINA[0], g[1] + DESVIO_TITINA[1]];
-      return new THREE.TubeGeometry(new Helice(comprimento, 0.016, comprimento / 9, i, centro), seg(63, fator, 12), 0.009, seg(3, Math.sqrt(fator)), false);
+      return new THREE.TubeGeometry(new Helice(comprimento, 0.022, comprimento / 9, i, centro), seg(63, fator, 12), 0.011, seg(3, Math.sqrt(fator)), false);
     }),
   );
 }

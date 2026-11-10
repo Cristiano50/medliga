@@ -54,6 +54,7 @@ import {
   RAIO_NUCLEO_TIPO_I,
   orientacaoAlveolo,
   orientacaoTipoII,
+  perfilTaca,
   PORO,
   RAIO_CORPO_LAMELAR,
   SACO,
@@ -214,7 +215,7 @@ export function ModeloNefron() {
       <Parte id="ramo-descendente-delgado" cor={COR_NEFRON.delgado} prioridade={6} acabamentoOrganico>
         <Malha geometria={g.delgado} />
       </Parte>
-      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.12, -0.3, -0.15]}>
+      <Parte id="ramo-ascendente-espesso" cor={COR_NEFRON.espesso} prioridade={6} acabamentoOrganico rotulo={[-0.16, -0.15, -0.18]}>
         <Malha geometria={g.espesso} />
         <Malha geometria={g.tampa} posicao={inicioEspesso} escala={RAIOS.espesso} />
       </Parte>
@@ -271,7 +272,7 @@ export const PARTES_ALVEOLO = [
 
 /** Deslocado para a esquerda: o alvéolo em corte fica perto do centro, para onde a aproximação (pinça/roda) converge. */
 const POSICAO_ALVEOLO: V3 = [-0.45, -0.12, 0.3];
-const chaveTaca = (a: DefAlveolo) => `${(a.raio + a.parede).toFixed(3)}:${a.meiaAbertura.toFixed(4)}`;
+const chaveTaca = (a: DefAlveolo) => `${a.raio}:${a.parede}:${a.meiaAbertura.toFixed(4)}`;
 const chaveCapilar = (a: DefAlveolo) => `${a.raio}:${a.parede}`;
 
 /** Bronquíolo respiratório → ducto alveolar → saco alveolar; o alvéolo maior, à direita, aberto em corte. */
@@ -282,8 +283,8 @@ export function ModeloAlveolo() {
     const tacas: Record<string, THREE.BufferGeometry> = {};
     for (const a of ALVEOLOS) {
       const k = chaveTaca(a);
-      // taça: esfera sem a calota da boca (+y local)
-      tacas[k] ??= new THREE.SphereGeometry(a.raio + a.parede, 32, 20, 0, Math.PI * 2, a.meiaAbertura, Math.PI - a.meiaAbertura);
+      // taça de parede dupla (face externa + revestimento no raio da luz), aberta na boca (+y local)
+      tacas[k] ??= new THREE.LatheGeometry(perfilTaca(a.raio, a.parede, a.meiaAbertura), 32);
     }
     const capilares: Record<string, THREE.BufferGeometry[]> = {};
     for (const a of ALVEOLOS) {

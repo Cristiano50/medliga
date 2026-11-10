@@ -133,7 +133,8 @@ export function curvaProximal(): THREE.CatmullRomCurve3 {
   ]);
 }
 export function curvaDescendenteDelgado(): THREE.CatmullRomCurve3 {
-  return curva([[-1.04, -0.4, 0], [-1.02, -0.75, 0], [-0.99, -1.05, 0], [-0.95, -1.25, 0]]);
+  // alça curta (néfron cortical): desce só até a medula externa
+  return curva([[-1.04, -0.4, 0], [-1.03, -0.52, 0], [-1.01, -0.64, 0], [-0.98, -0.74, 0]]);
 }
 
 /** Ponto do túbulo distal encostado no polo vascular: no ângulo entre as arteríolas, acima das células mesangiais extraglomerulares. */
@@ -144,12 +145,12 @@ export const pontoMacula = (): THREE.Vector3 => polovascular().addScaledVector(v
 export function curvaDistalCompleta(): THREE.CatmullRomCurve3 {
   const m = pontoMacula();
   return curva([
-    [-0.95, -1.25, 0],
-    [-0.91, -1.42, 0.02],
-    [-0.75, -1.52, -0.02],
-    [-0.57, -1.42, -0.08],
-    [-0.36, -1.0, -0.15],
-    [-0.12, -0.3, -0.22],
+    [-0.98, -0.74, 0],
+    [-0.95, -0.88, 0.02],
+    [-0.8, -0.97, -0.02],
+    [-0.62, -0.88, -0.08],
+    [-0.42, -0.6, -0.15],
+    [-0.16, -0.15, -0.22],
     [0.1, 0.4, -0.3],
     [0.12, 0.95, -0.36],
     [-0.05, 1.4, -0.42],

@@ -37,7 +37,7 @@ export const LOBULO = {
   luzMinima: 0.016,
   /** conjuntivo do espaço porta (coluna centrada no vértice) */
   raioPorta: 0.27,
-  raioCanaliculo: 0.014,
+  raioCanaliculo: 0.016,
   /** semieixos da célula de Kupffer (ao longo do sinusoide; transversais) */
   kupffer: [0.06, 0.038] as [number, number],
   /** altura das colunas (veias, espaço porta) acima e abaixo da fatia */
@@ -370,10 +370,11 @@ function construirCanaliculos(placas: Placa[]): Segmento3[] {
       const y = -meia + c * altura + (c - 0.5) * folga;
       segs.push({ a: ponto(p.angulo, ini + 0.01, y), b: ponto(p.angulo, fim - 0.01, y) });
     }
-    // Entre hepatócitos vizinhos da mesma placa: verticais, na folga radial.
+    // Entre hepatócitos vizinhos da mesma placa: verticais, na folga radial, até as faces de corte da fatia
+    // (em cima e embaixo aparecem cortados, entre as células).
     for (let i = 1; i < p.celulas.length; i++) {
       const r = (p.celulas[i - 1][1] + p.celulas[i][0]) / 2;
-      segs.push({ a: ponto(p.angulo, r, -meia + 0.006), b: ponto(p.angulo, r, meia - 0.006) });
+      segs.push({ a: ponto(p.angulo, r, -meia), b: ponto(p.angulo, r, meia) });
     }
   }
   return segs;

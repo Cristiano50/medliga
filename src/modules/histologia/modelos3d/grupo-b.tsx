@@ -301,8 +301,8 @@ function ModeloSarcomero() {
   const discoM = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioDiscoM, SARCOMERO.raioDiscoM, 0.025, 48), []);
   const faixa = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioBandas, SARCOMERO.raioBandas, 1, 48), []);
   const tuboT = useGeo(() => new THREE.TorusGeometry(SARCOMERO.raioAnel, SARCOMERO.tuboT, 8, 56), []);
-  const barra = useGeo(() => new THREE.CylinderGeometry(0.024, 0.024, 1, 12), []);
-  const marca = useGeo(() => new THREE.CylinderGeometry(0.02, 0.02, 0.16, 12), []);
+  const barra = useGeo(() => new THREE.CylinderGeometry(0.035, 0.035, 1, 12), []);
+  const marca = useGeo(() => new THREE.CylinderGeometry(0.028, 0.028, 0.2, 12), []);
 
   const yCota = SARCOMERO.alturaCota;
   const anelEmX: V3 = [0, Math.PI / 2, 0];
@@ -432,7 +432,8 @@ function ModeloJuncoes() {
         <Malha geometria={adesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
         <Malha geometria={adesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
       </Parte>
-      <Parte id="cinturao-de-actina" cor={COR_JUNCOES.actina} prioridade={7} rotulo={[xb, yCinturao, JUNCOES.profundidade / 2 - JUNCOES.cinturao.recuo]}>
+      {/* Visto através da faixa translúcida da zônula de adesão: prioridade um pouco maior que a dela. */}
+      <Parte id="cinturao-de-actina" cor={COR_JUNCOES.actina} prioridade={7.5} rotulo={[xb, yCinturao, JUNCOES.profundidade / 2 - JUNCOES.cinturao.recuo]}>
         <Malha geometria={cinturao} posicao={[xa, yCinturao, 0]} />
         <Malha geometria={cinturao} posicao={[xb, yCinturao, 0]} />
       </Parte>
@@ -457,6 +458,6 @@ function ModeloJuncoes() {
 
 export const MODELOS_HISTO_B: Record<string, ModeloEstagio> = {
   'lobulo-hepatico': { Componente: ModeloLobulo, partes: PARTES_LOBULO, camera: [0, 1.55, 1.3], raio: 1.85 },
-  sarcomero: { Componente: ModeloSarcomero, partes: PARTES_SARCOMERO, camera: [0.45, 0.6, 3], raio: 1.65 },
+  sarcomero: { Componente: ModeloSarcomero, partes: PARTES_SARCOMERO, camera: [0.45, 0.6, 3], raio: 1.7 },
   'juncoes-celulares': { Componente: ModeloJuncoes, partes: PARTES_JUNCOES, camera: [1.1, 0.45, 2.6], raio: 1.55 },
 };

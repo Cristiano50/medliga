@@ -155,7 +155,8 @@ describe('lóbulo hepático clássico', () => {
       const m = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2];
       const placa = g.placas.find((p) => Math.abs(-m[0] * Math.sin(p.angulo) + m[2] * Math.cos(p.angulo)) < 1e-9 && m[0] * Math.cos(p.angulo) + m[2] * Math.sin(p.angulo) > 0);
       expect(placa).toBeTruthy();
-      expect(Math.max(Math.abs(a[1]), Math.abs(b[1]))).toBeLessThan(meia);
+      // não saem da fatia (os verticais chegam até as faces de corte)
+      expect(Math.max(Math.abs(a[1]), Math.abs(b[1]))).toBeLessThanOrEqual(meia + 1e-9);
       if (Math.abs(a[1] - b[1]) > 1e-9) {
         // vertical: na folga entre duas células consecutivas da placa
         const r = Math.hypot(m[0], m[2]);
