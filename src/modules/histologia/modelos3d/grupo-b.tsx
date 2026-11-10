@@ -23,6 +23,7 @@ import {
   geometriaTuboOco,
 } from './geometria-lobulo.ts';
 import {
+  DESVIO_TITINA,
   SARCOMERO,
   bandas,
   geometriaCabecas,
@@ -113,18 +114,23 @@ function ModeloLobulo() {
   const conjuntivo = useGeo(() => new THREE.CylinderGeometry(LOBULO.raioPorta, LOBULO.raioPorta, LOBULO.alturaPorta, 40), []);
 
   const topo = ALTURA_FATIA / 2;
-  const yMoldura = topo + 0.012;
+  const yMoldura = topo + 0.021;
   const apotema = LOBULO.raioHex * Math.cos(Math.PI / 6);
-  // Âncoras dos marcadores na metade voltada para a câmera (+z).
+  // Âncoras dos marcadores: pontos voltados para a câmera padrão (de +z, por cima), no corpo de cada parte.
   const kFrente = lob.kupffer.reduce((m, k) => (k.centro[2] > m.centro[2] ? k : m), lob.kupffer[0]);
   const frente = lob.triades[1];
   const ao = (p: [number, number], y: number): V3 => [p[0], y, p[1]];
+  /** parede externa do vaso voltada para a câmera, acima da fatia */
+  const paredeDaFrente = (v: { centro: [number, number]; raioExterno: number }): V3 => [v.centro[0], 0.17, v.centro[1] + v.raioExterno];
+  // Conjuntivo do espaço porta: borda de fora de uma coluna de trás (atrás dela não há parênquima no raio do toque).
+  const atras = lob.triades[4].vertice;
+  const fora = (LOBULO.raioHex + LOBULO.raioPorta) / LOBULO.raioHex;
   return (
     <group>
       {/* Moldura: limite imaginário entre os espaços porta (no ser humano não há septo em volta do lóbulo). */}
-      <Parte id="lobulo-hepatico" cor={COR_LOBULO.moldura} opacidade={0.6} prioridade={6} rotulo={[0, yMoldura, apotema]}>
-        <Malha geometria={moldura} rotacao={[Math.PI / 2, 0, 0]} posicao={[0, yMoldura + 0.018, 0]} />
-        <Malha geometria={moldura} rotacao={[Math.PI / 2, 0, 0]} posicao={[0, -yMoldura, 0]} />
+      <Parte id="lobulo-hepatico" cor={COR_LOBULO.moldura} opacidade={0.6} prioridade={6} rotulo={[0, yMoldura + 0.009, apotema]}>
+        <Malha geometria={moldura} posicao={[0, yMoldura, 0]} />
+        <Malha geometria={moldura} posicao={[0, -yMoldura, 0]} />
       </Parte>
       <Parte id="veia-centrolobular" cor={COR_LOBULO.veiaCentral} prioridade={6} rugosidade={0.5} rotulo={[0, LOBULO.alturaVasos / 2, LOBULO.raioVeia]}>
         <Malha geometria={veia} />
@@ -132,11 +138,11 @@ function ModeloLobulo() {
       <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.25, topo, 0.95]}>
         <Malha geometria={placas} />
       </Parte>
-      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[0, 0.1, 0.62]}>
+      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[0, 0.12, 0.6]}>
         <Malha geometria={luz} />
       </Parte>
       {/* Casca de Disse em volta da luz: prioridade menor que a do sinusoide que ela envolve. */}
-      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.22} prioridade={5} rotulo={[-0.1, 0.13, 1.1]}>
+      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.22} prioridade={5} rotulo={[0.14, 0.02, 1.07]}>
         <Malha geometria={disse} />
       </Parte>
       <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={kFrente?.centro}>
@@ -145,22 +151,22 @@ function ModeloLobulo() {
       <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[-0.2, topo, 1.05]}>
         <Malha geometria={canaliculos} />
       </Parte>
-      <Parte id="triade-portal" cor={COR_LOBULO.conjuntivo} opacidade={0.34} prioridade={2} rotulo={ao(lob.triades[2].vertice, LOBULO.alturaPorta / 2)}>
+      <Parte id="triade-portal" cor={COR_LOBULO.conjuntivo} opacidade={0.34} prioridade={2} rotulo={[atras[0] * fora, LOBULO.alturaPorta / 2, atras[1] * fora]}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={conjuntivo} posicao={ao(t.vertice, 0)} />
         ))}
       </Parte>
-      <Parte id="ramo-da-veia-porta" cor={COR_LOBULO.veiaPorta} prioridade={6} rugosidade={0.5} rotulo={ao(frente.veia.centro, LOBULO.alturaVasos / 2)}>
+      <Parte id="ramo-da-veia-porta" cor={COR_LOBULO.veiaPorta} prioridade={6} rugosidade={0.5} rotulo={paredeDaFrente(frente.veia)}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={veiaPorta} posicao={ao(t.veia.centro, 0)} />
         ))}
       </Parte>
-      <Parte id="ramo-da-arteria-hepatica" cor={COR_LOBULO.arteria} prioridade={6} rugosidade={0.45} rotulo={ao(frente.arteria.centro, LOBULO.alturaVasos / 2)}>
+      <Parte id="ramo-da-arteria-hepatica" cor={COR_LOBULO.arteria} prioridade={6} rugosidade={0.45} rotulo={paredeDaFrente(frente.arteria)}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={arteria} posicao={ao(t.arteria.centro, 0)} />
         ))}
       </Parte>
-      <Parte id="ducto-biliar" cor={COR_LOBULO.ducto} prioridade={6} rugosidade={0.5} rotulo={ao(frente.ducto.centro, (LOBULO.alturaVasos * 0.94) / 2)}>
+      <Parte id="ducto-biliar" cor={COR_LOBULO.ducto} prioridade={6} rugosidade={0.5} rotulo={paredeDaFrente(frente.ducto)}>
         {lob.triades.map((t, i) => (
           <Malha key={i} geometria={ducto} posicao={ao(t.ducto.centro, 0)} />
         ))}
@@ -299,62 +305,68 @@ function ModeloSarcomero() {
   const reticulo = useGeo(() => geometriaReticulo(fator), [fator]);
   const discoZ = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioDiscoZ, SARCOMERO.raioDiscoZ, 0.035, 48), []);
   const discoM = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioDiscoM, SARCOMERO.raioDiscoM, 0.025, 48), []);
-  const faixa = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioBandas, SARCOMERO.raioBandas, 1, 48), []);
+  // Quatro segmentos ao longo do eixo: anéis de vértices fora das pontas, para as âncoras dos marcadores.
+  const faixa = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioBandas, SARCOMERO.raioBandas, 1, 48, 4), []);
   const tuboT = useGeo(() => new THREE.TorusGeometry(SARCOMERO.raioAnel, SARCOMERO.tuboT, 8, 56), []);
   const barra = useGeo(() => new THREE.CylinderGeometry(0.035, 0.035, 1, 12), []);
   const marca = useGeo(() => new THREE.CylinderGeometry(0.028, 0.028, 0.2, 12), []);
 
   const yCota = SARCOMERO.alturaCota;
   const anelEmX: V3 = [0, Math.PI / 2, 0];
+  // Âncora das bandas: na borda de cima voltada para a câmera (30° do topo), onde o raio do toque passa por
+  // cima da rede de filamentos e só atravessa a banda.
+  const bordaBanda = (x: number): V3 => [x, SARCOMERO.raioBandas * Math.cos(Math.PI / 6), SARCOMERO.raioBandas * Math.sin(Math.PI / 6)];
+  const frenteFino = rede.finos.reduce((m, f) => (f[1] > m[1] ? f : m), rede.finos[0]);
+  const frenteGrosso = rede.grossos.reduce((m, g) => (g[1] + g[0] * 0.1 > m[1] + m[0] * 0.1 ? g : m), rede.grossos[0]);
   return (
     <group>
       <ControleContracao valor={contracao} onMudar={setContracao} />
-      <Parte id="sarcomero" cor={COR_SARCOMERO.cota} prioridade={8} rotulo={[0, yCota, 0]}>
+      <Parte id="sarcomero" cor={COR_SARCOMERO.cota} prioridade={8} rotulo={[0, yCota, 0.035]}>
         <Malha geometria={barra} rotacao={AO_LONGO_DE_X} escala={[1, zDir - zEsq, 1]} posicao={[0, yCota, 0]} />
         <Malha geometria={marca} posicao={[zEsq, yCota, 0]} />
         <Malha geometria={marca} posicao={[zDir, yCota, 0]} />
       </Parte>
-      <Parte id="linha-z" cor={COR_SARCOMERO.linhaZ} opacidade={0.82} prioridade={8} rotulo={[zEsq, SARCOMERO.raioDiscoZ, 0]}>
+      <Parte id="linha-z" cor={COR_SARCOMERO.linhaZ} opacidade={0.82} prioridade={8} rotulo={[zDir, 0.12, SARCOMERO.raioDiscoZ]}>
         <Malha geometria={discoZ} rotacao={AO_LONGO_DE_X} posicao={[zEsq, 0, 0]} />
         <Malha geometria={discoZ} rotacao={AO_LONGO_DE_X} posicao={[zDir, 0, 0]} />
       </Parte>
-      <Parte id="linha-m" cor={COR_SARCOMERO.linhaM} opacidade={0.82} prioridade={8} rotulo={[0, SARCOMERO.raioDiscoM, 0]}>
+      <Parte id="linha-m" cor={COR_SARCOMERO.linhaM} opacidade={0.82} prioridade={8} rotulo={[0, -0.12, SARCOMERO.raioDiscoM]}>
         <Malha geometria={discoM} rotacao={AO_LONGO_DE_X} />
       </Parte>
-      <Parte id="banda-a" cor={COR_SARCOMERO.bandaA} opacidade={0.13} prioridade={1} rotulo={[-meiaA * 0.6, SARCOMERO.raioBandas, 0]}>
+      <Parte id="banda-a" cor={COR_SARCOMERO.bandaA} opacidade={0.13} prioridade={1} rotulo={bordaBanda(-meiaA / 2)}>
         <Malha geometria={faixa} rotacao={AO_LONGO_DE_X} escala={[1, 2 * meiaA, 1]} />
       </Parte>
-      <Parte id="banda-i" cor={COR_SARCOMERO.bandaI} opacidade={0.13} prioridade={1.5} rotulo={[zDir, -SARCOMERO.raioBandas, 0]}>
+      <Parte id="banda-i" cor={COR_SARCOMERO.bandaI} opacidade={0.13} prioridade={1.5} rotulo={bordaBanda(zEsq - meiaI / 2)}>
         <Malha geometria={faixa} rotacao={AO_LONGO_DE_X} escala={[1, 2 * meiaI, 1]} posicao={[zEsq, 0, 0]} />
         <Malha geometria={faixa} rotacao={AO_LONGO_DE_X} escala={[1, 2 * meiaI, 1]} posicao={[zDir, 0, 0]} />
       </Parte>
-      <Parte id="banda-h" cor={COR_SARCOMERO.bandaH} opacidade={0.2} prioridade={2} rotulo={[0, 0, SARCOMERO.raioBandas]}>
+      <Parte id="banda-h" cor={COR_SARCOMERO.bandaH} opacidade={0.2} prioridade={2} rotulo={bordaBanda((b.bandaH[1] - b.bandaH[0]) / 4)}>
         <Malha geometria={faixa} rotacao={AO_LONGO_DE_X} escala={[1.002, Math.max(1e-3, b.bandaH[1] - b.bandaH[0]), 1.002]} />
       </Parte>
-      <Parte id="filamento-fino" cor={COR_SARCOMERO.fino} prioridade={8} rugosidade={0.5} rotulo={[zEsq + 0.35, 0, 0.346]}>
+      <Parte id="filamento-fino" cor={COR_SARCOMERO.fino} prioridade={8} rugosidade={0.5} rotulo={[zDir + meiaI / 2, frenteFino[0], frenteFino[1] + SARCOMERO.raioFino]}>
         {/* Ancorados na linha Z esquerda (para +x) e na direita (girados 180° em y, para −x). */}
         <Malha geometria={finos} posicao={[zEsq, 0, 0]} />
         <Malha geometria={finos} posicao={[zDir, 0, 0]} rotacao={[0, Math.PI, 0]} />
         <Malha geometria={vizinhos} posicao={[zEsq, 0, 0]} rotacao={[0, Math.PI, 0]} />
         <Malha geometria={vizinhos} posicao={[zDir, 0, 0]} />
       </Parte>
-      <Parte id="filamento-grosso" cor={COR_SARCOMERO.grosso} prioridade={8} rugosidade={0.5} rotulo={[0.45, 0.15, 0.26]}>
+      <Parte id="filamento-grosso" cor={COR_SARCOMERO.grosso} prioridade={8} rugosidade={0.5} rotulo={[0.42, frenteGrosso[0], frenteGrosso[1] + 0.1]}>
         {rede.grossos.map((g, i) => (
           <Malha key={i} geometria={haste} rotacao={AO_LONGO_DE_X} posicao={[0, g[0], g[1]]} />
         ))}
         <Malha geometria={cabecas} />
       </Parte>
-      <Parte id="titina" cor={COR_SARCOMERO.titina} prioridade={8} rotulo={[(zEsq - meiaA) / 2, 0.37, 0.17]}>
+      <Parte id="titina" cor={COR_SARCOMERO.titina} prioridade={8} rotulo={[zEsq + meiaI * 0.35, frenteGrosso[0] + DESVIO_TITINA[0], frenteGrosso[1] + DESVIO_TITINA[1] + 0.03]}>
         {/* Mola da banda I (da linha Z à ponta do filamento grosso) e segmento preso ao grosso até a linha M. */}
         <Malha geometria={molas} posicao={[zEsq, 0, 0]} />
         <Malha geometria={molas} posicao={[zDir, 0, 0]} rotacao={[0, Math.PI, 0]} />
         <Malha geometria={titinaA} />
       </Parte>
-      <Parte id="tubulo-t" cor={COR_SARCOMERO.tubuloT} prioridade={8} rotulo={[meiaA, SARCOMERO.raioAnel, 0]}>
+      <Parte id="tubulo-t" cor={COR_SARCOMERO.tubuloT} prioridade={8} rotulo={[meiaA, 0.2, SARCOMERO.raioAnel + SARCOMERO.tuboT]}>
         <Malha geometria={tuboT} rotacao={anelEmX} posicao={[-meiaA, 0, 0]} />
         <Malha geometria={tuboT} rotacao={anelEmX} posicao={[meiaA, 0, 0]} />
       </Parte>
-      <Parte id="reticulo-sarcoplasmatico" cor={COR_SARCOMERO.reticulo} prioridade={8} rotulo={[-meiaA + SARCOMERO.afastamentoCisterna, -SARCOMERO.raioAnel, 0]}>
+      <Parte id="reticulo-sarcoplasmatico" cor={COR_SARCOMERO.reticulo} prioridade={8} rotulo={[-meiaA + SARCOMERO.afastamentoCisterna, -0.2, SARCOMERO.raioAnel + SARCOMERO.tuboCisterna]}>
         <Malha geometria={reticulo} />
       </Parte>
     </group>
@@ -369,7 +381,7 @@ const COR_JUNCOES = {
   microvilos: '#f4a259',
   oclusao: '#0f9488',
   adesao: '#5fb7f0',
-  actina: '#e2483d',
+  actina: '#e02424',
   desmossomo: '#8b5cf6',
   queratina: '#2fbf6a',
   comunicante: '#ec4899',
@@ -428,7 +440,7 @@ function ModeloJuncoes() {
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xb, JUNCOES.oclusao[0], 0]} />
       </Parte>
       {/* Translúcida, para mostrar o cinturão de actina por dentro da célula, na mesma altura. */}
-      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.42} prioridade={7} rotulo={[xa, JUNCOES.adesao[0], frente]}>
+      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.3} prioridade={7} acabamento="padrao" rotulo={[xa, JUNCOES.adesao[0], frente]}>
         <Malha geometria={adesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
         <Malha geometria={adesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
       </Parte>

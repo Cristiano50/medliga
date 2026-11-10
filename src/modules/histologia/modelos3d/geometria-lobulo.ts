@@ -478,7 +478,7 @@ export function geometriaTrechos(trechos: TrechoSinusoide[], recuo: number, fato
   const radiais = seg(18, fator);
   return mesclar(
     trechos.map((t) => {
-      const c = new THREE.CylinderGeometry(t.raioFim - recuo, t.raioInicio - recuo, t.fim - t.inicio, radiais, 1, true);
+      const c = new THREE.CylinderGeometry(t.raioFim - recuo, t.raioInicio - recuo, t.fim - t.inicio, radiais, 2, true);
       return c.applyMatrix4(matrizRadial(t.angulo, (t.inicio + t.fim) / 2));
     }),
   );
@@ -509,21 +509,48 @@ export function geometriaCanaliculos(g = geometriaLobulo(), fator = 1): THREE.Bu
   );
 }
 
-/** Moldura hexagonal (limite imaginário do lóbulo), plana, no plano da forma; o componente a deita. */
-export function geometriaMoldura(largura = 0.06, espessura = 0.018): THREE.ExtrudeGeometry {
-  const meia = largura / 2 / Math.cos(30 * GRAU);
-  const hex = (r: number) => verticesHexagono(r).map(([x, z]) => new THREE.Vector2(x, z));
-  const forma = new THREE.Shape(hex(LOBULO.raioHex + meia));
-  forma.holes.push(new THREE.Path(hex(LOBULO.raioHex - meia)));
-  return new THREE.ExtrudeGeometry(forma, { depth: espessura, bevelEnabled: false });
+/**
+ * Moldura do lóbulo clássico: seis barras ao longo das arestas do hexágono, de um espaço porta ao seguinte
+ * (o limite é uma linha imaginária traçada entre os espaços porta; as barras param no conjuntivo, sem
+ * atravessar os vasos da tríade). Um anel, centrado em y = 0; o componente o põe em cima e embaixo da fatia.
+ */
+export function geometriaMoldura(largura = 0.06, espessura = 0.018): THREE.BufferGeometry {
+  const apotema = LOBULO.raioHex * Math.cos(30 * GRAU);
+  const comprimento = LOBULO.raioHex - 2 * (LOBULO.raioPorta + 0.012);
+  const eixoY = new THREE.Vector3(0, 1, 0);
+  const um = new THREE.Vector3(1, 1, 1);
+  const barras: THREE.BufferGeometry[] = [];
+  for (let k = 0; k < 6; k++) {
+    const meio = (30 + 60 * k) * GRAU;
+    const tangente = meio + Math.PI / 2;
+    // +x da caixa → direção da aresta; segmentos ao longo da aresta dão vértices para a âncora do marcador
+    const q = new THREE.Quaternion().setFromAxisAngle(eixoY, -tangente);
+    const caixa = new THREE.BoxGeometry(comprimento, espessura, largura, 4, 1, 1);
+    barras.push(caixa.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(Math.cos(meio) * apotema, 0, Math.sin(meio) * apotema), q, um)));
+  }
+  return mesclar(barras);
+}
+
+/** Extremos (no plano) de cada barra da moldura, para os testes. */
+export function barrasMoldura(): [Ponto2, Ponto2][] {
+  const apotema = LOBULO.raioHex * Math.cos(30 * GRAU);
+  const meia = LOBULO.raioHex / 2 - (LOBULO.raioPorta + 0.012);
+  return Array.from({ length: 6 }, (_, k) => {
+    const meio = (30 + 60 * k) * GRAU;
+    const c = soma([0, 0], direcao(meio), apotema);
+    return [soma(c, normal(meio), -meia), soma(c, normal(meio), meia)] as [Ponto2, Ponto2];
+  });
 }
 
 /** Tubo de parede (veia, artéria, ducto): perfil retangular girado em torno de y, centrado na origem. */
 export function geometriaTuboOco(raioInterno: number, raioExterno: number, altura: number, segmentos = 40): THREE.LatheGeometry {
   const h = altura / 2;
+  // Dois anéis de vértices a mais na parede externa (±0,55 h), para a âncora do marcador não cair na borda.
   const perfil = [
     new THREE.Vector2(raioInterno, -h),
     new THREE.Vector2(raioExterno, -h),
+    new THREE.Vector2(raioExterno, -0.55 * h),
+    new THREE.Vector2(raioExterno, 0.55 * h),
     new THREE.Vector2(raioExterno, h),
     new THREE.Vector2(raioInterno, h),
     new THREE.Vector2(raioInterno, -h),

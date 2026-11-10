@@ -8,6 +8,7 @@ import {
   ALTURA_FATIA,
   LOBULO,
   RAIO_MAXIMO_TRECHO,
+  barrasMoldura,
   cantosCelula,
   convexosSeCruzam,
   dentroHexagono,
@@ -75,6 +76,27 @@ describe('lóbulo hepático clássico', () => {
       const parede = (x: typeof t.veia) => (x.raioExterno - x.raioInterno) / x.raioInterno;
       expect(parede(t.arteria)).toBeGreaterThan(1);
       expect(parede(t.veia)).toBeLessThan(0.2);
+    });
+  });
+
+  it('moldura do lóbulo: seis barras nas arestas, de um espaço porta ao seguinte, sem entrar no conjuntivo', () => {
+    const v = verticesHexagono();
+    const barras = barrasMoldura();
+    expect(barras).toHaveLength(6);
+    barras.forEach(([a, b], k) => {
+      // sobre a aresta k (entre os vértices k e k+1): alinhada e centrada
+      const [p, q] = [v[k], v[(k + 1) % 6]];
+      const meio = [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+      expect((a[0] + b[0]) / 2).toBeCloseTo(meio[0], 9);
+      expect((a[1] + b[1]) / 2).toBeCloseTo(meio[1], 9);
+      const cruz = (b[0] - a[0]) * (q[1] - p[1]) - (b[1] - a[1]) * (q[0] - p[0]);
+      expect(Math.abs(cruz)).toBeLessThan(1e-9);
+      // cada ponta para logo antes do conjuntivo do espaço porta mais próximo
+      for (const ponta of [a, b]) {
+        const d = Math.min(...v.map((w) => Math.hypot(ponta[0] - w[0], ponta[1] - w[1])));
+        expect(d).toBeGreaterThan(LOBULO.raioPorta);
+        expect(d).toBeLessThan(LOBULO.raioPorta + 0.03);
+      }
     });
   });
 

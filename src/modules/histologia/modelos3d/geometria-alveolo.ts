@@ -183,7 +183,7 @@ export function capilaresNoModelo(): { curva: THREE.Curve<THREE.Vector3>; raio: 
 export const NUCLEOS_TIPO_I: [number, number][] = [[35, 245], [98, 215]];
 export const RAIO_NUCLEO_TIPO_I = 0.05;
 /** Pneumócitos tipo II: nos cantos, junto à borda onde o alvéolo encontra o saco e os vizinhos. */
-export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338], [62, 196]];
+export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338]];
 /** Células ampliadas em relação ao alvéolo (esquema fora de escala), para serem vistas e tocadas. */
 export const TIPO_II_DIMENSOES: V3 = [0.13, 0.095, 0.13];
 export const RAIO_CORPO_LAMELAR = 0.024;
