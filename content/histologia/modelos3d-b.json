@@ -8,8 +8,8 @@
       "contexto": [
         "Esquema fora de escala: uma fatia fina de um lóbulo clássico idealizado. Nos livros, o lóbulo é um prisma mais alto que largo; em reconstruções tridimensionais do fígado humano, as unidades são poliedros de forma e tamanho variáveis. A veia centrolobular e os espaços porta aparecem cortados acima e abaixo da fatia.",
         "Número reduzido de hepatócitos: as células estão muito maiores que na proporção real, por isso há poucas células entre a veia centrolobular e a periferia, e só duas camadas de altura (no setor da frente, uma terceira, translúcida).",
-        "As placas aparecem como paredes retas que se bifurcam em direção à periferia. No fígado real, elas se anastomosam numa rede tridimensional irregular, e os sinusoides formam uma rede contínua entre elas; aqui, cada sinusoide é um tubo liso, sem o endotélio fenestrado desenhado. Os tubos têm calibre quase constante; onde o vão entre as placas alarga, há dois tubos unidos por uma ponte, e passagens atravessam as placas onde falta uma célula, para lembrar a rede. No fígado, os sinusoides não se afunilam em direção à veia centrolobular (no rato, os centrolobulares são mais largos e retos que os periportais).",
-        "O caminho do sangue e o da bile aparece simplificado. De cada espaço porta saem, pelas arestas do hexágono, um ramo terminal da veia porta (violeta) e um da artéria hepática (vermelho), com entradas curtas nas pontas dos sinusoides; seis troncos de sinusoides desembocam na veia centrolobular por orifícios da parede; e um só canal de Hering por espaço porta liga os canalículos de uma placa ao ducto biliar (no fígado, os de todas as placas chegam aos ductos). As setas claras acima da fatia indicam o sentido: as rosadas, o sangue, da periferia para o centro; as verde-claras, a bile, do centro para a periferia.",
+        "As placas aparecem como paredes retas que se bifurcam em direção à periferia. No fígado real, elas se anastomosam numa rede tridimensional irregular, e os sinusoides formam uma rede contínua entre elas; aqui, cada sinusoide é um tubo liso, sem o endotélio fenestrado desenhado. Os tubos têm calibre quase constante; onde o vão entre as placas alarga, há dois tubos unidos por uma ponte, e passagens atravessam as placas, por vãos deixados entre os hepatócitos, para lembrar a rede. Esses vãos não representam perda de células; no esquema, cortam a placa em toda a altura e deixam trechos separados, mas no fígado as placas e a rede de canalículos são contínuas. O calibre desenhado é o mesmo do centro à periferia; no rato, os sinusoides centrolobulares são mais largos e retos que os periportais.",
+        "O caminho do sangue e o da bile aparecem simplificados. De cada espaço porta saem, pelas duas arestas vizinhas do hexágono, ramos terminais da veia porta (violeta) e da artéria hepática (vermelho), com entradas curtas nas pontas dos sinusoides; seis troncos de sinusoides desembocam na veia centrolobular por orifícios da parede (no fígado, muitos sinusoides desembocam nela); e um só canal de Hering por espaço porta liga os canalículos de uma placa ao ducto biliar (no fígado, os de todas as placas chegam aos ductos). As setas claras acima da fatia indicam o sentido: as rosadas, o sangue, da periferia para o centro; as verde-claras, a bile, do centro para a periferia (apontam para o meio das arestas só por simetria: a bile segue até os ductos dos espaços porta).",
         "Espaço porta em todos os seis ângulos, sempre com a tríade completa: idealização. No corte real, os lóbulos são irregulares e nem todo ângulo mostra os três elementos; linfáticos, nervos e células estreladas (de Ito) não estão desenhados.",
         "O espaço de Disse e os canalículos biliares só se resolvem ao microscópio eletrônico; no modelo, estão muito exagerados para poderem ser vistos e tocados. A casca amarela do espaço de Disse cobre só alguns trechos dos sinusoides, para deixar a luz à mostra; no fígado, o espaço acompanha o sinusoide em todo o comprimento.",
         "Os canalículos formam uma rede entre hepatócitos vizinhos da mesma placa. No esquema, são os tubos verdes finos, que correm no meio da espessura da placa, à mesma distância dos sinusoides dos dois lados, sempre entre dois hepatócitos: entre as duas camadas, entre células vizinhas da mesma camada (na face de cima aparecem cortados, como pontos) e, no setor da frente, entre a segunda camada e uma terceira, desenhada translúcida para deixá-los à mostra. Nunca passam pela face do hepatócito voltada para o sinusoide.",
@@ -60,7 +60,7 @@
         {
           "id": "canaliculo-biliar",
           "nome": "Canalículo biliar",
-          "descricao": "Canal estreito entre hepatócitos vizinhos, formado por um sulco na face de contato de cada um, sem parede própria e vedado por zônulas de oclusão; os canalículos formam uma rede na placa e levam a bile para a periferia do lóbulo, onde os canais de Hering a passam ao ducto biliar. No modelo, tubos verdes finos entre as camadas e entre células vizinhas da mesma camada, e o canal de Hering, mais calibroso, da ponta de uma placa ao ducto biliar."
+          "descricao": "Canal estreito entre hepatócitos vizinhos, formado por um sulco na face de contato de cada um, sem parede própria e vedado por zônulas de oclusão; os canalículos formam uma rede na placa e levam a bile para a periferia do lóbulo, onde os canais de Hering a passam ao ducto biliar. No modelo, tubos verdes finos entre as camadas e entre células vizinhas da mesma camada, e, na mesma cor, o canal de Hering, mais calibroso, da ponta de uma placa ao ducto biliar; o canal de Hering não é um canalículo: é o trecho seguinte, revestido em parte por hepatócitos e em parte por colangiócitos."
         },
         {
           "id": "triade-portal",
@@ -70,12 +70,12 @@
         {
           "id": "ramo-da-veia-porta",
           "nome": "Ramo da veia porta",
-          "descricao": "Maior vaso do espaço porta, de luz ampla e parede fina; traz o sangue venoso do tubo digestivo, do baço e do pâncreas, rico em nutrientes e pobre em oxigênio, que ramos de distribuição levam aos sinusoides."
+          "descricao": "Maior vaso do espaço porta, de luz ampla e parede fina; traz o sangue venoso do tubo digestivo, do baço e do pâncreas, rico em nutrientes e pobre em oxigênio, que ramos de distribuição levam aos sinusoides. No modelo, o tubo violeta do espaço porta e os ramos terminais finos que saem dele pelas arestas do hexágono, com entradas nos sinusoides."
         },
         {
           "id": "ramo-da-arteria-hepatica",
           "nome": "Ramo da artéria hepática",
-          "descricao": "Arteríola do espaço porta, menor que o ramo portal e de parede muscular espessa em relação à luz; traz sangue oxigenado, que se mistura ao portal nos sinusoides, e irriga os ductos biliares."
+          "descricao": "Arteríola do espaço porta, menor que o ramo portal e de parede muscular espessa em relação à luz; traz sangue oxigenado, que se mistura ao portal nos sinusoides, e irriga os ductos biliares. No modelo, o tubo vermelho do espaço porta e os ramos terminais finos que saem dele pelas arestas do hexágono, com entradas nos sinusoides."
         },
         {
           "id": "ducto-biliar",
@@ -100,6 +100,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção menor (a cor vermelha do sinusoide não indica sangue arterial: sangue misto, em maior parte portal). Conferidos em texto integral: tributárias da veia porta (tubo digestivo, baço, pâncreas e vesícula), bile em contracorrente ao sangue, gradiente de oxigênio periportal → centrolobular, zona 3 como sede da lesão por paracetamol, linfa formada no espaço de Disse, plexo peribiliar arterial. Sem número clínico no texto. Relatório: content/revisoes/modelos3d-histologia-b.md."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-3d-histologia-v1",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: os três P2 da 1ª rodada foram resolvidos (sinusoides em rede, de calibre quase constante; orifícios na veia centrolobular, ramos terminais pelas arestas, canal de Hering e setas com o sentido certo; canalículos finos só entre hepatócitos, com a camada translúcida). Nenhum P1. Resta 1 P2 novo: o marcador de \"Canalículo biliar\" está ancorado no canal de Hering, que não é canalículo. P3 (6): as passagens cortam a placa em toda a altura e deixam 18 trechos de uma só célula, com um toco de canalículo isolado (não se leem como necrose nem como falha da placa limitante, que não está desenhada); setas da bile apontam para o meio da aresta, e não para o espaço porta; densidade na tela do celular; canalículos visíveis nas fendas pela face sinusoidal; tríades idênticas; Disse em mangas curtas, sem endotélio. Texto: as 14 frases trocadas pelo desenhista foram conferidas; 7 ajustes mínimos (passagens, calibre, concordância e plural dos ramos, orifícios, setas da bile, canal de Hering não é canalículo, ramos terminais nas estruturas dos dois vasos). Relatório: content/revisoes/modelos3d-histologia-b.md, seção 9."
           }
         ],
         "humano": null
@@ -170,7 +177,7 @@
         {
           "id": "filamento-grosso",
           "nome": "Filamento grosso (miosina II)",
-          "descricao": "Feixe bipolar de moléculas de miosina II com cerca de 1,6 µm: as cabeças, que formam as pontes cruzadas e hidrolisam ATP, voltam-se para as linhas Z, e o centro, junto da linha M, não tem cabeças."
+          "descricao": "Feixe bipolar de moléculas de miosina II com cerca de 1,6 µm: as cabeças, que formam as pontes cruzadas e hidrolisam ATP, voltam-se para as linhas Z, e o centro, junto da linha M, não tem cabeças (no esquema, a cintura mais fina do filamento)."
         },
         {
           "id": "titina",
@@ -205,6 +212,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "1 correção menor (papel do Ca²⁺ e da troponina C, que o modelo citava sem dizer o que fazem). Conferidos: banda A constante e bandas I e H mais curtas na contração; tríade na junção A-I no músculo esquelético de mamíferos e túbulos T na linha Z, com díades, no cardíaco; receptor de rianodina e SERCA; titina da linha Z à linha M, elástica na banda I e responsável por manter o filamento grosso centrado. Sem número clínico no texto. Relatório: content/revisoes/modelos3d-histologia-b.md."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-3d-histologia-v1",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: os dois P2 foram resolvidos (legenda \"Esquema: … ≈\", com uma casa decimal; filamentos finos dos sarcômeros vizinhos girados 30°, fora da linha dos do sarcômero central), e a zona nua aparece como cintura do filamento grosso. Nenhum P1, nenhum P2 e nenhum erro novo. Restam 4 P3 (cabeças fixas e sem contato com os finos; retículo e túbulo T como anéis; uma titina por meio filamento; constantes de rã × humanas, para decisão do revisor humano). Texto: a frase trocada pelo desenhista foi conferida, sem mudança; 1 acréscimo (a cintura do filamento grosso é a zona sem cabeças). Relatório: content/revisoes/modelos3d-histologia-b.md, seção 9."
           }
         ],
         "humano": null
@@ -217,7 +231,7 @@
       "escala": "Esquema fora de escala",
       "contexto": [
         "Esquema fora de escala: o espaço entre as células, de poucas dezenas de nanômetros, as junções e os filamentos foram muito aumentados em relação ao tamanho das células.",
-        "Só duas células: num epitélio, cada célula tem vizinhas em todos os lados e as zônulas circundam a célula inteira, por isso as faixas aparecem também nas faces sem vizinha desenhada.",
+        "Só duas células: num epitélio, cada célula tem vizinhas em todos os lados e as zônulas circundam a célula inteira, por isso as faixas, e os bastonetes da zônula de adesão, aparecem também nas faces sem vizinha desenhada.",
         "Desmossomos e junção comunicante estão desenhados só na face lateral comum; a posição da junção comunicante na face lateral varia, e ela não faz parte do complexo juncional. Na junção comunicante, cada bastão rosa, em duas metades, representa um par de conexons, um de cada célula; ali as membranas se aproximam até cerca de 2 nm, estreitamento que o esquema mostra, muito atenuado, como um ressalto de cada membrana.",
         "A zônula de oclusão aparece como faixa contínua; ao microscópio eletrônico, ela se vê como pontos de fusão das membranas, formados por fileiras de claudinas e ocludina. A zônula de adesão aparece como uma placa azul por dentro de cada membrana, com bastonetes que cruzam o espaço entre as células: os bastonetes representam as caderinas, e nessa junção o espaço intercelular não é obliterado.",
         "Microvilosidades em número muito menor e mais grossas que as reais; o eixo de actina de cada uma e a trama terminal não foram desenhados. Núcleos sem detalhe; organelas omitidas.",
@@ -264,7 +278,7 @@
         {
           "id": "desmossomo",
           "nome": "Desmossomo",
-          "descricao": "Junção em forma de disco (mácula de adesão): desmogleínas e desmocolinas no espaço entre as células e, de cada lado, uma placa citoplasmática que ancora filamentos de queratina; dá resistência mecânica. O mais apical completa o complexo juncional. Nos epitélios simples, predominam a desmogleína 2 e a desmocolina 2; as desmogleínas 1 e 3, alvos dos pênfigos, são expressas sobretudo nos epitélios estratificados."
+          "descricao": "Junção em forma de disco (mácula de adesão): desmogleínas e desmocolinas no espaço entre as células e, de cada lado, uma placa citoplasmática que ancora filamentos de queratina; dá resistência mecânica. O mais apical completa o complexo juncional. Nos epitélios simples, predominam a desmogleína 2 e a desmocolina 2; as desmogleínas 1 e 3, alvos dos pênfigos, são expressas sobretudo nos epitélios estratificados. No esquema, as duas placas roxas, os bastonetes entre elas (as caderinas) e a linha densa central."
         },
         {
           "id": "filamentos-de-queratina",
@@ -304,6 +318,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 correções (1 importante, 1 menor). Importante: os pênfigos e o penfigoide bolhoso são doenças da pele e das mucosas de epitélio estratificado; os alvos são as desmogleínas 1 e 3 e BP180/BP230, e não as junções do epitélio simples desenhado (coerente com his-02). Menor: a zônula de oclusão veda a via paracelular com permeabilidade seletiva, que depende das claudinas. Conferidos: funções de cada junção, conexon de seis conexinas, E-caderina e cateninas, integrina α6β4 e plectina. Sem número clínico no texto. Relatório: content/revisoes/modelos3d-histologia-b.md."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-3d-histologia-v1",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: o P2 foi resolvido (zônula de adesão com placa citoplasmática e bastonetes de caderina, com o espaço intercelular à mostra), e também três P3 (junção comunicante com ressalto das membranas e canais em duas metades; desmossomo com placas, bastonetes e linha central; microvilosidades no tom da célula). Nenhum P1, nenhum P2 e nenhum erro novo. Restam 3 P3 (queratina só em alças e fios; microvilosidades sem eixo de actina; lâmina basal sem lâmina reticular). Texto: as 5 frases trocadas pelo desenhista foram conferidas, sem mudança; 2 acréscimos (os bastonetes também aparecem nas faces sem vizinha; como o desmossomo aparece no esquema). Relatório: content/revisoes/modelos3d-histologia-b.md, seção 9."
           }
         ],
         "humano": null

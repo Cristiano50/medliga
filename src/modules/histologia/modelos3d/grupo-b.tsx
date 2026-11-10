@@ -27,6 +27,7 @@ import {
   geometriaTubos,
   geometriaVeiaCentral,
   pontoAxial,
+  ALTURA_CANALICULO_SETOR,
 } from './geometria-lobulo.ts';
 import {
   DESVIO_TITINA,
@@ -172,7 +173,16 @@ function ModeloLobulo() {
   const fora = (LOBULO.raioHex + LOBULO.raioPorta) / LOBULO.raioHex;
   const eixoFrente = 30 * grau; // vão do meio de uma aresta, à direita do setor translúcido
   const e = estacoesSinusoides(lob.placas);
-  const h = lob.hering[1];
+  // Âncora do marcador de "Canalículo biliar": um canalículo do setor translúcido (entre a segunda e a terceira
+  // camadas), e não o canal de Hering, que é mais calibroso mas não é canalículo (revisão científica, v2).
+  const ancoraCanaliculo = useMemo(() => {
+    const noSetor = lob.canaliculos.filter(
+      (c) => Math.abs(c.a[1] - ALTURA_CANALICULO_SETOR) < 1e-6 && Math.abs(c.b[1] - ALTURA_CANALICULO_SETOR) < 1e-6,
+    );
+    const comp = (c: (typeof noSetor)[number]) => Math.hypot(c.b[0] - c.a[0], c.b[2] - c.a[2]);
+    const c = noSetor.sort((x, y) => comp(y) - comp(x))[0] ?? lob.canaliculos[0];
+    return [(c.a[0] + c.b[0]) / 2, (c.a[1] + c.b[1]) / 2, (c.a[2] + c.b[2]) / 2] as [number, number, number];
+  }, [lob]);
   return (
     <group>
       {/* Moldura tracejada: limite imaginário entre os espaços porta (no ser humano não há septo em volta do lóbulo). */}
@@ -202,8 +212,7 @@ function ModeloLobulo() {
       <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={pontoAxial(eixoFrente, 0.87, 0, LOBULO.luz)}>
         <Malha geometria={kupffer} />
       </Parte>
-      {/* Âncora no canal de Hering da tríade da frente (trecho mais calibroso e à mostra no conjuntivo). */}
-      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[(h.a[0] + h.b[0]) / 2, h.a[1] + LOBULO.raioHering, (h.a[2] + h.b[2]) / 2]}>
+      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={ancoraCanaliculo}>
         <Malha geometria={canaliculos} />
       </Parte>
       <Parte id="triade-portal" cor={COR_LOBULO.conjuntivo} opacidade={0.34} prioridade={2} rotulo={[atras[0] * fora, LOBULO.alturaPorta / 2, atras[1] * fora]}>

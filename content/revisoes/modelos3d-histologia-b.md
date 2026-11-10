@@ -321,3 +321,116 @@ Acesso em 2026-11-10, por curl. "Integral" = corpo do artigo lido (XML do Europe
 | Santi CG et al. An Bras Dermatol 2019 (consenso da SBD, penfigoides) | PMID 31166405 · [PMC6544032](https://pmc.ncbi.nlm.nih.gov/articles/PMC6544032/) | integral | "IgG autoantibodies are produced against antigens of the basement membrane zone (BMZ)-180kDa and 230kDa -collagen XVII, COL17 or BPAg2, and BPAg1"; dermatoses bolhosas subepidérmicas |
 
 **Não abertos:** Junqueira e Carneiro, Ross e Pawlina, Guyton e Hall (livros); Vollmar e Menger, Physiol Rev 2009 (journals.physiology.org: "CONNECT tunnel failed, response 403"); texto integral de McCuskey 2008 (PMID 18484612) e de Wake e Sato 2015 (PMID 26332299), lidos só no resumo e não usados como prova; texto integral de Gordon, Huxley e Julian 1966 (PDF digitalizado) e de Burkholder e Lieber 2001 (PMID 11296141); Walker e Schrodt 1974 (PMID 4202806, sem resumo no PubMed). O OAI do PMC respondeu "cannotDisseminateFormat" para os artigos sem licença aberta, e as páginas do PMC devolveram verificação anti-robô em parte das tentativas; nesses casos a leitura foi refeita com intervalo entre os pedidos.
+
+## 9. Reavaliação do desenho (v2)
+
+- Agente: `revisor-3d-histologia-v1` · Data: 2026-11-10 · Objeto: o desenho depois das correções do desenhista (commit 2bbae59), avaliado pelas pranchas antes × depois, pelas vistas avulsas e pelas vistas padrão nos dois tamanhos, e pela leitura de `geometria-lobulo.ts` e `grupo-b.tsx`; e as 20 frases que o desenhista trocou em `modelos3d-b.json`.
+- Alterado nesta reavaliação: só `content/histologia/modelos3d-b.json` (10 trechos e 3 entradas em `revisao.agentes`) e esta seção. Nenhum código. As seções 1 a 8 descrevem a 1ª rodada e ficaram como estavam.
+
+### Resultado
+
+| Modelo | P2 da 1ª rodada | P1 | P2 que restam | P3 que restam | Veredito |
+|---|---|---|---|---|---|
+| lobulo-hepatico | 3 de 3 resolvidos | 0 | 1 (novo) | 6 | aprovado-com-correcoes |
+| sarcomero | 2 de 2 resolvidos | 0 | 0 | 4 | aprovado-com-correcoes |
+| juncoes-celulares | 1 de 1 resolvido | 0 | 0 | 3 | aprovado-com-correcoes |
+
+**Nenhum P1 e nenhum erro novo de conteúdo.** O redesenho do lóbulo criou um P2 pequeno (uma âncora de marcador) e três P3.
+
+### Lóbulo hepático
+
+**P2 da 1ª rodada**
+
+- P2-1, sinusoides em funil: **resolvido**. Rede de tubos de calibre quase constante (`LOBULO.luz` 0,042; tronco 0,05), com pontes e passagens.
+- P2-2, sangue e bile sem caminho: **resolvido**. Seis orifícios na veia (`geometriaVeiaCentral()`), ramos terminais violeta e vermelho por fora das arestas, com entrada em cada ponta de sinusoide (`construirRamos()`), um canal de Hering por espaço porta (`construirHering()`) e setas (`geometriaSetas()`).
+- P2-3, canalículos como canos salientes: **resolvido**. Tubos de raio 0,012 só entre hepatócitos; na face de cima aparecem como pontos; no setor de 60° a 120°, a terceira camada translúcida mostra o canalículo entre duas células.
+
+**Pontos que o coordenador pediu para olhar**
+
+| Ponto | Avaliação |
+|---|---|
+| Passagens através das placas | Não se leem como necrose (cada vão é ocupado por um tubo de sinusoide) nem como falha da placa limitante (ficam na 2ª posição depois de cada forquilha, no interior do lóbulo, e a placa limitante não está desenhada). O problema é outro: cortam a placa em toda a altura. Ver P3-2. |
+| Ramos terminais pelas arestas | Coerentes com a irrigação pela periferia do lóbulo clássico: saem de cada espaço porta, correm por fora das duas arestas vizinhas até perto do meio e dão uma entrada a cada ponta de sinusoide. Calibre maior que o do sinusoide na vênula e menor na arteríola. Nada a corrigir. |
+| Canal de Hering | Posição correta (da ponta de uma placa periférica ao ducto, atravessando o conjuntivo) e mais calibroso que o canalículo. Pertence à parte `canaliculo-biliar`, por falta de id próprio. Ver P2-1. |
+| Sentido das setas | Correto: rosadas para o centro, sobre os eixos dos vértices; verde-claras para a periferia. Ver P3-3 para a posição das da bile. |
+| Camada translúcida, único lugar com núcleos | Coerente: um núcleo por célula, duas células binucleadas, e o texto avisa. Não sugere outro tipo de célula. Nada a corrigir. |
+| Legibilidade | A vista de cima e a do espaço porta leem bem. Na vista padrão do celular, o modelo está no limite. Ver P3-4. |
+
+**P1:** nenhum.
+
+**P2**
+
+1. **O marcador de "Canalículo biliar" aponta para o canal de Hering.** Em `ModeloLobulo`, o `rotulo` de `<Parte id="canaliculo-biliar">` usa `lob.hering[1]` (comentário: "Âncora no canal de Hering da tríade da frente"). Nas pranchas, o marcador 7 cai sobre o tubo grosso dentro do conjuntivo do espaço porta, ao lado do ducto. O canal de Hering não é canalículo (é revestido em parte por colangiócitos), e o aluno que pede "Canalículo biliar" é levado ao lugar errado. **Fazer:** ancorar o marcador num canalículo de verdade, à mostra: o trecho horizontal entre a segunda camada e a terceira, no setor translúcido (y = `ALTURA_CANALICULO_SETOR`). O texto da estrutura passou a dizer que o canal de Hering não é um canalículo. Se um dia couber um id novo, `canal-de-hering` já existe em his-15.
+
+**P3**
+
+2. **As passagens cortam a placa em toda a altura e deixam trechos de uma só célula.** `construirPlacas()`: em cada placa B e C do lado de ângulo crescente, a 2ª posição fica vazia (`celulas: [0, 2, 3]`; na zona C, `celula(inicioC, 0)` e depois `i = 2`), nas duas camadas e também na terceira, translúcida. Sobram 18 trechos de uma célula, cada um com um toco de canalículo de 0,04 sem ligação com a rede (`fragmentos()` e `construirCanaliculos()`), e as placas parecem cordões curtos, e não lâminas anastomosadas. Fazer: abrir a passagem como janela numa só camada (tubo em y ≈ ±0,076, e não em y = 0), mantendo o hepatócito da outra camada e o canalículo contínuo. O aviso de `contexto` foi ajustado.
+3. **Setas da bile sobre os eixos das placas A.** `geometriaSetas('bile')`: eixos de 30° + 60°k, de 0,74 a 0,94. Apontam para o meio da aresta, onde não há ducto. Fazer: pôr as setas sobre as placas que levam ao canal de Hering (ângulo do vértice − 7,5°) ou incliná-las para o espaço porta mais próximo. O aviso passou a dizer que a bile segue até os ductos.
+4. **Densidade no celular.** Em `lobulo-hepatico-390x844-baixa.png` (v2), o magenta domina, e as mangas de Disse e as 18 células de Kupffer quase não se veem; dependem do zoom ou do modo isolado. Opcional: baixar a opacidade do sinusoide (0,45) ou reduzir as pontes.
+5. **Canalículos verticais visíveis pela face sinusoidal.** Raio 0,012 numa fenda de 0,012 entre células: na vista do espaço porta, aparecem como linhas verdes na face voltada para o sinusoide. Opcional: raio 0,008 nos trechos verticais.
+6. **Tríades idênticas e sem placa limitante** (P3-9 da 1ª rodada).
+7. **Espaço de Disse em mangas curtas, sem endotélio** (P3-4 da 1ª rodada; o aviso cobre).
+
+Resolvidos da lista de P3 da 1ª rodada: cor do sinusoide (magenta), moldura (tracejada, cinza), pontas dos canalículos (`recuoCanaliculo` 0,035), núcleos (na camada translúcida).
+
+### Sarcômero
+
+- P2-1, legenda: **resolvido**. "Esquema: sarcômero ≈ 2,5 µm · A ≈ 1,6 µm (constante) · I ≈ 0,9 µm · H ≈ 0,5 µm"; contraído, "≈ 2,1 · 1,6 · 0,5 · 0,1".
+- P2-2, filamentos finos em linha: **resolvido**. Os dos sarcômeros vizinhos estão girados 30° e não continuam os do sarcômero central.
+- Zona nua: agora marcada por uma cintura no filamento grosso; leitura correta do trecho sem cabeças.
+
+**P1:** nenhum. **P2:** nenhum. Nenhum erro novo.
+
+**P3 que restam (4):** cabeças fixas e sem contato com os finos; retículo e túbulo T como anéis soltos; uma titina por meio filamento; constantes de rã × humanas (decisão do revisor humano, §6, ponto 4).
+
+### Junções celulares
+
+- P2-1, zônula de adesão: **resolvido**. Placa por dentro de cada membrana, bastonetes de caderina cruzando a fenda aberta e cinturão de actina encostado na placa. Os bastonetes também saem nas faces sem vizinha, coerente com o aviso das zônulas.
+- P3 resolvidos: junção comunicante (ressalto das membranas, canais em duas metades com poro), desmossomo (placas, bastonetes e linha central), cor das microvilosidades.
+
+**P1:** nenhum. **P2:** nenhum. Nenhum erro novo.
+
+**P3 que restam (3):** queratina só em alças e fios; microvilosidades sem eixo de actina; lâmina basal sem lâmina reticular.
+
+### As 20 frases trocadas pelo desenhista
+
+Conferidas uma a uma contra o desenho v2 (14 do lóbulo, 1 do sarcômero, 5 das junções). Dezessete ficaram como estavam; três, todas do lóbulo, receberam ajustes mínimos, em cinco trechos:
+
+| modelo | campo | antes | depois | motivo |
+|---|---|---|---|---|
+| lóbulo | `contexto[2]` | "passagens atravessam as placas onde falta uma célula, para lembrar a rede. No fígado, os sinusoides não se afunilam em direção à veia centrolobular (no rato, …)." | "passagens atravessam as placas, por vãos deixados entre os hepatócitos, para lembrar a rede. Esses vãos não representam perda de células; no esquema, cortam a placa em toda a altura e deixam trechos separados, mas no fígado as placas e a rede de canalículos são contínuas. O calibre desenhado é o mesmo do centro à periferia; no rato, os sinusoides centrolobulares são mais largos e retos que os periportais." | "Onde falta uma célula" sugere perda; a frase sobre o funil ficou sem objeto depois do redesenho. Rede contínua de canalículos: Boyer 2013 ("'chicken wire' mesh of interconnecting conduits"). |
+| lóbulo | `contexto[3]` | "O caminho do sangue e o da bile aparece simplificado. De cada espaço porta saem, pelas arestas do hexágono, um ramo terminal da veia porta (violeta) e um da artéria hepática (vermelho)…" | "…aparecem simplificados. De cada espaço porta saem, pelas duas arestas vizinhas do hexágono, ramos terminais da veia porta (violeta) e da artéria hepática (vermelho)…" | Concordância; são dois ramos de cada vaso por espaço porta. |
+| lóbulo | `contexto[3]` | "…por orifícios da parede;" | "…por orifícios da parede (no fígado, muitos sinusoides desembocam nela);" | Seis é número do esquema (Wisse 1983, resumo: "numerous sinusoidal outlets"). |
+| lóbulo | `contexto[3]` | "as verde-claras, a bile, do centro para a periferia." | "+ (apontam para o meio das arestas só por simetria: a bile segue até os ductos dos espaços porta)." | Aviso para o P3-3. |
+| lóbulo | estrutura `canaliculo-biliar` | "e o canal de Hering, mais calibroso, da ponta de uma placa ao ducto biliar." | "e, na mesma cor, o canal de Hering, mais calibroso, da ponta de uma placa ao ducto biliar; o canal de Hering não é um canalículo: é o trecho seguinte, revestido em parte por hepatócitos e em parte por colangiócitos." | A parte tocável junta as duas coisas (P2-1). Boyer 2013; Strazzabosco e Fabris 2008. |
+
+Acréscimos fora das 20 frases, para o texto acompanhar o que passou a ser desenhado:
+
+| modelo | campo | acréscimo |
+|---|---|---|
+| lóbulo | estruturas `ramo-da-veia-porta` e `ramo-da-arteria-hepatica` | "No modelo, o tubo violeta [vermelho] do espaço porta e os ramos terminais finos que saem dele pelas arestas do hexágono, com entradas nos sinusoides." |
+| sarcômero | estrutura `filamento-grosso` | "…não tem cabeças (no esquema, a cintura mais fina do filamento)." |
+| junções | `contexto[1]` | "por isso as faixas, e os bastonetes da zônula de adesão, aparecem também nas faces sem vizinha desenhada." |
+| junções | estrutura `desmossomo` | "No esquema, as duas placas roxas, os bastonetes entre elas (as caderinas) e a linha densa central." (Farquhar e Palade 1963: "a central disc of dense material") |
+
+### Para o revisor humano
+
+- O P2 que resta no lóbulo é uma linha de código (a âncora do marcador). Até ser corrigido, quem escolhe "Canalículo biliar" na legenda vê o marcador sobre o canal de Hering.
+- "No fígado as placas são contínuas" repete a descrição dos livros e de his-15 (placas que se anastomosam); não li fonte primária que descreva a placa como lâmina perfurada.
+
+### Evidência
+
+```
+$ python3 aplicar-v2.py content/histologia/modelos3d-b.json modelos3d-b.ANTES-v2.json   # script da revisão, fora do repositório
+trocas aplicadas: 10; entradas de revisão acrescentadas: 3
+ids, nomes, lista de estruturas, descrição, destaques e as duas entradas anteriores de cada modelo iguais; revisao.humano = null
+
+$ npm run validar-conteudo
+Conteúdo OK — disciplinas: embriologia, histologia; tópicos: 45; questões: 1363; escolas: 441.
+
+$ npx vitest run
+ Test Files  17 passed (17)
+      Tests  189 passed (189)
+```
+
+Nada foi commitado nesta reavaliação.
