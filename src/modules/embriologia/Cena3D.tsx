@@ -3,7 +3,7 @@ import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
-import { CenaProvider, Tocavel, type EstadoDestaque } from './tres/nucleo.tsx';
+import { CenaProvider, Tocavel, type CenaCtx, type EstadoDestaque } from './tres/nucleo.tsx';
 import { MODELOS, type ModeloEstagio } from './modelos/index.ts';
 import { CamadaMarcadores, RotulosProvider, type QuadroMarcadores } from './tres/rotulos.tsx';
 import { perfilDoModelo, type Perfil3D } from '../tres3d/perfis.ts';
@@ -33,15 +33,16 @@ function Exposicao({ perfil }: { perfil: Perfil3D }) {
   return null;
 }
 
-function Corte({ posicao }: { posicao: number | null }) {
-  const { gl, invalidate } = useThree();
-  const plano = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, -1), 0), []);
+/** Aplica ao renderer os planos de corte que o Cena3D já entregou às partes pelo contexto (mesma lista). */
+function Corte({ posicao, plano, planos }: { posicao: number | null; plano: THREE.Plane; planos: THREE.Plane[] }) {
+  const gl = useThree((s) => s.gl);
+  const invalidate = useThree((s) => s.invalidate);
   useEffect(() => {
     plano.constant = posicao ?? 0;
-    gl.clippingPlanes = posicao === null ? [] : [plano];
+    gl.clippingPlanes = planos;
     invalidate();
     return () => { gl.clippingPlanes = []; invalidate(); };
-  }, [posicao, plano, gl, invalidate]);
+  }, [posicao, plano, planos, gl, invalidate]);
   return null;
 }
 
@@ -88,6 +89,10 @@ export interface Cena3DProps {
   perfil?: Perfil3D;
 }
 
+const SEM_DESTAQUES: Record<string, EstadoDestaque> = {};
+const SEM_OCULTOS: string[] = [];
+const SEM_PLANOS: THREE.Plane[] = [];
+
 export function Cena3D(p: Cena3DProps) {
   const modelo = p.modelo ?? MODELOS[p.estagioId];
   const Componente = modelo?.Componente;
@@ -95,7 +100,7 @@ export function Cena3D(p: Cena3DProps) {
   const nivel = useNivelQualidade();
   const qualidade = PARAMETROS[nivel];
   const fator = semWebGL() ? 1 : qualidade.fator;
-  const ocultos = p.modoJogo ? [] : p.ocultos;
+  const ocultos = p.modoJogo ? SEM_OCULTOS : p.ocultos;
   const isolado = p.modoJogo ? null : p.isolado;
   const corte = p.modoJogo ? null : p.corte;
   // Sombras só na exploração livre: o clipping do corte é global e o isolamento/ocultação mudam a silhueta.
@@ -110,6 +115,19 @@ export function Cena3D(p: Cena3DProps) {
   const acabamento = useMemo<AmbienteAcabamento>(
     () => ({ ...acabamentoDoPerfil(perfil.tipo), nivel, saturacao: perfil.ajusteCor?.saturacao, luminosidade: perfil.ajusteCor?.luminosidade }),
     [perfil, nivel],
+  );
+  // Contexto estável: a atualização dos marcadores (setQuadro) re-renderiza só o Cena3D. Com um objeto novo a
+  // cada render, todas as partes re-renderizavam e pediam mais um quadro inteiro por seleção ou marcador.
+  const numeros = useMemo(() => Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])), [modelo]);
+  // Planos de corte no fluxo do React: as partes (contorno de seleção) recebem a lista no mesmo render em que
+  // o corte liga ou desliga, sem depender de um re-render posterior para ler gl.clippingPlanes.
+  const plano = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, -1), 0), []);
+  const cortando = corte != null;
+  const planos = useMemo(() => (cortando ? [plano] : SEM_PLANOS), [cortando, plano]);
+  const destaques = p.destaques ?? SEM_DESTAQUES;
+  const cena = useMemo<CenaCtx>(
+    () => ({ rotulosVisiveis: p.rotulosVisiveis, selecionado: p.selecionado, destaques, nomes: p.nomes, numeros, modoJogo: !!p.modoJogo, ocultos, isolado, corte, planosCorte: planos, onEscolher: p.onEscolher }),
+    [p.rotulosVisiveis, p.selecionado, destaques, p.nomes, numeros, p.modoJogo, ocultos, isolado, corte, planos, p.onEscolher],
   );
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
@@ -144,20 +162,7 @@ export function Cena3D(p: Cena3DProps) {
         />
         <directionalLight position={perfil.preenchimento.posicao} intensity={perfil.preenchimento.intensidade} color={perfil.preenchimento.cor} />
         <ambientLight intensity={perfil.luzAmbiente} />
-        <CenaProvider
-          value={{
-            rotulosVisiveis: p.rotulosVisiveis,
-            selecionado: p.selecionado,
-            destaques: p.destaques ?? {},
-            nomes: p.nomes,
-            numeros: Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])),
-            modoJogo: !!p.modoJogo,
-            ocultos,
-            isolado,
-            corte,
-            onEscolher: p.onEscolher,
-          }}
-        >
+        <CenaProvider value={cena}>
           <AcabamentoContext.Provider value={acabamento}>
             <Suspense fallback={null}>
               <RotulosProvider key={versao} onQuadro={setQuadro}>
@@ -178,7 +183,7 @@ export function Cena3D(p: Cena3DProps) {
         <Diagnostico3D nivel={nivel} modelo={p.estagioId} />
         <OrbitControls makeDefault enableDamping dampingFactor={0.12} minDistance={1} maxDistance={16} enablePan={false} />
         <Camera estagioId={p.estagioId} modelo={modelo} versao={p.versaoCamera ?? 0} />
-        <Corte posicao={corte ?? null} />
+        <Corte posicao={corte ?? null} plano={plano} planos={planos} />
       </Canvas>
       <CamadaMarcadores quadro={quadro} />
     </div>

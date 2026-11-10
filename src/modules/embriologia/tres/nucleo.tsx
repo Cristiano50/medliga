@@ -21,6 +21,8 @@ export interface CenaCtx {
   ocultos?: string[];
   isolado?: string | null;
   corte?: number | null;
+  /** planos de corte ativos (os mesmos do renderer), para o contorno de seleção; sem o campo, lê do renderer */
+  planosCorte?: THREE.Plane[];
   onEscolher?: (id: string) => void;
 }
 
@@ -239,7 +241,7 @@ export function Malha({
       castShadow={sombras}
       receiveShadow={sombras}
     >
-      {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={gl.clippingPlanes} />}
+      {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={cena.planosCorte ?? gl.clippingPlanes} />}
     </mesh>
   );
 }
@@ -270,6 +272,24 @@ export function resolverToque(intersecoes: THREE.Intersection[], planos: THREE.P
   return melhor?.id ?? null;
 }
 
+const raioDoToque = new THREE.Raycaster();
+
+/**
+ * Todas as interseções do raio com o modelo (não só a primeira de cada malha). O R3F guarda uma interseção
+ * por malha; com o corte ligado, a primeira pode estar na metade cortada (invisível) e a parte seria
+ * descartada mesmo com a metade visível sob o dedo.
+ */
+export function intersecoesDoToque(raiz: THREE.Object3D, raio: THREE.Ray, camera?: THREE.Camera): THREE.Intersection[] {
+  raioDoToque.ray.copy(raio);
+  if (camera) raioDoToque.camera = camera;
+  return raioDoToque.intersectObject(raiz, true);
+}
+
+/** Parte tocada num evento do R3F: sem corte, as interseções do próprio evento; com corte, o raycast completo. */
+function parteNoEvento(e: ThreeEvent<MouseEvent | PointerEvent>, planos: THREE.Plane[]): string | null {
+  return resolverToque(planos.length ? intersecoesDoToque(e.eventObject, e.ray, e.camera) : e.intersections, planos);
+}
+
 /** Grupo raiz que captura toques e hover de toda a cena. */
 export function Tocavel({ children }: { children: ReactNode }) {
   const cena = useCena();
@@ -279,11 +299,11 @@ export function Tocavel({ children }: { children: ReactNode }) {
       onClick={(e: ThreeEvent<MouseEvent>) => {
         if (e.delta > 6) return; // foi um arraste (girar a câmera), não um toque
         e.stopPropagation();
-        const id = resolverToque(e.intersections, gl.clippingPlanes);
+        const id = parteNoEvento(e, gl.clippingPlanes);
         if (id) cena.onEscolher?.(id);
       }}
       onPointerMove={(e: ThreeEvent<PointerEvent>) => {
-        gl.domElement.style.cursor = resolverToque(e.intersections, gl.clippingPlanes) ? 'pointer' : 'grab';
+        gl.domElement.style.cursor = parteNoEvento(e, gl.clippingPlanes) ? 'pointer' : 'grab';
       }}
       onPointerOut={() => {
         gl.domElement.style.cursor = 'grab';

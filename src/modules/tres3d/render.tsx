@@ -97,7 +97,9 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
       e.ultimaMudanca = agora;
       voltarAoParado();
     };
-    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; e.ultimaInteracao = performance.now(); avaliarRef.current(12); voltarAoParado(); };
+    // Sem novo quadro no fim do gesto: se a câmera se moveu, a última mudança já agendou a volta ao dpr parado;
+    // num toque sem movimento não há o que redesenhar.
+    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; e.ultimaInteracao = performance.now(); avaliarRef.current(12); };
     controles.addEventListener('start', inicio);
     controles.addEventListener('change', mudanca);
     controles.addEventListener('end', fim);

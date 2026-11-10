@@ -17,7 +17,7 @@ import {
   definirNivel,
 } from '../src/modules/tres3d/qualidade.ts';
 import { classificarGeometria, contarCena, prepararMalhas, refinarGeometria, triangulosDaGeometria } from '../src/modules/tres3d/refinar.ts';
-import { resolverToque } from '../src/modules/embriologia/tres/nucleo.tsx';
+import { intersecoesDoToque, resolverToque } from '../src/modules/embriologia/tres/nucleo.tsx';
 import { perfilDoModelo, PERFIS } from '../src/modules/tres3d/perfis.ts';
 import { MODELOS } from '../src/modules/embriologia/modelos/index.ts';
 
@@ -223,6 +223,47 @@ describe('refino de geometria paramétrica', () => {
     // Fora da interna, só a casca responde.
     const lateral = new THREE.Raycaster(new THREE.Vector3(0.7, 0, 5), new THREE.Vector3(0, 0, -1));
     expect(resolverToque(lateral.intersectObject(raiz, true))).toBe('casca');
+  });
+});
+
+describe('toque com o corte ligado', () => {
+  it('uma malha única atravessada pelo plano de corte continua tocável pela metade visível', () => {
+    const parte = new THREE.Group();
+    parte.userData.parteId = 'placas';
+    parte.userData.prioridade = 5;
+    const malha = new THREE.Mesh(new THREE.SphereGeometry(1, 48, 36), new THREE.MeshStandardMaterial({ side: THREE.DoubleSide }));
+    parte.add(malha);
+    const interna = new THREE.Group();
+    interna.userData.parteId = 'interna';
+    interna.userData.prioridade = 8;
+    interna.add(new THREE.Mesh(new THREE.SphereGeometry(0.3, 24, 16), new THREE.MeshStandardMaterial({ side: THREE.DoubleSide })));
+    interna.position.set(-0.5, 0, 0.5); // inteira na metade cortada
+    const raiz = new THREE.Group();
+    raiz.add(parte, interna);
+    raiz.updateMatrixWorld(true);
+    const plano = new THREE.Plane(new THREE.Vector3(0, 0, -1), 0); // como no Cena3D: corta z > 0, o lado da câmera
+    const raio = new THREE.Ray(new THREE.Vector3(0.2, 0.1, 5), new THREE.Vector3(0, 0, -1));
+    const todas = intersecoesDoToque(raiz, raio);
+    // O evento do R3F traz uma interseção por malha (a mais próxima), que aqui cai na metade cortada:
+    const umaPorMalha = todas.filter((it, i) => todas.findIndex((x) => x.object === it.object) === i);
+    expect(umaPorMalha).toHaveLength(1);
+    expect(plano.distanceToPoint(umaPorMalha[0].point)).toBeLessThan(0);
+    expect(resolverToque(umaPorMalha, [plano])).toBeNull();
+    // Com todas as interseções, a parede de trás (visível) responde.
+    expect(todas).toHaveLength(2);
+    expect(resolverToque(todas, [plano])).toBe('placas');
+    // Malha densa com BVH: o raycast acelerado também devolve todas as interseções.
+    prepararMalhas(raiz, { raio: 1, fator: 2 });
+    expect(malha.geometry.boundsTree).toBeTruthy();
+    expect(intersecoesDoToque(raiz, raio)).toHaveLength(2);
+    expect(resolverToque(intersecoesDoToque(raiz, raio), [plano])).toBe('placas');
+    // Uma parte de prioridade maior, mas inteira na metade cortada, não rouba o toque.
+    const pelaInterna = new THREE.Ray(new THREE.Vector3(-0.5, 0, 5), new THREE.Vector3(0, 0, -1));
+    expect(resolverToque(intersecoesDoToque(raiz, pelaInterna), [])).toBe('interna');
+    expect(resolverToque(intersecoesDoToque(raiz, pelaInterna), [plano])).toBe('placas');
+    // Sem nada visível no caminho do raio, nada é escolhido.
+    const fora = new THREE.Ray(new THREE.Vector3(3, 0, 5), new THREE.Vector3(0, 0, -1));
+    expect(resolverToque(intersecoesDoToque(raiz, fora), [plano])).toBeNull();
   });
 });
 
