@@ -480,7 +480,7 @@
         "esofago",
         "lamina-descrita"
       ],
-      "referencia": "Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17"
+      "referencia": "Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17; Meyer et al., J Clin Gastroenterol 1986"
     },
     {
       "id": "his-14-q05",
@@ -652,7 +652,7 @@
         "absorcao-de-lipidios",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17; Takahashi et al., J Atheroscler Thromb 2021"
     },
     {
       "id": "his-14-q10",
@@ -720,7 +720,7 @@
         "celula-parietal",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Junqueira 14ª ed., cap. 15; Ross 8ª ed., cap. 17; Ahn e Kim, Korean J Helicobacter Up Gastrointest Res 2025"
     },
     {
       "id": "his-14-q12",
@@ -959,7 +959,7 @@
         "linha-pectinea",
         "caso-clinico"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Ross 8ª ed., cap. 17; Moore 11ª ed., cap. 11"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Ross 8ª ed., cap. 17; Moore 11ª ed., cap. 11; Fenger, Acta Pathol Microbiol Scand A 1979; Gomes et al., World J Gastrointest Endosc 2025"
     },
     {
       "id": "his-14-q19",
@@ -1029,7 +1029,7 @@
         "apendice",
         "apendicite"
       ],
-      "referencia": "Robbins 10ª ed. (trato gastrintestinal)"
+      "referencia": "Robbins 10ª ed. (trato gastrintestinal); Salö et al. (diretriz sueca), BJS Open 2025"
     },
     {
       "id": "his-14-q24",
@@ -1330,32 +1330,71 @@
     },
     {
       "obra": "Al-Toma A, Zingone F, Branchi F, et al. European Society for the Study of Coeliac Disease 2025 Updated Guidelines on the Diagnosis and Management of Coeliac Disease in Adults. Part 1: Diagnostic Approach. United European Gastroenterol J. 2025;13(10):1855-1886. doi:10.1002/ueg2.70119 (PMID 40999951; PMC12704582)",
-      "capitulo": "Biópsias duodenais (número e local); classificação de Marsh modificada; confirmação do diagnóstico; reexposição ao glúten; dieta sem glúten por toda a vida"
+      "capitulo": "Biópsias duodenais (número e local); classificação de Marsh modificada; confirmação do diagnóstico; reexposição ao glúten"
     },
     {
-      "obra": "Rossi D, Irvine W, Granström AL, et al. Updated European Reference Network for rare Inherited and Congenital Digestive and Gastrointestinal Anomalies (ERNICA) guidelines for the management of rectosigmoid Hirschsprung's disease. J Pediatr Gastroenterol Nutr. 2026;83(1):185-207. doi:10.1002/jpn3.70442 (PMID 42057764; PMC13342790)",
+      "obra": "Rossi D, Irvine W, Granström AL, et al. Updated European Reference Network for rare Inherited and Congenital Digestive and Gastrointestinal Anomalies (ERNICA) guidelines for the management of rectosigmoid Hirschsprung's disease 2025. J Pediatr Gastroenterol Nutr. 2026;83(1):185-207. doi:10.1002/jpn3.70442 (PMID 42057764; PMC13342790)",
       "capitulo": "Tabela 1 — Recomendações para o diagnóstico (local e conteúdo da biópsia retal; HE, calretinina e acetilcolinesterase)"
     },
     {
       "obra": "Monforte HL, Wilsey M, Gonzalez R. Surgical pathology of Hirschsprung disease (HSCR). World J Pediatr Surg. 2025;8(3):e000882. doi:10.1136/wjps-2024-000882 (PMID 40756452; PMC12314976)",
       "capitulo": "Biópsia retal por sucção acima da zona normalmente hipoganglionar; troncos nervosos hipertróficos"
+    },
+    {
+      "obra": "Al-Toma A, Branchi F, Zingone F, et al. European Society for the Study of Coeliac Disease (ESsCD) 2025 Updated Guidelines on the Diagnosis and Management of Coeliac Disease in Adults. Part 2: Management, Follow-Up, and Complex Disease Courses. United European Gastroenterol J. 2026;14(2):e70195. doi:10.1002/ueg2.70195 (PMID 41831197; PMC13097674)",
+      "capitulo": "Dieta sem glúten estrita e por toda a vida"
+    },
+    {
+      "obra": "Meyer GW, Austin RM, Brady CE 3rd, Castell DO. Muscle anatomy of the human esophagus. J Clin Gastroenterol. 1986;8(2):131-134. doi:10.1097/00004836-198604000-00005 (PMID 3745845)",
+      "capitulo": "Distribuição de músculo esquelético e liso no esôfago (resumo)"
+    },
+    {
+      "obra": "Fenger C. The anal transitional zone. Location and extent. Acta Pathol Microbiol Scand A. 1979;87A(5):379-386. doi:10.1111/j.1699-0463.1979.tb00066.x (PMID 93398)",
+      "capitulo": "Localização da zona de transição anal em relação à linha denteada (resumo)"
+    },
+    {
+      "obra": "Li J, Li H, Xu H, et al. Upper border of anal transitional zone: a new landmark for endoscopic internal hemorrhoid therapy. Front Med (Lausanne). 2026;13:1903391. doi:10.3389/fmed.2026.1903391 (PMID 42757278; PMC13584962)",
+      "capitulo": "Borda superior da zona de transição anal acima da linha denteada (histologia)"
+    },
+    {
+      "obra": "Gomes A, Bara J, da Matta CHKT, et al. Anal neoplasm in colonoscopy: what endoscopists need to know. World J Gastrointest Endosc. 2025;17(10):108729. doi:10.4253/wjge.v17.i10.108729 (PMID 41181535; PMC12576667)",
+      "capitulo": "Tipos histológicos por região do canal anal; HPV e HIV no carcinoma epidermoide"
+    },
+    {
+      "obra": "Bhardwaj A, McGarrity TJ, Stairs DB, Mani H. Barrett's esophagus: emerging knowledge and management strategies. Patholog Res Int. 2012;2012:814146. doi:10.1155/2012/814146 (PMID 22701199; PMC3369502)",
+      "capitulo": "Células caliciformes: mucina ácida, azul alciano em pH 2,5; pseudocaliciformes"
+    },
+    {
+      "obra": "Ahn YH, Kim YS. Autoimmune gastritis: unveiling the mystery. Korean J Helicobacter Up Gastrointest Res. 2025;25(2):134-145. doi:10.7704/kjhugr.2025.0011 (PMID 40550545; PMC12173590)",
+      "capitulo": "Atrofia do corpo, hipergastrinemia, hiperplasia de células ECL, autoanticorpos; risco de neoplasias"
+    },
+    {
+      "obra": "Takahashi M, Okazaki H, Ohashi K, et al. Current diagnosis and management of abetalipoproteinemia. J Atheroscler Thromb. 2021;28(10):1009-1019. doi:10.5551/jat.RV17056 (PMID 33994405; PMC8560840)",
+      "capitulo": "MTTP, montagem de lipoproteínas com apoB, enterócitos repletos de lipídio, acantócitos"
+    },
+    {
+      "obra": "Salö M, Tiselius C, Rosemar A, et al. Swedish national guidelines for diagnosis and management of acute appendicitis in adults and children. BJS Open. 2025;9(2):zrae165. doi:10.1093/bjsopen/zrae165 (PMID 40203150; PMC11980984)",
+      "capitulo": "Critério histopatológico (inflamação transmural, granulócitos na muscular própria)"
     }
   ],
   "notasDivergencia": [
-    "Muscular externa do esôfago: Junqueira e Ross descrevem terço superior esquelético, médio misto e inferior liso; a extensão de cada segmento varia entre indivíduos e entre descrições anatômicas. A questão usa o padrão clássico.",
-    "Canal anal: a embriologia (Moore; tópico emb-15) divide o canal pela linha pectínea (endoderma acima, ectoderma abaixo); Ross descreve três zonas epiteliais (colorretal, de transição anal e escamosa), e a transição epitelial não coincide exatamente com a linha pectínea. A diretriz ERNICA (2026) usa 'linha denteada' (sinônimo) e discute a 'linha anorretal' (borda superior das colunas anais) como referência cirúrgica. O conteúdo descreve as zonas qualitativamente.",
-    "Classificação de Marsh: coexistem a original e a modificada (com subtipos 3a, 3b e 3c); a ESsCD (2025) adota a modificada e considera os subtipos de pouca relevância clínica. O conteúdo cobra só os tipos 1, 2 e 3, sem números.",
+    "Muscular externa do esôfago: Junqueira e Ross descrevem terço superior esquelético, médio misto e inferior liso. Em dissecção de 11 cadáveres, Meyer et al. (1986) acharam músculo só esquelético nos 4,1% a 5,6% proximais, só liso nos 54% a 62% distais e mistura no restante. A q04 pergunta explicitamente pela divisão clássica dos livros, e a explicação registra a diferença.",
+    "Canal anal: a embriologia (Moore; tópico emb-15) divide o canal pela linha pectínea (endoderma acima, ectoderma abaixo); Ross descreve três zonas epiteliais (colorretal, de transição anal e escamosa). Fenger (1979) encontrou as variantes epiteliais da zona de transição de 6 mm abaixo a 20 mm acima da linha denteada, e Li et al. (2026) situaram sua borda superior, em média, 8 mm acima dela. Por isso o conteúdo diz que a zona de transição fica em torno da linha pectínea, sobretudo logo acima dela. A diretriz ERNICA (2026) usa 'linha denteada' (sinônimo) e discute a 'linha anorretal' (borda superior das colunas anais) como referência cirúrgica.",
+    "Classificação de Marsh: coexistem a original e a modificada (com subtipos 3a, 3b e 3c); a ESsCD (2025) adota a modificada e considera os subtipos de pouca relevância clínica. Sorologia positiva com Marsh 2 ou 3 confirma o diagnóstico, mas a diretriz trata Marsh 2 com título baixo de anti-TG2 como 'zona cinzenta'. O conteúdo cobra só os tipos 1, 2 e 3, sem números.",
     "Doença de Hirschsprung — atraso do mecônio: a ERNICA (2026) define atraso como eliminação depois de 24 h no recém-nascido a termo; os tópicos emb-15 e emb-22 usam 48 h. A vinheta da q15 usa o 3º dia, que satisfaz os dois critérios.",
-    "Células de Paneth no intestino grosso: normalmente presentes no ceco e no colo direito; os textos de patologia variam quanto ao limite distal. O conteúdo fala em metaplasia de Paneth no 'colo esquerdo'.",
+    "Células de Paneth no intestino grosso: normalmente presentes, em pequeno número, no ceco e no colo direito; os textos de patologia variam quanto ao limite distal. O conteúdo fala em metaplasia de Paneth no 'colo esquerdo', formulação usada também na literatura recente sobre retocolite (Nat Commun 2026, PMID 41904124).",
     "Abscessos de cripta e metaplasia de Paneth ocorrem nas duas doenças inflamatórias intestinais; os textos destacam os abscessos na retocolite. A q14 usa a inflamação transmural como diferença, e a associação da q30 usa a continuidade e a restrição à mucosa, não o abscesso de cripta isolado.",
-    "Submucosa: Ross a descreve como conjuntivo denso não modelado; outras descrições falam em conjuntivo moderadamente denso. O conteúdo diz 'conjuntivo mais denso que o da lâmina própria'. A classificação morfológica das glândulas de Brunner (tubuloacinosas ou tubulosas ramificadas) também varia e não foi cobrada."
+    "Submucosa: Ross a descreve como conjuntivo denso não modelado; outras descrições falam em conjuntivo moderadamente denso. O conteúdo diz 'conjuntivo mais denso que o da lâmina própria'. A classificação morfológica das glândulas de Brunner (tubuloacinosas ou tubulosas ramificadas) também varia e não foi cobrada.",
+    "Esôfago de Barrett e azul alciano: a mucina ácida das caliciformes cora-se em azul pelo azul alciano em pH 2,5, e a mucina neutra gástrica, em magenta pelo PAS (Bhardwaj et al., 2012). Células colunares não caliciformes às vezes também se coram em azul ('células colunares azuis'), e por isso o diagnóstico depende da forma da caliciforme, não só da cor (Maslyonkina et al., Cancer Med 2022, PMID 34870375).",
+    "Gastrite autoimune e adenocarcinoma: uma metanálise relata risco relativo de câncer gástrico aumentado, mas um estudo prospectivo não encontrou câncer em pacientes sem H. pylori, e a associação é debatida (Ahn e Kim, 2025). O risco de tumor neuroendócrino tipo 1, por hipergastrinemia e hiperplasia de células ECL, é consensual. O conteúdo afirma só este e registra o debate.",
+    "Apendicite aguda: a diretriz sueca (Salö et al., 2025) adota como padrão-ouro a inflamação transmural, com granulócitos na muscular própria, e registra que patologistas aplicam critérios diferentes; Roupakias et al. (Cureus 2025, PMID 40308422) descrevem a mesma controvérsia (inflamação só da mucosa aceita por alguns como apendicite inicial). A q23 fala em 'critério clássico'."
   ],
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. (15, 4) e Ross 8ª ed. (17) citados de memória, com base nas edições anteriores; conferir.",
-    "Doença celíaca: conferida no texto integral da ESsCD 2025 (PMC12704582) — ao menos quatro biópsias do duodeno distal e duas do bulbo; Marsh modificada como padrão; Marsh 1 inespecífico; sorologia positiva com Marsh 2 ou 3 confirma; reexposição ao glúten quando a dieta já foi retirada; HLA-DQ2/DQ8 negativo exclui; dieta sem glúten estrita e por toda a vida; via sem biópsia em adultos selecionados com IgA antitransglutaminase ≥ 10 vezes o limite superior (número não usado no texto do aluno). O PCDT brasileiro da doença celíaca não foi consultado.",
+    "Doença celíaca: conferida no texto integral da ESsCD 2025, parte 1 (PMC12704582) — ao menos quatro biópsias do duodeno distal e duas do bulbo; Marsh modificada como padrão; Marsh 1 inespecífico; sorologia positiva com Marsh 2 ou 3 confirma; reexposição ao glúten quando a dieta já foi retirada, com a histologia duodenal como desfecho preferido; HLA-DQ2/DQ8 negativo exclui; via sem biópsia em adultos selecionados com IgA antitransglutaminase ≥ 10 vezes o limite superior (número não usado no texto do aluno). A dieta sem glúten estrita e por toda a vida está na parte 2 (2026; PMC13097674: 'The treatment for CeD is a lifelong adherence to a GFD'), conferida pelo revisor. O PCDT brasileiro da doença celíaca não foi consultado.",
     "Doença de Hirschsprung: conferida no texto integral da ERNICA 2026 (PMC13342790, Tabela 1) — parede posterior ou lateral do reto, pelo menos 2 cm acima da linha denteada ou 3 cm da margem anal, com submucosa representativa; qualquer célula ganglionar na HE exclui; HE com calretinina recomendada; acetilcolinesterase aumentada e calretinina negativa na doença. A justificativa da zona hipoganglionar foi conferida em Monforte et al. (2025, PMC12314976): 'inserted approximately 2–3 cm from the dentate line, bypassing the normally hypoganglionic zone'.",
-    "Itens de patologia citados de memória do Robbins (10ª ed.), sem conferência no texto: critério de apendicite aguda (neutrófilos na muscular própria); abetalipoproteinemia (vacuolização lipídica dos enterócitos, acantócitos); gastrite autoimune (antro poupado, hipergastrinemia, hiperplasia de ECL); tipos de Lauren e perda de E-caderina; carcinoma do canal anal associado ao HPV.",
-    "Azul alciano em pH 2,5 para as mucinas ácidas das caliciformes da metaplasia intestinal: dado de patologia gastrintestinal de memória, não conferido em fonte primária.",
+    "Itens de patologia conferidos pelo revisor em fontes de texto integral (10/11/2026): critério de apendicite aguda (diretriz sueca, Salö et al., 2025); abetalipoproteinemia (Takahashi et al., 2021: MTTP, enterócitos repletos de lipídio, acantócitos, esteatorreia na infância); gastrite autoimune (Ahn e Kim, 2025: atrofia do corpo, hipergastrinemia, hiperplasia de ECL, anticorpos contra a H⁺/K⁺-ATPase e o fator intrínseco); carcinoma do canal anal associado ao HPV, com o HIV como fator de amplificação (Gomes et al., 2025). Tipos de Lauren: conferidos só em revisão (Muratore et al., Front Oncol 2026, PMID 42713041); a perda de E-caderina (CDH1) no tipo difuso e o câncer gástrico difuso hereditário seguem Robbins, de memória.",
+    "Azul alciano em pH 2,5 para as mucinas ácidas das caliciformes da metaplasia intestinal: conferido em revisões de patologia (Bhardwaj et al., 2012; Maslyonkina et al., 2022); não há diretriz que o exija.",
     "Profundidade relativa das fossetas (rasas no corpo; cerca de metade da espessura da mucosa no antro): Ross, de memória.",
     "Conduta no H. pylori, na gastrite autoimune e nas doenças inflamatórias intestinais não foi incluída; o IV Consenso Brasileiro sobre H. pylori não foi consultado."
   ],

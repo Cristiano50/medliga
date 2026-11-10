@@ -2014,12 +2014,13 @@ export const LAMINAS_SISTEMAS_A: Record<string, LaminaRender> = {
   // o campo de 10× precisa pegar a luz, a íntima e a média com as lâminas elásticas (não só a adventícia)
   aorta: { desenhar: LaminaAorta, partes: PARTES_AORTA, areaDiagnostica: [250, 180, 750, 240] },
   // o campo precisa mostrar a parede da artéria (lâmina elástica interna) e parte da veia, não só o nervo
-  'feixe-neurovascular': { desenhar: LaminaFeixe, partes: PARTES_FEIXE, areaDiagnostica: [300, 280, 520, 400] },
+  'feixe-neurovascular': { desenhar: LaminaFeixe, partes: PARTES_FEIXE, areaDiagnostica: [270, 260, 450, 380] },
   // cápsula com seio subcapsular e folículos: o que distingue o linfonodo do baço e do timo
   linfonodo: { desenhar: LaminaLinfonodo, partes: PARTES_LINFONODO, areaDiagnostica: [300, 190, 700, 250] },
   // polpa branca com arteríola central ao lado da polpa vermelha
   baco: { desenhar: LaminaBaco, partes: PARTES_BACO, areaDiagnostica: [300, 230, 520, 380] },
-  timo: { desenhar: LaminaTimo, partes: PARTES_TIMO, areaDiagnostica: [280, 200, 720, 450] },
+  // córtex escuro e medula clara no mesmo campo (o córtex sozinho lembraria o paracórtex de um linfonodo)
+  timo: { desenhar: LaminaTimo, partes: PARTES_TIMO, areaDiagnostica: [300, 200, 680, 380] },
   // unidade pilossebácea (folículo, glândula sebácea, eretor) no campo, não só epiderme ou só gordura
   'pele-fina': { desenhar: LaminaPeleFina, partes: PARTES_PELE_FINA, areaDiagnostica: [300, 200, 520, 300] },
 };

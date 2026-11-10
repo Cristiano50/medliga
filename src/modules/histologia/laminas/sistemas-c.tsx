@@ -761,7 +761,7 @@ export function LaminaPulmao(rng: Rng) {
 export const PARTES_RIM = ['glomerulo', 'espaco-urinario', 'capsula-glomerular', 'tubulo-contorcido-proximal', 'tubulo-contorcido-distal', 'macula-densa', 'arteriola-aferente', 'arteriola-eferente', 'capilar'];
 
 /** Arteríola em corte longitudinal entre p0 e p1: parede de músculo liso, endotélio e hemácias na luz. */
-function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, jg: number) {
+function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, jg: number, mostrar: (x: number, y: number) => boolean) {
   const L = Math.hypot(p1[0] - p0[0], p1[1] - p0[1]);
   const tx = (p1[0] - p0[0]) / L;
   const ty = (p1[1] - p0[1]) / L;
@@ -781,12 +781,12 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
       if (s > L - jg && lado === 1) continue; // trecho com células justaglomerulares
       // músculo liso circular cortado de través: núcleos curtos, transversais ao eixo do vaso
       const [x, y] = em(s + entre(rng, -2.5, 2.5), lado * (om + entre(rng, -1.2, 1.2)));
-      nucM.push(elipse(x, y, 1.7, 2.6, ang));
+      if (mostrar(x, y)) nucM.push(elipse(x, y, 1.7, 2.6, ang));
     }
   }
   for (let s = 10; s < L - 6; s += 26) for (const lado of [1, -1]) {
     const [x, y] = em(s + entre(rng, -4, 4), lado * (hl - 0.9));
-    nucE.push(elipse(x, y, 4, 1, ang));
+    if (mostrar(x, y)) nucE.push(elipse(x, y, 4, 1, ang));
   }
   for (let s = 8; s < L - 6; s += entre(rng, 15, 26)) {
     const [x, y] = em(s, entre(rng, -hl + 4, hl - 4));
@@ -796,7 +796,7 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
   for (let s = L - jg; s < L - 4; s += 8.5) {
     jgCel.push(faixa(hl + 0.3, hw - 0.3, s, s + 8));
     const [x, y] = em(s + 4, om);
-    jgNuc.push(circulo(x, y, 2.4));
+    if (mostrar(x, y)) jgNuc.push(circulo(x, y, 2.4));
     for (let k = 0; k < 4; k++) {
       const [gx, gy] = em(s + entre(rng, 1, 7), om + entre(rng, -3, 3));
       if (Math.hypot(gx - x, gy - y) > 3.2) jgGraos.push(circulo(gx, gy, 0.6));
@@ -1023,8 +1023,10 @@ export function LaminaRimCortex(rng: Rng) {
     // núcleos de células mesangiais, endoteliais e podócitos entre as alças (não se sobrepõem às alças)
     dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => 3.2, (x, y) => noTufo(x, y, 1), occG, 0.9).forEach(([x, y, r]) => nucTufo.push(circulo(x, y, r)));
   });
-  const af = arteriolaLongitudinal(rng, aferente[0], aferente[1], 17, 8.5, 40);
-  const ef = arteriolaLongitudinal(rng, eferente[0], eferente[1], 13, 7, 0);
+  // dentro da cápsula a arteríola entra no tufo: sem núcleos da parede ali (o tufo a cobre)
+  const foraDoCorpusculo = (x: number, y: number) => Math.hypot(x - corpusculos[0].x, y - corpusculos[0].y) > corpusculos[0].R - 2;
+  const af = arteriolaLongitudinal(rng, aferente[0], aferente[1], 17, 8.5, 40, foraDoCorpusculo);
+  const ef = arteriolaLongitudinal(rng, eferente[0], eferente[1], 13, 7, 0, foraDoCorpusculo);
 
   return (
     <>
@@ -1266,22 +1268,51 @@ export function LaminaAdrenal(rng: Rng) {
   const hemacias: string[] = [];
   const endotelio: string[] = [];
 
-  // zona glomerulosa: grupos ovoides ("arcos"/"glomérulos") de células colunares baixas, núcleos escuros
+  // zona glomerulosa: grupos ovoides compactos ("arcos"/"glomérulos") de células colunares baixas, núcleos escuros e
+  // citoplasma mais acidófilo; os grupos são maciços (sem luz), separados por capilares
+  const occNuc = ocupacao(20, 6);
   const zgCel: string[] = [];
   const zgNuc: string[] = [];
-  for (let x = -10, k = 0; x < W + 40; x += entre(rng, 66, 76), k++) {
-    const a = entre(rng, 29, 34);
-    const b = entre(rng, 27, 30);
-    const cy = 60 + entre(rng, -2, 2);
-    const ctr = pontosPolar(x, cy, (t) => (a * b) / Math.hypot(b * Math.cos(t), a * Math.sin(t)), 64);
-    const ep = epitelio(ctr, 10.5, () => b * 0.62, 1);
-    ep.celulas.forEach((c, i) => {
-      zgCel.push(contorno(c));
-      const m = ep.meio(i, 0.45);
-      zgNuc.push(circulo(m.x, m.y, 2.9));
+  for (let x = 6; x < W + 40; x += entre(rng, 62, 68)) {
+    const a = entre(rng, 28, 31);
+    const b = 33;
+    const cy = 61;
+    const ctr = pontosPolar(x, cy, (t) => (a * b) / Math.hypot(b * Math.cos(t), a * Math.sin(t)), 48);
+    const sem: Sitio[] = [{ x, y: cy, w: 0 }];
+    for (const [fr, n] of [[0.78, 15], [0.44, 7]] as [number, number][]) {
+      const g = entre(rng, 0, 1);
+      for (let k = 0; k < n; k++) {
+        const t = g + (2 * Math.PI * k) / n;
+        sem.push({ x: x + Math.cos(t) * a * fr, y: cy + Math.sin(t) * b * fr, w: 0 });
+      }
+    }
+    celulasDe(sem, 16, 0.4).forEach((pol0, i) => {
+      let pol = pol0;
+      for (let k = 0; k < ctr.length; k++) {
+        const p0 = ctr[k];
+        const p1 = ctr[(k + 1) % ctr.length];
+        const nx = p1[1] - p0[1];
+        const ny = -(p1[0] - p0[0]);
+        const nl = Math.hypot(nx, ny);
+        // corta pelo contorno do grupo (normal para fora)
+        const sx = (nx / nl) * ((x - p0[0]) * nx + (cy - p0[1]) * ny > 0 ? -1 : 1);
+        const sy = (ny / nl) * ((x - p0[0]) * nx + (cy - p0[1]) * ny > 0 ? -1 : 1);
+        pol = cortar(pol, sx, sy, p0[0], p0[1]);
+        if (pol.length < 3) return;
+      }
+      zgCel.push(contorno(pol));
+      const c = centroidePol(pol);
+      const q = sem[i];
+      // núcleo um pouco deslocado para a base (periferia do grupo), como nas células colunares
+      const dx = q.x - x;
+      const dy = q.y - cy;
+      const dl = Math.hypot(dx, dy) || 1;
+      const px = c[0] + (i ? (dx / dl) * 2 : 0);
+      const py = c[1] + (i ? (dy / dl) * 2 : 0);
+      if (!occNuc.livre(px, py, 2.9, 0.4)) return;
+      occNuc.marcar(px, py, 2.9);
+      zgNuc.push(circulo(px, py, 2.9));
     });
-    zgCel.push(contorno(ep.topo));
-    if (k % 2) hemacias.push(hemacia(x + a + 4, cy + entre(rng, -12, 12), 3.6, 90, 2.4));
   }
 
   // zona fasciculada: cordões retos, de 1–2 células, perpendiculares à cápsula, separados por capilares sinusoides;
@@ -1306,8 +1337,14 @@ export function LaminaAdrenal(rng: Rng) {
       if (pol.length < 3) return;
       zfCel.push(contorno(pol));
       const c = centroidePol(pol);
-      if (rng() < 0.08) zfNuc.push(circulo(c[0] - 4.2, c[1], 3.4), circulo(c[0] + 4.2, c[1], 3.4));
-      else zfNuc.push(circulo(c[0], c[1], 3.8));
+      if (Math.abs(pol.reduce((acc, p, j) => acc + p[0] * pol[(j + 1) % pol.length][1] - pol[(j + 1) % pol.length][0] * p[1], 0)) < 160) return; // fragmento: núcleo fora do plano
+      if (rng() < 0.08 && occNuc.livre(c[0], c[1], 7.8, 0.5)) {
+        occNuc.marcar(c[0], c[1], 7.8);
+        zfNuc.push(circulo(c[0] - 4.2, c[1], 3.4), circulo(c[0] + 4.2, c[1], 3.4));
+      } else if (occNuc.livre(c[0], c[1], 3.8, 0.5)) {
+        occNuc.marcar(c[0], c[1], 3.8);
+        zfNuc.push(circulo(c[0], c[1], 3.8));
+      }
     });
     // hemácias e núcleos endoteliais no sinusoide à direita do cordão
     for (let y = yF(x0) + entre(rng, 5, 30); y < yR(x0) - 6; y += entre(rng, 22, 40)) {
@@ -1321,25 +1358,37 @@ export function LaminaAdrenal(rng: Rng) {
   const zrCel: string[] = [];
   const zrNuc: string[] = [];
   const lipof: string[] = [];
+  // os furos da rede (sinusoides) entram como sítios fixos com peso: as células, relaxadas, ficam poligonais e
+  // encostadas umas nas outras, contornando os sinusoides
+  const cordoes = (furos: [number, number, number][], celulas: [number, number, number][], pesoFuro: number, rMax: number, iter: number) => {
+    const sit: Sitio[] = [...celulas.map(([x, y]) => ({ x, y, w: 0 })), ...furos.map(([x, y]) => ({ x, y, w: pesoFuro }))];
+    relaxar(sit, celulas.length, () => rMax * 1.6, iter);
+    const pols = celulasDe(sit, rMax, 0.5).slice(0, celulas.length);
+    return { sit, pols };
+  };
   const occR = ocupacao(30, 12);
   const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
   for (const [x, y] of furosR) {
     hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
   }
   const occR2 = ocupacao(20, 7);
-  const semR = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.6, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occR2, 0).map(([x, y]): Sitio => ({ x, y, w: 0 }));
-  celulasDe(semR, 9.5, 0.5).forEach((pol0, i) => {
-    const q = semR[i];
+  const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occR2, 0);
+  const zr = cordoes(furosR, semR0, 10, 11, 2);
+  zr.pols.forEach((pol0, i) => {
+    const q = zr.sit[i];
     let pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
     pol = cortar(pol, 0, 1, 0, yM(q.x) + 1);
     if (pol.length < 3) return;
     zrCel.push(contorno(pol));
     const c = centroidePol(pol);
-    zrNuc.push(rng() < 0.12 ? circulo(c[0], c[1], 2.2) : circulo(c[0], c[1], 3.1));
+    const r = rng() < 0.12 ? 2.2 : 3.1; // alguns núcleos picnóticos (menores e escuros)
+    if (!occNuc.livre(c[0], c[1], r, 0.5)) return;
+    occNuc.marcar(c[0], c[1], r);
+    zrNuc.push(circulo(c[0], c[1], r));
     if (rng() < 0.3)
       for (let g = 0; g < 4; g++) {
         const a = entre(rng, 0, Math.PI * 2);
-        lipof.push(circulo(c[0] + Math.cos(a) * 5, c[1] + Math.sin(a) * 5, 0.8));
+        lipof.push(circulo(c[0] + Math.cos(a) * 5.2, c[1] + Math.sin(a) * 5.2, 0.8));
       }
   });
 
@@ -1350,16 +1399,19 @@ export function LaminaAdrenal(rng: Rng) {
   const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occM, 22);
   for (const [x, y] of furosM) hemacias.push(hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4));
   const occM2 = ocupacao(24, 9);
-  const semM = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.6, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occM2, 0).map(([x, y]): Sitio => ({ x, y, w: 0 }));
+  const semM0 = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occM2, 0);
+  const md = cordoes([...furosM, ...Array.from({ length: 13 }, (_, k): [number, number, number] => [veia.x - veia.rx + (k * 2 * veia.rx) / 12, veia.y, 0])], semM0, 14, 13, 2);
   const medCel: string[] = [];
   const medNuc: string[] = [];
-  celulasDe(semM, 11.5, 0.6).forEach((pol0, i) => {
-    const q = semM[i];
+  md.pols.forEach((pol0, i) => {
+    const q = md.sit[i];
     const pol = cortar(pol0, 0, -1, 0, -yM(q.x));
     if (pol.length < 3 || pol.some(([x, y]) => naVeia(x, y, 3))) return;
     medCel.push(contorno(pol));
     const c = centroidePol(pol);
-    medNuc.push(circulo(c[0] + entre(rng, -1, 1), c[1] + entre(rng, -1, 1), 4));
+    if (!occNuc.livre(c[0], c[1], 4, 0.5)) return;
+    occNuc.marcar(c[0], c[1], 4);
+    medNuc.push(circulo(c[0] + entre(rng, -0.8, 0.8), c[1] + entre(rng, -0.8, 0.8), 4));
   });
   // veia central (medular): parede delgada com feixes excêntricos de músculo liso longitudinal
   const feixes: string[] = [];

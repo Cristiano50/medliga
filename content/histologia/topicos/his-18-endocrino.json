@@ -265,7 +265,7 @@
       "id": "carcinoma-papilifero-tireoide",
       "titulo": "Carcinoma papilífero da tireoide",
       "descricao": "Neoplasia maligna mais comum da tireoide, em geral de bom prognóstico; a exposição a radiação ionizante, sobretudo na infância, é fator de risco. Apresenta-se como nódulo e, com frequência, já tem metástase em linfonodos cervicais ao diagnóstico. Na diretriz da American Thyroid Association de 2015, a punção aspirativa por agulha fina (PAAF) é o procedimento de escolha para avaliar os nódulos com indicação de investigação, e a citologia é laudada pelas categorias do Sistema Bethesda.",
-      "mecanismo": "Deriva do tirócito, com frequência por mutação ativadora de BRAF (V600E) ou rearranjos de RET. O diagnóstico baseia-se nas características dos núcleos: aumentados, sobrepostos, de cromatina clara (“vidro fosco”, “olhos da órfã Annie”), com sulcos longitudinais e pseudoinclusões intranucleares (invaginações do citoplasma); por isso a citologia pode reconhecê-lo. Papilas com eixo fibrovascular e corpos psamomatosos (calcificações lamelares concêntricas) completam o quadro clássico, mas não são obrigatórios (na variante folicular não há papilas). O carcinoma folicular, ao contrário, não tem esses núcleos e é definido pela invasão da cápsula ou de vasos."
+      "mecanismo": "Deriva do tirócito, com frequência por mutação ativadora de BRAF (V600E) ou rearranjos de RET. O diagnóstico baseia-se nas características dos núcleos: aumentados, sobrepostos, de cromatina clara (“vidro fosco”, “olhos da órfã Annie”), com sulcos longitudinais e pseudoinclusões intranucleares (invaginações do citoplasma); por isso a citologia pode sugeri-lo (sem distingui-lo da NIFTP, que exige a peça inteira). Papilas com eixo fibrovascular e corpos psamomatosos (calcificações lamelares concêntricas) completam o quadro clássico, mas não são obrigatórios (na variante folicular não há papilas). O carcinoma folicular, ao contrário, não tem esses núcleos e é definido pela invasão da cápsula ou de vasos."
     },
     {
       "id": "tumores-hipofisarios",
@@ -383,7 +383,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "A prolactina é o único hormônio da adeno-hipófise sob controle predominantemente inibitório: a dopamina, liberada por neurônios hipotalâmicos na eminência mediana, chega aos lactotrofos pelas veias porta da haste. Uma massa que comprime ou desvia a haste interrompe esse fluxo, e os lactotrofos normais liberam mais prolactina, em geral em níveis moderados, abaixo de 100 ng/mL (PCDT da Hiperprolactinemia) (d). A imuno-histoquímica negativa para prolactina afasta a secreção pelo tumor, e prolactinomas desse tamanho costumam elevar muito mais a prolactina (a). A compressão do quiasma explica a perda dos campos temporais, mas não estimula o TRH (b). A neuro-hipófise não produz prolactina (c); armazena ADH e ocitocina.",
+      "explicacao": "A prolactina é o único hormônio da adeno-hipófise sob controle predominantemente inibitório: a dopamina, liberada por neurônios hipotalâmicos na eminência mediana, chega aos lactotrofos pelas veias porta da haste. Uma massa que comprime ou desvia a haste interrompe esse fluxo, e os lactotrofos normais liberam mais prolactina, em geral em níveis moderados, abaixo de 100 ng/mL (PCDT da Hiperprolactinemia) (d). A imuno-histoquímica negativa para prolactina afasta a secreção pelo tumor (a). Prolactinomas desse tamanho costumam elevar muito mais a prolactina, mas um valor pouco elevado não basta para afastá-los: num macroadenoma de 3 cm ou mais, o PCDT manda repetir a dosagem em soro diluído para excluir o efeito gancho; aqui, a peça já resolveu a dúvida. A compressão do quiasma explica a perda dos campos temporais, mas não estimula o TRH (b). A neuro-hipófise não produz prolactina (c); armazena ADH e ocitocina.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -554,7 +554,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Núcleos claros (“vidro fosco”, “olhos da órfã Annie”), sobrepostos, com sulcos e pseudoinclusões são as características que definem o carcinoma papilífero; como aparecem nas células aspiradas, a citologia pode sugerir o diagnóstico. Papilas com eixo fibrovascular, corpos psamomatosos e metástase em linfonodo cervical completam o quadro típico (d). O carcinoma folicular (a) não tem esses núcleos e é definido pela invasão da cápsula ou de vasos, que a citologia não mostra. O carcinoma medular (b), das células C, tem células poligonais ou fusiformes em estroma amiloide e eleva a calcitonina. O bócio multinodular (c) tem folículos de tamanhos variados com coloide abundante, sem essas alterações nucleares.",
+      "explicacao": "Núcleos claros (“vidro fosco”, “olhos da órfã Annie”), sobrepostos, com sulcos e pseudoinclusões são as características que definem o carcinoma papilífero; como aparecem nas células aspiradas, a citologia pode sugerir o diagnóstico. Papilas com eixo fibrovascular, corpos psamomatosos e metástase em linfonodo cervical completam o quadro típico e afastam a NIFTP, neoplasia encapsulada e não invasiva com núcleos semelhantes (d). O carcinoma folicular (a) não tem esses núcleos e é definido pela invasão da cápsula ou de vasos, que a citologia não mostra. O carcinoma medular (b), das células C, tem células poligonais ou fusiformes em estroma amiloide e eleva a calcitonina. O bócio multinodular (c) tem folículos de tamanhos variados com coloide abundante, sem essas alterações nucleares.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -667,7 +667,7 @@
     {
       "id": "his-18-q12",
       "tipo": "multipla",
-      "contexto": "Lâmina de suprarrenal corada por HE, da cápsula para o centro: uma faixa delgada de células em pequenos grupos arqueados; uma faixa larga de cordões retos, de uma ou duas células, separados por capilares, com células claras e vacuolizadas; uma faixa de cordões anastomosados de células menores e acidófilas, com pigmento castanho; e, no centro, grupos de células grandes de citoplasma granular junto a uma veia de parede espessa.",
+      "contexto": "Lâmina de suprarrenal corada por HE, da cápsula para o centro: uma faixa delgada de células em pequenos grupos arqueados; uma faixa larga de cordões retos, de uma ou duas células, separados por capilares, com células claras e vacuolizadas; uma faixa de cordões anastomosados de células menores e acidófilas, com pigmento castanho; e, no centro, grupos de células grandes de citoplasma granular junto a uma veia de parede irregular, com feixes de músculo liso longitudinal.",
       "enunciado": "Qual é o principal produto da faixa de células claras e vacuolizadas e qual é o seu principal regulador?",
       "alternativas": [
         {
@@ -753,11 +753,11 @@
         },
         {
           "id": "d",
-          "texto": "Tumores esporádicos como este não dão metástases a distância"
+          "texto": "Feocromocitomas esporádicos não dão metástases a distância"
         }
       ],
       "correta": "a",
-      "explicacao": "Os feocromocitomas derivam das células cromafins da medula e reproduzem sua organização em ninhos (“zellballen”) com células sustentaculares. Atipia e pleomorfismo nucleares podem existir em tumores que nunca dão metástase, e tumores de aspecto bem diferenciado podem metastatizar: desde a classificação da OMS de 2017, os termos “benigno” e “maligno” foram abandonados, e a de 2022 considera todos esses tumores com potencial metastático variável; escores que somam vários critérios histológicos apenas estimam o risco (a). A variação no tamanho dos núcleos (b), isoladamente, não basta para afirmar malignidade. As células sustentaculares (c) fazem parte da arquitetura normal da medula e do tumor; não definem malignidade. Tumores esporádicos também podem dar metástases (d), que podem surgir anos depois da cirurgia.",
+      "explicacao": "Os feocromocitomas derivam das células cromafins da medula e reproduzem sua organização em ninhos (“zellballen”) com células sustentaculares. Atipia e pleomorfismo nucleares podem existir em tumores que nunca dão metástase, e tumores de aspecto bem diferenciado podem metastatizar: desde a classificação da OMS de 2017, os termos “benigno” e “maligno” foram abandonados, e a de 2022 considera todos esses tumores com potencial metastático variável; escores que somam vários critérios histológicos apenas estimam o risco (a). A variação no tamanho dos núcleos (b), isoladamente, não basta para afirmar malignidade. As células sustentaculares (c) fazem parte da arquitetura normal da medula e do tumor; não definem malignidade. Feocromocitomas esporádicos também podem dar metástases (d), que podem surgir anos depois da cirurgia.",
       "dificuldade": 4,
       "bloom": "compreender",
       "tags": [
@@ -1213,43 +1213,55 @@
     },
     {
       "obra": "Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. Thyroid. 2016;26(1):1-133. doi:10.1089/thy.2015.0020. PMCID PMC4739132",
-      "capitulo": "Recomendação 7 (PAAF como procedimento de escolha); Recomendação 9 (Sistema Bethesda); definições histológicas de carcinoma papilífero e folicular; metástases linfonodais regionais no carcinoma papilífero"
+      "capitulo": "Resumo; recomendações sobre a PAAF como procedimento de escolha na avaliação dos nódulos e o laudo pelo Sistema Bethesda (Recomendação 9, seção A11, segundo citação secundária); definições histológicas de carcinoma papilífero e folicular; metástases linfonodais regionais no carcinoma papilífero"
     },
     {
       "obra": "Nieman LK, Biller BMK, Findling JW, et al. The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2008;93(5):1526-40. doi:10.1210/jc.2008-0125. PMCID PMC2386281",
-      "capitulo": "Recomendações 1 (excluir glicocorticoide exógeno) e 4 (testes iniciais)"
+      "capitulo": "Resumo e recomendações iniciais (excluir glicocorticoide exógeno antes dos testes; um teste inicial de alta acurácia)"
     },
     {
       "obra": "Casey RT, Lussey-Lepoutre C. Paraganglioma and phaeochromocytoma: a review of current guidelines and new diagnostic and therapeutic approaches. Endocr Relat Cancer. 2026;33(10). doi:10.1530/ERC-26-0310. PMCID PMC13695349",
       "capitulo": "Componente hereditário (até 40%); classificação da OMS 2017/2022; diagnóstico bioquímico (metanefrinas livres plasmáticas); escores PASS e GAPP"
+    },
+    {
+      "obra": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022;33(1):6-26. doi:10.1007/s12022-022-09703-7. PMID 35291028",
+      "capitulo": "Resumo (PitNET, antes chamados adenomas hipofisários; linhagens PIT1, TPIT e SF1)"
     }
   ],
   "notasDivergencia": [
     "Basofilia e PAS dos corticotrofos: os hormônios glicoproteicos (TSH, FSH, LH) explicam a positividade ao PAS dos tireotrofos e gonadotrofos; Ross atribui a dos corticotrofos à pró-opiomelanocortina glicosilada, e alguns textos descrevem os corticotrofos como fracamente basófilos. O conteúdo os inclui entre as basófilas, como Junqueira e Ross.",
     "Zona glomerulosa: Junqueira descreve as células em cordões arqueados; Ross, em grupos ovoides. O conteúdo usa “arcos ou grupos ovoides”.",
     "Células oxífilas da paratireoide: as obras divergem quanto à idade em que aparecem (infância tardia × puberdade); todas descrevem aumento com a idade, e o conteúdo diz só que são raras na criança e aumentam com a idade.",
-    "Carcinoma papilífero × NIFTP: desde 2016, tumores encapsulados ou bem delimitados, de padrão folicular, não invasivos e com núcleos do tipo papilífero são chamados de neoplasia folicular não invasiva com características nucleares do tipo papilífero (NIFTP), de baixo risco, e não de carcinoma; a diretriz ATA de 2025 os classifica como neoplasias de baixo risco (conferido em revisão da diretriz, Sisli Etfal Hastan Tip Bul 2025, PMC12821139). As características nucleares continuam definindo o carcinoma papilífero quando há papilas ou invasão; a q08 traz papilas e metástase linfonodal.",
-    "Terminologia dos tumores hipofisários: a classificação da OMS de 2022 passou a usar “tumor neuroendócrino hipofisário (PitNET)” ao lado de “adenoma”; o PCDT brasileiro e os livros-texto adotados usam “adenoma”, termo mantido no conteúdo.",
-    "Células de Hürthle: também chamadas de células de Askanazy ou oncocíticas; classificações recentes preferem “oncocíticas”. O conteúdo usa “de Hürthle” com a explicação “tirócitos oncocíticos”.",
-    "Feocromocitoma: a classificação da OMS de 2017 abandonou “benigno” e “maligno”, e a de 2022 considera todos os feocromocitomas e paragangliomas neoplasias com potencial metastático variável (conferido em Casey e Lussey-Lepoutre, 2026); textos anteriores, inclusive edições de Robbins, ainda falam em feocromocitoma “maligno” quando há metástase.",
-    "Folículo tireoidiano: o histologia usa o id foliculo-tireoidiano (singular, como em his-03); o emb-25 usa foliculos-tireoidianos (plural) para a mesma estrutura."
+    "Carcinoma papilífero × NIFTP: desde 2016, tumores encapsulados ou bem delimitados, de padrão folicular, não invasivos e com núcleos do tipo papilífero são chamados de neoplasia folicular não invasiva com características nucleares do tipo papilífero (NIFTP), de baixo risco, e não de carcinoma; a classificação da OMS de 2022 (5ª ed.) as inclui entre as neoplasias de baixo risco, e a diretriz ATA de 2025 (recomendação 1) considera mínimo o seu potencial maligno (conferido em revisão da diretriz em texto integral, Uludag et al., Sisli Etfal Hastan Tip Bul 2025, PMC12821139). As características nucleares continuam definindo o carcinoma papilífero quando há papilas ou invasão; a q08 traz papilas e metástase linfonodal.",
+    "Terminologia dos tumores hipofisários: a classificação da OMS de 2022 chama os tumores bem diferenciados da adeno-hipófise de “tumores neuroendócrinos hipofisários (PitNET)”, antes chamados adenomas hipofisários, e classifica-os pela linhagem (PIT1, TPIT, SF1) (Asa et al., Endocr Pathol 2022, resumo conferido no PubMed); o PCDT brasileiro e os livros-texto adotados usam “adenoma”, termo mantido no conteúdo.",
+    "Células de Hürthle: também chamadas de células de Askanazy ou oncocíticas; a classificação da OMS de 2022 abandonou o epônimo “Hürthle” e adota “oncocítico” (revisão em texto integral, Curr Oncol 2023, PMC10453903). O conteúdo usa “de Hürthle” com a explicação “tirócitos oncocíticos”.",
+    "Feocromocitoma: a classificação da OMS de 2017 abandonou “benigno” e “maligno”, e a de 2022 considera todos os feocromocitomas e paragangliomas neoplasias malignas com potencial metastático variável e trata o feocromocitoma como paraganglioma intra-adrenal (conferido em Casey e Lussey-Lepoutre, 2026); textos anteriores, inclusive edições de Robbins, ainda falam em feocromocitoma “maligno” quando há metástase.",
+    "Folículo tireoidiano: a histologia usa o id foliculo-tireoidiano (singular, como em his-03); o emb-25 usa foliculos-tireoidianos (plural) para a mesma estrutura."
   ],
   "incertezas": [
     "Números de capítulo citados de memória: Junqueira 14ª ed. (20 — Glândulas endócrinas, numeração da 13ª ed.), Ross 8ª ed. (21 — Órgãos endócrinos), Guyton & Hall 14ª ed. (75 a 80; cap. 77 para a tireoide). Capítulos de Robbins citados pelo título.",
     "O his-15 (glândulas anexas do tubo digestivo) foi escrito em paralelo e só apareceu no repositório no fim da redação; lido em 10/11/2026, já cobre os tipos celulares das ilhotas, sua identificação na HE e o diabetes tipo 1. Por isso este tópico apenas remete a ele, sem questões sobre ilhotas; a frase sobre a drenagem venosa das ilhotas para a veia porta segue a anatomia e a fisiologia clássicas (Guyton & Hall) e não foi conferida no texto impresso.",
     "Proporções celulares (somatotrofos entre as células da adeno-hipófise, espessura relativa das zonas do córtex, adrenalina × noradrenalina na medula, tipos celulares das ilhotas) foram omitidas porque os valores variam entre as obras e não foram conferidos.",
     "“Única glândula endócrina que armazena grande quantidade de hormônio fora das células”: redação de Junqueira e Ross citada de memória.",
-    "Síndrome de Cushing: a diretriz da Endocrine Society de 2008 (texto integral lido no PMC em 10/11/2026) continua a diretriz formal da sociedade para o diagnóstico; o consenso da Pituitary Society de 2021 não foi lido. Os pontos de corte dos testes foram omitidos de propósito.",
-    "Feocromocitoma: a diretriz da Endocrine Society de 2014 não pôde ser lida (não está no PMC, e o site da revista está fora da rede); o diagnóstico bioquímico (preferência pelas metanefrinas livres plasmáticas), o componente hereditário de até 40% e a classificação da OMS foram conferidos no texto integral da revisão de diretrizes de Casey e Lussey-Lepoutre (2026). A classificação da OMS de 2022 dos tumores hipofisários e endócrinos não foi lida no original.",
-    "Diretriz ATA: a de 2015 (texto integral lido no PMC) cobre nódulos e câncer diferenciado; a de 2025 trata só do câncer diferenciado e exclui os nódulos (segundo revisão em texto integral, PMC12821139) e não pôde ser aberta (verificação anti-robô do PMC). As afirmações usadas (PAAF para nódulos, Bethesda, definições histológicas) vêm da de 2015.",
-    "Perda da rede de reticulina nos adenomas hipofisários, alteração hialina de Crooke, preservação da espessura da zona glomerulosa no Cushing ACTH-independente e iatrogênico e irrigação arterial da neuro-hipófise na síndrome de Sheehan seguem Robbins e Ross, citados de memória.",
+    "Síndrome de Cushing: a diretriz da Endocrine Society de 2008 continua a diretriz formal da sociedade para o diagnóstico; na revisão de histologia (10/11/2026) só o resumo oficial pôde ser lido (o texto integral no PMC não é de acesso aberto, e o efetch devolve só a página de rosto), e ele confirma as duas afirmações usadas (excluir glicocorticoide exógeno; um teste inicial entre cortisol urinário, cortisol salivar no fim da noite e supressão com 1 mg ou 2 mg/dia por 48 h); a numeração das recomendações foi retirada da referência; o consenso da Pituitary Society de 2021 não foi lido. Os pontos de corte dos testes foram omitidos de propósito.",
+    "Feocromocitoma: a diretriz da Endocrine Society de 2014 não pôde ser lida (não está no PMC, e o site da revista está fora da rede); o diagnóstico bioquímico (preferência pelas metanefrinas livres plasmáticas), o componente hereditário de até 40% e a classificação da OMS foram conferidos no texto integral da revisão de diretrizes de Casey e Lussey-Lepoutre (2026). A classificação da OMS de 2022 dos tumores hipofisários e endócrinos não foi lida no original; a terminologia PitNET foi conferida no resumo de Asa et al. (2022).",
+    "Diretriz ATA: a de 2015 cobre nódulos e câncer diferenciado; na revisão de histologia (10/11/2026) o texto integral não pôde ser relido (não é de acesso aberto no PMC; efetch e Europe PMC devolvem só o resumo), e as afirmações usadas, qualitativas, foram conferidas no resumo e em citações secundárias (PMC9752034, PMC9574989); a de 2025 trata só do câncer diferenciado e exclui os nódulos (segundo revisão em texto integral, PMC12821139) e não pôde ser aberta (verificação anti-robô do PMC). As afirmações usadas (PAAF para nódulos, Bethesda, definições histológicas) vêm da de 2015.",
+    "Perda da rede de reticulina nos adenomas hipofisários e alteração hialina de Crooke (filamentos de queratina nos corticotrofos expostos a excesso de glicocorticoide) também aparecem em fontes de acesso aberto (PMC13619420; PMC10652249), mas a redação de Robbins não foi conferida. Preservação da espessura da zona glomerulosa no Cushing ACTH-independente e iatrogênico e irrigação arterial da neuro-hipófise na síndrome de Sheehan seguem Robbins e Ross, citados de memória.",
     "Série brasileira de insuficiência adrenal (São Paulo: autoimune 39%, paracoccidioidomicose 28%, tuberculose 11%, adrenoleucodistrofia 7,3%) e proporção de prolactinomas (~40% dos adenomas): números do texto dos PCDTs, que citam a literatura original, não lida.",
     "Ausência de lâmina de glândulas endócrinas no microscópio virtual: os ids de estrutura deste tópico (adeno-hipofise, neuro-hipofise, corpos-de-herring, foliculo-tireoidiano, coloide, celulas-parafoliculares, zona-glomerulosa, zona-fasciculada, zona-reticular, medula-suprarrenal, celula-cromafim etc.) podem servir a futuras lâminas."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
     "data": "2026-11-10",
-    "agentes": [],
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "13 correções (0 críticas, 1 importante, 12 menores); nenhum gabarito errado. Principal: q03 — macroadenoma de 3 cm com prolactina < 100 ng/mL exige afastar o efeito gancho (PCDT da Hiperprolactinemia, 3.3); a explicação ensinava que a prolactina pouco elevada bastava para afastar o prolactinoma. Menores: q14(d) não presume tumor esporádico; q08 e correlação distinguem carcinoma papilífero de NIFTP; q12 alinhada à lâmina adrenal (veia central com feixes de músculo liso); notas sobre PitNET (OMS 2022), oncocítico × Hürthle, feocromocitoma (OMS 2022) e NIFTP (ATA 2025); números de recomendação não conferíveis retirados das referências da ATA 2015 e da Endocrine Society 2008. Conferidos no texto integral: PCDT da Hiperprolactinemia (Portaria Conjunta nº 19, de 23/11/2020, reeditada após a 97ª reunião, 22/03/2022), PCDT da Insuficiência Adrenal (nº 20, de 24/11/2020) e Casey e Lussey-Lepoutre 2026 (PMC13695349); ATA 2015 e Endocrine Society 2008 só no resumo (texto integral restrito). Ids celulas-parafoliculares e medula-suprarrenal mantidos (iguais aos do emb-25); a lâmina em desenho usa celula-parafolicular e medula-adrenal. Relatório: content/revisoes/hs1718-histologia.md."
+      }
+    ],
     "humano": null
   }
 }
