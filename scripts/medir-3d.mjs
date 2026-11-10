@@ -103,6 +103,18 @@ const percentil = (xs, p) => {
   return o[Math.min(o.length - 1, Math.floor(o.length * p))];
 };
 
+/** Captura do palco por recorte da página (sem a espera de "elemento estável", que falha sob carga). */
+async function capturarPalco(page, caminho, erros) {
+  try {
+    await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
+    const caixa = await page.locator('.palco3d').boundingBox();
+    if (!caixa) throw new Error('palco ausente');
+    await page.screenshot({ path: caminho, clip: caixa, timeout: 60000 });
+  } catch (e) {
+    erros.push(`captura ${caminho}: ${e.message.split('\n')[0]}`);
+  }
+}
+
 async function esperarServidor(url, limiteMs = 30000) {
   const fim = Date.now() + limiteMs;
   while (Date.now() < fim) {
@@ -185,7 +197,7 @@ async function main() {
             diag: window.__diag3d ? JSON.parse(JSON.stringify(window.__diag3d)) : null,
           };
         });
-        if (!marcado('sem-capturas')) await page.locator('.palco3d').screenshot({ path: join(saida, nivel, `${id}.png`) });
+        if (!marcado('sem-capturas')) await capturarPalco(page, join(saida, nivel, `${id}.png`), erros);
         let giro = null;
         if (!marcado('sem-giro')) {
           await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
@@ -221,8 +233,7 @@ async function main() {
           await page.click('text=Restaurar vista');
           await page.click('text=Mostrar marcadores');
           await estavel(5000);
-          await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
-          await page.locator('.palco3d').screenshot({ path: join(saida, nivel, `${id}-m.png`) });
+          await capturarPalco(page, join(saida, nivel, `${id}-m.png`), erros);
           await page.click('text=Ocultar marcadores');
         }
         const r = { nivel, id, carregamentoMs, ...parado, giro };

@@ -1320,6 +1320,7 @@ export function LaminaAdrenal(rng: Rng) {
   const zfCel: string[] = [];
   const zfNuc: string[] = [];
   const passoC = 41;
+  const noSinusoide: [number, number, number][] = [];
   // ondulação quase paralela entre cordões vizinhos (fases próximas): os cordões não se cruzam
   const fase0 = entre(rng, 0, 6);
   for (let k = -1, x0 = 4; x0 < W + 40; k++, x0 += passoC) {
@@ -1348,12 +1349,14 @@ export function LaminaAdrenal(rng: Rng) {
         zfNuc.push(circulo(c[0], c[1], 3.8));
       }
     });
-    // hemácias e núcleos endoteliais no sinusoide à direita do cordão
-    for (let y = yF(x0) + entre(rng, 5, 30); y < yR(x0) - 6; y += entre(rng, 22, 40)) {
-      const x = xc(y) + passoC / 2;
-      if (rng() < 0.75) hemacias.push(hemacia(x, y, 3.6, 90 + entre(rng, -10, 10), 1.9));
-      else endotelio.push(elipse(x, y, 4, 1.1, 90));
-    }
+    // hemácias e núcleos endoteliais no sinusoide à direita do cordão (postos depois de todos os cordões)
+    for (let y = yF(x0) + entre(rng, 5, 30); y < yR(x0) - 6; y += entre(rng, 22, 40)) noSinusoide.push([xc(y) + passoC / 2, y, rng() < 0.75 ? 1 : 0]);
+  }
+  for (const [x, y, hem] of noSinusoide) {
+    if (!occNuc.livre(x, y, 3.8, 0.4)) continue;
+    occNuc.marcar(x, y, 3.8);
+    if (hem) hemacias.push(hemacia(x, y, 3.6, 90 + entre(rng, -10, 10), 1.9));
+    else endotelio.push(elipse(x, y, 4, 1.1, 90));
   }
 
   // zona reticular: rede de cordões anastomosados de células menores e mais acidófilas, algumas com lipofuscina
@@ -1364,7 +1367,7 @@ export function LaminaAdrenal(rng: Rng) {
   // encostadas umas nas outras, contornando os sinusoides
   const cordoes = (furos: [number, number, number][], celulas: [number, number, number][], pesoFuro: number, rMax: number, iter: number) => {
     const sit: Sitio[] = [...celulas.map(([x, y]) => ({ x, y, w: 0 })), ...furos.map(([x, y]) => ({ x, y, w: pesoFuro }))];
-    relaxar(sit, celulas.length, () => rMax * 1.6, iter);
+    relaxar(sit, celulas.length, () => rMax * 1.2, iter);
     const pols = celulasDe(sit, rMax, 0.5).slice(0, celulas.length);
     return { sit, pols };
   };
@@ -1375,7 +1378,8 @@ export function LaminaAdrenal(rng: Rng) {
   }
   const occR2 = ocupacao(20, 7);
   const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occR2, 0);
-  const zr = cordoes(furosR, semR0, 10, 11, 2);
+  // rMax folgado: na borda da zona a célula passa do limite e é cortada reta por ele (sem 'bolas' na fronteira)
+  const zr = cordoes(furosR, semR0, 10, 16, 2);
   zr.pols.forEach((pol0, i) => {
     const q = zr.sit[i];
     let pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
@@ -1402,7 +1406,7 @@ export function LaminaAdrenal(rng: Rng) {
   for (const [x, y] of furosM) hemacias.push(hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4));
   const occM2 = ocupacao(24, 9);
   const semM0 = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occM2, 0);
-  const md = cordoes([...furosM, ...Array.from({ length: 13 }, (_, k): [number, number, number] => [veia.x - veia.rx + (k * 2 * veia.rx) / 12, veia.y, 0])], semM0, 14, 13, 2);
+  const md = cordoes([...furosM, ...Array.from({ length: 13 }, (_, k): [number, number, number] => [veia.x - veia.rx + (k * 2 * veia.rx) / 12, veia.y, 0])], semM0, 14, 18, 2);
   const medCel: string[] = [];
   const medNuc: string[] = [];
   md.pols.forEach((pol0, i) => {
@@ -1431,9 +1435,12 @@ export function LaminaAdrenal(rng: Rng) {
 
   // cápsula: conjuntivo denso, fibroblastos achatados
   const capNuc: string[] = [];
-  for (let k = 0; k < 26; k++) {
+  for (let k = 0; k < 60 && capNuc.length < 26; k++) {
     const x = entre(rng, 0, W);
-    capNuc.push(elipse(x, entre(rng, 5, yG(x) - 5), 6, 1.4, entre(rng, -5, 5)));
+    const y = entre(rng, 5, yG(x) - 5);
+    if (!occNuc.livre(x, y, 6, 0.5)) continue;
+    occNuc.marcar(x, y, 6);
+    capNuc.push(elipse(x, y, 6, 1.4, entre(rng, -5, 5)));
   }
 
   return (
