@@ -118,3 +118,26 @@ Coloração padrão das lâminas do jogo: hematoxilina-eosina (HE) — núcleos 
 Use exatamente estes IDs em `estruturas` quando a estrutura aparecer no tópico:
 
 epitelio-simples-pavimentoso, epitelio-simples-cubico, epitelio-simples-cilindrico, epitelio-pseudoestratificado, epitelio-estratificado-pavimentoso, epitelio-de-transicao, membrana-basal, lamina-propria, lumen, enterocito, celula-caliciforme, borda-em-escova, cilios, celula-basal, celula-em-guarda-chuva, estrato-basal, estrato-espinhoso, estrato-granuloso, estrato-lucido, estrato-corneo, papila-dermica, derme-reticular, acino-seroso, acino-mucoso, meia-lua-serosa, ducto-estriado, septo-conjuntivo, fibroblasto, fibras-colagenas, fibras-elasticas, mastocito, macrofago, plasmocito, capilar, adipocito-unilocular, condrocito, lacuna, grupo-isogeno, matriz-territorial, matriz-interterritorial, pericondrio, osteon, canal-de-havers, lamelas-concentricas, osteocito, canaliculos, canal-de-volkmann, lamelas-intersticiais, hemacia, neutrofilo, eosinofilo, basofilo, linfocito, monocito, plaquetas, fibra-muscular-esqueletica, estriacoes-transversais, endomisio, fibra-muscular-cardiaca, disco-intercalar, fibra-muscular-lisa, neuronio-multipolar, corpusculos-de-nissl, nucleolo, dendrito, cone-de-implantacao, celulas-da-glia, neuropilo, epineuro, perineuro, endoneuro, fasciculo-nervoso, fibra-mielinizada
+
+### Lâminas em vários arquivos (histologia dos sistemas)
+
+- `content/histologia/laminas.json`: as 16 lâminas da histologia geral.
+- `content/histologia/laminas-sistemas-a.json` (circulatório, linfoide, pele), `-b.json` (tubo digestivo e glândulas anexas) e `-c.json` (respiratório, urinário, endócrino, reprodutor): um arquivo por grupo, cada um com seu renderizador em `src/modules/histologia/laminas/sistemas-{a,b,c}.tsx`.
+- O carregador (`src/content/index.ts`), o validador e os testes juntam todos os `laminas*.json`. Ids e valores de `ordem` são únicos entre os arquivos.
+- O conjunto de `estruturas` do texto de cada lâmina é igual ao de `partes` do desenho (teste em `tests/conteudo.test.ts`).
+- Um id de estrutura mostra, no registro do app, a definição do **primeiro tópico** que o contém. Por isso, use o id canônico do tópico quando a estrutura for a mesma e um id específico quando o sentido for outro (ex.: `capsula-suprarrenal`, `tunica-albuginea-ovariana`, `veia-central-suprarrenal`).
+
+Regras do jogo declaradas no registro das lâminas (`LaminaRender`, em `src/modules/histologia/laminas/index.ts`; lógica em `src/modules/histologia/regras.ts`):
+
+- `areaDiagnostica`: retângulo onde o jogo "Qual é o tecido?" sorteia o centro do campo de 10×. O campo tem de mostrar o aspecto que define a resposta.
+- `contem` (estrutura → partes desenhadas dentro dela): no "Identifique na lâmina", tocar numa parte conta como acerto quando o alvo é o todo (centro germinativo × folículo linfoide). O inverso continua erro. Só declare quando o desenho tiver o aninhamento.
+- `distratoresExcluidos` (ids de outras lâminas): alternativas que não podem aparecer no "Qual é o tecido?" quando esta lâmina é a resposta, porque também descreveriam o campo. Critério usado: o tecido do distrator é a maior estrutura em pelo menos 10% dos campos sorteáveis. Sempre sobram pelo menos 3 alternativas erradas (teste em `tests/histologia-jogos.test.ts`).
+- Termos de patologia não entram na descrição do tecido normal (ex.: "céu estrelado", "ovo frito", "olho de coruja").
+
+### Modelos 3D da histologia
+
+- Textos em `content/histologia/modelos3d-a.json` (néfron, alvéolo) e `modelos3d-b.json` (lóbulo hepático, sarcômero, junções celulares), validados por `ModeloHistologia3DSchema`.
+- Campos: `id`, `ordem`, `titulo`, `escala` (aviso mostrado junto do modelo, ex.: "Esquema fora de escala"), `contexto` (avisos de interpretação: o que o modelo simplifica ou omite), `descricao`, `destaques`, `topicos`, `estruturas` (pelo menos 4) e `revisao`.
+- Os modelos ficam em `src/modules/histologia/modelos3d/` (geometria pura em `geometria-*.ts`, testável sem navegador) e usam o mesmo contrato dos modelos da embriologia (`Componente`, `partes`, `camera`, `raio`).
+- O conjunto de `estruturas` do texto é igual ao de `partes` do modelo, e os ids de modelo são distintos dos ids de estágios da embriologia (testes em `tests/histologia-3d-coerencia.test.ts` e validação no build).
+- Todo modelo é esquema: cores convencionais (não são coloração HE), número reduzido de células e filamentos, proporções ajustadas para caber na tela. Isso é dito ao aluno em `escala` e `contexto`.
