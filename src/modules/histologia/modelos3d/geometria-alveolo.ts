@@ -201,13 +201,13 @@ export function capilaresNoModelo(): { curva: THREE.Curve<THREE.Vector3>; raio: 
  * Núcleos achatados dos pneumócitos tipo I no revestimento (polar, azimute em graus). Poucos, de propósito:
  * o tipo I é menos numeroso que o tipo II, mas cada célula cobre uma área muito maior (o revestimento inteiro).
  */
-export const NUCLEOS_TIPO_I: [number, number][] = [[40, 255], [102, 250]];
+export const NUCLEOS_TIPO_I: [number, number][] = [[50, 225], [118, 232]];
 export const RAIO_NUCLEO_TIPO_I = 0.05;
 /**
  * Pneumócitos tipo II: dispersos pela parede, entre os capilares, um deles junto ao encontro com o alvéolo de
  * trás (perto do poro). Ficam embutidos na parede e salientes na luz.
  */
-export const TIPO_II: [number, number][] = [[80, 200], [110, 292], [30, 212]];
+export const TIPO_II: [number, number][] = [[80, 200], [110, 292], [45, 330]];
 /** Células ampliadas em relação ao alvéolo (esquema fora de escala), para serem vistas e tocadas. */
 export const TIPO_II_DIMENSOES: V3 = [0.13, 0.095, 0.13];
 /** Quanto da altura da célula fica dentro da parede (o resto faz saliência na luz); não alcança os capilares. */
@@ -216,8 +216,8 @@ export const RAIO_CORPO_LAMELAR = 0.024;
 /** Corpos lamelares no referencial da célula (y = eixo apical, voltado para a luz). */
 export const CORPOS_LAMELARES_LOCAIS: V3[] = [[-0.032, 0.004, 0.026], [0.03, -0.004, 0.028], [0.004, 0.012, -0.034], [0.0, 0.05, 0.0]];
 export const MACROFAGO = { polar: 25, azimute: 290, raio: 0.072 };
-/** Sobre o capilar em anel de 65°, no meio da parede de trás (a face interna que a vista padrão mostra de frente). */
-export const BARREIRA = { polar: 65, azimute: 275, abertura: 0.22 };
+/** Sobre o capilar em anel de 95°, no meio da parede de trás (a face interna que a vista padrão mostra de frente). */
+export const BARREIRA = { polar: 95, azimute: 262, abertura: 0.22 };
 /** Poro alveolar: orifício pequeno no septo entre o alvéolo em corte e o alvéolo de trás do saco. */
 export const PORO = { polar: 135, azimute: 270, raioAnel: 0.036, tubo: 0.009, raioCanal: 0.03 };
 

@@ -289,10 +289,11 @@ export const PARTES_ALVEOLO = [
 /**
  * Enquadramento: o eixo bronquíolo → saco fica em diagonal (cerca de 45°), que aproveita igualmente a tela em pé
  * do celular e a tela larga; o ponto entre o saco e o alvéolo em corte vai para a origem, para onde a
- * aproximação (pinça/roda) converge.
+ * aproximação (pinça/roda) converge. A inclinação em x e y compensa a direção da câmera: a vista padrão olha
+ * quase de frente para a face cortada, e toda a parede interna do alvéolo em corte fica visível.
  */
-const GIRO_ALVEOLO: V3 = [0.2, -0.18, 0.78];
-const FOCO_ALVEOLO: V3 = [SACO.centro[0] + 0.08, 0, -0.1];
+const GIRO_ALVEOLO: V3 = [-0.2, 0.08, 0.78];
+const FOCO_ALVEOLO: V3 = [SACO.centro[0] - 0.1, 0, -0.1];
 const chaveTaca = (a: DefAlveolo) => `${a.raio}:${a.parede}:${a.meiaAbertura.toFixed(4)}`;
 const chaveCapilar = (a: DefAlveolo) => `${a.raio}:${a.parede}`;
 
@@ -439,5 +440,5 @@ export function ModeloAlveolo() {
 
 export const MODELOS_HISTO_A: Record<string, ModeloEstagio> = {
   nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.35, -0.08, 1], raio: 1.75 },
-  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.55 },
+  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.62 },
 };
