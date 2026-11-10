@@ -123,6 +123,40 @@ function distLinha(x: number, y: number, pts: P[], fechada: boolean) {
   return m;
 }
 
+/**
+ * Distância exata a uma linha longa, mais rápida: os segmentos vão em blocos com caixa envolvente, e um bloco só é
+ * examinado se a caixa estiver mais perto que a melhor distância já achada.
+ */
+function medidorDeLinha(pts: P[], fechada: boolean, bloco = 8) {
+  const n = fechada ? pts.length : pts.length - 1;
+  const blocos: { i0: number; i1: number; x0: number; y0: number; x1: number; y1: number }[] = [];
+  for (let i0 = 0; i0 < n; i0 += bloco) {
+    const i1 = Math.min(n, i0 + bloco);
+    let x0 = Infinity;
+    let y0 = Infinity;
+    let x1 = -Infinity;
+    let y1 = -Infinity;
+    for (let i = i0; i <= i1; i++) {
+      const [x, y] = pts[i % pts.length];
+      x0 = Math.min(x0, x);
+      y0 = Math.min(y0, y);
+      x1 = Math.max(x1, x);
+      y1 = Math.max(y1, y);
+    }
+    blocos.push({ i0, i1, x0, y0, x1, y1 });
+  }
+  return (x: number, y: number) => {
+    let m = Infinity;
+    for (const b of blocos) {
+      const dx = Math.max(b.x0 - x, 0, x - b.x1);
+      const dy = Math.max(b.y0 - y, 0, y - b.y1);
+      if (dx * dx + dy * dy >= m * m) continue;
+      for (let i = b.i0; i < b.i1; i++) m = Math.min(m, distSeg(x, y, pts[i], pts[(i + 1) % pts.length]));
+    }
+    return m;
+  };
+}
+
 /** Curva suave (Catmull-Rom) pelos pontos de controle, amostrada a cada `passo` un. */
 function curva(ctrl: P[], passo: number): P[] {
   const out: P[] = [];
@@ -236,9 +270,12 @@ function relaxar(sitios: Sitio[], moveis: number, rMax: (s: Sitio) => number, it
   }
 }
 
-/** Células (diagrama de potência) de muitos sítios de uma vez, com vizinhança por grade (rápido para milhares). */
-function celulasDe(sitios: Sitio[], rMax: number, folga: number, mesmoGrupo?: (a: number, b: number) => boolean): P[][] {
-  const passo = 2 * rMax + 1;
+/**
+ * Células (diagrama de potência) de muitos sítios de uma vez, com vizinhança por grade (rápido para milhares).
+ * `alcance` = distância máxima de um vizinho que ainda pode cortar a célula (maior quando há sítios com peso).
+ */
+function celulasDe(sitios: Sitio[], rMax: number, folga: number, alcance = 2 * rMax + 1): P[][] {
+  const passo = alcance;
   const g = new Map<string, number[]>();
   sitios.forEach((st, i) => {
     const k = `${Math.floor(st.x / passo)},${Math.floor(st.y / passo)}`;
@@ -250,10 +287,21 @@ function celulasDe(sitios: Sitio[], rMax: number, folga: number, mesmoGrupo?: (a
     const viz: Sitio[] = [st];
     const gx = Math.floor(st.x / passo);
     const gy = Math.floor(st.y / passo);
-    for (let a = gx - 1; a <= gx + 1; a++)
-      for (let b = gy - 1; b <= gy + 1; b++) for (const j of g.get(`${a},${b}`) ?? []) if (j !== i && (!mesmoGrupo || mesmoGrupo(i, j))) viz.push(sitios[j]);
+    for (let a = gx - 1; a <= gx + 1; a++) for (let b = gy - 1; b <= gy + 1; b++) for (const j of g.get(`${a},${b}`) ?? []) if (j !== i) viz.push(sitios[j]);
     return celulaPotencia(st, viz, rMax, folga);
   });
+}
+/** Relaxamento de Lloyd com vizinhança por grade (para muitos sítios). */
+function relaxarRapido(sitios: Sitio[], moveis: number, rMax: number, alcance: number, iter: number) {
+  for (let k = 0; k < iter; k++) {
+    const pols = celulasDe(sitios, rMax, 0, alcance);
+    for (let i = 0; i < moveis; i++) {
+      if (pols[i].length < 3) continue;
+      const [x, y] = centroidePol(pols[i]);
+      sitios[i].x = x;
+      sitios[i].y = y;
+    }
+  }
 }
 
 /** Registro de círculos ocupados (grade espacial): impede núcleos e células sobrepostos. */
@@ -324,7 +372,7 @@ function dardos(rng: Rng, tentativas: number, area: [number, number, number, num
     const x = entre(rng, x0, x1);
     const y = entre(rng, y0, y1);
     const r = raio();
-    if (!aceitar(x, y, r) || !occ.livre(x, y, r, folga)) continue;
+    if (!occ.livre(x, y, r, folga) || !aceitar(x, y, r)) continue; // teste barato primeiro
     occ.marcar(x, y, r);
     res.push([x, y, r]);
   }
@@ -346,18 +394,22 @@ export function LaminaPulmao(rng: Rng) {
   const RB = 112;
   const A: P = [198, 458];
   const RA = 60;
-  const bainha = chaikin(envoltoria([...pontosCirculo(B[0], B[1], RB + 14), ...pontosCirculo(A[0], A[1], RA + 16)]), 2);
-  const foraBainha = (x: number, y: number, m: number) => !dentro(x, y, bainha) && distLinha(x, y, bainha, true) > m;
+  const bainha = chaikin(envoltoria([...pontosCirculo(B[0], B[1], RB + 14, 36), ...pontosCirculo(A[0], A[1], RA + 16, 36)]), 1);
+  const distBainha = medidorDeLinha(bainha, true);
+  const foraBainha = (x: number, y: number, m: number) => (x < 40 || x > 400 || y < 70 || y > 560 || !dentro(x, y, bainha)) && distBainha(x, y) > m;
 
   // vias aéreas da porção respiratória (luz = faixa ao redor de uma linha central)
-  const rb = curva([[392, -70], [410, 40], [470, 142], [546, 226]], 3);
-  const ad = curva([[546, 226], [640, 292], [736, 314], [842, 300], [918, 262]], 3);
-  const ad2 = curva([[736, 314], [770, 410], [794, 506]], 3);
+  const rb = curva([[392, -70], [410, 40], [470, 142], [546, 226]], 6);
+  const ad = curva([[546, 226], [640, 292], [736, 314], [842, 300], [918, 262]], 6);
+  const ad2 = curva([[736, 314], [770, 410], [794, 506]], 6);
   const sacos: [number, number, number][] = [[950, 250, 42], [798, 556, 40]];
   const HW_RB = 32;
   const HW_AD = 27;
-  const dRb = (x: number, y: number) => distLinha(x, y, rb, false) - HW_RB;
-  const dAd = (x: number, y: number) => Math.min(distLinha(x, y, ad, false), distLinha(x, y, ad2, false)) - HW_AD;
+  const mRb = medidorDeLinha(rb, false);
+  const mAd = medidorDeLinha(ad, false);
+  const mAd2 = medidorDeLinha(ad2, false);
+  const dRb = (x: number, y: number) => mRb(x, y) - HW_RB;
+  const dAd = (x: number, y: number) => Math.min(mAd(x, y), mAd2(x, y)) - HW_AD;
   const dSaco = (x: number, y: number) => Math.min(...sacos.map(([sx, sy, sr]) => Math.hypot(x - sx, y - sy) - sr));
   const dLuz = (x: number, y: number) => Math.min(dRb(x, y), dAd(x, y), dSaco(x, y));
   const noParenquima = (x: number, y: number, m: number) => x > -15 && x < W + 15 && y > -15 && y < H + 15 && dLuz(x, y) > m && foraBainha(x, y, m);
@@ -1397,9 +1449,9 @@ export function LaminaAdrenal(rng: Rng) {
     ...Array.from({ length: 13 }, (_, k): Sitio => ({ x: veia.x - veia.rx + (k * 2 * veia.rx) / 12, y: veia.y, w: 0 })),
   ];
   const nMov = semR0.length + semM0.length;
-  relaxar(sitRM, nMov, () => 20, 2);
+  relaxarRapido(sitRM, nMov, 20, 48, 2);
   // rMax folgado: no topo da reticular a célula passa do limite e é cortada reta por ele (sem "bolas" na fronteira)
-  celulasDe(sitRM, 18, 0.5)
+  celulasDe(sitRM, 18, 0.5, 48)
     .slice(0, nMov)
     .forEach((pol0, i) => {
       const q = sitRM[i];
@@ -1653,7 +1705,7 @@ export function LaminaTesticulo(rng: Rng) {
   const leyCel: string[] = [];
   const leyNuc: string[] = [];
   const leyVac: string[] = [];
-  celulasDe(sitL, 10.5, 0.5)
+  celulasDe(sitL, 10.5, 0.5, 30)
     .slice(0, semL.length)
     .forEach((pol, i) => {
       if (pol.length < 3) return;
@@ -2018,7 +2070,8 @@ export function LaminaUteroProliferativo(rng: Rng) {
     glandula(ext, 19.5);
   }
   const occ = ocupacao(40, 30);
-  const distLongas = (x: number, y: number) => Math.min(...longas.map((l) => distLinha(x, y, l, false)));
+  const medLongas = longas.map((l) => medidorDeLinha(l, false));
+  const distLongas = (x: number, y: number) => Math.min(...medLongas.map((m) => m(x, y)));
   // artérias espiraladas: grupos de 2–3 perfis pequenos (o mesmo vaso enrolado, cortado várias vezes), na parte
   // profunda da camada funcional; na fase proliferativa ainda são pouco enroladas
   const grupos: P[] = [];
@@ -2059,17 +2112,20 @@ export function LaminaUteroProliferativo(rng: Rng) {
     const ctr = pontosPolar(x, y, (a) => r / Math.sqrt(Math.cos(a - g) ** 2 / (e * e) + Math.sin(a - g) ** 2), 60);
     glandula(ctr, Math.min(16, r - 7));
   }
-  const naGlandula = (x: number, y: number, m: number) => contornosGl.some((pol) => {
-    const c = pol[Math.floor(pol.length / 2)];
-    return Math.hypot(c[0] - x, c[1] - y) < 600 && (dentro(x, y, pol) || distLinha(x, y, pol, true) < m);
-  });
+  const caixas = contornosGl.map((pol) => [Math.min(...pol.map((p) => p[0])), Math.min(...pol.map((p) => p[1])), Math.max(...pol.map((p) => p[0])), Math.max(...pol.map((p) => p[1]))]);
+  const medGl = contornosGl.map((pol) => medidorDeLinha(pol, true));
+  const naGlandula = (x: number, y: number, m: number) =>
+    contornosGl.some((pol, i) => {
+      const [x0, y0, x1, y1] = caixas[i];
+      return x > x0 - m && x < x1 + m && y > y0 - m && y < y1 + m && (dentro(x, y, pol) || medGl[i](x, y) < m);
+    });
 
   // estroma: denso e celular (núcleos ovais/fusiformes, pouco citoplasma); mais denso ainda na camada basal
   const occE = ocupacao(16, 6);
   for (const [gx, gy] of grupos) occE.marcar(gx, gy, 25);
   const estF: string[] = [];
   const estB: string[] = [];
-  dardos(rng, 16000, [-10, 40, W + 10, 560], () => 3.5, (x, y) => y > ySup(x) + 22 && y < yM(x) - 5 && distLongas(x, y) > HWG + 5 && !naGlandula(x, y, 5.5), occE, 2.6).forEach(([x, y]) => {
+  dardos(rng, 16000, [-10, 40, W + 10, 560], () => 3.5, (x, y) => y > ySup(x) + 22 && y < yM(x) - 5 && !naGlandula(x, y, 5.5), occE, 2.6).forEach(([x, y]) => {
     const bas = y > yB(x);
     (bas ? estB : estF).push(elipse(x, y, entre(rng, 3, 3.6), entre(rng, 1.5, 2), entre(rng, 0, 180)));
   });
@@ -2112,7 +2168,7 @@ export function LaminaUteroProliferativo(rng: Rng) {
   const nucL: string[] = [];
   const nucT: string[] = [];
   const occF = ocupacao(16, 7);
-  celulasDe(sitF, 60, 2.6).slice(0, semF.length).forEach((pol0, i) => {
+  celulasDe(sitF, 60, 2.6, 130).slice(0, semF.length).forEach((pol0, i) => {
     const q = sitF[i];
     // corte pela junção endométrio-miométrio (tangente à curva no x do feixe): irregular, sem submucosa
     const sl = dyM(q.x);
