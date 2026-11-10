@@ -424,7 +424,7 @@
     {
       "id": "emb-22-q08",
       "tipo": "multipla",
-      "contexto": "RN a termo sem eliminação de mecônio em 48 h, com distensão abdominal; biópsia retal por sucção sem células ganglionares e com troncos nervosos hipertróficos.",
+      "contexto": "RN a termo sem eliminação de mecônio em 24 h, com distensão abdominal; biópsia retal por sucção sem células ganglionares e com troncos nervosos hipertróficos.",
       "enunciado": "A base de crista neural e o principal gene associados são:",
       "alternativas": [
         {
@@ -454,7 +454,7 @@
         "RET",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15; Rossi et al., diretrizes ERNICA 2025 (J Pediatr Gastroenterol Nutr 2026)"
     },
     {
       "id": "emb-22-q09",
@@ -1184,6 +1184,10 @@
     {
       "obra": "Mossé YP, et al. Identification of ALK as a major familial neuroblastoma predisposition gene. Nature. 2008;455(7215):930–935. doi:10.1038/nature07261. PMID 18724359",
       "capitulo": "Neuroblastoma hereditário (ALK; PHOX2B)"
+    },
+    {
+      "obra": "Rossi D, Irvine W, Granström AL, et al. Updated European Reference Network for rare Inherited and Congenital Digestive and Gastrointestinal Anomalies guidelines for the management of rectosigmoid Hirschsprung's disease 2025. J Pediatr Gastroenterol Nutr. 2026;83(1):185-207. doi:10.1002/jpn3.70442. PMID 42057764 (texto integral: PMC13342790)",
+      "capitulo": "Diagnóstico: a tríade clássica inclui atraso na eliminação de mecônio, definido como mais de 24 h no recém-nascido a termo (recomendação mantida da versão de 2020, Kyrklund et al.); conferido no texto integral em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -1225,6 +1229,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "Conferência de fontes primárias (PubMed E-utilities; Europe PMC/PMC). 13 artigos de periódico conferidos: 12 em referencias (Johansson 2015, Wallace & Burns 2005, Jones 2008, Óskarsdóttir 2023, Amiel 2008, Pingault 2010, Vissers 2004, Legius 2021, Lenders 2014, Woods 2002, Schilling 2002, Mossé 2008) e Wells 2015 (incertezas). Autores, títulos, periódicos, anos, volumes e páginas corretos; DOI e PMID acrescentados (e à citação de Wells). Afirmações: Johansson 2015 (texto integral, PMC4631767) — rastreamento de linhagem só em camundongo (endoderma Sox17+; a progênie Wnt1+ não forma células C); dados humanos indiretos (FOXA1/FOXA2 no carcinoma medular, tireoide lingual, DiGeorge): q15 e q22 conferem. Wallace & Burns 2005 (resumo): semana 4 → semana 7, em idade embrionária — incerteza retirada e nota de divergência completada. Jones 2008 (resumo: inibição de p53 previne a apoptose da crista e o fenótipo em camundongos Tcof1+/−; pifitrina-α e deleção de Trp53 confirmadas em James et al., Nucleus 2014, PMID 25482194) — incerteza retirada; a ressalva 'sem aplicação clínica' segue na q25. Legius 2021 (texto integral): critérios da correlação NF1 idênticos à Tabela 1; o artigo diz 'até 30–50%' de casos esporádicos, não 'cerca de metade' — atribuição corrigida na incerteza; texto do aluno mantido (não contradito; conferir na GeneReviews). Mossé 2008 (texto: PHOX2B explica pequena parte do neuroblastoma hereditário), Woods/Schilling e Lenders (resumos) conferem. Wells 2015: texto integral indisponível pela API — incerteza mantida. Gabaritos, ids, ordens e pares inalterados."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização (1 correção menor, 0 gabarito alterado): vinheta da q08 passou de 'sem eliminação de mecônio em 48 h' para 'em 24 h', conforme as diretrizes ERNICA atualizadas, que definem atraso como eliminação depois de 24 h no recém-nascido a termo (Rossi et al., J Pediatr Gastroenterol Nutr 2026;83(1):185-207, PMID 42057764, texto integral PMC13342790). A resposta (d, crista vagal/sacral e RET) não depende do número; id, alternativas e gabarito inalterados. Referência ERNICA acrescentada ao tópico e à q08."
       }
     ],
     "humano": null

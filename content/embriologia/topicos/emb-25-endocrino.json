@@ -102,7 +102,7 @@
       "definicao": "Pequena fosseta no ápice do sulco terminal da língua que marca o local de origem do primórdio da tireoide."
     },
     {
-      "id": "foliculos-tireoidianos",
+      "id": "foliculo-tireoidiano",
       "nome": "Folículos tireoidianos",
       "sinonimos": [],
       "definicao": "Unidades funcionais da tireoide: epitélio de células foliculares em torno de coloide.",
@@ -172,7 +172,7 @@
       "destino": "Dessa linhagem originam-se o neuroblastoma e o feocromocitoma."
     },
     {
-      "id": "ilhotas-pancreaticas",
+      "id": "ilhota-de-langerhans",
       "nome": "Ilhotas pancreáticas (de Langerhans)",
       "sinonimos": [],
       "definicao": "Agrupamentos de células endócrinas (α, β, δ e outras) dispersos no pâncreas.",
@@ -1388,6 +1388,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "Conferência de fontes primárias (textos integrais abertos): nenhum erro encontrado; 1 ajuste de atribuição. PCDT do Hipotireoidismo Congênito (Portaria Conjunta nº 5, de 16/04/2021): confirmados o início da levotiroxina 'o mais precocemente possível, idealmente nos primeiros 14 dias de vida, após a coleta de sangue para os exames diagnósticos confirmatórios', a dose-padrão de 10–15 mcg/kg/dia, a coleta '48 horas após o nascimento ou até o 5º dia de vida' e a conduta pelo TSH em papel-filtro (Quadro 1: < 10 mUI/L normal; 10–20 novo teste do pezinho; > 20 convocação urgente para TSH e T4 séricos); o PCDT diz que 'a impossibilidade de se proceder aos exames para determinação etiológica não deve atrasar o início do tratamento' — por isso a explicação da q06 voltou a citar o PCDT ao lado do consenso ENDO-ERN/ESPE. SBP nº 5/2018: 3º–5º dia, nova coleta em prematuros e doentes (1 mês ou alta, ou triagem tripla), 14 dias, 10–15 µg/kg/dia, imagem que não adia o tratamento. Manual técnico de 2016: período ideal da 1ª amostra entre o 3º e o 5º dia. SBP nº 16 (9/5/2022, de acesso livre): filho de mãe diabética como fator de risco, alimentação na 1ª hora e glicemia 30 minutos depois. Referências com URL; incertezas resolvidas retiradas ou reescritas. Relatório: content/revisoes/conferencia-fontes-sbp.md."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização de ids de estrutura (2 renomeações, 0 questão alterada): o id plural do folículo tireoidiano passou a foliculo-tireoidiano (id de his-03, his-18 e da lâmina 'tireoide') e o id das ilhotas pancreáticas passou a ilhota-de-langerhans (id de his-15 e da lâmina 'pancreas'). Nomes e definições mantidos e compatíveis com os da histologia (folículo: epitélio de células foliculares em torno de coloide; ilhotas: agrupamentos de células endócrinas α, β, δ e outras, de origem endodérmica). O id do evento das ilhotas na linha do tempo (prefixo e25-) não foi alterado, porque ids de evento são preservados para o histórico dos alunos."
       }
     ],
     "humano": null

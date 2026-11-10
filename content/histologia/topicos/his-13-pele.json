@@ -113,7 +113,7 @@
       "id": "papila-dermica",
       "nome": "Papila dérmica",
       "sinonimos": [
-        "derme papilar"
+        "papila da derme"
       ],
       "definicao": "Projeção da derme papilar, de conjuntivo frouxo, entre as cristas epidérmicas; leva alças capilares para perto do epitélio avascular e, na pele glabra, contém corpúsculos de Meissner."
     },
@@ -1322,7 +1322,7 @@
     "Queimaduras: no ensino brasileiro usam-se em geral 1º, 2º (superficial e profundo) e 3º graus; Jeschke et al. (2020) acrescentam um 4º grau (músculo, osso), e Toussaint e Singer (2014) põem no 4º grau também a gordura subcutânea. A cartilha do Ministério da Saúde não pôde ser lida (ver incertezas); por isso o texto não atribui à classificação brasileira a inclusão da hipoderme no 3º grau e diz só que ela varia entre as classificações. Necessidade de cirurgia: Jeschke descreve o 2º grau profundo como lesão que 'require surgery and will scar' e o de espessura total como lesão que exige, 'unless very small, surgical management'; Toussaint e Singer, como lesões que 'generally require consultation with a burn specialist for possible excision and grafting'; Rowan et al. (2015) chamam o enxerto autólogo de pele parcial de padrão para o fechamento das lesões de espessura total; Serebrakian et al. (2018) descrevem a reepitelização da área doadora a partir dos anexos dérmicos. A correspondência '2º grau superficial = derme papilar; profundo = derme reticular' está em Toussaint e Singer. Sensibilidade no 2º grau profundo: Jeschke descreve-o como 'menos sensível'; Toussaint e Singer, como em geral muito doloroso, às vezes com sensibilidade diminuída; por isso a q09 usa, para separar os graus, o aspecto de couro, a ausência de empalidecimento e a insensibilidade, típicos do 3º grau. As duas revisões registram que a avaliação clínica da profundidade é imprecisa.",
     "Duração das fases do ciclo do pelo: as obras dão valores diferentes conforme a região do corpo; no couro cabeludo, anágena de 2 a 8 anos e catágena de cerca de 2 semanas (Natarelli et al., 2023). O conteúdo usa ordens de grandeza (anos, semanas) e cobra só a sequência. A fase exógena (eliminação do pelo) é descrita como coincidente com o início do novo anágeno; por isso os dois eventos dividem a mesma posição na linha do tempo.",
     "Unidade epidermomelânica: o número de queratinócitos por melanócito varia entre as fontes e as regiões do corpo; foi omitido.",
-    "Papila dérmica × derme papilar: o id canônico papila-dermica (tópico his-02) traz 'derme papilar' como sinônimo; a rigor, a derme papilar é a camada superficial da derme, que inclui as papilas. Mantido o id existente para coerência com a lâmina da pele espessa."
+    "Papila dérmica × derme papilar: a derme papilar é a camada superficial da derme, que inclui as papilas; por isso o sinônimo do id papila-dermica passou a ser 'papila da derme' (harmonização de 10/11/2026, também no his-02 e na lâmina da pele espessa)."
   ],
   "incertezas": [
     "Números de capítulo de Junqueira 14ª ed. (18) e Ross 8ª ed. (15) citados de memória, com base nas edições anteriores; conferir.",
@@ -1351,6 +1351,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "8 correções (0 críticas, 2 importantes, 6 menores); nenhum gabarito, id ou alternativa alterado. Importantes: (1) queimaduras profundas — resumo, ponto-chave, correlação e explicações das q09, q10 e q28 diziam só que a lesão de espessura total reepiteliza pelas bordas; agora registram que o 2º grau profundo costuma e o 3º grau (salvo lesões muito pequenas) precisa de excisão e enxerto, e que a área doadora do enxerto parcial reepiteliza a partir dos anexos (Jeschke 2020, Toussaint e Singer 2014, Rowan 2015, Serebrakian 2018, texto integral); (2) q13 — a explicação dizia que a lesão preenche a regra ABCDE com diâmetro, que a vinheta não informa. Menores: 3º grau × hipoderme sem atribuir à classificação brasileira (cartilha do MS inacessível: bvsms HTTP 403, nada em www.gov.br/saude); rastreamento não recomendado também para câncer de pele não melanoma (INCA); Breslow do topo da camada granulosa na q13; PTCH1 como gene inativado na via Hedgehog (Chmiel 2022); q10 sem afirmar que a protuberância sempre resta na área doadora; fontes brasileiras conferidas e citadas (INCA melanoma e não melanoma, PCDT da Psoríase 2021, consenso SBD de vitiligo 2020, Marçon e Maia 2019 sobre albinismo, consenso latino-americano de acne 2024). Conferidos sem correção: ABCDE e rastreamento do melanoma (INCA, aba de 31/07/2023), Breslow (ICCR 2013), BCC e CEC, psoríase, vitiligo e albinismo. Relatório: content/revisoes/hs1314-clinica.md."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização com tópicos publicados (relatório content/revisoes/harmonizacao-histologia.md): sinônimo de papila-dermica passou de 'derme papilar' (camada) a 'papila da derme', como no his-02; nota de incerteza atualizada."
       }
     ],
     "humano": null

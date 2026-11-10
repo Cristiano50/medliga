@@ -333,7 +333,7 @@
     {
       "id": "doenca-hirschsprung",
       "titulo": "Doença de Hirschsprung (megacolo congênito)",
-      "descricao": "Ausência de células ganglionares nos plexos submucoso e mioentérico de um segmento distal que sempre inclui o reto e se estende proximalmente de forma contínua, na maioria das vezes até o sigmoide. Atraso na eliminação de mecônio (mais de 48 horas), distensão abdominal, vômitos e, mais tarde, constipação grave; risco de enterocolite. O segmento agangliônico fica contraído, e o colo proximal normal se dilata. Diagnóstico por biópsia retal (a biópsia por sucção, de mucosa e submucosa, avalia o plexo submucoso); mais comum no sexo masculino e associada à síndrome de Down.",
+      "descricao": "Ausência de células ganglionares nos plexos submucoso e mioentérico de um segmento distal que sempre inclui o reto e se estende proximalmente de forma contínua, na maioria das vezes até o sigmoide. Atraso na eliminação de mecônio (mais de 24 horas no recém-nascido a termo), distensão abdominal, vômitos e, mais tarde, constipação grave; risco de enterocolite. O segmento agangliônico fica contraído, e o colo proximal normal se dilata. Diagnóstico por biópsia retal (a biópsia por sucção, de mucosa e submucosa, avalia o plexo submucoso); mais comum no sexo masculino e associada à síndrome de Down.",
       "mecanismo": "Falha da colonização craniocaudal do colo distal pelos precursores entéricos derivados da crista neural (principalmente vagal); mutações do gene RET são a principal causa genética conhecida."
     },
     {
@@ -751,7 +751,7 @@
     {
       "id": "emb-15-q13",
       "tipo": "multipla",
-      "contexto": "Recém-nascido a termo não eliminou mecônio nas primeiras 48 horas e evolui com distensão abdominal e vômitos biliosos. Ao toque retal, há saída explosiva de fezes e gases. A biópsia retal por sucção mostra ausência de células ganglionares no plexo submucoso e troncos nervosos hipertróficos.",
+      "contexto": "Recém-nascido a termo não eliminou mecônio nas primeiras 24 horas e evolui com distensão abdominal e vômitos biliosos. Ao toque retal, há saída explosiva de fezes e gases. A biópsia retal por sucção mostra ausência de células ganglionares no plexo submucoso e troncos nervosos hipertróficos.",
       "enunciado": "Qual é a base embriológica dessa doença?",
       "alternativas": [
         {
@@ -780,7 +780,7 @@
         "crista-neural",
         "caso-clinico"
       ],
-      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15"
+      "referencia": "Moore 11ª ed., cap. 11; Sadler 14ª ed., cap. 15; Rossi et al., diretrizes ERNICA 2025 (J Pediatr Gastroenterol Nutr 2026)"
     },
     {
       "id": "emb-15-q14",
@@ -1344,6 +1344,10 @@
     {
       "obra": "Holcomb GW III, Murphy JP, St Peter SD. Holcomb and Ashcraft's Pediatric Surgery. 7th ed. Philadelphia: Elsevier; 2019",
       "capitulo": "31 — Malrotation"
+    },
+    {
+      "obra": "Rossi D, Irvine W, Granström AL, et al. Updated European Reference Network for rare Inherited and Congenital Digestive and Gastrointestinal Anomalies guidelines for the management of rectosigmoid Hirschsprung's disease 2025. J Pediatr Gastroenterol Nutr. 2026;83(1):185-207. doi:10.1002/jpn3.70442. PMID 42057764 (texto integral: PMC13342790)",
+      "capitulo": "Diagnóstico: a tríade clássica inclui atraso na eliminação de mecônio, definido como mais de 24 h no recém-nascido a termo (recomendação mantida da versão de 2020, Kyrklund et al.); conferido no texto integral em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -1398,6 +1402,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-15-q26 a emb-15-q30): 1 correção (0 críticas, 0 importantes, 1 menor): q26 — a explicação dizia só que o vômito bilioso exige excluir volvo com urgência; agora afirma que o volvo do intestino médio é emergência cirúrgica (reanimação rápida, laparotomia imediata, distorção e procedimento de Ladd), e o caso fala em laparotomia de urgência; referência de cirurgia pediátrica acrescentada (Holcomb e Ashcraft, 7ª ed., 2019, cap. 31); incerteza da camada avançada atualizada. Conferidos sem mudança: q26 (c) — território da AMS em risco, estômago (celíaco) e colo descendente (AMI) poupados; q27 (a) — Meckel com diverticulite simulando apendicite e sangramento indolor prévio, borda antimesentérica do íleo; a 'regra dos 2' aparece só como mnemônica aproximada; q28 (d) — 3ª parte do duodeno entre AMS e aorta pela rotação de 270° anti-horária; q29 — úraco pérvio, fístula onfaloentérica, cordão fibroso, Meckel (pertecnetato) e onfalocele; q30 (b) — hemorroida interna indolor acima da linha pectínea × externa trombosada dolorosa abaixo dela (pudendo). Gabaritos e ids inalterados; sem pista de comprimento."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização (2 correções: 1 importante na correlação, 1 menor na vinheta da q13; 0 gabarito alterado): atraso na eliminação de mecônio na doença de Hirschsprung passou de 'mais de 48 horas' para 'mais de 24 horas no recém-nascido a termo' na correlação e na vinheta da q13 ('nas primeiras 24 horas'), conforme as diretrizes ERNICA atualizadas (Rossi et al., J Pediatr Gastroenterol Nutr 2026;83(1):185-207, PMID 42057764, texto integral PMC13342790: 'delayed passage of meconium (>24 h in a term infant)'; o mesmo limiar já estava na versão de 2020, PMC7318734). A resposta da q13 (a, mecanismo de crista neural) não depende do número; id, alternativas e gabarito inalterados. Referência ERNICA acrescentada ao tópico e à q13."
       }
     ],
     "humano": null

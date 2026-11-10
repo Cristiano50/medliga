@@ -102,10 +102,12 @@
       "origem": "Epitélio da glândula."
     },
     {
-      "id": "ducto-intercalar",
+      "id": "ducto-intercalado",
       "nome": "Ducto intercalar",
-      "sinonimos": [],
-      "definicao": "Primeiro segmento do sistema de ductos, de epitélio cúbico baixo, com células mioepiteliais; longo na parótida e curto na submandibular e na sublingual."
+      "sinonimos": [
+        "ducto intercalado"
+      ],
+      "definicao": "Primeiro segmento do sistema de ductos; nas glândulas salivares, de epitélio cúbico baixo, com células mioepiteliais, longo na parótida e curto na submandibular e na sublingual (no pâncreas, ver his-15)."
     },
     {
       "id": "ducto-estriado",
@@ -1308,6 +1310,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids his-03-q26 a his-03-q30): 2 correções (0 críticas, 2 importantes, 0 menores); gabaritos corretos. Importantes: q27 — a explicação dizia, sem ressalva, que o carcinoma in situ mantém o mioepitélio; passou a registrar que a ausência de mioepitélio é lida com a morfologia, porque os carcinomas papilíferos encapsulado e sólido podem ser classificados como in situ sem mioepitélio periférico (Quinn et al. 2023, texto integral); q28 — a explicação dizia que uma recidiva de adenoma pleomórfico 'continuaria benigna, sem o componente atípico', mas o carcinoma ex-adenoma pleomórfico também surge em recidivas, e as recidivas múltiplas são fator de risco (Scarini et al. 2023, texto integral; Antony et al. 2012, resumo). q26: conta do ACR/EULAR 2016 refeita (2 focos/4 mm²; 3 + 1 = 4 pontos) e conferida na Tabela 3 do texto integral. q29 e q30 sem alteração."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização de ids de estrutura (1 renomeação, 0 questão alterada): o id do ducto intercalar (terminado em -ar) passou a ducto-intercalado, id canônico de his-15 e da lâmina 'pancreas'; nome 'Ducto intercalar' mantido, com 'ducto intercalado' como sinônimo (como em his-15). Como o id passa a ser compartilhado com o pâncreas e o registro de estruturas exibe a definição do primeiro tópico carregado (his-03), a definição foi delimitada às glândulas salivares (epitélio cúbico baixo, células mioepiteliais, longo na parótida), que não valem para o ducto intercalar pancreático (pavimentoso a cúbico baixo, começa nas células centroacinosas, sem mioepitélio; his-15). Fonte: Junqueira 14ª ed. e Ross 8ª ed., já citados no tópico (livros, sem texto integral nesta rede)."
       }
     ],
     "humano": null
