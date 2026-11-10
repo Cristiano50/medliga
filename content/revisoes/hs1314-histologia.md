@@ -156,4 +156,4 @@ Checagem por script contra a cópia anterior à revisão (igual ao commit `9d7f6
 - `revisao.humano` continua `null`;
 - há uma entrada nova em `revisao.agentes` em cada arquivo.
 
-Não fiz commit. Durante a revisão, a sessão principal fez os commits `b179f88` e `dbad032` no branch de trabalho, e eles já incluem parte destas edições. Ficaram fora deles o registro em `revisao.agentes` e este relatório.
+Não fiz commit. Durante a revisão, a sessão principal fez quatro commits no branch de trabalho (`b179f88`, `dbad032`, `9b21575` e `b37c748`), e eles já incluem as edições dos dois tópicos e uma versão deste relatório. Esta última frase é a única mudança ainda fora de commit.

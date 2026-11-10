@@ -1363,62 +1363,59 @@ export function LaminaAdrenal(rng: Rng) {
   const zrCel: string[] = [];
   const zrNuc: string[] = [];
   const lipof: string[] = [];
-  // os furos da rede (sinusoides) entram como sítios fixos com peso: as células, relaxadas, ficam poligonais e
-  // encostadas umas nas outras, contornando os sinusoides
-  const cordoes = (furos: [number, number, number][], celulas: [number, number, number][], pesoFuro: number, rMax: number, iter: number) => {
-    const sit: Sitio[] = [...celulas.map(([x, y]) => ({ x, y, w: 0 })), ...furos.map(([x, y]) => ({ x, y, w: pesoFuro }))];
-    relaxar(sit, celulas.length, () => rMax * 1.2, iter);
-    const pols = celulasDe(sit, rMax, 0.5).slice(0, celulas.length);
-    return { sit, pols };
-  };
-  const occR = ocupacao(30, 12);
-  const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
-  for (const [x, y] of furosR) {
-    hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
-  }
-  const occR2 = ocupacao(20, 7);
-  const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occR2, 0);
-  // rMax folgado: na borda da zona a célula passa do limite e é cortada reta por ele (sem 'bolas' na fronteira)
-  const zr = cordoes(furosR, semR0, 10, 16, 2);
-  zr.pols.forEach((pol0, i) => {
-    const q = zr.sit[i];
-    let pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
-    pol = cortar(pol, 0, 1, 0, yM(q.x) + 1);
-    if (pol.length < 3) return;
-    zrCel.push(contorno(pol));
-    const c = centroidePol(pol);
-    const r = rng() < 0.12 ? 2.2 : 3.1; // alguns núcleos picnóticos (menores e escuros)
-    if (!occNuc.livre(c[0], c[1], r, 0.5)) return;
-    occNuc.marcar(c[0], c[1], r);
-    zrNuc.push(circulo(c[0], c[1], r));
-    if (rng() < 0.3)
-      for (let g = 0; g < 4; g++) {
-        const a = entre(rng, 0, Math.PI * 2);
-        lipof.push(circulo(c[0] + Math.cos(a) * 5.2, c[1] + Math.sin(a) * 5.2, 0.8));
-      }
-  });
-
   // medula: grupos e cordões de células cromafins (citoplasma basófilo, granuloso), sinusoides e a veia central
   const veia = { x: 560, y: 660, rx: 150, ry: 26 };
   const naVeia = (x: number, y: number, m: number) => ((x - veia.x) / (veia.rx + m)) ** 2 + ((y - veia.y) / (veia.ry + m)) ** 2 < 1;
-  const occM = ocupacao(40, 16);
-  const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occM, 22);
-  for (const [x, y] of furosM) hemacias.push(hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4));
-  const occM2 = ocupacao(24, 9);
-  const semM0 = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occM2, 0);
-  const md = cordoes([...furosM, ...Array.from({ length: 13 }, (_, k): [number, number, number] => [veia.x - veia.rx + (k * 2 * veia.rx) / 12, veia.y, 0])], semM0, 14, 18, 2);
   const medCel: string[] = [];
   const medNuc: string[] = [];
-  md.pols.forEach((pol0, i) => {
-    const q = md.sit[i];
-    const pol = cortar(pol0, 0, -1, 0, -yM(q.x));
-    if (pol.length < 3 || pol.some(([x, y]) => naVeia(x, y, 3))) return;
-    medCel.push(contorno(pol));
-    const c = centroidePol(pol);
-    if (!occNuc.livre(c[0], c[1], 4, 0.5)) return;
-    occNuc.marcar(c[0], c[1], 4);
-    medNuc.push(circulo(c[0] + entre(rng, -0.8, 0.8), c[1] + entre(rng, -0.8, 0.8), 4));
-  });
+  // reticular e medula num só diagrama de potência: a fronteira entre as zonas é a borda comum das células.
+  // Os furos da rede (sinusoides) entram como sítios fixos com peso; as células, relaxadas, ficam poligonais e
+  // encostadas umas nas outras, contornando os sinusoides.
+  const occR = ocupacao(40, 16);
+  const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
+  const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occR, 22);
+  for (const [x, y] of furosR) hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
+  for (const [x, y] of furosM) hemacias.push(hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4));
+  const occC = ocupacao(24, 9);
+  const semR0 = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.4, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occC, 0);
+  const semM0 = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.4, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occC, 0);
+  const sitRM: Sitio[] = [
+    ...semR0.map(([x, y]) => ({ x, y, w: 0 })),
+    ...semM0.map(([x, y]) => ({ x, y, w: 5 })),
+    ...furosR.map(([x, y]) => ({ x, y, w: 10 })),
+    ...furosM.map(([x, y]) => ({ x, y, w: 14 })),
+    ...Array.from({ length: 13 }, (_, k): Sitio => ({ x: veia.x - veia.rx + (k * 2 * veia.rx) / 12, y: veia.y, w: 0 })),
+  ];
+  const nMov = semR0.length + semM0.length;
+  relaxar(sitRM, nMov, () => 20, 2);
+  // rMax folgado: no topo da reticular a célula passa do limite e é cortada reta por ele (sem "bolas" na fronteira)
+  celulasDe(sitRM, 18, 0.5)
+    .slice(0, nMov)
+    .forEach((pol0, i) => {
+      const q = sitRM[i];
+      if (i < semR0.length) {
+        const pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
+        if (pol.length < 3) return;
+        zrCel.push(contorno(pol));
+        const c = centroidePol(pol);
+        const r = rng() < 0.12 ? 2.2 : 3.1; // alguns núcleos picnóticos (menores e escuros)
+        if (!occNuc.livre(c[0], c[1], r, 0.5)) return;
+        occNuc.marcar(c[0], c[1], r);
+        zrNuc.push(circulo(c[0], c[1], r));
+        if (rng() < 0.3)
+          for (let g = 0; g < 4; g++) {
+            const a = entre(rng, 0, Math.PI * 2);
+            lipof.push(circulo(c[0] + Math.cos(a) * 5.2, c[1] + Math.sin(a) * 5.2, 0.8));
+          }
+        return;
+      }
+      if (pol0.length < 3 || pol0.some(([x, y]) => naVeia(x, y, 3))) return;
+      medCel.push(contorno(pol0));
+      const c = centroidePol(pol0);
+      if (!occNuc.livre(c[0], c[1], 4, 0.5)) return;
+      occNuc.marcar(c[0], c[1], 4);
+      medNuc.push(circulo(c[0] + entre(rng, -0.8, 0.8), c[1] + entre(rng, -0.8, 0.8), 4));
+    });
   // veia central (medular): parede delgada com feixes excêntricos de músculo liso longitudinal
   const feixes: string[] = [];
   const nucFeixe: string[] = [];
