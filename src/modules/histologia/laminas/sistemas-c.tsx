@@ -728,7 +728,7 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
     const [x, y] = em(s + entre(rng, -4, 4), lado * (hl - 0.9));
     nucE.push(elipse(x, y, 4, 1, ang));
   }
-  for (let s = 8; s < L - 6; s += entre(rng, 10, 14)) {
+  for (let s = 8; s < L - 6; s += entre(rng, 15, 26)) {
     const [x, y] = em(s, entre(rng, -hl + 4, hl - 4));
     hem.push(hemacia(x, y, 4.6, ang + entre(rng, -30, 30), 2.6));
   }
@@ -776,12 +776,12 @@ export function LaminaRimCortex(rng: Rng) {
     }
   }
   occ.marcar(MD.x, MD.y, MD.R + 2);
-  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.68 ? entre(rng, 31, 35) : entre(rng, 23, 26)), () => true, occ, 1);
+  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.68 ? entre(rng, 33, 37) : entre(rng, 24, 27)), () => true, occ, 0);
   const mdSitio: Sitio = { x: MD.x, y: MD.y, w: MD.R + 3 };
   const sitios: Sitio[] = [...tubSem.map(([x, y, r]) => ({ x, y, w: r })), mdSitio, ...fixos];
-  const forma = (st: Sitio) => chaikin(celulaPotencia(st, sitios, st.w * 1.5, 4.6), 2);
-  const proximais = tubSem.filter(([, , r]) => r >= 30).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
-  const distais = tubSem.filter(([, , r]) => r < 30).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
+  const forma = (st: Sitio) => chaikin(celulaPotencia(st, sitios, st.w * 1.32, 4.4), 3);
+  const proximais = tubSem.filter(([, , r]) => r >= 31).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
+  const distais = tubSem.filter(([, , r]) => r < 31).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
   const contornoMd = forma(mdSitio);
   const centroide = (pol: P[]): P => [pol.reduce((a, p) => a + p[0], 0) / pol.length, pol.reduce((a, p) => a + p[1], 0) / pol.length];
   const raioEm = (pol: P[], c: P, a: number) => {
@@ -794,7 +794,7 @@ export function LaminaRimCortex(rng: Rng) {
   const capilares: string[] = [];
   const hemCap: string[] = [];
   const nucCap: string[] = [];
-  const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.5, 0));
+  const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.32, 0));
   const vistos = new Set<string>();
   brutas.forEach((pol) =>
     pol.forEach((a, k) => {

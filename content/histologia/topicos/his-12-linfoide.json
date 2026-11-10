@@ -500,10 +500,10 @@
         { "id": "a", "texto": "Seleção positiva e negativa de linfócitos T recém-formados" },
         { "id": "b", "texto": "Proliferação de linfócitos B, com hipermutação e seleção por afinidade" },
         { "id": "c", "texto": "Diferenciação de células NK a partir de progenitores linfoides da medula" },
-        { "id": "d", "texto": "Maturação de linfócitos B virgens recém-chegados da circulação fetal" }
+        { "id": "d", "texto": "Rearranjo inicial V(D)J dos genes das imunoglobulinas em células pró-B" }
       ],
       "correta": "b",
-      "explicacao": "Linfócitos B ativados por antígeno e por linfócitos T auxiliares foliculares formam o centro germinativo: na zona escura, os centroblastos proliferam e sofrem hipermutação somática dos genes das imunoglobulinas; na zona clara, os centrócitos competem pelo antígeno retido nas células dendríticas foliculares, e sobrevivem os de maior afinidade (b), que se diferenciam em plasmócitos de vida longa ou linfócitos B de memória; ali também ocorre troca de classe. As seleções de linfócitos T (a) ocorrem no timo. Células NK (c) desenvolvem-se a partir de progenitores da medula óssea, fora dos folículos. Linfócitos B virgens (d) formam-se na medula óssea e chegam aos folículos já maduros; o centro germinativo só surge após a ativação.",
+      "explicacao": "Linfócitos B ativados por antígeno e por linfócitos T auxiliares foliculares formam o centro germinativo: na zona escura, os centroblastos proliferam e sofrem hipermutação somática dos genes das imunoglobulinas; na zona clara, os centrócitos competem pelo antígeno retido nas células dendríticas foliculares, e sobrevivem os de maior afinidade (b), que se diferenciam em plasmócitos de vida longa ou linfócitos B de memória; ali também ocorre troca de classe. As seleções de linfócitos T (a) ocorrem no timo. Células NK (c) desenvolvem-se a partir de progenitores da medula óssea, fora dos folículos. O rearranjo V(D)J inicial (d) ocorre nos precursores B da medula óssea, antes de os linfócitos chegarem aos folículos; no centro germinativo, genes já rearranjados sofrem hipermutação.",
       "dificuldade": 3,
       "bloom": "compreender",
       "tags": ["centro-germinativo", "linfocito-b", "foliculo-linfoide"],
