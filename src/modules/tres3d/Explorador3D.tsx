@@ -31,6 +31,13 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
   const raioCorte = Math.max(1, Math.ceil((modelo?.raio ?? 2) * 1.3 * 20) / 20);
   useEffect(() => { setSelecionado(null); setOcultos([]); setIsolado(null); setCorte(null); setBusca(''); }, [item?.id]);
   useEffect(() => { if (telaCheia) palco.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }); }, [telaCheia]);
+  // No celular a lista de modelos é uma faixa que rola de lado: mantém o modelo atual à vista.
+  const faixaModelos = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const faixa = faixaModelos.current;
+    const atual = faixa?.querySelector<HTMLElement>('[aria-pressed="true"]');
+    if (faixa && atual) faixa.scrollLeft = atual.offsetLeft - (faixa.clientWidth - atual.offsetWidth) / 2;
+  }, [indice]);
 
   if (!item || !modelo)
     return (
@@ -81,7 +88,7 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
           <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice >= itens.length - 1} aria-label="Próximo modelo">▶</button>
         </div>
         {itens.length > 1 && (
-          <div className="linha quebra" role="group" aria-label="Modelos" style={{ justifyContent: 'center', gap: 6 }}>
+          <div ref={faixaModelos} className="linha quebra seletor-modelos3d" role="group" aria-label="Modelos" style={{ gap: 6 }}>
             {itens.map((e, i) => (
               <button key={e.id} className={`btn pequeno ${i === indice ? 'primario' : ''}`} onClick={() => irPara(i)} aria-pressed={i === indice}>
                 {e.titulo}
@@ -91,9 +98,16 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
         )}
       </div>
 
+      {/* Aviso de escala sempre à vista; os avisos de interpretação ficam recolhidos, a um toque, para o modelo
+          não ficar várias telas abaixo do texto (no celular eram mais de duas telas de avisos antes do modelo). */}
       <div className="contexto3d" aria-label="Como interpretar o modelo">
         <strong>{avisos.titulo}</strong>
-        {avisos.linhas.map((l, i) => <span key={i}>{l}</span>)}
+        {avisos.linhas.length > 0 && (
+          <details>
+            <summary>O que este esquema simplifica ({avisos.linhas.length} {avisos.linhas.length === 1 ? 'aviso' : 'avisos'})</summary>
+            {avisos.linhas.map((l, i) => <span key={i}>{l}</span>)}
+          </details>
+        )}
       </div>
 
       <div className="ferramentas3d" role="group" aria-label="Explorar o modelo">

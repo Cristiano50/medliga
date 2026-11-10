@@ -257,6 +257,15 @@ p { margin: 0 0 0.75em; }
 .sobreposto { position: absolute; z-index: 5; }
 .contexto3d { display: grid; gap: 4px; padding: 14px 16px; border-left: 3px solid var(--primary); background: var(--bg-elev); border-radius: 0 12px 12px 0; font-size: .85rem; color: var(--text-2); }
 .contexto3d strong { color: var(--text); }
+.seletor-modelos3d { justify-content: center; position: relative; }
+/* No celular, a lista de modelos vira uma faixa que rola de lado, para o modelo 3D aparecer mais acima. */
+@media (max-width: 640px) {
+  .seletor-modelos3d { flex-wrap: nowrap !important; justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+  .seletor-modelos3d .btn { flex: 0 0 auto; }
+}
+.contexto3d details { display: grid; gap: 4px; }
+.contexto3d details > span { display: block; margin-top: 4px; }
+.contexto3d summary { cursor: pointer; color: var(--primary); padding: 6px 0; }
 .ferramentas3d { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .controle-corte { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: .85rem; min-height: 40px; }
 .controle-corte input { accent-color: var(--primary); }
