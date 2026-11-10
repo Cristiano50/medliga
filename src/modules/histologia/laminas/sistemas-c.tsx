@@ -195,6 +195,46 @@ function perimetro(pts: P[], fechada = true) {
   return L;
 }
 
+/** Centroide (por área) de um polígono. */
+function centroidePol(pol: P[]): P {
+  let a = 0;
+  let cx = 0;
+  let cy = 0;
+  pol.forEach((p, i) => {
+    const q = pol[(i + 1) % pol.length];
+    const c = p[0] * q[1] - q[0] * p[1];
+    a += c;
+    cx += (p[0] + q[0]) * c;
+    cy += (p[1] + q[1]) * c;
+  });
+  return Math.abs(a) < 1e-6 ? pol[0] : [cx / (3 * a), cy / (3 * a)];
+}
+/** Arredonda um contorno convexo: puxa os cantos (pontos além de `fator`·raio inscrito) em direção ao centro. */
+function arredondar(pol: P[], fator = 1.12, puxa = 0.35): P[] {
+  const c = centroidePol(pol);
+  const rin = Math.min(...pol.map((p, i) => distSeg(c[0], c[1], p, pol[(i + 1) % pol.length])));
+  const lim = rin * fator;
+  return pol.map((p) => {
+    const d = Math.hypot(p[0] - c[0], p[1] - c[1]);
+    if (d <= lim) return p;
+    const nd = lim + (d - lim) * puxa;
+    return [c[0] + ((p[0] - c[0]) * nd) / d, c[1] + ((p[1] - c[1]) * nd) / d];
+  });
+}
+/** Relaxamento de Lloyd: cada sítio móvel vai para o centroide da sua célula (espaçamento mais regular). */
+function relaxar(sitios: Sitio[], moveis: number, rMax: (s: Sitio) => number, iter: number) {
+  for (let k = 0; k < iter; k++) {
+    const novos = sitios.slice(0, moveis).map((st) => {
+      const pol = celulaPotencia(st, sitios, rMax(st), 0);
+      return pol.length >= 3 ? centroidePol(pol) : ([st.x, st.y] as P);
+    });
+    novos.forEach(([x, y], i) => {
+      sitios[i].x = x;
+      sitios[i].y = y;
+    });
+  }
+}
+
 /** Registro de círculos ocupados (grade espacial): impede núcleos e células sobrepostos. */
 function ocupacao(passo: number, rMax: number) {
   const m = new Map<number, number[]>();
@@ -779,9 +819,10 @@ export function LaminaRimCortex(rng: Rng) {
   const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.68 ? entre(rng, 33, 37) : entre(rng, 24, 27)), () => true, occ, 0);
   const mdSitio: Sitio = { x: MD.x, y: MD.y, w: MD.R + 3 };
   const sitios: Sitio[] = [...tubSem.map(([x, y, r]) => ({ x, y, w: r })), mdSitio, ...fixos];
-  const forma = (st: Sitio) => chaikin(celulaPotencia(st, sitios, st.w * 1.32, 4.4), 3);
-  const proximais = tubSem.filter(([, , r]) => r >= 31).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
-  const distais = tubSem.filter(([, , r]) => r < 31).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
+  relaxar(sitios, tubSem.length, (st) => st.w * 1.8, 2);
+  const forma = (st: Sitio) => arredondar(chaikin(celulaPotencia(st, sitios, st.w * 1.6, 4.2), 2), 1.1, 0.3);
+  const proximais = sitios.slice(0, tubSem.length).filter((q) => q.w >= 31).map(forma);
+  const distais = sitios.slice(0, tubSem.length).filter((q) => q.w < 31).map(forma);
   const contornoMd = forma(mdSitio);
   const centroide = (pol: P[]): P => [pol.reduce((a, p) => a + p[0], 0) / pol.length, pol.reduce((a, p) => a + p[1], 0) / pol.length];
   const raioEm = (pol: P[], c: P, a: number) => {
@@ -794,7 +835,7 @@ export function LaminaRimCortex(rng: Rng) {
   const capilares: string[] = [];
   const hemCap: string[] = [];
   const nucCap: string[] = [];
-  const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.32, 0));
+  const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.6, 0));
   const vistos = new Set<string>();
   brutas.forEach((pol) =>
     pol.forEach((a, k) => {
@@ -813,11 +854,27 @@ export function LaminaRimCortex(rng: Rng) {
       if (rng() < 0.35) nucCap.push(elipse(mx + ((b[0] - a[0]) / L) * (rx - 3.5), my + ((b[1] - a[1]) / L) * (rx - 3.5), 2.6, 1, ang));
     }),
   );
+  // nas junções de três túbulos sobra um espaço triangular maior: capilar mais calibroso ou fibroblasto
+  const todos = [...proximais, ...distais, contornoMd];
+  const centros = todos.map(centroidePol);
+  const livreDe = (x: number, y: number, r: number) =>
+    todos.every((pol, i) => Math.hypot(centros[i][0] - x, centros[i][1] - y) > 70 || (!dentro(x, y, pol) && distLinha(x, y, pol, true) > r + 0.6)) &&
+    corpusculos.every((c) => Math.hypot(c.x - x, c.y - y) > c.R + r + 3) &&
+    fixos.every((q) => Math.hypot(q.x - x, q.y - y) > q.w + r - 2);
   const fibroblastos: string[] = [];
+  const jaVisto = new Set<string>();
   for (const pol of brutas)
     for (const v of pol) {
-      if (rng() > 0.12 || fixos.some((q) => Math.hypot(q.x - v[0], q.y - v[1]) < q.w + 10)) continue;
-      fibroblastos.push(elipse(v[0], v[1], 3.4, 1.3, entre(rng, 0, 180)));
+      const chave = `${Math.round(v[0] / 4)},${Math.round(v[1] / 4)}`;
+      if (jaVisto.has(chave) || v[0] < -10 || v[0] > W + 10 || v[1] < -10 || v[1] > H + 10) continue;
+      jaVisto.add(chave);
+      let r = 8;
+      while (r >= 4.5 && !livreDe(v[0], v[1], r)) r -= 0.5;
+      if (r < 4.5) continue;
+      if (rng() < 0.55) {
+        capilares.push(circulo(v[0], v[1], r));
+        hemCap.push(hemacia(v[0], v[1], Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3, r - 1.6)));
+      } else if (rng() < 0.5) fibroblastos.push(elipse(v[0], v[1], Math.min(4, r - 0.5), 1.3, entre(rng, 0, 180)));
     }
 
   // TCP: células altas e eosinófilas, limites pouco nítidos, poucos núcleos por corte, borda em escova e luz estreita
