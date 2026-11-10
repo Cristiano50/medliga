@@ -4,6 +4,9 @@ import type { Rng } from '../he.tsx';
 import * as Ep from './epitelios.tsx';
 import * as Cj from './conjuntivos.tsx';
 import * as Mn from './musculo-nervo.tsx';
+import { LAMINAS_SISTEMAS_A } from './sistemas-a.tsx';
+import { LAMINAS_SISTEMAS_B } from './sistemas-b.tsx';
+import { LAMINAS_SISTEMAS_C } from './sistemas-c.tsx';
 
 export interface LaminaRender {
   desenhar: (rng: Rng) => ReactNode;
@@ -40,4 +43,8 @@ export const LAMINAS_RENDER: Record<string, LaminaRender> = {
   // o campo precisa mostrar o pericário do neurônio principal (460, 330), não só neurópilo e glia
   'neuronio-medula': { desenhar: Mn.LaminaNeuronio, partes: Mn.PARTES_NEURONIO, areaDiagnostica: [370, 250, 580, 430] },
   'nervo-periferico': { desenhar: Mn.LaminaNervo, partes: Mn.PARTES_NERVO },
+  // histologia dos sistemas: um arquivo por grupo, cada um com seu laminas-sistemas-*.json
+  ...LAMINAS_SISTEMAS_A,
+  ...LAMINAS_SISTEMAS_B,
+  ...LAMINAS_SISTEMAS_C,
 };

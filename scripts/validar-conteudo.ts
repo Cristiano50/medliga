@@ -98,16 +98,23 @@ if (existsSync(arqDerivados)) {
   }
 }
 
-const arqLaminas = join(raiz, 'content/histologia/laminas.json');
-if (existsSync(arqLaminas)) {
-  const r = LaminasArquivoSchema.safeParse(ler(arqLaminas));
-  if (!r.success) formatarIssues('content/histologia/laminas.json', r.error.issues);
-  else {
-    const ids = r.data.laminas.map((l) => l.id);
-    if (new Set(ids).size !== ids.length) erros.push('laminas.json: ids repetidos');
-    for (const l of r.data.laminas)
-      for (const tp of l.topicos) if (!idsTopicos.has(tp)) avisos.push(`laminas.json: lâmina ${l.id} cita tópico inexistente ${tp}`);
+// Lâminas: laminas.json (geral) + laminas-*.json (sistemas), validadas em conjunto (ids e ordens únicos).
+const dirHis = join(raiz, 'content/histologia');
+const arquivosLaminas = existsSync(dirHis) ? readdirSync(dirHis).filter((f) => /^laminas.*\.json$/.test(f)).sort() : [];
+const todasLaminas: { id: string; ordem: number; topicos: string[] }[] = [];
+for (const f of arquivosLaminas) {
+  const r = LaminasArquivoSchema.safeParse(ler(join(dirHis, f)));
+  if (!r.success) { formatarIssues(`content/histologia/${f}`, r.error.issues); continue; }
+  for (const l of r.data.laminas) {
+    todasLaminas.push(l);
+    for (const tp of l.topicos) if (!idsTopicos.has(tp)) avisos.push(`${f}: lâmina ${l.id} cita tópico inexistente ${tp}`);
   }
+}
+{
+  const ids = todasLaminas.map((l) => l.id);
+  if (new Set(ids).size !== ids.length) erros.push('lâminas: ids repetidos entre os arquivos laminas*.json');
+  const ordens = todasLaminas.map((l) => l.ordem);
+  if (new Set(ordens).size !== ordens.length) erros.push('lâminas: valores de "ordem" repetidos entre os arquivos laminas*.json');
 }
 
 const arqEscolas = join(raiz, 'content/escolas/escolas-medicas-br.json');

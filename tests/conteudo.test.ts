@@ -45,12 +45,13 @@ describe('questões de múltipla escolha', () => {
   });
 });
 
-import laminas from '../content/histologia/laminas.json';
 import { AREA_PADRAO, LAMINAS_RENDER } from '../src/modules/histologia/laminas/index.ts';
 import { LaminasArquivoSchema } from '../src/content/schema.ts';
 
 describe('lâminas do microscópio virtual', () => {
-  const dados = LaminasArquivoSchema.parse(laminas);
+  // laminas.json (geral) + laminas-sistemas-*.json (um arquivo por grupo)
+  const arquivos = import.meta.glob('../content/histologia/laminas*.json', { eager: true, import: 'default' });
+  const dados = { laminas: Object.values(arquivos).flatMap((a) => LaminasArquivoSchema.parse(a).laminas) };
   it('toda lâmina tem desenho e todo desenho tem lâmina', () => {
     for (const l of dados.laminas) expect(LAMINAS_RENDER[l.id], l.id).toBeDefined();
     for (const id of Object.keys(LAMINAS_RENDER)) expect(dados.laminas.some((l) => l.id === id), id).toBe(true);
