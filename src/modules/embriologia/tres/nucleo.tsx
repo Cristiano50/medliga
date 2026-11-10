@@ -147,7 +147,8 @@ export function Parte({
       const ponto = new THREE.Vector3();
       grupo.current.traverse((o) => {
         const malha = o as THREE.Mesh;
-        if (!malha.isMesh || malha.material !== material) return;
+        // Só as malhas desta parte (material principal ou o de outro acabamento pedido por um <Malha>).
+        if (!malha.isMesh || (malha.material !== material && ![...extras.values()].includes(malha.material as THREE.MeshStandardMaterial))) return;
         const vertices = malha.geometry.getAttribute('position');
         const matriz = new THREE.Matrix4().multiplyMatrices(inversa, malha.matrixWorld);
         for (let i = 0; i < vertices.count; i++) {
@@ -170,7 +171,7 @@ export function Parte({
     if (caixa.isEmpty()) return;
     const c = grupo.current.worldToLocal(caixa.getCenter(new THREE.Vector3()));
     setAncora([c.x, c.y, c.z]);
-  }, [rotulo, children, material]);
+  }, [rotulo, children, material, extras]);
 
   useLayoutEffect(() => {
     grupo.current?.traverse((o) => {

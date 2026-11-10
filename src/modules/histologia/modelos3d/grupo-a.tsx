@@ -51,6 +51,7 @@ import {
   HEROI,
   MACROFAGO,
   NUCLEOS_TIPO_I,
+  RAIO_NUCLEO_TIPO_I,
   orientacaoAlveolo,
   orientacaoTipoII,
   PORO,
@@ -155,7 +156,7 @@ export function ModeloNefron() {
       aferente: new THREE.TubeGeometry(curvaAferente(), 48, RAIOS.aferente, 12, false),
       eferente: new THREE.TubeGeometry(curvaEferente(), 48, RAIOS.eferente, 10, false),
       tampa: new THREE.SphereGeometry(1, 16, 12),
-      justaglomerular: new THREE.TubeGeometry(trechoJustaglomerular(), 12, RAIOS.aferente + 0.016, 12, false),
+      justaglomerular: new THREE.TubeGeometry(trechoJustaglomerular(), 16, RAIOS.aferente + 0.024, 12, false),
       mesangial: unir(posicoesMesangiaisExtraglomerulares().map((p) => transformada(new THREE.SphereGeometry(RAIO_MESANGIAL_EXTRA, 10, 8), p, undefined, [1, 0.8, 1]))),
       // setor de cilindro fechado: a face da frente aparece como um crescente sob o túbulo
       macula: new THREE.CylinderGeometry(MACULA.raio, MACULA.raio, MACULA.comprimento, 16, 1, false, -MACULA.arco / 2, MACULA.arco),
@@ -268,6 +269,8 @@ export const PARTES_ALVEOLO = [
   'poro-alveolar',
 ];
 
+/** Deslocado para a esquerda: o alvéolo em corte fica perto do centro, para onde a aproximação (pinça/roda) converge. */
+const POSICAO_ALVEOLO: V3 = [-0.45, -0.12, 0.3];
 const chaveTaca = (a: DefAlveolo) => `${(a.raio + a.parede).toFixed(3)}:${a.meiaAbertura.toFixed(4)}`;
 const chaveCapilar = (a: DefAlveolo) => `${a.raio}:${a.parede}`;
 
@@ -305,7 +308,7 @@ export function ModeloAlveolo() {
       capilares: Object.values(capilares).flat(),
       // alvéolo em corte (referencial local: +y = boca, metade z ≤ 0)
       revestimento: new THREE.SphereGeometry(h.raio, 48, 32, Math.PI, Math.PI, th, Math.PI - th),
-      nucleosI: unir(NUCLEOS_TIPO_I.map((p) => transformada(new THREE.SphereGeometry(0.04, 12, 8), centroNucleoTipoI(p), girarYPara(direcaoHeroi(p[0], p[1])), [1, 0.3, 1]))),
+      nucleosI: unir(NUCLEOS_TIPO_I.map((p) => transformada(new THREE.SphereGeometry(RAIO_NUCLEO_TIPO_I, 12, 8), centroNucleoTipoI(p), girarYPara(direcaoHeroi(p[0], p[1])), [1, 0.3, 1]))),
       septoExterno: new THREE.SphereGeometry(h.raio + h.parede, 48, 32, Math.PI, Math.PI, th, Math.PI - th),
       septoCorte: new THREE.RingGeometry(h.raio, h.raio + h.parede, 48, 1, Math.PI / 2 + th, 2 * Math.PI - 2 * th),
       septoBorda: new THREE.LatheGeometry(
@@ -316,18 +319,18 @@ export function ModeloAlveolo() {
       ),
       capilaresHeroi: heroi.curvas.map((c) => new THREE.TubeGeometry(c, 64, heroi.raio, 10, false)),
       tampasCapilares: unir(heroi.tampas.map((t) => transformada(new THREE.CircleGeometry(heroi.raio, 16), t.centro))),
-      tipoII: unir(TIPO_II.map((p) => new RoundedBoxGeometry(...TIPO_II_DIMENSOES, 2, 0.024).applyMatrix4(celula(p)))),
+      tipoII: unir(TIPO_II.map((p) => new RoundedBoxGeometry(...TIPO_II_DIMENSOES, 2, 0.03).applyMatrix4(celula(p)))),
       lamelares: unir(TIPO_II.flatMap((p) => CORPOS_LAMELARES_LOCAIS.map((l) => transformada(new THREE.SphereGeometry(RAIO_CORPO_LAMELAR, 10, 8), vec(l).applyMatrix4(celula(p)))))),
       macrofago: unir([
         transformada(new THREE.SphereGeometry(MACROFAGO.raio, 16, 12), cm, girarYPara(mac.normal), [1, 0.75, 1]),
         ...[mac.t1, mac.t2, mac.t1.clone().negate(), mac.t2.clone().negate()].map((t, i) => {
           const dir = t.clone().addScaledVector(mac.normal, -0.25 + 0.15 * (i % 2)).normalize();
-          return transformada(new THREE.CapsuleGeometry(0.016, 0.05 + 0.01 * i, 4, 8), cm.clone().addScaledVector(dir, MACROFAGO.raio + 0.02), girarYPara(dir));
+          return transformada(new THREE.CapsuleGeometry(0.02, 0.06 + 0.012 * i, 4, 8), cm.clone().addScaledVector(dir, MACROFAGO.raio + 0.024), girarYPara(dir));
         }),
       ]),
       barreira: new THREE.SphereGeometry(h.raio - 0.004, 16, 6, 0, Math.PI * 2, 0, BARREIRA.abertura),
       poroAnel: transformada(new THREE.TorusGeometry(PORO.raioAnel, PORO.tubo, 10, 32), centroPoro(), new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), dPoro)),
-      poroCanal: transformada(new THREE.CylinderGeometry(0.04, 0.04, 0.12, 20, 1, true), vec(h.centro).addScaledVector(dPoro, h.raio + 0.06), girarYPara(dPoro)),
+      poroCanal: transformada(new THREE.CylinderGeometry(PORO.raioCanal, PORO.raioCanal, 0.12, 20, 1, true), vec(h.centro).addScaledVector(dPoro, h.raio + 0.06), girarYPara(dPoro)),
     };
   });
   // índice da geometria compartilhada de cada alvéolo (mesma ordem de inserção usada na fábrica)
@@ -343,7 +346,7 @@ export function ModeloAlveolo() {
   const giroHeroi: [number, number, number] = [0, 0, Math.PI / 2];
   const centroBronquiolo = (BRONQUIOLO.inicio + BRONQUIOLO.fim) / 2;
   return (
-    <group position={[0.1, 0.05, 0.3]} rotation={[0.2, -0.18, 0.4]}>
+    <group position={POSICAO_ALVEOLO} rotation={[0.2, -0.18, 0.4]}>
       <Parte id="bronquiolo-respiratorio" cor={COR_ALVEOLO.bronquiolo} prioridade={4} acabamentoOrganico>
         <Malha geometria={g.bronquiolo} posicao={[centroBronquiolo, 0, 0]} rotacao={[0, 0, -Math.PI / 2]} />
       </Parte>
@@ -394,5 +397,5 @@ export function ModeloAlveolo() {
 
 export const MODELOS_HISTO_A: Record<string, ModeloEstagio> = {
   nefron: { Componente: ModeloNefron, partes: PARTES_NEFRON, camera: [0.35, -0.08, 1], raio: 1.75 },
-  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.5 },
+  alveolo: { Componente: ModeloAlveolo, partes: PARTES_ALVEOLO, camera: [0.15, 0.3, 1], raio: 1.95 },
 };

@@ -50,7 +50,10 @@ export function TopicoTela() {
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>
           )}
           {modelos3d.length > 0 && (
-            <Link to={`/lab3d/histologia?modelo=${modelos3d[0].id}`} className="btn">{estagios.length > 0 ? 'Ver no laboratório 3D da histologia' : 'Ver no laboratório 3D'}</Link>
+            <Link to={`/lab3d/histologia?modelo=${modelos3d[0].id}`} className="btn">
+              {/* em tópico de outra disciplina (ex.: emb-16 → néfron), o rótulo diz de onde é o modelo */}
+              {t.disciplina === 'histologia' && estagios.length === 0 ? 'Ver no laboratório 3D' : 'Ver no laboratório 3D da histologia'}
+            </Link>
           )}
           {laminas.length > 0 && (
             <Link to={`/microscopio?lamina=${laminas[0].id}`} className="btn">Ver no microscópio</Link>

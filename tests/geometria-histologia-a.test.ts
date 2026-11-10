@@ -77,10 +77,12 @@ describe('néfron', () => {
     for (const p of fora) expect(p.distanceTo(C)).toBeGreaterThan(CORPUSCULO.raioParietalExterno + RAIOS.proximal * 0.9);
   });
 
-  it('mácula densa a menos de 0,1 do polo vascular do próprio corpúsculo, entre as arteríolas', () => {
+  it('mácula densa a menos de 0,15 do polo vascular do próprio corpúsculo, entre as arteríolas', () => {
     const pv = polovascular();
     const face = centroFaceMacula();
-    expect(face.distanceTo(pv)).toBeLessThan(0.1);
+    // 0,15 ≈ um terço do raio da cápsula: só cabem ali as células mesangiais extraglomerulares
+    expect(face.distanceTo(pv)).toBeLessThan(0.15);
+    expect(face.distanceTo(pv)).toBeLessThan(CORPUSCULO.raioParietalExterno / 3);
     // a mácula está no ponto em que o ramo ascendente espesso termina e o túbulo distal começa
     const m = pontoMacula();
     expect(curvaAscendenteEspesso().getPoint(1).distanceTo(m)).toBeLessThan(0.01);

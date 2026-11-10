@@ -132,11 +132,11 @@ function ModeloLobulo() {
       <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.25, topo, 0.95]}>
         <Malha geometria={placas} />
       </Parte>
-      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.45} prioridade={6} rotulo={[0, 0.1, 0.62]}>
+      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[0, 0.1, 0.62]}>
         <Malha geometria={luz} />
       </Parte>
       {/* Casca de Disse em volta da luz: prioridade menor que a do sinusoide que ela envolve. */}
-      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.26} prioridade={5} rotulo={[-0.1, 0.13, 1.1]}>
+      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.22} prioridade={5} rotulo={[-0.1, 0.13, 1.1]}>
         <Malha geometria={disse} />
       </Parte>
       <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={kFrente?.centro}>
@@ -300,7 +300,7 @@ function ModeloSarcomero() {
   const discoZ = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioDiscoZ, SARCOMERO.raioDiscoZ, 0.035, 48), []);
   const discoM = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioDiscoM, SARCOMERO.raioDiscoM, 0.025, 48), []);
   const faixa = useGeo(() => new THREE.CylinderGeometry(SARCOMERO.raioBandas, SARCOMERO.raioBandas, 1, 48), []);
-  const tuboT = useGeo(() => new THREE.TorusGeometry(SARCOMERO.raioAnel, SARCOMERO.tuboT, 10, 72), []);
+  const tuboT = useGeo(() => new THREE.TorusGeometry(SARCOMERO.raioAnel, SARCOMERO.tuboT, 8, 56), []);
   const barra = useGeo(() => new THREE.CylinderGeometry(0.024, 0.024, 1, 12), []);
   const marca = useGeo(() => new THREE.CylinderGeometry(0.02, 0.02, 0.16, 12), []);
 
@@ -428,7 +428,7 @@ function ModeloJuncoes() {
         <Malha geometria={oclusao} rotacao={deitada} posicao={[xb, JUNCOES.oclusao[0], 0]} />
       </Parte>
       {/* Translúcida, para mostrar o cinturão de actina por dentro da célula, na mesma altura. */}
-      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.55} prioridade={7} rotulo={[xa, JUNCOES.adesao[0], frente]}>
+      <Parte id="zonula-de-adesao" cor={COR_JUNCOES.adesao} opacidade={0.42} prioridade={7} rotulo={[xa, JUNCOES.adesao[0], frente]}>
         <Malha geometria={adesao} rotacao={deitada} posicao={[xa, JUNCOES.adesao[0], 0]} />
         <Malha geometria={adesao} rotacao={deitada} posicao={[xb, JUNCOES.adesao[0], 0]} />
       </Parte>

@@ -160,16 +160,18 @@ export function capilaresNoModelo(): { curva: THREE.Curve<THREE.Vector3>; raio: 
 
 // ------------------------------------------------------------------------------- células do alvéolo em corte
 /** Núcleos achatados dos pneumócitos tipo I no revestimento (polar, azimute em graus). */
-export const NUCLEOS_TIPO_I: [number, number][] = [[35, 240], [55, 200], [55, 330], [95, 215], [110, 320], [72, 250]];
+export const NUCLEOS_TIPO_I: [number, number][] = [[35, 240], [55, 200], [45, 345], [95, 215], [112, 305], [72, 250]];
+export const RAIO_NUCLEO_TIPO_I = 0.05;
 /** Pneumócitos tipo II: nos cantos, junto à borda onde o alvéolo encontra o saco e os vizinhos. */
-export const TIPO_II: [number, number][] = [[112, 200], [112, 265], [108, 338]];
-export const TIPO_II_DIMENSOES: V3 = [0.1, 0.075, 0.1];
-export const RAIO_CORPO_LAMELAR = 0.016;
+export const TIPO_II: [number, number][] = [[106, 200], [106, 262], [104, 338]];
+/** Células ampliadas em relação ao alvéolo (esquema fora de escala), para serem vistas e tocadas. */
+export const TIPO_II_DIMENSOES: V3 = [0.13, 0.095, 0.13];
+export const RAIO_CORPO_LAMELAR = 0.024;
 /** Corpos lamelares no referencial da célula (y = eixo apical, voltado para a luz). */
-export const CORPOS_LAMELARES_LOCAIS: V3[] = [[-0.024, 0.005, 0.018], [0.022, -0.004, 0.02], [0.004, 0.012, -0.024], [0.0, 0.04, 0.0]];
-export const MACROFAGO = { polar: 25, azimute: 290, raio: 0.055 };
-export const BARREIRA = { polar: 65, azimute: 320, abertura: 0.16 };
-export const PORO = { polar: 80, azimute: 270, raioAnel: 0.045, tubo: 0.012 };
+export const CORPOS_LAMELARES_LOCAIS: V3[] = [[-0.032, 0.004, 0.026], [0.03, -0.004, 0.028], [0.004, 0.012, -0.034], [0.0, 0.05, 0.0]];
+export const MACROFAGO = { polar: 25, azimute: 290, raio: 0.072 };
+export const BARREIRA = { polar: 65, azimute: 320, abertura: 0.22 };
+export const PORO = { polar: 80, azimute: 270, raioAnel: 0.058, tubo: 0.015, raioCanal: 0.05 };
 
 export function centroNucleoTipoI([polar, az]: [number, number]): THREE.Vector3 {
   return vec(HEROI.centro).addScaledVector(direcaoHeroi(polar, az), HEROI.raio - 0.008);

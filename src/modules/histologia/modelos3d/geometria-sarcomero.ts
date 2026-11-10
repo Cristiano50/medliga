@@ -28,7 +28,7 @@ export const SARCOMERO = {
   /** passo (volta completa) de cada fita da dupla hélice de actina, em unidades (esticado) */
   passoHelice: 0.26,
   /** espaçamento entre coroas de cabeças de miosina (unidades, exagerado) */
-  passoCoroa: 0.07,
+  passoCoroa: 0.085,
   raioDiscoZ: 0.44,
   raioDiscoM: 0.42,
   raioBandas: 0.5,
@@ -175,7 +175,8 @@ export function geometriaFinos(finos: Ponto2[], comprimento: number, fator = 1):
   finos.forEach((p, i) => {
     for (const fase of [0, Math.PI]) {
       const curva = new Helice(comprimento, raioHelice, passoHelice, fase + i * 0.7, p);
-      partes.push(new THREE.TubeGeometry(curva, seg(Math.ceil(voltas * 12), fator, 4), raioFita, seg(5, Math.sqrt(fator)), false));
+      // Fitas finas (raio ~0,015): 9 segmentos por volta e seção de 4 lados no nível baixo bastam.
+      partes.push(new THREE.TubeGeometry(curva, seg(Math.ceil(voltas * 9), fator, 4), raioFita, seg(4, Math.sqrt(fator)), false));
     }
   });
   return mesclar(partes);
@@ -184,10 +185,10 @@ export function geometriaFinos(finos: Ponto2[], comprimento: number, fator = 1):
 /** Cabeças de miosina de todos os filamentos grossos (pescoço + cabeça), inclinadas para as linhas Z. */
 export function geometriaCabecas(grossos: Ponto2[], fator = 1): THREE.BufferGeometry {
   const { raioGrosso } = SARCOMERO;
-  // Cabeças pequenas: resolução cresce só com a raiz do fator (no nível alto, 10 × 7 em vez de 14 × 10).
+  // Cabeças pequenas: resolução cresce só com a raiz do fator (no nível alto, 8 × 6 em vez de 12 × 8).
   const f = Math.sqrt(fator);
-  const cabeca = new THREE.SphereGeometry(1, seg(7, f), seg(5, f, 2));
-  const pescoco = new THREE.CylinderGeometry(0.009, 0.009, 1, seg(4, f), 1, true);
+  const cabeca = new THREE.SphereGeometry(1, seg(6, f), seg(4, f, 2));
+  const pescoco = new THREE.CylinderGeometry(0.009, 0.009, 1, seg(3, f), 1, true);
   const partes: THREE.BufferGeometry[] = [];
   const inclinacao = (40 * Math.PI) / 180;
   const y = new THREE.Vector3(0, 1, 0);
@@ -216,7 +217,7 @@ export function geometriaMolasTitina(grossos: Ponto2[], comprimento: number, fat
   return mesclar(
     grossos.map((g, i) => {
       const centro: Ponto2 = [g[0] + DESVIO_TITINA[0], g[1] + DESVIO_TITINA[1]];
-      return new THREE.TubeGeometry(new Helice(comprimento, 0.016, comprimento / 9, i, centro), seg(90, fator, 12), 0.009, seg(4, fator), false);
+      return new THREE.TubeGeometry(new Helice(comprimento, 0.016, comprimento / 9, i, centro), seg(63, fator, 12), 0.009, seg(3, Math.sqrt(fator)), false);
     }),
   );
 }
@@ -242,7 +243,7 @@ export function geometriaReticulo(fator = 1): THREE.BufferGeometry {
   const giro = new THREE.Matrix4().makeRotationY(Math.PI / 2); // eixo do anel → x
   for (const juncao of [-a, a]) {
     for (const lado of [-1, 1]) {
-      const anel = new THREE.TorusGeometry(raioAnel, tuboCisterna, seg(8, fator), seg(56, fator));
+      const anel = new THREE.TorusGeometry(raioAnel, tuboCisterna, seg(6, fator), seg(48, fator));
       anel.applyMatrix4(giro).translate(juncao + lado * afastamentoCisterna, 0, 0);
       partes.push(anel);
     }
@@ -253,7 +254,7 @@ export function geometriaReticulo(fator = 1): THREE.BufferGeometry {
   const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), new THREE.Vector3(1, 0, 0));
   for (let k = 0; k < 6; k++) {
     const ang = ((30 + 60 * k) * Math.PI) / 180;
-    const c = new THREE.CylinderGeometry(0.012, 0.012, comprimento, seg(6, fator), seg(8, fator, 1), true);
+    const c = new THREE.CylinderGeometry(0.012, 0.012, comprimento, seg(6, fator), 1, true);
     partes.push(c.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(x0 + comprimento / 2, raioAnel * Math.cos(ang), raioAnel * Math.sin(ang)), q, new THREE.Vector3(1, 1, 1))));
   }
   return mesclar(partes);

@@ -107,7 +107,7 @@ export function curvaEferente(): THREE.CatmullRomCurve3 {
 export function trechoJustaglomerular(): TrechoDeCurva {
   const aferente = curvaAferente();
   const inicio = fracaoMaisProxima(aferente, new THREE.Vector3(-0.27, 1.42, 0));
-  const fim = fracaoMaisProxima(aferente, new THREE.Vector3(-0.14, 1.48, 0));
+  const fim = fracaoMaisProxima(aferente, new THREE.Vector3(-0.08, 1.52, 0));
   return new TrechoDeCurva(aferente, inicio, fim);
 }
 
@@ -137,7 +137,7 @@ export function curvaDescendenteDelgado(): THREE.CatmullRomCurve3 {
 }
 
 /** Ponto do túbulo distal encostado no polo vascular: no ângulo entre as arteríolas, acima das células mesangiais extraglomerulares. */
-export const DISTANCIA_TUBULO_AO_POLO = 0.15;
+export const DISTANCIA_TUBULO_AO_POLO = 0.19;
 export const pontoMacula = (): THREE.Vector3 => polovascular().addScaledVector(vec(DIRECAO_POLO_VASCULAR), DISTANCIA_TUBULO_AO_POLO);
 
 /** Túbulo distal inteiro (ramo ascendente espesso + túbulo contorcido distal), dividido na mácula densa. */
@@ -182,7 +182,7 @@ export function curvaDistal(): TrechoDeCurva {
 }
 
 /** Mácula densa: placa de células altas (mais espessa que o resto da parede) voltada para o polo vascular (−y), ao longo de z. */
-export const MACULA = { comprimento: 0.16, raio: RAIOS.espesso + 0.022, arco: (2 * Math.PI) / 3 };
+export const MACULA = { comprimento: 0.2, raio: RAIOS.espesso + 0.03, arco: (2 * Math.PI) / 3 };
 /** Centro da face da mácula voltada para o polo vascular. */
 export const centroFaceMacula = (): THREE.Vector3 => pontoMacula().addScaledVector(vec(DIRECAO_POLO_VASCULAR), -MACULA.raio);
 
@@ -190,12 +190,13 @@ export const centroFaceMacula = (): THREE.Vector3 => pontoMacula().addScaledVect
 export function posicoesMesangiaisExtraglomerulares(): THREE.Vector3[] {
   const p = polovascular();
   // no ângulo entre as arteríolas (x entre os dois pedículos), sob a mácula densa; nenhuma à frente dela
-  const y = p.y + 0.045;
+  const y = p.y + 0.055;
   return [
-    [p.x - 0.006, y, 0], [p.x, y - 0.002, -0.066], [p.x - 0.01, y - 0.004, -0.13], [p.x - 0.012, y - 0.006, 0.058],
+    [p.x - 0.006, y, 0], [p.x, y - 0.002, -0.08], [p.x - 0.01, y - 0.004, -0.16], [p.x - 0.012, y - 0.004, 0.08],
   ].map(([x, yy, z]) => new THREE.Vector3(x, yy, z));
 }
-export const RAIO_MESANGIAL_EXTRA = 0.031;
+/** Ampliadas (como as demais células do aparelho justaglomerular) para serem vistas e tocadas. */
+export const RAIO_MESANGIAL_EXTRA = 0.05;
 
 /** Ducto coletor: perfil (raio, y) de uma revolução em torno do eixo vertical em x = DUCTO_X. */
 export const DUCTO_X = 0.95;
