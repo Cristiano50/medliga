@@ -337,7 +337,7 @@
     {
       "id": "deficiencia-alfa1-antitripsina-pulmao",
       "titulo": "Deficiência de α1-antitripsina: o pulmão",
-      "descricao": "Causa enfisema panacinar precoce, de predomínio basal, sobretudo em fumantes, e doença hepática (ver his-15). A recomendação brasileira (SBPT, 2024) indica dosar a α1-antitripsina sérica em todo adulto com obstrução persistente ao fluxo aéreo após broncodilatador e também em enfisema antes dos 45 anos, enfisema em não fumante ou com pouca carga tabágica, enfisema de predomínio basal na tomografia, história familiar de enfisema ou de doença hepática, paniculite e doença hepática crônica sem causa definida. A reposição intravenosa de α1-antitripsina é indicada a pacientes selecionados (adultos não fumantes ou ex-fumantes, com variante genética grave, concentração sérica baixa e limitação ao fluxo aéreo); parar de fumar é essencial.",
+      "descricao": "Causa enfisema panacinar precoce, de predomínio basal, sobretudo em fumantes, e doença hepática (ver his-15). A recomendação brasileira (SBPT, 2024) indica dosar a α1-antitripsina sérica em todo adulto com obstrução persistente ao fluxo aéreo após broncodilatador e também em enfisema antes dos 45 anos, enfisema em não fumante ou com pouca carga tabágica, enfisema de predomínio basal na tomografia, história familiar de enfisema ou de doença hepática, paniculite e doença hepática crônica sem causa definida. O diagnóstico é confirmado pela dosagem sérica e pela identificação da variante (fenotipagem ou genotipagem). A reposição intravenosa de α1-antitripsina é indicada a pacientes selecionados: adultos não fumantes ou ex-fumantes, com variante genética de deficiência grave, concentração sérica abaixo de 57 mg/dL (11 µmol/L) e limitação ao fluxo aéreo na prova de função pulmonar; parar de fumar é essencial.",
       "mecanismo": "A α1-antitripsina, produzida sobretudo pelos hepatócitos, chega ao pulmão pelo sangue e inibe a elastase dos neutrófilos. Sem ela, a elastase degrada as fibras elásticas dos septos de todo o ácino; o tabagismo acelera a destruição."
     },
     {
@@ -355,13 +355,13 @@
     {
       "id": "doenca-membrana-hialina",
       "titulo": "Doença da membrana hialina do prematuro e dano alveolar difuso",
-      "descricao": "No prematuro, a deficiência de surfactante (ver emb-14) causa atelectasia e lesão do epitélio e do endotélio: proteínas plasmáticas extravasam, e fibrina com restos de células epiteliais necróticas forma membranas hialinas eosinófilas que revestem bronquíolos respiratórios, ductos alveolares e alvéolos. No adulto, a síndrome do desconforto respiratório agudo tem o mesmo achado na fase exsudativa do dano alveolar difuso; na fase de reparo, os pneumócitos tipo II proliferam para recompor o epitélio, e pode haver fibrose.",
+      "descricao": "No prematuro, a deficiência de surfactante (ver emb-14) causa atelectasia e lesão do epitélio e do endotélio: proteínas plasmáticas extravasam, e fibrina com restos de células epiteliais necróticas forma membranas hialinas eosinófilas que revestem bronquíolos respiratórios, ductos alveolares e alvéolos. É a base da síndrome do desconforto respiratório do recém-nascido, tanto mais frequente quanto menor a idade gestacional; o corticoide antenatal ajuda a preveni-la, e o tratamento usa suporte ventilatório (como o CPAP) e surfactante exógeno (ver emb-14). No adulto, a síndrome do desconforto respiratório agudo tem o mesmo achado na fase exsudativa do dano alveolar difuso; na fase de reparo, os pneumócitos tipo II proliferam para recompor o epitélio, e pode haver fibrose.",
       "mecanismo": "Sem surfactante, a tensão superficial alta colapsa os alvéolos na expiração; a hipóxia e o esforço ventilatório lesam a barreira hematoaérea, e o exsudato rico em proteínas inibe ainda mais o surfactante."
     },
     {
       "id": "tabagismo-vias-aereas",
       "titulo": "Tabagismo e epitélio respiratório",
-      "descricao": "A fumaça do cigarro reduz o número e o batimento dos cílios, aumenta caliciformes e glândulas e induz metaplasia escamosa, que pode evoluir para displasia e carcinoma epidermoide (ver his-02). Nos bronquíolos respiratórios acumulam-se macrófagos com pigmento castanho (bronquiolite respiratória do fumante). Na laringe, a camada superficial da lâmina própria das pregas vocais pode acumular edema (edema de Reinke), e o epitélio estratificado pavimentoso da glote é a sede do carcinoma epidermoide da laringe.",
+      "descricao": "A fumaça do cigarro reduz o número e o batimento dos cílios, aumenta caliciformes e glândulas e induz metaplasia escamosa, que pode evoluir para displasia e carcinoma epidermoide (ver his-02). Nos bronquíolos respiratórios acumulam-se macrófagos com pigmento castanho (bronquiolite respiratória do fumante). Na laringe, a camada superficial da lâmina própria das pregas vocais pode acumular edema (edema de Reinke), e o carcinoma epidermoide da laringe, ligado ao tabagismo, surge do epitélio estratificado pavimentoso das pregas vocais ou de áreas de metaplasia escamosa.",
       "mecanismo": "Oxidantes e carcinógenos da fumaça agridem cronicamente o epitélio, reprogramam as células basais (metaplasia) e acumulam mutações."
     },
     {
@@ -379,7 +379,7 @@
     {
       "id": "proteinose-alveolar",
       "titulo": "Proteinose alveolar pulmonar",
-      "descricao": "Doença rara em que o surfactante se acumula nos alvéolos, com dispneia progressiva e hipoxemia. A forma mais frequente é autoimune, por autoanticorpos contra o GM-CSF. O lavado broncoalveolar é leitoso, com macrófagos espumosos e material PAS-positivo; na biópsia, alvéolos cheios de material granular eosinófilo, com septos preservados. Pela diretriz da European Respiratory Society (2024), o diagnóstico usa o lavado broncoalveolar e a dosagem de anticorpos contra GM-CSF, e o tratamento de primeira linha da forma autoimune sintomática ou progressiva é a lavagem pulmonar total e/ou o GM-CSF inalatório.",
+      "descricao": "Doença rara em que o surfactante se acumula nos alvéolos, com dispneia progressiva e hipoxemia. A forma mais frequente é autoimune, por autoanticorpos contra o GM-CSF. O lavado broncoalveolar é leitoso, com macrófagos espumosos e material PAS-positivo; quando há biópsia, alvéolos cheios de material granular eosinófilo, com septos preservados. Pela diretriz da European Respiratory Society (2024), o diagnóstico usa o lavado broncoalveolar e a dosagem de anticorpos contra GM-CSF, sem biópsia pulmonar de rotina (reservada aos casos que continuam duvidosos), e o tratamento de primeira linha da forma autoimune sintomática ou progressiva é a lavagem pulmonar total e/ou o GM-CSF inalatório.",
       "mecanismo": "O GM-CSF é necessário para que os macrófagos alveolares degradem o surfactante; bloqueado pelos anticorpos, a depuração falha, embora os pneumócitos tipo II continuem a produzi-lo."
     }
   ],
@@ -858,7 +858,7 @@
     {
       "id": "his-16-q15",
       "tipo": "multipla",
-      "contexto": "Homem de 40 anos tem dispneia progressiva há um ano. O lavado broncoalveolar é leitoso, com macrófagos espumosos e material granular PAS-positivo. A biópsia mostra alvéolos preenchidos por material eosinófilo granular, com septos de aspecto normal. Há autoanticorpos contra GM-CSF no soro.",
+      "contexto": "Homem de 40 anos tem dispneia progressiva há um ano. A tomografia de tórax mostra opacidades em vidro fosco com espessamento de septos interlobulares (padrão de pavimentação em mosaico, ou crazy paving). O lavado broncoalveolar é leitoso, com macrófagos espumosos e material granular PAS-positivo, e há autoanticorpos contra GM-CSF no soro.",
       "enunciado": "Qual função celular está comprometida?",
       "alternativas": [
         {
@@ -879,7 +879,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "Na proteinose alveolar autoimune, a forma mais frequente da doença, autoanticorpos bloqueiam o GM-CSF, necessário para que os macrófagos alveolares degradem o surfactante usado (a); o surfactante se acumula nos alvéolos, e os macrófagos ficam espumosos. Pela diretriz da European Respiratory Society (2024), a lavagem pulmonar total e/ou o GM-CSF inalatório são o tratamento de primeira linha da forma autoimune sintomática ou progressiva. A síntese pelos pneumócitos tipo II (b) continua; uma falha de síntese levaria a colapso alveolar, não a acúmulo. O transporte mucociliar (c) atua nas vias condutoras e não explica alvéolos cheios. A secreção de CC16 (d) é bronquiolar e não tem relação com o GM-CSF.",
+      "explicacao": "Na proteinose alveolar autoimune, a forma mais frequente da doença, autoanticorpos bloqueiam o GM-CSF, necessário para que os macrófagos alveolares degradem o surfactante usado (a); o surfactante se acumula nos alvéolos, e os macrófagos ficam espumosos. Pela diretriz da European Respiratory Society (2024), a lavagem pulmonar total e/ou o GM-CSF inalatório são o tratamento de primeira linha da forma autoimune sintomática ou progressiva. A síntese pelos pneumócitos tipo II (b) continua; uma falha de síntese levaria a colapso alveolar, não a acúmulo. O transporte mucociliar (c) atua nas vias condutoras e não explica alvéolos cheios. A secreção de CC16 (d) é bronquiolar e não tem relação com o GM-CSF. Com o lavado e o anticorpo anti-GM-CSF, a diretriz sugere não fazer biópsia pulmonar de rotina; ela fica para os casos que continuam duvidosos.",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1330,6 +1330,22 @@
     {
       "obra": "Rayamajhi D, Ege M, Ukhanov K, et al. The forkhead transcription factor Foxj1 controls vertebrate olfactory cilia biogenesis and sensory neuron differentiation. PLoS Biol. 2024;22(1):e3002468. doi:10.1371/journal.pbio.3002468 (PMID 38271330; PMC10810531)",
       "capitulo": "Cílios olfatórios imóveis (texto integral)"
+    },
+    {
+      "obra": "Fazio JC, Viragh K, Houlroyd J, Gandhi SA. A review of silicosis and other silica-related diseases in the engineered stone countertop processing industry. J Occup Med Toxicol. 2025;20(1):9. doi:10.1186/s12995-025-00455-8 (PMID 40098042; PMC11917111)",
+      "capitulo": "Nódulo silicótico, birrefringência, zonas superiores e tuberculose (texto integral)"
+    },
+    {
+      "obra": "Avramescu ML, Potiszil C, Kunihiro T, et al. An investigation of the internal morphology of asbestos ferruginous bodies: constraining their role in the onset of malignant mesothelioma. Part Fibre Toxicol. 2023;20(1):19. doi:10.1186/s12989-023-00522-0 (PMID 37150820; PMC10165766)",
+      "capitulo": "Revestimento de ferro dos corpos de asbesto (texto integral)"
+    },
+    {
+      "obra": "Varricchi G, Poto R, Lommatzsch M, et al. Biologics and airway remodeling in asthma: early, late, and potential preventive effects. Allergy. 2025;80(2):408-422. doi:10.1111/all.16382 (PMID 39520155; PMC11804314)",
+      "capitulo": "Componentes do remodelamento da via aérea (texto integral)"
+    },
+    {
+      "obra": "Marchiori E, Hochhegger B, Zanetti G. Paraseptal emphysema. J Bras Pneumol. 2024;49(6):e20230340. doi:10.36416/1806-3756/e20230340 (PMID 38198348; PMC10760424)",
+      "capitulo": "Definição e tipos de enfisema (texto integral)"
     }
   ],
   "notasDivergencia": [
@@ -1343,10 +1359,10 @@
   ],
   "incertezas": [
     "Números de capítulo da 14ª ed. de Junqueira (17) e da 8ª ed. de Ross (19) citados de memória, com base nas edições anteriores; Gartner, Kierszenbaum e Robbins citados só pelo título do capítulo. Conferir.",
-    "Deficiência de α1-antitripsina: indicações de dosagem (todo adulto com obstrução persistente após broncodilatador; enfisema antes dos 45 anos, em não fumante, de predomínio basal; história familiar; paniculite; doença hepática sem causa) e critérios de reposição intravenosa foram conferidos no texto integral da recomendação da SBPT (Feitosa et al., 2024; PMC11601085). O limiar de concentração sérica para reposição citado pela SBPT foi omitido de propósito.",
-    "Proteinose alveolar: forma autoimune como a mais frequente, falha da depuração do surfactante por bloqueio do GM-CSF, lavado com material PAS-positivo e tratamento de primeira linha (lavagem pulmonar total e/ou GM-CSF inalatório) conferidos no texto integral do resumo para clínicos da diretriz ERS (Alfaro et al., Breathe 2025; PMC12070199); a diretriz completa (Eur Respir J 2024) não foi aberta.",
+    "Deficiência de α1-antitripsina: indicações de dosagem (todo adulto com obstrução persistente após broncodilatador; enfisema antes dos 45 anos, em não fumante, de predomínio basal; história familiar; paniculite; doença hepática sem causa) e critérios de reposição intravenosa foram conferidos no texto integral da recomendação da SBPT (Feitosa et al., 2024; PMC11601085). Na 2ª etapa, o limiar de concentração sérica para reposição foi conferido no mesmo texto integral e incluído (\"a low serum AAT concentration (< 11 µmol/L or < 57 mg/dL), and evidence of airflow limitation on pulmonary function testing\"), assim como o diagnóstico pela dosagem sérica seguida de genotipagem ou fenotipagem.",
+    "Proteinose alveolar: forma autoimune como a mais frequente, falha da depuração do surfactante por bloqueio do GM-CSF, lavado com material PAS-positivo e tratamento de primeira linha (lavagem pulmonar total e/ou GM-CSF inalatório) e a recomendação de não fazer biópsia pulmonar de rotina (\"We suggest to not routinely perform lung biopsy\", recomendação condicional, certeza moderada) conferidos no texto integral do resumo para clínicos da diretriz ERS (Alfaro et al., Breathe 2025; PMC12070199); a diretriz completa (Eur Respir J 2024) não foi aberta.",
     "Cobertura da superfície alveolar (Crapo 1982), origem dos macrófagos alveolares (Guilliams 2013) e histórico do epônimo de Clara (Winkelmann e Noack 2010; Irwin et al. 2013) conferidos só nos resumos do PubMed.",
-    "Achados de patologia (enfisema, bronquite crônica, asma, membrana hialina, pneumoconioses, células da insuficiência cardíaca, bronquiolite respiratória do fumante, edema de Reinke) seguem Robbins e os livros de histologia, não conferidos no texto impresso. Números (Reid, cargas tabágicas, tamanhos de partículas, prevalências) foram omitidos de propósito."
+    "Achados de patologia ainda apoiados só em Robbins (não conferido no texto impresso): predomínio do enfisema centroacinar nos lobos superiores e do panacinar nas bases, composição das membranas hialinas (fibrina e restos epiteliais), hipertrofia glandular da bronquite crônica, células da insuficiência cardíaca, bronquiolite respiratória do fumante, edema de Reinke e origem do carcinoma da laringe. Conferidos em texto integral na 2ª etapa: definição de enfisema e tipos centroacinar, panacinar e parasseptal (Marchiori et al., J Bras Pneumol 2024; transcriptoma de enfisema, Int J Mol Sci 2026, PMC13566781: parasseptal \"predisposes to pneumothorax\"); nódulo silicótico com colágeno em redemoinho, partículas fracamente birrefringentes, predileção pelas zonas superiores e risco de tuberculose (Fazio et al., 2025); revestimento de ferro dos corpos de asbesto (Avramescu et al., 2023); componentes do remodelamento na asma (Varricchi et al., 2025); colapso alveolar, necrose epitelial e membranas hialinas em prematuros que morrem com 1–3 dias (Eur J Histochem 2012, PMC3493981). Números (Reid, cargas tabágicas, tamanhos de partículas, prevalências) continuam omitidos de propósito."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1358,6 +1374,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "0 crítica, 0 importante, 7 menores. Gabaritos, letras e textos das alternativas inalterados; distribuição a4/b5/c4/d4, sem pista de comprimento; ids já coincidem com a lâmina 'pulmao' (PARTES_PULMAO). Principais: q05 passa a citar a película de surfactante no enunciado (a barreira inclui ou não o surfactante conforme o autor) e a nota sobre a barreira deixa de atribuir a Ross a lista sem surfactante; metaplasia escamosa da bronquite crônica situada no epitélio brônquico; evento da laringe sem ambiguidade; q15 com 'e/ou' e 'sintomática ou progressiva' como na diretriz. Conferidos em texto integral: SBPT 2024 (indicações de dosagem e de reposição), ERS PAP (Breathe 2025), cílios olfatórios imóveis (PLoS Biol 2024); Crapo 1982 (tipo II cobre 7% da superfície) e Guilliams 2013 no resumo. Relatório: content/revisoes/hs1516-histologia.md."
+      },
+      {
+        "area": "gastro-hepatologia/pneumologia",
+        "agente": "revisor-gastro-pneumo-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "0 crítica, 1 importante, 5 menores. Gabaritos, letras, textos das alternativas e ids inalterados; os ids de estrutura já coincidem com PARTES_PULMAO (a lâmina 'pulmao' ainda não tem entrada em laminas-sistemas-c.json), nada a alinhar. Principais: q15 sem biópsia pulmonar na vinheta (a diretriz ERS 2024 sugere não fazê-la de rotina) e com tomografia em pavimentação em mosaico; reposição de α1-antitripsina com o limiar conferido (< 57 mg/dL ou 11 µmol/L) e diagnóstico por dosagem e fenotipagem/genotipagem (SBPT 2024, texto integral); doença da membrana hialina integrada ao emb-14 (corticoide antenatal, CPAP, surfactante exógeno); carcinoma da laringe sem 'a sede' na glote. Silicose, corpos de asbesto, remodelamento da asma e tipos de enfisema conferidos em texto integral. Relatório: content/revisoes/hs1516-clinica.md."
       }
     ],
     "humano": null

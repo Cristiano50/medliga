@@ -330,7 +330,7 @@
       "id": "sindrome-nefrotica",
       "titulo": "Síndrome nefrótica e lesão dos podócitos",
       "descricao": "Proteinúria maciça, hipoalbuminemia e edema, em geral com hiperlipidemia, hipercoagulabilidade e risco de infecções. No adulto, o PCDT do Ministério da Saúde (2020) define a proteinúria nefrótica como acima de 3,0–3,5 g/1,73 m² por dia, e o exame histopatológico da biópsia define o plano terapêutico e auxilia o diagnóstico etiológico na síndrome nefrótica primária; numa série brasileira citada pelo PCDT, glomeruloesclerose segmentar e focal e glomerulopatia membranosa foram as causas primárias mais frequentes. Na criança com diagnóstico após 1 ano de idade, a doença de lesões mínimas responde por 70–90% dos casos; em geral não se faz biópsia no início, o primeiro episódio é tratado com prednisona ou prednisolona, com remissão na maioria, e a biópsia fica para casos selecionados, como corticorresistência, idade acima de 12 anos ou suspeita de causa secundária (PCDT de 2026).",
-      "mecanismo": "A lesão principal é do podócito: com o apagamento (fusão) dos pedicelos e a desorganização do diafragma da fenda, a barreira deixa passar albumina. Doença de lesões mínimas: microscopia óptica normal, imunofluorescência negativa e apagamento difuso dos pedicelos à microscopia eletrônica; as células tubulares acumulam lipídios reabsorvidos (antiga “nefrose lipoide”). Glomeruloesclerose segmentar e focal: esclerose de parte do tufo em parte dos glomérulos. Nefropatia membranosa: depósitos subepiteliais de imunocomplexos — na maioria das formas primárias, com autoanticorpos contra o receptor de fosfolipase A2 (PLA2R) do podócito —, MBG espessada e espículas na impregnação pela prata. Variantes patogênicas de proteínas do diafragma, como a nefrina (gene NPHS1), causam síndrome nefrótica congênita; anticorpos antinefrina foram descritos recentemente na doença de lesões mínimas e na síndrome nefrótica idiopática da criança, em geral corticossensível."
+      "mecanismo": "A lesão principal é do podócito: com o apagamento (fusão) dos pedicelos e a desorganização do diafragma da fenda, a barreira deixa passar albumina. Doença de lesões mínimas: microscopia óptica normal, imunofluorescência negativa (no máximo, coloração fraca de IgM ou C3) e apagamento difuso dos pedicelos, sem depósitos, à microscopia eletrônica; as células tubulares acumulam lipídios reabsorvidos (antiga “nefrose lipoide”). Glomeruloesclerose segmentar e focal: esclerose de parte do tufo em parte dos glomérulos; na forma primária, o apagamento dos pedicelos também é difuso, e, como a lesão é focal, uma biópsia pequena pode não conter glomérulos esclerosados e parecer lesões mínimas (KDIGO 2021). Na clínica do adulto, as lesões mínimas cursam com proteinúria seletiva, em geral sem hematúria nem hipertensão; a GESF, com proteinúria não seletiva, que pode acompanhar-se de algum grau de hematúria microscópica e de hipertensão (PCDT de 2020). Nefropatia membranosa: depósitos subepiteliais de imunocomplexos — na maioria das formas primárias, com autoanticorpos contra o receptor de fosfolipase A2 (PLA2R) do podócito —, MBG espessada e espículas na impregnação pela prata. Variantes patogênicas de proteínas do diafragma, como a nefrina (gene NPHS1), causam síndrome nefrótica congênita; anticorpos antinefrina foram descritos recentemente na doença de lesões mínimas e na síndrome nefrótica idiopática da criança, em geral corticossensível; no modelo animal, ligam-se ao diafragma da fenda e reproduzem a doença, e ainda estão em avaliação como biomarcadores (KDIGO 2025)."
     },
     {
       "id": "sindrome-nefritica",
@@ -659,7 +659,7 @@
         }
       ],
       "correta": "b",
-      "explicacao": "Síndrome nefrótica sem hematúria, hipertensão nem perda de função, com microscopia óptica normal e imunofluorescência negativa, é o quadro da doença de lesões mínimas: a lesão está nos podócitos, cujos pedicelos se apagam (fundem-se) de forma difusa, alteração visível só à microscopia eletrônica (b). Depósitos em corcova (a) são da glomerulonefrite pós-infecciosa, que causa síndrome nefrítica e tem imunofluorescência granular. A MBG lamelada (c) é típica da síndrome de Alport, que se manifesta por hematúria. Depósitos subepiteliais com espículas (d) caracterizam a nefropatia membranosa, com imunofluorescência granular de IgG e MBG espessada já à microscopia óptica.",
+      "explicacao": "Síndrome nefrótica sem hematúria, hipertensão nem perda de função, com microscopia óptica normal e imunofluorescência negativa, é o quadro da doença de lesões mínimas: a lesão está nos podócitos, cujos pedicelos se apagam (fundem-se) de forma difusa, alteração visível só à microscopia eletrônica (b). O mesmo apagamento difuso ocorre na glomeruloesclerose segmentar e focal primária, cujas lesões focais podem faltar numa amostra pequena; a ausência de hematúria e de hipertensão favorece as lesões mínimas, e o achado esperado à microscopia eletrônica é o mesmo. Depósitos em corcova (a) são da glomerulonefrite pós-infecciosa, que causa síndrome nefrítica e tem imunofluorescência granular. A MBG lamelada (c) é típica da síndrome de Alport, que se manifesta por hematúria. Depósitos subepiteliais com espículas (d) caracterizam a nefropatia membranosa, com imunofluorescência granular de IgG e MBG espessada já à microscopia óptica.",
       "dificuldade": 3,
       "bloom": "aplicar",
       "tags": [
@@ -668,7 +668,7 @@
         "biopsia-renal",
         "caso-clinico"
       ],
-      "referencia": "Robbins & Cotran 10ª ed., O rim; PCDT Síndrome Nefrótica Primária em Adultos (MS, 2020)"
+      "referencia": "Robbins & Cotran 10ª ed., O rim; PCDT Síndrome Nefrótica Primária em Adultos (MS, 2020), item 6.3; KDIGO 2021 (Glomerular Diseases), caps. 5 e 6"
     },
     {
       "id": "his-17-q10",
@@ -1296,6 +1296,14 @@
     {
       "obra": "Hengel FE, Dehde S, Lassé M, et al. Autoantibodies targeting nephrin in podocytopathies. N Engl J Med. 2024;391(5):422-33. doi:10.1056/NEJMoa2314471. PMID 38804512",
       "capitulo": "Resumo (anticorpos antinefrina na doença de lesões mínimas do adulto e na síndrome nefrótica idiopática da criança; ligação ao diafragma da fenda no modelo animal)"
+    },
+    {
+      "obra": "Kidney Disease: Improving Global Outcomes (KDIGO) Glomerular Diseases Work Group. KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int. 2021;100(4S):S1-S276. Disponível em: https://kdigo.org/guidelines/gd/",
+      "capitulo": "5 — Doença de lesões mínimas no adulto (Practice Point 5.1.1: diagnóstico só por biópsia; imunofluorescência negativa ou com coloração fraca de C3/IgM; lesões iniciais de GESF podem faltar numa amostra pequena); 6 — GESF no adulto (GESF primária: lesões de GESF à microscopia óptica, apagamento difuso dos pedicelos e síndrome nefrótica); 7 — Glomerulonefrite associada a infecção (latência de semanas após a infecção)"
+    },
+    {
+      "obra": "Kidney Disease: Improving Global Outcomes (KDIGO) Pediatric Nephrotic Syndrome Work Group. KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int. 2025;107(5S):S241-S289. Disponível em: https://kdigo.org/guidelines/",
+      "capitulo": "1.3 e 1.4 (anticorpos antinefrina e anti-diafragma da fenda como possíveis biomarcadores) e recomendações de pesquisa"
     }
   ],
   "notasDivergencia": [
@@ -1315,7 +1323,8 @@
     "Hialinose da arteríola eferente “praticamente exclusiva do diabetes” e lista de causas de necrose de papila seguem Robbins (redação de memória, não conferida no texto impresso da 10ª ed.). A revisão de histologia (10/11/2026) achou a mesma afirmação em revisões de acesso aberto (“virtually pathognomonic”, Cureus 2025, PMC12571060; “virtually diagnostic”, PMC12547650), fontes secundárias.",
     "PCDT pediátrico: as frequências citadas (lesões mínimas em 70–90% após 1 ano de idade; remissão em cerca de 85% com corticoide) são do próprio PCDT, que cita a literatura original, não lida. Número, data e publicação da portaria foram conferidos pela revisão de histologia (DOU nº 198, 20/10/2026, seção 1, p. 88).",
     "Alteração ocular da síndrome de Alport: a vinheta da q13 fala em “alteração do cristalino” sem nomear o lenticone anterior, achado clássico da literatura clínica não conferido em Robbins 10ª ed.",
-    "Lâmina do microscópio virtual: a lâmina de rim do his-02 (epitelio-cubico-rim) usa só ids de epitélio. A lâmina rim-cortex, em desenho em 10/11/2026, usa glomerulo, espaco-urinario, capsula-glomerular, tubulo-contorcido-proximal, tubulo-contorcido-distal, macula-densa, arteriola-aferente, arteriola-eferente e capilar; o id do espaço entre os folhetos foi alinhado a ela (espaco-capsular → espaco-urinario, revisão de histologia). O tópico não define \"capilar\" (id canônico com definição própria em cada lâmina). Os demais ids servem a uma futura lâmina de medula e ao modelo 3D de néfron (decisão pendente no item G2 de docs/pendencias-conferencia-medica.md)."
+    "Lâmina do microscópio virtual: a lâmina de rim do his-02 (epitelio-cubico-rim) usa só ids de epitélio. A lâmina rim-cortex, em desenho em 10/11/2026, usa glomerulo, espaco-urinario, capsula-glomerular, tubulo-contorcido-proximal, tubulo-contorcido-distal, macula-densa, arteriola-aferente, arteriola-eferente e capilar; o id do espaço entre os folhetos foi alinhado a ela (espaco-capsular → espaco-urinario, revisão de histologia). O tópico não define \"capilar\" (id canônico com definição própria em cada lâmina). Os demais ids servem a uma futura lâmina de medula e ao modelo 3D de néfron (decisão pendente no item G2 de docs/pendencias-conferencia-medica.md).",
+    "Revisão de nefrologia/endocrinologia (10/11/2026): conferidos no texto integral os PCDTs pediátrico (nº 87/2026: Quadro 1, biópsia em casos selecionados, antinefrina, lesões mínimas em 70–90%, remissão em cerca de 85%) e do adulto (nº 8/2020: definição, série brasileira, item 5.1.2; contraste clínico entre AGM e GESF nos itens 6.3.1.1 e 6.3.2.1) e as diretrizes KDIGO de 2021 (doenças glomerulares, caps. 5–7) e de 2025 (síndrome nefrótica na criança), lidas em kdigo.org. Os artigos de Watts (2022) e Hengel (2024) não têm texto integral aberto (o PMC8763186 não libera o XML; o NEJM não está no PMC); usaram-se só os resumos, e o texto não traz os números deles."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1327,6 +1336,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "10 correções (0 críticas, 0 importantes, 10 menores); nenhum gabarito errado. Principais: id espaco-capsular → espaco-urinario, alinhado à lâmina rim-cortex; sinônimos imprecisos (\"planura estriada\" na borda em escova do túbulo; \"fenda de filtração\" no diafragma); q09 sem \"confirma\" (apagamento dos pedicelos não é específico); fidelidade ao PCDT do adulto (a histopatologia \"auxilia\" o diagnóstico etiológico); anticorpos antinefrina conferidos na fonte primária (Watts 2022; Hengel 2024); glândulas de Littré na uretra esponjosa; incertezas resolvidas. Conferidos no texto integral: PCDT pediátrico (Portaria Conjunta SAES/SCTIE nº 87, de 15/10/2026, DOU nº 198 de 20/10/2026) e PCDT do adulto (Portaria Conjunta nº 8, de 14/04/2020; albumina < 3,0 na introdução × < 3,5 g/dL no item 5.1.2). Relatório: content/revisoes/hs1718-histologia.md."
+      },
+      {
+        "area": "nefrologia/endocrinologia",
+        "agente": "revisor-nefro-endo-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "5 correções (0 críticas, 0 importantes, 5 menores); nenhum fato ou gabarito errado. Principais: lesões mínimas × GESF na correlação de síndrome nefrótica (GESF primária também tem apagamento difuso; biópsia pequena pode não mostrar a esclerose; contraste clínico do PCDT do adulto, itens 6.3.1.1 × 6.3.2.1); explicação da q09 com a mesma ressalva (gabarito b mantido); antinefrina como biomarcador em avaliação (KDIGO 2025) e ligação ao diafragma da fenda no modelo animal; KDIGO 2021 e 2025 nas referências; incertezas atualizadas. Conferidos no texto integral: PCDTs nº 87/2026 e nº 8/2020 (gov.br), KDIGO 2021 e 2025 (kdigo.org). Relatório: content/revisoes/hs1718-clinica.md."
       }
     ],
     "humano": null

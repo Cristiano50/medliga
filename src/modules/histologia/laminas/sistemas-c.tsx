@@ -12,6 +12,7 @@ import type { LaminaRender } from './index.ts';
 // Geometria
 type P = [number, number];
 const f = (v: number) => +v.toFixed(1);
+const f1 = f;
 
 /** Elipse girada como subcaminho (várias no mesmo <path>). */
 function elipse(cx: number, cy: number, rx: number, ry: number, ang = 0): string {
@@ -1258,7 +1259,6 @@ export const PARTES_ADRENAL = ['capsula', 'zona-glomerulosa', 'zona-fasciculada'
 export function LaminaAdrenal(rng: Rng) {
   const cor = { capsula: '#e9a2c2', sinusoide: '#fbeaf1', zg: '#e7a0c0', zgBorda: '#cf7ea5', zf: '#f6dce7', zfBorda: '#d79bb8', zr: '#dd85ab', zrBorda: '#c46b95', lipofuscina: '#8a5a32', med: '#c9b5dc', medBorda: '#a68cc4', medNuc: '#5b4b9c', espuma: '#fdf6f9' };
   const yG = (x: number) => 24 + 3 * Math.sin(x / 50); // cápsula → glomerulosa
-  const yF = (x: number) => 96 + 6 * Math.sin(x / 60 + 1); // glomerulosa → fasciculada
   const yR = (x: number) => 420 + 10 * Math.sin(x / 80 + 2); // fasciculada → reticular
   const yM = (x: number) => 542 + 10 * Math.sin(x / 45) + 6 * Math.sin(x / 17 + 1); // reticular → medula
   const faixaY = (f0: (x: number) => number, f1: (x: number) => number) => {
@@ -1275,8 +1275,8 @@ export function LaminaAdrenal(rng: Rng) {
   const zgNuc: string[] = [];
   for (let x = 6; x < W + 40; x += entre(rng, 62, 68)) {
     const a = entre(rng, 28, 31);
-    const b = 33;
-    const cy = 61;
+    const b = 33.5;
+    const cy = 59.5;
     const ctr = pontosPolar(x, cy, (t) => (a * b) / Math.hypot(b * Math.cos(t), a * Math.sin(t)), 48);
     const sem: Sitio[] = [{ x, y: cy, w: 0 }];
     for (const [fr, n] of [[0.78, 15], [0.44, 7]] as [number, number][]) {
@@ -1327,15 +1327,15 @@ export function LaminaAdrenal(rng: Rng) {
     const fase = fase0 + 0.12 * k;
     const xc = (y: number) => x0 + 5 * Math.sin(y / 70 + fase);
     const sem: Sitio[] = [];
-    for (let y = 92; y < 432; y += entre(rng, 18, 21)) {
+    for (let y = 95; y < 432; y += entre(rng, 18, 21)) {
       if (rng() < 0.18) sem.push({ x: xc(y) + entre(rng, -2, 2), y, w: 0 }); // trecho de uma só célula
       else for (const d of [-9.2, 9.2]) sem.push({ x: xc(y) + d + entre(rng, -1.2, 1.2), y: y + entre(rng, -2, 2), w: 0 });
     }
     celulasDe(sem, 17, 0.5).forEach((pol0, i) => {
       const q = sem[i];
       let pol = cortar(pol0, 1, 0, xc(q.y) + 17.5, 0);
-      pol = cortar(pol, -1, 0, -(xc(q.y) - 17.5), 0);
-      pol = cortar(pol, 0, -1, 0, -(yF(q.x) + 2));
+      pol = cortar(pol, -1, 0, xc(q.y) - 17.5, 0);
+      pol = cortar(pol, 0, -1, 0, 93.5);
       pol = cortar(pol, 0, 1, 0, yR(q.x) - 1);
       if (pol.length < 3) return;
       zfCel.push(contorno(pol));
@@ -1350,7 +1350,7 @@ export function LaminaAdrenal(rng: Rng) {
       }
     });
     // hemácias e núcleos endoteliais no sinusoide à direita do cordão (postos depois de todos os cordões)
-    for (let y = yF(x0) + entre(rng, 5, 30); y < yR(x0) - 6; y += entre(rng, 22, 40)) noSinusoide.push([xc(y) + passoC / 2, y, rng() < 0.75 ? 1 : 0]);
+    for (let y = 100 + entre(rng, 0, 25); y < yR(x0) - 6; y += entre(rng, 22, 40)) noSinusoide.push([xc(y) + passoC / 2, y, rng() < 0.75 ? 1 : 0]);
   }
   for (const [x, y, hem] of noSinusoide) {
     if (!occNuc.livre(x, y, 3.8, 0.4)) continue;
@@ -1394,7 +1394,7 @@ export function LaminaAdrenal(rng: Rng) {
     .forEach((pol0, i) => {
       const q = sitRM[i];
       if (i < semR0.length) {
-        const pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
+        const pol = cortar(pol0, 0, -1, 0, yR(q.x) - 1);
         if (pol.length < 3) return;
         zrCel.push(contorno(pol));
         const c = centroidePol(pol);
@@ -1490,6 +1490,233 @@ export function LaminaAdrenal(rng: Rng) {
 }
 
 // =============================================================================================
+// 5. TESTÍCULO — escala 1 un ≈ 0,8 µm: túbulo seminífero ≈ 190 µm; epitélio ≈ 60 µm; espermatócito ≈ 15 µm;
+// espermátide redonda ≈ 8 µm; célula de Leydig ≈ 14 µm. A túnica albugínea real é mais espessa que a faixa do esquema.
+export const PARTES_TESTICULO = ['tunica-albuginea', 'lamina-propria', 'espermatogonia', 'espermatocito', 'espermatide', 'celula-de-sertoli', 'lumen', 'celula-de-leydig', 'capilar'];
+
+/** Testículo: túnica albugínea, túbulos seminíferos com epitélio germinativo e células de Sertoli, interstício com Leydig. */
+export function LaminaTesticulo(rng: Rng) {
+  const cor = { interst: '#f5dde8', albuginea: '#e8a2c1', fibra: '#dc8db2', propria: '#e6a3c1', sertoli: '#f0cfdd', luz: '#fbf4f7', cauda: '#d38db1', germ: '#f6e1ea', germBorda: '#d9a7c0', esperm: '#f2d2e0', espgClara: '#6c5db2', espcNuc: '#9284c8', sertNuc: '#9a8fd0', leydig: '#e488af', leydigBorda: '#c96d97' };
+  const yA = (x: number) => 64 + 4 * Math.sin(x / 90);
+  // túbulos em corte transversal (fileiras alternadas), com interstício triangular entre eles
+  const tubulos: [number, number, number][] = [];
+  for (const [y, xs] of [[205, [118, 378, 638, 898]], [456, [-12, 248, 508, 768, 1028]], [705, [118, 378, 638, 898]]] as [number, number[]][])
+    for (const x of xs) tubulos.push([x + entre(rng, -10, 10), y + entre(rng, -8, 8), entre(rng, 106, 114)]);
+  const LP = 7; // lâmina própria (túnica própria) com células mioides
+
+  const propria: string[] = [];
+  const mioides: string[] = [];
+  const sertoliFundo: string[] = [];
+  const sertoliNuc: string[] = [];
+  const nucleolos: string[] = [];
+  const luzes: string[] = [];
+  const caudas: string[] = [];
+  const gCel: string[] = [];
+  const gNucEscuro: string[] = [];
+  const gNucClaro: string[] = [];
+  const cCel: string[] = [];
+  const cNuc: string[] = [];
+  const cCromatina: string[] = [];
+  const eCel: string[] = [];
+  const eNuc: string[] = [];
+  const eAlong: string[] = [];
+  tubulos.forEach(([x, y, R], ti) => {
+    propria.push(circulo(x, y, R + LP) + circulo(x, y, R));
+    for (let a = entre(rng, 0, 0.3); a < 2 * Math.PI - 0.1; a += entre(rng, 0.2, 0.32)) {
+      mioides.push(elipse(x + Math.cos(a) * (R + 3.6), y + Math.sin(a) * (R + 3.6), 6, 1.3, (a * 180) / Math.PI + 90));
+    }
+    sertoliFundo.push(circulo(x, y, R));
+    const rl = R - 80;
+    luzes.push(circulo(x, y, rl));
+    const occ = ocupacao(16, 10);
+    const radial = (a: number, r: number): P => [x + Math.cos(a) * r, y + Math.sin(a) * r];
+    // núcleos de Sertoli: perto da base, claros, ovais/triangulares, com o eixo maior radial e nucléolo evidente
+    const nS = Math.round(entre(rng, 9, 12));
+    for (let k = 0; k < nS; k++) {
+      const a = ((k + entre(rng, -0.25, 0.25)) * 2 * Math.PI) / nS;
+      const [px, py] = radial(a, R - 12.5 + entre(rng, -1.5, 1.5));
+      occ.marcar(px, py, 5.6);
+      sertoliNuc.push(elipse(px, py, 5.6, 3.3, (a * 180) / Math.PI));
+      nucleolos.push(circulo(px, py, 1.2));
+    }
+    // fileira de células: passo um pouco maior que o diâmetro, com leve variação de altura; a ocupação impede sobreposição
+    const fileira = (r0: number, rc: number, dens: number, desenhar: (px: number, py: number, a: number) => void) => {
+      for (let a = entre(rng, 0, 0.2); a < 2 * Math.PI; a += (2 * rc + 0.8) / r0) {
+        if (rng() > dens) continue;
+        const [px, py] = radial(a, r0 + entre(rng, -1.5, 1.5));
+        if (!occ.livre(px, py, rc, 0.3)) continue;
+        occ.marcar(px, py, rc);
+        desenhar(px, py, a);
+      }
+    };
+    // espermatogônias: sobre a lâmina basal; tipo A escuro (núcleo denso) e tipos A claro / B (núcleo mais claro)
+    fileira(R - 7.2, 6.3, 1, (px, py, a) => {
+      gCel.push(circulo(px, py, 6.3));
+      (rng() < 0.4 ? gNucEscuro : gNucClaro).push(elipse(px, py, 4.3, 3.7, (a * 180) / Math.PI + 90));
+    });
+    // espermatócitos primários: as maiores células germinativas, núcleo com cromatina em filamentos (prófase I)
+    const espermatocito = (px: number, py: number) => {
+      cCel.push(circulo(px, py, 9.2));
+      cNuc.push(circulo(px, py, 6.2));
+      for (let f = 0; f < 5; f++) {
+        const rt = entre(rng, 1.6, 4.8);
+        const b0 = entre(rng, 0, Math.PI * 2);
+        const b1 = b0 + entre(rng, 1, 2.2);
+        cCromatina.push(`M${f1(px + Math.cos(b0) * rt)},${f1(py + Math.sin(b0) * rt)}A${f1(rt)},${f1(rt)} 0 0 1 ${f1(px + Math.cos(b1) * rt)},${f1(py + Math.sin(b1) * rt)}`);
+      }
+    };
+    fileira(R - 23.5, 9.2, 1, espermatocito);
+    fileira(R - 41.5, 9.2, 0.7, espermatocito);
+    // espermátides redondas (duas fileiras) e, em parte dos túbulos (estágio do ciclo), espermátides alongadas junto à luz
+    for (const rr of [R - 55.5, R - 66])
+      fileira(rr, 5, 1, (px, py) => {
+        eCel.push(circulo(px, py, 5));
+        eNuc.push(circulo(px, py, 2.9));
+      });
+    // completa cada camada nos vãos que sobraram (o epitélio seminífero é compacto: quase não sobra citoplasma de Sertoli à vista)
+    const completar = (r0: number, r1: number, rc: number, desenhar: (px: number, py: number, a: number) => void) => {
+      for (let t = 0; t < 900; t++) {
+        const a = entre(rng, 0, Math.PI * 2);
+        const rr = entre(rng, r0 + rc, r1 - rc);
+        const [px, py] = radial(a, rr);
+        if (!occ.livre(px, py, rc, 0.3)) continue;
+        occ.marcar(px, py, rc);
+        desenhar(px, py, a);
+      }
+    };
+    completar(R - 50, R - 15.5, 9.2, espermatocito);
+    completar(R - 72, R - 50, 5, (px, py) => {
+      eCel.push(circulo(px, py, 5));
+      eNuc.push(circulo(px, py, 2.9));
+    });
+    completar(R - 16, R - 1, 6.3, (px, py, a) => {
+      gCel.push(circulo(px, py, 6.3));
+      (rng() < 0.4 ? gNucEscuro : gNucClaro).push(elipse(px, py, 4.3, 3.7, (a * 180) / Math.PI + 90));
+    });
+    const alongadas = ti % 5 !== 2 && rng() < 0.75;
+    if (alongadas)
+      for (let a = entre(rng, 0, 0.5); a < 2 * Math.PI; ) {
+        // feixes de 5–7 cabeças (núcleo condensado, escuro e alongado) mergulhadas no ápice da célula de Sertoli
+        const n = Math.floor(entre(rng, 5, 8));
+        for (let k = 0; k < n; k++, a += 4.6 / (R - 75)) {
+          const [px, py] = radial(a, R - 75.5);
+          if (!occ.livre(px, py, 1.6, 0.2)) continue;
+          occ.marcar(px, py, 1.6);
+          eAlong.push(elipse(px, py, 3.2, 1.2, (a * 180) / Math.PI));
+          const [tx, ty] = radial(a + entre(rng, -0.05, 0.05), rl - entre(rng, 4, 14));
+          caudas.push(`M${f1(px - Math.cos(a) * 3)},${f1(py - Math.sin(a) * 3)}Q${f1((px + tx) / 2 + entre(rng, -3, 3))},${f1((py + ty) / 2 + entre(rng, -3, 3))} ${f1(tx)},${f1(ty)}`);
+        }
+        a += entre(rng, 0.25, 0.5);
+      }
+    // flagelos de espermatozoides já liberados na luz
+    for (let k = 0; k < (alongadas ? 10 : 22); k++) {
+      const a = entre(rng, 0, Math.PI * 2);
+      const r0 = Math.sqrt(rng()) * (rl - 6);
+      const [x0, y0] = [x + Math.cos(a) * r0, y + Math.sin(a) * r0];
+      const b = entre(rng, 0, Math.PI * 2);
+      const l = entre(rng, 10, 20);
+      const [x1, y1] = [x0 + Math.cos(b) * l, y0 + Math.sin(b) * l];
+      if (Math.hypot(x1 - x, y1 - y) > rl - 3) continue;
+      caudas.push(`M${f1(x0)},${f1(y0)}q${f1(Math.cos(b + 1) * 4)},${f1(Math.sin(b + 1) * 4)} ${f1(x1 - x0)},${f1(y1 - y0)}`);
+    }
+  });
+
+  // interstício: grupos de células de Leydig (poligonais, eosinófilas, núcleo redondo) junto a capilares
+  const folgaT = (x: number, y: number) => Math.min(y - yA(x) - 4, ...tubulos.map(([tx, ty, R]) => Math.hypot(x - tx, y - ty) - R - LP));
+  const occL = ocupacao(20, 9);
+  const vasos: [number, number, number][] = [];
+  for (let y = 70; y < H + 10; y += 6)
+    for (let x = -10; x < W + 10; x += 6) {
+      const c = folgaT(x, y);
+      if (c < 20 || !occL.livre(x, y, 8, 52)) continue;
+      occL.marcar(x, y, 8);
+      vasos.push([x, y, Math.min(9, c - 9)]);
+    }
+  const semL = dardos(rng, 9000, [-20, 60, W + 20, H + 20], () => 8.6, (x, y) => folgaT(x, y) > 9 && vasos.some(([vx, vy]) => Math.hypot(vx - x, vy - y) < 40), occL, 0);
+  const sitL: Sitio[] = [...semL.map(([x, y]) => ({ x, y, w: 0 })), ...vasos.map(([x, y, r]) => ({ x, y, w: r + 3 }))];
+  const leyCel: string[] = [];
+  const leyNuc: string[] = [];
+  const leyVac: string[] = [];
+  celulasDe(sitL, 10.5, 0.5)
+    .slice(0, semL.length)
+    .forEach((pol, i) => {
+      if (pol.length < 3) return;
+      leyCel.push(contorno(pol));
+      const q = sitL[i];
+      const a = entre(rng, 0, Math.PI * 2);
+      leyNuc.push(circulo(q.x + Math.cos(a) * 1.4, q.y + Math.sin(a) * 1.4, 3.5));
+      for (let k = 0; k < 3; k++) {
+        const b = a + Math.PI + entre(rng, -0.9, 0.9);
+        leyVac.push(circulo(q.x + Math.cos(b) * 5.6, q.y + Math.sin(b) * 5.6, entre(rng, 0.8, 1.3)));
+      }
+    });
+  const hemV = vasos.map(([x, y, r]) => hemacia(x, y, Math.min(4.6, r - 1.5), entre(rng, 0, 180), Math.min(3.2, r - 2.5))).join('');
+  const nucVaso = vasos.filter(() => rng() < 0.5).map(([x, y, r]) => elipse(x, y - r + 1, Math.min(3.5, r * 0.5), 1, 0)).join('');
+  // túnica vascular: vasos sob a albugínea
+  const vascular: [number, number, number][] = [[260, 80, 9], [520, 84, 11], [770, 79, 8]];
+  const fibAlb: string[] = [];
+  for (let k = 0; k < 30; k++) {
+    const x = entre(rng, 0, W);
+    fibAlb.push(elipse(x, entre(rng, 6, yA(x) - 6), 7, 1.4, entre(rng, -4, 4)));
+  }
+  const fibrasAlb = Array.from({ length: 6 }, (_, k) => {
+    const yy = 8 + k * 9.5;
+    return `M-20,${yy}C300,${yy + entre(rng, -4, 4)} 700,${yy + entre(rng, -4, 4)} ${W + 20},${yy}`;
+  }).join('');
+
+  return (
+    <>
+      <rect x={-20} y={-20} width={W + 40} height={H + 40} fill={cor.interst} />
+      <E id="tunica-albuginea">
+        <path d={contorno([[-20, -20], [W + 20, -20], ...Array.from({ length: 53 }, (_, k): P => [W + 20 - k * 20, yA(W + 20 - k * 20)])])} fill={cor.albuginea} />
+        <path d={fibrasAlb} stroke={cor.fibra} strokeWidth={1.2} fill="none" />
+        <path d={fibAlb.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="capilar">
+        <path d={[...vasos, ...vascular].map(([x, y, r]) => circulo(x, y, r)).join('')} fill={HE.luz} stroke={HE.citoplasmaEscuro} strokeWidth={1.6} />
+        <path d={hemV + vascular.map(([x, y, r]) => hemacia(x - r * 0.3, y, 4.4, 20, 3.2) + hemacia(x + r * 0.35, y + 1, 4.4, -30, 3.2)).join('')} fill={HE.hemacia} />
+        <path d={nucVaso} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="celula-de-leydig">
+        <path d={leyCel.join('')} fill={cor.leydig} stroke={cor.leydigBorda} strokeWidth={0.7} />
+        <path d={leyVac.join('')} fill="#f8e3ec" />
+        <path d={leyNuc.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="lamina-propria">
+        <path d={propria.join('')} fill={cor.propria} fillRule="evenodd" />
+        <path d={mioides.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="celula-de-sertoli">
+        <path d={sertoliFundo.join('')} fill={cor.sertoli} />
+      </E>
+      <E id="lumen">
+        <path d={luzes.join('')} fill={cor.luz} />
+        <path d={caudas.join('')} stroke={cor.cauda} strokeWidth={0.8} fill="none" />
+      </E>
+      <E id="espermatogonia">
+        <path d={gCel.join('')} fill={cor.germ} stroke={cor.germBorda} strokeWidth={0.6} />
+        <path d={gNucEscuro.join('')} fill={HE.nucleoEscuro} />
+        <path d={gNucClaro.join('')} fill={cor.espgClara} />
+      </E>
+      <E id="espermatocito">
+        <path d={cCel.join('')} fill={cor.germ} stroke={cor.germBorda} strokeWidth={0.6} />
+        <path d={cNuc.join('')} fill={cor.espcNuc} />
+        <path d={cCromatina.join('')} stroke={HE.nucleoEscuro} strokeWidth={1.2} strokeLinecap="round" fill="none" />
+      </E>
+      <E id="espermatide">
+        <path d={eCel.join('')} fill={cor.esperm} stroke={cor.germBorda} strokeWidth={0.5} />
+        <path d={eNuc.join('')} fill="#5d4d9e" />
+        <path d={eAlong.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="celula-de-sertoli">
+        <path d={sertoliNuc.join('')} fill={cor.sertNuc} />
+        <path d={nucleolos.join('')} fill={HE.nucleoEscuro} />
+      </E>
+    </>
+  );
+}
+
+// =============================================================================================
 export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {
   pulmao: { desenhar: LaminaPulmao, partes: PARTES_PULMAO },
   // o campo do jogo precisa mostrar um corpúsculo renal: sem ele, só túbulos, o campo lembraria a lâmina epitelio-cubico-rim
@@ -1497,4 +1724,5 @@ export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {
   tireoide: { desenhar: LaminaTireoide, partes: PARTES_TIREOIDE },
   // a fasciculada (cordões de espongiócitos) é o aspecto mais característico: o campo sempre pega ela e uma vizinha
   adrenal: { desenhar: LaminaAdrenal, partes: PARTES_ADRENAL, areaDiagnostica: [250, 160, 750, 420] },
+  testiculo: { desenhar: LaminaTesticulo, partes: PARTES_TESTICULO },
 };

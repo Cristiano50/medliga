@@ -317,7 +317,7 @@
     {
       "id": "hpv-zona-transformacao-rastreamento",
       "titulo": "Zona de transformação, HPV e rastreamento do câncer do colo do útero",
-      "descricao": "Tipos oncogênicos do HPV, sobretudo 16 e 18, infectam as células basais e de reserva do epitélio metaplásico da zona de transformação. A maioria das infecções é transitória; a persistência pode levar às lesões intraepiteliais escamosas — de baixo grau (LSIL, NIC1: coilócitos, atipia predominantemente no terço inferior, maturação preservada) e de alto grau (HSIL: NIC2, atipia e perda de maturação até cerca de dois terços da espessura; NIC3, mais de dois terços ou toda a espessura) — e ao carcinoma escamoso, quando há invasão do estroma. A imuno-histoquímica para p16 auxilia nos casos duvidosos entre LSIL e HSIL. No Brasil, as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, Parte I (Portaria Conjunta SAES/SECTICS nº 13/2025), tornaram o teste de DNA-HPV oncogênico com genotipagem o exame primário para mulheres e demais pessoas com colo do útero de 25 a 64 anos. No risco padrão: teste negativo → repetir em 5 anos; HPV 16 e/ou 18 → colposcopia; outros tipos oncogênicos → citologia na mesma amostra (reflexa), com colposcopia se ASC-US ou mais grave ou insatisfatória e, se normal, novo teste em 12 meses; o rastreamento termina quando o último teste após os 60 anos é negativo. Mulheres vivendo com HIV ou imunossuprimidas repetem o teste negativo em 3 anos e vão à colposcopia com qualquer tipo oncogênico. Onde o teste de DNA-HPV ainda não está disponível, mantém-se a citologia a cada 3 anos após dois exames anuais consecutivos negativos. A conduta após a triagem positiva está na Parte II (Portaria Conjunta SAES/SCTIE nº 105/2026).",
+      "descricao": "Tipos oncogênicos do HPV, sobretudo 16 e 18, infectam as células basais e de reserva do epitélio metaplásico da zona de transformação. A maioria das infecções é transitória; a persistência pode levar às lesões intraepiteliais escamosas — de baixo grau (LSIL, NIC1: coilócitos, atipia predominantemente no terço inferior, maturação preservada) e de alto grau (HSIL: NIC2, atipia e perda de maturação até cerca de dois terços da espessura; NIC3, mais de dois terços ou toda a espessura) — e ao carcinoma escamoso, quando há invasão do estroma. A imuno-histoquímica para p16 auxilia nos casos duvidosos entre LSIL e HSIL. No Brasil, as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, Parte I (Portaria Conjunta SAES/SECTICS nº 13/2025), tornaram o teste de DNA-HPV oncogênico com genotipagem o exame primário para mulheres e demais pessoas com colo do útero de 25 a 64 anos. No risco padrão: teste negativo → repetir em 5 anos; HPV 16 e/ou 18 → colposcopia; outros tipos oncogênicos → citologia na mesma amostra (reflexa), com colposcopia se ASC-US ou mais grave ou insatisfatória e, se normal, novo teste em 12 meses; o rastreamento termina quando o último teste após os 60 anos é negativo. Mulheres vivendo com HIV/aids ou com outra imunodepressão ou imunossupressão repetem o teste negativo em 3 anos e vão à colposcopia com qualquer tipo oncogênico. Onde o teste de DNA-HPV ainda não está disponível, mantém-se a citologia a cada 3 anos após dois exames anuais consecutivos negativos. A conduta após a triagem positiva está na Parte II (Portaria Conjunta SAES/SCTIE nº 105/2026).",
       "mecanismo": "As células metaplásicas imaturas da zona de transformação são suscetíveis à infecção. As oncoproteínas virais E6 e E7 inativam p53 e RB, respectivamente; a inativação de RB leva à superexpressão de p16, usada como marcador. A posição da junção escamocolunar muda com os hormônios: após a menopausa, recolhe-se para o canal e pode não ser totalmente visível à colposcopia (zona de transformação tipo 3), situação mais comum em mulheres mais velhas."
     },
     {
@@ -334,8 +334,8 @@
     },
     {
       "id": "sindrome-ovarios-policisticos",
-      "titulo": "Síndrome dos ovários policísticos (SOP), renomeada em 2026 como PMOS",
-      "descricao": "Distúrbio endócrino-metabólico comum na idade reprodutiva, com disfunção ovulatória, hiperandrogenismo e, com frequência, resistência à insulina. No adulto, o diagnóstico exige dois de três critérios (diretriz internacional de 2023, baseada nos de Rotterdam) — disfunção ovulatória, hiperandrogenismo clínico ou laboratorial e morfologia ovariana policística à ultrassonografia ou, alternativamente, hormônio antimülleriano elevado —, excluídas outras causas; na adolescente, exigem-se disfunção ovulatória e hiperandrogenismo, sem ultrassonografia nem AMH. Em 2026, um processo internacional de consenso, com organizações acadêmicas, clínicas e de pacientes, definiu o novo nome polyendocrine metabolic ovarian syndrome (PMOS), em implantação gradual e sem mudança dos critérios diagnósticos; este tópico mantém “SOP”. Histologia: ovários aumentados, com córtex superficial espesso e fibrótico, numerosos folículos antrais pequenos subcapsulares, de crescimento interrompido (os “cistos” do nome antigo), teca interna hiperplásica e luteinizada, e corpos lúteos raros ou ausentes.",
+      "titulo": "Síndrome dos ovários policísticos (SOP); novo nome proposto em 2026: PMOS",
+      "descricao": "Distúrbio endócrino-metabólico comum na idade reprodutiva, com disfunção ovulatória, hiperandrogenismo e, com frequência, resistência à insulina. No adulto, o diagnóstico exige dois de três critérios (diretriz internacional de 2023, baseada nos de Rotterdam) — disfunção ovulatória, hiperandrogenismo clínico ou laboratorial e morfologia ovariana policística à ultrassonografia ou, alternativamente, hormônio antimülleriano elevado —, excluídas outras causas; na adolescente, exigem-se disfunção ovulatória e hiperandrogenismo, sem ultrassonografia nem AMH. Em 2026, um processo internacional de consenso, com organizações acadêmicas, clínicas e de pacientes, escolheu o nome polyendocrine metabolic ovarian syndrome (PMOS) e propôs sua adoção gradual, com período de transição e sem mudança dos critérios diagnósticos; este tópico mantém “SOP”, termo ainda em uso no Brasil. Histologia: ovários aumentados, com córtex superficial espesso e fibrótico, numerosos folículos antrais pequenos subcapsulares, de crescimento interrompido (os “cistos” do nome antigo), teca interna hiperplásica e luteinizada, e corpos lúteos raros ou ausentes.",
       "mecanismo": "O LH elevado e a hiperinsulinemia estimulam a teca a produzir androgênios; o excesso de androgênios e a sinalização alterada interrompem o crescimento folicular antes da dominância, e sem ovulação não se forma corpo lúteo. O endométrio, sob estrogênio sem oposição da progesterona, tem risco maior de hiperplasia e carcinoma; a diretriz de 2023 recomenda informar esse risco, sem rastreamento de rotina."
     },
     {
@@ -546,7 +546,7 @@
     {
       "id": "his-20-q07",
       "tipo": "multipla",
-      "contexto": "Biópsia endometrial de mulher de 31 anos com ciclos regulares, em investigação de infertilidade: glândulas levemente tortuosas cujas células têm vacúolos claros abaixo dos núcleos, que foram deslocados para o meio da célula; há pouca secreção na luz, e o estroma não mostra edema importante nem alteração pré-decidual.",
+      "contexto": "Endométrio de mulher de 44 anos com ciclos regulares, retirado em histerectomia por leiomiomas uterinos: glândulas levemente tortuosas cujas células têm vacúolos claros abaixo dos núcleos, que foram deslocados para o meio da célula; há pouca secreção na luz, e o estroma não mostra edema importante nem alteração pré-decidual.",
       "enunciado": "Em que fase do ciclo está esse endométrio?",
       "alternativas": [
         {
@@ -615,7 +615,7 @@
     {
       "id": "his-20-q09",
       "tipo": "multipla",
-      "contexto": "Mulher de 36 anos com teste de DNA-HPV positivo para o tipo 16 é encaminhada à colposcopia, que mostra achados anormais maiores na zona de transformação. A biópsia mostra epitélio escamoso com núcleos aumentados, hipercromáticos e irregulares, perda de maturação e mitoses acima da camada basal, ocupando mais de dois terços da espessura; a membrana basal está íntegra, sem invasão do estroma. A imuno-histoquímica mostra p16 com marcação forte e contínua (em bloco).",
+      "contexto": "Mulher de 36 anos com teste de DNA-HPV positivo para o tipo 16 é encaminhada à colposcopia, que mostra achados anormais maiores na zona de transformação. A biópsia mostra epitélio escamoso com núcleos aumentados, hipercromáticos e irregulares, perda de maturação e mitoses acima da camada basal, ocupando mais de dois terços da espessura; a membrana basal está íntegra, sem invasão do estroma.",
       "enunciado": "Qual é o diagnóstico, na terminologia usada pelas diretrizes brasileiras?",
       "alternativas": [
         {
@@ -636,7 +636,7 @@
         }
       ],
       "correta": "d",
-      "explicacao": "Atipia acentuada e perda de maturação em mais de dois terços da espessura, sem invasão do estroma, correspondem à lesão intraepitelial escamosa de alto grau HSIL (NIC3), na terminologia LAST adotada pelas Diretrizes (d). Na LSIL (NIC1) (a), a atipia fica predominantemente no terço inferior, a maturação está preservada e as mitoses ficam predominantemente na camada basal; coilócitos são frequentes. Na HSIL (NIC2) (b), a atipia ocupa até cerca de dois terços da espessura. O carcinoma invasivo (c) exige invasão do estroma, ausente aqui. A marcação em bloco do p16 reflete a inativação de RB pela proteína E7 do HPV e ajuda nos casos duvidosos entre LSIL e HSIL.",
+      "explicacao": "Atipia acentuada e perda de maturação em mais de dois terços da espessura, sem invasão do estroma, correspondem à lesão intraepitelial escamosa de alto grau HSIL (NIC3), na terminologia LAST adotada pelas Diretrizes (d). Na LSIL (NIC1) (a), a atipia fica predominantemente no terço inferior, a maturação está preservada e as mitoses ficam predominantemente na camada basal; coilócitos são frequentes. Na HSIL (NIC2) (b), a atipia ocupa até cerca de dois terços da espessura. O carcinoma invasivo (c) exige invasão do estroma, ausente aqui. Com morfologia inequívoca, como aqui, a imuno-histoquímica para p16 não é necessária: as Diretrizes (Parte II, seguindo o Projeto LAST) a reservam aos casos morfologicamente duvidosos, sobretudo LSIL × HSIL (NIC2), e não a recomendam quando a morfologia já é de HSIL (NIC3). A marcação em bloco do p16 reflete a inativação de RB pela proteína E7 do HPV.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -739,7 +739,7 @@
         }
       ],
       "correta": "a",
-      "explicacao": "O quadro preenche os critérios da síndrome dos ovários policísticos (disfunção ovulatória e hiperandrogenismo, com morfologia ovariana policística), renomeada em 2026 como PMOS. Os ovários têm córtex superficial espesso e fibrótico, muitos folículos antrais pequenos subcapsulares, de crescimento interrompido, com teca interna hiperplásica e luteinizada, produtora de androgênios, e corpos lúteos raros ou ausentes, pela anovulação (a). Os “cistos” não são cistos epiteliais verdadeiros: são folículos (b). Sem ovulação regular, não se formam vários corpos lúteos (c). Ovários sem folículos (d) caracterizam a insuficiência ovariana, que cursa com FSH elevado e hipoestrogenismo, não com hiperandrogenismo.",
+      "explicacao": "O quadro preenche os critérios da síndrome dos ovários policísticos (disfunção ovulatória e hiperandrogenismo, com morfologia ovariana policística), para a qual um consenso internacional propôs em 2026 o nome PMOS. Os ovários têm córtex superficial espesso e fibrótico, muitos folículos antrais pequenos subcapsulares, de crescimento interrompido, com teca interna hiperplásica e luteinizada, produtora de androgênios, e corpos lúteos raros ou ausentes, pela anovulação (a). Os “cistos” não são cistos epiteliais verdadeiros: são folículos (b). Sem ovulação regular, não se formam vários corpos lúteos (c). Ovários sem folículos (d) caracterizam a insuficiência ovariana, que cursa com FSH elevado e hipoestrogenismo, não com hiperandrogenismo.",
       "dificuldade": 4,
       "bloom": "analisar",
       "tags": [
@@ -946,7 +946,7 @@
       "tipo": "vf",
       "enunciado": "Pelas diretrizes brasileiras de 2025, onde o teste de DNA-HPV oncogênico já foi implantado, uma mulher de 40 anos, de risco padrão, com teste negativo deve repeti-lo em 3 anos.",
       "correta": false,
-      "explicacao": "Falso. Após teste de DNA-HPV oncogênico negativo, o intervalo recomendado é de 5 anos (Recomendação 18), graças ao alto valor preditivo negativo do teste. O intervalo de 3 anos após teste negativo vale para mulheres vivendo com HIV ou imunossuprimidas (Recomendação 39); para a citologia, mantida apenas onde o teste de DNA-HPV ainda não está disponível, o intervalo é trienal após dois exames anuais negativos (Recomendação 28).",
+      "explicacao": "Falso. Após teste de DNA-HPV oncogênico negativo, o intervalo recomendado é de 5 anos (Recomendação 18), graças ao alto valor preditivo negativo do teste. O intervalo de 3 anos após teste negativo vale para mulheres vivendo com HIV/aids ou com outra imunodepressão ou imunossupressão (Recomendação 39); para a citologia, mantida apenas onde o teste de DNA-HPV ainda não está disponível, o intervalo é trienal após dois exames anuais negativos (Recomendação 28).",
       "dificuldade": 3,
       "bloom": "lembrar",
       "tags": [
@@ -1241,7 +1241,7 @@
     },
     {
       "obra": "Brasil. Ministério da Saúde. Portaria Conjunta SAES/SCTIE nº 105, de 20 de outubro de 2026. Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero: Parte II — Como avaliar, tratar e seguir mulheres identificadas no rastreamento. https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-colo-do-utero-parte-II (texto integral; DOU 28/10/2026, ed. 204, seção 1, p. 129)",
-      "capitulo": "Quadro 2 (terminologia LAST: LSIL/NIC1, HSIL/NIC2, HSIL/NIC3; p16); zona de transformação tipo 3"
+      "capitulo": "Quadro 2 (terminologia LAST: LSIL/NIC1, HSIL/NIC2, HSIL/NIC3; p16 só em casos morfologicamente equívocos, não necessário nos típicos de HSIL); seção 7.3, Terminologia histológica e uso de imunomarcadores (p16 não recomendado quando a morfologia é de HSIL/NIC3); zona de transformação tipo 3"
     },
     {
       "obra": "Teede HJ et al. Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome. J Clin Endocrinol Metab. 2023;108(10):2447-69 (PMC10505534; texto integral)",
@@ -1249,7 +1249,7 @@
     },
     {
       "obra": "Teede HJ et al.; Global Name Change Consortium. Polyendocrine metabolic ovarian syndrome, the new name for polycystic ovary syndrome: a multistep global consensus process. Lancet. 2026;407(10545):2329-39 (PMID 42119588); Bahri-Khomami M et al. From polycystic ovary syndrome to polyendocrine metabolic ovarian syndrome: what obstetricians and gynecologists need to know. Am J Obstet Gynecol. 2026;235(5):999-1002 (PMID 42665241); Teede HJ et al. Fertil Steril. 2026 (PMID 42679945)",
-      "capitulo": "Consenso internacional que definiu o nome PMOS, com estratégia de implantação e período de transição (Lancet); critérios diagnósticos inalterados; folículos antrais interrompidos e não cistos (resumos conferidos)"
+      "capitulo": "Consenso internacional que escolheu o nome PMOS, com estratégia de implantação e período de transição em curso (Lancet); critérios diagnósticos inalterados; folículos antrais interrompidos e não cistos (resumos conferidos; texto integral do Lancet inacessível nesta rede)"
     },
     {
       "obra": "Soares-Júnior JM, Silva ACJSR, Medeiros SF, Sá MFS, Baracat EC. From PCOS to PMOS: change of name or change of paradigm? Rev Bras Ginecol Obstet. 2026;48:e-rbgoedt4 (PMC13690375; texto integral)",
@@ -1264,8 +1264,12 @@
       "capitulo": "Carcinoma invasivo de tipo não especial; carcinoma lobular invasivo"
     },
     {
-      "obra": "Wilson N, Ironside A, Diana A, Oikonomidou O. Lobular breast cancer: a review. Front Oncol. 2021;10:591399 (PMID 33520704)",
-      "capitulo": "Perda de E-caderina, discoesão e padrão em fila indiana; positividade para receptor de estrogênio (resumo conferido)"
+      "obra": "Wilson N, Ironside A, Diana A, Oikonomidou O. Lobular breast cancer: a review. Front Oncol. 2021;10:591399 (PMID 33520704; PMC7844138; texto integral)",
+      "capitulo": "Perda de E-caderina, discoesão, padrão em fila indiana e arranjo concêntrico ao redor de ductos; RE positivo e HER2 negativo; baixa sensibilidade da mamografia"
+    },
+    {
+      "obra": "Guideline Group on Unexplained Infertility (ESHRE); Romualdi D et al. Evidence-based guideline: unexplained infertility. Hum Reprod. 2023;38(10):1881-90 (PMID 37599566; PMC10546081; texto integral)",
+      "capitulo": "Biópsia endometrial para exame histológico não recomendada na investigação de infertilidade sem outra indicação (recomendação forte) — vinheta da q07"
     }
   ],
   "notasDivergencia": [
@@ -1275,16 +1279,17 @@
     "Terminologia das lesões do colo: as Diretrizes (Parte II) usam a terminologia LAST (LSIL/HSIL) com a NIC entre parênteses; textos mais antigos usam só NIC 1–3. A q09 traz as duas formas.",
     "Hiperplasia endometrial: a OMS (2014 e 2020) adota dois grupos (sem atipia; atípica/EIN); livros mais antigos usam quatro categorias (simples ou complexa, com ou sem atipia). O conteúdo usa a classificação atual.",
     "Carcinoma de mama: a OMS (2019) chama o antigo “carcinoma ductal invasivo” de “carcinoma invasivo de tipo não especial (NST)”; o conteúdo usa os dois nomes.",
-    "Síndrome dos ovários policísticos: renomeada em 2026 como polyendocrine metabolic ovarian syndrome (PMOS) por consenso internacional, com critérios inalterados; o tópico mantém “SOP”, ainda a forma usual em português, e cita o novo nome na correlação e nas explicações. O editorial da RBGO (2026) trata o nome como proposta em transição e critica o termo “polyendocrine” e a ênfase em “metabolic”."
+    "Síndrome dos ovários policísticos: em 2026, um consenso internacional (56 organizações; Lancet 2026) escolheu o nome polyendocrine metabolic ovarian syndrome (PMOS), com critérios inalterados e estratégia de implantação com período de transição e alinhamento às classificações de doenças ainda “em curso”. Artigos do próprio consórcio (AJOG 2026) já dizem “renamed”; o editorial da RBGO (2026), revista da FEBRASGO, trata o nome como proposta em transição e critica o termo “polyendocrine” e a ênfase em “metabolic”; não foi encontrada posição da FEBRASGO no seu site (busca em 10/11/2026). Decisão da revisão urologia/ginecologia/mastologia (10/11/2026): o texto diz “novo nome proposto” (e não “renomeada”), porque o próprio consenso descreve como em curso o alinhamento às classificações de doenças e não foi encontrada adoção pela FEBRASGO; o tópico mantém “SOP”, ainda a forma usual em português, e cita o novo nome na correlação e nas explicações."
   ],
   "incertezas": [
     "Capítulos citados de memória: Junqueira 14ª ed., cap. 22 (numeração da 13ª ed.), e Ross 8ª ed., cap. 23; conferir nas edições adotadas.",
     "Diretrizes do câncer do colo: Parte I (Portaria Conjunta SAES/SECTICS nº 13, de 29/07/2025) e Parte II lidas no texto integral (PDFs do gov.br, via pdftotext). O cabeçalho da Parte II diz “Portaria Conjunta SAES/SCTIE nº 105, de 20 de outubro de 2026”, embora a secretaria se chame SECTICS desde 2023; citado como impresso. Resolvido na revisão de histologia (10/11/2026): o Diário Oficial da União traz a Parte II com essa mesma sigla, número e data (DOU 28/10/2026, ed. 204, seção 1, p. 129) e a Parte I em 18/08/2025 (seção 1, p. 70).",
     "A frase “ofertado às mulheres ... de 25 a 64 anos e que já tiveram atividade sexual” consta da página do INCA sobre detecção precoce; na Parte I, a faixa de 25 a 64 anos está na observação 1 da Figura 1 e nas Recomendações 9–13. A correlação não cita o critério de atividade sexual.",
-    "PMOS: a renomeação foi conferida pelo resumo da publicação primária do consenso (Lancet 2026; o texto integral não abriu nesta rede e não está no Europe PMC), pelos resumos de AJOG 2026 (“diagnostic criteria remain unchanged”) e Fertil Steril 2026 e pelo texto integral do editorial da RBGO 2026; não foi encontrada tradução oficial do novo nome para o português.",
+    "PMOS: o novo nome foi conferido pelo resumo da publicação primária do consenso (Lancet 2026; o texto integral não abriu nesta rede e não está no Europe PMC), pelos resumos de AJOG 2026 (“diagnostic criteria remain unchanged”) e Fertil Steril 2026 e pelo texto integral do editorial da RBGO 2026; não foi encontrada tradução oficial do novo nome para o português.",
     "Classificação da OMS de 2020 para a hiperplasia endometrial e de 2019 para os tumores de mama não lidas no texto integral (livros pagos); termos conferidos em resumos de revisões (Semin Diagn Pathol 2022; J Pathol 2021; Front Oncol 2021; Cancers 2023) e, na revisão de histologia, no texto integral de Cancers 2024;16(5):914 (PMC10930610: dois grupos desde 2014, mantidos em 2020; PTEN), Cancers 2024;16(6):1159 (PMC10968747: AH/EIN como único precursor morfológico reconhecido em 2020) e Hered Cancer Clin Pract 2025;23:20 (PMC12400667: “invasive breast carcinoma of no special type”, 5ª ed. da OMS).",
     "“Corpo lúteo regride em cerca de duas semanas” segue a duração da fase lútea usada em emb-02; os livros dão valores próximos (10 a 14 dias), não conferidos.",
-    "Corpos de Call-Exner e células hilares do ovário foram omitidos para não exceder o resumo; podem entrar numa versão futura."
+    "Corpos de Call-Exner e células hilares do ovário foram omitidos para não exceder o resumo; podem entrar numa versão futura.",
+    "Revisão urologia/ginecologia/mastologia (10/11/2026): Partes I e II das Diretrizes relidas no texto integral (PDFs do gov.br) — Recs. 12, 18–25, 28, 37–40, Figura 1 e Quadro 2 conferem; seção 7.3 da Parte II: p16 não é necessário nos casos típicos de HSIL e não é recomendado quando a morfologia é de HSIL (NIC3) (vinheta da q09 ajustada). PMOS: o texto integral do Lancet continua inacessível (www.thelancet.com e doi.org recusados pelo proxy; sem depósito no Europe PMC); decisão de redação (“novo nome proposto”) registrada em notasDivergencia. ESHRE 2023 (infertilidade sem causa aparente, texto integral): biópsia endometrial histológica não recomendada na investigação de infertilidade sem outra indicação (vinheta da q07 ajustada). Não foram lidos protocolos da FEBRASGO (endometriose, SOP, hiperplasia endometrial) no texto integral; o conteúdo dessas correlações não traz conduta nem número."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1296,6 +1301,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "10 correções (0 críticas, 3 importantes, 7 menores); nenhum gabarito errado, nenhum id alterado. Importantes: ovócito primário descrito “no centro” dos folículos antrais (fica excêntrico, no cumulus oophorus); q21 sem “risco padrão” (para imunossuprimidas o intervalo após teste negativo é de 3 anos, Recomendação 39, e a afirmação ficaria verdadeira); q26 com par da tuba não exclusivo (o epitélio do endométrio também tem células ciliadas e secretoras). Menores: correlação do HPV e ponto-chave com risco padrão × imunossuprimidas (Recomendações 39–40); mitoses “predominantemente” basais na LSIL (Quadro 2 da Parte II); sinônimo “artéria helicoidal”; redação e fonte primária da PMOS (Lancet 2026); referências e incertezas atualizadas. Item 1 confirmado no texto integral: Parte I = Portaria Conjunta SAES/SECTICS nº 13, de 29/07/2025 (DOU 18/08/2025), DNA-HPV dos 25 aos 64 anos, 5 anos se negativo, 16/18 → colposcopia, outros → citologia reflexa; Parte II = Portaria Conjunta SAES/SCTIE nº 105, de 20/10/2026 (DOU 28/10/2026, p. 129), Quadro 2 com terminologia LAST. Item 2 confirmado: PMOS como novo nome por consenso internacional (Lancet 2026, resumo; AJOG 2026, resumo: critérios inalterados; RBGO 2026, texto integral) — mantido. Distribuição das letras 4/4/4/4; correta é a mais longa em 5 de 16. Relatório: content/revisoes/hs1920-histologia.md."
+      },
+      {
+        "area": "urologia/ginecologia/mastologia",
+        "agente": "revisor-uro-gineco-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "6 correções (0 críticas, 1 importante, 5 menores); nenhum gabarito errado, nenhum id alterado. Importante: a vinheta da q09 trazia p16 em bloco num caso de morfologia inequívoca de HSIL (NIC3); a Parte II das Diretrizes (Quadro 2 e seção 7.3, texto integral) diz que o p16 não é necessário nos casos típicos de HSIL e não é recomendado quando a morfologia é de HSIL (NIC3) — p16 retirado da vinheta e explicado; gabarito (d) mantido. Menores: q07 deixou de ser biópsia endometrial “em investigação de infertilidade” (ESHRE 2023, texto integral: não recomendada sem outra indicação) e passou a endométrio de histerectomia; PMOS: decisão de dizer “novo nome proposto” e não “renomeada” (título, correlação, q12, nota), porque o Lancet 2026 (resumo) descreve a implantação e o alinhamento às classificações como em curso, o editorial da RBGO 2026 (texto integral) fala em proposta e não há posição da FEBRASGO; grupo das Recs. 39–40 descrito como na diretriz (HIV/aids, imunodepressão ou imunossupressão) na correlação e na q21; referências (Parte II seção 7.3; Wilson 2021 no texto integral; ESHRE 2023); incertezas. Reconferidos no texto integral e mantidos: Parte I (Portaria Conjunta SAES/SECTICS nº 13/2025) — risco padrão, 25–64 anos, Recs. 12, 18–25, 28, 39–40 e Figura 1; Parte II (Portaria Conjunta SAES/SCTIE nº 105/2026) — Quadro 2 LAST × NIC e ZT tipo 3; diretriz SOP 2023 (1.4.6, 1.5.4, 1.5.5, 1.11.1–1.11.2); OMS 2020 da hiperplasia endometrial (Giannella 2024); NST × lobular e E-caderina (Wilson 2021; Apostol 2025). Relatório: content/revisoes/hs1920-clinica.md."
       }
     ],
     "humano": null

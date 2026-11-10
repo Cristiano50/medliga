@@ -1086,7 +1086,7 @@
     {
       "id": "his-07-q28",
       "tipo": "multipla",
-      "contexto": "Um grupo de pesquisa vai estudar duas linhagens de camundongos geneticamente modificados: na linhagem 1, nenhuma célula produz RANKL; na linhagem 2, nenhuma célula produz osteoprotegerina (OPG). Antes de examinar os animais, os pesquisadores registram as previsões que decorrem da regulação conhecida da reabsorção óssea, incluindo o efeito de um transplante de medula óssea de um animal normal.",
+      "contexto": "Um grupo de pesquisa vai estudar duas linhagens de camundongos geneticamente modificados: na linhagem 1, nenhuma célula produz RANKL; na linhagem 2, nenhuma célula produz osteoprotegerina (OPG). Antes de examinar os animais, os pesquisadores registram as previsões que decorrem da regulação conhecida da reabsorção óssea, incluindo o efeito de um transplante de células hematopoéticas de um animal normal, como o que se faz nos pacientes com osteopetrose.",
       "enunciado": "Qual previsão é coerente com essa regulação?",
       "alternativas": [
         {
@@ -1095,11 +1095,11 @@
         },
         {
           "id": "b",
-          "texto": "Linhagem 1: osso denso, que o transplante de medula normal corrigiria, pois o RANKL vem dos precursores dos osteoclastos; linhagem 2: perda óssea"
+          "texto": "Linhagem 1: osso denso, que o transplante de células hematopoéticas corrigiria, pois o RANKL vem dos precursores dos osteoclastos; linhagem 2: perda óssea"
         },
         {
           "id": "c",
-          "texto": "Linhagem 1: osso denso, quase sem osteoclastos, que o transplante de medula normal não corrigiria; linhagem 2: perda óssea por reabsorção excessiva"
+          "texto": "Linhagem 1: osso denso, quase sem osteoclastos, que o transplante de células hematopoéticas não corrigiria; linhagem 2: perda óssea por reabsorção excessiva"
         },
         {
           "id": "d",
@@ -1107,7 +1107,7 @@
         }
       ],
       "correta": "c",
-      "explicacao": "A formação dos osteoclastos exige RANKL (com M-CSF), expresso por osteoblastos, células do estroma e osteócitos, que se liga ao receptor RANK dos precursores da linhagem monócito-macrófago. Sem RANKL, quase não se formam osteoclastos, o osso não é reabsorvido e fica denso, como na osteopetrose. No osso, o RANKL vem sobretudo de células de linhagem mesenquimal; por isso não se espera que um transplante de células hematopoéticas normais corrija o defeito, e foi o que se viu nas raras formas humanas de osteopetrose por deficiência de RANKL: pacientes transplantados, mesmo com enxerto completo, não tiveram melhora óssea. Sem OPG, receptor solúvel que bloqueia o RANKL, a sinalização RANKL–RANK fica livre, formam-se mais osteoclastos e o osso é perdido (c). A OPG não ativa o RANK: ela se liga ao RANKL e o impede de agir (a). O RANKL não é produzido pelos precursores dos osteoclastos, que têm o receptor RANK; por isso o transplante não corrigiria a linhagem 1 (b). O PTH age em receptores dos osteoblastos, aumentando RANKL e reduzindo OPG, e não diretamente nos osteoclastos; sem RANKL, esse caminho não funciona (d).",
+      "explicacao": "A formação dos osteoclastos exige RANKL (com M-CSF), expresso por osteoblastos, células do estroma e osteócitos, que se liga ao receptor RANK dos precursores da linhagem monócito-macrófago. Sem RANKL, quase não se formam osteoclastos, o osso não é reabsorvido e fica denso, como na osteopetrose. No osso, o RANKL vem sobretudo de células de linhagem mesenquimal; por isso não se espera que um transplante de células hematopoéticas normais corrija o defeito, e foi o que se viu nas raras formas humanas de osteopetrose por deficiência de RANKL: pacientes transplantados, mesmo com enxerto completo, não tiveram melhora óssea, e a diretriz europeia de transplante para erros inatos (EBMT/ESID, 2026) trata a deficiência de RANKL como contraindicação, a excluir antes de indicar o transplante na osteopetrose. Sem OPG, receptor solúvel que bloqueia o RANKL, a sinalização RANKL–RANK fica livre, formam-se mais osteoclastos e o osso é perdido (c). A OPG não ativa o RANK: ela se liga ao RANKL e o impede de agir (a). O RANKL não é produzido pelos precursores dos osteoclastos, que têm o receptor RANK; por isso o transplante não corrigiria a linhagem 1 (b). O PTH age em receptores dos osteoblastos, aumentando RANKL e reduzindo OPG, e não diretamente nos osteoclastos; sem RANKL, esse caminho não funciona (d).",
       "dificuldade": 5,
       "bloom": "analisar",
       "tags": [
@@ -1118,7 +1118,7 @@
         "osteopetrose",
         "experimental"
       ],
-      "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8; Sobacchi et al., Nat Genet 2007, e Lo Iacono et al., Clin Dev Immunol 2013 (osteopetrose por deficiência de RANKL)"
+      "referencia": "Junqueira 14ª ed., cap. 8; Ross 8ª ed., cap. 8; Sobacchi et al., Nat Genet 2007, e Lo Iacono et al., Clin Dev Immunol 2013 (osteopetrose por deficiência de RANKL); Albert et al., Bone Marrow Transplant 2026 (diretriz EBMT/ESID)"
     },
     {
       "id": "his-07-q29",
@@ -1191,7 +1191,7 @@
         "medula-ossea",
         "integracao"
       ],
-      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; Junqueira 14ª ed., cap. 8 e Hemocitopoese; Moore 11ª ed., cap. 6"
+      "referencia": "Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; Junqueira 14ª ed., cap. 8 e Hemocitopoese; Moore 11ª ed., cap. 6; Chemtob et al., Front Pediatr 2026 (osteopetrose autossômica recessiva)"
     },
     {
       "id": "his-07-q31",
@@ -1341,6 +1341,14 @@
     {
       "obra": "Sobacchi C, Frattini A, Guerrini MM, et al. Osteoclast-poor human osteopetrosis due to mutations in the gene encoding RANKL. Nat Genet. 2007;39(8):960-2. doi:10.1038/ng2076. PMID 17632511",
       "capitulo": "Relato original: seis pacientes com mutações de RANKL, biópsias sem osteoclastos, sem cura pelo transplante de células-tronco hematopoéticas. Conferido no resumo (PubMed) em 10/11/2026; os mesmos pacientes são detalhados no texto integral de Lo Iacono et al. (2013)"
+    },
+    {
+      "obra": "Albert MH, Lankester AC, Wynn R, et al. Updated EBMT/ESID inborn errors working party guidelines for haematopoietic stem cell transplantation for inborn errors of immunity and metabolism. Bone Marrow Transplant. 2026;61(7):791-804. doi:10.1038/s41409-026-02906-0. PMID 42174044",
+      "capitulo": "Osteopetrose: transplante alogênico de células-tronco hematopoéticas como terapia de escolha na forma infantil; contraindicações por subtipo a excluir, entre elas os defeitos do osteoblasto (RANKL); na tabela de indicações, osteopetrose com variantes de RANKL na categoria 'em geral não recomendado'. Conferido no texto integral (PMC13349871) em 10/11/2026"
+    },
+    {
+      "obra": "Chemtob A, Paris E, De Marco G, et al. The orthopaedic management of osteopetrosis in paediatric populations: a narrative review of the literature. Front Pediatr. 2026;14:1846893. doi:10.3389/fped.2026.1846893. PMID 42519738",
+      "capitulo": "Osteopetrose autossômica recessiva: falha da hematopoese intramedular por obstrução da cavidade medular, com hematopoese extramedular, hepatoesplenomegalia, anemia e trombocitopenia. Conferido no texto integral (PMC13381457) em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -1361,8 +1369,9 @@
     "Critério densitométrico de osteoporose (T-score ≤ −2,5) segue a definição da OMS, não as obras-base de histologia. Conferência de fontes (09/11/2026, texto integral): o PCDT de Osteoporose vigente é o da Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025 (DOU nº 208, 31/10/2025, seção 1, p. 145; a nº 23, da mesma data e da mesma página, aprova o PCDT da Acromegalia), que revogou a nº 19/2023. O item 3.1 mantém a definição clínica pela fratura por fragilidade, independentemente da massa óssea, e o T-escore ≤ −2,5 em mulheres na pós-menopausa e em homens “acima dos 50 anos”, e chama de osteoporose grave o T-escore ≤ −2,5 associado a fratura por fragilidade, como no tópico. Diferenças sem contradição, para o revisor humano: o PCDT não trata do Z-score (o uso antes da menopausa e em homens com menos de 50 anos segue só as posições oficiais da ISCD); inclui o terço do rádio entre os sítios; e acrescenta um critério que o tópico não cita (T-escore entre −1 e −2,49 com risco de fratura aumentado no FRAX).",
     "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 8; Junqueira 8) continuam pendentes de conferência humana.",
     "Id de estrutura “lacuna”: aqui designa a lacuna do osteócito, mas o mesmo id canônico designa a lacuna do condrócito em his-06 e na lâmina de cartilagem hialina (na lâmina de osso compacto, a lacuna do osteócito usa o id “osteocito”). Ids não foram alterados; decisão de arquitetura pendente.",
-    "Camada avançada (10/11/2026, redator; revisada pela área em 10/11/2026, ver entrada seguinte; ainda sem revisão transversal): his-07-q28 a q32. A histomorfometria com dupla marcação por tetraciclina (q29) foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022, seção 3.4; página oficial atualizada em 21/01/2025); o PCDT não fala da osteoporose, e a alternativa (b) de q29 apoia-se na definição do tópico (matriz restante normalmente mineralizada). O consenso de Munns (2016) não pôde ser lido no texto integral (a API do PMC só devolveu o resumo). A q28 pede previsões a partir da regulação RANKL/RANK/OPG do tópico, sem citar estudo com animais; a falha do transplante de medula na falta de RANKL segue a correlação já revisada (Wu et al., 2017). Na q32, o preenchimento do túnel da parede para o centro (lamela mais interna = mais jovem) decorre da descrição do tópico e de Ross, sem conferência no livro impresso.",
-    "Revisão de histologia da camada avançada (10/11/2026): as previsões de q28 coincidem com os camundongos reais (resumos no PubMed): sem RANKL, osteopetrose grave e ausência completa de osteoclastos (Kong et al., Nature 1999, PMID 9950424); sem OPG, osteoporose de início precoce, com fraturas e calcificação arterial (Bucay et al., Genes Dev 1998, PMID 9573043). A falha do transplante foi conferida em pacientes (Sobacchi et al., 2007; Lo Iacono et al., 2013, texto integral); o texto integral de Wu et al. (2017) não está aberto, e o resumo não trata do RANKL, por isso a q28 passou a citar os dois primeiros. Para o revisor humano: em camundongos sem RANKL, a expressão transgênica de RANKL em linfócitos corrigiu parcialmente a osteopetrose (escavação da cavidade medular e remodelação da diáfise; Kim et al., PNAS 2000, PMID 10984520, resumo), e não se localizou estudo de transplante de medula nesses animais; a previsão de que o transplante não corrigiria o osso apoia-se nos pacientes, e a explicação diz que o RANKL do osso vem “sobretudo” da linhagem mesenquimal."
+    "Camada avançada (10/11/2026, redator; revisada pela área em 10/11/2026, ver entrada seguinte; revisão transversal clínica em 10/11/2026, ver a última entrada): his-07-q28 a q32. A histomorfometria com dupla marcação por tetraciclina (q29) foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022, seção 3.4; página oficial atualizada em 21/01/2025); o PCDT não fala da osteoporose, e a alternativa (b) de q29 apoia-se na definição do tópico (matriz restante normalmente mineralizada). O consenso de Munns (2016) não pôde ser lido no texto integral (a API do PMC só devolveu o resumo). A q28 pede previsões a partir da regulação RANKL/RANK/OPG do tópico, sem citar estudo com animais; a falha do transplante de medula na falta de RANKL segue a correlação já revisada (Wu et al., 2017). Na q32, o preenchimento do túnel da parede para o centro (lamela mais interna = mais jovem) decorre da descrição do tópico e de Ross, sem conferência no livro impresso.",
+    "Revisão de histologia da camada avançada (10/11/2026): as previsões de q28 coincidem com os camundongos reais (resumos no PubMed): sem RANKL, osteopetrose grave e ausência completa de osteoclastos (Kong et al., Nature 1999, PMID 9950424); sem OPG, osteoporose de início precoce, com fraturas e calcificação arterial (Bucay et al., Genes Dev 1998, PMID 9573043). A falha do transplante foi conferida em pacientes (Sobacchi et al., 2007; Lo Iacono et al., 2013, texto integral); o texto integral de Wu et al. (2017) não está aberto, e o resumo não trata do RANKL, por isso a q28 passou a citar os dois primeiros. Para o revisor humano: em camundongos sem RANKL, a expressão transgênica de RANKL em linfócitos corrigiu parcialmente a osteopetrose (escavação da cavidade medular e remodelação da diáfise; Kim et al., PNAS 2000, PMID 10984520, resumo), e não se localizou estudo de transplante de medula nesses animais; a previsão de que o transplante não corrigiria o osso apoia-se nos pacientes, e a explicação diz que o RANKL do osso vem “sobretudo” da linhagem mesenquimal.",
+    "Revisão clínica da camada avançada (10/11/2026): em q28, o contexto e as alternativas (b) e (c) passaram de 'transplante de medula óssea' para 'transplante de células hematopoéticas', como nos pacientes: a medula inclui células do estroma, de linhagem mesenquimal, que são fonte de RANKL, e a palavra deixava a alternativa correta contestável. A previsão apoia-se em Lo Iacono et al. 2013 (PMC3671266, texto integral: três pacientes com transplante completo e enxerto hematológico adequado, sem melhora da remodelação óssea; no osso, RANKL produzido sobretudo por osteoblastos, condrócitos hipertróficos, células do estroma da medula e osteócitos) e na diretriz EBMT/ESID 2026 (PMC13349871, texto integral: RANKL entre as contraindicações a excluir). Também lidos no texto integral: o PCDT de Raquitismo e Osteomalácia de 2022 (3.1, 3.4: bandas de tetraciclina mais próximas e osteoide aumentado; biópsia reservada aos casos sem correlação clínico-laboratorial), que confere q29, e Chemtob et al. 2026 (PMC13381457: hematopoese extramedular e hepatoesplenomegalia na forma autossômica recessiva), que confere q30. Continua para o revisor humano: nenhum estudo de transplante de células hematopoéticas em camundongos sem RANKL foi localizado (busca no Europe PMC em 10/11/2026); a previsão para os animais é extrapolada dos pacientes."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1395,6 +1404,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids his-07-q28 a his-07-q32): 2 correções (0 críticas, 1 importante, 1 menor); gabaritos, distratores, letras das explicações, ids a–d e comprimentos das alternativas sem erro. Importante: a explicação de q28 dizia que o transplante de células hematopoéticas 'não repõe' o RANKL, mas linfócitos também o expressam; agora diz que, no osso, o RANKL vem 'sobretudo' da linhagem mesenquimal e que pacientes com deficiência de RANKL transplantados, mesmo com enxerto completo, não melhoraram (Sobacchi 2007; Lo Iacono 2013, texto integral). Menor: referência de q28 trocada de Wu 2017 (texto integral inacessível; resumo não trata do RANKL) para Sobacchi 2007 e Lo Iacono 2013, acrescentadas às referências. Previsões de q28 conferem com os camundongos sem RANKL (Kong 1999) e sem OPG (Bucay 1998). q29 conferida no texto integral do PCDT de Raquitismo e Osteomalácia (3.1, 3.3, 3.4: bandas de tetraciclina mais próximas e osteoide aumentado): confere. q30 (hematopoese extramedular), q31 (pares) e q32 (sequência osteoclastogênese → túnel → linha cimentante → osteoide → mineralização e osteócitos) corretos e coerentes com o tópico e com his-06/his-08."
+      },
+      {
+        "area": "clinica/hematologia/neurologia/ortopedia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-07-q28 a his-07-q32): 3 correções (0 críticas, 1 importante, 2 menores); gabaritos, distratores e letras citadas nas explicações sem erro. Importante: em q28, 'transplante de medula óssea' (contexto e alternativas b e c) passou a 'transplante de células hematopoéticas', como nos pacientes, porque a medula contém estroma mesenquimal produtor de RANKL e deixava a alternativa correta (c) contestável; a explicação passou a citar a diretriz EBMT/ESID 2026 (texto integral: deficiência de RANKL entre as contraindicações ao transplante), acrescentada às referências. Menor: referência de q30 completada com Chemtob et al. 2026 (texto integral: hematopoese extramedular e hepatoesplenomegalia na osteopetrose autossômica recessiva). Conferidos sem correção: q29 (osteomalácia × osteoporose; PCDT de Raquitismo e Osteomalácia 2022, 3.1 e 3.4, texto integral), q31 (pares) e q32 (sequência)."
       }
     ],
     "humano": null

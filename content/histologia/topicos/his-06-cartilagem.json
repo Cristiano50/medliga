@@ -990,7 +990,7 @@
         "fgfr3",
         "experimental"
       ],
-      "referencia": "Junqueira 14ª ed., cap. 7 e 8; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; MS, PCDT Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022), 1 e 3.3"
+      "referencia": "Junqueira 14ª ed., cap. 7 e 8; Robbins & Cotran 10ª ed., Ossos, articulações e tumores de partes moles; MS, PCDT Raquitismo e Osteomalácia (Portaria Conjunta nº 2/2022), 1 e 3.3; Ornitz e Legeai-Mallet, Dev Dyn 2017 (acondroplasia)"
     },
     {
       "id": "his-06-q28",
@@ -1063,7 +1063,7 @@
         "fibrocartilagem",
         "caso-clinico"
       ],
-      "referencia": "Ross 8ª ed., cap. 7; Junqueira 14ª ed., cap. 7"
+      "referencia": "Ross 8ª ed., cap. 7; Junqueira 14ª ed., cap. 7; Muthu et al., World J Orthop 2024 (microfratura)"
     },
     {
       "id": "his-06-q30",
@@ -1152,6 +1152,14 @@
     {
       "obra": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas de Raquitismo e Osteomalácia. Portaria Conjunta SAES/SCTIE nº 2, de 11/01/2022 (revogou a Portaria SAS/MS nº 451/2016). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/r/raquitismo-e-osteomalacia",
       "capitulo": "1 Introdução (raquitismo como deficiência de mineralização da placa de crescimento; a redução do fósforo como causa das alterações da placa) e 3.3 Diagnóstico radiológico (desorganização da placa de crescimento). Conferido no texto integral em 10/11/2026"
+    },
+    {
+      "obra": "Ornitz DM, Legeai-Mallet L. Achondroplasia: development, pathogenesis, and therapy. Dev Dyn. 2017;246(4):291-309. doi:10.1002/dvdy.24479. PMID 27987249",
+      "capitulo": "Placa de crescimento na acondroplasia: a sinalização aumentada do FGFR3 suprime a proliferação e a maturação dos condrócitos e reduz a placa; cabeça grande, com fronte proeminente e face média hipoplásica, atribuída ao defeito do crescimento cartilaginoso na base do crânio. Conferido no texto integral (PMC5354942, via E-utilities) em 10/11/2026"
+    },
+    {
+      "obra": "Muthu S, Viswanathan VK, Sakthivel M, Thabrez M. Does progress in microfracture techniques necessarily translate into clinical effectiveness? World J Orthop. 2024;15(3):266-84. doi:10.5312/wjo.v15.i3.266. PMID 38596189",
+      "capitulo": "Microfratura: quando o defeito atravessa a placa subcondral, a medula óssea vascularizada forma um coágulo rico em células progenitoras, que origina fibrocartilagem com colágeno tipo I, de propriedades mecânicas inferiores; cartilagem avascular, com capacidade limitada de reparo; técnica indicada para defeitos pequenos a médios. Conferido no texto integral (PMC10999967) em 10/11/2026"
     }
   ],
   "notasDivergencia": [
@@ -1170,8 +1178,9 @@
     "Frequência relativa do condrossarcoma entre os tumores ósseos malignos e a proporção de casos de acondroplasia por mutação nova (as obras citam valores diferentes) foram omitidas; mantidos apenas “adultos, em geral a partir dos 40 anos, porções centrais do esqueleto” e “maioria por mutação nova”.",
     "A afirmação de que a cartilagem elástica não tende a calcificar-se segue Ross; Junqueira diz que ela é “menos sujeita a processos degenerativos”.",
     "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 7; Junqueira 7) continuam pendentes de conferência humana. Faixa etária do condrossarcoma alinhada a Robbins (“40 anos ou mais”), de memória; conferir.",
-    "Camada avançada (10/11/2026, redator; revisada pela área em 10/11/2026, ver entrada seguinte; ainda sem revisão transversal): his-06-q27 a q31 cobram fatos já revisados neste tópico e no his-07. Os cenários experimentais de q27 (camundongos com FGFR3 ativado; dieta pobre em vitamina D e fosfato) e de q28 (remoção enzimática dos proteoglicanos com colágeno preservado) são previsões a partir dos mecanismos do tópico, não resultados de um estudo citado. A placa no raquitismo foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (2022); a descrição da placa na acondroplasia (colunas curtas, zona hipertrófica estreita) deriva do mecanismo do tópico e de Robbins (de memória, não conferida). A técnica de microfratura (q29) aparece só em termos gerais (perfurações do osso subcondral); a imuno-histoquímica de colágeno tipo I no tecido de reparo é coerente com a fibrocartilagem do tópico, sem fonte primária lida.",
-    "Revisão de histologia da camada avançada (10/11/2026): as previsões de q27 e q28 coincidem com resultados de estudos primários, conferidos só nos resumos (PubMed; textos integrais não liberados pela API): camundongos com FGFR3 ativado nos condrócitos têm proliferação acentuadamente reduzida e diferenciação mais lenta (Naski et al., Development 1998, PMID 9811582), e o modelo knock-in K644E em homozigose tem menos condrócitos em proliferação e menos condrócitos hipertróficos, com macrocefalia (Li et al., Hum Mol Genet 1999, PMID 9887329); a expansão da camada de condrócitos hipertróficos, característica do raquitismo, decorre da falta de apoptose dessas células, e o fosfato normal é necessário para a maturação da placa, inclusive num modelo de hipofosfatemia induzida por dieta (Sabbagh et al., PNAS 2005, PMID 15976027); a extração quase completa dos glicosaminoglicanos não altera de modo significativo a rigidez nem a resistência intrínsecas à tração da cartilagem articular (Schmidt et al., J Orthop Res 1990, PMID 2324854). A perda de resistência à compressão sem proteoglicanos segue Junqueira e Ross (não conferidos no livro impresso). Os estudos não foram acrescentados às referências por não terem sido lidos no texto integral."
+    "Camada avançada (10/11/2026, redator; revisada pela área em 10/11/2026, ver entrada seguinte; revisão transversal clínica em 10/11/2026, ver a última entrada): his-06-q27 a q31 cobram fatos já revisados neste tópico e no his-07. Os cenários experimentais de q27 (camundongos com FGFR3 ativado; dieta pobre em vitamina D e fosfato) e de q28 (remoção enzimática dos proteoglicanos com colágeno preservado) são previsões a partir dos mecanismos do tópico, não resultados de um estudo citado. A placa no raquitismo foi conferida no texto integral do PCDT de Raquitismo e Osteomalácia (2022); a descrição da placa na acondroplasia (colunas curtas, zona hipertrófica estreita) deriva do mecanismo do tópico e de Robbins (de memória, não conferida). A técnica de microfratura (q29) aparece só em termos gerais (perfurações do osso subcondral); a imuno-histoquímica de colágeno tipo I no tecido de reparo é coerente com a fibrocartilagem do tópico, sem fonte primária lida.",
+    "Revisão de histologia da camada avançada (10/11/2026): as previsões de q27 e q28 coincidem com resultados de estudos primários, conferidos só nos resumos (PubMed; textos integrais não liberados pela API): camundongos com FGFR3 ativado nos condrócitos têm proliferação acentuadamente reduzida e diferenciação mais lenta (Naski et al., Development 1998, PMID 9811582), e o modelo knock-in K644E em homozigose tem menos condrócitos em proliferação e menos condrócitos hipertróficos, com macrocefalia (Li et al., Hum Mol Genet 1999, PMID 9887329); a expansão da camada de condrócitos hipertróficos, característica do raquitismo, decorre da falta de apoptose dessas células, e o fosfato normal é necessário para a maturação da placa, inclusive num modelo de hipofosfatemia induzida por dieta (Sabbagh et al., PNAS 2005, PMID 15976027); a extração quase completa dos glicosaminoglicanos não altera de modo significativo a rigidez nem a resistência intrínsecas à tração da cartilagem articular (Schmidt et al., J Orthop Res 1990, PMID 2324854). A perda de resistência à compressão sem proteoglicanos segue Junqueira e Ross (não conferidos no livro impresso). Os estudos não foram acrescentados às referências por não terem sido lidos no texto integral.",
+    "Revisão clínica da camada avançada (10/11/2026): conferidos no texto integral o PCDT de Raquitismo e Osteomalácia de 2022 (1: deficiência de mineralização da placa de crescimento, com a redução do fósforo como causa fisiopatogênica das alterações da placa; 3.3: desorganização da placa), Ornitz e Legeai-Mallet 2017 (PMC5354942: o FGFR3 ativado suprime a proliferação e a maturação dos condrócitos e reduz a placa), Muthu et al. 2024 (PMC10999967: a microfratura forma, a partir do coágulo com progenitores da medula, fibrocartilagem com colágeno tipo I, mecanicamente inferior; a cartilagem é avascular e quase não se repara) e Del Río 2025 (Int J Mol Sci 26:11447, PMC12691886: perda precoce de proteoglicanos e fibrilação incipiente do colágeno na osteoartrite inicial). Com isso, a placa na acondroplasia (q27) deixa de depender só de Robbins citado de memória. Pendente para o revisor humano: em q30, a frase de que o contraste entre a abóbada intramembranosa e a ossificação endocondral deficiente 'contribui para a macrocefalia' é interpretação didática; Ornitz e Legeai-Mallet atribuem a fronte proeminente e a face média hipoplásica ao defeito da base do crânio e não detalham o mecanismo do aumento do perímetro cefálico. O gabarito (falso) não depende dessa frase."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1197,6 +1206,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids his-06-q27 a his-06-q31): 2 correções (0 críticas, 0 importantes, 2 menores); gabaritos, distratores, letras das explicações, ids a–d e comprimentos das alternativas sem erro. Menores: q27 explica o alargamento da zona hipertrófica no raquitismo pela falta de apoptose dos condrócitos hipertróficos com fosfato baixo (antes 'não são removidos'); q28 diz que a perda de proteoglicanos é 'uma das alterações iniciais' da osteoartrite (antes 'a primeira'). Previsões experimentais de q27 (FGFR3 ativado: colunas curtas e zona hipertrófica estreita; dieta pobre em vitamina D e fosfato: zona hipertrófica alargada) e q28 (sem proteoglicanos: perda de basofilia/metacromasia e de resistência à compressão, tração preservada) conferem com Naski 1998, Li 1999, Sabbagh 2005 e Schmidt 1990 (resumos; ver incertezas). PCDT de Raquitismo e Osteomalácia relido no texto integral (1, 3.3): confere. q29 (microfratura → fibrocartilagem), q30 (macrocefalia: abóbada intramembranosa) e q31 (pares) corretos e coerentes com o tópico e com his-07."
+      },
+      {
+        "area": "clinica/hematologia/neurologia/ortopedia",
+        "agente": "revisor-clinica-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-06-q27 a his-06-q31): 2 correções (0 críticas, 0 importantes, 2 menores); gabaritos, distratores, letras citadas nas explicações e vinhetas sem erro clínico. Menores: referência de q27 completada com Ornitz e Legeai-Mallet 2017 (texto integral: FGFR3 ativado suprime a proliferação e a maturação dos condrócitos e reduz a placa) e de q29 com Muthu et al. 2024 (texto integral: microfratura forma fibrocartilagem com colágeno tipo I, mecanicamente inferior), ambas acrescentadas às referências. Conferidos sem correção: q27 (acondroplasia × raquitismo; PCDT de Raquitismo e Osteomalácia 2022, 1 e 3.3, texto integral), q28 (osteoartrite: perda precoce de proteoglicanos; Del Río 2025, texto integral), q29 (vinheta de microfratura realista), q30 (falso; frase sobre a macrocefalia deixada para o revisor humano, ver incertezas) e q31 (pares inequívocos)."
       }
     ],
     "humano": null
