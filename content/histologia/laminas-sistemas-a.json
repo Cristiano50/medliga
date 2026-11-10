@@ -1,3 +1,352 @@
 {
-  "laminas": []
+  "laminas": [
+    {
+      "id": "aorta",
+      "ordem": 17,
+      "titulo": "Aorta (artéria elástica)",
+      "tecido": "Artéria elástica (aorta)",
+      "orgao": "Aorta, segmento da parede em corte transversal (esquema)",
+      "coloracao": "HE (lâminas elásticas realçadas no esquema, como apareceriam com orceína ou Verhoeff)",
+      "descricao": "Segmento da parede da aorta, da luz (em cima) à adventícia (embaixo). A túnica média é de longe a mais espessa: lâminas elásticas fenestradas, concêntricas e onduladas, alternam com camadas de células musculares lisas, que produzem a elastina, o colágeno e a substância fundamental. A íntima é relativamente espessa (endotélio e camada subendotelial); a lâmina elástica interna existe, mas se confunde com a primeira lâmina da média. A adventícia é mais fina que a média e leva vasa vasorum, que também penetram na parte externa da média. No HE comum, as lâminas elásticas aparecem como linhas onduladas, claras e refringentes, pouco contrastadas; aqui estão realçadas em roxo-escuro, como ficariam com orceína ou Verhoeff. Esquema: foram desenhadas 23 lâminas; a aorta humana adulta tem cerca de 40 a 70, e as células estão aumentadas em relação à espessura da parede.",
+      "destaques": [
+        "Artéria elástica (condutora): média com dezenas de lâminas elásticas fenestradas, que se distendem na sístole e devolvem a energia na diástole, mantendo o fluxo contínuo.",
+        "Na média não há fibroblastos: as próprias células musculares lisas produzem a elastina, o colágeno e a substância fundamental.",
+        "Os vasa vasorum ficam na adventícia e na parte externa da média; a parte interna da parede é nutrida por difusão a partir da luz."
+      ],
+      "topicos": ["his-11-circulatorio"],
+      "estruturas": [
+        {
+          "id": "lumen",
+          "nome": "Luz",
+          "descricao": "Luz da aorta, com plasma e algumas hemácias."
+        },
+        {
+          "id": "endotelio",
+          "nome": "Endotélio",
+          "descricao": "Epitélio simples pavimentoso que reveste a luz, de núcleos achatados que fazem leve saliência. Regula a permeabilidade, o tônus (óxido nítrico) e a coagulação."
+        },
+        {
+          "id": "tunica-intima",
+          "nome": "Túnica íntima",
+          "descricao": "Endotélio e camada subendotelial de conjuntivo frouxo com algumas células musculares lisas e fibras elásticas finas. Na aorta adulta é relativamente espessa e espessa-se com a idade; é nela que se formam as placas de ateroma."
+        },
+        {
+          "id": "fibras-elasticas",
+          "nome": "Lâminas elásticas fenestradas",
+          "descricao": "Lâminas concêntricas de elastina com orifícios (fenestras) que permitem a difusão; onduladas pela retração da parede na fixação. A primeira corresponde à lâmina elástica interna, pouco distinta na artéria elástica. Realçadas no esquema; no HE ficam claras e refringentes."
+        },
+        {
+          "id": "tunica-media",
+          "nome": "Túnica média",
+          "descricao": "A camada mais espessa: células musculares lisas de núcleo alongado, em disposição circular a helicoidal entre as lâminas elásticas, com fibras colágenas e substância fundamental produzidas por elas."
+        },
+        {
+          "id": "tunica-adventicia",
+          "nome": "Túnica adventícia",
+          "descricao": "Conjuntivo denso com feixes colágenos, fibroblastos e algumas fibras elásticas; nas artérias elásticas é mais fina que a média. Leva vasa vasorum e nervos."
+        },
+        {
+          "id": "vasa-vasorum",
+          "nome": "Vasa vasorum",
+          "descricao": "Pequenas arteríolas, vênulas e capilares que nutrem a adventícia e a parte externa da média, envoltos por uma bainha de conjuntivo que interrompe as lâminas elásticas mais externas."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "feixe-neurovascular",
+      "ordem": 18,
+      "titulo": "Artéria muscular, veia e nervo (feixe vasculonervoso)",
+      "tecido": "Artéria muscular e veia (feixe vasculonervoso)",
+      "orgao": "Feixe vasculonervoso de membro, em corte transversal (esquema)",
+      "coloracao": "HE (lâmina elástica interna levemente realçada no esquema)",
+      "descricao": "Artéria muscular (à esquerda), a veia que a acompanha (à direita) e um pequeno nervo (embaixo), envoltos por conjuntivo frouxo e tecido adiposo. A artéria tem luz redonda e parede espessa, quase toda de músculo liso (túnica média), com a lâmina elástica interna ondulada logo abaixo do endotélio: após a morte e na fixação a artéria se contrai e a lâmina se pregueia. A veia tem luz maior e irregular, muitas vezes colapsada e com sangue, e parede fina: média delgada, com poucas camadas de músculo liso misturadas a colágeno, e adventícia relativamente mais espessa; não tem lâmina elástica interna nítida. O nervo é reconhecido pelo perineuro e pelas fibras com a mielina extraída no preparo. No HE, a lâmina elástica interna aparece como linha ondulada, vítrea e eosinófila; no esquema ela está um pouco realçada. Esquema: escala e número de camadas simplificados.",
+      "destaques": [
+        "Artéria × veia de calibre parecido: a artéria tem parede mais espessa, luz redonda e lâmina elástica interna ondulada; a veia tem luz maior e irregular, muitas vezes com hemácias, e parede fina.",
+        "Artéria muscular (distribuidora): a túnica média, de até cerca de 40 camadas de músculo liso, é a mais espessa e regula o calibre e o fluxo para cada órgão.",
+        "Na veia, a adventícia costuma ser a túnica mais espessa; veias de médio calibre, sobretudo dos membros inferiores, têm valvas (pregas da íntima) que impedem o refluxo."
+      ],
+      "topicos": ["his-11-circulatorio"],
+      "estruturas": [
+        {
+          "id": "lumen",
+          "nome": "Luz da artéria",
+          "descricao": "Arredondada, mantida pela parede espessa; no corte pode estar vazia ou com algumas hemácias."
+        },
+        {
+          "id": "tunica-intima",
+          "nome": "Túnica íntima",
+          "descricao": "Endotélio, de núcleos achatados que fazem saliência na luz entre as dobras da lâmina elástica interna, sobre uma camada subendotelial muito delgada."
+        },
+        {
+          "id": "lamina-elastica-interna",
+          "nome": "Lâmina elástica interna",
+          "descricao": "Lâmina fenestrada de elastina entre a íntima e a média, ondulada porque a artéria se contrai na fixação. No HE é uma linha ondulada, vítrea e eosinófila (aqui levemente realçada); com orceína ou Verhoeff fica escura. É o marco que identifica a artéria muscular."
+        },
+        {
+          "id": "tunica-media",
+          "nome": "Túnica média",
+          "descricao": "A mais espessa: camadas concêntricas de células musculares lisas, com núcleos alongados no sentido da circunferência, e poucas fibras elásticas e colágenas. No limite externo, a lâmina elástica externa, mais fina e descontínua."
+        },
+        {
+          "id": "tunica-adventicia",
+          "nome": "Túnica adventícia",
+          "descricao": "Conjuntivo com feixes colágenos, fibroblastos e pequenos vasa vasorum; relativamente espessa na artéria muscular e contínua com o conjuntivo ao redor."
+        },
+        {
+          "id": "veia-de-medio-calibre",
+          "nome": "Veia de médio calibre",
+          "descricao": "Luz ampla e irregular, com hemácias; parede fina em relação à luz: endotélio, média com poucas camadas de músculo liso misturadas a colágeno e adventícia de conjuntivo, em geral mais espessa que a média. Sem lâmina elástica interna nítida."
+        },
+        {
+          "id": "nervo",
+          "nome": "Nervo",
+          "descricao": "Fascículo envolto pelo perineuro, com fibras mielínicas (axônio central e mielina extraída no preparo), núcleos de células de Schwann e endoneuro; epineuro por fora."
+        },
+        {
+          "id": "adipocito-unilocular",
+          "nome": "Adipócitos (tecido adiposo)",
+          "descricao": "Adipócitos uniloculares, de gota lipídica única (extraída no preparo) e núcleo achatado na periferia, no conjuntivo frouxo ao redor do feixe."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "linfonodo",
+      "ordem": 19,
+      "titulo": "Linfonodo",
+      "tecido": "Linfonodo",
+      "orgao": "Linfonodo em corte, com o hilo embaixo (esquema)",
+      "coloracao": "HE",
+      "descricao": "Órgão linfoide secundário em forma de feijão, envolto por cápsula de conjuntivo denso e cercado por gordura. Logo abaixo da cápsula fica o seio subcapsular, que recebe a linfa dos vasos aferentes. O córtex superficial tem folículos linfoides (zona de linfócitos B): primários, uniformemente escuros, e secundários, com centro germinativo claro e manto escuro mais espesso do lado da cápsula. O paracórtex (córtex profundo, zona de linfócitos T) tem vênulas de endotélio alto, por onde os linfócitos do sangue entram no linfonodo. A medula tem cordões medulares (linfócitos, plasmócitos e macrófagos) separados por seios medulares, que levam a linfa ao hilo e ao vaso linfático eferente. Trabéculas partem da cápsula, acompanhadas por seios peritrabeculares. Esquema: as células estão aumentadas em relação ao órgão, e há menos folículos e cordões que num linfonodo real.",
+      "destaques": [
+        "Caminho da linfa: vasos aferentes (na convexidade) → seio subcapsular → seios peritrabeculares → seios medulares → vaso linfático eferente no hilo.",
+        "Zona B (folículos e centros germinativos) × zona T (paracórtex). O paracórtex depende do timo e fica pobre em linfócitos na aplasia tímica (síndrome de DiGeorge).",
+        "Linfonodo × baço × timo: só o linfonodo tem seio subcapsular e medula com cordões e seios; o baço tem arteríolas centrais e polpa vermelha cheia de hemácias; o timo tem corpúsculos de Hassall e não tem folículos."
+      ],
+      "topicos": ["his-12-linfoide"],
+      "estruturas": [
+        {
+          "id": "capsula",
+          "nome": "Cápsula",
+          "descricao": "Conjuntivo denso que envolve o órgão; recebe os vasos linfáticos aferentes na convexidade e se espessa no hilo, por onde entra a artéria e saem a veia e o vaso linfático eferente. Dela partem as trabéculas."
+        },
+        {
+          "id": "seio-subcapsular",
+          "nome": "Seio subcapsular",
+          "descricao": "Espaço logo abaixo da cápsula, revestido por endotélio, atravessado por fibras reticulares e com macrófagos; recebe a linfa dos vasos aferentes e continua-se nos seios peritrabeculares, ao longo das trabéculas, até os seios medulares."
+        },
+        {
+          "id": "trabecula",
+          "nome": "Trabécula",
+          "descricao": "Septo de conjuntivo denso que parte da cápsula em direção à medula, ladeado pelo seio peritrabecular."
+        },
+        {
+          "id": "foliculo-linfoide",
+          "nome": "Folículo linfoide",
+          "descricao": "Nódulo de linfócitos B no córtex superficial. O primário é uniformemente escuro; o secundário tem centro germinativo e um manto de linfócitos pequenos, mais espesso do lado voltado para a cápsula."
+        },
+        {
+          "id": "centro-germinativo",
+          "nome": "Centro germinativo",
+          "descricao": "Área clara do folículo secundário, que surge após estímulo antigênico: linfócitos B grandes em proliferação (zona escura, mais profunda) e em seleção (zona clara, voltada para a cápsula, com células dendríticas foliculares), e macrófagos com restos de células em apoptose (corpos tingíveis)."
+        },
+        {
+          "id": "paracortex",
+          "nome": "Paracórtex",
+          "descricao": "Córtex profundo, entre os folículos e a medula: zona de linfócitos T (timo-dependente), com células dendríticas interdigitantes (núcleos claros) e vênulas de endotélio alto."
+        },
+        {
+          "id": "venula-endotelio-alto",
+          "nome": "Vênula de endotélio alto",
+          "descricao": "Vênula pós-capilar do paracórtex, de endotélio cúbico com núcleos claros; os linfócitos do sangue aderem a ela e atravessam a parede entre as células endoteliais."
+        },
+        {
+          "id": "cordao-medular",
+          "nome": "Cordões medulares",
+          "descricao": "Cordões ramificados de tecido linfoide na medula, com linfócitos, plasmócitos (que secretam anticorpos para a linfa) e macrófagos; continuam-se com o paracórtex."
+        },
+        {
+          "id": "seio-medular",
+          "nome": "Seios medulares",
+          "descricao": "Canais largos entre os cordões, atravessados por fibras reticulares e ricos em macrófagos, que filtram a linfa; convergem para o hilo e o vaso linfático eferente."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "baco",
+      "ordem": 20,
+      "titulo": "Baço",
+      "tecido": "Baço",
+      "orgao": "Baço, região subcapsular (esquema)",
+      "coloracao": "HE",
+      "descricao": "Órgão linfoide que filtra o sangue, e não a linfa: não tem seios linfáticos nem córtex e medula. Sob a cápsula, que envia trabéculas para dentro, predomina a polpa vermelha: cordões esplênicos (de Billroth), com hemácias, macrófagos e outras células, entre sinusoides de parede descontínua. Ilhas de polpa branca, escuras, formam-se ao redor de arteríolas centrais: a bainha linfoide periarteriolar (linfócitos T), vista aqui em corte transversal e longitudinal, e nódulos de linfócitos B, que podem ter centro germinativo; no nódulo, a arteríola central fica excêntrica. A zona marginal, mais clara, separa a polpa branca da vermelha. Esquema: proporções simplificadas, células aumentadas e menos polpa branca que num corte real.",
+      "destaques": [
+        "Polpa branca = linfócitos ao redor da arteríola central (bainha periarteriolar, T; nódulos, B). Polpa vermelha = cordões esplênicos + sinusoides, onde hemácias velhas ou alteradas são retidas e fagocitadas.",
+        "Baço × linfonodo: o baço tem arteríola central na polpa branca e polpa vermelha cheia de hemácias, e não tem seio subcapsular, cordões medulares nem seios medulares.",
+        "Para voltar à circulação, a hemácia passa dos cordões para os sinusoides pelas fendas entre as células endoteliais; hemácias pouco deformáveis (esferocitose hereditária, anemia falciforme) ficam retidas e são destruídas, o que contribui para a esplenomegalia nas anemias hemolíticas."
+      ],
+      "topicos": ["his-12-linfoide"],
+      "estruturas": [
+        {
+          "id": "capsula",
+          "nome": "Cápsula",
+          "descricao": "Conjuntivo denso com algumas células musculares lisas, revestido por mesotélio do peritônio; envia trabéculas para dentro do órgão."
+        },
+        {
+          "id": "trabecula",
+          "nome": "Trabécula",
+          "descricao": "Septo de conjuntivo denso que parte da cápsula e leva artérias e veias trabeculares. A veia trabecular (no corte transversal, embaixo à esquerda) é só endotélio apoiado no conjuntivo da trabécula, sem parede muscular própria."
+        },
+        {
+          "id": "polpa-branca",
+          "nome": "Polpa branca",
+          "descricao": "Tecido linfoide denso, basófilo, ao redor das arteríolas centrais: bainha linfoide periarteriolar (linfócitos T), em corte transversal e longitudinal, e nódulos linfoides (linfócitos B), que deslocam a arteríola para a periferia do nódulo."
+        },
+        {
+          "id": "centro-germinativo",
+          "nome": "Centro germinativo",
+          "descricao": "Região clara do nódulo esplênico ativado: linfócitos B grandes em proliferação e seleção e macrófagos com corpos tingíveis."
+        },
+        {
+          "id": "arteria-central",
+          "nome": "Arteríola central (artéria central)",
+          "descricao": "Ramo da artéria trabecular envolvido pela polpa branca, com uma ou duas camadas de músculo liso: chama-se artéria central, mas tem calibre de arteríola. Fica no centro da bainha periarteriolar e é excêntrica no nódulo."
+        },
+        {
+          "id": "zona-marginal",
+          "nome": "Zona marginal",
+          "descricao": "Faixa mais clara entre a polpa branca e a vermelha, com linfócitos B de tamanho médio, macrófagos e hemácias esparsas; recebe sangue de ramos da arteríola central, e seus macrófagos captam antígenos e partículas do sangue."
+        },
+        {
+          "id": "polpa-vermelha",
+          "nome": "Polpa vermelha (cordões esplênicos)",
+          "descricao": "Cordões esplênicos (de Billroth): rede de células e fibras reticulares com macrófagos, linfócitos, plasmócitos e muitas hemácias, entre os sinusoides. Cordões e sinusoides, juntos, formam a polpa vermelha."
+        },
+        {
+          "id": "sinusoides-esplenicos",
+          "nome": "Sinusoides esplênicos",
+          "descricao": "Seios venosos de luz ampla, cheios de hemácias, revestidos por células endoteliais alongadas cujos núcleos fazem saliência na luz, com fendas entre elas e lâmina basal descontínua; as hemácias passam dos cordões para a luz por essas fendas."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "timo",
+      "ordem": 21,
+      "titulo": "Timo",
+      "tecido": "Timo",
+      "orgao": "Timo de criança, lóbulos sob a cápsula (esquema)",
+      "coloracao": "HE",
+      "descricao": "Órgão linfoide primário, onde os linfócitos T amadurecem. A cápsula envia septos que dividem o órgão em lóbulos incompletos. Cada lóbulo tem córtex periférico muito escuro, de timócitos densamente agrupados, com macrófagos claros espalhados (aspecto de 'céu estrelado'), e medula central clara, com menos timócitos, mais células epiteliais reticulares e os corpúsculos de Hassall, exclusivos do timo. Como os septos são incompletos, a medula é contínua entre lóbulos vizinhos (no alto, ao centro, o septo termina antes da medula). Não há folículos linfoides nem seios. Esquema de timo de criança, com células aumentadas; no adulto, o parênquima é progressivamente substituído por tecido adiposo (involução).",
+      "destaques": [
+        "Córtex escuro × medula clara em cada lóbulo e corpúsculos de Hassall na medula: é o timo (linfonodo e baço não têm corpúsculos de Hassall).",
+        "No córtex ocorre a seleção positiva dos timócitos, em contato com as células epiteliais reticulares corticais; na medula, a seleção negativa contra antígenos próprios. A maioria dos timócitos morre por apoptose e é fagocitada pelos macrófagos.",
+        "Barreira hematotímica, no córtex: endotélio contínuo, lâminas basais, macrófagos e células epiteliais reticulares em volta dos capilares impedem que antígenos do sangue cheguem aos timócitos corticais."
+      ],
+      "topicos": ["his-12-linfoide"],
+      "estruturas": [
+        {
+          "id": "capsula",
+          "nome": "Cápsula",
+          "descricao": "Conjuntivo denso delgado que envolve o órgão e envia os septos."
+        },
+        {
+          "id": "septo-conjuntivo",
+          "nome": "Septo interlobular",
+          "descricao": "Conjuntivo que leva vasos e separa os lóbulos; os septos são incompletos e não separam as medulas de lóbulos vizinhos."
+        },
+        {
+          "id": "cortex-timico",
+          "nome": "Córtex tímico",
+          "descricao": "Periferia do lóbulo, muito basófila: timócitos (linfócitos T em maturação) densamente agrupados entre células epiteliais reticulares e macrófagos."
+        },
+        {
+          "id": "medula-timica",
+          "nome": "Medula tímica",
+          "descricao": "Centro claro do lóbulo, contínuo entre lóbulos vizinhos: menos timócitos, mais células epiteliais reticulares e corpúsculos de Hassall. Os vasos maiores ficam na junção corticomedular."
+        },
+        {
+          "id": "corpusculo-de-hassall",
+          "nome": "Corpúsculo de Hassall",
+          "descricao": "Agregado de células epiteliais reticulares achatadas, enroladas em camadas concêntricas, com centro eosinófilo, às vezes queratinizado ou calcificado; exclusivo da medula do timo. Sua função ainda não está totalmente esclarecida; parece participar da formação de linfócitos T reguladores."
+        },
+        {
+          "id": "celula-epitelial-reticular",
+          "nome": "Célula epitelial reticular",
+          "descricao": "Célula epitelial de núcleo grande, claro, com nucléolo evidente, e citoplasma eosinófilo. Forma a trama que sustenta os timócitos (o parênquima do timo não tem fibras reticulares), participa da seleção dos linfócitos T e da barreira hematotímica e forma os corpúsculos de Hassall."
+        },
+        {
+          "id": "macrofago",
+          "nome": "Macrófago",
+          "descricao": "Célula grande e clara entre os timócitos do córtex, com restos de timócitos em apoptose no citoplasma; espalhados no córtex escuro, os macrófagos dão o aspecto de 'céu estrelado'."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    },
+    {
+      "id": "pele-fina",
+      "ordem": 22,
+      "titulo": "Pele fina (couro cabeludo)",
+      "tecido": "Pele fina (com pelos)",
+      "orgao": "Couro cabeludo, corte perpendicular à superfície (esquema)",
+      "coloracao": "HE (a cor castanha da haste do pelo é pigmento natural, melanina, e não corante)",
+      "descricao": "Epiderme delgada de epitélio estratificado pavimentoso queratinizado (camada basal, poucas camadas espinhosas, granulosa fina e córnea delgada, sem estrato lúcido), sobre a derme, com camada papilar frouxa e camada reticular densa, e a hipoderme com gordura. O couro cabeludo tem muitos folículos pilosos oblíquos, cujos bulbos chegam à hipoderme. No folículo, de dentro para fora: haste do pelo, bainha radicular interna, bainha radicular externa (contínua com a epiderme), membrana vítrea e bainha conjuntiva; no fundo, o bulbo, com a matriz em volta da papila dérmica. A glândula sebácea desemboca no canal do folículo e fica no ângulo obtuso entre o folículo e o músculo eretor do pelo. Glândulas sudoríparas écrinas formam novelos na derme profunda. Esquema: as células estão aumentadas em relação ao comprimento do folículo; os folículos cortados transversalmente representam outros folículos do mesmo couro cabeludo.",
+      "destaques": [
+        "Pele fina × pele espessa: epiderme delgada, córnea fina, sem estrato lúcido e com anexos (folículos pilosos, glândulas sebáceas); a pele espessa das palmas e plantas não tem pelos nem glândulas sebáceas.",
+        "Unidade pilossebácea: folículo + glândula sebácea (secreção holócrina: a célula inteira se transforma em sebo) + músculo eretor do pelo, de músculo liso inervado pelo simpático; ao contrair, eriça o pelo e comprime a glândula.",
+        "A bainha radicular externa, sobretudo na protuberância (perto da inserção do músculo eretor), tem células-tronco que renovam o folículo e ajudam a reepitelizar a pele após escoriações e queimaduras superficiais."
+      ],
+      "topicos": ["his-13-pele"],
+      "estruturas": [
+        {
+          "id": "epiderme",
+          "nome": "Epiderme",
+          "descricao": "Epitélio estratificado pavimentoso queratinizado delgado: camada basal, poucas camadas espinhosas, granulosa fina e córnea delgada, sem estrato lúcido. No óstio do folículo, continua-se com a bainha radicular externa."
+        },
+        {
+          "id": "derme",
+          "nome": "Derme",
+          "descricao": "Conjuntivo da pele: camada papilar, frouxa e com capilares, logo abaixo da epiderme, e camada reticular, de conjuntivo denso não modelado com feixes colágenos grossos, onde ficam os anexos."
+        },
+        {
+          "id": "hipoderme",
+          "nome": "Hipoderme",
+          "descricao": "Tecido subcutâneo: lóbulos de adipócitos separados por septos de conjuntivo. No couro cabeludo, os bulbos dos folículos em fase de crescimento chegam até ela."
+        },
+        {
+          "id": "foliculo-piloso",
+          "nome": "Folículo piloso",
+          "descricao": "Invaginação da epiderme que forma o pelo. De dentro para fora: bainha radicular interna (eosinófila, com grânulos de tri-hialina; desaparece na altura do istmo), bainha radicular externa (células claras, ricas em glicogênio, contínua com a epiderme), membrana vítrea (lâmina basal espessa) e bainha conjuntiva. No bulbo, a matriz de células basófilas que proliferam e recebem melanina dos melanócitos forma a haste e a bainha interna."
+        },
+        {
+          "id": "haste-do-pelo",
+          "nome": "Haste do pelo",
+          "descricao": "O pelo propriamente dito: células queratinizadas (cutícula, córtex e, nos pelos grossos, medula); a cor vem da melanina do córtex. Sai pela superfície em ângulo oblíquo."
+        },
+        {
+          "id": "papila-do-pelo",
+          "nome": "Papila dérmica do pelo",
+          "descricao": "Conjuntivo frouxo com capilares que penetra no bulbo por baixo; nutre a matriz e controla o ciclo de crescimento do pelo."
+        },
+        {
+          "id": "glandula-sebacea",
+          "nome": "Glândula sebácea",
+          "descricao": "Glândula holócrina em lóbulos: camada basal de células pequenas e basófilas, que se dividem, e células grandes, claras e espumosas (lipídios extraídos no preparo), que se desintegram perto do ducto (núcleos picnóticos). O ducto curto abre-se no canal do folículo."
+        },
+        {
+          "id": "musculo-eretor-do-pelo",
+          "nome": "Músculo eretor do pelo",
+          "descricao": "Feixe de músculo liso que vai da bainha conjuntiva do folículo, abaixo da glândula sebácea, à camada papilar da derme, do lado do ângulo obtuso; ao contrair (estímulo simpático), eriça o pelo e ajuda a expulsar o sebo."
+        },
+        {
+          "id": "glandula-sudoripara-ecrina",
+          "nome": "Glândula sudorípara écrina",
+          "descricao": "Glândula tubulosa simples enovelada na derme profunda: porção secretora, de luz mais ampla, com células cúbicas claras e células mioepiteliais na periferia, e ducto mais estreito e mais escuro, de epitélio cúbico estratificado (duas camadas), com borda eosinófila na luz. O ducto sobe até a superfície (não aparece inteiro neste plano)."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+    }
+  ]
 }

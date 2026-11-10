@@ -33,12 +33,12 @@ const BASE_ESQUEMA: Perfil3D = {
   tipo: 'esquema',
   fundo: '#0d1628',
   toneMapping: THREE.NeutralToneMapping,
-  exposicao: 1.12,
-  ambiente: 0.32,
-  hemisferio: { ceu: '#dbeafe', chao: '#1e293b', intensidade: 0.62 },
-  principal: { posicao: [3, 4, 5], intensidade: 1.55, cor: '#ffffff' },
-  preenchimento: { posicao: [-4, 2, -3], intensidade: 0.55, cor: '#ffffff' },
-  luzAmbiente: 0.16,
+  exposicao: 1.0,
+  ambiente: 0.25,
+  hemisferio: { ceu: '#dbeafe', chao: '#1e293b', intensidade: 0.55 },
+  principal: { posicao: [3, 4, 5], intensidade: 1.5, cor: '#ffffff' },
+  preenchimento: { posicao: [-4, 2, -3], intensidade: 0.5, cor: '#ffffff' },
+  luzAmbiente: 0.12,
   sombra: 'nenhuma',
 };
 
@@ -48,21 +48,21 @@ export const PERFIS: Record<TipoPerfil, Perfil3D> = {
   cascas: {
     ...BASE_ESQUEMA,
     tipo: 'cascas',
-    ambiente: 0.22,
-    hemisferio: { ceu: '#dbeafe', chao: '#1e293b', intensidade: 0.7 },
-    luzAmbiente: 0.18,
+    ambiente: 0.18,
+    hemisferio: { ceu: '#dbeafe', chao: '#1e293b', intensidade: 0.6 },
+    luzAmbiente: 0.14,
   },
   // Embriões (semanas 4, 6 e 8): fundo quente escuro, luz principal mais forte que o ambiente, sombra estática.
   organico: {
     tipo: 'organico',
     fundo: '#24151c',
     toneMapping: THREE.NeutralToneMapping,
-    exposicao: 1.12,
-    ambiente: 0.26,
-    hemisferio: { ceu: '#fff5ef', chao: '#47323d', intensidade: 0.3 },
-    principal: { posicao: [3, 4, 5], intensidade: 1.3, cor: '#fff8f2' },
-    preenchimento: { posicao: [-4, 2, -3], intensidade: 0.42, cor: '#ffffff' },
-    luzAmbiente: 0.08,
+    exposicao: 1.25,
+    ambiente: 0.12,
+    hemisferio: { ceu: '#f2f6ff', chao: '#3d2a33', intensidade: 0.24 },
+    principal: { posicao: [3, 4, 5], intensidade: 1.75, cor: '#ffffff' },
+    preenchimento: { posicao: [-4, 2, -3], intensidade: 0.38, cor: '#e8efff' },
+    luzAmbiente: 0.04,
     sombra: 'pcf',
   },
 };
@@ -89,6 +89,12 @@ const TIPO_DO_MODELO: Record<string, TipoPerfil> = {
   'semana-8': 'organico',
 };
 
+/** Ajuste fino de exposição por modelo, calibrado por captura contra a versão anterior (ACES):
+ * a pele mais escura da semana 8 perde mais luminância com o Neutral, que não a dessatura. */
+const AJUSTE_EXPOSICAO: Record<string, number> = {
+  'semana-8': 1.15,
+};
+
 /** Modelos opacos que optam pela sombra de contato (assada num quadro). */
 const SOMBRA_CONTATO: Record<string, number> = {
   gastrulacao: 0.5,
@@ -98,5 +104,11 @@ const SOMBRA_CONTATO: Record<string, number> = {
 export function perfilDoModelo(id: string): Perfil3D {
   const perfil = PERFIS[TIPO_DO_MODELO[id] ?? 'esquema'];
   const contato = SOMBRA_CONTATO[id];
-  return contato ? { ...perfil, sombra: 'contato', sombraContato: contato } : perfil;
+  const ajuste = AJUSTE_EXPOSICAO[id];
+  if (!contato && !ajuste) return perfil;
+  return {
+    ...perfil,
+    ...(ajuste ? { exposicao: perfil.exposicao * ajuste } : {}),
+    ...(contato ? { sombra: 'contato' as const, sombraContato: contato } : {}),
+  };
 }

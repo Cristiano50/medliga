@@ -14,6 +14,7 @@
     "revisao": "node --experimental-strip-types scripts/estado-revisao.ts",
     "test:sql": "bash scripts/testar-sql.sh",
     "seed": "node --experimental-strip-types scripts/gerar-seed.ts",
+    "medir-3d": "node scripts/medir-3d.mjs",
     "icones": "node scripts/gerar-icones.cjs",
     "android": "npm run build && npx cap sync android && npx cap open android",
     "ios": "npm run build && npx cap sync ios && npx cap open ios"
@@ -31,6 +32,7 @@
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5",
     "three": "^0.187.0",
+    "three-mesh-bvh": "^0.8.3",
     "zod": "^4.6.7",
     "zustand": "^5.1.0"
   },

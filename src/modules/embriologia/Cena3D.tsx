@@ -21,7 +21,8 @@ import {
 
 /** Tone mapping e exposição do perfil (o R3F aplica ACES por padrão). */
 function Exposicao({ perfil }: { perfil: Perfil3D }) {
-  const { gl, invalidate } = useThree();
+  const gl = useThree((s) => s.gl);
+  const invalidate = useThree((s) => s.invalidate);
   useEffect(() => {
     gl.toneMapping = perfil.toneMapping;
     gl.toneMappingExposure = perfil.exposicao;

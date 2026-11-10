@@ -62,6 +62,22 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
   const gl = useThree((s) => s.gl);
   const estado = useRef({ arrastando: false, ultimaMudanca: -Infinity, ultimoQuadro: 0, amostras: [] as number[], reducao: lerReducaoDprMovimento() });
 
+  // Mediana dos quadros do giro acima do limite: desce 0,25 no dpr de movimento e lembra a escolha.
+  const avaliar = (minimo: number) => {
+    const e = estado.current;
+    if (e.amostras.length < minimo) return;
+    const m = mediana(e.amostras);
+    e.amostras = [];
+    diagnostico.monitor.ultimaMediana = m;
+    if (m > LIMITE_QUADRO_MS && PARAMETROS[nivel].dprMovimento - e.reducao - 0.25 >= DPR_MINIMO - 1e-9) {
+      e.reducao += 0.25;
+      gravarReducaoDprMovimento(e.reducao);
+      diagnostico.monitor.rebaixamentos++;
+    }
+  };
+  const avaliarRef = useRef(avaliar);
+  avaliarRef.current = avaliar;
+
   useEffect(() => {
     const e = estado.current;
     if (!controles) return;
@@ -70,22 +86,9 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
       clearTimeout(espera);
       espera = setTimeout(() => invalidate(), PAUSA_MS + 30);
     };
-    const avaliar = () => {
-      if (e.amostras.length < 12) return;
-      const m = mediana(e.amostras);
-      e.amostras = [];
-      diagnostico.monitor.ultimaMediana = m;
-      const teto = PARAMETROS[nivel].dprMovimento - e.reducao;
-      if (m > LIMITE_QUADRO_MS && teto - 0.25 >= DPR_MINIMO - 1e-9) {
-        e.reducao += 0.25;
-        gravarReducaoDprMovimento(e.reducao);
-        diagnostico.monitor.rebaixamentos++;
-      }
-      diagnostico.monitor.reducao = e.reducao;
-    };
     const inicio = () => { e.arrastando = true; e.ultimoQuadro = 0; };
     const mudanca = () => { e.ultimaMudanca = performance.now(); voltarAoParado(); };
-    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; avaliar(); voltarAoParado(); };
+    const fim = () => { e.arrastando = false; e.ultimoQuadro = 0; avaliarRef.current(12); voltarAoParado(); };
     controles.addEventListener('start', inicio);
     controles.addEventListener('change', mudanca);
     controles.addEventListener('end', fim);
@@ -95,7 +98,7 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
       controles.removeEventListener('change', mudanca);
       controles.removeEventListener('end', fim);
     };
-  }, [controles, invalidate, nivel]);
+  }, [controles, invalidate]);
 
   useEffect(() => {
     const perdeu = () => { rebaixarNivel(); };
@@ -114,16 +117,7 @@ export function ResolucaoAdaptativa({ nivel, dprRef }: { nivel: NivelQualidade; 
         if (dt < 100) e.amostras.push(dt);
       }
       e.ultimoQuadro = agora;
-      if (e.amostras.length >= 30) {
-        const m = mediana(e.amostras);
-        e.amostras = [];
-        diagnostico.monitor.ultimaMediana = m;
-        if (m > LIMITE_QUADRO_MS && PARAMETROS[nivel].dprMovimento - e.reducao - 0.25 >= DPR_MINIMO - 1e-9) {
-          e.reducao += 0.25;
-          gravarReducaoDprMovimento(e.reducao);
-          diagnostico.monitor.rebaixamentos++;
-        }
-      }
+      avaliar(30);
     }
     diagnostico.emMovimento = emMovimento;
     diagnostico.monitor.amostras = e.amostras.length;

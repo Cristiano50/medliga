@@ -10,8 +10,22 @@ import type { LaminaRender } from './index.ts';
 // utilitários de geometria e de caminho
 type P = [number, number];
 const q = (v: number) => String(Math.round(v * 10) / 10);
+/** Coordenadas relativas em décimos inteiros (texto curto e sem acúmulo de arredondamento). */
+function relativo(pts: P[]) {
+  let d = '';
+  let cx = 0;
+  let cy = 0;
+  pts.forEach(([x, y], i) => {
+    const X = Math.round(x * 10);
+    const Y = Math.round(y * 10);
+    d += i ? `${(X - cx) / 10} ${(Y - cy) / 10} ` : `M${X / 10} ${Y / 10}l`;
+    cx = X;
+    cy = Y;
+  });
+  return d.trimEnd();
+}
 /** Polígono fechado. */
-const pg = (pts: P[]) => 'M' + pts.map(([x, y]) => `${q(x)} ${q(y)}`).join('L') + 'Z';
+const pg = (pts: P[]) => (pts.length > 2 ? relativo(pts) + 'z' : '');
 /** Ponto (desenhar com strokeLinecap="round"; o diâmetro é o strokeWidth). */
 const pt = (x: number, y: number) => `M${q(x)} ${q(y)}h.01`;
 /** Segmento centrado em (x, y), de comprimento `c` e ângulo `a` (rad): núcleo alongado com ponta redonda. */
@@ -63,9 +77,12 @@ const elip = (x: number, y: number, rx: number, ry: number, a = 0) => {
   return `M${q(x - c)} ${q(y - s)}a${q(rx)} ${q(ry)} ${g} 1 0 ${q(2 * c)} ${q(2 * s)}a${q(rx)} ${q(ry)} ${g} 1 0 ${q(-2 * c)} ${q(-2 * s)}`;
 };
 /** Fuso (célula muscular lisa cortada ao comprido), horizontal. */
-const fuso = (x0: number, x1: number, y: number, e: number) => `M${q(x0)} ${q(y)}Q${q((x0 + x1) / 2)} ${q(y - e)} ${q(x1)} ${q(y)}Q${q((x0 + x1) / 2)} ${q(y + e)} ${q(x0)} ${q(y)}Z`;
+const fuso = (x0: number, x1: number, y: number, e: number) => {
+  const c = Math.round((x1 - x0) * 10) / 10;
+  return `M${q(x0)} ${q(y)}q${q(c / 2)} ${q(-e)} ${c} 0q${q(-c / 2)} ${q(e)} ${-c} 0z`;
+};
 /** Linha (polilinha aberta). */
-const lin = (pts: P[]) => 'M' + pts.map(([x, y]) => `${q(x)} ${q(y)}`).join('L');
+const lin = (pts: P[]) => (pts.length > 1 ? relativo(pts) : '');
 
 function distSeg(px: number, py: number, [ax, ay]: P, [bx, by]: P) {
   const dx = bx - ax;
@@ -1188,7 +1205,7 @@ export function LaminaPancreas(rng: Rng) {
   // ilhotas e ao septo, para nada ficar desenhado por cima de outra coisa
   const passo = 50;
   const centros = grade(rng, passo, [-40, -40, W + 40, H + 40], 0.17).filter(([x, y]) => !naIlhota(x, y, 8) && !noSepto(x, y, 8));
-  const vizinhos = centros.map(([x, y], i) => centros.map((c, j) => j).filter((j) => j !== i && Math.hypot(centros[j][0] - x, centros[j][1] - y) < passo * 1.6));
+  const vizinhos = centros.map(([x, y], i) => centros.map((_, j) => j).filter((j) => j !== i && Math.hypot(centros[j][0] - x, centros[j][1] - y) < passo * 1.6));
   // ductos intercalados: correm entre dois ácinos vizinhos (a fronteira entre eles se alarga para dar lugar ao tubo)
   const usados = new Set<number>();
   const ductos: [number, number][] = [];
@@ -1244,7 +1261,7 @@ export function LaminaPancreas(rng: Rng) {
     }
     const sx = septoX(y);
     if (Math.abs(x - sx) < 120) poli = x < sx ? cortar(poli, 1, 0, sx - septoL(y) - 3) : cortar(poli, -1, 0, -(sx + septoL(y) + 3));
-    if (poli.length < 3 || area(poli) < 900) return;
+    if (poli.length < 3 || area(poli) < 900 || x < -28 || x > W + 28 || y < -28 || y > H + 28) return;
     // o centro precisa ficar bem dentro do perfil (senão núcleos e grânulos cairiam fora do ácino, no conjuntivo)
     if (Array.from({ length: 12 }, (_, k) => raioPoligono(poli, x, y, (Math.PI * k) / 6)).some((r) => !(r >= 13 && r < 40))) return;
     basal += pg(poli);
@@ -1262,7 +1279,7 @@ export function LaminaPancreas(rng: Rng) {
       const nx = x + Math.cos(am) * rn;
       const ny = y + Math.sin(am) * rn;
       if (espN.tentar(nx, ny, 3.4)) nucs.push([nx, ny]);
-      for (let g = 0; g < 2; g++) {
+      for (let g = 0; g < (k % 2 ? 1 : 2); g++) {
         const ag = a + (Math.PI / n) * entre(rng, 0.3, 1.7);
         const dg = raioPoligono(poli, x, y, ag) * entre(rng, comCentro ? 0.3 : 0.12, 0.5);
         gr.push([x + Math.cos(ag) * dg, y + Math.sin(ag) * dg]);

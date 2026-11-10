@@ -235,6 +235,26 @@ function relaxar(sitios: Sitio[], moveis: number, rMax: (s: Sitio) => number, it
   }
 }
 
+/** Células (diagrama de potência) de muitos sítios de uma vez, com vizinhança por grade (rápido para milhares). */
+function celulasDe(sitios: Sitio[], rMax: number, folga: number, mesmoGrupo?: (a: number, b: number) => boolean): P[][] {
+  const passo = 2 * rMax + 1;
+  const g = new Map<string, number[]>();
+  sitios.forEach((st, i) => {
+    const k = `${Math.floor(st.x / passo)},${Math.floor(st.y / passo)}`;
+    const b = g.get(k);
+    if (b) b.push(i);
+    else g.set(k, [i]);
+  });
+  return sitios.map((st, i) => {
+    const viz: Sitio[] = [st];
+    const gx = Math.floor(st.x / passo);
+    const gy = Math.floor(st.y / passo);
+    for (let a = gx - 1; a <= gx + 1; a++)
+      for (let b = gy - 1; b <= gy + 1; b++) for (const j of g.get(`${a},${b}`) ?? []) if (j !== i && (!mesmoGrupo || mesmoGrupo(i, j))) viz.push(sitios[j]);
+    return celulaPotencia(st, viz, rMax, folga);
+  });
+}
+
 /** Registro de círculos ocupados (grade espacial): impede núcleos e células sobrepostos. */
 function ocupacao(passo: number, rMax: number) {
   const m = new Map<number, number[]>();
@@ -816,11 +836,11 @@ export function LaminaRimCortex(rng: Rng) {
     }
   }
   occ.marcar(MD.x, MD.y, MD.R + 2);
-  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.68 ? entre(rng, 33, 37) : entre(rng, 24, 27)), () => true, occ, 0);
+  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.8 ? entre(rng, 33, 37) : entre(rng, 24, 27)), () => true, occ, 0);
   const mdSitio: Sitio = { x: MD.x, y: MD.y, w: MD.R + 3 };
   const sitios: Sitio[] = [...tubSem.map(([x, y, r]) => ({ x, y, w: r })), mdSitio, ...fixos];
   relaxar(sitios, tubSem.length, (st) => st.w * 1.8, 2);
-  const forma = (st: Sitio) => arredondar(chaikin(celulaPotencia(st, sitios, st.w * 1.6, 4.2), 2), 1.1, 0.3);
+  const forma = (st: Sitio) => arredondar(chaikin(celulaPotencia(st, sitios, st.w * 1.6, 4.2), 2), 1.16, 0.42);
   const proximais = sitios.slice(0, tubSem.length).filter((q) => q.w >= 31).map(forma);
   const distais = sitios.slice(0, tubSem.length).filter((q) => q.w < 31).map(forma);
   const contornoMd = forma(mdSitio);
@@ -837,6 +857,7 @@ export function LaminaRimCortex(rng: Rng) {
   const nucCap: string[] = [];
   const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.6, 0));
   const vistos = new Set<string>();
+  const occCap = ocupacao(30, 14);
   brutas.forEach((pol) =>
     pol.forEach((a, k) => {
       const b = pol[(k + 1) % pol.length];
@@ -846,9 +867,11 @@ export function LaminaRimCortex(rng: Rng) {
       const chave = `${Math.round(mx / 3)},${Math.round(my / 3)}`;
       if (L < 24 || vistos.has(chave) || mx < -10 || mx > W + 10 || my < -10 || my > H + 10) return;
       vistos.add(chave);
-      if (fixos.some((q) => Math.hypot(q.x - mx, q.y - my) < q.w + 6) || Math.hypot(mx - MD.x, my - MD.y) < MD.R + 12 || rng() > 0.6) return;
+      if (fixos.some((q) => Math.hypot(q.x - mx, q.y - my) < q.w + 6) || Math.hypot(mx - MD.x, my - MD.y) < MD.R + 12 || rng() > 0.4) return;
       const ang = graus(b[0] - a[0], b[1] - a[1]);
       const rx = Math.min(L / 2 - 5, 12);
+      if (!occCap.livre(mx, my, rx, 4)) return;
+      occCap.marcar(mx, my, rx);
       capilares.push(elipse(mx, my, rx, 4.5, ang));
       hemCap.push(hemacia(mx + entre(rng, -2, 2), my, Math.min(4.6, rx - 1), ang, 2.7));
       if (rng() < 0.35) nucCap.push(elipse(mx + ((b[0] - a[0]) / L) * (rx - 3.5), my + ((b[1] - a[1]) / L) * (rx - 3.5), 2.6, 1, ang));
@@ -870,8 +893,9 @@ export function LaminaRimCortex(rng: Rng) {
       jaVisto.add(chave);
       let r = 8;
       while (r >= 4.5 && !livreDe(v[0], v[1], r)) r -= 0.5;
-      if (r < 4.5) continue;
-      if (rng() < 0.55) {
+      if (r < 4.5 || !occCap.livre(v[0], v[1], r, 4)) continue;
+      occCap.marcar(v[0], v[1], r);
+      if (rng() < 0.45) {
         capilares.push(circulo(v[0], v[1], r));
         hemCap.push(hemacia(v[0], v[1], Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3, r - 1.6)));
       } else if (rng() < 0.5) fibroblastos.push(elipse(v[0], v[1], Math.min(4, r - 0.5), 1.3, entre(rng, 0, 180)));
@@ -1053,8 +1077,350 @@ export function LaminaRimCortex(rng: Rng) {
 }
 
 // =============================================================================================
+// 3. TIREOIDE — escala 1 un ≈ 1 µm: folículos de 50–250 µm; tirócitos cúbicos de ~10 µm; célula C ≈ 15 µm.
+export const PARTES_TIREOIDE = ['tirocito', 'coloide', 'celula-parafolicular', 'capilar', 'septo-conjuntivo'];
+
+/** Tireoide: folículos de tamanhos variados, coloide, tirócitos, células parafoliculares (C) e capilares. */
+export function LaminaTireoide(rng: Rng) {
+  const cor = { estroma: '#f4d5e2', septo: '#eaa9c6', fibra: '#de8fb4', tirocito: '#eeb1cb', borda: '#d283aa', coloide: '#e283ae', vacuolo: '#fbeef4', celulaC: '#f1dbe6', bordaC: '#c29ab3', nucC: '#7465b3' };
+  // septo interlobular atravessando o campo, com vasos
+  const septo = curva([[-40, 600], [200, 560], [470, 590], [720, 545], [1040, 575]], 4);
+  const HS = 17;
+  const fixos: Sitio[] = septo.filter((_, i) => i % 3 === 0).map(([x, y]) => ({ x, y, w: HS + 5 }));
+  const occ = ocupacao(60, 100);
+  for (const q of fixos) occ.marcar(q.x, q.y, HS + 4);
+  const sem = dardos(rng, 7000, [-80, -80, W + 80, H + 80], () => 26 + 70 * rng() ** 2, () => true, occ, 0);
+  // algumas sementes pequenas viram ilhas de células C entre os folículos
+  const ilhasIdx = new Set(sem.map((q, i) => ({ q, i })).filter(({ q }) => q[2] < 34 && q[0] > 80 && q[0] < W - 80 && q[1] > 80 && q[1] < 480).slice(0, 3).map(({ i }) => i));
+  const sitios: Sitio[] = [...sem.map(([x, y, r]) => ({ x, y, w: r })), ...fixos];
+  relaxar(sitios, sem.length, (st) => st.w * 1.8, 1);
+  const forma = (i: number) => arredondar(chaikin(celulaPotencia(sitios[i], sitios, sitios[i].w * 1.7, 4.2), 3), 1.35, 0.7);
+  const occN = ocupacao(30, 12);
+
+  const celulas: string[] = [];
+  const nucleos: string[] = [];
+  const coloide: string[] = [];
+  const vacuolos: string[] = [];
+  const cCel: string[] = [];
+  const cNuc: string[] = [];
+  const estromaIlha: string[] = [];
+  let comC = 0;
+  sem.forEach((_, i) => {
+    const { x, y, w: r } = sitios[i];
+    const pol = forma(i);
+    if (pol.length < 3 || x < -60 || x > W + 60 || y < -60 || y > H + 60) return;
+    if (ilhasIdx.has(i)) {
+      // ilha interfolicular: grupo compacto de células C (claras, maiores que os tirócitos) no conjuntivo
+      estromaIlha.push(contorno(pol));
+      const centrosC = dardos(rng, 400, [x - r * 1.5, y - r * 1.5, x + r * 1.5, y + r * 1.5], () => 7, (cx, cy) => dentro(cx, cy, pol) && distLinha(cx, cy, pol, true) > 9, occN, 0);
+      const sc: Sitio[] = centrosC.map(([cx, cy]) => ({ x: cx, y: cy, w: 0 }));
+      sc.forEach((q) => {
+        const cel = celulaPotencia(q, sc, 10.5, 0.5);
+        if (cel.length < 3) return;
+        cCel.push(contorno(chaikin(cel, 1)));
+        cNuc.push(circulo(q.x + entre(rng, -0.8, 0.8), q.y + entre(rng, -0.8, 0.8), 3.2));
+      });
+      return;
+    }
+    // folículos grandes têm epitélio mais baixo (menos ativos); os pequenos, mais alto
+    const temC = r > 34 && r < 70 && comC < 14 && rng() < 0.6;
+    if (temC) comC++;
+    const h = temC ? 12 : r > 70 ? 7 : r > 45 ? 9 : 10.5;
+    const ep = epitelio(pol, 9, () => h, 1);
+    ep.celulas.forEach((c) => celulas.push(contorno(c)));
+    const k0 = temC ? Math.floor(rng() * ep.n) : -10;
+    ep.celulas.forEach((_, k) => {
+      if (temC && (k === k0 || k === (k0 + 1) % ep.n)) return;
+      if (rng() > 0.92) return;
+      const m = ep.meio(k, 0.48);
+      // nos cantos mais fechados as células convergem: núcleo que encostaria no vizinho fica fora do plano de corte
+      if (!occN.livre(m.x, m.y, 3.1, 0.5)) return;
+      occN.marcar(m.x, m.y, 3.1);
+      nucleos.push(h < 8 ? elipse(m.x, m.y, 3.3, 2, m.ang + 90) : circulo(m.x, m.y, 2.9));
+    });
+    coloide.push(contorno(ep.topo));
+    if (temC) {
+      // célula C: base do epitélio, entre os tirócitos e a lâmina basal, sem alcançar o coloide
+      const b = ep.base[(k0 + 1) % ep.n];
+      const cx = b.x + b.nx * 4;
+      const cy = b.y + b.ny * 4;
+      cCel.push(elipse(cx, cy, 8.6, 5.3, graus(b.nx, b.ny) + 90));
+      cNuc.push(circulo(cx + b.nx * 0.4, cy + b.ny * 0.4, 3.2));
+      occN.marcar(cx, cy, 8.6);
+    }
+    if (h >= 9 && rng() < 0.5) {
+      // vacúolos de reabsorção na periferia do coloide (folículo ativo)
+      const nv = Math.floor(entre(rng, 2, 6));
+      for (let q = 0; q < nv; q++) {
+        const k = Math.floor(rng() * ep.n);
+        const t = ep.topo[k];
+        const b = ep.base[k];
+        const rv = entre(rng, 2, 3.4);
+        vacuolos.push(circulo(t[0] + b.nx * rv * 0.6, t[1] + b.ny * rv * 0.6, rv));
+      }
+    }
+  });
+
+  // capilares: no conjuntivo delgado entre folículos (rede capilar rica) e nas junções
+  const capilares: string[] = [];
+  const hemCap: string[] = [];
+  const nucCap: string[] = [];
+  const brutas = sem.map((_, i) => celulaPotencia(sitios[i], sitios, sitios[i].w * 1.7, 0));
+  const occC = ocupacao(30, 12);
+  const visto = new Set<string>();
+  brutas.forEach((pol) =>
+    pol.forEach((a, k) => {
+      const b = pol[(k + 1) % pol.length];
+      const L = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      const mx = (a[0] + b[0]) / 2;
+      const my = (a[1] + b[1]) / 2;
+      const chave = `${Math.round(mx / 3)},${Math.round(my / 3)}`;
+      if (L < 22 || visto.has(chave) || mx < -10 || mx > W + 10 || my < -10 || my > H + 10) return;
+      visto.add(chave);
+      if (distLinha(mx, my, septo, false) < HS + 12 || rng() > 0.6) return;
+      const rx = Math.min(L / 2 - 6, 10);
+      if (!occC.livre(mx, my, rx, 3) || !occN.livre(mx, my, rx, 1)) return;
+      occC.marcar(mx, my, rx);
+      const ang = graus(b[0] - a[0], b[1] - a[1]);
+      capilares.push(elipse(mx, my, rx, 4.4, ang));
+      hemCap.push(hemacia(mx, my, Math.min(3.8, rx - 1), ang + entre(rng, -15, 15), 2.6));
+      if (rng() < 0.3) nucCap.push(elipse(mx + ((b[0] - a[0]) / L) * (rx - 3), my + ((b[1] - a[1]) / L) * (rx - 3), 2.4, 0.9, ang));
+    }),
+  );
+
+  // septo: conjuntivo denso com fibroblastos, uma arteríola e uma vênula
+  const fib: string[] = [];
+  const amS = amostrar(septo, 120, false);
+  for (let k = 0; k < 40; k++) {
+    const p = amS[Math.floor(rng() * amS.length)];
+    const o = entre(rng, -HS + 3, HS - 3);
+    fib.push(elipse(p.x + p.nx * o, p.y + p.ny * o, 5.5, 1.3, graus(p.tx, p.ty) + entre(rng, -10, 10)));
+  }
+  const fibras = [-9, -3, 4, 10].map((o) => contorno(amS.map((p): P => [p.x + p.nx * o, p.y + p.ny * o]), false)).join('');
+  const vasos: [number, number, number][] = [[330, 576, 11], [600, 566, 8]];
+
+  return (
+    <>
+      <E id="septo-conjuntivo">
+        <rect x={-20} y={-20} width={W + 40} height={H + 40} fill={cor.estroma} />
+        <path d={estromaIlha.join('')} fill={cor.estroma} />
+        <path d={contorno(septo, false)} stroke={cor.septo} strokeWidth={2 * HS} strokeLinecap="round" fill="none" />
+        <path d={fibras} stroke={cor.fibra} strokeWidth={1.2} fill="none" />
+        <path d={fib.join('')} fill={HE.nucleo} />
+        <path d={vasos.map(([x, y, r]) => circulo(x, y, r)).join('')} fill={HE.luz} stroke={HE.musculo} strokeWidth={3} />
+        <path d={vasos.map(([x, y, r]) => hemacia(x - r * 0.25, y, 3.8, 30) + hemacia(x + r * 0.3, y + 1.5, 3.8, -20)).join('')} fill={HE.hemacia} />
+      </E>
+      <E id="capilar">
+        <path d={capilares.join('')} fill="#fbe9f1" stroke="#c96b98" strokeWidth={0.8} />
+        <path d={hemCap.join('')} fill={HE.hemacia} />
+        <path d={nucCap.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="tirocito">
+        <path d={celulas.join('')} fill={cor.tirocito} stroke={cor.borda} strokeWidth={0.6} />
+        <path d={nucleos.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="coloide">
+        <path d={coloide.join('')} fill={cor.coloide} />
+        <path d={vacuolos.join('')} fill={cor.vacuolo} />
+      </E>
+      <E id="celula-parafolicular">
+        <path d={cCel.join('')} fill={cor.celulaC} stroke={cor.bordaC} strokeWidth={0.8} />
+        <path d={cNuc.join('')} fill={cor.nucC} />
+      </E>
+    </>
+  );
+}
+
+// =============================================================================================
+// 4. ADRENAL — escala 1 un ≈ 1 µm nas células (espongiócito ≈ 20 µm); as espessuras das zonas estão comprimidas para
+// caberem todas no campo (na glândula real a fasciculada é bem mais espessa que as outras).
+export const PARTES_ADRENAL = ['capsula', 'zona-glomerulosa', 'zona-fasciculada', 'zona-reticular', 'medula-adrenal', 'capilar', 'veia-central'];
+
+/** Adrenal: cápsula, zonas glomerulosa, fasciculada e reticular do córtex, e medula com células cromafins. */
+export function LaminaAdrenal(rng: Rng) {
+  const cor = { capsula: '#e9a2c2', sinusoide: '#fbeaf1', zg: '#e7a0c0', zgBorda: '#cf7ea5', zf: '#f6dce7', zfBorda: '#d79bb8', zr: '#dd85ab', zrBorda: '#c46b95', lipofuscina: '#8a5a32', med: '#c9b5dc', medBorda: '#a68cc4', medNuc: '#5b4b9c', espuma: '#fdf6f9' };
+  const yG = (x: number) => 24 + 3 * Math.sin(x / 50); // cápsula → glomerulosa
+  const yF = (x: number) => 96 + 6 * Math.sin(x / 60 + 1); // glomerulosa → fasciculada
+  const yR = (x: number) => 420 + 10 * Math.sin(x / 80 + 2); // fasciculada → reticular
+  const yM = (x: number) => 542 + 10 * Math.sin(x / 45) + 6 * Math.sin(x / 17 + 1); // reticular → medula
+  const faixaY = (f0: (x: number) => number, f1: (x: number) => number) => {
+    const xs = Array.from({ length: 53 }, (_, k) => -20 + k * 20);
+    return contorno([...xs.map((x): P => [x, f0(x)]), ...[...xs].reverse().map((x): P => [x, f1(x)])]);
+  };
+  const hemacias: string[] = [];
+  const endotelio: string[] = [];
+
+  // zona glomerulosa: grupos ovoides ("arcos"/"glomérulos") de células colunares baixas, núcleos escuros
+  const zgCel: string[] = [];
+  const zgNuc: string[] = [];
+  for (let x = -10, k = 0; x < W + 40; x += entre(rng, 66, 76), k++) {
+    const a = entre(rng, 29, 34);
+    const b = entre(rng, 27, 30);
+    const cy = 60 + entre(rng, -2, 2);
+    const ctr = pontosPolar(x, cy, (t) => (a * b) / Math.hypot(b * Math.cos(t), a * Math.sin(t)), 64);
+    const ep = epitelio(ctr, 10.5, () => b * 0.62, 1);
+    ep.celulas.forEach((c, i) => {
+      zgCel.push(contorno(c));
+      const m = ep.meio(i, 0.45);
+      zgNuc.push(circulo(m.x, m.y, 2.9));
+    });
+    zgCel.push(contorno(ep.topo));
+    if (k % 2) hemacias.push(hemacia(x + a + 4, cy + entre(rng, -12, 12), 3.6, 90, 2.4));
+  }
+
+  // zona fasciculada: cordões retos, de 1–2 células, perpendiculares à cápsula, separados por capilares sinusoides;
+  // espongiócitos grandes, com citoplasma vacuolizado (lipídios extraídos) e núcleo central (às vezes dois)
+  const zfCel: string[] = [];
+  const zfNuc: string[] = [];
+  const passoC = 41;
+  for (let k = -1, x0 = 4; x0 < W + 40; k++, x0 += passoC) {
+    const fase = entre(rng, 0, 6);
+    const xc = (y: number) => x0 + 5 * Math.sin(y / 70 + fase);
+    const sem: Sitio[] = [];
+    for (let y = 92; y < 432; y += entre(rng, 18, 21)) {
+      if (rng() < 0.18) sem.push({ x: xc(y) + entre(rng, -2, 2), y, w: 0 }); // trecho de uma só célula
+      else for (const d of [-9.2, 9.2]) sem.push({ x: xc(y) + d + entre(rng, -1.2, 1.2), y: y + entre(rng, -2, 2), w: 0 });
+    }
+    celulasDe(sem, 17, 0.5).forEach((pol0, i) => {
+      const q = sem[i];
+      let pol = cortar(pol0, 1, 0, xc(q.y) + 17.5, 0);
+      pol = cortar(pol, -1, 0, -(xc(q.y) - 17.5), 0);
+      pol = cortar(pol, 0, -1, 0, -(yF(q.x) + 2));
+      pol = cortar(pol, 0, 1, 0, yR(q.x) - 1);
+      if (pol.length < 3) return;
+      zfCel.push(contorno(pol));
+      const c = centroidePol(pol);
+      if (rng() < 0.08) zfNuc.push(circulo(c[0] - 4.2, c[1], 3.4), circulo(c[0] + 4.2, c[1], 3.4));
+      else zfNuc.push(circulo(c[0], c[1], 3.8));
+    });
+    // hemácias e núcleos endoteliais no sinusoide à direita do cordão
+    for (let y = yF(x0) + entre(rng, 5, 30); y < yR(x0) - 6; y += entre(rng, 22, 40)) {
+      const x = xc(y) + passoC / 2;
+      if (rng() < 0.75) hemacias.push(hemacia(x, y, 3.6, 90 + entre(rng, -10, 10), 1.9));
+      else endotelio.push(elipse(x, y, 4, 1.1, 90));
+    }
+  }
+
+  // zona reticular: rede de cordões anastomosados de células menores e mais acidófilas, algumas com lipofuscina
+  const zrCel: string[] = [];
+  const zrNuc: string[] = [];
+  const lipof: string[] = [];
+  const occR = ocupacao(30, 12);
+  const furosR = dardos(rng, 800, [-20, 400, W + 20, 570], () => 21, (x, y) => y > yR(x) + 8 && y < yM(x) - 4, occR, 0);
+  for (const [x, y] of furosR) {
+    hemacias.push(hemacia(x + entre(rng, -2, 2), y + entre(rng, -2, 2), 3.6, entre(rng, 0, 180), 2.2));
+  }
+  const occR2 = ocupacao(20, 7);
+  const semR = dardos(rng, 6000, [-20, 400, W + 20, 580], () => 6.6, (x, y) => y > yR(x) + 1 && y < yM(x) + 2 && furosR.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 10.5), occR2, 0).map(([x, y]): Sitio => ({ x, y, w: 0 }));
+  celulasDe(semR, 9.5, 0.5).forEach((pol0, i) => {
+    const q = semR[i];
+    let pol = cortar(pol0, 0, -1, 0, -(yR(q.x) - 1));
+    pol = cortar(pol, 0, 1, 0, yM(q.x) + 1);
+    if (pol.length < 3) return;
+    zrCel.push(contorno(pol));
+    const c = centroidePol(pol);
+    zrNuc.push(rng() < 0.12 ? circulo(c[0], c[1], 2.2) : circulo(c[0], c[1], 3.1));
+    if (rng() < 0.3)
+      for (let g = 0; g < 4; g++) {
+        const a = entre(rng, 0, Math.PI * 2);
+        lipof.push(circulo(c[0] + Math.cos(a) * 5, c[1] + Math.sin(a) * 5, 0.8));
+      }
+  });
+
+  // medula: grupos e cordões de células cromafins (citoplasma basófilo, granuloso), sinusoides e a veia central
+  const veia = { x: 560, y: 660, rx: 150, ry: 26 };
+  const naVeia = (x: number, y: number, m: number) => ((x - veia.x) / (veia.rx + m)) ** 2 + ((y - veia.y) / (veia.ry + m)) ** 2 < 1;
+  const occM = ocupacao(40, 16);
+  const furosM = dardos(rng, 800, [-20, 540, W + 20, H + 20], () => 16, (x, y) => y > yM(x) + 14 && !naVeia(x, y, 16), occM, 22);
+  for (const [x, y] of furosM) hemacias.push(hemacia(x, y, 3.6, entre(rng, 0, 180), 2.4));
+  const occM2 = ocupacao(24, 9);
+  const semM = dardos(rng, 6000, [-20, 530, W + 20, H + 20], () => 8.6, (x, y) => y > yM(x) && !naVeia(x, y, 8) && furosM.every(([fx, fy]) => Math.hypot(fx - x, fy - y) > 15), occM2, 0).map(([x, y]): Sitio => ({ x, y, w: 0 }));
+  const medCel: string[] = [];
+  const medNuc: string[] = [];
+  celulasDe(semM, 11.5, 0.6).forEach((pol0, i) => {
+    const q = semM[i];
+    const pol = cortar(pol0, 0, -1, 0, -yM(q.x));
+    if (pol.length < 3 || pol.some(([x, y]) => naVeia(x, y, 3))) return;
+    medCel.push(contorno(pol));
+    const c = centroidePol(pol);
+    medNuc.push(circulo(c[0] + entre(rng, -1, 1), c[1] + entre(rng, -1, 1), 4));
+  });
+  // veia central (medular): parede delgada com feixes excêntricos de músculo liso longitudinal
+  const feixes: string[] = [];
+  const nucFeixe: string[] = [];
+  for (const [dx, l] of [[-90, 40], [-20, 34], [60, 46]]) {
+    const x = veia.x + dx;
+    const y = veia.y - veia.ry * Math.sqrt(Math.max(0, 1 - (dx / veia.rx) ** 2)) - 6;
+    feixes.push(elipse(x, y, l / 2, 9, 0));
+    for (let k = -1; k <= 1; k++) nucFeixe.push(elipse(x + k * l * 0.28, y + entre(rng, -3, 3), 4, 1.2, 0));
+  }
+  const nucVeia = Array.from({ length: 9 }, (_, k) => {
+    const t = Math.PI * (0.1 + (0.8 * k) / 8);
+    return elipse(veia.x + Math.cos(t) * (veia.rx - 2), veia.y - Math.sin(t) * (veia.ry - 1.5), 4, 1, graus(-Math.sin(t) * veia.rx, -Math.cos(t) * veia.ry));
+  }).join('');
+
+  // cápsula: conjuntivo denso, fibroblastos achatados
+  const capNuc: string[] = [];
+  for (let k = 0; k < 26; k++) {
+    const x = entre(rng, 0, W);
+    capNuc.push(elipse(x, entre(rng, 5, yG(x) - 5), 6, 1.4, entre(rng, -5, 5)));
+  }
+
+  return (
+    <>
+      <defs>
+        {/* citoplasma espumoso dos espongiócitos (gotículas de lipídio extraídas pelo processamento) */}
+        <pattern id="adrenal-espuma" width={23} height={19} patternUnits="userSpaceOnUse">
+          <rect width={23} height={19} fill={cor.zf} />
+          {[[3, 3, 1.6], [9, 2, 1.2], [15, 4, 2], [21, 2, 1.1], [6, 8, 2.1], [12, 9, 1.4], [18, 10, 1.8], [2, 13, 1.3], [9, 15, 1.9], [15, 15, 1.2], [20, 16, 1.6], [13, 1, 0.9]].map(([x, y, r], k) => (
+            <circle key={k} cx={x} cy={y} r={r} fill={cor.espuma} />
+          ))}
+        </pattern>
+      </defs>
+      <E id="capilar">
+        <rect x={-20} y={-20} width={W + 40} height={H + 40} fill={cor.sinusoide} />
+        <path d={hemacias.join('')} fill={HE.hemacia} />
+        <path d={endotelio.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="capsula">
+        <path d={faixaY(() => -20, yG)} fill={cor.capsula} />
+        <path d={capNuc.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="zona-glomerulosa">
+        <path d={zgCel.join('')} fill={cor.zg} stroke={cor.zgBorda} strokeWidth={0.6} />
+        <path d={zgNuc.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="zona-fasciculada">
+        <path d={zfCel.join('')} fill="url(#adrenal-espuma)" stroke={cor.zfBorda} strokeWidth={0.8} />
+        <path d={zfNuc.join('')} fill={HE.nucleo} />
+      </E>
+      <E id="zona-reticular">
+        <path d={zrCel.join('')} fill={cor.zr} stroke={cor.zrBorda} strokeWidth={0.6} />
+        <path d={lipof.join('')} fill={cor.lipofuscina} />
+        <path d={zrNuc.join('')} fill={HE.nucleoEscuro} />
+      </E>
+      <E id="medula-adrenal">
+        <path d={medCel.join('')} fill={cor.med} stroke={cor.medBorda} strokeWidth={0.7} />
+        <path d={medNuc.join('')} fill={cor.medNuc} />
+      </E>
+      <E id="veia-central">
+        <path d={elipse(veia.x, veia.y, veia.rx + 3, veia.ry + 3)} fill="#e7a7c4" />
+        <path d={feixes.join('')} fill={HE.musculo} />
+        <path d={nucFeixe.join('')} fill={HE.nucleo} />
+        <path d={elipse(veia.x, veia.y, veia.rx, veia.ry)} fill={HE.luz} />
+        <path d={nucVeia} fill={HE.nucleoEscuro} />
+        <path d={Array.from({ length: 7 }, (_, k) => hemacia(veia.x - 100 + k * 33 + entre(rng, -6, 6), veia.y + entre(rng, -8, 10), 3.7, entre(rng, 0, 180), 2.6)).join('')} fill={HE.hemacia} />
+      </E>
+    </>
+  );
+}
+
+// =============================================================================================
 export const LAMINAS_SISTEMAS_C: Record<string, LaminaRender> = {
   pulmao: { desenhar: LaminaPulmao, partes: PARTES_PULMAO },
   // o campo do jogo precisa mostrar um corpúsculo renal: sem ele, só túbulos, o campo lembraria a lâmina epitelio-cubico-rim
   'rim-cortex': { desenhar: LaminaRimCortex, partes: PARTES_RIM, areaDiagnostica: [280, 260, 400, 400] },
+  tireoide: { desenhar: LaminaTireoide, partes: PARTES_TIREOIDE },
+  // a fasciculada (cordões de espongiócitos) é o aspecto mais característico: o campo sempre pega ela e uma vizinha
+  adrenal: { desenhar: LaminaAdrenal, partes: PARTES_ADRENAL, areaDiagnostica: [250, 160, 750, 420] },
 };
