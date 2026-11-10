@@ -898,9 +898,21 @@ export function LaminaRimCortex(rng: Rng) {
   const distais = sitios.slice(0, tubSem.length).filter((q) => q.w < 31).map(forma);
   const contornoMd = forma(mdSitio);
   const centroide = (pol: P[]): P => [pol.reduce((a, p) => a + p[0], 0) / pol.length, pol.reduce((a, p) => a + p[1], 0) / pol.length];
+  // distância do centro até o contorno na direção a (interseção do raio com as arestas)
   const raioEm = (pol: P[], c: P, a: number) => {
-    let t = 0;
-    while (t < 90 && dentro(c[0] + Math.cos(a) * t, c[1] + Math.sin(a) * t, pol)) t += 1;
+    const dx = Math.cos(a);
+    const dy = Math.sin(a);
+    let t = 90;
+    pol.forEach((p, i) => {
+      const q = pol[(i + 1) % pol.length];
+      const ex = q[0] - p[0];
+      const ey = q[1] - p[1];
+      const den = dx * ey - dy * ex;
+      if (Math.abs(den) < 1e-9) return;
+      const tt = ((p[0] - c[0]) * ey - (p[1] - c[1]) * ex) / den;
+      const u = ((p[0] - c[0]) * dy - (p[1] - c[1]) * dx) / den;
+      if (tt > 0 && u >= 0 && u <= 1) t = Math.min(t, tt);
+    });
     return t;
   };
 
@@ -933,10 +945,17 @@ export function LaminaRimCortex(rng: Rng) {
   // nas junções de três túbulos sobra um espaço triangular maior: capilar mais calibroso ou fibroblasto
   const todos = [...proximais, ...distais, contornoMd];
   const centros = todos.map(centroidePol);
-  const livreDe = (x: number, y: number, r: number) =>
-    todos.every((pol, i) => Math.hypot(centros[i][0] - x, centros[i][1] - y) > 70 || (!dentro(x, y, pol) && distLinha(x, y, pol, true) > r + 0.6)) &&
-    corpusculos.every((c) => Math.hypot(c.x - x, c.y - y) > c.R + r + 3) &&
-    fixos.every((q) => Math.hypot(q.x - x, q.y - y) > q.w + r - 2);
+  // espaço livre em volta de um ponto do interstício (negativo se cair dentro de um túbulo)
+  const folgaEm = (x: number, y: number) => {
+    let m = 99;
+    todos.forEach((pol, i) => {
+      if (Math.hypot(centros[i][0] - x, centros[i][1] - y) > 70) return;
+      m = Math.min(m, dentro(x, y, pol) ? -1 : distLinha(x, y, pol, true) - 0.6);
+    });
+    for (const c of corpusculos) m = Math.min(m, Math.hypot(c.x - x, c.y - y) - c.R - 3);
+    for (const q of fixos) m = Math.min(m, Math.hypot(q.x - x, q.y - y) - q.w + 2);
+    return m;
+  };
   const fibroblastos: string[] = [];
   const jaVisto = new Set<string>();
   for (const pol of brutas)
@@ -944,8 +963,7 @@ export function LaminaRimCortex(rng: Rng) {
       const chave = `${Math.round(v[0] / 4)},${Math.round(v[1] / 4)}`;
       if (jaVisto.has(chave) || v[0] < -10 || v[0] > W + 10 || v[1] < -10 || v[1] > H + 10) continue;
       jaVisto.add(chave);
-      let r = 8;
-      while (r >= 4.5 && !livreDe(v[0], v[1], r)) r -= 0.5;
+      const r = Math.min(8, Math.floor(folgaEm(v[0], v[1]) * 2) / 2);
       if (r < 4.5 || !occCap.livre(v[0], v[1], r, 4)) continue;
       occCap.marcar(v[0], v[1], r);
       if (rng() < 0.45) {
