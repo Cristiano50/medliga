@@ -370,7 +370,7 @@ function centroGerminativo(rng: Rng, oc: Ocup, gc: Forma, fundo: P) {
   }
   const fdc = semear(rng, oc, caixa, 17, 3.6, (x, y) => prof(gc, x, y) > 4 && !escura(x, y), 0.4);
   const blastos = semear(rng, oc, caixa, 10.2, 4.1, (x, y) => prof(gc, x, y) > 4 && escura(x, y));
-  const citos = semear(rng, oc, caixa, 8.6, 3.3, (x, y) => prof(gc, x, y) > 3.4, 0.85);
+  const citos = semear(rng, oc, caixa, 8.6, 3.3, (x, y) => prof(gc, x, y) > 3.4, 0.97);
   const fragmentos: El[] = [];
   const nucTbm: El[] = [];
   tbm.forEach(([x, y]) => {
@@ -527,15 +527,21 @@ function LaminaAorta(rng: Rng) {
         <path d={elipses(nucIntima)} fill={HE.nucleo} />
       </E>
       <E id="fibras-elasticas">
-        {/* traço visível fino; faixa transparente mais larga só para o toque */}
-        <path d={dLam} stroke="transparent" strokeWidth={6} fill="none" />
+        {/* traço visível fino; faixa transparente pouco mais larga só para o toque (3,5 un: com lâminas a cada 18,7 un,
+            uma faixa de 6 un cobria 1/3 da média, e um toque na média contava como lâmina) */}
+        <path d={dLam} stroke="transparent" strokeWidth={3.5} fill="none" />
         <path d={dLam} stroke="#8c3d6b" strokeWidth={2.4} strokeLinecap="round" fill="none" style={{ pointerEvents: 'none' }} />
       </E>
       <E id="vasa-vasorum">
         {vasos.map(([x, y, t, r], i) => (
           <g key={i}>
-            {/* bainha de conjuntivo ao redor do vaso: interrompe as lâminas no terço externo da média */}
-            <circle cx={r1(x)} cy={r1(y)} r={r + 5} fill={HE.colagenoClaro} />
+            {/* bainha de conjuntivo ao redor do vaso: interrompe as lâminas no terço externo da média. Cor do conjuntivo
+                vizinho e contorno irregular (um halo claro e redondo lembraria retração ou edema perivascular) */}
+            <path d={suave(Array.from({ length: 18 }, (_, k) => {
+              const a = (TAU * k) / 18;
+              const rr = r + 5 + 1.6 * Math.sin(3 * a + i * 1.7) + 1 * Math.sin(5 * a + i * 0.9);
+              return [x + Math.cos(a) * rr, y + Math.sin(a) * rr] as P;
+            }))} fill={HE.colageno} />
             {vasinho(rng, x, y, t, r, 3.6)}
           </g>
         ))}
@@ -562,7 +568,8 @@ function LaminaFeixe(rng: Rng) {
   const rIEL = (t: number) => RL + 6 + 3.2 * Math.sin(26 * t + fase);
   const rLum = (t: number) => RL + 0.6 + 1.6 * Math.sin(26 * t + fase);
   const rMed = (t: number) => RL + 58 + 1.5 * Math.sin(9 * t + f2);
-  const rAdv = (t: number) => rMed(t) + 36 + 5 * Math.sin(5 * t + f3) + 3 * Math.sin(11 * t + f4);
+  // borda externa irregular: a adventícia continua-se com o conjuntivo ao redor
+  const rAdv = (t: number) => rMed(t) + 36 + 5 * Math.sin(5 * t + f3) + 3 * Math.sin(11 * t + f4) + 2 * Math.sin(23 * t + f2) + 1.4 * Math.sin(37 * t + f4);
   const polar = (rf: (t: number) => number, n = 180): P[] =>
     Array.from({ length: n }, (_, i) => {
       const t = (TAU * i) / n;
@@ -618,7 +625,8 @@ function LaminaFeixe(rng: Rng) {
   }
 
   // veia satélite: luz ampla e irregular, parede fina (média delgada, adventícia relativamente espessa)
-  const VL: Forma = { cx: 715, cy: 262, rx: 172, ry: 80, ang: -13, ond: [[2, 0.04, 0.5], [3, 0.06, 1.9], [5, 0.03, 0.2], [7, 0.015, 1.1]] };
+  // luz irregular, achatada de um lado (veias colapsam parcialmente no corte)
+  const VL: Forma = { cx: 715, cy: 262, rx: 172, ry: 80, ang: -13, ond: [[2, 0.05, 0.5], [3, 0.09, 1.9], [4, 0.05, 2.6], [5, 0.04, 0.2], [7, 0.02, 1.1]] };
   const VA: Forma = { ...VL, ond: [...(VL.ond ?? []), [4, 0.03, 2.4]] };
   const ocV = criarOcupacao(12);
   const nucVeia: El[] = [];
@@ -658,13 +666,13 @@ function LaminaFeixe(rng: Rng) {
   const RF = 72;
   const EPI: Forma = { cx: NV[0], cy: NV[1], rx: 94, ry: 90, ond: [[3, 0.04, 1], [5, 0.03, 2]] };
   const fibras: [number, number, number][] = [];
-  for (let t = 0; t < 3000; t++) {
+  for (let t = 0; t < 6000; t++) {
     const a = entre(rng, 0, TAU);
     const rr = rng() < 0.25 ? entre(rng, 4.2, 5.6) : entre(rng, 2.6, 4.2);
     const d = Math.sqrt(rng()) * (RF - 4 - rr);
     const x = NV[0] + Math.cos(a) * d;
     const y = NV[1] + Math.sin(a) * d;
-    if (fibras.some(([ox, oy, or]) => Math.hypot(ox - x, oy - y) < or + rr + 1.6)) continue;
+    if (fibras.some(([ox, oy, or]) => Math.hypot(ox - x, oy - y) < or + rr + 0.8)) continue;
     fibras.push([x, y, rr]);
   }
   let dMielina = '';
@@ -746,8 +754,24 @@ function LaminaFeixe(rng: Rng) {
         <path d={elipses(nucEndoneuro)} fill={HE.nucleo} />
       </E>
       <E id="tunica-adventicia">
-        <path d={suave(polar(rAdv, 90))} fill={HE.colageno} />
+        <path d={suave(polar(rAdv, 240))} fill={HE.colageno} />
         {arcos}
+        {/* feixes colágenos que saem da adventícia para o conjuntivo vizinho */}
+        <Deco>
+          <path
+            d={Array.from({ length: 22 }, (_, k) => {
+              const a = (TAU * k) / 22 + 0.11 * k;
+              const r0 = rAdv(a) - 6;
+              const da = (k % 2 ? 1 : -1) * (0.05 + 0.02 * (k % 3));
+              const l = 16 + 9 * ((k * 7) % 4);
+              return `M${r1(ax + Math.cos(a) * r0)} ${r1(ay + Math.sin(a) * r0)}Q${r1(ax + Math.cos(a + da) * (r0 + l * 0.6))} ${r1(ay + Math.sin(a + da) * (r0 + l * 0.6))} ${r1(ax + Math.cos(a + 2 * da) * (r0 + l))} ${r1(ay + Math.sin(a + 2 * da) * (r0 + l))}`;
+            }).join('')}
+            stroke={HE.colageno}
+            strokeWidth={3.2}
+            strokeLinecap="round"
+            fill="none"
+          />
+        </Deco>
         <path d={elipses(nucAdv)} fill={HE.nucleo} />
         <Deco>
           {vasinho(rng, ax + Math.cos(0.7) * (RL + 78), ay + Math.sin(0.7) * (RL + 78), 'a', 7, 2.6, 'vv1')}
@@ -1067,7 +1091,14 @@ function LaminaLinfonodo(rng: Rng) {
           return (
             <g key={i}>
               <ellipse cx={r1(x)} cy={r1(y)} rx={5.3} ry={4} transform={`rotate(${r1(a)} ${r1(x)} ${r1(y)})`} fill="#b48ad0" />
+              {/* halo claro justanuclear (complexo de Golgi) e núcleo excêntrico com cromatina em grumos ("roda de carroça") */}
+              <circle cx={r1(x - Math.cos(ar) * 1.5)} cy={r1(y - Math.sin(ar) * 1.5)} r={1.5} fill="#dccbe8" />
               <circle cx={r1(x + Math.cos(ar) * 1.9)} cy={r1(y + Math.sin(ar) * 1.9)} r={2.6} fill="#2f2466" />
+              {bolinhas(
+                [0, 1, 2, 3, 4].map((k) => [x + Math.cos(ar) * 1.9 + Math.cos(ar + k * 1.257) * 1.5, y + Math.sin(ar) * 1.9 + Math.sin(ar + k * 1.257) * 1.5] as P),
+                0.45,
+                '#7f6db8',
+              )}
             </g>
           );
         })}
@@ -1211,9 +1242,11 @@ function LaminaBaco(rng: Rng) {
     for (let u = -4; u < comp + 4; u += 7.2)
       for (const [fi, f] of faixas.entries()) {
         if (rng() > 0.94) continue;
-        const { p, t } = em(Math.max(0, Math.min(comp, u + fi * 3.6 + entre(rng, -0.6, 0.6))));
+        const uu = Math.max(0, Math.min(comp, u + fi * 3.6 + entre(rng, -0.6, 0.6)));
+        const { p, t } = em(uu);
         const off = f + entre(rng, -0.8, 0.8);
-        if (Math.abs(off) > meia - 3.3) continue;
+        // com as pontas cortadas, a hemácia não pode passar da extremidade do canal
+        if (Math.abs(off) > meia - 3.3 || uu < 3.4 || uu > comp - 3.4) continue;
         const x = p[0] - t[1] * off;
         const y = p[1] + t[0] * off;
         if (!oc.livre(x, y, 3.5)) continue;
@@ -1340,8 +1373,9 @@ function LaminaBaco(rng: Rng) {
       <E id="sinusoides-esplenicos">
         {dSin.map((d, i) => (
           <g key={i}>
-            <path d={d} stroke="#c97aa0" strokeWidth={[15, 19, 23][i]} strokeLinecap="round" fill="none" />
-            <path d={d} stroke="#efc3d2" strokeWidth={[15, 19, 23][i] - 2.4} strokeLinecap="round" fill="none" />
+            {/* pontas cortadas: o canal sai do plano do corte (pontas arredondadas pareciam tubos fechados) */}
+            <path d={d} stroke="#c97aa0" strokeWidth={[15, 19, 23][i]} fill="none" />
+            <path d={d} stroke="#efc3d2" strokeWidth={[15, 19, 23][i] - 2.4} fill="none" />
           </g>
         ))}
         {bolinhas(hemSin, 3.2, HE.hemacia)}
@@ -1419,6 +1453,16 @@ function LaminaTimo(rng: Rng) {
       });
     }
   const distSepto = (x: number, y: number) => Math.min(Infinity, ...septos.map(([a, b]) => distSeg([x, y], a, b)));
+  /** Traçado levemente sinuoso do septo (±4 un), que passa pelas pontas e pelo meio do segmento reto. */
+  const sinuoso = (a: P, b: P, i: number): P[] => {
+    const l = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+    const [nx, ny] = [-(b[1] - a[1]) / l, (b[0] - a[0]) / l];
+    return Array.from({ length: 25 }, (_, k) => {
+      const u = k / 24;
+      const o = 3 * Math.sin(TAU * 2 * u + (i % 2) * Math.PI) + 1.2 * Math.sin(TAU * 3 * u);
+      return [a[0] + (b[0] - a[0]) * u + nx * o, a[1] + (b[1] - a[1]) * u + ny * o];
+    });
+  };
   // vasos nos septos (na metade de cada septo) com bainha de conjuntivo
   const vasosSepto: [number, number, 'a' | 'v', number][] = septos
     .filter(([a, b]) => Math.hypot(b[0] - a[0], b[1] - a[1]) > 90)
@@ -1486,8 +1530,9 @@ function LaminaTimo(rng: Rng) {
     ...semear(rng, oc, tudo, 22, 9.5, (x, y) => naMedula(x, y, 9) && foraHassall(x, y, 13) && foraSepto(x, y, 9), 0.5),
     ...semear(rng, oc, tudo, 44, 9, (x, y) => noCortex(x, y, 9), 0.13),
   ];
-  // macrófagos do córtex (fagocitam timócitos em apoptose: aspecto de "céu estrelado")
-  const mac = semear(rng, oc, tudo, 48, 8.6, (x, y) => noCortex(x, y, 8.6), 0.32);
+  // macrófagos do córtex (fagocitam timócitos em apoptose), esparsos: 2–3 por campo de 10×. Muitos, entre células
+  // monótonas, dariam o padrão de "céu estrelado", que é da patologia (linfoma de Burkitt, parte dos linfoblásticos T)
+  const mac = semear(rng, oc, tudo, 48, 8.6, (x, y) => noCortex(x, y, 8.6), 0.12);
   const timCortex = semear(rng, oc, tudo, 7.6, 3.05, (x, y) => noCortex(x, y, 3.05));
   const timMedula = semear(rng, oc, tudo, 10.5, 3.3, (x, y) => naMedula(x, y, 3.3) && foraHassall(x, y, 3.3) && foraSepto(x, y, 3.3), 0.8);
 
@@ -1552,10 +1597,10 @@ function LaminaTimo(rng: Rng) {
                 return [md.c[0] + Math.cos(t) * r, md.c[1] + Math.sin(t) * r] as P;
               }),
             )}
-            fill="#e8d5e7"
+            fill="#edd0e1"
           />
         ))}
-        <path d={linha(ponte)} stroke="#e8d5e7" strokeWidth={60} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={linha(ponte)} stroke="#edd0e1" strokeWidth={60} strokeLinecap="round" strokeLinejoin="round" fill="none" />
         {vasosCM.map(([x, y], i) => vasinho(rng, x, y, 'v', 6.5, 2.7, i))}
       </E>
       <E id="celula-epitelial-reticular">
@@ -1601,7 +1646,7 @@ function LaminaTimo(rng: Rng) {
       </E>
       <E id="septo-conjuntivo">
         {septos.map(([a, b], i) => (
-          <path key={i} d={`M${r1(a[0])} ${r1(a[1])}L${r1(b[0])} ${r1(b[1])}`} stroke={HE.colageno} strokeWidth={16} strokeLinecap="round" />
+          <path key={i} d={linha(sinuoso(a, b, i))} stroke={HE.colageno} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" fill="none" />
         ))}
         {vasosSepto.map(([x, y, t, r], i) => (
           <g key={i}>
@@ -1659,7 +1704,7 @@ function LaminaPeleFina(rng: Rng) {
   }
   const ocE = criarOcupacao(12);
   // espinhosas: células poligonais justapostas (Voronoi), achatando-se para cima
-  const esp = semear(rng, ocE, [0, 50, W, 104], 11.5, 4.6, (x, y) => y > sup(x) + 21 && y < jun(x) - 15 && !naAbertura(x, y));
+  const esp = semear(rng, ocE, [0, 50, W, 104], 10.5, 4.6, (x, y) => y > sup(x) + 16 && y < jun(x) - 14 && !naAbertura(x, y));
   let dEsp = '';
   esp.forEach((c) => {
     dEsp += linha(voronoi(c, esp, circulo(c, 7.6, 10), 20), true);
@@ -1745,6 +1790,17 @@ function LaminaPeleFina(rng: Rng) {
     // bainha externa: núcleos em várias fileiras; infundíbulo: queratinócitos
     const nucExt = semear(rng, ocF, [-32, 126, 32, yB - 46], 7.6, 2.9, (x, y) => Math.abs(x) > 18.6 && Math.abs(x) < 31.4 && y < yB - 46);
     const nucInf = semear(rng, ocF, [-33, -20, 33, 124], 10, 3.4, (x, y) => Math.abs(x) > 18.2 && Math.abs(x) < 31.2 && y > x * s + 5);
+    // infundíbulo como a epiderme: camada granulosa (células achatadas com querato-hialina) e córnea revestindo o canal
+    const granInf: El[] = [];
+    const graosInf: P[] = [];
+    for (const lado of [-1, 1])
+      for (let y = lado * 17.3 * s + 8; y < 106; y += 6.6) {
+        const x = lado * 17.3;
+        if (nucInf.some(([nx, ny]) => Math.hypot(nx - x, ny - y) < 4.4)) continue;
+        granInf.push([x, y, 3, 1.15, 90]);
+        graosInf.push([x - 0.3, y - 1.3], [x + 0.3, y + 1.2]);
+      }
+    const corneaInf = [-15, 15].map((x) => `M${x} ${r1(x * s + 1)}L${x} 110`).join('');
     const triHialina = semear(rng, ocF, [-17, L - 260, 17, L - 132], 4.2, 1.3, (x) => Math.abs(x) > 12.4 && Math.abs(x) < 16, 0.55);
     const nucBainha: El[] = [];
     for (let y = 100; y < yB - 30; y += entre(rng, 18, 28)) for (const lado of [-1, 1]) nucBainha.push([lado * 36.4, y + entre(rng, -4, 4), 1.4, 6, 0]);
@@ -1761,6 +1817,10 @@ function LaminaPeleFina(rng: Rng) {
           {bolinhas(nucExt, 2.5, '#5d4ea0', 'e')}
           {bolinhas(nucInf, 2.4, HE.nucleo, 'i')}
           <path d={canal} fill="#fbeff4" />
+          <path d={corneaInf} stroke="#f4bfd5" strokeWidth={2} fill="none" />
+          <path d={corneaInf} stroke="#e48fb4" strokeWidth={0.7} strokeDasharray="14 5" fill="none" />
+          <path d={elipses(granInf)} fill="#e7a0bf" stroke={HE.citoplasmaEscuro} strokeWidth={0.5} />
+          {bolinhas(graosInf, 0.55, '#2f2466', 'g')}
           <path d={queratina} stroke="#eeb0ca" strokeWidth={1} fill="none" />
           <path d={interna} fill="#e8799f" />
           {bolinhas(triHialina, 0.95, '#b8245a', 't')}
@@ -1826,7 +1886,8 @@ function LaminaPeleFina(rng: Rng) {
   });
 
   // ---- músculo eretor do pelo: da bainha conjuntiva (abaixo da glândula, na "protuberância") à derme papilar
-  const eixoEretor = cbez([-40, 275], [-140, 300], [-190, 170], [-178, -12], 40);
+  // sobe da inserção sem descer abaixo dela e contorna a glândula de perto (uma reta atravessaria os lóbulos)
+  const eixoEretor = cbez([-40, 275], [-160, 275], [-155, 220], [-178, -12], 40);
   const eretor = faixa(eixoEretor, (f) => 10 - 3.5 * f);
   const nucEretor: El[] = [];
   eixoEretor.forEach((p, i) => {
@@ -1964,7 +2025,7 @@ function LaminaPeleFina(rng: Rng) {
               <path d="M-14 118L-52 133" stroke="#fbf3f7" strokeWidth={3.5} strokeLinecap="round" />
               {bolinhas([[-24, 116.5], [-36, 121.5], [-46, 125.5], [-22, 127], [-34, 131], [-46, 135]], 1.9, HE.nucleo)}
               {lobos.map((lb, k) => (
-                <path key={k} d={suave(contorno(lb, 0, 48))} fill="#f4e5ec" stroke="#b99bd0" strokeWidth={5} />
+                <path key={k} d={suave(contorno(lb, 0, 48))} fill="#f4e5ec" stroke="#b99bd0" strokeWidth={1.6} />
               ))}
               <path d={sb.dCel} fill="#f7ebf1" stroke="#dcb7cb" strokeWidth={0.8} />
               {bolinhas(sb.espuma, 1, '#ead2de', 'esp')}
@@ -2012,15 +2073,55 @@ function LaminaPeleFina(rng: Rng) {
 
 export const LAMINAS_SISTEMAS_A: Record<string, LaminaRender> = {
   // o campo de 10× precisa pegar a luz, a íntima e a média com as lâminas elásticas (não só a adventícia)
-  aorta: { desenhar: LaminaAorta, partes: PARTES_AORTA, areaDiagnostica: [250, 180, 750, 240] },
-  // o campo precisa mostrar a parede da artéria (lâmina elástica interna) e parte da veia, não só o nervo
-  'feixe-neurovascular': { desenhar: LaminaFeixe, partes: PARTES_FEIXE, areaDiagnostica: [270, 260, 450, 380] },
+  aorta: {
+    desenhar: LaminaAorta,
+    partes: PARTES_AORTA,
+    areaDiagnostica: [250, 180, 750, 240],
+    // vasa vasorum na adventícia e no terço externo da média: vale a túnica sob o toque
+    contem: { 'tunica-intima': ['endotelio'], 'tunica-media': ['fibras-elasticas', 'vasa-vasorum'], 'tunica-adventicia': ['vasa-vasorum'] },
+    // a média (músculo liso) é a maior estrutura em todo campo; a íntima subendotelial é conjuntivo frouxo
+    distratoresExcluidos: ['musculo-liso', 'conjuntivo-frouxo'],
+  },
+  // a artéria inteira (luz e túnicas) em ≥ 53% do campo; a veia e o nervo ficam fora
+  'feixe-neurovascular': {
+    desenhar: LaminaFeixe,
+    partes: PARTES_FEIXE,
+    areaDiagnostica: [180, 260, 320, 470],
+    // a lâmina elástica interna é o componente mais externo da íntima
+    contem: { 'tunica-intima': ['lamina-elastica-interna'] },
+    // a média (músculo liso) e o conjuntivo frouxo ao redor do feixe ocupam boa parte do campo
+    distratoresExcluidos: ['musculo-liso', 'conjuntivo-frouxo'],
+  },
   // cápsula com seio subcapsular e folículos: o que distingue o linfonodo do baço e do timo
-  linfonodo: { desenhar: LaminaLinfonodo, partes: PARTES_LINFONODO, areaDiagnostica: [300, 190, 700, 250] },
+  linfonodo: {
+    desenhar: LaminaLinfonodo,
+    partes: PARTES_LINFONODO,
+    areaDiagnostica: [300, 190, 700, 250],
+    contem: { 'foliculo-linfoide': ['centro-germinativo'], paracortex: ['venula-endotelio-alto'] },
+  },
   // polpa branca com arteríola central ao lado da polpa vermelha
-  baco: { desenhar: LaminaBaco, partes: PARTES_BACO, areaDiagnostica: [300, 230, 520, 380] },
-  // córtex escuro e medula clara no mesmo campo (o córtex sozinho lembraria o paracórtex de um linfonodo)
-  timo: { desenhar: LaminaTimo, partes: PARTES_TIMO, areaDiagnostica: [300, 200, 680, 380] },
-  // unidade pilossebácea (folículo, glândula sebácea, eretor) no campo, não só epiderme ou só gordura
-  'pele-fina': { desenhar: LaminaPeleFina, partes: PARTES_PELE_FINA, areaDiagnostica: [300, 200, 520, 300] },
+  baco: {
+    desenhar: LaminaBaco,
+    partes: PARTES_BACO,
+    areaDiagnostica: [300, 230, 520, 380],
+    // cordões e sinusoides, juntos, formam a polpa vermelha
+    contem: { 'polpa-branca': ['centro-germinativo', 'arteria-central'], 'polpa-vermelha': ['sinusoides-esplenicos'] },
+  },
+  // lóbulo do corpúsculo de Hassall grande (236, 244): córtex escuro, medula clara e Hassall em todo campo
+  timo: {
+    desenhar: LaminaTimo,
+    partes: PARTES_TIMO,
+    areaDiagnostica: [150, 150, 350, 350],
+    // células epiteliais reticulares no córtex e na medula: vale a região sob o toque
+    contem: { 'medula-timica': ['corpusculo-de-hassall', 'celula-epitelial-reticular'], 'cortex-timico': ['celula-epitelial-reticular', 'macrofago'] },
+  },
+  // unidade pilossebácea (folículo, glândula sebácea, eretor) no campo, sem a epiderme interfolicular nem a gordura
+  'pele-fina': {
+    desenhar: LaminaPeleFina,
+    partes: PARTES_PELE_FINA,
+    areaDiagnostica: [300, 260, 520, 300],
+    contem: { 'foliculo-piloso': ['haste-do-pelo', 'papila-do-pelo'] },
+    // o infundíbulo e a bainha radicular externa, contínuos com a epiderme, são epitélio estratificado pavimentoso
+    distratoresExcluidos: ['pele-espessa'],
+  },
 };

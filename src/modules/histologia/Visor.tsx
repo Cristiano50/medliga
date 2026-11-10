@@ -22,7 +22,8 @@ export interface VisorProps {
   laminaId: string;
   selecionado?: string | null;
   destaques?: Record<string, Destaque>;
-  onEscolher?: (id: string) => void;
+  /** `pilha`: estruturas sob o ponto tocado, da mais alta para a mais baixa (decide o acerto de partes aninhadas) */
+  onEscolher?: (id: string, pilha: string[]) => void;
   /** objetiva inicial (0, 1 ou 2) e centro inicial; mudam quando a chave muda */
   objetivaInicial?: number;
   centroInicial?: { x: number; y: number };
@@ -79,7 +80,13 @@ export function Visor({ laminaId, selecionado, destaques = {}, onEscolher, objet
     if (!a || a.moveu) return;
     const alvo = document.elementFromPoint(e.clientX, e.clientY)?.closest('[data-e]');
     const id = alvo?.getAttribute('data-e');
-    if (id) onEscolher?.(id);
+    if (!id) return;
+    const pilha: string[] = [];
+    for (const el of document.elementsFromPoint?.(e.clientX, e.clientY) ?? []) {
+      const k = el.closest('[data-e]')?.getAttribute('data-e');
+      if (k && !pilha.includes(k)) pilha.push(k);
+    }
+    onEscolher?.(id, pilha);
   }
 
   const estilos = [

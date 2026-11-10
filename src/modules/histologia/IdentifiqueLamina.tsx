@@ -6,6 +6,8 @@ import { embaralhar } from '../../core/random.ts';
 import { salvarMinijogo, type Jogada } from '../../games/minijogo.ts';
 import { Barra } from '../../ui/comum.tsx';
 import { Visor, type Destaque } from './Visor.tsx';
+import { LAMINAS_RENDER } from './laminas/index.ts';
+import { contracaoDe, toqueAceito } from './regras.ts';
 
 const ALVOS = 10;
 const VIDAS = 3;
@@ -41,9 +43,10 @@ export default function IdentifiqueLaminaTela() {
   const lamina = alvo ? LAMINAS.find((l) => l.id === alvo.laminaId)! : null;
   const nome = (id: string) => lamina?.estruturas.find((e) => e.id === id)?.nome ?? id;
 
-  function escolher(id: string) {
+  function escolher(id: string, pilha?: string[]) {
     if (resultado || !alvo) return;
-    const certo = id === alvo.estruturaId;
+    // vale também uma parte do alvo (centro germinativo quando o alvo é o folículo linfoide); o inverso não
+    const certo = toqueAceito(LAMINAS_RENDER[alvo.laminaId], alvo.estruturaId, id, pilha);
     setJogadas((j) => [...j, { id: `lamina:${alvo.laminaId}:${alvo.estruturaId}`, topicoId: alvo.topicoId, correta: certo, tempoMs: Date.now() - inicioAlvo.current }]);
     setResultado({ tocado: id, certo });
     if (!certo) setVidas((v) => v - 1);
@@ -91,8 +94,16 @@ export default function IdentifiqueLaminaTela() {
   const destaques: Record<string, Destaque> = {};
   if (resultado) {
     destaques[alvo.estruturaId] = 'certo';
-    if (!resultado.certo) destaques[resultado.tocado] = 'errado';
+    destaques[resultado.tocado] = resultado.certo ? 'certo' : 'errado';
   }
+  const minuscula = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+  const titulo = !resultado
+    ? ''
+    : !resultado.certo
+      ? `❌ Você tocou em: ${nome(resultado.tocado)}`
+      : resultado.tocado === alvo.estruturaId
+        ? '✅ Encontrou!'
+        : `✅ Isso! (${minuscula(nome(resultado.tocado))}, parte ${contracaoDe(nome(alvo.estruturaId))})`;
 
   return (
     <div className="pilha">
@@ -108,7 +119,7 @@ export default function IdentifiqueLaminaTela() {
       <Visor laminaId={lamina.id} destaques={destaques} onEscolher={escolher} objetivaInicial={0} />
       {resultado && (
         <div className={`feedback ${resultado.certo ? 'ok' : 'erro'}`} role="status">
-          <h3>{resultado.certo ? '✅ Encontrou!' : `❌ Você tocou em: ${nome(resultado.tocado)}`}</h3>
+          <h3>{titulo}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{lamina.estruturas.find((e) => e.id === alvo.estruturaId)?.descricao}</p>
         </div>
       )}

@@ -104,14 +104,14 @@ const percentil = (xs, p) => {
 };
 
 /** Captura do palco por recorte da página (sem a espera de "elemento estável", que falha sob carga). */
-async function capturarPalco(page, caminho, erros) {
+async function capturarPalco(page, caminho, falhas) {
   try {
     await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
     const caixa = await page.locator('.palco3d').boundingBox();
     if (!caixa) throw new Error('palco ausente');
     await page.screenshot({ path: caminho, clip: caixa, timeout: 60000 });
   } catch (e) {
-    erros.push(`captura ${caminho}: ${e.message.split('\n')[0]}`);
+    falhas.push(`captura ${caminho}: ${e.message.split('\n')[0]}`);
   }
 }
 
@@ -140,10 +140,11 @@ async function main() {
   base = base.replace(/\/$/, '');
   mkdirSync(saida, { recursive: true });
 
-  const gravar = () => writeFileSync(join(saida, 'medicao.json'), JSON.stringify({ data: new Date().toISOString(), viewport: [vw, vh], escala, niveis, resultados, erros }, null, 1));
+  const gravar = () => writeFileSync(join(saida, 'medicao.json'), JSON.stringify({ data: new Date().toISOString(), viewport: [vw, vh], escala, niveis, resultados, erros, falhas }, null, 1));
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   const resultados = [];
   const erros = [];
+  const falhas = [];
   try {
     for (const nivel of niveis) {
       const ctx = await browser.newContext({ viewport: { width: vw, height: vh }, deviceScaleFactor: escala, serviceWorkers: 'block' });
@@ -201,7 +202,15 @@ async function main() {
                 diag: window.__diag3d ? JSON.parse(JSON.stringify(window.__diag3d)) : null,
               };
             });
-            if (!marcado('sem-capturas')) await capturarPalco(page, join(saida, nivel, `${id}.png`), erros);
+            if (!marcado('sem-capturas')) await capturarPalco(page, join(saida, nivel, `${id}.png`), falhas);
+            if (!marcado('sem-capturas') && marcado('com-marcadores')) {
+              // Mesma vista inicial, antes do giro (a inércia do giro não entra na comparação dos marcadores).
+              await page.click('text=Mostrar marcadores');
+              await estavel(5000);
+              await capturarPalco(page, join(saida, nivel, `${id}-m.png`), falhas);
+              await page.click('text=Ocultar marcadores');
+              await estavel(5000);
+            }
             let giro = null;
             if (!marcado('sem-giro')) {
               await page.evaluate(() => document.querySelector('.palco3d')?.scrollIntoView({ block: 'center' }));
@@ -232,14 +241,6 @@ async function main() {
               giro.envioMedianoMs = mediana(giro.envio);
               delete giro.envio;
             }
-            if (!marcado('sem-capturas') && marcado('com-marcadores')) {
-              // Volta à vista inicial para comparar a posição dos marcadores entre versões.
-              await page.click('text=Restaurar vista');
-              await page.click('text=Mostrar marcadores');
-              await estavel(5000);
-              await capturarPalco(page, join(saida, nivel, `${id}-m.png`), erros);
-              await page.click('text=Ocultar marcadores');
-            }
             const r = { nivel, id, carregamentoMs, ...parado, giro };
             resultados.push(r);
             const info = r.diag?.render;
@@ -250,7 +251,7 @@ async function main() {
             break;
           } catch (e) {
             // Máquina sobrecarregada (SwiftShader): registra, abre outra aba no mesmo perfil e tenta de novo.
-            erros.push(`${nivel}/${id} (tentativa ${tentativa}): ${String(e.message).split('\n')[0]}`);
+            falhas.push(`${nivel}/${id} (tentativa ${tentativa}): ${String(e.message).split('\n')[0]}`);
             console.log(`${nivel.padEnd(5)} ${id.padEnd(20)} falhou (tentativa ${tentativa}): ${String(e.message).split('\n')[0]}`);
             await page.close().catch(() => {});
             page = await ctx.newPage();
@@ -271,6 +272,7 @@ async function main() {
     linhas.push(`| ${r.nivel} | ${r.id} | ${r.dpr} | ${r.giro?.dprMovimento ?? '-'} | ${r.gl?.chamadas ?? '-'} | ${r.gl?.triangulos ?? '-'} | ${r.gl?.programasVivos ?? '-'} | ${r.diag?.render?.calls ?? '-'} | ${r.diag?.render?.triangles ?? '-'} | ${r.giro?.medianaMs?.toFixed(1) ?? '-'} |`);
   }
   writeFileSync(join(saida, 'medicao.md'), linhas.join('\n') + '\n');
+  if (falhas.length) console.log(`Falhas da medição (repetidas ou puladas):\n${falhas.join('\n')}`);
   console.log(erros.length ? `Erros de página:\n${erros.join('\n')}` : 'sem erros de página');
   console.log(`Resultados em ${saida}`);
 }
