@@ -706,8 +706,9 @@ export function LaminaEstomago(rng: Rng) {
     }
     luzFosseta += pg([...esq, [px, yPit + 4], ...dir, ...arco(px + l0 + R, yS + R, R, 180, 270, 10)]);
   }
-  // eixo de cada glândula, do fundo da fosseta ao fundo da glândula: área de toque transparente sobre a luz (que é
-  // estreita, ≈ 7 un), para "toque na glândula" funcionar no meio dela sem tirar das células a maior parte da área
+  // eixo de cada glândula, do fundo da fosseta ao fundo da glândula: área de toque transparente sobre a luz estreita
+  // (≈ 7 un). Só da largura da luz: as células da parede são partes da glândula (`contem`), então um toque nelas já
+  // vale quando o alvo é a glândula, e uma faixa mais larga tiraria delas o ápice quando o alvo é a célula
   let eixos = '';
   for (const g of glandulas) eixos += lin([[g.fosseta + g.lado * 3, yPit + 2], [g.x, yN], [g.x, g.fundo + 2]]);
   for (const g of glandulas) {
@@ -779,7 +780,7 @@ export function LaminaEstomago(rng: Rng) {
         <path d={d.parietalNuc} fill={HE.nucleo} />
       </E>
       <E id="glandula-fundica">
-        <path d={eixos} stroke="transparent" strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={eixos} stroke="transparent" strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" fill="none" />
       </E>
       <E id="muscular-da-mucosa">
         <path d={`M-10 ${yMM0}H${W + 10}V${yMM1}H-10Z`} fill={COR_LISO.fundo} />
@@ -891,9 +892,11 @@ export function LaminaColon(rng: Rng) {
   const rR = lw + dC; // raio externo do anel de células
   const criptas = Array.from({ length: 21 }, (_, k) => {
     const x = 15 + P * k + entre(rng, -1.5, 1.5);
-    // sobre as criptas cortadas de través (anéis), as longitudinais terminam mais acima
-    const curta = x > 600 && x < 810;
-    return { x, fundo: curta ? entre(rng, 196, 204) : entre(rng, 272, 283) };
+    // sobre as criptas cortadas de través (anéis), as longitudinais saem do plano de corte logo acima deles: o perfil
+    // termina aberto, cortado reto, sem o fundo em U (um U fechado tão alto leria como cripta encurtada, sinal de
+    // colite crônica)
+    const aberta = x > 600 && x < 810;
+    return { x, aberta, fundo: aberta ? 226 + (entre(rng, 196, 204) - 200) * 0.5 : entre(rng, 272, 283) };
   });
 
   // contornos apical (luz) e basal (lâmina própria), trecho a trecho
@@ -916,10 +919,12 @@ export function LaminaColon(rng: Rng) {
     apE.push([c.x - lw, c.fundo]);
     baE.push([c.x - lw - dC, c.fundo]);
     trechos.push({ ap: apE, ba: baE, zona: 'cri' });
-    trechos.push({ ap: arco(c.x, c.fundo, lw, 180, 0, 12), ba: arco(c.x, c.fundo, lw + dC, 180, 0, 12), zona: 'fundo' });
+    if (!c.aberta) trechos.push({ ap: arco(c.x, c.fundo, lw, 180, 0, 12), ba: arco(c.x, c.fundo, lw + dC, 180, 0, 12), zona: 'fundo' });
     trechos.push({ ap: [...apE].reverse().map(([x, y]): P => [2 * c.x - x, y]), ba: [...baE].reverse().map(([x, y]): P => [2 * c.x - x, y]), zona: 'cri' });
     trechos.push({ ap: ombroD, ba: [mD, mD], zona: 'sup' });
-    cont.push(...ombroE, ...apE, ...arco(c.x, c.fundo, lw, 180, 0, 12), ...[...apE].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...ombroD);
+    // perfil aberto: a lâmina própria começa logo abaixo do corte reto das paredes e da luz
+    const fim: P[] = c.aberta ? [[c.x - lw, c.fundo], [c.x + lw, c.fundo]] : arco(c.x, c.fundo, lw, 180, 0, 12);
+    cont.push(...ombroE, ...apE, ...fim, ...[...apE].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...ombroD);
     apicalAnterior = ombroD[ombroD.length - 1];
     basalAnterior = mD;
   }
@@ -934,8 +939,12 @@ export function LaminaColon(rng: Rng) {
   // no "U" do fundo ficam células-tronco e absortivas jovens (sem teca)
   const pCal = (c: CelulaFaixa) => (c.zona === 'sup' ? 0.16 : c.zona === 'fundo' ? 0 : c.zona === 'anel' ? 0.38 : (c.a0[1] + c.a1[1]) / 2 > 150 ? 0.38 : 0.3);
   const espNuc = new Espaco();
-  const d = { sup: '', supNuc: '', borda: '', cri: '', criNuc: '', cal: '', calTeca: '', calNuc: '' };
+  const d = { sup: '', supNuc: '', borda: '', cri: '', criNuc: '', cal: '', calTeca: '', calNuc: '', baseSup: '', baseCri: '' };
   for (const c of celulas) {
+    // base invisível com o contorno de todas as células (caliciformes incluídas) da superfície e das criptas: fica sob
+    // as caliciformes e diz ao jogo se a caliciforme tocada é da superfície ou da cripta (ver `contem` no registro)
+    if (c.zona === 'sup') d.baseSup += pg(c.poli);
+    else d.baseCri += pg(c.poli);
     const wA = Math.hypot(c.a1[0] - c.a0[0], c.a1[1] - c.a0[1]);
     const wB = Math.hypot(c.b1[0] - c.b0[0], c.b1[1] - c.b0[1]);
     const [ax, ay] = noEixo(c, 0);
@@ -972,7 +981,8 @@ export function LaminaColon(rng: Rng) {
   for (const c of criptas) {
     const ap: P[] = [];
     for (let y = yS + R; y <= c.fundo; y += 6) ap.push([c.x - lw, y]);
-    luzCripta += pg([[c.x - lw - R, yS - 0.5], ...arco(c.x - lw - R, yS + R, R, -90, 0, 4), ...ap, ...arco(c.x, c.fundo, lw, 180, 0, 12), ...[...ap].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...arco(c.x + lw + R, yS + R, R, 180, 270, 4), [c.x + lw + R, yS - 0.5]]);
+    const fim: P[] = c.aberta ? [[c.x - lw, c.fundo], [c.x + lw, c.fundo]] : arco(c.x, c.fundo, lw, 180, 0, 12);
+    luzCripta += pg([[c.x - lw - R, yS - 0.5], ...arco(c.x - lw - R, yS + R, R, -90, 0, 4), ...ap, ...fim, ...[...ap].reverse().map(([x, y]): P => [2 * c.x - x, y]), ...arco(c.x + lw + R, yS + R, R, 180, 270, 4), [c.x + lw + R, yS - 0.5]]);
   }
   luzCripta += rosetaX.map((x) => circ(x, rosetaY, lw)).join('');
 
@@ -982,7 +992,8 @@ export function LaminaColon(rng: Rng) {
     if (rosetaX.some((rx) => Math.hypot(x - rx, y - rosetaY) < rR + m)) return false;
     for (const c of criptas) {
       if (Math.abs(x - c.x) > P) continue;
-      if (y <= c.fundo ? Math.abs(x - c.x) < lw + dParede(y) + m : Math.hypot(x - c.x, y - c.fundo) < lw + dC + m) return false;
+      if (y <= c.fundo ? Math.abs(x - c.x) < lw + dParede(y) + m : !c.aberta && Math.hypot(x - c.x, y - c.fundo) < lw + dC + m) return false;
+      if (c.aberta && y > c.fundo && y < c.fundo + m && Math.abs(x - c.x) < lw + dC + m) return false;
     }
     return true;
   };
@@ -1052,12 +1063,14 @@ export function LaminaColon(rng: Rng) {
         {celulasConjuntivo(rng, 520, [0, yS + 14, W, yMM0 - 2], (x, y) => naLP(x, y, 2.6), espLP, 0.8)}
       </E>
       <E id="cripta-intestinal">
+        <path d={d.baseCri} fill="transparent" />
         {/* luz com muco */}
         <path d={luzCripta} fill="#e6dcee" />
         <path d={d.cri} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
         <path d={d.criNuc} stroke={HE.nucleo} strokeWidth={3.4} strokeLinecap="round" />
       </E>
       <E id="epitelio-simples-cilindrico">
+        <path d={d.baseSup} fill="transparent" />
         <path d={d.sup} fill={HE.citoplasma} stroke={HE.citoplasmaEscuro} strokeWidth={0.8} />
         <path d={d.supNuc} stroke={HE.nucleo} strokeWidth={3.4} strokeLinecap="round" />
         <path d={d.borda} stroke="#cf6a97" strokeWidth={1.4} fill="none" />
@@ -1672,12 +1685,45 @@ export function LaminaPancreas(rng: Rng) {
 
 export const LAMINAS_SISTEMAS_B: Record<string, LaminaRender> = {
   // o campo de 10× precisa pegar o epitélio e a muscular da mucosa, não só a submucosa ou a muscular externa
-  esofago: { desenhar: LaminaEsofago, partes: PARTES_ESOFAGO, areaDiagnostica: [200, 160, 800, 250] },
+  esofago: {
+    desenhar: LaminaEsofago,
+    partes: PARTES_ESOFAGO,
+    areaDiagnostica: [200, 160, 800, 250],
+    // o plexo fica entre as camadas circular e longitudinal. A glândula esofágica não entra em "submucosa": o ducto
+    // dela atravessa a muscular da mucosa, a lâmina própria e o epitélio
+    contem: { 'muscular-externa': ['plexo-mioenterico'] },
+  },
   // o campo precisa pegar as glândulas com células parietais, não só a base, a muscular da mucosa e a submucosa
-  'estomago-fundo': { desenhar: LaminaEstomago, partes: PARTES_ESTOMAGO, areaDiagnostica: [200, 150, 800, 420] },
+  'estomago-fundo': {
+    desenhar: LaminaEstomago,
+    partes: PARTES_ESTOMAGO,
+    areaDiagnostica: [200, 150, 800, 420],
+    // as células mucosas superficiais não entram em "fosseta": também revestem o topo entre as fossetas
+    contem: { 'glandula-fundica': ['celula-parietal', 'celula-principal', 'celula-mucosa-do-colo'] },
+    // epitélio (superfície, fossetas e glândulas) em 61–83% de todo campo: "Epitélio simples cilíndrico" também vale
+    distratoresExcluidos: ['epitelio-cilindrico-intestino'],
+  },
   // o campo precisa pegar as criptas (mucosa até y≈300), não só a submucosa e a muscular externa
-  colon: { desenhar: LaminaColon, partes: PARTES_COLON, areaDiagnostica: [200, 150, 800, 230] },
-  figado: { desenhar: LaminaFigado, partes: PARTES_FIGADO },
+  colon: {
+    desenhar: LaminaColon,
+    partes: PARTES_COLON,
+    areaDiagnostica: [200, 150, 800, 230],
+    // caliciformes na superfície e nas criptas: vale a região sob o toque
+    contem: { 'cripta-intestinal': ['celula-caliciforme'], 'epitelio-simples-cilindrico': ['celula-caliciforme'], 'muscular-externa': ['plexo-mioenterico'] },
+    // criptas e superfície (epitélio simples cilíndrico) em 52–84% de todo campo
+    distratoresExcluidos: ['epitelio-cilindrico-intestino'],
+  },
+  figado: {
+    desenhar: LaminaFigado,
+    partes: PARTES_FIGADO,
+    contem: { 'triade-portal': ['ramo-da-veia-porta', 'ramo-da-arteria-hepatica', 'ducto-biliar'], 'sinusoide-hepatico': ['celula-de-kupffer'] },
+  },
   // o campo precisa conter a ilhota grande (420, 330): sem ela, os ácinos lembram outra glândula serosa
-  pancreas: { desenhar: LaminaPancreas, partes: PARTES_PANCREAS, areaDiagnostica: [360, 270, 480, 390] },
+  pancreas: {
+    desenhar: LaminaPancreas,
+    partes: PARTES_PANCREAS,
+    areaDiagnostica: [360, 270, 480, 390],
+    // o ducto intercalado começa dentro do ácino mas corre entre os ácinos: não entra em "ácino"
+    contem: { 'acino-pancreatico': ['celula-centroacinosa'], 'septo-conjuntivo': ['ducto-interlobular'] },
+  },
 };

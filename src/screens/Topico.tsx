@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ESTAGIOS, LAMINAS, topico } from '../content/index.ts';
+import { ESTAGIOS, LAMINAS, MODELOS_HISTOLOGIA_3D, topico } from '../content/index.ts';
 import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { contarAvancadas } from '../core/session.ts';
@@ -17,6 +17,8 @@ export function TopicoTela() {
   const p = progresso.get(t.id);
   const estagios = ESTAGIOS.filter((e) => e.topicos.includes(t.id));
   const laminas = LAMINAS.filter((l) => l.topicos.includes(t.id));
+  // Modelos 3D da histologia que citam o tópico (o laboratório só lista os que têm desenho registrado).
+  const modelos3d = MODELOS_HISTOLOGIA_3D.filter((m) => m.topicos.includes(t.id));
   const avancadas = contarAvancadas([t]);
 
   return (
@@ -46,6 +48,9 @@ export function TopicoTela() {
           )}
           {estagios.length > 0 && (
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>
+          )}
+          {modelos3d.length > 0 && (
+            <Link to={`/lab3d/histologia?modelo=${modelos3d[0].id}`} className="btn">{estagios.length > 0 ? 'Ver no laboratório 3D da histologia' : 'Ver no laboratório 3D'}</Link>
           )}
           {laminas.length > 0 && (
             <Link to={`/microscopio?lamina=${laminas[0].id}`} className="btn">Ver no microscópio</Link>
