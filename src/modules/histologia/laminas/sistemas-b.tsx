@@ -20,6 +20,37 @@ const seg = (x: number, y: number, c: number, a: number) => {
   const dy = (Math.sin(a) * c) / 2;
   return `M${q(x - dx)} ${q(y - dy)}L${q(x + dx)} ${q(y + dy)}`;
 };
+/** Vários pontos num só caminho, com deslocamentos relativos (texto bem mais curto que pontos absolutos). */
+function pontos(lista: P[]) {
+  let d = '';
+  let px = 0;
+  let py = 0;
+  lista.forEach(([x, y], i) => {
+    const rx = Math.round(x * 10) / 10;
+    const ry = Math.round(y * 10) / 10;
+    d += i ? `m${q(rx - px - 0.01)} ${q(ry - py)}h.01` : `M${q(rx)} ${q(ry)}h.01`;
+    px = rx;
+    py = ry;
+  });
+  return d;
+}
+/** Distância do ponto (x, y) até a borda de um polígono convexo que o contém, na direção a. */
+function raioPoligono(poli: P[], x: number, y: number, a: number) {
+  const c = Math.cos(a);
+  const sn = Math.sin(a);
+  let m = Infinity;
+  poli.forEach(([ax, ay], k) => {
+    const [bx, by] = poli[(k + 1) % poli.length];
+    const ex = bx - ax;
+    const ey = by - ay;
+    const den = c * ey - sn * ex;
+    if (Math.abs(den) < 1e-9) return;
+    const t = ((ax - x) * ey - (ay - y) * ex) / den;
+    const u = ((ax - x) * sn - (ay - y) * c) / den;
+    if (t > 0 && u >= -1e-6 && u <= 1 + 1e-6) m = Math.min(m, t);
+  });
+  return m;
+}
 const circ = (x: number, y: number, r: number) => `M${q(x - r)} ${q(y)}a${q(r)} ${q(r)} 0 1 0 ${q(2 * r)} 0a${q(r)} ${q(r)} 0 1 0 ${q(-2 * r)} 0`;
 /** Elipse girada (a em rad). */
 const elip = (x: number, y: number, rx: number, ry: number, a = 0) => {
@@ -1130,6 +1161,242 @@ export function LaminaFigado(rng: Rng) {
   );
 }
 
+// ---------------------------------------------------------------------------------------------
+export const PARTES_PANCREAS = ['acino-pancreatico', 'celula-centroacinosa', 'ducto-intercalado', 'ilhota-de-langerhans', 'ducto-interlobular', 'septo-conjuntivo'];
+/**
+ * Pâncreas: parte exócrina (ácinos serosos muito juntos, células centroacinosas, ductos intercalados longos; não há
+ * ductos estriados) e parte endócrina (ilhotas de Langerhans, mais pálidas, com capilares). Um septo interlobular
+ * com ducto interlobular e vasos atravessa o campo.
+ */
+export function LaminaPancreas(rng: Rng) {
+  const ilhotas = [
+    { x: 420, y: 330, r: 88 },
+    { x: 815, y: 548, r: 52 },
+  ];
+  const raioIlhota = (il: (typeof ilhotas)[number], a: number) => il.r * (1 + 0.06 * Math.sin(3 * a + il.x) + 0.04 * Math.sin(5 * a + il.y));
+  const naIlhota = (x: number, y: number, m: number) => ilhotas.some((il) => Math.hypot(x - il.x, y - il.y) < raioIlhota(il, Math.atan2(y - il.y, x - il.x)) + m);
+  const septoX = (y: number) => 640 + 36 * Math.sin(y / 170) + 0.07 * y;
+  const ductoY = 196;
+  const vasosY = 468;
+  const septoL = (y: number) => 15 + 3 * Math.sin(y / 60) + 24 * Math.exp(-(((y - ductoY) / 46) ** 2)) + 14 * Math.exp(-(((y - vasosY) / 38) ** 2));
+  const noSepto = (x: number, y: number, m: number) => Math.abs(x - septoX(y)) < septoL(y) + m;
+
+  // ácinos em mosaico irregular (células de Voronoi da grade), quase sem conjuntivo entre eles; recortados junto às
+  // ilhotas e ao septo, para nada ficar desenhado por cima de outra coisa
+  const passo = 50;
+  const centros = grade(rng, passo, [-40, -40, W + 40, H + 40], 0.17).filter(([x, y]) => !naIlhota(x, y, 16) && !noSepto(x, y, 12));
+  const vizinhos = centros.map(([x, y], i) => centros.map((c, j) => j).filter((j) => j !== i && Math.hypot(centros[j][0] - x, centros[j][1] - y) < passo * 1.6));
+  // ductos intercalados: correm entre dois ácinos vizinhos (a fronteira entre eles se alarga para dar lugar ao tubo)
+  const usados = new Set<number>();
+  const ductos: [number, number][] = [];
+  centros.forEach(([x, y], i) => {
+    if (ductos.length >= 18 || usados.has(i) || x < 40 || x > W - 40 || y < 40 || y > H - 40 || rng() > 0.09) return;
+    const j = vizinhos[i].find((k) => !usados.has(k) && Math.hypot(centros[k][0] - x, centros[k][1] - y) < passo * 1.25);
+    if (j === undefined) return;
+    ductos.push([i, j]);
+    for (const k of [i, j, ...vizinhos[i]]) usados.add(k);
+  });
+  const folga = (i: number, j: number) => (ductos.some(([a, b]) => (a === i && b === j) || (a === j && b === i)) ? 14 : 2.2);
+  const cortar = (poli: P[], nx: number, ny: number, c: number): P[] => {
+    const out: P[] = [];
+    poli.forEach((a, k) => {
+      const b = poli[(k + 1) % poli.length];
+      const da = nx * a[0] + ny * a[1] - c;
+      const db = nx * b[0] + ny * b[1] - c;
+      if (da <= 0) out.push(a);
+      if (da * db < 0) {
+        const t = da / (da - db);
+        out.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]);
+      }
+    });
+    return out;
+  };
+  const area = (poli: P[]) => Math.abs(poli.reduce((s, [x0, y0], k) => s + x0 * poli[(k + 1) % poli.length][1] - poli[(k + 1) % poli.length][0] * y0, 0)) / 2;
+  const centroacinosas = new Set<number>(ductos.flat());
+  let basal = '';
+  let apical = '';
+  const gr: P[] = [];
+  let limites = '';
+  const nucs: P[] = [];
+  const luz: P[] = [];
+  let centroCel = '';
+  let centroNuc = '';
+  const espN = new Espaco();
+  centros.forEach(([x, y], i) => {
+    // começa por um octógono de raio limitado: junto ao septo e às ilhotas o ácino não se estica para ocupar o vão
+    let poli = Array.from({ length: 8 }, (_, k): P => [x + Math.cos((Math.PI * k) / 4 + 0.39) * 33, y + Math.sin((Math.PI * k) / 4 + 0.39) * 33]);
+    for (const j of vizinhos[i]) {
+      const [qx, qy] = centros[j];
+      const d = Math.hypot(qx - x, qy - y);
+      const ux = (qx - x) / d;
+      const uy = (qy - y) / d;
+      poli = cortar(poli, ux, uy, ux * (x + qx) / 2 + uy * (y + qy) / 2 - folga(i, j) / 2);
+    }
+    for (const il of ilhotas) {
+      const d = Math.hypot(il.x - x, il.y - y);
+      if (d > il.r + 90) continue;
+      const ux = (il.x - x) / d;
+      const uy = (il.y - y) / d;
+      poli = cortar(poli, ux, uy, ux * il.x + uy * il.y - raioIlhota(il, Math.atan2(-uy, -ux)) - 4);
+    }
+    const sx = septoX(y);
+    if (Math.abs(x - sx) < 120) poli = x < sx ? cortar(poli, 1, 0, sx - septoL(y) - 3) : cortar(poli, -1, 0, -(sx + septoL(y) + 3));
+    if (poli.length < 3 || area(poli) < 900) return;
+    // o centro precisa ficar bem dentro do perfil (senão núcleos e grânulos cairiam fora do ácino, no conjuntivo)
+    if (Array.from({ length: 12 }, (_, k) => raioPoligono(poli, x, y, (Math.PI * k) / 6)).some((r) => !(r >= 13 && r < 40))) return;
+    basal += pg(poli);
+    apical += pg(poli.map(([px, py]): P => [x + (px - x) * 0.56, y + (py - y) * 0.56]));
+    const comCentro = centroacinosas.has(i) || rng() < 0.5;
+    // 7 células por perfil de ácino: limites radiais do centro à borda, núcleo redondo na base, grânulos no ápice
+    const n = 7;
+    const giro = entre(rng, 0, 1);
+    for (let k = 0; k < n; k++) {
+      const a = (2 * Math.PI * k) / n + giro;
+      const rb = raioPoligono(poli, x, y, a);
+      limites += `M${q(x + Math.cos(a) * 3)} ${q(y + Math.sin(a) * 3)}l${q(Math.cos(a) * (rb - 3))} ${q(Math.sin(a) * (rb - 3))}`;
+      const am = a + Math.PI / n;
+      const rn = raioPoligono(poli, x, y, am) * 0.76;
+      const nx = x + Math.cos(am) * rn;
+      const ny = y + Math.sin(am) * rn;
+      if (espN.tentar(nx, ny, 3.4)) nucs.push([nx, ny]);
+      for (let g = 0; g < 2; g++) {
+        const ag = a + (Math.PI / n) * entre(rng, 0.3, 1.7);
+        const dg = raioPoligono(poli, x, y, ag) * entre(rng, comCentro ? 0.3 : 0.12, 0.5);
+        gr.push([x + Math.cos(ag) * dg, y + Math.sin(ag) * dg]);
+      }
+    }
+    if (comCentro) {
+      // célula centroacinosa: início do ducto intercalado dentro do ácino; citoplasma muito pálido, núcleo claro ovoide
+      const a = entre(rng, 0, Math.PI);
+      centroCel += elip(x, y, 6, 4.2, a);
+      centroNuc += elip(x, y, 2.9, 1.9, a);
+    } else luz.push([x, y]);
+  });
+  let ductoParede = '';
+  let ductoLuz = '';
+  let ductoNuc = '';
+  for (const [i, j] of ductos) {
+    const [x1, y1] = centros[i];
+    const [x2, y2] = centros[j];
+    const mx = (x1 + x2) / 2;
+    const my = (y1 + y2) / 2;
+    const a = Math.atan2(y2 - y1, x2 - x1) + Math.PI / 2;
+    const c = Math.cos(a);
+    const sn = Math.sin(a);
+    const L = 12;
+    ductoParede += `M${q(mx - c * L)} ${q(my - sn * L)}L${q(mx + c * L)} ${q(my + sn * L)}`;
+    ductoLuz += `M${q(mx - c * (L + 3))} ${q(my - sn * (L + 3))}L${q(mx + c * (L + 3))} ${q(my + sn * (L + 3))}`;
+    for (let t = -L + 3; t <= L - 2; t += 7.5)
+      for (const lado of [-1, 1]) ductoNuc += seg(mx + c * (t + (lado > 0 ? 3.5 : 0)) - sn * 3.5 * lado, my + sn * (t + (lado > 0 ? 3.5 : 0)) + c * 3.5 * lado, 3.2, a);
+  }
+
+  // ilhotas de Langerhans: cordões de células pálidas com núcleos redondos e capilares entre eles
+  let ilCel = '';
+  let ilNuc = '';
+  let ilCap = '';
+  let ilHem = '';
+  let ilBorda = '';
+  for (const il of ilhotas) {
+    const contorno = Array.from({ length: 36 }, (_, k): P => {
+      const a = (2 * Math.PI * k) / 36;
+      return [il.x + Math.cos(a) * raioIlhota(il, a), il.y + Math.sin(a) * raioIlhota(il, a)];
+    });
+    ilBorda += pg(contorno);
+    const caps: P[][] = [];
+    const nCap = il.r > 70 ? 4 : 2;
+    for (let k = 0; k < nCap; k++) {
+      const a = entre(rng, 0, Math.PI) + (k * Math.PI) / nCap;
+      const pts: P[] = [];
+      for (let t = -1; t <= 1.001; t += 0.125) {
+        const u = t * il.r * 0.92;
+        const v = Math.sin(t * 3 + k) * il.r * 0.12 + (k - (nCap - 1) / 2) * il.r * 0.3;
+        pts.push([il.x + Math.cos(a) * u - Math.sin(a) * v, il.y + Math.sin(a) * u + Math.cos(a) * v]);
+      }
+      const dentro = pts.filter(([px, py]) => naIlhota(px, py, -6));
+      if (dentro.length > 3) caps.push(dentro);
+    }
+    for (const c of caps) {
+      ilCap += lin(c);
+      reamostrar(c, 9, 4).forEach((a, k) => {
+        if (k % 2 === 0) ilHem += pt(a.x, a.y);
+      });
+    }
+    const esp = new Espaco();
+    for (const [x, y] of grade(rng, 12.5, [il.x - il.r - 10, il.y - il.r - 10, il.x + il.r + 10, il.y + il.r + 10], 0.1)) {
+      if (!naIlhota(x, y, -6) || caps.some((c) => distLinha(c, x, y) < 6.5)) continue;
+      ilCel += pg(hexagono(rng, x, y, 7));
+      if (esp.tentar(x, y, 3)) ilNuc += pt(x + entre(rng, -0.7, 0.7), y + entre(rng, -0.7, 0.7));
+    }
+  }
+
+  // septo interlobular, ducto interlobular (epitélio cúbico a cilíndrico baixo, conjuntivo denso em volta) e vasos
+  const yy = Array.from({ length: 38 }, (_, k) => -20 + k * 20);
+  const septo = pg([...yy.map((y): P => [septoX(y) - septoL(y), y]), ...[...yy].reverse().map((y): P => [septoX(y) + septoL(y), y])]);
+  const dx = septoX(ductoY);
+  const dy = ductoY;
+  let ductoILCel = '';
+  let ductoILNuc = '';
+  const nIL = 16;
+  for (let k = 0; k < nIL; k++) {
+    const a0 = (2 * Math.PI * k) / nIL;
+    const a1 = (2 * Math.PI * (k + 1)) / nIL;
+    const em = (a: number, r: number): P => [dx + Math.cos(a) * r, dy + Math.sin(a) * r];
+    ductoILCel += pg([em(a0, 13), em(a1, 13), em(a1, 23), em(a0, 23)]);
+    const am = (a0 + a1) / 2;
+    ductoILNuc += seg(...em(am, 19.5), 2.6, am);
+  }
+  const vx = septoX(vasosY);
+
+  return (
+    <>
+      <E id="septo-conjuntivo">
+        {/* conjuntivo: trama fina entre os ácinos, mais espesso nos septos */}
+        <rect x={-10} y={-10} width={W + 20} height={H + 20} fill="#f1c1d7" />
+        <path d={septo} fill={HE.colageno} />
+        <Deco>
+          {Array.from({ length: 14 }, (_, k) => {
+            const y = entre(rng, 0, H);
+            return <path key={k} d={seg(septoX(y) + entre(rng, -septoL(y) + 6, septoL(y) - 6), y, 8, Math.PI / 2 + entre(rng, -0.3, 0.3))} stroke={HE.nucleo} strokeWidth={2.4} strokeLinecap="round" />;
+          })}
+        </Deco>
+        {vaso(rng, vx - 9, vasosY - 10, 9, true, 'a')}
+        {vaso(rng, vx + 7, vasosY + 12, 13, false, 'v')}
+      </E>
+      <E id="acino-pancreatico">
+        <path d={basal} fill="#9c80c8" stroke="#f1c1d7" strokeWidth={1.6} />
+        <path d={apical} fill="#ee9cbe" />
+        <path d={pontos(gr)} stroke="#d9406f" strokeWidth={2.4} strokeLinecap="round" />
+        <path d={limites} stroke="#7d62b2" strokeWidth={0.7} />
+        <path d={pontos(nucs)} stroke="#33266e" strokeWidth={6.6} strokeLinecap="round" />
+        <path d={pontos(luz)} stroke={HE.luz} strokeWidth={2.6} strokeLinecap="round" />
+      </E>
+      <E id="celula-centroacinosa">
+        <path d={centroCel} fill="#f7e9f1" stroke="#cfa9c2" strokeWidth={0.8} />
+        <path d={centroNuc} fill="#7d6ab6" />
+      </E>
+      <E id="ducto-intercalado">
+        <path d={ductoParede} stroke="#ecc3d7" strokeWidth={11} strokeLinecap="round" fill="none" />
+        <path d={ductoLuz} stroke="#fbf3f7" strokeWidth={3} strokeLinecap="round" fill="none" />
+        <path d={ductoNuc} stroke={HE.nucleo} strokeWidth={2.3} strokeLinecap="round" />
+      </E>
+      <E id="ilhota-de-langerhans">
+        <path d={ilBorda} fill="#f3dbe7" stroke="#d6a6c2" strokeWidth={1.6} />
+        <path d={ilCel} fill="#f0d0e0" stroke="#dcb1c8" strokeWidth={0.6} />
+        <path d={ilCap} stroke="#e4b3cb" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ilCap} stroke={HE.luz} strokeWidth={5.4} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        <path d={ilHem} stroke={HE.hemacia} strokeWidth={4.4} strokeLinecap="round" />
+        <path d={ilNuc} stroke="#6652a6" strokeWidth={5.2} strokeLinecap="round" />
+      </E>
+      <E id="ducto-interlobular">
+        <circle cx={dx} cy={dy} r={33} fill="#e891b7" />
+        <path d={ductoILCel} fill="#f0b6cf" stroke="#cf7ea6" strokeWidth={0.8} />
+        <path d={ductoILNuc} stroke={HE.nucleo} strokeWidth={4.2} strokeLinecap="round" />
+        <circle cx={dx} cy={dy} r={13} fill={HE.luz} />
+      </E>
+    </>
+  );
+}
+
 export const LAMINAS_SISTEMAS_B: Record<string, LaminaRender> = {
   // o campo de 10× precisa pegar o epitélio e a muscular da mucosa, não só a submucosa ou a muscular externa
   esofago: { desenhar: LaminaEsofago, partes: PARTES_ESOFAGO, areaDiagnostica: [200, 160, 800, 250] },
@@ -1138,4 +1405,6 @@ export const LAMINAS_SISTEMAS_B: Record<string, LaminaRender> = {
   // o campo precisa pegar as criptas (mucosa até y≈300), não só a submucosa e a muscular externa
   colon: { desenhar: LaminaColon, partes: PARTES_COLON, areaDiagnostica: [200, 150, 800, 230] },
   figado: { desenhar: LaminaFigado, partes: PARTES_FIGADO },
+  // o campo precisa conter a ilhota grande (420, 330): sem ela, os ácinos lembram outra glândula serosa
+  pancreas: { desenhar: LaminaPancreas, partes: PARTES_PANCREAS, areaDiagnostica: [360, 270, 480, 390] },
 };

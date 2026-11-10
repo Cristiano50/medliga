@@ -134,10 +134,10 @@
       "definicao": "Célula cilíndrica que reveste a superfície e as fossetas gástricas; secreta muco neutro, PAS-positivo, e bicarbonato, formando a barreira que protege a mucosa do ácido."
     },
     {
-      "id": "glandula-gastrica",
-      "nome": "Glândula gástrica",
+      "id": "glandula-fundica",
+      "nome": "Glândula fúndica",
       "sinonimos": [
-        "glândula fúndica",
+        "glândula gástrica propriamente dita",
         "glândula oxíntica"
       ],
       "definicao": "Glândula tubulosa longa do corpo e do fundo, com istmo (células-tronco), colo e base; contém células mucosas do colo, parietais, principais e enteroendócrinas."
@@ -342,7 +342,7 @@
       "id": "hirschsprung-biopsia-retal",
       "titulo": "Doença de Hirschsprung: a biópsia retal",
       "descricao": "O diagnóstico é histológico. Pela diretriz europeia (ERNICA, 2026), a biópsia — por sucção ou aberta — é colhida da parede posterior ou lateral do reto, pelo menos 2 cm acima da linha pectínea (denteada), e precisa conter submucosa representativa. Qualquer célula ganglionar vista na HE exclui a doença; na ausência delas, a calretinina negativa e a atividade aumentada de acetilcolinesterase nas fibras da mucosa apoiam o diagnóstico, e troncos nervosos hipertróficos na submucosa são achado típico. A base embriológica e a genética estão nos tópicos de sistema digestório e de crista neural.",
-      "mecanismo": "Logo acima da linha pectínea há uma zona normalmente pobre em células ganglionares, onde a biópsia daria falso resultado. No segmento agangliônico faltam os neurônios entéricos e suas fibras calretinina-positivas, enquanto fibras colinérgicas extrínsecas se multiplicam na mucosa."
+      "mecanismo": "Logo acima da linha pectínea há uma zona normalmente pobre em células ganglionares, onde a biópsia poderia simular aganglionose. No segmento agangliônico faltam os neurônios entéricos e suas fibras calretinina-positivas, enquanto fibras colinérgicas extrínsecas se multiplicam na mucosa."
     },
     {
       "id": "adenocarcinoma-gastrico",
@@ -359,11 +359,11 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Na lâmina própria, logo abaixo do epitélio"
+          "texto": "Na lâmina própria, logo abaixo do epitélio de revestimento"
         },
         {
           "id": "b",
-          "texto": "Na submucosa, entre os vasos de maior calibre"
+          "texto": "Na submucosa, entre os vasos sanguíneos de maior calibre"
         },
         {
           "id": "c",
@@ -371,7 +371,7 @@
         },
         {
           "id": "d",
-          "texto": "Na serosa, junto ao mesotélio que reveste o órgão"
+          "texto": "Na serosa, junto ao mesotélio que reveste a superfície do órgão"
         }
       ],
       "correta": "c",
@@ -436,7 +436,7 @@
         },
         {
           "id": "d",
-          "texto": "Muco neutro e bicarbonato"
+          "texto": "Muco neutro, rico em glicoproteínas, e bicarbonato"
         }
       ],
       "correta": "b",
@@ -529,7 +529,7 @@
         },
         {
           "id": "b",
-          "texto": "Jejuno; secretar enzimas que digerem proteínas na luz intestinal"
+          "texto": "Jejuno; secretar as enzimas que digerem as proteínas na luz intestinal"
         },
         {
           "id": "c",
@@ -696,7 +696,7 @@
       "alternativas": [
         {
           "id": "a",
-          "texto": "Ataque autoimune às células parietais: sem ácido, sobe a gastrina (que estimula as ECL); sem fator intrínseco, falta B12"
+          "texto": "Ataque autoimune às parietais: sem ácido, a gastrina sobe e estimula as ECL; sem fator intrínseco, falta B12"
         },
         {
           "id": "b",
@@ -1036,7 +1036,7 @@
       "tipo": "vf",
       "enunciado": "Na doença de Hirschsprung, a imuno-histoquímica para calretinina mostra fibras nervosas positivas abundantes na lâmina própria do segmento agangliônico.",
       "correta": false,
-      "explicacao": "Falso. A calretinina marca os neurônios entéricos e suas fibras intrínsecas, que faltam no segmento agangliônico: o resultado é negativo, o que apoia o diagnóstico. A acetilcolinesterase, ao contrário, mostra atividade aumentada nas fibras colinérgicas extrínsecas da mucosa (ERNICA, 2026).",
+      "explicacao": "Falso. A calretinina marca os neurônios entéricos e suas fibras intrínsecas, que faltam no segmento agangliônico: o resultado é negativo, o que apoia o diagnóstico (a diretriz ressalva que pode haver fibras positivas no segmento agangliônico a 1–2 cm da zona de transição). A acetilcolinesterase, ao contrário, mostra atividade aumentada nas fibras colinérgicas extrínsecas da mucosa (ERNICA, 2026).",
       "dificuldade": 4,
       "bloom": "aplicar",
       "tags": [

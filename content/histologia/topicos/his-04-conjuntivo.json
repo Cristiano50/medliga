@@ -1005,6 +1005,169 @@
         "variedades-do-conjuntivo"
       ],
       "referencia": "Junqueira 14ª ed., cap. 5; Ross 8ª ed., cap. 6"
+    },
+    {
+      "id": "his-04-q26",
+      "tipo": "associar",
+      "enunciado": "Cenário experimental: fibroblastos humanos normais são cultivados em cinco condições diferentes. Associe cada condição ao defeito esperado na matriz extracelular que eles produzem:",
+      "pares": [
+        {
+          "esquerda": "Meio sem ácido ascórbico",
+          "direita": "Cadeias pró-α pouco hidroxiladas e tripla hélice instável"
+        },
+        {
+          "esquerda": "Meio com quelante de cobre",
+          "direita": "Fibrilas de colágeno e fibras elásticas sem ligações cruzadas estáveis"
+        },
+        {
+          "esquerda": "Inibidor das peptidases que removem os propeptídeos",
+          "direita": "Pró-colágeno secretado que não se agrega normalmente em fibrilas"
+        },
+        {
+          "esquerda": "Silenciamento do gene FBN1",
+          "direita": "Microfibrilas deficientes, sem arcabouço para a deposição de elastina"
+        },
+        {
+          "esquerda": "Silenciamento do gene COL3A1",
+          "direita": "Falta do colágeno que forma as fibras reticulares"
+        }
+      ],
+      "explicacao": "A vitamina C (ácido ascórbico) é cofator das hidroxilases de prolina e lisina; sem ela, as cadeias pró-α ficam pouco hidroxiladas e a tripla hélice é instável, como no escorbuto. A lisil-oxidase, que forma as ligações cruzadas do colágeno e da elastina (desmosina e isodesmosina), depende de cobre; um quelante de cobre a inativa. Os propeptídeos impedem a agregação do pró-colágeno dentro da célula e são removidos por peptidases depois da exocitose; sem essa remoção, não se forma o tropocolágeno, e as moléculas não se agregam normalmente em fibrilas. FBN1 codifica a fibrilina-1 das microfibrilas, arcabouço para a deposição da elastina (defeito da síndrome de Marfan). COL3A1 codifica o colágeno III, que forma as fibras reticulares (defeito da síndrome de Ehlers-Danlos vascular).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "sintese-do-colageno",
+        "fibras-elasticas",
+        "doencas-da-matriz",
+        "cenario-experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 5; Ross 8ª ed., cap. 6"
+    },
+    {
+      "id": "his-04-q27",
+      "tipo": "multipla",
+      "contexto": "Na autópsia de um homem de 34 anos, alto, com dedos longos e ectopia do cristalino, que morreu subitamente por dissecção da aorta ascendente, cortes da túnica média da aorta são corados pela técnica de Verhoeff. As lâminas elásticas, que normalmente aparecem como faixas pretas contínuas e paralelas, estão fragmentadas e rarefeitas, e entre elas há áreas de matriz mucoide, pálidas na HE.",
+      "enunciado": "Qual alteração primária explica esse quadro histológico?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Mutação em COL3A1, que reduz o colágeno III da parede de vasos e vísceras"
+        },
+        {
+          "id": "b",
+          "texto": "Deleção do gene ELN, que reduz a síntese da elastina amorfa das fibras"
+        },
+        {
+          "id": "c",
+          "texto": "Falta de vitamina C, que impede a hidroxilação do colágeno da túnica média"
+        },
+        {
+          "id": "d",
+          "texto": "Mutação em FBN1, que altera as microfibrilas e a regulação do TGF-β"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Alta estatura, aracnodactilia, ectopia do cristalino e dissecção da aorta compõem a síndrome de Marfan, por mutações em FBN1. A fibrilina-1 forma as microfibrilas que servem de arcabouço às fibras elásticas e regulam a disponibilidade de TGF-β. A técnica de Verhoeff cora as fibras elásticas em preto e mostra, na média da aorta, fragmentação e perda das lâminas elásticas com acúmulo de matriz mucoide (degeneração da média, antes chamada necrose cística da média) (d). (a) Mutações em COL3A1 causam a síndrome de Ehlers-Danlos vascular, com pele fina e translúcida e rupturas de artérias, intestino e útero, sem ectopia do cristalino nem hábito marfanoide. (b) A deleção de ELN ocorre na síndrome de Williams, com estenose aórtica supravalvar, e não com dilatação e dissecção da aorta num paciente marfanoide. (c) A falta de vitamina C causa escorbuto, com sangramentos e má cicatrização, e não esse quadro.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "marfan",
+        "fibras-elasticas",
+        "verhoeff",
+        "aorta",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 1 e 5; Halushka et al., Cardiovasc Pathol 2016"
+    },
+    {
+      "id": "his-04-q28",
+      "tipo": "multipla",
+      "contexto": "Cenário experimental: em camundongos adultos, uma manipulação genética elimina quase todos os monócitos do sangue. Ao longo de várias semanas, os macrófagos residentes de vários órgãos mantêm seu número. Quando se provoca uma inflamação aguda na pele desses animais, porém, quase não se acumulam macrófagos no local, ao contrário do que ocorre nos animais-controle.",
+      "enunciado": "Qual conclusão os resultados sustentam?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Os residentes se mantêm sem monócitos; os recrutados na inflamação derivam deles"
+        },
+        {
+          "id": "b",
+          "texto": "Macrófagos residentes e recrutados dependem igualmente dos monócitos do sangue"
+        },
+        {
+          "id": "c",
+          "texto": "Os macrófagos que se acumulam na inflamação dos controles derivam de fibroblastos"
+        },
+        {
+          "id": "d",
+          "texto": "Sem monócitos, macrófagos residentes migram para a pele e substituem os recrutados"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os residentes mantiveram seu número sem monócitos, o que indica renovação no próprio tecido, e a inflamação quase não recrutou macrófagos, o que mostra que os recrutados derivam de monócitos (a). Isso é compatível com o que se sabe hoje: parte dos macrófagos residentes vem de precursores embrionários e se renova localmente, enquanto os que chegam na inflamação derivam de monócitos do sangue. O experimento, sozinho, não prova a origem embrionária dos residentes; para isso seriam necessários estudos de rastreamento de linhagem. (b) Se os residentes dependessem igualmente de monócitos, seu número cairia após semanas sem monócitos. (c) Fibroblastos sintetizam a matriz e não se transformam em macrófagos; nos animais sem monócitos, foi a falta destes que impediu o acúmulo. (d) O acúmulo de macrófagos na pele inflamada praticamente não ocorreu, o que exclui a substituição por residentes vindos de outros órgãos.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "macrofago",
+        "monocito",
+        "origem-celular",
+        "cenario-experimental"
+      ],
+      "referencia": "Ross 8ª ed., cap. 6; Junqueira 14ª ed., cap. 5"
+    },
+    {
+      "id": "his-04-q29",
+      "tipo": "multipla",
+      "contexto": "Homem de 35 anos tem, 10 minutos após uma picada de vespa, urticária generalizada, broncoespasmo e hipotensão. A triptase sérica colhida 1 hora após o início dos sintomas está elevada; uma nova dosagem, feita 48 horas depois, está normal.",
+      "enunciado": "Como interpretar as duas dosagens de triptase?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A triptase vem dos plasmócitos e mede a IgE específica produzida contra o veneno"
+        },
+        {
+          "id": "b",
+          "texto": "A elevação aguda reflete a degranulação de mastócitos e apoia a anafilaxia"
+        },
+        {
+          "id": "c",
+          "texto": "A normalização em 48 horas mostra que o quadro foi vasovagal, e não anafilaxia"
+        },
+        {
+          "id": "d",
+          "texto": "A triptase basal normal exclui a mastocitose como fator de risco de novas reações"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A triptase é uma protease dos grânulos dos mastócitos. Na anafilaxia, a triptase sérica sobe a partir de cerca de 15 minutos, tem pico entre 1 e 2 horas e depois volta ao nível basal; por isso a dosagem de 1 hora elevada, comparada à basal normal (colhida pelo menos 24 horas depois), documenta a degranulação aguda e apoia o diagnóstico (b). Uma triptase normal na fase aguda, ao contrário, não exclui anafilaxia. (a) Os plasmócitos produzem os anticorpos, inclusive a IgE, mas não a triptase, que não mede IgE. (c) A normalização é esperada depois do episódio; o que importa é a elevação na fase aguda. (d) Segundo a diretriz da WAO (2020), uma triptase basal normal não exclui mastocitose.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "mastocito",
+        "triptase",
+        "anafilaxia",
+        "caso-clinico"
+      ],
+      "referencia": "Cardona et al., diretriz da WAO 2020, World Allergy Organ J (texto integral); Junqueira 14ª ed., cap. 5"
+    },
+    {
+      "id": "his-04-q30",
+      "tipo": "vf",
+      "enunciado": "No tipo hipermóvel da síndrome de Ehlers-Danlos, o mais comum, o diagnóstico é confirmado pela identificação de mutação em COL5A1, como no tipo clássico.",
+      "correta": false,
+      "explicacao": "Falso. Pela classificação internacional de 2017, o tipo hipermóvel, o mais comum, ainda não tem gene identificado, de modo que nenhum teste genético o confirma. Mutações em COL5A1 ou COL5A2 causam o tipo clássico, e mutações em COL3A1, o tipo vascular.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "ehlers-danlos",
+        "colageno",
+        "classificacao"
+      ],
+      "referencia": "Malfait et al., Am J Med Genet C 2017"
     }
   ],
   "referencias": [
@@ -1057,7 +1220,8 @@
     "Valores numéricos das forças de Starling e da proporção de colágeno no peso corporal foram omitidos por variarem entre as obras.",
     "Maior frequência do queloide em pessoas de pele negra: afirmação qualitativa presente em Junqueira e Robbins; percentuais não foram incluídos.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
-    "Momento ideal de coleta da triptase omitido; o texto usa \"primeiras horas\" (a WAO 2020 indica coleta nas primeiras horas após o início dos sintomas). Guia brasileiro de anafilaxia (ASBAI) não conferido; a frase de tratamento é atribuída à WAO 2020 (revisão de patologia/clínica, 09/11/2026)."
+    "Momento ideal de coleta da triptase omitido; o texto usa \"primeiras horas\" (a WAO 2020 indica coleta nas primeiras horas após o início dos sintomas). Guia brasileiro de anafilaxia (ASBAI) não conferido; a frase de tratamento é atribuída à WAO 2020 (revisão de patologia/clínica, 09/11/2026).",
+    "Camada avançada (redator, 2026-11-10), q29: a cinética da triptase foi conferida no texto integral da WAO 2020 (Cardona et al., PMC7607509): 'serum tryptase levels are increased from 15 min to 3 h or even longer, after the onset; levels peak between 1 and 2 h'; níveis elevados apoiam o diagnóstico, e normais não o excluem; triptase basal 'at least 24 h after'; 'neither does a normal baseline tryptase' exclui mastocitose. q26 e q28 são cenários experimentais didáticos, hipotéticos, construídos só com fatos já revisados do tópico; o resultado da q28 é compatível com a literatura sobre a origem dos macrófagos, mas não reproduz um experimento publicado específico. q30 usa a classificação de 2017 já citada no tópico (Malfait et al.), cujo texto integral não foi lido nesta etapa."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",

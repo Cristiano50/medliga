@@ -1107,6 +1107,169 @@
         "cilios"
       ],
       "referencia": "Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+    },
+    {
+      "id": "his-02-q26",
+      "tipo": "multipla",
+      "contexto": "Jovem de 19 anos, trabalhador rural do interior de Mato Grosso do Sul, com um tio que teve a mesma doença, apresenta há 3 meses erosões superficiais e crostas na face, no couro cabeludo e no tronco, que começaram como bolhas flácidas e se romperam logo. Não há lesões na boca nem em outras mucosas. A biópsia mostra clivagem logo abaixo do estrato córneo, com queratinócitos acantolíticos junto à camada granulosa. A imunofluorescência direta da pele perilesional mostra IgG na superfície dos queratinócitos.",
+      "enunciado": "Qual perfil de autoanticorpos é esperado e por que as mucosas ficam poupadas?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Antidesmogleína 3; nas mucosas, a desmogleína 1 predomina e compensa a perda de adesão"
+        },
+        {
+          "id": "b",
+          "texto": "Antidesmogleína 1; nas mucosas, a desmogleína 3, predominante, mantém a adesão celular"
+        },
+        {
+          "id": "c",
+          "texto": "Anti-BP180; o hemidesmossomo da mucosa tem composição diferente do hemidesmossomo da pele"
+        },
+        {
+          "id": "d",
+          "texto": "Antidesmogleínas 1 e 3; as mucosas não têm desmossomos e por isso não são afetadas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O quadro é de pênfigo foliáceo endêmico (fogo selvagem), frequente em áreas rurais do Centro-Oeste brasileiro, em adultos jovens e com casos na família. Os autoanticorpos IgG se dirigem à desmogleína 1, mais expressa nas camadas superficiais da epiderme, e a acantólise ocorre logo abaixo do estrato córneo, junto à camada granulosa. Pela teoria da compensação das desmogleínas, nas mucosas predomina a desmogleína 3, que mantém a adesão mesmo com a desmogleína 1 bloqueada; por isso o pênfigo foliáceo não acomete mucosas (b). (a) Anticorpos contra a desmogleína 3 caracterizam o pênfigo vulgar, que costuma começar pela mucosa oral e tem clivagem suprabasal; e é a desmogleína 3, não a 1, que predomina nas mucosas. (c) Anti-BP180 é o perfil do penfigoide bolhoso, com bolha subepidérmica e depósito linear na zona da membrana basal, e não na superfície dos queratinócitos. (d) Os epitélios das mucosas têm desmossomos (o pênfigo vulgar, por exemplo, costuma começar pela boca), e anticorpos contra as duas desmogleínas não poupariam a mucosa. Note que a imunofluorescência direta, com IgG na superfície dos queratinócitos, não distingue o pênfigo foliáceo do vulgar: a distinção vem do nível da clivagem, da clínica e da pesquisa de anticorpos contra cada desmogleína (ELISA).",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "penfigo-foliaceo",
+        "fogo-selvagem",
+        "desmogleinas",
+        "desmossomo",
+        "caso-clinico"
+      ],
+      "referencia": "Porro et al., consenso da SBD sobre pênfigos, An Bras Dermatol 2019 (texto integral); Ross 8ª ed., cap. 5"
+    },
+    {
+      "id": "his-02-q27",
+      "tipo": "multipla",
+      "contexto": "Homem de 52 anos tem, há 1 ano, bolhas tensas e erosões no dorso das mãos, nos cotovelos e nos joelhos, que surgem após pequenos traumas e cicatrizam deixando cicatrizes atróficas e milia. A biópsia mostra clivagem subepidérmica com pouco infiltrado inflamatório, e a imunofluorescência direta da pele perilesional mostra IgG e C3 lineares na zona da membrana basal. Na imunofluorescência indireta, usa-se pele humana normal tratada com NaCl 1 mol/L, que separa a epiderme da derme na altura da lâmina lúcida (técnica do salt-split): o soro do paciente marca só o assoalho (lado dérmico) da fenda.",
+      "enunciado": "Contra qual componente da junção dermoepidérmica os autoanticorpos são mais provavelmente dirigidos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "BP180 (colágeno XVII), proteína transmembrana do hemidesmossomo"
+        },
+        {
+          "id": "b",
+          "texto": "Desmogleína 1, caderina dos desmossomos das camadas superficiais"
+        },
+        {
+          "id": "c",
+          "texto": "Colágeno VII, principal componente das fibrilas de ancoragem"
+        },
+        {
+          "id": "d",
+          "texto": "BP230, proteína da placa citoplasmática do hemidesmossomo"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "No salt-split, a fenda se forma na lâmina lúcida: a célula basal e seus hemidesmossomos ficam no teto, e a lâmina densa e as fibrilas de ancoragem, situadas abaixo dela (sublâmina densa), ficam no assoalho; o BP180, que atravessa a lâmina lúcida, pode aparecer no teto ou nos dois lados. Marcação só no assoalho, num paciente com fragilidade cutânea em áreas de trauma, cicatrizes atróficas e milia, é o padrão clássico da epidermólise bolhosa adquirida, em que os autoanticorpos se dirigem ao colágeno VII das fibrilas de ancoragem (c). (a) e (d) No penfigoide bolhoso, os anticorpos anti-BP180 e anti-BP230 marcam o lado epidérmico (teto) ou os dois lados da fenda, e não só o assoalho. (b) Anticorpos antidesmogleína 1 (pênfigo foliáceo) causam clivagem intraepidérmica, logo abaixo do estrato córneo, com IgG na superfície dos queratinócitos, e não depósito linear na zona da membrana basal.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "epidermolise-bolhosa-adquirida",
+        "colageno-vii",
+        "juncao-dermoepidermica",
+        "imunofluorescencia",
+        "caso-clinico"
+      ],
+      "referencia": "Santi et al., consenso da SBD sobre penfigoides e EBA, An Bras Dermatol 2019 (texto integral); Ross 8ª ed., cap. 5 e 15"
+    },
+    {
+      "id": "his-02-q28",
+      "tipo": "multipla",
+      "contexto": "Cenário experimental: um traçador elétron-denso solúvel é colocado na luz do intestino de um animal, e o epitélio é examinado ao microscópio eletrônico de transmissão. O traçador cobre as microvilosidades, mas não penetra no espaço entre os enterócitos. Num segundo grupo de animais, antes do traçador, aplica-se um tratamento que desfaz seletivamente as zônulas de oclusão, sem alterar as demais junções.",
+      "enunciado": "Qual resultado é esperado no segundo grupo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O traçador fica retido na luz, porque a zônula de adesão também veda o espaço intercelular"
+        },
+        {
+          "id": "b",
+          "texto": "O traçador entra entre as células, mas para nos desmossomos, que formam um cinturão contínuo"
+        },
+        {
+          "id": "c",
+          "texto": "O traçador entra nas células pelas junções comunicantes e chega ao conjuntivo pelo citoplasma"
+        },
+        {
+          "id": "d",
+          "texto": "O traçador percorre o espaço intercelular, pela via paracelular, até a região da lâmina basal"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A zônula de oclusão, a junção mais apical, funde pontualmente as membranas vizinhas por meio de claudinas e ocludina e é a única do complexo juncional que veda a via paracelular. Sem ela, nada mais barra o traçador entre as células: ele desce pelo espaço intercelular até a região da lâmina basal (d). (a) A zônula de adesão, faixa de E-caderina ligada à actina, une as células sem fundir as membranas e não veda a via paracelular. (b) Os desmossomos são máculas, junções em forma de disco, e não um cinturão: o traçador passa entre eles. (c) Os canais das junções comunicantes ligam o citoplasma de uma célula ao da vizinha; não comunicam a luz com o interior da célula nem levam substâncias ao conjuntivo.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "juncoes",
+        "zonula-de-oclusao",
+        "via-paracelular",
+        "cenario-experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+    },
+    {
+      "id": "his-02-q29",
+      "tipo": "multipla",
+      "contexto": "Menino de 7 anos, nascido a termo, precisou de suporte respiratório nos primeiros dias de vida e desde então tem tosse produtiva diária, rinite persistente e otites de repetição. A radiografia mostra situs inversus total, e o óxido nítrico nasal está muito baixo. Na videomicroscopia, os cílios do epitélio nasal batem de forma rígida e anormal, e a alteração persiste após cultura das células. Na microscopia eletrônica, os axonemas têm o padrão 9+2, com os braços de dineína presentes.",
+      "enunciado": "Qual é a interpretação mais adequada desse conjunto de exames?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A DCP segue provável: a ultraestrutura normal não a exclui, e a genética pode confirmá-la"
+        },
+        {
+          "id": "b",
+          "texto": "A ultraestrutura normal exclui a DCP, e o quadro deve ser atribuído à fibrose cística"
+        },
+        {
+          "id": "c",
+          "texto": "É discinesia ciliar secundária a infecções, já que os braços de dineína estão presentes"
+        },
+        {
+          "id": "d",
+          "texto": "O situs inversus decorre de defeito das microvilosidades, e não dos cílios do nó primitivo"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A ultraestrutura normal ao microscópio eletrônico não exclui a discinesia ciliar primária (DCP): parte dos pacientes tem axonemas de aspecto normal, com defeitos que só a videomicroscopia ou o teste genético revelam. Aqui os demais dados apontam para DCP: sintomas respiratórios desde o período neonatal num recém-nascido a termo, rinite e otites persistentes, situs inversus, óxido nítrico nasal baixo e batimento anormal que persiste após cultura. A diretriz da ERS (2017) recomenda prosseguir a investigação quando a ultraestrutura é normal e a suspeita clínica é forte, e o teste genético pode confirmar o diagnóstico (a). (b) Além de a ultraestrutura normal não excluir a DCP, na fibrose cística os cílios são estruturalmente normais, e o defeito do CFTR não explica o situs inversus. (c) As alterações do batimento secundárias a infecção ou inflamação tendem a desaparecer após a cultura das células, e uma discinesia adquirida não explicaria o situs inversus, que é congênito. (d) A lateralidade depende dos cílios do nó primitivo; microvilosidades não têm axonema nem batimento.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "discinesia-ciliar-primaria",
+        "cilios",
+        "microscopia-eletronica",
+        "caso-clinico"
+      ],
+      "referencia": "Lucas et al., diretriz da ERS, Eur Respir J 2017 (texto integral); Junqueira 14ª ed., cap. 4"
+    },
+    {
+      "id": "his-02-q30",
+      "tipo": "vf",
+      "enunciado": "O pênfigo neonatal, causado pela passagem placentária de IgG materna, é mais raro em filhos de mães com pênfigo foliáceo do que em filhos de mães com pênfigo vulgar, porque na pele do recém-nascido a desmogleína 3 predomina sobre a desmogleína 1.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A IgG materna atravessa a placenta e pode causar lesões transitórias no recém-nascido. No pênfigo foliáceo, os anticorpos se dirigem à desmogleína 1; como na pele do recém-nascido predomina a desmogleína 3, que mantém a adesão entre os queratinócitos (o mesmo mecanismo de compensação que poupa as mucosas no adulto), o pênfigo foliáceo neonatal é mais raro que o pênfigo vulgar neonatal, em que os anticorpos atingem justamente a desmogleína 3.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "penfigo-neonatal",
+        "desmogleinas",
+        "placenta",
+        "integracao"
+      ],
+      "referencia": "Porro et al., consenso da SBD sobre pênfigos, An Bras Dermatol 2019 (texto integral); Moore 11ª ed., cap. 7"
     }
   ],
   "referencias": [
@@ -1149,6 +1312,18 @@
     {
       "obra": "Shapiro AJ, Davis SD, Polineni D, et al. Diagnosis of primary ciliary dyskinesia: an official American Thoracic Society clinical practice guideline. Am J Respir Crit Care Med. 2018;197(12):e24-e39",
       "capitulo": "Recomendações diagnósticas"
+    },
+    {
+      "obra": "Porro AM, Hans Filho G, Santi CG. Consensus on the treatment of autoimmune bullous dermatoses: pemphigus vulgaris and pemphigus foliaceus - Brazilian Society of Dermatology. An Bras Dermatol. 2019;94(2 Suppl 1):20-32. doi:10.1590/abd1806-4841.2019940206. PMID 31166407 (texto integral: PMC6544031)",
+      "capitulo": "Pênfigo foliáceo e fogo selvagem (epidemiologia, teoria da compensação das desmogleínas, histopatologia, imunofluorescência, forma neonatal) — questões avançadas q26 e q30"
+    },
+    {
+      "obra": "Santi CG, Gripp AC, Roselino AM, et al. Consensus on the treatment of autoimmune bullous dermatoses: bullous pemphigoid, mucous membrane pemphigoid and epidermolysis bullosa acquisita - Brazilian Society of Dermatology. An Bras Dermatol. 2019;94(2 Suppl 1):33-47. doi:10.1590/abd1806-4841.2019940207. PMID 31166405 (texto integral: PMC6544032)",
+      "capitulo": "Penfigoide bolhoso e epidermólise bolhosa adquirida (imunofluorescência, técnica do salt-split, colágeno VII das fibrilas de ancoragem) — questão avançada q27"
+    },
+    {
+      "obra": "Moore KL, Persaud TVN, Torchia MG. Embriologia Clínica, 11ª ed. Rio de Janeiro: GEN Guanabara Koogan; 2020",
+      "capitulo": "7 — Placenta e membranas fetais (transporte de IgG materna) — questão avançada q30; conteúdo já revisado no tópico emb-09"
     }
   ],
   "notasDivergencia": [
@@ -1157,14 +1332,17 @@
     "Esôfago de Barrett: as diretrizes norte-americana (ACG, 2022) e britânica (BSG, 2014) exigem epitélio colunar visível à endoscopia estendendo-se 1 cm ou mais acima da junção esofagogástrica; o ACG exige metaplasia intestinal com células caliciformes, e a BSG aceita epitélio colunar sem caliciformes. A questão adotou a definição com caliciformes, e a vinheta (cerca de 3 cm) satisfaz as duas.",
     "Carcinoma basocelular: descrito como derivado de células semelhantes às basais da epiderme; há evidência de origem também em células-tronco do folículo piloso. O conteúdo usa 'células semelhantes às basais'.",
     "Nomenclatura do colo uterino: o termo 'carcinoma in situ' está incluído na categoria 'lesão intraepitelial escamosa de alto grau' (HSIL/NIC 3); a questão usa os dois termos.",
-    "Situs inversus na discinesia ciliar primária: Robbins e outros textos dizem 'cerca de metade'; séries clínicas dão 47,7% de situs inversus total em 337 pacientes (PMID 17515466) e 38,5% em 559 pacientes (PMID 36342963, 2023), além de ~6% de heterotaxia. Faixa adotada: 40–50%."
+    "Situs inversus na discinesia ciliar primária: Robbins e outros textos dizem 'cerca de metade'; séries clínicas dão 47,7% de situs inversus total em 337 pacientes (PMID 17515466) e 38,5% em 559 pacientes (PMID 36342963, 2023), além de ~6% de heterotaxia. Faixa adotada: 40–50%.",
+    "Lâmina lúcida na técnica do salt-split (questão avançada q27): o consenso da SBD (2019) e a dermatopatologia descrevem a clivagem induzida pelo NaCl 1 mol/L 'na lâmina lúcida', embora Ross registre que a lâmina lúcida pode ser artefato de fixação. A q27 usa a terminologia do consenso; o raciocínio cobrado (o que fica no teto e o que fica no assoalho em relação à lâmina densa) não depende dessa discussão."
   ],
   "incertezas": [
     "Números de capítulos da 14ª ed. de Junqueira (4 e 18), da 8ª ed. de Ross (5 e 15) e da 5ª ed. de Kierszenbaum (1) citados de memória, com base nas edições anteriores; conferir.",
     "Tempos de renovação do epitélio intestinal e da epiderme foram omitidos porque os valores variam entre as obras.",
     "Situs inversus na discinesia ciliar primária: resolvido pelo revisor (faixa 40–50%, ver notasDivergencia).",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
-    "Proporção de pacientes com discinesia ciliar primária e ultraestrutura ciliar normal: varia entre as séries e foi omitida (revisão de patologia/clínica, 09/11/2026); o conteúdo diz apenas \"parte dos pacientes\"."
+    "Proporção de pacientes com discinesia ciliar primária e ultraestrutura ciliar normal: varia entre as séries e foi omitida (revisão de patologia/clínica, 09/11/2026); o conteúdo diz apenas \"parte dos pacientes\".",
+    "Camada avançada (redator, 2026-11-10), q26, q27 e q30: conferidas no texto integral dos consensos da SBD de 2019. Pênfigos (Porro et al., PMC6544031): no pênfigo foliáceo, 'cleavage below the stratum corneum ... with acantholytic keratinocytes in or adjacent to the granulosa layer' e lesões que 'do not compromise the mucous membranes'; 'Dsg-1 expression is more intense in the upper portions of the epidermis, whereas ... Dsg-3 predominates in the lower layers of the epidermis and in mucous membranes'; 'Neither DIF nor IIF distinguishes PF from PV'; fogo selvagem em adultos jovens de áreas rurais, com casos na família, sobretudo no Centro-Oeste; 'Neonatal pemphigus foliaceus is rarer than neonatal PV, due to the predominance of Dsg-3 compared with Dsg-1 in the newborn's skin'. Penfigoides e EBA (Santi et al., PMC6544032): salt-split com NaCl 1 M e clivagem na lâmina lúcida; IgG no lado epidérmico (ou nos dois lados) no penfigoide e no lado dérmico na EBA; colágeno VII como principal componente das fibrilas de ancoragem da sublâmina densa; forma mecanobolhosa da EBA com fragilidade em áreas de trauma, cicatrizes atróficas e milia.",
+    "Camada avançada, q29: a diretriz da ERS de 2017 (texto integral, PMC6054534) diz que a ultraestrutura normal não exclui a DCP ('16% PCD positive patients have TEM without a detectable defect'), recomenda prosseguir a investigação quando a ultraestrutura é normal e a suspeita clínica é forte e registra que alterações secundárias do batimento ciliar se normalizam após cultura. O percentual não foi usado no conteúdo, que continua dizendo 'parte dos pacientes'. q28 é cenário experimental didático, hipotético, construído só com fatos já revisados do tópico."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",

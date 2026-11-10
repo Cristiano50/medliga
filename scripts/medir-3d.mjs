@@ -199,7 +199,7 @@ async function main() {
           for (let i = 1; i <= 45; i++) {
             await page.mouse.move(x0 + Math.sin(i / 45 * Math.PI * 2) * caixa.width * 0.3, y0 + Math.sin(i / 15) * 12);
             await page.waitForTimeout(16);
-            if (i === 30) dprMovimento = await page.evaluate(() => { const c = document.querySelector('.palco3d canvas'); return +(c.width / c.getBoundingClientRect().width).toFixed(3); });
+            if (i === 30) dprMovimento = await page.evaluate(() => { const c = document.querySelector('.palco3d canvas'); return c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null; });
           }
           await page.mouse.up();
           const fimGiro = await page.evaluate(() => window.__glMedida.quadro);
@@ -208,7 +208,7 @@ async function main() {
             const qs = window.__glMedida.quadros.filter((q) => q.id > a && q.id <= b);
             const intervalos = qs.slice(1).map((q, i) => q.inicio - qs[i].inicio);
             const c = document.querySelector('.palco3d canvas');
-            return { quadros: qs.length, intervalos, envio: qs.map((q) => q.fim - q.inicio), dprDepois: +(c.width / c.getBoundingClientRect().width).toFixed(3), diag: window.__diag3d?.monitor ?? null };
+            return { quadros: qs.length, intervalos, envio: qs.map((q) => q.fim - q.inicio), dprDepois: c ? +(c.width / c.getBoundingClientRect().width).toFixed(3) : null, diag: window.__diag3d?.monitor ?? null };
           }, [antes, fimGiro]);
           giro.dprMovimento = dprMovimento;
           giro.medianaMs = mediana(giro.intervalos);

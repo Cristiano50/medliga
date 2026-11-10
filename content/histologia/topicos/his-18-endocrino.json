@@ -1,0 +1,1255 @@
+{
+  "id": "his-18-endocrino",
+  "disciplina": "histologia",
+  "ordem": 18,
+  "titulo": "Glândulas endócrinas",
+  "subtitulo": "Hipófise, tireoide, paratireoides, suprarrenais, pineal e ilhotas pancreáticas",
+  "objetivos": [
+    "Descrever as partes da hipófise, os tipos celulares da adeno-hipófise e seus hormônios e a organização da neuro-hipófise.",
+    "Explicar o sistema porta hipotálamo-hipofisário e o controle hipotalâmico da adeno-hipófise, inclusive a inibição da prolactina pela dopamina.",
+    "Descrever o folículo tireoidiano, ordenar as etapas da síntese e da secreção de T3 e T4 e localizar as células C.",
+    "Caracterizar as células principais e oxífilas das paratireoides e relacionar o PTH ao osso e ao rim.",
+    "Diferenciar as zonas do córtex suprarrenal quanto à histologia, aos produtos e à regulação, e descrever a medula e as células cromafins.",
+    "Descrever a pineal e as ilhotas pancreáticas no nível histológico.",
+    "Correlacionar a histologia com doença de Graves, tireoidite de Hashimoto, bócio, carcinoma papilífero, tumores hipofisários, síndrome de Sheehan, síndrome de Cushing, feocromocitoma e insuficiência suprarrenal."
+  ],
+  "resumo": "As **glândulas endócrinas** lançam hormônios no sangue: não têm ductos e são ricamente vascularizadas, em geral por **capilares fenestrados**. A maioria tem arranjo **cordonal**; a tireoide, **folicular** (his-03). A origem embrionária de cada uma está no emb-25.\n\n**Hipófise.** Na sela turca, liga-se ao hipotálamo pela haste. A **adeno-hipófise** compreende a **parte distal** (a maior), a **parte tuberal**, em torno da haste, e a **parte intermédia**, rudimentar no ser humano, com pequenos cistos de coloide. Na parte distal, cordões de células alternam-se com capilares sinusoides. Pela afinidade tintorial, há células **acidófilas** — **somatotrofos** (GH) e **lactotrofos** (prolactina) —, **basófilas**, PAS-positivas — **corticotrofos** (ACTH, derivado da pró-opiomelanocortina), **tireotrofos** (TSH) e **gonadotrofos** (FSH e LH) — e **cromófobas**, de citoplasma pouco corado (células desgranuladas, indiferenciadas e foliculoestreladas). A identificação segura de cada tipo exige imuno-histoquímica.\n\nO hipotálamo controla a adeno-hipófise pelo **sistema porta hipotálamo-hipofisário**: neurônios hipotalâmicos liberam hormônios liberadores (TRH, CRH, GnRH, GHRH) e inibidores (somatostatina e **dopamina**, que inibe a prolactina) num **plexo capilar primário** na eminência mediana; **veias porta** descem pela haste até o **plexo secundário**, os sinusoides da parte distal, que recebe quase todo o seu sangue por essa via.\n\nA **neuro-hipófise** (eminência mediana, haste infundibular e **parte nervosa**) não é epitelial: tem axônios amielínicos de neurônios dos núcleos **supraóptico** e **paraventricular** (trato hipotálamo-hipofisário), que sintetizam **ADH (vasopressina)** e **ocitocina**, cada um ligado à sua neurofisina. Os grânulos acumulam-se em dilatações axonais, os **corpos de Herring**, e são liberados junto a capilares fenestrados. Os **pituícitos** são células gliais e não secretam hormônios.\n\n**Tireoide.** A unidade é o **folículo**: epitélio simples de **tirócitos** em torno do **coloide**, rico em **tireoglobulina**, acidófilo e PAS-positivo. O epitélio é baixo no folículo em repouso e alto sob estímulo do TSH, quando o coloide diminui e mostra vacúolos de reabsorção na periferia. O tirócito sintetiza tireoglobulina e a lança no coloide; capta iodeto pelo **simportador Na⁺/I⁻ (NIS)** da membrana basolateral e o transfere ao coloide; na interface apical, a **tireoperoxidase** oxida o iodeto, **iodeta** resíduos de tirosina da tireoglobulina (MIT e DIT) e os **acopla** em T3 e T4. Sob TSH, o tirócito **endocita** coloide; as vesículas fundem-se a **lisossomos**, que digerem a tireoglobulina e liberam sobretudo T4, além de T3, para os capilares. É a única glândula endócrina que armazena grande quantidade de hormônio fora das células. As **células C (parafoliculares)**, maiores e mais claras, ficam na parede do folículo sem tocar o coloide ou em grupos entre os folículos e secretam **calcitonina** (his-07).\n\n**Paratireoides.** Em geral quatro, na face posterior da tireoide, com cordões de **células principais** — pequenas, de núcleo central, que secretam **PTH** e percebem a calcemia pelo **receptor sensível ao cálcio** — e **células oxífilas**, maiores, muito acidófilas pelas numerosas mitocôndrias, raras na criança, mais frequentes com a idade e de função incerta. Os adipócitos do estroma também aumentam com a idade. O PTH eleva a calcemia: no osso, via osteoblastos (his-07); no rim, aumenta a reabsorção de cálcio no néfron distal, reduz a de fosfato no túbulo proximal e estimula ali a formação de calcitriol (his-17).\n\n**Suprarrenal.** O **córtex** é formado por células produtoras de **esteroides** — retículo endoplasmático liso abundante, mitocôndrias de cristas tubulares e gotículas lipídicas, sem grânulos de secreção — dispostas em três zonas:\n- **glomerulosa**: delgada, sob a cápsula, com células em arcos ou grupos ovoides; secreta **aldosterona**, regulada sobretudo pela angiotensina II e pelo potássio;\n- **fasciculada**: a mais espessa, com cordões de uma ou duas células separados por sinusoides; células claras e vacuolizadas (**espongiócitos**), cujos lipídios se dissolvem no preparo; secreta **cortisol**, sob ACTH;\n- **reticular**: cordões anastomosados de células menores e acidófilas, com lipofuscina; secreta **androgênios** (DHEA e DHEA-S) e algum cortisol, sob ACTH.\n\nA **medula** tem **células cromafins**, neurônios pós-ganglionares simpáticos modificados, inervados por fibras pré-ganglionares, com grânulos de **adrenalina** ou de **noradrenalina**, que os sais de cromo tornam castanhos (reação cromafim). Os sinusoides do córtex chegam à medula com sangue rico em cortisol, que induz a enzima formadora de adrenalina; artérias medulares levam sangue direto à medula; tudo drena para a veia central.\n\n**Pineal.** No epitálamo, recoberta pela pia-máter: **pinealócitos**, de núcleo claro e irregular e prolongamentos que terminam junto a capilares, secretam **melatonina** à noite, sob comando do núcleo supraquiasmático por meio de fibras simpáticas do gânglio cervical superior; há também astrócitos e concreções calcificadas, a **areia cerebral**, que aumentam com a idade.\n\n**Ilhotas pancreáticas.** Grupos de células mais claros que os ácinos no HE, com capilares fenestrados: células **β** (insulina; as mais numerosas), **α** (glucagon), **δ** (somatostatina), **PP** (polipeptídeo pancreático) e **ε** (grelina), distinguidas por imuno-histoquímica. O pâncreas como glândula mista é tratado no his-15; a origem das ilhotas, no emb-25.\n\n**Correlações.** Doença de Graves e tireoidite de Hashimoto (hiperplasia × destruição autoimune), bócio, carcinoma papilífero (diagnóstico pelos **núcleos**), tumores hipofisários, síndrome de Cushing, feocromocitoma e insuficiência suprarrenal.",
+  "pontosChave": [
+    "Adeno-hipófise: acidófilas (GH, prolactina), basófilas PAS-positivas (ACTH, TSH, FSH, LH) e cromófobas; o tipo exato só é definido por imuno-histoquímica.",
+    "A parte distal recebe quase todo o sangue pelo sistema porta, que traz os hormônios hipotalâmicos; a dopamina inibe a prolactina.",
+    "Neuro-hipófise: axônios dos núcleos supraóptico e paraventricular (ADH e ocitocina), corpos de Herring e pituícitos, que são gliais.",
+    "Folículo tireoidiano: tirócitos em torno de coloide de tireoglobulina; sob estímulo do TSH, epitélio alto e coloide escasso, com vacúolos de reabsorção.",
+    "Síntese de T3 e T4: NIS basolateral → oxidação, iodação e acoplamento pela tireoperoxidase na interface apical → endocitose do coloide e digestão lisossômica.",
+    "Células C: na parede do folículo, sem contato com o coloide, ou entre os folículos; secretam calcitonina.",
+    "Paratireoide: células principais (PTH; receptor sensível ao cálcio) e oxífilas (ricas em mitocôndrias; aumentam com a idade).",
+    "Córtex suprarrenal: glomerulosa (aldosterona; angiotensina II e K⁺), fasciculada (cortisol; ACTH) e reticular (androgênios; ACTH).",
+    "Medula suprarrenal: células cromafins, neurônios simpáticos pós-ganglionares modificados, que secretam adrenalina e noradrenalina.",
+    "Pineal: pinealócitos secretam melatonina no escuro; a areia cerebral aumenta com a idade.",
+    "Carcinoma papilífero: núcleos em vidro fosco com sulcos e pseudoinclusões, papilas e corpos psamomatosos; carcinoma folicular: invasão da cápsula ou de vasos.",
+    "ACTH suprimido (glicocorticoide exógeno ou adenoma cortical) atrofia as zonas fasciculada e reticular e poupa a glomerulosa."
+  ],
+  "estruturas": [
+    {
+      "id": "adeno-hipofise",
+      "nome": "Adeno-hipófise",
+      "sinonimos": [
+        "lobo anterior da hipófise"
+      ],
+      "definicao": "Parte epitelial da hipófise: parte distal (a maior), parte tuberal, em torno da haste, e parte intermédia, rudimentar no ser humano. Na parte distal, cordões de células acidófilas, basófilas e cromófobas alternam-se com capilares sinusoides.",
+      "origem": "Bolsa de Rathke (ver emb-25)."
+    },
+    {
+      "id": "neuro-hipofise",
+      "nome": "Neuro-hipófise",
+      "sinonimos": [
+        "lobo posterior da hipófise"
+      ],
+      "definicao": "Parte neural da hipófise (eminência mediana, haste infundibular e parte nervosa), formada por axônios amielínicos de neurônios dos núcleos supraóptico e paraventricular, pituícitos e capilares fenestrados; armazena e libera ADH e ocitocina.",
+      "origem": "Infundíbulo do diencéfalo (ver emb-25)."
+    },
+    {
+      "id": "celulas-acidofilas-hipofise",
+      "nome": "Células acidófilas da adeno-hipófise",
+      "sinonimos": [],
+      "definicao": "Células cromófilas de citoplasma corado pela eosina: somatotrofos, que secretam GH, e lactotrofos, que secretam prolactina."
+    },
+    {
+      "id": "celulas-basofilas-hipofise",
+      "nome": "Células basófilas da adeno-hipófise",
+      "sinonimos": [],
+      "definicao": "Células cromófilas de citoplasma basófilo e PAS-positivo: corticotrofos (ACTH, da pró-opiomelanocortina), tireotrofos (TSH) e gonadotrofos (FSH e LH)."
+    },
+    {
+      "id": "celulas-cromofobas",
+      "nome": "Células cromófobas",
+      "sinonimos": [],
+      "definicao": "Células da adeno-hipófise de citoplasma pouco corado, com poucos grânulos de secreção: células desgranuladas, indiferenciadas e foliculoestreladas."
+    },
+    {
+      "id": "sistema-porta-hipofisario",
+      "nome": "Sistema porta hipotálamo-hipofisário",
+      "sinonimos": [
+        "sistema porta hipofisário"
+      ],
+      "definicao": "Plexo capilar primário na eminência mediana, veias porta na haste e plexo secundário de sinusoides na parte distal; leva os hormônios hipotalâmicos liberadores e inibidores à adeno-hipófise."
+    },
+    {
+      "id": "corpos-de-herring",
+      "nome": "Corpos de Herring",
+      "sinonimos": [],
+      "definicao": "Dilatações dos axônios hipotalâmicos na neuro-hipófise, cheias de grânulos de neurossecreção (ADH ou ocitocina, com neurofisina); no HE, massas acidófilas homogêneas entre as fibras."
+    },
+    {
+      "id": "pituicito",
+      "nome": "Pituícito",
+      "sinonimos": [],
+      "definicao": "Célula glial da neuro-hipófise, semelhante ao astrócito, que sustenta os axônios; não sintetiza hormônios."
+    },
+    {
+      "id": "foliculo-tireoidiano",
+      "nome": "Folículo tireoidiano",
+      "sinonimos": [],
+      "definicao": "Unidade da tireoide: vesícula de epitélio simples de tirócitos em torno de coloide; o epitélio é baixo no folículo em repouso e alto quando estimulado pelo TSH."
+    },
+    {
+      "id": "coloide",
+      "nome": "Coloide",
+      "sinonimos": [],
+      "definicao": "Conteúdo do folículo tireoidiano, formado sobretudo por tireoglobulina iodada; acidófilo no HE e PAS-positivo; reservatório extracelular de hormônio tireoidiano."
+    },
+    {
+      "id": "tirocito",
+      "nome": "Tirócito",
+      "sinonimos": [
+        "célula folicular da tireoide"
+      ],
+      "definicao": "Célula epitelial do folículo que sintetiza tireoglobulina, capta iodeto pelo NIS basolateral, oxida e incorpora o iodo na interface com o coloide (tireoperoxidase), endocita o coloide e libera T4 e T3."
+    },
+    {
+      "id": "celulas-parafoliculares",
+      "nome": "Células parafoliculares (células C)",
+      "sinonimos": [
+        "células C"
+      ],
+      "definicao": "Células neuroendócrinas maiores e mais claras que os tirócitos, situadas na parede do folículo sem contato com o coloide ou em grupos entre os folículos; secretam calcitonina.",
+      "origem": "Chegam à tireoide pelo corpo ultimofaríngeo (ver emb-25)."
+    },
+    {
+      "id": "celula-principal-paratireoide",
+      "nome": "Célula principal da paratireoide",
+      "sinonimos": [],
+      "definicao": "Célula pequena e poligonal, de núcleo central e citoplasma pouco corado a levemente acidófilo, que secreta PTH e percebe a calcemia pelo receptor sensível ao cálcio."
+    },
+    {
+      "id": "celula-oxifila-paratireoide",
+      "nome": "Célula oxífila da paratireoide",
+      "sinonimos": [],
+      "definicao": "Célula maior que a principal, de citoplasma intensamente acidófilo pelas numerosas mitocôndrias, isolada ou em grupos; rara na criança, aumenta com a idade; função incerta."
+    },
+    {
+      "id": "zona-glomerulosa",
+      "nome": "Zona glomerulosa",
+      "sinonimos": [],
+      "definicao": "Camada externa e delgada do córtex suprarrenal, logo abaixo da cápsula, com células em arcos ou grupos ovoides; secreta aldosterona, regulada sobretudo pela angiotensina II e pelo potássio."
+    },
+    {
+      "id": "zona-fasciculada",
+      "nome": "Zona fasciculada",
+      "sinonimos": [],
+      "definicao": "Camada média e mais espessa do córtex suprarrenal, com cordões retos de uma ou duas células separados por capilares sinusoides; células claras e vacuolizadas (espongiócitos), ricas em lipídios; secreta cortisol sob ACTH."
+    },
+    {
+      "id": "zona-reticular",
+      "nome": "Zona reticular",
+      "sinonimos": [],
+      "definicao": "Camada interna do córtex suprarrenal, com cordões anastomosados de células menores e mais acidófilas, com lipofuscina; secreta androgênios (DHEA e DHEA-S) e algum cortisol, sob ACTH."
+    },
+    {
+      "id": "medula-suprarrenal",
+      "nome": "Medula da suprarrenal",
+      "sinonimos": [],
+      "definicao": "Parte central da suprarrenal, com células cromafins em grupos e cordões, capilares e vênulas que drenam na veia central; secreta adrenalina e noradrenalina sob estímulo de fibras simpáticas pré-ganglionares.",
+      "origem": "Crista neural (ver emb-25)."
+    },
+    {
+      "id": "celula-cromafim",
+      "nome": "Célula cromafim",
+      "sinonimos": [
+        "feocromócito"
+      ],
+      "definicao": "Neurônio pós-ganglionar simpático modificado, sem axônio, com grânulos de adrenalina ou de noradrenalina, que ficam castanhos pela oxidação com sais de cromo (reação cromafim)."
+    },
+    {
+      "id": "glandula-pineal",
+      "nome": "Glândula pineal",
+      "sinonimos": [
+        "epífise cerebral",
+        "corpo pineal"
+      ],
+      "definicao": "Glândula do epitálamo recoberta pela pia-máter, com pinealócitos, astrócitos e concreções calcificadas; secreta melatonina à noite.",
+      "origem": "Teto do diencéfalo (ver emb-25)."
+    },
+    {
+      "id": "pinealocito",
+      "nome": "Pinealócito",
+      "sinonimos": [],
+      "definicao": "Célula principal da pineal, de núcleo grande, claro e irregular e prolongamentos longos que terminam junto a capilares; sintetiza melatonina a partir da serotonina."
+    },
+    {
+      "id": "areia-cerebral",
+      "nome": "Areia cerebral",
+      "sinonimos": [
+        "acérvulos",
+        "corpos arenáceos"
+      ],
+      "definicao": "Concreções lamelares de sais de cálcio no estroma da pineal, que aumentam com a idade e tornam a glândula visível em exames de imagem."
+    },
+    {
+      "id": "ilhotas-pancreaticas",
+      "nome": "Ilhotas pancreáticas (de Langerhans)",
+      "sinonimos": [
+        "ilhotas de Langerhans"
+      ],
+      "definicao": "Grupos de células endócrinas, mais claros que os ácinos no HE e ricos em capilares fenestrados: células β (insulina), α (glucagon), δ (somatostatina), PP e ε (grelina), distinguidas por imuno-histoquímica.",
+      "origem": "Endoderma dos brotos pancreáticos (ver emb-25)."
+    },
+    {
+      "id": "capilar",
+      "nome": "Capilar",
+      "sinonimos": [],
+      "definicao": "Vaso de parede fina, com endotélio; nas glândulas endócrinas, em geral fenestrado (sinusoides na adeno-hipófise e no córtex suprarrenal) e em contato íntimo com as células secretoras."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "his18-sintese-tireoglobulina",
+      "descricao": "O tirócito sintetiza tireoglobulina no retículo endoplasmático granuloso e a lança no coloide por exocitose",
+      "ordem": 1
+    },
+    {
+      "id": "his18-captacao-iodeto",
+      "descricao": "O iodeto do sangue entra no tirócito pelo simportador Na⁺/I⁻ (NIS) da membrana basolateral",
+      "ordem": 1
+    },
+    {
+      "id": "his18-oxidacao-iodeto",
+      "descricao": "Na interface entre a membrana apical e o coloide, a tireoperoxidase oxida o iodeto",
+      "ordem": 2
+    },
+    {
+      "id": "his18-iodacao",
+      "descricao": "Resíduos de tirosina da tireoglobulina são iodados, formando MIT e DIT",
+      "ordem": 3
+    },
+    {
+      "id": "his18-acoplamento",
+      "descricao": "MIT e DIT acoplam-se e formam T3 e T4, ainda ligados à tireoglobulina",
+      "ordem": 4
+    },
+    {
+      "id": "his18-endocitose",
+      "descricao": "Sob estímulo do TSH, o tirócito endocita coloide",
+      "ordem": 5
+    },
+    {
+      "id": "his18-proteolise",
+      "descricao": "As vesículas com coloide fundem-se a lisossomos, que digerem a tireoglobulina",
+      "ordem": 6
+    },
+    {
+      "id": "his18-liberacao",
+      "descricao": "T4 e T3 livres atravessam a membrana basal do tirócito e chegam aos capilares",
+      "ordem": 7
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "doenca-de-graves",
+      "titulo": "Doença de Graves",
+      "descricao": "Causa mais comum de hipertireoidismo endógeno: bócio difuso, tireotoxicose e, com frequência, oftalmopatia (exoftalmia); mais raramente, dermopatia (mixedema pré-tibial). No laboratório, TSH suprimido, hormônios tireoidianos elevados e anticorpos contra o receptor de TSH.",
+      "mecanismo": "Autoanticorpos IgG que estimulam o receptor de TSH imitam o hormônio: os tirócitos hipertrofiam e proliferam. Histologia: folículos com epitélio cilíndrico alto e aglomerado, às vezes pregueado em projeções papilares sem eixo fibrovascular; coloide escasso e pálido, com bordas recortadas por vacúolos de reabsorção; agregados linfoides com centros germinativos no estroma."
+    },
+    {
+      "id": "tireoidite-de-hashimoto",
+      "titulo": "Tireoidite de Hashimoto",
+      "descricao": "Tireoidite autoimune crônica, causa mais comum de hipotireoidismo onde a ingestão de iodo é suficiente; muito mais frequente em mulheres. Bócio firme e indolor (ou, nas fases tardias, glândula pequena), com anticorpos antitireoperoxidase (anti-TPO) e antitireoglobulina. Há maior risco de linfoma B de zona marginal da tireoide.",
+      "mecanismo": "Linfócitos T citotóxicos e mecanismos dependentes de anticorpos destroem os tirócitos. Histologia: infiltrado linfoplasmocitário denso, com folículos linfoides e centros germinativos; folículos tireoidianos pequenos e atróficos; células de Hürthle (tirócitos oncocíticos, de citoplasma granular e intensamente eosinófilo pelo excesso de mitocôndrias); fibrose intersticial variável."
+    },
+    {
+      "id": "bocio",
+      "titulo": "Bócio difuso e multinodular",
+      "descricao": "Aumento da tireoide sem neoplasia, difuso ou multinodular, em geral com função normal; a causa clássica é a deficiência de iodo (bócio endêmico), prevenida pela iodação do sal. Bócios volumosos podem comprimir a traqueia e o esôfago, e um nódulo pode tornar-se autônomo e causar hipertireoidismo (bócio multinodular tóxico).",
+      "mecanismo": "A falta de iodo reduz a síntese hormonal; o TSH sobe e provoca hipertrofia e hiperplasia dos tirócitos (fase hiperplásica). Na fase de involução, os folículos distendem-se com coloide abundante, e o epitélio achata-se (bócio coloide). Ciclos repetidos de hiperplasia e involução, com hemorragia, fibrose e calcificação, formam nódulos de tamanhos variados."
+    },
+    {
+      "id": "carcinoma-papilifero-tireoide",
+      "titulo": "Carcinoma papilífero da tireoide",
+      "descricao": "Neoplasia maligna mais comum da tireoide, em geral de bom prognóstico; a exposição a radiação ionizante, sobretudo na infância, é fator de risco. Apresenta-se como nódulo e, com frequência, já tem metástase em linfonodos cervicais ao diagnóstico. Na diretriz da American Thyroid Association de 2015, a punção aspirativa por agulha fina (PAAF) é o procedimento de escolha para avaliar os nódulos com indicação de investigação, e a citologia é laudada pelas categorias do Sistema Bethesda.",
+      "mecanismo": "Deriva do tirócito, com frequência por mutação ativadora de BRAF (V600E) ou rearranjos de RET. O diagnóstico baseia-se nas características dos núcleos: aumentados, sobrepostos, de cromatina clara (“vidro fosco”, “olhos da órfã Annie”), com sulcos longitudinais e pseudoinclusões intranucleares (invaginações do citoplasma); por isso a citologia pode reconhecê-lo. Papilas com eixo fibrovascular e corpos psamomatosos (calcificações lamelares concêntricas) completam o quadro clássico, mas não são obrigatórios (na variante folicular não há papilas). O carcinoma folicular, ao contrário, não tem esses núcleos e é definido pela invasão da cápsula ou de vasos."
+    },
+    {
+      "id": "tumores-hipofisarios",
+      "titulo": "Tumores da adeno-hipófise (adenomas hipofisários) e síndrome de Sheehan",
+      "descricao": "Os prolactinomas são os tumores hipofisários funcionantes mais comuns (cerca de 40% dos adenomas hipofisários, segundo o PCDT da Hiperprolactinemia): causam galactorreia, alterações menstruais, infertilidade e redução da libido. Outros secretam GH (gigantismo antes do fechamento das placas epifisárias; acromegalia depois) ou ACTH (doença de Cushing), e muitos não são funcionantes. Pelo tamanho, há microadenomas (< 10 mm) e macroadenomas (≥ 10 mm); estes podem comprimir o quiasma óptico (cefaleia e perda de campo visual, classicamente hemianopsia bitemporal) e a hipófise normal (hipopituitarismo). Pelo PCDT, os agonistas dopaminérgicos são a primeira opção no prolactinoma, com a cabergolina como medicamento de escolha para a maioria. Na síndrome de Sheehan, o choque por hemorragia pós-parto causa necrose isquêmica da adeno-hipófise, aumentada na gestação.",
+      "mecanismo": "Proliferação monoclonal de uma linhagem de células da adeno-hipófise: lâminas ou cordões de células monótonas, sem a rede de reticulina que organiza a hipófise normal em ácinos; a imuno-histoquímica identifica o hormônio e a linhagem. Qualquer massa selar que comprima a haste reduz a chegada de dopamina pelo sistema porta e eleva moderadamente a prolactina (em geral abaixo de 100 ng/mL), mesmo sem ser prolactinoma. Na síndrome de Sheehan, a adeno-hipófise depende do sangue portal, de baixa pressão, e sofre isquemia; a neuro-hipófise, irrigada diretamente por artérias, costuma ser poupada."
+    },
+    {
+      "id": "sindrome-de-cushing",
+      "titulo": "Síndrome de Cushing",
+      "descricao": "Excesso de glicocorticoides: obesidade central, face em lua cheia, estrias violáceas largas, pele fina e equimoses, fraqueza muscular proximal, hipertensão, hiperglicemia, osteoporose e alterações psíquicas. A causa mais comum é o uso de glicocorticoides exógenos; entre as causas endógenas predomina a doença de Cushing (tumor corticotrófico hipofisário), e as demais são tumores da suprarrenal e secreção ectópica de ACTH. A diretriz da Endocrine Society (2008) recomenda excluir o uso de glicocorticoides antes dos testes e iniciar a investigação com um teste de alta acurácia: cortisol livre urinário, cortisol salivar no fim da noite ou supressão com dexametasona em dose baixa (1 mg à noite ou 2 mg/dia por 48 horas).",
+      "mecanismo": "ACTH-dependente (doença de Cushing, ACTH ectópico): hiperplasia bilateral das zonas fasciculada e reticular, difusa ou nodular. ACTH-independente (adenoma ou carcinoma cortical): o cortisol do tumor suprime o ACTH, e o córtex adjacente e o da outra suprarrenal atrofiam. Glicocorticoide exógeno: atrofia bilateral das zonas fasciculada e reticular. Nesses dois últimos casos, a zona glomerulosa conserva a espessura, por depender da angiotensina II e do potássio. Na hipófise, o excesso de cortisol produz nos corticotrofos não tumorais a alteração hialina de Crooke."
+    },
+    {
+      "id": "feocromocitoma",
+      "titulo": "Feocromocitoma",
+      "descricao": "Tumor das células cromafins da medula suprarrenal (os equivalentes extra-adrenais são os paragangliomas). Causa hipertensão sustentada ou em crises, com cefaleia, sudorese e palpitações. O diagnóstico é bioquímico, pela dosagem de metanefrinas, de preferência as livres no plasma. Até cerca de 40% dos feocromocitomas e paragangliomas têm causa genética germinativa (por exemplo, RET na neoplasia endócrina múltipla tipo 2, VHL, NF1 e genes SDH), e a avaliação genética faz parte do cuidado (revisão de diretrizes de Casey e Lussey-Lepoutre, 2026).",
+      "mecanismo": "As células tumorais sintetizam catecolaminas e as metabolizam continuamente em metanefrinas. Histologia: ninhos de células poligonais de citoplasma granular (“zellballen”), separados por rede vascular delicada e circundados por células sustentaculares; as células tumorais expressam cromogranina e sinaptofisina, e atipia nuclear pode existir em tumores que nunca dão metástase. Desde a classificação da OMS de 2017, os termos “benigno” e “maligno” foram abandonados; a de 2022 considera todos esses tumores com potencial metastático variável. Escores que somam critérios histológicos (como PASS e GAPP) ajudam a estimar o risco, com variação entre observadores."
+    },
+    {
+      "id": "insuficiencia-suprarrenal",
+      "titulo": "Insuficiência suprarrenal primária (doença de Addison) e central",
+      "descricao": "Primária: fadiga, perda de peso, hipotensão postural, desejo de sal, hiponatremia e hiperpotassemia, com hiperpigmentação da pele e das mucosas; cortisol baixo com ACTH elevado. Em países desenvolvidos, a adrenalite autoimune causa cerca de 70–90% dos casos; numa série de São Paulo citada pelo PCDT, as causas foram autoimune (39%), paracoccidioidomicose (28%), tuberculose (11%) e adrenoleucodistrofia (7,3%). Na insuficiência central, cuja causa mais comum é a supressão do eixo pelo uso prolongado de glicocorticoides, falta o cortisol, mas não há hiperpotassemia nem hiperpigmentação. Pelo PCDT do Ministério da Saúde (2020), a forma primária é tratada com glicocorticoide e fludrocortisona e a central, só com glicocorticoide; na crise addisoniana, o paciente instável deve receber hidrocortisona intravenosa imediatamente, mesmo antes dos testes de confirmação.",
+      "mecanismo": "Na adrenalite autoimune, infiltrado linfocitário destrói o córtex, que fica atrófico, e a medula é poupada; nas infecções granulomatosas (tuberculose, paracoccidioidomicose), a destruição atinge a glândula inteira, inclusive a medula. Sem cortisol, falta a retroalimentação negativa: a hipófise produz mais pró-opiomelanocortina, clivada em ACTH e em MSH, que estimulam os melanócitos. Sem aldosterona (perda da zona glomerulosa), perde-se sódio e retém-se potássio. Na forma central, a zona glomerulosa, regulada pela angiotensina II, continua a produzir aldosterona."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-18-q01",
+      "tipo": "multipla",
+      "enunciado": "Os pituícitos da neuro-hipófise são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Neurônios que sintetizam ADH e ocitocina"
+        },
+        {
+          "id": "b",
+          "texto": "Células endócrinas que secretam prolactina"
+        },
+        {
+          "id": "c",
+          "texto": "Células gliais que sustentam os axônios"
+        },
+        {
+          "id": "d",
+          "texto": "Células cromófobas sem grânulos de secreção"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Os pituícitos são células gliais, semelhantes a astrócitos, que envolvem e sustentam os axônios amielínicos da neuro-hipófise; não sintetizam hormônios (c). ADH e ocitocina são sintetizados no corpo de neurônios dos núcleos supraóptico e paraventricular do hipotálamo e apenas armazenados e liberados na neuro-hipófise (a). A prolactina vem dos lactotrofos da adeno-hipófise (b). As cromófobas (d) são células da adeno-hipófise, de citoplasma pouco corado.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "neuro-hipofise",
+        "pituicito"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q02",
+      "tipo": "multipla",
+      "contexto": "Lâmina de hipófise corada por HE. Ao lado de uma região com cordões de células coradas em rosa ou em roxo entre capilares, há uma região pálida e fibrilar, com núcleos esparsos de células gliais, capilares e massas acidófilas homogêneas, arredondadas e de tamanhos variados entre as fibras.",
+      "enunciado": "As massas acidófilas da região pálida são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Somatotrofos isolados, células acidófilas da hipófise"
+        },
+        {
+          "id": "b",
+          "texto": "Corpos de Herring, dilatações axonais com neurossecreção"
+        },
+        {
+          "id": "c",
+          "texto": "Cistos de coloide da parte intermédia da hipófise"
+        },
+        {
+          "id": "d",
+          "texto": "Corpos psamomatosos, calcificações lamelares concêntricas"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "A região pálida e fibrilar é a parte nervosa da neuro-hipófise, com axônios amielínicos e pituícitos; as massas acidófilas entre as fibras são corpos de Herring, dilatações dos axônios cheias de grânulos de ADH ou de ocitocina com neurofisina (b). Os somatotrofos (a) ficam nos cordões da adeno-hipófise, a outra região descrita, e são células com núcleo. Os cistos de coloide (c) ficam na parte intermédia, entre os dois lobos, e são revestidos por epitélio. Corpos psamomatosos (d) são calcificações concêntricas e basófilas, típicas do carcinoma papilífero e de outros tumores, e não fazem parte da neuro-hipófise normal.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "corpos-de-herring",
+        "neuro-hipofise",
+        "lamina"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q03",
+      "tipo": "multipla",
+      "contexto": "Homem de 54 anos com cefaleia e perda da visão nos campos temporais dos dois olhos. A ressonância mostra macroadenoma hipofisário de 3 cm que comprime o quiasma óptico e desvia a haste. A prolactina está moderadamente elevada, abaixo de 100 ng/mL. Após a cirurgia, a imuno-histoquímica mostra tumor gonadotrófico, sem expressão de prolactina.",
+      "enunciado": "Por que a prolactina estava elevada?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "As células tumorais secretavam pequena quantidade de prolactina"
+        },
+        {
+          "id": "b",
+          "texto": "A compressão do quiasma estimulou a liberação hipotalâmica de TRH"
+        },
+        {
+          "id": "c",
+          "texto": "A neuro-hipófise passou a liberar prolactina em resposta à compressão"
+        },
+        {
+          "id": "d",
+          "texto": "A compressão da haste reduziu a chegada de dopamina aos lactotrofos"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A prolactina é o único hormônio da adeno-hipófise sob controle predominantemente inibitório: a dopamina, liberada por neurônios hipotalâmicos na eminência mediana, chega aos lactotrofos pelas veias porta da haste. Uma massa que comprime ou desvia a haste interrompe esse fluxo, e os lactotrofos normais liberam mais prolactina, em geral em níveis moderados, abaixo de 100 ng/mL (PCDT da Hiperprolactinemia) (d). A imuno-histoquímica negativa para prolactina afasta a secreção pelo tumor, e prolactinomas desse tamanho costumam elevar muito mais a prolactina (a). A compressão do quiasma explica a perda dos campos temporais, mas não estimula o TRH (b). A neuro-hipófise não produz prolactina (c); armazena ADH e ocitocina.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "sistema-porta-hipofisario",
+        "dopamina",
+        "prolactina",
+        "adenoma-hipofisario",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; PCDT da Hiperprolactinemia (MS, 2020)"
+    },
+    {
+      "id": "his-18-q04",
+      "tipo": "multipla",
+      "contexto": "Mulher de 29 anos teve hemorragia pós-parto maciça, com choque. Nas semanas seguintes, não consegue amamentar, não volta a menstruar e refere fadiga, intolerância ao frio e tontura ao levantar-se. Não tem poliúria.",
+      "enunciado": "Qual alteração explica o quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Necrose isquêmica da adeno-hipófise, que cresce na gestação e depende do sangue portal"
+        },
+        {
+          "id": "b",
+          "texto": "Necrose da neuro-hipófise, que recebe sangue apenas pelas veias porta da haste"
+        },
+        {
+          "id": "c",
+          "texto": "Hiperplasia persistente dos lactotrofos, que comprime os demais tipos celulares"
+        },
+        {
+          "id": "d",
+          "texto": "Destruição autoimune dos tirócitos e do córtex suprarrenal após o parto"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na síndrome de Sheehan, a adeno-hipófise, aumentada na gestação pela hiperplasia dos lactotrofos, recebe sangue sobretudo pelo sistema porta, de baixa pressão; com o choque, sofre necrose isquêmica, e faltam prolactina (agalactia), gonadotrofinas (amenorreia), TSH e ACTH (a). A neuro-hipófise (b), irrigada diretamente por ramos arteriais, costuma ser poupada — daí a ausência de poliúria por diabetes insípido. A hiperplasia dos lactotrofos (c) é fisiológica na gestação e regride; não explicaria a falta de prolactina. Uma doença autoimune da tireoide e da suprarrenal (d) não explicaria a agalactia nem a amenorreia, que indicam falta de hormônios hipofisários.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "sindrome-de-sheehan",
+        "adeno-hipofise",
+        "sistema-porta-hipofisario",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q05",
+      "tipo": "multipla",
+      "enunciado": "As células acidófilas da parte distal da adeno-hipófise secretam:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "ACTH e TSH"
+        },
+        {
+          "id": "b",
+          "texto": "GH e prolactina"
+        },
+        {
+          "id": "c",
+          "texto": "FSH e LH"
+        },
+        {
+          "id": "d",
+          "texto": "ADH e ocitocina"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Somatotrofos (GH) e lactotrofos (prolactina) são as células acidófilas (b). Corticotrofos (ACTH) e tireotrofos (TSH) (a), assim como gonadotrofos (FSH e LH) (c), são basófilos e PAS-positivos. ADH e ocitocina (d) são sintetizados no hipotálamo e liberados pela neuro-hipófise.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "adeno-hipofise",
+        "celulas-acidofilas"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q06",
+      "tipo": "multipla",
+      "contexto": "Peça de tireoidectomia de mulher de 32 anos com tireotoxicose, bócio difuso e exoftalmia. Os folículos têm epitélio cilíndrico alto e aglomerado, que forma projeções para a luz sem eixo conjuntivo-vascular; o coloide é escasso e pálido, com bordas recortadas; há agregados linfoides com centros germinativos no estroma.",
+      "enunciado": "Qual mecanismo explica o aspecto do epitélio folicular?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Deficiência de iodo, com TSH elevado por falta de retroalimentação"
+        },
+        {
+          "id": "b",
+          "texto": "Anticorpos contra a tireoperoxidase, com destruição dos tirócitos"
+        },
+        {
+          "id": "c",
+          "texto": "Anticorpos que se ligam ao receptor de TSH e o estimulam"
+        },
+        {
+          "id": "d",
+          "texto": "Mutação ativadora de BRAF num clone de tirócitos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Tireotoxicose com bócio difuso e exoftalmia indica doença de Graves: autoanticorpos IgG estimulam o receptor de TSH e fazem os tirócitos hipertrofiar, proliferar — epitélio alto, pregas papilares sem eixo fibrovascular — e reabsorver coloide intensamente, que fica escasso, pálido e recortado (c). A deficiência de iodo (a) causa bócio com TSH alto, mas a função tende ao normal ou ao hipotireoidismo, sem exoftalmia. A destruição dos tirócitos por anticorpos e linfócitos (b) caracteriza a tireoidite de Hashimoto, com folículos atróficos e hipotireoidismo. A mutação de BRAF (d) é típica do carcinoma papilífero, que forma um nódulo com papilas de eixo fibrovascular e núcleos característicos, e não uma hiperplasia difusa.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "doenca-de-graves",
+        "foliculo-tireoidiano",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q07",
+      "tipo": "multipla",
+      "contexto": "Mulher de 46 anos com hipotireoidismo, bócio firme e indolor e anti-TPO muito elevado. A biópsia mostra infiltrado linfoplasmocitário denso com folículos linfoides e centros germinativos, folículos tireoidianos pequenos com pouco coloide e tirócitos grandes, de citoplasma granular e intensamente eosinófilo.",
+      "enunciado": "Os tirócitos grandes de citoplasma granular e eosinófilo são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Células de Hürthle, tirócitos oncocíticos ricos em mitocôndrias"
+        },
+        {
+          "id": "b",
+          "texto": "Células C, que acumulam calcitonina em grânulos eosinófilos"
+        },
+        {
+          "id": "c",
+          "texto": "Plasmócitos com acúmulo de imunoglobulina no citoplasma"
+        },
+        {
+          "id": "d",
+          "texto": "Tirócitos em apoptose pela ação de linfócitos T citotóxicos"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na tireoidite de Hashimoto, muitos tirócitos sofrem metaplasia oncocítica: as células de Hürthle acumulam mitocôndrias, que dão ao citoplasma aspecto granular e intensamente eosinófilo (a). As células C (b) são claras, ficam na parede dos folículos ou entre eles e não são tirócitos. Plasmócitos (c) fazem parte do infiltrado, mas são células do estroma, de núcleo excêntrico com cromatina em “roda de carroça”, e não tirócitos. Tirócitos em apoptose (d) ficam retraídos, com núcleo picnótico ou fragmentado, e não aumentados com citoplasma granular.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "tireoidite-de-hashimoto",
+        "celula-de-hurthle",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino"
+    },
+    {
+      "id": "his-18-q08",
+      "tipo": "multipla",
+      "contexto": "Mulher de 35 anos com nódulo tireoidiano de 2,5 cm e linfonodo cervical aumentado do mesmo lado. A punção aspirativa por agulha fina mostra células foliculares com núcleos aumentados e sobrepostos, de cromatina clara, com sulcos longitudinais e pseudoinclusões intranucleares. Na peça cirúrgica, há papilas com eixo conjuntivo-vascular e pequenas calcificações lamelares concêntricas.",
+      "enunciado": "Qual é o diagnóstico e o que permitiu sugeri-lo já na citologia?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Carcinoma folicular; a invasão da cápsula e dos vasos"
+        },
+        {
+          "id": "b",
+          "texto": "Carcinoma medular; o estroma amiloide e a calcitonina"
+        },
+        {
+          "id": "c",
+          "texto": "Bócio multinodular; o coloide abundante com hemorragia"
+        },
+        {
+          "id": "d",
+          "texto": "Carcinoma papilífero; as características dos núcleos"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Núcleos claros (“vidro fosco”, “olhos da órfã Annie”), sobrepostos, com sulcos e pseudoinclusões são as características que definem o carcinoma papilífero; como aparecem nas células aspiradas, a citologia pode sugerir o diagnóstico. Papilas com eixo fibrovascular, corpos psamomatosos e metástase em linfonodo cervical completam o quadro típico (d). O carcinoma folicular (a) não tem esses núcleos e é definido pela invasão da cápsula ou de vasos, que a citologia não mostra. O carcinoma medular (b), das células C, tem células poligonais ou fusiformes em estroma amiloide e eleva a calcitonina. O bócio multinodular (c) tem folículos de tamanhos variados com coloide abundante, sem essas alterações nucleares.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "carcinoma-papilifero",
+        "citologia",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Haugen et al., diretriz ATA 2015"
+    },
+    {
+      "id": "his-18-q09",
+      "tipo": "multipla",
+      "enunciado": "Por que a citologia da punção aspirativa por agulha fina não distingue com segurança o adenoma folicular do carcinoma folicular da tireoide?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque os dois têm núcleos em vidro fosco, com sulcos e pseudoinclusões"
+        },
+        {
+          "id": "b",
+          "texto": "Porque o carcinoma é definido pela invasão da cápsula ou de vasos, vista na peça"
+        },
+        {
+          "id": "c",
+          "texto": "Porque o carcinoma folicular deriva das células C, e o adenoma, dos tirócitos"
+        },
+        {
+          "id": "d",
+          "texto": "Porque o adenoma folicular contém corpos psamomatosos, como o carcinoma"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Adenoma e carcinoma foliculares têm células semelhantes, arranjadas em microfolículos; o que define o carcinoma é a invasão transcapsular ou vascular, que só pode ser avaliada no exame histológico da lesão inteira, com sua cápsula (b). Por isso a citologia desses casos é laudada numa categoria de “neoplasia folicular” do Sistema Bethesda. Núcleos em vidro fosco com sulcos e pseudoinclusões (a) são do carcinoma papilífero, e não das lesões foliculares. Adenoma e carcinoma foliculares derivam ambos dos tirócitos (c); das células C deriva o carcinoma medular. Corpos psamomatosos (d) são típicos do carcinoma papilífero.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "carcinoma-folicular",
+        "citologia",
+        "tireoide"
+      ],
+      "referencia": "Haugen et al., diretriz ATA 2015; Robbins & Cotran 10ª ed., Sistema endócrino"
+    },
+    {
+      "id": "his-18-q10",
+      "tipo": "multipla",
+      "enunciado": "Nas paratireoides, as células oxífilas distinguem-se das células principais por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Serem maiores, de citoplasma muito acidófilo e rico em mitocôndrias"
+        },
+        {
+          "id": "b",
+          "texto": "Secretarem calcitonina em resposta à elevação do cálcio sérico"
+        },
+        {
+          "id": "c",
+          "texto": "Armazenarem PTH em coloide dentro de folículos, como a tireoide"
+        },
+        {
+          "id": "d",
+          "texto": "Serem as principais produtoras de PTH durante a infância"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "As células oxífilas são maiores que as principais e têm citoplasma intensamente acidófilo, cheio de mitocôndrias; são raras na criança, aumentam com a idade e sua função é incerta (a). A calcitonina (b) é secretada pelas células C da tireoide. O PTH não é armazenado em coloide extracelular (c); as células principais o guardam em pequenos grânulos e o secretam conforme a calcemia. Na infância, quem produz o PTH são as células principais (d), e as oxífilas são raras.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "paratireoide",
+        "celula-oxifila"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q11",
+      "tipo": "multipla",
+      "contexto": "Homem de 61 anos em hemodiálise por doença renal crônica há oito anos, com dor óssea, fósforo elevado, cálcio baixo e PTH muito elevado. Na paratireoidectomia, as quatro paratireoides estão aumentadas, com proliferação de células principais e redução dos adipócitos do estroma.",
+      "enunciado": "Qual mecanismo explica o aumento das quatro glândulas?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Mutação numa célula principal, com adenoma e supressão das demais glândulas"
+        },
+        {
+          "id": "b",
+          "texto": "Excesso de calcitonina das células C, que abaixa o cálcio e estimula as glândulas"
+        },
+        {
+          "id": "c",
+          "texto": "Retenção de fosfato e menor produção de calcitriol pelos túbulos proximais"
+        },
+        {
+          "id": "d",
+          "texto": "Destruição autoimune das células principais, com regeneração compensatória"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na doença renal crônica, a perda de néfrons reduz a excreção de fosfato e a 1α-hidroxilação da vitamina D, que ocorre no túbulo proximal; com menos calcitriol, cai a absorção intestinal de cálcio. Hipocalcemia, hiperfosfatemia e falta de calcitriol estimulam continuamente as células principais, e as quatro glândulas ficam hiperplásicas: hiperparatireoidismo secundário (c). O adenoma (a) costuma atingir uma só glândula, com hipercalcemia, e as demais ficam normais ou atróficas. A calcitonina (b) não estimula as paratireoides e tem pequeno efeito sobre a calcemia no adulto. A destruição autoimune (d) causa hipoparatireoidismo, com PTH baixo.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "hiperparatireoidismo-secundario",
+        "paratireoide",
+        "doenca-renal-cronica",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Ross 8ª ed., caps. 20 e 21"
+    },
+    {
+      "id": "his-18-q12",
+      "tipo": "multipla",
+      "contexto": "Lâmina de suprarrenal corada por HE, da cápsula para o centro: uma faixa delgada de células em pequenos grupos arqueados; uma faixa larga de cordões retos, de uma ou duas células, separados por capilares, com células claras e vacuolizadas; uma faixa de cordões anastomosados de células menores e acidófilas, com pigmento castanho; e, no centro, grupos de células grandes de citoplasma granular junto a uma veia de parede espessa.",
+      "enunciado": "Qual é o principal produto da faixa de células claras e vacuolizadas e qual é o seu principal regulador?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Aldosterona; angiotensina II e potássio"
+        },
+        {
+          "id": "b",
+          "texto": "Androgênios suprarrenais; LH hipofisário"
+        },
+        {
+          "id": "c",
+          "texto": "Adrenalina; fibras simpáticas pré-ganglionares"
+        },
+        {
+          "id": "d",
+          "texto": "Cortisol; ACTH"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A faixa larga de cordões retos de espongiócitos — células claras porque seus lipídios se dissolvem no preparo — é a zona fasciculada, que secreta cortisol sob controle do ACTH (d). A aldosterona (a) vem da zona glomerulosa, a faixa delgada sob a cápsula, regulada pela angiotensina II e pelo potássio. Os androgênios suprarrenais (b) vêm sobretudo da zona reticular, a faixa de células acidófilas com lipofuscina, e são regulados pelo ACTH, não pelo LH. A adrenalina (c) é das células cromafins da medula, no centro, estimuladas por fibras pré-ganglionares.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "suprarrenal",
+        "zona-fasciculada",
+        "lamina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q13",
+      "tipo": "multipla",
+      "contexto": "Mulher de 41 anos com obesidade central, estrias violáceas largas, hipertensão e fraqueza muscular proximal. Não usa glicocorticoides. Cortisol livre urinário elevado, cortisol não suprimido com dexametasona em dose baixa e ACTH plasmático suprimido. A tomografia mostra nódulo de 3 cm na suprarrenal esquerda.",
+      "enunciado": "Que aspecto histológico se espera no córtex da suprarrenal direita?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Hiperplasia das zonas fasciculada e reticular, estimulada pelo ACTH"
+        },
+        {
+          "id": "b",
+          "texto": "Atrofia das zonas fasciculada e reticular, com glomerulosa preservada"
+        },
+        {
+          "id": "c",
+          "texto": "Destruição do córtex por linfócitos, com a medula preservada"
+        },
+        {
+          "id": "d",
+          "texto": "Atrofia de todas as zonas do córtex, inclusive da glomerulosa"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Hipercortisolismo com ACTH suprimido e nódulo unilateral indica adenoma cortical produtor de cortisol (síndrome de Cushing ACTH-independente). O cortisol do tumor suprime o ACTH, e as zonas fasciculada e reticular do córtex adjacente e da suprarrenal oposta atrofiam; a glomerulosa, regulada pela angiotensina II e pelo potássio, mantém a espessura (b). A hiperplasia bilateral (a) ocorre quando o ACTH está alto (doença de Cushing ou ACTH ectópico). A destruição linfocitária do córtex (c) é a adrenalite autoimune da doença de Addison, com cortisol baixo. A glomerulosa não depende do ACTH e, por isso, não atrofia (d); esses pacientes não têm deficiência de aldosterona.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "sindrome-de-cushing",
+        "zona-fasciculada",
+        "zona-glomerulosa",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q14",
+      "tipo": "multipla",
+      "contexto": "Homem de 38 anos com crises de cefaleia, sudorese e palpitações, com pressão arterial muito elevada durante as crises. As metanefrinas livres plasmáticas estão elevadas, e a tomografia mostra massa de 4 cm na suprarrenal direita. Na peça, há ninhos de células poligonais de citoplasma granular, circundados por células sustentaculares, com núcleos de tamanho variável.",
+      "enunciado": "Sobre o comportamento desse tumor, qual afirmação está correta?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Nenhum aspecto histológico isolado garante que ele não dará metástases"
+        },
+        {
+          "id": "b",
+          "texto": "A variação no tamanho dos núcleos indica, por si só, que ele é maligno"
+        },
+        {
+          "id": "c",
+          "texto": "A presença de células sustentaculares define a malignidade do tumor"
+        },
+        {
+          "id": "d",
+          "texto": "Tumores esporádicos como este não dão metástases a distância"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Os feocromocitomas derivam das células cromafins da medula e reproduzem sua organização em ninhos (“zellballen”) com células sustentaculares. Atipia e pleomorfismo nucleares podem existir em tumores que nunca dão metástase, e tumores de aspecto bem diferenciado podem metastatizar: desde a classificação da OMS de 2017, os termos “benigno” e “maligno” foram abandonados, e a de 2022 considera todos esses tumores com potencial metastático variável; escores que somam vários critérios histológicos apenas estimam o risco (a). A variação no tamanho dos núcleos (b), isoladamente, não basta para afirmar malignidade. As células sustentaculares (c) fazem parte da arquitetura normal da medula e do tumor; não definem malignidade. Tumores esporádicos também podem dar metástases (d), que podem surgir anos depois da cirurgia.",
+      "dificuldade": 4,
+      "bloom": "compreender",
+      "tags": [
+        "feocromocitoma",
+        "celula-cromafim",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; Casey e Lussey-Lepoutre, Endocr Relat Cancer 2026"
+    },
+    {
+      "id": "his-18-q15",
+      "tipo": "multipla",
+      "contexto": "Mulher de 34 anos com fadiga, perda de peso, tontura ao levantar-se, desejo de sal e escurecimento da pele, das cicatrizes e da mucosa oral. Sódio baixo, potássio alto, cortisol baixo e ACTH muito elevado. Anticorpos anti-21-hidroxilase positivos.",
+      "enunciado": "Qual achado histológico é esperado nas suprarrenais e por que a pele escurece?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Granulomas com necrose caseosa; o excesso de cortisol estimula os melanócitos"
+        },
+        {
+          "id": "b",
+          "texto": "Glândulas normais; a necrose hipofisária reduz o ACTH e aumenta a melanina"
+        },
+        {
+          "id": "c",
+          "texto": "Córtex destruído por linfócitos, medula poupada; mais POMC, com ACTH e MSH"
+        },
+        {
+          "id": "d",
+          "texto": "Hiperplasia da zona glomerulosa; a aldosterona estimula os melanócitos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Anticorpos anti-21-hidroxilase indicam adrenalite autoimune, a causa mais comum da doença de Addison em países desenvolvidos: linfócitos destroem o córtex, que fica atrófico, e a medula é poupada. Sem cortisol, a hipófise produz mais pró-opiomelanocortina (POMC), clivada em ACTH e em MSH, que estimulam os melanócitos (c). Granulomas com necrose caseosa (a) sugerem tuberculose — no Brasil, a paracoccidioidomicose também destrói as suprarrenais —, mas o cortisol está baixo, e não alto. A necrose hipofisária (b) causa insuficiência central, com ACTH baixo, sem hiperpigmentação e sem hiperpotassemia. Hiponatremia com hiperpotassemia indica falta, e não excesso, de aldosterona, e a aldosterona não estimula os melanócitos (d).",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "doenca-de-addison",
+        "insuficiencia-suprarrenal",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino; PCDT da Insuficiência Adrenal (MS, 2020)"
+    },
+    {
+      "id": "his-18-q16",
+      "tipo": "vf",
+      "enunciado": "A parte distal da adeno-hipófise recebe a maior parte do seu sangue pelas veias porta hipofisárias, que trazem hormônios hipotalâmicos da eminência mediana.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Os hormônios hipotalâmicos liberadores e inibidores entram no plexo capilar primário da eminência mediana e chegam pelas veias porta da haste aos sinusoides da parte distal, que recebe pouco sangue arterial direto. Essa dependência explica a vulnerabilidade da adeno-hipófise à isquemia (síndrome de Sheehan) e a elevação da prolactina quando a haste é comprimida.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "sistema-porta-hipofisario",
+        "adeno-hipofise"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q17",
+      "tipo": "vf",
+      "enunciado": "O aspecto claro e vacuolizado das células da zona fasciculada no HE deve-se aos lipídios que se dissolvem durante o processamento em parafina.",
+      "correta": true,
+      "explicacao": "Verdadeiro. As células da fasciculada (espongiócitos) acumulam gotículas lipídicas com ésteres de colesterol, precursor dos esteroides; os solventes do processamento em parafina as removem, e o citoplasma fica claro e vacuolizado (ver his-01).",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "zona-fasciculada",
+        "artefato"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q18",
+      "tipo": "vf",
+      "enunciado": "As células C da tireoide alcançam o coloide e secretam calcitonina na luz do folículo.",
+      "correta": false,
+      "explicacao": "Falso. As células C ficam na parede do folículo, entre os tirócitos e a lâmina basal, sem contato com o coloide, ou em grupos entre os folículos; como toda célula endócrina típica, lançam a calcitonina nos capilares, e não na luz do folículo.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "celulas-parafoliculares",
+        "calcitonina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q19",
+      "tipo": "vf",
+      "enunciado": "A iodação da tireoglobulina ocorre no citoplasma do tirócito, antes que ela seja secretada para o coloide.",
+      "correta": false,
+      "explicacao": "Falso. A tireoglobulina é secretada para o coloide ainda sem iodo; a oxidação do iodeto, a iodação dos resíduos de tirosina e o acoplamento em T3 e T4 ocorrem na interface entre a membrana apical e o coloide, catalisados pela tireoperoxidase. Os hormônios só são separados da tireoglobulina depois da endocitose do coloide, nos lisossomos.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "tireoglobulina",
+        "sintese-hormonal",
+        "tireoide"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Guyton & Hall 14ª ed., cap. 77"
+    },
+    {
+      "id": "his-18-q20",
+      "tipo": "vf",
+      "enunciado": "Na insuficiência suprarrenal causada pelo uso prolongado de glicocorticoides, espera-se hiperpotassemia, porque a zona glomerulosa atrofia junto com a fasciculada.",
+      "correta": false,
+      "explicacao": "Falso. O glicocorticoide exógeno suprime o ACTH, e atrofiam as zonas fasciculada e reticular; a glomerulosa, regulada pela angiotensina II e pelo potássio, continua a secretar aldosterona. Por isso a hiperpotassemia ocorre só na insuficiência primária, como registra o PCDT da Insuficiência Adrenal, e a forma central não precisa de reposição de mineralocorticoide.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "insuficiencia-suprarrenal",
+        "zona-glomerulosa"
+      ],
+      "referencia": "PCDT da Insuficiência Adrenal (MS, 2020); Robbins & Cotran 10ª ed., Sistema endócrino"
+    },
+    {
+      "id": "his-18-q21",
+      "tipo": "vf",
+      "enunciado": "A secreção de melatonina pelos pinealócitos aumenta no escuro e depende de fibras simpáticas vindas do gânglio cervical superior.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A luz captada pela retina inibe, por meio do núcleo supraquiasmático, a via que chega à pineal; no escuro, fibras simpáticas pós-ganglionares do gânglio cervical superior liberam noradrenalina junto aos pinealócitos, que sintetizam melatonina a partir da serotonina.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "glandula-pineal",
+        "melatonina"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas que levam o iodo do sangue até os hormônios tireoidianos liberados:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Oxidação do iodeto pela tireoperoxidase na membrana apical"
+        },
+        {
+          "id": "2",
+          "texto": "Endocitose do coloide estimulada pelo TSH"
+        },
+        {
+          "id": "3",
+          "texto": "Captação de iodeto pelo NIS na membrana basolateral"
+        },
+        {
+          "id": "4",
+          "texto": "Acoplamento de MIT e DIT, formando T3 e T4 na tireoglobulina"
+        },
+        {
+          "id": "5",
+          "texto": "Digestão lisossômica da tireoglobulina e liberação de T4 e T3"
+        },
+        {
+          "id": "6",
+          "texto": "Iodação de resíduos de tirosina da tireoglobulina (MIT e DIT)"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "1",
+        "6",
+        "4",
+        "2",
+        "5"
+      ],
+      "explicacao": "O iodeto entra pelo simportador Na⁺/I⁻ basolateral e atravessa a célula até a membrana apical; ali a tireoperoxidase o oxida, iodeta as tirosinas da tireoglobulina (MIT, DIT) e acopla esses resíduos em T3 e T4, que ficam armazenados no coloide; sob TSH, o coloide é endocitado, e os lisossomos digerem a tireoglobulina, liberando T4 e T3 para os capilares.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "sintese-hormonal",
+        "tireoide",
+        "linha-do-tempo"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Junqueira 14ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 77"
+    },
+    {
+      "id": "his-18-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o trajeto do CRH, do hipotálamo até a liberação de ACTH na circulação sistêmica:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Plexo capilar primário na eminência mediana"
+        },
+        {
+          "id": "2",
+          "texto": "Neurônio hipotalâmico libera CRH"
+        },
+        {
+          "id": "3",
+          "texto": "Sinusoides da parte distal (plexo secundário)"
+        },
+        {
+          "id": "4",
+          "texto": "Veias porta hipofisárias na haste"
+        },
+        {
+          "id": "5",
+          "texto": "Corticotrofo libera ACTH no sangue"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "1",
+        "4",
+        "3",
+        "5"
+      ],
+      "explicacao": "O CRH é liberado por terminais de neurônios hipotalâmicos junto ao plexo capilar primário da eminência mediana; as veias porta da haste o levam aos sinusoides da parte distal, onde estimula os corticotrofos, que lançam ACTH no mesmo leito sinusoidal e daí na circulação sistêmica.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "sistema-porta-hipofisario",
+        "acth"
+      ],
+      "referencia": "Ross 8ª ed., cap. 21; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as camadas da suprarrenal, da superfície para o centro:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Zona reticular"
+        },
+        {
+          "id": "2",
+          "texto": "Cápsula"
+        },
+        {
+          "id": "3",
+          "texto": "Medula"
+        },
+        {
+          "id": "4",
+          "texto": "Zona glomerulosa"
+        },
+        {
+          "id": "5",
+          "texto": "Zona fasciculada"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "5",
+        "1",
+        "3"
+      ],
+      "explicacao": "Cápsula de conjuntivo → zona glomerulosa (aldosterona) → zona fasciculada, a mais espessa (cortisol) → zona reticular (androgênios) → medula, com células cromafins (adrenalina e noradrenalina).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "suprarrenal",
+        "zonas-do-cortex"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as etapas que levam o ADH da sua síntese até o efeito no rim:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Síntese de ADH, com sua neurofisina, em neurônios do núcleo supraóptico"
+        },
+        {
+          "id": "2",
+          "texto": "Exocitose junto a capilares fenestrados da parte nervosa"
+        },
+        {
+          "id": "3",
+          "texto": "Transporte axonal pelo trato hipotálamo-hipofisário"
+        },
+        {
+          "id": "4",
+          "texto": "Ligação ao receptor V2 das células principais do ducto coletor"
+        },
+        {
+          "id": "5",
+          "texto": "Inserção de aquaporina-2 na membrana apical e reabsorção de água"
+        },
+        {
+          "id": "6",
+          "texto": "Acúmulo dos grânulos em dilatações axonais (corpos de Herring) e terminais"
+        }
+      ],
+      "ordemCorreta": [
+        "1",
+        "3",
+        "6",
+        "2",
+        "4",
+        "5"
+      ],
+      "explicacao": "O ADH é sintetizado no corpo de neurônios do núcleo supraóptico (e do paraventricular), ligado à neurofisina; os grânulos descem pelos axônios do trato hipotálamo-hipofisário, acumulam-se em dilatações (corpos de Herring) e terminais e são liberados por exocitose junto a capilares fenestrados; no rim, o ADH liga-se ao receptor V2 das células principais, que inserem aquaporina-2 na membrana apical (his-17).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "adh",
+        "neuro-hipofise",
+        "ducto-coletor"
+      ],
+      "referencia": "Ross 8ª ed., caps. 20 e 21; Junqueira 14ª ed., cap. 20"
+    },
+    {
+      "id": "his-18-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada célula da adeno-hipófise ao hormônio que secreta:",
+      "pares": [
+        {
+          "esquerda": "Somatotrofo",
+          "direita": "Hormônio do crescimento (GH)"
+        },
+        {
+          "esquerda": "Lactotrofo",
+          "direita": "Prolactina"
+        },
+        {
+          "esquerda": "Corticotrofo",
+          "direita": "ACTH"
+        },
+        {
+          "esquerda": "Tireotrofo",
+          "direita": "TSH"
+        },
+        {
+          "esquerda": "Gonadotrofo",
+          "direita": "FSH e LH"
+        }
+      ],
+      "explicacao": "Somatotrofos e lactotrofos são acidófilos; corticotrofos (ACTH, a partir da pró-opiomelanocortina), tireotrofos e gonadotrofos são basófilos. Um mesmo gonadotrofo pode secretar FSH e LH.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "adeno-hipofise",
+        "hormonios"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada região ou célula endócrina ao seu principal produto:",
+      "pares": [
+        {
+          "esquerda": "Zona glomerulosa",
+          "direita": "Aldosterona"
+        },
+        {
+          "esquerda": "Zona fasciculada",
+          "direita": "Cortisol"
+        },
+        {
+          "esquerda": "Zona reticular",
+          "direita": "DHEA e DHEA-S (androgênios)"
+        },
+        {
+          "esquerda": "Medula suprarrenal",
+          "direita": "Adrenalina e noradrenalina"
+        },
+        {
+          "esquerda": "Pinealócito",
+          "direita": "Melatonina"
+        },
+        {
+          "esquerda": "Célula C da tireoide",
+          "direita": "Calcitonina"
+        }
+      ],
+      "explicacao": "As três zonas do córtex secretam esteroides diferentes (mineralocorticoide, glicocorticoide e androgênios); a medula, catecolaminas; a pineal, melatonina; as células C, calcitonina.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "suprarrenal",
+        "pineal",
+        "tireoide"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 20; Ross 8ª ed., cap. 21"
+    },
+    {
+      "id": "his-18-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada doença ao seu achado histológico característico:",
+      "pares": [
+        {
+          "esquerda": "Doença de Graves",
+          "direita": "Epitélio folicular alto, pregas sem eixo fibrovascular e coloide recortado"
+        },
+        {
+          "esquerda": "Tireoidite de Hashimoto",
+          "direita": "Infiltrado linfoide com centros germinativos e células de Hürthle"
+        },
+        {
+          "esquerda": "Carcinoma papilífero",
+          "direita": "Núcleos em vidro fosco com pseudoinclusões e corpos psamomatosos"
+        },
+        {
+          "esquerda": "Carcinoma medular da tireoide",
+          "direita": "Células C neoplásicas em estroma amiloide"
+        },
+        {
+          "esquerda": "Feocromocitoma",
+          "direita": "Ninhos de células cromafins circundados por células sustentaculares"
+        },
+        {
+          "esquerda": "Adrenalite autoimune (doença de Addison)",
+          "direita": "Córtex destruído por linfócitos, com medula preservada"
+        }
+      ],
+      "explicacao": "Graves: hiperplasia estimulada por anticorpos contra o receptor de TSH; Hashimoto: destruição autoimune com metaplasia oncocítica; carcinoma papilífero: alterações nucleares típicas; carcinoma medular: células C com amiloide derivado da (pró)calcitonina; feocromocitoma: arquitetura em ninhos da medula; adrenalite autoimune: o alvo é o córtex, e a medula é poupada.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "tireoide",
+        "suprarrenal",
+        "patologia"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., Sistema endócrino"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed., GEN Guanabara Koogan, 2023",
+      "capitulo": "20 — Glândulas endócrinas"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed., GEN Guanabara Koogan, 2021",
+      "capitulo": "21 — Órgãos endócrinos"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed., GEN Guanabara Koogan, 2021",
+      "capitulo": "20 — Sistema urinário (ação do PTH e do ADH no rim)"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia — Bases Patológicas das Doenças, 10ª ed. (orig. 2020)",
+      "capitulo": "Sistema endócrino (hipófise, tireoide, paratireoides, suprarrenais)"
+    },
+    {
+      "obra": "Hall JE. Guyton & Hall — Tratado de Fisiologia Médica, 14ª ed.",
+      "capitulo": "75 a 80 (endocrinologia: hipófise, tireoide, córtex suprarrenal, paratormônio)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria Conjunta nº 19, de 23 de novembro de 2020 — Protocolo Clínico e Diretrizes Terapêuticas da Hiperprolactinemia (reeditado após a 97ª reunião da Subcomissão de PCDT, 22/03/2022). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hiperprolactinemia",
+      "capitulo": "1 — Introdução (prolactinomas: tumores funcionantes mais comuns, ~40% dos adenomas; micro < 10 mm e macro ≥ 10 mm; compressão da haste com prolactina em geral < 100 ng/mL); 7.1 — Tratamento medicamentoso (agonistas dopaminérgicos como primeira opção; cabergolina de escolha)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria Conjunta nº 20, de 24 de novembro de 2020 — Protocolo Clínico e Diretrizes Terapêuticas da Insuficiência Adrenal (revogou a Portaria SAS/MS nº 1.170/2015). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/i/insuficiencia-adrenal",
+      "capitulo": "1 — Introdução (causas; série de São Paulo); 3.1 — Diagnóstico clínico (hiperpigmentação por POMC; hiperpotassemia só na forma primária); 6.1 a 6.3 — Tratamento (fludrocortisona só na forma primária; hidrocortisona intravenosa imediata na crise)"
+    },
+    {
+      "obra": "Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. Thyroid. 2016;26(1):1-133. doi:10.1089/thy.2015.0020. PMCID PMC4739132",
+      "capitulo": "Recomendação 7 (PAAF como procedimento de escolha); Recomendação 9 (Sistema Bethesda); definições histológicas de carcinoma papilífero e folicular; metástases linfonodais regionais no carcinoma papilífero"
+    },
+    {
+      "obra": "Nieman LK, Biller BMK, Findling JW, et al. The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2008;93(5):1526-40. doi:10.1210/jc.2008-0125. PMCID PMC2386281",
+      "capitulo": "Recomendações 1 (excluir glicocorticoide exógeno) e 4 (testes iniciais)"
+    },
+    {
+      "obra": "Casey RT, Lussey-Lepoutre C. Paraganglioma and phaeochromocytoma: a review of current guidelines and new diagnostic and therapeutic approaches. Endocr Relat Cancer. 2026;33(10). doi:10.1530/ERC-26-0310. PMCID PMC13695349",
+      "capitulo": "Componente hereditário (até 40%); classificação da OMS 2017/2022; diagnóstico bioquímico (metanefrinas livres plasmáticas); escores PASS e GAPP"
+    }
+  ],
+  "notasDivergencia": [
+    "Basofilia e PAS dos corticotrofos: os hormônios glicoproteicos (TSH, FSH, LH) explicam a positividade ao PAS dos tireotrofos e gonadotrofos; Ross atribui a dos corticotrofos à pró-opiomelanocortina glicosilada, e alguns textos descrevem os corticotrofos como fracamente basófilos. O conteúdo os inclui entre as basófilas, como Junqueira e Ross.",
+    "Zona glomerulosa: Junqueira descreve as células em cordões arqueados; Ross, em grupos ovoides. O conteúdo usa “arcos ou grupos ovoides”.",
+    "Células oxífilas da paratireoide: as obras divergem quanto à idade em que aparecem (infância tardia × puberdade); todas descrevem aumento com a idade, e o conteúdo diz só que são raras na criança e aumentam com a idade.",
+    "Carcinoma papilífero × NIFTP: desde 2016, tumores encapsulados ou bem delimitados, de padrão folicular, não invasivos e com núcleos do tipo papilífero são chamados de neoplasia folicular não invasiva com características nucleares do tipo papilífero (NIFTP), de baixo risco, e não de carcinoma; a diretriz ATA de 2025 os classifica como neoplasias de baixo risco (conferido em revisão da diretriz, Sisli Etfal Hastan Tip Bul 2025, PMC12821139). As características nucleares continuam definindo o carcinoma papilífero quando há papilas ou invasão; a q08 traz papilas e metástase linfonodal.",
+    "Terminologia dos tumores hipofisários: a classificação da OMS de 2022 passou a usar “tumor neuroendócrino hipofisário (PitNET)” ao lado de “adenoma”; o PCDT brasileiro e os livros-texto adotados usam “adenoma”, termo mantido no conteúdo.",
+    "Células de Hürthle: também chamadas de células de Askanazy ou oncocíticas; classificações recentes preferem “oncocíticas”. O conteúdo usa “de Hürthle” com a explicação “tirócitos oncocíticos”.",
+    "Feocromocitoma: a classificação da OMS de 2017 abandonou “benigno” e “maligno”, e a de 2022 considera todos os feocromocitomas e paragangliomas neoplasias com potencial metastático variável (conferido em Casey e Lussey-Lepoutre, 2026); textos anteriores, inclusive edições de Robbins, ainda falam em feocromocitoma “maligno” quando há metástase.",
+    "Folículo tireoidiano: o histologia usa o id foliculo-tireoidiano (singular, como em his-03); o emb-25 usa foliculos-tireoidianos (plural) para a mesma estrutura."
+  ],
+  "incertezas": [
+    "Números de capítulo citados de memória: Junqueira 14ª ed. (20 — Glândulas endócrinas, numeração da 13ª ed.), Ross 8ª ed. (21 — Órgãos endócrinos), Guyton & Hall 14ª ed. (75 a 80; cap. 77 para a tireoide). Capítulos de Robbins citados pelo título.",
+    "O tópico his-15, citado a pedido da coordenação como local do pâncreas e das ilhotas, não existia no repositório quando este tópico foi escrito; a sobreposição com ele não pôde ser conferida. Por isso as ilhotas ficaram num parágrafo curto, sem questões próprias.",
+    "Proporções celulares (somatotrofos entre as células da adeno-hipófise, espessura relativa das zonas do córtex, adrenalina × noradrenalina na medula, tipos celulares das ilhotas) foram omitidas porque os valores variam entre as obras e não foram conferidos.",
+    "“Única glândula endócrina que armazena grande quantidade de hormônio fora das células”: redação de Junqueira e Ross citada de memória.",
+    "Síndrome de Cushing: a diretriz da Endocrine Society de 2008 (texto integral lido no PMC em 10/11/2026) continua a diretriz formal da sociedade para o diagnóstico; o consenso da Pituitary Society de 2021 não foi lido. Os pontos de corte dos testes foram omitidos de propósito.",
+    "Feocromocitoma: a diretriz da Endocrine Society de 2014 não pôde ser lida (não está no PMC, e o site da revista está fora da rede); o diagnóstico bioquímico (preferência pelas metanefrinas livres plasmáticas), o componente hereditário de até 40% e a classificação da OMS foram conferidos no texto integral da revisão de diretrizes de Casey e Lussey-Lepoutre (2026). A classificação da OMS de 2022 dos tumores hipofisários e endócrinos não foi lida no original.",
+    "Diretriz ATA: a de 2015 (texto integral lido no PMC) cobre nódulos e câncer diferenciado; a de 2025 trata só do câncer diferenciado e exclui os nódulos (segundo revisão em texto integral, PMC12821139) e não pôde ser aberta (verificação anti-robô do PMC). As afirmações usadas (PAAF para nódulos, Bethesda, definições histológicas) vêm da de 2015.",
+    "Perda da rede de reticulina nos adenomas hipofisários, alteração hialina de Crooke, preservação da espessura da zona glomerulosa no Cushing ACTH-independente e iatrogênico e irrigação arterial da neuro-hipófise na síndrome de Sheehan seguem Robbins e Ross, citados de memória.",
+    "Série brasileira de insuficiência adrenal (São Paulo: autoimune 39%, paracoccidioidomicose 28%, tuberculose 11%, adrenoleucodistrofia 7,3%) e proporção de prolactinomas (~40% dos adenomas): números do texto dos PCDTs, que citam a literatura original, não lida.",
+    "Ausência de lâmina de glândulas endócrinas no microscópio virtual: os ids de estrutura deste tópico (adeno-hipofise, neuro-hipofise, corpos-de-herring, foliculo-tireoidiano, coloide, celulas-parafoliculares, zona-glomerulosa, zona-fasciculada, zona-reticular, medula-suprarrenal, celula-cromafim etc.) podem servir a futuras lâminas."
+  ],
+  "revisao": {
+    "autor": "agente-redator-histologia",
+    "data": "2026-11-10",
+    "agentes": [],
+    "humano": null
+  }
+}

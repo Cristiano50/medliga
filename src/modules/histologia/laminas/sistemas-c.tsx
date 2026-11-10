@@ -715,11 +715,12 @@ function arteriolaLongitudinal(rng: Rng, p0: P, p1: P, hw: number, hl: number, j
   const jgNuc: string[] = [];
   const jgGraos: string[] = [];
   const om = hl + (hw - hl) / 2;
-  for (let s = 4; s < L - 3; s += 7.5) {
+  for (let s = 4; s < L - 3; s += entre(rng, 8, 13)) {
     for (const lado of [1, -1]) {
+      if (rng() < 0.3) continue;
       if (s > L - jg && lado === 1) continue; // trecho com células justaglomerulares
       // músculo liso circular cortado de través: núcleos curtos, transversais ao eixo do vaso
-      const [x, y] = em(s + entre(rng, -1, 1), lado * om);
+      const [x, y] = em(s + entre(rng, -2.5, 2.5), lado * (om + entre(rng, -1.2, 1.2)));
       nucM.push(elipse(x, y, 1.7, 2.6, ang));
     }
   }
@@ -756,94 +757,90 @@ export function LaminaRimCortex(rng: Rng) {
   const aferente: [P, P] = [[172, 102], [312, 240]];
   const eferente: [P, P] = [[350, 240], [492, 110]];
   const MD = { x: 333, y: 171, R: 31 };
+  // túbulos em corte transversal: sementes com distância mínima (TCP ≈ 70%, maiores; TCD menores) e diagrama de
+  // potência, que dá contornos arredondados e encostados uns nos outros, como no córtex real (interstício estreito).
+  // Corpúsculos, arteríolas e o TCD da mácula densa entram como sítios fixos: os túbulos vizinhos se moldam a eles.
   const occ = ocupacao(60, 130);
-  corpusculos.forEach((c) => occ.marcar(c.x, c.y, c.R + 3));
-  for (const [a, b] of [aferente, eferente]) {
-    const L = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    for (let s = 0; s <= L; s += 8) occ.marcar(a[0] + ((b[0] - a[0]) * s) / L, a[1] + ((b[1] - a[1]) * s) / L, 16);
+  const fixos: Sitio[] = [];
+  corpusculos.forEach((c) => {
+    occ.marcar(c.x, c.y, c.R + 6);
+    fixos.push({ x: c.x, y: c.y, w: c.R + 7 });
+  });
+  for (const [[ax, ay], [bx, by], hw] of [[...aferente, 17], [...eferente, 13]] as [P, P, number][]) {
+    const L = Math.hypot(bx - ax, by - ay);
+    for (let t = 0; t <= L; t += 10) {
+      const x = ax + ((bx - ax) * t) / L;
+      const y = ay + ((by - ay) * t) / L;
+      occ.marcar(x, y, hw + 4);
+      fixos.push({ x, y, w: hw + 6 });
+    }
   }
-  occ.marcar(MD.x, MD.y, MD.R);
-  // túbulos em corte transversal: TCP (≈ 70%, maiores) e TCD; interstício estreito entre eles
-  const tubulos = dardos(rng, 9000, [-50, -50, W + 50, H + 50], () => (rng() < 0.7 ? entre(rng, 35, 42) : entre(rng, 26, 31)), () => true, occ, 6.5);
-  const proximais = tubulos.filter(([, , r]) => r >= 33);
-  const distais = tubulos.filter(([, , r]) => r < 33);
-  // tudo o que é circular, para medir o espaço livre do interstício
-  const solidos: [number, number, number][] = [...tubulos, ...corpusculos.map((c): [number, number, number] => [c.x, c.y, c.R + 2]), [MD.x, MD.y, MD.R]];
-  const folgaEm = (x: number, y: number) => {
-    let m = Infinity;
-    for (const [cx, cy, r] of solidos) m = Math.min(m, Math.hypot(x - cx, y - cy) - r);
-    for (const [[ax, ay], [bx, by], hw] of [[...aferente, 17], [...eferente, 13]] as [P, P, number][]) m = Math.min(m, distSeg(x, y, [ax, ay], [bx, by]) - hw);
-    return m;
+  occ.marcar(MD.x, MD.y, MD.R + 2);
+  const tubSem = dardos(rng, 9000, [-70, -70, W + 70, H + 70], () => (rng() < 0.68 ? entre(rng, 31, 35) : entre(rng, 23, 26)), () => true, occ, 1);
+  const mdSitio: Sitio = { x: MD.x, y: MD.y, w: MD.R + 3 };
+  const sitios: Sitio[] = [...tubSem.map(([x, y, r]) => ({ x, y, w: r })), mdSitio, ...fixos];
+  const forma = (st: Sitio) => chaikin(celulaPotencia(st, sitios, st.w * 1.5, 4.6), 2);
+  const proximais = tubSem.filter(([, , r]) => r >= 30).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
+  const distais = tubSem.filter(([, , r]) => r < 30).map(([x, y, r]) => forma(sitios.find((q) => q.x === x && q.y === y && q.w === r)!));
+  const contornoMd = forma(mdSitio);
+  const centroide = (pol: P[]): P => [pol.reduce((a, p) => a + p[0], 0) / pol.length, pol.reduce((a, p) => a + p[1], 0) / pol.length];
+  const raioEm = (pol: P[], c: P, a: number) => {
+    let t = 0;
+    while (t < 90 && dentro(c[0] + Math.cos(a) * t, c[1] + Math.sin(a) * t, pol)) t += 1;
+    return t;
   };
 
-  // capilares peritubulares no interstício (com hemácias e núcleo endotelial)
+  // capilares peritubulares: no interstício entre túbulos vizinhos (com hemácia e, às vezes, núcleo endotelial)
   const capilares: string[] = [];
   const hemCap: string[] = [];
   const nucCap: string[] = [];
-  const capPos: P[] = [];
-  for (let y = 2; y < H; y += 4)
-    for (let x = 2; x < W; x += 4) {
-      const c = folgaEm(x, y);
-      if (c < 5.5 || capPos.some(([px, py]) => Math.hypot(px - x, py - y) < 26)) continue;
-      // orientação: ao longo do espaço, perpendicular ao sólido mais próximo
-      let ang = 0;
-      let dm = Infinity;
-      for (const [cx, cy, r] of solidos) {
-        const d = Math.hypot(x - cx, y - cy) - r;
-        if (d < dm) {
-          dm = d;
-          ang = graus(x - cx, y - cy) + 90;
-        }
-      }
-      const ry = Math.min(c - 0.8, 7);
-      let rx = Math.min(ry * 2.2, 14);
-      const cabe = (rxx: number) =>
-        Array.from({ length: 12 }, (_, k) => {
-          const a = (2 * Math.PI * k) / 12;
-          const g = (ang * Math.PI) / 180;
-          const ex = Math.cos(a) * rxx;
-          const ey = Math.sin(a) * ry;
-          return folgaEm(x + ex * Math.cos(g) - ey * Math.sin(g), y + ex * Math.sin(g) + ey * Math.cos(g));
-        }).every((v) => v > 0.6);
-      while (rx > ry && !cabe(rx)) rx -= 1;
-      if (!cabe(rx)) continue;
-      capPos.push([x, y]);
-      capilares.push(elipse(x, y, rx, ry, ang));
-      if (ry >= 4.2) hemCap.push(hemacia(x, y, Math.min(4.8, rx - 1.2), ang, Math.min(3, ry - 1.2)));
-      if (rng() < 0.4) {
-        const g = (ang * Math.PI) / 180;
-        nucCap.push(elipse(x - Math.sin(g) * (ry - 0.8), y + Math.cos(g) * (ry - 0.8), Math.min(3.6, rx * 0.5), 1, ang));
-      }
-    }
+  const brutas = sitios.slice(0, tubSem.length).map((st) => celulaPotencia(st, sitios, st.w * 1.5, 0));
+  const vistos = new Set<string>();
+  brutas.forEach((pol) =>
+    pol.forEach((a, k) => {
+      const b = pol[(k + 1) % pol.length];
+      const L = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      const mx = (a[0] + b[0]) / 2;
+      const my = (a[1] + b[1]) / 2;
+      const chave = `${Math.round(mx / 3)},${Math.round(my / 3)}`;
+      if (L < 24 || vistos.has(chave) || mx < -10 || mx > W + 10 || my < -10 || my > H + 10) return;
+      vistos.add(chave);
+      if (fixos.some((q) => Math.hypot(q.x - mx, q.y - my) < q.w + 6) || Math.hypot(mx - MD.x, my - MD.y) < MD.R + 12 || rng() > 0.6) return;
+      const ang = graus(b[0] - a[0], b[1] - a[1]);
+      const rx = Math.min(L / 2 - 5, 12);
+      capilares.push(elipse(mx, my, rx, 4.5, ang));
+      hemCap.push(hemacia(mx + entre(rng, -2, 2), my, Math.min(4.6, rx - 1), ang, 2.7));
+      if (rng() < 0.35) nucCap.push(elipse(mx + ((b[0] - a[0]) / L) * (rx - 3.5), my + ((b[1] - a[1]) / L) * (rx - 3.5), 2.6, 1, ang));
+    }),
+  );
   const fibroblastos: string[] = [];
-  for (let t = 0, n = 0; t < 4000 && n < 40; t++) {
-    const x = entre(rng, 0, W);
-    const y = entre(rng, 0, H);
-    if (folgaEm(x, y) < 4 || capPos.some(([px, py]) => Math.hypot(px - x, py - y) < 16)) continue;
-    n++;
-    fibroblastos.push(elipse(x, y, 4, 1.3, entre(rng, 0, 180)));
-  }
+  for (const pol of brutas)
+    for (const v of pol) {
+      if (rng() > 0.12 || fixos.some((q) => Math.hypot(q.x - v[0], q.y - v[1]) < q.w + 10)) continue;
+      fibroblastos.push(elipse(v[0], v[1], 3.4, 1.3, entre(rng, 0, 180)));
+    }
 
   // TCP: células altas e eosinófilas, limites pouco nítidos, poucos núcleos por corte, borda em escova e luz estreita
-  const tcpCorpo: string[] = [];
   const tcpNuc: string[] = [];
   const tcpEscova: string[] = [];
   const tcpEstrias: string[] = [];
   const tcpLuz: string[] = [];
-  for (const [x, y, R] of proximais) {
-    tcpCorpo.push(circulo(x, y, R));
-    const n = 4 + (R > 38 ? 1 : 0) + (rng() < 0.35 ? 1 : 0);
+  for (const pol of proximais) {
+    const c = centroide(pol);
+    const rin = Math.min(...pol.map((p) => Math.hypot(p[0] - c[0], p[1] - c[1])));
+    const n = 4 + (rin > 34 ? 1 : 0) + (rng() < 0.35 ? 1 : 0);
     const giro = entre(rng, 0, Math.PI * 2);
     for (let k = 0; k < n; k++) {
       const a = giro + (2 * Math.PI * k) / n + entre(rng, -0.2, 0.2);
-      tcpNuc.push(circulo(x + Math.cos(a) * R * 0.66, y + Math.sin(a) * R * 0.66, 4.4));
+      const r = raioEm(pol, c, a) * 0.64;
+      tcpNuc.push(circulo(c[0] + Math.cos(a) * r, c[1] + Math.sin(a) * r, 4.4));
     }
     const f1 = entre(rng, 0, 6);
     const f2 = entre(rng, 0, 6);
-    const rl = (a: number) => Math.max(3.5, R * 0.29 * (1 + 0.3 * Math.sin(4 * a + f1) + 0.12 * Math.sin(7 * a + f2)));
-    tcpEscova.push(contorno(pontosPolar(x, y, (a) => rl(a) + 4.4, 60)));
-    tcpEstrias.push(contorno(pontosPolar(x, y, (a) => rl(a) + 2.2, 60)));
-    tcpLuz.push(contorno(pontosPolar(x, y, rl, 60)));
+    const rl = (a: number) => Math.max(3.5, rin * 0.3 * (1 + 0.22 * Math.sin(3 * a + f1) + 0.16 * Math.sin(5 * a + f2)));
+    tcpEscova.push(contorno(pontosPolar(c[0], c[1], (a) => rl(a) + 4.4, 60)));
+    tcpEstrias.push(contorno(pontosPolar(c[0], c[1], (a) => rl(a) + 2.2, 60)));
+    tcpLuz.push(contorno(pontosPolar(c[0], c[1], rl, 60)));
   }
   // TCD: células mais baixas e claras, limites nítidos, mais núcleos por corte, sem borda em escova, luz ampla
   const tcdCel: string[] = [];
@@ -851,41 +848,48 @@ export function LaminaRimCortex(rng: Rng) {
   const tcdLuz: string[] = [];
   const mdCel: string[] = [];
   const mdNuc: string[] = [];
-  const tubuloDistal = (x: number, y: number, R: number, md: boolean) => {
-    // na mácula densa (lado voltado para o polo vascular, abaixo) as células ficam mais altas e estreitas
-    const alt = (a: number) => {
-      if (!md) return 11.5;
-      const d = Math.abs(((a - Math.PI / 2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI);
-      return d < 0.95 ? 11.5 + 4.5 * Math.cos((d / 0.95) * (Math.PI / 2)) ** 2 : 11.5;
-    };
-    const ehMd = (a: number) => md && Math.abs(((a - Math.PI / 2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI) < 0.8;
-    const n = Math.round((2 * Math.PI * R) / 12.5);
-    const giro = entre(rng, 0, 1);
-    for (let k = 0; k < n; k++) {
-      const a0 = giro + (2 * Math.PI * k) / n;
-      const a1 = giro + (2 * Math.PI * (k + 1)) / n;
-      const am = (a0 + a1) / 2;
-      if (ehMd(am)) {
-        // duas células estreitas por fatia: núcleos apinhados, alongados e mais apicais
-        for (const [b0, b1] of [[a0, am], [am, a1]]) {
-          const bm = (b0 + b1) / 2;
-          const h = alt(bm);
-          mdCel.push(contorno([[x + Math.cos(b0) * R, y + Math.sin(b0) * R], [x + Math.cos(b1) * R, y + Math.sin(b1) * R], [x + Math.cos(b1) * (R - alt(b1)), y + Math.sin(b1) * (R - alt(b1))], [x + Math.cos(b0) * (R - alt(b0)), y + Math.sin(b0) * (R - alt(b0))]]));
-          const rn = R - h * 0.52;
-          mdNuc.push(elipse(x + Math.cos(bm) * rn, y + Math.sin(bm) * rn, 3.6, 1.9, (bm * 180) / Math.PI));
+  const polo: P = [corpusculos[0].x, corpusculos[0].y - corpusculos[0].R];
+  const tubuloDistal = (pol: P[], md: boolean) => {
+    const c = centroide(pol);
+    const ux = (polo[0] - c[0]) / Math.hypot(polo[0] - c[0], polo[1] - c[1]);
+    const uy = (polo[1] - c[1]) / Math.hypot(polo[0] - c[0], polo[1] - c[1]);
+    // fração da mácula densa: lado do túbulo voltado para o polo vascular (normal externa ≈ direção do polo)
+    const voltado = (b: Amostra) => (md ? -(b.nx * ux + b.ny * uy) : -1);
+    const largura = 12.5;
+    const n = Math.max(6, Math.round(perimetro(pol) / largura));
+    const base = amostrar(pol, n, true);
+    const alt = base.map((b) => {
+      const v = voltado(b);
+      return v > 0.55 ? 11.5 + 5 * ((v - 0.55) / 0.45) : 11.5;
+    });
+    const topo: P[] = base.map((b, k) => [b.x + b.nx * alt[k], b.y + b.ny * alt[k]]);
+    base.forEach((b, k) => {
+      const q = base[(k + 1) % n];
+      const cel: P[] = [[b.x, b.y], [q.x, q.y], topo[(k + 1) % n], topo[k]];
+      const mxp = (b.x + q.x) / 2;
+      const myp = (b.y + q.y) / 2;
+      const nx = (b.nx + q.nx) / 2;
+      const ny = (b.ny + q.ny) / 2;
+      const h = (alt[k] + alt[(k + 1) % n]) / 2;
+      if (voltado(b) > 0.7) {
+        // mácula densa: células altas e estreitas (duas por fatia), núcleos apinhados, alongados e mais apicais
+        const meio: P = [(cel[0][0] + cel[1][0]) / 2, (cel[0][1] + cel[1][1]) / 2];
+        const meioT: P = [(cel[2][0] + cel[3][0]) / 2, (cel[2][1] + cel[3][1]) / 2];
+        mdCel.push(contorno([cel[0], meio, meioT, cel[3]]), contorno([meio, cel[1], cel[2], meioT]));
+        for (const u of [0.25, 0.75]) {
+          const bx = cel[0][0] + (cel[1][0] - cel[0][0]) * u;
+          const by = cel[0][1] + (cel[1][1] - cel[0][1]) * u;
+          mdNuc.push(elipse(bx + nx * h * 0.56, by + ny * h * 0.56, 3.7, 1.9, graus(nx, ny)));
         }
-        continue;
+        return;
       }
-      tcdCel.push(contorno([[x + Math.cos(a0) * R, y + Math.sin(a0) * R], [x + Math.cos(a1) * R, y + Math.sin(a1) * R], [x + Math.cos(a1) * (R - alt(a1)), y + Math.sin(a1) * (R - alt(a1))], [x + Math.cos(a0) * (R - alt(a0)), y + Math.sin(a0) * (R - alt(a0))]]));
-      if (rng() < 0.85) {
-        const rn = R - alt(am) * 0.5;
-        tcdNuc.push(circulo(x + Math.cos(am) * rn, y + Math.sin(am) * rn, 3.4));
-      }
-    }
-    tcdLuz.push(contorno(pontosPolar(x, y, (a) => R - alt(a) + 0.2, 72)));
+      tcdCel.push(contorno(cel));
+      if (rng() < 0.85) tcdNuc.push(circulo(mxp + nx * h * 0.5, myp + ny * h * 0.5, 3.4));
+    });
+    tcdLuz.push(contorno(topo));
   };
-  for (const [x, y, R] of distais) tubuloDistal(x, y, R, false);
-  tubuloDistal(MD.x, MD.y, MD.R, true);
+  for (const pol of distais) tubuloDistal(pol, false);
+  tubuloDistal(contornoMd, true);
 
   // corpúsculos: cápsula (folheto parietal), espaço urinário e tufo glomerular lobulado
   const espacos: string[] = [];
@@ -905,18 +909,18 @@ export function LaminaRimCortex(rng: Rng) {
       capsulaNuc.push(elipse(c.x + Math.cos(a) * (c.R - 1), c.y + Math.sin(a) * (c.R - 1), 5.4, 1.8, (a * 180) / Math.PI + 90));
     }
     // lóbulos do tufo (alças capilares agrupadas); no polo vascular o tufo encosta na cápsula
-    const lob: [number, number, number][] = [[c.x, c.y, c.R * 0.47]];
+    const lob: [number, number, number][] = [[c.x, c.y, c.R * 0.5]];
     const nl = 6;
     const g0 = entre(rng, 0, 1);
     for (let k = 0; k < nl; k++) {
       const a = g0 + (2 * Math.PI * k) / nl + entre(rng, -0.15, 0.15);
-      lob.push([c.x + Math.cos(a) * c.R * 0.42, c.y + Math.sin(a) * c.R * 0.42, c.R * entre(rng, 0.35, 0.4)]);
+      lob.push([c.x + Math.cos(a) * c.R * 0.45, c.y + Math.sin(a) * c.R * 0.45, c.R * entre(rng, 0.38, 0.42)]);
     }
     if (c.polo) lob.push([c.x, c.y - c.R + 33, 30]);
     tufos.push(lob.map(([x, y, r]) => circulo(x, y, r)).join(''));
     const noTufo = (x: number, y: number, m: number) => lob.some(([lx, ly, r]) => Math.hypot(x - lx, y - ly) < r - m);
     const occG = ocupacao(16, 8);
-    const loops = dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => entre(rng, 5.6, 7.4), (x, y, r) => noTufo(x, y, r * 0.55), occG, 2.6);
+    const loops = dardos(rng, 1400, [c.x - c.R, c.y - c.R, c.x + c.R, c.y + c.R], () => entre(rng, 5, 8), (x, y, r) => noTufo(x, y, r * 0.5), occG, 2);
     for (const [x, y, r] of loops) {
       alcas.push(circulo(x, y, r));
       if (rng() < 0.6) hemTufo.push(hemacia(x, y, Math.min(4.6, r - 1), entre(rng, 0, 180), Math.min(3.2, r - 2.4)));
@@ -933,23 +937,23 @@ export function LaminaRimCortex(rng: Rng) {
       <Deco>
         <path d={fibroblastos.join('')} fill={HE.nucleo} />
       </Deco>
-      <E id="capilar">
-        <path d={capilares.join('')} fill={HE.luz} stroke={cor.membrana} strokeWidth={0.8} />
-        <path d={hemCap.join('')} fill={HE.hemacia} />
-        <path d={nucCap.join('')} fill={HE.nucleoEscuro} />
-      </E>
       <E id="tubulo-contorcido-proximal">
-        <path d={tcpCorpo.join('')} fill={cor.tcp} stroke={cor.membrana} strokeWidth={1.4} />
+        <path d={proximais.map((p) => contorno(p)).join('')} fill={cor.tcp} stroke={cor.membrana} strokeWidth={1.4} />
         <path d={tcpNuc.join('')} fill={HE.nucleo} />
         <path d={tcpEscova.join('')} fill={cor.escova} />
         <path d={tcpEstrias.join('')} fill="none" stroke={cor.estrias} strokeWidth={4.4} strokeDasharray="0.6 1.2" />
         <path d={tcpLuz.join('')} fill={HE.luz} />
       </E>
       <E id="tubulo-contorcido-distal">
-        <path d={distais.map(([x, y, R]) => circulo(x, y, R)).join('') + circulo(MD.x, MD.y, MD.R)} fill={cor.tcd} stroke={cor.membrana} strokeWidth={1.2} />
+        <path d={[...distais, contornoMd].map((p) => contorno(p)).join('')} fill={cor.tcd} stroke={cor.membrana} strokeWidth={1.2} />
         <path d={tcdCel.join('')} fill={cor.tcd} stroke={cor.tcdBorda} strokeWidth={0.7} />
         <path d={tcdNuc.join('')} fill={HE.nucleo} />
         <path d={tcdLuz.join('')} fill={HE.luz} />
+      </E>
+      <E id="capilar">
+        <path d={capilares.join('')} fill="#fbe9f1" stroke="#c96b98" strokeWidth={0.8} />
+        <path d={hemCap.join('')} fill={HE.hemacia} />
+        <path d={nucCap.join('')} fill={HE.nucleoEscuro} />
       </E>
       <E id="macula-densa">
         <path d={mdCel.join('')} fill="#eab3cb" stroke={cor.tcdBorda} strokeWidth={0.6} />
