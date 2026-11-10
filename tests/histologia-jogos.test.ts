@@ -118,6 +118,40 @@ describe('toqueAceito', () => {
   });
 });
 
+describe('toqueAceito no grupo B (tubo digestivo e glândulas anexas)', () => {
+  const colon = LAMINAS_RENDER.colon;
+  it('caliciforme vale pela cripta ou pela superfície, conforme a região sob o toque', () => {
+    const naCripta = ['celula-caliciforme', 'cripta-intestinal', 'lamina-propria'];
+    expect(toqueAceito(colon, 'cripta-intestinal', 'celula-caliciforme', naCripta)).toBe(true);
+    expect(toqueAceito(colon, 'epitelio-simples-cilindrico', 'celula-caliciforme', naCripta)).toBe(false);
+    const naSuperficie = ['celula-caliciforme', 'epitelio-simples-cilindrico', 'lamina-propria'];
+    expect(toqueAceito(colon, 'epitelio-simples-cilindrico', 'celula-caliciforme', naSuperficie)).toBe(true);
+    expect(toqueAceito(colon, 'cripta-intestinal', 'celula-caliciforme', naSuperficie)).toBe(false);
+    expect(toqueAceito(colon, 'celula-caliciforme', 'cripta-intestinal', naCripta)).toBe(false);
+  });
+  it('partes da glândula fúndica, do espaço porta, do ácino e da muscular externa', () => {
+    const est = LAMINAS_RENDER['estomago-fundo'];
+    for (const c of ['celula-parietal', 'celula-principal', 'celula-mucosa-do-colo'])
+      expect(toqueAceito(est, 'glandula-fundica', c, [c, 'lamina-propria']), c).toBe(true);
+    expect(toqueAceito(est, 'celula-parietal', 'glandula-fundica', ['glandula-fundica', 'celula-parietal'])).toBe(false);
+    // as mucosas superficiais também revestem o topo entre as fossetas: não entram em "fosseta"
+    expect(toqueAceito(est, 'fosseta-gastrica', 'celula-mucosa-superficial')).toBe(false);
+    const fig = LAMINAS_RENDER.figado;
+    for (const v of ['ramo-da-veia-porta', 'ramo-da-arteria-hepatica', 'ducto-biliar'])
+      expect(toqueAceito(fig, 'triade-portal', v, [v, 'triade-portal', 'sinusoide-hepatico']), v).toBe(true);
+    expect(toqueAceito(fig, 'ramo-da-veia-porta', 'triade-portal')).toBe(false);
+    expect(toqueAceito(fig, 'sinusoide-hepatico', 'celula-de-kupffer', ['celula-de-kupffer', 'sinusoide-hepatico'])).toBe(true);
+    const pan = LAMINAS_RENDER.pancreas;
+    expect(toqueAceito(pan, 'acino-pancreatico', 'celula-centroacinosa', ['celula-centroacinosa', 'acino-pancreatico', 'septo-conjuntivo'])).toBe(true);
+    expect(toqueAceito(pan, 'acino-pancreatico', 'ducto-intercalado')).toBe(false);
+    expect(toqueAceito(pan, 'septo-conjuntivo', 'ducto-interlobular', ['ducto-interlobular', 'septo-conjuntivo'])).toBe(true);
+    for (const id of ['esofago', 'colon'])
+      expect(toqueAceito(LAMINAS_RENDER[id], 'muscular-externa', 'plexo-mioenterico', ['plexo-mioenterico', 'muscular-externa']), id).toBe(true);
+    // o ducto da glândula esofágica atravessa a mucosa: a glândula não entra em "submucosa"
+    expect(toqueAceito(LAMINAS_RENDER.esofago, 'submucosa', 'glandula-esofagica')).toBe(false);
+  });
+});
+
 describe('distratores do "Qual é o tecido?"', () => {
   const ids = new Set(Object.keys(LAMINAS_RENDER));
   const comExclusao = Object.entries(LAMINAS_RENDER).filter(([, r]) => r.distratoresExcluidos);
@@ -130,6 +164,15 @@ describe('distratores do "Qual é o tecido?"', () => {
         expect(LAMINAS.some((l) => l.id === x), `${id}: ${x} sem texto`).toBe(true);
         expect(x, id).not.toBe(id);
       }
+  });
+
+  it('cólon e estômago não têm "Epitélio simples cilíndrico" como distrator; o intestino delgado mantém o cólon', () => {
+    for (const id of ['colon', 'estomago-fundo']) {
+      const l = LAMINAS.find((x) => x.id === id)!;
+      expect(distratoresPossiveis(l, LAMINAS, LAMINAS_RENDER).map((x) => x.id), id).not.toContain('epitelio-cilindrico-intestino');
+    }
+    const delgado = LAMINAS.find((x) => x.id === 'epitelio-cilindrico-intestino')!;
+    expect(distratoresPossiveis(delgado, LAMINAS, LAMINAS_RENDER).map((x) => x.id)).toContain('colon');
   });
 
   it('sobram sempre pelo menos 3 distratores', () => {
