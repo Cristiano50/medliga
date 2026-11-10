@@ -7,7 +7,9 @@ import { _roots, act, createRoot, extend } from '@react-three/fiber';
 import {
   ALTURA_FATIA,
   LOBULO,
+  COBERTURA_DISSE,
   RAIO_MAXIMO_TRECHO,
+  alturasCanaliculos,
   barrasMoldura,
   cantosCelula,
   convexosSeCruzam,
@@ -15,6 +17,7 @@ import {
   distanciaPoligono,
   geometriaLobulo,
   hepatocitos,
+  mangasDisse,
   pegadaTrecho,
   verticesHexagono,
 } from '../src/modules/histologia/modelos3d/geometria-lobulo.ts';
@@ -171,24 +174,51 @@ describe('lóbulo hepático clássico', () => {
     }
   });
 
+  it('casca de Disse: manga no trecho médio de cada sinusoide, por fora da luz', () => {
+    const mangas = mangasDisse(g.sinusoides);
+    expect(mangas).toHaveLength(g.sinusoides.length);
+    mangas.forEach((m, i) => {
+      const t = g.sinusoides[i];
+      expect(m.angulo).toBe(t.angulo);
+      expect(m.inicio).toBeGreaterThan(t.inicio);
+      expect(m.fim).toBeLessThan(t.fim);
+      expect((m.fim - m.inicio) / (t.fim - t.inicio)).toBeCloseTo(COBERTURA_DISSE, 9);
+      // centrada no trecho, com o raio externo do trecho (a luz fica LOBULO.disse por dentro)
+      expect((m.inicio + m.fim) / 2).toBeCloseTo((t.inicio + t.fim) / 2, 9);
+      const raio = (a: number) => t.raioInicio + ((t.raioFim - t.raioInicio) * (a - t.inicio)) / (t.fim - t.inicio);
+      expect(m.raioInicio).toBeCloseTo(raio(m.inicio), 9);
+      expect(m.raioFim).toBeCloseTo(raio(m.fim), 9);
+      expect(m.raioInicio - LOBULO.disse).toBeGreaterThan(0);
+    });
+  });
+
   it('canalículos biliares entre hepatócitos vizinhos, no plano médio das placas', () => {
     const meia = ALTURA_FATIA / 2;
+    const alturas = alturasCanaliculos();
+    // uma altura por face de contato: as duas faces de corte da fatia e cada interface entre camadas
+    expect(alturas).toHaveLength(LOBULO.camadas + 1);
+    expect(alturas[0]).toBeCloseTo(-meia, 12);
+    expect(alturas[alturas.length - 1]).toBeCloseTo(meia, 12);
+    for (let c = 1; c < LOBULO.camadas; c++) expect(alturas[c]).toBeCloseTo(-meia + c * LOBULO.altura + (c - 0.5) * LOBULO.folga, 12);
+    let horizontais = 0;
     for (const { a, b } of g.canaliculos) {
       const m = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2];
+      // no plano médio de uma placa (desvio lateral nulo): nunca na face voltada para o sinusoide
       const placa = g.placas.find((p) => Math.abs(-m[0] * Math.sin(p.angulo) + m[2] * Math.cos(p.angulo)) < 1e-9 && m[0] * Math.cos(p.angulo) + m[2] * Math.sin(p.angulo) > 0);
       expect(placa).toBeTruthy();
-      // não saem da fatia (os verticais chegam até as faces de corte)
+      expect(LOBULO.raioCanaliculo).toBeLessThan(LOBULO.espessura / 2);
       expect(Math.max(Math.abs(a[1]), Math.abs(b[1]))).toBeLessThanOrEqual(meia + 1e-9);
       if (Math.abs(a[1] - b[1]) > 1e-9) {
         // vertical: na folga entre duas células consecutivas da placa
         const r = Math.hypot(m[0], m[2]);
         expect(placa!.celulas.some(([, fim], i) => i + 1 < placa!.celulas.length && r > fim && r < placa!.celulas[i + 1][0])).toBe(true);
       } else {
-        // horizontal: na interface entre camadas de hepatócitos
-        const yInterface = -meia + LOBULO.altura + LOBULO.folga / 2;
-        expect(a[1]).toBeCloseTo(yInterface, 9);
+        // horizontal: numa face de contato entre camadas, ao longo da placa
+        expect(alturas.some((y) => Math.abs(y - a[1]) < 1e-9)).toBe(true);
+        horizontais++;
       }
     }
+    expect(horizontais).toBe(g.placas.length * alturas.length);
   });
 });
 

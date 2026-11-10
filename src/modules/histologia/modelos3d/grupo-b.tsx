@@ -21,6 +21,7 @@ import {
   geometriaPlacas,
   geometriaTrechos,
   geometriaTuboOco,
+  mangasDisse,
 } from './geometria-lobulo.ts';
 import {
   DESVIO_TITINA,
@@ -101,8 +102,12 @@ function ModeloLobulo() {
   const fator = useFator();
   const lob = geometriaLobulo();
   const placas = useGeo(() => geometriaPlacas(lob), [lob]);
-  const disse = useGeo(() => geometriaTrechos(lob.sinusoides, 0, fator), [lob, fator]);
-  const luz = useGeo(() => geometriaTrechos(lob.sinusoides, LOBULO.disse, fator), [lob, fator]);
+  const disse = useGeo(() => geometriaTrechos(mangasDisse(lob.sinusoides), 0, fator), [lob, fator]);
+  // Seis segmentos ao longo de cada trecho: há anéis de vértices nas pontas à mostra (fora da casca de Disse).
+  const luz = useGeo(() => geometriaTrechos(lob.sinusoides, LOBULO.disse, fator, 6), [lob, fator]);
+  // Âncora do sinusoide: ponta periférica, à mostra, do trecho voltado para a câmera (eixo +z).
+  const trechoFrente = lob.sinusoides.reduce((m, t) => (Math.sin(t.angulo) * t.fim > Math.sin(m.angulo) * m.fim ? t : m), lob.sinusoides[0]);
+  const aFrente = trechoFrente.inicio + (5 / 6) * (trechoFrente.fim - trechoFrente.inicio);
   const kupffer = useGeo(() => geometriaKupffer(lob, fator), [lob, fator]);
   const canaliculos = useGeo(() => geometriaCanaliculos(lob, fator), [lob, fator]);
   const moldura = useGeo(() => geometriaMoldura(), []);
@@ -138,17 +143,18 @@ function ModeloLobulo() {
       <Parte id="placas-de-hepatocitos" cor={COR_LOBULO.hepatocito} prioridade={6} rugosidade={0.7} rotulo={[0.25, topo, 0.95]}>
         <Malha geometria={placas} />
       </Parte>
-      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[0, 0.12, 0.6]}>
+      <Parte id="sinusoide-hepatico" cor={COR_LOBULO.sinusoide} opacidade={0.38} prioridade={6} rotulo={[Math.cos(trechoFrente.angulo) * aFrente, 0.1, Math.sin(trechoFrente.angulo) * aFrente]}>
         <Malha geometria={luz} />
       </Parte>
-      {/* Casca de Disse em volta da luz: prioridade menor que a do sinusoide que ela envolve. */}
-      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.22} prioridade={5} rotulo={[0.14, 0.02, 1.07]}>
+      {/* Casca de Disse só no trecho médio de cada sinusoide (as pontas mostram a luz): mesma prioridade do
+          sinusoide, e a casca, por fora, ganha o toque onde cobre a luz. */}
+      <Parte id="espaco-perissinusoidal" cor={COR_LOBULO.disse} opacidade={0.4} prioridade={6} rotulo={[0.13, 0.05, 1.12]}>
         <Malha geometria={disse} />
       </Parte>
       <Parte id="celula-de-kupffer" cor={COR_LOBULO.kupffer} prioridade={7} rugosidade={0.45} rotulo={kFrente?.centro}>
         <Malha geometria={kupffer} />
       </Parte>
-      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[-0.2, topo, 1.05]}>
+      <Parte id="canaliculo-biliar" cor={COR_LOBULO.canaliculo} prioridade={6} rotulo={[-0.14, topo + LOBULO.raioCanaliculo, 1.0]}>
         <Malha geometria={canaliculos} />
       </Parte>
       <Parte id="triade-portal" cor={COR_LOBULO.conjuntivo} opacidade={0.34} prioridade={2} rotulo={[atras[0] * fora, LOBULO.alturaPorta / 2, atras[1] * fora]}>

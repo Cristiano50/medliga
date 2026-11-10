@@ -37,7 +37,7 @@ export const LOBULO = {
   luzMinima: 0.016,
   /** conjuntivo do espaço porta (coluna centrada no vértice) */
   raioPorta: 0.27,
-  raioCanaliculo: 0.016,
+  raioCanaliculo: 0.018,
   /** semieixos da célula de Kupffer (ao longo do sinusoide; transversais) */
   kupffer: [0.06, 0.038] as [number, number],
   /** altura das colunas (veias, espaço porta) acima e abaixo da fatia */
@@ -331,6 +331,22 @@ function construirSinusoides(placas: Placa[], vertices: Ponto2[]): TrechoSinusoi
   return trechos;
 }
 
+/** Fração do comprimento de cada trecho coberta pela casca de Disse (no meio); nas pontas a luz fica à mostra. */
+export const COBERTURA_DISSE = 0.5;
+
+/**
+ * Mangas da casca de Disse: o trecho médio de cada sinusoide, com o raio externo do trecho. No fígado, o
+ * espaço acompanha o sinusoide inteiro; a casca é desenhada só em parte para a luz poder ser vista e tocada.
+ */
+export function mangasDisse(trechos: TrechoSinusoide[] = geometriaLobulo().sinusoides): TrechoSinusoide[] {
+  return trechos.map((t) => {
+    const recuo = ((1 - COBERTURA_DISSE) / 2) * (t.fim - t.inicio);
+    const raio = (a: number) => t.raioInicio + ((t.raioFim - t.raioInicio) * (a - t.inicio)) / (t.fim - t.inicio);
+    const [inicio, fim] = [t.inicio + recuo, t.fim - recuo];
+    return { ...t, inicio, fim, raioInicio: raio(inicio), raioFim: raio(fim) };
+  });
+}
+
 function construirKupffer(trechos: TrechoSinusoide[]): Kupffer[] {
   const [ax, tr] = LOBULO.kupffer;
   const lista: Kupffer[] = [];
@@ -356,8 +372,19 @@ function construirKupffer(trechos: TrechoSinusoide[]): Kupffer[] {
   return lista;
 }
 
-function construirCanaliculos(placas: Placa[]): Segmento3[] {
+/** Alturas (y) dos canalículos horizontais: as duas faces de corte da fatia e as interfaces entre camadas. */
+export function alturasCanaliculos(): number[] {
   const { camadas, altura, folga } = LOBULO;
+  const meia = ALTURA_FATIA / 2;
+  return Array.from({ length: camadas + 1 }, (_, c) => (c === 0 ? -meia : c === camadas ? meia : -meia + c * altura + (c - 0.5) * folga));
+}
+
+/**
+ * Rede de canalículos no plano médio de cada placa: sulcos horizontais em cada face de contato entre
+ * camadas de hepatócitos (as faces de cima e de baixo da fatia são faces de contato com as camadas vizinhas,
+ * retiradas pelo corte; ali o sulco fica à mostra) e trechos verticais entre células consecutivas da placa.
+ */
+function construirCanaliculos(placas: Placa[]): Segmento3[] {
   const meia = ALTURA_FATIA / 2;
   const segs: Segmento3[] = [];
   const ponto = (ang: number, r: number, y: number): Ponto3 => [Math.cos(ang) * r, y, Math.sin(ang) * r];
@@ -365,13 +392,7 @@ function construirCanaliculos(placas: Placa[]): Segmento3[] {
     if (!p.celulas.length) continue;
     const ini = p.celulas[0][0];
     const fim = p.celulas[p.celulas.length - 1][1];
-    // Entre as camadas: ao longo da placa, no plano médio.
-    for (let c = 1; c < camadas; c++) {
-      const y = -meia + c * altura + (c - 0.5) * folga;
-      segs.push({ a: ponto(p.angulo, ini + 0.01, y), b: ponto(p.angulo, fim - 0.01, y) });
-    }
-    // Entre hepatócitos vizinhos da mesma placa: verticais, na folga radial, até as faces de corte da fatia
-    // (em cima e embaixo aparecem cortados, entre as células).
+    for (const y of alturasCanaliculos()) segs.push({ a: ponto(p.angulo, ini + 0.01, y), b: ponto(p.angulo, fim - 0.01, y) });
     for (let i = 1; i < p.celulas.length; i++) {
       const r = (p.celulas[i - 1][1] + p.celulas[i][0]) / 2;
       segs.push({ a: ponto(p.angulo, r, -meia), b: ponto(p.angulo, r, meia) });
@@ -473,12 +494,15 @@ function matrizRadial(angulo: number, a: number, y = 0): THREE.Matrix4 {
   return new THREE.Matrix4().compose(new THREE.Vector3(Math.cos(angulo) * a, y, Math.sin(angulo) * a), q, new THREE.Vector3(1, 1, 1));
 }
 
-/** Troncos de cone abertos dos trechos; `recuo` reduz o raio (0 = casca de Disse; LOBULO.disse = luz). */
-export function geometriaTrechos(trechos: TrechoSinusoide[], recuo: number, fator = 1): THREE.BufferGeometry {
-  const radiais = seg(18, fator);
+/**
+ * Troncos de cone abertos dos trechos; `recuo` reduz o raio (0 = casca de Disse; LOBULO.disse = luz).
+ * `aneis` = segmentos ao longo do eixo (anéis de vértices no meio servem de âncora aos marcadores).
+ */
+export function geometriaTrechos(trechos: TrechoSinusoide[], recuo: number, fator = 1, aneis = 2): THREE.BufferGeometry {
+  const radiais = seg(14, fator);
   return mesclar(
     trechos.map((t) => {
-      const c = new THREE.CylinderGeometry(t.raioFim - recuo, t.raioInicio - recuo, t.fim - t.inicio, radiais, 2, true);
+      const c = new THREE.CylinderGeometry(t.raioFim - recuo, t.raioInicio - recuo, t.fim - t.inicio, radiais, aneis, true);
       return c.applyMatrix4(matrizRadial(t.angulo, (t.inicio + t.fim) / 2));
     }),
   );

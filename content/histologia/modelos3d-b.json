@@ -10,7 +10,8 @@
         "Número reduzido de hepatócitos: as células estão muito maiores que na proporção real, por isso há poucas células entre a veia centrolobular e a periferia, e só duas camadas de altura.",
         "As placas aparecem como paredes retas que se bifurcam em direção à periferia. No fígado real, elas se anastomosam numa rede tridimensional irregular, e os sinusoides formam uma rede contínua entre elas; aqui, cada sinusoide é um tubo liso, sem o endotélio fenestrado desenhado.",
         "Espaço porta em todos os seis ângulos, sempre com a tríade completa: idealização. No corte real, os lóbulos são irregulares e nem todo ângulo mostra os três elementos; linfáticos, nervos, canais de Hering e células estreladas (de Ito) não estão desenhados.",
-        "O espaço de Disse e os canalículos biliares só se resolvem ao microscópio eletrônico; no modelo, estão muito exagerados para poderem ser vistos e tocados. Os canalículos formam uma rede entre hepatócitos vizinhos da mesma placa.",
+        "O espaço de Disse e os canalículos biliares só se resolvem ao microscópio eletrônico; no modelo, estão muito exagerados para poderem ser vistos e tocados. A casca amarela do espaço de Disse cobre só o trecho médio de cada sinusoide, para deixar a luz à mostra nas pontas; no fígado, o espaço acompanha o sinusoide em todo o comprimento.",
+        "Os canalículos formam uma rede entre hepatócitos vizinhos da mesma placa. As faces de cima e de baixo da fatia são faces de contato com as camadas de hepatócitos retiradas pelo corte, e ali os sulcos dos canalículos ficam à mostra; eles nunca passam pela face do hepatócito voltada para o sinusoide.",
         "Cores convencionais, não HE: hepatócitos em tom de areia, sangue dos sinusoides em vermelho, veia centrolobular em azul, ramo da veia porta em violeta, artéria em vermelho-escuro, bile (canalículos e ducto) em verde, espaço de Disse em amarelo e células de Kupffer em ciano.",
         "Lóbulo portal e ácino hepático (zonas 1, 2 e 3) são outras formas de dividir o mesmo parênquima e não estão desenhados; a moldura marca só o lóbulo clássico."
       ],
@@ -21,7 +22,9 @@
         "Placas de uma célula de espessura no adulto: o hepatócito tem faces voltadas para os sinusoides de cada lado da placa (microvilosidades no espaço de Disse) e faces de contato com os hepatócitos vizinhos, onde ficam os canalículos biliares.",
         "O lóbulo clássico é uma das três formas de dividir o mesmo parênquima; no ácino hepático, a zona 3, em volta da veia centrolobular, é a menos oxigenada e a mais vulnerável à hipóxia e a alguns tóxicos, como o paracetamol."
       ],
-      "topicos": ["his-15-glandulas-anexas"],
+      "topicos": [
+        "his-15-glandulas-anexas"
+      ],
       "estruturas": [
         {
           "id": "lobulo-hepatico",
@@ -46,7 +49,7 @@
         {
           "id": "espaco-perissinusoidal",
           "nome": "Espaço perissinusoidal (de Disse)",
-          "descricao": "Casca fina entre o endotélio do sinusoide e a face sinusoidal dos hepatócitos, onde o plasma banha as microvilosidades dos hepatócitos; contém fibras reticulares e células estreladas (não desenhadas) e nele se forma a linfa hepática."
+          "descricao": "Espaço estreito entre o endotélio do sinusoide e a face sinusoidal dos hepatócitos, onde o plasma banha as microvilosidades dos hepatócitos; contém fibras reticulares e células estreladas (não desenhadas) e nele se forma a linfa hepática. No modelo, casca amarela em volta do trecho médio de cada sinusoide."
         },
         {
           "id": "celula-de-kupffer",
@@ -56,7 +59,7 @@
         {
           "id": "canaliculo-biliar",
           "nome": "Canalículo biliar",
-          "descricao": "Sulco entre as faces de contato de hepatócitos vizinhos, sem parede própria e vedado por zônulas de oclusão; os canalículos formam uma rede na placa e levam a bile para a periferia do lóbulo, onde os canais de Hering a passam ao ducto biliar."
+          "descricao": "Sulco entre as faces de contato de hepatócitos vizinhos, sem parede própria e vedado por zônulas de oclusão; os canalículos formam uma rede na placa e levam a bile para a periferia do lóbulo, onde os canais de Hering a passam ao ducto biliar. No modelo, linhas verdes nas faces de contato expostas pelo corte e entre as camadas."
         },
         {
           "id": "triade-portal",
@@ -79,7 +82,12 @@
           "descricao": "Ducto do espaço porta revestido por epitélio simples cúbico (colangiócitos); recebe a bile dos canalículos pelos canais de Hering e a leva para fora do lóbulo, no sentido oposto ao do sangue."
         }
       ],
-      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
     },
     {
       "id": "sarcomero",
@@ -104,7 +112,9 @@
         "No músculo esquelético de mamíferos, a tríade (túbulo T entre duas cisternas terminais) fica na junção das bandas A e I, duas por sarcômero; no músculo cardíaco, o túbulo T fica na linha Z e forma díades.",
         "Linha Z: a α-actinina ancora os filamentos finos dos sarcômeros vizinhos. Linha M: proteínas de ligação mantêm unidos os filamentos grossos. Titina: proteína elástica que vai da linha Z à linha M e mantém o filamento grosso centrado."
       ],
-      "topicos": ["his-09-muscular"],
+      "topicos": [
+        "his-09-muscular"
+      ],
       "estruturas": [
         {
           "id": "sarcomero",
@@ -162,7 +172,12 @@
           "descricao": "Retículo endoplasmático liso da fibra muscular, com túbulos longitudinais sobre a banda A e cisternas terminais junto aos túbulos T; armazena Ca²⁺, libera-o pelos receptores de rianodina e o recaptura pela SERCA."
         }
       ],
-      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
     },
     {
       "id": "juncoes-celulares",
@@ -185,7 +200,9 @@
         "Junção comunicante: conexons de conexinas, alinhados entre as duas membranas, formam canais por onde passam íons e pequenas moléculas de um citoplasma ao outro.",
         "Hemidesmossomo: integrina α6β4 e BP180 (colágeno XVII) prendem a célula à lâmina basal, e a placa (BP230, plectina) recebe filamentos de queratina. Autoanticorpos contra desmogleínas causam o pênfigo; contra componentes do hemidesmossomo, o penfigoide bolhoso."
       ],
-      "topicos": ["his-02-epitelio-revestimento"],
+      "topicos": [
+        "his-02-epitelio-revestimento"
+      ],
       "estruturas": [
         {
           "id": "epitelio-simples-cilindrico",
@@ -238,7 +255,12 @@
           "descricao": "Camada de matriz sob o epitélio, produzida pelas células epiteliais: colágeno IV, laminina, nidogênio (entactina) e perlecan. No esquema, a placa cinza é a lâmina densa."
         }
       ],
-      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [], "humano": null }
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [],
+        "humano": null
+      }
     }
   ]
 }
