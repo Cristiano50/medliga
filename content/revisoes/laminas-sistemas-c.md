@@ -3,6 +3,7 @@
 - Agentes: `revisor-laminas-v2` (1ª etapa, histologia) e `revisor-laminas-patologia-v2` (2ª etapa, patologia, com conferência de fonte primária) · Data: 2026-11-10
 - Protocolo: `docs/protocolo-revisao-agentes.md` (rigor de cada afirmação, terminologia dos tópicos, mudança mínima, ids intocados, registro em `revisao.agentes`, relatório; fontes lidas com curl nas APIs do PubMed e do Europe PMC, sem WebFetch). Mesmo padrão e mesma escala P1/P2/P3 de `laminas-histologia.md`, `laminas-sistemas-a.md` e `laminas-sistemas-b.md`.
 - Situação: **revisão por agente (IA)**. Nada aqui substitui a conferência médica. `revisao.humano` continua `null` nas 7 lâminas.
+- **Atualização:** os desenhos foram corrigidos pelo desenhista e reavaliados no mesmo dia. As seções 1 a 9 descrevem a primeira versão (commit `abf42e0`); o estado atual dos ajustes de desenho, de jogo e de ids está em **§10, Reavaliação do desenho (v2)**.
 - Escopo:
   - **Texto** (editado): `content/histologia/laminas-sistemas-c.json`, lâminas `pulmao`, `rim-cortex`, `tireoide`, `adrenal`, `testiculo`, `ovario`, `utero-proliferativo`. Li título, tecido, órgão, coloração, descrição, destaques e cada estrutura, e conferi tudo contra Junqueira 14ª ed., Ross 8ª ed. e os tópicos his-16 a his-20 (nomes, definições, `notasDivergencia`, `incertezas` e correlações).
   - **Desenho** (só avaliado, **nenhum código alterado**): `src/modules/histologia/laminas/sistemas-c.tsx`, versão do commit `abf42e0`, que não mudou durante a revisão. Usei as capturas do desenhista em `/tmp/claude-0/-home-user/dffebdf6-4feb-54e6-87ea-f3ab03870b86/scratchpad/lam-c/`:
@@ -326,3 +327,106 @@ As afirmações de patologia acrescentadas vêm das correlações dos tópicos h
   - `render.mjs`, `grade.mjs`, `campos.py`;
   - `fontes/` (textos baixados);
   - `laminas-sistemas-c.original.json`.
+
+## 10. Reavaliação do desenho (v2)
+
+- Agente: `revisor-laminas-v2` · Data: 2026-11-10
+- Objeto: `src/modules/histologia/laminas/sistemas-c.tsx` depois das correções do desenhista (arquivo de 12:33 UTC, inalterado desde então) e os textos que ele escreveu ou que ficaram em conflito com o novo desenho.
+- Método: regerei os 7 SVGs do código atual; saíram idênticos, byte a byte, aos de `lam-c/v2/depois/`. Repeti as contagens e os campos do jogo da primeira revisão (§9) e olhei as capturas do desenhista (`antes-depois-<id>.png`, `m-h-depois.png`, `m-h40-depois.png`, `depois/prancha-mudancas.png`) e recortes meus a 10× e 40×.
+- Nenhum código alterado. `revisao.humano` continua `null`. Em cada lâmina há uma terceira entrada em `revisao.agentes` ("reavaliação do desenho v2: …"); as duas anteriores foram mantidas.
+
+### 10.1 Resultado
+
+**Os quatro P2 e o P1 de jogo estão resolvidos, e as correções não criaram erro novo.** Não há P1 nem P2 em aberto. Restam só refinamentos (P3).
+
+| Lâmina | Veredito v2 | Situação do desenho |
+|---|---|---|
+| pulmao | aprovado | ok; restam P3 |
+| rim-cortex | aprovado-com-correcoes (1 acréscimo de texto) | P2-1 e P2-2 resolvidos; resta P3 |
+| tireoide | aprovado | P3-3 resolvido; nada em aberto |
+| adrenal | aprovado-com-correcoes (1 correção de texto) | P3-4 resolvido; 1 P3 novo |
+| testiculo | aprovado | estrutura nova correta; resta P3 |
+| ovario | aprovado | desenho inalterado; restam P3 |
+| utero-proliferativo | aprovado-com-correcoes (2 correções de texto) | P2-3 resolvido; 2 P3 novos |
+
+### 10.2 O que foi conferido
+
+| item da 1ª revisão | antes | depois (medido) | situação |
+|---|---|---|---|
+| P1-J, distratores | sem exclusões | `rim-cortex`, `tireoide` e `pulmao` excluem `epitelio-cubico-rim`; o útero exclui `epitelio-cilindrico-intestino` e `epitelio-pseudoestratificado-traqueia` | resolvido |
+| P1-J, útero × músculo liso | miométrio em 17% dos campos (até 11,6%) | área [200, 170, 800, 350]: miométrio ≤ 0,4% do campo; glândulas ≥ 28,8% | resolvido |
+| P2-1, rim: TCP × TCD | 56 × 41 perfis (1,4:1); área 37,9% × 19,9% | **70 × 17 perfis (4,1:1)**; área 49% × 9,5% | resolvido |
+| P2-2, rim: tufo glomerular | alças 33% do tufo; 79 núcleos ao acaso, em grupos de 3–4 | alças 40% do tufo; 59 núcleos: 30 endoteliais na parede das alças, 14 mesangiais em 7 áreas de 2 no eixo dos lóbulos, 15 podócitos em células claras na borda | resolvido |
+| P2-3, útero: mitoses | 6 em glândulas, 3 no estroma; núcleos a 32–66% da altura | **25 em 1.638 células glandulares** (0,42 por perfil) e 9 no estroma; núcleos a 24–74% da altura | resolvido |
+| P2-4, `contem` | nenhuma lâmina | as 7 lâminas, como proposto; no útero, as camadas viraram regiões | resolvido |
+| P3-1, pulmão: aberturas do bronquíolo respiratório | 2 no trecho visível (1 por lado) | 4 no trecho visível (2 por lado, alternadas) | resolvido |
+| P3-3, tireoide: célula C | 1,3 un fora da lâmina basal | dentro da linha da lâmina basal, sem contato com o coloide | resolvido |
+| P3-4, adrenal: reticular | 24% do córtex | ≈ 14% (zonas ≈ 15% / 72% / 14%) | resolvido |
+| P3-4, adrenal: junção corticomedular | faixa clara contínua | células da reticular e da medula encostadas e interdigitadas | resolvido |
+| P3-4, adrenal: glomerulosa | fileira de "bolas" iguais | grupos ovoides de tamanhos variados e arcos | resolvido (ver P3 novo) |
+| Ids | `capsula`, `veia-central`, `tunica-albuginea` (ovário) | `capsula-suprarrenal`, `veia-central-suprarrenal`, `tunica-albuginea-ovariana` | resolvido |
+| Ids ausentes | 4 | criados `tubulo-seminifero`, `celulas-justaglomerulares` e `estroma-endometrial`; `saco-alveolar` continua fundido | 3 de 4 |
+
+Correção ao que escrevi em §4, P2-2: a matriz do tufo na primeira versão era ≈ 67% da área, e não "≈ 45%". Aquele valor era estimativa visual; agora medi no SVG (alças 32,8% → 40,3%).
+
+**Glomérulo redesenhado: nenhum erro novo.**
+- Nenhuma área mesangial tem mais de 2 núcleos, e o número total de núcleos caiu. O desenho não lê mais como hipercelularidade nem como expansão mesangial.
+- Os podócitos aparecem como células claras salientes para o espaço urinário, como o texto descreve.
+- As células justaglomerulares continuam na média da aferente, com o endotélio por dentro.
+
+**Mitoses do útero: plausíveis para a fase proliferativa, sem aspecto de hiperplasia atípica.**
+- As figuras são placas simples com halo, na metade apical da célula, sem formas atípicas.
+- As glândulas são regulares e separadas por ≥ 10 un. Os núcleos são alongados e polarizados.
+- Em todo campo do jogo, o estroma é 50–69% do endométrio (média 58%): as glândulas nunca superam o estroma.
+- A frequência (1,5% das células glandulares; ≈ 1 mitose a cada 2–3 perfis) foi escolhida para o aluno achar uma mitose em quase todo campo de 40×. Não li fonte com o índice mitótico normal; fica como ponto para o revisor humano (§10.5).
+
+### 10.3 Textos
+
+**Estruturas novas (texto do desenhista): conferidas, sem correção.**
+- `celulas-justaglomerulares` (rim): igual ao his-17 (músculo liso modificado da média da aferente, grânulos de renina; três estímulos de liberação). A nota sobre a área de toque ampliada confere com o código.
+- `tubulo-seminifero` (testículo): igual ao his-19. A explicação do jogo confere com `contem` (túnica própria, espermatogônia, espermatócito, espermátide, Sertoli e luz).
+- `estroma-endometrial` (útero): igual ao his-20, com o aspecto da fase proliferativa e a regra do jogo.
+
+**Correções de texto ligadas ao redesenho (4 campos, todas menores).**
+
+| lâmina | campo | antes | depois | motivo |
+|---|---|---|---|---|
+| utero-proliferativo | `endometrio-funcional` | "No esquema, o toque no estroma desta camada identifica a camada; glândulas e artérias espiraladas têm áreas próprias." | "No esquema, a camada é a região que vai da superfície até a mudança de tom do estroma: o toque mostra a estrutura tocada, e o epitélio de revestimento, o estroma, as glândulas e as artérias espiraladas desta camada valem por ela no jogo." | O toque no estroma agora mostra "Estroma endometrial". A lista segue o `contem` do código, que inclui o epitélio de revestimento. |
+| utero-proliferativo | `endometrio-basal` | (sem frase sobre o esquema) | + "No esquema, a camada é a região de estroma mais escuro junto ao miométrio: o toque mostra a estrutura tocada, e o estroma e os fundos das glândulas desta camada valem por ela no jogo." | Mesma lógica; a camada basal também não tem mais área própria. |
+| adrenal | `descricao` (Esquema) | "…e a reticular ficou proporcionalmente mais espessa; na glândula real…" | "…mantendo aproximadamente a proporção entre as zonas; na glândula real…" | A ressalva que acrescentei na 1ª revisão deixou de valer: a reticular passou de 24% para ≈ 14% do córtex. |
+| rim-cortex | `glomerulo` | (sem legenda do desenho) | + "No esquema: núcleos endoteliais pequenos e escuros na parede das alças, mesangiais aos pares nas áreas mais escuras do eixo e podócitos em células claras na borda do tufo." | O tufo agora distingue os três tipos; a legenda ensina a lê-los. |
+
+### 10.4 O que resta
+
+**P1:** nenhum. **P2:** nenhum.
+
+**P3 novos (surgiram ou foram medidos nesta reavaliação):**
+1. **adrenal, arcos da glomerulosa** (`arco`, linhas 1458–1487). Cada arco é um "U" invertido de uma fileira de células, com o miolo claro e vazio. Lembra um túbulo cortado ao comprido, com luz. O toque no miolo responde "Capilar sinusoide", o que está certo, mas o desenho não mostra o vaso. **Corrigir:** uma hemácia e um núcleo endotelial no miolo de cada arco.
+2. **útero, orientação da placa metafásica** (linha 2175, `m.ang + 90`). A placa está paralela à superfície do epitélio. Em epitélio simples, a divisão costuma ser planar: fuso paralelo à lâmina basal e placa perpendicular à superfície. **Corrigir:** usar `m.ang`. É refinamento; conferir com o revisor humano (§10.5).
+3. **útero, densidade glandular no limite superior.** O estroma fica abaixo de 55% do endométrio em 37 de 121 campos do jogo (mínimo 50,1%). Não é efeito do redesenho: a densidade é a mesma da primeira versão, e só agora foi medida. **Corrigir (opcional):** ≈ 10–15% menos perfis transversais (`transversais`, linha 2247, folga 12 → ≈ 16).
+4. **rim, alças do tufo.** Ocupam 40% da área, abaixo da meta que propus (≥ 50%). Opcional.
+
+**P3 que continuam da primeira revisão:**
+- pulmão: saco alveolar sem id próprio; cantos dos septos em triângulos grandes;
+- testículo: uma só camada de células mioides (declarada no texto);
+- ovário: teca externa, cúmulo oóforo e corona radiata desenhados sem id; toque apertado na zona pelúcida; teca interna sem citoplasma epitelioide;
+- útero: pseudoestratificação ainda discreta nas glândulas cortadas ao comprido;
+- definição de `septo-conjuntivo` no his-03 ("ductos excretores"), fora deste arquivo.
+
+**Observações de jogo, sem pedido de mudança:**
+- `endometrio-funcional` e `endometrio-basal` não têm mais área de toque própria. No microscópio, o toque nunca nomeia a camada; ela só aparece pela lista de estruturas, que a realça. No "Identifique", vale pela posição do toque.
+- `tubulo-seminifero` tem área própria só numa faixa externa de ≈ 2,5 un, e `celulas-justaglomerulares` em 0,08% da lâmina (disco de 5 un, ≈ 32 px a 40×). As duas funcionam porque estão em `contem`.
+
+### 10.5 Pontos para o revisor humano
+
+1. **Frequência de mitoses no endométrio proliferativo.** Confirmar se ≈ 1 mitose a cada 2–3 perfis glandulares é aceitável para um esquema didático.
+2. **Orientação da placa metafásica** (P3 novo 2): a regra da divisão planar é de memória, sem fonte lida.
+3. **Densidade glandular** (P3 novo 3): decidir se o esquema deve garantir estroma ≥ 55% em todo campo.
+4. **Camadas do endométrio como regiões:** decidir se o microscópio deve mostrar a camada junto com a estrutura tocada (por exemplo, "Estroma endometrial, na camada funcional").
+
+### 10.6 Evidências
+
+- `npm run validar-conteudo` → `Conteúdo OK — disciplinas: embriologia, histologia; tópicos: 45; questões: 1363; escolas: 441.`
+- `npx vitest run` → `Test Files 16 passed (16) · Tests 162 passed (162)`.
+- Integridade (script contra a cópia anterior à reavaliação): ids, nomes, `tecido`, `destaques` e lista de estruturas iguais; 4 campos de texto alterados; +1 entrada em `revisao.agentes` em cada lâmina, com as 2 anteriores intactas.
+- Arquivos em `/tmp/claude-0/-home-user/dffebdf6-4feb-54e6-87ea-f3ab03870b86/scratchpad/rev-lam-c/`: `editar3.py`, `laminas-sistemas-c.antes-v2.json` e a pasta `v2/` (SVGs, recortes, grades e `campos.py`).

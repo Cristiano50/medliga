@@ -80,6 +80,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 acréscimos (menores), alinhados às correlações do his-16, sem número clínico novo: enfisema (destruição dos septos distais ao bronquíolo terminal, sem fibrose); deficiência de surfactante no prematuro (membranas hialinas) e proliferação do tipo II no dano alveolar difuso; macrófagos com hemossiderina = 'células da insuficiência cardíaca'. O desenho é de pulmão normal: septos delgados (≈ 7–12 un), sem exsudato, sem membranas hialinas."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: sem P1 nem P2. Bronquíolo respiratório com 4 aberturas de alvéolo no trecho visível, 2 de cada lado e alternadas (parede em segmentos curtos de epitélio cúbico e músculo liso), como pedido no P3-1. Jogo: exclui epitelio-cubico-rim; contem do septo (capilar, pneumócitos) e do alvéolo (macrófago) corretos. Restam P3: saco alveolar sem id próprio e cantos dos septos em triângulos grandes."
           }
         ],
         "humano": null
@@ -105,7 +112,7 @@
         {
           "id": "glomerulo",
           "nome": "Glomérulo",
-          "descricao": "Tufo lobulado de alças capilares fenestradas, com hemácias, entre a arteríola aferente e a eferente. Os núcleos são de células endoteliais, de células mesangiais (no eixo dos lóbulos) e de podócitos (na superfície, voltados para o espaço urinário)."
+          "descricao": "Tufo lobulado de alças capilares fenestradas, com hemácias, entre a arteríola aferente e a eferente. Os núcleos são de células endoteliais, de células mesangiais (no eixo dos lóbulos) e de podócitos (na superfície, voltados para o espaço urinário). No esquema: núcleos endoteliais pequenos e escuros na parede das alças, mesangiais aos pares nas áreas mais escuras do eixo e podócitos em células claras na borda do tufo."
         },
         {
           "id": "espaco-urinario",
@@ -170,6 +177,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 acréscimos (menores), alinhados ao his-17: necrose tubular aguda no TCP (perda da borda em escova, descamação); crescentes no espaço urinário nas glomerulonefrites graves. Patologia do desenho: tufo com matriz rosa abundante entre as alças e núcleos agrupados ao acaso (grupos de 3–4), o que um patologista pode ler como hipercelularidade ou expansão mesangial (P2-2 no relatório)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: P2-1 e P2-2 resolvidos. Medido no SVG: 70 perfis de TCP para 17 de TCD (4,1:1; área 49% × 9,5%). Tufo: alças 40% da área (antes 33%), 59 núcleos no corpúsculo com polo vascular (antes 79), agora 30 endoteliais na parede das alças, 14 mesangiais em 7 áreas de 2 no eixo e 15 podócitos na borda; nenhuma área mesangial com mais de 2 núcleos, nada que leia como hipercelularidade ou expansão mesangial. Estrutura nova celulas-justaglomerulares: texto conferido com o his-17, sem correção; área de toque 0,08% (disco de 5 un), contida na aferente. 1 acréscimo (menor): legenda dos núcleos do tufo na descrição do glomérulo. Resta P3: alças abaixo de metade do tufo."
           }
         ],
         "humano": null
@@ -240,6 +254,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 acréscimos (menores), alinhados ao his-18: Graves (coloide escasso e pálido, recortado, epitélio cilíndrico alto) e Hashimoto (infiltrado linfoplasmocitário, células de Hürthle). Carcinoma medular a partir das células C já estava no texto. O desenho é de tireoide normal; os vacúolos periféricos são poucos e não sugerem hiperfunção."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P3-3 resolvido, a célula C isolada fica dentro da linha da lâmina basal e sem contato com o coloide. Jogo: exclui epitelio-cubico-rim; contem do folículo (coloide, tirócito) sem as células C, como proposto. Nada novo."
           }
         ],
         "humano": null
@@ -252,7 +273,7 @@
       "tecido": "Glândula adrenal (suprarrenal)",
       "orgao": "Adrenal: cápsula, as três zonas do córtex e a medula (esquema)",
       "coloracao": "HE",
-      "descricao": "Da cápsula (em cima) para a medula (embaixo). Zona glomerulosa: grupos arredondados (\"glomérulos\" ou arcos) de células colunares baixas, de núcleo escuro e citoplasma mais acidófilo, com poucas gotículas de lipídio. Zona fasciculada, a mais espessa: cordões retos de uma ou duas células, perpendiculares à cápsula, separados por capilares sinusoides; espongiócitos grandes, de citoplasma vacuolizado (as gotículas de lipídio se dissolvem no preparo) e núcleo central, às vezes dois. Zona reticular: rede de cordões anastomosados de células menores e mais acidófilas, algumas com lipofuscina e núcleo picnótico. Medula: grupos de células cromafins, grandes, de citoplasma basófilo e granuloso, entre sinusoides, e a veia central, com feixes de músculo liso longitudinal na parede. Esquema: as espessuras foram comprimidas para caberem as quatro regiões no campo, e a reticular ficou proporcionalmente mais espessa; na glândula real a fasciculada ocupa cerca de três quartos do córtex, a glomerulosa cerca de 15%, e a reticular fica com o restante.",
+      "descricao": "Da cápsula (em cima) para a medula (embaixo). Zona glomerulosa: grupos arredondados (\"glomérulos\" ou arcos) de células colunares baixas, de núcleo escuro e citoplasma mais acidófilo, com poucas gotículas de lipídio. Zona fasciculada, a mais espessa: cordões retos de uma ou duas células, perpendiculares à cápsula, separados por capilares sinusoides; espongiócitos grandes, de citoplasma vacuolizado (as gotículas de lipídio se dissolvem no preparo) e núcleo central, às vezes dois. Zona reticular: rede de cordões anastomosados de células menores e mais acidófilas, algumas com lipofuscina e núcleo picnótico. Medula: grupos de células cromafins, grandes, de citoplasma basófilo e granuloso, entre sinusoides, e a veia central, com feixes de músculo liso longitudinal na parede. Esquema: as espessuras foram comprimidas para caberem as quatro regiões no campo, mantendo aproximadamente a proporção entre as zonas; na glândula real a fasciculada ocupa cerca de três quartos do córtex, a glomerulosa cerca de 15%, e a reticular fica com o restante.",
       "destaques": [
         "Córtex, de fora para dentro: glomerulosa → mineralocorticoide (aldosterona, sob angiotensina II e potássio); fasciculada → glicocorticoides (cortisol, sob ACTH); reticular → andrógenos fracos (DHEA) e algum cortisol.",
         "Espongiócito: citoplasma 'espumoso' porque as gotículas de lipídio (ésteres de colesterol, matéria-prima dos esteroides) se dissolvem no preparo; tem muito retículo endoplasmático liso e mitocôndrias de cristas tubulares, como toda célula que produz esteroide.",
@@ -320,6 +341,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 acréscimos (menores), alinhados ao his-18: glomerulosa preservada sem ACTH e destruída na doença de Addison; fasciculada hiperplásica no excesso de ACTH e atrófica sob glicocorticoide exógeno; célula cromafim como origem do feocromocitoma. Nenhum número clínico."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: P3-4 resolvido. Zonas com ≈ 15% / 72% / 14% do córtex (glomerulosa 26–93, fasciculada 93–420, reticular 420–482), junção corticomedular interdigitada e sem faixa clara contínua, glomerulosa em grupos ovoides de tamanhos variados e arcos. Ids capsula-suprarrenal e veia-central-suprarrenal aplicados; contem da medula correto. 1 correção (menor): a descrição ainda dizia que a reticular estava proporcionalmente mais espessa. P3 novo: os arcos da glomerulosa, de uma fileira de células com miolo claro e vazio, lembram um túbulo com luz; pôr um capilar (hemácia, núcleo endotelial) no miolo."
           }
         ],
         "humano": null
@@ -410,6 +438,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "3 acréscimos (menores), alinhados ao his-19: GCNIS junto à lâmina basal; síndrome de células de Sertoli isoladas; Klinefelter (túbulos hialinizados, aglomerados de Leydig). O desenho mostra espermatogênese completa, sem padrão patológico."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: estrutura nova tubulo-seminifero com texto igual ao do his-19 e explicação correta do jogo (contem com túnica própria, células germinativas, Sertoli e luz), sem correção; área própria só na faixa externa (2,6% da lâmina, disco de 1 un), suficiente porque as partes valem pelo túbulo. Desenho inalterado no restante. Resta P3: uma só camada de células mioides (declarada no texto)."
           }
         ],
         "humano": null
@@ -495,6 +530,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 acréscimos (menores), alinhados ao his-20: teca interna hiperplásica e luteinizada na SOP; tumor de células da granulosa produtor de estrogênio. O desenho tem folículos sadios (sem atresia), coerente com o texto."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: id tunica-albuginea-ovariana aplicado; contem do folículo secundário (ovócito, zona pelúcida, granulosa, teca interna) correto. Desenho inalterado. Restam P3: teca externa, cúmulo e corona sem id; toque apertado na zona pelúcida (anel de 7 un)."
           }
         ],
         "humano": null
@@ -530,12 +572,12 @@
         {
           "id": "endometrio-funcional",
           "nome": "Camada funcional do endométrio",
-          "descricao": "Parte superficial e mais espessa do endométrio, que descama na menstruação e se refaz a cada ciclo. Na fase proliferativa, o estroma é denso e celular (células fusiformes ou ovais, de pouco citoplasma, algumas em mitose). No esquema, o toque no estroma desta camada identifica a camada; glândulas e artérias espiraladas têm áreas próprias."
+          "descricao": "Parte superficial e mais espessa do endométrio, que descama na menstruação e se refaz a cada ciclo. Na fase proliferativa, o estroma é denso e celular (células fusiformes ou ovais, de pouco citoplasma, algumas em mitose). No esquema, a camada é a região que vai da superfície até a mudança de tom do estroma: o toque mostra a estrutura tocada, e o epitélio de revestimento, o estroma, as glândulas e as artérias espiraladas desta camada valem por ela no jogo."
         },
         {
           "id": "endometrio-basal",
           "nome": "Camada basal do endométrio",
-          "descricao": "Parte profunda, junto ao miométrio, que não descama: estroma mais denso e os fundos das glândulas, de onde se regeneram o epitélio e as glândulas depois da menstruação. É irrigada por artérias retas (basais), que não sofrem as alterações cíclicas."
+          "descricao": "Parte profunda, junto ao miométrio, que não descama: estroma mais denso e os fundos das glândulas, de onde se regeneram o epitélio e as glândulas depois da menstruação. É irrigada por artérias retas (basais), que não sofrem as alterações cíclicas. No esquema, a camada é a região de estroma mais escuro junto ao miométrio: o toque mostra a estrutura tocada, e o estroma e os fundos das glândulas desta camada valem por ela no jogo."
         },
         {
           "id": "estroma-endometrial",
@@ -575,6 +617,13 @@
             "data": "2026-11-10",
             "veredito": "aprovado-com-correcoes",
             "notas": "2 acréscimos (menores), alinhados ao his-20: hiperplasia endometrial (relação glândula/estroma aumentada; atipia = EIN) e adenomiose (sem submucosa, a basal invade o miométrio). O desenho é de endométrio proliferativo normal: glândulas espaçadas, sem apinhamento nem atipia."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: P2-3 resolvido. Medido no SVG: 25 mitoses em 1.638 células glandulares (0,42 por perfil) e 9 no estroma, na metade apical da célula, com placa metafásica de semieixos 4,4 × 1,5 un, visível a 10×; núcleos entre 24% e 74% da altura. Não lê como hiperplasia atípica: glândulas regulares, separadas por ≥ 10 un, núcleos alongados e polarizados, sem figuras atípicas; o estroma é 50–69% do endométrio em todo campo do jogo (média 58%), ou seja, as glândulas nunca superam o estroma. Jogo: área [200,170,800,350] (miométrio ≤ 0,4%), exclui epitélio simples cilíndrico e pseudoestratificado. Estrutura nova estroma-endometrial: texto conferido com o his-20, sem correção. 2 correções (menores): as descrições das camadas funcional e basal ainda falavam em toque próprio; agora dizem que a camada é a região e que as partes valem por ela. P3 novos: placa metafásica desenhada paralela à superfície (em epitélio simples costuma ficar perpendicular); densidade glandular no limite superior (37 de 121 campos com estroma abaixo de 55%)."
           }
         ],
         "humano": null
