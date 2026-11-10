@@ -126,7 +126,7 @@
       "id": "septo-conjuntivo",
       "nome": "Septo de conjuntivo",
       "sinonimos": [],
-      "definicao": "Tecido conjuntivo que parte da cápsula e divide a glândula em lobos e lóbulos, levando vasos, nervos e ductos excretores."
+      "definicao": "Tecido conjuntivo que parte da cápsula de um órgão e o divide em lobos e lóbulos, levando vasos e nervos; nas glândulas exócrinas, leva também os ductos excretores."
     },
     {
       "id": "lumen",
@@ -1317,6 +1317,13 @@
         "data": "2026-11-10",
         "veredito": "aprovado-com-correcoes",
         "notas": "Harmonização de ids de estrutura (1 renomeação, 0 questão alterada): o id do ducto intercalar (terminado em -ar) passou a ducto-intercalado, id canônico de his-15 e da lâmina 'pancreas'; nome 'Ducto intercalar' mantido, com 'ducto intercalado' como sinônimo (como em his-15). Como o id passa a ser compartilhado com o pâncreas e o registro de estruturas exibe a definição do primeiro tópico carregado (his-03), a definição foi delimitada às glândulas salivares (epitélio cúbico baixo, células mioepiteliais, longo na parótida), que não valem para o ducto intercalar pancreático (pavimentoso a cúbico baixo, começa nas células centroacinosas, sem mioepitélio; his-15). Fonte: Junqueira 14ª ed. e Ross 8ª ed., já citados no tópico (livros, sem texto integral nesta rede)."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Definição do id septo-conjuntivo generalizada (cápsula de um órgão; ductos excretores só nas glândulas exócrinas), porque o registro de estruturas usa a definição do primeiro tópico carregado e o id também aparece nas lâminas de tireoide, timo e tecido adiposo (apontado na revisão das lâminas do grupo C, content/revisoes/laminas-sistemas-c.md)."
       }
     ],
     "humano": null
