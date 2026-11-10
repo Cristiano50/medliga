@@ -52,6 +52,8 @@ export const DISCIPLINAS: Disciplina[] = [
       { rota: '/microscopio', icone: '🔬', nome: 'Microscópio virtual', descricao: 'Troque a objetiva, percorra a lâmina e toque nas células e estruturas.', cor: '#c084fc' },
       { rota: '/jogar/identifique-lamina', icone: '🎯', nome: 'Identifique na lâmina', descricao: 'Ache a estrutura pedida na lâmina antes de perder as vidas.', cor: 'var(--info)' },
       { rota: '/jogar/qual-tecido', icone: '❓', nome: 'Qual é o tecido?', descricao: 'Veja um campo do microscópio e diga o tecido ou órgão.', cor: 'var(--accent)' },
+      { rota: '/lab3d/histologia', icone: '🧊', nome: 'Laboratório 3D', descricao: 'Néfron, alvéolo e outros esquemas fora de escala: gire, corte e toque nas estruturas.', cor: 'var(--primary)' },
+      { rota: '/jogar/identifique/histologia', icone: '🎯', nome: 'Identifique no 3D', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
     ],
   },
   {

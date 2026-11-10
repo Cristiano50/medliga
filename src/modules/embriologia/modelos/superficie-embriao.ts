@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { fatorEmbriao } from '../../tres3d/qualidade.ts';
 
 type Curva = {
   ponto: (t: number) => THREE.Vector3;
@@ -6,13 +7,30 @@ type Curva = {
   tangente: (t: number) => THREE.Vector3;
 };
 
+export interface ResolucaoSuperficie {
+  /** divisões ao redor do eixo (padrão 48 no fator 1; 72 no nível alto) */
+  lados?: number;
+  /** anéis por unidade de t ao longo da curva (padrão 160 no fator 1) */
+  densidade?: number;
+  /** anéis de cada semiesfera das extremidades (padrão 8 no fator 1) */
+  aneisPonta?: number;
+}
+
+/** Resolução padrão pelo nível de qualidade (fator 1 = valores originais; nos testes o fator é 1). */
+export function resolucaoSuperficie(fator = fatorEmbriao()): Required<ResolucaoSuperficie> {
+  return { lados: Math.round(48 * fator), densidade: Math.round(160 * fator), aneisPonta: Math.round(8 * fator) };
+}
+
 /** Superfície contínua do esquema em C; mantém a curva, o perfil e a compressão lateral originais.
- * Intervalos adjacentes compartilham exatamente o mesmo anel (corpo/eminência caudal).
- * Só as extremidades anatômicas recebem semiesferas, nunca a divisão entre partes.
+ * Intervalos adjacentes compartilham exatamente o mesmo anel (corpo/eminência caudal) quando gerados
+ * com a mesma resolução. Só as extremidades anatômicas recebem semiesferas, nunca a divisão entre partes.
  */
-export function superficieEmbriao(c: Curva, raio: (t: number) => number, inicio = 0, fim = 1) {
-  const segmentos = Math.max(2, Math.ceil((fim - inicio) * 160));
-  const lados = 48;
+export function superficieEmbriao(c: Curva, raio: (t: number) => number, inicio = 0, fim = 1, resolucao: ResolucaoSuperficie = {}) {
+  const padrao = resolucaoSuperficie();
+  const lados = resolucao.lados ?? padrao.lados;
+  const densidade = resolucao.densidade ?? padrao.densidade;
+  const aneisPonta = resolucao.aneisPonta ?? padrao.aneisPonta;
+  const segmentos = Math.max(2, Math.ceil((fim - inicio) * densidade));
   const pos: number[] = [];
   const normais: number[] = [];
   const indices: number[] = [];
@@ -49,9 +67,9 @@ export function superficieEmbriao(c: Curva, raio: (t: number) => number, inicio 
     }
   }
 
-  if (inicio === 0) for (let k = 8; k > 0; k--) anel(0, (k / 8) * Math.PI / 2, -1);
+  if (inicio === 0) for (let k = aneisPonta; k > 0; k--) anel(0, (k / aneisPonta) * Math.PI / 2, -1);
   for (let i = 0; i <= segmentos; i++) anel(inicio + (fim - inicio) * i / segmentos);
-  if (fim === 1) for (let k = 1; k <= 8; k++) anel(1, (k / 8) * Math.PI / 2, 1);
+  if (fim === 1) for (let k = 1; k <= aneisPonta; k++) anel(1, (k / aneisPonta) * Math.PI / 2, 1);
   const aneis = pos.length / 3 / (lados + 1);
   for (let i = 0; i < aneis - 1; i++) for (let j = 0; j < lados; j++) {
     const a = i * (lados + 1) + j;

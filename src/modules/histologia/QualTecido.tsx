@@ -2,36 +2,16 @@
 import { useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LAMINAS } from '../../content/index.ts';
-import { criarRng, embaralhar } from '../../core/random.ts';
 import { salvarMinijogo, type Jogada } from '../../games/minijogo.ts';
 import { Barra } from '../../ui/comum.tsx';
 import { Visor } from './Visor.tsx';
-import { AREA_PADRAO, LAMINAS_RENDER } from './laminas/index.ts';
+import { LAMINAS_RENDER } from './laminas/index.ts';
+import { montarRodadas } from './regras.ts';
 
 const RODADAS = 10;
 
-interface Rodada {
-  laminaId: string;
-  opcoes: string[]; // ids de lâminas
-  centro: { x: number; y: number };
-}
-
-function montar(semente: number): Rodada[] {
-  const rng = criarRng(semente);
-  return embaralhar(LAMINAS, rng)
-    .slice(0, RODADAS)
-    .map((l) => {
-      // distratores com nome de tecido diferente do correto
-      const outras = embaralhar(LAMINAS.filter((x) => x.tecido !== l.tecido), rng).slice(0, 3);
-      // o centro do campo de 10× cai na área diagnóstica da lâmina (onde o tecido-resposta aparece)
-      const [x0, y0, x1, y1] = LAMINAS_RENDER[l.id]?.areaDiagnostica ?? AREA_PADRAO;
-      return {
-        laminaId: l.id,
-        opcoes: embaralhar([l.id, ...outras.map((x) => x.id)], rng),
-        centro: { x: x0 + rng() * (x1 - x0), y: y0 + rng() * (y1 - y0) },
-      };
-    });
-}
+// distratores: tecido diferente do correto e fora de `distratoresExcluidos` da lâmina (ver regras.ts)
+const montar = (semente: number) => montarRodadas(semente, LAMINAS, LAMINAS_RENDER, RODADAS);
 
 export default function QualTecidoTela() {
   const [semente, setSemente] = useState(() => Date.now() % 100000);

@@ -97,7 +97,7 @@
         { "id": "estrato-granuloso", "nome": "Estrato granuloso", "descricao": "Três a cinco camadas de células achatadas com grânulos de querato-hialina, basófilos; os núcleos começam a degenerar." },
         { "id": "estrato-lucido", "nome": "Estrato lúcido", "descricao": "Faixa delgada, clara e homogênea, de células achatadas, eosinófilas e sem núcleo; só é nítida na pele espessa." },
         { "id": "estrato-corneo", "nome": "Estrato córneo", "descricao": "Camadas de células mortas, achatadas e sem núcleo, cheias de queratina." },
-        { "id": "papila-dermica", "nome": "Papila dérmica (derme papilar)", "descricao": "Projeções de conjuntivo frouxo da derme (derme papilar) que se encaixam entre as cristas epidérmicas; contêm capilares e terminações nervosas." },
+        { "id": "papila-dermica", "nome": "Papila dérmica", "descricao": "Projeções de conjuntivo frouxo da derme (derme papilar) que se encaixam entre as cristas epidérmicas; contêm capilares e terminações nervosas." },
         { "id": "derme-reticular", "nome": "Derme reticular", "descricao": "Conjuntivo denso não modelado, com feixes grossos de colágeno." }
       ],
       "revisao": { "autor": "agente-arquiteto", "data": "2026-11-09", "agentes": [

@@ -9,6 +9,7 @@ import {
   DerivadosArquivoSchema,
   EscolasArquivoSchema,
   LaminasArquivoSchema,
+  ModelosHistologia3DArquivoSchema,
 } from '../src/content/schema.ts';
 
 const raiz = fileURLToPath(new URL('..', import.meta.url));
@@ -98,16 +99,46 @@ if (existsSync(arqDerivados)) {
   }
 }
 
-const arqLaminas = join(raiz, 'content/histologia/laminas.json');
-if (existsSync(arqLaminas)) {
-  const r = LaminasArquivoSchema.safeParse(ler(arqLaminas));
-  if (!r.success) formatarIssues('content/histologia/laminas.json', r.error.issues);
-  else {
-    const ids = r.data.laminas.map((l) => l.id);
-    if (new Set(ids).size !== ids.length) erros.push('laminas.json: ids repetidos');
-    for (const l of r.data.laminas)
-      for (const tp of l.topicos) if (!idsTopicos.has(tp)) avisos.push(`laminas.json: lâmina ${l.id} cita tópico inexistente ${tp}`);
+// Lâminas: laminas.json (geral) + laminas-*.json (sistemas), validadas em conjunto (ids e ordens únicos).
+const dirHis = join(raiz, 'content/histologia');
+const arquivosLaminas = existsSync(dirHis) ? readdirSync(dirHis).filter((f) => /^laminas.*\.json$/.test(f)).sort() : [];
+const todasLaminas: { id: string; ordem: number; topicos: string[] }[] = [];
+for (const f of arquivosLaminas) {
+  const r = LaminasArquivoSchema.safeParse(ler(join(dirHis, f)));
+  if (!r.success) { formatarIssues(`content/histologia/${f}`, r.error.issues); continue; }
+  for (const l of r.data.laminas) {
+    todasLaminas.push(l);
+    for (const tp of l.topicos) if (!idsTopicos.has(tp)) avisos.push(`${f}: lâmina ${l.id} cita tópico inexistente ${tp}`);
   }
+}
+{
+  const ids = todasLaminas.map((l) => l.id);
+  if (new Set(ids).size !== ids.length) erros.push('lâminas: ids repetidos entre os arquivos laminas*.json');
+  const ordens = todasLaminas.map((l) => l.ordem);
+  if (new Set(ordens).size !== ordens.length) erros.push('lâminas: valores de "ordem" repetidos entre os arquivos laminas*.json');
+}
+
+// Modelos 3D da histologia: modelos3d-*.json (um por grupo), validados em conjunto; ids únicos também em
+// relação aos estágios 3D da embriologia, que dividem o catálogo de modelos.
+const arquivosModelos3d = existsSync(dirHis) ? readdirSync(dirHis).filter((f) => /^modelos3d.*\.json$/.test(f)).sort() : [];
+{
+  const todos: { id: string; ordem: number }[] = [];
+  const idsEstagios = existsSync(arqEstagios) ? new Set((ler(arqEstagios) as { estagios: { id: string }[] }).estagios.map((e) => e.id)) : new Set<string>();
+  for (const f of arquivosModelos3d) {
+    const r = ModelosHistologia3DArquivoSchema.safeParse(ler(join(dirHis, f)));
+    if (!r.success) { formatarIssues(`content/histologia/${f}`, r.error.issues); continue; }
+    for (const m of r.data.modelos) {
+      todos.push(m);
+      if (idsEstagios.has(m.id)) erros.push(`${f}: id ${m.id} coincide com um estágio 3D da embriologia`);
+      const ide = m.estruturas.map((e) => e.id);
+      if (new Set(ide).size !== ide.length) erros.push(`${f}: modelo ${m.id} com estruturas repetidas`);
+      for (const tp of m.topicos) if (!idsTopicos.has(tp)) avisos.push(`${f}: modelo ${m.id} cita tópico inexistente ${tp}`);
+    }
+  }
+  const ids = todos.map((m) => m.id);
+  if (new Set(ids).size !== ids.length) erros.push('modelos 3D da histologia: ids repetidos entre os arquivos modelos3d*.json');
+  const ordens = todos.map((m) => m.ordem);
+  if (new Set(ordens).size !== ordens.length) erros.push('modelos 3D da histologia: valores de "ordem" repetidos');
 }
 
 const arqEscolas = join(raiz, 'content/escolas/escolas-medicas-br.json');

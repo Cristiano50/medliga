@@ -1,8 +1,18 @@
 # Protocolo de revisão por agentes especialistas
 
-Usado para todo conteúdo novo do MedLiga. Cada grupo de tópicos passa por **duas revisões em sequência**, de áreas diferentes:
+Usado para todo conteúdo novo do MedLiga. Cada grupo de tópicos passa por **duas revisões em sequência**, de áreas diferentes, e por uma **conferência de fonte primária**:
 1. **Embriologia** (ou a área-mãe da disciplina): confere todos os fatos.
 2. **Revisor transversal** de outra área (clínica, genética, anatomia, fisiologia, obstetrícia): confere de novo, olhando especialmente aplicação clínica, terminologia e integração com a sua área.
+3. **Conferência de fonte primária** (obrigatória desde 10/11/2026, a pedido do Cristiano): toda conduta, número clínico (dose, limiar, prazo, critério diagnóstico, prevalência) e citação de artigo ou diretriz é conferida no **texto integral** da fonte. Pode ser feita pelo próprio revisor da 2ª etapa ou por um agente dedicado (`area: "conferencia-fontes"`). O que não puder ser confirmado vira redação qualitativa e entra em `incertezas`; nunca fica um número sem fonte lida.
+
+## Como ler as fontes nesta rede (testado)
+
+- **Não use a ferramenta WebFetch**: ela não passa pelo proxy da sessão e falha até em sites liberados. Use o Bash com curl (`curl -sSL -m 90 "<url>" -o <arquivo>`, com um agente de navegador genérico se o site exigir); PDF → `pdftotext -layout arquivo.pdf -`.
+- **gov.br**: o link `.pdf` abre uma página; o arquivo está em `<link>.pdf/@@download/file`.
+- **PubMed**: as páginas têm verificação anti-robô; use a API E-utilities (`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=…&retmode=json`, `esummary.fcgi?db=pubmed&id=<PMID>&retmode=json`, `efetch.fcgi?db=pubmed&id=<PMID>&rettype=abstract&retmode=text`), no máximo 3 requisições por segundo.
+- **Texto completo aberto**: Europe PMC (`https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=…&format=json`, `…/rest/PMC<id>/fullTextXML`) ou OAI do PMC (`https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi?verb=GetRecord&identifier=oai:pubmedcentral.nih.gov:<n>&metadataPrefix=pmc`).
+- Hosts liberados e limitações: seção H de `docs/pendencias-conferencia-medica.md`. Se um host der "CONNECT tunnel failed, 403", ele está fora da rede: registre e siga.
+- Registre no relatório a URL (ou DOI/PMID) e o trecho decisivo de cada item conferido.
 
 ## O que conferir em cada tópico (todos os campos)
 

@@ -1,0 +1,434 @@
+{
+  "laminas": [
+    {
+      "id": "esofago",
+      "ordem": 23,
+      "titulo": "Esôfago (terço inferior)",
+      "tecido": "Esôfago",
+      "orgao": "Esôfago, terço inferior: parede em corte transversal (luz em cima)",
+      "coloracao": "HE",
+      "descricao": "Parede do esôfago, da luz para fora. Mucosa: epitélio estratificado pavimentoso não queratinizado, lâmina própria com papilas que penetram no epitélio e muscular da mucosa de músculo liso. Submucosa de conjuntivo denso, com vasos e glândulas esofágicas mucosas, cujo ducto atravessa a mucosa até a luz. Muscular externa com camada circular interna e longitudinal externa e, entre as duas, o plexo mioentérico; no terço inferior ela é toda de músculo liso. A adventícia (ou a serosa, no curto trecho abdominal) fica fora do campo. Esquema: as células estão desenhadas maiores que na escala real, para serem reconhecíveis a 40×; por isso o epitélio tem menos camadas de células que no órgão.",
+      "destaques": [
+        "Não queratinizado: as células da superfície são achatadas e conservam o núcleo; não há camada córnea nem granulosa (compare com a pele espessa).",
+        "Glândulas esofágicas propriamente ditas, mucosas, na submucosa: o muco lubrifica a passagem do bolo alimentar. Perto do estômago há também glândulas cárdicas esofágicas, na lâmina própria.",
+        "Muscular externa, na descrição clássica dos livros: estriada esquelética no terço superior, mista no terço médio e lisa no terço inferior (como neste campo).",
+        "Na junção com o estômago o epitélio passa bruscamente a simples cilíndrico mucoso. No esôfago de Barrett, o epitélio do esôfago distal é substituído por epitélio cilíndrico com células caliciformes (metaplasia intestinal), em geral por refluxo crônico."
+      ],
+      "topicos": [
+        "his-14-tubo-digestivo"
+      ],
+      "estruturas": [
+        {
+          "id": "epitelio-estratificado-pavimentoso",
+          "nome": "Epitélio estratificado pavimentoso não queratinizado",
+          "descricao": "Várias camadas de células: a basal, de células pequenas e basófilas, onde (com as camadas logo acima dela) ocorrem as divisões que renovam o epitélio; as intermediárias, poligonais, mais claras para cima (glicogênio); e as superficiais, achatadas, que conservam o núcleo e descamam na luz."
+        },
+        {
+          "id": "lamina-propria",
+          "nome": "Lâmina própria",
+          "descricao": "Conjuntivo frouxo sob o epitélio, formando papilas que se projetam nele; tem capilares, fibroblastos e linfócitos."
+        },
+        {
+          "id": "muscular-da-mucosa",
+          "nome": "Muscular da mucosa",
+          "descricao": "Faixa de músculo liso no limite da mucosa. No esôfago as fibras são longitudinais; neste corte transversal aparecem cortadas de través, como perfis redondos, parte deles com núcleo central."
+        },
+        {
+          "id": "submucosa",
+          "nome": "Submucosa",
+          "descricao": "Conjuntivo denso não modelado com vasos maiores (artéria de parede espessa, veia de parede fina) e as glândulas esofágicas. Contém também o plexo submucoso (de Meissner), não desenhado."
+        },
+        {
+          "id": "glandula-esofagica",
+          "nome": "Glândula esofágica",
+          "descricao": "Glândula esofágica propriamente dita: tubuloacinosa e mucosa (citoplasma pálido, núcleo achatado na base da célula), na submucosa. O ducto excretor, de epitélio estratificado (em geral com duas camadas de células) que se torna pavimentoso junto à abertura, atravessa a muscular da mucosa, a lâmina própria e o epitélio e se abre na luz."
+        },
+        {
+          "id": "muscular-externa",
+          "nome": "Muscular externa",
+          "descricao": "Músculo liso (terço inferior) em duas camadas: circular interna, aqui cortada ao comprido (células fusiformes, núcleo alongado), e longitudinal externa, cortada de través. Entre elas, um septo fino de conjuntivo com o plexo mioentérico."
+        },
+        {
+          "id": "plexo-mioenterico",
+          "nome": "Plexo mioentérico (de Auerbach)",
+          "descricao": "Gânglios entre as camadas circular e longitudinal: neurônios grandes, de núcleo claro e nucléolo evidente, células da glia e feixes de fibras nervosas. Coordena as contrações peristálticas."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (1 importante, 2 menores); principais: ducto da glândula esofágica tem epitélio estratificado (duas camadas), não cúbico simples; divisão celular na camada basal e nas logo acima; divisão da muscular externa marcada como descrição clássica (ver notasDivergencia do his-14). Conferido e correto: não queratinizado, glândulas esofágicas na submucosa × cárdicas na lâmina própria, muscular da mucosa longitudinal (perfis redondos no corte transversal), circular interna cortada ao comprido, terço superior esquelético no texto, tecido-resposta inequívoco. Desenho: P2 (ducto desenhado como cúbico simples); P3 (ácinos mucosos sobrepostos e de luz mínima; camadas intermediárias sem aumento de tamanho para a superfície). Relatório: content/revisoes/laminas-sistemas-b.md."
+          },
+          {
+            "area": "patologia",
+            "agente": "revisor-laminas-patologia-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "Sem correções de texto. Barrett descrito como metaplasia intestinal com caliciformes (definição do ACG, coerente com his-02, que registra a divergência com a BSG). Desenho conferido como esôfago normal: uma camada basal (≈7% da espessura) e papilas até ≈28–41% da espessura, sem o padrão de refluxo (hiperplasia basal, papilas alongadas)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (ducto excretor com duas camadas de núcleos, achatado dentro do epitélio). P3 em parte aplicados: ácinos mucosos sem sobreposição e com luz maior, papilas de ponta arredondada. Resta P3: células intermediárias do mesmo tamanho (no esôfago crescem e clareiam para a superfície). Sem erro novo."
+          }
+        ],
+        "humano": null
+      }
+    },
+    {
+      "id": "estomago-fundo",
+      "ordem": 24,
+      "titulo": "Estômago: mucosa da região fúndica",
+      "tecido": "Estômago (região fúndica)",
+      "orgao": "Estômago, fundo e corpo: mucosa e submucosa (luz em cima)",
+      "coloracao": "HE",
+      "descricao": "Mucosa gástrica da região fúndica (fundo e corpo). O epitélio simples cilíndrico de células mucosas superficiais reveste a superfície e as fossetas gástricas, que ocupam cerca de 1/4 da espessura da mucosa. No fundo das fossetas se abrem as glândulas fúndicas, tubulares, longas e retas: no colo há células mucosas do colo entre células parietais; na metade superior predominam as parietais (eosinófilas, núcleo central); na base, as principais (basófilas). Entre as glândulas há pouca lâmina própria; embaixo ficam a muscular da mucosa e a submucosa. Esquema: no plano de corte cada fosseta recebe duas glândulas (no órgão podem ser várias); as células estão maiores que na escala real; as células-tronco do istmo e as enteroendócrinas não estão desenhadas (são pouco distintas no HE).",
+      "destaques": [
+        "Célula parietal (oxíntica): grande, arredondada ou piramidal, citoplasma eosinófilo (muitas mitocôndrias e canalículos intracelulares) e núcleo central, às vezes dois. Secreta HCl e fator intrínseco.",
+        "Célula principal (zimogênica): base basófila (retículo endoplasmático granular abundante), núcleo basal e grânulos de pepsinogênio no ápice, que costumam se perder na preparação e deixam o ápice mais claro. Secreta pepsinogênio e lipase gástrica.",
+        "A superfície inteira é revestida por células mucosas, um lençol secretor de muco; o estômago normal não tem células caliciformes (a presença delas indica metaplasia intestinal).",
+        "Na gastrite atrófica autoimune as células parietais são destruídas: sem fator intrínseco a vitamina B12 não é absorvida no íleo, e surge a anemia perniciosa."
+      ],
+      "topicos": [
+        "his-14-tubo-digestivo"
+      ],
+      "estruturas": [
+        {
+          "id": "fosseta-gastrica",
+          "nome": "Fosseta gástrica (fovéola)",
+          "descricao": "Invaginação do epitélio de superfície, revestida por células mucosas superficiais; no fundo dela se abrem as glândulas. Na região fúndica é rasa: cerca de 1/4 da espessura da mucosa."
+        },
+        {
+          "id": "celula-mucosa-superficial",
+          "nome": "Célula mucosa superficial",
+          "descricao": "Célula cilíndrica com o ápice cheio de grânulos de mucina (pálidos no HE) e núcleo basal. Reveste a superfície e as fossetas e secreta muco neutro (PAS-positivo), espesso, e bicarbonato, que fica retido no muco e protege a mucosa do ácido."
+        },
+        {
+          "id": "celula-mucosa-do-colo",
+          "nome": "Célula mucosa do colo",
+          "descricao": "No colo da glândula, entre as parietais: célula mais baixa, de citoplasma pálido e núcleo na base; secreta um muco mais solúvel que o da superfície."
+        },
+        {
+          "id": "celula-parietal",
+          "nome": "Célula parietal (oxíntica)",
+          "descricao": "Célula grande, eosinófila, de núcleo central (às vezes binucleada), que se abaula para a lâmina própria; mais numerosa no colo e na metade superior da glândula. Produz HCl e fator intrínseco."
+        },
+        {
+          "id": "celula-principal",
+          "nome": "Célula principal (zimogênica)",
+          "descricao": "Célula basófila, de núcleo basal e ápice mais claro (grânulos de pepsinogênio); predomina na base da glândula."
+        },
+        {
+          "id": "glandula-fundica",
+          "nome": "Glândula fúndica (gástrica propriamente dita)",
+          "descricao": "Glândula tubular simples, às vezes ramificada, longa e reta, do fundo da fosseta até perto da muscular da mucosa (istmo, colo e base). Aqui o toque é no eixo da glândula, sobre a luz estreita; as células da parede têm nome próprio."
+        },
+        {
+          "id": "lamina-propria",
+          "nome": "Lâmina própria",
+          "descricao": "Conjuntivo frouxo escasso entre as glândulas e mais abundante entre as fossetas, com capilares, linfócitos e plasmócitos."
+        },
+        {
+          "id": "muscular-da-mucosa",
+          "nome": "Muscular da mucosa",
+          "descricao": "Músculo liso em duas subcamadas: circular interna, aqui cortada ao comprido (fusos), e longitudinal externa, cortada de través (perfis redondos)."
+        },
+        {
+          "id": "submucosa",
+          "nome": "Submucosa",
+          "descricao": "Conjuntivo denso com artérias e veias maiores e adipócitos; contém também o plexo submucoso (não desenhado)."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "1 correção (menor): célula mucosa do colo com núcleo na base (sem \"achatado\") e muco mais solúvel, como no his-14. Conferido: fossetas ≈1/4 da mucosa no desenho (132 de 520 un); parietais predominam na metade superior (65–77% da área de células) e principais na base (94% na faixa 494–545); traço transparente de toque no eixo da glândula funciona (faixa de 12 un). Desenho: P2 (fossetas estreitas e espaçadas, cristas largas de topo plano com eixo amplo de lâmina própria); P3 (principais já logo abaixo do colo; núcleo da mucosa do colo achatado). Relatório: content/revisoes/laminas-sistemas-b.md."
+          },
+          {
+            "area": "patologia",
+            "agente": "revisor-laminas-patologia-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (1 importante, 1 menor): retirado \"ovo frito\" da célula parietal (na patologia o termo designa o halo perinuclear do oligodendroglioma; mesmo critério usado para \"olho de coruja\" na revisão v1); muco foveolar neutro (PAS-positivo), base para distinguir das caliciformes da metaplasia intestinal. Gastrite autoimune e anemia perniciosa conferidas com o his-14. Jogo: \"Epitélio simples cilíndrico\" como distrator é resposta defensável neste campo (P1 de jogo no relatório)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (fossetas em funil a cada 104 un; ainda ≈1/4 da mucosa, 132 de 520 un). P3 aplicado: parietais com 90% da área de células em y 228–300 e principais com 94% na base (494–545). Resta P3, novo: glândulas encostadas umas nas outras no corpo da mucosa, sem a faixa fina de lâmina própria com capilares entre elas (o texto diz \"pouca\", não \"nenhuma\")."
+          }
+        ],
+        "humano": null
+      }
+    },
+    {
+      "id": "colon",
+      "ordem": 25,
+      "titulo": "Intestino grosso (cólon)",
+      "tecido": "Intestino grosso (cólon)",
+      "orgao": "Cólon: parede em corte transversal (luz em cima)",
+      "coloracao": "HE",
+      "descricao": "Mucosa sem vilosidades, de superfície plana, com glândulas intestinais (criptas de Lieberkühn) retas, paralelas e muito próximas, que vão da superfície até a muscular da mucosa. O epitélio é simples cilíndrico, com células absortivas (colonócitos) e muitas células caliciformes ao longo das criptas; na superfície predominam as absortivas. A lâmina própria entre as criptas é rica em linfócitos e plasmócitos. Seguem a muscular da mucosa, a submucosa (vasos, adipócitos) e a muscular externa, com camada circular interna, plexo mioentérico e camada longitudinal externa, e, por fora, a serosa. A camada longitudinal é delgada e se concentra nas três tênias do cólon; o campo mostra uma delas. Esquema: num trecho, junto à muscular da mucosa, as criptas aparecem cortadas de través, como anéis de células em volta da luz (corte oblíquo; as criptas acima delas não são mais curtas, só saem do plano); as células estão maiores que na escala real.",
+      "destaques": [
+        "Sem vilosidades: a superfície é plana, com as aberturas das criptas. É o que distingue o cólon do intestino delgado.",
+        "Células caliciformes abundantes: o muco lubrifica o conteúdo, que vai ficando sólido à medida que os colonócitos absorvem água e eletrólitos.",
+        "No fundo das criptas ficam as células-tronco, que renovam o epitélio em poucos dias, e células enteroendócrinas. As células de Paneth, típicas do delgado, normalmente não aparecem no cólon distal.",
+        "A maioria dos adenocarcinomas colorretais surge de adenomas (pólipos adenomatosos) do epitélio das criptas, pela sequência adenoma–carcinoma; outra parte surge pela via serrilhada."
+      ],
+      "topicos": [
+        "his-14-tubo-digestivo"
+      ],
+      "estruturas": [
+        {
+          "id": "epitelio-simples-cilindrico",
+          "nome": "Epitélio de revestimento (simples cilíndrico)",
+          "descricao": "Epitélio da superfície, entre as aberturas das criptas: células absortivas (colonócitos), com planura estriada fina, e caliciformes. Absorve água e eletrólitos. É o mesmo epitélio que continua nas criptas."
+        },
+        {
+          "id": "cripta-intestinal",
+          "nome": "Cripta (glândula intestinal de Lieberkühn)",
+          "descricao": "Tubo reto, de luz estreita (com muco), que vai da superfície até perto da muscular da mucosa; cortada de través, aparece como anel de células em volta da luz. A parede é de epitélio simples cilíndrico: células absortivas e caliciformes, além de células-tronco e enteroendócrinas no fundo (não desenhadas)."
+        },
+        {
+          "id": "celula-caliciforme",
+          "nome": "Célula caliciforme",
+          "descricao": "Célula com a teca apical cheia de muco (pálido no HE; mucinas ácidas, positivas pelo PAS e pelo azul alciano) e o núcleo na base estreita; muito numerosa no cólon."
+        },
+        {
+          "id": "lamina-propria",
+          "nome": "Lâmina própria",
+          "descricao": "Conjuntivo frouxo entre as criptas, rico em linfócitos, plasmócitos (secretores de IgA) e macrófagos, com capilares. Pode ter nódulos linfoides que chegam à submucosa (não desenhados)."
+        },
+        {
+          "id": "muscular-da-mucosa",
+          "nome": "Muscular da mucosa",
+          "descricao": "Faixa fina de músculo liso logo abaixo do fundo das criptas. Esquema: as subcamadas circular e longitudinal não estão separadas."
+        },
+        {
+          "id": "submucosa",
+          "nome": "Submucosa",
+          "descricao": "Conjuntivo denso com artérias, veias e adipócitos; contém também o plexo submucoso (não desenhado)."
+        },
+        {
+          "id": "muscular-externa",
+          "nome": "Muscular externa",
+          "descricao": "Músculo liso em duas camadas: circular interna, aqui cortada ao comprido, e longitudinal externa, cortada de través; no cólon a longitudinal se concentra nas três tênias do cólon."
+        },
+        {
+          "id": "plexo-mioenterico",
+          "nome": "Plexo mioentérico (de Auerbach)",
+          "descricao": "Gânglios entre as duas camadas da muscular externa: neurônios grandes, de núcleo claro e nucléolo, glia e fibras nervosas; coordena o peristaltismo. No segmento afetado da doença de Hirschsprung (megacólon congênito) faltam as células ganglionares deste plexo e do submucoso; o diagnóstico é feito em biópsia retal com submucosa."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "reprovado",
+            "notas": "Texto correto, sem correções (sem vilosidades, criptas retas, caliciformes abundantes, tênias declaradas como esquema). Reprovado pelo DESENHO, que não pude corrigir (código fora do escopo): P1, a mucosa tem aspecto viloso — entre as criptas há colunas de lâmina própria (≈17 un, 2,4× a luz da cripta) com topo em cúpula (ombros de raio 13 sobre 22 un planos) e borda estriada, iguais às vilosidades da lâmina do intestino delgado; contradiz \"superfície plana, sem vilosidades\", o critério que define a lâmina. Também P1 de jogo: \"Epitélio simples cilíndrico\" (lâmina do delgado) é distrator defensável. P2: camada longitudinal contínua e espessa. Ajustes em content/revisoes/laminas-sistemas-b.md; reavaliar após o redesenho."
+          },
+          {
+            "area": "patologia",
+            "agente": "revisor-laminas-patologia-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (menores): adenocarcinoma colorretal pela sequência adenoma–carcinoma e, em parte, pela via serrilhada (alinhado ao his-03); mucinas ácidas das caliciformes (PAS e azul alciano); Hirschsprung sem células ganglionares nos dois plexos, diagnóstico em biópsia retal com submucosa (his-14, ERNICA). Paneth ausente no cólon distal coerente com o his-14. Veredito só do texto: o desenho tem P1 (ver entrada de histologia)."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "reavaliação do desenho v2: P1 resolvido. Superfície plana (boca com R 4,5), criptas em tubo de ensaio a cada 50 un com fundo em U e luz de 9 un, lâmina própria de ≈8 un, sem cúpulas e com planura estriada fina; a 10× não lembra mais as vilosidades da lâmina do delgado. P2 da tênia resolvido (longitudinal de 18 un com uma tênia). 2 correções de texto para acompanhar o desenho: a nota de esquema dizia que a longitudinal aparecia contínua (agora mostra a tênia), e a serosa e as criptas em anel passaram a ser citadas. Restam P3: o trecho de corte oblíquo tem 4 criptas encurtadas com fundo em U fechado sobre os anéis, o que pode ser lido como encurtamento de criptas (sinal de colite crônica); a nota de texto explica, e o ideal é terminar esses perfis abertos, saindo do plano. Também a tênia em cunha (o melhor seria em lente). Caliciformes: 16% na superfície e 30–38% nas criptas, mantido (decisão no relatório). Continua o P1 do jogo (distrator \"Epitélio simples cilíndrico\"), que é de código."
+          }
+        ],
+        "humano": null
+      }
+    },
+    {
+      "id": "figado",
+      "ordem": 26,
+      "titulo": "Fígado: lóbulo hepático clássico",
+      "tecido": "Fígado",
+      "orgao": "Fígado humano",
+      "coloracao": "HE",
+      "descricao": "Lóbulo clássico: no corte, um hexágono com a veia centrolobular no centro e espaços porta nos cantos; aparecem um lóbulo inteiro e partes dos vizinhos. Placas (cordões) de hepatócitos com uma célula de espessura irradiam da veia centrolobular para a periferia, ramificando-se e anastomosando-se; entre elas correm os sinusoides, capilares de endotélio fenestrado e descontínuo, em cuja luz ficam as células de Kupffer, presas ao endotélio. O sangue vai dos ramos da veia porta e da artéria hepática, nos espaços porta, pelos sinusoides até a veia centrolobular; a bile corre no sentido oposto, para o ducto biliar. No ser humano não há septos completos entre os lóbulos: o limite é imaginário, traçado entre os espaços porta (no porco, septos de conjuntivo o desenham). Esquema: hepatócitos maiores que na escala real, por isso há menos células por raio do lóbulo; células de Kupffer realçadas; todos os espaços porta mostram a tríade completa, o que no corte real nem sempre acontece.",
+      "destaques": [
+        "Três modos de dividir o mesmo parênquima: lóbulo clássico (centro na veia centrolobular), lóbulo portal (centro no espaço porta, visão da drenagem da bile) e ácino hepático (zonas 1 a 3, dos ramos vasculares que saem dos espaços porta até a veia centrolobular, segundo a oxigenação).",
+        "Tríade portal: ramo da veia porta (o maior, parede fina), ramo da artéria hepática (pequeno, parede muscular espessa) e ducto biliar (epitélio simples cúbico). O espaço porta tem também vasos linfáticos e nervos.",
+        "Células de Kupffer: macrófagos residentes nos sinusoides, que fagocitam hemácias velhas e partículas vindas do intestino pela veia porta. No HE de rotina mal se distinguem das células endoteliais.",
+        "A zona 3 do ácino, em volta da veia centrolobular, é a menos oxigenada: sofre mais na hipóxia e com alguns tóxicos (ex.: intoxicação por paracetamol)."
+      ],
+      "topicos": [
+        "his-15-glandulas-anexas"
+      ],
+      "estruturas": [
+        {
+          "id": "veia-centrolobular",
+          "nome": "Veia centrolobular (central)",
+          "descricao": "No centro do lóbulo: parede fina (endotélio e pouco conjuntivo), interrompida onde os sinusoides desembocam. Drena para as veias sublobulares e, daí, para as veias hepáticas."
+        },
+        {
+          "id": "placas-de-hepatocitos",
+          "nome": "Placas de hepatócitos",
+          "descricao": "Cordões de uma célula de espessura que irradiam da veia centrolobular e se anastomosam. Hepatócito poligonal, eosinófilo, de núcleo central redondo com nucléolo evidente, às vezes binucleado. Entre hepatócitos vizinhos correm os canalículos biliares, que não aparecem no HE do fígado normal (na colestase, podem surgir dilatados, com tampões de bile)."
+        },
+        {
+          "id": "sinusoide-hepatico",
+          "nome": "Sinusoide hepático (capilar sinusoide)",
+          "descricao": "Espaço entre as placas, com endotélio fenestrado e descontínuo (núcleos achatados) e algumas hemácias; leva o sangue misto, portal e arterial, da periferia do lóbulo para a veia centrolobular. Entre o endotélio e os hepatócitos fica o espaço de Disse, com as células estreladas (de Ito), que, ativadas, depositam o colágeno da fibrose; o espaço não é visível no HE de rotina."
+        },
+        {
+          "id": "celula-de-kupffer",
+          "nome": "Célula de Kupffer",
+          "descricao": "Macrófago dentro do sinusoide, preso ao endotélio: maior que a célula endotelial, de núcleo ovoide e citoplasma visível. Esquema: realçada; no HE de rotina é difícil distingui-la da endotelial (aparece bem após a injeção de partículas, como nanquim, ou com imuno-histoquímica)."
+        },
+        {
+          "id": "triade-portal",
+          "nome": "Espaço porta (tríade portal)",
+          "descricao": "Conjuntivo nos cantos do lóbulo que contém a tríade portal (ramo da veia porta, ramo da artéria hepática e ducto biliar), além de linfáticos e nervos. Os hepatócitos em volta formam a placa limitante, destruída na hepatite de interface."
+        },
+        {
+          "id": "ramo-da-veia-porta",
+          "nome": "Ramo da veia porta",
+          "descricao": "O maior vaso do espaço porta, de parede fina e luz ampla; traz o sangue venoso do estômago, dos intestinos, do baço e do pâncreas, cerca de 3/4 do sangue que chega ao fígado."
+        },
+        {
+          "id": "ramo-da-arteria-hepatica",
+          "nome": "Ramo da artéria hepática",
+          "descricao": "Vaso pequeno, de luz redonda e parede muscular espessa em relação à luz; traz sangue oxigenado, cerca de 1/4 do que chega ao fígado."
+        },
+        {
+          "id": "ducto-biliar",
+          "nome": "Ducto biliar (interlobular)",
+          "descricao": "Epitélio simples cúbico em volta de uma luz redonda; recebe a bile que vem dos canalículos pelos canais de Hering, no sentido oposto ao do sangue."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "5 correções (menores): \"espaço porta\" como no his-15 (nome da estrutura e texto); sinusoide com o nome do tópico; zonas do ácino a partir dos ramos que saem dos espaços porta; veia porta traz sangue também do estômago; bile chega ao ducto pelos canais de Hering. Conferido: lóbulo clássico sem septos (humano), placas de uma célula, Kupffer na luz do sinusoide (realce declarado), tríade completa e declarada, linfáticos e espaço de Disse citados. Desenho: P2 (sem placa limitante: as placas são cortadas no contorno do espaço porta); P3 (sinusoides retos e radiais demais; hepatócitos em tijolo). Relatório: content/revisoes/laminas-sistemas-b.md."
+          },
+          {
+            "area": "patologia",
+            "agente": "revisor-laminas-patologia-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "3 correções (menores): canalículos invisíveis no HE normal, mas dilatados com tampões de bile na colestase; células estreladas no espaço de Disse (fibrose); placa limitante destruída na hepatite de interface (his-15). Zona 3, hipóxia e paracetamol conferidos com o his-15."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (placa limitante como anel contínuo de hepatócitos em volta de cada espaço porta). Kupffer agora com contorno irregular; tocável (0,61% da área, ponto robusto na medição final). Restam P3: hepatócitos em tijolo e sinusoides retos e radiais demais. Sem erro novo."
+          }
+        ],
+        "humano": null
+      }
+    },
+    {
+      "id": "pancreas",
+      "ordem": 27,
+      "titulo": "Pâncreas: ácinos e ilhotas de Langerhans",
+      "tecido": "Pâncreas",
+      "orgao": "Pâncreas",
+      "coloracao": "HE",
+      "descricao": "Glândula mista (exócrina e endócrina). A parte exócrina, a maior, é formada por ácinos serosos muito juntos: células piramidais com a base basófila (retículo endoplasmático granular) e o ápice eosinófilo, cheio de grânulos de zimogênio, em volta de uma luz mínima, onde muitas vezes se veem as células centroacinosas, pálidas. Os ductos intercalados, de epitélio pavimentoso a cúbico baixo, levam a secreção aos ductos intralobulares e, daí, aos interlobulares, nos septos de conjuntivo; não há ductos estriados. A parte endócrina são as ilhotas de Langerhans: grupos arredondados de células mais pálidas, em cordões, entre muitos capilares. Esquema: células maiores que na escala real; os tipos de célula da ilhota (α, β, δ, PP e ε) não se distinguem no HE.",
+      "destaques": [
+        "Como diferenciar da parótida, também serosa: no pâncreas há células centroacinosas e ilhotas de Langerhans, e não há ductos estriados.",
+        "Os grânulos de zimogênio guardam pró-enzimas (tripsinogênio, quimotripsinogênio, pró-elastase) e enzimas como amilase e lipase; a colecistocinina estimula sua liberação.",
+        "As células centroacinosas e as dos ductos intercalados secretam líquido rico em bicarbonato, sob estímulo da secretina; ele neutraliza o quimo ácido no duodeno.",
+        "Ilhota: células β (insulina; as mais numerosas), α (glucagon), δ (somatostatina), PP (polipeptídio pancreático) e ε (grelina). No diabetes tipo 1 as células β são destruídas por autoimunidade."
+      ],
+      "topicos": [
+        "his-15-glandulas-anexas"
+      ],
+      "estruturas": [
+        {
+          "id": "acino-pancreatico",
+          "nome": "Ácino seroso (pancreático)",
+          "descricao": "Células piramidais em volta de uma luz mínima: base basófila (lilás) com núcleo redondo e ápice eosinófilo com grânulos de zimogênio (vermelhos)."
+        },
+        {
+          "id": "celula-centroacinosa",
+          "nome": "Célula centroacinosa",
+          "descricao": "Primeira célula do ducto intercalado, que penetra na luz do ácino: citoplasma muito pálido e núcleo ovoide claro, no centro do ácino. É típica do pâncreas."
+        },
+        {
+          "id": "ducto-intercalado",
+          "nome": "Ducto intercalado",
+          "descricao": "Tubo fino de epitélio pavimentoso a cúbico baixo, pálido, entre os ácinos; continua as células centroacinosas, leva a secreção ao ducto intralobular e acrescenta bicarbonato."
+        },
+        {
+          "id": "ilhota-de-langerhans",
+          "nome": "Ilhota de Langerhans",
+          "descricao": "Grupo arredondado de células endócrinas, mais pálidas que os ácinos, em cordões separados por capilares fenestrados, com uma fina camada de fibras reticulares em volta. Os tipos de célula só se distinguem com imuno-histoquímica ou colorações especiais."
+        },
+        {
+          "id": "ducto-interlobular",
+          "nome": "Ducto interlobular",
+          "descricao": "No septo: epitélio cúbico a cilíndrico baixo cercado por conjuntivo denso; leva a secreção ao ducto pancreático principal."
+        },
+        {
+          "id": "septo-conjuntivo",
+          "nome": "Conjuntivo (septo e estroma)",
+          "descricao": "Conjuntivo fino entre os ácinos e mais espesso nos septos entre os lóbulos, por onde correm vasos, nervos e os ductos interlobulares."
+        }
+      ],
+      "revisao": {
+        "autor": "agente-arquiteto",
+        "data": "2026-11-10",
+        "agentes": [
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado-com-correcoes",
+            "notas": "2 correções (menores): \"glândula mista (exócrina e endócrina)\", para não confundir com a resposta \"Glândula exócrina mista (seromucosa)\" da submandibular no jogo; células ε (grelina) e grafia \"polipeptídio\", como no his-15. Conferido: sem ductos estriados, células centroacinosas (em metade ou mais dos ácinos do desenho), ilhota pálida com capilares, diferença com a parótida no texto; área diagnóstica sempre contém a ilhota grande. Desenho: P2 (ductos intercalados curtos, paralelos à borda entre dois ácinos, sem continuidade com a célula centroacinosa); P3 (ilhota em grade hexagonal, não em cordões; capilares sem endotélio). Relatório: content/revisoes/laminas-sistemas-b.md."
+          },
+          {
+            "area": "patologia",
+            "agente": "revisor-laminas-patologia-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "Sem correções. Diabetes tipo 1 (destruição autoimune das células β), secreção de bicarbonato pelas centroacinosas e ductais (secretina) e zimogênios conferidos com o his-15."
+          },
+          {
+            "area": "histologia",
+            "agente": "revisor-laminas-v2",
+            "data": "2026-11-10",
+            "veredito": "aprovado",
+            "notas": "reavaliação do desenho v2: P2 resolvido (ducto intercalado sai da célula centroacinosa, com epitélio cúbico baixo; 0,59% da área). Capilares da ilhota com núcleos endoteliais. Restam P3: ilhota em grade hexagonal, não em cordões; ácinos em favo regular; o ducto é desenhado por cima das células acinosas em vez de afastá-las."
+          }
+        ],
+        "humano": null
+      }
+    }
+  ]
+}

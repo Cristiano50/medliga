@@ -1,0 +1,1350 @@
+{
+  "id": "his-17-urinario",
+  "disciplina": "histologia",
+  "ordem": 17,
+  "titulo": "Sistema urinário",
+  "subtitulo": "Rim, néfron, barreira de filtração, aparelho justaglomerular, ductos coletores, vias urinárias e biópsia renal",
+  "objetivos": [
+    "Descrever a organização do rim em cápsula, córtex e medula e definir lobo e lóbulo renais.",
+    "Identificar as partes do néfron e do sistema coletor e diferenciar, em cortes corados por HE, o túbulo contorcido proximal, o túbulo contorcido distal, os ramos delgados e os ductos coletores.",
+    "Explicar a estrutura da barreira de filtração glomerular (endotélio fenestrado, membrana basal glomerular e diafragma da fenda entre pedicelos) e as funções do mesângio.",
+    "Relacionar a estrutura de cada segmento tubular à sua função na reabsorção, na secreção e na concentração da urina.",
+    "Descrever o aparelho justaglomerular e seu papel no sistema renina-angiotensina-aldosterona e no feedback tubuloglomerular.",
+    "Caracterizar as células principais e intercaladas dos ductos coletores e a ação do ADH por meio da aquaporina-2.",
+    "Descrever a circulação renal, os vasa recta e a histologia do ureter, da bexiga e da uretra.",
+    "Correlacionar achados de microscopia óptica, imunofluorescência e microscopia eletrônica da biópsia renal com síndrome nefrótica, síndrome nefrítica, necrose tubular aguda, nefropatia diabética e síndrome de Alport."
+  ],
+  "resumo": "Os **rins** filtram o plasma, regulam a água, os eletrólitos e o equilíbrio acidobásico, excretam resíduos e têm funções endócrinas: **renina** (aparelho justaglomerular), **eritropoetina** (células intersticiais peritubulares) e ativação da vitamina D (1α-hidroxilação no túbulo proximal).\n\n**Organização.** Sob a **cápsula** fica o **córtex**, com os corpúsculos renais e os túbulos contorcidos. A **medula** forma as **pirâmides**, de túbulos retos, alças de Henle, ductos coletores e vasos paralelos; o ápice de cada uma, a **papila**, abre-se num cálice menor. O córtex projeta-se entre as pirâmides (**colunas renais**), e feixes de túbulos retos e ductos coletores penetram o córtex (**raios medulares**). Um **lobo renal** é uma pirâmide com o córtex que a recobre; um **lóbulo**, um raio medular com os néfrons que drenam nos seus ductos coletores, limitado pelas artérias interlobulares.\n\n**Néfron.** É a unidade funcional: **corpúsculo renal**, **túbulo proximal** (contorcido e reto), **segmento delgado** e **túbulo distal** (ramo ascendente espesso e túbulo contorcido distal); a alça de Henle reúne a parte reta proximal, o segmento delgado e o ramo ascendente espesso. O **ducto coletor** não pertence ao néfron: deriva do broto ureteral (emb-16). Os néfrons **justamedulares** têm alças longas, que chegam perto da papila e criam o gradiente osmótico da medula; os **corticais**, alças curtas.\n\n**Corpúsculo renal.** O **glomérulo**, tufo de capilares entre a **arteríola aferente** e a **eferente** (polo vascular), é envolto pela **cápsula glomerular (de Bowman)**: o folheto **parietal** é epitélio simples pavimentoso; o **visceral** é formado por **podócitos**, cujos prolongamentos emitem **pedicelos** interdigitados com os de podócitos vizinhos. Entre os folhetos, o **espaço capsular** recebe o filtrado e continua no túbulo proximal (polo urinário). A **barreira de filtração** tem três camadas: **endotélio fenestrado**, com poros sem diafragma, que retém as células do sangue; **membrana basal glomerular (MBG)**, espessa, formada pela fusão das lâminas basais do endotélio e do podócito, com **colágeno IV** (cadeias α3, α4 e α5), laminina e proteoglicanos de carga negativa; e **fendas de filtração** entre pedicelos, fechadas pelo **diafragma da fenda**, de **nefrina** e proteínas associadas, como a podocina. Passam água e pequenos solutos; a albumina quase não passa. O **mesângio** — células e matriz entre os capilares, onde a MBG não envolve todo o capilar — sustenta o tufo, contrai-se, fagocita macromoléculas retidas no filtro e produz matriz e citocinas; nele se depositam os imunocomplexos da **nefropatia por IgA**.\n\n**Túbulo proximal.** É o segmento mais longo e predomina nos cortes do córtex: epitélio cúbico com **borda em escova** PAS-positiva, citoplasma muito **acidófilo** (mitocôndrias), limites celulares pouco nítidos (interdigitações laterais) e estriações basais. Reabsorve cerca de dois terços da água e do sódio filtrados, quase toda a glicose e os aminoácidos, bicarbonato e, por endocitose, proteínas pequenas; secreta ácidos e bases orgânicos (inclusive fármacos).\n\n**Alça de Henle.** O **ramo descendente delgado**, de epitélio pavimentoso e muito permeável à água (aquaporina-1), perde água para o interstício hipertônico; o ramo ascendente é impermeável à água. No **ramo ascendente espesso**, o cotransportador **Na⁺-K⁺-2Cl⁻** (alvo da furosemida) retira sal sem água: o fluido fica hipotônico e o interstício, hipertônico (multiplicador em contracorrente). Essas células secretam **uromodulina (proteína de Tamm-Horsfall)**, matriz dos cilindros urinários. Os ramos delgados lembram capilares, mas não têm hemácias na luz.\n\n**Aparelho justaglomerular.** No polo vascular, o túbulo distal encosta no próprio corpúsculo; ali suas células são altas e estreitas, de núcleos aglomerados: a **mácula densa**, sensor do NaCl do fluido tubular. Na túnica média da arteríola aferente, as **células justaglomerulares**, musculares lisas modificadas, guardam **renina** em grânulos e a liberam quando cai a pressão de perfusão ou o NaCl na mácula densa, ou sob estímulo simpático. Completam o aparelho as **células mesangiais extraglomerulares**. A renina inicia a formação de angiotensina II, que contrai arteríolas e estimula a **aldosterona** da zona glomerulosa (his-18). A mácula densa também ajusta o calibre da arteríola aferente (**feedback tubuloglomerular**).\n\n**Túbulo contorcido distal.** Mais curto que o proximal: luz mais ampla, células menores e mais claras, **sem borda em escova**, mais núcleos por corte. Reabsorve NaCl (cotransportador sensível aos tiazídicos) e cálcio, sob ação do PTH.\n\n**Ductos coletores.** Recebem os néfrons pelos túbulos de conexão e descem até os **ductos papilares**. Epitélio cúbico a cilíndrico, de citoplasma claro e **limites celulares nítidos**. As **células principais** reabsorvem Na⁺ e secretam K⁺ sob **aldosterona**; sob **ADH (vasopressina)**, via receptor V2, inserem **aquaporina-2** na membrana apical e reabsorvem água, concentrando a urina. As **células intercaladas**, ricas em mitocôndrias, secretam H⁺ (tipo A) ou bicarbonato (tipo B).\n\n**Circulação.** Artérias interlobares → **arqueadas** (junção corticomedular) → interlobulares → arteríolas aferentes → glomérulo → arteríolas **eferentes**, que formam a rede capilar peritubular do córtex ou, nos néfrons justamedulares, os **vasa recta**: alças vasculares de fluxo lento, paralelas às de Henle, que trocam água e solutos em contracorrente sem dissipar o gradiente medular.\n\n**Vias urinárias.** Cálices, pelve, ureteres e bexiga têm **urotélio** (his-02), lâmina própria, muscular lisa e adventícia (serosa no teto da bexiga). No ureter, a muscular é **longitudinal interna e circular externa**, com mais uma longitudinal externa no terço inferior — o inverso do tubo digestivo; o trajeto oblíquo pela parede vesical impede o refluxo. A bexiga tem feixes musculares entrelaçados (**detrusor**). A **uretra masculina** tem as partes prostática (urotélio), membranosa e esponjosa (epitélio pseudoestratificado ou estratificado cilíndrico; na esponjosa, glândulas de Littré) e a fossa navicular (estratificado pavimentoso); a **feminina** é revestida sobretudo por estratificado pavimentoso.\n\n**Correlações.** Síndrome nefrótica (podócitos), síndrome nefrítica (inflamação glomerular), necrose tubular aguda, nefropatia diabética (nódulos de **Kimmelstiel-Wilson**) e síndrome de Alport, vistas pela **biópsia renal**: microscopia óptica, imunofluorescência e eletrônica.",
+  "pontosChave": [
+    "Néfron = corpúsculo renal + túbulo proximal + alça de Henle + túbulo distal; o ducto coletor, derivado do broto ureteral, não faz parte dele.",
+    "Barreira de filtração: endotélio fenestrado sem diafragma → MBG (colágeno IV α3-α4-α5, carga negativa) → diafragma da fenda entre pedicelos (nefrina).",
+    "O folheto parietal da cápsula glomerular é epitélio simples pavimentoso; o folheto visceral é formado por podócitos.",
+    "Mesângio: sustenta o tufo, contrai-se, fagocita e produz matriz; recebe os depósitos da nefropatia por IgA e forma os nódulos de Kimmelstiel-Wilson.",
+    "Túbulo proximal: borda em escova PAS-positiva, citoplasma acidófilo e limites pouco nítidos; reabsorve cerca de dois terços do filtrado.",
+    "Túbulo contorcido distal: sem borda em escova, células menores e mais claras, luz ampla; a mácula densa fica no polo vascular.",
+    "Aparelho justaglomerular: mácula densa (sensor de NaCl), células justaglomerulares (renina) e células mesangiais extraglomerulares.",
+    "Ramo descendente delgado permeável à água; ramo ascendente impermeável; o ramo ascendente espesso (Na⁺-K⁺-2Cl⁻) dilui o fluido e torna a medula hipertônica.",
+    "Ducto coletor: células claras de limites nítidos; células principais (aldosterona; ADH → aquaporina-2) e intercaladas (H⁺ ou bicarbonato).",
+    "Vasa recta, ramos das arteríolas eferentes dos néfrons justamedulares, preservam o gradiente medular por troca em contracorrente.",
+    "Ureter: muscular longitudinal interna e circular externa, com mais uma longitudinal externa no terço inferior.",
+    "Lesões mínimas: microscopia óptica normal, imunofluorescência negativa e apagamento difuso dos pedicelos à microscopia eletrônica."
+  ],
+  "estruturas": [
+    {
+      "id": "cortex-renal",
+      "nome": "Córtex renal",
+      "sinonimos": [],
+      "definicao": "Região externa do rim, sob a cápsula, com os corpúsculos renais, os túbulos contorcidos e os raios medulares; projeta-se entre as pirâmides como colunas renais."
+    },
+    {
+      "id": "medula-renal",
+      "nome": "Medula renal",
+      "sinonimos": [
+        "pirâmides renais"
+      ],
+      "definicao": "Região interna do rim, organizada em pirâmides de túbulos retos, alças de Henle, ductos coletores e vasa recta paralelos; o ápice de cada pirâmide, a papila, abre-se num cálice menor."
+    },
+    {
+      "id": "raio-medular",
+      "nome": "Raio medular",
+      "sinonimos": [],
+      "definicao": "Feixe de túbulos retos e ductos coletores que se estende da base de uma pirâmide para dentro do córtex; forma o eixo do lóbulo renal."
+    },
+    {
+      "id": "lobo-renal",
+      "nome": "Lobo renal",
+      "sinonimos": [],
+      "definicao": "Uma pirâmide medular com o córtex que recobre sua base e seus lados (metade das colunas renais vizinhas); no rim fetal, corresponde às lobulações da superfície."
+    },
+    {
+      "id": "lobulo-renal",
+      "nome": "Lóbulo renal",
+      "sinonimos": [],
+      "definicao": "Raio medular com os néfrons que drenam nos seus ductos coletores; seus limites laterais são marcados pelas artérias interlobulares."
+    },
+    {
+      "id": "nefron",
+      "nome": "Néfron",
+      "sinonimos": [],
+      "definicao": "Unidade funcional do rim: corpúsculo renal, túbulo proximal, alça de Henle (com o segmento delgado) e túbulo distal. Não inclui o ducto coletor.",
+      "origem": "Blastema metanéfrico (ver emb-16)."
+    },
+    {
+      "id": "corpusculo-renal",
+      "nome": "Corpúsculo renal",
+      "sinonimos": [
+        "corpúsculo de Malpighi"
+      ],
+      "definicao": "Glomérulo envolvido pela cápsula glomerular, com polo vascular (entrada da arteríola aferente e saída da eferente) e polo urinário (início do túbulo proximal)."
+    },
+    {
+      "id": "glomerulo",
+      "nome": "Glomérulo",
+      "sinonimos": [
+        "tufo glomerular"
+      ],
+      "definicao": "Tufo de capilares de endotélio fenestrado situado entre as arteríolas aferente e eferente, sustentado pelo mesângio e recoberto pelos podócitos."
+    },
+    {
+      "id": "capsula-glomerular",
+      "nome": "Cápsula glomerular (de Bowman)",
+      "sinonimos": [
+        "cápsula de Bowman"
+      ],
+      "definicao": "Envoltório do glomérulo com folheto parietal de epitélio simples pavimentoso e folheto visceral de podócitos; entre os dois fica o espaço capsular."
+    },
+    {
+      "id": "espaco-urinario",
+      "nome": "Espaço capsular",
+      "sinonimos": [
+        "espaço urinário",
+        "espaço de Bowman"
+      ],
+      "definicao": "Espaço entre os folhetos parietal e visceral da cápsula glomerular, que recebe o filtrado e continua com a luz do túbulo proximal no polo urinário."
+    },
+    {
+      "id": "podocito",
+      "nome": "Podócito",
+      "sinonimos": [],
+      "definicao": "Célula do folheto visceral da cápsula glomerular, com prolongamentos primários que emitem pedicelos interdigitados com os de podócitos vizinhos; recoberto por glicocálice de carga negativa (podocalixina)."
+    },
+    {
+      "id": "diafragma-da-fenda",
+      "nome": "Diafragma da fenda de filtração",
+      "sinonimos": [
+        "diafragma de fenda"
+      ],
+      "definicao": "Estrutura delgada que fecha as fendas entre pedicelos vizinhos, formada por nefrina e proteínas associadas, como a podocina; última camada da barreira de filtração."
+    },
+    {
+      "id": "endotelio-glomerular",
+      "nome": "Endotélio glomerular fenestrado",
+      "sinonimos": [],
+      "definicao": "Endotélio dos capilares glomerulares, com fenestras sem diafragma; primeira camada da barreira de filtração, retém as células do sangue."
+    },
+    {
+      "id": "membrana-basal-glomerular",
+      "nome": "Membrana basal glomerular (MBG)",
+      "sinonimos": [
+        "lâmina basal glomerular"
+      ],
+      "definicao": "Lâmina basal espessa formada pela fusão das lâminas basais do endotélio e dos podócitos: colágeno IV (cadeias α3, α4 e α5), laminina e proteoglicanos de heparan sulfato, de carga negativa. PAS-positiva e evidenciada pela impregnação pela prata."
+    },
+    {
+      "id": "mesangio",
+      "nome": "Mesângio",
+      "sinonimos": [
+        "células mesangiais intraglomerulares"
+      ],
+      "definicao": "Células mesangiais e matriz situadas entre os capilares glomerulares, onde a MBG não envolve completamente o capilar; sustentam o tufo, contraem-se, fagocitam macromoléculas retidas e produzem matriz e citocinas."
+    },
+    {
+      "id": "arteriola-aferente",
+      "nome": "Arteríola aferente",
+      "sinonimos": [],
+      "definicao": "Arteríola que leva sangue ao glomérulo; na sua túnica média, junto ao polo vascular, ficam as células justaglomerulares."
+    },
+    {
+      "id": "arteriola-eferente",
+      "nome": "Arteríola eferente",
+      "sinonimos": [],
+      "definicao": "Arteríola que sai do glomérulo e forma a rede capilar peritubular do córtex ou, nos néfrons justamedulares, os vasa recta."
+    },
+    {
+      "id": "tubulo-contorcido-proximal",
+      "nome": "Túbulo contorcido proximal",
+      "sinonimos": [],
+      "definicao": "Segmento mais longo do néfron, no córtex: epitélio cúbico acidófilo com borda em escova, limites celulares pouco nítidos e estriações basais; reabsorve cerca de dois terços da água e do sódio filtrados e, normalmente, quase toda a glicose e os aminoácidos."
+    },
+    {
+      "id": "borda-em-escova",
+      "nome": "Borda em escova",
+      "sinonimos": [
+        "orla em escova"
+      ],
+      "definicao": "Faixa apical de microvilosidades das células do túbulo proximal, PAS-positiva pelo glicocálice; aumenta a superfície de reabsorção."
+    },
+    {
+      "id": "ramo-descendente-delgado",
+      "nome": "Ramo descendente delgado da alça de Henle",
+      "sinonimos": [],
+      "definicao": "Segmento de epitélio simples pavimentoso, muito permeável à água (aquaporina-1) e pouco permeável aos solutos; perde água para o interstício medular hipertônico."
+    },
+    {
+      "id": "ramo-ascendente-delgado",
+      "nome": "Ramo ascendente delgado da alça de Henle",
+      "sinonimos": [],
+      "definicao": "Segmento de epitélio simples pavimentoso, presente nas alças longas dos néfrons justamedulares; impermeável à água."
+    },
+    {
+      "id": "ramo-ascendente-espesso",
+      "nome": "Ramo ascendente espesso da alça de Henle",
+      "sinonimos": [
+        "túbulo reto distal"
+      ],
+      "definicao": "Segmento de epitélio cúbico rico em mitocôndrias, impermeável à água, que reabsorve NaCl pelo cotransportador Na⁺-K⁺-2Cl⁻ e secreta uromodulina (proteína de Tamm-Horsfall); dilui o fluido tubular."
+    },
+    {
+      "id": "macula-densa",
+      "nome": "Mácula densa",
+      "sinonimos": [],
+      "definicao": "Grupo de células altas e estreitas, de núcleos aglomerados, na parede do túbulo distal voltada para o polo vascular do próprio glomérulo; sensor da concentração de NaCl do fluido tubular."
+    },
+    {
+      "id": "celulas-justaglomerulares",
+      "nome": "Células justaglomerulares",
+      "sinonimos": [
+        "células granulares"
+      ],
+      "definicao": "Células musculares lisas modificadas da túnica média da arteríola aferente, com grânulos de renina; liberam renina quando cai a pressão de perfusão, quando cai o NaCl na mácula densa ou sob estímulo simpático."
+    },
+    {
+      "id": "celulas-mesangiais-extraglomerulares",
+      "nome": "Células mesangiais extraglomerulares",
+      "sinonimos": [
+        "células de lacis",
+        "células de Goormaghtigh"
+      ],
+      "definicao": "Células situadas entre as arteríolas aferente e eferente e a mácula densa, contínuas com o mesângio; completam o aparelho justaglomerular."
+    },
+    {
+      "id": "tubulo-contorcido-distal",
+      "nome": "Túbulo contorcido distal",
+      "sinonimos": [],
+      "definicao": "Segmento cortical mais curto que o proximal, de epitélio cúbico mais baixo e claro, sem borda em escova e com mais núcleos por corte; reabsorve NaCl e cálcio (sob ação do PTH)."
+    },
+    {
+      "id": "ducto-coletor",
+      "nome": "Ducto coletor",
+      "sinonimos": [
+        "túbulo coletor"
+      ],
+      "definicao": "Ducto que recebe vários néfrons pelos túbulos de conexão e desce do córtex à papila, onde forma os ductos papilares; epitélio cúbico a cilíndrico de células claras e limites nítidos. Não faz parte do néfron.",
+      "origem": "Broto ureteral (ver emb-16)."
+    },
+    {
+      "id": "celula-principal-ducto-coletor",
+      "nome": "Célula principal do ducto coletor",
+      "sinonimos": [
+        "célula clara do ducto coletor"
+      ],
+      "definicao": "Célula clara, predominante no ducto coletor, que reabsorve Na⁺ e secreta K⁺ sob aldosterona e, sob ADH (receptor V2), insere aquaporina-2 na membrana apical."
+    },
+    {
+      "id": "celula-intercalada",
+      "nome": "Célula intercalada do ducto coletor",
+      "sinonimos": [
+        "célula escura do ducto coletor"
+      ],
+      "definicao": "Célula rica em mitocôndrias, intercalada entre as principais, que regula o equilíbrio acidobásico: o tipo A secreta H⁺; o tipo B secreta bicarbonato."
+    },
+    {
+      "id": "vasa-recta",
+      "nome": "Vasa recta",
+      "sinonimos": [
+        "vasos retos"
+      ],
+      "definicao": "Vasos em alça, ramos das arteríolas eferentes dos néfrons justamedulares, que acompanham as alças de Henle na medula e trocam água e solutos em contracorrente, preservando o gradiente osmótico."
+    },
+    {
+      "id": "epitelio-de-transicao",
+      "nome": "Epitélio de transição (urotélio)",
+      "sinonimos": [
+        "urotélio"
+      ],
+      "definicao": "Epitélio estratificado que reveste cálices, pelve, ureteres, bexiga e parte da uretra; as células em guarda-chuva superficiais formam barreira à urina (ver his-02)."
+    },
+    {
+      "id": "ureter",
+      "nome": "Ureter",
+      "sinonimos": [],
+      "definicao": "Tubo que leva a urina da pelve à bexiga: mucosa com urotélio, muscular lisa longitudinal interna e circular externa (com longitudinal externa no terço inferior) e adventícia; atravessa obliquamente a parede da bexiga."
+    },
+    {
+      "id": "bexiga-urinaria",
+      "nome": "Bexiga urinária",
+      "sinonimos": [],
+      "definicao": "Órgão de armazenamento da urina, com urotélio, lâmina própria e músculo liso em feixes entrelaçados (detrusor); adventícia e, no teto, serosa."
+    },
+    {
+      "id": "uretra",
+      "nome": "Uretra",
+      "sinonimos": [],
+      "definicao": "Canal final das vias urinárias. No homem: partes prostática (urotélio), membranosa e esponjosa (epitélio pseudoestratificado ou estratificado cilíndrico; na esponjosa, glândulas de Littré) e fossa navicular (estratificado pavimentoso). Na mulher, predomina o estratificado pavimentoso não queratinizado."
+    }
+  ],
+  "eventos": [
+    {
+      "id": "his17-filtracao",
+      "descricao": "O plasma é filtrado através da barreira glomerular para o espaço capsular",
+      "ordem": 1
+    },
+    {
+      "id": "his17-tubulo-proximal",
+      "descricao": "O filtrado percorre o túbulo contorcido proximal, que reabsorve cerca de dois terços da água e do sódio",
+      "ordem": 2
+    },
+    {
+      "id": "his17-ramo-descendente",
+      "descricao": "No ramo descendente delgado da alça de Henle, o fluido perde água para o interstício medular hipertônico",
+      "ordem": 3
+    },
+    {
+      "id": "his17-ramo-ascendente-espesso",
+      "descricao": "No ramo ascendente espesso, o NaCl é reabsorvido sem água e o fluido fica hipotônico",
+      "ordem": 4
+    },
+    {
+      "id": "his17-macula-densa",
+      "descricao": "O fluido passa pela mácula densa, junto ao polo vascular do próprio glomérulo",
+      "ordem": 5
+    },
+    {
+      "id": "his17-tubulo-distal",
+      "descricao": "O túbulo contorcido distal reabsorve NaCl e cálcio",
+      "ordem": 6
+    },
+    {
+      "id": "his17-ducto-coletor",
+      "descricao": "Pelo túbulo de conexão, o fluido chega ao ducto coletor, onde o ADH regula a reabsorção de água",
+      "ordem": 7
+    },
+    {
+      "id": "his17-ducto-papilar",
+      "descricao": "Os ductos papilares lançam a urina no cálice menor, na área crivosa da papila",
+      "ordem": 8
+    },
+    {
+      "id": "his17-pelve-ureter",
+      "descricao": "A urina passa pelo cálice maior e pela pelve renal e desce pelo ureter",
+      "ordem": 9
+    },
+    {
+      "id": "his17-bexiga-uretra",
+      "descricao": "A urina é armazenada na bexiga e eliminada pela uretra",
+      "ordem": 10
+    }
+  ],
+  "correlacoesClinicas": [
+    {
+      "id": "sindrome-nefrotica",
+      "titulo": "Síndrome nefrótica e lesão dos podócitos",
+      "descricao": "Proteinúria maciça, hipoalbuminemia e edema, em geral com hiperlipidemia, hipercoagulabilidade e risco de infecções. No adulto, o PCDT do Ministério da Saúde (2020) define a proteinúria nefrótica como acima de 3,0–3,5 g/1,73 m² por dia, e o exame histopatológico da biópsia define o plano terapêutico e auxilia o diagnóstico etiológico na síndrome nefrótica primária; numa série brasileira citada pelo PCDT, glomeruloesclerose segmentar e focal e glomerulopatia membranosa foram as causas primárias mais frequentes. Na criança com diagnóstico após 1 ano de idade, a doença de lesões mínimas responde por 70–90% dos casos; em geral não se faz biópsia no início, o primeiro episódio é tratado com prednisona ou prednisolona, com remissão na maioria, e a biópsia fica para casos selecionados, como corticorresistência, idade acima de 12 anos ou suspeita de causa secundária (PCDT de 2026).",
+      "mecanismo": "A lesão principal é do podócito: com o apagamento (fusão) dos pedicelos e a desorganização do diafragma da fenda, a barreira deixa passar albumina. Doença de lesões mínimas: microscopia óptica normal, imunofluorescência negativa (no máximo, coloração fraca de IgM ou C3) e apagamento difuso dos pedicelos, sem depósitos, à microscopia eletrônica; as células tubulares acumulam lipídios reabsorvidos (antiga “nefrose lipoide”). Glomeruloesclerose segmentar e focal: esclerose de parte do tufo em parte dos glomérulos; na forma primária, o apagamento dos pedicelos também é difuso, e, como a lesão é focal, uma biópsia pequena pode não conter glomérulos esclerosados e parecer lesões mínimas (KDIGO 2021). Na clínica do adulto, as lesões mínimas cursam com proteinúria seletiva, em geral sem hematúria nem hipertensão; a GESF, com proteinúria não seletiva, que pode acompanhar-se de algum grau de hematúria microscópica e de hipertensão (PCDT de 2020). Nefropatia membranosa: depósitos subepiteliais de imunocomplexos — na maioria das formas primárias, com autoanticorpos contra o receptor de fosfolipase A2 (PLA2R) do podócito —, MBG espessada e espículas na impregnação pela prata. Variantes patogênicas de proteínas do diafragma, como a nefrina (gene NPHS1), causam síndrome nefrótica congênita; anticorpos antinefrina foram descritos recentemente na doença de lesões mínimas e na síndrome nefrótica idiopática da criança, em geral corticossensível; no modelo animal, ligam-se ao diafragma da fenda e reproduzem a doença, e ainda estão em avaliação como biomarcadores (KDIGO 2025)."
+    },
+    {
+      "id": "sindrome-nefritica",
+      "titulo": "Síndrome nefrítica e glomerulonefrites",
+      "descricao": "Hematúria com hemácias dismórficas e cilindros hemáticos, proteinúria em geral abaixo da faixa nefrótica, oligúria com retenção de sódio e água, edema e hipertensão. O protótipo é a glomerulonefrite pós-estreptocócica, semanas após faringite ou infecção de pele, com C3 sérico baixo. Quando há crescentes em muitos glomérulos e perda rápida da função renal, fala-se em glomerulonefrite rapidamente progressiva (por exemplo, doença anti-MBG e vasculites associadas a ANCA).",
+      "mecanismo": "A inflamação glomerular — por imunocomplexos, anticorpos anti-MBG ou vasculite — causa proliferação de células endoteliais e mesangiais, influxo de leucócitos e rupturas da parede capilar: hemácias passam ao espaço capsular, e a filtração cai. Na forma pós-estreptocócica: glomérulos hipercelulares com neutrófilos, imunofluorescência granular de IgG e C3 e depósitos subepiteliais em corcova à microscopia eletrônica. Na doença anti-MBG: crescentes (proliferação de células do folheto parietal, com macrófagos e fibrina no espaço capsular) e IgG linear ao longo da MBG."
+    },
+    {
+      "id": "necrose-tubular-aguda",
+      "titulo": "Necrose tubular aguda",
+      "descricao": "Causa frequente de lesão renal aguda, com elevação da creatinina, oligúria em muitos casos e sedimento urinário com células tubulares e cilindros granulosos castanhos. As causas são isquêmicas (choque, hipovolemia grave, sepse, grandes cirurgias) ou nefrotóxicas (por exemplo, aminoglicosídeos, contraste iodado, mioglobina na rabdomiólise). Como a membrana basal costuma ser preservada, a função pode recuperar-se em dias a semanas, muitas vezes passando por uma fase de poliúria.",
+      "mecanismo": "O túbulo proximal (sobretudo sua porção reta) e o ramo ascendente espesso, de transporte ativo intenso, ficam na medula externa, pouco oxigenada, e são os mais vulneráveis à isquemia; o túbulo proximal, que reabsorve e concentra muitas toxinas, é o principal alvo das nefrotoxinas. As células perdem a borda em escova e a polaridade e descamam; restos celulares e uromodulina formam cilindros que obstruem a luz, e parte do filtrado reflui para o interstício. A regeneração parte das células sobreviventes, que se achatam e se dividem; na forma isquêmica, a membrana basal pode romper-se em focos."
+    },
+    {
+      "id": "nefropatia-diabetica",
+      "titulo": "Nefropatia diabética",
+      "descricao": "Complicação microvascular do diabetes de longa duração e causa importante de doença renal crônica avançada. Manifesta-se por albuminúria persistente, que tende a aumentar, hipertensão e queda progressiva da filtração glomerular; com frequência coexiste com retinopatia diabética.",
+      "mecanismo": "A hiperglicemia crônica glica proteínas da matriz (produtos finais de glicação avançada) e, com a hiperfiltração e as alterações hemodinâmicas, leva a espessamento difuso da MBG — alteração precoce, medida à microscopia eletrônica —, expansão difusa da matriz mesangial e, depois, glomeruloesclerose nodular: os nódulos de Kimmelstiel-Wilson, de matriz mesangial PAS-positiva, na periferia do glomérulo. Há hialinose das arteríolas aferente e eferente (a da eferente é praticamente exclusiva do diabetes), fibrose intersticial e atrofia tubular; aumentam o risco de pielonefrite e o de necrose de papila."
+    },
+    {
+      "id": "sindrome-de-alport",
+      "titulo": "Síndrome de Alport",
+      "descricao": "Nefropatia hereditária com hematúria persistente desde a infância, proteinúria e perda progressiva da função renal, com frequência associada a surdez neurossensorial e a alterações oculares. A forma mais comum é ligada ao X (gene COL4A5) e é mais grave nos homens.",
+      "mecanismo": "Variantes patogênicas nos genes das cadeias α3, α4 ou α5 do colágeno IV (COL4A3, COL4A4, COL4A5) alteram a rede que forma a MBG madura e que também existe na cóclea e no olho. À microscopia eletrônica, a MBG fica irregular, com lâmina densa fragmentada e lamelada; em fases iniciais pode estar apenas delgada."
+    },
+    {
+      "id": "biopsia-renal",
+      "titulo": "Biópsia renal: microscopia óptica, imunofluorescência e microscopia eletrônica",
+      "descricao": "O fragmento é dividido para três estudos complementares. Na microscopia óptica, além da HE, usam-se PAS (MBG, matriz mesangial, borda em escova), impregnação pela prata (metenamina de prata, para a MBG e suas espículas) e tricrômico (fibrose). A imunofluorescência, em tecido congelado, pesquisa IgG, IgA, IgM, C3, C1q e cadeias leves e define o padrão: linear (anticorpos anti-MBG), granular (imunocomplexos) ou predominantemente mesangial (como na nefropatia por IgA). A microscopia eletrônica localiza os depósitos (subepiteliais, subendoteliais, mesangiais), mostra o apagamento dos pedicelos e avalia a espessura e a estrutura da MBG. Nos PCDTs do Ministério da Saúde, a biópsia integra a investigação da síndrome nefrótica primária do adulto (2020) e, na criança, é reservada a casos selecionados (2026).",
+      "mecanismo": "Cada método enxerga uma escala: a microscopia óptica mostra a arquitetura e a celularidade; a imunofluorescência, a composição e a distribuição dos depósitos; a eletrônica, a ultraestrutura da barreira de filtração."
+    }
+  ],
+  "questoes": [
+    {
+      "id": "his-17-q01",
+      "tipo": "multipla",
+      "enunciado": "Qual destes segmentos não pertence ao néfron, por ter origem embrionária diferente?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Túbulo contorcido proximal"
+        },
+        {
+          "id": "b",
+          "texto": "Ramo ascendente espesso"
+        },
+        {
+          "id": "c",
+          "texto": "Túbulo contorcido distal"
+        },
+        {
+          "id": "d",
+          "texto": "Ducto coletor"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "O néfron — corpúsculo renal, túbulo proximal, alça de Henle e túbulo distal — deriva do blastema metanéfrico; os ductos coletores derivam das ramificações do broto ureteral e, por isso, não são considerados parte do néfron, embora trabalhem com ele na formação da urina (d). O túbulo contorcido proximal (a), o ramo ascendente espesso da alça de Henle (b) e o túbulo contorcido distal (c) pertencem ao néfron e derivam do blastema metanéfrico (ver emb-16).",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "nefron",
+        "ducto-coletor"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20; Moore 11ª ed., cap. 12"
+    },
+    {
+      "id": "his-17-q02",
+      "tipo": "multipla",
+      "enunciado": "O lóbulo renal corresponde a:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Uma pirâmide medular com o córtex que recobre sua base e seus lados"
+        },
+        {
+          "id": "b",
+          "texto": "Um raio medular com os néfrons que drenam nos seus ductos coletores"
+        },
+        {
+          "id": "c",
+          "texto": "O tecido cortical que se projeta entre duas pirâmides vizinhas"
+        },
+        {
+          "id": "d",
+          "texto": "A papila renal com os ductos papilares que se abrem no cálice"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O lóbulo renal tem no centro um raio medular — feixe de túbulos retos e ductos coletores que penetra o córtex — e reúne os néfrons que drenam nos ductos coletores desse raio; seus limites laterais são marcados pelas artérias interlobulares (b). Uma pirâmide com o córtex que a recobre (a) é o lobo renal, unidade maior, que no rim fetal corresponde às lobulações da superfície. O córtex entre duas pirâmides (c) forma as colunas renais. A papila (d) é o ápice da pirâmide, onde os ductos papilares se abrem no cálice menor.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "lobulo-renal",
+        "lobo-renal",
+        "raio-medular"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19"
+    },
+    {
+      "id": "his-17-q03",
+      "tipo": "multipla",
+      "contexto": "Recém-nascido com edema generalizado e proteinúria maciça desde as primeiras semanas de vida. O teste genético mostra variantes patogênicas nos dois alelos de NPHS1, o gene da nefrina (síndrome nefrótica congênita do tipo finlandês).",
+      "enunciado": "Em que componente da barreira de filtração está o defeito?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Rede de colágeno IV da lâmina densa da membrana basal glomerular"
+        },
+        {
+          "id": "b",
+          "texto": "Fenestras do endotélio dos capilares glomerulares"
+        },
+        {
+          "id": "c",
+          "texto": "Diafragma da fenda de filtração entre os pedicelos"
+        },
+        {
+          "id": "d",
+          "texto": "Junções oclusivas do folheto parietal da cápsula glomerular"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "A nefrina é uma proteína transmembrana dos pedicelos: moléculas de pedicelos vizinhos ligam-se entre si e formam o diafragma da fenda, última camada da barreira. Sem ela, o diafragma não se forma, os pedicelos se apagam e a proteína passa em grande quantidade desde o período neonatal (c). O colágeno IV da MBG (a) é afetado na síndrome de Alport, que se manifesta por hematúria. As fenestras endoteliais (b), sem diafragma, retêm sobretudo as células do sangue e não contêm nefrina. O folheto parietal (d) delimita o espaço capsular por fora e não faz parte da barreira de filtração.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "nefrina",
+        "podocito",
+        "barreira-de-filtracao",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Robbins & Cotran 10ª ed., O rim"
+    },
+    {
+      "id": "his-17-q04",
+      "tipo": "multipla",
+      "contexto": "Lâmina de córtex renal corada por HE. Junto a um corpúsculo renal, predominam cortes de túbulos de epitélio cúbico com citoplasma intensamente acidófilo, limites laterais entre as células pouco nítidos, poucos núcleos em cada corte transversal e luz estreita e irregular, ocupada por uma faixa apical felpuda que fica magenta no PAS.",
+      "enunciado": "Esses túbulos são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Túbulos contorcidos proximais"
+        },
+        {
+          "id": "b",
+          "texto": "Túbulos contorcidos distais"
+        },
+        {
+          "id": "c",
+          "texto": "Ductos coletores corticais"
+        },
+        {
+          "id": "d",
+          "texto": "Ramos delgados da alça de Henle"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "A faixa apical PAS-positiva é a borda em escova (microvilosidades com glicocálice); o citoplasma muito acidófilo reflete as numerosas mitocôndrias, e os limites pouco nítidos resultam das interdigitações laterais. Como o túbulo proximal é o segmento mais longo do néfron, seus cortes predominam no córtex (a). O túbulo contorcido distal (b) tem células menores e mais claras, mais núcleos por corte, luz ampla e não tem borda em escova. O ducto coletor cortical (c) tem células claras, de limites bem nítidos, e corre nos raios medulares. Os ramos delgados (d) têm epitélio simples pavimentoso e ficam sobretudo na medula.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "tubulo-contorcido-proximal",
+        "borda-em-escova",
+        "lamina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q05",
+      "tipo": "multipla",
+      "contexto": "Corte de medula renal corado por HE. Há túbulos de luz ampla revestidos por epitélio cúbico a cilíndrico baixo, de citoplasma claro, com limites bem nítidos entre as células. Entre eles, tubos de pequeno calibre revestidos por epitélio pavimentoso, alguns com hemácias na luz e outros sem elas.",
+      "enunciado": "Os túbulos de citoplasma claro e limites celulares nítidos são:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Túbulos retos proximais"
+        },
+        {
+          "id": "b",
+          "texto": "Ramos ascendentes espessos"
+        },
+        {
+          "id": "c",
+          "texto": "Ramos descendentes delgados"
+        },
+        {
+          "id": "d",
+          "texto": "Ductos coletores medulares"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Os ductos coletores têm células claras, de limites laterais nítidos, que ficam mais altas à medida que o ducto se aproxima da papila (d). Os túbulos retos proximais (a) mantêm as características do contorcido proximal: borda em escova, citoplasma acidófilo e limites pouco nítidos. Os ramos ascendentes espessos (b) têm células cúbicas acidófilas, ricas em mitocôndrias, sem a clareza do ducto coletor. Os ramos delgados (c) são os tubos de epitélio pavimentoso sem hemácias na luz; os de aspecto semelhante com hemácias são vasa recta.",
+      "dificuldade": 2,
+      "bloom": "aplicar",
+      "tags": [
+        "ducto-coletor",
+        "medula-renal",
+        "lamina"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q06",
+      "tipo": "multipla",
+      "enunciado": "No aparelho justaglomerular, a mácula densa funciona principalmente como sensor de:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Pressão de perfusão na parede da arteríola aferente"
+        },
+        {
+          "id": "b",
+          "texto": "Concentração de NaCl no fluido do túbulo distal"
+        },
+        {
+          "id": "c",
+          "texto": "Osmolalidade do interstício da medula interna"
+        },
+        {
+          "id": "d",
+          "texto": "Concentração de glicose no filtrado glomerular"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "As células da mácula densa, na parede do túbulo distal junto ao polo vascular do próprio glomérulo, percebem a concentração de NaCl do fluido tubular por meio do cotransportador Na⁺-K⁺-2Cl⁻. NaCl baixo estimula a liberação de renina e dilata a arteríola aferente; NaCl alto contrai a aferente (feedback tubuloglomerular) (b). A pressão de perfusão (a) é percebida pelas próprias células justaglomerulares, que funcionam como barorreceptores na parede da arteríola aferente. A osmolalidade da medula (c) é gerada pelo multiplicador em contracorrente e não é o sinal detectado no polo vascular. A glicose (d) é reabsorvida no túbulo proximal e não é o sinal da mácula densa.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "macula-densa",
+        "aparelho-justaglomerular",
+        "feedback-tubuloglomerular"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19; Guyton & Hall 14ª ed., cap. 27"
+    },
+    {
+      "id": "his-17-q07",
+      "tipo": "multipla",
+      "contexto": "Homem de 64 anos, tabagista, com hipertensão de início recente e de difícil controle e sopro abdominal. A angiotomografia mostra estenose grave da artéria renal direita, e a renina plasmática está elevada.",
+      "enunciado": "Qual mecanismo explica a elevação da renina?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Células justaglomerulares da arteríola aferente detectam a queda da pressão e liberam renina"
+        },
+        {
+          "id": "b",
+          "texto": "A mácula densa passa a secretar renina quando aumenta a oferta de NaCl ao túbulo distal"
+        },
+        {
+          "id": "c",
+          "texto": "Células mesangiais intraglomerulares secretam renina em resposta ao aumento da angiotensina II"
+        },
+        {
+          "id": "d",
+          "texto": "O endotélio pulmonar converte angiotensinogênio em renina quando cai o fluxo sanguíneo renal"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "As células justaglomerulares, musculares lisas modificadas da túnica média da arteríola aferente, funcionam como barorreceptores: com a estenose, cai a pressão de perfusão do rim direito, e elas liberam a renina armazenada em grânulos; a angiotensina II resultante contrai arteríolas e estimula a aldosterona, elevando a pressão arterial (a). A mácula densa (b) é sensor de NaCl e não secreta renina; além disso, é a queda, e não o aumento, do NaCl tubular que estimula a liberação. A angiotensina II inibe a liberação de renina (retroalimentação negativa), e a renina não é produzida pelo mesângio intraglomerular (c). A enzima conversora, abundante no endotélio pulmonar, transforma angiotensina I em angiotensina II; a renina é a enzima que age sobre o angiotensinogênio e não é formada a partir dele (d).",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "celulas-justaglomerulares",
+        "renina",
+        "hipertensao-renovascular",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., caps. 19 e 27"
+    },
+    {
+      "id": "his-17-q08",
+      "tipo": "multipla",
+      "contexto": "Menino de 9 meses com poliúria, irritabilidade e desidratação com sódio sérico elevado; a urina continua diluída mesmo com o menino desidratado. Após a administração de desmopressina, análogo sintético do ADH, a osmolalidade urinária não se altera. Um tio materno teve quadro semelhante na infância.",
+      "enunciado": "Qual alteração explica o quadro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Destruição dos neurônios dos núcleos supraóptico e paraventricular"
+        },
+        {
+          "id": "b",
+          "texto": "Ausência de aquaporina-1 nos ramos descendentes delgados da alça"
+        },
+        {
+          "id": "c",
+          "texto": "Defeito do receptor V2 das células principais do ducto coletor"
+        },
+        {
+          "id": "d",
+          "texto": "Falta de células intercaladas do tipo A no ducto coletor"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "No diabetes insípido nefrogênico ligado ao X, variantes patogênicas do receptor V2 da vasopressina (gene AVPR2) impedem que o ADH ative a via do AMPc nas células principais: a aquaporina-2 não é inserida na membrana apical, e o ducto coletor fica impermeável à água. A urina permanece diluída mesmo com ADH ou desmopressina, e a ocorrência num tio materno combina com a herança ligada ao X (c). A destruição dos neurônios hipotalâmicos (a) causa diabetes insípido central, que responde à desmopressina. A aquaporina-1 (b) não é regulada pelo ADH; um defeito nela não explicaria a falta de resposta ao análogo nem a herança ligada ao X. As células intercaladas tipo A (d) secretam H⁺; a resposta da água ao ADH depende das células principais.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "diabetes-insipido-nefrogenico",
+        "aquaporina-2",
+        "ducto-coletor",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 29; Robbins & Cotran 10ª ed., Sistema endócrino (diabetes insípido)"
+    },
+    {
+      "id": "his-17-q09",
+      "tipo": "multipla",
+      "contexto": "Mulher de 24 anos com edema generalizado há duas semanas, proteinúria de 9 g/24 h, albumina sérica de 1,9 g/dL e colesterol elevado; não tem hematúria, e a pressão arterial e a creatinina são normais. Na biópsia renal, os glomérulos são normais à microscopia óptica, e a imunofluorescência é negativa.",
+      "enunciado": "Que achado da microscopia eletrônica é esperado no diagnóstico mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Depósitos eletrodensos subepiteliais grandes, em forma de corcova"
+        },
+        {
+          "id": "b",
+          "texto": "Apagamento difuso dos pedicelos, sem depósitos eletrodensos"
+        },
+        {
+          "id": "c",
+          "texto": "Lâmina densa irregular, fragmentada e lamelada em toda a MBG"
+        },
+        {
+          "id": "d",
+          "texto": "Depósitos subepiteliais regulares com espículas de MBG entre eles"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Síndrome nefrótica sem hematúria, hipertensão nem perda de função, com microscopia óptica normal e imunofluorescência negativa, é o quadro da doença de lesões mínimas: a lesão está nos podócitos, cujos pedicelos se apagam (fundem-se) de forma difusa, alteração visível só à microscopia eletrônica (b). O mesmo apagamento difuso ocorre na glomeruloesclerose segmentar e focal primária, cujas lesões focais podem faltar numa amostra pequena; a ausência de hematúria e de hipertensão favorece as lesões mínimas, e o achado esperado à microscopia eletrônica é o mesmo. Depósitos em corcova (a) são da glomerulonefrite pós-infecciosa, que causa síndrome nefrítica e tem imunofluorescência granular. A MBG lamelada (c) é típica da síndrome de Alport, que se manifesta por hematúria. Depósitos subepiteliais com espículas (d) caracterizam a nefropatia membranosa, com imunofluorescência granular de IgG e MBG espessada já à microscopia óptica.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "doenca-de-lesoes-minimas",
+        "podocito",
+        "biopsia-renal",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim; PCDT Síndrome Nefrótica Primária em Adultos (MS, 2020), item 6.3; KDIGO 2021 (Glomerular Diseases), caps. 5 e 6"
+    },
+    {
+      "id": "his-17-q10",
+      "tipo": "multipla",
+      "contexto": "Menino de 7 anos com urina escura há dois dias, edema palpebral, pressão arterial elevada e diurese reduzida. Teve faringite há três semanas. Exame de urina: hemácias dismórficas, cilindros hemáticos e proteinúria moderada; C3 sérico baixo.",
+      "enunciado": "Que conjunto de achados corresponde a essa doença na biópsia renal?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Microscopia óptica normal; imunofluorescência negativa; apagamento difuso dos pedicelos"
+        },
+        {
+          "id": "b",
+          "texto": "Crescentes em muitos glomérulos; IgG linear ao longo da MBG; nenhum depósito eletrodenso"
+        },
+        {
+          "id": "c",
+          "texto": "MBG espessada; IgG granular fina e difusa; depósitos subepiteliais com espículas da MBG"
+        },
+        {
+          "id": "d",
+          "texto": "Glomérulos hipercelulares com neutrófilos; IgG e C3 granulares; corcovas subepiteliais"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "Síndrome nefrítica semanas após uma faringite, com C3 baixo, sugere glomerulonefrite pós-estreptocócica: imunocomplexos depositados nos glomérulos ativam o complemento; a proliferação de células endoteliais e mesangiais e a chegada de neutrófilos tornam os glomérulos hipercelulares, a imunofluorescência é granular (IgG e C3), e a microscopia eletrônica mostra grandes depósitos subepiteliais em corcova (d). O conjunto (a) é o da doença de lesões mínimas, que causa síndrome nefrótica. Crescentes com IgG linear (b) indicam doença anti-MBG, rapidamente progressiva e sem relação com faringite. MBG espessada com espículas (c) é a nefropatia membranosa, que se apresenta como síndrome nefrótica e costuma cursar com C3 sérico normal.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "glomerulonefrite-pos-estreptococica",
+        "sindrome-nefritica",
+        "biopsia-renal",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim"
+    },
+    {
+      "id": "his-17-q11",
+      "tipo": "multipla",
+      "contexto": "Homem de 52 anos tem choque hemorrágico prolongado durante cirurgia de aneurisma da aorta. Nos dias seguintes, evolui com oligúria e creatinina em ascensão. O sedimento urinário mostra células epiteliais tubulares e numerosos cilindros granulosos de cor castanha.",
+      "enunciado": "Qual achado histológico é esperado e onde predomina?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Necrose e descamação de células do túbulo proximal e do ramo ascendente espesso"
+        },
+        {
+          "id": "b",
+          "texto": "Apagamento dos pedicelos dos podócitos, com túbulos e interstício normais"
+        },
+        {
+          "id": "c",
+          "texto": "Proliferação de células do folheto parietal formando crescentes no espaço capsular"
+        },
+        {
+          "id": "d",
+          "texto": "Necrose das papilas renais, com destruição dos ductos papilares"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Na necrose tubular aguda isquêmica, os segmentos de transporte ativo intenso — o túbulo proximal, sobretudo sua porção reta, e o ramo ascendente espesso, situados na medula externa, pouco oxigenada — perdem a borda em escova e a polaridade e descamam; células soltas e restos com uromodulina formam cilindros granulosos castanhos, que obstruem a luz. Como a membrana basal costuma ser preservada (na forma isquêmica pode romper-se em focos), o epitélio pode regenerar em dias a semanas (a). O apagamento dos pedicelos (b) causa proteinúria nefrótica, não lesão renal aguda com cilindros epiteliais. Crescentes (c) aparecem nas glomerulonefrites rapidamente progressivas, com hematúria e cilindros hemáticos. A necrose de papila (d) associa-se a diabetes, obstrução com infecção, abuso de analgésicos e anemia falciforme, e não é a lesão típica do choque.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "necrose-tubular-aguda",
+        "tubulo-contorcido-proximal",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q12",
+      "tipo": "multipla",
+      "contexto": "Biópsia renal de mulher de 58 anos com diabetes tipo 2 há 20 anos, retinopatia e albuminúria crescente. No PAS, há nódulos arredondados, pouco celulares e intensamente PAS-positivos na periferia dos glomérulos, membranas basais difusamente espessadas e hialinose das arteríolas aferente e eferente. O vermelho-congo é negativo.",
+      "enunciado": "Os nódulos são formados principalmente por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Depósitos de imunocomplexos no espaço subendotelial das alças"
+        },
+        {
+          "id": "b",
+          "texto": "Fibrilas de amiloide depositadas no mesângio"
+        },
+        {
+          "id": "c",
+          "texto": "Acúmulo de matriz mesangial (glomeruloesclerose nodular)"
+        },
+        {
+          "id": "d",
+          "texto": "Crescentes fibrosos formados pelo folheto parietal"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Os nódulos de Kimmelstiel-Wilson são acúmulos de matriz mesangial, PAS-positivos e pouco celulares, na periferia do glomérulo; acompanham-se de espessamento difuso da MBG, expansão mesangial difusa e hialinose das arteríolas aferente e eferente, esta última praticamente exclusiva do diabetes (c). Depósitos subendoteliais de imunocomplexos (a) aparecem, por exemplo, na nefrite lúpica, com imunofluorescência positiva. O amiloide (b) também pode formar nódulos mesangiais, mas cora-se pelo vermelho-congo, com birrefringência verde-maçã à luz polarizada, e aqui o vermelho-congo foi negativo. Crescentes (d) ocupam o espaço capsular, e não o tufo, e indicam glomerulonefrite grave.",
+      "dificuldade": 3,
+      "bloom": "aplicar",
+      "tags": [
+        "nefropatia-diabetica",
+        "kimmelstiel-wilson",
+        "mesangio",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q13",
+      "tipo": "multipla",
+      "contexto": "Rapaz de 17 anos com hematúria microscópica persistente desde a infância e perda auditiva neurossensorial; o exame oftalmológico mostra alteração do cristalino. Um tio materno iniciou diálise aos 30 anos. A microscopia eletrônica mostra MBG de espessura irregular, com lâmina densa fragmentada e lamelada.",
+      "enunciado": "Qual componente da barreira de filtração é anormal?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Nefrina do diafragma da fenda de filtração"
+        },
+        {
+          "id": "b",
+          "texto": "Rede de colágeno IV com cadeias α3, α4 e α5"
+        },
+        {
+          "id": "c",
+          "texto": "Podocalixina do glicocálice dos podócitos"
+        },
+        {
+          "id": "d",
+          "texto": "Integrina que prende a base dos podócitos à MBG"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "Hematúria familiar com surdez neurossensorial, alteração ocular e transmissão pelo lado materno sugere síndrome de Alport ligada ao X, por variante de COL4A5. A MBG madura usa uma rede de colágeno IV formada pelas cadeias α3, α4 e α5, que também existe na cóclea e no olho; com a rede defeituosa, a membrana fica irregular, fragmentada e lamelada à microscopia eletrônica (b). A nefrina (a) forma o diafragma da fenda; seus defeitos causam síndrome nefrótica congênita, sem surdez. A podocalixina (c) dá carga negativa ao glicocálice dos podócitos e não explica a lamelação da MBG. A integrina dos podócitos (d) ancora essas células à MBG, mas não é o defeito da síndrome de Alport nem explica as alterações da cóclea e do olho.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "sindrome-de-alport",
+        "membrana-basal-glomerular",
+        "colageno-iv",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q14",
+      "tipo": "multipla",
+      "enunciado": "Por que o fluxo sanguíneo nos vasa recta não dissipa o gradiente osmótico da medula renal?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Porque o endotélio dos vasa recta é impermeável à água e aos solutos em todo o trajeto"
+        },
+        {
+          "id": "b",
+          "texto": "Porque o fluxo sanguíneo medular é alto e renova sem parar o soluto do interstício"
+        },
+        {
+          "id": "c",
+          "texto": "Porque formam alças de fluxo lento que trocam água e solutos em contracorrente"
+        },
+        {
+          "id": "d",
+          "texto": "Porque a pressão oncótica do sangue impede a entrada de NaCl e de ureia nos vasos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Os vasa recta descem e sobem em alças paralelas às de Henle, com fluxo baixo. No ramo descendente, o sangue ganha solutos e perde água para o interstício hipertônico; no ascendente, devolve solutos e recebe água. Essa troca em contracorrente remove a água reabsorvida sem levar embora o gradiente (c). O endotélio é permeável (a): se não fosse, não haveria troca, e a água reabsorvida na medula não seria removida. O fluxo medular é baixo, e não alto (b); o aumento do fluxo medular tende justamente a lavar o gradiente. A pressão oncótica (d) favorece a entrada de água no capilar, mas não impede a difusão de solutos pequenos, como NaCl e ureia.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "vasa-recta",
+        "contracorrente",
+        "medula-renal"
+      ],
+      "referencia": "Guyton & Hall 14ª ed., cap. 29; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q15",
+      "tipo": "multipla",
+      "enunciado": "Nos dois terços superiores do ureter, a camada muscular é formada por:",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Camada longitudinal interna e camada circular externa"
+        },
+        {
+          "id": "b",
+          "texto": "Camada circular interna e camada longitudinal externa"
+        },
+        {
+          "id": "c",
+          "texto": "Três camadas: longitudinal interna, circular e longitudinal externa"
+        },
+        {
+          "id": "d",
+          "texto": "Feixes de músculo esquelético entrelaçados em várias direções"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No ureter, a disposição é inversa à do tubo digestivo: longitudinal interna e circular externa (a). A disposição circular interna e longitudinal externa (b) é a da muscular externa do intestino. As três camadas (c) aparecem só no terço inferior do ureter, com o acréscimo da longitudinal externa. O músculo do ureter é liso (d); nas vias urinárias, há músculo esquelético no esfíncter externo da uretra.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "ureter",
+        "vias-urinarias"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q16",
+      "tipo": "vf",
+      "enunciado": "O folheto parietal da cápsula glomerular (de Bowman) é formado por podócitos.",
+      "correta": false,
+      "explicacao": "Falso. O folheto parietal é epitélio simples pavimentoso; os podócitos formam o folheto visceral, aplicado aos capilares glomerulares. Entre os dois folhetos fica o espaço capsular (urinário), que continua com a luz do túbulo proximal.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "capsula-glomerular",
+        "podocito"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q17",
+      "tipo": "vf",
+      "enunciado": "As células justaglomerulares são células epiteliais do túbulo distal que percebem a concentração de NaCl do fluido tubular.",
+      "correta": false,
+      "explicacao": "Falso. As células epiteliais do túbulo distal que percebem o NaCl formam a mácula densa. As células justaglomerulares são células musculares lisas modificadas da túnica média da arteríola aferente, com grânulos de renina; percebem a pressão de perfusão e liberam renina.",
+      "dificuldade": 1,
+      "bloom": "lembrar",
+      "tags": [
+        "celulas-justaglomerulares",
+        "macula-densa"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19"
+    },
+    {
+      "id": "his-17-q18",
+      "tipo": "vf",
+      "enunciado": "Na mácula densa, as células do túbulo distal voltadas para o polo vascular são mais altas e estreitas que as vizinhas, e seus núcleos ficam aglomerados.",
+      "correta": true,
+      "explicacao": "Verdadeiro. Nesse ponto o túbulo distal encosta no polo vascular do próprio glomérulo; as células ficam mais altas e estreitas, e a proximidade dos núcleos dá ao grupo o aspecto de “mancha densa” ao microscópio óptico.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "macula-densa",
+        "aparelho-justaglomerular"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q19",
+      "tipo": "vf",
+      "enunciado": "O ramo descendente delgado da alça de Henle é muito permeável à água, enquanto o ramo ascendente é praticamente impermeável a ela.",
+      "correta": true,
+      "explicacao": "Verdadeiro. O ramo descendente delgado tem aquaporina-1 e perde água para o interstício hipertônico, concentrando o fluido; o ramo ascendente (delgado e espesso) é impermeável à água, e no espesso o NaCl é reabsorvido sem água, o que dilui o fluido tubular.",
+      "dificuldade": 2,
+      "bloom": "compreender",
+      "tags": [
+        "alca-de-henle",
+        "contracorrente"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 29"
+    },
+    {
+      "id": "his-17-q20",
+      "tipo": "vf",
+      "enunciado": "Sob ação do ADH, a aquaporina-2 é inserida na membrana apical das células intercaladas do ducto coletor.",
+      "correta": false,
+      "explicacao": "Falso. A aquaporina-2 é inserida na membrana apical das células principais, que têm o receptor V2 da vasopressina; a água sai pela membrana basolateral através de outras aquaporinas. As células intercaladas participam do equilíbrio acidobásico, secretando H⁺ (tipo A) ou bicarbonato (tipo B).",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "aquaporina-2",
+        "celula-principal",
+        "ducto-coletor"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 29"
+    },
+    {
+      "id": "his-17-q21",
+      "tipo": "vf",
+      "enunciado": "Na nefropatia diabética, a hialinose arteriolar acomete tanto a arteríola aferente quanto a eferente.",
+      "correta": true,
+      "explicacao": "Verdadeiro. A hialinose das duas arteríolas do glomérulo é característica da nefropatia diabética; a da arteríola eferente é praticamente exclusiva do diabetes, enquanto a da aferente também ocorre na hipertensão e no envelhecimento.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "nefropatia-diabetica",
+        "arteriola-eferente"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim"
+    },
+    {
+      "id": "his-17-q22",
+      "tipo": "ordenar",
+      "enunciado": "Ordene as camadas atravessadas pelo filtrado, da luz do capilar glomerular até o espaço capsular:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Membrana basal glomerular"
+        },
+        {
+          "id": "2",
+          "texto": "Espaço capsular (urinário)"
+        },
+        {
+          "id": "3",
+          "texto": "Luz do capilar glomerular"
+        },
+        {
+          "id": "4",
+          "texto": "Diafragma da fenda entre os pedicelos"
+        },
+        {
+          "id": "5",
+          "texto": "Endotélio fenestrado"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "5",
+        "1",
+        "4",
+        "2"
+      ],
+      "explicacao": "Luz do capilar → fenestras do endotélio → MBG (com suas lâminas rara interna, densa e rara externa) → diafragma da fenda entre os pedicelos dos podócitos → espaço capsular, que continua no túbulo proximal.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "barreira-de-filtracao",
+        "glomerulo"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19"
+    },
+    {
+      "id": "his-17-q23",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os segmentos percorridos pelo filtrado, do corpúsculo renal até a papila:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Ramo ascendente espesso da alça de Henle"
+        },
+        {
+          "id": "2",
+          "texto": "Túbulo contorcido proximal"
+        },
+        {
+          "id": "3",
+          "texto": "Ducto coletor"
+        },
+        {
+          "id": "4",
+          "texto": "Espaço capsular"
+        },
+        {
+          "id": "5",
+          "texto": "Ramo descendente delgado da alça de Henle"
+        },
+        {
+          "id": "6",
+          "texto": "Túbulo contorcido distal"
+        },
+        {
+          "id": "7",
+          "texto": "Ducto papilar"
+        }
+      ],
+      "ordemCorreta": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "6",
+        "3",
+        "7"
+      ],
+      "explicacao": "Espaço capsular → túbulo contorcido proximal (e sua porção reta) → ramo descendente delgado → (ramo ascendente delgado, nos néfrons de alça longa) → ramo ascendente espesso, que passa pela mácula densa → túbulo contorcido distal → túbulo de conexão → ducto coletor → ducto papilar, que se abre no cálice menor.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "nefron",
+        "ducto-coletor"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 19; Ross 8ª ed., cap. 20"
+    },
+    {
+      "id": "his-17-q24",
+      "tipo": "ordenar",
+      "enunciado": "Ordene o trajeto do sangue até a medula de um néfron justamedular, a partir da artéria interlobar:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Artéria arqueada"
+        },
+        {
+          "id": "2",
+          "texto": "Arteríola eferente"
+        },
+        {
+          "id": "3",
+          "texto": "Artéria interlobar"
+        },
+        {
+          "id": "4",
+          "texto": "Capilares glomerulares"
+        },
+        {
+          "id": "5",
+          "texto": "Artéria interlobular (radial cortical)"
+        },
+        {
+          "id": "6",
+          "texto": "Arteríola aferente"
+        },
+        {
+          "id": "7",
+          "texto": "Vasa recta"
+        }
+      ],
+      "ordemCorreta": [
+        "3",
+        "1",
+        "5",
+        "6",
+        "4",
+        "2",
+        "7"
+      ],
+      "explicacao": "Interlobar (entre as pirâmides) → arqueada (na junção corticomedular) → interlobular (sobe pelo córtex) → arteríola aferente → capilares glomerulares → arteríola eferente → vasa recta, que descem à medula ao lado das alças de Henle. Os dois leitos capilares em série, ligados pela arteríola eferente, formam um sistema porta arterial.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "circulacao-renal",
+        "vasa-recta"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19"
+    },
+    {
+      "id": "his-17-q25",
+      "tipo": "ordenar",
+      "enunciado": "Ordene os eventos do sistema renina-angiotensina-aldosterona desencadeados por queda da pressão de perfusão renal:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Liberação de renina pelas células justaglomerulares"
+        },
+        {
+          "id": "2",
+          "texto": "Queda da pressão de perfusão na arteríola aferente"
+        },
+        {
+          "id": "3",
+          "texto": "Conversão de angiotensina I em angiotensina II pela enzima conversora"
+        },
+        {
+          "id": "4",
+          "texto": "Clivagem do angiotensinogênio em angiotensina I"
+        },
+        {
+          "id": "5",
+          "texto": "Secreção de aldosterona pela zona glomerulosa da suprarrenal"
+        },
+        {
+          "id": "6",
+          "texto": "Aumento da reabsorção de Na⁺ pelas células principais do ducto coletor"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "1",
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "explicacao": "A queda da pressão é percebida pelas células justaglomerulares, que liberam renina; a renina cliva o angiotensinogênio (de origem hepática) em angiotensina I; a enzima conversora, abundante no endotélio pulmonar, forma angiotensina II; esta estimula a zona glomerulosa (his-18), e a aldosterona aumenta a reabsorção de Na⁺ pelas células principais.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "renina",
+        "aldosterona",
+        "aparelho-justaglomerular"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 19"
+    },
+    {
+      "id": "his-17-q26",
+      "tipo": "associar",
+      "enunciado": "Associe cada segmento do néfron ou do sistema coletor à sua característica:",
+      "pares": [
+        {
+          "esquerda": "Túbulo contorcido proximal",
+          "direita": "Borda em escova e reabsorção de cerca de dois terços do filtrado"
+        },
+        {
+          "esquerda": "Ramo descendente delgado",
+          "direita": "Epitélio pavimentoso muito permeável à água (aquaporina-1)"
+        },
+        {
+          "esquerda": "Ramo ascendente espesso",
+          "direita": "Cotransportador Na⁺-K⁺-2Cl⁻ e secreção de uromodulina"
+        },
+        {
+          "esquerda": "Túbulo contorcido distal",
+          "direita": "Cotransportador Na⁺-Cl⁻ sensível aos tiazídicos"
+        },
+        {
+          "esquerda": "Ducto coletor",
+          "direita": "Aquaporina-2 regulada pelo ADH"
+        }
+      ],
+      "explicacao": "O túbulo proximal faz a maior parte da reabsorção; o descendente delgado concentra o fluido perdendo água; o ascendente espesso, impermeável à água, reabsorve sal (alvo da furosemida) e secreta uromodulina; o contorcido distal reabsorve NaCl (alvo dos tiazídicos); o ducto coletor ajusta a reabsorção de água sob o ADH.",
+      "dificuldade": 3,
+      "bloom": "compreender",
+      "tags": [
+        "nefron",
+        "transporte-tubular"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Guyton & Hall 14ª ed., cap. 28"
+    },
+    {
+      "id": "his-17-q27",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado da biópsia renal à doença glomerular correspondente:",
+      "pares": [
+        {
+          "esquerda": "IgG linear e contínua ao longo da MBG, com crescentes",
+          "direita": "Doença anti-MBG (síndrome de Goodpasture)"
+        },
+        {
+          "esquerda": "IgG e C3 granulares, com corcovas subepiteliais à microscopia eletrônica",
+          "direita": "Glomerulonefrite pós-estreptocócica"
+        },
+        {
+          "esquerda": "IgA predominante no mesângio",
+          "direita": "Nefropatia por IgA"
+        },
+        {
+          "esquerda": "Imunofluorescência negativa e apagamento difuso dos pedicelos",
+          "direita": "Doença de lesões mínimas"
+        },
+        {
+          "esquerda": "IgG granular fina ao longo da MBG, com espículas na prata",
+          "direita": "Nefropatia membranosa"
+        }
+      ],
+      "explicacao": "O padrão linear indica anticorpos dirigidos contra a própria MBG; o granular, imunocomplexos — grosseiros e subepiteliais em corcova na pós-estreptocócica, regulares e subepiteliais, separados por espículas de MBG, na membranosa; a nefropatia por IgA deposita IgA no mesângio; na doença de lesões mínimas não há depósitos, e a lesão só aparece à microscopia eletrônica.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "biopsia-renal",
+        "imunofluorescencia",
+        "glomerulopatias"
+      ],
+      "referencia": "Robbins & Cotran 10ª ed., O rim"
+    },
+    {
+      "id": "his-17-q28",
+      "tipo": "associar",
+      "enunciado": "Associe cada célula do rim à sua função:",
+      "pares": [
+        {
+          "esquerda": "Podócito",
+          "direita": "Forma, com os pedicelos, o diafragma da fenda de filtração"
+        },
+        {
+          "esquerda": "Célula mesangial",
+          "direita": "Sustenta o tufo, contrai-se e fagocita macromoléculas retidas"
+        },
+        {
+          "esquerda": "Célula justaglomerular",
+          "direita": "Armazena renina em grânulos e a libera"
+        },
+        {
+          "esquerda": "Célula principal do ducto coletor",
+          "direita": "Reabsorve Na⁺ sob aldosterona e água sob ADH"
+        },
+        {
+          "esquerda": "Célula intercalada tipo A",
+          "direita": "Secreta H⁺ na luz do ducto coletor"
+        }
+      ],
+      "explicacao": "Podócitos formam a última camada da barreira; células mesangiais sustentam e limpam o filtro; células justaglomerulares secretam renina; células principais respondem à aldosterona e ao ADH; células intercaladas tipo A acidificam a urina.",
+      "dificuldade": 2,
+      "bloom": "lembrar",
+      "tags": [
+        "celulas-renais",
+        "estruturas"
+      ],
+      "referencia": "Ross 8ª ed., cap. 20; Junqueira 14ª ed., cap. 19"
+    }
+  ],
+  "referencias": [
+    {
+      "obra": "Junqueira LC, Carneiro J. Histologia Básica: texto e atlas, 14ª ed., GEN Guanabara Koogan, 2023",
+      "capitulo": "19 — Aparelho urinário"
+    },
+    {
+      "obra": "Ross MH, Pawlina W. Histologia: texto e atlas, 8ª ed., GEN Guanabara Koogan, 2021",
+      "capitulo": "20 — Sistema urinário"
+    },
+    {
+      "obra": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Patologia — Bases Patológicas das Doenças, 10ª ed. (orig. 2020)",
+      "capitulo": "O rim (glomerulopatias, necrose tubular aguda, nefropatia diabética, síndrome de Alport, necrose de papila); Sistema endócrino (diabetes insípido)"
+    },
+    {
+      "obra": "Hall JE. Guyton & Hall — Tratado de Fisiologia Médica, 14ª ed.",
+      "capitulo": "19 (sistema renina-angiotensina) e 26 a 29 (anatomia funcional do rim, filtração glomerular, reabsorção e secreção tubulares, concentração e diluição da urina)"
+    },
+    {
+      "obra": "Moore, Persaud, Torchia. Embriologia Clínica, 11ª ed., 2020",
+      "capitulo": "12 — Sistema urogenital (origem do néfron e do ducto coletor)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria Conjunta SAES/SCTIE nº 87, de 15 de outubro de 2026 — Protocolo Clínico e Diretrizes Terapêuticas da Síndrome Nefrótica Primária em crianças e adolescentes (DOU nº 198, de 20/10/2026, seção 1, p. 88; revogou a Portaria Conjunta SAS/SCTIE/MS nº 1, de 10/01/2018). Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes",
+      "capitulo": "1 — Introdução; 3.1 — Diagnóstico clínico e laboratorial (Quadro 1; biópsia em casos selecionados; anticorpos antinefrina; lesões mínimas em 70–90% dos casos após 1 ano de idade); 6.2.2 — Inicial ou da primeira descompensação (prednisona ou prednisolona; remissão em cerca de 85%)"
+    },
+    {
+      "obra": "Brasil. Ministério da Saúde. Portaria Conjunta nº 8, de 14 de abril de 2020 — Protocolo Clínico e Diretrizes Terapêuticas da Síndrome Nefrótica Primária em Adultos. Disponível em: https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos",
+      "capitulo": "1 — Introdução (definição; causas primárias numa série brasileira); 5.1.2 — Diagnóstico laboratorial e histopatológico"
+    },
+    {
+      "obra": "Watts AJB, Keller KH, Lerner G, et al. Discovery of autoantibodies targeting nephrin in minimal change disease supports a novel autoimmune etiology. J Am Soc Nephrol. 2022;33(1):238-52. doi:10.1681/ASN.2021060794. PMID 34732507",
+      "capitulo": "Resumo (anticorpos antinefrina na doença de lesões mínimas)"
+    },
+    {
+      "obra": "Hengel FE, Dehde S, Lassé M, et al. Autoantibodies targeting nephrin in podocytopathies. N Engl J Med. 2024;391(5):422-33. doi:10.1056/NEJMoa2314471. PMID 38804512",
+      "capitulo": "Resumo (anticorpos antinefrina na doença de lesões mínimas do adulto e na síndrome nefrótica idiopática da criança; ligação ao diafragma da fenda no modelo animal)"
+    },
+    {
+      "obra": "Kidney Disease: Improving Global Outcomes (KDIGO) Glomerular Diseases Work Group. KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int. 2021;100(4S):S1-S276. Disponível em: https://kdigo.org/guidelines/gd/",
+      "capitulo": "5 — Doença de lesões mínimas no adulto (Practice Point 5.1.1: diagnóstico só por biópsia; imunofluorescência negativa ou com coloração fraca de C3/IgM; lesões iniciais de GESF podem faltar numa amostra pequena); 6 — GESF no adulto (GESF primária: lesões de GESF à microscopia óptica, apagamento difuso dos pedicelos e síndrome nefrótica); 7 — Glomerulonefrite associada a infecção (latência de semanas após a infecção)"
+    },
+    {
+      "obra": "Kidney Disease: Improving Global Outcomes (KDIGO) Pediatric Nephrotic Syndrome Work Group. KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in Children. Kidney Int. 2025;107(5S):S241-S289. Disponível em: https://kdigo.org/guidelines/",
+      "capitulo": "1.3 e 1.4 (anticorpos antinefrina e anti-diafragma da fenda como possíveis biomarcadores) e recomendações de pesquisa"
+    }
+  ],
+  "notasDivergencia": [
+    "Localização da mácula densa: Junqueira a descreve na porção inicial do túbulo contorcido distal; Ross, no fim do ramo ascendente espesso (túbulo reto distal), na transição para o contorcido distal. O conteúdo diz “parede do túbulo distal voltada para o polo vascular”, compatível com as duas descrições; a ordem dos eventos (ramo ascendente espesso → mácula densa → túbulo contorcido distal) é a mesma.",
+    "Divisão do néfron: Ross descreve segmento espesso proximal (contorcido e reto), segmento delgado e segmento espesso distal (reto e contorcido); Junqueira, túbulo contorcido proximal, alça de Henle (porções espessas e delgadas) e túbulo contorcido distal. As estruturas são as mesmas; o conteúdo usa os dois vocabulários.",
+    "Barreira de filtração: a importância relativa da MBG e do diafragma da fenda, e a da seletividade por carga, são discutidas na literatura. O conteúdo descreve as três camadas sem hierarquia e cobra só a sequência e a composição.",
+    "Uretra feminina: Junqueira descreve epitélio estratificado pavimentoso com áreas de pseudoestratificado cilíndrico; Ross, urotélio junto à bexiga, seguido de estratificado pavimentoso. O conteúdo diz “sobretudo estratificado pavimentoso”, e nenhuma questão cobra o epitélio da uretra feminina.",
+    "Nome da doença: “doença de lesões mínimas” (Robbins; PCDT pediátrico de 2026, “síndrome nefrótica por lesões mínimas”) × “alterações glomerulares mínimas” (PCDT do adulto de 2020, que no item 6.3.1 acrescenta “doença de lesões mínimas” entre parênteses). Mesma entidade.",
+    "Critérios da síndrome nefrótica: o PCDT do adulto (2020) define proteinúria acima de 3,0–3,5 g/1,73 m² por dia, mas dá hipoalbuminemia como < 3,0 g/dL na introdução e < 3,5 g/dL no item de diagnóstico laboratorial; o PCDT pediátrico (2026) usa proteinúria acima de 1.000 mg/m² por dia (ou relação proteína/creatinina ≥ 2 g/g) e albumina < 3,0 g/dL. Os limiares não são cobrados em questões; a vinheta da q09 satisfaz todos.",
+    "Ductos × túbulos coletores: emb-16 usa “túbulos coletores” para os derivados do broto ureteral; aqui se usa “ducto coletor” (Junqueira e Ross usam os dois termos), com “túbulo coletor” como sinônimo da estrutura."
+  ],
+  "incertezas": [
+    "Números de capítulo citados de memória: Junqueira 14ª ed. (19 — Aparelho urinário, numeração da 13ª ed.), Ross 8ª ed. (20 — Sistema urinário), Guyton & Hall 14ª ed. (19, 26 a 29), Moore 11ª ed. (12). Capítulos de Robbins citados pelo título.",
+    "Número de pirâmides e de néfrons por rim, diâmetro do corpúsculo, tamanho das fenestras e espessura da MBG foram omitidos: os valores variam entre as obras e não foram conferidos nas edições adotadas.",
+    "“Cerca de dois terços” da água e do sódio reabsorvidos no túbulo proximal segue Guyton & Hall (aproximação usual); não é cobrado como número exato.",
+    "Origem dos vasa recta: Ross os descreve como ramos das arteríolas eferentes dos néfrons justamedulares; alguns textos citam ramos retos sem glomérulo (de artérias arqueadas ou interlobulares). Por isso a q14 não usa a origem dos vasos como distrator, e a q24 cobra só o trajeto do néfron justamedular.",
+    "Hialinose da arteríola eferente “praticamente exclusiva do diabetes” e lista de causas de necrose de papila seguem Robbins (redação de memória, não conferida no texto impresso da 10ª ed.). A revisão de histologia (10/11/2026) achou a mesma afirmação em revisões de acesso aberto (“virtually pathognomonic”, Cureus 2025, PMC12571060; “virtually diagnostic”, PMC12547650), fontes secundárias.",
+    "PCDT pediátrico: as frequências citadas (lesões mínimas em 70–90% após 1 ano de idade; remissão em cerca de 85% com corticoide) são do próprio PCDT, que cita a literatura original, não lida. Número, data e publicação da portaria foram conferidos pela revisão de histologia (DOU nº 198, 20/10/2026, seção 1, p. 88).",
+    "Alteração ocular da síndrome de Alport: a vinheta da q13 fala em “alteração do cristalino” sem nomear o lenticone anterior, achado clássico da literatura clínica não conferido em Robbins 10ª ed.",
+    "Lâmina do microscópio virtual: a lâmina de rim do his-02 (epitelio-cubico-rim) usa só ids de epitélio. A lâmina rim-cortex, em desenho em 10/11/2026, usa glomerulo, espaco-urinario, capsula-glomerular, tubulo-contorcido-proximal, tubulo-contorcido-distal, macula-densa, arteriola-aferente, arteriola-eferente e capilar; o id do espaço entre os folhetos foi alinhado a ela (espaco-capsular → espaco-urinario, revisão de histologia). O tópico não define \"capilar\" (id canônico com definição própria em cada lâmina). Os demais ids servem a uma futura lâmina de medula e ao modelo 3D de néfron (decisão pendente no item G2 de docs/pendencias-conferencia-medica.md).",
+    "Revisão de nefrologia/endocrinologia (10/11/2026): conferidos no texto integral os PCDTs pediátrico (nº 87/2026: Quadro 1, biópsia em casos selecionados, antinefrina, lesões mínimas em 70–90%, remissão em cerca de 85%) e do adulto (nº 8/2020: definição, série brasileira, item 5.1.2; contraste clínico entre AGM e GESF nos itens 6.3.1.1 e 6.3.2.1) e as diretrizes KDIGO de 2021 (doenças glomerulares, caps. 5–7) e de 2025 (síndrome nefrótica na criança), lidas em kdigo.org. Os artigos de Watts (2022) e Hengel (2024) não têm texto integral aberto (o PMC8763186 não libera o XML; o NEJM não está no PMC); usaram-se só os resumos, e o texto não traz os números deles."
+  ],
+  "revisao": {
+    "autor": "agente-redator-histologia",
+    "data": "2026-11-10",
+    "agentes": [
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "10 correções (0 críticas, 0 importantes, 10 menores); nenhum gabarito errado. Principais: id espaco-capsular → espaco-urinario, alinhado à lâmina rim-cortex; sinônimos imprecisos (\"planura estriada\" na borda em escova do túbulo; \"fenda de filtração\" no diafragma); q09 sem \"confirma\" (apagamento dos pedicelos não é específico); fidelidade ao PCDT do adulto (a histopatologia \"auxilia\" o diagnóstico etiológico); anticorpos antinefrina conferidos na fonte primária (Watts 2022; Hengel 2024); glândulas de Littré na uretra esponjosa; incertezas resolvidas. Conferidos no texto integral: PCDT pediátrico (Portaria Conjunta SAES/SCTIE nº 87, de 15/10/2026, DOU nº 198 de 20/10/2026) e PCDT do adulto (Portaria Conjunta nº 8, de 14/04/2020; albumina < 3,0 na introdução × < 3,5 g/dL no item 5.1.2). Relatório: content/revisoes/hs1718-histologia.md."
+      },
+      {
+        "area": "nefrologia/endocrinologia",
+        "agente": "revisor-nefro-endo-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "5 correções (0 críticas, 0 importantes, 5 menores); nenhum fato ou gabarito errado. Principais: lesões mínimas × GESF na correlação de síndrome nefrótica (GESF primária também tem apagamento difuso; biópsia pequena pode não mostrar a esclerose; contraste clínico do PCDT do adulto, itens 6.3.1.1 × 6.3.2.1); explicação da q09 com a mesma ressalva (gabarito b mantido); antinefrina como biomarcador em avaliação (KDIGO 2025) e ligação ao diafragma da fenda no modelo animal; KDIGO 2021 e 2025 nas referências; incertezas atualizadas. Conferidos no texto integral: PCDTs nº 87/2026 e nº 8/2020 (gov.br), KDIGO 2021 e 2025 (kdigo.org). Relatório: content/revisoes/hs1718-clinica.md."
+      }
+    ],
+    "humano": null
+  }
+}

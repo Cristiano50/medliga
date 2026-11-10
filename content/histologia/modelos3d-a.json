@@ -1,0 +1,205 @@
+{
+  "modelos": [
+    {
+      "id": "nefron",
+      "ordem": 1,
+      "titulo": "Néfron cortical e ducto coletor",
+      "escala": "Esquema fora de escala",
+      "contexto": [
+        "Proporções, calibres e comprimentos não são reais: o túbulo proximal, o segmento mais longo do néfron, aparece encurtado, e os podócitos e as células do aparelho justaglomerular estão muito ampliados.",
+        "O glomérulo tem poucas alças capilares, com poucas ligações entre elas; o tufo real é uma rede com muito mais capilares, que se ramificam e voltam a se unir, organizada em lóbulos e sustentada pelo mesângio, que não está desenhado.",
+        "Néfron cortical, de alça curta: a curva fica na medula externa e não há ramo ascendente delgado; no esquema, o ramo descendente delgado passa ao ascendente espesso pouco antes da curva, e por isso a curva já aparece em verde. No esquema, como no rim, os dois ramos da alça correm paralelos, em grampo. Os néfrons justamedulares têm alças longas, que chegam perto da papila e têm ramo ascendente delgado.",
+        "O corpúsculo renal está aberto em janela para mostrar o glomérulo; no rim, a cápsula glomerular é contínua em volta dele, com aberturas só no polo vascular e no polo urinário.",
+        "O ducto coletor (cinza, facetado, com anéis) não faz parte do néfron: deriva do broto ureteral, e o néfron, do blastema metanéfrico (tópico emb-16). O túbulo de conexão, entre o túbulo contorcido distal e o ducto coletor, não está desenhado à parte: no esquema, o túbulo contorcido distal chega direto ao ducto coletor.",
+        "As faixas de córtex e medula indicam só a região; a da medula não separa a medula externa da interna. Não estão desenhados a cápsula do rim, os raios medulares, os capilares peritubulares, os vasa recta nem o interstício.",
+        "Cores convencionais, escolhidas para distinguir os segmentos; não são as cores da coloração por HE e não indicam oxigenação do sangue."
+      ],
+      "descricao": "Esquema tridimensional de um néfron cortical: corpúsculo renal (glomérulo, cápsula glomerular, espaço capsular e podócitos) com as arteríolas aferente e eferente no polo vascular; túbulo proximal saindo do polo urinário; alça de Henle curta; aparelho justaglomerular, com a mácula densa encostada no polo vascular do próprio corpúsculo; túbulo contorcido distal e o ducto coletor que o recebe.",
+      "destaques": [
+        "Trajeto do filtrado: espaço capsular → túbulo proximal (porção contorcida e porção reta) → ramo descendente delgado → ramo ascendente espesso → mácula densa → túbulo contorcido distal → túbulo de conexão → ducto coletor.",
+        "Polo vascular: entrada da arteríola aferente e saída da eferente. Polo urinário, do lado oposto: início do túbulo proximal.",
+        "A mácula densa fica na parede do túbulo distal que encosta no polo vascular do próprio corpúsculo, entre as arteríolas aferente e eferente; com as células justaglomerulares e as mesangiais extraglomerulares, forma o aparelho justaglomerular.",
+        "O ducto coletor recebe vários néfrons, mas não pertence a nenhum deles: deriva do broto ureteral."
+      ],
+      "topicos": ["his-17-urinario", "emb-16-urinario"],
+      "estruturas": [
+        {
+          "id": "cortex-renal",
+          "nome": "Córtex renal",
+          "descricao": "Região externa do rim, com os corpúsculos renais e os túbulos contorcidos. No esquema, a faixa translúcida de cima."
+        },
+        {
+          "id": "medula-renal",
+          "nome": "Medula renal",
+          "descricao": "Região interna do rim, com túbulos retos, alças de Henle, ductos coletores e vasos paralelos. No esquema, a faixa translúcida de baixo, sem separação entre medula externa e interna; a alça curta deste néfron cortical faz a curva na medula externa."
+        },
+        {
+          "id": "arteriola-aferente",
+          "nome": "Arteríola aferente",
+          "descricao": "Leva sangue ao glomérulo pelo polo vascular. Na sua túnica média, junto ao polo, ficam as células justaglomerulares."
+        },
+        {
+          "id": "glomerulo",
+          "nome": "Glomérulo",
+          "descricao": "Tufo de capilares de endotélio fenestrado entre as arteríolas aferente e eferente, recoberto pelos podócitos. No esquema, poucas alças, com poucas ligações entre elas, e sem o mesângio."
+        },
+        {
+          "id": "arteriola-eferente",
+          "nome": "Arteríola eferente",
+          "descricao": "Sai do glomérulo pelo polo vascular e forma a rede capilar peritubular do córtex (nos néfrons justamedulares, os vasa recta), que não está desenhada."
+        },
+        {
+          "id": "capsula-glomerular",
+          "nome": "Cápsula glomerular (de Bowman)",
+          "descricao": "Envoltório do glomérulo. A casca azul translúcida, aberta em janela, é o folheto parietal, de epitélio simples pavimentoso; o folheto visceral é formado pelos podócitos."
+        },
+        {
+          "id": "espaco-urinario",
+          "nome": "Espaço capsular (urinário)",
+          "descricao": "Espaço entre os folhetos parietal e visceral da cápsula glomerular que recebe o filtrado e continua com a luz do túbulo proximal no polo urinário. No esquema, o volume amarelado translúcido dentro da cápsula."
+        },
+        {
+          "id": "podocito",
+          "nome": "Podócitos",
+          "descricao": "Células do folheto visceral da cápsula, sobre as alças capilares. Os prolongamentos primários emitem pedicelos interdigitados, pequenos demais para o esquema; entre eles ficam as fendas de filtração."
+        },
+        {
+          "id": "tubulo-contorcido-proximal",
+          "nome": "Túbulo proximal (contorcido e reto)",
+          "descricao": "Começa no polo urinário. Segmento mais longo do néfron, de epitélio cúbico com borda em escova; reabsorve cerca de dois terços da água e do sódio filtrados. A porção contorcida fica no córtex; a porção reta, que o esquema mostra na mesma cor, retilínea e um pouco mais fina, desce do córtex à medula externa e é o início da alça de Henle."
+        },
+        {
+          "id": "ramo-descendente-delgado",
+          "nome": "Ramo descendente delgado da alça de Henle",
+          "descricao": "Segmento de epitélio simples pavimentoso. Na descrição clássica, é muito permeável à água (aquaporina-1) e perde água para o interstício medular hipertônico; nas alças curtas, como a deste esquema, estudos em roedores encontraram pouca ou nenhuma aquaporina-1 nesse ramo."
+        },
+        {
+          "id": "ramo-ascendente-espesso",
+          "nome": "Ramo ascendente espesso da alça de Henle",
+          "descricao": "Segmento de epitélio cúbico impermeável à água que reabsorve NaCl pelo cotransportador Na⁺-K⁺-2Cl⁻ e dilui o fluido tubular. Sobe até o polo vascular do próprio corpúsculo. No esquema, começa pouco antes da curva da alça, sobe paralelo ao ramo descendente e passa por trás do corpúsculo, sem entrar nele."
+        },
+        {
+          "id": "macula-densa",
+          "nome": "Mácula densa",
+          "descricao": "Células altas e estreitas, de núcleos aglomerados, na parede do túbulo distal voltada para o polo vascular do próprio corpúsculo; sensor do NaCl do fluido tubular. Junqueira a situa no início do túbulo contorcido distal; Ross, no fim do ramo ascendente espesso. No esquema, a placa azul fica no fim do ramo ascendente espesso, e o túbulo contorcido distal começa logo depois dela."
+        },
+        {
+          "id": "celulas-justaglomerulares",
+          "nome": "Células justaglomerulares",
+          "descricao": "Células musculares lisas modificadas da túnica média da arteríola aferente (em menor número, também da eferente), junto ao polo vascular, com grânulos de renina. No esquema, o manguito amarelo, só na aferente."
+        },
+        {
+          "id": "celulas-mesangiais-extraglomerulares",
+          "nome": "Células mesangiais extraglomerulares",
+          "descricao": "Células situadas entre as arteríolas aferente e eferente e a mácula densa, contínuas com o mesângio; completam o aparelho justaglomerular."
+        },
+        {
+          "id": "tubulo-contorcido-distal",
+          "nome": "Túbulo contorcido distal",
+          "descricao": "Segmento cortical mais curto que o proximal, sem borda em escova; reabsorve NaCl e cálcio. Liga-se ao ducto coletor pelo túbulo de conexão, não destacado no esquema."
+        },
+        {
+          "id": "ducto-coletor",
+          "nome": "Ducto coletor (não faz parte do néfron)",
+          "descricao": "Recebe vários néfrons e desce do córtex à papila. Não pertence ao néfron: deriva do broto ureteral, enquanto o néfron deriva do blastema metanéfrico. Sob ADH, suas células principais inserem aquaporina-2 na membrana apical e reabsorvem água."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "Texto: 8 correções (0 críticas, 2 importantes, 6 menores) em 14 trechos; ids e lista de estruturas inalterados. Principais: a estrutura laranja passa a chamar-se \"Túbulo proximal (contorcido e reto)\", porque o desenho inclui a porção reta, que desce à medula (o id continua tubulo-contorcido-proximal); avisos novos para a alça (ramos paralelos no rim, afastados no esquema; curva já em verde), para a faixa da medula (não separa externa e interna) e para o glomérulo (rede com ramificações e uniões, não alças soltas); células justaglomerulares também, em menor número, na eferente; posição da mácula densa no esquema (divisa). Desenho: nenhum P1; 3 P2 e 7 P3 no relatório (P2: ramos da alça divergentes em vez de em grampo; porção reta proximal sem distinção da contorcida; túbulo proximal contorcido tão curto quanto o distal). Origem do ducto coletor e do túbulo de conexão conferida em emb-16 e em Kobayashi 2008 (texto integral) e Georgas 2009 (resumo). Relatório: content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 correção importante: o ramo descendente delgado \"muito permeável à água (aquaporina-1)\" é a descrição clássica (Guyton; his-17), mas nas alças curtas, como a do esquema, estudos em roedores acharam pouca ou nenhuma aquaporina-1 (Nawata e Pannabecker 2018 e Kriz et al. 2026, texto integral; Zhai et al. 2007, resumo); o texto mantém a descrição clássica e acrescenta a ressalva. Conferidos em texto integral, sem mudança: túbulo proximal reabsorve cerca de dois terços do filtrado (Zhuo e Li 2013: ~65%); ramo ascendente espesso impermeável à água, com Na-K-2Cl, diluidor (Mount 2014); mácula densa no fim do ramo espesso cortical, sensor de NaCl, com o contorcido distal começando a distância variável depois dela (Mount 2014; Peti-Peterdi e Harris 2010); renina nas células da arteríola aferente (Broeker et al. 2022); NaCl e cálcio no contorcido distal (Subramanya e Ellison 2014); ADH e aquaporina-2 nas células principais (Pearce et al. 2015). Nenhum número clínico no texto. Pontos para o revisor humano no relatório content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "reavaliação do desenho v2: os 3 P2 estão resolvidos e não há P1 nem P2 novo. Conferido na geometria: alça em grampo (ramos a 0,20 um do outro, da curva ao córtex); porção reta do proximal retilínea e mais fina (raio 0,052 contra 0,062), ainda na mesma cor; proximal contorcido com 3,93 contra 1,97 do distal; ramo espesso passa por trás do corpúsculo sem tocar a cápsula (folga de 0,056) nem as arteríolas e chega ao polo vascular por trás; placa da mácula densa (z de −0,10 a 0,10) inteira no ramo espesso, com o distal começando em z = 0,11; podócitos apoiados nas alças; 5 pontes no glomérulo. Texto: 4 descrições atualizadas (glomérulo, mácula densa, túbulo proximal, ramo ascendente espesso); os avisos de contexto ajustados pelo desenhista estão corretos. Restam 6 P3: ramo espesso visto através da cápsula translúcida na vista padrão, onde parece atravessar o corpúsculo; porção reta do proximal sem cor própria; espaço capsular como esfera cheia; células justaglomerulares só na aferente; faixa única da medula; ducto coletor sem outros afluentes. A mácula densa no fim do ramo espesso segue a literatura de fisiologia lida e a posição que his-17 atribui a Ross, e não a de Junqueira: decisão para o revisor humano. Relatório: content/revisoes/modelos3d-histologia-a.md, seção \"Reavaliação do desenho (v2)\"."}
+        ], "humano": null }
+    },
+    {
+      "id": "alveolo",
+      "ordem": 2,
+      "titulo": "Alvéolo pulmonar e porção respiratória",
+      "escala": "Esquema fora de escala",
+      "contexto": [
+        "Proporções fora de escala: as células e os capilares estão muito ampliados em relação aos alvéolos, e o alvéolo aberto em corte foi desenhado maior que os vizinhos e com a boca mais estreita, para mostrar a parede.",
+        "Cada alvéolo aparece como uma taça com parede própria; no pulmão, alvéolos vizinhos compartilham o mesmo septo, com a rede capilar entre os dois epitélios.",
+        "Porção respiratória simplificada: um bronquíolo respiratório, um ducto alveolar e um saco alveolar, com poucos alvéolos. O ácino pulmonar real tem várias gerações de bronquíolos respiratórios e de ductos alveolares e muitos alvéolos.",
+        "A rede capilar aparece como poucos tubos em anéis e alças, sem ligação desenhada com os ramos da artéria e das veias pulmonares; no septo, ela é densa. Não estão desenhados as fibras elásticas e reticulares, os fibroblastos, a película de surfactante nem o músculo liso do bronquíolo.",
+        "No ducto alveolar, o músculo liso e as fibras elásticas ficam nas bordas livres dos septos, em torno das bocas dos alvéolos, e formam os botões vistos nos cortes. No esquema, aparecem como um anel fino alaranjado na boca de cada alvéolo do ducto; a luz do ducto é o volume alaranjado translúcido.",
+        "No alvéolo em corte, há só três pneumócitos tipo II, espalhados pela parede, e um só macrófago, na luz. No pulmão, os tipo II ficam dispersos entre os tipo I, de preferência nos cantos onde os septos se encontram, e há macrófagos também nos septos.",
+        "O alvéolo maior, no alto à direita, está aberto em corte (só a metade de trás); a boca dele, voltada para o saco alveolar, aparece de perfil na vista inicial. Os círculos vermelhos na face cortada são capilares do septo em corte transversal.",
+        "Cores convencionais, escolhidas para distinguir as estruturas; não são as cores da coloração por HE e não indicam oxigenação do sangue."
+      ],
+      "descricao": "Esquema tridimensional da porção respiratória do pulmão: bronquíolo respiratório com um alvéolo na parede, ducto alveolar com botões de músculo liso e saco alveolar cercado de alvéolos. Um alvéolo aberto em corte mostra o septo interalveolar com capilares, os pneumócitos tipo I e tipo II, um macrófago alveolar, a barreira hematoaérea e um poro alveolar.",
+      "destaques": [
+        "Porção respiratória: bronquíolo respiratório → ducto alveolar → saco alveolar, todos com alvéolos que se abrem na luz; a troca gasosa ocorre nos alvéolos.",
+        "Os capilares ficam no septo interalveolar, fora da luz alveolar; na parte delgada do septo, o ar e o sangue são separados pela barreira hematoaérea.",
+        "Pneumócitos tipo I, achatados, cobrem a maior parte da superfície alveolar (mais de 90%); os tipo II, cúbicos, são mais numerosos, mas cobrem menos de 10% dela: ficam nos cantos dos septos e guardam o surfactante nos corpos lamelares.",
+        "Macrófagos alveolares ficam nos septos e na luz alveolar; poros alveolares comunicam alvéolos vizinhos."
+      ],
+      "topicos": ["his-16-respiratorio"],
+      "estruturas": [
+        {
+          "id": "bronquiolo-respiratorio",
+          "nome": "Bronquíolo respiratório",
+          "descricao": "Primeiro segmento da porção respiratória: parede de epitélio cúbico, com células ciliadas e células clube, interrompida por alvéolos que se abrem direto na luz (no esquema, um alvéolo no alto da parede)."
+        },
+        {
+          "id": "ducto-alveolar",
+          "nome": "Ducto alveolar",
+          "descricao": "Passagem cuja parede é formada quase só por aberturas de alvéolos; entre elas, nas bordas livres dos septos, pequenos botões de músculo liso e fibras elásticas. No esquema, a luz do ducto é o volume alaranjado translúcido, e os botões são os anéis finos alaranjados na boca de cada alvéolo do ducto. Termina em sacos alveolares."
+        },
+        {
+          "id": "saco-alveolar",
+          "nome": "Saco alveolar",
+          "descricao": "Espaço na extremidade do ducto alveolar, cercado por um grupo de alvéolos que se abrem nele; no esquema, o volume azul translúcido."
+        },
+        {
+          "id": "alveolo",
+          "nome": "Alvéolo",
+          "descricao": "Evaginação de parede muito fina, aberta para o bronquíolo respiratório, o ducto alveolar ou o saco alveolar; local da troca gasosa. No esquema, as taças rosadas; o alvéolo aberto em corte mostra a parede por dentro."
+        },
+        {
+          "id": "septo-interalveolar",
+          "nome": "Septo interalveolar",
+          "descricao": "Parede entre alvéolos vizinhos: epitélio alveolar dos dois lados e, entre eles, capilares contínuos, fibras elásticas e reticulares, fibroblastos e macrófagos. No alvéolo aberto, a face cortada mostra capilares em corte transversal."
+        },
+        {
+          "id": "capilar",
+          "nome": "Capilar alveolar",
+          "descricao": "Capilar de endotélio contínuo, não fenestrado, no septo interalveolar, fora da luz alveolar; na parte delgada do septo, sua lâmina basal funde-se à do pneumócito tipo I. No esquema, os tubos vermelhos na face externa das taças, que corresponde ao meio do septo."
+        },
+        {
+          "id": "pneumocito-tipo-i",
+          "nome": "Pneumócito tipo I",
+          "descricao": "Célula pavimentosa muito delgada que cobre a maior parte da superfície alveolar (mais de 90%), embora seja menos numerosa que o pneumócito tipo II, e forma a face epitelial da barreira hematoaérea. No esquema, o revestimento rosado com núcleos achatados."
+        },
+        {
+          "id": "pneumocito-tipo-ii",
+          "nome": "Pneumócito tipo II",
+          "descricao": "Célula cúbica, nos cantos dos septos, mais numerosa que o pneumócito tipo I, mas que cobre menos de 10% da superfície alveolar. Secreta o surfactante, que reduz a tensão superficial e evita o colapso do alvéolo na expiração, e é progenitora dos pneumócitos tipo I após lesão. No esquema, as três células azuis do alvéolo em corte, espalhadas pela parede, embutidas nela e salientes na luz."
+        },
+        {
+          "id": "corpos-lamelares",
+          "nome": "Corpos lamelares",
+          "descricao": "Grânulos do pneumócito tipo II, vistos ao microscópio eletrônico como lamelas concêntricas de fosfolipídios; armazenam o surfactante, liberado por exocitose. No esquema, as esferas brancas dentro das células azuis; a do ápice, na superfície da célula, representa um corpo em exocitose."
+        },
+        {
+          "id": "macrofago-alveolar",
+          "nome": "Macrófago alveolar",
+          "descricao": "Macrófago dos septos e da luz alveolar que fagocita partículas, microrganismos e surfactante usado; carregado de carvão, é a célula de poeira. No esquema, um só, na luz, sobre o epitélio."
+        },
+        {
+          "id": "barreira-hematoaerea",
+          "nome": "Barreira hematoaérea",
+          "descricao": "Na parte delgada do septo: citoplasma do pneumócito tipo I, lâminas basais fundidas do epitélio e do endotélio e citoplasma da célula endotelial; muitos autores incluem a película de surfactante e líquido. No esquema, a mancha amarela marca só o local, onde um capilar encosta no revestimento; as camadas não estão desenhadas."
+        },
+        {
+          "id": "poro-alveolar",
+          "nome": "Poro alveolar (de Kohn)",
+          "descricao": "Abertura no septo que comunica alvéolos vizinhos, aqui o alvéolo em corte e o alvéolo de trás do mesmo saco; permite ventilação colateral, mas também a passagem de bactérias e exsudato. No esquema, o anel roxo, ampliado, na parede de trás, perto da boca do alvéolo; no pulmão, é um simples orifício no septo."
+        }
+      ],
+      "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "Texto: 10 correções (0 críticas, 4 importantes, 6 menores) em 11 trechos, com 2 avisos novos em contexto; ids e lista de estruturas inalterados. Principais: frase ambígua do pneumócito tipo I (lia-se que o tipo II cobre a maior parte da superfície) reescrita; tipo II passa a dizer que é mais numeroso, mas cobre menos de 10% da superfície, como em his-16 (Crapo 1982: tipo I 8% e tipo II 16% das células, tipo II 7% da superfície; Knudsen e Ochs 2018: tipo I ~95%); aviso de que os três anéis completos do ducto alveolar não são esfíncteres nem cartilagem (o músculo liso fica nas bordas livres dos septos, em torno das bocas dos alvéolos); aviso de que os tipo II estão desenhados junto à boca do alvéolo, e não nos cantos dos septos. Desenho: nenhum P1; 3 P2 e 7 P3 no relatório (P2: anéis completos do ducto; tipo II em fila junto à boca; alvéolo de trás aberto para o vazio). Relatório: content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 acréscimo menor: função do surfactante (reduz a tensão superficial e evita o colapso do alvéolo na expiração) na descrição do pneumócito tipo II, como em his-16 e emb-14. Conferidos em texto integral, sem mudança: camadas da barreira hematoaérea na parte delgada do septo, com lâmina basal única compartilhada (Knudsen et al. 2023); endotélio capilar contínuo e surfactante guardado nos corpos lamelares (Knudsen e Ochs 2018); tipo II como progenitor do tipo I (Knudsen et al. 2023). O texto não cita espessura da barreira, lei de Laplace nem número clínico. Coerente com as correlações de his-16 (doença da membrana hialina, enfisema, proteinose alveolar). Relatório: content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "reavaliação do desenho v2: os 3 P2 estão resolvidos e não há P1 nem P2 novo. Conferido na geometria: o ducto alveolar é a luz translúcida (x de −0,95 a 0,24) mais um anel fino na boca de cada um dos 6 alvéolos do ducto, sem anéis no saco alveolar; 3 pneumócitos tipo II espalhados (polares 45°, 80° e 110°) e embutidos 0,03 na parede; poro entre o alvéolo em corte e o alvéolo de trás do mesmo saco, onde as duas paredes se fundem num septo comum (canal de 0,077; anel com 11% do diâmetro do alvéolo); capilar encostado no revestimento sob a mancha da barreira; taças do ducto encostadas. A boca do alvéolo em corte tem meia-abertura de 36° (59% do diâmetro, contra 71% nos alvéolos do ducto e 84% nos do saco): não é erro, e o aviso foi acrescentado. Texto: 6 trechos atualizados (ducto alveolar, pneumócito tipo II, barreira, poro e 2 avisos de contexto); os avisos ajustados pelo desenhista estão corretos. Restam 6 P3: boca do alvéolo em corte de perfil na vista padrão, onde parece uma parede reta entre o alvéolo e o saco; pseudópode do macrófago encostado num pneumócito tipo II e passando do plano do corte; corpos lamelares lisos; bronquíolo com um só alvéolo; capilares em anéis fechados; células pequenas na tela do celular. Relatório: content/revisoes/modelos3d-histologia-a.md, seção \"Reavaliação do desenho (v2)\"."}
+        ], "humano": null }
+    }
+  ]
+}

@@ -59,7 +59,7 @@
       "destino": "No sexo masculino, cordões testiculares (com células de Sertoli); no feminino, regridem na medula."
     },
     {
-      "id": "celulas-de-sertoli",
+      "id": "celula-de-sertoli",
       "nome": "Células de Sertoli",
       "sinonimos": ["células sustentaculares"],
       "definicao": "Células dos cordões testiculares que sustentam as células germinativas e secretam o hormônio antimülleriano (AMH).",
@@ -67,7 +67,7 @@
       "destino": "Persistem nos túbulos seminíferos."
     },
     {
-      "id": "celulas-de-leydig",
+      "id": "celula-de-leydig",
       "nome": "Células de Leydig",
       "sinonimos": ["células intersticiais"],
       "definicao": "Células intersticiais situadas entre os cordões testiculares; secretam testosterona a partir da 8ª semana.",
@@ -359,7 +359,7 @@
       "explicacao": "As células de Sertoli secretam AMH (também chamado substância inibidora mülleriana), que faz regredir os ductos paramesonéfricos; deles resta, no homem, o apêndice do testículo. As células de Leydig (a, b) secretam testosterona, que mantém os ductos mesonéfricos; os mesonéfricos regridem justamente na ausência de testosterona, não por ação do AMH. A masculinização da genitália externa (d) depende da di-hidrotestosterona, não do AMH.",
       "dificuldade": 2,
       "bloom": "lembrar",
-      "tags": ["AMH", "celulas-de-sertoli", "ductos-paramesonefricos"],
+      "tags": ["AMH", "celula-de-sertoli", "ductos-paramesonefricos"],
       "referencia": "Sadler 14ª ed., cap. 16; Moore 11ª ed., cap. 12"
     },
     {
@@ -870,6 +870,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado",
         "notas": "Conferência de fontes primárias: Documento Científico nº 232 da SBP (genitália atípica, 12/02/2026) — o texto integral está na área restrita a associados e não pôde ser aberto; a primeira página, reproduzida no Boletim SBP em Dia nº 38, confirma número, data, Departamento de Endocrinologia, a forma 'Distúrbios/Diferenças da Diferenciação do Sexo' e que as DDS 'são consideradas como uma urgência médica'. Nada contradiz a q25; continuam sem conferência 'não atribuir o sexo na sala de parto' e 'investigar HAC'. Sem mudança de texto; referência com número e URL; incerteza atualizada. Relatório: content/revisoes/conferencia-fontes-sbp.md."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização de ids de estrutura (2 renomeações + 1 tag, 0 questão alterada em id, enunciado, alternativas ou gabarito): os ids no plural das células de Sertoli e de Leydig passaram a celula-de-sertoli e celula-de-leydig, ids canônicos de emb-02, his-19 e da lâmina 'testiculo'; tag da questão sobre AMH atualizada para celula-de-sertoli. Nomes e definições (fase fetal: cordões testiculares, AMH; Leydig com testosterona a partir da 8ª semana; origens no epitélio celômico e no mesênquima da crista gonadal) mantidos: compatíveis com emb-02 (função no adulto) e his-19 (histologia do adulto, que remete a emb-17 para a origem)."
       }
     ],
     "humano": null

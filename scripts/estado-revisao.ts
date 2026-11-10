@@ -24,9 +24,11 @@ for (const disc of readdirSync(join(raiz, 'content'))) {
     ]);
   }
 }
-for (const extra of ['content/embriologia/estagios.json', 'content/embriologia/derivados.json']) {
+for (const extra of ['content/embriologia/estagios.json', 'content/embriologia/derivados.json', 'content/histologia/modelos3d-a.json', 'content/histologia/modelos3d-b.json']) {
+  if (!existsSync(join(raiz, extra))) continue;
   const d = JSON.parse(readFileSync(join(raiz, extra), 'utf8'));
-  const revs: Rev[] = d.estagios ? d.estagios.map((e: { revisao: Rev }) => e.revisao) : [d.revisao];
+  const lista = d.estagios ?? d.modelos;
+  const revs: Rev[] = lista ? lista.map((e: { revisao: Rev }) => e.revisao) : [d.revisao];
   const agentes = [...new Set(revs.flatMap((r) => r.agentes.map((a) => `${a.area}:${a.veredito}`)))].join(', ') || '—';
   const humanos = revs.filter((r) => r.humano).length;
   linhas.push([extra.split('/').pop()!, '—', agentes, `${humanos}/${revs.length} conferidos`]);

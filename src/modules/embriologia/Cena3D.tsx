@@ -1,47 +1,55 @@
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { CenaProvider, Tocavel, type EstadoDestaque } from './tres/nucleo.tsx';
-import { MODELOS } from './modelos/index.ts';
+import { CenaProvider, Tocavel, type CenaCtx, type EstadoDestaque } from './tres/nucleo.tsx';
+import { MODELOS, type ModeloEstagio } from './modelos/index.ts';
 import { CamadaMarcadores, RotulosProvider, type QuadroMarcadores } from './tres/rotulos.tsx';
+import { perfilDoModelo, type Perfil3D } from '../tres3d/perfis.ts';
+import { PARAMETROS, semWebGL } from '../tres3d/qualidade.ts';
+import { AcabamentoContext, acabamentoDoPerfil, type AmbienteAcabamento } from '../tres3d/materiais.ts';
+import {
+  AmbientePMREM,
+  Diagnostico3D,
+  PreCompilar,
+  dprInicial,
+  RefinarCena,
+  ResolucaoAdaptativa,
+  SombraContato,
+  SombrasEstaticas,
+  useNivelQualidade,
+} from '../tres3d/render.tsx';
 
-/** Reflexos amplos de estúdio gerados localmente; não carrega imagens ou HDR externos. */
-function AmbienteSuperficie() {
-  const { gl, scene, invalidate } = useThree();
+/** Tone mapping e exposição do perfil (o R3F aplica ACES por padrão). */
+function Exposicao({ perfil }: { perfil: Perfil3D }) {
+  const gl = useThree((s) => s.gl);
+  const invalidate = useThree((s) => s.invalidate);
   useEffect(() => {
-    const anterior = scene.environment;
-    const intensidadeAnterior = scene.environmentIntensity;
-    const sala = new RoomEnvironment();
-    const gerador = new THREE.PMREMGenerator(gl);
-    const ambiente = gerador.fromScene(sala, 0.04);
-    scene.environment = ambiente.texture;
-    scene.environmentIntensity = 0.2;
-    sala.dispose(); gerador.dispose(); invalidate();
-    return () => { scene.environment = anterior; scene.environmentIntensity = intensidadeAnterior; ambiente.dispose(); invalidate(); };
-  }, [gl, scene, invalidate]);
+    gl.toneMapping = perfil.toneMapping;
+    gl.toneMappingExposure = perfil.exposicao;
+    invalidate();
+  }, [gl, perfil.toneMapping, perfil.exposicao, invalidate]);
   return null;
 }
 
-function Corte({ posicao }: { posicao: number | null }) {
-  const { gl, invalidate } = useThree();
-  const plano = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, -1), 0), []);
+/** Aplica ao renderer os planos de corte que o Cena3D já entregou às partes pelo contexto (mesma lista). */
+function Corte({ posicao, plano, planos }: { posicao: number | null; plano: THREE.Plane; planos: THREE.Plane[] }) {
+  const gl = useThree((s) => s.gl);
+  const invalidate = useThree((s) => s.invalidate);
   useEffect(() => {
     plano.constant = posicao ?? 0;
-    gl.clippingPlanes = posicao === null ? [] : [plano];
+    gl.clippingPlanes = planos;
     invalidate();
     return () => { gl.clippingPlanes = []; invalidate(); };
-  }, [posicao, plano, gl, invalidate]);
+  }, [posicao, plano, planos, gl, invalidate]);
   return null;
 }
 
-function Camera({ estagioId, versao }: { estagioId: string; versao: number }) {
+function Camera({ estagioId, modelo: m, versao }: { estagioId: string; modelo?: ModeloEstagio; versao: number }) {
   const { camera, invalidate, size } = useThree();
   const controles = useThree((s) => s.controls) as OrbitControlsImpl | null;
   useEffect(() => {
-    const m = MODELOS[estagioId];
     if (!m) return;
     // Enquadra o modelo inteiro considerando o campo de visão vertical e horizontal (telas em pé ou deitadas).
     const pc = camera as THREE.PerspectiveCamera;
@@ -56,7 +64,7 @@ function Camera({ estagioId, versao }: { estagioId: string; versao: number }) {
       controles.update();
     }
     invalidate();
-  }, [estagioId, versao, camera, controles, invalidate, size.width, size.height]);
+  }, [estagioId, m, versao, camera, controles, invalidate, size.width, size.height]);
   return null;
 }
 
@@ -75,56 +83,112 @@ export interface Cena3DProps {
   ocultos?: string[];
   isolado?: string | null;
   corte?: number | null;
+  /** modelo fora do registro da embriologia (ex.: laboratório de histologia); padrão MODELOS[estagioId] */
+  modelo?: ModeloEstagio;
+  /** perfil de iluminação; padrão pelo tipo do modelo */
+  perfil?: Perfil3D;
 }
 
+const SEM_DESTAQUES: Record<string, EstadoDestaque> = {};
+const SEM_OCULTOS: string[] = [];
+const SEM_PLANOS: THREE.Plane[] = [];
+
 export function Cena3D(p: Cena3DProps) {
-  const modelo = MODELOS[p.estagioId];
+  const modelo = p.modelo ?? MODELOS[p.estagioId];
   const Componente = modelo?.Componente;
-  const organico = p.estagioId === 'semana-8';
-  const sombras = organico && !p.selecionado && !p.isolado && !p.ocultos?.length && p.corte == null;
+  const perfil = useMemo(() => p.perfil ?? perfilDoModelo(p.estagioId), [p.perfil, p.estagioId]);
+  const nivel = useNivelQualidade();
+  const qualidade = PARAMETROS[nivel];
+  const fator = semWebGL() ? 1 : qualidade.fator;
+  const ocultos = p.modoJogo ? SEM_OCULTOS : p.ocultos;
+  const isolado = p.modoJogo ? null : p.isolado;
+  const corte = p.modoJogo ? null : p.corte;
+  // Sombras só na exploração livre: o clipping do corte é global e o isolamento/ocultação mudam a silhueta.
+  const exploracaoLivre = !p.selecionado && !isolado && !ocultos?.length && corte == null;
+  const raio = modelo?.raio ?? 1.5;
+  const raiz = useRef<THREE.Group>(null);
+  const dpr = useRef(dprInicial(nivel));
+  const versao = `${p.estagioId}:${nivel}`;
   const [quadro, setQuadro] = useState<QuadroMarcadores>({ pontos: [], largura: 0, altura: 0 });
+  const meia = raio * 1.25;
+  // Acabamento das superfícies pelo perfil (materiais.ts); as partes podem pedir outro pela prop `acabamento`.
+  const acabamento = useMemo<AmbienteAcabamento>(
+    () => ({ ...acabamentoDoPerfil(perfil.tipo), nivel, saturacao: perfil.ajusteCor?.saturacao, luminosidade: perfil.ajusteCor?.luminosidade }),
+    [perfil, nivel],
+  );
+  // Contexto estável: a atualização dos marcadores (setQuadro) re-renderiza só o Cena3D. Com um objeto novo a
+  // cada render, todas as partes re-renderizavam e pediam mais um quadro inteiro por seleção ou marcador.
+  const numeros = useMemo(() => Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])), [modelo]);
+  // Planos de corte no fluxo do React: as partes (contorno de seleção) recebem a lista no mesmo render em que
+  // o corte liga ou desliga, sem depender de um re-render posterior para ler gl.clippingPlanes.
+  const plano = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, -1), 0), []);
+  const cortando = corte != null;
+  const planos = useMemo(() => (cortando ? [plano] : SEM_PLANOS), [cortando, plano]);
+  const destaques = p.destaques ?? SEM_DESTAQUES;
+  const cena = useMemo<CenaCtx>(
+    () => ({ rotulosVisiveis: p.rotulosVisiveis, selecionado: p.selecionado, destaques, nomes: p.nomes, numeros, modoJogo: !!p.modoJogo, ocultos, isolado, corte, planosCorte: planos, onEscolher: p.onEscolher }),
+    [p.rotulosVisiveis, p.selecionado, destaques, p.nomes, numeros, p.modoJogo, ocultos, isolado, corte, planos, p.onEscolher],
+  );
+  // Elemento estável do modelo: quando só os marcadores mudam (setQuadro), o React não re-renderiza o modelo nem
+  // o <Tocavel>; funções e vetores novos nas props de um objeto do R3F pedem um quadro a cada re-render.
+  const modeloTocavel = useMemo(() => <Tocavel>{Componente && <Componente />}</Tocavel>, [Componente]);
+  // Manipulador estável: uma função nova a cada render altera o estado do R3F, e toda alteração pede um quadro.
+  const aoVazio = useRef(p.onVazio);
+  aoVazio.current = p.onVazio;
+  const toqueNoVazio = useCallback(() => aoVazio.current?.(), []);
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
       <Canvas
         frameloop="demand"
-        shadows={organico ? { type: THREE.PCFShadowMap } : false}
-        dpr={[1, 2]}
+        shadows={{ type: THREE.PCFShadowMap, autoUpdate: false }}
+        dpr={dpr.current}
         camera={{ fov: 40, near: 0.05, far: 100, position: modelo?.camera ?? [0, 0, 4] }}
-        gl={{ antialias: true, preserveDrawingBuffer: false }}
-        onPointerMissed={() => p.onVazio?.()}
+        gl={{ antialias: true, preserveDrawingBuffer: false, toneMapping: perfil.toneMapping, toneMappingExposure: perfil.exposicao }}
+        onPointerMissed={toqueNoVazio}
         aria-label="Modelo 3D interativo"
       >
-        <color attach="background" args={[organico ? '#24151c' : '#0d1628']} />
-        {organico && <AmbienteSuperficie />}
-        <hemisphereLight args={[organico ? '#fff5ef' : '#dbeafe', organico ? '#47323d' : '#1e293b', organico ? 0.35 : 0.9]} />
-        <directionalLight position={[3, 4, 5]} intensity={organico ? 1.2 : 1.6} castShadow={sombras}
-          shadow-mapSize={[1024, 1024]} shadow-camera-left={-2} shadow-camera-right={2}
-          shadow-camera-top={2} shadow-camera-bottom={-2} shadow-normalBias={0.025} shadow-bias={-0.0001} />
-        <directionalLight position={[-4, 2, -3]} intensity={organico ? 0.4 : 0.65} color="#ffffff" />
-        <ambientLight intensity={organico ? 0.1 : 0.25} />
-        <CenaProvider
-          value={{
-            rotulosVisiveis: p.rotulosVisiveis,
-            selecionado: p.selecionado,
-            destaques: p.destaques ?? {},
-            nomes: p.nomes,
-            numeros: Object.fromEntries((modelo?.partes ?? []).map((id, i) => [id, String(i + 1)])),
-            modoJogo: !!p.modoJogo,
-            ocultos: p.modoJogo ? [] : p.ocultos,
-            isolado: p.modoJogo ? null : p.isolado,
-            corte: p.modoJogo ? null : p.corte,
-            onEscolher: p.onEscolher,
-          }}
-        >
-          <Suspense fallback={null}>
-            <RotulosProvider key={p.estagioId} onQuadro={setQuadro}>
-              <Tocavel>{Componente && <Componente />}</Tocavel>
-            </RotulosProvider>
-          </Suspense>
+        <color attach="background" args={[perfil.fundo]} />
+        <Exposicao perfil={perfil} />
+        <AmbientePMREM intensidade={perfil.ambiente} />
+        <hemisphereLight args={[perfil.hemisferio.ceu, perfil.hemisferio.chao, perfil.hemisferio.intensidade]} />
+        <directionalLight
+          position={perfil.principal.posicao}
+          intensity={perfil.principal.intensidade}
+          color={perfil.principal.cor}
+          castShadow={perfil.sombra === 'pcf'}
+          shadow-mapSize={[qualidade.mapaSombra, qualidade.mapaSombra]}
+          shadow-camera-left={-meia}
+          shadow-camera-right={meia}
+          shadow-camera-top={meia}
+          shadow-camera-bottom={-meia}
+          shadow-camera-near={1}
+          shadow-camera-far={16}
+          shadow-radius={3}
+          shadow-normalBias={0.025}
+          shadow-bias={-0.0001}
+        />
+        <directionalLight position={perfil.preenchimento.posicao} intensity={perfil.preenchimento.intensidade} color={perfil.preenchimento.cor} />
+        <ambientLight intensity={perfil.luzAmbiente} />
+        <CenaProvider value={cena}>
+          <AcabamentoContext.Provider value={acabamento}>
+            <Suspense fallback={null}>
+              <RotulosProvider key={versao} onQuadro={setQuadro}>
+                <group ref={raiz}>{modeloTocavel}</group>
+              </RotulosProvider>
+            </Suspense>
+          </AcabamentoContext.Provider>
         </CenaProvider>
+        <RefinarCena raiz={raiz} raio={raio} fator={fator} />
+        {perfil.sombra === 'pcf' && <SombrasEstaticas raiz={raiz} projetar={exploracaoLivre} versao={versao} />}
+        {perfil.sombra === 'contato' && exploracaoLivre && (
+          <SombraContato key={versao} raiz={raiz} opacidade={perfil.sombraContato ?? 0.5} nivel={nivel} versao={versao} />
+        )}
+        <ResolucaoAdaptativa nivel={nivel} dprRef={dpr} />
+        <PreCompilar raiz={raiz} versao={versao} />
+        <Diagnostico3D nivel={nivel} modelo={p.estagioId} />
         <OrbitControls makeDefault enableDamping dampingFactor={0.12} minDistance={1} maxDistance={16} enablePan={false} />
-        <Camera estagioId={p.estagioId} versao={p.versaoCamera ?? 0} />
-        <Corte posicao={p.modoJogo ? null : p.corte ?? null} />
+        <Camera estagioId={p.estagioId} modelo={modelo} versao={p.versaoCamera ?? 0} />
+        <Corte posicao={corte ?? null} plano={plano} planos={planos} />
       </Canvas>
       <CamadaMarcadores quadro={quadro} />
     </div>

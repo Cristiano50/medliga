@@ -26,6 +26,9 @@ const IdentifiqueTela = lazy(() => import('./modules/embriologia/Identifique.tsx
 const MicroscopioTela = lazy(() => import('./modules/histologia/Microscopio.tsx'));
 const IdentifiqueLaminaTela = lazy(() => import('./modules/histologia/IdentifiqueLamina.tsx'));
 const QualTecidoTela = lazy(() => import('./modules/histologia/QualTecido.tsx'));
+// Histologia: laboratório 3D (explorador genérico de tres3d/) e "Identifique no 3D"
+const Lab3DHistologiaTela = lazy(() => import('./modules/histologia/Lab3DHistologia.tsx'));
+const Identifique3DHistologiaTela = lazy(() => import('./modules/histologia/Identifique3DHistologia.tsx'));
 
 function Rotas() {
   const perfil = useApp((s) => s.perfil);
@@ -55,6 +58,8 @@ function Rotas() {
           <Route path="/microscopio" element={<MicroscopioTela />} />
           <Route path="/jogar/identifique-lamina" element={<IdentifiqueLaminaTela />} />
           <Route path="/jogar/qual-tecido" element={<QualTecidoTela />} />
+          <Route path="/lab3d/histologia" element={<Lab3DHistologiaTela />} />
+          <Route path="/jogar/identifique/histologia" element={<Identifique3DHistologiaTela />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

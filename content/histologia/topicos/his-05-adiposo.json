@@ -944,6 +944,170 @@
         "estruturas"
       ],
       "referencia": "Junqueira 14ª ed., cap. 6"
+    },
+    {
+      "id": "his-05-q27",
+      "tipo": "multipla",
+      "contexto": "Cenário experimental: fragmentos do depósito interescapular de tecido adiposo multilocular (pardo clássico) de camundongos são mantidos em meio de cultura, e mede-se a produção de calor em quatro situações. (1) Com noradrenalina, o calor aumenta muito. (2) Com noradrenalina após o bloqueio dos receptores β-adrenérgicos, o calor não aumenta. (3) Com adição direta de ácidos graxos, mesmo com os receptores β bloqueados, o calor aumenta. (4) Com noradrenalina, em tecido do mesmo depósito de um camundongo geneticamente sem UCP1 (termogenina).",
+      "enunciado": "Qual resultado é esperado na situação 4 e por quê?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O calor aumenta, porque a lipólise induzida pela noradrenalina já libera o calor"
+        },
+        {
+          "id": "b",
+          "texto": "O calor não aumenta, porque sem UCP1 a noradrenalina deixa de induzir a lipólise no adipócito"
+        },
+        {
+          "id": "c",
+          "texto": "O calor quase não aumenta: há lipólise, mas sem UCP1 o gradiente de prótons não vira calor"
+        },
+        {
+          "id": "d",
+          "texto": "O calor aumenta, porque os ácidos graxos passam a ativar diretamente a ATP sintase"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na termogênese sem tremor, a noradrenalina age em receptores β-adrenérgicos e ativa a lipólise; os ácidos graxos liberados são oxidados e ativam a UCP1, que deixa os prótons voltarem à matriz mitocondrial sem passar pela ATP sintase, dissipando a energia do gradiente como calor. As situações 2 e 3 mostram que o receptor β é necessário para a resposta à noradrenalina e que os ácidos graxos agem depois dele. Sem UCP1, a sinalização e a lipólise continuam, mas os prótons só podem voltar pela ATP sintase, no ritmo do consumo de ATP: o gradiente não é dissipado, a respiração não acelera, e o calor quase não aumenta (c). Foi o que se observou em adipócitos pardos de camundongos sem UCP1: lipólise normal e resposta térmica à noradrenalina praticamente abolida. (a) A lipólise apenas fornece os ácidos graxos; no tecido multilocular, o calor vem da dissipação do gradiente de prótons pela UCP1, que falta nesse animal. (b) A lipólise está antes da UCP1 na sequência e depende do receptor β e da lipase, e não da termogenina. (d) Os ácidos graxos ativam a UCP1, e não a ATP sintase; e a passagem de prótons pela ATP sintase produz ATP, em vez de dissipar a energia como calor. O resultado vale para o tecido pardo clássico: no tecido bege, há também termogênese independente da UCP1, por ciclos fúteis que consomem ATP (de creatina e de Ca²⁺), que contribuem para o calor no animal sem UCP1.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "termogenese",
+        "ucp1",
+        "adipocito-multilocular",
+        "cenario-experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 6; Ross 8ª ed., cap. 9; Matthias et al., J Biol Chem 2000; Kazak et al., Cell 2015; Ikeda et al., Nat Med 2017"
+    },
+    {
+      "id": "his-05-q28",
+      "tipo": "multipla",
+      "contexto": "Biópsia de lesão infiltrativa da parede do estômago, incluída em parafina e corada por HE, mostra células isoladas com um grande vacúolo claro que empurra o núcleo para a periferia, em aspecto de anel de sinete, infiltrando a lâmina própria e a submucosa. O residente pensa em adipócitos; o preceptor suspeita de células epiteliais neoplásicas com vacúolo de muco.",
+      "enunciado": "No material já incluído em parafina, qual abordagem distingue melhor as duas hipóteses?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "PAS e citoqueratinas: muco PAS-positivo em célula epitelial indica carcinoma"
+        },
+        {
+          "id": "b",
+          "texto": "Sudan no mesmo bloco, porque o vacúolo de um adipócito ainda conteria o lipídio"
+        },
+        {
+          "id": "c",
+          "texto": "Diástase antes do PAS: se o magenta desaparecer, o vacúolo continha muco"
+        },
+        {
+          "id": "d",
+          "texto": "Microscopia eletrônica de varredura, que mostra o conteúdo interno do vacúolo"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "No processamento em parafina, o álcool e o xilol extraem os lipídios, e o adipócito aparece vazio, em anel de sinete. O muco (mucinas), ao contrário, permanece no corte e se cora em magenta pelo PAS, e as citoqueratinas marcam células epiteliais. Vacúolos PAS-positivos em células positivas para citoqueratinas indicam células epiteliais produtoras de muco, isto é, carcinoma; um adipócito teria o vacúolo vazio e PAS-negativo e não expressaria citoqueratinas (a). (b) O lipídio já foi extraído do bloco; para corá-lo pelo Sudan seria preciso um corte de congelação de tecido não processado em parafina. (c) A diástase remove só o glicogênio; o muco continua PAS-positivo depois dela. (d) A microscopia eletrônica de varredura mostra superfícies, e não o conteúdo de vacúolos dentro da célula.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "anel-de-sinete",
+        "pas",
+        "citoqueratina",
+        "tecnica-histologica",
+        "lamina-descrita"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1 e 6; Ross 8ª ed., cap. 1; Robbins 10ª ed. (neoplasia)"
+    },
+    {
+      "id": "his-05-q29",
+      "tipo": "multipla",
+      "contexto": "Dois pacientes obesos têm a leptina sérica dosada. A é uma criança de 2 anos com fome intensa e obesidade grave desde os primeiros meses de vida; a leptina é indetectável. B é um homem de 50 anos com obesidade abdominal que se instalou na vida adulta; a leptina está muito acima da média.",
+      "enunciado": "Qual interpretação é correta?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "A tem pouca gordura, por isso a leptina é baixa; em B, a leptina alta é a causa da fome"
+        },
+        {
+          "id": "b",
+          "texto": "A e B devem responder à leptina recombinante, pois a obesidade dos dois é grave"
+        },
+        {
+          "id": "c",
+          "texto": "Em B, a leptina alta indica pouca gordura visceral e tecido adiposo sem função endócrina"
+        },
+        {
+          "id": "d",
+          "texto": "Em A, falta a leptina que sinaliza a reserva; em B, há resistência à leptina elevada"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A leptina é secretada pelos adipócitos em proporção à massa de gordura e informa ao hipotálamo o tamanho da reserva, reduzindo a ingestão e aumentando o gasto energético. Em A, a obesidade grave desde os primeiros meses com leptina indetectável indica deficiência congênita de leptina: sem o sinal, o hipotálamo age como se não houvesse reserva e mantém a fome; esses pacientes respondem à leptina recombinante. Em B, a obesidade comum do adulto tem leptina elevada, proporcional à gordura, com resistência à sua ação (d). (a) A criança tem muita gordura; o que falta é a leptina; e, em B, a leptina alta reflete a massa de gordura, e não causa a fome. (b) Na obesidade comum, a leptina já está alta, e o problema é a resistência à sua ação; a leptina recombinante corrige a deficiência congênita. (c) A leptina alta reflete muita gordura, e o tecido adiposo é órgão endócrino, que secreta leptina, adiponectina e citocinas.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "leptina",
+        "obesidade",
+        "adipocinas",
+        "caso-clinico"
+      ],
+      "referencia": "Ross 8ª ed., cap. 9; Robbins 10ª ed. (doenças ambientais e nutricionais); von Schnurbein et al., J Clin Endocrinol Metab 2024 (texto integral); Farooqi et al., J Clin Invest 2002"
+    },
+    {
+      "id": "his-05-q30",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado ao diagnóstico ou à situação que ele indica:",
+      "pares": [
+        {
+          "esquerda": "Amplificação de MDM2 em células atípicas dos septos fibrosos",
+          "direita": "Lipossarcoma bem diferenciado"
+        },
+        {
+          "esquerda": "Translocação t(12;16) em matriz mixoide com rede capilar delicada",
+          "direita": "Lipossarcoma mixoide"
+        },
+        {
+          "esquerda": "Adipócitos maduros uniformes, sem atipia, em lesão com cápsula fina",
+          "direita": "Lipoma"
+        },
+        {
+          "esquerda": "Captação simétrica de FDG na região supraclavicular, num dia frio, em tecido com densidade de gordura",
+          "direita": "Tecido adiposo multilocular ativado"
+        },
+        {
+          "esquerda": "Leptina indetectável e fome intensa desde os primeiros meses de vida",
+          "direita": "Deficiência congênita de leptina"
+        }
+      ],
+      "explicacao": "A amplificação de MDM2 (12q13–15), presente em praticamente todos os lipossarcomas bem diferenciados (tumores lipomatosos atípicos) e também nos desdiferenciados, distingue esse tumor do lipoma; as células atípicas ficam nos septos fibrosos. A translocação t(12;16), com matriz mixoide e rede capilar delicada, caracteriza o lipossarcoma mixoide. Adipócitos maduros uniformes, sem atipia, numa lesão bem delimitada por cápsula fina, formam o lipoma. No adulto, o tecido adiposo multilocular persiste em pequenos depósitos (cervical, supraclavicular, paravertebral, perirrenal) e, ativado pelo frio, capta FDG no PET-CT, em geral de forma bilateral e simétrica, em tecido com densidade de gordura na TC, o que não deve ser confundido com metástase em linfonodo. A leptina indetectável com hiperfagia e obesidade desde os primeiros meses indica deficiência congênita de leptina.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "lipossarcoma",
+        "lipoma",
+        "adipocito-multilocular",
+        "leptina",
+        "integracao"
+      ],
+      "referencia": "Robbins 10ª ed. (tumores de partes moles); OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Rabbitts et al., Nat Genet 1993; Sirvent et al., Am J Surg Pathol 2007; Lee et al., J Clin Oncol 2018 (texto integral); Ross 8ª ed., cap. 9; Cypess et al., N Engl J Med 2009 (texto integral); Cohade et al., J Nucl Med 2003"
+    },
+    {
+      "id": "his-05-q31",
+      "tipo": "vf",
+      "enunciado": "No laudo de um tumor de partes moles, a presença de lipoblastos basta, por si só, para o diagnóstico de lipossarcoma bem diferenciado.",
+      "correta": false,
+      "explicacao": "Falso. Lipoblastos (células com vacúolos lipídicos que endentam um núcleo hipercromático) reforçam o diagnóstico quando presentes, mas não são obrigatórios nem exclusivos: aparecem também em lesões benignas, como o lipoblastoma da infância. O achado que sustenta o diagnóstico do lipossarcoma bem diferenciado (tumor lipomatoso atípico) e o distingue do lipoma é a amplificação de MDM2 nas células atípicas. Em histologia, 'lipoblasto' designa ainda o precursor normal do adipócito, outro motivo para não tomá-lo isoladamente como sinal de malignidade.",
+      "dificuldade": 4,
+      "bloom": "compreender",
+      "tags": [
+        "avancado",
+        "lipossarcoma",
+        "lipoblasto",
+        "diagnostico-diferencial"
+      ],
+      "referencia": "OMS, Soft Tissue and Bone Tumours, 5ª ed., 2020; Hisaoka, J UOEH 2014; Robbins 10ª ed.; Junqueira 14ª ed., cap. 6; Lee et al., J Clin Oncol 2018 (texto integral)"
     }
   ],
   "referencias": [
@@ -986,6 +1150,50 @@
     {
       "obra": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours, 5th ed. Lyon: IARC; 2020",
       "capitulo": "Adipocytic tumours (lipoma, hibernoma, atypical lipomatous tumour/well-differentiated liposarcoma, myxoid liposarcoma)"
+    },
+    {
+      "obra": "Matthias A, Ohlson KB, Fredriksson JM, et al. Thermogenic responses in brown fat cells are fully UCP1-dependent: UCP2 or UCP3 do not substitute for UCP1 in adrenergically or fatty acid-induced thermogenesis. J Biol Chem. 2000;275(33):25073-25081. doi:10.1074/jbc.M000547200. PMID 10825155",
+      "capitulo": "Adipócitos pardos sem UCP1: lipólise e cAMP normais, termogênese à noradrenalina e a ácidos graxos praticamente abolida — questão avançada q27"
+    },
+    {
+      "obra": "Kazak L, Chouchani ET, Jedrychowski MP, et al. A creatine-driven substrate cycle enhances energy expenditure and thermogenesis in beige fat. Cell. 2015;163(3):643-655. doi:10.1016/j.cell.2015.09.035. PMID 26496606 (texto integral: PMC4656041)",
+      "capitulo": "Termogênese independente da UCP1 no tecido bege (ciclo da creatina) — questão avançada q27"
+    },
+    {
+      "obra": "Ikeda K, Kang Q, Yoneshiro T, et al. UCP1-independent signaling involving SERCA2b-mediated calcium cycling regulates beige fat thermogenesis and systemic glucose homeostasis. Nat Med. 2017;23(12):1454-1465. doi:10.1038/nm.4429. PMID 29131158 (texto integral: PMC5727902)",
+      "capitulo": "Termogênese independente da UCP1 no tecido bege (ciclo de Ca²⁺) — questão avançada q27"
+    },
+    {
+      "obra": "Rabbitts TH, Forster A, Larson R, Nathan P. Fusion of the dominant negative transcription regulator CHOP with a novel gene FUS by translocation t(12;16) in malignant liposarcoma. Nat Genet. 1993;4(2):175-180. doi:10.1038/ng0693-175. PMID 7503811 (também Crozat A et al., Nature. 1993;363:640-644, PMID 8510758)",
+      "capitulo": "t(12;16)(q13;p11) e fusão FUS-CHOP (DDIT3) no lipossarcoma mixoide — questão avançada q30"
+    },
+    {
+      "obra": "Sirvent N, Coindre JM, Maire G, et al. Detection of MDM2-CDK4 amplification by fluorescence in situ hybridization in 200 paraffin-embedded tumor samples: utility in diagnosing adipocytic lesions and comparison with immunohistochemistry and real-time PCR. Am J Surg Pathol. 2007;31(10):1476-1489. doi:10.1097/PAS.0b013e3180581fff. PMID 17895748",
+      "capitulo": "Amplificação de MDM2/CDK4 no tumor lipomatoso atípico/lipossarcoma bem diferenciado — questão avançada q30"
+    },
+    {
+      "obra": "Hisaoka M. Lipoblast: morphologic features and diagnostic value. J UOEH. 2014;36(2):115-121. doi:10.7888/juoeh.36.115. PMID 24930875",
+      "capitulo": "Lipoblastos não são pré-requisito do diagnóstico de lipossarcoma e ocorrem em tumores benignos — questão avançada q31"
+    },
+    {
+      "obra": "Lee ATJ, Thway K, Huang PH, Jones RL. Clinical and molecular spectrum of liposarcoma. J Clin Oncol. 2018;36(2):151-159. doi:10.1200/JCO.2017.74.9598. PMID 29220294 (texto integral: PMC5759315)",
+      "capitulo": "Lipossarcoma bem diferenciado (tumor lipomatoso atípico) e desdiferenciado: amplificação de MDM2 em quase todos os casos; lipossarcoma mixoide: t(12;16)(q13;p11), FUS-DDIT3, em mais de 90% — questões avançadas q30 e q31"
+    },
+    {
+      "obra": "Cypess AM, Lehman S, Williams G, et al. Identification and importance of brown adipose tissue in adult humans. N Engl J Med. 2009;360(15):1509-1517. doi:10.1056/NEJMoa0810780. PMID 19357406 (texto integral: PMC2859951)",
+      "capitulo": "Tecido adiposo pardo no PET-CT do adulto: depósito cervical-supraclavicular, densidade de gordura na TC, adipócitos multiloculares UCP1-positivos; detecção inversamente relacionada à temperatura externa — questão avançada q30"
+    },
+    {
+      "obra": "Cohade C, Osman M, Pannu HK, Wahl RL. Uptake in supraclavicular area fat (\"USA-Fat\"): description on 18F-FDG PET/CT. J Nucl Med. 2003;44(2):170-176. PMID 12571205",
+      "capitulo": "Captação de FDG na gordura supraclavicular, em geral bilateral e simétrica, que não deve ser confundida com metástase (resumo lido) — questão avançada q30"
+    },
+    {
+      "obra": "von Schnurbein J, Zorn S, Nunziata A, et al. Classification of congenital leptin deficiency. J Clin Endocrinol Metab. 2024;109(10):2602-2616. doi:10.1210/clinem/dgae149. PMID 38470203 (texto integral: PMC11403321)",
+      "capitulo": "Deficiência congênita de leptina: obesidade grave de início precoce e hiperfagia; leptina baixa ou indetectável na forma clássica; formas com leptina biologicamente inativa ou antagonista — questões avançadas q29 e q30"
+    },
+    {
+      "obra": "Farooqi IS, Matarese G, Lord GM, et al. Beneficial effects of leptin on obesity, T cell hyporesponsiveness, and neuroendocrine/metabolic dysfunction of human congenital leptin deficiency. J Clin Invest. 2002;110(8):1093-1103. doi:10.1172/JCI15693. PMID 12393845",
+      "capitulo": "Resposta sustentada à leptina recombinante na deficiência congênita (resumo lido) — questão avançada q29"
     }
   ],
   "notasDivergencia": [
@@ -1003,7 +1211,10 @@
     "A afirmação de que o prematuro tem menos tecido adiposo pardo (acumulado sobretudo no fim da gestação) e de que o tremor é pouco eficaz no recém-nascido vem da literatura de neonatologia, não das obras-base de histologia; conferir em tratado de pediatria/neonatologia. Revisão de patologia/clínica (09/11/2026): as duas afirmações são compatíveis com a literatura de neonatologia (por exemplo, MSD Manual, versão para profissionais, “Hipotermia em neonatos”: resposta ao frio por termogênese química, sem tremor, na gordura parda) e com as diretrizes de reanimação neonatal da SBP (2022); a conferência em tratado continua recomendada.",
     "Origem dos adipócitos pardos e beges: os dados sobre precursores próprios (aparentados aos do músculo esquelético) e sobre o surgimento de adipócitos beges vêm sobretudo de estudos em roedores; mantido em nível introdutório, sem questões.",
     "Lipossarcoma: detalhes moleculares (MDM2 no bem diferenciado; t(12;16) no mixoide) conferidos de memória em Robbins; conferir na edição adotada. A ressalva de que lipoblastos não são obrigatórios para o diagnóstico do bem diferenciado segue a classificação da OMS de tumores de partes moles; conferir a redação de Robbins.",
-    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 9; Junqueira 6 e 1) continuam pendentes de conferência humana."
+    "Revisão de histologia (09/11/2026): não foi possível conferir o sumário da 8ª ed. de Ross nem o da 14ª ed. de Junqueira; os números de capítulo (Ross 9; Junqueira 6 e 1) continuam pendentes de conferência humana.",
+    "Camada avançada (redator, 2026-11-10): q27 é cenário experimental didático, hipotético, construído com a sequência da termogênese já revisada no tópico (noradrenalina → receptor β → lipólise → ácidos graxos oxidados ativam a UCP1 → retorno de prótons sem ATP sintase → calor); não reproduz um experimento publicado específico. q28 a q31 usam só fatos já revisados deste tópico e de his-01 e his-03 (extração dos lipídios no processamento, PAS para mucinas, citoqueratinas em carcinomas, critérios do lipossarcoma e do lipoma, deficiência congênita de leptina).",
+    "Revisão da camada avançada (histologia, 2026-11-10): q27 — a vinheta dizia \"tecido adiposo multilocular de um mamífero\", o que incluiria o tecido bege, que tem termogênese independente da UCP1 (Kazak et al. 2015; Ikeda et al. 2017, que a descreve também no porco, espécie sem UCP1 funcional); passou a especificar o depósito interescapular de camundongos, situação em que a resposta é UCP1-dependente (Matthias et al. 2000, resumo: células Ucp1-/- \"were as potent as wild-type in norepinephrine-induced cAMP accumulation and lipolysis\" e responderam a ~3% da termogênese normal; \"no other adrenergically induced thermogenic mechanism exists in brown adipocytes except that mediated by UCP1\"). O percentual não foi usado no conteúdo. Trabalhos posteriores sobre ciclos fúteis também no tecido pardo não foram lidos; conferir. q30 e q31 — t(12;16)(q13;p11) com fusão FUS-CHOP no lipossarcoma mixoide (Rabbitts et al. 1993; Crozat et al. 1993, resumos), amplificação de MDM2-CDK4 no tumor lipomatoso atípico/lipossarcoma bem diferenciado (Sirvent et al. 2007, resumo) e lipoblastos \"not a prerequisite for the diagnosis of liposarcoma\", presentes também em tumores benignos (Hisaoka 2014, resumo) conferidos em fonte primária; isso resolve, para esses fatos, a incerteza sobre os detalhes moleculares conferidos de memória em Robbins (a redação de Robbins e da OMS 2020 continua não lida).",
+    "Revisão de patologia da camada avançada (2026-11-10): q29 e q30 — deficiência congênita de leptina conferida no texto integral de von Schnurbein et al. 2024 (PMC11403321): 'severe early-onset obesity usually associated with low or undetectable circulating leptin levels'; 'Lack of appropriate leptin signaling manifests in an intense drive to eat (hyperphagia)'. Há formas com leptina imunorreativa normal ou elevada (leptina biologicamente inativa ou antagonista), de modo que uma dosagem normal não exclui a doença; as vinhetas usam leptina indetectável, compatível com a forma clássica. A resposta à leptina recombinante foi conferida no resumo de Farooqi et al. 2002 (PMID 12393845); o texto integral (PMC150795) não abriu (erro 500 no Europe PMC; formato indisponível na OAI do PMC). q30 e q31 — Lee et al. 2018 (J Clin Oncol, texto integral, PMC5759315): MDM2 'amplified in nearly 100% of patients' com lipossarcoma bem diferenciado (também chamado tumor lipomatoso atípico) ou desdiferenciado; 'Over 90% of MLPSs contain a pathognomonic t(12;16)(q13;p11) translocation' (FUS-DDIT3), com rede de vasos plexiforme. As explicações passaram a dizer que a amplificação de MDM2 distingue o tumor do lipoma e ocorre também no desdiferenciado; o percentual não foi usado. q30 (PET) — Cypess et al. 2009 (N Engl J Med, texto integral, PMC2859951): o depósito 'cervical–supraclavicular' é o mais comum no PET-CT do adulto, com densidade de gordura na TC e adipócitos multiloculares UCP1-positivos, e a detecção se relaciona inversamente com a temperatura externa ('outdoor temperature at the time of the scan (P= 0.02)'); Cohade et al. 2003 (resumo, PMID 12571205): captação 'typically bilateral and symmetric' na gordura, que 'should not be misinterpreted as a malignant metastatic process'. A redação da OMS 2020 (Soft Tissue and Bone Tumours) continua não lida."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1029,6 +1240,20 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "Conferência de fontes primárias (textos integrais das diretrizes de reanimação da SBP de 2022 e 2026): 1 correção menor. Diretrizes de 2022 (<34 semanas, DOI 10.25060/PRN-SBP-2022-1, item 4.1): todo prematuro <34 semanas vai à mesa de reanimação; o corpo é introduzido no saco plástico de polietileno sem secar, com touca dupla e calor radiante; temperatura axilar de 36,5–37,5 °C; sala a 23–25 °C. (≥34 semanas, DOI 10.25060/PRN-SBP-2022-2): secar corpo e cabeça com compressas aquecidas, touca, pele a pele. As diretrizes de 2026 mantêm essas medidas, mas o prematuro moderado (32 0/7 a 33 6/7 semanas) com boa vitalidade pode ficar em pele a pele, com o corpo seco, touca dupla e cobertura plástica sem saco (item 4.1); por isso a correlação passou a dizer 'prematuro com menos de 34 semanas levado à mesa de reanimação' e registra a exceção de 2026. Referências com títulos exatos, DOI e URL (2022 e 2026); incerteza resolvida retirada. Relatório: content/revisoes/conferencia-fontes-sbp.md."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-05-q27 a his-05-q31): 3 correções (0 críticas, 1 importante, 2 menores). Importante: q27 — \"tecido multilocular de um mamífero\" incluiria o tecido bege, com termogênese sem UCP1 (creatina, Ca²⁺); a vinheta passou ao depósito interescapular de camundongos (Matthias et al. 2000: lipólise normal, termogênese praticamente abolida sem UCP1) e a explicação foi precisada (controle respiratório) e registra a exceção bege; gabarito c mantido. Menores: q30 — referências primárias da t(12;16) e da amplificação de MDM2; q31 — bloom analisar → compreender e referência sobre lipoblastos (Hisaoka 2014). q28 e q29 corretas."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-05-q27 a his-05-q31): 3 correções (0 críticas, 0 importantes, 3 menores); gabaritos corretos. q30 e q31: a amplificação de MDM2 passou a ser descrita como o que distingue o lipossarcoma bem diferenciado (tumor lipomatoso atípico) do lipoma, presente também no desdiferenciado (Lee et al. 2018, texto integral); captação de FDG pela gordura parda descrita como bilateral e simétrica, em densidade de gordura, que não deve ser confundida com metástase (Cypess et al. 2009, texto integral; Cohade et al. 2003, resumo). q29: deficiência congênita de leptina conferida em von Schnurbein et al. 2024 (texto integral) e Farooqi et al. 2002 (resumo); referências acrescentadas. q27 e q28 sem alteração."
       }
     ],
     "humano": null

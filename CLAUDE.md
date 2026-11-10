@@ -7,7 +7,7 @@ Comandos: `npm run dev` · `npm test` (vitest) · `npm run typecheck` · `npm ru
 ## Regras de trabalho
 
 - Toda entrega: commit e push para `Cristiano50/medliga` (branch `main`), com o estado dos testes na mensagem ou no README.
-- **Rigor científico**: todo conteúdo novo é escrito seguindo `docs/conteudo-schema.md` e passa por revisores por área (agentes) antes de ir para o app. Registrar cada revisão em `revisao.agentes`.
+- **Rigor científico** (pedido permanente do Cristiano, 10/11/2026): todo conteúdo novo é escrito seguindo `docs/conteudo-schema.md` e passa por redação → revisão da área → revisão transversal → conferência de fonte primária no texto integral (método em `docs/protocolo-revisao-agentes.md`; WebFetch não funciona nesta rede, usar curl) antes de ir para o app. Registrar cada revisão em `revisao.agentes`; conteúdo em revisão fica em branch de trabalho, e no `main` só entra o revisado.
 - **Só o Cristiano (ou professor indicado por ele) preenche `revisao.humano`.** O agente nunca marca conteúdo como conferido por médico, nem por automação. Conteúdo só revisado por agentes aparece com o selo "Revisado por IA · conferência médica pendente" (decisão do Cristiano, 09/11/2026).
 - Não declarar algo como concluído sem evidência verificável (teste, saída de comando, captura de tela); distinguir implementado de proposto.
 - Regras de XP existem em dois lugares (`src/core/scoring.ts`/`src/games/minijogo.ts` e `supabase/migrations/0002_funcoes.sql`): mudou um, mude o outro e rode `npm test` e `npm run test:sql`.

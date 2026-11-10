@@ -1,11 +1,12 @@
 // Núcleo dos modelos 3D: cada estrutura anatômica é uma <Parte id="..."> com material próprio.
 // Seleção: o toque é resolvido no nível da cena, escolhendo entre todas as interseções a parte de maior
 // "prioridade" (cascas transparentes têm prioridade baixa, para que estruturas internas possam ser tocadas).
-import { createContext, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Outlines } from '@react-three/drei';
 import { useThree, type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useRegistroRotulos } from './rotulos.tsx';
+import { AcabamentoContext, criarMaterial, materialLegado, resolverAcabamento, type Acabamento } from '../../tres3d/materiais.ts';
 
 export type EstadoDestaque = 'normal' | 'selecionado' | 'certo' | 'errado' | 'apagado';
 
@@ -20,12 +21,35 @@ export interface CenaCtx {
   ocultos?: string[];
   isolado?: string | null;
   corte?: number | null;
+  /** planos de corte ativos (os mesmos do renderer), para o contorno de seleção; sem o campo, lê do renderer */
+  planosCorte?: THREE.Plane[];
   onEscolher?: (id: string) => void;
 }
 
 const Ctx = createContext<CenaCtx>({ rotulosVisiveis: true, selecionado: null, destaques: {}, nomes: {}, modoJogo: false });
 const MaterialCtx = createContext<THREE.Material | null>(null);
+/** Material da mesma <Parte> com outro acabamento (prop `acabamento` do <Malha>), já no estado de destaque atual. */
+const OutroAcabamentoCtx = createContext<((acabamento: Acabamento) => THREE.Material) | null>(null);
 const ContornoCtx = createContext<string | null>(null);
+
+const semToque = () => {};
+/** Malha do <Outlines>: material de shader próprio, dentro de um grupo filho da malha contornada. */
+const ehContorno = (m: THREE.Mesh) =>
+  !!(m.material as THREE.Material | undefined)?.isMaterial && (m.material as THREE.Material).type === 'ShaderMaterial' && !!(m.parent?.parent as THREE.Mesh | undefined)?.isMesh;
+
+/** Opacidade, transparência e escrita de profundidade do estado de destaque (a mesma regra para todo material). */
+function aplicarEstado(m: THREE.MeshStandardMaterial, estado: EstadoDestaque, opacidade: number) {
+  m.emissive.set('#000000');
+  m.emissiveIntensity = 0;
+  let op = opacidade;
+  if (estado === 'apagado') {
+    op = Math.min(opacidade, opacidade * 0.35 + 0.05);
+  }
+  m.opacity = op;
+  m.transparent = op < 1;
+  m.depthWrite = op >= 0.98;
+  m.needsUpdate = true;
+}
 
 export const CenaProvider = Ctx.Provider;
 export const useCena = () => useContext(Ctx);
@@ -41,6 +65,8 @@ export interface ParteProps {
   rugosidade?: number;
   /** Acabamento de superfície ilustrativo, sem transmissão nem anatomia interna simulada. */
   acabamentoOrganico?: boolean;
+  /** Acabamento explícito (materiais.ts); tem prioridade sobre o contexto do Cena3D e a tabela por id. */
+  acabamento?: Acabamento;
   sombreamentoPlano?: boolean;
   children: ReactNode;
   posicao?: [number, number, number];
@@ -57,6 +83,7 @@ export function Parte({
   ladoDuplo,
   rugosidade = 0.62,
   acabamentoOrganico = false,
+  acabamento: acabamentoPedido,
   sombreamentoPlano,
   children,
   posicao,
@@ -68,44 +95,53 @@ export function Parte({
   const visivel = !cena.ocultos?.includes(id) && (!cena.isolado || cena.isolado === id);
   const grupo = useRef<THREE.Group>(null);
   const [ancora, setAncora] = useState<[number, number, number] | null>(rotulo ?? null);
-  const { invalidate } = useThree();
+  // Seletor: mudanças de dpr/tamanho no estado do R3F não re-renderizam as partes.
+  const invalidate = useThree((s) => s.invalidate);
+  const ambiente = useContext(AcabamentoContext);
+  const acabamento = resolverAcabamento(id, { prop: acabamentoPedido, acabamentoOrganico, opacidade }, ambiente);
+  const nivel = ambiente?.nivel ?? 'alta';
+  const saturacao = ambiente?.saturacao;
+  const luminosidade = ambiente?.luminosidade;
 
-  const material = useMemo(() => {
-    const parametros = {
-      color: cor,
-      roughness: rugosidade,
-      metalness: 0,
-      transparent: opacidade < 1,
-      opacity: opacidade,
-      depthWrite: opacidade >= 0.98,
-      side: THREE.DoubleSide,
-      flatShading: !!sombreamentoPlano,
-    };
-    const m = acabamentoOrganico
-      ? new THREE.MeshPhysicalMaterial({ ...parametros, specularIntensity: 0.35, clearcoat: 0.08, clearcoatRoughness: 0.65, envMapIntensity: 0.15 })
-      : new THREE.MeshStandardMaterial(parametros);
-    m.userData.organico = acabamentoOrganico;
-    return m;
-  }, [cor, opacidade, ladoDuplo, rugosidade, sombreamentoPlano, acabamentoOrganico]);
-
+  // Sem contexto nem prop: o material de sempre (testes e telas que não usam o Cena3D).
+  const fabricar = useCallback(
+    (a: Acabamento | null) => {
+      const p = { cor, opacidade, rugosidade, sombreamentoPlano };
+      return a ? criarMaterial(a, p, { nivel, saturacao, luminosidade, organicoLegado: acabamentoOrganico }) : materialLegado(p, acabamentoOrganico);
+    },
+    [cor, opacidade, rugosidade, sombreamentoPlano, acabamentoOrganico, nivel, saturacao, luminosidade],
+  );
+  const material = useMemo(() => fabricar(acabamento), [fabricar, acabamento, ladoDuplo]);
+  // Outros acabamentos pedidos por <Malha acabamento>: um material por acabamento, no mesmo estado de destaque.
+  const extras = useMemo(() => new Map<Acabamento, THREE.MeshStandardMaterial>(), [fabricar]);
   useEffect(() => () => material.dispose(), [material]);
+  useEffect(() => () => extras.forEach((m) => m.dispose()), [extras]);
 
   const estado: EstadoDestaque = cena.destaques[id] ?? (cena.selecionado === id ? 'selecionado' : cena.selecionado ? 'apagado' : 'normal');
+  const estadoAtual = useRef(estado);
+  estadoAtual.current = estado;
 
-  useEffect(() => {
-    const m = material;
-    m.emissive.set('#000000');
-    m.emissiveIntensity = 0;
-    let op = opacidade;
-    if (estado === 'apagado') {
-      op = Math.min(opacidade, opacidade * 0.35 + 0.05);
-    }
-    m.opacity = op;
-    m.transparent = op < 1;
-    m.depthWrite = op >= 0.98;
-    m.needsUpdate = true;
+  // Efeito de layout: o estado entra antes do quadro pedido pelo mesmo commit (contorno, marcador). Como efeito
+  // passivo, rodava depois desse quadro e pedia outro — dois quadros inteiros por seleção, o 1º ainda sem o apagado.
+  useLayoutEffect(() => {
+    aplicarEstado(material, estado, opacidade);
+    extras.forEach((m) => aplicarEstado(m, estado, opacidade));
     invalidate();
-  }, [estado, material, opacidade, invalidate]);
+  }, [estado, material, extras, opacidade, invalidate]);
+
+  const outroAcabamento = useCallback(
+    (a: Acabamento) => {
+      if (a === acabamento) return material;
+      let m = extras.get(a);
+      if (!m) {
+        m = fabricar(a);
+        aplicarEstado(m, estadoAtual.current, opacidade);
+        extras.set(a, m);
+      }
+      return m;
+    },
+    [acabamento, material, extras, fabricar, opacidade],
+  );
 
   useLayoutEffect(() => {
     if (!grupo.current) return;
@@ -120,7 +156,8 @@ export function Parte({
       const ponto = new THREE.Vector3();
       grupo.current.traverse((o) => {
         const malha = o as THREE.Mesh;
-        if (!malha.isMesh || malha.material !== material) return;
+        // Só as malhas desta parte (material principal ou o de outro acabamento pedido por um <Malha>).
+        if (!malha.isMesh || (malha.material !== material && ![...extras.values()].includes(malha.material as THREE.MeshStandardMaterial))) return;
         const vertices = malha.geometry.getAttribute('position');
         const matriz = new THREE.Matrix4().multiplyMatrices(inversa, malha.matrixWorld);
         for (let i = 0; i < vertices.count; i++) {
@@ -143,7 +180,7 @@ export function Parte({
     if (caixa.isEmpty()) return;
     const c = grupo.current.worldToLocal(caixa.getCenter(new THREE.Vector3()));
     setAncora([c.x, c.y, c.z]);
-  }, [rotulo, children, material]);
+  }, [rotulo, children, material, extras]);
 
   useLayoutEffect(() => {
     grupo.current?.traverse((o) => {
@@ -152,6 +189,10 @@ export function Parte({
       if ((o as THREE.Mesh).isMesh) {
         // translúcidas: cascas externas (prioridade baixa) primeiro, internas por cima
         (o as THREE.Mesh).renderOrder = opacidade < 1 ? 2 + prioridade : 0;
+        // Contorno de seleção (drei): fora do toque. Recém-criado, ainda tem a matriz de mundo identidade até o
+        // próximo quadro, e um segundo toque rápido acertava essa malha "fantasma" na origem. Com a matriz certa,
+        // ele só repete as interseções da própria malha da parte.
+        if (ehContorno(o as THREE.Mesh)) o.raycast = semToque;
       }
     });
   });
@@ -169,26 +210,35 @@ export function Parte({
 
   return (
     <group ref={grupo} position={posicao} rotation={rotacao} scale={escala} visible={visivel}>
-      <MaterialCtx.Provider value={material}><ContornoCtx.Provider value={contorno}>{children}</ContornoCtx.Provider></MaterialCtx.Provider>
+      <MaterialCtx.Provider value={material}>
+        <OutroAcabamentoCtx.Provider value={outroAcabamento}>
+          <ContornoCtx.Provider value={contorno}>{children}</ContornoCtx.Provider>
+        </OutroAcabamentoCtx.Provider>
+      </MaterialCtx.Provider>
     </group>
   );
 }
 
-/** Malha que usa o material da <Parte> em que está. */
+/** Malha que usa o material da <Parte> em que está (ou o da mesma parte com outro `acabamento`). */
 export function Malha({
   geometria,
   posicao,
   rotacao,
   escala,
+  acabamento,
 }: {
   geometria: THREE.BufferGeometry;
   posicao?: [number, number, number] | THREE.Vector3;
   rotacao?: [number, number, number] | THREE.Euler;
   escala?: number | [number, number, number] | THREE.Vector3;
+  /** acabamento só desta malha (ex.: pálpebra úmida numa pele orgânica); padrão = o da <Parte> */
+  acabamento?: Acabamento;
 }) {
-  const material = useContext(MaterialCtx);
+  const materialDaParte = useContext(MaterialCtx);
+  const outroAcabamento = useContext(OutroAcabamentoCtx);
+  const material = acabamento && outroAcabamento ? outroAcabamento(acabamento) : materialDaParte;
   const contorno = useContext(ContornoCtx);
-  const { gl } = useThree();
+  const gl = useThree((s) => s.gl);
   const cena = useCena();
   // Sombras da superfície inteira não devem persistir após ocultação, seleção ou corte.
   const sombras = !!material?.userData.organico && !cena.selecionado && !cena.isolado && !cena.ocultos?.length && cena.corte == null;
@@ -202,7 +252,7 @@ export function Malha({
       castShadow={sombras}
       receiveShadow={sombras}
     >
-      {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={gl.clippingPlanes} />}
+      {contorno && <Outlines thickness={2} color={contorno} clippingPlanes={cena.planosCorte ?? gl.clippingPlanes} />}
     </mesh>
   );
 }
@@ -233,20 +283,38 @@ export function resolverToque(intersecoes: THREE.Intersection[], planos: THREE.P
   return melhor?.id ?? null;
 }
 
+const raioDoToque = new THREE.Raycaster();
+
+/**
+ * Todas as interseções do raio com o modelo (não só a primeira de cada malha). O R3F guarda uma interseção
+ * por malha; com o corte ligado, a primeira pode estar na metade cortada (invisível) e a parte seria
+ * descartada mesmo com a metade visível sob o dedo.
+ */
+export function intersecoesDoToque(raiz: THREE.Object3D, raio: THREE.Ray, camera?: THREE.Camera): THREE.Intersection[] {
+  raioDoToque.ray.copy(raio);
+  if (camera) raioDoToque.camera = camera;
+  return raioDoToque.intersectObject(raiz, true);
+}
+
+/** Parte tocada num evento do R3F: sem corte, as interseções do próprio evento; com corte, o raycast completo. */
+function parteNoEvento(e: ThreeEvent<MouseEvent | PointerEvent>, planos: THREE.Plane[]): string | null {
+  return resolverToque(planos.length ? intersecoesDoToque(e.eventObject, e.ray, e.camera) : e.intersections, planos);
+}
+
 /** Grupo raiz que captura toques e hover de toda a cena. */
 export function Tocavel({ children }: { children: ReactNode }) {
   const cena = useCena();
-  const { gl } = useThree();
+  const gl = useThree((s) => s.gl);
   return (
     <group
       onClick={(e: ThreeEvent<MouseEvent>) => {
         if (e.delta > 6) return; // foi um arraste (girar a câmera), não um toque
         e.stopPropagation();
-        const id = resolverToque(e.intersections, gl.clippingPlanes);
+        const id = parteNoEvento(e, gl.clippingPlanes);
         if (id) cena.onEscolher?.(id);
       }}
       onPointerMove={(e: ThreeEvent<PointerEvent>) => {
-        gl.domElement.style.cursor = resolverToque(e.intersections, gl.clippingPlanes) ? 'pointer' : 'grab';
+        gl.domElement.style.cursor = parteNoEvento(e, gl.clippingPlanes) ? 'pointer' : 'grab';
       }}
       onPointerOut={() => {
         gl.domElement.style.cursor = 'grab';

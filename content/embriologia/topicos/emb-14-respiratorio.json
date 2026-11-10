@@ -125,7 +125,7 @@
       "origem": "Visceral: mesoderma esplâncnico que recobre o pulmão. Parietal: mesoderma somático que reveste a parede corporal."
     },
     {
-      "id": "bronquiolos-respiratorios",
+      "id": "bronquiolo-respiratorio",
       "nome": "Bronquíolos respiratórios",
       "sinonimos": [],
       "definicao": "Ramos que surgem dos bronquíolos terminais no período canalicular e se dividem em ductos alveolares.",
@@ -142,7 +142,7 @@
       "destino": "Septação e formação de alvéolos maduros no período alveolar."
     },
     {
-      "id": "pneumocito-tipo-1",
+      "id": "pneumocito-tipo-i",
       "nome": "Pneumócito tipo I",
       "sinonimos": [
         "célula alveolar tipo I",
@@ -152,7 +152,7 @@
       "origem": "Endoderma."
     },
     {
-      "id": "pneumocito-tipo-2",
+      "id": "pneumocito-tipo-ii",
       "nome": "Pneumócito tipo II",
       "sinonimos": [
         "célula alveolar tipo II",
@@ -1299,6 +1299,13 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "camada avançada (ids emb-14-q24 a emb-14-q28): 3 correções (0 críticas, 1 importante, 2 menores): (importante) q27 — a vinheta não deixava claro se o sequestro era intra ou extralobar, e a explicação dava como certa a origem por broto acessório, discutida para o intralobar; decisão: manter a vinheta intralobar (forma mais comum, apresentação típica na criança), torná-la inequívoca (dentro do lobo, drenagem pelas veias pulmonares) e ensinar na explicação a distinção intra × extralobar pela teoria do broto acessório (antes ou depois da pleura) e a hipótese de origem adquirida (Frazier, Stocker et al., Radiographics 1997), com o contraponto do diagnóstico pré-natal; 'quase sempre na base do pulmão esquerdo' passou a 'quase sempre num lobo inferior, sobretudo à esquerda'; gabarito (d) mantido; q24 — acrescentado que na HDC esquerda moderada o TOTAL não mostrou ganho significativo de sobrevida e que a oclusão aumenta a rotura prematura de membranas e o parto prematuro (Deprest et al., N Engl J Med 2021;385:119–129); q25 — a alternativa correta passou a dizer 'diagnóstico de exclusão' (sem mudar a letra), e a explicação, que a anemia de Fanconi se rastreia pelo teste de fragilidade cromossômica porque o hemograma normal ao nascer não a exclui, e que o ecocardiograma pré-operatório também define o lado do arco aórtico (Fanconi Anemia Clinical Care Guidelines, 5ª ed., 2020). Conferidos sem mudança: q26 (b) — prematuro de 24 semanas de IG (≈22 após a fertilização) no canalicular tardio; q28 — sequência de Potter. Gabaritos e ids inalterados; sem pista de comprimento."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização de ids de estrutura (3 renomeações, 0 questão alterada): o id plural do bronquíolo respiratório e os ids dos pneumócitos com algarismo arábico passaram a bronquiolo-respiratorio, pneumocito-tipo-i e pneumocito-tipo-ii, os ids canônicos já usados em emb-08 (tipo II), his-16 e na lâmina 'pulmao'. Nomes, sinônimos e definições mantidos: são compatíveis com os de emb-08 e his-16 (tipo I pavimentoso, cobre a maior parte da superfície alveolar e forma a barreira hematoaérea; tipo II cuboide/arredondado, corpos lamelares e surfactante; bronquíolo respiratório formado no período canalicular e que origina ductos alveolares). Nenhuma questão usava os ids antigos em tags."
       }
     ],
     "humano": null

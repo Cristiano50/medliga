@@ -103,6 +103,8 @@ Como acessar (testado):
 - PubMed/PMC: as páginas pedem verificação anti-robô; usar as APIs (E-utilities em eutils.ncbi.nlm.nih.gov, Europe PMC em www.ebi.ac.uk/europepmc, OAI do PMC).
 - Ainda inacessíveis: emec.mec.gov.br e www.ahajournals.org (o próprio site recusa acesso automatizado, HTTP 403) e documents.cap.org (não conecta; a diretriz ASCO/CAP é lida no periódico via Europe PMC).
 
+- Atualização de 10/11/2026: www.scielo.br passou a responder com verificação anti-robô (HTTP 403) a acessos automatizados, mesmo liberado; bvsms.saude.gov.br às vezes também. Os sites do JAMA e da SBIm não estão liberados. Para os consensos brasileiros publicados no SciELO, a alternativa é o PMC/Europe PMC quando o periódico deposita lá (vários da SBEM e da SBH não depositam).
+
 ## I. Aprofundamento da embriologia (tópicos 21–25, camada avançada e 3D cardiovascular)
 
 Relatórios: `content/revisoes/av1-*` a `av4-*` (camada avançada, 100 questões de dificuldade 4–5 nos tópicos 1–20), `e21-22-*`, `e23-24-*`, `e25-*` (tópicos novos) e `estagios-3d-cardiovascular.md`. Nenhum revisor encontrou gabarito errado; todos os itens abaixo são de conferência ou decisão.
@@ -141,6 +143,68 @@ Relatórios: `content/revisoes/av1-*` a `av4-*` (camada avançada, 100 questões
 - Thompson & Thompson 8ª (acondroplasia: ~80% de casos novos), Carlson 6ª ("Clivagem e implantação").
 - Mola 46,YY "nunca descrita": falta fonte primária (emb-05-q30).
 - Citações de memória em emb-21/22 (11 artigos; volume e páginas).
+
+## J. Aprofundamento da histologia (sistemas, camada avançada, lâminas e 3D; rodada de 10/11/2026)
+
+O que entrou: tópicos his-11 a his-20 (histologia dos sistemas), 50 questões avançadas em his-01..10,
+18 lâminas novas no microscópio (grupos A, B e C) e o laboratório 3D da histologia. Tudo passou por
+redação → revisão de histologia → revisão clínica/patológica da área → conferência de fonte primária
+no texto integral (método em `docs/protocolo-revisao-agentes.md`). Nenhum gabarito estava errado. Cada
+relatório tem uma seção "Pontos para o revisor humano"; aqui ficam só as decisões principais.
+
+| Conteúdo | Relatórios (seção "Pontos para o revisor humano") |
+|---|---|
+| Camada avançada his-01..05 | `hav1-histologia.md` §3, `hav1-patologia.md` §3 |
+| Camada avançada his-06..10 | `hav2-histologia.md` §5, `hav2-clinica.md` §5 |
+| his-11/12 (circulatório, linfoide) | `hs1112-histologia.md` §5, `hs1112-clinica.md` §4 |
+| his-13/14 (pele, tubo digestivo) | `hs1314-histologia.md` §3, `hs1314-clinica.md` §3 |
+| his-15/16 (glândulas anexas, respiratório) | `hs1516-histologia.md` §3, `hs1516-clinica.md` §3 |
+| his-17/18 (urinário, endócrino) | `hs1718-histologia.md` §5, `hs1718-clinica.md` §6 |
+| his-19/20 (reprodutores, mama) | `hs1920-histologia.md` §5, `hs1920-clinica.md` §5 |
+| Harmonização com tópicos publicados | `harmonizacao-histologia.md` §4 |
+| Lâminas dos sistemas | `laminas-sistemas-a.md` §5, `laminas-sistemas-b.md` §5 e §7, `laminas-sistemas-c.md` §7 |
+
+**J1. Decisões suas**
+- his-18-q03: macroadenoma de 3 cm com prolactina baixa — mantida a vinheta com a dosagem em soro diluído sem mudança (PCDT nº 19/2020, item 3.3); doses do teste de supressão com dexametasona retiradas (texto integral da Endocrine Society 2008 inacessível): voltam?
+- Limiar de reposição de α1-antitripsina (< 57 mg/dL; SBPT 2024, texto integral) no his-16: fica? Nenhuma questão o cobra.
+- Vinhetas com biópsia mantidas (his-15-q10 talassemia; his-16-q11/q12 pneumoconioses): na prática, ressonância e exposição + imagem costumam bastar.
+- Doença celíaca (his-14): ordem PCDT 2025 × ESsCD 2025 no texto.
+- Queimaduras (his-13 e lâmina da pele fina): "2º grau profundo costuma precisar de enxerto"; o 3º grau inclui a hipoderme na classificação do MS? (cartilha não abriu).
+- Hemorroidas (his-11): agora coxins vasculares normais; a doença hemorroidária é o aumento/prolapso sintomático (SICCR 2020). Aprovar a redação; o his-14 não tem frase sobre os coxins anais.
+- PMOS (his-20 e emb-02): nome **proposto** em 2026 para a SOP; usado em inglês, sem tradução oficial.
+- Folículo ovariano "secundário (antral)" × nomenclaturas que usam terciário = antral (lâmina do ovário e his-20).
+- Jogo "Qual é o tecido?": resposta do feixe passou a "Artéria muscular (feixe vasculonervoso)"; lista de distratores excluídos por lâmina (pele fina × pele espessa; cólon/estômago × epitélio simples cilíndrico; rim/tireoide/pulmão × epitélio simples cúbico; útero × epitélio cilíndrico e pseudoestratificado) — confirmar.
+- "Céu estrelado" retirado do timo normal e "ovo frito" da célula parietal (termos de patologia).
+- Proporção de caliciformes no desenho do cólon (16% na superfície, 30–38% nas criptas).
+
+**J2. Números que entraram com fonte lida e pedem o seu aval**
+- Ovócito primordial 30–35 µm; zona fasciculada ≈ 3/4 e glomerulosa ≈ 15% do córtex adrenal; alvéolo adulto ≈ 200 µm (Ochs 2004, cálculo do revisor); 40–70 lâminas elásticas na aorta (fonte aberta dá 40–60, torácica); hiperplasia tímica na miastenia 70% (PCDT) × 40% (Waheed 2024), não cobrada.
+
+**J3. Fontes que não abriram nesta rede** (redação mantida qualitativa)
+- SciELO passou a responder com verificação anti-robô (HTTP 403) mesmo liberado: SBEM (consensos), SBH 2019 (CEP), recomendação da SBR para Sjögren.
+- Site do JAMA (consenso de paracetamol, Dart 2023: só resumo; citar os CIATox?); SBIm (MenB na asplenia: só ACIP); ASBAI (anafilaxia); cartilha de queimaduras do MS (bvsms 403); Lugano 2014, Duke-ISCVID 2023, ESC 2023 (endocardite); Portaria GM/MS nº 6.623/2025 e guia técnico da VPC20.
+- Livros (Junqueira 14ª, Ross 8ª, Robbins 10ª) seguem citados de memória pelos agentes: números de capítulo e frases marcadas nos relatórios.
+
+**J4. Harmonização feita em tópicos já publicados** (verificada por script: nenhuma questão nem gabarito mudou)
+- Mecônio: atraso > 24 h no RN a termo (ERNICA 2026) em emb-15/emb-22; origem da papila dérmica conforme a região (emb-20); compartimento basal com espermatócitos pré-leptóteno (emb-02); sinônimo de papila-dermica; cálices renais no urotélio (his-02); B12 × folato na neuropatia (his-08); 9 ids de estrutura unificados (pneumócitos, bronquíolo respiratório, Sertoli/Leydig, folículo tireoidiano, ilhota, ducto intercalado). Os nomes no plural de emb-14/17/25 continuam sob ids no singular (decidir se passam ao singular).
+
+**J5. Modelos 3D da histologia** (relatórios `modelos3d-histologia-a.md` §6 e §9, `modelos3d-histologia-b.md`, "Pontos para o revisor humano" e §9)
+- Néfron: nome "Túbulo proximal (contorcido e reto)" para a peça que inclui a porção reta; mácula densa desenhada no fim do ramo espesso (posição da fisiologia e de Ross; his-17 cita também a de Junqueira); ressalva da aquaporina-1 nas alças curtas (parte humana só de resumo); túbulo de conexão não desenhado e sem origem afirmada; células justaglomerulares só na aferente no desenho.
+- Alvéolo: "mais de 90%" e "menos de 10%" da superfície (os 7% de Crapo 1982 vêm só do resumo); anéis finos de músculo liso nas bocas dos alvéolos do ducto (redação do aviso).
+- Lóbulo hepático: é um esquema idealizado (placas com passagens, tríade completa nos seis ângulos, setas de sentido); "no fígado as placas são contínuas" repete os livros, sem fonte primária lida; calibre dos sinusoides apoiado em dois resumos de estudos em rato.
+- Sarcômero: os comprimentos mostrados (2,5 / 1,6 / 1,0 µm) são os dos livros e vêm da rã; nos músculos humanos medidos o filamento fino tem cerca de 1,2 a 1,4 µm (Gokhin 2012, texto integral). Decidir se o esquema passa a usar valores humanos. "Banda H" × "zona H": mantido como no his-09.
+- Junções: BP180/BP230 só no hemidesmossomo de epitélios estratificados e pseudoestratificados (Walko 2015, texto integral); a definição no his-02 foi precisada e ganhou nota de divergência. "Desmogleína 2 nos epitélios simples" é inferência de uma revisão (apagar se preferir só o texto de livro). Função de cerca da zônula de oclusão mantida como nos livros.
+- Junqueira, Ross e Guyton não abriram nesta rede: o que se atribui a eles nos modelos vem dos tópicos.
+
+**J6. Lâminas do grupo C** (relatório `laminas-sistemas-c.md` §7 e §10)
+- Frequência de mitoses no endométrio proliferativo do desenho (25 em 1.638 células glandulares; sem fonte lida com o índice normal) e orientação da placa metafásica.
+- Números com fonte lida: ovócito primordial 30–35 µm; fasciculada ≈ 3/4 e glomerulosa ≈ 15% do córtex adrenal; alvéolo adulto ≈ 200 µm.
+- Estruturas desenhadas sem id próprio: saco alveolar, teca externa, cúmulo e corona radiata; uma só camada de células mioides no testículo.
+
+**J7. Limites técnicos do 3D, a conferir em aparelho real**
+- Tempos de quadro e de troca de modelo foram medidos só com renderização por software; o rebaixamento automático de resolução (mediana acima de 28 ms durante o giro) não foi validado em GPU real.
+- Alvos pequenos no celular pedem aproximação: mácula densa, poro alveolar, barreira hematoaérea, linha Z, zônulas, canalículo biliar.
+- Proposto, não feito: gerar a escultura da semana 8 no nível alto fora da thread principal (hoje leva cerca de 0,7 s ao abrir o modelo nesse nível).
 
 ## Como registrar a sua conferência
 

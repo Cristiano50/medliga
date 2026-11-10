@@ -102,10 +102,12 @@
       "origem": "Epitélio da glândula."
     },
     {
-      "id": "ducto-intercalar",
+      "id": "ducto-intercalado",
       "nome": "Ducto intercalar",
-      "sinonimos": [],
-      "definicao": "Primeiro segmento do sistema de ductos, de epitélio cúbico baixo, com células mioepiteliais; longo na parótida e curto na submandibular e na sublingual."
+      "sinonimos": [
+        "ducto intercalado"
+      ],
+      "definicao": "Primeiro segmento do sistema de ductos; nas glândulas salivares, de epitélio cúbico baixo, com células mioepiteliais, longo na parótida e curto na submandibular e na sublingual (no pâncreas, ver his-15)."
     },
     {
       "id": "ducto-estriado",
@@ -124,7 +126,7 @@
       "id": "septo-conjuntivo",
       "nome": "Septo de conjuntivo",
       "sinonimos": [],
-      "definicao": "Tecido conjuntivo que parte da cápsula e divide a glândula em lobos e lóbulos, levando vasos, nervos e ductos excretores."
+      "definicao": "Tecido conjuntivo que parte da cápsula de um órgão e o divide em lobos e lóbulos, levando vasos e nervos; nas glândulas exócrinas, leva também os ductos excretores."
     },
     {
       "id": "lumen",
@@ -985,6 +987,198 @@
         "endocrina"
       ],
       "referencia": "Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+    },
+    {
+      "id": "his-03-q26",
+      "tipo": "multipla",
+      "contexto": "Mulher de 48 anos tem, há 1 ano, sensação diária de boca seca e precisa beber água para engolir alimentos secos. Não tem antecedente de radioterapia de cabeça e pescoço nem as demais condições de exclusão (hepatite C ativa, aids, sarcoidose, amiloidose, doença do enxerto contra o hospedeiro, doença relacionada à IgG4) e não usa anticolinérgicos. O anti-Ro/SSA é negativo. O teste de Schirmer é de 4 mm em 5 minutos num dos olhos; o escore de coloração ocular e o fluxo salivar não estimulado são normais. A biópsia de glândulas salivares menores do lábio mostra sialoadenite linfocítica focal, com 6 focos (agregados de 50 ou mais linfócitos) em 12 mm² de tecido glandular.",
+      "enunciado": "Pelos critérios de classificação ACR/EULAR de 2016, qual é a conclusão?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Escore de foco 0,5; a biópsia não pontua, e a soma (1 ponto) não classifica"
+        },
+        {
+          "id": "b",
+          "texto": "Escore de foco 2; a soma é 4 pontos, e a paciente é classificada como Sjögren primária"
+        },
+        {
+          "id": "c",
+          "texto": "Escore de foco 2; sem anti-Ro/SSA positivo, a classificação não pode ser feita"
+        },
+        {
+          "id": "d",
+          "texto": "Escore de foco 2; o Schirmer não pontua num olho só, e a soma (3 pontos) não classifica"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O escore de foco é o número de focos (agregados de 50 ou mais linfócitos) por 4 mm² de tecido glandular: 6 focos em 12 mm² correspondem a 2 focos por 4 mm². A sialoadenite linfocítica focal com escore de foco igual ou maior que 1 vale 3 pontos, e o Schirmer de até 5 mm em 5 minutos em pelo menos um olho vale 1 ponto. A paciente tem sintoma de boca seca (critério de inclusão) e nenhuma condição de exclusão; a soma de 4 pontos atinge o mínimo exigido, e ela preenche os critérios (b). (a) 0,5 é o número de focos por mm²; o escore é expresso por 4 mm². (c) Anti-Ro/SSA e biópsia têm o mesmo peso (3 pontos), e nenhum dos dois é obrigatório: a biópsia positiva somada a 1 ponto basta. (d) O Schirmer pontua quando está alterado em pelo menos um olho.",
+      "dificuldade": 5,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "sindrome-de-sjogren",
+        "escore-de-foco",
+        "glandulas-salivares",
+        "caso-clinico"
+      ],
+      "referencia": "Shiboski et al., critérios ACR/EULAR 2016, Arthritis Rheumatol 2017 (texto integral)"
+    },
+    {
+      "id": "his-03-q27",
+      "tipo": "multipla",
+      "contexto": "Biópsia por agulha grossa de nódulo da mama: ninhos e cordões de células com atipia acentuada distribuem-se de forma irregular num estroma denso. Na imuno-histoquímica, p63 e calponina marcam uma camada contínua de células em torno de um ducto normal vizinho, mas são negativas em torno dos ninhos atípicos. Junto a alguns ninhos, células fusiformes do estroma são positivas para actina de músculo liso.",
+      "enunciado": "Qual é a interpretação mais adequada?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Carcinoma in situ, porque há células positivas para actina de músculo liso junto aos ninhos"
+        },
+        {
+          "id": "b",
+          "texto": "Lesão benigna, porque o ducto normal vizinho conserva a marcação para p63 e calponina"
+        },
+        {
+          "id": "c",
+          "texto": "Carcinoma invasivo: os ninhos não têm mioepitélio, e a actina marca miofibroblastos"
+        },
+        {
+          "id": "d",
+          "texto": "Falso-negativo, porque a falta de p63 em torno dos ninhos indica falha técnica da reação"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Na mama, ductos e ácinos normais, a maioria das lesões benignas e o carcinoma ductal in situ mantêm a camada de células mioepiteliais, situada entre a lâmina basal e as células luminais; no carcinoma invasivo, os ninhos tumorais não a têm. p63 e calponina, marcadores mioepiteliais, estão ausentes em torno dos ninhos atípicos que infiltram o estroma: o quadro é de carcinoma invasivo (c). A ausência de mioepitélio é sempre lida junto com a morfologia, como aqui (ninhos e cordões irregulares e atípicos num estroma denso), porque há exceções: o carcinoma papilífero encapsulado e o carcinoma papilífero sólido podem ser classificados como in situ, embora não tenham mioepitélio na periferia. (a) A actina de músculo liso marca também os miofibroblastos do estroma; células fusiformes positivas junto aos ninhos não provam camada mioepitelial. Por isso se usa um painel: a p63, marcador nuclear, não cora miofibroblastos, e é lida junto com um marcador citoplasmático, como a calponina, que pode corá-los em parte dos casos. (b) O ducto normal marcado é o controle interno: mostra que a reação funcionou, mas não torna benignos ninhos atípicos sem mioepitélio. (d) Pelo mesmo motivo, a marcação do ducto normal na mesma lâmina afasta falha técnica: a ausência de p63 e calponina em torno dos ninhos é um resultado verdadeiro.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "celula-mioepitelial",
+        "imuno-histoquimica",
+        "mama",
+        "carcinoma-invasivo",
+        "caso-clinico"
+      ],
+      "referencia": "OMS, Breast Tumours, 5ª ed., 2019; Werling et al., Am J Surg Pathol 2003; Quinn et al., Histopathology 2023 (texto integral); Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5"
+    },
+    {
+      "id": "his-03-q28",
+      "tipo": "multipla",
+      "contexto": "Homem de 70 anos tem, há cerca de 20 anos, um nódulo indolor de crescimento lento na região da parótida, nunca operado. Nos últimos 4 meses, o nódulo cresceu rapidamente. A peça cirúrgica mostra, numa área, ductos e células mioepiteliais em estroma mixoide e condroide; em outra, ninhos de células muito atípicas, com numerosas mitoses, que infiltram a glândula e o tecido adiposo vizinhos.",
+      "enunciado": "Qual é o diagnóstico mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Recidiva de adenoma pleomórfico após a excisão incompleta de um tumor anterior"
+        },
+        {
+          "id": "b",
+          "texto": "Adenoma pleomórfico com estroma condroide exuberante, sem componente maligno"
+        },
+        {
+          "id": "c",
+          "texto": "Linfoma de zona marginal extranodal (MALT), associado à síndrome de Sjögren"
+        },
+        {
+          "id": "d",
+          "texto": "Carcinoma ex-adenoma pleomórfico, surgido num tumor benigno de longa evolução"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A área com ductos, células mioepiteliais e estroma mixoide e condroide é de adenoma pleomórfico, a neoplasia mais comum das glândulas salivares. O adenoma pleomórfico raramente sofre transformação maligna; o risco aumenta com o tempo de evolução sem tratamento, a idade, o tamanho do tumor e as recidivas múltiplas. O crescimento rápido de um nódulo antigo e o componente de células muito atípicas, com mitoses e infiltração dos tecidos vizinhos, indicam carcinoma surgido no adenoma, o carcinoma ex-adenoma pleomórfico (d). (a) O tumor nunca foi operado, o que afasta a recidiva; além disso, a recidiva de um adenoma pleomórfico é, em si, um tumor benigno, e um componente atípico e infiltrativo também indicaria carcinoma ex-adenoma pleomórfico, que pode surgir tanto no tumor primário quanto numa recidiva. (b) Estroma condroide abundante faz parte do adenoma pleomórfico, mas não explica ninhos de células muito atípicas que infiltram os tecidos vizinhos. (c) O linfoma MALT, associado à síndrome de Sjögren, é uma proliferação de células linfoides, e não ninhos de células epiteliais atípicas junto a um adenoma pleomórfico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "adenoma-pleomorfico",
+        "carcinoma-ex-adenoma-pleomorfico",
+        "glandulas-salivares",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins 10ª ed. (cabeça e pescoço — glândulas salivares); Ross 8ª ed., cap. 16; Scarini et al., Front Oral Health 2023 (texto integral); Antony et al., Head Neck Pathol 2012"
+    },
+    {
+      "id": "his-03-q29",
+      "tipo": "associar",
+      "enunciado": "Associe cada achado ao mecanismo histofisiológico ou histopatológico que o explica:",
+      "pares": [
+        {
+          "esquerda": "Cloreto no suor de 60 mmol/L ou mais",
+          "direita": "Falha do CFTR em reabsorver Cl⁻ no ducto da glândula sudorípara"
+        },
+        {
+          "esquerda": "Saliva hipotônica em relação ao plasma",
+          "direita": "Reabsorção de Na⁺ e Cl⁻ pelas células do ducto estriado"
+        },
+        {
+          "esquerda": "Esteatorreia na fibrose cística",
+          "direita": "Obstrução dos ductos pancreáticos e atrofia dos ácinos"
+        },
+        {
+          "esquerda": "Azoospermia na fibrose cística",
+          "direita": "Ausência congênita bilateral dos ductos deferentes"
+        },
+        {
+          "esquerda": "Boca seca com escore de foco ≥ 1 na biópsia do lábio",
+          "direita": "Infiltrado linfocitário que destrói o parênquima das glândulas salivares"
+        }
+      ],
+      "explicacao": "No ducto da glândula sudorípara, o CFTR permite a reabsorção de Cl⁻; sem ele, o suor chega salgado à pele, base do teste do suor. Nas glândulas salivares, o ducto estriado reabsorve Na⁺ e Cl⁻ (as estriações basais são dobras da membrana com mitocôndrias) e torna a saliva hipotônica. Na fibrose cística, secreções espessas obstruem os ductos pancreáticos, com atrofia dos ácinos e falta de enzimas digestivas (esteatorreia), e a maioria dos homens é infértil por ausência congênita bilateral dos ductos deferentes (azoospermia obstrutiva). Na síndrome de Sjögren, o infiltrado linfocitário focal (escore de foco ≥ 1) destrói as glândulas salivares e lacrimais, causando boca e olhos secos.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "fibrose-cistica",
+        "ducto-estriado",
+        "sindrome-de-sjogren",
+        "integracao"
+      ],
+      "referencia": "Ross 8ª ed., cap. 15 e 16; Robbins 10ª ed. (fibrose cística); Shiboski et al., ACR/EULAR 2016"
+    },
+    {
+      "id": "his-03-q30",
+      "tipo": "ordenar",
+      "enunciado": "Para chegar a um vaso linfático do estroma, um carcinoma que nasce no epitélio de um ducto mamário precisa atravessar as camadas da unidade ductal. Ordene as estruturas da luz do ducto para fora:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Lâmina basal"
+        },
+        {
+          "id": "2",
+          "texto": "Células epiteliais luminais do ducto"
+        },
+        {
+          "id": "3",
+          "texto": "Tecido conjuntivo do estroma"
+        },
+        {
+          "id": "4",
+          "texto": "Camada de células mioepiteliais"
+        },
+        {
+          "id": "5",
+          "texto": "Parede do vaso linfático"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "3",
+        "5"
+      ],
+      "explicacao": "As células luminais revestem a luz do ducto; por fora delas, entre as células luminais e a lâmina basal, fica a camada de células mioepiteliais. A lâmina basal separa a unidade epitelial do conjuntivo do estroma, onde estão os vasos sanguíneos e linfáticos. Enquanto as células neoplásicas não ultrapassam a lâmina basal, o carcinoma é in situ; ao rompê-la e invadir o estroma, torna-se invasivo e pode alcançar os vasos e dar metástases, já que o epitélio é avascular.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "celula-mioepitelial",
+        "membrana-basal",
+        "carcinoma-invasivo",
+        "sequencia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 4; Ross 8ª ed., cap. 5; Robbins 10ª ed. (neoplasia)"
     }
   ],
   "referencias": [
@@ -1047,6 +1241,26 @@
     {
       "obra": "WHO Classification of Tumours Editorial Board. Breast Tumours. 5th ed. Lyon: IARC; 2019",
       "capitulo": "Lesões benignas e carcinoma invasivo (camada mioepitelial)"
+    },
+    {
+      "obra": "Shiboski CH, Shiboski SC, Seror R, et al. 2016 American College of Rheumatology/European League Against Rheumatism classification criteria for primary Sjögren's syndrome: a consensus and data-driven methodology involving three international patient cohorts. Arthritis Rheumatol. 2017;69(1):35-45. doi:10.1002/art.39859. PMID 27785888 (texto integral: PMC5650478)",
+      "capitulo": "Tabela 3 — itens, pesos, soma ≥ 4, critérios de inclusão e exclusão; escore de foco por 4 mm² (publicação simultânea da mesma diretriz citada acima no Ann Rheum Dis) — questão avançada q26"
+    },
+    {
+      "obra": "Werling RW, Hwang H, Yaziji H, Gown AM. Immunohistochemical distinction of invasive from noninvasive breast lesions: a comparative study of p63 versus calponin and smooth muscle myosin heavy chain. Am J Surg Pathol. 2003;27(1):82-90. doi:10.1097/00000478-200301000-00009. PMID 12502930",
+      "capitulo": "p63 não marca miofibroblastos; calponina e miosina de músculo liso podem marcá-los — questão avançada q27"
+    },
+    {
+      "obra": "Quinn C, Maguire A, Rakha E. Pitfalls in breast pathology. Histopathology. 2023;82(1):140-161. doi:10.1111/his.14799. PMID 36482276 (texto integral: PMC10107929)",
+      "capitulo": "Imuno-histoquímica de células mioepiteliais: pelo menos dois marcadores (nuclear e citoplasmático); a p63 não cora miofibroblastos, e calponina, actina de músculo liso e miosina de músculo liso podem corá-los; a ausência de mioepitélio é interpretada no contexto (carcinomas papilíferos encapsulado e sólido) — questão avançada q27"
+    },
+    {
+      "obra": "Scarini JF, de Lima-Souza RA, Lavareze L, et al. Heterogeneity and versatility of the extracellular matrix during the transition from pleomorphic adenoma to carcinoma ex pleomorphic adenoma: cumulative findings from basic research and new insights. Front Oral Health. 2023;4:942604. doi:10.3389/froh.2023.942604. PMID 37138857 (texto integral: PMC10149834)",
+      "capitulo": "Adenoma pleomórfico como tumor salivar mais comum; transformação maligna quando não tratado; fatores de risco (recidivas múltiplas, sexo masculino, idade, radioterapia prévia, tamanho do tumor) — questão avançada q28"
+    },
+    {
+      "obra": "Antony J, Gopalan V, Smith RA, Lam AK. Carcinoma ex pleomorphic adenoma: a comprehensive review of clinical, pathological and molecular data. Head Neck Pathol. 2012;6(1):1-9. doi:10.1007/s12105-011-0281-z. PMID 21744105",
+      "capitulo": "Definição: carcinoma surgido em adenoma pleomórfico primário ou recidivado (resumo lido) — questão avançada q28"
     }
   ],
   "notasDivergencia": [
@@ -1060,7 +1274,10 @@
     "Referência de Yamashina et al. (1999) conferida pelo revisor: Arch Histol Cytol 62(4):347–354 (estudo em glândula sublingual de rato; a extrapolação para glândulas humanas é dos livros-texto).",
     "Não foi conferido se a 14ª ed. de Junqueira já menciona a hipótese de artefato das meias-luas serosas.",
     "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
-    "Diretrizes brasileiras de fibrose cística (Athanazio et al., 2017): o texto integral não pôde ser aberto nesta sessão. Os pontos de corte (≥ 60 mmol/L; 30–59 mmol/L intermediário) vêm do consenso CFF 2017 e de estudos brasileiros que descrevem dois testes com cloreto ≥ 60 mmol/L como padrão; conferir a redação da diretriz brasileira e do manual de triagem neonatal (revisão de patologia/clínica, 09/11/2026)."
+    "Diretrizes brasileiras de fibrose cística (Athanazio et al., 2017): o texto integral não pôde ser aberto nesta sessão. Os pontos de corte (≥ 60 mmol/L; 30–59 mmol/L intermediário) vêm do consenso CFF 2017 e de estudos brasileiros que descrevem dois testes com cloreto ≥ 60 mmol/L como padrão; conferir a redação da diretriz brasileira e do manual de triagem neonatal (revisão de patologia/clínica, 09/11/2026).",
+    "Camada avançada (redator, 2026-11-10), q26: critérios ACR/EULAR de 2016 conferidos no texto integral da versão do Arthritis Rheumatol (Shiboski et al. 2017, PMC5650478, manuscrito do autor): peso 3 para a biópsia de glândula salivar labial com sialoadenite linfocítica focal e escore de foco ≥ 1 foco/4 mm² e para o anti-SSA(Ro); peso 1 para escore de coloração ocular ≥ 5 (ou van Bijsterveld ≥ 4) em pelo menos um olho, Schirmer ≤ 5 mm/5 min em pelo menos um olho e fluxo salivar não estimulado ≤ 0,1 mL/min; classificação com soma ≥ 4, em quem preenche a inclusão e não tem condição de exclusão. O resumo dessa versão traz 'foci/mm²', erro de digitação; a tabela e a nota de rodapé dizem 'foci/4 mm²'. q27 a q30 usam só fatos já revisados do tópico.",
+    "Revisão da camada avançada (histologia, 2026-11-10): q26 — conta refeita: 6 focos em 12 mm² = 0,5 foco/mm² = 2 focos/4 mm² (escore de foco 2); biópsia 3 + Schirmer 4 mm/5 min em um olho 1 = 4 pontos, mínimo para classificar; inclusão (boca seca diária > 3 meses; beber líquidos para engolir alimento seco) e exclusões conferidas na Tabela do texto integral (PMC5650478); foco = agregado de ≥ 50 células mononucleares, sobretudo linfócitos (Fisher et al., Ann Rheum Dis 2017, PMC5530351). q27 — Werling et al. 2003 (resumo, PMID 12502930): \"No case showed p63 expression by myofibroblasts ... whereas myofibroblasts expressed, in 8% and 76% of cases, SMM-HC and calponin\"; a explicação deixou de sugerir que a calponina, como a p63, não cora miofibroblastos. O texto integral não foi lido.",
+    "Revisão de patologia da camada avançada (2026-11-10): q26 — conta refeita e conferida de novo na Tabela 3 do texto integral (PMC5650478): 6 focos/12 mm² = 0,5 foco/mm² = 2 focos/4 mm²; biópsia (peso 3) + Schirmer ≤ 5 mm/5 min em pelo menos um olho (peso 1) = 4, o mínimo ('score ≥ 4 when summing the weights'); inclusão pelas perguntas 4 e 5 e exclusões conferidas. A recomendação da SBR para o diagnóstico (Trevisani et al., Adv Rheumatol 2019;59:58, PMID 31852541) só pôde ser lida no resumo (advancesinrheumatology.biomedcentral.com recusado pelo proxy): 'Minor salivary gland biopsy is recommended for all anti-Ro negative or incomplete criteria cases', coerente com a vinheta. q27 — Quinn et al. 2023 (Histopathology, texto integral, PMC10107929): 'it is recommended that at least two MEC markers are used, usually a combination of a nuclear and cytoplasmic stain'; a p63 tem 'no expression in blood vessels or myofibroblasts', e os marcadores citoplasmáticos (actina de músculo liso, calponina, miosina de músculo liso, CD10) tendem a corar miofibroblastos; 'The absence of MECs at the periphery of a lesion may support a diagnosis of invasive malignancy but must be interpreted in context and with caution', pois 'encapsulated and solid papillary carcinoma may be categorised as in situ lesions despite the absence of a peripheral MEC layer'. A explicação passou a registrar essa ressalva. q28 — Scarini et al. 2023 (texto integral, PMC10149834): o adenoma pleomórfico é o tumor salivar mais comum; 'If untreated, it is estimated that up to 6.2% of PAs undergo malignant transformation'; 'Multiple recurrences, male sex, advanced age, previous radiation therapy, and tumor size are the most frequently reported risk factors'. Antony et al. 2012 (resumo): carcinoma 'arising from a primary or recurrent benign pleomorphic adenoma'. A explicação dizia que uma recidiva 'continuaria benigna, sem o componente atípico infiltrativo', o que contradiz esses dados, e foi corrigida. A relação do risco com o tempo de evolução vem de Robbins e de Eneroth e Zetterberg 1974 (PMID 4365171, sem resumo no PubMed), não lidos; nenhum percentual foi usado."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1079,6 +1296,34 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "6 correções (0 críticas, 0 importantes, 6 menores); gabaritos corretos. Principais: infertilidade masculina na FC por ausência congênita bilateral dos ductos deferentes (resumo e correlação); teste do suor com ponto de corte (≥60 mmol/L; 30–59 intermediário; CFF 2017) e triagem neonatal brasileira (correlação e q10); Sjögren com biópsia de glândula salivar menor (escore de foco, ACR/EULAR 2016) e linfoma MALT; marcadores mioepiteliais (p63, calponina, SMMHC) e exceção da adenose microglandular; via serrilhada; carcinoma ex-adenoma pleomórfico. Pendente: texto integral da diretriz brasileira de FC."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-03-q26 a his-03-q30): 1 correção (0 críticas, 1 importante, 0 menores). Importante: q27 — a explicação da alternativa a sugeria que a calponina, como a p63, não marca miofibroblastos; a calponina os marca em parte dos casos (Werling et al. 2003), e o texto passou a descrever o painel p63 (nuclear, sem miofibroblastos) + marcador citoplasmático. q26: escore de foco recalculado (6 focos/12 mm² = 2 focos/4 mm²; 3 + 1 = 4 pontos, classifica) e critérios ACR/EULAR 2016 conferidos no texto integral (PMC5650478); gabarito b correto. q28 a q30 corretas."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-03-q26 a his-03-q30): 2 correções (0 críticas, 2 importantes, 0 menores); gabaritos corretos. Importantes: q27 — a explicação dizia, sem ressalva, que o carcinoma in situ mantém o mioepitélio; passou a registrar que a ausência de mioepitélio é lida com a morfologia, porque os carcinomas papilíferos encapsulado e sólido podem ser classificados como in situ sem mioepitélio periférico (Quinn et al. 2023, texto integral); q28 — a explicação dizia que uma recidiva de adenoma pleomórfico 'continuaria benigna, sem o componente atípico', mas o carcinoma ex-adenoma pleomórfico também surge em recidivas, e as recidivas múltiplas são fator de risco (Scarini et al. 2023, texto integral; Antony et al. 2012, resumo). q26: conta do ACR/EULAR 2016 refeita (2 focos/4 mm²; 3 + 1 = 4 pontos) e conferida na Tabela 3 do texto integral. q29 e q30 sem alteração."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Harmonização de ids de estrutura (1 renomeação, 0 questão alterada): o id do ducto intercalar (terminado em -ar) passou a ducto-intercalado, id canônico de his-15 e da lâmina 'pancreas'; nome 'Ducto intercalar' mantido, com 'ducto intercalado' como sinônimo (como em his-15). Como o id passa a ser compartilhado com o pâncreas e o registro de estruturas exibe a definição do primeiro tópico carregado (his-03), a definição foi delimitada às glândulas salivares (epitélio cúbico baixo, células mioepiteliais, longo na parótida), que não valem para o ducto intercalar pancreático (pavimentoso a cúbico baixo, começa nas células centroacinosas, sem mioepitélio; his-15). Fonte: Junqueira 14ª ed. e Ross 8ª ed., já citados no tópico (livros, sem texto integral nesta rede)."
+      },
+      {
+        "area": "harmonizacao",
+        "agente": "revisor-harmonizacao-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "Definição do id septo-conjuntivo generalizada (cápsula de um órgão; ductos excretores só nas glândulas exócrinas), porque o registro de estruturas usa a definição do primeiro tópico carregado e o id também aparece nas lâminas de tireoide, timo e tecido adiposo (apontado na revisão das lâminas do grupo C, content/revisoes/laminas-sistemas-c.md)."
       }
     ],
     "humano": null

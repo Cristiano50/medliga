@@ -940,6 +940,200 @@
         "microscopia"
       ],
       "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q26",
+      "tipo": "multipla",
+      "contexto": "Uma biópsia por agulha grossa de carcinoma invasivo da mama foi colhida às 9 h e ficou na bancada, sem fixador, até as 13 h, quando foi imersa em formol tamponado a 10%, onde permaneceu por 24 horas. Na imuno-histoquímica para receptor de estrogênio (RE), nenhum núcleo das células do carcinoma está corado. Os ductos normais incluídos no mesmo fragmento também não têm nenhum núcleo corado, e o controle externo da lâmina reagiu como esperado.",
+      "enunciado": "Segundo a diretriz ASCO/CAP para receptores hormonais, como esse resultado deve ser relatado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Negativo, porque menos de 1% das células do carcinoma tem o núcleo corado"
+        },
+        {
+          "id": "b",
+          "texto": "Não interpretável, porque 24 horas em formol excedem o tempo máximo de fixação"
+        },
+        {
+          "id": "c",
+          "texto": "Negativo, porque estroma e células mioepiteliais, os controles internos, não coraram"
+        },
+        {
+          "id": "d",
+          "texto": "Não interpretável, pelo atraso até o fixador e pelos ductos normais sem marcação"
+        }
+      ],
+      "correta": "d",
+      "explicacao": "A diretriz ASCO/CAP recomenda que a peça chegue ao formol tamponado a 10% no máximo 1 hora após a retirada e que a fixação dure de 6 a 72 horas. Aqui a fixação começou com 4 horas de atraso (isquemia fria prolongada). Além disso, as células luminais dos ductos normais, que funcionam como controle interno positivo e deveriam mostrar núcleos corados com intensidade variável, ficaram totalmente negativas. Nessa situação, a diretriz manda relatar o resultado como não interpretável, e não como negativo, registrar o motivo e sugerir repetir o teste em outra amostra, como a peça cirúrgica fixada corretamente, porque a falta de marcação pode ser um falso-negativo (d). (a) O limiar de menos de 1% de núcleos corados define o RE negativo apenas quando os controles, inclusive o interno, reagem como esperado. (b) Vinte e quatro horas estão dentro da janela de 6 a 72 horas; a falha pré-analítica foi o atraso até o fixador. (c) Estroma e células mioepiteliais devem ser sempre negativos para RE: funcionam como controle interno negativo e não mostram que a reação seria capaz de corar núcleos positivos.",
+      "dificuldade": 5,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "imuno-histoquimica",
+        "fixacao",
+        "receptor-de-estrogenio",
+        "controle-interno",
+        "caso-clinico"
+      ],
+      "referencia": "Hammond et al., Arch Pathol Lab Med 2010 (diretriz ASCO/CAP de RE/RP, texto integral); Allison et al., J Clin Oncol 2020; Cho et al., J Breast Cancer 2021 (síntese da atualização de 2020, texto integral)"
+    },
+    {
+      "id": "his-01-q27",
+      "tipo": "multipla",
+      "contexto": "Homem de 63 anos com síndrome nefrótica faz biópsia renal. Na HE, os glomérulos contêm depósitos acelulares, amorfos e róseos, e o patologista suspeita de amiloidose.",
+      "enunciado": "Qual conduta laboratorial confirma a suspeita e fornece a informação de que depende o tratamento?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Vermelho Congo em luz comum: a cor vermelha do depósito confirma e já define o tipo"
+        },
+        {
+          "id": "b",
+          "texto": "Tricrômico de Masson: o depósito azul confirma o amiloide, e a fibrose define o tipo"
+        },
+        {
+          "id": "c",
+          "texto": "Vermelho Congo sob luz polarizada e, confirmado o amiloide, tipagem da proteína"
+        },
+        {
+          "id": "d",
+          "texto": "Sudan num corte do bloco de parafina, pois depósitos amorfos róseos são lipídicos"
+        }
+      ],
+      "correta": "c",
+      "explicacao": "Depósitos de amiloide, róseos e amorfos na HE, coram-se pelo vermelho Congo e, à microscopia de polarização (polarizador e analisador cruzados), mostram birrefringência, classicamente descrita como verde-maçã (muitas vezes o verde vem acompanhado de outras cores, sobretudo o amarelo: são as chamadas cores anômalas), o que confirma tratar-se de amiloide: a estrutura em folha β pregueada das fibrilas alinha as moléculas do corante. Depois, a tipagem da proteína (por imuno-histoquímica, imunofluorescência ou, de preferência, espectrometria de massa) define o tipo, como AL ou ATTR, do qual depende a conduta (c). (a) A cor vermelha em luz comum não basta: o que confirma o amiloide é a birrefringência sob luz polarizada, e o vermelho Congo não identifica o tipo da proteína precursora. (b) O tricrômico destaca o colágeno (azul ou verde) e serve para avaliar fibrose; não identifica nem tipa amiloide. (d) No bloco de parafina, os lipídios já foram extraídos pelo álcool e pelo xilol; além disso, o caráter róseo (acidófilo) dos depósitos na HE é próprio de material proteico, como o amiloide.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "amiloide",
+        "vermelho-congo",
+        "polarizacao",
+        "caso-clinico"
+      ],
+      "referencia": "Robbins 10ª ed. (amiloidose); Junqueira 14ª ed., cap. 1; Bancroft 8th ed.; Simões et al., posicionamento da SBC sobre amiloidose cardíaca, Arq Bras Cardiol 2021 (texto integral); Howie e Owen-Casey, Ann Med 2022"
+    },
+    {
+      "id": "his-01-q28",
+      "tipo": "multipla",
+      "contexto": "Cenário experimental: um estudante quer medir, ao microscópio óptico, a espessura da membrana plasmática de um enterócito num corte corado por HE. Usa objetiva de imersão de 100× e ocular de 10× e, depois, amplia a fotografia digitalmente 4 vezes, chegando a um aumento final de 4.000×. Na foto ampliada, o limite da célula aparece como uma linha borrada, e não é possível distinguir nem medir a membrana.",
+      "enunciado": "Qual é a explicação para o resultado?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "O aumento de 4.000× ainda é pequeno; com cerca de 10.000×, a membrana seria medida"
+        },
+        {
+          "id": "b",
+          "texto": "O limite de resolução do microscópio óptico, cerca de 0,2 µm, não melhora com a ampliação"
+        },
+        {
+          "id": "c",
+          "texto": "A HE não cora membranas; com outra coloração, a membrana seria medida no mesmo aumento"
+        },
+        {
+          "id": "d",
+          "texto": "A ampliação digital distorce a imagem; só um aumento óptico de 4.000× mostraria a membrana"
+        }
+      ],
+      "correta": "b",
+      "explicacao": "O limite de resolução é a menor distância em que dois pontos ainda aparecem separados; no microscópio óptico, é de cerca de 0,2 µm (200 nm). A membrana plasmática tem espessura da ordem de poucos nanômetros, e suas camadas só são resolvidas ao microscópio eletrônico de transmissão. Ampliar a imagem além do necessário para enxergar o menor detalhe já resolvido apenas aumenta uma imagem borrada, sem acrescentar detalhe (b). (a) e (d) Aumentar mais a imagem, por meio óptico ou digital, não reduz o limite de resolução, que é uma propriedade do microscópio óptico, e não do aumento final. (c) A coloração dá contraste, mas não muda o limite de resolução: uma estrutura de poucos nanômetros continua muito abaixo de 0,2 µm, qualquer que seja o corante.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "resolucao",
+        "microscopia-optica",
+        "aumento",
+        "cenario-experimental"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1"
+    },
+    {
+      "id": "his-01-q29",
+      "tipo": "ordenar",
+      "enunciado": "Um laboratório vai pesquisar um antígeno por imuno-histoquímica indireta com peroxidase num corte de biópsia fixada em formol e incluída em parafina. Ordene as etapas:",
+      "itens": [
+        {
+          "id": "1",
+          "texto": "Incubação com o anticorpo primário, dirigido contra o antígeno"
+        },
+        {
+          "id": "2",
+          "texto": "Remoção da parafina e hidratação do corte"
+        },
+        {
+          "id": "3",
+          "texto": "Revelação com DAB, que forma um precipitado castanho"
+        },
+        {
+          "id": "4",
+          "texto": "Recuperação antigênica por calor"
+        },
+        {
+          "id": "5",
+          "texto": "Desidratação, diafanização e montagem com lamínula"
+        },
+        {
+          "id": "6",
+          "texto": "Incubação com o anticorpo secundário ligado à peroxidase"
+        }
+      ],
+      "ordemCorreta": [
+        "2",
+        "4",
+        "1",
+        "6",
+        "3",
+        "5"
+      ],
+      "explicacao": "Primeiro o corte perde a parafina (xilol) e é hidratado em álcoois decrescentes até a água (2), porque os anticorpos são aplicados em solução aquosa. As pontes que o formol forma entre proteínas mascaram epítopos, e a recuperação antigênica por calor (4) os reexpõe antes da incubação com o anticorpo primário (1). No método indireto, o anticorpo secundário marcado com peroxidase reconhece o primário e amplifica o sinal (6); só então a enzima transforma o DAB num precipitado castanho no local do antígeno (3). Por fim, o corte é desidratado, diafanizado e montado (5), como nas colorações de rotina.",
+      "dificuldade": 4,
+      "bloom": "aplicar",
+      "tags": [
+        "avancado",
+        "imuno-histoquimica",
+        "recuperacao-antigenica",
+        "sequencia"
+      ],
+      "referencia": "Junqueira 14ª ed., cap. 1; Ross 8ª ed., cap. 1; Bancroft 8th ed. (imuno-histoquímica)"
+    },
+    {
+      "id": "his-01-q30",
+      "tipo": "multipla",
+      "contexto": "Num corte de pele corado por HE, a derme profunda contém um agrupamento de cerca de 15 perfis tubulares, redondos ou ovais, muito próximos uns dos outros. Parte deles é revestida por células secretoras com células mioepiteliais na periferia; os demais têm epitélio formado por duas camadas de células cúbicas. Não se vê nenhum ponto de ramificação.",
+      "enunciado": "Qual é a interpretação mais provável?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Uma glândula sudorípara écrina, tubulosa simples enovelada, cortada várias vezes"
+        },
+        {
+          "id": "b",
+          "texto": "Uma glândula composta, cujos ductos ramificados explicam o grande número de perfis"
+        },
+        {
+          "id": "c",
+          "texto": "Um ducto excretor cortado ao longo do seu eixo, que aparece como faixas paralelas"
+        },
+        {
+          "id": "d",
+          "texto": "Ácinos de glândula sebácea, cujas células morrem e se tornam a secreção holócrina"
+        }
+      ],
+      "correta": "a",
+      "explicacao": "Um corte é um plano através de uma estrutura tridimensional. A glândula sudorípara écrina é tubulosa simples enovelada: um único túbulo, não ramificado, enrolado sobre si mesmo na derme profunda, é cortado muitas vezes no mesmo plano e aparece como um agrupamento de perfis redondos e ovais. Os perfis com células mioepiteliais correspondem à porção secretora, e os de epitélio estratificado cúbico (duas camadas de células), ao ducto (a). (b) A glândula composta tem ducto ramificado; aqui não há ramificação, e a sudorípara écrina é simples. (c) Um tubo cortado paralelamente ao seu eixo aparece como duas faixas de células com a luz entre elas, e não como perfis redondos e ovais. (d) A glândula sebácea é acinosa e formada por células cheias de lipídio que morrem e se tornam o sebo, e não por túbulos com células mioepiteliais e ducto de epitélio cúbico.",
+      "dificuldade": 4,
+      "bloom": "analisar",
+      "tags": [
+        "avancado",
+        "planos-de-corte",
+        "interpretacao-de-cortes",
+        "glandula-sudoripara",
+        "lamina-descrita"
+      ],
+      "referencia": "Ross 8ª ed., cap. 1 e 15; Junqueira 14ª ed., cap. 1, 4 e 18"
     }
   ],
   "referencias": [
@@ -982,19 +1176,35 @@
     {
       "obra": "Wolff AC, Hammond MEH, Hicks DG, et al. Recommendations for human epidermal growth factor receptor 2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline update. J Clin Oncol. 2013;31(31):3997–4013. doi:10.1200/JCO.2013.50.9984. PMID 24101045 (também Arch Pathol Lab Med. 2014;138(2):241–256, PMID 24099077)",
       "capitulo": "HER2: tempo até o fixador de no máximo 1 hora; fixação em formol tamponado a 10% por 6 a 72 horas (limite ampliado de 48 para 72 horas nesta atualização; texto integral, PMC4086638)"
+    },
+    {
+      "obra": "Simões MV, Fernandes F, Marcondes-Braga FG, et al. Posicionamento sobre diagnóstico e tratamento da amiloidose cardíaca – 2021. Arq Bras Cardiol. 2021;117(3):561-598. doi:10.36660/abc.20210718. PMID 34550244 (texto integral: PMC8462947)",
+      "capitulo": "6.1.1 — Biópsia: o vermelho Congo com birrefringência sob luz polarizada confirma o amiloide, mas não identifica a proteína precursora; tipagem por imuno-histoquímica ou, de preferência, microdissecção a laser e espectrometria de massa — questão avançada q27"
+    },
+    {
+      "obra": "Howie AJ, Owen-Casey MP. Systematic review of accuracy of reporting of Congo red-stained amyloid in 2010-2020 compared with earlier. Ann Med. 2022;54(1):2511-2516. doi:10.1080/07853890.2022.2123558. PMID 36120888 (texto integral: PMC9518257)",
+      "capitulo": "Cores anômalas × 'birrefringência verde-maçã' no amiloide corado pelo vermelho Congo — questão avançada q27"
+    },
+    {
+      "obra": "Cho SY, Park SY, Bae YK, et al. Standardized pathology report for breast cancer. J Breast Cancer. 2021;24(1):1-21. doi:10.4048/jbc.2021.24.e5. PMID 33634617 (texto integral: PMC7920867)",
+      "capitulo": "Receptores hormonais: síntese da atualização ASCO/CAP de 2020 (categoria ER Low Positive; isquemia fria prolongada e controles internos ou externos inadequados tornam o resultado não interpretável, com repetição em outro bloco ou amostra) — fonte secundária para a questão avançada q26"
     }
   ],
   "notasDivergencia": [
     "Espessura dos cortes em parafina: Junqueira cita cortes em geral de 1 a 10 µm; na rotina de patologia são comuns 3–5 µm (Bancroft). O resumo usa 'poucos micrômetros'.",
     "Resolução do MET: as obras citam valores entre décimos de nanômetro (limite do instrumento) e cerca de 1–3 nm (prática com cortes biológicos). O conteúdo usa apenas 'escala de nanômetros' e a comparação qualitativa com o MO e o MEV.",
     "Hematoxilina: Junqueira a trata simplesmente como corante básico; Ross e Bancroft explicam que o corante ativo é a hemateína (produto de oxidação) ligada a um mordente (alumínio), complexo catiônico que se comporta como corante básico. O resumo explica o papel da hemateína e do mordente; questões e pontos-chave usam apenas 'comporta-se como corante básico', formulação compatível com as três obras.",
-    "Diâmetro da hemácia: Junqueira ~7,5 µm; Ross ~7,8 µm. Faixa adotada: 7–8 µm."
+    "Diâmetro da hemácia: Junqueira ~7,5 µm; Ross ~7,8 µm. Faixa adotada: 7–8 µm.",
+    "Cor da birrefringência do amiloide (questão avançada q27): Robbins e a maioria dos textos descrevem 'birrefringência verde-maçã'; o posicionamento da SBC (2021) fala apenas em 'birrefringência sob a luz polarizada'; Howie e Owen-Casey (Ann Med 2022, revisão sistemática) mostram que o verde nem sempre aparece e costuma vir com outras cores (a combinação mais comum nas imagens publicadas foi verde e amarelo) e preferem o termo 'cores anômalas'. A q27 diz 'birrefringência, classicamente descrita como verde-maçã' e menciona as cores anômalas (revisão de patologia da camada avançada, 2026-11-10)."
   ],
   "incertezas": [
     "Os números e títulos de capítulos da 14ª ed. de Junqueira e da 8ª ed. de Ross foram citados de memória, com base na organização das edições anteriores; conferir nas edições adotadas.",
     "Recomendações ASCO/CAP — Conferência de fontes (2026-11-09): lidos os textos integrais da diretriz de RE/RP de 2010 (Hammond et al., Arch Pathol Lab Med 2010: 'The time from tumor removal to fixation should be kept to ≤ 1 hour'; fixação 'for no less than 6 hours and for not more than 72 hours') e da atualização de HER2 de 2013 (Wolff et al., Arch Pathol Lab Med 2014: 'time to fixative within 1 hour', '6 to 72 hours'; o limite passou de 48 para 72 horas nessa atualização, e não na de 2018, como dizia esta nota). O resumo da atualização de HER2 de 2023 diz que as recomendações de 2018 'are affirmed'. Os textos integrais de Allison et al. 2020 (RE/RP) e de Wolff et al. 2018 não puderam ser abertos (ascopubs.org e meridian.allenpress.com fora da rede; não estão no PMC); que a atualização de 2020 manteve ≤ 1 hora e 6–72 horas consta só de fonte secundária (Ndengue et al., PLoS One 2026;21(6):e0343185). Conferir a redação de 2020 e de 2018 no texto original.",
     "Espessura dos cortes ultrafinos para MET e diâmetro exato do ribossomo foram omitidos por variarem entre as obras; a questão de ordenação usa apenas ordens de grandeza que não se sobrepõem.",
-    "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida."
+    "Capítulos de Robbins citados pelo título, sem número, porque a numeração da 10ª ed. não foi conferida.",
+    "Camada avançada (redator, 2026-11-10), q26: conferida no texto integral da diretriz ASCO/CAP de RE/RP de 2010 (Hammond et al., Arch Pathol Lab Med 2010, PMC3073033): 'Uninterpretable for ER or PgR if finding that no tumor nuclei are immunoreactive and that internal epithelial elements present in the sample ... lack any nuclear staining'; 'samples where fixation was delayed for more than 1 hour' entre as causas de resultado não interpretável; 'an alternative potential sample for retesting should be suggested'; células mioepiteliais e estroma como controle negativo embutido; RE negativo se < 1% dos núcleos tumorais corados. Da atualização vigente (Allison et al., 2020) só o resumo pôde ser lido (texto integral fora da rede): ele mantém o limiar de < 1% e manda relatar o estado dos controles nos casos com 0% a 10% de marcação. Conferir no texto integral de 2020 se a categoria 'não interpretável' manteve a mesma redação.",
+    "Camada avançada, q29: a sequência omite a contracoloração (em geral pela hematoxilina), etapa de rotina entre a revelação pelo DAB e a desidratação, porque o protocolo não foi conferido em fonte; a ordem das etapas listadas não muda com ela. q27, q28 e q30 usam só fatos já revisados de his-01 e his-03.",
+    "Revisão de patologia da camada avançada (2026-11-10): q26 — Hammond et al. 2010 relido no texto integral (PMC3073033): 'Uninterpretable for ER or PgR if finding that no tumor nuclei are immunoreactive and that internal epithelial elements present in the sample ... lack any nuclear staining'; entre as causas, 'samples where fixation was delayed for more than 1 hour'; o controle interno positivo 'must display a heterogeneous staining pattern of the luminal cells'. O texto integral de Allison et al. 2020 continua fora da rede (ascopubs.org, meridian.allenpress.com e www.cap.org recusados pelo proxy; documents.cap.org com erro 502). Uma fonte secundária aberta que cita Allison 2020 (Cho et al., J Breast Cancer 2021, PMC7920867) reproduz a regra: 'prolonged cold ischemia time ... inappropriate external/internal controls ... These cases are uninterpretable, and repeat staining of another block or specimen is recommended'. O conceito cobrado vale nas duas versões; continua pendente conferir no texto integral de 2020 a redação exata do rótulo. q27 — tipagem do amiloide conferida no posicionamento brasileiro da SBC (Simões et al. 2021, PMC8462947): 'a coloração vermelho-congo permite a confirmação da infiltração amiloide nos tecidos, porém não identifica o tipo da proteína precursora'; tipagem por 'imuno-histoquímica ou, preferencialmente, de microdissecção a laser do material amiloide da biópsia com realização de espectrometria de massa'."
   ],
   "revisao": {
     "autor": "agente-redator-histologia",
@@ -1020,6 +1230,20 @@
         "data": "2026-11-09",
         "veredito": "aprovado-com-correcoes",
         "notas": "Conferência de fontes. Allison 2020, Wolff 2018 e Wolff 2023: dados completados (volume, número, páginas, DOI, PMID e versões no Arch Pathol Lab Med). Lidos no texto integral (PMC): diretriz ASCO/CAP de RE/RP de 2010 (Hammond et al.: 'time from tumor removal to fixation should be kept to ≤ 1 hour'; fixação 'no less than 6 hours and ... not more than 72 hours') e atualização de HER2 de 2013 (Wolff et al.: 'time to fixative within 1 hour', '6 to 72 hours', ampliado de 6–48 h 'in this update') — acrescentadas a referencias. Correção na incerteza: a ampliação de 48 para 72 horas foi em 2013, não em 2018. Resumo de 2023: 'The 2018 ASCO-CAP recommendations for HER2 testing are affirmed'. Allison 2020 e Wolff 2018: texto integral fora da rede; a manutenção de ≤ 1 h e 6–72 h em 2020 só por fonte secundária — incerteza mantida com o que foi lido. Texto do aluno (correlação 'fixacao-inadequada': no máximo 1 hora; 6 a 72 horas; reafirmado em 2023) confere, sem mudança. Gabaritos, ids, ordens e pares inalterados."
+      },
+      {
+        "area": "histologia",
+        "agente": "revisor-histologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado",
+        "notas": "camada avançada (ids his-01-q26 a his-01-q30): 0 correções. Gabaritos, explicações (letras a–d citadas), distratores, comprimento das alternativas, dificuldade e bloom conferidos. q26 conferida no texto integral de Hammond et al. 2010 (PMC3073033): \"Uninterpretable ... if ... no tumor nuclei are immunoreactive and ... internal epithelial elements ... lack any nuclear staining\"; \"samples where fixation was delayed for more than 1 hour\"; 6–72 h; mioepitélio e estroma \"must invariably show a negative result\". Allison 2020: só o resumo (texto integral fora da rede); a redação da categoria \"não interpretável\" em 2020 continua pendente (incerteza já registrada). q28: limite de resolução de ~0,2 µm coerente com o resumo e com a questão de ordens de grandeza do tópico."
+      },
+      {
+        "area": "patologia/dermatologia/clinica",
+        "agente": "revisor-patologia-avancado-v1",
+        "data": "2026-11-10",
+        "veredito": "aprovado-com-correcoes",
+        "notas": "camada avançada (ids his-01-q26 a his-01-q30): 2 correções (0 críticas, 0 importantes, 2 menores); gabaritos corretos. q26: Hammond et al. 2010 relido no texto integral (PMC3073033); Allison 2020 continua sem texto integral na rede, mas a categoria 'uninterpretable' (isquemia fria prolongada, controles internos inadequados, repetir em outro bloco ou amostra) aparece, citando Allison 2020, em Cho et al. 2021 (PMC7920867), acrescentada como fonte secundária. q27: birrefringência 'classicamente descrita como verde-maçã', com menção às cores anômalas (Howie e Owen-Casey 2022, texto integral), e tipagem com espectrometria de massa preferencial; o vermelho Congo não identifica a proteína (posicionamento da SBC 2021, texto integral). q28, q29 e q30 sem alteração."
       }
     ],
     "humano": null
