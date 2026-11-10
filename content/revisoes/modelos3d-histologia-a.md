@@ -227,3 +227,98 @@ Acesso em 2026-11-10, por curl. "Integral" = corpo do artigo lido (XML do Europe
 | Blickensdorf M et al. Front Microbiol 2020 | PMID 32903715 · [PMC7438790](https://pmc.ncbi.nlm.nih.gov/articles/PMC7438790/) | integral | poros de Kohn interligam alvéolos e dão passagem a macrófagos; "the role of Pores of Kohn in the mammalian lung is still under debate" |
 
 **Não abertos:** Junqueira e Carneiro, Ross e Pawlina, Guyton e Hall, Berne e Levy (livros); Kriz e Bankir, "A standard nomenclature for structures of the kidney" (1988; PMID 3352156, sem resumo no PubMed e sem texto no PMC); texto integral de Zhai 2006 e 2007 (journals.lww.com não respondeu pela rede da sessão).
+
+## 9. Reavaliação do desenho (v2)
+
+- Agente: `revisor-3d-histologia-v1` · Data: 2026-11-10 · Objeto: desenho depois das correções do desenhista (commit `b4df539`), avaliado pelas pranchas e vistas de `h3d-a/v2/` e por medidas tiradas da geometria atual (`geometria-nefron.ts`, `geometria-alveolo.ts`, `grupo-a.tsx`). Ids e `partes` iguais.
+- Resultado: **os 6 P2 da primeira rodada estão resolvidos; não há P1 nem P2 novo.** Vereditos da reavaliação: `aprovado-com-correcoes` nos dois modelos (as correções são de texto). `revisao.humano` continua `null`.
+- Nesta etapa mexi só no texto de `modelos3d-a.json` (11 trechos) e neste relatório. Nenhum código alterado.
+
+### 9.1 P2 da primeira rodada
+
+| Modelo | P2 | Situação | Conferência |
+|---|---|---|---|
+| nefron | 1. Alça aberta em V | resolvido | Ramos a 0,20 um do outro, da curva (y = −0,97) ao córtex (y = 0,1). |
+| nefron | 2. Porção reta sem distinção | resolvido no que cabe sem id novo | Trecho retilíneo e vertical de y = 0,12 a −0,40, raio 0,052 contra 0,062, com ombro na passagem. Continua na mesma cor (fica como P3). |
+| nefron | 3. Proximal tão curto quanto o distal | resolvido | Proximal contorcido 3,93; contorcido distal 1,97. |
+| alveolo | 1. Três anéis completos no ducto | resolvido | Luz translúcida de x = −0,95 a 0,24 e anel fino (tubo 0,016) na boca de cada um dos 6 alvéolos do ducto; nenhum anel nos alvéolos do saco. |
+| alveolo | 2. Tipo II em fila junto à boca | resolvido | Polares 45°, 80° e 110°; 0,03 dos 0,095 de altura dentro da parede. |
+| alveolo | 3. Alvéolo de trás aberto para o vazio | resolvido | Removido. O poro liga o alvéolo em corte ao alvéolo de trás do mesmo saco; as duas paredes se fundem ali (canal de 0,077). |
+
+P3 atendidos: podócitos apoiados nas alças (21 corpos); 5 pontes no glomérulo; divisa de cor depois da mácula densa; capilar encostado no revestimento sob a barreira (eixo a 0,030 da luz, contra 0,058 no resto); taças do ducto encostadas; anel do poro com 11% do diâmetro do alvéolo (antes, 17%).
+
+### 9.2 Os três pontos de atenção
+
+1. **Ramo espesso por trás do corpúsculo.** Sem erro. O tubo não toca a cápsula (folga de 0,056 até a face externa), nem as arteríolas (0,11 e 0,12), nem o proximal contorcido (0,10). Chega ao polo vascular por trás, do lado da eferente, e atravessa o ângulo entre as arteríolas como antes. Fica uma ressalva de leitura (P3-1 abaixo).
+2. **Boca mais fechada do alvéolo em corte.** Sem erro. A meia-abertura de 36° dá uma boca com 59% do diâmetro do alvéolo, contra 71% nos alvéolos do ducto e 84% nos do saco. A borda fica 0,009 para dentro da esfera do saco, ou seja, a boca abre no saco. Aviso acrescentado em `contexto`.
+3. **Duas peças do ducto.** Sem erro. Luz mais anéis nas bocas é a descrição da literatura lida: o ducto não tem parede própria e é delimitado pelos anéis de entrada dos alvéolos, onde ficam o músculo liso e as fibras elásticas (Knudsen e Ochs 2018). A ausência de anéis no saco confere com his-16.
+
+### 9.3 Texto
+
+Os 5 avisos de `contexto` ajustados pelo desenhista estão corretos e não foram mudados, salvo o do alvéolo em corte (abaixo). Trechos atualizados nesta etapa:
+
+| Modelo | Campo | Depois |
+|---|---|---|
+| nefron | `glomerulo` | "…poucas alças, com poucas ligações entre elas, e sem o mesângio." |
+| nefron | `macula-densa` | "…No esquema, a placa azul fica no fim do ramo ascendente espesso, e o túbulo contorcido distal começa logo depois dela." |
+| nefron | `tubulo-contorcido-proximal` | "…a porção reta, que o esquema mostra na mesma cor, retilínea e um pouco mais fina, desce do córtex à medula externa…" |
+| nefron | `ramo-ascendente-espesso` | "…começa pouco antes da curva da alça, sobe paralelo ao ramo descendente e passa por trás do corpúsculo, sem entrar nele." |
+| alveolo | `contexto[0]` | "…maior que os vizinhos e com a boca mais estreita, para mostrar a parede." |
+| alveolo | `contexto[6]` | "O alvéolo maior, no alto à direita, está aberto em corte (só a metade de trás); a boca dele, voltada para o saco alveolar, aparece de perfil na vista inicial. …" |
+| alveolo | `ducto-alveolar` | "…No esquema, a luz do ducto é o volume alaranjado translúcido, e os botões são os anéis finos alaranjados na boca de cada alvéolo do ducto." |
+| alveolo | `pneumocito-tipo-ii` | "…as três células azuis do alvéolo em corte, espalhadas pela parede, embutidas nela e salientes na luz." |
+| alveolo | `barreira-hematoaerea` | "…a mancha amarela marca só o local, onde um capilar encosta no revestimento; as camadas não estão desenhadas." |
+| alveolo | `poro-alveolar` | "…aqui o alvéolo em corte e o alvéolo de trás do mesmo saco… No esquema, o anel roxo, ampliado, na parede de trás, perto da boca do alvéolo…" |
+
+### 9.4 O que resta
+
+**P1:** nenhum. **P2:** nenhum.
+
+**Néfron, P3 (6)**
+
+1. **Novo.** Na vista padrão, o ramo espesso some atrás da cápsula junto ao polo urinário e reaparece no polo vascular; visto através da cápsula translúcida, parece atravessar o corpúsculo (`curvaDistalCompleta()`, pontos `[-0.76, 0.62, -0.34]` a `[-0.38, 1.42, -0.44]`). A descrição agora diz "passa por trás do corpúsculo, sem entrar nele". Opcional: afastar o trajeto da silhueta da cápsula.
+2. Porção reta do proximal sem cor própria (exige id novo).
+3. Espaço capsular como esfera cheia.
+4. Células justaglomerulares só na aferente.
+5. Faixa única da medula.
+6. Ducto coletor sem outros afluentes.
+
+**Alvéolo, P3 (6)**
+
+1. **Novo.** Na vista padrão, a boca do alvéolo em corte fica de perfil e lê-se como uma parede reta entre o alvéolo e o saco (`HEROI.meiaAbertura` e `septoBorda`). Aviso acrescentado. Opcional: girar um pouco a vista padrão ou clarear a borda.
+2. **Novo.** Um pseudópode do macrófago encosta no pneumócito tipo II de cima (29,6° entre os dois) e no corpo lamelar apical dele, e outro passa do plano do corte (`MACROFAGO`, `TIPO_II[2]`). Afastar o macrófago.
+3. Corpos lamelares lisos.
+4. Bronquíolo respiratório com um só alvéolo.
+5. Capilares em anéis fechados.
+6. Células do alvéolo em corte ainda pequenas na vista padrão do celular (melhorou com a vista em diagonal).
+
+### 9.5 Para o revisor humano
+
+- **Mácula densa.** O desenho agora a põe inteira no fim do ramo ascendente espesso, com o contorcido distal logo depois. É a posição da literatura de fisiologia lida (Mount 2014; Peti-Peterdi e Harris 2010) e a que his-17 atribui a Ross; diverge da que his-17 atribui a Junqueira. O texto continua citando as duas. Substitui o ponto 3 do §6.
+- Os demais pontos do §6 continuam valendo.
+
+### 9.6 Evidência
+
+```
+$ python3 aplicar-v2.py content/histologia/modelos3d-a.json modelos3d-a.ANTES-v2.json   # fora do repositório
+trocas aplicadas: 11; entradas de revisão acrescentadas: 2
+ids, nomes e lista de estruturas iguais; entradas anteriores de revisão intactas; revisao.humano = null
+
+$ node --experimental-transform-types medidas-v2.ts   # leitura da geometria, fora do repositório
+ comprimentos: proximal contorcido 3.933 | reto 0.520 | delgado 0.380 | espesso 3.508 | distal 1.970
+ ramo espesso × cápsula: … folga até a face externa da cápsula 0.056
+ espesso × eferente: folga 0.122 | espesso × aferente: folga 0.110
+ mácula: … placa de z = -0.100 a 0.100 | início do distal (divisa) em -0.366,1.599,0.111
+ alvéolo em corte: … meia-abertura 36.000 ° → boca com 0.588 do diâmetro
+ borda da boca: x = 0.752 raio 0.200 | distância ao centro do saco 0.291 (raio do saco 0.3)
+ poro: polar 135 az 270 (borda da boca em polar 144.000) | anel/diâmetro do alvéolo 0.106 | canal de comprimento 0.077
+
+$ npm run validar-conteudo
+Conteúdo OK — disciplinas: embriologia, histologia; tópicos: 45; questões: 1363; escolas: 441.
+
+$ npx vitest run
+ Test Files  17 passed (17)
+      Tests  178 passed (178)
+```
+
+Nada foi commitado nesta etapa. As demais alterações da árvore de trabalho são de outras frentes e não foram tocadas.

@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
@@ -129,6 +129,10 @@ export function Cena3D(p: Cena3DProps) {
     () => ({ rotulosVisiveis: p.rotulosVisiveis, selecionado: p.selecionado, destaques, nomes: p.nomes, numeros, modoJogo: !!p.modoJogo, ocultos, isolado, corte, planosCorte: planos, onEscolher: p.onEscolher }),
     [p.rotulosVisiveis, p.selecionado, destaques, p.nomes, numeros, p.modoJogo, ocultos, isolado, corte, planos, p.onEscolher],
   );
+  // Manipulador estável: uma função nova a cada render altera o estado do R3F, e toda alteração pede um quadro.
+  const aoVazio = useRef(p.onVazio);
+  aoVazio.current = p.onVazio;
+  const toqueNoVazio = useCallback(() => aoVazio.current?.(), []);
   return (
     <div className={`palco3d ${p.telaCheia ? 'tela-cheia' : ''}`}>
       <Canvas
@@ -137,7 +141,7 @@ export function Cena3D(p: Cena3DProps) {
         dpr={dpr.current}
         camera={{ fov: 40, near: 0.05, far: 100, position: modelo?.camera ?? [0, 0, 4] }}
         gl={{ antialias: true, preserveDrawingBuffer: false, toneMapping: perfil.toneMapping, toneMappingExposure: perfil.exposicao }}
-        onPointerMissed={() => p.onVazio?.()}
+        onPointerMissed={toqueNoVazio}
         aria-label="Modelo 3D interativo"
       >
         <color attach="background" args={[perfil.fundo]} />

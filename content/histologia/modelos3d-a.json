@@ -41,7 +41,7 @@
         {
           "id": "glomerulo",
           "nome": "Glomérulo",
-          "descricao": "Tufo de capilares de endotélio fenestrado entre as arteríolas aferente e eferente, recoberto pelos podócitos. No esquema, poucas alças, sem ligações entre elas e sem o mesângio."
+          "descricao": "Tufo de capilares de endotélio fenestrado entre as arteríolas aferente e eferente, recoberto pelos podócitos. No esquema, poucas alças, com poucas ligações entre elas, e sem o mesângio."
         },
         {
           "id": "arteriola-eferente",
@@ -66,7 +66,7 @@
         {
           "id": "tubulo-contorcido-proximal",
           "nome": "Túbulo proximal (contorcido e reto)",
-          "descricao": "Começa no polo urinário. Segmento mais longo do néfron, de epitélio cúbico com borda em escova; reabsorve cerca de dois terços da água e do sódio filtrados. A porção contorcida fica no córtex; a porção reta, que o esquema mostra na mesma cor, desce do córtex à medula externa e é o início da alça de Henle."
+          "descricao": "Começa no polo urinário. Segmento mais longo do néfron, de epitélio cúbico com borda em escova; reabsorve cerca de dois terços da água e do sódio filtrados. A porção contorcida fica no córtex; a porção reta, que o esquema mostra na mesma cor, retilínea e um pouco mais fina, desce do córtex à medula externa e é o início da alça de Henle."
         },
         {
           "id": "ramo-descendente-delgado",
@@ -76,12 +76,12 @@
         {
           "id": "ramo-ascendente-espesso",
           "nome": "Ramo ascendente espesso da alça de Henle",
-          "descricao": "Segmento de epitélio cúbico impermeável à água que reabsorve NaCl pelo cotransportador Na⁺-K⁺-2Cl⁻ e dilui o fluido tubular. Sobe até o polo vascular do próprio corpúsculo. No esquema, começa pouco antes da curva da alça."
+          "descricao": "Segmento de epitélio cúbico impermeável à água que reabsorve NaCl pelo cotransportador Na⁺-K⁺-2Cl⁻ e dilui o fluido tubular. Sobe até o polo vascular do próprio corpúsculo. No esquema, começa pouco antes da curva da alça, sobe paralelo ao ramo descendente e passa por trás do corpúsculo, sem entrar nele."
         },
         {
           "id": "macula-densa",
           "nome": "Mácula densa",
-          "descricao": "Células altas e estreitas, de núcleos aglomerados, na parede do túbulo distal voltada para o polo vascular do próprio corpúsculo; sensor do NaCl do fluido tubular. Junqueira a situa no início do túbulo contorcido distal; Ross, no fim do ramo ascendente espesso; no esquema, a placa azul fica na divisa entre os dois."
+          "descricao": "Células altas e estreitas, de núcleos aglomerados, na parede do túbulo distal voltada para o polo vascular do próprio corpúsculo; sensor do NaCl do fluido tubular. Junqueira a situa no início do túbulo contorcido distal; Ross, no fim do ramo ascendente espesso. No esquema, a placa azul fica no fim do ramo ascendente espesso, e o túbulo contorcido distal começa logo depois dela."
         },
         {
           "id": "celulas-justaglomerulares",
@@ -106,7 +106,8 @@
       ],
       "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [
           {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "Texto: 8 correções (0 críticas, 2 importantes, 6 menores) em 14 trechos; ids e lista de estruturas inalterados. Principais: a estrutura laranja passa a chamar-se \"Túbulo proximal (contorcido e reto)\", porque o desenho inclui a porção reta, que desce à medula (o id continua tubulo-contorcido-proximal); avisos novos para a alça (ramos paralelos no rim, afastados no esquema; curva já em verde), para a faixa da medula (não separa externa e interna) e para o glomérulo (rede com ramificações e uniões, não alças soltas); células justaglomerulares também, em menor número, na eferente; posição da mácula densa no esquema (divisa). Desenho: nenhum P1; 3 P2 e 7 P3 no relatório (P2: ramos da alça divergentes em vez de em grampo; porção reta proximal sem distinção da contorcida; túbulo proximal contorcido tão curto quanto o distal). Origem do ducto coletor e do túbulo de conexão conferida em emb-16 e em Kobayashi 2008 (texto integral) e Georgas 2009 (resumo). Relatório: content/revisoes/modelos3d-histologia-a.md."},
-          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 correção importante: o ramo descendente delgado \"muito permeável à água (aquaporina-1)\" é a descrição clássica (Guyton; his-17), mas nas alças curtas, como a do esquema, estudos em roedores acharam pouca ou nenhuma aquaporina-1 (Nawata e Pannabecker 2018 e Kriz et al. 2026, texto integral; Zhai et al. 2007, resumo); o texto mantém a descrição clássica e acrescenta a ressalva. Conferidos em texto integral, sem mudança: túbulo proximal reabsorve cerca de dois terços do filtrado (Zhuo e Li 2013: ~65%); ramo ascendente espesso impermeável à água, com Na-K-2Cl, diluidor (Mount 2014); mácula densa no fim do ramo espesso cortical, sensor de NaCl, com o contorcido distal começando a distância variável depois dela (Mount 2014; Peti-Peterdi e Harris 2010); renina nas células da arteríola aferente (Broeker et al. 2022); NaCl e cálcio no contorcido distal (Subramanya e Ellison 2014); ADH e aquaporina-2 nas células principais (Pearce et al. 2015). Nenhum número clínico no texto. Pontos para o revisor humano no relatório content/revisoes/modelos3d-histologia-a.md."}
+          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 correção importante: o ramo descendente delgado \"muito permeável à água (aquaporina-1)\" é a descrição clássica (Guyton; his-17), mas nas alças curtas, como a do esquema, estudos em roedores acharam pouca ou nenhuma aquaporina-1 (Nawata e Pannabecker 2018 e Kriz et al. 2026, texto integral; Zhai et al. 2007, resumo); o texto mantém a descrição clássica e acrescenta a ressalva. Conferidos em texto integral, sem mudança: túbulo proximal reabsorve cerca de dois terços do filtrado (Zhuo e Li 2013: ~65%); ramo ascendente espesso impermeável à água, com Na-K-2Cl, diluidor (Mount 2014); mácula densa no fim do ramo espesso cortical, sensor de NaCl, com o contorcido distal começando a distância variável depois dela (Mount 2014; Peti-Peterdi e Harris 2010); renina nas células da arteríola aferente (Broeker et al. 2022); NaCl e cálcio no contorcido distal (Subramanya e Ellison 2014); ADH e aquaporina-2 nas células principais (Pearce et al. 2015). Nenhum número clínico no texto. Pontos para o revisor humano no relatório content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "reavaliação do desenho v2: os 3 P2 estão resolvidos e não há P1 nem P2 novo. Conferido na geometria: alça em grampo (ramos a 0,20 um do outro, da curva ao córtex); porção reta do proximal retilínea e mais fina (raio 0,052 contra 0,062), ainda na mesma cor; proximal contorcido com 3,93 contra 1,97 do distal; ramo espesso passa por trás do corpúsculo sem tocar a cápsula (folga de 0,056) nem as arteríolas e chega ao polo vascular por trás; placa da mácula densa (z de −0,10 a 0,10) inteira no ramo espesso, com o distal começando em z = 0,11; podócitos apoiados nas alças; 5 pontes no glomérulo. Texto: 4 descrições atualizadas (glomérulo, mácula densa, túbulo proximal, ramo ascendente espesso); os avisos de contexto ajustados pelo desenhista estão corretos. Restam 6 P3: ramo espesso visto através da cápsula translúcida na vista padrão, onde parece atravessar o corpúsculo; porção reta do proximal sem cor própria; espaço capsular como esfera cheia; células justaglomerulares só na aferente; faixa única da medula; ducto coletor sem outros afluentes. A mácula densa no fim do ramo espesso segue a literatura de fisiologia lida e a posição que his-17 atribui a Ross, e não a de Junqueira: decisão para o revisor humano. Relatório: content/revisoes/modelos3d-histologia-a.md, seção \"Reavaliação do desenho (v2)\"."}
         ], "humano": null }
     },
     {
@@ -115,13 +116,13 @@
       "titulo": "Alvéolo pulmonar e porção respiratória",
       "escala": "Esquema fora de escala",
       "contexto": [
-        "Proporções fora de escala: as células e os capilares estão muito ampliados em relação aos alvéolos, e o alvéolo aberto em corte foi desenhado maior que os vizinhos para mostrar a parede.",
+        "Proporções fora de escala: as células e os capilares estão muito ampliados em relação aos alvéolos, e o alvéolo aberto em corte foi desenhado maior que os vizinhos e com a boca mais estreita, para mostrar a parede.",
         "Cada alvéolo aparece como uma taça com parede própria; no pulmão, alvéolos vizinhos compartilham o mesmo septo, com a rede capilar entre os dois epitélios.",
         "Porção respiratória simplificada: um bronquíolo respiratório, um ducto alveolar e um saco alveolar, com poucos alvéolos. O ácino pulmonar real tem várias gerações de bronquíolos respiratórios e de ductos alveolares e muitos alvéolos.",
         "A rede capilar aparece como poucos tubos em anéis e alças, sem ligação desenhada com os ramos da artéria e das veias pulmonares; no septo, ela é densa. Não estão desenhados as fibras elásticas e reticulares, os fibroblastos, a película de surfactante nem o músculo liso do bronquíolo.",
         "No ducto alveolar, o músculo liso e as fibras elásticas ficam nas bordas livres dos septos, em torno das bocas dos alvéolos, e formam os botões vistos nos cortes. No esquema, aparecem como um anel fino alaranjado na boca de cada alvéolo do ducto; a luz do ducto é o volume alaranjado translúcido.",
         "No alvéolo em corte, há só três pneumócitos tipo II, espalhados pela parede, e um só macrófago, na luz. No pulmão, os tipo II ficam dispersos entre os tipo I, de preferência nos cantos onde os septos se encontram, e há macrófagos também nos septos.",
-        "O alvéolo da direita está aberto em corte (só a metade de trás); os círculos vermelhos na face cortada são capilares do septo em corte transversal.",
+        "O alvéolo maior, no alto à direita, está aberto em corte (só a metade de trás); a boca dele, voltada para o saco alveolar, aparece de perfil na vista inicial. Os círculos vermelhos na face cortada são capilares do septo em corte transversal.",
         "Cores convencionais, escolhidas para distinguir as estruturas; não são as cores da coloração por HE e não indicam oxigenação do sangue."
       ],
       "descricao": "Esquema tridimensional da porção respiratória do pulmão: bronquíolo respiratório com um alvéolo na parede, ducto alveolar com botões de músculo liso e saco alveolar cercado de alvéolos. Um alvéolo aberto em corte mostra o septo interalveolar com capilares, os pneumócitos tipo I e tipo II, um macrófago alveolar, a barreira hematoaérea e um poro alveolar.",
@@ -141,7 +142,7 @@
         {
           "id": "ducto-alveolar",
           "nome": "Ducto alveolar",
-          "descricao": "Passagem cuja parede é formada quase só por aberturas de alvéolos; entre elas, nas bordas livres dos septos, pequenos botões de músculo liso e fibras elásticas. No esquema, só esses botões estão desenhados, como três anéis alaranjados completos, que não são esfíncteres do ducto. Termina em sacos alveolares."
+          "descricao": "Passagem cuja parede é formada quase só por aberturas de alvéolos; entre elas, nas bordas livres dos septos, pequenos botões de músculo liso e fibras elásticas. No esquema, a luz do ducto é o volume alaranjado translúcido, e os botões são os anéis finos alaranjados na boca de cada alvéolo do ducto. Termina em sacos alveolares."
         },
         {
           "id": "saco-alveolar",
@@ -171,7 +172,7 @@
         {
           "id": "pneumocito-tipo-ii",
           "nome": "Pneumócito tipo II",
-          "descricao": "Célula cúbica, nos cantos dos septos, mais numerosa que o pneumócito tipo I, mas que cobre menos de 10% da superfície alveolar. Secreta o surfactante, que reduz a tensão superficial e evita o colapso do alvéolo na expiração, e é progenitora dos pneumócitos tipo I após lesão. No esquema, as três células azuis, salientes na luz, perto da boca do alvéolo."
+          "descricao": "Célula cúbica, nos cantos dos septos, mais numerosa que o pneumócito tipo I, mas que cobre menos de 10% da superfície alveolar. Secreta o surfactante, que reduz a tensão superficial e evita o colapso do alvéolo na expiração, e é progenitora dos pneumócitos tipo I após lesão. No esquema, as três células azuis do alvéolo em corte, espalhadas pela parede, embutidas nela e salientes na luz."
         },
         {
           "id": "corpos-lamelares",
@@ -186,17 +187,18 @@
         {
           "id": "barreira-hematoaerea",
           "nome": "Barreira hematoaérea",
-          "descricao": "Na parte delgada do septo: citoplasma do pneumócito tipo I, lâminas basais fundidas do epitélio e do endotélio e citoplasma da célula endotelial; muitos autores incluem a película de surfactante e líquido. No esquema, a mancha amarela sobre um capilar marca só o local; as camadas não estão desenhadas."
+          "descricao": "Na parte delgada do septo: citoplasma do pneumócito tipo I, lâminas basais fundidas do epitélio e do endotélio e citoplasma da célula endotelial; muitos autores incluem a película de surfactante e líquido. No esquema, a mancha amarela marca só o local, onde um capilar encosta no revestimento; as camadas não estão desenhadas."
         },
         {
           "id": "poro-alveolar",
           "nome": "Poro alveolar (de Kohn)",
-          "descricao": "Abertura no septo que comunica alvéolos vizinhos, aqui o alvéolo aberto e o de trás; permite ventilação colateral, mas também a passagem de bactérias e exsudato. No esquema, o anel roxo, ampliado, com um canal curto; no pulmão, é um simples orifício no septo."
+          "descricao": "Abertura no septo que comunica alvéolos vizinhos, aqui o alvéolo em corte e o alvéolo de trás do mesmo saco; permite ventilação colateral, mas também a passagem de bactérias e exsudato. No esquema, o anel roxo, ampliado, na parede de trás, perto da boca do alvéolo; no pulmão, é um simples orifício no septo."
         }
       ],
       "revisao": { "autor": "agente-arquiteto", "data": "2026-11-10", "agentes": [
           {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "Texto: 10 correções (0 críticas, 4 importantes, 6 menores) em 11 trechos, com 2 avisos novos em contexto; ids e lista de estruturas inalterados. Principais: frase ambígua do pneumócito tipo I (lia-se que o tipo II cobre a maior parte da superfície) reescrita; tipo II passa a dizer que é mais numeroso, mas cobre menos de 10% da superfície, como em his-16 (Crapo 1982: tipo I 8% e tipo II 16% das células, tipo II 7% da superfície; Knudsen e Ochs 2018: tipo I ~95%); aviso de que os três anéis completos do ducto alveolar não são esfíncteres nem cartilagem (o músculo liso fica nas bordas livres dos septos, em torno das bocas dos alvéolos); aviso de que os tipo II estão desenhados junto à boca do alvéolo, e não nos cantos dos septos. Desenho: nenhum P1; 3 P2 e 7 P3 no relatório (P2: anéis completos do ducto; tipo II em fila junto à boca; alvéolo de trás aberto para o vazio). Relatório: content/revisoes/modelos3d-histologia-a.md."},
-          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 acréscimo menor: função do surfactante (reduz a tensão superficial e evita o colapso do alvéolo na expiração) na descrição do pneumócito tipo II, como em his-16 e emb-14. Conferidos em texto integral, sem mudança: camadas da barreira hematoaérea na parte delgada do septo, com lâmina basal única compartilhada (Knudsen et al. 2023); endotélio capilar contínuo e surfactante guardado nos corpos lamelares (Knudsen e Ochs 2018); tipo II como progenitor do tipo I (Knudsen et al. 2023). O texto não cita espessura da barreira, lei de Laplace nem número clínico. Coerente com as correlações de his-16 (doença da membrana hialina, enfisema, proteinose alveolar). Relatório: content/revisoes/modelos3d-histologia-a.md."}
+          {"area": "fisiologia/patologia", "agente": "revisor-3d-fisiologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "1 acréscimo menor: função do surfactante (reduz a tensão superficial e evita o colapso do alvéolo na expiração) na descrição do pneumócito tipo II, como em his-16 e emb-14. Conferidos em texto integral, sem mudança: camadas da barreira hematoaérea na parte delgada do septo, com lâmina basal única compartilhada (Knudsen et al. 2023); endotélio capilar contínuo e surfactante guardado nos corpos lamelares (Knudsen e Ochs 2018); tipo II como progenitor do tipo I (Knudsen et al. 2023). O texto não cita espessura da barreira, lei de Laplace nem número clínico. Coerente com as correlações de his-16 (doença da membrana hialina, enfisema, proteinose alveolar). Relatório: content/revisoes/modelos3d-histologia-a.md."},
+          {"area": "histologia", "agente": "revisor-3d-histologia-v1", "data": "2026-11-10", "veredito": "aprovado-com-correcoes", "notas": "reavaliação do desenho v2: os 3 P2 estão resolvidos e não há P1 nem P2 novo. Conferido na geometria: o ducto alveolar é a luz translúcida (x de −0,95 a 0,24) mais um anel fino na boca de cada um dos 6 alvéolos do ducto, sem anéis no saco alveolar; 3 pneumócitos tipo II espalhados (polares 45°, 80° e 110°) e embutidos 0,03 na parede; poro entre o alvéolo em corte e o alvéolo de trás do mesmo saco, onde as duas paredes se fundem num septo comum (canal de 0,077; anel com 11% do diâmetro do alvéolo); capilar encostado no revestimento sob a mancha da barreira; taças do ducto encostadas. A boca do alvéolo em corte tem meia-abertura de 36° (59% do diâmetro, contra 71% nos alvéolos do ducto e 84% nos do saco): não é erro, e o aviso foi acrescentado. Texto: 6 trechos atualizados (ducto alveolar, pneumócito tipo II, barreira, poro e 2 avisos de contexto); os avisos ajustados pelo desenhista estão corretos. Restam 6 P3: boca do alvéolo em corte de perfil na vista padrão, onde parece uma parede reta entre o alvéolo e o saco; pseudópode do macrófago encostado num pneumócito tipo II e passando do plano do corte; corpos lamelares lisos; bronquíolo com um só alvéolo; capilares em anéis fechados; células pequenas na tela do celular. Relatório: content/revisoes/modelos3d-histologia-a.md, seção \"Reavaliação do desenho (v2)\"."}
         ], "humano": null }
     }
   ]
