@@ -6,6 +6,7 @@ import { topicosDe } from '../content/index.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { Barra } from '../ui/comum.tsx';
 import { nivelPorXP, tituloDoNivel } from '../core/scoring.ts';
+import { SeloNivel } from '../ui/Insignias.tsx';
 import { PLANOS } from '../core/planos.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { Icone } from '../ui/Icone.tsx';
@@ -39,7 +40,7 @@ export function Inicio() {
               <Avatar config={perfil.avatar} nome={perfil.nome} tamanho={48} decorativo />
             </Link>
             <div>
-              <p className="muted pequeno" style={{ margin: 0 }}>Olá, {perfil.nome.split(' ')[0]} · {tituloDoNivel(niv.nivel)}</p>
+              <p className="muted pequeno" style={{ margin: 0 }}>Olá, {perfil.nome.split(' ')[0]} · <SeloNivel nivel={niv.nivel} tamanho={18} /> {tituloDoNivel(niv.nivel)}</p>
               <h1 style={{ margin: '4px 0 8px' }}>Meta do dia</h1>
             </div>
           </div>

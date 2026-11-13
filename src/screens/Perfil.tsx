@@ -4,7 +4,9 @@ import { useApp } from '../data/store.ts';
 import { buscarEscolas, carregarEscolas } from '../content/index.ts';
 import type { Escola } from '../content/schema.ts';
 import { obterBackend } from '../data/backend.ts';
-import { nivelPorXP, tituloDoNivel } from '../core/scoring.ts';
+import { nivelPorXP, TITULOS_NIVEL, tituloDoNivel } from '../core/scoring.ts';
+import { Medalha, SeloNivel } from '../ui/Insignias.tsx';
+import { indiceDoSelo } from '../ui/insignias.ts';
 import { PLANOS } from '../core/planos.ts';
 import { db } from '../data/db.ts';
 import { Barra } from '../ui/comum.tsx';
@@ -49,7 +51,7 @@ export function PerfilTela() {
           <Avatar config={perfil.avatar} nome={perfil.nome} tamanho={72} />
           <div style={{ minWidth: 0, flex: 1 }}>
             <h1 style={{ margin: 0 }}>{perfil.nome}</h1>
-            <span className="muted">{tituloDoNivel(niv.nivel)} · Nível {niv.nivel}</span>
+            <span className="muted titulo-nivel"><SeloNivel nivel={niv.nivel} tamanho={26} /> {tituloDoNivel(niv.nivel)} · Nível {niv.nivel}</span>
           </div>
         </div>
         <Link to="/perfil/avatar" className="btn pequeno" style={{ alignSelf: 'flex-start' }}>
@@ -57,6 +59,7 @@ export function PerfilTela() {
           {novos > 0 && <span className="selo novo-item" style={{ marginLeft: 8 }}>{novos === 1 ? '1 item novo' : `${novos} itens novos`}</span>}
         </Link>
         <Barra valor={niv.progresso} rotulo="Progresso até o próximo nível" />
+        <Carreira nivel={niv.nivel} />
         <div className="grade g3" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
           <Stat rotulo="XP total" valor={xpTotal.toLocaleString('pt-BR')} />
           <Stat rotulo="Sequência" valor={<>{sequencia} <Icone nome="fogo" tamanho={18} className="acento" /></>} />
@@ -109,6 +112,25 @@ export function PerfilTela() {
         <br />
         {MARCA.nome} v{MARCA.versao} · ferramenta de estudo; não use para decisões clínicas.
       </p>
+    </div>
+  );
+}
+
+/** Os oito títulos de nível em fila: os já alcançados coloridos, o atual em destaque e os que ainda vêm apagados. */
+function Carreira({ nivel }: { nivel: number }) {
+  const atual = indiceDoSelo(nivel);
+  const proximo = TITULOS_NIVEL[atual + 1];
+  return (
+    <div className="carreira">
+      <ol aria-label="Títulos de nível">
+        {TITULOS_NIVEL.map((t, i) => (
+          <li key={t.min} className={i === atual ? 'atual' : ''} title={`${t.titulo} · nível ${t.min}`}>
+            <SeloNivel indice={i} tamanho={i === atual ? 34 : 26} ativo={i <= atual} />
+            <span className="so-leitor">{t.titulo}, nível {t.min}: {i < atual ? 'alcançado' : i === atual ? 'título atual' : 'ainda por vir'}</span>
+          </li>
+        ))}
+      </ol>
+      <span className="muted pequeno">{proximo ? `Próximo título: ${proximo.titulo}, no nível ${proximo.min}` : 'Você chegou ao título mais alto'}</span>
     </div>
   );
 }
@@ -303,11 +325,10 @@ function Conquistas() {
       </div>
       <div className="grade" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 8 }}>
         {visiveis.map((c) => (
-          <div key={c.id} className="pilha" style={{ gap: 4, padding: 10, borderRadius: 12, background: 'var(--bg-elev)', border: '1px solid var(--border)', opacity: c.obtida ? 1 : 0.65 }} title={c.descricao}>
-            <Icone nome={c.icone} tamanho={26} className={c.obtida ? 'acento' : 'apagado'} />
+          <div key={c.id} className={`conquista ${c.obtida ? 'obtida' : ''}`}>
+            <Medalha id={c.id} icone={c.icone} nome={c.nome} obtida={c.obtida} progresso={c.valor} />
             <strong className="pequeno">{c.nome}</strong>
-            <span className="muted" style={{ fontSize: '0.75rem' }}>{c.descricao}</span>
-            {!c.obtida && <Barra valor={c.valor} rotulo={`Progresso: ${c.nome}`} />}
+            <span className="muted descricao">{c.descricao}</span>
           </div>
         ))}
       </div>

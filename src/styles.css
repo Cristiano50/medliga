@@ -367,6 +367,18 @@ p { margin: 0 0 0.75em; }
 .icone-svg.acento { color: var(--accent); }
 .icone-svg.apagado { color: var(--muted); }
 .dificuldade { display: inline-block; vertical-align: -0.05em; }
+
+/* medalhas das conquistas e selos dos títulos de nível (src/ui/insignias.ts) */
+.medalha, .selo-nivel { display: inline-block; flex: none; }
+.selo-nivel { vertical-align: -0.28em; }
+.titulo-nivel { display: inline-flex; align-items: center; gap: 6px; }
+.conquista { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 10px; border-radius: 12px; background: var(--bg-elev); border: 1px solid var(--border); text-align: center; }
+.conquista .descricao { font-size: 0.75rem; }
+.conquista:not(.obtida) strong { color: var(--text-2); }
+.carreira { display: flex; flex-direction: column; gap: 6px; }
+.carreira ol { display: flex; align-items: center; gap: 6px; margin: 0; padding: 0; list-style: none; flex-wrap: wrap; }
+.carreira li { display: inline-flex; }
+.carreira li.atual { padding: 3px; border-radius: 999px; background: var(--surface-2); box-shadow: 0 0 0 1px var(--border); }
 .guia3d .simbolo { stroke-width: 2.4; opacity: 1; stroke-linecap: round; stroke-linejoin: round; }
 
 @media (min-width: 760px) {
