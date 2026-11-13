@@ -8,6 +8,7 @@ import { Barra } from '../../ui/comum.tsx';
 import { Visor, type Destaque } from './Visor.tsx';
 import { LAMINAS_RENDER } from './laminas/index.ts';
 import { contracaoDe, toqueAceito } from './regras.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 const ALVOS = 10;
 const VIDAS = 3;
@@ -78,7 +79,7 @@ export default function IdentifiqueLaminaTela() {
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete" aria-hidden>{vidas > 0 ? '🔬' : '💔'}</div>
+          <div className="confete"><Icone nome={vidas > 0 ? 'microscopio' : 'coracao-partido'} tamanho={64} /></div>
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} estruturas encontradas</p>
         </div>
@@ -100,17 +101,17 @@ export default function IdentifiqueLaminaTela() {
   const titulo = !resultado
     ? ''
     : !resultado.certo
-      ? `❌ Você tocou em: ${nome(resultado.tocado)}`
+      ? `Você tocou em: ${nome(resultado.tocado)}`
       : resultado.tocado === alvo.estruturaId
-        ? '✅ Encontrou!'
-        : `✅ Isso! (${minuscula(nome(resultado.tocado))}, parte ${contracaoDe(nome(alvo.estruturaId))})`;
+        ? 'Encontrou!'
+        : `Isso! (${minuscula(nome(resultado.tocado))}, parte ${contracaoDe(nome(alvo.estruturaId))})`;
 
   return (
     <div className="pilha">
       <div className="linha entre">
-        <Link to="/" className="btn fantasma pequeno" aria-label="Sair">✕</Link>
+        <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={i / alvos.length} rotulo="Progresso" /></div>
-        <span className="vidas" aria-label={`${vidas} vidas`}>{'❤️'.repeat(Math.max(0, vidas))}{'🤍'.repeat(VIDAS - Math.max(0, vidas))}</span>
+        <span className="vidas" role="img" aria-label={`${Math.max(0, vidas)} de ${VIDAS} vidas`}>{Array.from({ length: VIDAS }, (_, i) => <Icone key={i} nome={i < vidas ? 'coracao' : 'coracao-vazio'} tamanho={18} />)}</span>
       </div>
       <div className="card" style={{ padding: '12px 16px' }}>
         <span className="muted pequeno">{lamina.titulo} · {lamina.coloracao}</span>

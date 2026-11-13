@@ -6,6 +6,7 @@ import { useProgresso } from '../data/progresso.ts';
 import { useApp } from '../data/store.ts';
 import { contarAvancadas } from '../core/session.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 export function DisciplinaTela() {
   const { id = '' } = useParams();
@@ -30,7 +31,7 @@ export function DisciplinaTela() {
     <div className="pilha">
       <header>
         <p className="muted pequeno" style={{ margin: 0 }}>{d.jogabilidade}</p>
-        <h1>{d.icone} {d.nome}</h1>
+        <h1><Icone nome={d.icone} tamanho={28} /> {d.nome}</h1>
         <p className="muted">{d.descricao}</p>
         <Barra valor={dominioMedio} rotulo="Domínio da disciplina" />
         <p className="muted pequeno" style={{ marginTop: 6 }}>
@@ -39,10 +40,10 @@ export function DisciplinaTela() {
       </header>
 
       <div className="grade g2">
-        {d.jogos?.[0] && <Link to={d.jogos[0].rota} className="btn primario">{d.jogos[0].icone} {d.jogos[0].nome}</Link>}
-        <Link to={`/jogar/quiz?modo=plantao&disciplina=${d.id}`} className="btn ouro">⚡ Plantão relâmpago</Link>
+        {d.jogos?.[0] && <Link to={d.jogos[0].rota} className="btn primario"><Icone nome={d.jogos[0].icone} /> {d.jogos[0].nome}</Link>}
+        <Link to={`/jogar/quiz?modo=plantao&disciplina=${d.id}`} className="btn ouro"><Icone nome="raio" /> Plantão relâmpago</Link>
         {avancadas >= 10 && (
-          <Link to={`/jogar/quiz?modo=estudo&disciplina=${d.id}&nivel=avancado`} className="btn">🔥 Desafio avançado · {avancadas} questões difíceis</Link>
+          <Link to={`/jogar/quiz?modo=estudo&disciplina=${d.id}&nivel=avancado`} className="btn"><Icone nome="fogo" /> Desafio avançado · {avancadas} questões difíceis</Link>
         )}
       </div>
 
@@ -52,7 +53,7 @@ export function DisciplinaTela() {
           <div className="grade g2">
             {d.jogos!.map((j) => (
               <Link key={j.rota} to={j.rota} className="card disc-card" style={{ ['--cor' as string]: j.cor }}>
-                <span className="icone" aria-hidden>{j.icone}</span>
+                <span className="icone" style={{ color: j.cor }}><Icone nome={j.icone} tamanho={32} /></span>
                 <strong>{j.nome}</strong>
                 <span className="muted pequeno">{j.descricao}</span>
               </Link>
@@ -69,7 +70,7 @@ export function DisciplinaTela() {
           const feito = (p?.dominio ?? 0) >= 0.6;
           return (
             <Link key={t.id} to={`/topico/${t.id}`} className="card topico-item">
-              <span className={`num ${feito ? 'feito' : ''}`}>{feito ? '✓' : String(t.ordem).padStart(2, '0')}</span>
+              <span className={`num ${feito ? 'feito' : ''}`}>{feito ? <Icone nome="visto" tamanho={18} rotulo="Tópico dominado" /> : String(t.ordem).padStart(2, '0')}</span>
               <span style={{ flex: 1, minWidth: 0 }}>
                 <strong>{t.titulo}</strong>
                 {t.subtitulo && <span className="muted pequeno"> — {t.subtitulo}</span>}
@@ -79,7 +80,7 @@ export function DisciplinaTela() {
                 </div>
                 <Barra valor={p?.dominio ?? 0} rotulo={`Domínio de ${t.titulo}`} />
               </span>
-              <span aria-hidden>›</span>
+              <Icone nome="seta-direita" tamanho={18} />
             </Link>
           );
         })}

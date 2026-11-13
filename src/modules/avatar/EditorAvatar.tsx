@@ -9,6 +9,7 @@ import type { AvatarConfig, Categoria } from './tipos.ts';
 import { avisoDeContraste, chaveItem, comoLiberar, itensLiberados, itensNovos, liberado, normalizarAvatar, restringirAoLiberado, sortearAvatar } from './regras.ts';
 import { COBERTURAS } from './pecas.ts';
 import { useProgressoAvatar } from './useProgressoAvatar.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 const GRUPOS: { id: string; nome: string; categorias: Categoria[] }[] = [
   { id: 'rosto', nome: 'Rosto', categorias: ['pele', 'rosto', 'oculos', 'barba', 'apoio'] },
@@ -23,15 +24,6 @@ const NOTAS: Partial<Record<Categoria, string>> = {
   acessorio: 'Itens de jogo usados no corpo, liberados por nível e por conquistas.',
   paramento: 'Itens de jogo usados na cabeça ou no rosto. Ficam por cima do que você já usa: a touca vai sobre o hijab e os óculos de proteção sobre os seus óculos.',
 };
-
-function Cadeado() {
-  return (
-    <svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true" style={{ flex: 'none' }}>
-      <path d="M3.5 5.5V4a2.5 2.5 0 0 1 5 0v1.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-      <rect x="2" y="5.5" width="8" height="5.5" rx="1.4" fill="currentColor" />
-    </svg>
-  );
-}
 
 function Marcado() {
   return (
@@ -214,7 +206,7 @@ export default function EditorAvatar() {
                         </span>
                         {bloqueado && regra && (
                           <span className="regra">
-                            <Cadeado />
+                            <Icone nome="cadeado" tamanho={12} />
                             <span>
                               <span className="so-leitor">Bloqueado. </span>
                               {regra}

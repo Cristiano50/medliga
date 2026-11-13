@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { db, uuid, type Reporte } from '../data/db.ts';
 import { sincronizar } from '../data/sync.ts';
+import { Icone } from './Icone.tsx';
 
 const MOTIVOS: { id: Reporte['motivo']; rotulo: string }[] = [
   { id: 'gabarito', rotulo: 'Gabarito errado' },
@@ -21,7 +22,7 @@ export function ReportarErro({ questaoId }: { questaoId: string }) {
   if (!aberto)
     return (
       <button className="btn fantasma pequeno" style={{ alignSelf: 'flex-start' }} onClick={() => setAberto(true)}>
-        ⚑ Reportar erro nesta questão
+        <Icone nome="bandeira" tamanho={16} /> Reportar erro nesta questão
       </button>
     );
   return (

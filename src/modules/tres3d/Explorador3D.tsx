@@ -7,6 +7,7 @@ import { topico } from '../../content/index.ts';
 import { SeloRevisao } from '../../ui/comum.tsx';
 import { Cena3D } from '../embriologia/Cena3D.tsx';
 import { CATALOGOS, topicoDaEstrutura, type Disciplina3D } from './catalogo.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 const normalizar = (texto: string) => texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLocaleLowerCase('pt-BR').trim();
 
@@ -72,7 +73,7 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
     <div className="pilha lab3d">
       <div className="linha entre quebra">
         <div>
-          <Link to={`/disciplina/${catalogo.disciplina}`} className="muted pequeno">‹ {catalogo.nome}</Link>
+          <Link to={`/disciplina/${catalogo.disciplina}`} className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> {catalogo.nome}</Link>
           <h1 style={{ margin: '4px 0 0' }}>Laboratório 3D</h1>
         </div>
         <SeloRevisao revisao={item.revisao} />
@@ -80,12 +81,12 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
 
       <div className="card pilha" style={{ gap: 6 }}>
         <div className="linha entre">
-          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice <= 0} aria-label="Modelo anterior">◀</button>
+          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice <= 0} aria-label="Modelo anterior"><Icone nome="anterior" tamanho={16} /></button>
           <div className="centro" style={{ flex: 1 }}>
             <strong>{item.titulo}</strong>
             <div className="muted pequeno">{indice + 1} de {itens.length} modelos</div>
           </div>
-          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice >= itens.length - 1} aria-label="Próximo modelo">▶</button>
+          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice >= itens.length - 1} aria-label="Próximo modelo"><Icone nome="proximo" tamanho={16} /></button>
         </div>
         {itens.length > 1 && (
           <div ref={faixaModelos} className="linha quebra seletor-modelos3d" role="group" aria-label="Modelos" style={{ gap: 6 }}>
@@ -155,11 +156,11 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
               {modelo.partes.includes(selecionado) && <span className="numero3d">{numero(selecionado)}</span>}
               <div><span className="muted pequeno">Estrutura selecionada</span><h2>{nomes[selecionado] ?? selecionado}</h2></div>
             </div>
-            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar">✕</button>
+            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar"><Icone nome="fechar" tamanho={16} /></button>
           </div>
           {estruturaSel?.descricao && <p className="muted" style={{ margin: 0 }}>{estruturaSel.descricao}</p>}
           {topicoSel && topico(topicoSel) && (
-            <Link to={`/topico/${topicoSel}`} className="pequeno">Estudar: {topico(topicoSel)!.titulo} ›</Link>
+            <Link to={`/topico/${topicoSel}`} className="pequeno">Estudar: {topico(topicoSel)!.titulo} <Icone nome="seta-direita" tamanho={14} /></Link>
           )}
         </section>
       )}
@@ -192,9 +193,9 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
       </div>
 
       <div className="grade g2">
-        <Link to={`${catalogo.rotaJogo}?${catalogo.parametro}=${item.id}`} className="btn primario">🎯 Desafio: identifique neste modelo</Link>
+        <Link to={`${catalogo.rotaJogo}?${catalogo.parametro}=${item.id}`} className="btn primario"><Icone nome="alvo" /> Desafio: identifique neste modelo</Link>
         {item.topicos[0] && topico(item.topicos[0]) && (
-          <Link to={`/topico/${item.topicos[0]}`} className="btn">📘 Estudar o tópico</Link>
+          <Link to={`/topico/${item.topicos[0]}`} className="btn"><Icone nome="livro" /> Estudar o tópico</Link>
         )}
       </div>
     </div>

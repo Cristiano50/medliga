@@ -5,6 +5,7 @@ import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { contarAvancadas } from '../core/session.ts';
 import { Barra, Markdown, SeloRevisao } from '../ui/comum.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 type Aba = 'estudo' | 'estruturas' | 'clinica' | 'fontes';
 
@@ -24,7 +25,7 @@ export function TopicoTela() {
   return (
     <div className="pilha">
       <header>
-        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno">‹ {disciplina(t.disciplina)?.nome ?? 'Voltar'}</Link>
+        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> {disciplina(t.disciplina)?.nome ?? 'Voltar'}</Link>
         <h1 style={{ marginTop: 6 }}>{t.titulo}</h1>
         {t.subtitulo && <p className="muted">{t.subtitulo}</p>}
         <div className="linha quebra">
@@ -44,7 +45,7 @@ export function TopicoTela() {
         <div className="grade g2">
           <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}`} className="btn primario">Praticar questões</Link>
           {avancadas >= 3 && (
-            <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}&nivel=avancado`} className="btn">🔥 Desafio avançado ({avancadas})</Link>
+            <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}&nivel=avancado`} className="btn"><Icone nome="fogo" /> Desafio avançado ({avancadas})</Link>
           )}
           {estagios.length > 0 && (
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>

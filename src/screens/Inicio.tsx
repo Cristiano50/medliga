@@ -8,6 +8,7 @@ import { Barra } from '../ui/comum.tsx';
 import { nivelPorXP, tituloDoNivel } from '../core/scoring.ts';
 import { PLANOS } from '../core/planos.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 const META_DIARIA_XP = 60;
 
@@ -60,7 +61,7 @@ export function Inicio() {
               className={d.id === disc.id ? 'ativa' : ''}
               onClick={() => void salvarPerfil({ disciplinaAtual: d.id })}
             >
-              {d.icone} {d.nome}
+              <Icone nome={d.icone} tamanho={18} /> {d.nome}
             </button>
           ))}
         </div>
@@ -75,7 +76,7 @@ export function Inicio() {
             <strong>{proximo.titulo}</strong>
             <Barra valor={progresso.get(proximo.id)?.dominio ?? 0} rotulo="Domínio do tópico" />
           </span>
-          <span aria-hidden>›</span>
+          <Icone nome="seta-direita" tamanho={18} />
         </Link>
       )}
       {!proximo && <div className="aviso info">O conteúdo de {disc.nome} está sendo preparado.</div>}
@@ -84,26 +85,26 @@ export function Inicio() {
         <h2>Jogar agora</h2>
         <div className="grade g2">
           <Link to={`/jogar/quiz?modo=plantao&disciplina=${disc.id}`} className="card disc-card" style={{ ['--cor' as string]: 'var(--accent)' }}>
-            <span className="icone" aria-hidden>⚡</span>
+            <span className="icone" style={{ color: 'var(--accent)' }}><Icone nome="raio" tamanho={32} /></span>
             <strong>Plantão relâmpago</strong>
             <span className="muted pequeno">90 segundos de questões rápidas de {disc.nome.toLowerCase()}. Vale pontos para o ranking da sua escola.</span>
             {plantoesRestantes !== null && <span className="selo">{plantoesRestantes} plantão(ões) hoje no plano gratuito</span>}
           </Link>
           {(disc.jogos ?? []).map((j) => (
             <Link key={j.rota} to={j.rota} className="card disc-card" style={{ ['--cor' as string]: j.cor }}>
-              <span className="icone" aria-hidden>{j.icone}</span>
+              <span className="icone" style={{ color: j.cor }}><Icone nome={j.icone} tamanho={32} /></span>
               <strong>{j.nome}</strong>
               <span className="muted pequeno">{j.descricao}</span>
             </Link>
           ))}
           <Link to="/duelos" className="card disc-card" style={{ ['--cor' as string]: 'var(--danger)' }}>
-            <span className="icone" aria-hidden>⚔️</span>
+            <span className="icone" style={{ color: 'var(--danger)' }}><Icone nome="duelo" tamanho={32} /></span>
             <strong>Duelo</strong>
             <span className="muted pequeno">Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais.</span>
           </Link>
           {vencidas > 0 && (
             <Link to={`/jogar/quiz?modo=revisao&disciplina=${disc.id}`} className="card disc-card" style={{ ['--cor' as string]: 'var(--success)' }}>
-              <span className="icone" aria-hidden>🔁</span>
+              <span className="icone" style={{ color: 'var(--success)' }}><Icone nome="revisao" tamanho={32} /></span>
               <strong>Revisão do dia</strong>
               <span className="muted pequeno">{vencidas} questão(ões) de {disc.nome.toLowerCase()} para revisar hoje (revisão espaçada).</span>
             </Link>
@@ -117,13 +118,13 @@ export function Inicio() {
           {DISCIPLINAS.map((d) =>
             d.status === 'disponivel' ? (
               <Link key={d.id} to={`/disciplina/${d.id}`} className="card disc-card" style={{ ['--cor' as string]: d.cor }}>
-                <span className="icone" aria-hidden>{d.icone}</span>
+                <span className="icone" style={{ color: d.cor }}><Icone nome={d.icone} tamanho={32} /></span>
                 <strong>{d.nome}</strong>
                 <span className="muted pequeno">{d.jogabilidade}</span>
               </Link>
             ) : (
               <div key={d.id} className="card disc-card bloqueado" style={{ ['--cor' as string]: d.cor }} aria-disabled>
-                <span className="icone" aria-hidden>{d.icone}</span>
+                <span className="icone" style={{ color: d.cor }}><Icone nome={d.icone} tamanho={32} /></span>
                 <strong>{d.nome}</strong>
                 <span className="muted pequeno">{d.jogabilidade}</span>
                 <span className="selo breve">Em breve</span>

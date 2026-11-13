@@ -9,11 +9,12 @@ import { podeIniciar } from '../core/planos.ts';
 import { db, uuid, type RegistroResposta } from '../data/db.ts';
 import { useApp } from '../data/store.ts';
 import { QuestaoView, respostaCompleta } from '../games/questoes.tsx';
-import { Barra } from '../ui/comum.tsx';
+import { Barra, Dificuldade } from '../ui/comum.tsx';
 import { Carregando } from '../ui/Carregando.tsx';
 import { ReportarErro } from '../ui/ReportarErro.tsx';
 import { obterBackend, vencedorDuelo, type Duelo } from '../data/backend.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 const DURACAO_PLANTAO_MS = 90_000;
 const LIMITE_QUESTAO_PLANTAO_MS = 15_000;
@@ -195,7 +196,7 @@ export function QuizTela() {
   if (!liberado)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
-        <div className="confete" aria-hidden>⏸️</div>
+        <div className="confete"><Icone nome="pausa" tamanho={64} /></div>
         <h2>Limite diário do plano gratuito atingido</h2>
         <p className="muted">
           Você já usou suas {modo === 'plantao' ? 'partidas de plantão' : 'sessões de questões'} de hoje. Volte amanhã ou assine o Premium para jogar sem limites.
@@ -209,8 +210,9 @@ export function QuizTela() {
   if (itens.length === 0)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
+        {modo === 'revisao' && <div className="confete"><Icone nome="festa" tamanho={64} /></div>}
         <h2>{modo === 'revisao' ? 'Nada para revisar agora' : 'Sem questões disponíveis'}</h2>
-        <p className="muted">{modo === 'revisao' ? 'Você está em dia com a revisão espaçada. 🎉' : 'O conteúdo deste tópico ainda está sendo preparado.'}</p>
+        <p className="muted">{modo === 'revisao' ? 'Você está em dia com a revisão espaçada.' : 'O conteúdo deste tópico ainda está sendo preparado.'}</p>
         <Link to="/" className="btn primario">Voltar ao início</Link>
       </div>
     );
@@ -255,7 +257,7 @@ export function QuizTela() {
   return (
     <div className="pilha">
       <div className="linha entre">
-        <button className="btn fantasma pequeno" onClick={() => (registros.length ? setFim(true) : nav(-1))} aria-label="Encerrar sessão">✕</button>
+        <button className="btn fantasma pequeno" onClick={() => (registros.length ? setFim(true) : nav(-1))} aria-label="Encerrar sessão"><Icone nome="fechar" tamanho={16} /></button>
         <div style={{ flex: 1 }}>
           {modo === 'plantao' ? (
             <Barra valor={restanteMs / DURACAO_PLANTAO_MS} ouro rotulo="Tempo restante" />
@@ -270,8 +272,8 @@ export function QuizTela() {
         )}
       </div>
       <div className="linha entre pequeno muted">
-        <span>{modo === 'plantao' ? '⚡ Plantão relâmpago' : modo === 'revisao' ? '🔁 Revisão do dia' : avancado ? '🔥 Desafio avançado' : '📘 Estudo'} · dificuldade {'●'.repeat(q.dificuldade)}{'○'.repeat(5 - q.dificuldade)}</span>
-        <span>{combo >= 2 ? `🔥 combo ×${combo} · ` : ''}{xpSessao} XP</span>
+        <span><Icone nome={modo === 'plantao' ? 'raio' : modo === 'revisao' ? 'revisao' : avancado ? 'fogo' : 'livro'} tamanho={16} /> {modo === 'plantao' ? 'Plantão relâmpago' : modo === 'revisao' ? 'Revisão do dia' : avancado ? 'Desafio avançado' : 'Estudo'} · dificuldade <Dificuldade nivel={q.dificuldade} /></span>
+        <span>{combo >= 2 && <><Icone nome="fogo" tamanho={16} className="acento" /> combo ×{combo} · </>}{xpSessao} XP</span>
       </div>
 
       <QuestaoView
@@ -288,7 +290,7 @@ export function QuizTela() {
 
       {revelada && modo !== 'plantao' && ultimo && (
         <div className={`feedback ${ultimo.correta ? 'ok' : 'erro'}`} role="status">
-          <h3>{ultimo.correta ? `✅ Correto! +${ultimo.xp} XP` : '❌ Não foi dessa vez'}</h3>
+          <h3><Icone nome={ultimo.correta ? 'certo' : 'errado'} className={ultimo.correta ? 'ok' : 'erro'} /> {ultimo.correta ? `Correto! +${ultimo.xp} XP` : 'Não foi dessa vez'}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{q.explicacao}</p>
           {q.referencia && <p className="muted pequeno" style={{ margin: '8px 0 0' }}>Fonte: {q.referencia}</p>}
           <div style={{ marginTop: 8 }}><ReportarErro key={q.id} questaoId={q.id} /></div>
@@ -321,7 +323,7 @@ function Resumo({ registros, modo, onSair }: { registros: Registro[]; modo: Modo
   return (
     <div className="pilha" style={{ marginTop: 12 }}>
       <div className="card destaque centro pilha">
-        <div className="confete" aria-hidden>{pct >= 80 ? '🏆' : pct >= 50 ? '💪' : '📚'}</div>
+        <div className="confete"><Icone nome={pct >= 80 ? 'ranking' : pct >= 50 ? 'tendencia' : 'estudar'} tamanho={64} /></div>
         <h1 style={{ margin: 0 }}>+{xp} XP</h1>
         <p className="muted" style={{ margin: 0 }}>
           {acertos} de {registros.length} corretas ({pct}%)
@@ -368,7 +370,7 @@ function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registro
   return (
     <div className="pilha" style={{ marginTop: 12 }}>
       <div className="card destaque centro pilha">
-        <div className="confete" aria-hidden>{v === 'eu' ? '🏆' : v === 'adversario' ? '🥈' : v === 'empate' ? '🤝' : '⏳'}</div>
+        <div className="confete"><Icone nome={v === 'eu' ? 'ranking' : v === 'adversario' ? 'medalha' : v === 'empate' ? 'empate' : 'ampulheta'} tamanho={64} /></div>
         <h1 style={{ margin: 0 }}>
           {v === 'eu' ? 'Você venceu!' : v === 'adversario' ? 'Não foi dessa vez' : v === 'empate' ? 'Empate' : 'Aguardando o adversário'}
         </h1>

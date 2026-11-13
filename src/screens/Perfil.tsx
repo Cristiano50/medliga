@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../data/store.ts';
 import { buscarEscolas, carregarEscolas } from '../content/index.ts';
@@ -14,6 +14,7 @@ import { carregarEstatisticas } from '../data/estatisticas.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { itensNovos } from '../modules/avatar/regras.ts';
 import { useProgressoAvatar } from '../modules/avatar/useProgressoAvatar.ts';
+import { Icone } from '../ui/Icone.tsx';
 
 export function PerfilTela() {
   const perfil = useApp((s) => s.perfil)!;
@@ -58,7 +59,7 @@ export function PerfilTela() {
         <Barra valor={niv.progresso} rotulo="Progresso até o próximo nível" />
         <div className="grade g3" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
           <Stat rotulo="XP total" valor={xpTotal.toLocaleString('pt-BR')} />
-          <Stat rotulo="Sequência" valor={`${sequencia} 🔥`} />
+          <Stat rotulo="Sequência" valor={<>{sequencia} <Icone nome="fogo" tamanho={18} className="acento" /></>} />
           <Stat rotulo="Acertos" valor={stats.respostas ? `${Math.round((stats.acertos / stats.respostas) * 100)}%` : '—'} />
         </div>
       </div>
@@ -112,7 +113,7 @@ export function PerfilTela() {
   );
 }
 
-function Stat({ rotulo, valor }: { rotulo: string; valor: string }) {
+function Stat({ rotulo, valor }: { rotulo: string; valor: ReactNode }) {
   return (
     <div className="centro">
       <div style={{ fontWeight: 800, fontSize: '1.2rem' }}>{valor}</div>
@@ -272,9 +273,9 @@ function AcessoProfessor() {
     <Link to="/painel" className="card linha entre" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div>
         <span className="muted pequeno">Plano institucional</span>
-        <div><strong>📊 Painel do professor</strong></div>
+        <div><strong><Icone nome="grafico" /> Painel do professor</strong></div>
       </div>
-      <span aria-hidden>›</span>
+      <Icone nome="seta-direita" tamanho={18} />
     </Link>
   );
 }
@@ -303,7 +304,7 @@ function Conquistas() {
       <div className="grade" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 8 }}>
         {visiveis.map((c) => (
           <div key={c.id} className="pilha" style={{ gap: 4, padding: 10, borderRadius: 12, background: 'var(--bg-elev)', border: '1px solid var(--border)', opacity: c.obtida ? 1 : 0.65 }} title={c.descricao}>
-            <span style={{ fontSize: '1.4rem', filter: c.obtida ? 'none' : 'grayscale(1)' }} aria-hidden>{c.icone}</span>
+            <Icone nome={c.icone} tamanho={26} className={c.obtida ? 'acento' : 'apagado'} />
             <strong className="pequeno">{c.nome}</strong>
             <span className="muted" style={{ fontSize: '0.75rem' }}>{c.descricao}</span>
             {!c.obtida && <Barra valor={c.valor} rotulo={`Progresso: ${c.nome}`} />}

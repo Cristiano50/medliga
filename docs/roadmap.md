@@ -19,7 +19,7 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 ## Revisão dos gráficos (em andamento, 13/11/2026)
 Cada etapa: desenho no canvas do Wonder (arquivo "MedLiga — Gráficos") → revisão independente → código → testes.
 - [x] **1. Avatares montáveis** com itens liberados por nível e por conquista (perfil, início, ranking, duelo, navegação). Pendente: conferência por pessoas que usam as peças (hijab, turbante, dastar, quipá, tranças, dreads, cabelo crespo, aparelho auditivo, implante coclear, cordão de girassol) e teste com leitor de tela real. Não entraram: barba com cor própria, lenço, filá/kufi, boné, marcas do rosto, tranças rentes; escolha múltipla em "apoio". Decisão do Cristiano em aberto: nomes neutros para os títulos de nível (Calouro, Monitor, Diretor de Liga, Interno, Preceptor, Professor Titular).
-- [ ] 2. Ícones próprios no lugar dos emojis (navegação, jogos, disciplinas, ações).
+- [x] **2. Ícones próprios** no lugar dos emojis: 52 ícones (navegação, jogos, respostas e ações, resultados, conquistas, disciplinas), em `src/ui/icones.ts`, e na biblioteca do arquivo do Wonder. Pendente: revisão independente dos desenhos e teste com leitor de tela real. As conquistas ainda usam ícones do conjunto; as medalhas próprias são a etapa 3.
 - [ ] 3. Medalhas das conquistas e selos dos títulos de nível.
 - [ ] 4. Telas de resultado e estados vazios, com animação leve (respeitando "reduzir movimento").
 - [ ] 5. Cartões das disciplinas e tela inicial.

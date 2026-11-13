@@ -37,6 +37,7 @@
 - `src/data/` — IndexedDB (`db.ts`), estado global (`store.ts`), servidor (`backend.ts`: supabase/demo/offline), sincronização (`sync.ts`).
 - `src/modules/embriologia/` — laboratório 3D, jogo Identifique, modelos por estágio (`modelos/`), núcleo de interação 3D (`tres/nucleo.tsx`).
 - `src/games/` — questões (4 tipos), linha do tempo, camadas germinativas.
+- `src/ui/` — peças comuns da interface: `icones.ts` (ícones próprios, desenhados por código numa grade de 24×24; nenhum vem de biblioteca de terceiros) e `Icone.tsx` (componente: decorativo por padrão, vira imagem com nome quando recebe `rotulo`), além do layout e dos selos. A interface não usa emoji: `tests/icones.test.tsx` falha se algum aparecer em `src/` ou no `index.html`.
 - `src/modules/avatar/` — avatar do jogador: peças (`pecas.ts`), catálogo e regras de desbloqueio (`catalogo.ts`, `regras.ts`), montagem das camadas (`montar.ts`), componente (`Avatar.tsx`) e editor (`EditorAvatar.tsx`, rota `/perfil/avatar`).
 - `supabase/migrations/` — esquema, funções e permissões; `supabase/tests/` — testes SQL.
 - `scripts/` — validação de conteúdo, seed do servidor, estado da revisão, ícones.

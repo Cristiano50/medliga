@@ -111,7 +111,7 @@ p { margin: 0 0 0.75em; }
   font-weight: 600;
   min-height: 56px;
 }
-.navbar a .ico { font-size: 1.3rem; line-height: 1; }
+.navbar a .ico { line-height: 1; }
 .navbar a.ativo { color: var(--primary); }
 
 /* ---------- componentes ---------- */
@@ -221,7 +221,7 @@ p { margin: 0 0 0.75em; }
 .sem-nav .rodape-acao { bottom: var(--safe-bottom); }
 
 .disc-card { position: relative; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: inherit; overflow: hidden; }
-.disc-card .icone { font-size: 1.8rem; }
+.disc-card .icone { display: inline-flex; align-self: flex-start; color: var(--cor, var(--primary)); }
 .disc-card.bloqueado { opacity: 0.6; }
 .disc-card::after { content: ''; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--cor, var(--primary)); }
 
@@ -353,12 +353,21 @@ p { margin: 0 0 0.75em; }
 .ordenavel .pos { flex: none; width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; background: var(--surface-3); font-weight: 800; font-size: 0.85rem; }
 .ordenavel .texto { flex: 1; }
 .ordenavel .setas { display: flex; flex-direction: column; gap: 4px; }
-.ordenavel .setas button { width: 40px; height: 32px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); cursor: pointer; }
+.ordenavel .setas button { display: grid; place-items: center; width: 40px; height: 32px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); cursor: pointer; }
 .ordenavel.certo { border-color: var(--success); }
 .ordenavel.errado { border-color: var(--danger); }
 .cronometro { font-variant-numeric: tabular-nums; font-weight: 800; }
-.vidas { letter-spacing: 2px; }
-.confete { font-size: 3rem; text-align: center; }
+.vidas { display: inline-flex; align-items: center; gap: 2px; color: var(--danger); }
+.confete { display: grid; place-items: center; color: var(--accent); }
+
+/* ícones próprios (src/ui/icones.ts): herdam a cor do texto em volta e acompanham a linha do texto */
+.icone-svg { display: inline-block; flex: none; vertical-align: -0.18em; }
+.icone-svg.ok { color: var(--success); }
+.icone-svg.erro { color: var(--danger); }
+.icone-svg.acento { color: var(--accent); }
+.icone-svg.apagado { color: var(--muted); }
+.dificuldade { display: inline-block; vertical-align: -0.05em; }
+.guia3d .simbolo { stroke-width: 2.4; opacity: 1; stroke-linecap: round; stroke-linejoin: round; }
 
 @media (min-width: 760px) {
   .conteudo { padding-top: 24px; }

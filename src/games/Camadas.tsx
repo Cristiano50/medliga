@@ -5,6 +5,7 @@ import { DERIVADOS } from '../content/index.ts';
 import { embaralhar } from '../core/random.ts';
 import { salvarMinijogo, type Jogada } from './minijogo.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 const POR_RODADA = 12;
 
@@ -41,7 +42,7 @@ export function CamadasTela() {
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete" aria-hidden>{acertos >= 10 ? '🏆' : '🧩'}</div>
+          <div className="confete"><Icone nome={acertos >= 10 ? 'ranking' : 'quebra-cabeca'} tamanho={64} /></div>
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} na camada certa</p>
         </div>
@@ -58,7 +59,7 @@ export function CamadasTela() {
   return (
     <div className="pilha">
       <div className="linha entre">
-        <Link to="/" className="btn fantasma pequeno" aria-label="Sair">✕</Link>
+        <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={i / itens.length} rotulo="Progresso" /></div>
         <span className="chip-xp">{i + 1}/{itens.length}</span>
       </div>
@@ -83,7 +84,7 @@ export function CamadasTela() {
       </div>
       {escolha && (
         <div className={`feedback ${correta ? 'ok' : 'erro'}`} role="status">
-          <h3>{correta ? '✅ Isso!' : `❌ É ${catCerta.nome.toLowerCase()}`}</h3>
+          <h3><Icone nome={correta ? 'certo' : 'errado'} className={correta ? 'ok' : 'erro'} /> {correta ? 'Isso!' : `É ${catCerta.nome.toLowerCase()}`}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{item.explicacao}</p>
           {item.referencia && <p className="muted pequeno" style={{ margin: '6px 0 0' }}>Fonte: {item.referencia}</p>}
         </div>

@@ -6,6 +6,7 @@ import { montarSessao } from '../core/session.ts';
 import { obterBackend } from '../data/backend.ts';
 import { useApp } from '../data/store.ts';
 import { DISCIPLINAS } from '../content/disciplinas.ts';
+import { Icone } from '../ui/Icone.tsx';
 
 const QUESTOES_POR_DUELO = 10;
 
@@ -56,7 +57,7 @@ export function DuelosTela() {
   if (modoBackend === 'offline' || logado === false)
     return (
       <div className="pilha">
-        <h1>⚔️ Duelos</h1>
+        <h1><Icone nome="duelo" tamanho={28} /> Duelos</h1>
         <div className="card pilha">
           <p style={{ margin: 0 }}>
             Desafie um colega: vocês respondem as mesmas 10 questões e vence quem acertar mais (no empate, quem for mais rápido).
@@ -75,7 +76,7 @@ export function DuelosTela() {
   return (
     <div className="pilha">
       <header>
-        <h1>⚔️ Duelos</h1>
+        <h1><Icone nome="duelo" tamanho={28} /> Duelos</h1>
         <p className="muted" style={{ margin: 0 }}>Mesmas 10 questões para os dois. Vence quem acertar mais; no empate, quem for mais rápido. Vale XP para o ranking.</p>
       </header>
       {modoBackend === 'demo' && <div className="aviso">Modo demonstração: o adversário é fictício.</div>}

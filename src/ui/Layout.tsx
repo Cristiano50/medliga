@@ -5,6 +5,7 @@ import { armazenamentoTemporario } from '../data/armazenamento.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { itensNovos } from '../modules/avatar/regras.ts';
 import { useProgressoAvatar } from '../modules/avatar/useProgressoAvatar.ts';
+import { Icone } from './Icone.tsx';
 
 /** Ícone do item Perfil: o avatar do jogador (se já montou) e a marca de item novo liberado. */
 function IconePerfil() {
@@ -14,7 +15,7 @@ function IconePerfil() {
   const novos = progresso ? itensNovos(progresso, vistos).length : 0;
   return (
     <span className="ico">
-      {avatar ? <Avatar config={avatar} tamanho={24} decorativo /> : <span aria-hidden>👤</span>}
+      {avatar ? <Avatar config={avatar} tamanho={24} decorativo /> : <Icone nome="perfil" tamanho={22} />}
       {novos > 0 && <span className="ponto-novo" role="img" aria-label="itens novos para o avatar" />}
     </span>
   );
@@ -34,7 +35,7 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
         </Link>
         <span className="espaco" />
         <span className="chip-xp fogo" title="Dias seguidos estudando" aria-label={`${sequencia} dias seguidos`}>
-          🔥 {sequencia}
+          <Icone nome="fogo" tamanho={16} /> {sequencia}
         </span>
         <span className="chip-xp" title="Nível e XP total" aria-label={`Nível ${nivel}, ${xpTotal} XP`}>
           Nv {nivel} · {xpTotal.toLocaleString('pt-BR')} XP
@@ -51,13 +52,13 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
       {!semNav && (
         <nav className="navbar" aria-label="Navegação principal">
           <NavLink to="/" end className={({ isActive }) => (isActive ? 'ativo' : '')}>
-            <span className="ico" aria-hidden>🏠</span>Início
+            <span className="ico"><Icone nome="inicio" tamanho={22} /></span>Início
           </NavLink>
           <NavLink to={`/disciplina/${disciplinaAtual}`} className={({ isActive }) => (isActive ? 'ativo' : '')}>
-            <span className="ico" aria-hidden>📚</span>Estudar
+            <span className="ico"><Icone nome="estudar" tamanho={22} /></span>Estudar
           </NavLink>
           <NavLink to="/ranking" className={({ isActive }) => (isActive ? 'ativo' : '')}>
-            <span className="ico" aria-hidden>🏆</span>Ranking
+            <span className="ico"><Icone nome="ranking" tamanho={22} /></span>Ranking
           </NavLink>
           <NavLink to="/perfil" className={({ isActive }) => (isActive ? 'ativo' : '')}>
             <IconePerfil />Perfil

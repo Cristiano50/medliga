@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import type { Questao, QuestaoAssociar, QuestaoMultipla, QuestaoOrdenar, QuestaoVF } from '../content/schema.ts';
 import type { Resposta } from '../core/scoring.ts';
+import { Icone } from '../ui/Icone.tsx';
 
 interface Props<Q extends Questao> {
   questao: Q;
@@ -124,8 +125,8 @@ function Ordenar({ questao: q, ordemExibicao, resposta, onResponder, revelada }:
             <span className="texto">{item.texto}</span>
             {!revelada && (
               <span className="setas">
-                <button aria-label={`Subir ${item.texto}`} onClick={() => mover(i, -1)} disabled={i === 0}>▲</button>
-                <button aria-label={`Descer ${item.texto}`} onClick={() => mover(i, 1)} disabled={i === ordem.length - 1}>▼</button>
+                <button aria-label={`Subir ${item.texto}`} onClick={() => mover(i, -1)} disabled={i === 0}><Icone nome="seta-cima" tamanho={18} /></button>
+                <button aria-label={`Descer ${item.texto}`} onClick={() => mover(i, 1)} disabled={i === ordem.length - 1}><Icone nome="seta-baixo" tamanho={18} /></button>
               </span>
             )}
           </div>

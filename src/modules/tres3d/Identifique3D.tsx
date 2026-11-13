@@ -7,6 +7,7 @@ import { Barra } from '../../ui/comum.tsx';
 import { Cena3D } from '../embriologia/Cena3D.tsx';
 import type { EstadoDestaque } from '../embriologia/tres/nucleo.tsx';
 import { CATALOGOS, sortearAlvos, type Disciplina3D } from './catalogo.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 export const ALVOS_IDENTIFIQUE = 10;
 export const VIDAS_IDENTIFIQUE = 3;
@@ -77,7 +78,7 @@ export function Identifique3D({ disciplina }: { disciplina: Disciplina3D }) {
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete" aria-hidden>{vidas > 0 ? '🎯' : '💔'}</div>
+          <div className="confete"><Icone nome={vidas > 0 ? 'alvo' : 'coracao-partido'} tamanho={64} /></div>
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} estruturas encontradas</p>
         </div>
@@ -98,9 +99,9 @@ export function Identifique3D({ disciplina }: { disciplina: Disciplina3D }) {
   return (
     <div className="pilha">
       <div className="linha entre">
-        <Link to="/" className="btn fantasma pequeno" aria-label="Sair">✕</Link>
+        <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={i / alvos.length} rotulo="Progresso" /></div>
-        <span className="vidas" aria-label={`${vidas} vidas`}>{'❤️'.repeat(Math.max(0, vidas))}{'🤍'.repeat(VIDAS_IDENTIFIQUE - Math.max(0, vidas))}</span>
+        <span className="vidas" role="img" aria-label={`${Math.max(0, vidas)} de ${VIDAS_IDENTIFIQUE} vidas`}>{Array.from({ length: VIDAS_IDENTIFIQUE }, (_, i) => <Icone key={i} nome={i < vidas ? 'coracao' : 'coracao-vazio'} tamanho={18} />)}</span>
       </div>
       <div className="card" style={{ padding: '12px 16px' }}>
         <span className="muted pequeno">{item?.titulo} · {item?.subtitulo}</span>
@@ -119,7 +120,7 @@ export function Identifique3D({ disciplina }: { disciplina: Disciplina3D }) {
       />
       {resultado && (
         <div className={`feedback ${resultado.certo ? 'ok' : 'erro'}`} role="status">
-          <h3>{resultado.certo ? '✅ Encontrou!' : `❌ Você tocou em: ${nomes[resultado.tocado] ?? resultado.tocado}`}</h3>
+          <h3><Icone nome={resultado.certo ? 'certo' : 'errado'} className={resultado.certo ? 'ok' : 'erro'} /> {resultado.certo ? 'Encontrou!' : `Você tocou em: ${nomes[resultado.tocado] ?? resultado.tocado}`}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>
             {item?.estruturas.find((s) => s.id === alvo.estruturaId)?.descricao}
           </p>

@@ -8,6 +8,7 @@ import { semanaAtual, TOP_N_ESCOLA, type PontuacaoAluno, type PontuacaoEscola } 
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { item as itemDoAvatar } from '../modules/avatar/catalogo.ts';
 import { normalizarAvatar } from '../modules/avatar/regras.ts';
+import { Icone } from '../ui/Icone.tsx';
 
 function NomeDaMoldura({ avatar }: { avatar: unknown }) {
   const c = normalizarAvatar(avatar);
@@ -63,7 +64,7 @@ export function RankingTela() {
   return (
     <div className="pilha">
       <header>
-        <h1>🏆 Ranking da semana</h1>
+        <h1><Icone nome="ranking" tamanho={28} className="acento" /> Ranking da semana</h1>
         <p className="muted pequeno" style={{ margin: 0 }}>
           Temporada encerra {fimSemana.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit' })} às 23h59 (Brasília).
         </p>

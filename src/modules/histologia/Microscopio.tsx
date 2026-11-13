@@ -4,6 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { LAMINAS, topico } from '../../content/index.ts';
 import { SeloRevisao } from '../../ui/comum.tsx';
 import { Visor } from './Visor.tsx';
+import { Icone } from '../../ui/Icone.tsx';
 
 export default function MicroscopioTela() {
   const [params, setParams] = useSearchParams();
@@ -24,7 +25,7 @@ export default function MicroscopioTela() {
     <div className="pilha">
       <div className="linha entre quebra">
         <div>
-          <Link to="/disciplina/histologia" className="muted pequeno">‹ Histologia</Link>
+          <Link to="/disciplina/histologia" className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> Histologia</Link>
           <h1 style={{ margin: '4px 0 0' }}>Microscópio virtual</h1>
         </div>
         <SeloRevisao revisao={lamina.revisao} />
@@ -32,12 +33,12 @@ export default function MicroscopioTela() {
 
       <div className="card pilha" style={{ gap: 8 }}>
         <div className="linha entre">
-          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Lâmina anterior">◀</button>
+          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Lâmina anterior"><Icone nome="anterior" tamanho={16} /></button>
           <div className="centro" style={{ flex: 1, minWidth: 0 }}>
             <strong>{lamina.titulo}</strong>
             <div className="muted pequeno">{lamina.orgao} · {lamina.coloracao}</div>
           </div>
-          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === LAMINAS.length - 1} aria-label="Próxima lâmina">▶</button>
+          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === LAMINAS.length - 1} aria-label="Próxima lâmina"><Icone nome="proximo" tamanho={16} /></button>
         </div>
         <select className="input" value={lamina.id} onChange={(e) => setParams({ lamina: e.target.value }, { replace: true })} aria-label="Escolher lâmina">
           {LAMINAS.map((l) => (
@@ -67,7 +68,7 @@ export default function MicroscopioTela() {
         <div className="card pilha" role="status" aria-live="polite">
           <div className="linha entre">
             <h2 style={{ margin: 0 }}>{estrutura.nome}</h2>
-            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar">✕</button>
+            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar"><Icone nome="fechar" tamanho={16} /></button>
           </div>
           <p className="muted" style={{ margin: 0 }}>{estrutura.descricao}</p>
         </div>
@@ -83,8 +84,8 @@ export default function MicroscopioTela() {
       )}
 
       <div className="grade g2">
-        <Link to={`/jogar/identifique-lamina?lamina=${lamina.id}`} className="btn primario">🎯 Desafio: identifique nesta lâmina</Link>
-        {t && <Link to={`/topico/${t.id}`} className="btn">📘 Estudar: {t.titulo}</Link>}
+        <Link to={`/jogar/identifique-lamina?lamina=${lamina.id}`} className="btn primario"><Icone nome="alvo" /> Desafio: identifique nesta lâmina</Link>
+        {t && <Link to={`/topico/${t.id}`} className="btn"><Icone nome="livro" /> Estudar: {t.titulo}</Link>}
       </div>
     </div>
   );
