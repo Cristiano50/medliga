@@ -30,6 +30,9 @@ const QualTecidoTela = lazy(() => import('./modules/histologia/QualTecido.tsx'))
 const Lab3DHistologiaTela = lazy(() => import('./modules/histologia/Lab3DHistologia.tsx'));
 const Identifique3DHistologiaTela = lazy(() => import('./modules/histologia/Identifique3DHistologia.tsx'));
 
+// Editor do avatar: só é baixado quando o jogador abre.
+const EditorAvatarTela = lazy(() => import('./modules/avatar/EditorAvatar.tsx'));
+
 function Rotas() {
   const perfil = useApp((s) => s.perfil);
   const loc = useLocation();
@@ -45,6 +48,7 @@ function Rotas() {
           <Route path="/topico/:id" element={<TopicoTela />} />
           <Route path="/ranking" element={<RankingTela />} />
           <Route path="/perfil" element={<PerfilTela />} />
+          <Route path="/perfil/avatar" element={<EditorAvatarTela />} />
           <Route path="/planos" element={<PlanosTela />} />
           <Route path="/painel" element={<PainelTela />} />
           <Route path="/duelos" element={<DuelosTela />} />

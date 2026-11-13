@@ -16,6 +16,15 @@ Ordem dos módulos baseada no semestre mais comum de cada disciplina nas escolas
 - [x] Duelos entre colegas, conquistas, painel do professor, modelos 3D de órgãos e sistemas.
 - [x] Aprofundamento (09/11/2026): tópicos 21–25, camada avançada (100 questões de dificuldade 4–5), modo Desafio avançado e modelos 3D de septação cardíaca, arcos aórticos e circulação fetal; revisão por agentes em duas etapas.
 
+## Revisão dos gráficos (em andamento, 13/11/2026)
+Cada etapa: desenho no canvas do Wonder (arquivo "MedLiga — Gráficos") → revisão independente → código → testes.
+- [x] **1. Avatares montáveis** com itens liberados por nível e por conquista (perfil, início, ranking, duelo, navegação). Pendente: conferência por pessoas que usam as peças (hijab, turbante, dastar, quipá, tranças, dreads, cabelo crespo, aparelho auditivo, implante coclear, cordão de girassol) e teste com leitor de tela real. Não entraram: barba com cor própria, lenço, filá/kufi, boné, marcas do rosto, tranças rentes; escolha múltipla em "apoio". Decisão do Cristiano em aberto: nomes neutros para os títulos de nível (Calouro, Monitor, Diretor de Liga, Interno, Preceptor, Professor Titular).
+- [ ] 2. Ícones próprios no lugar dos emojis (navegação, jogos, disciplinas, ações).
+- [ ] 3. Medalhas das conquistas e selos dos títulos de nível.
+- [ ] 4. Telas de resultado e estados vazios, com animação leve (respeitando "reduzir movimento").
+- [ ] 5. Cartões das disciplinas e tela inicial.
+- [ ] 6. Marca: só proposta no canvas (o ícone do app não muda sem decisão; busca no INPI pendente).
+
 ## v0.2 — Lançamento do piloto
 - Ativar Supabase em produção (região São Paulo) e domínio.
 - Termos de uso e política de privacidade (LGPD); exclusão de conta na tela de perfil.

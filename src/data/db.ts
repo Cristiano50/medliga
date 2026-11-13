@@ -4,6 +4,7 @@ import Dexie, { type Table } from 'dexie';
 import type { EstadoItem } from '../core/srs.ts';
 import type { PlanoId, UsoDiario } from '../core/planos.ts';
 import type { ModoSessao } from '../core/session.ts';
+import type { AvatarConfig } from '../modules/avatar/tipos.ts';
 
 export interface Perfil {
   chave: 'eu';
@@ -21,6 +22,14 @@ export interface Perfil {
   aceitouTermosEm: number | null;
   /** disciplina em foco na tela inicial e no botão Estudar */
   disciplinaAtual?: string;
+  /** avatar montado pelo jogador (só ids de peças do catálogo); ausente = silhueta padrão */
+  avatar?: AvatarConfig | null;
+  /** itens desbloqueáveis ("categoria:id") que o jogador já viu no editor, para marcar os novos */
+  avatarItensVistos?: string[];
+  /** avatar gravado no aparelho e ainda não enviado ao servidor (sem conexão na hora de salvar) */
+  avatarPendente?: boolean;
+  /** conquistas já obtidas: uma vez obtida, a conquista (e o item que ela libera) não se perde, mesmo que a sequência de dias caia */
+  conquistasObtidas?: string[];
 }
 
 export interface RegistroResposta {

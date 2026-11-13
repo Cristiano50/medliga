@@ -13,6 +13,8 @@ export interface PontuacaoAluno {
   nome: string;
   escolaId: string | null;
   xpSemana: number;
+  /** avatar escolhido pelo jogador, como veio do servidor (validado na hora de desenhar) */
+  avatar?: unknown;
 }
 
 export interface PontuacaoEscola {

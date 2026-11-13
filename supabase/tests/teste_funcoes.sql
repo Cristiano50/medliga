@@ -125,6 +125,61 @@ begin
   if n <> 1 then raise exception 'FALHOU: ranking interno da ESCS deveria ter 1 aluno'; end if;
 end $$;
 
+-- 10b) avatar: grava o formato válido, recusa o inválido, e o ranking devolve o avatar (Beto tem, Ana não)
+do $$
+declare
+  v_ok jsonb := '{"v":1,"pele":"p6","rosto":"sorriso","cabelo":"cacheado","corCabelo":"preto","cabeca":"nenhum","corCabeca":"vinho","barba":"nenhuma","oculos":"redondo","apoio":"nenhum","roupa":"jaleco","corRoupa":"azul","acessorio":"estetoscopio","paramento":"nenhum","fundo":"verde-agua","moldura":"monitor"}';
+  v_ruim jsonb;
+  v_avatar jsonb;
+begin
+  perform salvar_avatar(v_ok);
+  if (select avatar from perfis where id = auth.uid()) <> v_ok then raise exception 'FALHOU: avatar não gravado'; end if;
+  foreach v_ruim in array array[
+    v_ok || '{"extra":"x"}',                              -- chave desconhecida
+    v_ok - 'moldura',                                     -- categoria faltando
+    v_ok || '{"v":2}',                                    -- versão desconhecida
+    v_ok || '{"pele":"<script>alert(1)</script>"}',       -- valor fora do padrão
+    v_ok || '{"pele":"P6"}',                              -- maiúscula
+    v_ok || '{"pele":"um-id-comprido-demais-para-o-limite"}', -- mais de 24 caracteres
+    v_ok || '{"pele":7}',                                 -- valor que não é texto
+    '"texto"'::jsonb, '[1,2,3]'::jsonb                    -- não é objeto
+  ] loop
+    begin
+      perform salvar_avatar(v_ruim);
+      raise exception 'FALHOU: aceitou avatar inválido: %', v_ruim;
+    exception when raise_exception then
+      if sqlerrm like 'FALHOU%' then raise; end if;
+    end;
+  end loop;
+  if (select avatar from perfis where id = auth.uid()) <> v_ok then raise exception 'FALHOU: avatar mudou depois de envio inválido'; end if;
+  begin
+    update perfis set avatar = '{"v":1}' where id = auth.uid();
+    raise exception 'FALHOU: update direto do avatar deveria ser negado';
+  exception when insufficient_privilege then null;
+  end;
+  select avatar into v_avatar from ranking_alunos(semana_de(now())) where usuario_id = auth.uid();
+  if v_avatar <> v_ok then raise exception 'FALHOU: ranking deveria devolver o avatar de Beto, veio %', v_avatar; end if;
+  if (select avatar from ranking_alunos(semana_de(now())) where usuario_id = '00000000-0000-0000-0000-00000000000a') is not null then
+    raise exception 'FALHOU: Ana não montou avatar';
+  end if;
+  -- remover o avatar e gravar de novo
+  perform salvar_avatar(null);
+  if (select avatar from perfis where id = auth.uid()) is not null then raise exception 'FALHOU: avatar não removido'; end if;
+  perform salvar_avatar(v_ok);
+end $$;
+-- visitante sem login vê o ranking (com avatar), mas não grava avatar
+set role anon;
+set request.jwt.claim.sub = '';
+do $$ begin
+  if (select count(*) from ranking_alunos(semana_de(now())) where avatar is not null) <> 1 then raise exception 'FALHOU: ranking público deveria trazer 1 avatar'; end if;
+  begin
+    perform salvar_avatar('{"v":1}'::jsonb);
+    raise exception 'FALHOU: anônimo gravou avatar';
+  exception when insufficient_privilege then null;
+  end;
+end $$;
+set role authenticated;
+
 -- 11) usuário sem login não registra sessão
 set request.jwt.claim.sub = '';
 do $$ begin
@@ -144,7 +199,7 @@ do $$ begin
   if (select count(*) from reportes_conteudo where usuario_id = auth.uid()) <> 1 then raise exception 'FALHOU: reporte duplicado'; end if;
 end $$;
 
--- 13) LGPD: excluir a própria conta apaga perfil, sessões e XP (ranking)
+-- 13) LGPD: excluir a própria conta apaga perfil (com o avatar), sessões e XP (ranking)
 select excluir_minha_conta();
 do $$ begin
   if exists (select 1 from perfis where id = '00000000-0000-0000-0000-00000000000b') then raise exception 'FALHOU: perfil não apagado'; end if;
@@ -190,6 +245,9 @@ do $$ begin
     if sqlerrm like 'FALHOU%' then raise; end if;
   end;
   perform registrar_resultado_duelo((select codigo from t_duelo), 4, 5, 20000);
+  -- C tem perfil e avatar: o adversário deve receber os dois
+  perform salvar_perfil('Caio', null, 3);
+  perform salvar_avatar('{"v":1,"pele":"p2","rosto":"serio","cabelo":"curto","corCabelo":"castanho","cabeca":"quipa","corCabeca":"marinho","barba":"barba-curta","oculos":"nenhum","apoio":"aparelho-auditivo","roupa":"camiseta","corRoupa":"coral","acessorio":"nenhum","paramento":"nenhum","fundo":"azul","moldura":"nenhuma"}');
 end $$;
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
 do $$
@@ -197,6 +255,7 @@ declare r jsonb;
 begin
   r := entrar_duelo((select codigo from t_duelo));
   if (r->>'sou_criador')::boolean then raise exception 'FALHOU: A não é criador'; end if;
+  if r->>'adversario' <> 'Caio' or r->'adversario_avatar'->>'barba' <> 'barba-curta' then raise exception 'FALHOU: duelo deveria trazer nome e avatar do adversário: %', r; end if;
   if r->'resultado_adversario' <> 'null'::jsonb then raise exception 'FALHOU: resultado do adversário vazou antes de jogar: %', r; end if;
   if jsonb_array_length(r->'questoes') <> 5 then raise exception 'FALHOU: questões do duelo'; end if;
   begin

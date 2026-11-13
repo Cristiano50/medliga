@@ -7,6 +7,7 @@ import { useProgresso } from '../data/progresso.ts';
 import { Barra } from '../ui/comum.tsx';
 import { nivelPorXP, tituloDoNivel } from '../core/scoring.ts';
 import { PLANOS } from '../core/planos.ts';
+import { Avatar } from '../modules/avatar/Avatar.tsx';
 
 const META_DIARIA_XP = 60;
 
@@ -32,9 +33,14 @@ export function Inicio() {
     <div className="pilha">
       <section className="card destaque">
         <div className="linha entre quebra">
-          <div>
-            <p className="muted pequeno" style={{ margin: 0 }}>Olá, {perfil.nome.split(' ')[0]} · {tituloDoNivel(niv.nivel)}</p>
-            <h1 style={{ margin: '4px 0 8px' }}>Meta do dia</h1>
+          <div className="nome-com-avatar">
+            <Link to="/perfil/avatar" className="avatar-link" aria-label={perfil.avatar ? 'Editar avatar' : 'Montar avatar'}>
+              <Avatar config={perfil.avatar} nome={perfil.nome} tamanho={48} decorativo />
+            </Link>
+            <div>
+              <p className="muted pequeno" style={{ margin: 0 }}>Olá, {perfil.nome.split(' ')[0]} · {tituloDoNivel(niv.nivel)}</p>
+              <h1 style={{ margin: '4px 0 8px' }}>Meta do dia</h1>
+            </div>
           </div>
           <span className="chip-xp">{Math.min(xpHoje, META_DIARIA_XP)} / {META_DIARIA_XP} XP</span>
         </div>

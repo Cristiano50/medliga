@@ -11,6 +11,8 @@ import { MARCA } from '../config/marca.ts';
 import { topicosDe } from '../content/index.ts';
 import { DISCIPLINAS_DISPONIVEIS } from '../content/disciplinas.ts';
 import type { PlanoId } from '../core/planos.ts';
+import type { AvatarConfig } from '../modules/avatar/tipos.ts';
+import { sortearAvatar } from '../modules/avatar/regras.ts';
 
 export type ModoBackend = 'supabase' | 'demo' | 'offline';
 
@@ -32,6 +34,8 @@ export interface Backend {
   confirmarCodigo(email: string, codigo: string): Promise<UsuarioOnline>;
   sair(): Promise<void>;
   salvarPerfil(p: Perfil): Promise<void>;
+  /** Avatar que aparece no ranking e nos duelos. O servidor confere só o formato. */
+  salvarAvatar(a: AvatarConfig): Promise<void>;
   planoAtual(): Promise<PlanoId | null>;
   enviarSessao(s: RegistroSessao, respostas: RegistroResposta[]): Promise<ResultadoEnvio>;
   rankingAlunos(semana: string, escolaId?: string | null): Promise<PontuacaoAluno[]>;
@@ -61,6 +65,8 @@ export interface Duelo {
   questoes: string[];
   souCriador: boolean;
   adversario: string | null;
+  /** avatar do adversário, como veio do servidor (validado na hora de desenhar) */
+  adversarioAvatar?: unknown;
   meuResultado: ResultadoDuelo | null;
   /** só aparece depois que você joga */
   resultadoAdversario: ResultadoDuelo | null;
@@ -117,6 +123,7 @@ class BackendOffline implements Backend {
   }
   async sair() {}
   async salvarPerfil() {}
+  async salvarAvatar() {}
   async planoAtual() {
     return null;
   }
@@ -150,6 +157,9 @@ class BackendOffline implements Backend {
   }
 }
 
+/** Conquistas dos jogadores fictícios, só para os avatares de demonstração mostrarem itens variados. */
+const CONQUISTAS_DEMO: ReadonlySet<string> = new Set(['primeiro-passo', 'vestiu-a-camisa', 'sequencia-3', 'dominio-1', 'revisor']);
+
 /** Dados fictícios e determinísticos para desenvolvimento e demonstrações. Nunca usado em produção. */
 class BackendDemo implements Backend {
   modo: ModoBackend = 'demo';
@@ -158,9 +168,11 @@ class BackendDemo implements Backend {
   private meuXp = 0;
   private minhaEscola: string | null = null;
   private meuNome = 'Você';
+  private meuAvatar: AvatarConfig | null = null;
 
   constructor() {
     const rng = criarRng(20261109);
+    const rngAvatar = criarRng(20261113);
     const escolas = ['escs', 'unb', 'uniceub', 'ucb', 'unicamp', 'ufmg', 'usp', 'unifesp', 'ufrj', 'ufrgs'];
     const nomes = ['Ana', 'Bruno', 'Carla', 'Diego', 'Eduarda', 'Felipe', 'Gabriela', 'Henrique', 'Isabela', 'João', 'Karina', 'Lucas', 'Mariana', 'Nicolas', 'Olívia', 'Pedro', 'Rafaela', 'Samuel', 'Tainá', 'Vitor'];
     const sobrenomes = ['A.', 'B.', 'C.', 'D.', 'F.', 'G.', 'L.', 'M.', 'P.', 'R.', 'S.', 'T.'];
@@ -169,11 +181,14 @@ class BackendDemo implements Backend {
     for (const e of escolas) {
       const membros = 8 + Math.floor(rng() * 30);
       for (let i = 0; i < membros; i++) {
+        const xpSemana = Math.round(Math.pow(rng(), 2.2) * 2400);
         this.alunos.push({
           usuarioId: `demo-${n++}`,
           nome: `${nomes[Math.floor(rng() * nomes.length)]} ${sobrenomes[Math.floor(rng() * sobrenomes.length)]}`,
           escolaId: e,
-          xpSemana: Math.round(Math.pow(rng(), 2.2) * 2400),
+          xpSemana,
+          // Um em cada cinco ainda não montou o avatar (aparece a silhueta padrão). Sorteio à parte, para não mudar os XP fictícios.
+          avatar: rngAvatar() < 0.2 ? null : sortearAvatar({ nivel: 1 + Math.floor(xpSemana / 120), conquistas: CONQUISTAS_DEMO }, rngAvatar),
         });
       }
     }
@@ -193,6 +208,9 @@ class BackendDemo implements Backend {
     this.minhaEscola = p.escolaId;
     this.meuNome = p.nome || 'Você';
   }
+  async salvarAvatar(a: AvatarConfig) {
+    this.meuAvatar = a;
+  }
   async planoAtual() {
     return null;
   }
@@ -201,7 +219,7 @@ class BackendDemo implements Backend {
     return { sessaoId: s.id, xpContabilizado: s.ranqueada ? s.xp : 0 };
   }
   private todos(): PontuacaoAluno[] {
-    return [...this.alunos, { usuarioId: 'demo-voce', nome: this.meuNome, escolaId: this.minhaEscola, xpSemana: this.meuXp }];
+    return [...this.alunos, { usuarioId: 'demo-voce', nome: this.meuNome, escolaId: this.minhaEscola, xpSemana: this.meuXp, avatar: this.meuAvatar }];
   }
   async rankingAlunos(_semana: string, escolaId?: string | null) {
     return this.todos()
@@ -234,6 +252,7 @@ class BackendDemo implements Backend {
       questoes,
       souCriador: true,
       adversario: 'Rival (demonstração)',
+      adversarioAvatar: sortearAvatar({ nivel: 12, conquistas: CONQUISTAS_DEMO }, criarRng(codigo.charCodeAt(1) * 31 + codigo.charCodeAt(4))),
       meuResultado: null,
       resultadoAdversario: null,
       expiraEm: new Date(Date.now() + 48 * 3600e3).toISOString(),
@@ -297,6 +316,11 @@ class BackendSupabase implements Backend {
     }
   }
 
+  async salvarAvatar(a: AvatarConfig) {
+    const { error } = await this.sb.rpc('salvar_avatar', { p_avatar: a });
+    if (error) throw error;
+  }
+
   async planoAtual(): Promise<PlanoId | null> {
     const { data, error } = await this.sb.rpc('plano_atual');
     if (error) return null;
@@ -329,11 +353,12 @@ class BackendSupabase implements Backend {
   async rankingAlunos(semana: string, escolaId?: string | null) {
     const { data, error } = await this.sb.rpc('ranking_alunos', { p_semana: semana, p_escola_id: escolaId ?? null, p_limite: 100 });
     if (error) throw error;
-    return (data as { usuario_id: string; nome: string; escola_id: string | null; xp_semana: number }[]).map((r) => ({
+    return (data as { usuario_id: string; nome: string; escola_id: string | null; xp_semana: number; avatar?: unknown }[]).map((r) => ({
       usuarioId: r.usuario_id,
       nome: r.nome,
       escolaId: r.escola_id,
       xpSemana: r.xp_semana,
+      avatar: r.avatar ?? null,
     }));
   }
 
@@ -389,6 +414,7 @@ class BackendSupabase implements Backend {
       questoes: d.questoes as string[],
       souCriador: d.sou_criador as boolean,
       adversario: (d.adversario as string | null) ?? null,
+      adversarioAvatar: d.adversario_avatar ?? null,
       meuResultado: res(d.meu_resultado),
       resultadoAdversario: res(d.resultado_adversario),
       expiraEm: d.expira_em as string,
