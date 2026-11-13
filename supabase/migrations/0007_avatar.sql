@@ -3,18 +3,19 @@
 -- conquistas não existem no servidor: um cliente adulterado poderia exibir um item ainda bloqueado. É só cosmético
 -- e não afeta XP nem ranking.
 
--- Formato aceito: objeto com "v": 1 e as 12 categorias, cada uma com um id curto (minúsculas, dígitos e hífen).
+-- Formato aceito: objeto com "v": 1 e as 15 categorias, cada uma com um id curto (minúsculas, dígitos e hífen).
+-- A lista de categorias espelha CATEGORIAS em src/modules/avatar/tipos.ts.
 create or replace function public.avatar_valido(p jsonb)
 returns boolean language sql immutable as $$
   select coalesce(
     jsonb_typeof(p) = 'object'
     and octet_length(p::text) <= 800
     and p->'v' = '1'::jsonb
-    and (select count(*) from jsonb_object_keys(p)) = 13
+    and (select count(*) from jsonb_object_keys(p)) = 16
     and not exists (
       select 1 from jsonb_each(p) e
       where e.key <> 'v'
-        and (e.key not in ('pele','rosto','cabelo','corCabelo','cabeca','barba','oculos','roupa','corRoupa','acessorio','fundo','moldura')
+        and (e.key not in ('pele','rosto','cabelo','corCabelo','cabeca','corCabeca','barba','oculos','apoio','roupa','corRoupa','acessorio','paramento','fundo','moldura')
              or jsonb_typeof(e.value) <> 'string'
              or (e.value #>> '{}') !~ '^[a-z0-9-]{1,24}$')),
     false)

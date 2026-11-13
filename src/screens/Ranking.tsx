@@ -6,6 +6,14 @@ import { carregarEscolas } from '../content/index.ts';
 import type { Escola } from '../content/schema.ts';
 import { semanaAtual, TOP_N_ESCOLA, type PontuacaoAluno, type PontuacaoEscola } from '../core/ranking.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
+import { item as itemDoAvatar } from '../modules/avatar/catalogo.ts';
+import { normalizarAvatar } from '../modules/avatar/regras.ts';
+
+function NomeDaMoldura({ avatar }: { avatar: unknown }) {
+  const c = normalizarAvatar(avatar);
+  if (!c || c.moldura === 'nenhuma') return null;
+  return <span className="so-leitor">, moldura {itemDoAvatar('moldura', c.moldura)?.nome}</span>;
+}
 
 type Aba = 'escola' | 'escolas' | 'geral';
 
@@ -129,6 +137,8 @@ export function RankingTela() {
                         <Avatar config={a.avatar} nome={a.nome} tamanho={32} decorativo />
                         <div style={{ minWidth: 0 }}>
                           <strong>{a.nome}</strong>
+                          {/* a moldura informa nível ou conquista: vai também em texto, para leitor de tela */}
+                          <NomeDaMoldura avatar={a.avatar} />
                           {aba === 'geral' && a.escolaId && <div className="muted pequeno">{escolas.get(a.escolaId)?.sigla ?? ''}</div>}
                         </div>
                       </div>

@@ -6,15 +6,23 @@ import { Carregando } from '../../ui/Carregando.tsx';
 import { Avatar } from './Avatar.tsx';
 import { CATALOGO, NOMES_CATEGORIA } from './catalogo.ts';
 import type { AvatarConfig, Categoria } from './tipos.ts';
-import { chaveItem, comoLiberar, itensLiberados, itensNovos, liberado, normalizarAvatar, restringirAoLiberado, sortearAvatar } from './regras.ts';
+import { avisoDeContraste, chaveItem, comoLiberar, itensLiberados, itensNovos, liberado, normalizarAvatar, restringirAoLiberado, sortearAvatar } from './regras.ts';
+import { COBERTURAS } from './pecas.ts';
 import { useProgressoAvatar } from './useProgressoAvatar.ts';
 
 const GRUPOS: { id: string; nome: string; categorias: Categoria[] }[] = [
-  { id: 'rosto', nome: 'Rosto', categorias: ['pele', 'rosto', 'oculos', 'barba'] },
-  { id: 'cabelo', nome: 'Cabelo', categorias: ['cabelo', 'corCabelo', 'cabeca'] },
-  { id: 'roupa', nome: 'Roupa', categorias: ['roupa', 'corRoupa', 'acessorio'] },
+  { id: 'rosto', nome: 'Rosto', categorias: ['pele', 'rosto', 'oculos', 'barba', 'apoio'] },
+  { id: 'cabelo', nome: 'Cabelo', categorias: ['cabelo', 'corCabelo', 'cabeca', 'corCabeca'] },
+  { id: 'roupa', nome: 'Roupa', categorias: ['roupa', 'corRoupa', 'acessorio', 'paramento'] },
   { id: 'fundo', nome: 'Fundo', categorias: ['fundo', 'moldura'] },
 ];
+
+/** Explicação curta sob o título de algumas categorias. */
+const NOTAS: Partial<Record<Categoria, string>> = {
+  apoio: 'Aparelho auditivo, implante coclear e cordão de girassol. Sempre livres.',
+  acessorio: 'Itens de jogo usados no corpo, liberados por nível e por conquistas.',
+  paramento: 'Itens de jogo usados na cabeça ou no rosto. Ficam por cima do que você já usa: a touca vai sobre o hijab e os óculos de proteção sobre os seus óculos.',
+};
 
 function Cadeado() {
   return (
@@ -57,6 +65,8 @@ export default function EditorAvatar() {
     // Quem ainda não montou o avatar começa por um sorteio entre os itens livres: nenhum rosto é "o padrão".
     setConfig((c) => c ?? sortearAvatar(progresso));
   }, [progresso, novos, marcarItensVistos]);
+
+  const contraste = useMemo(() => (config && progresso ? avisoDeContraste(config, progresso) : null), [config, progresso]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -112,7 +122,8 @@ export default function EditorAvatar() {
               style={{ flex: 1 }}
               onClick={() => {
                 setAviso('');
-                setConfig(sortearAvatar(progresso));
+                // mantém o que representa a pessoa (pele, óculos, cobertura de cabeça, apoio) e sorteia o resto
+                setConfig((c) => sortearAvatar(progresso, Math.random, c));
               }}
             >
               Sortear
@@ -139,19 +150,43 @@ export default function EditorAvatar() {
             })}
           </div>
 
-          <p className="aviso info" role="status" aria-live="polite" style={{ margin: 0, display: aviso ? 'block' : 'none' }}>
-            {aviso}
-          </p>
+          <div role="status" aria-live="polite" className="pilha" style={{ gap: 8 }}>
+            {aviso && (
+              <p className="aviso info" style={{ margin: 0 }}>
+                {aviso}
+              </p>
+            )}
+            {contraste && (
+              <div className="aviso info linha entre quebra">
+                <span>Neste fundo, {contraste.parte} pode se confundir com a cor de trás.</span>
+                <button type="button" className="btn pequeno" onClick={() => setConfig((c) => (c ? { ...c, fundo: contraste.fundo } : c))}>
+                  Usar fundo com mais contraste
+                </button>
+              </div>
+            )}
+          </div>
 
           <div id="painel-avatar" role="tabpanel" aria-labelledby={`aba-${atual.id}`} className="pilha">
-            {atual.categorias.map((cat) => (
+            {atual.categorias
+              .filter((cat) => cat !== 'corCabeca' || config.cabeca !== 'nenhum')
+              .map((cat) => (
               <section key={cat} className="pilha" style={{ gap: 8 }} aria-labelledby={`cat-${cat}`}>
                 <h2 id={`cat-${cat}`} style={{ margin: 0, fontSize: '1rem' }}>
                   {NOMES_CATEGORIA[cat]}
                 </h2>
-                {(cat === 'cabelo' || cat === 'corCabelo') && config.cabeca !== 'nenhum' && (
+                {NOTAS[cat] && (
                   <p className="muted pequeno" style={{ margin: 0 }}>
-                    A cobertura de cabeça escolhida esconde o cabelo. Para ver o cabelo, escolha “Sem cobertura” em Cabeça.
+                    {NOTAS[cat]}
+                  </p>
+                )}
+                {(cat === 'cabelo' || cat === 'corCabelo') && (config.paramento === 'touca' || (config.cabeca !== 'nenhum' && !COBERTURAS[config.cabeca]?.mantemCabelo)) && (
+                  <p className="muted pequeno" style={{ margin: 0 }}>
+                    {config.paramento === 'touca' ? 'A touca cirúrgica esconde o cabelo.' : 'A cobertura de cabeça escolhida esconde o cabelo.'} As amostras abaixo mostram o cabelo sem ela.
+                  </p>
+                )}
+                {cat === 'paramento' && COBERTURAS[config.cabeca]?.semCapelo && (
+                  <p className="muted pequeno" style={{ margin: 0 }}>
+                    O capelo não assenta sobre o turbante nem sobre o dastar. A mesma conquista libera o Canudo, em Acessório.
                   </p>
                 )}
                 <div className="avatar-itens" role="group" aria-labelledby={`cat-${cat}`}>
@@ -159,8 +194,8 @@ export default function EditorAvatar() {
                     const bloqueado = !liberado(it, progresso);
                     const selecionado = config[cat] === it.id;
                     const regra = comoLiberar(it);
-                    // Nas amostras de cabelo, a cobertura sai para a forma do cabelo aparecer.
-                    const amostra: AvatarConfig = { ...config, [cat]: it.id, ...(cat === 'cabelo' ? { cabeca: 'nenhum' } : {}) };
+                    // Nas amostras de cabelo, a cobertura e a touca saem para a forma do cabelo aparecer.
+                    const amostra: AvatarConfig = { ...config, [cat]: it.id, ...(cat === 'cabelo' || cat === 'corCabelo' ? { cabeca: 'nenhum', paramento: config.paramento === 'touca' ? 'nenhum' : config.paramento } : {}) };
                     return (
                       <button
                         key={it.id}
@@ -173,7 +208,10 @@ export default function EditorAvatar() {
                         {selecionado && <Marcado />}
                         {novos?.has(chaveItem(cat, it.id)) && <span className="selo novo">Novo</span>}
                         <Avatar config={amostra} tamanho={64} decorativo />
-                        <span className="nome">{it.nome}</span>
+                        <span className="nome">
+                          {it.nome}
+                          {cat === 'pele' && <span className="so-leitor"> de {CATALOGO.pele.length}</span>}
+                        </span>
                         {bloqueado && regra && (
                           <span className="regra">
                             <Cadeado />

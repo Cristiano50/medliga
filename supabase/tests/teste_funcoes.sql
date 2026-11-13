@@ -128,7 +128,7 @@ end $$;
 -- 10b) avatar: grava o formato válido, recusa o inválido, e o ranking devolve o avatar (Beto tem, Ana não)
 do $$
 declare
-  v_ok jsonb := '{"v":1,"pele":"p6","rosto":"sorriso","cabelo":"cacheado","corCabelo":"preto","cabeca":"nenhum","barba":"nenhuma","oculos":"redondo","roupa":"jaleco","corRoupa":"azul","acessorio":"estetoscopio","fundo":"verde-agua","moldura":"monitor"}';
+  v_ok jsonb := '{"v":1,"pele":"p6","rosto":"sorriso","cabelo":"cacheado","corCabelo":"preto","cabeca":"nenhum","corCabeca":"vinho","barba":"nenhuma","oculos":"redondo","apoio":"nenhum","roupa":"jaleco","corRoupa":"azul","acessorio":"estetoscopio","paramento":"nenhum","fundo":"verde-agua","moldura":"monitor"}';
   v_ruim jsonb;
   v_avatar jsonb;
 begin
@@ -247,7 +247,7 @@ do $$ begin
   perform registrar_resultado_duelo((select codigo from t_duelo), 4, 5, 20000);
   -- C tem perfil e avatar: o adversário deve receber os dois
   perform salvar_perfil('Caio', null, 3);
-  perform salvar_avatar('{"v":1,"pele":"p2","rosto":"serio","cabelo":"curto","corCabelo":"castanho","cabeca":"nenhum","barba":"barba-curta","oculos":"nenhum","roupa":"camiseta","corRoupa":"coral","acessorio":"nenhum","fundo":"azul","moldura":"nenhuma"}');
+  perform salvar_avatar('{"v":1,"pele":"p2","rosto":"serio","cabelo":"curto","corCabelo":"castanho","cabeca":"quipa","corCabeca":"marinho","barba":"barba-curta","oculos":"nenhum","apoio":"aparelho-auditivo","roupa":"camiseta","corRoupa":"coral","acessorio":"nenhum","paramento":"nenhum","fundo":"azul","moldura":"nenhuma"}');
 end $$;
 set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
 do $$
