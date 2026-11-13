@@ -5,7 +5,8 @@
 /** linha: só traço. suave: preenchimento a 20% (base do desenho). cheio: preenchimento sólido, sem traço. */
 export type ParteIcone = string | { d: string; p: 'suave' | 'cheio' };
 
-const circulo = (cx: number, cy: number, r: number) => `M${cx + r} ${cy} A${r} ${r} 0 1 1 ${cx - r} ${cy} A${r} ${r} 0 0 1 ${cx + r} ${cy} Z`;
+const n = (v: number) => +v.toFixed(2);
+const circulo = (cx: number, cy: number, r: number) => `M${n(cx + r)} ${cy} A${r} ${r} 0 1 1 ${n(cx - r)} ${cy} A${r} ${r} 0 0 1 ${n(cx + r)} ${cy} Z`;
 const ANEL = circulo(12, 12, 8.5);
 const CORACAO = 'M12 20 C6 16 3.5 12.6 3.5 9 A4.25 4.25 0 0 1 12 7.6 A4.25 4.25 0 0 1 20.5 9 C20.5 12.6 18 16 12 20 Z';
 const estrela = (cx: number, cy: number, r: number): string => {
