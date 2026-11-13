@@ -8,6 +8,8 @@ import { Cena3D } from '../embriologia/Cena3D.tsx';
 import type { EstadoDestaque } from '../embriologia/tres/nucleo.tsx';
 import { CATALOGOS, sortearAlvos, type Disciplina3D } from './catalogo.ts';
 import { Icone } from '../../ui/Icone.tsx';
+import { Cena } from '../../ui/Cena.tsx';
+import { humorPorAcertos } from '../../ui/cenas.ts';
 
 export const ALVOS_IDENTIFIQUE = 10;
 export const VIDAS_IDENTIFIQUE = 3;
@@ -75,10 +77,12 @@ export function Identifique3D({ disciplina }: { disciplina: Disciplina3D }) {
 
   if (xpFinal !== null) {
     const acertos = jogadas.filter((j) => j.correta).length;
+    // sem vidas, a cena é calma, qualquer que seja a conta dos acertos
+    const humor = vidas > 0 ? humorPorAcertos(acertos, jogadas.length) : 'calmo';
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete"><Icone nome={vidas > 0 ? 'alvo' : 'coracao-partido'} tamanho={64} /></div>
+          <Cena humor={humor} icone={vidas <= 0 ? 'coracao-partido' : humor === 'comemorar' ? 'ranking' : 'alvo'} />
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} estruturas encontradas</p>
         </div>

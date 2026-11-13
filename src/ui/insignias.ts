@@ -19,6 +19,8 @@ export interface FormaInsignia {
   tr?: string;
   /** ponta do traço reta (o padrão é arredondada) */
   reto?: boolean;
+  /** traço interrompido (stroke-dasharray) */
+  dash?: string;
 }
 
 const TINTA = '#0b1220';
@@ -43,7 +45,7 @@ const arco = (cx: number, cy: number, r: number, de: number, ate: number) => {
 };
 
 /** As partes de um ícone, numa cor, encaixadas numa caixa de lado `lado` centrada em (cx, cy). */
-function iconeEm(nome: NomeIcone, cor: string, cx: number, cy: number, lado: number): FormaInsignia[] {
+export function iconeEm(nome: NomeIcone, cor: string, cx: number, cy: number, lado: number): FormaInsignia[] {
   const k = n(lado / 24);
   const tr = `translate(${cx} ${cy}) scale(${k}) translate(-12 -12)`;
   return (ICONES[nome] as ParteIcone[]).map((p) =>
@@ -222,6 +224,7 @@ export function formaInsigniaParaSvg(f: FormaInsignia): string {
   const a = [`d="${f.d}"`, `fill="${f.f ?? 'none'}"`];
   if (f.fo !== undefined) a.push(`fill-opacity="${f.fo}"`);
   if (f.s) a.push(`stroke="${f.s}" stroke-width="${f.sw ?? 2}" stroke-linecap="${f.reto ? 'butt' : 'round'}" stroke-linejoin="round"`);
+  if (f.dash) a.push(`stroke-dasharray="${f.dash}"`);
   if (f.o !== undefined) a.push(`opacity="${f.o}"`);
   if (f.tr) a.push(`transform="${f.tr}"`);
   return `<path ${a.join(' ')}/>`;

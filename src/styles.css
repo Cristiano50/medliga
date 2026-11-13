@@ -358,7 +358,6 @@ p { margin: 0 0 0.75em; }
 .ordenavel.errado { border-color: var(--danger); }
 .cronometro { font-variant-numeric: tabular-nums; font-weight: 800; }
 .vidas { display: inline-flex; align-items: center; gap: 2px; color: var(--danger); }
-.confete { display: grid; place-items: center; color: var(--accent); }
 
 /* ícones próprios (src/ui/icones.ts): herdam a cor do texto em volta e acompanham a linha do texto */
 .icone-svg { display: inline-block; flex: none; vertical-align: -0.18em; }
@@ -367,6 +366,33 @@ p { margin: 0 0 0.75em; }
 .icone-svg.acento { color: var(--accent); }
 .icone-svg.apagado { color: var(--muted); }
 .dificuldade { display: inline-block; vertical-align: -0.05em; }
+
+/* cenas das telas de resultado e dos estados vazios (src/ui/cenas.ts).
+   Cada animação só descreve o quadro inicial: o desenho pronto é o estado de repouso. Com "reduzir movimento"
+   (regra geral mais abaixo), nada se move e a cena aparece pronta. */
+.cena { display: block; margin: 0 auto; overflow: visible; }
+.cena-halo, .cena-icone, .cena-brilho, .cena-peca { transform-box: fill-box; transform-origin: center; }
+.cena-halo { animation: cena-halo 0.5s ease-out both; }
+.cena-icone { animation: cena-pop 0.5s cubic-bezier(0.2, 1.5, 0.4, 1) 0.08s both; }
+.cena-brilho { animation: cena-brilho 0.7s ease-out both; }
+.cena-peca { animation: cena-estouro 0.6s cubic-bezier(0.2, 0.8, 0.3, 1) both; }
+.cena.calmo .cena-icone { animation: cena-surgir 0.4s ease-out both; }
+@keyframes cena-halo { from { transform: scale(0.82); opacity: 0; } }
+@keyframes cena-pop { from { transform: scale(0.6); opacity: 0; } }
+@keyframes cena-surgir { from { opacity: 0; } }
+@keyframes cena-brilho { from { transform: scale(0) rotate(-40deg); opacity: 0; } 60% { transform: scale(1.3) rotate(6deg); opacity: 1; } }
+@keyframes cena-estouro { from { transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.3); opacity: 0; } }
+.estado-vazio h2 { margin: 0; }
+.estado-vazio p { margin: 0; }
+
+/* aviso de medalha nova */
+.aviso-medalha { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; padding: 10px 12px; border-radius: 14px; border: 1px solid #6b5313; background: #2a2109; animation: aviso-entra 0.35s ease-out both; }
+.aviso-medalha .medalhas { display: flex; flex: none; }
+.aviso-medalha .medalhas .medalha + .medalha { margin-left: -14px; }
+.aviso-medalha .texto { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.aviso-medalha .texto strong { color: var(--accent); }
+.aviso-medalha .btn { flex: none; align-self: flex-start; }
+@keyframes aviso-entra { from { transform: translateY(-8px); opacity: 0; } }
 
 /* medalhas das conquistas e selos dos títulos de nível (src/ui/insignias.ts) */
 .medalha, .selo-nivel { display: inline-block; flex: none; }

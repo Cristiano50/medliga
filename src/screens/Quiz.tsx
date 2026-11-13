@@ -15,6 +15,8 @@ import { ReportarErro } from '../ui/ReportarErro.tsx';
 import { obterBackend, vencedorDuelo, type Duelo } from '../data/backend.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { Icone } from '../ui/Icone.tsx';
+import { Cena } from '../ui/Cena.tsx';
+import { humorPorAcertos } from '../ui/cenas.ts';
 
 const DURACAO_PLANTAO_MS = 90_000;
 const LIMITE_QUESTAO_PLANTAO_MS = 15_000;
@@ -196,7 +198,7 @@ export function QuizTela() {
   if (!liberado)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
-        <div className="confete"><Icone nome="pausa" tamanho={64} /></div>
+        <Cena humor="calmo" icone="pausa" tamanho={104} />
         <h2>Limite diário do plano gratuito atingido</h2>
         <p className="muted">
           Você já usou suas {modo === 'plantao' ? 'partidas de plantão' : 'sessões de questões'} de hoje. Volte amanhã ou assine o Premium para jogar sem limites.
@@ -210,7 +212,7 @@ export function QuizTela() {
   if (itens.length === 0)
     return (
       <div className="card pilha centro" style={{ marginTop: 24 }}>
-        {modo === 'revisao' && <div className="confete"><Icone nome="festa" tamanho={64} /></div>}
+        <Cena humor={modo === 'revisao' ? 'bom' : 'calmo'} icone={modo === 'revisao' ? 'festa' : 'livro'} tamanho={104} />
         <h2>{modo === 'revisao' ? 'Nada para revisar agora' : 'Sem questões disponíveis'}</h2>
         <p className="muted">{modo === 'revisao' ? 'Você está em dia com a revisão espaçada.' : 'O conteúdo deste tópico ainda está sendo preparado.'}</p>
         <Link to="/" className="btn primario">Voltar ao início</Link>
@@ -319,11 +321,12 @@ function Resumo({ registros, modo, onSair }: { registros: Registro[]; modo: Modo
   const acertos = registros.filter((r) => r.correta).length;
   const erros = registros.filter((r) => !r.correta);
   const pct = registros.length ? Math.round((acertos / registros.length) * 100) : 0;
+  const humor = humorPorAcertos(acertos, registros.length);
   const modoBackend = useApp((s) => s.modoBackend);
   return (
     <div className="pilha" style={{ marginTop: 12 }}>
       <div className="card destaque centro pilha">
-        <div className="confete"><Icone nome={pct >= 80 ? 'ranking' : pct >= 50 ? 'tendencia' : 'estudar'} tamanho={64} /></div>
+        <Cena humor={humor} icone={humor === 'comemorar' ? 'ranking' : humor === 'bom' ? 'tendencia' : 'estudar'} />
         <h1 style={{ margin: 0 }}>+{xp} XP</h1>
         <p className="muted" style={{ margin: 0 }}>
           {acertos} de {registros.length} corretas ({pct}%)
@@ -370,7 +373,7 @@ function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registro
   return (
     <div className="pilha" style={{ marginTop: 12 }}>
       <div className="card destaque centro pilha">
-        <div className="confete"><Icone nome={v === 'eu' ? 'ranking' : v === 'adversario' ? 'medalha' : v === 'empate' ? 'empate' : 'ampulheta'} tamanho={64} /></div>
+        <Cena humor={v === 'eu' ? 'comemorar' : v === 'empate' ? 'bom' : 'calmo'} icone={v === 'eu' ? 'ranking' : v === 'adversario' ? 'medalha' : v === 'empate' ? 'empate' : 'ampulheta'} />
         <h1 style={{ margin: 0 }}>
           {v === 'eu' ? 'Você venceu!' : v === 'adversario' ? 'Não foi dessa vez' : v === 'empate' ? 'Empate' : 'Aguardando o adversário'}
         </h1>

@@ -2,7 +2,7 @@
 import type { NomeIcone } from './icones.ts';
 import { CAIXA_MEDALHA, CAIXA_SELO, LADO_SELO_COMPACTO, descricaoMedalha, indiceDoSelo, medalhaFormas, seloFormas, type FormaInsignia } from './insignias.ts';
 
-function Formas({ formas }: { formas: FormaInsignia[] }) {
+export function Formas({ formas }: { formas: FormaInsignia[] }) {
   return (
     <>
       {formas.map((f, i) => (
@@ -15,6 +15,7 @@ function Formas({ formas }: { formas: FormaInsignia[] }) {
           strokeWidth={f.s ? (f.sw ?? 2) : undefined}
           strokeLinecap={f.s ? (f.reto ? 'butt' : 'round') : undefined}
           strokeLinejoin={f.s ? 'round' : undefined}
+          strokeDasharray={f.dash}
           opacity={f.o}
           transform={f.tr}
         />

@@ -6,6 +6,7 @@ import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { itensNovos } from '../modules/avatar/regras.ts';
 import { useProgressoAvatar } from '../modules/avatar/useProgressoAvatar.ts';
 import { Icone } from './Icone.tsx';
+import { AvisoMedalhas } from './AvisoMedalhas.tsx';
 
 /** Ícone do item Perfil: o avatar do jogador (se já montou) e a marca de item novo liberado. */
 function IconePerfil() {
@@ -47,6 +48,7 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
             Este navegador bloqueou o armazenamento local: dá para jogar, mas o progresso some ao fechar a página.
           </div>
         )}
+        <AvisoMedalhas />
         <Outlet />
       </main>
       {!semNav && (

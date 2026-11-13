@@ -7,6 +7,7 @@ import { semanaAtual } from '../core/ranking.ts';
 import { obterBackend, type ModoBackend } from './backend.ts';
 import { sincronizar } from './sync.ts';
 import type { AvatarConfig } from '../modules/avatar/tipos.ts';
+import { conquistasNovas } from '../core/conquistas.ts';
 
 interface EstadoApp {
   carregado: boolean;
@@ -26,8 +27,17 @@ interface EstadoApp {
   enviarAvatarPendente(forcar?: boolean): Promise<void>;
   /** Marca como vistos os itens desbloqueados (tira a etiqueta "Novo"). */
   marcarItensVistos(chaves: string[]): Promise<void>;
-  /** Guarda no aparelho as conquistas obtidas, para que não se percam quando a sequência de dias cair. */
+  /**
+   * Guarda no aparelho as conquistas obtidas, para que não se percam quando a sequência de dias cair.
+   * A primeira chamada depois de abrir o app só confere o que já existia; as seguintes põem em `medalhasNovas`
+   * o que foi obtido com o app aberto, para o aviso na tela.
+   */
   registrarConquistas(ids: string[]): Promise<void>;
+  /** Conquistas obtidas com o app aberto e ainda não dispensadas pelo jogador (só na memória). */
+  medalhasNovas: string[];
+  /** A conferência inicial das conquistas já foi feita nesta abertura do app. */
+  conquistasConferidas: boolean;
+  dispensarMedalhas(): void;
   concluirSessao(s: RegistroSessao, respostas: RegistroResposta[], estados: EstadoItem[]): Promise<void>;
   contarUso(tipo: 'estudo' | 'plantao'): Promise<void>;
   atualizarSync(): Promise<void>;
@@ -77,6 +87,8 @@ export const useApp = create<EstadoApp>((set, get) => ({
   uso: usoVazio(),
   modoBackend: 'offline',
   pendentesSync: 0,
+  medalhasNovas: [],
+  conquistasConferidas: false,
 
   async carregar() {
     const perfil = (await db.perfil.get('eu')) ?? null;
@@ -158,13 +170,19 @@ export const useApp = create<EstadoApp>((set, get) => ({
   async registrarConquistas(ids) {
     const perfil = get().perfil;
     if (!perfil) return;
-    const obtidas = new Set(perfil.conquistasObtidas ?? []);
-    const antes = obtidas.size;
-    for (const id of ids) obtidas.add(id);
-    if (obtidas.size === antes) return;
-    const novo = { ...perfil, conquistasObtidas: [...obtidas] };
+    const novas = conquistasNovas(perfil.conquistasObtidas, ids);
+    const avisar = get().conquistasConferidas;
+    if (!novas.length) {
+      if (!avisar) set({ conquistasConferidas: true });
+      return;
+    }
+    const novo = { ...perfil, conquistasObtidas: [...(perfil.conquistasObtidas ?? []), ...novas] };
     await db.perfil.put(novo);
-    set({ perfil: novo });
+    set({ perfil: novo, conquistasConferidas: true, medalhasNovas: avisar ? [...get().medalhasNovas, ...novas] : get().medalhasNovas });
+  },
+
+  dispensarMedalhas() {
+    set({ medalhasNovas: [] });
   },
 
   async concluirSessao(s, respostas, estados) {

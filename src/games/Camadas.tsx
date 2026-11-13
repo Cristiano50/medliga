@@ -6,6 +6,8 @@ import { embaralhar } from '../core/random.ts';
 import { salvarMinijogo, type Jogada } from './minijogo.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
 import { Icone } from '../ui/Icone.tsx';
+import { Cena } from '../ui/Cena.tsx';
+import { humorPorAcertos } from '../ui/cenas.ts';
 
 const POR_RODADA = 12;
 
@@ -39,10 +41,11 @@ export function CamadasTela() {
 
   if (xpFinal !== null) {
     const acertos = jogadas.filter((j) => j.correta).length;
+    const humor = humorPorAcertos(acertos, jogadas.length);
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete"><Icone nome={acertos >= 10 ? 'ranking' : 'quebra-cabeca'} tamanho={64} /></div>
+          <Cena humor={humor} icone={humor === 'comemorar' ? 'ranking' : 'quebra-cabeca'} />
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} na camada certa</p>
         </div>

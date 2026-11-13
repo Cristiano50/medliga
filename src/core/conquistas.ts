@@ -45,6 +45,18 @@ export const CONQUISTAS: Conquista[] = [
   { id: 'revisor', icone: 'lupa', nome: 'Revisor', descricao: 'Reporte um possível erro de conteúdo.', progresso: (e) => Math.min(1, e.reportesEnviados) },
 ];
 
+/** Entre as conquistas de `ids`, as que ainda não estavam guardadas (na ordem em que vieram, sem repetir). */
+export function conquistasNovas(guardadas: readonly string[] | undefined, ids: readonly string[]): string[] {
+  const ja = new Set(guardadas ?? []);
+  const novas: string[] = [];
+  for (const id of ids) {
+    if (ja.has(id)) continue;
+    ja.add(id);
+    novas.push(id);
+  }
+  return novas;
+}
+
 export function conquistasDe(e: EstatisticasJogador) {
   return CONQUISTAS.map((c) => {
     const p = Math.max(0, Math.min(1, c.progresso(e)));
