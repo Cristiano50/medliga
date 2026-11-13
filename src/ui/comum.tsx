@@ -1,21 +1,33 @@
 import { Fragment, type ReactNode } from 'react';
 import { seloRevisao, type Revisao } from '../content/schema.ts';
+import { Icone } from './Icone.tsx';
 
 export function SeloRevisao({ revisao }: { revisao: Revisao }) {
   const s = seloRevisao(revisao);
   if (s === 'conferido-medico')
     return (
       <span className="selo medico" title={`Conferido por ${revisao.humano?.conferidoPor} em ${revisao.humano?.conferidoEm}`}>
-        ✔ Conferido por médico
+        <Icone nome="visto" tamanho={12} /> Conferido por médico
       </span>
     );
   if (s === 'revisado-ia')
     return (
       <span className="selo ia" title={`Revisado por agentes: ${revisao.agentes.map((a) => a.area).join(', ')}. Conferência médica pendente.`}>
-        ◆ Revisado por IA · conferência médica pendente
+        <Icone nome="losango" tamanho={12} /> Revisado por IA · conferência médica pendente
       </span>
     );
   return <span className="selo pendente">Revisão pendente</span>;
+}
+
+/** Dificuldade da questão (1 a 5) em pontos cheios e vazados. */
+export function Dificuldade({ nivel }: { nivel: number }) {
+  return (
+    <svg className="dificuldade" width={46} height={10} viewBox="0 0 46 10" role="img" aria-label={`${nivel} de 5`}>
+      {[0, 1, 2, 3, 4].map((i) => (
+        <circle key={i} cx={5 + i * 9} cy={5} r={3.2} fill={i < nivel ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth={1.4} />
+      ))}
+    </svg>
+  );
 }
 
 export function Barra({ valor, ouro = false, rotulo }: { valor: number; ouro?: boolean; rotulo?: string }) {

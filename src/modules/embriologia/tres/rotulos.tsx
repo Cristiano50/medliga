@@ -93,13 +93,18 @@ export function CamadaMarcadores({ quadro }: { quadro: QuadroMarcadores }) {
         {distribuidos.map((p) => {
           const x = p.marcadorX;
           const y = p.marcadorY;
-          const simbolo = p.estado === 'certo' ? '✓' : p.estado === 'errado' ? '×' : p.numero;
           return <g key={p.id} className={`guia3d ${p.estado}`}>
             <title>{p.nome}</title>
             <path d={`M ${x} ${y} L ${p.x} ${p.y}`} />
             <circle cx={p.x} cy={p.y} r={3} />
             <circle className="marcador" cx={x} cy={y} r={13} />
-            <text x={x} y={y} dy=".35em" textAnchor="middle">{simbolo}</text>
+            {p.estado === 'certo' ? (
+              <path className="simbolo" d={`M ${x - 5} ${y + 0.5} l 3.5 3.5 l 6.5 -7.5`} />
+            ) : p.estado === 'errado' ? (
+              <path className="simbolo" d={`M ${x - 4.5} ${y - 4.5} l 9 9 M ${x + 4.5} ${y - 4.5} l -9 9`} />
+            ) : (
+              <text x={x} y={y} dy=".35em" textAnchor="middle">{p.numero}</text>
+            )}
           </g>;
         })}
       </svg>

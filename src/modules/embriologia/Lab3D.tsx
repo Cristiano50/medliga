@@ -5,6 +5,7 @@ import { ESTAGIOS, estruturas, topico } from '../../content/index.ts';
 import { SeloRevisao } from '../../ui/comum.tsx';
 import { Cena3D } from './Cena3D.tsx';
 import { MODELOS, NOMES_EXTRAS } from './modelos/index.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 export function nomesDoEstagio(estagioId: string): Record<string, string> {
   const e = ESTAGIOS.find((x) => x.id === estagioId);
@@ -68,7 +69,7 @@ export default function Lab3DTela() {
     <div className="pilha lab3d">
       <div className="linha entre quebra">
         <div>
-          <Link to="/disciplina/embriologia" className="muted pequeno">‹ Embriologia</Link>
+          <Link to="/disciplina/embriologia" className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> Embriologia</Link>
           <h1 style={{ margin: '4px 0 0' }}>Laboratório 3D</h1>
         </div>
         <SeloRevisao revisao={estagio.revisao} />
@@ -87,7 +88,7 @@ export default function Lab3DTela() {
 
       <div className="card pilha" style={{ gap: 6 }}>
         <div className="linha entre">
-          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Modelo anterior">◀</button>
+          <button className="btn pequeno" onClick={() => irPara(indice - 1)} disabled={indice === 0} aria-label="Modelo anterior"><Icone nome="anterior" tamanho={16} /></button>
           <div className="centro" style={{ flex: 1 }}>
             <strong>{estagio.titulo}</strong>
             <div className="muted pequeno">
@@ -98,7 +99,7 @@ export default function Lab3DTela() {
               {estagio.tamanho ? ` · ${estagio.tamanho}` : ''}
             </div>
           </div>
-          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === doGrupo.length - 1} aria-label="Próximo modelo">▶</button>
+          <button className="btn pequeno" onClick={() => irPara(indice + 1)} disabled={indice === doGrupo.length - 1} aria-label="Próximo modelo"><Icone nome="proximo" tamanho={16} /></button>
         </div>
         {grupo === 'desenvolvimento' ? (
           <>
@@ -172,11 +173,11 @@ export default function Lab3DTela() {
               {modelo.partes.includes(selecionado!) && <span className="numero3d">{modelo.partes.indexOf(selecionado!) + 1}</span>}
               <div><span className="muted pequeno">Estrutura selecionada</span><h2>{info.nome}</h2></div>
             </div>
-            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar">✕</button>
+            <button className="btn pequeno fantasma" onClick={() => setSelecionado(null)} aria-label="Fechar"><Icone nome="fechar" tamanho={16} /></button>
           </div>
           {info.texto && <p className="muted" style={{ margin: 0 }}>{info.texto}</p>}
           {info.topicoId && topico(info.topicoId) && (
-            <Link to={`/topico/${info.topicoId}`} className="pequeno">Estudar: {topico(info.topicoId)!.titulo} ›</Link>
+            <Link to={`/topico/${info.topicoId}`} className="pequeno">Estudar: {topico(info.topicoId)!.titulo} <Icone nome="seta-direita" tamanho={14} /></Link>
           )}
         </section>
       )}
@@ -225,9 +226,9 @@ export default function Lab3DTela() {
         </div>
 
       <div className="grade g2">
-        <Link to={`/jogar/identifique?estagio=${estagio.id}`} className="btn primario">🎯 Desafio: identifique neste estágio</Link>
+        <Link to={`/jogar/identifique?estagio=${estagio.id}`} className="btn primario"><Icone nome="alvo" /> Desafio: identifique neste estágio</Link>
         {estagio.topicos[0] && topico(estagio.topicos[0]) && (
-          <Link to={`/topico/${estagio.topicos[0]}`} className="btn">📘 Estudar o tópico</Link>
+          <Link to={`/topico/${estagio.topicos[0]}`} className="btn"><Icone nome="livro" /> Estudar o tópico</Link>
         )}
       </div>
       {estagio.id === 'semana-8' && (

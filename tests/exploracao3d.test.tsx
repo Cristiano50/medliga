@@ -56,7 +56,10 @@ describe('exploração 3D', () => {
     rerender(<CamadaMarcadores quadro={{ pontos: [{ ...pontos[0], estado: 'selecionado' }, pontos[1]], largura: 300, altura: 360 }} />);
     expect(container.querySelector('svg')!.lastElementChild!.querySelector('title')!.textContent).toBe('A');
     expect(container.querySelector('.selecionado .marcador')!.getAttribute('cy')).toBe(posicao);
-    expect(container.querySelector('.certo text')!.textContent).toBe('✓');
+    // a resposta certa continua marcada com o visto desenhado (traço), não com o número
+    expect(container.querySelector('.certo .simbolo')!.getAttribute('d')).toMatch(/^M /);
+    expect(container.querySelector('.certo text')).toBeNull();
+    expect(container.querySelector('.selecionado text')!.textContent).toBe('1');
   });
   it('omite âncoras fora do enquadramento em qualquer eixo e recupera ao voltar', () => {
     for (const eixo of ['x', 'y', 'z'] as const) {

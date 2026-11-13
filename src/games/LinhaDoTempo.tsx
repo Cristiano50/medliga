@@ -6,6 +6,7 @@ import type { Evento, Topico } from '../content/schema.ts';
 import { embaralhar } from '../core/random.ts';
 import { salvarMinijogo, type Jogada } from './minijogo.ts';
 import { Barra } from '../ui/comum.tsx';
+import { Icone } from '../ui/Icone.tsx';
 
 const RODADAS = 3;
 const EVENTOS_POR_RODADA = 5;
@@ -62,7 +63,7 @@ export function LinhaDoTempoTela() {
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete" aria-hidden>⏳</div>
+          <div className="confete"><Icone nome="ampulheta" tamanho={64} /></div>
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} eventos na posição certa</p>
         </div>
@@ -110,7 +111,7 @@ export function LinhaDoTempoTela() {
   return (
     <div className="pilha">
       <div className="linha entre">
-        <Link to="/" className="btn fantasma pequeno" aria-label="Sair">✕</Link>
+        <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={r / rodadas.length} rotulo="Progresso" /></div>
         <span className="chip-xp">{r + 1}/{rodadas.length}</span>
       </div>
@@ -131,8 +132,8 @@ export function LinhaDoTempoTela() {
               </span>
               {!conferida && (
                 <span className="setas">
-                  <button aria-label={`Subir ${e.descricao}`} onClick={() => mover(i, -1)} disabled={i === 0}>▲</button>
-                  <button aria-label={`Descer ${e.descricao}`} onClick={() => mover(i, 1)} disabled={i === rod.exibicao.length - 1}>▼</button>
+                  <button aria-label={`Subir ${e.descricao}`} onClick={() => mover(i, -1)} disabled={i === 0}><Icone nome="seta-cima" tamanho={18} /></button>
+                  <button aria-label={`Descer ${e.descricao}`} onClick={() => mover(i, 1)} disabled={i === rod.exibicao.length - 1}><Icone nome="seta-baixo" tamanho={18} /></button>
                 </span>
               )}
             </div>

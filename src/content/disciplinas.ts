@@ -1,8 +1,10 @@
 // Catálogo de disciplinas. Cada uma tem uma jogabilidade própria.
 // Ordem = semestre mais comum de cada disciplina nas escolas pesquisadas (docs/pesquisa-curricular.md).
+import type { NomeIcone } from '../ui/icones.ts';
+
 export interface JogoDisciplina {
   rota: string;
-  icone: string;
+  icone: NomeIcone;
   nome: string;
   descricao: string;
   cor: string;
@@ -15,7 +17,7 @@ export interface Disciplina {
   nome: string;
   status: 'disponivel' | 'em-breve';
   cor: string;
-  icone: string; // emoji provisório até a arte final
+  icone: NomeIcone;
   jogabilidade: string;
   descricao: string;
   /** jogos próprios da disciplina (além de questões, plantão, revisão e duelo, que são comuns a todas) */
@@ -29,14 +31,14 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Embriologia',
     status: 'disponivel',
     cor: '#2dd4bf',
-    icone: '🌱',
+    icone: 'broto',
     jogabilidade: 'Laboratório 3D semana a semana',
     descricao: 'Da fertilização ao período fetal: modelos 3D manipuláveis, linha do tempo e camadas germinativas.',
     jogos: [
-      { rota: '/lab3d', icone: '🧫', nome: 'Laboratório 3D', descricao: 'Do zigoto à 8ª semana e órgãos em formação: gire, aproxime e toque nas estruturas.', cor: 'var(--primary)' },
-      { rota: '/jogar/identifique', icone: '🎯', nome: 'Identifique', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
-      { rota: '/jogar/linha-do-tempo', icone: '⏳', nome: 'Linha do tempo', descricao: 'Coloque os eventos do desenvolvimento na ordem certa.', cor: 'var(--crista)' },
-      { rota: '/jogar/camadas', icone: '🧩', nome: 'Camadas germinativas', descricao: 'De onde vem cada tecido? Ectoderma, mesoderma, endoderma ou crista neural.', cor: 'var(--meso)' },
+      { rota: '/lab3d', icone: 'cubo', nome: 'Laboratório 3D', descricao: 'Do zigoto à 8ª semana e órgãos em formação: gire, aproxime e toque nas estruturas.', cor: 'var(--primary)' },
+      { rota: '/jogar/identifique', icone: 'alvo', nome: 'Identifique', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
+      { rota: '/jogar/linha-do-tempo', icone: 'ampulheta', nome: 'Linha do tempo', descricao: 'Coloque os eventos do desenvolvimento na ordem certa.', cor: 'var(--crista)' },
+      { rota: '/jogar/camadas', icone: 'quebra-cabeca', nome: 'Camadas germinativas', descricao: 'De onde vem cada tecido? Ectoderma, mesoderma, endoderma ou crista neural.', cor: 'var(--meso)' },
     ],
   },
   {
@@ -45,15 +47,15 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Histologia',
     status: 'disponivel', // 10 tópicos com duas etapas de revisão por agentes; conferência médica pendente
     cor: '#c084fc',
-    icone: '🔬',
+    icone: 'microscopio',
     jogabilidade: 'Microscópio virtual',
     descricao: 'Lâminas em HE com objetivas de 4×, 10× e 40×: reconheça tecidos, células e estruturas.',
     jogos: [
-      { rota: '/microscopio', icone: '🔬', nome: 'Microscópio virtual', descricao: 'Troque a objetiva, percorra a lâmina e toque nas células e estruturas.', cor: '#c084fc' },
-      { rota: '/jogar/identifique-lamina', icone: '🎯', nome: 'Identifique na lâmina', descricao: 'Ache a estrutura pedida na lâmina antes de perder as vidas.', cor: 'var(--info)' },
-      { rota: '/jogar/qual-tecido', icone: '❓', nome: 'Qual é o tecido?', descricao: 'Veja um campo do microscópio e diga o tecido ou órgão.', cor: 'var(--accent)' },
-      { rota: '/lab3d/histologia', icone: '🧊', nome: 'Laboratório 3D', descricao: 'Néfron, alvéolo e outros esquemas fora de escala: gire, corte e toque nas estruturas.', cor: 'var(--primary)' },
-      { rota: '/jogar/identifique/histologia', icone: '🎯', nome: 'Identifique no 3D', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
+      { rota: '/microscopio', icone: 'microscopio', nome: 'Microscópio virtual', descricao: 'Troque a objetiva, percorra a lâmina e toque nas células e estruturas.', cor: '#c084fc' },
+      { rota: '/jogar/identifique-lamina', icone: 'alvo', nome: 'Identifique na lâmina', descricao: 'Ache a estrutura pedida na lâmina antes de perder as vidas.', cor: 'var(--info)' },
+      { rota: '/jogar/qual-tecido', icone: 'pergunta', nome: 'Qual é o tecido?', descricao: 'Veja um campo do microscópio e diga o tecido ou órgão.', cor: 'var(--accent)' },
+      { rota: '/lab3d/histologia', icone: 'cubo', nome: 'Laboratório 3D', descricao: 'Néfron, alvéolo e outros esquemas fora de escala: gire, corte e toque nas estruturas.', cor: 'var(--primary)' },
+      { rota: '/jogar/identifique/histologia', icone: 'alvo', nome: 'Identifique no 3D', descricao: 'Encontre a estrutura pedida no modelo 3D antes de perder as vidas.', cor: 'var(--info)' },
     ],
   },
   {
@@ -61,7 +63,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Anatomia',
     status: 'em-breve',
     cor: '#f87171',
-    icone: '🦴',
+    icone: 'osso',
     jogabilidade: 'Dissecção 3D por camadas',
     descricao: 'Peças 3D por regiões; identifique estruturas, relações e inervação.',
   },
@@ -70,7 +72,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Bioquímica',
     status: 'em-breve',
     cor: '#facc15',
-    icone: '⚗️',
+    icone: 'frasco',
     jogabilidade: 'Montagem de vias metabólicas',
     descricao: 'Monte as vias, ache a enzima bloqueada e a doença correspondente.',
   },
@@ -79,7 +81,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Genética',
     status: 'em-breve',
     cor: '#38bdf8',
-    icone: '🧬',
+    icone: 'dna',
     jogabilidade: 'Heredogramas e cariótipos',
     descricao: 'Monte heredogramas, leia cariótipos e ligue mutação, herança e fenótipo.',
   },
@@ -88,7 +90,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Fisiologia',
     status: 'em-breve',
     cor: '#60a5fa',
-    icone: '❤️',
+    icone: 'pulso',
     jogabilidade: 'Simulador de sistemas',
     descricao: 'Mexa em variáveis (pressão, volume, hormônios) e preveja a resposta do organismo.',
   },
@@ -97,7 +99,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Patologia',
     status: 'em-breve',
     cor: '#f472b6',
-    icone: '🧫',
+    icone: 'placa',
     jogabilidade: 'Do tecido ao diagnóstico',
     descricao: 'Lesões celulares, inflamação, neoplasias: reconheça o padrão e o mecanismo.',
   },
@@ -106,7 +108,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Farmacologia',
     status: 'em-breve',
     cor: '#a3e635',
-    icone: '💊',
+    icone: 'pilula',
     jogabilidade: 'Alvo e mecanismo',
     descricao: 'Receptores, mecanismos de ação, efeitos adversos e interações.',
   },
@@ -115,7 +117,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Semiologia',
     status: 'em-breve',
     cor: '#34d399',
-    icone: '🩺',
+    icone: 'estetoscopio',
     jogabilidade: 'Exame físico interativo',
     descricao: 'Anamnese guiada, ausculta e manobras; colete os achados certos.',
   },
@@ -124,7 +126,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Fisiopatologia',
     status: 'em-breve',
     cor: '#fb923c',
-    icone: '🔥',
+    icone: 'cascata',
     jogabilidade: 'Cascata de mecanismos',
     descricao: 'Encadeie causa → mecanismo → manifestação.',
   },
@@ -133,7 +135,7 @@ export const DISCIPLINAS: Disciplina[] = [
     nome: 'Cirurgia',
     status: 'em-breve',
     cor: '#94a3b8',
-    icone: '🔪',
+    icone: 'bisturi',
     jogabilidade: 'Centro cirúrgico 3D',
     descricao: 'Escolha a técnica, aponte planos e estruturas, antecipe complicações.',
   },

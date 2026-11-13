@@ -7,6 +7,7 @@ import { Barra } from '../../ui/comum.tsx';
 import { Visor } from './Visor.tsx';
 import { LAMINAS_RENDER } from './laminas/index.ts';
 import { montarRodadas } from './regras.ts';
+import { Icone } from '../../ui/Icone.tsx';
 
 const RODADAS = 10;
 
@@ -46,7 +47,7 @@ export default function QualTecidoTela() {
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete" aria-hidden>{acertos >= 8 ? '🏆' : '🔬'}</div>
+          <div className="confete"><Icone nome={acertos >= 8 ? 'ranking' : 'microscopio'} tamanho={64} /></div>
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} tecidos reconhecidos</p>
         </div>
@@ -61,7 +62,7 @@ export default function QualTecidoTela() {
   return (
     <div className="pilha">
       <div className="linha entre">
-        <Link to="/" className="btn fantasma pequeno" aria-label="Sair">✕</Link>
+        <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={r / rodadas.length} rotulo="Progresso" /></div>
         <span className="chip-xp">{r + 1}/{rodadas.length}</span>
       </div>
@@ -85,7 +86,7 @@ export default function QualTecidoTela() {
       </div>
       {escolha && (
         <div className={`feedback ${escolha === rod.laminaId ? 'ok' : 'erro'}`} role="status">
-          <h3>{escolha === rod.laminaId ? '✅ Isso!' : `❌ É ${certa.tecido.toLowerCase()}`}</h3>
+          <h3><Icone nome={escolha === rod.laminaId ? 'certo' : 'errado'} className={escolha === rod.laminaId ? 'ok' : 'erro'} /> {escolha === rod.laminaId ? 'Isso!' : `É ${certa.tecido.toLowerCase()}`}</h3>
           <p style={{ margin: 0, color: 'var(--text-2)' }}>{certa.titulo}: {certa.descricao}</p>
         </div>
       )}
