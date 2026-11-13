@@ -58,6 +58,10 @@ export default function EditorAvatar() {
     setConfig((c) => c ?? sortearAvatar(progresso));
   }, [progresso, novos, marcarItensVistos]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const atual = GRUPOS.find((g) => g.id === grupo) ?? GRUPOS[0];
   const alterado = useMemo(() => JSON.stringify(config) !== JSON.stringify(normalizarAvatar(perfil.avatar)), [config, perfil.avatar]);
 
@@ -78,8 +82,11 @@ export default function EditorAvatar() {
     if (!config || !progresso) return;
     setSalvando(true);
     await salvarAvatar(restringirAoLiberado(config, progresso));
+    window.scrollTo(0, 0);
     nav(primeiroAcesso ? '/' : '/perfil', { replace: true });
   }
+
+  const semMudanca = salvando || (!alterado && !!perfil.avatar);
 
   return (
     <div className="pilha">
@@ -110,7 +117,7 @@ export default function EditorAvatar() {
             >
               Sortear
             </button>
-            <button type="button" className="btn primario" style={{ flex: 1 }} disabled={salvando || (!alterado && !!perfil.avatar)} onClick={() => void salvar()}>
+            <button type="button" className="btn primario salvar-largo" style={{ flex: 1 }} disabled={semMudanca} onClick={() => void salvar()}>
               {salvando ? 'Salvando…' : 'Salvar'}
             </button>
           </div>
@@ -184,6 +191,14 @@ export default function EditorAvatar() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* No celular, a prévia sai da tela ao rolar: a barra mantém o avatar e o botão de salvar à vista. */}
+      <div className="barra-salvar">
+        <Avatar config={config} tamanho={44} decorativo />
+        <button type="button" className="btn primario" disabled={semMudanca} onClick={() => void salvar()}>
+          {salvando ? 'Salvando…' : alterado || !perfil.avatar ? 'Salvar avatar' : 'Avatar salvo'}
+        </button>
       </div>
     </div>
   );

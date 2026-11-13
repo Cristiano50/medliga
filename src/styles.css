@@ -122,6 +122,8 @@ p { margin: 0 0 0.75em; }
   padding: 16px;
 }
 .card + .card { margin-top: 12px; }
+/* Em grade, o espaçamento vem do gap: sem a margem, as colunas ficam alinhadas. */
+.grade > .card + .card { margin-top: 0; }
 .card.destaque { background: linear-gradient(135deg, #12304a 0%, #0f2a2c 100%); border-color: #1f4d5a; }
 .grade { display: grid; gap: 12px; }
 .grade.g2 { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
@@ -259,7 +261,7 @@ p { margin: 0 0 0.75em; }
 .navbar a .ico { position: relative; display: inline-grid; place-items: center; min-height: 24px; }
 .navbar a .ico .ponto-novo { position: absolute; top: -2px; right: -8px; margin: 0; }
 .nome-com-avatar { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.editor-avatar { display: grid; gap: 16px; }
+.editor-avatar { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
 .editor-avatar .previa { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .como-aparece { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; padding: 5px 12px 5px 5px; border-radius: 999px; background: var(--bg-elev); border: 1px solid var(--border); font-weight: 700; font-size: 0.9rem; }
 .como-aparece span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -273,9 +275,16 @@ p { margin: 0 0 0.75em; }
 .avatar-item .selo.novo { position: absolute; top: 5px; right: 5px; color: var(--accent-ink); background: var(--accent); border-color: var(--accent); }
 .avatar-item.bloqueado { cursor: not-allowed; border-style: dashed; }
 .avatar-item.bloqueado .avatar { opacity: 0.5; filter: grayscale(0.7); }
+.barra-salvar { position: sticky; bottom: calc(76px + var(--safe-bottom)); z-index: 10; display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 16px; background: rgba(15, 23, 41, 0.97); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.barra-salvar .btn { flex: 1; }
+@media (max-width: 759px) {
+  .editor-avatar .previa > .avatar { width: 148px; height: 148px; }
+  .editor-avatar .previa .salvar-largo { display: none; }
+}
 @media (min-width: 760px) {
-  .editor-avatar { grid-template-columns: 300px 1fr; align-items: start; }
+  .editor-avatar { grid-template-columns: 300px minmax(0, 1fr); align-items: start; }
   .editor-avatar .previa { position: sticky; top: 76px; }
+  .barra-salvar { display: none; }
 }
 
 /* ---------- 3D ---------- */

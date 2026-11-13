@@ -1,6 +1,6 @@
 # Termos de Uso do MedLiga
 
-Versão preliminar de 09/11/2026, sujeita a revisão jurídica antes do lançamento. Os campos entre colchetes serão preenchidos com os dados da empresa responsável.
+Versão preliminar de 09/11/2026, atualizada em 13/11/2026 (avatar), sujeita a revisão jurídica antes do lançamento. Os campos entre colchetes serão preenchidos com os dados da empresa responsável.
 
 ## 1. O que é o MedLiga
 
@@ -13,6 +13,7 @@ O conteúdo é escrito com base em livros-texto de referência e revisado por ag
 ## 3. Conta e conduta
 
 - O apelido aparece no ranking: não use nome de outra pessoa, termos ofensivos ou dados de pacientes.
+- O avatar é montado só com peças do próprio jogo (não há envio de foto) e aparece, junto com o apelido, no ranking, que é público, e nos duelos. Alguns itens são liberados conforme o seu nível e as suas conquistas.
 - Informe a escola em que você realmente estuda. Contas com escola falsa podem ser removidas do ranking.
 - É proibido automatizar respostas, explorar falhas ou manipular pontuação. O servidor recalcula os pontos e pode desconsiderar sessões implausíveis.
 
