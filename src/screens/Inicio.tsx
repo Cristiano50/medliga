@@ -10,6 +10,7 @@ import { SeloNivel } from '../ui/Insignias.tsx';
 import { PLANOS } from '../core/planos.ts';
 import { Avatar } from '../modules/avatar/Avatar.tsx';
 import { Icone } from '../ui/Icone.tsx';
+import { CartaoEmBreve, CartaoJogo } from '../ui/cartoes.tsx';
 
 const META_DIARIA_XP = 60;
 
@@ -84,55 +85,54 @@ export function Inicio() {
 
       <section>
         <h2>Jogar agora</h2>
-        <div className="grade g2">
-          <Link to={`/jogar/quiz?modo=plantao&disciplina=${disc.id}`} className="card disc-card" style={{ ['--cor' as string]: 'var(--accent)' }}>
-            <span className="icone" style={{ color: 'var(--accent)' }}><Icone nome="raio" tamanho={32} /></span>
-            <strong>Plantão relâmpago</strong>
-            <span className="muted pequeno">90 segundos de questões rápidas de {disc.nome.toLowerCase()}. Vale pontos para o ranking da sua escola.</span>
+        <div className="pilha" style={{ gap: 10 }}>
+          <CartaoJogo
+            destaque
+            to={`/jogar/quiz?modo=plantao&disciplina=${disc.id}`}
+            icone="raio"
+            cor="var(--accent)"
+            nome="Plantão relâmpago"
+            descricao={`90 segundos de questões rápidas de ${disc.nome.toLowerCase()}. Vale pontos para o ranking da sua escola.`}
+          >
             {plantoesRestantes !== null && <span className="selo">{plantoesRestantes} plantão(ões) hoje no plano gratuito</span>}
-          </Link>
-          {(disc.jogos ?? []).map((j) => (
-            <Link key={j.rota} to={j.rota} className="card disc-card" style={{ ['--cor' as string]: j.cor }}>
-              <span className="icone" style={{ color: j.cor }}><Icone nome={j.icone} tamanho={32} /></span>
-              <strong>{j.nome}</strong>
-              <span className="muted pequeno">{j.descricao}</span>
-            </Link>
-          ))}
-          <Link to="/duelos" className="card disc-card" style={{ ['--cor' as string]: 'var(--danger)' }}>
-            <span className="icone" style={{ color: 'var(--danger)' }}><Icone nome="duelo" tamanho={32} /></span>
-            <strong>Duelo</strong>
-            <span className="muted pequeno">Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais.</span>
-          </Link>
-          {vencidas > 0 && (
-            <Link to={`/jogar/quiz?modo=revisao&disciplina=${disc.id}`} className="card disc-card" style={{ ['--cor' as string]: 'var(--success)' }}>
-              <span className="icone" style={{ color: 'var(--success)' }}><Icone nome="revisao" tamanho={32} /></span>
-              <strong>Revisão do dia</strong>
-              <span className="muted pequeno">{vencidas} questão(ões) de {disc.nome.toLowerCase()} para revisar hoje (revisão espaçada).</span>
-            </Link>
-          )}
+          </CartaoJogo>
+          <div className="grade g2 jogos">
+            {vencidas > 0 && (
+              <CartaoJogo
+                to={`/jogar/quiz?modo=revisao&disciplina=${disc.id}`}
+                icone="revisao"
+                cor="var(--success)"
+                nome="Revisão do dia"
+                descricao={`${vencidas} questão(ões) de ${disc.nome.toLowerCase()} para revisar hoje (revisão espaçada).`}
+              />
+            )}
+            {(disc.jogos ?? []).map((j) => (
+              <CartaoJogo key={j.rota} to={j.rota} icone={j.icone} cor={j.cor} nome={j.nome} descricao={j.descricao} />
+            ))}
+            <CartaoJogo to="/duelos" icone="duelo" cor="var(--danger)" nome="Duelo" descricao="Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais." />
+          </div>
         </div>
       </section>
 
       <section>
         <h2>Disciplinas</h2>
-        <div className="grade g3">
-          {DISCIPLINAS.map((d) =>
-            d.status === 'disponivel' ? (
-              <Link key={d.id} to={`/disciplina/${d.id}`} className="card disc-card" style={{ ['--cor' as string]: d.cor }}>
-                <span className="icone" style={{ color: d.cor }}><Icone nome={d.icone} tamanho={32} /></span>
-                <strong>{d.nome}</strong>
-                <span className="muted pequeno">{d.jogabilidade}</span>
-              </Link>
-            ) : (
-              <div key={d.id} className="card disc-card bloqueado" style={{ ['--cor' as string]: d.cor }} aria-disabled>
-                <span className="icone" style={{ color: d.cor }}><Icone nome={d.icone} tamanho={32} /></span>
-                <strong>{d.nome}</strong>
-                <span className="muted pequeno">{d.jogabilidade}</span>
-                <span className="selo breve">Em breve</span>
-              </div>
-            ),
-          )}
+        <div className="grade g2 jogos">
+          {disponiveis.map((d) => (
+            <CartaoJogo key={d.id} to={`/disciplina/${d.id}`} icone={d.icone} cor={d.cor} nome={d.nome} descricao={d.jogabilidade}>
+              {d.id === disc.id && <span className="selo foco">Em foco</span>}
+            </CartaoJogo>
+          ))}
         </div>
+        {DISCIPLINAS.some((d) => d.status !== 'disponivel') && (
+          <>
+            <h3 className="subtitulo">Em breve</h3>
+            <div className="grade breve">
+              {DISCIPLINAS.filter((d) => d.status !== 'disponivel').map((d) => (
+                <CartaoEmBreve key={d.id} icone={d.icone} cor={d.cor} nome={d.nome} descricao={d.jogabilidade} />
+              ))}
+            </div>
+          </>
+        )}
       </section>
     </div>
   );

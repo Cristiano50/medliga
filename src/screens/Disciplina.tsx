@@ -7,6 +7,7 @@ import { useApp } from '../data/store.ts';
 import { contarAvancadas } from '../core/session.ts';
 import { Barra, SeloRevisao } from '../ui/comum.tsx';
 import { Icone } from '../ui/Icone.tsx';
+import { CartaoJogo, Emblema } from '../ui/cartoes.tsx';
 
 export function DisciplinaTela() {
   const { id = '' } = useParams();
@@ -31,7 +32,7 @@ export function DisciplinaTela() {
     <div className="pilha">
       <header>
         <p className="muted pequeno" style={{ margin: 0 }}>{d.jogabilidade}</p>
-        <h1><Icone nome={d.icone} tamanho={28} /> {d.nome}</h1>
+        <h1 className="titulo-com-emblema"><Emblema icone={d.icone} cor={d.cor} tamanho={44} /> {d.nome}</h1>
         <p className="muted">{d.descricao}</p>
         <Barra valor={dominioMedio} rotulo="Domínio da disciplina" />
         <p className="muted pequeno" style={{ marginTop: 6 }}>
@@ -50,13 +51,9 @@ export function DisciplinaTela() {
       {(d.jogos?.length ?? 0) > 1 && (
         <section className="pilha">
           <h2>Jogos de {d.nome.toLowerCase()}</h2>
-          <div className="grade g2">
+          <div className="grade g2 jogos">
             {d.jogos!.map((j) => (
-              <Link key={j.rota} to={j.rota} className="card disc-card" style={{ ['--cor' as string]: j.cor }}>
-                <span className="icone" style={{ color: j.cor }}><Icone nome={j.icone} tamanho={32} /></span>
-                <strong>{j.nome}</strong>
-                <span className="muted pequeno">{j.descricao}</span>
-              </Link>
+              <CartaoJogo key={j.rota} to={j.rota} icone={j.icone} cor={j.cor} nome={j.nome} descricao={j.descricao} />
             ))}
           </div>
         </section>
