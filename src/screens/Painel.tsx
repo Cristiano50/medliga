@@ -7,6 +7,7 @@ import type { Escola } from '../content/schema.ts';
 import { useApp } from '../data/store.ts';
 import { Barra } from '../ui/comum.tsx';
 import { Carregando } from '../ui/Carregando.tsx';
+import { EstadoVazio } from '../ui/Cena.tsx';
 
 export function PainelTela() {
   const modoBackend = useApp((s) => s.modoBackend);
@@ -74,7 +75,11 @@ export function PainelTela() {
           </p>
         </div>
       )}
-      {linhas && linhas.length === 0 && <div className="aviso info">Ainda não há dados suficientes (mínimo de 5 alunos por tópico).</div>}
+      {linhas && linhas.length === 0 && (
+        <EstadoVazio icone="grafico" titulo="Ainda não há dados suficientes">
+          <p className="muted">Um tópico aparece aqui quando pelo menos 5 alunos da turma já responderam a ele.</p>
+        </EstadoVazio>
+      )}
       {ordenadas.map((l) => (
         <div key={l.topicoId} className="card pilha" style={{ gap: 6 }}>
           <div className="linha entre">

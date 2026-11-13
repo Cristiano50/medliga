@@ -8,6 +8,8 @@ import { Visor } from './Visor.tsx';
 import { LAMINAS_RENDER } from './laminas/index.ts';
 import { montarRodadas } from './regras.ts';
 import { Icone } from '../../ui/Icone.tsx';
+import { Cena } from '../../ui/Cena.tsx';
+import { humorPorAcertos } from '../../ui/cenas.ts';
 
 const RODADAS = 10;
 
@@ -44,10 +46,11 @@ export default function QualTecidoTela() {
 
   if (xpFinal !== null) {
     const acertos = jogadas.filter((j) => j.correta).length;
+    const humor = humorPorAcertos(acertos, jogadas.length);
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete"><Icone nome={acertos >= 8 ? 'ranking' : 'microscopio'} tamanho={64} /></div>
+          <Cena humor={humor} icone={humor === 'comemorar' ? 'ranking' : 'microscopio'} />
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} tecidos reconhecidos</p>
         </div>

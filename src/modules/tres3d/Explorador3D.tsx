@@ -8,6 +8,7 @@ import { SeloRevisao } from '../../ui/comum.tsx';
 import { Cena3D } from '../embriologia/Cena3D.tsx';
 import { CATALOGOS, topicoDaEstrutura, type Disciplina3D } from './catalogo.ts';
 import { Icone } from '../../ui/Icone.tsx';
+import { EstadoVazio } from '../../ui/Cena.tsx';
 
 const normalizar = (texto: string) => texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLocaleLowerCase('pt-BR').trim();
 
@@ -42,10 +43,11 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
 
   if (!item || !modelo)
     return (
-      <div className="card centro pilha" style={{ marginTop: 24 }}>
-        <h2>Laboratório 3D em preparação</h2>
-        <p className="muted">Ainda não há modelos 3D publicados para {catalogo.nome.toLocaleLowerCase('pt-BR')}.</p>
-        <Link to={`/disciplina/${catalogo.disciplina}`} className="btn primario">Voltar</Link>
+      <div style={{ marginTop: 24 }}>
+        <EstadoVazio icone="cubo" titulo="Laboratório 3D em preparação">
+          <p className="muted">Ainda não há modelos 3D publicados para {catalogo.nome.toLocaleLowerCase('pt-BR')}.</p>
+          <Link to={`/disciplina/${catalogo.disciplina}`} className="btn primario">Voltar</Link>
+        </EstadoVazio>
       </div>
     );
 

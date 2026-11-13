@@ -9,6 +9,8 @@ import { Visor, type Destaque } from './Visor.tsx';
 import { LAMINAS_RENDER } from './laminas/index.ts';
 import { contracaoDe, toqueAceito } from './regras.ts';
 import { Icone } from '../../ui/Icone.tsx';
+import { Cena } from '../../ui/Cena.tsx';
+import { humorPorAcertos } from '../../ui/cenas.ts';
 
 const ALVOS = 10;
 const VIDAS = 3;
@@ -76,10 +78,12 @@ export default function IdentifiqueLaminaTela() {
 
   if (xpFinal !== null) {
     const acertos = jogadas.filter((j) => j.correta).length;
+    // sem vidas, a cena é calma, qualquer que seja a conta dos acertos
+    const humor = vidas > 0 ? humorPorAcertos(acertos, jogadas.length) : 'calmo';
     return (
       <div className="pilha" style={{ marginTop: 12 }}>
         <div className="card destaque centro pilha">
-          <div className="confete"><Icone nome={vidas > 0 ? 'microscopio' : 'coracao-partido'} tamanho={64} /></div>
+          <Cena humor={humor} icone={vidas <= 0 ? 'coracao-partido' : humor === 'comemorar' ? 'ranking' : 'microscopio'} />
           <h1 style={{ margin: 0 }}>+{xpFinal} XP</h1>
           <p className="muted" style={{ margin: 0 }}>{acertos} de {jogadas.length} estruturas encontradas</p>
         </div>
