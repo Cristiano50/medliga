@@ -13,6 +13,7 @@ import { Barra } from '../ui/comum.tsx';
 import { Carregando } from '../ui/Carregando.tsx';
 import { ReportarErro } from '../ui/ReportarErro.tsx';
 import { obterBackend, vencedorDuelo, type Duelo } from '../data/backend.ts';
+import { Avatar } from '../modules/avatar/Avatar.tsx';
 
 const DURACAO_PLANTAO_MS = 90_000;
 const LIMITE_QUESTAO_PLANTAO_MS = 15_000;
@@ -356,6 +357,8 @@ function segundos(ms: number) {
 }
 
 function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registros: Registro[]; erro: string | null }) {
+  const meuAvatar = useApp((s) => s.perfil?.avatar);
+  const meuNome = useApp((s) => s.perfil?.nome ?? '');
   if (erro) return <div className="aviso" style={{ marginTop: 16 }}>{erro}</div>;
   if (!duelo || !duelo.meuResultado) return <Carregando texto="Enviando seu resultado…" />;
   const v = vencedorDuelo(duelo);
@@ -373,11 +376,13 @@ function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registro
       </div>
       <div className="grade" style={{ gridTemplateColumns: '1fr 1fr' }}>
         <div className="card centro">
+          <Avatar config={meuAvatar} nome={meuNome} tamanho={56} decorativo className="no-centro" />
           <span className="muted pequeno">Você</span>
           <div style={{ fontSize: '1.6rem', fontWeight: 800 }}>{eu.acertos}/{eu.total}</div>
           <span className="muted pequeno">{segundos(eu.tempoMs)}</span>
         </div>
         <div className="card centro">
+          <Avatar config={duelo.adversarioAvatar} nome={duelo.adversario ?? ''} tamanho={56} decorativo className="no-centro" />
           <span className="muted pequeno">{duelo.adversario ?? 'Adversário'}</span>
           <div style={{ fontSize: '1.6rem', fontWeight: 800 }}>{ele ? `${ele.acertos}/${ele.total}` : '—'}</div>
           <span className="muted pequeno">{ele ? segundos(ele.tempoMs) : 'ainda não jogou'}</span>

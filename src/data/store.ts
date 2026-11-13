@@ -6,6 +6,7 @@ import { hojeLocal, type UsoDiario } from '../core/planos.ts';
 import { semanaAtual } from '../core/ranking.ts';
 import { obterBackend, type ModoBackend } from './backend.ts';
 import { sincronizar } from './sync.ts';
+import type { AvatarConfig } from '../modules/avatar/tipos.ts';
 
 interface EstadoApp {
   carregado: boolean;
@@ -19,6 +20,14 @@ interface EstadoApp {
   pendentesSync: number;
   carregar(): Promise<void>;
   salvarPerfil(p: Partial<Omit<Perfil, 'chave' | 'idLocal' | 'criadoEm'>>): Promise<Perfil>;
+  /** Grava o avatar no aparelho e, com conta online, envia ao servidor (aparece no ranking e nos duelos). */
+  salvarAvatar(avatar: AvatarConfig): Promise<void>;
+  /** Envia ao servidor o avatar que ficou pendente (ou, com `forcar`, o avatar atual). */
+  enviarAvatarPendente(forcar?: boolean): Promise<void>;
+  /** Marca como vistos os itens desbloqueados (tira a etiqueta "Novo"). */
+  marcarItensVistos(chaves: string[]): Promise<void>;
+  /** Guarda no aparelho as conquistas obtidas, para que não se percam quando a sequência de dias cair. */
+  registrarConquistas(ids: string[]): Promise<void>;
   concluirSessao(s: RegistroSessao, respostas: RegistroResposta[], estados: EstadoItem[]): Promise<void>;
   contarUso(tipo: 'estudo' | 'plantao'): Promise<void>;
   atualizarSync(): Promise<void>;
@@ -102,7 +111,60 @@ export const useApp = create<EstadoApp>((set, get) => ({
     } catch {
       // Offline: o perfil é reenviado na próxima sincronização.
     }
+    // Quem montou o avatar antes de criar a conta envia o avatar na primeira gravação online.
+    if (perfil.avatar && parcial.usuarioOnlineId) await get().enviarAvatarPendente(true);
     return perfil;
+  },
+
+  async salvarAvatar(avatar) {
+    const perfil = get().perfil;
+    if (!perfil) return;
+    const novo: Perfil = { ...perfil, avatar, avatarPendente: true };
+    await db.perfil.put(novo);
+    set({ perfil: novo });
+    await get().enviarAvatarPendente();
+  },
+
+  async enviarAvatarPendente(forcar = false) {
+    const perfil = get().perfil;
+    if (!perfil?.avatar || (!perfil.avatarPendente && !forcar)) return;
+    try {
+      const b = await obterBackend();
+      if (b.modo === 'offline' || !(await b.usuarioAtual())) return; // sem conta: fica só no aparelho
+      await b.salvarAvatar(perfil.avatar);
+      const atual = get().perfil;
+      if (!atual) return;
+      const novo: Perfil = { ...atual, avatarPendente: false };
+      await db.perfil.put(novo);
+      set({ perfil: novo });
+    } catch {
+      // sem conexão: tenta de novo na próxima sincronização
+    }
+  },
+
+  async marcarItensVistos(chaves) {
+    const perfil = get().perfil;
+    if (!perfil) return;
+    const vistos = new Set(perfil.avatarItensVistos ?? []);
+    const antes = vistos.size;
+    for (const k of chaves) vistos.add(k);
+    if (vistos.size === antes) return;
+    // Só no aparelho: não é dado de perfil do servidor.
+    const novo = { ...perfil, avatarItensVistos: [...vistos] };
+    await db.perfil.put(novo);
+    set({ perfil: novo });
+  },
+
+  async registrarConquistas(ids) {
+    const perfil = get().perfil;
+    if (!perfil) return;
+    const obtidas = new Set(perfil.conquistasObtidas ?? []);
+    const antes = obtidas.size;
+    for (const id of ids) obtidas.add(id);
+    if (obtidas.size === antes) return;
+    const novo = { ...perfil, conquistasObtidas: [...obtidas] };
+    await db.perfil.put(novo);
+    set({ perfil: novo });
   },
 
   async concluirSessao(s, respostas, estados) {
@@ -130,6 +192,7 @@ export const useApp = create<EstadoApp>((set, get) => ({
   async atualizarSync() {
     try {
       await sincronizar();
+      await get().enviarAvatarPendente();
       // O servidor é a fonte da verdade do plano (assinatura individual ou licença da escola).
       const b = await obterBackend();
       if (b.modo === 'supabase' && (await b.usuarioAtual())) {

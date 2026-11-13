@@ -10,8 +10,10 @@ import { db } from '../data/db.ts';
 import { Barra } from '../ui/comum.tsx';
 import { MARCA } from '../config/marca.ts';
 import { conquistasDe, type EstatisticasJogador } from '../core/conquistas.ts';
-import { carregarDisciplina } from '../content/index.ts';
-import { dominio } from '../core/srs.ts';
+import { carregarEstatisticas } from '../data/estatisticas.ts';
+import { Avatar } from '../modules/avatar/Avatar.tsx';
+import { itensNovos } from '../modules/avatar/regras.ts';
+import { useProgressoAvatar } from '../modules/avatar/useProgressoAvatar.ts';
 
 export function PerfilTela() {
   const perfil = useApp((s) => s.perfil)!;
@@ -25,6 +27,8 @@ export function PerfilTela() {
   const [busca, setBusca] = useState('');
   const [stats, setStats] = useState({ respostas: 0, acertos: 0, sessoes: 0 });
   const niv = nivelPorXP(xpTotal);
+  const progressoAvatar = useProgressoAvatar();
+  const novos = progressoAvatar ? itensNovos(progressoAvatar, perfil.avatarItensVistos).length : 0;
 
   useEffect(() => {
     void carregarEscolas().then(setEscolas);
@@ -41,14 +45,16 @@ export function PerfilTela() {
     <div className="pilha">
       <div className="card destaque pilha">
         <div className="linha">
-          <div style={{ width: 56, height: 56, borderRadius: 16, background: 'var(--surface-3)', display: 'grid', placeItems: 'center', fontSize: 26, fontWeight: 800 }}>
-            {perfil.nome.slice(0, 1).toUpperCase()}
-          </div>
-          <div>
+          <Avatar config={perfil.avatar} nome={perfil.nome} tamanho={72} />
+          <div style={{ minWidth: 0, flex: 1 }}>
             <h1 style={{ margin: 0 }}>{perfil.nome}</h1>
             <span className="muted">{tituloDoNivel(niv.nivel)} · Nível {niv.nivel}</span>
           </div>
         </div>
+        <Link to="/perfil/avatar" className="btn pequeno" style={{ alignSelf: 'flex-start' }}>
+          {perfil.avatar ? 'Editar avatar' : 'Montar avatar'}
+          {novos > 0 && <span className="selo novo-item" style={{ marginLeft: 8 }}>{novos === 1 ? '1 item novo' : `${novos} itens novos`}</span>}
+        </Link>
         <Barra valor={niv.progresso} rotulo="Progresso até o próximo nível" />
         <div className="grade g3" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
           <Stat rotulo="XP total" valor={xpTotal.toLocaleString('pt-BR')} />
@@ -280,31 +286,12 @@ function Conquistas() {
   const [est, setEst] = useState<EstatisticasJogador | null>(null);
   const [todas, setTodas] = useState(false);
   useEffect(() => {
-    void (async () => {
-      const [sessoes, estados, reportes, topicos] = await Promise.all([
-        db.sessoes.toArray(),
-        db.estados.toArray(),
-        db.reportes.count(),
-        carregarDisciplina('embriologia'),
-      ]);
-      const porId = new Map(estados.map((e) => [e.questaoId, e]));
-      const dominados = topicos.filter(
-        (t) => dominio(t.questoes.map((q) => porId.get(q.id)).filter((x) => !!x) as typeof estados, t.questoes.length) >= 0.6,
-      ).length;
-      setEst({
-        sessoes: sessoes.map((s) => ({ modo: s.modo, acertos: s.acertos, total: s.total })),
-        sequenciaDias,
-        xpTotal,
-        nivel: nivelPorXP(xpTotal).nivel,
-        topicosDominados: dominados,
-        totalTopicos: topicos.length,
-        temEscola: !!perfil.escolaId,
-        reportesEnviados: reportes,
-      });
-    })();
+    void carregarEstatisticas({ xpTotal, sequenciaDias, temEscola: !!perfil.escolaId }).then(setEst);
   }, [xpTotal, sequenciaDias, perfil.escolaId]);
   if (!est) return null;
-  const lista = conquistasDe(est);
+  // Conquista obtida não se perde (por exemplo, quando a sequência de dias cai): vale também o que está guardado no aparelho.
+  const guardadas = new Set(perfil.conquistasObtidas ?? []);
+  const lista = conquistasDe(est).map((c) => (guardadas.has(c.id) ? { ...c, valor: 1, obtida: true } : c));
   const obtidas = lista.filter((c) => c.obtida).length;
   const visiveis = todas ? lista : [...lista].sort((a, b) => Number(b.obtida) - Number(a.obtida) || b.valor - a.valor).slice(0, 6);
   return (

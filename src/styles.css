@@ -249,6 +249,35 @@ p { margin: 0 0 0.75em; }
 .aviso { padding: 10px 14px; border-radius: 12px; border: 1px solid #6b5313; background: #221b08; color: #fde68a; font-size: 0.9rem; }
 .aviso.info { border-color: #1e3a66; background: #0e1a30; color: #bfdbfe; }
 
+/* ---------- avatar ---------- */
+.so-leitor { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.avatar { display: block; flex: none; border-radius: 50%; }
+.avatar.no-centro { margin: 0 auto 6px; }
+.selo.novo-item { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); }
+.avatar-link { position: relative; display: inline-flex; flex: none; border-radius: 50%; text-decoration: none; }
+.ponto-novo { display: inline-block; width: 9px; height: 9px; margin-left: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--bg-elev); vertical-align: middle; }
+.navbar a .ico { position: relative; display: inline-grid; place-items: center; min-height: 24px; }
+.navbar a .ico .ponto-novo { position: absolute; top: -2px; right: -8px; margin: 0; }
+.nome-com-avatar { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.editor-avatar { display: grid; gap: 16px; }
+.editor-avatar .previa { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.como-aparece { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; padding: 5px 12px 5px 5px; border-radius: 999px; background: var(--bg-elev); border: 1px solid var(--border); font-weight: 700; font-size: 0.9rem; }
+.como-aparece span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.avatar-itens { display: grid; grid-template-columns: repeat(auto-fill, minmax(98px, 1fr)); gap: 8px; }
+.avatar-item { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 44px; padding: 10px 6px 8px; border-radius: 14px; border: 2px solid var(--border); background: var(--surface); text-align: center; cursor: pointer; }
+.avatar-item .nome { font-size: 0.8rem; font-weight: 700; line-height: 1.2; }
+.avatar-item .regra { display: inline-flex; align-items: flex-start; gap: 4px; font-size: 0.72rem; line-height: 1.25; color: var(--text-2); text-align: left; }
+.avatar-item .regra svg { margin-top: 2px; }
+.avatar-item[aria-pressed='true'] { border-color: var(--primary); background: #0f2a2c; }
+.avatar-item .marcado { position: absolute; top: 5px; left: 5px; }
+.avatar-item .selo.novo { position: absolute; top: 5px; right: 5px; color: var(--accent-ink); background: var(--accent); border-color: var(--accent); }
+.avatar-item.bloqueado { cursor: not-allowed; border-style: dashed; }
+.avatar-item.bloqueado .avatar { opacity: 0.5; filter: grayscale(0.7); }
+@media (min-width: 760px) {
+  .editor-avatar { grid-template-columns: 300px 1fr; align-items: start; }
+  .editor-avatar .previa { position: sticky; top: 76px; }
+}
+
 /* ---------- 3D ---------- */
 .palco3d { position: relative; width: 100%; height: min(62vh, 560px); border-radius: var(--radius); overflow: hidden; background: radial-gradient(circle at 50% 40%, #16233d 0%, #0b1220 70%); border: 1px solid var(--border); touch-action: none; }
 .palco3d.tela-cheia { height: calc(100dvh - 120px); border-radius: 0; border: 0; }

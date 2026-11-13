@@ -28,7 +28,7 @@ export function BoasVindas() {
   const resultados = useMemo(() => buscarEscolas(escolas, busca, 40), [escolas, busca]);
   const escolhida = escolas.find((e) => e.id === escolaId);
 
-  async function concluir() {
+  async function concluir(montarAvatar = false) {
     await salvarPerfil({
       nome: nome.trim(),
       semestre,
@@ -36,7 +36,7 @@ export function BoasVindas() {
       escolaSugerida: !escolaId && sugestao.trim().length >= 3 ? sugestao.trim() : null,
       aceitouTermosEm: Date.now(),
     });
-    nav('/', { replace: true });
+    nav(montarAvatar ? '/perfil/avatar?inicio=1' : '/', { replace: true });
   }
 
   return (
@@ -144,8 +144,11 @@ export function BoasVindas() {
             <div className="linha">
               <button className="btn fantasma" onClick={() => setPasso(1)}>Voltar</button>
               <span style={{ flex: 1 }} />
-              <button className="btn primario" disabled={!aceite} onClick={concluir}>Começar a jogar</button>
+              <button className="btn primario" disabled={!aceite} onClick={() => void concluir()}>Começar a jogar</button>
             </div>
+            <button className="btn fantasma pequeno" disabled={!aceite} onClick={() => void concluir(true)}>
+              Montar meu avatar antes (opcional)
+            </button>
           </div>
         )}
       </main>

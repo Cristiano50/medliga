@@ -5,6 +5,7 @@ import { obterBackend } from '../data/backend.ts';
 import { carregarEscolas } from '../content/index.ts';
 import type { Escola } from '../content/schema.ts';
 import { semanaAtual, TOP_N_ESCOLA, type PontuacaoAluno, type PontuacaoEscola } from '../core/ranking.ts';
+import { Avatar } from '../modules/avatar/Avatar.tsx';
 
 type Aba = 'escola' | 'escolas' | 'geral';
 
@@ -124,8 +125,13 @@ export function RankingTela() {
                   <tr key={a.usuarioId} className={a.usuarioId === usuarioId ? 'eu' : ''}>
                     <td className={`pos p${i + 1}`}>{i + 1}</td>
                     <td>
-                      <strong>{a.nome}</strong>
-                      {aba === 'geral' && a.escolaId && <div className="muted pequeno">{escolas.get(a.escolaId)?.sigla ?? ''}</div>}
+                      <div className="nome-com-avatar">
+                        <Avatar config={a.avatar} nome={a.nome} tamanho={32} decorativo />
+                        <div style={{ minWidth: 0 }}>
+                          <strong>{a.nome}</strong>
+                          {aba === 'geral' && a.escolaId && <div className="muted pequeno">{escolas.get(a.escolaId)?.sigla ?? ''}</div>}
+                        </div>
+                      </div>
                     </td>
                     <td className="pts">{a.xpSemana.toLocaleString('pt-BR')}</td>
                   </tr>

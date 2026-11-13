@@ -2,6 +2,23 @@ import { NavLink, Outlet, Link } from 'react-router-dom';
 import { useApp } from '../data/store.ts';
 import { nivelPorXP } from '../core/scoring.ts';
 import { armazenamentoTemporario } from '../data/armazenamento.ts';
+import { Avatar } from '../modules/avatar/Avatar.tsx';
+import { itensNovos } from '../modules/avatar/regras.ts';
+import { useProgressoAvatar } from '../modules/avatar/useProgressoAvatar.ts';
+
+/** Ícone do item Perfil: o avatar do jogador (se já montou) e a marca de item novo liberado. */
+function IconePerfil() {
+  const avatar = useApp((s) => s.perfil?.avatar);
+  const vistos = useApp((s) => s.perfil?.avatarItensVistos);
+  const progresso = useProgressoAvatar();
+  const novos = progresso ? itensNovos(progresso, vistos).length : 0;
+  return (
+    <span className="ico">
+      {avatar ? <Avatar config={avatar} tamanho={24} decorativo /> : <span aria-hidden>👤</span>}
+      {novos > 0 && <span className="ponto-novo" role="img" aria-label="itens novos para o avatar" />}
+    </span>
+  );
+}
 
 export function Layout({ semNav = false }: { semNav?: boolean }) {
   const xpTotal = useApp((s) => s.xpTotal);
@@ -43,7 +60,7 @@ export function Layout({ semNav = false }: { semNav?: boolean }) {
             <span className="ico" aria-hidden>🏆</span>Ranking
           </NavLink>
           <NavLink to="/perfil" className={({ isActive }) => (isActive ? 'ativo' : '')}>
-            <span className="ico" aria-hidden>👤</span>Perfil
+            <IconePerfil />Perfil
           </NavLink>
         </nav>
       )}
