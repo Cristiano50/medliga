@@ -220,10 +220,25 @@ p { margin: 0 0 0.75em; }
 }
 .sem-nav .rodape-acao { bottom: var(--safe-bottom); }
 
-.disc-card { position: relative; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: inherit; overflow: hidden; }
-.disc-card .icone { display: inline-flex; align-self: flex-start; color: var(--cor, var(--primary)); }
-.disc-card.bloqueado { opacity: 0.6; }
-.disc-card::after { content: ''; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--cor, var(--primary)); }
+/* cartões da tela inicial e das disciplinas (src/ui/cartoes.tsx) */
+.emblema { display: inline-grid; place-items: center; flex: none; color: var(--cor, var(--primary)); background: var(--surface-2); background: color-mix(in srgb, var(--cor, var(--primary)) 16%, transparent); box-shadow: inset 0 0 0 1px var(--border); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cor, var(--primary)) 38%, transparent); }
+.cartao-jogo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: border-color 0.15s ease, transform 0.15s ease; }
+.cartao-jogo .texto { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 0; flex: 1; }
+.cartao-jogo .seta { color: var(--muted); }
+.cartao-jogo:hover, .cartao-jogo:focus-visible { border-color: var(--cor, var(--primary)); border-color: color-mix(in srgb, var(--cor, var(--primary)) 55%, var(--border)); }
+.cartao-jogo:active { transform: translateY(1px); }
+.cartao-jogo.destaque { background: linear-gradient(135deg, color-mix(in srgb, var(--cor, var(--primary)) 16%, var(--surface)) 0%, var(--surface) 72%); border-color: color-mix(in srgb, var(--cor, var(--primary)) 42%, var(--border)); }
+.cartao-jogo.destaque strong { font-size: 1.05rem; }
+.grade.jogos { gap: 10px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.selo.foco { color: var(--primary); border-color: #1f5f58; background: #0d2a29; }
+.subtitulo { margin: 16px 0 8px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.grade.breve { gap: 8px; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); }
+.cartao-breve { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 14px; border: 1px dashed var(--border); }
+.cartao-breve .emblema { opacity: 0.75; }
+.cartao-breve .texto { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.cartao-breve strong { font-size: 0.9rem; color: var(--text-2); }
+.cartao-breve .muted { font-size: 0.72rem; line-height: 1.25; }
+.titulo-com-emblema { display: flex; align-items: center; gap: 12px; }
 
 .topico-item { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
 .topico-item .num { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--surface-3); font-weight: 800; }
