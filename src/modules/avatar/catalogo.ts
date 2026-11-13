@@ -55,6 +55,7 @@ export const CATALOGO: Record<Categoria, ItemAvatar[]> = {
     { id: 'nenhum', nome: 'Sem cobertura' },
     { id: 'hijab', nome: 'Hijab' },
     { id: 'turbante', nome: 'Turbante' },
+    { id: 'dastar', nome: 'Dastar' },
     { id: 'touca', nome: 'Touca cirúrgica', desbloqueio: nivel(30) },
   ],
   barba: [

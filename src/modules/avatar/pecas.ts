@@ -150,13 +150,39 @@ export const COBERTURAS: Record<string, { atras: Forma[]; frente: Forma[]; ombro
     ],
     ombros: [{ d: 'M62 140 C80 152 120 152 138 140 C150 150 154 164 150 176 C124 186 76 186 50 176 C46 164 50 150 62 140 Z', f: 'roupa' }],
   },
+  // Amarração alta de tecido, com nó na frente (turbante afro-brasileiro). Mais alto e mais largo que a cabeça.
   turbante: {
     atras: [],
     frente: [
-      { d: 'M59 84 C52 44 80 28 100 28 C120 28 148 44 141 84 C130 68 114 63 100 63 C86 63 70 68 59 84 Z', f: 'roupa' },
-      { d: 'M66 66 C84 50 112 46 136 58', s: T, sw: 3, o: 0.16 },
-      { d: 'M62 78 C84 60 114 58 139 72', s: T, sw: 3, o: 0.16 },
-      { e: [100, 40, 9, 7], f: B, o: 0.22 },
+      { d: 'M57 88 C47 62 52 32 74 20 C90 11 112 11 127 20 C148 32 153 62 143 88 C132 76 116 70 100 70 C84 70 68 76 57 88 Z', f: 'roupa' },
+      // dobras do tecido, cruzando para o nó
+      { d: 'M57 80 C70 58 86 46 100 42', s: T, sw: 3, o: 0.17 },
+      { d: 'M143 80 C130 58 114 46 100 42', s: T, sw: 3, o: 0.17 },
+      { d: 'M54 60 C64 44 80 36 96 34', s: T, sw: 3, o: 0.13 },
+      { d: 'M146 60 C136 44 120 36 104 34', s: T, sw: 3, o: 0.13 },
+      // faixa da testa
+      { d: 'M57 88 C68 76 84 70 100 70 C116 70 132 76 143 88', s: T, sw: 4, o: 0.2 },
+      // nó: duas voltas e o miolo
+      { d: 'M100 38 C90 22 68 24 72 38 C75 49 91 46 100 38 Z', f: 'roupa' },
+      { d: 'M100 38 C110 22 132 24 128 38 C125 49 109 46 100 38 Z', f: 'roupa' },
+      { d: 'M100 38 C90 22 68 24 72 38 C75 49 91 46 100 38 Z', f: B, o: 0.2 },
+      { d: 'M100 38 C110 22 132 24 128 38 C125 49 109 46 100 38 Z', f: B, o: 0.12 },
+      { e: [100, 38, 7, 8], f: 'roupa' },
+      { e: [100, 38, 7, 8], f: T, o: 0.2 },
+    ],
+    ombros: [],
+  },
+  // Dastar (turbante sikh): voltas em camadas que se encontram em V invertido na testa; cobre o alto das orelhas.
+  dastar: {
+    atras: [],
+    frente: [
+      { d: 'M53 96 C42 54 64 20 100 20 C136 20 158 54 147 96 L138 92 C130 80 114 70 100 65 C86 70 70 80 62 92 Z', f: 'roupa' },
+      { d: 'M55 84 L100 55 L145 84', s: T, sw: 3, o: 0.17 },
+      { d: 'M53 68 L100 43 L147 68', s: T, sw: 3, o: 0.15 },
+      { d: 'M58 50 L100 31 L142 50', s: T, sw: 3, o: 0.12 },
+      { d: 'M62 92 C70 80 86 70 100 65 C114 70 130 80 138 92', s: T, sw: 3, o: 0.2 },
+      // ponta do tecido de baixo, no centro da testa
+      { d: 'M92 72 L100 65 L108 72 C103 74 97 74 92 72 Z', f: B, o: 0.38 },
     ],
     ombros: [],
   },

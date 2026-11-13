@@ -28,6 +28,7 @@
 | **Temporada semanal** (segunda a domingo, Brasília) | Ritmo de retorno; recomeça para todos. A escola do aluno fica fixa na semana em que ele pontuou pela primeira vez (troca vale na semana seguinte). |
 | **Modelos 3D procedurais** | Geometria gerada em código (sem assets de terceiros): sem custo de licença, leve (funciona em celular simples), cada estrutura é um objeto identificável para os jogos. Arte final pode substituir os modelos mantendo os mesmos IDs. |
 | **Conteúdo como dado** | `content/<disciplina>/topicos/*.json` com schema único (`docs/conteudo-schema.md`). Novos módulos = novos JSON + jogabilidade própria, sem mudar o núcleo. |
+| **Avatar montável, sem foto** | O jogador monta o avatar com peças do próprio jogo (`src/modules/avatar/`): o perfil guarda só os ids das peças, nunca imagem. As peças são formas vetoriais simples numa grade de 200×200, desenhadas por código próprio (sem assets de terceiros) e usadas igualmente pelo app, pelos testes e pelas pranchas do canvas de design. Nada que representa a pessoa (pele, cabelo, cobertura de cabeça, barba, óculos comuns) fica bloqueado; roupas, acessórios, fundos e molduras são liberados por título de nível e por conquista. **O desbloqueio é conferido só no aparelho**, porque nível e conquistas não existem no servidor: o servidor valida o formato (`salvar_avatar`, migração `0007`) e um cliente adulterado poderia exibir um item ainda bloqueado; é só cosmético e não afeta XP nem ranking. Quem não montou avatar aparece como silhueta neutra com a cor derivada do nome (o app não escolhe pele nem cabelo por ninguém). |
 
 ## Pastas
 
@@ -36,6 +37,7 @@
 - `src/data/` — IndexedDB (`db.ts`), estado global (`store.ts`), servidor (`backend.ts`: supabase/demo/offline), sincronização (`sync.ts`).
 - `src/modules/embriologia/` — laboratório 3D, jogo Identifique, modelos por estágio (`modelos/`), núcleo de interação 3D (`tres/nucleo.tsx`).
 - `src/games/` — questões (4 tipos), linha do tempo, camadas germinativas.
+- `src/modules/avatar/` — avatar do jogador: peças (`pecas.ts`), catálogo e regras de desbloqueio (`catalogo.ts`, `regras.ts`), montagem das camadas (`montar.ts`), componente (`Avatar.tsx`) e editor (`EditorAvatar.tsx`, rota `/perfil/avatar`).
 - `supabase/migrations/` — esquema, funções e permissões; `supabase/tests/` — testes SQL.
 - `scripts/` — validação de conteúdo, seed do servidor, estado da revisão, ícones.
 
@@ -58,5 +60,5 @@
 ## Testes
 
 - `npm test` — núcleo (XP, revisão espaçada, sessões, planos, ranking, schema) e coerência conteúdo × modelos 3D.
-- `npm run test:sql` — aplica as migrações num Postgres local com simulação do `auth` do Supabase e roda 14 cenários (XP, idempotência, antifraude, permissões, rankings, reportes, exclusão de conta, painel do professor).
+- `npm run test:sql` — aplica as migrações num Postgres local com simulação do `auth` do Supabase e roda os cenários de XP, idempotência, antifraude, permissões, rankings, avatar (formato válido e inválido, ranking e duelo com avatar), reportes, exclusão de conta, painel do professor e duelos.
 - `npm run validar-conteudo` — roda antes de todo build; JSON inválido interrompe o build.
