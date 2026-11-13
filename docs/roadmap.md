@@ -22,7 +22,7 @@ Cada etapa: desenho no canvas do Wonder (arquivo "MedLiga — Gráficos") → re
 - [x] **2. Ícones próprios** no lugar dos emojis: 52 ícones (navegação, jogos, respostas e ações, resultados, conquistas, disciplinas), em `src/ui/icones.ts`, e na biblioteca do arquivo do Wonder. Pendente: revisão independente dos desenhos e teste com leitor de tela real. As conquistas ainda usam ícones do conjunto; as medalhas próprias são a etapa 3.
 - [x] **3. Medalhas das conquistas e selos dos títulos de nível** (`src/ui/insignias.ts`): 16 medalhas com o progresso no anel e 8 selos; perfil e início. Pendente: revisão independente dos desenhos, teste com leitor de tela real e a decisão sobre títulos neutros de gênero. Não entrou: aviso na hora em que a medalha é obtida (fica para a etapa 4, com as telas de resultado).
 - [x] **4. Telas de resultado e estados vazios** (`src/ui/cenas.ts`): cena em três tons conforme o desempenho, entrada curta que respeita "reduzir movimento", estados vazios com a mesma cena e aviso de medalha nova. Pendente: revisão independente, leitor de tela real e celular real. Não entraram: ilustrações próprias para cada estado vazio (usam o ícone do conjunto) e som.
-- [ ] 5. Cartões das disciplinas e tela inicial.
+- [x] **5. Cartões das disciplinas e tela inicial** (`src/ui/cartoes.tsx`): emblema na cor do assunto, cartão em linha, Plantão em destaque, selo "Em foco" e disciplinas futuras em cartões menores. Pendente: revisão independente e celular real. Não entraram: progresso de cada disciplina no cartão (exigiria baixar o conteúdo de todas na tela inicial) e mudanças no cabeçalho "Meta do dia".
 - [ ] 6. Marca: só proposta no canvas (o ícone do app não muda sem decisão; busca no INPI pendente).
 
 ## v0.2 — Lançamento do piloto
