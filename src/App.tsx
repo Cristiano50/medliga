@@ -32,6 +32,7 @@ const Identifique3DHistologiaTela = lazy(() => import('./modules/histologia/Iden
 
 // Editor do avatar: só é baixado quando o jogador abre.
 const EditorAvatarTela = lazy(() => import('./modules/avatar/EditorAvatar.tsx'));
+const EquipeTela = lazy(() => import('./screens/Equipe.tsx'));
 
 /** Telas que não usam o conteúdo das disciplinas: abrem sem esperar o download dos tópicos. */
 const semConteudo = (caminho: string) => caminho === '/bem-vindo' || caminho.startsWith('/legal/');
@@ -56,6 +57,7 @@ function Rotas({ conteudo }: { conteudo: boolean }) {
           <Route path="/perfil/avatar" element={<EditorAvatarTela />} />
           <Route path="/planos" element={<PlanosTela />} />
           <Route path="/painel" element={<PainelTela />} />
+          <Route path="/equipe/reportes" element={<EquipeTela />} />
           <Route path="/duelos" element={<DuelosTela />} />
         </Route>
         <Route element={<Layout semNav />}>

@@ -30,7 +30,7 @@ Decisões do Cristiano que ficaram em aberto nesta revisão: (1) qual caminho da
 ## v0.2 — Lançamento do piloto
 - Ativar Supabase em produção (região São Paulo) e domínio.
 - Termos de uso e política de privacidade (LGPD); exclusão de conta na tela de perfil.
-- Tela interna para a equipe tratar a fila de reportes.
+- [x] Tela interna para a equipe tratar a fila de reportes (20/11/2026): `/equipe/reportes`, com acesso no perfil só para quem está na tabela `equipe` (migração `0008`). Abas por situação com contagem, a questão mais reportada primeiro, a questão ao lado (enunciado, resposta, explicação e referência), nota da equipe, "aplicar a todos os abertos desta questão" e reabrir. A fila não mostra quem reportou. Tratar um reporte só registra a situação: a correção continua no repositório, com a revisão em etapas, e nada ali marca conteúdo como conferido por médico. Testado em Postgres local e no modo demonstração; falta o servidor em produção e cadastrar a equipe (SQL Editor).
 - Cobrança (lojas + web) e gestão de licenças institucionais.
 - Builds Android (Google Play — teste interno) e iOS (TestFlight).
 - Completar o cadastro de escolas (≈ 30 cursos faltantes; precisa liberar e-mec.mec.gov.br na rede do ambiente).

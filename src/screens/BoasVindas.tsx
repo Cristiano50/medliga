@@ -122,7 +122,7 @@ export function BoasVindas() {
               O MedLiga é uma ferramenta de estudo. Não substitui aulas, livros-texto nem orientação profissional, e não deve ser usado para decisões clínicas.
             </div>
             <label className="linha" style={{ alignItems: 'flex-start' }}>
-              <input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} style={{ width: 22, height: 22, marginTop: 2 }} />
+              <input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} style={{ marginTop: 2 }} />
               <span className="pequeno">
                 Li e aceito os termos de uso e a política de privacidade (LGPD). Seus dados de jogo ficam no aparelho; só são enviados ao servidor se você criar uma conta para o ranking.
               </span>

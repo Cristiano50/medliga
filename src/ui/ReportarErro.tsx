@@ -2,14 +2,9 @@ import { useState } from 'react';
 import { db, uuid, type Reporte } from '../data/db.ts';
 import { sincronizar } from '../data/sync.ts';
 import { Icone } from './Icone.tsx';
+import { MOTIVOS_REPORTE } from '../core/reportes.ts';
 
-const MOTIVOS: { id: Reporte['motivo']; rotulo: string }[] = [
-  { id: 'gabarito', rotulo: 'Gabarito errado' },
-  { id: 'explicacao', rotulo: 'Explicação incorreta ou incompleta' },
-  { id: 'enunciado', rotulo: 'Enunciado ambíguo / mais de uma resposta' },
-  { id: 'portugues', rotulo: 'Erro de português ou digitação' },
-  { id: 'outro', rotulo: 'Outro' },
-];
+const MOTIVOS = MOTIVOS_REPORTE;
 
 /** Botão discreto "reportar erro" com formulário curto. Grava no aparelho e envia quando houver conta e rede. */
 export function ReportarErro({ questaoId }: { questaoId: string }) {

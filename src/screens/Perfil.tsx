@@ -96,6 +96,7 @@ export function PerfilTela() {
       <ContaOnline modoBackend={modoBackend} onSync={atualizarSync} />
 
       <AcessoProfessor />
+      <AcessoEquipe />
 
       <div className="card linha entre">
         <div>
@@ -296,6 +297,26 @@ function AcessoProfessor() {
       <div>
         <span className="muted pequeno">Plano institucional</span>
         <div><strong><Icone nome="grafico" /> Painel do professor</strong></div>
+      </div>
+      <Icone nome="seta-direita" tamanho={18} />
+    </Link>
+  );
+}
+
+function AcessoEquipe() {
+  const [eh, setEh] = useState(false);
+  useEffect(() => {
+    void obterBackend()
+      .then((b) => b.souEquipe())
+      .then(setEh)
+      .catch(() => setEh(false));
+  }, []);
+  if (!eh) return null;
+  return (
+    <Link to="/equipe/reportes" className="card linha entre" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div>
+        <span className="muted pequeno">Equipe de conteúdo</span>
+        <div><strong><Icone nome="bandeira" /> Fila de reportes</strong></div>
       </div>
       <Icone nome="seta-direita" tamanho={18} />
     </Link>
