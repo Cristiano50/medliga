@@ -258,6 +258,7 @@ export function QuizTela() {
 
   return (
     <div className="pilha">
+      <h1 className="so-leitor">{modo === 'plantao' ? 'Plantão relâmpago' : modo === 'revisao' ? 'Revisão do dia' : avancado ? 'Desafio avançado' : 'Questões de estudo'}</h1>
       <div className="linha entre">
         <button className="btn fantasma pequeno" onClick={() => (registros.length ? setFim(true) : nav(-1))} aria-label="Encerrar sessão"><Icone nome="fechar" tamanho={16} /></button>
         <div style={{ flex: 1 }}>

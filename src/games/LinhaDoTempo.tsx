@@ -113,6 +113,7 @@ export function LinhaDoTempoTela() {
 
   return (
     <div className="pilha">
+      <h1 className="so-leitor">{'Linha do tempo'}</h1>
       <div className="linha entre">
         <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={r / rodadas.length} rotulo="Progresso" /></div>

@@ -15,7 +15,7 @@ export function LegalTela() {
       <main className="conteudo" style={{ maxWidth: 720 }}>
         <button className="btn fantasma pequeno" onClick={() => history.back()}><Icone nome="seta-esquerda" tamanho={14} /> Voltar</button>
         <div className="card" style={{ marginTop: 12 }}>
-          <Markdown texto={texto} />
+          <Markdown texto={texto} nivel={1} />
         </div>
         <p className="muted pequeno centro">
           <Link to="/legal/termos">Termos de uso</Link> · <Link to="/legal/privacidade">Política de privacidade</Link>

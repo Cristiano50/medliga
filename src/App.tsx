@@ -33,10 +33,15 @@ const Identifique3DHistologiaTela = lazy(() => import('./modules/histologia/Iden
 // Editor do avatar: só é baixado quando o jogador abre.
 const EditorAvatarTela = lazy(() => import('./modules/avatar/EditorAvatar.tsx'));
 
-function Rotas() {
+/** Telas que não usam o conteúdo das disciplinas: abrem sem esperar o download dos tópicos. */
+const semConteudo = (caminho: string) => caminho === '/bem-vindo' || caminho.startsWith('/legal/');
+
+function Rotas({ conteudo }: { conteudo: boolean }) {
   const perfil = useApp((s) => s.perfil);
   const loc = useLocation();
-  if (!perfil && loc.pathname !== '/bem-vindo' && !loc.pathname.startsWith('/legal/')) return <Navigate to="/bem-vindo" replace />;
+  if (!perfil && !semConteudo(loc.pathname)) return <Navigate to="/bem-vindo" replace />;
+  // As demais telas consultam os tópicos de forma síncrona: esperam o conteúdo (que, depois da 1ª visita, vem do cache).
+  if (!conteudo && !semConteudo(loc.pathname)) return <Carregando />;
   return (
     <Suspense fallback={<Carregando />}>
       <Routes>
@@ -87,10 +92,10 @@ export function App() {
     // Disciplinas disponíveis são pré-carregadas na abertura (cada tópico é um arquivo, em cache para uso offline).
     void Promise.all(DISCIPLINAS_DISPONIVEIS.map((d) => carregarDisciplina(d))).then(() => setConteudo(true));
   }, [carregar]);
-  if (!carregado || !conteudo) return <Carregando />;
+  if (!carregado) return <Carregando />;
   return (
     <HashRouter>
-      <Rotas />
+      <Rotas conteudo={conteudo} />
     </HashRouter>
   );
 }

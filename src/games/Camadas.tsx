@@ -61,6 +61,7 @@ export function CamadasTela() {
   const catCerta = cats.find((c) => c.id === item.categoria)!;
   return (
     <div className="pilha">
+      <h1 className="so-leitor">{'Camadas germinativas'}</h1>
       <div className="linha entre">
         <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={i / itens.length} rotulo="Progresso" /></div>

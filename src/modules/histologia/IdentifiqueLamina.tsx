@@ -112,6 +112,7 @@ export default function IdentifiqueLaminaTela() {
 
   return (
     <div className="pilha">
+      <h1 className="so-leitor">{'Identifique na lâmina'}</h1>
       <div className="linha entre">
         <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={i / alvos.length} rotulo="Progresso" /></div>

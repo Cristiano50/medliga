@@ -25,7 +25,7 @@ export function TopicoTela() {
   return (
     <div className="pilha">
       <header>
-        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> {disciplina(t.disciplina)?.nome ?? 'Voltar'}</Link>
+        <Link to={`/disciplina/${t.disciplina}`} className="muted pequeno link-voltar"><Icone nome="seta-esquerda" tamanho={14} /> {disciplina(t.disciplina)?.nome ?? 'Voltar'}</Link>
         <h1 style={{ marginTop: 6 }}>{t.titulo}</h1>
         {t.subtitulo && <p className="muted">{t.subtitulo}</p>}
         <div className="linha quebra">
@@ -41,7 +41,7 @@ export function TopicoTela() {
           <strong>Seu domínio</strong>
           <span className="muted pequeno">{p?.vistas ?? 0}/{t.questoes.length} questões vistas</span>
         </div>
-        <Barra valor={p?.dominio ?? 0} />
+        <Barra valor={p?.dominio ?? 0} rotulo="Seu domínio do tópico" />
         <div className="grade g2">
           <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}`} className="btn primario">Praticar questões</Link>
           {avancadas >= 3 && (
@@ -84,13 +84,13 @@ export function TopicoTela() {
         <div className="pilha">
           {t.objetivos.length > 0 && (
             <div className="card">
-              <h3>Objetivos</h3>
+              <h2 className="h3">Objetivos</h2>
               <ul className="markdown">{t.objetivos.map((o, i) => <li key={i}>{o}</li>)}</ul>
             </div>
           )}
           <div className="card"><Markdown texto={t.resumo} /></div>
           <div className="card">
-            <h3>Pontos-chave</h3>
+            <h2 className="h3">Pontos-chave</h2>
             <ul className="markdown">{t.pontosChave.map((o, i) => <li key={i}>{o}</li>)}</ul>
           </div>
         </div>
@@ -131,11 +131,11 @@ export function TopicoTela() {
           </ul>
           {t.notasDivergencia.length > 0 && (
             <>
-              <h3>Onde as fontes divergem</h3>
+              <h2 className="h3">Onde as fontes divergem</h2>
               <ul className="markdown">{t.notasDivergencia.map((n, i) => <li key={i}>{n}</li>)}</ul>
             </>
           )}
-          <h3>Revisão</h3>
+          <h2 className="h3">Revisão</h2>
           <ul className="markdown">
             {t.revisao.agentes.length === 0 && <li>Aguardando revisão dos agentes especialistas.</li>}
             {t.revisao.agentes.map((a, i) => (

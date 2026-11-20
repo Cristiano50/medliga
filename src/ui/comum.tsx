@@ -39,8 +39,11 @@ export function Barra({ valor, ouro = false, rotulo }: { valor: number; ouro?: b
   );
 }
 
-/** Markdown mínimo e seguro (sem HTML): parágrafos, listas com "-" ou "1.", **negrito** e *itálico*. */
-export function Markdown({ texto }: { texto: string }) {
+/**
+ * Markdown mínimo e seguro (sem HTML): parágrafos, listas com "-" ou "1.", títulos com "#", **negrito** e *itálico*.
+ * `nivel` é o nível do título "#" (o "##" fica um abaixo), para a ordem dos títulos seguir a da página.
+ */
+export function Markdown({ texto, nivel = 3 }: { texto: string; nivel?: 1 | 2 | 3 }) {
   const blocos = texto.replace(/\r/g, '').split(/\n{2,}/);
   return (
     <div className="markdown">
@@ -62,8 +65,11 @@ export function Markdown({ texto }: { texto: string }) {
               ))}
             </ol>
           );
-        const titulo = b.match(/^#{1,4}\s+(.*)$/);
-        if (titulo) return <h3 key={i}>{inline(titulo[1])}</h3>;
+        const titulo = b.match(/^(#{1,4})\s+(.*)$/);
+        if (titulo) {
+          const Tag = `h${Math.min(6, nivel + titulo[1].length - 1)}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+          return <Tag key={i}>{inline(titulo[2])}</Tag>;
+        }
         return <p key={i}>{inline(linhas.join(' '))}</p>;
       })}
     </div>

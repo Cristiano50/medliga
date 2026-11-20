@@ -186,6 +186,8 @@ p { margin: 0 0 0.75em; }
 .input:focus { border-color: var(--primary); }
 
 .lista-opcoes { display: flex; flex-direction: column; gap: 8px; }
+/* numa lista com altura máxima (escolas), os itens não podem encolher abaixo do texto */
+.lista-opcoes > .opcao { flex-shrink: 0; }
 .opcao {
   display: flex;
   align-items: flex-start;
@@ -321,7 +323,7 @@ p { margin: 0 0 0.75em; }
 .contexto3d summary { cursor: pointer; color: var(--primary); padding: 6px 0; }
 .ferramentas3d { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .controle-corte { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: .85rem; min-height: 40px; }
-.controle-corte input { accent-color: var(--primary); }
+.controle-corte input { accent-color: var(--primary); width: 22px; height: 22px; flex: none; }
 .instrucoes3d { text-align: center; color: var(--text-2); font-size: .8rem; padding: 8px; }
 .lista-estruturas3d { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; }
 .estrutura3d { display: flex; gap: 10px; align-items: center; min-height: 48px; text-align: left; border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: var(--surface); cursor: pointer; font-size: .85rem; }
@@ -450,3 +452,13 @@ p { margin: 0 0 0.75em; }
 .ocular [data-e] { cursor: pointer; transition: opacity .15s ease; }
 .ocular .vinheta { position: absolute; inset: 0; pointer-events: none; border-radius: 50%; background: radial-gradient(circle, transparent 62%, rgba(0, 0, 0, 0.35) 100%); }
 .objetivas { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
+
+/* revisão do jogo (20/11/2026): alvos de toque de pelo menos 24 px e títulos do markdown na ordem da página */
+.link-voltar { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 4px 0; }
+.link-toque { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 2px; }
+h2.h3 { font-size: 1.1rem; }
+.markdown h1 { font-size: 1.4rem; margin: 0 0 0.6em; }
+.markdown h2 { font-size: 1.1rem; margin: 1.1em 0 0.4em; }
+.markdown h3, .markdown h4 { font-size: 1rem; margin: 1em 0 0.35em; }
+/* controles deslizantes com área de toque de 32 px (o trilho continua fino) */
+.slider-tempo, .controle-corte input[type="range"] { min-height: 32px; cursor: pointer; }
