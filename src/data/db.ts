@@ -5,6 +5,7 @@ import type { EstadoItem } from '../core/srs.ts';
 import type { PlanoId, UsoDiario } from '../core/planos.ts';
 import type { ModoSessao } from '../core/session.ts';
 import type { AvatarConfig } from '../modules/avatar/tipos.ts';
+import type { MotivoReporte } from '../core/reportes.ts';
 
 export interface Perfil {
   chave: 'eu';
@@ -61,7 +62,7 @@ export interface RegistroSessao {
 export interface Reporte {
   id: string; // uuid local (idempotência no servidor)
   questaoId: string;
-  motivo: 'gabarito' | 'explicacao' | 'enunciado' | 'portugues' | 'outro';
+  motivo: MotivoReporte;
   texto: string;
   criadoEm: number;
   enviado: 0 | 1;

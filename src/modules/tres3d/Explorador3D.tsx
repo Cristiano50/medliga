@@ -75,7 +75,7 @@ export function Explorador3D({ disciplina }: { disciplina: Disciplina3D }) {
     <div className="pilha lab3d">
       <div className="linha entre quebra">
         <div>
-          <Link to={`/disciplina/${catalogo.disciplina}`} className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> {catalogo.nome}</Link>
+          <Link to={`/disciplina/${catalogo.disciplina}`} className="muted pequeno link-voltar"><Icone nome="seta-esquerda" tamanho={14} /> {catalogo.nome}</Link>
           <h1 style={{ margin: '4px 0 0' }}>Laboratório 3D</h1>
         </div>
         <SeloRevisao revisao={item.revisao} />

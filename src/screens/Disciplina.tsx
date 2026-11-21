@@ -5,7 +5,7 @@ import { carregarDisciplina, topicosDe } from '../content/index.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { useApp } from '../data/store.ts';
 import { contarAvancadas } from '../core/session.ts';
-import { Barra, SeloRevisao } from '../ui/comum.tsx';
+import { Barra, Dificuldade, SeloRevisao } from '../ui/comum.tsx';
 import { Icone } from '../ui/Icone.tsx';
 import { CartaoJogo, Emblema } from '../ui/cartoes.tsx';
 
@@ -41,10 +41,10 @@ export function DisciplinaTela() {
       </header>
 
       <div className="grade g2">
-        {d.jogos?.[0] && <Link to={d.jogos[0].rota} className="btn primario"><Icone nome={d.jogos[0].icone} /> {d.jogos[0].nome}</Link>}
+        {d.jogos?.length === 1 && <Link to={d.jogos[0].rota} className="btn"><Icone nome={d.jogos[0].icone} /> {d.jogos[0].nome}</Link>}
         <Link to={`/jogar/quiz?modo=plantao&disciplina=${d.id}`} className="btn ouro"><Icone nome="raio" /> Plantão relâmpago</Link>
         {avancadas >= 10 && (
-          <Link to={`/jogar/quiz?modo=estudo&disciplina=${d.id}&nivel=avancado`} className="btn"><Icone nome="fogo" /> Desafio avançado · {avancadas} questões difíceis</Link>
+          <Link to={`/jogar/quiz?modo=estudo&disciplina=${d.id}&nivel=avancado`} className="btn"><Dificuldade nivel={5} decorativo /> Desafio avançado · {avancadas} questões difíceis</Link>
         )}
       </div>
 

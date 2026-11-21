@@ -50,15 +50,22 @@ describe('<CartaoJogo>', () => {
 });
 
 describe('<CartaoEmBreve>', () => {
-  it('não é link e diz "Em breve" a quem usa leitor de tela', () => {
-    const { container } = render(<CartaoEmBreve icone="osso" cor="#f87171" nome="Anatomia" descricao="Dissecção 3D por camadas" />);
+  it('não é link e diz "Em breve" na tela, com o cadeado (antes só o leitor de tela ouvia)', () => {
+    const { container } = render(<CartaoEmBreve icone="osso" cor="#fdba74" nome="Anatomia" descricao="Dissecção 3D por camadas" />);
     expect(container.querySelector('a')).toBeNull();
-    expect(container.querySelector('.so-leitor')!.textContent).toBe('Em breve');
+    const etiqueta = container.querySelector('.etiqueta-breve')!;
+    expect(etiqueta.textContent!.trim()).toBe('Em breve');
+    expect(etiqueta.querySelector('svg')!.getAttribute('aria-hidden')).toBe('true');
+    expect(container.querySelector('.so-leitor')).toBeNull();
     expect(container.querySelector('strong')!.textContent).toBe('Anatomia');
   });
 });
 
 describe('cores das disciplinas', () => {
+  it('nenhuma disciplina usa o verde de acerto nem o vermelho de erro como cor de assunto', () => {
+    for (const d of DISCIPLINAS) expect(['#4ade80', '#f87171'], d.id).not.toContain(d.cor.toLowerCase());
+  });
+
   it('cada disciplina tem uma cor própria que se vê sobre o cartão escuro', () => {
     const cores = DISCIPLINAS.map((d) => d.cor);
     expect(new Set(cores).size).toBe(cores.length);

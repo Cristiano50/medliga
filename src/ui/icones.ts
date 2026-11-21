@@ -8,6 +8,7 @@ export type ParteIcone = string | { d: string; p: 'suave' | 'cheio' };
 const n = (v: number) => +v.toFixed(2);
 const circulo = (cx: number, cy: number, r: number) => `M${n(cx + r)} ${cy} A${r} ${r} 0 1 1 ${n(cx - r)} ${cy} A${r} ${r} 0 0 1 ${n(cx + r)} ${cy} Z`;
 const ANEL = circulo(12, 12, 8.5);
+const FOGO = 'M12 21 C8.4 21 5.5 18.4 5.5 14.9 C5.5 12.2 7 10.2 8.4 7.8 C9 9.8 9.9 10.9 11 11.3 C10.5 7.8 11.6 5 13.8 2.8 C14 5.4 15 7 16 8.4 C16.4 7.6 16.6 6.7 16.6 5.6 C18 7.6 18.5 10.4 18.5 13.2 V14.9 C18.5 18.4 15.6 21 12 21 Z';
 const CORACAO = 'M12 20 C6 16 3.5 12.6 3.5 9 A4.25 4.25 0 0 1 12 7.6 A4.25 4.25 0 0 1 20.5 9 C20.5 12.6 18 16 12 20 Z';
 const estrela = (cx: number, cy: number, r: number): string => {
   const p: string[] = [];
@@ -38,10 +39,10 @@ export const ICONES = {
   perfil: [{ d: circulo(12, 8, 4), p: 'suave' }, circulo(12, 8, 4), 'M4.5 20 C4.5 16.4 8 14.6 12 14.6 C16 14.6 19.5 16.4 19.5 20'],
 
   // ---------------------------------------------------------------- jogo
+  // chama assimétrica com três línguas (a da esquerda, a alta e a da direita); sem gota dentro
   fogo: [
-    { d: 'M12 3 C12 6 17 8.5 17 14 A5 5 0 0 1 7 14 C7 11.8 8 10.4 9.2 9.4 C9.4 11 10.2 11.8 11 12 C10.4 8.8 10.8 5.4 12 3 Z', p: 'suave' },
-    'M12 3 C12 6 17 8.5 17 14 A5 5 0 0 1 7 14 C7 11.8 8 10.4 9.2 9.4 C9.4 11 10.2 11.8 11 12 C10.4 8.8 10.8 5.4 12 3 Z',
-    'M12 19 C10.9 19 10.2 18.2 10.2 17.2 C10.2 16.2 11.1 15.6 12 14.4 C12.9 15.6 13.8 16.2 13.8 17.2 C13.8 18.2 13.1 19 12 19 Z',
+    { d: FOGO, p: 'suave' },
+    FOGO,
   ],
   raio: [{ d: 'M13 3 L5 13.5 H11 L10 21 L19 10 H13 Z', p: 'suave' }, 'M13 3 L5 13.5 H11 L10 21 L19 10 H13 Z'],
   alvo: [{ d: ANEL, p: 'suave' }, ANEL, circulo(12, 12, 4.8), { d: circulo(12, 12, 1.7), p: 'cheio' }],
@@ -59,22 +60,21 @@ export const ICONES = {
     'M6.5 14.2 H11.5 M5.5 20.5 H18.5 M14.6 17 V20.5 M10 17 H14.6',
   ],
   cubo: [{ d: 'M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z', p: 'suave' }, 'M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z', 'M4 7.5 L12 12 L20 7.5 M12 12 V21'],
-  // duas espadas cruzadas: ponta em folha, lâmina, guarda, cabo e pomo
+  // "VS": um contra um. As espadas cruzadas viravam um X (de errado ou fechar) abaixo de 24 px
   duelo: [
-    { d: `M3.6 3.6 L7 4.4 L8.2 8.2 L4.4 7 Z M20.4 3.6 L17 4.4 L15.8 8.2 L19.6 7 Z ${circulo(19.3, 19.3, 1.5)} ${circulo(4.7, 19.3, 1.5)}`, p: 'cheio' },
-    'M7 7 L14.6 14.6 M17 7 L9.4 14.6',
-    'M11.4 17.6 L17.6 11.4 M12.6 17.6 L6.4 11.4',
-    'M15.6 15.6 L18.4 18.4 M8.4 15.6 L5.6 18.4',
+    { d: 'M2.5 4 H21.5 A1.5 1.5 0 0 1 23 5.5 V18.5 A1.5 1.5 0 0 1 21.5 20 H2.5 A1.5 1.5 0 0 1 1 18.5 V5.5 A1.5 1.5 0 0 1 2.5 4 Z', p: 'suave' },
+    'M4 7.5 L7.6 16.5 L11.2 7.5',
+    'M20 8.9 C19.4 7.9 18.4 7.5 17.2 7.5 C15.6 7.5 14.4 8.3 14.4 9.6 C14.4 12.6 20.2 11.4 20.2 14.4 C20.2 15.7 19 16.5 17.3 16.5 C16 16.5 14.9 16 14.2 15',
   ],
   revisao: ['M19 9 A7.6 7.6 0 0 0 5.6 8', 'M5 4.5 V8.5 H9', 'M5 15 A7.6 7.6 0 0 0 18.4 16', 'M19 19.5 V15.5 H15'],
   livro: [
-    { d: 'M6 4 H17 A1 1 0 0 1 18 5 V20 H7.6 A1.6 1.6 0 0 1 6 18.4 Z', p: 'suave' },
-    'M6 4 H17 A1 1 0 0 1 18 5 V20 H7.6 A1.6 1.6 0 0 1 6 18.4 Z',
-    'M6 18.4 A1.6 1.6 0 0 1 7.6 16.8 H18',
-    'M10 4 V10 L12 8.6 L14 10 V4',
+    { d: 'M6 5.6 A1.6 1.6 0 0 1 7.6 4 H18 V16.8 H7.6 A1.6 1.6 0 0 0 6 18.4 Z', p: 'suave' },
+    'M6 18.4 V5.6 A1.6 1.6 0 0 1 7.6 4 H18 V20 H7.6 A1.6 1.6 0 0 1 6 18.4 A1.6 1.6 0 0 1 7.6 16.8 H18',
+    'M9.4 4 V16.8',
+    'M12 8 H15.4 M12 11 H14.4',
   ],
   pergunta: [{ d: ANEL, p: 'suave' }, ANEL, 'M9.6 9.6 A2.5 2.5 0 1 1 12 12.2 V13.6', { d: circulo(12, 16.6, 1.15), p: 'cheio' }],
-  coracao: [{ d: CORACAO, p: 'cheio' }],
+  coracao: [{ d: CORACAO, p: 'cheio' }, CORACAO],
   'coracao-vazio': [CORACAO],
   'coracao-partido': [{ d: CORACAO, p: 'suave' }, CORACAO, 'M12 7.6 L10.4 11 L13.4 13 L12 16.4'],
 
@@ -117,7 +117,13 @@ export const ICONES = {
     'M14.4 18.1 H17.6 V19.1 A1.6 1.6 0 0 1 14.4 19.1 Z',
   ],
   camisa: [{ d: 'M8.6 4 L4 7 L6 10.6 L8 9.6 V20 H16 V9.6 L18 10.6 L20 7 L15.4 4 A3.4 3.4 0 0 1 8.6 4 Z', p: 'suave' }, 'M8.6 4 L4 7 L6 10.6 L8 9.6 V20 H16 V9.6 L18 10.6 L20 7 L15.4 4 A3.4 3.4 0 0 1 8.6 4 Z'],
-  capelo: [{ d: 'M2.5 9.5 L12 5 L21.5 9.5 L12 14 Z', p: 'suave' }, 'M2.5 9.5 L12 5 L21.5 9.5 L12 14 Z', 'M6.5 11.6 V16 C8.5 18.6 15.5 18.6 17.5 16 V11.6', 'M21.5 9.5 V15'],
+  capelo: [
+    { d: 'M2.5 9.5 L12 5 L21.5 9.5 L12 14 Z', p: 'suave' },
+    'M2.5 9.5 L12 5 L21.5 9.5 L12 14 Z',
+    'M6.5 11.6 V16 C8.5 18.6 15.5 18.6 17.5 16 V11.6',
+    'M12 9.5 L19.4 11.3 V14.2',
+    { d: `${circulo(12, 9.5, 1.3)} M18.3 14 H20.5 L21 17.4 H17.8 Z`, p: 'cheio' },
+  ],
 
   // ---------------------------------------------------------------- disciplinas
   broto: [

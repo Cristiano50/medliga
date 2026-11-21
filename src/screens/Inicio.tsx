@@ -101,7 +101,7 @@ export function Inicio() {
               <CartaoJogo
                 to={`/jogar/quiz?modo=revisao&disciplina=${disc.id}`}
                 icone="revisao"
-                cor="var(--success)"
+                cor="#7dd3fc"
                 nome="Revisão do dia"
                 descricao={`${vencidas} questão(ões) de ${disc.nome.toLowerCase()} para revisar hoje (revisão espaçada).`}
               />
@@ -109,7 +109,7 @@ export function Inicio() {
             {(disc.jogos ?? []).map((j) => (
               <CartaoJogo key={j.rota} to={j.rota} icone={j.icone} cor={j.cor} nome={j.nome} descricao={j.descricao} />
             ))}
-            <CartaoJogo to="/duelos" icone="duelo" cor="var(--danger)" nome="Duelo" descricao="Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais." />
+            <CartaoJogo to="/duelos" icone="duelo" cor="#e879f9" nome="Duelo" descricao="Desafie um colega com um código: mesmas 10 questões, vence quem acertar mais." />
           </div>
         </div>
       </section>

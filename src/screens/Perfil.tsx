@@ -6,7 +6,7 @@ import type { Escola } from '../content/schema.ts';
 import { obterBackend } from '../data/backend.ts';
 import { nivelPorXP, TITULOS_NIVEL, tituloDoNivel } from '../core/scoring.ts';
 import { Medalha, SeloNivel } from '../ui/Insignias.tsx';
-import { indiceDoSelo } from '../ui/insignias.ts';
+import { indiceDoSelo, progressoEmPorcento } from '../ui/insignias.ts';
 import { PLANOS } from '../core/planos.ts';
 import { db } from '../data/db.ts';
 import { Barra } from '../ui/comum.tsx';
@@ -96,6 +96,7 @@ export function PerfilTela() {
       <ContaOnline modoBackend={modoBackend} onSync={atualizarSync} />
 
       <AcessoProfessor />
+      <AcessoEquipe />
 
       <div className="card linha entre">
         <div>
@@ -302,6 +303,26 @@ function AcessoProfessor() {
   );
 }
 
+function AcessoEquipe() {
+  const [eh, setEh] = useState(false);
+  useEffect(() => {
+    void obterBackend()
+      .then((b) => b.souEquipe())
+      .then(setEh)
+      .catch(() => setEh(false));
+  }, []);
+  if (!eh) return null;
+  return (
+    <Link to="/equipe/reportes" className="card linha entre" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div>
+        <span className="muted pequeno">Equipe de conteúdo</span>
+        <div><strong><Icone nome="bandeira" /> Fila de reportes</strong></div>
+      </div>
+      <Icone nome="seta-direita" tamanho={18} />
+    </Link>
+  );
+}
+
 function Conquistas() {
   const perfil = useApp((s) => s.perfil)!;
   const xpTotal = useApp((s) => s.xpTotal);
@@ -329,6 +350,11 @@ function Conquistas() {
             <Medalha id={c.id} icone={c.icone} nome={c.nome} obtida={c.obtida} progresso={c.valor} />
             <strong className="pequeno">{c.nome}</strong>
             <span className="muted descricao">{c.descricao}</span>
+            {!c.obtida && c.valor > 0 && (
+              <span className="pequeno progresso-medalha" aria-hidden="true">
+                {progressoEmPorcento(c.valor)}% do caminho
+              </span>
+            )}
           </div>
         ))}
       </div>

@@ -13,6 +13,7 @@ import { DISCIPLINAS_DISPONIVEIS } from '../content/disciplinas.ts';
 import type { PlanoId } from '../core/planos.ts';
 import type { AvatarConfig } from '../modules/avatar/tipos.ts';
 import { sortearAvatar } from '../modules/avatar/regras.ts';
+import { contagemDe, filaDe, tratarReporte, type ReporteFila, type ReporteGuardado, type StatusReporte } from '../core/reportes.ts';
 
 export type ModoBackend = 'supabase' | 'demo' | 'offline';
 
@@ -47,6 +48,13 @@ export interface Backend {
   escolasProfessor(): Promise<{ escolaId: string; licencaAtiva: boolean }[]>;
   /** Desempenho agregado da turma por tópico (mínimo de 5 alunos por recorte). */
   painelEscola(escolaId: string, desde?: string): Promise<LinhaPainel[]>;
+  /** Equipe de conteúdo: o usuário trata a fila de reportes? (vínculo dado pela equipe no servidor) */
+  souEquipe(): Promise<boolean>;
+  /** Reportes de uma situação, sem quem reportou. Só para a equipe. */
+  filaReportes(status: StatusReporte): Promise<ReporteFila[]>;
+  contagemReportes(): Promise<Record<StatusReporte, number>>;
+  /** Muda a situação de um reporte (ou de todos os abertos da mesma questão); devolve quantos mudaram. */
+  tratarReporte(id: number, status: StatusReporte, nota: string, mesmaQuestao: boolean): Promise<number>;
   /** Duelos assíncronos (precisam de conta online). */
   criarDuelo(disciplina: string, questoes: string[]): Promise<string>;
   entrarDuelo(codigo: string): Promise<Duelo>;
@@ -146,6 +154,18 @@ class BackendOffline implements Backend {
   async painelEscola(): Promise<LinhaPainel[]> {
     return [];
   }
+  async souEquipe() {
+    return false;
+  }
+  async filaReportes(): Promise<ReporteFila[]> {
+    throw new Error('A fila de reportes precisa do servidor.');
+  }
+  async contagemReportes(): Promise<Record<StatusReporte, number>> {
+    throw new Error('A fila de reportes precisa do servidor.');
+  }
+  async tratarReporte(): Promise<number> {
+    throw new Error('A fila de reportes precisa do servidor.');
+  }
   async criarDuelo(): Promise<string> {
     throw new Error('Duelos precisam de conta online, disponível quando o servidor de ranking for ativado.');
   }
@@ -242,6 +262,53 @@ class BackendDemo implements Backend {
       return { topicoId: t.id, alunos: 8 + Math.floor(rng() * 30), respostas: 60 + Math.floor(rng() * 400), acerto: Math.round((45 + rng() * 45) * 10) / 10 };
     });
   }
+  // Fila de reportes de demonstração: reportes fictícios sobre questões reais, para ver a tela da equipe.
+  private reportes: ReporteGuardado[] | null = null;
+  private reportesDemo(): ReporteGuardado[] {
+    if (this.reportes) return this.reportes;
+    const rng = criarRng(20261120);
+    const questoes = DISCIPLINAS_DISPONIVEIS.flatMap((d) => topicosDe(d)).flatMap((t) => t.questoes.map((q) => q.id));
+    const textos: [ReporteGuardado['motivo'], string | null][] = [
+      ['gabarito', 'Acho que o gabarito está trocado (texto fictício de demonstração).'],
+      ['enunciado', 'O enunciado deixa duas leituras possíveis (demonstração).'],
+      ['explicacao', 'A explicação não diz por que as outras opções estão erradas (demonstração).'],
+      ['portugues', 'Falta um acento no enunciado (demonstração).'],
+      ['outro', null],
+    ];
+    if (questoes.length === 0) return [];
+    const lista: ReporteGuardado[] = [];
+    const repetida = questoes[Math.floor(rng() * questoes.length)];
+    for (let i = 0; i < 7; i++) {
+      const [motivo, texto] = textos[i % textos.length];
+      lista.push({
+        id: i + 1,
+        questaoId: i < 3 ? repetida : questoes[Math.floor(rng() * questoes.length)],
+        motivo,
+        texto,
+        versaoApp: MARCA.versao,
+        status: i === 6 ? 'corrigido' : 'aberto',
+        criadoEm: new Date(Date.now() - (10 - i) * 86400e3).toISOString(),
+        nota: i === 6 ? 'Corrigido no repositório (demonstração).' : null,
+        tratadoEm: i === 6 ? new Date(Date.now() - 86400e3).toISOString() : null,
+      });
+    }
+    return (this.reportes = lista);
+  }
+  async souEquipe() {
+    return true;
+  }
+  async filaReportes(status: StatusReporte) {
+    return filaDe(this.reportesDemo(), status);
+  }
+  async contagemReportes() {
+    return contagemDe(this.reportesDemo());
+  }
+  async tratarReporte(id: number, status: StatusReporte, nota: string, mesmaQuestao: boolean) {
+    const r = tratarReporte(this.reportesDemo(), id, status, nota, mesmaQuestao, new Date().toISOString());
+    this.reportes = r.lista;
+    return r.mudaram;
+  }
+
   // Duelos de demonstração: o "adversário" fictício é gerado ao entrar com um código.
   private duelos = new Map<string, Duelo>();
   async criarDuelo(disciplina: string, questoes: string[]) {
@@ -394,6 +461,44 @@ class BackendSupabase implements Backend {
       respostas: r.respostas,
       acerto: Number(r.acerto),
     }));
+  }
+
+  async souEquipe() {
+    const { data, error } = await this.sb.rpc('sou_equipe');
+    return !error && data === true;
+  }
+
+  async filaReportes(status: StatusReporte): Promise<ReporteFila[]> {
+    const { data, error } = await this.sb.rpc('fila_reportes', { p_status: status });
+    if (error) throw error;
+    return (
+      data as { id: number; questao_id: string; motivo: string; texto: string | null; versao_app: string | null; status: StatusReporte; criado_em: string; reportes_da_questao: number; nota_equipe: string | null; tratado_em: string | null }[]
+    ).map((r) => ({
+      id: Number(r.id),
+      questaoId: r.questao_id,
+      motivo: r.motivo,
+      texto: r.texto,
+      versaoApp: r.versao_app,
+      status: r.status,
+      criadoEm: r.criado_em,
+      reportesDaQuestao: r.reportes_da_questao,
+      nota: r.nota_equipe,
+      tratadoEm: r.tratado_em,
+    }));
+  }
+
+  async contagemReportes(): Promise<Record<StatusReporte, number>> {
+    const { data, error } = await this.sb.rpc('contagem_reportes');
+    if (error) throw error;
+    const c: Record<StatusReporte, number> = { aberto: 0, procedente: 0, improcedente: 0, corrigido: 0 };
+    for (const r of data as { status: StatusReporte; total: number }[]) c[r.status] = r.total;
+    return c;
+  }
+
+  async tratarReporte(id: number, status: StatusReporte, nota: string, mesmaQuestao: boolean) {
+    const { data, error } = await this.sb.rpc('tratar_reporte', { p_id: id, p_status: status, p_nota: nota, p_mesma_questao: mesmaQuestao });
+    if (error) throw error;
+    return Number(data);
   }
 
   async criarDuelo(disciplina: string, questoes: string[]) {

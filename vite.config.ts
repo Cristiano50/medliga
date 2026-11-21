@@ -43,7 +43,9 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           // React em pacote próprio: senão o empacotador o coloca junto do three.js e o 3D é baixado na abertura.
-          if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) return 'react';
+          // O zustand (estado do app) vai junto do React pelo mesmo motivo: o @react-three/fiber também o usa, e sem
+          // esta regra ele caía no pacote do three.js, que passava a ser baixado em toda abertura.
+          if (/node_modules\/(react|react-dom|scheduler|zustand|use-sync-external-store)\//.test(id)) return 'react';
           if (id.includes('node_modules/three') || id.includes('@react-three')) return 'tres';
           if (id.includes('@supabase')) return 'supabase';
           return undefined;

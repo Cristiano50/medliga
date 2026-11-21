@@ -25,7 +25,7 @@ export default function MicroscopioTela() {
     <div className="pilha">
       <div className="linha entre quebra">
         <div>
-          <Link to="/disciplina/histologia" className="muted pequeno"><Icone nome="seta-esquerda" tamanho={14} /> Histologia</Link>
+          <Link to="/disciplina/histologia" className="muted pequeno link-voltar"><Icone nome="seta-esquerda" tamanho={14} /> Histologia</Link>
           <h1 style={{ margin: '4px 0 0' }}>Microscópio virtual</h1>
         </div>
         <SeloRevisao revisao={lamina.revisao} />

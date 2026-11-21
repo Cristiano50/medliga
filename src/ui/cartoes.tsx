@@ -51,7 +51,7 @@ export function CartaoEmBreve({ icone, cor, nome, descricao }: { icone: NomeIcon
       <span className="texto">
         <strong>{nome}</strong>
         <span className="muted">{descricao}</span>
-        <span className="so-leitor">Em breve</span>
+        <span className="etiqueta-breve"><Icone nome="cadeado" tamanho={12} /> Em breve</span>
       </span>
     </div>
   );

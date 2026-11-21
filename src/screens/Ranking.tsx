@@ -88,7 +88,7 @@ export function RankingTela() {
         <div style={{ textAlign: 'right' }}>
           <span className="muted pequeno">Jogando por</span>
           <div style={{ fontWeight: 800 }}>{minhaEscola ? minhaEscola.sigla : '—'}</div>
-          {!minhaEscola && <Link to="/perfil" className="pequeno">Escolher escola</Link>}
+          {!minhaEscola && <Link to="/perfil" className="pequeno link-toque">Escolher escola</Link>}
         </div>
       </div>
 

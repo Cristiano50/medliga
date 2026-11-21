@@ -20,9 +20,10 @@ export function SeloRevisao({ revisao }: { revisao: Revisao }) {
 }
 
 /** Dificuldade da questão (1 a 5) em pontos cheios e vazados. */
-export function Dificuldade({ nivel }: { nivel: number }) {
+export function Dificuldade({ nivel, decorativo = false }: { nivel: number; decorativo?: boolean }) {
+  const acess = decorativo ? ({ 'aria-hidden': true } as const) : ({ role: 'img', 'aria-label': `${nivel} de 5` } as const);
   return (
-    <svg className="dificuldade" width={46} height={10} viewBox="0 0 46 10" role="img" aria-label={`${nivel} de 5`}>
+    <svg className="dificuldade" width={46} height={10} viewBox="0 0 46 10" {...acess}>
       {[0, 1, 2, 3, 4].map((i) => (
         <circle key={i} cx={5 + i * 9} cy={5} r={3.2} fill={i < nivel ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth={1.4} />
       ))}
@@ -39,8 +40,11 @@ export function Barra({ valor, ouro = false, rotulo }: { valor: number; ouro?: b
   );
 }
 
-/** Markdown mínimo e seguro (sem HTML): parágrafos, listas com "-" ou "1.", **negrito** e *itálico*. */
-export function Markdown({ texto }: { texto: string }) {
+/**
+ * Markdown mínimo e seguro (sem HTML): parágrafos, listas com "-" ou "1.", títulos com "#", **negrito** e *itálico*.
+ * `nivel` é o nível do título "#" (o "##" fica um abaixo), para a ordem dos títulos seguir a da página.
+ */
+export function Markdown({ texto, nivel = 3 }: { texto: string; nivel?: 1 | 2 | 3 }) {
   const blocos = texto.replace(/\r/g, '').split(/\n{2,}/);
   return (
     <div className="markdown">
@@ -62,8 +66,11 @@ export function Markdown({ texto }: { texto: string }) {
               ))}
             </ol>
           );
-        const titulo = b.match(/^#{1,4}\s+(.*)$/);
-        if (titulo) return <h3 key={i}>{inline(titulo[1])}</h3>;
+        const titulo = b.match(/^(#{1,4})\s+(.*)$/);
+        if (titulo) {
+          const Tag = `h${Math.min(6, nivel + titulo[1].length - 1)}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+          return <Tag key={i}>{inline(titulo[2])}</Tag>;
+        }
         return <p key={i}>{inline(linhas.join(' '))}</p>;
       })}
     </div>

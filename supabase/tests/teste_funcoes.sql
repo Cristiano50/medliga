@@ -282,4 +282,111 @@ do $$ begin
   end;
 end $$;
 reset role;
+
+-- 15) fila de reportes da equipe (0008): só a equipe lê e trata; a fila não diz quem reportou
+-- estado inicial: 1 reporte aberto de t-q2 (anonimizado no teste 13)
+insert into auth.users values ('00000000-0000-0000-0000-00000000000e', 'equipe@medliga.test');
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000a';
+select reportar_conteudo('rep-a1', 't-q1', 'enunciado', 'duas alternativas defensáveis', '0.1.0');
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000d';
+select reportar_conteudo('rep-d1', 't-q1', 'gabarito', 'a c também está certa', '0.1.0');
+select reportar_conteudo('rep-d2', 't-q3', 'portugues', 'falta acento', '0.1.0');
+do $$ begin
+  if sou_equipe() then raise exception 'FALHOU: Davi não é da equipe'; end if;
+  begin
+    perform * from fila_reportes();
+    raise exception 'FALHOU: quem não é da equipe leu a fila';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  begin
+    perform * from contagem_reportes();
+    raise exception 'FALHOU: quem não é da equipe leu a contagem';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  begin
+    perform tratar_reporte((select min(id) from reportes_conteudo where usuario_id = auth.uid()), 'improcedente');
+    raise exception 'FALHOU: quem não é da equipe tratou um reporte';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  -- quem reportou continua vendo só os próprios reportes
+  if (select count(*) from reportes_conteudo) <> 2 then raise exception 'FALHOU: Davi deveria ver só os 2 reportes dele'; end if;
+  begin
+    update reportes_conteudo set status = 'corrigido';
+    if exists (select 1 from reportes_conteudo where status = 'corrigido') then raise exception 'FALHOU: update direto mudou o status'; end if;
+  exception when insufficient_privilege then null;
+  end;
+end $$;
+-- (administrador) concede a equipe
+reset role;
+insert into equipe (usuario_id) values ('00000000-0000-0000-0000-00000000000e');
+set role authenticated;
+set request.jwt.claim.sub = '00000000-0000-0000-0000-00000000000e';
+do $$
+declare v_id bigint; v_n int; v_primeira record; v_nota_longa text := repeat('x', 1200);
+begin
+  if not sou_equipe() then raise exception 'FALHOU: equipe não reconhecida'; end if;
+  if (select total from contagem_reportes() where status = 'aberto') <> 4 then raise exception 'FALHOU: deveria haver 4 abertos, há %', (select total from contagem_reportes() where status = 'aberto'); end if;
+  -- a questão mais reportada vem primeiro, e o mais antigo dela antes
+  select * into v_primeira from fila_reportes('aberto') limit 1;
+  if v_primeira.questao_id <> 't-q1' or v_primeira.reportes_da_questao <> 2 or v_primeira.motivo <> 'enunciado' then raise exception 'FALHOU: ordem da fila: %', row_to_json(v_primeira); end if;
+  -- a fila não expõe quem reportou
+  if exists (select 1 from fila_reportes('aberto') f where to_jsonb(f) ? 'usuario_id') then raise exception 'FALHOU: a fila expõe o usuário'; end if;
+  -- situação inválida e reporte inexistente
+  begin
+    perform tratar_reporte(v_primeira.id, 'apagado');
+    raise exception 'FALHOU: aceitou situação inválida';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  begin
+    perform tratar_reporte(999999, 'procedente');
+    raise exception 'FALHOU: tratou reporte inexistente';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  begin
+    perform * from fila_reportes('qualquer');
+    raise exception 'FALHOU: listou situação inválida';
+  exception when raise_exception then
+    if sqlerrm like 'FALHOU%' then raise; end if;
+  end;
+  -- tratar todos os abertos da mesma questão de uma vez
+  v_n := tratar_reporte(v_primeira.id, 'procedente', '  gabarito revisto no repositório  ', true);
+  if v_n <> 2 then raise exception 'FALHOU: deveria tratar os 2 reportes de t-q1, tratou %', v_n; end if;
+  if exists (select 1 from fila_reportes('aberto') where questao_id = 't-q1') then raise exception 'FALHOU: t-q1 ainda aberta'; end if;
+  if (select count(*) from fila_reportes('procedente') where questao_id = 't-q1' and nota_equipe = 'gabarito revisto no repositório' and tratado_em is not null) <> 2 then raise exception 'FALHOU: nota ou data do tratamento'; end if;
+  -- só um, sem a opção da mesma questão; nota longa é cortada em 1000
+  select id into v_id from fila_reportes('aberto') where questao_id = 't-q3';
+  v_n := tratar_reporte(v_id, 'improcedente', v_nota_longa);
+  if v_n <> 1 then raise exception 'FALHOU: deveria tratar 1, tratou %', v_n; end if;
+  if (select char_length(nota_equipe) from fila_reportes('improcedente') where id = v_id) <> 1000 then raise exception 'FALHOU: nota não foi cortada'; end if;
+  -- reabrir: volta para a fila sem data de tratamento, com a nota
+  v_n := tratar_reporte(v_id, 'aberto');
+  if (select tratado_em from fila_reportes('aberto') where id = v_id) is not null then raise exception 'FALHOU: reabrir deveria apagar a data'; end if;
+  if (select nota_equipe from fila_reportes('aberto') where id = v_id) is null then raise exception 'FALHOU: reabrir não deveria apagar a nota'; end if;
+  if (select total from contagem_reportes() where status = 'aberto') <> 2 or (select total from contagem_reportes() where status = 'procedente') <> 2 then raise exception 'FALHOU: contagem depois de tratar'; end if;
+  -- limite da página
+  if (select count(*) from fila_reportes('aberto', 1)) <> 1 then raise exception 'FALHOU: limite da página'; end if;
+end $$;
+-- visitante sem login não usa as funções da equipe
+set role anon;
+do $$ begin
+  begin
+    perform * from fila_reportes();
+    raise exception 'FALHOU: visitante leu a fila';
+  exception when insufficient_privilege then null;
+  end;
+end $$;
+reset role;
+-- excluir a conta de quem é da equipe tira o vínculo, e o tratamento feito fica sem autor
+delete from auth.users where id = '00000000-0000-0000-0000-00000000000e';
+do $$ begin
+  if exists (select 1 from equipe) then raise exception 'FALHOU: vínculo da equipe ficou depois da exclusão'; end if;
+  if exists (select 1 from reportes_conteudo where tratado_por is not null) then raise exception 'FALHOU: autor do tratamento ficou depois da exclusão'; end if;
+  if (select count(*) from reportes_conteudo where status = 'procedente') <> 2 then raise exception 'FALHOU: a situação dos reportes deveria ficar'; end if;
+end $$;
 \echo 'TODOS OS TESTES SQL PASSARAM'

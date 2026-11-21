@@ -8,6 +8,7 @@ import { Visor } from './Visor.tsx';
 import { LAMINAS_RENDER } from './laminas/index.ts';
 import { montarRodadas } from './regras.ts';
 import { Icone } from '../../ui/Icone.tsx';
+import { MarcaResultado } from '../../ui/MarcaResultado.tsx';
 import { Cena } from '../../ui/Cena.tsx';
 import { humorPorAcertos } from '../../ui/cenas.ts';
 
@@ -64,6 +65,7 @@ export default function QualTecidoTela() {
 
   return (
     <div className="pilha">
+      <h1 className="so-leitor">{'Qual é o tecido?'}</h1>
       <div className="linha entre">
         <Link to="/" className="btn fantasma pequeno" aria-label="Sair"><Icone nome="fechar" tamanho={16} /></Link>
         <div style={{ flex: 1 }}><Barra valor={r / rodadas.length} rotulo="Progresso" /></div>
@@ -81,7 +83,11 @@ export default function QualTecidoTela() {
           }
           return (
             <button key={id} role="radio" aria-checked={escolha === id} className={`opcao ${cls}`} disabled={!!escolha} onClick={() => responder(id)}>
-              <span className="letra">{'abcd'[k]}</span>
+              {cls ? (
+                <MarcaResultado certo={cls === 'certa'} texto={cls === 'certa' ? 'Resposta certa:' : 'Sua resposta, errada:'} />
+              ) : (
+                <span className="letra">{'abcd'[k]}</span>
+              )}
               <span>{l.tecido}</span>
             </button>
           );

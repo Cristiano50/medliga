@@ -103,11 +103,10 @@ export function BoasVindas() {
             <p className="muted pequeno">
               Sua escola forma um time: há disputa interna entre colegas e, no ranking geral, a escola soma os pontos dos seus 20 melhores alunos da semana.
             </p>
-            <div className="linha">
+            <button className="btn primario bloco" disabled={!escolaId && sugestao.trim().length < 3} onClick={() => setPasso(2)}>Continuar</button>
+            <div className="linha entre">
               <button className="btn fantasma" onClick={() => setPasso(0)}>Voltar</button>
               <button className="btn fantasma" onClick={() => { setEscolaId(null); setPasso(2); }}>Pular por agora</button>
-              <span className="espaco" style={{ flex: 1 }} />
-              <button className="btn primario" disabled={!escolaId && sugestao.trim().length < 3} onClick={() => setPasso(2)}>Continuar</button>
             </div>
           </div>
         )}
@@ -123,7 +122,7 @@ export function BoasVindas() {
               O MedLiga é uma ferramenta de estudo. Não substitui aulas, livros-texto nem orientação profissional, e não deve ser usado para decisões clínicas.
             </div>
             <label className="linha" style={{ alignItems: 'flex-start' }}>
-              <input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} style={{ width: 22, height: 22, marginTop: 2 }} />
+              <input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} style={{ marginTop: 2 }} />
               <span className="pequeno">
                 Li e aceito os termos de uso e a política de privacidade (LGPD). Seus dados de jogo ficam no aparelho; só são enviados ao servidor se você criar uma conta para o ranking.
               </span>
@@ -138,7 +137,7 @@ export function BoasVindas() {
             </div>
             {docAberto && (
               <div className="card" style={{ maxHeight: 320, overflowY: 'auto', background: 'var(--bg-elev)' }}>
-                <Markdown texto={docAberto === 'termos' ? termosTexto : privacidadeTexto} />
+                <Markdown texto={docAberto === 'termos' ? termosTexto : privacidadeTexto} nivel={2} />
               </div>
             )}
             <div className="linha">
