@@ -20,9 +20,10 @@ export function SeloRevisao({ revisao }: { revisao: Revisao }) {
 }
 
 /** Dificuldade da questão (1 a 5) em pontos cheios e vazados. */
-export function Dificuldade({ nivel }: { nivel: number }) {
+export function Dificuldade({ nivel, decorativo = false }: { nivel: number; decorativo?: boolean }) {
+  const acess = decorativo ? ({ 'aria-hidden': true } as const) : ({ role: 'img', 'aria-label': `${nivel} de 5` } as const);
   return (
-    <svg className="dificuldade" width={46} height={10} viewBox="0 0 46 10" role="img" aria-label={`${nivel} de 5`}>
+    <svg className="dificuldade" width={46} height={10} viewBox="0 0 46 10" {...acess}>
       {[0, 1, 2, 3, 4].map((i) => (
         <circle key={i} cx={5 + i * 9} cy={5} r={3.2} fill={i < nivel ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth={1.4} />
       ))}

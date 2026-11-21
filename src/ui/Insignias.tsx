@@ -1,6 +1,6 @@
 // Medalha de conquista e selo de título de nível (desenho em src/ui/insignias.ts).
 import type { NomeIcone } from './icones.ts';
-import { CAIXA_MEDALHA, CAIXA_SELO, LADO_SELO_COMPACTO, descricaoMedalha, indiceDoSelo, medalhaFormas, seloFormas, type FormaInsignia } from './insignias.ts';
+import { CAIXA_MEDALHA, CAIXA_SELO, LADO_SELO_COMPACTO, MEDALHAS, descricaoMedalha, indiceDoSelo, medalhaFormas, seloFormas, type FormaInsignia } from './insignias.ts';
 
 export function Formas({ formas }: { formas: FormaInsignia[] }) {
   return (
@@ -41,7 +41,7 @@ export function Medalha({ id, icone, nome, obtida, progresso, tamanho = 56 }: Me
   const estado = { obtida, progresso };
   const [, , w, h] = CAIXA_MEDALHA.split(' ').map(Number);
   return (
-    <svg className="medalha" width={tamanho} height={Math.round((tamanho * h) / w)} viewBox={CAIXA_MEDALHA} role="img" aria-label={descricaoMedalha(nome, estado)}>
+    <svg className="medalha" width={tamanho} height={Math.round((tamanho * h) / w)} viewBox={CAIXA_MEDALHA} role="img" aria-label={descricaoMedalha(nome, estado, MEDALHAS[id]?.grau)}>
       <Formas formas={medalhaFormas(id, icone, estado)} />
     </svg>
   );
@@ -52,7 +52,7 @@ export interface SeloNivelProps {
   nivel?: number;
   /** ou a posição do título (0 = primeiro), para mostrar um título específico */
   indice?: number;
-  /** lado, em px; até 22 px o selo é desenhado sem o emblema */
+  /** lado, em px; até 31 px o selo é desenhado sem o emblema */
   tamanho?: number;
   /** falso para um título ainda não alcançado */
   ativo?: boolean;

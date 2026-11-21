@@ -26,8 +26,11 @@ export interface FormaInsignia {
 const TINTA = '#0b1220';
 const APAGADO = '#8794b0';
 const PLACA_FECHADA = '#17223b';
-const BORDA_FECHADA = '#2c3a5c';
+// borda da placa ainda não obtida: 3,2:1 sobre o fundo, para a forma da família não sumir (revisão de 20/11/2026)
+const BORDA_FECHADA = '#56688f';
 const TRILHO = '#22304f';
+/** gomos ainda vazios do selo de um título alcançado: 2,4:1 sobre o cartão de destaque do início */
+const TRILHO_SELO = '#56688f';
 const FITA_FECHADA = '#1e2a47';
 
 const n = (v: number) => +v.toFixed(2);
@@ -62,7 +65,8 @@ export const FAMILIAS: Record<Familia, { nome: string; cor: string; escura: stri
   liga: { nome: 'Liga', cor: '#2dd4bf', escura: '#0f8f80', forma: 'circulo' },
   sequencia: { nome: 'Sequência', cor: '#f0705a', escura: '#b8402c', forma: 'losango' },
   jogos: { nome: 'Jogos', cor: '#4f8ef7', escura: '#2c62c4', forma: 'hexagono' },
-  dominio: { nome: 'Domínio', cor: '#8b7cf0', escura: '#5a49c9', forma: 'escudo' },
+  // violeta claro: o violeta médio se confundia com o azul de Jogos em deuteranopia (ΔE2000 de 1,0)
+  dominio: { nome: 'Domínio', cor: '#c4b5fd', escura: '#5a49c9', forma: 'escudo' },
   carreira: { nome: 'Carreira', cor: '#f5b942', escura: '#b97f10', forma: 'roseta' },
 };
 
@@ -119,6 +123,9 @@ const PLACAS: Record<FormaPlaca, string> = {
 };
 const FITA = 'M27 50 L20 72 L28.5 66.5 L35 72 L36 54 Z M45 50 L52 72 L43.5 66.5 L37 72 L36 54 Z';
 const DENTRO = `translate(${MX} ${MY}) scale(0.8) translate(${-MX} ${-MY})`;
+/** Grau escrito na forma, não só na cor do anel: 1, 2 ou 3 cravos na base do anel (ângulos a partir de baixo). */
+const CRAVOS: Record<1 | 2 | 3, number[]> = { 1: [0], 2: [-9, 9], 3: [-15, 0, 15] };
+const R_CRAVO = 2.6;
 
 export interface EstadoMedalha {
   obtida: boolean;
@@ -147,20 +154,28 @@ export function medalhaFormas(id: string, icone: NomeIcone, estado: EstadoMedalh
     formas.push({ d: placa, f: PLACA_FECHADA, s: BORDA_FECHADA, sw: 3 });
   }
   formas.push(...iconeEm(icone, estado.obtida ? TINTA : APAGADO, MX, MY, 25));
+  if (m?.grau)
+    for (const a of CRAVOS[m.grau]) {
+      const [x, y] = polar(MX, MY, R_ANEL, 180 + a);
+      formas.push(estado.obtida ? { d: circulo(x, y, R_CRAVO), f: METAIS[m.grau], s: TINTA, sw: 1.2 } : { d: circulo(x, y, R_CRAVO), f: PLACA_FECHADA, s: BORDA_FECHADA, sw: 1.2 });
+    }
   return formas;
 }
 
-/** Texto alternativo da medalha: diz se foi obtida ou quanto do caminho já foi feito. */
-export function descricaoMedalha(nome: string, estado: EstadoMedalha): string {
-  if (estado.obtida) return `Medalha ${nome}: obtida`;
-  const pct = Math.round(Math.max(0, Math.min(1, estado.progresso)) * 100);
-  return pct > 0 ? `Medalha ${nome}: ${pct}% do caminho` : `Medalha ${nome}: ainda não obtida`;
+/** Texto alternativo da medalha: o grau (nas conquistas em graus) e se foi obtida ou quanto do caminho já foi feito. */
+export function descricaoMedalha(nome: string, estado: EstadoMedalha, grau?: 1 | 2 | 3): string {
+  const quem = `Medalha ${nome}${grau ? ` (${NOMES_GRAU[grau]})` : ''}`;
+  if (estado.obtida) return `${quem}: obtida`;
+  const pct = progressoEmPorcento(estado.progresso);
+  return pct > 0 ? `${quem}: ${pct}% do caminho` : `${quem}: ainda não obtida`;
 }
+
+export const progressoEmPorcento = (p: number) => Math.round(Math.max(0, Math.min(1, p)) * 100);
 
 // ------------------------------------------------------------------------------------------------ selos de nível
 const VERDE_AGUA = '#2dd4bf';
 const AZUL = '#4f8ef7';
-const VIOLETA = '#8b7cf0';
+const VIOLETA = '#c4b5fd';
 const OURO = '#f5b942';
 
 /**
@@ -188,8 +203,8 @@ export function indiceDoSelo(nivel: number): number {
 }
 
 export const CAIXA_SELO = '0 0 48 48';
-/** Até este tamanho (px), o selo é desenhado sem o emblema: só o disco e o anel. */
-export const LADO_SELO_COMPACTO = 22;
+/** Até este tamanho (px), o selo é desenhado sem o emblema: só o disco e o anel (abaixo de 32 px o emblema vira borrão). */
+export const LADO_SELO_COMPACTO = 31;
 const SX = 24;
 const SY = 24;
 const GOMOS = 8;
@@ -211,8 +226,9 @@ export function seloFormas(indice: number, estado: EstadoSelo): FormaInsignia[] 
   const selo = SELOS[i];
   const cheios = i + 1;
   const formas: FormaInsignia[] = [];
-  if (cheios < GOMOS) formas.push({ d: gomos(cheios, GOMOS), s: TRILHO, sw: 4, reto: true });
-  formas.push({ d: gomos(0, cheios), s: estado.ativo ? selo.cor : '#3a4a6e', sw: 4, reto: true });
+  // alcançado: gomos cheios na cor da fase e vazios em trilho visível; por vir: cheios apagados e vazios escuros
+  if (cheios < GOMOS) formas.push({ d: gomos(cheios, GOMOS), s: estado.ativo ? TRILHO_SELO : TRILHO, sw: 4, reto: true });
+  formas.push({ d: gomos(0, cheios), s: estado.ativo ? selo.cor : '#56688f', sw: 4, reto: true });
   formas.push(estado.ativo ? { d: circulo(SX, SY, 13.5), f: selo.cor } : { d: circulo(SX, SY, 12.75), f: PLACA_FECHADA, s: BORDA_FECHADA, sw: 1.5 });
   if (!estado.compacto) formas.push(...iconeEm(selo.icone, estado.ativo ? TINTA : APAGADO, SX, SY, 18));
   return formas;

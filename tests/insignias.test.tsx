@@ -61,7 +61,7 @@ describe('medalhas das conquistas', () => {
       expect(fs[0].f, c.id).toBe(fam.escura); // fita
       expect(fs[1].s, c.id).toBe(m.grau ? METAIS[m.grau] : fam.cor); // anel
       expect(fs[2].f, c.id).toBe(fam.cor); // placa
-      const icone = fs.slice(4);
+      const icone = fs.slice(4, 4 + (ICONES[c.icone] as unknown[]).length);
       expect(icone.length, c.id).toBe((ICONES[c.icone] as unknown[]).length);
       for (const f of icone) expect(f.s ?? f.f, c.id).toBe(TINTA);
     }
@@ -88,6 +88,32 @@ describe('medalhas das conquistas', () => {
     expect(comTraco(medalhaFormas(c.id, c.icone, { obtida: false, progresso: 7 }), cor)).toHaveLength(1);
   });
 
+  it('o grau também está na forma: 1, 2 ou 3 cravos na base do anel, no metal do grau quando obtida', () => {
+    const cravos = (fs: FormaInsignia[], n: number) => fs.slice(fs.length - n);
+    for (const c of CONQUISTAS) {
+      const m = MEDALHAS[c.id];
+      const icone = (ICONES[c.icone] as unknown[]).length;
+      for (const obtida of [true, false]) {
+        const fs = medalhaFormas(c.id, c.icone, { obtida, progresso: obtida ? 1 : 0.4 });
+        const base = 4; // fita, anel, placa e filete (obtida) ou fita, trilho, arco e placa (não obtida, com progresso)
+        expect(fs.length - base - icone, c.id).toBe(m.grau ?? 0);
+        if (!m.grau) continue;
+        for (const f of cravos(fs, m.grau)) {
+          const [x, y] = numeros(f.d);
+          expect(y, c.id).toBeGreaterThan(56); // na base do anel (centro em y = 32, raio 28)
+          expect(Math.abs(x - 36 - 2.6), c.id).toBeLessThan(8);
+          if (obtida) expect(f.f, c.id).toBe(METAIS[m.grau]);
+        }
+      }
+    }
+  });
+
+  it('não obtida: a borda da placa tem pelo menos 3:1 sobre o fundo, para a forma da família aparecer', () => {
+    const fs = medalhaFormas('plantonista', 'raio', { obtida: false, progresso: 0 });
+    const placa = fs.find((f) => f.f === '#17223b')!;
+    expect(contraste(placa.s!, '#0f1729')).toBeGreaterThanOrEqual(3);
+  });
+
   it('o desenho cabe na caixa da medalha', () => {
     const [, , w, h] = CAIXA_MEDALHA.split(' ').map(Number);
     for (const c of CONQUISTAS) {
@@ -108,6 +134,8 @@ describe('medalhas das conquistas', () => {
     expect(descricaoMedalha('Semana cheia', { obtida: true, progresso: 1 })).toBe('Medalha Semana cheia: obtida');
     expect(descricaoMedalha('Semana cheia', { obtida: false, progresso: 3 / 7 })).toBe('Medalha Semana cheia: 43% do caminho');
     expect(descricaoMedalha('Semana cheia', { obtida: false, progresso: 0 })).toBe('Medalha Semana cheia: ainda não obtida');
+    expect(descricaoMedalha('Semana cheia', { obtida: true, progresso: 1 }, 2)).toBe('Medalha Semana cheia (prata): obtida');
+    expect(descricaoMedalha('Pegando o ritmo', { obtida: false, progresso: 2 / 3 }, 1)).toBe('Medalha Pegando o ritmo (bronze): 67% do caminho');
   });
 
   it('gera SVG com a caixa certa', () => {
@@ -139,7 +167,7 @@ describe('selos dos títulos de nível', () => {
       const fs = seloFormas(i, { ativo: true });
       const cheios = fs.find((f) => f.s === s.cor)!;
       expect((cheios.d.match(/M/g) ?? []).length, s.icone).toBe(i + 1);
-      const vazios = fs.find((f) => f.s === '#22304f');
+      const vazios = fs.find((f) => f.s === '#56688f');
       expect(vazios ? (vazios.d.match(/M/g) ?? []).length : 0, s.icone).toBe(8 - (i + 1));
       expect(fs.some((f) => f.f === s.cor), s.icone).toBe(true); // disco na cor da fase
     });
@@ -167,6 +195,8 @@ describe('<Medalha> e <SeloNivel>', () => {
     const svg = container.querySelector('svg.medalha')!;
     expect(svg.getAttribute('role')).toBe('img');
     expect(svg.getAttribute('aria-label')).toBe('Medalha Plantonista: 30% do caminho');
+    const { container: c2 } = render(<Medalha id="sequencia-30" icone="fogo" nome="Hábito de residente" obtida progresso={1} />);
+    expect(c2.querySelector('svg.medalha')!.getAttribute('aria-label')).toBe('Medalha Hábito de residente (ouro): obtida');
     expect(svg.getAttribute('viewBox')).toBe(CAIXA_MEDALHA);
     expect(svg.getAttribute('width')).toBe('56');
     expect(svg.getAttribute('height')).toBe('59');
@@ -174,7 +204,7 @@ describe('<Medalha> e <SeloNivel>', () => {
   });
 
   it('o selo é decorativo por padrão, vira imagem com rótulo e perde o emblema quando pequeno', () => {
-    const { container, rerender } = render(<SeloNivel nivel={12} tamanho={28} />);
+    const { container, rerender } = render(<SeloNivel nivel={12} tamanho={34} />);
     let svg = container.querySelector('svg.selo-nivel')!;
     expect(svg.getAttribute('aria-hidden')).toBe('true');
     expect(svg.getAttribute('viewBox')).toBe(CAIXA_SELO);
@@ -186,8 +216,12 @@ describe('<Medalha> e <SeloNivel>', () => {
     expect(svg.getAttribute('aria-label')).toBe('Ligante');
     expect(svg.querySelectorAll('path').length).toBe(seloFormas(2, { ativo: true, compacto: true }).length);
 
-    rerender(<SeloNivel indice={7} ativo={false} tamanho={26} />);
+    rerender(<SeloNivel indice={7} ativo={false} tamanho={32} />);
     svg = container.querySelector('svg.selo-nivel')!;
     expect(svg.querySelectorAll('path').length).toBe(seloFormas(7, { ativo: false }).length);
+    // 26 px (a fila de títulos do perfil) já é compacto: o emblema viraria borrão
+    rerender(<SeloNivel indice={7} ativo={false} tamanho={26} />);
+    svg = container.querySelector('svg.selo-nivel')!;
+    expect(svg.querySelectorAll('path').length).toBe(seloFormas(7, { ativo: false, compacto: true }).length);
   });
 });

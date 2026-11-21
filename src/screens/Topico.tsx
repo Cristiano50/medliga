@@ -4,7 +4,7 @@ import { ESTAGIOS, LAMINAS, MODELOS_HISTOLOGIA_3D, topico } from '../content/ind
 import { disciplina } from '../content/disciplinas.ts';
 import { useProgresso } from '../data/progresso.ts';
 import { contarAvancadas } from '../core/session.ts';
-import { Barra, Markdown, SeloRevisao } from '../ui/comum.tsx';
+import { Barra, Markdown, SeloRevisao, Dificuldade } from '../ui/comum.tsx';
 import { Icone } from '../ui/Icone.tsx';
 
 type Aba = 'estudo' | 'estruturas' | 'clinica' | 'fontes';
@@ -45,7 +45,7 @@ export function TopicoTela() {
         <div className="grade g2">
           <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}`} className="btn primario">Praticar questões</Link>
           {avancadas >= 3 && (
-            <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}&nivel=avancado`} className="btn"><Icone nome="fogo" /> Desafio avançado ({avancadas})</Link>
+            <Link to={`/jogar/quiz?modo=estudo&topico=${t.id}&nivel=avancado`} className="btn"><Dificuldade nivel={5} decorativo /> Desafio avançado ({avancadas})</Link>
           )}
           {estagios.length > 0 && (
             <Link to={`/lab3d?estagio=${estagios[0].id}`} className="btn">Ver no laboratório 3D</Link>

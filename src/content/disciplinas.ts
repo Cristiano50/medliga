@@ -62,7 +62,7 @@ export const DISCIPLINAS: Disciplina[] = [
     id: 'anatomia',
     nome: 'Anatomia',
     status: 'em-breve',
-    cor: '#f87171',
+    cor: '#fdba74',
     icone: 'osso',
     jogabilidade: 'Dissecção 3D por camadas',
     descricao: 'Peças 3D por regiões; identifique estruturas, relações e inervação.',

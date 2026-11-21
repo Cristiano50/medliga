@@ -275,8 +275,8 @@ export function QuizTela() {
         )}
       </div>
       <div className="linha entre pequeno muted">
-        <span><Icone nome={modo === 'plantao' ? 'raio' : modo === 'revisao' ? 'revisao' : avancado ? 'fogo' : 'livro'} tamanho={16} /> {modo === 'plantao' ? 'Plantão relâmpago' : modo === 'revisao' ? 'Revisão do dia' : avancado ? 'Desafio avançado' : 'Estudo'} · dificuldade <Dificuldade nivel={q.dificuldade} /></span>
-        <span>{combo >= 2 && <><Icone nome="fogo" tamanho={16} className="acento" /> combo ×{combo} · </>}{xpSessao} XP</span>
+        <span><Icone nome={modo === 'plantao' ? 'raio' : modo === 'revisao' ? 'revisao' : 'livro'} tamanho={16} /> {modo === 'plantao' ? 'Plantão relâmpago' : modo === 'revisao' ? 'Revisão do dia' : avancado ? 'Desafio avançado' : 'Estudo'} · dificuldade <Dificuldade nivel={q.dificuldade} /></span>
+        <span>{combo >= 2 && <><strong className="acento">combo ×{combo}</strong> · </>}{xpSessao} XP</span>
       </div>
 
       <QuestaoView
@@ -374,7 +374,7 @@ function PlacarDuelo({ duelo, registros, erro }: { duelo: Duelo | null; registro
   return (
     <div className="pilha" style={{ marginTop: 12 }}>
       <div className="card destaque centro pilha">
-        <Cena humor={v === 'eu' ? 'comemorar' : v === 'empate' ? 'bom' : 'calmo'} icone={v === 'eu' ? 'ranking' : v === 'adversario' ? 'medalha' : v === 'empate' ? 'empate' : 'ampulheta'} />
+        <Cena humor={v === 'eu' ? 'comemorar' : v === 'empate' ? 'bom' : 'calmo'} icone={v === 'eu' ? 'ranking' : v === 'adversario' ? 'estudar' : v === 'empate' ? 'empate' : 'ampulheta'} />
         <h1 style={{ margin: 0 }}>
           {v === 'eu' ? 'Você venceu!' : v === 'adversario' ? 'Não foi dessa vez' : v === 'empate' ? 'Empate' : 'Aguardando o adversário'}
         </h1>

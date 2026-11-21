@@ -23,7 +23,7 @@ export function AvisoMedalhas() {
       <div className="texto">
         <strong>{novas.length === 1 ? 'Nova medalha' : `${novas.length} novas medalhas`}</strong>
         <span>{novas.map((c) => c.nome).join(' · ')}</span>
-        <Link to="/perfil" className="pequeno" onClick={dispensar}>Ver no perfil</Link>
+        <Link to="/perfil" className="pequeno link-toque" onClick={dispensar}>Ver no perfil</Link>
       </div>
       <button className="btn fantasma pequeno" onClick={dispensar} aria-label="Fechar o aviso de medalha nova">
         <Icone nome="fechar" tamanho={16} />

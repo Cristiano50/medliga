@@ -100,6 +100,7 @@ p { margin: 0 0 0.75em; }
   padding-bottom: var(--safe-bottom);
 }
 .navbar a {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,6 +114,8 @@ p { margin: 0 0 0.75em; }
 }
 .navbar a .ico { line-height: 1; }
 .navbar a.ativo { color: var(--primary); }
+/* a aba ativa não depende só da cor: barra de 3 px no alto */
+.navbar a.ativo::before { content: ''; position: absolute; top: 0; left: 28%; right: 28%; height: 3px; border-radius: 0 0 3px 3px; background: var(--primary); }
 
 /* ---------- componentes ---------- */
 .card {
@@ -153,11 +156,11 @@ p { margin: 0 0 0.75em; }
   transition: transform 0.06s ease, background 0.15s ease, border-color 0.15s ease;
   user-select: none;
 }
-.btn:hover { background: var(--surface-3); }
+@media (hover: hover) { .btn:hover { background: var(--surface-3); } }
 .btn:active { transform: translateY(1px) scale(0.99); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .btn.primario { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
-.btn.primario:hover { background: #5eead4; }
+@media (hover: hover) { .btn.primario:hover { background: #5eead4; } }
 .btn.ouro { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .btn.fantasma { background: transparent; }
 .btn.bloco { width: 100%; }
@@ -202,11 +205,16 @@ p { margin: 0 0 0.75em; }
   cursor: pointer;
   transition: border-color 0.12s ease, background 0.12s ease;
 }
-.opcao:hover:not(:disabled) { border-color: #3d5180; }
+@media (hover: hover) { .opcao:hover:not(:disabled) { border-color: #3d5180; } }
 .opcao .letra { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 8px; background: var(--surface-3); font-weight: 800; font-size: 0.85rem; text-transform: uppercase; }
 .opcao.selecionada { border-color: var(--info); background: #13233f; }
 .opcao.certa { border-color: var(--success); background: #0f2a1d; }
 .opcao.errada { border-color: var(--danger); background: #2e1416; }
+/* marca de certo/errado com forma própria (não só a cor) */
+.marca-resultado { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 8px; }
+.marca-resultado.certo { background: var(--success); color: #052e16; }
+.marca-resultado.errado { background: var(--danger); color: #450a0a; }
+.marca-resultado .icone-svg path { stroke-width: 3; }
 .opcao:disabled { cursor: default; }
 
 .feedback { border-radius: var(--radius); padding: 14px 16px; border: 1px solid; }
@@ -227,7 +235,8 @@ p { margin: 0 0 0.75em; }
 .cartao-jogo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: border-color 0.15s ease, transform 0.15s ease; }
 .cartao-jogo .texto { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 0; flex: 1; }
 .cartao-jogo .seta { color: var(--muted); }
-.cartao-jogo:hover, .cartao-jogo:focus-visible { border-color: var(--cor, var(--primary)); border-color: color-mix(in srgb, var(--cor, var(--primary)) 55%, var(--border)); }
+.cartao-jogo:focus-visible { border-color: var(--cor, var(--primary)); border-color: color-mix(in srgb, var(--cor, var(--primary)) 55%, var(--border)); }
+@media (hover: hover) { .cartao-jogo:hover { border-color: var(--cor, var(--primary)); border-color: color-mix(in srgb, var(--cor, var(--primary)) 55%, var(--border)); } }
 .cartao-jogo:active { transform: translateY(1px); }
 .cartao-jogo.destaque { background: linear-gradient(135deg, color-mix(in srgb, var(--cor, var(--primary)) 16%, var(--surface)) 0%, var(--surface) 72%); border-color: color-mix(in srgb, var(--cor, var(--primary)) 42%, var(--border)); }
 .cartao-jogo.destaque strong { font-size: 1.05rem; }
@@ -235,10 +244,11 @@ p { margin: 0 0 0.75em; }
 .selo.foco { color: var(--primary); border-color: #1f5f58; background: #0d2a29; }
 .subtitulo { margin: 16px 0 8px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .grade.breve { gap: 8px; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); }
-.cartao-breve { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 14px; border: 1px dashed var(--border); }
+.cartao-breve { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 14px; border: 1px dashed #56688f; }
 .cartao-breve .emblema { opacity: 0.75; }
 .cartao-breve .texto { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .cartao-breve strong { font-size: 0.9rem; color: var(--text-2); }
+.cartao-breve .etiqueta-breve { align-self: flex-start; display: inline-flex; align-items: center; gap: 4px; margin-top: 2px; padding: 1px 7px; border-radius: 999px; border: 1px solid #56688f; color: var(--text-2); font-size: 0.7rem; font-weight: 700; }
 .cartao-breve .muted { font-size: 0.72rem; line-height: 1.25; }
 .titulo-com-emblema { display: flex; align-items: center; gap: 12px; }
 
@@ -260,7 +270,7 @@ p { margin: 0 0 0.75em; }
 .tabela-rank .pts { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
 
 .abas { display: flex; gap: 6px; padding: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; }
-.abas button { flex: 1; min-height: 40px; padding: 0 12px; border-radius: 9px; border: 0; background: transparent; color: var(--text-2); font-weight: 700; cursor: pointer; white-space: nowrap; }
+.abas button { flex: 1; min-height: 44px; padding: 0 12px; border-radius: 9px; border: 0; background: transparent; color: var(--text-2); font-weight: 700; cursor: pointer; white-space: nowrap; }
 .abas button.ativa { background: var(--surface-3); color: var(--text); }
 .lab3d .abas button { min-width: 0; white-space: normal; padding: 8px; }
 .lab3d .btn.pequeno, .lab3d .abas button, .lab3d .controle-corte { min-height: 44px; }
@@ -338,7 +348,7 @@ input[type="checkbox"] { accent-color: var(--primary); width: 24px; height: 24px
 .lista-estruturas3d { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; }
 .estrutura3d { display: flex; gap: 10px; align-items: center; min-height: 48px; text-align: left; border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: var(--surface); cursor: pointer; font-size: .85rem; }
 .estrutura3d.ativa { border-color: var(--primary); background: #123234; }
-.estrutura3d:hover { background: var(--surface-2); }
+@media (hover: hover) { .estrutura3d:hover { background: var(--surface-2); } }
 .numero3d { flex: 0 0 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--surface-3); font-weight: 700; }
 .camada3d { position: absolute; top: 0; left: 0; pointer-events: none; z-index: 4; overflow: hidden; }
 .guias3d { position: absolute; top: 0; left: 0; overflow: hidden; }
@@ -374,7 +384,7 @@ input[type="checkbox"] { accent-color: var(--primary); width: 24px; height: 24px
 /* ---------- minijogos ---------- */
 .bins { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
 .bin { min-height: 64px; padding: 10px; border-radius: 12px; border: 2px dashed var(--c, var(--border)); background: var(--surface); text-align: center; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-.bin:hover { background: var(--surface-2); }
+@media (hover: hover) { .bin:hover { background: var(--surface-2); } }
 .carta-grande { padding: 22px 16px; border-radius: var(--radius-lg); background: var(--surface-2); border: 1px solid var(--border); text-align: center; font-size: 1.25rem; font-weight: 800; box-shadow: var(--shadow); }
 .ordenavel { display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); }
 .ordenavel .pos { flex: none; width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; background: var(--surface-3); font-weight: 800; font-size: 0.85rem; }
@@ -428,6 +438,7 @@ input[type="checkbox"] { accent-color: var(--primary); width: 24px; height: 24px
 .conquista { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 10px; border-radius: 12px; background: var(--bg-elev); border: 1px solid var(--border); text-align: center; }
 .conquista .descricao { font-size: 0.75rem; }
 .conquista:not(.obtida) strong { color: var(--text-2); }
+.conquista .progresso-medalha { color: var(--text-2); font-weight: 700; }
 .carreira { display: flex; flex-direction: column; gap: 6px; }
 .carreira ol { display: flex; align-items: center; gap: 6px; margin: 0; padding: 0; list-style: none; flex-wrap: wrap; }
 .carreira li { display: inline-flex; }

@@ -6,7 +6,7 @@ import type { Escola } from '../content/schema.ts';
 import { obterBackend } from '../data/backend.ts';
 import { nivelPorXP, TITULOS_NIVEL, tituloDoNivel } from '../core/scoring.ts';
 import { Medalha, SeloNivel } from '../ui/Insignias.tsx';
-import { indiceDoSelo } from '../ui/insignias.ts';
+import { indiceDoSelo, progressoEmPorcento } from '../ui/insignias.ts';
 import { PLANOS } from '../core/planos.ts';
 import { db } from '../data/db.ts';
 import { Barra } from '../ui/comum.tsx';
@@ -350,6 +350,11 @@ function Conquistas() {
             <Medalha id={c.id} icone={c.icone} nome={c.nome} obtida={c.obtida} progresso={c.valor} />
             <strong className="pequeno">{c.nome}</strong>
             <span className="muted descricao">{c.descricao}</span>
+            {!c.obtida && c.valor > 0 && (
+              <span className="pequeno progresso-medalha" aria-hidden="true">
+                {progressoEmPorcento(c.valor)}% do caminho
+              </span>
+            )}
           </div>
         ))}
       </div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import type { Questao, QuestaoAssociar, QuestaoMultipla, QuestaoOrdenar, QuestaoVF } from '../content/schema.ts';
 import type { Resposta } from '../core/scoring.ts';
 import { Icone } from '../ui/Icone.tsx';
+import { MarcaResultado } from '../ui/MarcaResultado.tsx';
 
 interface Props<Q extends Questao> {
   questao: Q;
@@ -59,7 +60,11 @@ function Multipla({ questao: q, ordemExibicao, resposta, onResponder, revelada, 
               if (imediato) setTimeout(() => onConfirmar?.(), 0);
             }}
           >
-            <span className="letra">{letras[i]}</span>
+            {cls === 'certa' || cls === 'errada' ? (
+              <MarcaResultado certo={cls === 'certa'} texto={cls === 'certa' ? 'Resposta certa:' : 'Sua resposta, errada:'} />
+            ) : (
+              <span className="letra">{letras[i]}</span>
+            )}
             <span>{alt.texto}</span>
           </button>
         );
@@ -91,6 +96,9 @@ function VF({ questao: q, resposta, onResponder, revelada, imediato, onConfirmar
               if (imediato) setTimeout(() => onConfirmar?.(), 0);
             }}
           >
+            {(cls === 'certa' || cls === 'errada') && (
+              <MarcaResultado certo={cls === 'certa'} texto={cls === 'certa' ? 'Resposta certa:' : 'Sua resposta, errada:'} />
+            )}
             {v ? 'Verdadeiro' : 'Falso'}
           </button>
         );
@@ -123,6 +131,7 @@ function Ordenar({ questao: q, ordemExibicao, resposta, onResponder, revelada }:
           <div key={id} className={`ordenavel ${cls}`}>
             <span className="pos">{i + 1}</span>
             <span className="texto">{item.texto}</span>
+            {revelada && <MarcaResultado certo={cls === 'certo'} texto={cls === 'certo' ? 'posição certa' : 'posição errada'} />}
             {!revelada && (
               <span className="setas">
                 <button aria-label={`Subir ${item.texto}`} onClick={() => mover(i, -1)} disabled={i === 0}><Icone nome="seta-cima" tamanho={18} /></button>
@@ -171,6 +180,7 @@ function Associar({ questao: q, ordemExibicao, resposta, onResponder, revelada }
               <option value="">Escolha…</option>
               {opcoesUnicas.map((d) => <option key={d} value={d}>{d}</option>)}
             </select>
+            {revelada && <MarcaResultado certo={valor === p.direita} texto={valor === p.direita ? 'associação certa' : 'associação errada'} />}
             {revelada && valor !== p.direita && <span className="pequeno" style={{ width: '100%', color: 'var(--success)' }}>Correto: {p.direita}</span>}
           </div>
         );

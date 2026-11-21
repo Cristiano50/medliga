@@ -7,6 +7,7 @@ import { embaralhar } from '../core/random.ts';
 import { salvarMinijogo, type Jogada } from './minijogo.ts';
 import { Barra } from '../ui/comum.tsx';
 import { Icone } from '../ui/Icone.tsx';
+import { MarcaResultado } from '../ui/MarcaResultado.tsx';
 import { Cena } from '../ui/Cena.tsx';
 import { humorPorAcertos } from '../ui/cenas.ts';
 
@@ -134,6 +135,7 @@ export function LinhaDoTempoTela() {
                 {e.descricao}
                 {conferida && textoDia(e) && <span className="muted pequeno"> · {textoDia(e)}</span>}
               </span>
+              {conferida && <MarcaResultado certo={cls === 'certo'} texto={cls === 'certo' ? 'posição certa' : 'posição errada'} />}
               {!conferida && (
                 <span className="setas">
                   <button aria-label={`Subir ${e.descricao}`} onClick={() => mover(i, -1)} disabled={i === 0}><Icone nome="seta-cima" tamanho={18} /></button>
